@@ -1,0 +1,20 @@
+# Local asset harvest — raw downloaded PDFs are staged locally, not committed
+# (re-fetchable via the gather scripts; committed artifacts are the derived corpus)
+data/raw/
+*.pdf
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node (if an MCP server is added later)
+node_modules/
+dist/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.log
