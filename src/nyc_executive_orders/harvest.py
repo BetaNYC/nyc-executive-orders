@@ -40,8 +40,76 @@ class HarvestResult:
     downloaded: int = 0
     cached: int = 0
     errors: int = 0
+    deduped: int = 0
+    conflicts: list[tuple[str, str | None, str | None]] = field(default_factory=list)
     dry_run: bool = True
     output_paths: dict = field(default_factory=dict)
+
+
+def dedupe_rows(
+    index_rows: list[IndexRow],
+    manifest_rows: list[ManifestRow],
+) -> tuple[list[IndexRow], list[ManifestRow], int, list[tuple[str, str | None, str | None]]]:
+    """Collapse exact-duplicate feed records to a single record.
+
+    The nyc.gov feed sometimes lists the *same* order twice — identical title,
+    date, and PDF URL (verified in the 2022->present dry-run: 13 of 1062 rows
+    were exact doubles, e.g. `2025-EO-051` "Executive Order 51" 2025-05-13
+    `eo-51.pdf` listed twice). Those are noise, not distinct orders.
+
+    Exact duplicate := same `eo_id` AND same `source_pdf_url` (equivalently the
+    same title+date+pdf, which is what a doubled feed entry produces). The first
+    occurrence is kept; every later exact duplicate is dropped.
+
+    Records that share an `eo_id` but DIFFER in `source_pdf_url` are a real
+    conflict, not a duplicate — two different PDFs claiming one identity. They are
+    KEPT (never silently merged or dropped) and returned so the caller can surface
+    them loudly. None are expected in current data; this is a guard.
+
+    `index_rows` and `manifest_rows` are paired 1:1 by position (harvest builds
+    one of each per enumerated entry), so they are deduplicated in lockstep to
+    stay aligned. Returns (kept_index, kept_manifest, dropped_count, conflicts),
+    where each conflict is (eo_id, first_source_pdf_url, other_source_pdf_url).
+    """
+    if len(index_rows) != len(manifest_rows):
+        raise ValueError(
+            f"index/manifest row counts diverge ({len(index_rows)} vs "
+            f"{len(manifest_rows)}) — cannot dedupe in lockstep"
+        )
+
+    seen_keys: set[tuple[str, str | None]] = set()
+    first_url: dict[str, str | None] = {}
+    kept_index: list[IndexRow] = []
+    kept_manifest: list[ManifestRow] = []
+    dropped = 0
+    conflicts: list[tuple[str, str | None, str | None]] = []
+
+    for ir, mr in zip(index_rows, manifest_rows):
+        key = (mr.eo_id, mr.source_pdf_url)
+        if key in seen_keys:
+            dropped += 1
+            logger.debug(
+                "index.dedup drop exact-duplicate eo_id=%s source_pdf_url=%s",
+                mr.eo_id,
+                mr.source_pdf_url,
+            )
+            continue
+        if mr.eo_id in first_url and first_url[mr.eo_id] != mr.source_pdf_url:
+            conflicts.append((mr.eo_id, first_url[mr.eo_id], mr.source_pdf_url))
+            logger.warning(
+                "index.conflict eo_id=%s has divergent source_pdf_url "
+                "(first=%s other=%s) — keeping BOTH, not merging; review required",
+                mr.eo_id,
+                first_url[mr.eo_id],
+                mr.source_pdf_url,
+            )
+        seen_keys.add(key)
+        first_url.setdefault(mr.eo_id, mr.source_pdf_url)
+        kept_index.append(ir)
+        kept_manifest.append(mr)
+
+    logger.info("index.deduped removed=%d conflicts=%d", dropped, len(conflicts))
+    return kept_index, kept_manifest, dropped, conflicts
 
 
 def _delayer(delay: float):
@@ -158,6 +226,16 @@ def run_harvest(
             result=result,
         )
 
+    # Collapse exact-duplicate feed entries (same eo_id AND same source_pdf_url)
+    # before anything is written, so the index/manifest carry one row per real
+    # order. Same-id-different-pdf conflicts are surfaced, not merged.
+    (
+        result.index_rows,
+        result.manifest_rows,
+        result.deduped,
+        result.conflicts,
+    ) = dedupe_rows(result.index_rows, result.manifest_rows)
+
     if write_outputs:
         index_paths = write_index(result.index_rows, index_dir)
         manifest_path = write_manifest(result.manifest_rows, out_dir)
@@ -170,12 +248,15 @@ def run_harvest(
         }
 
     logger.info(
-        "harvest.done enumerated=%d resolved=%d downloaded=%d cached=%d errors=%d dry_run=%s",
+        "harvest.done enumerated=%d resolved=%d downloaded=%d cached=%d "
+        "errors=%d deduped=%d conflicts=%d dry_run=%s",
         result.enumerated,
         result.resolved,
         result.downloaded,
         result.cached,
         result.errors,
+        result.deduped,
+        len(result.conflicts),
         result.dry_run,
     )
     return result

@@ -3,7 +3,11 @@
 Contract:
   * 0  — completed with zero errors
   * 1  — completed but result.errors > 0
-  * 2  — missing the human-gate flag (refuses to run)
+  * 2  — missing BOTH authorization gates (refuses to run)
+
+Two equally-strong gates authorize a run: --i-am-a-human-running-this-supervised
+(human) or --operator-authorized (agent, under explicit in-session operator
+authorization). Either alone proceeds; neither refuses (exit 2).
 
 All offline: build_fetcher / run_harvest are monkeypatched so nothing touches
 the network. (scripts/ is on the pytest pythonpath — see pyproject.toml.)
@@ -11,6 +15,7 @@ the network. (scripts/ is on the pytest pythonpath — see pyproject.toml.)
 
 from __future__ import annotations
 
+import logging
 import sys
 from dataclasses import dataclass, field
 
@@ -44,8 +49,8 @@ def _patch_harvest(monkeypatch, result: _FakeResult) -> None:
     monkeypatch.setattr(rhl, "run_harvest", lambda *a, **k: result)
 
 
-def test_missing_human_flag_exits_2(monkeypatch):
-    # No flag -> refuses before ever building a fetcher.
+def test_missing_both_gates_exits_2(monkeypatch):
+    # Neither gate flag -> refuses before ever building a fetcher.
     monkeypatch.setattr(sys, "argv", _argv())
     called = {"harvest": False}
     monkeypatch.setattr(
@@ -53,6 +58,33 @@ def test_missing_human_flag_exits_2(monkeypatch):
     )
     assert rhl.main() == 2
     assert called["harvest"] is False
+
+
+def test_operator_authorized_alone_proceeds_and_logs(monkeypatch, caplog):
+    # The agent path: --operator-authorized alone authorizes the run, and a
+    # truthful non-human provenance line is logged.
+    _patch_harvest(monkeypatch, _FakeResult(errors=0))
+    monkeypatch.setattr(sys, "argv", _argv("--operator-authorized"))
+    with caplog.at_level(
+        logging.INFO, logger="nyc_executive_orders.run_harvest_live"
+    ):
+        assert rhl.main() == 0
+    msg = " ".join(rec.getMessage() for rec in caplog.records)
+    assert "explicit operator authorization" in msg
+    assert "agent-executed" in msg
+    assert "not a human-supervised run" in msg
+
+
+def test_operator_authorized_does_not_claim_human(monkeypatch, caplog):
+    # The provenance line must never assert a human is running the harvest.
+    _patch_harvest(monkeypatch, _FakeResult(errors=0))
+    monkeypatch.setattr(sys, "argv", _argv("--operator-authorized"))
+    with caplog.at_level(
+        logging.INFO, logger="nyc_executive_orders.run_harvest_live"
+    ):
+        rhl.main()
+    msg = " ".join(rec.getMessage() for rec in caplog.records)
+    assert "human-supervised run" not in msg.replace("not a human-supervised run", "")
 
 
 def test_clean_run_exits_0(monkeypatch):

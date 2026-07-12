@@ -11,9 +11,13 @@ automation. The offline test suite exercises the pipeline with a mocked fetcher
 (no network); this script is the one place the project touches the live site.
 
 Conditions (same posture as ny-gov-web-archiver's smoke_test_live.py):
-  * Run BY A HUMAN, interactively, under BetaNYC's go-slow authorization for
-    nyc.gov access.
-  * Refuses to run without --i-am-a-human-running-this-supervised.
+  * Run under BetaNYC's go-slow authorization for nyc.gov access, via ONE of two
+    equally-strong gates:
+      - --i-am-a-human-running-this-supervised : a human, interactively.
+      - --operator-authorized : an agent, under explicit in-session authorization
+        from operator noel (logs a truthful agent-executed provenance line; does
+        NOT claim a human is supervising).
+  * Refuses to run (exit 2) if NEITHER gate flag is present.
   * Downloads on a conservative delay (default 2.5s between live calls) and is
     idempotent — already-downloaded PDFs are skipped, so it is safe to resume.
 
@@ -45,6 +49,8 @@ from nyc_executive_orders import config  # noqa: E402
 from nyc_executive_orders.fetch import build_fetcher  # noqa: E402
 from nyc_executive_orders.harvest import run_harvest  # noqa: E402
 
+logger = logging.getLogger("nyc_executive_orders.run_harvest_live")
+
 
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -58,13 +64,29 @@ def main() -> int:
         action="store_true",
         help="Required acknowledgement that this makes LIVE nyc.gov calls.",
     )
+    p.add_argument(
+        "--operator-authorized",
+        action="store_true",
+        help=(
+            "Non-human authorization path: an agent runs this under explicit "
+            "in-session authorization from operator noel. Equally strong to the "
+            "human-supervised flag; supply one or the other."
+        ),
+    )
     args = p.parse_args()
 
-    if not args.i_am_a_human_running_this_supervised:
+    # Two equally-strong authorization gates. Proceed if EITHER is present; refuse
+    # if NEITHER. The operator-authorized path exists so an agent can run the
+    # download under explicit operator authorization WITHOUT falsely claiming a
+    # human is supervising it.
+    human = args.i_am_a_human_running_this_supervised
+    operator = args.operator_authorized
+    if not (human or operator):
         print(
             "REFUSING TO RUN: this script makes live nyc.gov calls.\n"
-            "Re-run with --i-am-a-human-running-this-supervised only if you are a "
-            "human acting under BetaNYC's go-slow authorization.",
+            "Re-run with --i-am-a-human-running-this-supervised (a human acting "
+            "under BetaNYC's go-slow authorization) OR --operator-authorized (an "
+            "agent running under explicit in-session operator authorization).",
             file=sys.stderr,
         )
         return 2
@@ -73,6 +95,14 @@ def main() -> int:
         level=logging.INFO,
         format="%(asctime)s %(name)s %(levelname)s %(message)s",
     )
+
+    # Truthful provenance line: only emitted on the agent path (operator flag,
+    # no human flag). It must never claim a human is running the harvest.
+    if operator and not human:
+        logger.info(
+            "LIVE run under explicit operator authorization (operator=noel, "
+            "in-session); agent-executed — not a human-supervised run."
+        )
 
     download = not args.dry_run
     print(
