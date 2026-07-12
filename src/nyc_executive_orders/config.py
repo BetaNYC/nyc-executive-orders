@@ -70,3 +70,24 @@ DEFAULT_INDEX_DIR = _REPO_ROOT / "index"
 
 # Provenance tag stamped on every index row produced by this (live) source.
 SOURCE_LIVE = "live-nycgov"
+
+# --- Phase B: historical Wayback backfill -----------------------------------
+# Provenance tag for rows recovered from the Internet Archive (Wayback Machine).
+SOURCE_WAYBACK = "wayback"
+
+# CDX prefix for the historical EO PDFs the 2026 nyc.gov redesign removed. The
+# documented old filename pattern (project STATUS.md; README data landscape) is
+#   nyc.gov/html/records/pdf/executive_orders/YYYYEO0NN.pdf
+# so a single CDX prefix-match query over this path enumerates the historical
+# corpus (~801 orders in one query, per the README). We enumerate what CDX
+# actually returns and parse each captured filename — filenames are NOT guessed.
+WAYBACK_EO_URL_PREFIX = "nyc.gov/html/records/pdf/executive_orders/"
+
+# Historical coverage floor: NYC Admin Code § 3-113.1 draws the line at EOs
+# issued on or after January 1, 1974. Captures older than this are out of scope.
+HISTORICAL_FLOOR_YEAR = 1974
+
+# The live source (Phase A) is authoritative for the current era; the Wayback
+# backfill (Phase B) fills 1974 -> ~2022. On an eo_id collision between the two,
+# the live row wins (fresher, richer metadata) and the Wayback duplicate is
+# dropped — see gather_wayback_eo.merge_prefer_live.

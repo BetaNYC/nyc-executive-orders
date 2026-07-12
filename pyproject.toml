@@ -18,14 +18,31 @@ dependencies = [
   "requests>=2.31,<3",
   # HTML parsing to extract the dam PDF <a href> from an article page.
   "beautifulsoup4>=4.12,<5",
+  # Phase B (historical Wayback backfill) engine. The archiver is BetaNYC's
+  # throttled Internet-Archive harvester (EDGI `wayback` client, CDX enumeration,
+  # go-slow memento fetch). We depend on it rather than reimplementing Wayback
+  # logic; it is a sibling repo under ~/Code/ (see [tool.uv.sources]). Its own
+  # `wayback` pin (>=0.5.1,<0.6) rides in transitively.
+  "ny-gov-web-archiver",
 ]
+
+[tool.uv.sources]
+# The archiver is a sibling checkout, not published to PyPI. An editable path
+# dependency keeps Phase B building against the live source with no git fetch
+# (offline-safe). The path is relative to this repo root and holds on any machine
+# that follows the workspace's flat ~/Code/ sibling-repo convention.
+ny-gov-web-archiver = { path = "../ny-gov-web-archiver", editable = true }
 
 [project.optional-dependencies]
 # Playwright is ONLY needed for the WAF fallback fetch path (headless Chromium).
 # It is lazily imported (see fetch.py) so the package installs and its offline
 # tests run without it. The supervised live harvest installs this extra.
 live = ["playwright>=1.44,<2"]
-dev = ["pytest>=8,<9"]
+# `wayback` is declared here as a TEST dependency: the Phase B offline tests
+# build real `wayback.CdxRecord` instances (faithful mocks, engineering-standards
+# §0), mirroring the archiver's own test approach. At runtime `wayback` is pulled
+# transitively by ny-gov-web-archiver and imported only inside its go-slow client.
+dev = ["pytest>=8,<9", "wayback>=0.5.1,<0.6"]
 
 [project.scripts]
 nyc-executive-orders = "nyc_executive_orders.cli:main"
@@ -43,6 +60,8 @@ known_first_party = ["nyc_executive_orders"]
 # beautifulsoup4 imports as `bs4`; without this, deptry reports it both unused
 # (the manifest name) and undeclared (the import name).
 beautifulsoup4 = ["bs4"]
+# ny-gov-web-archiver (the Phase B Wayback engine) imports as `ny_gov_web_archiver`.
+ny-gov-web-archiver = ["ny_gov_web_archiver"]
 
 [tool.deptry.per_rule_ignores]
 # playwright is declared in the `live` optional extra and imported lazily inside

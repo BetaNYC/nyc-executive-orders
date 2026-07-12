@@ -1,7 +1,8 @@
 name: tests
 
-# Offline test suite. It mocks the fetch backend and an autouse guard blocks
-# real sockets, so this workflow never contacts nyc.gov — safe to run in CI.
+# Offline test suite. It mocks the fetch backend + the Wayback archiver client,
+# and an autouse guard blocks real sockets, so this workflow never contacts
+# nyc.gov or the Internet Archive — safe to run in CI.
 on:
   push:
     branches: [main]
@@ -16,8 +17,25 @@ jobs:
         # Both ends of the declared requires-python range (engineering-standards §1, §3).
         python-version: ["3.11", "3.14"]
     steps:
-      - uses: actions/checkout@v4
+      # Phase B depends on the sibling ny-gov-web-archiver (an editable path dep,
+      # `../ny-gov-web-archiver` — see pyproject [tool.uv.sources]). Both repos
+      # are checked out as siblings under $GITHUB_WORKSPACE so the relative path
+      # resolves. The archiver is a PRIVATE BetaNYC repo, so its checkout needs a
+      # token with read access to it — the default GITHUB_TOKEN is scoped to this
+      # repo only. Provision a fine-grained PAT (or App token) with contents:read
+      # on BetaNYC/ny-gov-web-archiver as the secret NY_GOV_ARCHIVER_TOKEN.
+      - name: Check out nyc-executive-orders
+        uses: actions/checkout@v4
+        with:
+          path: nyc-executive-orders
+      - name: Check out ny-gov-web-archiver (Phase B Wayback engine)
+        uses: actions/checkout@v4
+        with:
+          repository: BetaNYC/ny-gov-web-archiver
+          path: ny-gov-web-archiver
+          token: ${{ secrets.NY_GOV_ARCHIVER_TOKEN }}
       - name: Install uv
         uses: astral-sh/setup-uv@v5
       - name: Run tests (offline)
+        working-directory: nyc-executive-orders
         run: uv run --python ${{ matrix.python-version }} --with pytest python -m pytest -v

@@ -19,7 +19,9 @@ Two design points keep this suite offline and faithful:
 from __future__ import annotations
 
 import socket
+from datetime import datetime, timezone
 from pathlib import Path
+from types import SimpleNamespace
 from urllib.parse import parse_qs, urlparse
 
 import pytest
@@ -39,6 +41,27 @@ def _no_live_network(monkeypatch):
     monkeypatch.setattr(socket, "getaddrinfo", _boom, raising=True)
     monkeypatch.setattr(socket.socket, "connect", _boom, raising=True)
     monkeypatch.setattr(socket.socket, "connect_ex", _boom, raising=True)
+    yield
+
+
+@pytest.fixture(autouse=True)
+def _no_live_wayback(monkeypatch):
+    """Fail hard if any test causes a real archiver/Wayback client call.
+
+    Belt-and-suspenders with the socket guard: monkeypatch the REAL
+    `wayback.WaybackClient.search` / `.get_memento` to blow up. Phase B tests
+    inject a FakeWaybackClient; if a code path ever built the real client, this
+    fires loudly. Skipped if `wayback` isn't importable (it is a dev dep).
+    """
+    wayback = pytest.importorskip("wayback")
+
+    def _boom(*_args, **_kwargs):  # pragma: no cover - only fires on misuse
+        raise RuntimeError(
+            "A test attempted a LIVE wayback call. Tests must use FakeWaybackClient."
+        )
+
+    monkeypatch.setattr(wayback.WaybackClient, "search", _boom, raising=True)
+    monkeypatch.setattr(wayback.WaybackClient, "get_memento", _boom, raising=True)
     yield
 
 
@@ -103,6 +126,95 @@ def articlesearch_pages() -> dict[int, str]:
 @pytest.fixture
 def article_html() -> str:
     return load_fixture("article_eeo718.html")
+
+
+# --------------------------------------------------------------------------- #
+# Phase B (Wayback) fixtures — faithful to the archiver / EDGI `wayback` surface
+# --------------------------------------------------------------------------- #
+@pytest.fixture
+def make_cdx():
+    """Factory building REAL `wayback.CdxRecord` instances (version-robust).
+
+    Mirrors the archiver's own test fixture so Phase B mocks encode the library's
+    documented record shape (urlkey, timestamp, original, mimetype, statuscode,
+    digest, length) rather than a guessed one — engineering-standards §0.
+    """
+    wayback = pytest.importorskip("wayback")
+    CdxRecord = wayback.CdxRecord
+
+    def _make(
+        original: str,
+        timestamp="20180601000000",
+        *,
+        mimetype: str = "application/pdf",
+        statuscode: int | None = 200,
+        digest: str = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        length: int | None = 4096,
+        urlkey: str | None = None,
+    ):
+        if isinstance(timestamp, datetime):
+            ts = timestamp
+        else:
+            ts = datetime.strptime(timestamp, "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc)
+        values = {
+            "urlkey": urlkey or original,
+            "timestamp": ts,
+            "original": original,
+            "mimetype": mimetype,
+            "statuscode": statuscode,
+            "digest": digest,
+            "length": length,
+        }
+        return CdxRecord(**{f: values.get(f) for f in CdxRecord._fields})
+
+    return _make
+
+
+class FakeWaybackClient:
+    """Duck-typed stand-in for the archiver's go-slow `wayback.WaybackClient`.
+
+    Records every search + get_memento call so tests can assert (e.g. that a
+    dry-run issues ZERO memento fetches). `search` yields the canned records
+    regardless of query (the archiver applies the MIME/status/year filters);
+    `get_memento` returns a Memento-shaped object exposing `.content` (the
+    documented attribute Phase B reads).
+    """
+
+    def __init__(
+        self,
+        records: list | None = None,
+        *,
+        memento_content: bytes = b"%PDF-1.4 archived body",
+        raise_on_memento: Exception | None = None,
+    ):
+        self._records = list(records or [])
+        self._memento_content = memento_content
+        self._raise_on_memento = raise_on_memento
+        self.search_calls: list[tuple[str, dict]] = []
+        self.memento_calls: list = []
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc):
+        return False
+
+    def search(self, url, **kwargs):
+        self.search_calls.append((url, kwargs))
+        yield from self._records
+
+    def get_memento(self, record, **kwargs):
+        self.memento_calls.append(record)
+        if self._raise_on_memento is not None:
+            raise self._raise_on_memento
+        return SimpleNamespace(
+            content=self._memento_content, status_code=200, ok=True
+        )
+
+
+@pytest.fixture
+def fake_wayback_client_cls():
+    return FakeWaybackClient
 
 
 @pytest.fixture

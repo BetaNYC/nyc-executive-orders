@@ -63,7 +63,7 @@ Everything before ~2002 is scanned images requiring OCR; later orders are a mix 
 ## Roadmap
 
 - [ ] **Verify** whether the § 3-113.1 mandated compilation currently exists and is usable.
-- [ ] **Gather** all available orders locally (live nyc.gov + Wayback historical set + Archives), respecting each source's access rules.
+- [ ] **Gather** all available orders locally (live nyc.gov ✅ Phase A + Wayback historical set ✅ Phase B + Archives), respecting each source's access rules.
 - [ ] **Parse** PDFs to text (born-digital extraction with an OCR fallback for scans).
 - [ ] **Structure** a clean, machine-readable corpus with metadata and supersession annotations.
 - [ ] **Publish** the corpus (bulk-downloadable JSON + human-readable Markdown, matching the BetaNYC pattern).
@@ -84,8 +84,9 @@ page, download the PDFs (git-LFS), and emit a light metadata index + manifest.
 
 **Deferred (not in this build):** OCR and full-text parsing (**OCR is deferred
 pending data context** — we get all the files down first, then decide the OCR
-engine and parse depth once we can see what the corpus actually looks like),
-supersession graphs, and the historical Wayback backfill (1974 → ~2022).
+engine and parse depth once we can see what the corpus actually looks like) and
+supersession graphs. The historical Wayback backfill (1974 → ~2022) is now built
+— see [Phase B](#phase-b-harvester-historical-wayback-backfill).
 
 ### How it works
 
@@ -158,6 +159,67 @@ The default sequence is a `2024` dry-run (high-volume Adams-era validation) then
 a `2022-2026` dry-run (full current-era inventory); edit `DEFAULT_STEPS` at the
 top of the script to change it.
 
+## Phase B harvester (historical Wayback backfill)
+
+The 2026 nyc.gov redesign **removed** the historical executive-order PDFs that had
+long lived under `nyc.gov/html/records/pdf/executive_orders/`. Phase B recovers
+them from the **Internet Archive (Wayback Machine)**, covering 1974 → ~2022, and
+merges them into the current-era corpus.
+
+**In scope (Phase B):** enumerate the historical EO PDF captures on Wayback,
+parse each captured filename into an `eo_id`, download the archived PDFs
+(git-LFS, same `pdfs/YYYY/<eo_id>.pdf` layout), and merge into the index —
+preferring the live-nycgov rows on any collision. Fetch + index only; **OCR stays
+deferred**, same as Phase A.
+
+### The Wayback engine (a dependency, not a reimplementation)
+
+Phase B does **not** reimplement Wayback logic. The engine is BetaNYC's
+[`ny-gov-web-archiver`](https://github.com/BetaNYC/ny-gov-web-archiver) — a
+throttled EDGI-[`wayback`](https://github.com/edgi-govdata-archiving/wayback)
+orchestrator (CDX enumeration, go-slow memento fetch, `Retry-After`/429 backoff).
+It is wired here as an **editable path dependency** to the sibling `~/Code/`
+checkout (see `[tool.uv.sources]` in `pyproject.toml`); its `wayback` pin rides in
+transitively. Phase B is the EO-specific layer on top: the URL prefix, the
+`filename → eo_id` parse, the `pdfs/YYYY/` layout, and the prefer-live merge.
+
+### How it works
+
+1. **Enumerate** — one CDX **prefix** query (via the archiver) over
+   `nyc.gov/html/records/pdf/executive_orders/`, filtered to `application/pdf` +
+   HTTP 200. We enumerate what CDX returns and parse each captured filename; the
+   documented old pattern is `YYYYEO0NN.pdf` (regular) / `YYYYEEO0NN.pdf`
+   (emergency). A filename that doesn't parse is **flagged, never dropped**.
+2. **Select** — one capture per source URL (the latest snapshot).
+3. **Parse + mint** — `filename → eo_id`, reusing Phase A's identity scheme
+   (`YYYY-EO-NNN` / `YYYY-EEO-<label>`).
+4. **Fetch** — download each archived PDF (go-slow) to `pdfs/YYYY/<eo_id>.pdf`,
+   skip-if-present (idempotent).
+5. **Merge** — combine with the existing `index/eo_index.json`, dedup by `eo_id`.
+   An order present from **both** `live-nycgov` and `wayback` keeps the live row
+   (fresher, richer metadata) and drops the wayback duplicate (logged). The merged
+   `manifest.csv` + `gaps.md` then span the full 1974 → present corpus.
+
+### Running the Wayback harvest
+
+Same **go-slow** posture and same human/operator authorization gate as Phase A —
+Internet Archive is a nonprofit on constrained infrastructure; the archiver's
+client is throttled below IA's shared ~30 req/min budget and `--delay` adds
+further margin (default 2.5s between downloads).
+
+```bash
+# Live dry-run first (enumerate + parse + merge, NO downloads):
+python scripts/run_wayback_harvest_live.py --from-year 1974 --to-year 2022 \
+    --dry-run --i-am-a-human-running-this-supervised
+
+# Real download (go-slow) of the historical set:
+python scripts/run_wayback_harvest_live.py --from-year 1974 --to-year 2022 \
+    --i-am-a-human-running-this-supervised
+```
+
+Exit codes match the Phase A runner: `0` clean, `1` completed with fetch errors,
+`2` when neither authorization gate flag is present.
+
 ### Development
 
 ```bash
@@ -171,11 +233,12 @@ install` once in a fresh clone.
 
 ## Status
 
-Preliminary. Phase A (current-era harvester) is built and offline-tested; the
-live harvest run is a separate, supervised, human-run step. The historical
-Wayback backfill (Phase B) and OCR / full-text parsing are not yet built.
-Nothing here should yet be treated as a complete or authoritative record of NYC
-executive orders. Follow along or contribute — [open an issue](https://github.com/BetaNYC/nyc-executive-orders/issues).
+Preliminary. Phase A (current-era harvester) and Phase B (historical Wayback
+backfill) are built and offline-tested; each live harvest run is a separate,
+supervised, human-run step. OCR / full-text parsing and supersession graphs are
+not yet built. Nothing here should yet be treated as a complete or authoritative
+record of NYC executive orders. Follow along or contribute —
+[open an issue](https://github.com/BetaNYC/nyc-executive-orders/issues).
 
 ## License
 

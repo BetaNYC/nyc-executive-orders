@@ -183,17 +183,34 @@ wheels = [
 ]
 
 [[package]]
+name = "ny-gov-web-archiver"
+version = "0.1.0"
+source = { editable = "../ny-gov-web-archiver" }
+dependencies = [
+    { name = "wayback" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8,<9" },
+    { name = "wayback", specifier = ">=0.5.1,<0.6" },
+]
+provides-extras = ["dev"]
+
+[[package]]
 name = "nyc-executive-orders"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "beautifulsoup4" },
+    { name = "ny-gov-web-archiver" },
     { name = "requests" },
 ]
 
 [package.optional-dependencies]
 dev = [
     { name = "pytest" },
+    { name = "wayback" },
 ]
 live = [
     { name = "playwright" },
@@ -202,9 +219,11 @@ live = [
 [package.metadata]
 requires-dist = [
     { name = "beautifulsoup4", specifier = ">=4.12,<5" },
+    { name = "ny-gov-web-archiver", editable = "../ny-gov-web-archiver" },
     { name = "playwright", marker = "extra == 'live'", specifier = ">=1.44,<2" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8,<9" },
     { name = "requests", specifier = ">=2.31,<3" },
+    { name = "wayback", marker = "extra == 'dev'", specifier = ">=0.5.1,<0.6" },
 ]
 provides-extras = ["live", "dev"]
 
@@ -322,4 +341,17 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/53/0c/06f8b233b8fd13b9e5ee11424ef85419ba0d8ba0b3138bf360be2ff56953/urllib3-2.7.0.tar.gz", hash = "sha256:231e0ec3b63ceb14667c67be60f2f2c40a518cb38b03af60abc813da26505f4c", size = 433602, upload-time = "2026-05-07T16:13:18.596Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl", hash = "sha256:9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897", size = 131087, upload-time = "2026-05-07T16:13:17.151Z" },
+]
+
+[[package]]
+name = "wayback"
+version = "0.5.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "requests" },
+    { name = "urllib3" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/32/15/982759b391a04fbf812cd70d027511e5d95e62475cf653c9907efa2f131e/wayback-0.5.1.tar.gz", hash = "sha256:4c62391e69a43378dd3012d0de6b7fe564895c1671150a81220c807ebf6da6a2", size = 884611, upload-time = "2026-06-19T16:40:41.726Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c7/e3/1a19763d407f0f4c24872b93c27e858ef94898a8638d7c904a6e8571b877/wayback-0.5.1-py3-none-any.whl", hash = "sha256:f941bdd1b885a32f4b02ad77a807a779ef5b49919a3fdef52d3c6b91b8b3c017", size = 31788, upload-time = "2026-06-19T16:40:40.272Z" },
 ]
