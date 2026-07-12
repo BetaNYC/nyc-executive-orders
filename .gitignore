@@ -1,13 +1,19 @@
-# Local asset harvest — raw downloaded PDFs are staged locally, not committed
-# (re-fetchable via the gather scripts; committed artifacts are the derived corpus)
-data/raw/
+# Source PDFs under pdfs/ ARE committed — via git-LFS (project Decision 2).
+# See .gitattributes. So do NOT blanket-ignore *.pdf. Ignore only stray PDFs
+# that land outside the tracked pdfs/ tree.
 *.pdf
+!pdfs/
+!pdfs/**
+
+# Legacy local raw-harvest staging (pre-Decision-2 layout), if ever created.
+data/raw/
 
 # Python
 .venv/
 __pycache__/
 *.pyc
 .pytest_cache/
+.ruff_cache/
 
 # Node (if an MCP server is added later)
 node_modules/

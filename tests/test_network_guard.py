@@ -1,0 +1,31 @@
+"""Prove the offline guard actually blocks real network calls.
+
+If this test ever fails, the autouse `_no_live_network` fixture is not doing its
+job and the suite could be silently reaching nyc.gov.
+"""
+
+from __future__ import annotations
+
+import socket
+
+import pytest
+
+
+def test_getaddrinfo_is_blocked():
+    with pytest.raises(RuntimeError, match="LIVE network call"):
+        socket.getaddrinfo("www.nyc.gov", 443)
+
+
+def test_socket_connect_is_blocked():
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    with pytest.raises(RuntimeError, match="LIVE network call"):
+        s.connect(("93.184.216.34", 80))
+
+
+def test_requests_backend_cannot_reach_network():
+    # Constructing the real requests backend is fine; using it must hit the guard.
+    from nyc_executive_orders.fetch import FetchError, RequestsFetcher
+
+    fetcher = RequestsFetcher()
+    with pytest.raises((RuntimeError, FetchError)):
+        fetcher.get_text("https://www.nyc.gov/bin/nyc/articlesearch.json")

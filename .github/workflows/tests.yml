@@ -1,0 +1,23 @@
+name: tests
+
+# Offline test suite. It mocks the fetch backend and an autouse guard blocks
+# real sockets, so this workflow never contacts nyc.gov — safe to run in CI.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Both ends of the declared requires-python range (engineering-standards §1, §3).
+        python-version: ["3.11", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+      - name: Run tests (offline)
+        run: uv run --python ${{ matrix.python-version }} --with pytest python -m pytest -v

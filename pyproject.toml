@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nyc-executive-orders"
+version = "0.1.0"
+description = "Harvester + light metadata index for NYC mayoral executive orders (Phase A: current-era live nyc.gov). OCR / full-text / historical Wayback deferred."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "BetaNYC" }]
+# Tested at both ends of this range in CI (engineering-standards §1, §3).
+# 3.14 is what home actually runs; 3.11 is the team's floor.
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  # HTTP client for the browser-like (non-Playwright) fetch path. Bounded below
+  # the next major so a breaking release can't silently ride in.
+  "requests>=2.31,<3",
+  # HTML parsing to extract the dam PDF <a href> from an article page.
+  "beautifulsoup4>=4.12,<5",
+]
+
+[project.optional-dependencies]
+# Playwright is ONLY needed for the WAF fallback fetch path (headless Chromium).
+# It is lazily imported (see fetch.py) so the package installs and its offline
+# tests run without it. The supervised live harvest installs this extra.
+live = ["playwright>=1.44,<2"]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+nyc-executive-orders = "nyc_executive_orders.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nyc_executive_orders"]
+
+[tool.deptry]
+# `dev` holds test-only tooling (pytest); `live` holds the optional Playwright
+# fallback (lazily imported). Neither should be flagged as an unused runtime dep.
+optional_dependencies_dev_groups = ["dev"]
+known_first_party = ["nyc_executive_orders"]
+
+[tool.deptry.package_module_name_map]
+# beautifulsoup4 imports as `bs4`; without this, deptry reports it both unused
+# (the manifest name) and undeclared (the import name).
+beautifulsoup4 = ["bs4"]
+
+[tool.deptry.per_rule_ignores]
+# playwright is declared in the `live` optional extra and imported lazily inside
+# fetch.py; deptry sees the import but not the runtime dep. It is intentionally
+# optional, so silence the "unused/misplaced" signal for it.
+DEP001 = ["playwright"]
+DEP002 = ["playwright"]
+DEP004 = ["playwright"]
+
+[tool.pytest.ini_options]
+# Make src/ importable in tests without an install step, so
+# `uv run --with pytest python -m pytest` works offline.
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+src = ["src", "tests"]

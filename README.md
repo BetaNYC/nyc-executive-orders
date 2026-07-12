@@ -72,9 +72,87 @@ Everything before ~2002 is scanned images requiring OCR; later orders are a mix 
 
 ---
 
+## Phase A harvester (current-era, live nyc.gov)
+
+This repository now ships the **Phase A** harvester: it collects the *current-era*
+executive orders (roughly 2022 → present) from live nyc.gov and downloads their
+source PDFs, plus a light metadata index. It is deliberately scoped:
+
+**In scope (Phase A):** enumerate EOs (regular **and** emergency) via nyc.gov's
+`articlesearch.json` API, resolve each order's source PDF URL from its article
+page, download the PDFs (git-LFS), and emit a light metadata index + manifest.
+
+**Deferred (not in this build):** OCR and full-text parsing (**OCR is deferred
+pending data context** — we get all the files down first, then decide the OCR
+engine and parse depth once we can see what the corpus actually looks like),
+supersession graphs, and the historical Wayback backfill (1974 → ~2022).
+
+### How it works
+
+1. **Enumerate** — page `articlesearch.json?types=executive-orders` by year. The
+   `title` carries the EO number and the `Emergency` flag; `articleDate` is the
+   signing date.
+2. **Resolve PDF** — the JSON does not carry the PDF filename, so each article
+   page is fetched and its "dam" PDF `<a href>` extracted
+   (`.../downloads/pdf/executive-orders/YYYY/<file>.pdf`).
+3. **Download** — each PDF is saved to `pdfs/YYYY/<eo_id>.pdf` (git-LFS), skipped
+   if already present (idempotent, safe to resume).
+4. **Index + manifest** — `index/eo_index.json` + `index/eo_index.csv` (the
+   locked light-metadata fields), plus `manifest.csv` and `gaps.md`.
+
+**`eo_id` scheme.** Per-mayor numbering resets, so the raw number isn't unique.
+Phase A mints a synthetic id prefixed by signing year and series:
+`YYYY-EO-NNN` (regular) / `YYYY-EEO-NNN` (emergency) — e.g. `2024-EEO-718`.
+
+### The WAF / fetch layer
+
+nyc.gov fronts its content with a WAF that rejects plain non-browser HTTP (403).
+The fetch layer (`src/nyc_executive_orders/fetch.py`) is an abstraction with two
+live backends: a `requests` client sending **browser-like headers** (fast path),
+falling back to **headless Playwright** (real browser network stack) on a WAF
+block. Playwright is an **optional** dependency (`pip install
+'nyc-executive-orders[live]'` + `python -m playwright install chromium`) and is
+imported lazily, so the package and its offline tests don't require it. Tests
+inject a fake fetcher; an autouse guard blocks real sockets, so the suite never
+touches the network.
+
+### Running the harvest
+
+Harvesting makes **live calls to nyc.gov** and must be run by a human under
+BetaNYC's go-slow authorization — never by CI or an agent. The supervised entry
+point refuses to run without an explicit acknowledgement flag:
+
+```bash
+# Download every current-era EO PDF, go-slow (default 2.5s between calls):
+python scripts/run_harvest_live.py --from-year 2022 --to-year 2026 \
+    --i-am-a-human-running-this-supervised
+
+# Live dry-run first (enumerate + resolve PDF URLs, NO downloads):
+python scripts/run_harvest_live.py --from-year 2022 --to-year 2026 --dry-run \
+    --i-am-a-human-running-this-supervised
+```
+
+The library CLI (`python -m nyc_executive_orders harvest --from-year 2022
+--to-year 2026`) defaults to a dry-run; `--download` opts into fetching.
+
+### Development
+
+```bash
+uv run --with pytest python -m pytest        # offline test suite (no network)
+uv run --with pytest python -m pytest -v     # verbose
+```
+
+Tests run on a Python 3.11 / 3.14 matrix in CI (`.github/workflows/tests.yml`).
+Source PDFs are git-LFS-tracked (`.gitattributes`, `pdfs/**`); run `git lfs
+install` once in a fresh clone.
+
 ## Status
 
-Preliminary. This is a public stub to anchor the work and share early research. Nothing here should yet be treated as a complete or authoritative record of NYC executive orders. Follow along or contribute — [open an issue](https://github.com/BetaNYC/nyc-executive-orders/issues).
+Preliminary. Phase A (current-era harvester) is built and offline-tested; the
+live harvest run is a separate, supervised, human-run step. The historical
+Wayback backfill (Phase B) and OCR / full-text parsing are not yet built.
+Nothing here should yet be treated as a complete or authoritative record of NYC
+executive orders. Follow along or contribute — [open an issue](https://github.com/BetaNYC/nyc-executive-orders/issues).
 
 ## License
 
