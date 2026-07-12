@@ -5,9 +5,16 @@ fetch page 1 to learn `totalPages`, then page through `currentPage` 2..N. Each
 `results[]` item yields an `EOEntry` with the parsed number, emergency flag,
 signing year, and ISO date.
 
-`title` carries the identity:
-  * "Emergency Executive Order 718"  -> is_emergency=True,  number=718
-  * "Executive Order 42"             -> is_emergency=False, number=42
+`title` carries the identity. The number *label* is captured verbatim — the
+dotted prefix of a Mamdani-era emergency order is part of the identity and must
+not be dropped:
+  * "Emergency Executive Order 718"       -> is_emergency=True,  number="718"
+  * "Emergency Executive Order No. 1.37"  -> is_emergency=True,  number="1.37"
+  * "Executive Order No. 17"              -> is_emergency=False, number="17"
+
+Non-EO documents that ride the same feed (e.g. an agency "Designation of ...")
+carry no executive-order number pattern; they are filtered out of the
+enumeration (see `is_executive_order`).
 """
 
 from __future__ import annotations
@@ -23,15 +30,23 @@ from .fetch import Fetcher, fetch_json
 
 logger = logging.getLogger("nyc_executive_orders.enumerate")
 
-# The last run of digits in the title is the EO number (see docstring examples).
-_NUMBER_RE = re.compile(r"(\d+)\D*$")
+# The EO number sits right after the word "Order", with an optional "No."; it is
+# an integer OR a dotted `X.YY` emergency label. Capture the whole token so the
+# dotted prefix survives (dropping it collapses 1.37 and 2.37 onto one id).
+_NUMBER_RE = re.compile(r"order\s+(?:no\.?\s*)?(\d+(?:\.\d+)?)", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
 class EOEntry:
-    """One enumerated executive order (pre-PDF-resolution)."""
+    """One enumerated executive order (pre-PDF-resolution).
 
-    number: int | None
+    `number` is the literal number *label* ("718", "1.37", "17"), not an int:
+    emergency numbering mixes plain integers and dotted `X.YY` labels, and the
+    exact printed form is the identity. `None` means the title had no parseable
+    number (still emitted; flagged downstream).
+    """
+
+    number: str | None
     is_emergency: bool
     year: int
     date_signed: str | None  # ISO YYYY-MM-DD
@@ -44,10 +59,28 @@ def parse_is_emergency(title: str) -> bool:
     return title.strip().lower().startswith("emergency")
 
 
-def parse_number(title: str) -> int | None:
-    """Parse the EO number as the final integer in the title, or None."""
+def is_executive_order(title: str) -> bool:
+    """True when the title is an executive order (vs. a non-EO feed document).
+
+    The nyc.gov article feed mixes in non-EO items (e.g. agency "Designation"
+    notices) that have no PDF and no EO number. An executive order title always
+    contains the phrase "executive order"; the Designation notice does not, so
+    this phrase check cleanly excludes it while still keeping a real EO whose
+    number failed to parse (that one is flagged downstream, not dropped).
+    """
+    return "executive order" in title.strip().lower()
+
+
+def parse_number(title: str) -> str | None:
+    """Parse the EO number *label* from the title, or None.
+
+    Returns the literal token as printed, including any dotted emergency prefix
+    ("1.37", "718", "17"). This is the collision-safe identity: the previous
+    "last run of digits" heuristic dropped the `X.` prefix, mapping every
+    `X.YY` order onto the same `YY`.
+    """
     m = _NUMBER_RE.search(title.strip())
-    return int(m.group(1)) if m else None
+    return m.group(1) if m else None
 
 
 def parse_article_date(article_date: str) -> str | None:
@@ -130,24 +163,42 @@ def enumerate_year(
         on_fetch()
 
     total_pages = int(payload.get("totalPages") or 0)
-    entries = [entry_from_result(r, year) for r in (payload.get("results") or [])]
+    excluded = 0
+    entries: list[EOEntry] = []
+    excluded += _collect_page(payload, year, entries)
 
     for page in range(2, total_pages + 1):
         url = _articlesearch_url(from_date, to_date, page_size, page)
         payload = fetch_json(fetcher, url)
         if on_fetch:
             on_fetch()
-        entries.extend(
-            entry_from_result(r, year) for r in (payload.get("results") or [])
-        )
+        excluded += _collect_page(payload, year, entries)
 
     logger.info(
-        "enumerate.year.done year=%d pages=%d entries=%d",
+        "enumerate.year.done year=%d pages=%d entries=%d excluded_non_eo=%d",
         year,
         max(total_pages, 1),
         len(entries),
+        excluded,
     )
     return entries
+
+
+def _collect_page(payload: dict, year: int, entries: list[EOEntry]) -> int:
+    """Append the EO results from one page to `entries`; return non-EOs dropped.
+
+    Non-EO feed items (e.g. agency "Designation" notices) are filtered out here
+    so they never enter the corpus, and their count is logged for auditability.
+    """
+    excluded = 0
+    for r in payload.get("results") or []:
+        title = (r.get("title") or "").strip()
+        if not is_executive_order(title):
+            excluded += 1
+            logger.info("enumerate.excluded_non_eo title=%r", title)
+            continue
+        entries.append(entry_from_result(r, year))
+    return excluded
 
 
 def enumerate_years(

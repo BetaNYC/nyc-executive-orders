@@ -38,7 +38,7 @@ class ManifestRow:
     """One EO as recorded in the manifest."""
 
     eo_id: str
-    number: int | None
+    number: str | None  # literal number label ("718", "1.37"); None if unparsed
     year: int
     is_emergency: bool
     date_signed: str | None
@@ -79,18 +79,33 @@ def write_manifest(rows: Iterable[ManifestRow], out_dir: str | Path) -> Path:
     return csv_path
 
 
+def _series_int(number: int | str | None) -> int | None:
+    """The integer form of a number label, or None if it isn't a plain integer.
+
+    Dotted emergency labels ("1.37") and unparsed rows (None) return None: the
+    contiguous-integer gap heuristic doesn't apply to a `X.YY` scheme, so those
+    rows are simply excluded from missing-number detection.
+    """
+    if number is None:
+        return None
+    s = str(number).strip()
+    return int(s) if s.isdigit() else None
+
+
 def find_missing_numbers(rows: Iterable[ManifestRow]) -> dict[tuple[int, str], list[int]]:
     """Per (year, series) missing EO numbers between the min and max present.
 
-    Series is "emergency" or "regular". Rows with an unparsed number are skipped
-    (they surface separately). Returns {(year, series): [missing, ...]}.
+    Series is "emergency" or "regular". Only plain-integer labels participate;
+    rows with an unparsed number, or a dotted emergency label, are skipped (the
+    unparsed ones surface separately). Returns {(year, series): [missing, ...]}.
     """
     present: dict[tuple[int, str], set[int]] = {}
     for row in rows:
-        if row.number is None:
+        n = _series_int(row.number)
+        if n is None:
             continue
         series = "emergency" if row.is_emergency else "regular"
-        present.setdefault((row.year, series), set()).add(row.number)
+        present.setdefault((row.year, series), set()).add(n)
 
     missing: dict[tuple[int, str], list[int]] = {}
     for key, numbers in present.items():

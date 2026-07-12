@@ -39,7 +39,7 @@ class IndexRow:
     """One EO's light metadata record (locked field set)."""
 
     eo_id: str
-    number: int | None
+    number: str | None  # literal number label ("718", "1.37"); None if unparsed
     year: int
     is_emergency: bool
     date_signed: str | None
