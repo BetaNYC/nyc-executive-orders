@@ -8,6 +8,12 @@
 # Legacy local raw-harvest staging (pre-Decision-2 layout), if ever created.
 data/raw/
 
+# Regenerated harvest outputs — produced fresh by each (dry-)run, not source of truth.
+# The committed dataset (when we publish one) will be a deliberate snapshot, not these.
+index/
+manifest.csv
+gaps.md
+
 # Python
 .venv/
 __pycache__/
