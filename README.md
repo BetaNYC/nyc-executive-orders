@@ -135,6 +135,29 @@ python scripts/run_harvest_live.py --from-year 2022 --to-year 2026 --dry-run \
 The library CLI (`python -m nyc_executive_orders harvest --from-year 2022
 --to-year 2026`) defaults to a dry-run; `--download` opts into fetching.
 
+**Exit codes** (both the supervised runner and the library CLI): `0` on a fully
+clean run, `1` if the run completed but hit any errors (so `&&` chaining and CI
+gate on "finished clean"), and — for `run_harvest_live.py` — `2` when the
+`--i-am-a-human-running-this-supervised` flag is missing.
+
+### Dry-run pipeline wrapper
+
+`scripts/run_pipeline.py` chains a sequence of **dry-run** validation passes and
+then **halts before any download**. It advances to the next step only if the
+previous finished clean (exit 0 and zero errors); on a failing step it stops
+immediately and skips the rest. After all steps pass it prints a consolidated
+inventory (per-step enumerated / resolved / errors, plus pointers to `index/`,
+`manifest.csv`, `gaps.md`) and the exact manual command to run the real download.
+It never downloads anything itself. Same human gate as the live runner.
+
+```bash
+python scripts/run_pipeline.py --i-am-a-human-running-this-supervised
+```
+
+The default sequence is a `2024` dry-run (high-volume Adams-era validation) then
+a `2022-2026` dry-run (full current-era inventory); edit `DEFAULT_STEPS` at the
+top of the script to change it.
+
 ### Development
 
 ```bash

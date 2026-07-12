@@ -89,7 +89,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     )
     for label, path in result.output_paths.items():
         print(f"  {label}: {path}")
-    return 0
+
+    # Exit non-zero on a completed-but-errored run so `&&` chaining and CI gate on
+    # "finished clean"; 0 only when there were zero errors.
+    return 1 if result.errors else 0
 
 
 if __name__ == "__main__":  # pragma: no cover

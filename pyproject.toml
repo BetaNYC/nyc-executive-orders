@@ -53,9 +53,9 @@ DEP002 = ["playwright"]
 DEP004 = ["playwright"]
 
 [tool.pytest.ini_options]
-# Make src/ importable in tests without an install step, so
-# `uv run --with pytest python -m pytest` works offline.
-pythonpath = ["src"]
+# Make src/ (and the scripts/ entry points) importable in tests without an
+# install step, so `uv run --with pytest python -m pytest` works offline.
+pythonpath = ["src", "scripts"]
 testpaths = ["tests"]
 
 [tool.ruff]

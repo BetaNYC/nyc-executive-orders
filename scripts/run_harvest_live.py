@@ -95,6 +95,16 @@ def main() -> int:
     )
     for label, path in result.output_paths.items():
         print(f"  {label}: {path}")
+
+    # Exit-code contract (so `&&` chaining and the pipeline wrapper can gate on a
+    # clean finish): 0 only on a fully clean run; 1 if the run completed but hit
+    # any errors; 2 (above) if the human-gate flag was missing.
+    if result.errors > 0:
+        print(
+            f"\nCompleted with {result.errors} error(s) — exiting non-zero.",
+            file=sys.stderr,
+        )
+        return 1
     return 0
 
 
