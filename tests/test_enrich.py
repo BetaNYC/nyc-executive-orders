@@ -26,16 +26,26 @@ from nyc_executive_orders.enrich import (
         (2014, "de Blasio"),
         (2021, "de Blasio"),  # end boundary of de Blasio
         (2022, "Adams"),      # start boundary of Adams
-        (2025, "Adams"),      # end boundary of Adams (last confirmed term)
+        (2025, "Adams"),      # end boundary of Adams
+        (2026, "Mamdani"),    # start boundary of Mamdani (took office 2026-01-01)
+        (2029, "Mamdani"),    # end boundary of Mamdani (last term on record)
     ],
 )
 def test_mayor_for_year_boundaries(year, mayor):
     assert mayor_for_year(year) == mayor
 
 
-def test_2026_is_null_pending_confirmation():
-    assert mayor_for_year(2026) is None
+def test_2026_is_mamdani():
+    assert mayor_for_year(2026) == "Mamdani"
     administration, note = administration_fields(2026)
+    assert administration == "Mamdani"
+    assert note is None
+
+
+def test_past_last_term_is_null():
+    # Past the last term on record (2030+): null with the pending note.
+    assert mayor_for_year(2030) is None
+    administration, note = administration_fields(2030)
     assert administration is None
     assert note == ADMIN_NOTE_PENDING
 
@@ -58,8 +68,8 @@ def test_enrich_record_shape_current_era():
     assert out["in_effect"] is None
 
 
-def test_enrich_record_2026_carries_note():
+def test_enrich_record_2026_is_mamdani():
     out = enrich_record({"year": 2026})
-    assert out["mayor"] is None
-    assert out["administration"] is None
-    assert out["admin_note"] == ADMIN_NOTE_PENDING
+    assert out["mayor"] == "Mamdani"
+    assert out["administration"] == "Mamdani"
+    assert out["admin_note"] is None

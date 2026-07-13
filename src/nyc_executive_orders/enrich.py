@@ -26,8 +26,10 @@ class MayoralTerm(NamedTuple):
 
 
 # Verified public record. NYC mayoral terms begin Jan 1, so year alone resolves
-# the mayor. To add the 2026+ administration once confirmed, append ONE line,
-# e.g. ``MayoralTerm(2026, 2029, "Mamdani")`` — nothing else changes.
+# the mayor. Mirrors the org reference at
+# team/reference/nyc-elected-officials.md (BetaNYC workspace) — keep the two in
+# sync when a term changes (roughly once every 4-12 years). To add a future term,
+# append ONE line — nothing else changes.
 MAYORAL_TERMS: tuple[MayoralTerm, ...] = (
     MayoralTerm(1974, 1977, "Beame"),
     MayoralTerm(1978, 1989, "Koch"),
@@ -36,12 +38,13 @@ MAYORAL_TERMS: tuple[MayoralTerm, ...] = (
     MayoralTerm(2002, 2013, "Bloomberg"),
     MayoralTerm(2014, 2021, "de Blasio"),
     MayoralTerm(2022, 2025, "Adams"),
+    MayoralTerm(2026, 2029, "Mamdani"),  # took office 2026-01-01
 )
 
 # Note surfaced when the administration can't be resolved because the signing
-# year is past the last confirmed term (2026+). The orchestrator confirms the
-# 2026 label with the operator separately; until then it stays null + noted.
-ADMIN_NOTE_PENDING = "2026+ administration pending operator confirmation"
+# year is past the last term on record (2030+). Below the 1974 corpus floor it
+# also applies. Within the table (1974-2029) the mayor always resolves.
+ADMIN_NOTE_PENDING = "signing year past the last mayoral term on record"
 
 # Phase C markers — carried on every record so the fields exist now and the
 # graph work fills them later without a schema change.
