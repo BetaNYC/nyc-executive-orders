@@ -318,6 +318,40 @@ def load_index_rows(index_path: str | Path) -> list[IndexRow]:
     return rows
 
 
+def reconcile_pdf_paths(
+    rows: list[IndexRow], pdf_dir: str | Path = config.DEFAULT_PDF_DIR
+) -> int:
+    """Backfill `pdf_path` from disk for any row whose PDF exists but is unrecorded.
+
+    The bug this fixes: the Phase-B merge wrote `pdf_path: null` for every
+    `source: "wayback"` row even though its PDF had been downloaded to
+    `pdfs/<year>/<eo_id>.pdf` — the index under-reported 801 present PDFs as
+    missing. The download step and the index write had drifted out of agreement.
+
+    Rather than trust a single upstream code path to always stamp `pdf_path`, this
+    makes the index *truthful to disk*: for each row lacking a `pdf_path`, if the
+    canonical `pdf_dest(eo_id, year)` file exists, record its repo-relative path.
+    Rows already carrying a `pdf_path`, and rows with genuinely no file on disk,
+    are left untouched — so after reconciliation the only rows without a
+    `pdf_path` are the ones truly missing a PDF (the recovery targets).
+
+    Idempotent (engineering-standards §6): re-running changes nothing once the
+    index agrees with disk. Mutates `rows` in place; returns the count fixed.
+    """
+    pdf_dir_path = Path(pdf_dir)
+    fixed = 0
+    for row in rows:
+        if row.pdf_path:
+            continue
+        dest = pdf_dest(row.eo_id, row.year, pdf_dir_path)
+        if dest.exists():
+            row.pdf_path = _rel_to_repo(dest)
+            fixed += 1
+    if fixed:
+        logger.info("index.reconcile backfilled pdf_path from disk rows=%d", fixed)
+    return fixed
+
+
 def _manifest_from_index(ir: IndexRow) -> ManifestRow:
     """Derive a ManifestRow from an IndexRow (for live rows loaded from disk).
 
@@ -480,6 +514,19 @@ def run_wayback_harvest(
     result.dropped_wayback_ids = merged.dropped_wayback_ids
     result.wayback_kept = merged.kept_wayback
 
+    # Truth-to-disk pass: stamp pdf_path onto any merged row whose PDF is present
+    # on disk but unrecorded (the wayback null-pdf_path bug). Mirror the fix onto
+    # the paired manifest rows (by eo_id) so manifest.csv / gaps.md agree with the
+    # index. Runs on dry-run too — it only reads disk, never the network.
+    reconcile_pdf_paths(merged.index_rows, pdf_dir)
+    _index = {ir.eo_id: ir for ir in merged.index_rows}
+    for mr in merged.manifest_rows:
+        ir = _index.get(mr.eo_id)
+        if ir is not None and not mr.pdf_path and ir.pdf_path:
+            mr.pdf_path = ir.pdf_path
+            if mr.download_status in ("skipped", "error"):
+                mr.download_status = "cached"
+
     if write_outputs:
         index_paths = write_index(merged.index_rows, index_dir)
         manifest_path = write_manifest(merged.manifest_rows, out_dir)
@@ -516,6 +563,7 @@ __all__ = [
     "enumerate_eo_captures",
     "build_wayback_rows",
     "load_index_rows",
+    "reconcile_pdf_paths",
     "merge_prefer_live",
     "run_wayback_harvest",
     "WaybackHarvestResult",

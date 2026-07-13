@@ -257,6 +257,75 @@ def test_load_index_rows_absent_returns_empty(tmp_path):
 
 
 # --------------------------------------------------------------------------- #
+# reconcile_pdf_paths — the wayback null-pdf_path bug fix
+# --------------------------------------------------------------------------- #
+def test_reconcile_backfills_pdf_path_from_disk(tmp_path):
+    from nyc_executive_orders.gather_wayback_eo import reconcile_pdf_paths
+
+    pdf_dir = tmp_path / "pdfs"
+    # A wayback row whose PDF IS on disk but whose pdf_path was never stamped
+    # (the bug), plus a row with a genuinely missing PDF.
+    on_disk = _index_row("2015-EO-003", year=2015, number="003", source=config.SOURCE_WAYBACK)
+    (pdf_dir / "2015").mkdir(parents=True)
+    (pdf_dir / "2015" / "2015-EO-003.pdf").write_bytes(b"%PDF archived")
+    missing = _index_row("2022-EEO-271", year=2022, number="271", source=config.SOURCE_LIVE)
+
+    fixed = reconcile_pdf_paths([on_disk, missing], pdf_dir)
+
+    assert fixed == 1
+    # (_rel_to_repo returns an absolute path when pdf_dir is outside the repo, as
+    # in a tmp dir; under the real repo it is the clean "pdfs/YYYY/..." form.)
+    assert on_disk.pdf_path is not None
+    assert on_disk.pdf_path.endswith("2015/2015-EO-003.pdf")
+    assert missing.pdf_path is None  # no file on disk -> left as a true gap
+    # Idempotent: a second pass changes nothing.
+    assert reconcile_pdf_paths([on_disk, missing], pdf_dir) == 0
+
+
+def test_reconcile_does_not_clobber_existing_path(tmp_path):
+    from nyc_executive_orders.gather_wayback_eo import reconcile_pdf_paths
+
+    row = _index_row("2015-EO-003", year=2015, number="003", source=config.SOURCE_WAYBACK)
+    row.pdf_path = "pdfs/2015/already-set.pdf"  # a recorded (non-canonical) path
+    # Even though a canonical file exists, a row that already has a pdf_path is
+    # left untouched.
+    (tmp_path / "pdfs" / "2015").mkdir(parents=True)
+    (tmp_path / "pdfs" / "2015" / "2015-EO-003.pdf").write_bytes(b"%PDF")
+    assert reconcile_pdf_paths([row], tmp_path / "pdfs") == 0
+    assert row.pdf_path == "pdfs/2015/already-set.pdf"
+
+
+def test_harvest_stamps_pdf_path_for_on_disk_wayback_rows(
+    make_cdx, fake_wayback_client_cls, tmp_path
+):
+    """Regression: the merged index must report a wayback PDF that is on disk.
+
+    Before the fix, run_wayback_harvest could leave pdf_path=null on a wayback
+    row whose PDF existed on disk. The reconcile pass now stamps it.
+    """
+    pdf_dir = tmp_path / "pdfs"
+    # Pre-place the PDF on disk (as a prior download would have), then run a
+    # DRY-RUN harvest (download=False) — which historically wrote pdf_path=null.
+    (pdf_dir / "2013").mkdir(parents=True)
+    (pdf_dir / "2013" / "2013-EO-001.pdf").write_bytes(b"%PDF on disk")
+
+    rec = make_cdx(_eo_url("2013EO001.pdf"), "20130601000000")
+    client = fake_wayback_client_cls([rec])
+
+    result = run_wayback_harvest(
+        client, from_year=1974, to_year=2022, download=False,
+        pdf_dir=pdf_dir, index_dir=tmp_path / "index", out_dir=tmp_path,
+    )
+
+    row = next(r for r in result.merged_index if r.eo_id == "2013-EO-001")
+    assert row.pdf_path is not None
+    assert row.pdf_path.endswith("2013/2013-EO-001.pdf")
+    # And the written index reflects it (truthful to disk) — not null anymore.
+    written = json.loads((tmp_path / "index" / "eo_index.json").read_text(encoding="utf-8"))
+    assert next(r for r in written if r["eo_id"] == "2013-EO-001")["pdf_path"] is not None
+
+
+# --------------------------------------------------------------------------- #
 # Full pipeline
 # --------------------------------------------------------------------------- #
 def test_run_wayback_harvest_end_to_end(make_cdx, fake_wayback_client_cls, tmp_path):
