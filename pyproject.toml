@@ -24,6 +24,12 @@ dependencies = [
   # logic; it is a sibling repo under ~/Code/ (see [tool.uv.sources]). Its own
   # `wayback` pin (>=0.5.1,<0.6) rides in transitively.
   "ny-gov-web-archiver",
+  # PyMuPDF (imports as `fitz`) — text-layer probe (textlayer.py) + born-digital
+  # extraction (extract.py). Core: needed by every parse run, incl. --no-ocr.
+  # Bounded below the next major per engineering-standards §2 (no bare pins).
+  "pymupdf>=1.28,<2",
+  # PyYAML — emits the corpus Markdown frontmatter (build_corpus.py). Bounded.
+  "pyyaml>=6,<7",
 ]
 
 [tool.uv.sources]
@@ -38,6 +44,12 @@ ny-gov-web-archiver = { path = "../ny-gov-web-archiver", editable = true }
 # It is lazily imported (see fetch.py) so the package installs and its offline
 # tests run without it. The supervised live harvest installs this extra.
 live = ["playwright>=1.44,<2"]
+# ocrmypdf (+ Tesseract/Ghostscript binaries) is ONLY needed to OCR scanned PDFs
+# (ocr.py). It is heavy (pulls pikepdf/Pillow) and lazily imported, so the
+# born-digital-only path (`run_parse --no-ocr`) installs and runs without it —
+# mirroring the `live`/Playwright pattern. The gated full-corpus OCR run installs
+# this extra: `pip install 'nyc-executive-orders[ocr]'`.
+ocr = ["ocrmypdf>=17.8,<18"]
 # `wayback` is declared here as a TEST dependency: the Phase B offline tests
 # build real `wayback.CdxRecord` instances (faithful mocks, engineering-standards
 # §0), mirroring the archiver's own test approach. At runtime `wayback` is pulled
@@ -62,20 +74,27 @@ known_first_party = ["nyc_executive_orders"]
 beautifulsoup4 = ["bs4"]
 # ny-gov-web-archiver (the Phase B Wayback engine) imports as `ny_gov_web_archiver`.
 ny-gov-web-archiver = ["ny_gov_web_archiver"]
+# PyYAML imports as `yaml`.
+pyyaml = ["yaml"]
+# PyMuPDF imports as `fitz` (the historical module name we use).
+pymupdf = ["fitz", "pymupdf"]
 
 [tool.deptry.per_rule_ignores]
-# playwright is declared in the `live` optional extra and imported lazily inside
-# fetch.py; deptry sees the import but not the runtime dep. It is intentionally
-# optional, so silence the "unused/misplaced" signal for it.
-DEP001 = ["playwright"]
-DEP002 = ["playwright"]
-DEP004 = ["playwright"]
+# playwright (`live` extra) and ocrmypdf (`ocr` extra) are both optional and
+# lazily imported (fetch.py / ocr.py); deptry sees the import but treats the
+# optional-extra dep as unused/misplaced. Silence those signals for both.
+DEP001 = ["playwright", "ocrmypdf"]
+DEP002 = ["playwright", "ocrmypdf"]
+DEP004 = ["playwright", "ocrmypdf"]
 
 [tool.pytest.ini_options]
 # Make src/ (and the scripts/ entry points) importable in tests without an
 # install step, so `uv run --with pytest python -m pytest` works offline.
 pythonpath = ["src", "scripts"]
 testpaths = ["tests"]
+markers = [
+  "slow: real-OCR/subprocess-heavy test; deselect with -m 'not slow'.",
+]
 
 [tool.ruff]
 target-version = "py311"

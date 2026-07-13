@@ -4,6 +4,9 @@
 *.pdf
 !pdfs/
 !pdfs/**
+# The tiny offline parse-pipeline test fixtures ARE committed (regenerate with
+# tests/fixtures/generate_fixtures.py) — the suite needs them.
+!tests/fixtures/*.pdf
 
 # Legacy local raw-harvest staging (pre-Decision-2 layout), if ever created.
 data/raw/
@@ -13,6 +16,12 @@ data/raw/
 index/
 manifest.csv
 gaps.md
+
+# Regenerated parse outputs — the publishable corpus is rebuilt from the PDFs +
+# index by scripts/run_parse.py; the committed dataset (when published) will be a
+# deliberate snapshot, not this working tree. (index/textlayer_report.json is
+# already covered by the index/ rule above.)
+corpus/
 
 # Python
 .venv/
