@@ -69,6 +69,21 @@ def load_fixture(name: str) -> str:
     return (FIXTURES / name).read_text(encoding="utf-8")
 
 
+# --------------------------------------------------------------------------- #
+# Parse-pipeline fixtures — tiny committed PDFs (regenerate with
+# tests/fixtures/generate_fixtures.py). born_digital has a real text layer with
+# a hyphenated line-wrap; scanned is the same content rendered image-only.
+# --------------------------------------------------------------------------- #
+@pytest.fixture
+def born_digital_pdf() -> Path:
+    return FIXTURES / "born_digital_sample.pdf"
+
+
+@pytest.fixture
+def scanned_pdf() -> Path:
+    return FIXTURES / "scanned_sample.pdf"
+
+
 class FakeFetcher:
     """In-memory stand-in for a real Fetcher (get_text / get_bytes).
 
