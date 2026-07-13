@@ -91,3 +91,37 @@ HISTORICAL_FLOOR_YEAR = 1974
 # backfill (Phase B) fills 1974 -> ~2022. On an eo_id collision between the two,
 # the live row wins (fresher, richer metadata) and the Wayback duplicate is
 # dropped — see gather_wayback_eo.merge_prefer_live.
+
+# --- Phase B.2: current-era gap recovery via Wayback ------------------------
+# A subset of current-era (Phase A) orders have NO PDF on disk: the live-nycgov
+# harvest recorded them but their PDF URL 404'd (files pulled from live nyc.gov),
+# pointed at an internal host the public can't reach, or was never resolved at
+# all. recover_gaps.py recovers these from the Internet Archive by querying an
+# EXACT-URL Wayback snapshot of each order's PUBLIC-equivalent DAM URL.
+#
+# Provenance tag stamped on a row whose PDF was recovered by the gap pass. It is
+# distinct from SOURCE_WAYBACK (the 1974->~2022 historical backfill) so the two
+# recovery routes stay auditable in the index's `source` column. The row keeps
+# its original recorded source_pdf_url; the actual Wayback playback URL of the
+# recovered bytes is surfaced in the gap-recovery report + logs (the locked
+# INDEX_FIELDS have no column for it — see index.py).
+SOURCE_WAYBACK_GAP = "wayback-gap"
+
+# The canonical PUBLIC host for the nyc.gov DAM. Gap URLs recorded against an
+# internal host (`nyc-csg-web.csc.nycnet`) or an alternate edge (`www1.nyc.gov`)
+# are host-normalized to this so we query Wayback for the public URL it would
+# actually have archived. www.nyc.gov URLs are already canonical (a no-op swap).
+DAM_PUBLIC_HOST = "www.nyc.gov"
+
+# Documented DAM PDF path shape (see the module docstring above + 1,000+ live
+# examples in the Phase A corpus). Built against, NOT guessed (§0): the filename
+# is `<series>-<number>.pdf` with series `eeo` (emergency) or `eo` (regular) and
+# the number the city's literal label (unpadded, e.g. eeo-164.pdf, eo-42.pdf).
+# Used ONLY to reconstruct a candidate URL for a gap row that has NO recorded
+# source_pdf_url at all (currently a single order, 2022-EEO-164); rows that DO
+# have a recorded URL are host-normalized instead, preserving the city's exact
+# filename (which is not uniformly patterned — some are `EEO-716-of-2024.pdf`).
+DAM_PDF_PATH_TEMPLATE = (
+    "/content/dam/nycgov/mayors-office/downloads/pdf/executive-orders/"
+    "{year}/{series}-{number}.pdf"
+)

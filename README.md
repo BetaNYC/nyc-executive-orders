@@ -220,6 +220,49 @@ python scripts/run_wayback_harvest_live.py --from-year 1974 --to-year 2022 \
 Exit codes match the Phase A runner: `0` clean, `1` completed with fetch errors,
 `2` when neither authorization gate flag is present.
 
+## Phase B.2 — current-era gap recovery (Wayback)
+
+A subset of the current-era (Phase A) orders are recorded in the index but have
+**no PDF on disk**: the live-nycgov harvest saw the order, but its PDF URL 404'd
+(the file was pulled from live nyc.gov), pointed at an internal host the public
+can't reach (`nyc-csg-web.csc.nycnet`), was served from an alternate edge
+(`www1.nyc.gov`), or was never resolved at all. Phase B.2 recovers those PDFs
+from the Internet Archive.
+
+For each gap it derives a single **public-equivalent candidate URL** — the
+recorded URL host-normalized to `www.nyc.gov`, or, for the one order with no
+recorded URL, reconstructed from the documented DAM path shape — queries Wayback
+for an **exact-URL** `application/pdf` snapshot (newest wins), downloads it
+go-slow, **validates the bytes are really a PDF** (magic-byte check; a soft-404
+HTML interstitial is rejected), and stamps the row `source: "wayback-gap"`. The
+row keeps its original recorded URL; the Wayback playback URL of the recovered
+bytes is surfaced in the gap-recovery report + logs. Orders still missing after
+the pass are listed in `gaps.md` under **"Unrecoverable after Wayback pass"**
+with a per-order reason (no snapshot / snapshot not a PDF / fetch error).
+
+This pass also fixes an index-truthfulness bug: the Phase-B merge could leave
+`pdf_path: null` on rows whose PDF was actually on disk. `reconcile_pdf_paths`
+now backfills `pdf_path` from disk before computing the gap set, so the only rows
+reported as missing are the ones truly absent (currently **59**).
+
+### Running gap recovery
+
+Same **go-slow** posture and the same human/operator authorization gate as the
+other live runners.
+
+```bash
+# Live dry-run first (find Wayback snapshots, NO downloads):
+python scripts/run_gap_recovery_live.py --dry-run \
+    --i-am-a-human-running-this-supervised
+
+# Real recovery (go-slow) of every gap:
+python scripts/run_gap_recovery_live.py \
+    --i-am-a-human-running-this-supervised
+```
+
+Exit codes match the other runners: `0` clean, `1` completed with lookup/fetch
+errors, `2` when neither authorization gate flag is present.
+
 ### Development
 
 ```bash
@@ -233,9 +276,9 @@ install` once in a fresh clone.
 
 ## Status
 
-Preliminary. Phase A (current-era harvester) and Phase B (historical Wayback
-backfill) are built and offline-tested; each live harvest run is a separate,
-supervised, human-run step. OCR / full-text parsing and supersession graphs are
+Preliminary. Phase A (current-era harvester), Phase B (historical Wayback
+backfill), and Phase B.2 (current-era gap recovery) are built and offline-tested;
+each live harvest run is a separate, supervised, human-run step. OCR / full-text parsing and supersession graphs are
 not yet built. Nothing here should yet be treated as a complete or authoritative
 record of NYC executive orders. Follow along or contribute —
 [open an issue](https://github.com/BetaNYC/nyc-executive-orders/issues).
