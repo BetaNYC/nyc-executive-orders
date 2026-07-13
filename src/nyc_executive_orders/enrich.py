@@ -26,10 +26,11 @@ class MayoralTerm(NamedTuple):
 
 
 # Verified public record. NYC mayoral terms begin Jan 1, so year alone resolves
-# the mayor. Mirrors the org reference at
-# team/reference/nyc-elected-officials.md (BetaNYC workspace) — keep the two in
-# sync when a term changes (roughly once every 4-12 years). To add a future term,
-# append ONE line — nothing else changes.
+# the mayor. This is a self-contained, minimal lookup for THIS pipeline's
+# who-signed-what need only — it is deliberately NOT the org's canonical
+# elected-officials source (that lives in nyc-boundaries + the Electeds CRM and
+# is being redesigned; see the BetaNYC task on unified electeds documentation).
+# A term changes ~once every 4-12 years; add a future term as a ONE-line append.
 MAYORAL_TERMS: tuple[MayoralTerm, ...] = (
     MayoralTerm(1974, 1977, "Beame"),
     MayoralTerm(1978, 1989, "Koch"),
