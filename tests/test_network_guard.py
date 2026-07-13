@@ -31,6 +31,26 @@ def test_requests_backend_cannot_reach_network():
         fetcher.get_text("https://www.nyc.gov/bin/nyc/articlesearch.json")
 
 
+def test_local_ocr_makes_zero_network_calls(tmp_path):
+    """The OCR path must be fully local — no network, no cloud (standards §7).
+
+    Under the autouse socket guard (which raises on ANY getaddrinfo/connect), a
+    real local ocrmypdf run over the scanned fixture must succeed and recover
+    text. If any code path tried to phone home, the guard would fire. This is the
+    OCR analogue of the harvest/Wayback network guards above.
+    """
+    pytest.importorskip("ocrmypdf")
+    from pathlib import Path
+
+    from nyc_executive_orders.ocr import TEXT_SOURCE_OCR, ocr_and_extract
+
+    scanned = Path(__file__).parent / "fixtures" / "scanned_sample.pdf"
+    result = ocr_and_extract(scanned)
+    # Completed locally (no guard tripped) AND produced text.
+    assert result.text_source == TEXT_SOURCE_OCR
+    assert result.has_text
+
+
 def test_gap_recovery_real_wayback_client_is_blocked():
     """The gap-recovery path (Phase B.2) must not reach the live Internet Archive.
 
