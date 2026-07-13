@@ -17,11 +17,11 @@ index/
 manifest.csv
 gaps.md
 
-# Regenerated parse outputs — the publishable corpus is rebuilt from the PDFs +
-# index by scripts/run_parse.py; the committed dataset (when published) will be a
-# deliberate snapshot, not this working tree. (index/textlayer_report.json is
-# already covered by the index/ rule above.)
-corpus/
+# The publishable corpus (corpus/) is committed as of 2026-07-13 — it is the
+# § 3-113.1 deliverable, a deliberate snapshot regenerable by scripts/run_parse.py.
+# Plain-text Markdown + JSON (diffable, greppable on GitHub); NOT LFS.
+# (index/textlayer_report.json stays ignored via the index/ rule above — it's a
+# probe artifact, not part of the published dataset.)
 
 # Python
 .venv/
