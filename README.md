@@ -229,16 +229,30 @@ can't reach (`nyc-csg-web.csc.nycnet`), was served from an alternate edge
 (`www1.nyc.gov`), or was never resolved at all. Phase B.2 recovers those PDFs
 from the Internet Archive.
 
-For each gap it derives a single **public-equivalent candidate URL** — the
-recorded URL host-normalized to `www.nyc.gov`, or, for the one order with no
-recorded URL, reconstructed from the documented DAM path shape — queries Wayback
-for an **exact-URL** `application/pdf` snapshot (newest wins), downloads it
-go-slow, **validates the bytes are really a PDF** (magic-byte check; a soft-404
-HTML interstitial is rejected), and stamps the row `source: "wayback-gap"`. The
-row keeps its original recorded URL; the Wayback playback URL of the recovered
-bytes is surfaced in the gap-recovery report + logs. Orders still missing after
-the pass are listed in `gaps.md` under **"Unrecoverable after Wayback pass"**
-with a per-order reason (no snapshot / snapshot not a PDF / fetch error).
+For each gap it derives an **ordered list of public-equivalent candidate URLs**
+and tries them in order, stopping at the first with a usable snapshot:
+
+1. **DAM candidate** — the recorded URL host-normalized to `www.nyc.gov`, or, for
+   the one order with no recorded URL, reconstructed from the documented DAM path
+   shape (`/content/dam/.../executive-orders/{year}/{file}.pdf`).
+2. **Legacy-assets candidate** — the same `{year}/{filename}` tail under the
+   pre-redesign path `/assets/home/downloads/pdf/executive-orders/{year}/{file}`
+   (`{filename}` = the recorded URL's basename lowercased, or the reconstructed
+   `<series>-<number>.pdf`). A CDX prefix sweep found **24 of the 59** gap orders
+   archived only here (as `www1.nyc.gov` 200 `application/pdf`) — their DAM URL has
+   just 404 text/html captures. CDX urlkey canonicalization folds `www`/`www1`
+   together, so the `www.nyc.gov` form of this path matches the `www1` captures.
+
+For each candidate it queries Wayback for an **exact-URL** `application/pdf`
+snapshot (newest wins); the first candidate that yields one wins (later candidates
+are not queried). It downloads the matched snapshot go-slow, **validates the bytes
+are really a PDF** (magic-byte check; a soft-404 HTML interstitial is rejected),
+and stamps the row `source: "wayback-gap"`. The row keeps its original recorded
+URL; the matched candidate and the Wayback playback URL of the recovered bytes are
+surfaced in the gap-recovery report + logs, so which route recovered each order
+stays auditable. Orders still missing after the pass are listed in `gaps.md` under
+**"Unrecoverable after Wayback pass"** with a per-order reason (no snapshot for
+either the dam or legacy-assets candidate / snapshot not a PDF / fetch error).
 
 This pass also fixes an index-truthfulness bug: the Phase-B merge could leave
 `pdf_path: null` on rows whose PDF was actually on disk. `reconcile_pdf_paths`

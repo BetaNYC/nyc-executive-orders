@@ -125,3 +125,19 @@ DAM_PDF_PATH_TEMPLATE = (
     "/content/dam/nycgov/mayors-office/downloads/pdf/executive-orders/"
     "{year}/{series}-{number}.pdf"
 )
+
+# Legacy pre-redesign PDF path shape. Before the 2026 nyc.gov redesign moved EO
+# PDFs under the `/content/dam/...` DAM path, the same files lived under this
+# `/assets/home/...` path on the `www1.nyc.gov` edge. Built against CDX evidence,
+# NOT guessed (§0): a prefix sweep of the Internet Archive found 24 of the 59
+# current-era gap orders archived here as status-200 application/pdf, e.g.
+#   http(s)://www1.nyc.gov/assets/home/downloads/pdf/executive-orders/2022/eeo-290.pdf
+# with the same `{year}/{filename}` tail as the DAM URL. CDX urlkey
+# canonicalization folds www/www1 together, so querying the DAM_PUBLIC_HOST
+# (`www.nyc.gov`) form of this path matches the www1 captures too. Used as an
+# ORDERED FALLBACK: recover_gaps tries the DAM candidate first, then this legacy
+# candidate. `{filename}` is the recorded source URL's basename (lowercased) or,
+# for a row with no recorded URL, the reconstructed `<series>-<number>.pdf`.
+LEGACY_ASSETS_PDF_PATH_TEMPLATE = (
+    "/assets/home/downloads/pdf/executive-orders/{year}/{filename}"
+)

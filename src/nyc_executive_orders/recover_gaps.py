@@ -8,16 +8,27 @@ reach (`nyc-csg-web.csc.nycnet`), was served from an alternate edge
 This module recovers those PDFs from the Internet Archive.
 
 Strategy (per gap):
-  1. Derive a single **public-equivalent candidate URL** for the order — the
-     recorded URL host-normalized to the canonical public DAM host
-     (`www.nyc.gov`), or, for the one order with no recorded URL, reconstructed
-     from the documented DAM path shape (config.DAM_PDF_PATH_TEMPLATE).
-  2. Query Wayback (via the archiver client) for an EXACT-URL snapshot of that
-     candidate that is an `application/pdf` served `200`, and take the newest.
+  1. Derive an **ordered list of public-equivalent candidate URLs** for the order:
+       (a) the DAM candidate — the recorded URL host-normalized to the canonical
+           public DAM host (`www.nyc.gov`), or, for the one order with no recorded
+           URL, reconstructed from the documented DAM path shape
+           (config.DAM_PDF_PATH_TEMPLATE); then
+       (b) the LEGACY candidate — the same `{year}/{filename}` tail under the
+           pre-redesign `/assets/home/...` path (config.LEGACY_ASSETS_PDF_PATH_
+           TEMPLATE). A CDX sweep found 24 of the 59 gap orders archived only here
+           (as www1.nyc.gov 200 application/pdf); the DAM URL for those has just
+           404 text/html captures. CDX folds www/www1, so the `www.nyc.gov` form
+           matches the www1 captures.
+  2. Query Wayback (via the archiver client) for an EXACT-URL snapshot of each
+     candidate IN ORDER that is an `application/pdf` served `200`, take the newest,
+     and STOP at the first candidate that yields one (the matched candidate wins;
+     later candidates are not queried).
   3. Download the archived bytes go-slow and VALIDATE they are actually a PDF
      (magic bytes) before accepting — a soft 404 page or an HTML interstitial
      archived under a .pdf URL is rejected, never written into the corpus.
-  4. Stamp the recovered row: pdf_path -> the file, source -> "wayback-gap".
+  4. Stamp the recovered row: pdf_path -> the file, source -> "wayback-gap". The
+     matched candidate URL is recorded on the outcome (and the Wayback playback
+     URL embeds it), so which route recovered each order stays auditable.
 
 Like Phases A and B this is dependency-injected on the archiver client and only
 duck-types the documented `ny_gov_web_archiver` / EDGI `wayback` surface
@@ -88,6 +99,37 @@ def candidate_public_url(row: IndexRow) -> str | None:
         year=row.year, series=series, number=row.number
     )
     return f"https://{config.DAM_PUBLIC_HOST}{path}"
+
+
+def candidate_legacy_url(dam_url: str, row: IndexRow) -> str:
+    """The legacy `/assets/home/...` fallback URL for a gap row.
+
+    Reuses the DAM candidate's `{year}/{filename}` tail under the pre-redesign
+    path on the canonical public host. `{filename}` is the DAM candidate's
+    basename lowercased — which is the recorded source URL's basename (host
+    normalization preserves the path) for a URL-bearing row, and the reconstructed
+    `<series>-<number>.pdf` for the no-URL row. Lowercasing matches the archived
+    legacy captures (e.g. `2022/eeo-290.pdf`). CDX folds www/www1, so this
+    `www.nyc.gov` URL matches the www1.nyc.gov captures the sweep found.
+    """
+    filename = Path(urlsplit(dam_url).path).name.lower()
+    path = config.LEGACY_ASSETS_PDF_PATH_TEMPLATE.format(
+        year=row.year, filename=filename
+    )
+    return f"https://{config.DAM_PUBLIC_HOST}{path}"
+
+
+def candidate_urls(row: IndexRow) -> list[str]:
+    """Ordered list of public-equivalent candidate URLs to try for a gap row.
+
+    [DAM candidate, LEGACY-assets candidate]. Empty if no DAM candidate can be
+    derived (no recorded URL and no parseable number). The gap pass queries these
+    in order and stops at the first that has a usable Wayback snapshot.
+    """
+    dam = candidate_public_url(row)
+    if dam is None:
+        return []
+    return [dam, candidate_legacy_url(dam, row)]
 
 
 def _looks_like_pdf(content: bytes) -> bool:
@@ -184,8 +226,8 @@ def _recover_one(
     on_fetch,
 ) -> GapOutcome:
     """Attempt to recover a single gap row. Never raises — records every outcome."""
-    candidate = candidate_public_url(row)
-    if candidate is None:
+    candidates = candidate_urls(row)
+    if not candidates:
         return GapOutcome(
             eo_id=row.eo_id,
             year=row.year,
@@ -193,6 +235,7 @@ def _recover_one(
             status=ST_NO_CANDIDATE,
             reason="no recorded source URL and no parseable number to reconstruct one",
         )
+    primary = candidates[0]
 
     # Idempotency: a PDF already on disk needs no fetch (safe re-run).
     dest = pdf_dest(row.eo_id, row.year, pdf_dir)
@@ -200,31 +243,51 @@ def _recover_one(
         return GapOutcome(
             eo_id=row.eo_id,
             year=row.year,
-            candidate_url=candidate,
+            candidate_url=primary,
             status=ST_CACHED,
             pdf_path=_rel_to_repo(dest),
         )
 
-    try:
-        record = find_latest_pdf_capture(client, candidate)
-    except Exception as exc:  # noqa: BLE001 - record every failure, never abort
-        logger.warning("gap.enumerate.error eo_id=%s url=%s error=%s", row.eo_id, candidate, exc)
-        return GapOutcome(
-            eo_id=row.eo_id,
-            year=row.year,
-            candidate_url=candidate,
-            status=ST_ERROR,
-            reason=f"CDX lookup failed: {type(exc).__name__}: {exc}",
-        )
+    # Try each candidate IN ORDER; stop at the first with a usable snapshot. The
+    # DAM candidate is queried first; the legacy `/assets/home/...` candidate is
+    # only queried if the DAM candidate has no PDF/200 capture.
+    matched: str | None = None
+    record = None
+    last_error: Exception | None = None
+    for cand in candidates:
+        try:
+            rec = find_latest_pdf_capture(client, cand)
+        except Exception as exc:  # noqa: BLE001 - record every failure, never abort
+            logger.warning("gap.enumerate.error eo_id=%s url=%s error=%s", row.eo_id, cand, exc)
+            last_error = exc
+            continue
+        if rec is not None:
+            matched = cand
+            record = rec
+            break
 
     if record is None:
-        logger.info("gap.no_snapshot eo_id=%s url=%s", row.eo_id, candidate)
+        if last_error is not None:
+            return GapOutcome(
+                eo_id=row.eo_id,
+                year=row.year,
+                candidate_url=primary,
+                status=ST_ERROR,
+                reason=(
+                    "CDX lookup failed for every candidate (dam + legacy-assets); "
+                    f"last: {type(last_error).__name__}: {last_error}"
+                ),
+            )
+        logger.info("gap.no_snapshot eo_id=%s urls=%s", row.eo_id, candidates)
         return GapOutcome(
             eo_id=row.eo_id,
             year=row.year,
-            candidate_url=candidate,
+            candidate_url=primary,
             status=ST_NO_SNAPSHOT,
-            reason="no application/pdf 200 snapshot on Wayback for the public URL",
+            reason=(
+                "no application/pdf 200 snapshot on Wayback for either the dam or "
+                "legacy-assets candidate"
+            ),
         )
 
     from ny_gov_web_archiver.harvest import playback_url
@@ -236,7 +299,7 @@ def _recover_one(
         return GapOutcome(
             eo_id=row.eo_id,
             year=row.year,
-            candidate_url=candidate,
+            candidate_url=matched,
             status=ST_WOULD_RECOVER,
             wayback_url=wb_url,
         )
@@ -247,11 +310,11 @@ def _recover_one(
         on_fetch()
         content = memento.content
     except Exception as exc:  # noqa: BLE001 - record every failure, never abort
-        logger.warning("gap.download.error eo_id=%s url=%s error=%s", row.eo_id, candidate, exc)
+        logger.warning("gap.download.error eo_id=%s url=%s error=%s", row.eo_id, matched, exc)
         return GapOutcome(
             eo_id=row.eo_id,
             year=row.year,
-            candidate_url=candidate,
+            candidate_url=matched,
             status=ST_ERROR,
             wayback_url=wb_url,
             reason=f"memento fetch failed: {type(exc).__name__}: {exc}",
@@ -261,13 +324,13 @@ def _recover_one(
         logger.warning(
             "gap.not_pdf eo_id=%s url=%s bytes=%d — snapshot is not a PDF, rejected",
             row.eo_id,
-            candidate,
+            matched,
             len(content),
         )
         return GapOutcome(
             eo_id=row.eo_id,
             year=row.year,
-            candidate_url=candidate,
+            candidate_url=matched,
             status=ST_NOT_PDF,
             wayback_url=wb_url,
             reason=f"archived snapshot failed the PDF magic-byte check ({len(content)} bytes)",
@@ -279,7 +342,7 @@ def _recover_one(
     return GapOutcome(
         eo_id=row.eo_id,
         year=row.year,
-        candidate_url=candidate,
+        candidate_url=matched,
         status=ST_RECOVERED,
         wayback_url=wb_url,
         pdf_path=_rel_to_repo(dest),
@@ -438,6 +501,8 @@ def run_gap_recovery(
 __all__ = [
     "compute_gaps",
     "candidate_public_url",
+    "candidate_legacy_url",
+    "candidate_urls",
     "find_latest_pdf_capture",
     "GapOutcome",
     "GapRecoveryResult",

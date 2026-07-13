@@ -32,13 +32,16 @@ from nyc_executive_orders.recover_gaps import (
     ST_NO_SNAPSHOT,
     ST_NOT_PDF,
     ST_WOULD_RECOVER,
+    candidate_legacy_url,
     candidate_public_url,
+    candidate_urls,
     compute_gaps,
     find_latest_pdf_capture,
     run_gap_recovery,
 )
 
 DAM = "/content/dam/nycgov/mayors-office/downloads/pdf/executive-orders"
+LEGACY = "/assets/home/downloads/pdf/executive-orders"
 
 
 # --------------------------------------------------------------------------- #
@@ -138,6 +141,44 @@ def test_candidate_none_when_no_url_and_no_number():
 
 
 # --------------------------------------------------------------------------- #
+# candidate_urls / candidate_legacy_url — ordered [dam, legacy]
+# --------------------------------------------------------------------------- #
+def test_candidate_urls_ordered_dam_then_legacy():
+    row = _row("2022-EEO-290", year=2022, number="290", is_emergency=True,
+               url=f"https://nyc-csg-web.csc.nycnet{DAM}/2022/eeo-290.pdf")
+    assert candidate_urls(row) == [
+        f"https://www.nyc.gov{DAM}/2022/eeo-290.pdf",
+        f"https://www.nyc.gov{LEGACY}/2022/eeo-290.pdf",
+    ]
+
+
+def test_candidate_legacy_lowercases_mixed_case_filename():
+    # The city's real filenames are not uniformly patterned; the legacy captures
+    # are lowercase, so the legacy candidate lowercases the basename.
+    row = _row("2024-EEO-716", year=2024, number="716", is_emergency=True,
+               url=f"https://www.nyc.gov{DAM}/2024/EEO-716-of-2024.pdf")
+    dam = candidate_public_url(row)
+    assert dam == f"https://www.nyc.gov{DAM}/2024/EEO-716-of-2024.pdf"  # path preserved
+    assert candidate_legacy_url(dam, row) == (
+        f"https://www.nyc.gov{LEGACY}/2024/eeo-716-of-2024.pdf"
+    )
+
+
+def test_candidate_urls_legacy_from_reconstructed_no_url_row():
+    # No recorded URL: DAM reconstructed as eeo-164.pdf; legacy reuses that tail.
+    row = _row("2022-EEO-164", year=2022, number="164", is_emergency=True, url=None)
+    assert candidate_urls(row) == [
+        f"https://www.nyc.gov{DAM}/2022/eeo-164.pdf",
+        f"https://www.nyc.gov{LEGACY}/2022/eeo-164.pdf",
+    ]
+
+
+def test_candidate_urls_empty_when_no_candidate():
+    row = _row("2022-EEO-UNK", year=2022, number=None, is_emergency=True, url=None)
+    assert candidate_urls(row) == []
+
+
+# --------------------------------------------------------------------------- #
 # compute_gaps
 # --------------------------------------------------------------------------- #
 def test_compute_gaps_by_disk_presence(make_cdx, tmp_path):
@@ -226,6 +267,87 @@ def test_recover_downloads_and_flips_source(make_cdx, tmp_path):
     written = json.loads((index_dir / "eo_index.json").read_text(encoding="utf-8"))
     assert written[0]["pdf_path"] is not None
     assert written[0]["source"] == config.SOURCE_WAYBACK_GAP
+
+
+def test_dam_hit_does_not_query_legacy_fallback(make_cdx, tmp_path):
+    # DAM candidate has a usable snapshot -> the legacy candidate is never queried.
+    dam_url = f"https://www.nyc.gov{DAM}/2022/eeo-271.pdf"
+    legacy_url = f"https://www.nyc.gov{LEGACY}/2022/eeo-271.pdf"
+    index_dir = _write_index(tmp_path, [
+        {"eo_id": "2022-EEO-271", "number": "271", "year": 2022, "is_emergency": True,
+         "date_signed": None, "title": "EEO 271", "source_pdf_url": dam_url,
+         "pdf_path": None, "source": config.SOURCE_LIVE},
+    ])
+    client = RoutingWaybackClient({dam_url: [make_cdx(dam_url, "20230601000000")]})
+
+    result = run_gap_recovery(
+        client, download=True, pdf_dir=tmp_path / "pdfs",
+        index_dir=index_dir, out_dir=tmp_path,
+    )
+    assert result.recovered == 1
+    # Only the DAM candidate was searched; the legacy fallback was short-circuited.
+    searched = [u for (u, _kw) in client.search_calls]
+    assert searched == [dam_url]
+    assert legacy_url not in searched
+    assert result.outcomes[0].candidate_url == dam_url
+
+
+def test_dam_miss_recovers_via_legacy_fallback(make_cdx, tmp_path):
+    # DAM candidate has NO snapshot (the real 59-gap situation); the legacy
+    # `/assets/home/...` candidate does -> recovered via the fallback.
+    dam_url = f"https://www.nyc.gov{DAM}/2022/eeo-290.pdf"
+    legacy_url = f"https://www.nyc.gov{LEGACY}/2022/eeo-290.pdf"
+    index_dir = _write_index(tmp_path, [
+        {"eo_id": "2022-EEO-290", "number": "290", "year": 2022, "is_emergency": True,
+         "date_signed": None, "title": "EEO 290",
+         "source_pdf_url": f"https://nyc-csg-web.csc.nycnet{DAM}/2022/eeo-290.pdf",
+         "pdf_path": None, "source": config.SOURCE_LIVE},
+    ])
+    # Only the legacy URL has a capture.
+    client = RoutingWaybackClient({legacy_url: [make_cdx(legacy_url, "20220601000000")]})
+
+    result = run_gap_recovery(
+        client, download=True, pdf_dir=tmp_path / "pdfs",
+        index_dir=index_dir, out_dir=tmp_path,
+    )
+    assert result.recovered == 1
+    # Both candidates were queried, in order: DAM first, then legacy.
+    searched = [u for (u, _kw) in client.search_calls]
+    assert searched == [dam_url, legacy_url]
+    dest = tmp_path / "pdfs" / "2022" / "2022-EEO-290.pdf"
+    assert dest.exists() and dest.read_bytes().startswith(b"%PDF")
+    row = result.index_rows[0]
+    assert row.source == config.SOURCE_WAYBACK_GAP
+    # The matched candidate recorded on the outcome is the legacy URL.
+    assert result.outcomes[0].candidate_url == legacy_url
+    # Provenance: gaps.md's recovered table carries the Wayback playback URL.
+    gaps_md = (tmp_path / "gaps.md").read_text(encoding="utf-8")
+    assert "2022-EEO-290" in gaps_md
+
+
+def test_both_candidates_miss_is_unrecoverable(make_cdx, tmp_path):
+    dam_url = f"https://www.nyc.gov{DAM}/2022/eeo-999.pdf"
+    legacy_url = f"https://www.nyc.gov{LEGACY}/2022/eeo-999.pdf"
+    index_dir = _write_index(tmp_path, [
+        {"eo_id": "2022-EEO-999", "number": "999", "year": 2022, "is_emergency": True,
+         "date_signed": None, "title": "EEO 999", "source_pdf_url": dam_url,
+         "pdf_path": None, "source": config.SOURCE_LIVE},
+    ])
+    client = RoutingWaybackClient({})  # neither candidate has a capture
+
+    result = run_gap_recovery(
+        client, download=True, pdf_dir=tmp_path / "pdfs",
+        index_dir=index_dir, out_dir=tmp_path,
+    )
+    assert result.unrecoverable == 1
+    assert result.outcomes[0].status == ST_NO_SNAPSHOT
+    # Both candidates were tried; no memento fetched.
+    searched = [u for (u, _kw) in client.search_calls]
+    assert searched == [dam_url, legacy_url]
+    assert client.memento_calls == []
+    # The reason notes both the dam and legacy-assets candidates were tried.
+    reason = result.outcomes[0].reason
+    assert "dam" in reason and "legacy-assets" in reason
 
 
 def test_recover_no_url_row_fills_source_url(make_cdx, tmp_path):
