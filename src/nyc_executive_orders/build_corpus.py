@@ -51,6 +51,32 @@ TEXT_SOURCE_UNREADABLE = "unreadable"    # PDF present but could not be opened
 # Stub body for orders with no recoverable text.
 NO_TEXT_STUB = "_No text available_"
 
+
+class CorpusShrinkError(RuntimeError):
+    """Raised when a build would overwrite the on-disk corpus with fewer docs.
+
+    The on-disk ``index/eo_index.json`` is a gitignored, regenerated artifact; a
+    scoped harvest can leave it holding only its own records. A default build from
+    that partial index would silently shrink ``corpus/eo.json`` and delete the
+    rest. This guard turns that data-loss footgun into a loud, opt-in decision.
+    """
+
+
+def _existing_corpus_count(corpus_dir: Path) -> int | None:
+    """Number of records in ``corpus_dir/eo.json``, or None if there is none yet.
+
+    A missing/empty/unreadable eo.json is treated as "nothing to protect" (None)
+    so a first build or a build into a fresh scratch dir is never blocked.
+    """
+    eo_json = corpus_dir / "eo.json"
+    if not eo_json.exists():
+        return None
+    try:
+        existing = json.loads(eo_json.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None
+    return len(existing) if isinstance(existing, list) else None
+
 # text_quality value for records with no recoverable text (stubs) — the clean
 # stage is not run on them (nothing to clean).
 TEXT_QUALITY_NO_TEXT = "no-text"
@@ -315,11 +341,19 @@ def build_corpus(
     ocr_config: OcrConfig | None = None,
     year: int | None = None,
     limit: int | None = None,
+    allow_shrink: bool = False,
 ) -> BuildResult:
     """Parse every record and emit the corpus. Returns a :class:`BuildResult`.
 
     ``year`` restricts to one signing year; ``limit`` caps the number of records
     (both are for fast/small runs — full-corpus OCR is a deliberate gated run).
+
+    Because the emit overwrites ``corpus/eo.json`` wholesale, a build with fewer
+    records than the corpus already on disk would delete orders. That is refused
+    with :class:`CorpusShrinkError` unless ``allow_shrink`` is set — the one guard
+    every caller of this shared emit path routes through (year/limit scoped runs
+    included). A first build, or a build into a fresh/empty ``corpus_dir``, is
+    never blocked.
     """
     repo_root = Path(repo_root)
     corpus_dir = Path(corpus_dir)
@@ -328,6 +362,19 @@ def build_corpus(
     selected = [r for r in records if year is None or int(r["year"]) == year]
     if limit is not None:
         selected = selected[:limit]
+
+    # Shrink guard: never silently overwrite a larger on-disk corpus with fewer
+    # docs. Fail loud, name the counts, and point at the usual cause.
+    existing = _existing_corpus_count(corpus_dir)
+    if existing is not None and len(selected) < existing and not allow_shrink:
+        raise CorpusShrinkError(
+            f"refusing to shrink {corpus_dir / 'eo.json'} from {existing} to "
+            f"{len(selected)} records (would delete {existing - len(selected)} "
+            "orders). If this is intentional, pass allow_shrink=True "
+            "(--allow-shrink). Common cause: the on-disk index is a partial "
+            "harvest artifact — regenerate the full index "
+            "(scripts/rebuild_index_from_corpus.py) before parsing."
+        )
 
     result = BuildResult(total=len(selected))
     textlayer_results: list = []

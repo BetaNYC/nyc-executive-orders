@@ -17,8 +17,10 @@ Two run modes:
     fallback (engineering-standards §7) — it makes the long full-corpus OCR run a
     deliberate, authorized action, consistent with the project's runner posture.
 
-Fast smoke-test slice (born-digital, one year, no gate needed):
-    uv run python scripts/run_parse.py --no-ocr --year 2003
+Fast smoke-test slice (born-digital, one year, no gate needed). Point it at a
+scratch --corpus-dir so the partial output doesn't trip the shrink guard against
+the real corpus/:
+    uv run python scripts/run_parse.py --no-ocr --year 2003 --corpus-dir /tmp/eo-smoke
 
 Full authorized run incl. local OCR (agent path):
     uv run python scripts/run_parse.py --operator-authorized
@@ -36,7 +38,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from nyc_executive_orders import config  # noqa: E402
-from nyc_executive_orders.build_corpus import build_corpus  # noqa: E402
+from nyc_executive_orders.build_corpus import CorpusShrinkError, build_corpus  # noqa: E402
 from nyc_executive_orders.ocr import OcrConfig  # noqa: E402
 
 logger = logging.getLogger("nyc_executive_orders.run_parse")
@@ -64,6 +66,13 @@ def build_arg_parser() -> argparse.ArgumentParser:
     p.add_argument("--index", default=str(DEFAULT_INDEX), help="Path to eo_index.json.")
     p.add_argument("--corpus-dir", default=str(DEFAULT_CORPUS_DIR))
     p.add_argument("--index-dir", default=str(config.DEFAULT_INDEX_DIR))
+    p.add_argument(
+        "--allow-shrink",
+        action="store_true",
+        help="Permit emitting fewer docs than the corpus already on disk "
+        "(overrides the shrink guard; use only when the smaller build is "
+        "intended, e.g. a scoped --year run into a scratch --corpus-dir).",
+    )
     p.add_argument("--language", default="eng", help="Tesseract language (OCR path).")
     p.add_argument(
         "--i-am-a-human-running-this-supervised",
@@ -117,16 +126,21 @@ def main(argv=None) -> int:
         f"records={len(records)} year={args.year} limit={args.limit}\n"
     )
 
-    result = build_corpus(
-        records,
-        repo_root=REPO_ROOT,
-        corpus_dir=Path(args.corpus_dir),
-        index_dir=Path(args.index_dir),
-        do_ocr=do_ocr,
-        ocr_config=ocr_config,
-        year=args.year,
-        limit=args.limit,
-    )
+    try:
+        result = build_corpus(
+            records,
+            repo_root=REPO_ROOT,
+            corpus_dir=Path(args.corpus_dir),
+            index_dir=Path(args.index_dir),
+            do_ocr=do_ocr,
+            ocr_config=ocr_config,
+            year=args.year,
+            limit=args.limit,
+            allow_shrink=args.allow_shrink,
+        )
+    except CorpusShrinkError as exc:
+        print(f"REFUSING TO RUN: {exc}", file=sys.stderr)
+        return 2
 
     print(f"Done: parsed={result.total}")
     for src, n in sorted(result.by_text_source.items()):
