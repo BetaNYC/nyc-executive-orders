@@ -67,6 +67,22 @@ DOMAIN_LEXICON: frozenset[str] = frozenset({
     "council", "agency", "agencies", "bureau", "directive",
     # pandemic-era vocabulary (common in 2020-2022 emergency orders)
     "covid", "coronavirus", "pandemic", "vaccination", "quarantine", "telework",
+    # ------------------------------------------------------------------------- #
+    # Hybrid queue recovery (2026-07-16): real, uncommon-but-verified words that
+    # held born-digital EO titles as `title-uncertain` only because the older web2
+    # dictionary omits these inflected forms / British spellings / legal terms.
+    # Each is a genuine English word or proper name (NOT an OCR mangle), tied to a
+    # specific born-digital order whose body is clean. See the hybrid-resolution
+    # journal for the doc->word map.
+    # ------------------------------------------------------------------------- #
+    "women",         # COMMISSION ON WOMEN'S ISSUES (2002-EO-029), 2003-EO-036, 2005-EO-071
+    "specified",     # ...OF SPECIFIED AGENCIES (2002-EO-031), 2004-EO-046, 2006-EO-094
+    "theatre",       # OFFICE OF FILM, THEATRE AND BROADCASTING (2004-EO-049; agency name)
+    "coordinator",   # COORDINATOR OF ADMINISTRATIVE JUSTICE (2006-EO-084), 2008-EO-116/122
+    "coordinated",   # ...COORDINATED CITYWIDE POLICIES... (2010-EO-140)
+    "controlled",    # ESTABLISHMENT OF CITY-CONTROLLED... (2010-EO-134)
+    "adjudicatory",  # ...TRIBUNALS AND ADJUDICATORY FUNCTIONS (2011-EO-148)
+    "pre",           # PRE-KINDERGARTEN TRANSPORTATION UNIT (2006-EO-087; hyphen-split prefix)
 })
 
 # Acronyms / initialisms allowed as recognized tokens (checked case-insensitively).
@@ -75,6 +91,9 @@ ABBREVIATIONS: frozenset[str] = frozenset({
     "hhc", "nypd", "fdny", "doh", "doe", "doitt", "oti", "mopd", "mocj", "mou",
     "moa", "eeo", "eo", "fy", "id", "it", "tv", "ems", "mwbe", "wbe", "mbe",
     "lgbtq", "ada", "eas", "oem", "nycem", "sro", "sros", "ceta", "hiv", "aids",
+    # Hybrid queue recovery (2026-07-16): HHS = Health & Human Services, the agency
+    # initialism in HHS-CONNECT (2008-EO-114) and HHS ACCELERATOR (2012-EO-160).
+    "hhs",
 })
 
 # Roman numerals I..XXX (orders reference "Title I", "Article IV", etc.).
