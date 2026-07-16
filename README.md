@@ -297,9 +297,22 @@ not yet built. Nothing here should yet be treated as a complete or authoritative
 record of NYC executive orders. Follow along or contribute —
 [open an issue](https://github.com/BetaNYC/nyc-executive-orders/issues).
 
+## AI use in this project
+
+BetaNYC uses AI tools openly and with human accountability. This repository was built by AI agents (Anthropic's Claude) working under the direction and review of BetaNYC staff — the "vibe coded" tooling above was written by AI, but every live harvest run is a separate, supervised, human-run step, and the roadmap and scope decisions are human-made.
+
+One commitment about the content: **the archived executive orders are not AI-generated.** Order text is retrieved verbatim from official City sources and the Internet Archive — never summarized, paraphrased, or invented — and each document's provenance is recorded. Where the corpus is still incomplete, that gap is stated plainly rather than filled in by the machine.
+
+Questions about our approach: hello@beta.nyc.
+
 ## License
 
-[MIT](LICENSE) © 2026 BetaNYC
+Two licenses, split by what the file is:
+
+- **Code** (`src/`, `scripts/`, `tests/`): [MIT](LICENSE) © 2026 BetaNYC — use and modify freely with attribution preserved.
+- **Data and documentation** (`corpus/`, `pdfs/`, `docs/`): [Creative Commons Attribution-ShareAlike 4.0](LICENSE-DATA) — reuse and adapt with credit to BetaNYC, and share adaptations under the same license.
+
+The underlying executive orders are public records of the City of New York; these licenses cover this compilation and its tooling.
 
 ## A note on sources
 
