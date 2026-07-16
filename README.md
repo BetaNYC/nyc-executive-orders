@@ -2,7 +2,7 @@
 
 An open, complete, machine-readable archive of **New York City mayoral executive orders** — the public compilation the City is *legally required* to maintain.
 
-> ⚠️ **Early-stage stub.** This repository is being scaffolded. It currently holds preliminary research and a roadmap — not yet the full corpus. See [Status](#status).
+> **Status: the archive is live.** The full 1974–present corpus — 1,850 orders as per-EO Markdown + bulk JSON, backed by 1,797 source PDFs — is published in [`corpus/`](corpus/). Coverage and text are still being refined (OCR cleanup, supersession graph, metadata backfill); known gaps and limits are documented, not hidden. See [Status](#status).
 
 Vibe coded with [Claude](https://claude.ai) by [BetaNYC](https://beta.nyc).
 
@@ -62,11 +62,12 @@ Everything before ~2002 is scanned images requiring OCR; later orders are a mix 
 
 ## Roadmap
 
-- [ ] **Verify** whether the § 3-113.1 mandated compilation currently exists and is usable.
-- [ ] **Gather** all available orders locally (live nyc.gov ✅ Phase A + Wayback historical set ✅ Phase B + Archives), respecting each source's access rules.
-- [ ] **Parse** PDFs to text (born-digital extraction with an OCR fallback for scans).
-- [ ] **Structure** a clean, machine-readable corpus with metadata and supersession annotations.
-- [ ] **Publish** the corpus (bulk-downloadable JSON + human-readable Markdown, matching the BetaNYC pattern).
+- [x] **Verify** whether the § 3-113.1 mandated compilation currently exists and is usable — *verified 2026-07-15: it does not. No compliant single-page, bulk-downloadable, 1974-complete compilation exists on nyc.gov.*
+- [x] **Gather** all available orders locally (live nyc.gov ✅ Phase A + Wayback historical set ✅ Phase B), respecting each source's access rules.
+- [x] **Parse** PDFs to text (born-digital extraction with a local OCR fallback for scans).
+- [x] **Structure** a clean, machine-readable corpus with metadata — *supersession annotations are the next phase (fields present, not yet populated).*
+- [x] **Publish** the corpus (bulk-downloadable JSON + human-readable Markdown, matching the BetaNYC pattern).
+- [ ] **Annotate supersession** (`supersedes` / `superseded_by` / `in_effect`) and backfill remaining metadata (Phase C).
 - [ ] **Maintain** it forward as new orders are signed.
 - [ ] *(Explore)* an MCP server, and whether this folds into [`nyc-charter-laws-rules`](https://github.com/BetaNYC/nyc-charter-laws-rules).
 
@@ -288,13 +289,38 @@ Tests run on a Python 3.11 / 3.14 matrix in CI (`.github/workflows/tests.yml`).
 Source PDFs are git-LFS-tracked (`.gitattributes`, `pdfs/**`); run `git lfs
 install` once in a fresh clone.
 
+## Parse → publishable corpus
+
+Once the source PDFs are gathered, a **six-stage pipeline** (`src/nyc_executive_orders/`,
+run via `scripts/run_parse.py`) turns them into the published corpus in [`corpus/`](corpus/):
+one Markdown file per order (`corpus/YYYY/<eo_id>.md` — YAML frontmatter + full text), plus a
+bulk `corpus/eo.json` and `corpus/manifest.csv`.
+
+1. **Text-layer probe** (`textlayer.py`) — classify each PDF as born-digital vs scanned (decides what needs OCR).
+2. **Extract** (`extract.py`) — PyMuPDF full text for born-digital PDFs.
+3. **OCR** (`ocr.py`) — local `ocrmypdf`/Tesseract for scanned PDFs. **Hard cloud gate: local only, no network, no cloud fallback ever** — unreadable pages are flagged for review, never auto-escalated.
+4. **Enrich** (`enrich.py`) — derive `mayor` / `administration` from the signing year.
+5. **Clean** (`clean.py`) — deterministic, non-destructive cleanup of OCR'd docs: relocate scan-stamp and letterhead noise out of the body (into `dropped_header` / `dropped_marks`, never deleted), and backfill `title` / `date_signed` from the body **only** when a frozen-dictionary gate confirms every word — otherwise the field is left empty and flagged for human review. **No stage ever rewrites the order text**; the verbatim OCR is preserved in `full_text_raw`.
+6. **Emit** (`build_corpus.py`) — write the per-EO Markdown, bulk JSON, and manifest.
+
+Every record carries a `text_source` (`born-digital` / `ocr` / none) and a `text_quality`
+tier (`clean` / `minor-noise` / `needs-review`) so consumers know exactly what they are
+getting. Supersession annotations (`supersedes` / `superseded_by` / `in_effect`) are the next
+phase — the fields exist but are not yet populated.
+
 ## Status
 
-Preliminary. Phase A (current-era harvester), Phase B (historical Wayback
-backfill), and Phase B.2 (current-era gap recovery) are built and offline-tested;
-each live harvest run is a separate, supervised, human-run step. OCR / full-text parsing and supersession graphs are
-not yet built. Nothing here should yet be treated as a complete or authoritative
-record of NYC executive orders. Follow along or contribute —
+The archive is **live and published**. Phase A (current-era harvester), Phase B (historical
+Wayback backfill), and Phase B.2 (current-era gap recovery) are built and offline-tested; each
+live harvest run is a separate, supervised, human-run step. The parse → corpus pipeline
+(probe → extract → OCR → enrich → clean → emit) has been run against the full corpus, and the
+result — 1,850 orders — is published in [`corpus/`](corpus/).
+
+It is the most complete open compilation of NYC mayoral executive orders we know of, but it is
+**not yet authoritative**: OCR text of the oldest scans is imperfect (faithful to the source,
+not perfected), 53 orders are documented as never publicly retrievable, and supersession
+annotation plus metadata backfill (Phase C) are still ongoing. Gaps and limits are stated
+plainly, not hidden. Follow along or contribute —
 [open an issue](https://github.com/BetaNYC/nyc-executive-orders/issues).
 
 ## AI use in this project
