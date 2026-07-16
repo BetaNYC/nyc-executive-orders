@@ -2,7 +2,7 @@
 
 An open, complete, machine-readable archive of **New York City mayoral executive orders** — the public compilation the City is *legally required* to maintain.
 
-> **Status: the archive is live.** The full 1974–present corpus — 1,850 orders as per-EO Markdown + bulk JSON, backed by 1,797 source PDFs — is published in [`corpus/`](corpus/). Coverage and text are still being refined (OCR cleanup, supersession graph, metadata backfill); known gaps and limits are documented, not hidden. See [Status](#status).
+> **Status: the archive is live.** The full 1974–present corpus — 2,192 orders as per-EO Markdown + bulk JSON, backed by 2,139 source PDFs — is published in [`corpus/`](corpus/). The 2014–2021 (de Blasio) cohort, previously an eight-year hole, was backfilled from the Internet Archive in July 2026 ([Phase B.4](#phase-b4--de-blasio-era-backfill-20142021)). Coverage and text are still being refined (OCR cleanup, supersession graph, metadata backfill); known gaps and limits are documented, not hidden. See [Status](#status).
 
 Vibe coded with [Claude](https://claude.ai) by [BetaNYC](https://beta.nyc).
 
@@ -53,7 +53,8 @@ Out of scope: state (gubernatorial) executive orders; agency rules and the Admin
 | Source | Coverage | Format | Notes |
 |---|---|---|---|
 | Live nyc.gov Mayor's Office | ~2022–present | HTML pages + PDFs | Filterable listing; PDFs often lack a reliable text layer (scanned) |
-| Internet Archive (Wayback) | 1974–~2021 | Archived PDFs | Recovers the historical set removed from nyc.gov; ~801 orders in one CDX query |
+| Internet Archive (Wayback), `/html/records/` | 1974–~2013 | Archived PDFs | Recovers the historical set removed from nyc.gov; ~801 orders in one CDX query (Phase B) |
+| Internet Archive (Wayback), `/assets/home/` | 2014–2021 (de Blasio) | Archived PDFs | The years neither the live API (≥2022) nor `/html/records/` (≤2013) reached; 72 regular + 270 emergency recovered (Phase B.4) |
 | NYC Municipal Archives / DORIS | 1600s–present | Finding aids, microfilm, some digitized | Largest collection; folder-level metadata only; access-restricted |
 
 Everything before ~2002 is scanned images requiring OCR; later orders are a mix of clean and scanned files. Full analysis lives in [`docs/`](docs/).
@@ -278,6 +279,66 @@ python scripts/run_gap_recovery_live.py \
 Exit codes match the other runners: `0` clean, `1` completed with lookup/fetch
 errors, `2` when neither authorization gate flag is present.
 
+## Phase B.4 — de Blasio-era backfill (2014–2021)
+
+Every executive order signed **2014–2021** (all of Mayor de Blasio's) fell into a
+harvest gap: the live source (Phase A, `articlesearch.json`) reaches back only to
+~2022, and the historical Wayback path (`/html/records/...`) stops at 2013 — so
+**neither side ever queried those years**, and the entire cohort was absent from
+the corpus. (A 2022+ order revoking "Executive Order No. 31, dated March 7, 2018"
+cited a target that did not exist in the dataset.)
+
+A 2026-07-16 CDX discovery located the de Blasio EO PDFs on the Internet Archive
+under the **pre-redesign `/assets/home/...` path**, with the signing **year in the
+directory** (not the filename) and a series+number filename whose separator drifts
+by era:
+
+```
+www.nyc.gov/assets/home/downloads/pdf/executive-orders/{year}/{eo|eeo}[-_]{n}.pdf
+    e.g.  2014/eeo_1.pdf   2018/eo-34.pdf   2021/eeo-173.pdf
+```
+
+This is the **same** `/assets/home/...` root Phase B.2 uses for current-era gap
+recovery, but a **different filename convention** (Phase B.2's 2022+ gap files are
+`eeo-290.pdf`; de Blasio's are `eo_34.pdf`) — a per-era trap the parser handles
+explicitly. A live `articlesearch.json` probe of 2016/2018/2021 returned zero
+results, confirming the live API cannot supply these years; **Wayback is the only
+source.** Non-EO documents that ride the same directory (Mayoral Personnel Orders
+`mpo-*.pdf`, election proclamations) are flagged, never minted as EOs.
+
+Phase B.4 reuses the Phase B machinery — the `ny-gov-web-archiver` engine, the
+`eo_id` mint scheme, the `pdfs/YYYY/<eo_id>.pdf` layout, and the prefer-live merge
+— differing only where the path demands it: (1) the `/assets/home/...` prefix;
+(2) **no capture-year filter** (a 2014 order may only be archived years later, so
+the window is applied by the year parsed from the URL *path*); (3) **host-duplicate
+collapse by minted identity** — the same file is archived under both `www.nyc.gov`
+and `www1.nyc.gov`, so captures are folded to one per `eo_id` before rows are built
+(otherwise every www/www1 pair would read as a same-id conflict); (4) the
+year-in-path parser and a distinct `source: "wayback-deblasio"` provenance tag.
+
+CDX found the regular EO numbers forming a clean **1..91 sequence** across the term
+(**72 of 91 archived**; the 19 never captured — including EO 31 — are listed in
+`gaps.md`, not dropped) plus the emergency (EEO) series on the same path. The one
+supervised harvest recovers **72 regular + 270 emergency** de Blasio orders.
+
+### Running the de Blasio backfill
+
+Same **go-slow** posture and the same human/operator authorization gate as the
+other live runners.
+
+```bash
+# Live dry-run first (enumerate + parse + merge, NO downloads):
+python scripts/run_deblasio_harvest_live.py --dry-run \
+    --i-am-a-human-running-this-supervised
+
+# Real go-slow download of the 2014–2021 set:
+python scripts/run_deblasio_harvest_live.py \
+    --i-am-a-human-running-this-supervised
+```
+
+Exit codes match the other runners: `0` clean, `1` completed with fetch errors,
+`2` when neither authorization gate flag is present.
+
 ### Development
 
 ```bash
@@ -311,16 +372,20 @@ phase — the fields exist but are not yet populated.
 ## Status
 
 The archive is **live and published**. Phase A (current-era harvester), Phase B (historical
-Wayback backfill), and Phase B.2 (current-era gap recovery) are built and offline-tested; each
-live harvest run is a separate, supervised, human-run step. The parse → corpus pipeline
-(probe → extract → OCR → enrich → clean → emit) has been run against the full corpus, and the
-result — 1,850 orders — is published in [`corpus/`](corpus/).
+Wayback backfill), Phase B.2 (current-era gap recovery), and Phase B.4 (de Blasio-era 2014–2021
+backfill) are built and offline-tested; each live harvest run is a separate, supervised,
+human-run step. The parse → corpus pipeline (probe → extract → OCR → enrich → clean → emit) has
+been run against the full corpus, and the result — 2,192 orders — is published in
+[`corpus/`](corpus/).
 
 It is the most complete open compilation of NYC mayoral executive orders we know of, but it is
 **not yet authoritative**: OCR text of the oldest scans is imperfect (faithful to the source,
 not perfected), 53 orders are documented as never publicly retrievable, and supersession
-annotation plus metadata backfill (Phase C) are still ongoing. Gaps and limits are stated
-plainly, not hidden. Follow along or contribute —
+annotation plus metadata backfill (Phase C) are still ongoing. The de Blasio regular series is
+now near-complete — 72 of the ~91 orders issued (numbers run 1–91) were recovered; **19 numbers
+were never archived on Wayback and are unrecoverable from any known open source** (the live API
+returns nothing before 2022), including EO 31/2018 and EO 56/2020, which later orders cite as
+revoked. Those gaps are listed, not hidden. Follow along or contribute —
 [open an issue](https://github.com/BetaNYC/nyc-executive-orders/issues).
 
 ## AI use in this project

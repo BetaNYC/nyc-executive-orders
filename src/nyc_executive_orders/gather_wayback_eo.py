@@ -98,6 +98,94 @@ def parse_eo_filename(original_url: str) -> ParsedEO | None:
 
 
 # --------------------------------------------------------------------------- #
+# de Blasio-era (2014-2021) parse: year from URL PATH, not the filename
+# --------------------------------------------------------------------------- #
+# The de Blasio EO PDFs live at
+#   .../executive-orders/{year}/{eo|eeo}[-_]{number}.pdf
+# The signing year is the DIRECTORY, not the filename; the filename carries only
+# the series + number with an era-drifting separator ("_" early, "-" later) and,
+# rarely, no separator ("EO14.pdf"). Built against the CDX evidence (config
+# WAYBACK_EO_ASSETS_URL_PREFIX docstring), not guessed (§0).
+_ASSETS_PATH_YEAR_RE = re.compile(r"/executive-orders/(\d{4})/", re.IGNORECASE)
+_ASSETS_FILENAME_RE = re.compile(r"^(?P<series>eeo|eo)[-_]?(?P<num>\d+(?:\.\d+)?)$", re.IGNORECASE)
+# Non-EO documents that ride the same directory and must NOT be minted as EOs:
+# Mayoral Personnel Orders (`mpo-2016-1.pdf`) and election proclamations. These
+# return None from the parser and are flagged (never minted, never dropped).
+_ASSETS_NON_EO_PREFIXES = ("mpo-", "election-proclamation")
+
+
+def assets_path_year(original_url: str) -> int | None:
+    """The signing year from a de Blasio-era EO URL's `/executive-orders/YYYY/` dir."""
+    m = _ASSETS_PATH_YEAR_RE.search(original_url.split("?", 1)[0])
+    return int(m.group(1)) if m else None
+
+
+def parse_eo_assets_url(original_url: str) -> ParsedEO | None:
+    """Parse a de Blasio-era assets-path EO URL into an identity, or None.
+
+    Year comes from the path directory; series+number from the filename. Returns
+    None (caller flags, never drops) when: there is no year directory, the
+    basename is a known non-EO document (MPO / election proclamation), or the
+    basename does not match the series+number grammar (e.g. a malformed archived
+    URL with a citation-cruft tail like `eo-45.pdf.105`).
+    """
+    year = assets_path_year(original_url)
+    if year is None:
+        return None
+    base = _basename(original_url)
+    stem = base[:-4] if base.lower().endswith(".pdf") else base
+    low = stem.lower()
+    if any(low.startswith(p) for p in _ASSETS_NON_EO_PREFIXES):
+        return None
+    m = _ASSETS_FILENAME_RE.match(stem)
+    if not m:
+        return None
+    return ParsedEO(
+        year=year,
+        number=m.group("num"),
+        is_emergency=m.group("series").upper() == "EEO",
+        basename=base,
+    )
+
+
+def select_best_capture_per_identity(records: list, parser) -> list:
+    """Collapse captures to ONE per minted eo_id (latest capture wins).
+
+    The de Blasio path is archived under BOTH `www.nyc.gov` and `www1.nyc.gov`
+    for the same file; CDX keeps those as distinct `.original` strings, so
+    `select_best_capture_per_url` (which keys on the URL) would NOT collapse them
+    — two rows would share one eo_id and `dedupe_rows` would (correctly, by its
+    contract) flag every such pair as a same-id/different-URL CONFLICT. Keying on
+    the parsed IDENTITY instead folds host duplicates into one record before rows
+    are built, so no false conflicts arise.
+
+    Parseable records are grouped by `mint_eo_id(...)` and the latest-timestamp
+    capture is kept (best-preserved copy), preserving first-seen order. Records
+    the parser cannot identify are passed through so the caller still flags them,
+    deduplicated by basename to avoid flag spam from repeated malformed URLs.
+    """
+    best: dict[str, object] = {}
+    order: list[str] = []
+    seen_bad: set[str] = set()
+    passthrough: list = []
+    for r in records:
+        parsed = parser(r.original)
+        if parsed is None:
+            b = _basename(r.original)
+            if b not in seen_bad:
+                seen_bad.add(b)
+                passthrough.append(r)
+            continue
+        eo_id = mint_eo_id(parsed.year, parsed.number, parsed.is_emergency)
+        if eo_id not in best:
+            best[eo_id] = r
+            order.append(eo_id)
+        elif r.timestamp > best[eo_id].timestamp:
+            best[eo_id] = r
+    return [best[k] for k in order] + passthrough
+
+
+# --------------------------------------------------------------------------- #
 # Capture selection
 # --------------------------------------------------------------------------- #
 def select_best_capture_per_url(records: list) -> list:
@@ -151,6 +239,30 @@ def enumerate_eo_captures(
 
     records = enumerate_captures(client, config.WAYBACK_EO_URL_PREFIX, **kwargs)
     logger.info("wayback.enumerate captures=%d", len(records))
+    return records
+
+
+def enumerate_eo_assets_captures(client, *, limit: int | None = None) -> list:
+    """Enumerate de Blasio-era EO PDF captures under the `/assets/home/...` prefix.
+
+    Unlike the historical path, the signing year is in the URL PATH, not the
+    capture timestamp — so this deliberately passes NO from_year/to_year (a 2014
+    order may only have been archived in 2017 or 2022). The window is applied
+    later, by path-year, in run_deblasio_harvest. One CDX prefix query, filtered
+    to `application/pdf` + HTTP 200 (etiquette: single index query, then throttle).
+    """
+    from ny_gov_web_archiver.harvest import enumerate_captures
+
+    kwargs = {
+        "match_type": "prefix",
+        "mimetypes": ["application/pdf"],
+        "statuses": [200],
+    }
+    if limit is not None:
+        kwargs["limit"] = limit
+
+    records = enumerate_captures(client, config.WAYBACK_EO_ASSETS_URL_PREFIX, **kwargs)
+    logger.info("wayback.enumerate.assets captures=%d", len(records))
     return records
 
 
@@ -213,12 +325,21 @@ def build_wayback_rows(
     download: bool = False,
     pdf_dir: str | Path = config.DEFAULT_PDF_DIR,
     on_fetch=None,
+    parser=parse_eo_filename,
+    source: str = config.SOURCE_WAYBACK,
 ) -> WaybackBuild:
     """Parse captures -> mint ids -> (optionally) fetch -> build index/manifest rows.
 
-    `records` should already be one-per-URL (see select_best_capture_per_url).
+    `records` should already be one-per-identity (see select_best_capture_per_url
+    for the historical URL-keyed path, or select_best_capture_per_identity for the
+    de Blasio path where www/www1 host duplicates must collapse by eo_id first).
     Unparseable filenames are flagged, not dropped. `playback_url` (the resolved
     Wayback URL) is the row's source_pdf_url. Rows are paired 1:1 index<->manifest.
+
+    `parser` maps a captured original URL to a ParsedEO (default: the historical
+    year-in-filename grammar; the de Blasio backfill passes parse_eo_assets_url,
+    which reads the year from the URL path). `source` is the provenance tag
+    stamped on every row (default SOURCE_WAYBACK).
     """
     from ny_gov_web_archiver.harvest import playback_url
 
@@ -228,7 +349,7 @@ def build_wayback_rows(
 
     for record in records:
         wb_url = playback_url(record)
-        parsed = parse_eo_filename(record.original)
+        parsed = parser(record.original)
         if parsed is None:
             out.flagged.append(
                 Flagged(original_url=record.original, basename=_basename(record.original), wayback_url=wb_url)
@@ -263,7 +384,7 @@ def build_wayback_rows(
                 title="",  # no title in the archived filename; filled by a later metadata pass
                 source_pdf_url=wb_url,
                 pdf_path=pdf_path,
-                source=config.SOURCE_WAYBACK,
+                source=source,
             )
         )
         out.manifest_rows.append(
@@ -555,17 +676,125 @@ def run_wayback_harvest(
     return result
 
 
+def run_deblasio_harvest(
+    client,
+    *,
+    year_lo: int = config.DEBLASIO_FLOOR_YEAR,
+    year_hi: int = config.DEBLASIO_CEIL_YEAR,
+    download: bool = False,
+    delay: float = 0.0,
+    limit: int | None = None,
+    pdf_dir: str | Path = config.DEFAULT_PDF_DIR,
+    index_dir: str | Path = config.DEFAULT_INDEX_DIR,
+    out_dir: str | Path = config.DEFAULT_OUT_DIR,
+    live_index_path: str | Path | None = None,
+    write_outputs: bool = True,
+) -> WaybackHarvestResult:
+    """Phase B.4: backfill the de Blasio-era (2014-2021) EOs from Wayback.
+
+    Same shape as run_wayback_harvest, differing only where the de Blasio path
+    demands it: (1) a different CDX prefix (the `/assets/home/...` path); (2) NO
+    capture-year filter — the window is applied by the year parsed from the URL
+    PATH, since a 2014 order may only be archived years later; (3) host-duplicate
+    collapse by minted identity (www vs www1) before rows are built; (4) the
+    year-in-path parser and the `wayback-deblasio` provenance tag. Everything
+    downstream — dedupe, prefer-live merge, pdf_path reconcile, output writes — is
+    the SAME reused Phase B machinery.
+    """
+    on_fetch = _delayer(delay)
+    result = WaybackHarvestResult(dry_run=not download)
+
+    records = enumerate_eo_assets_captures(client, limit=limit)
+    result.enumerated = len(records)
+
+    # Scope to the de Blasio window by the year in the URL PATH (the prefix also
+    # carries pre-2014 and 2022+ files, out of scope here). Records with no
+    # year-directory are dropped from scope and counted.
+    in_window = [
+        r for r in records
+        if (y := assets_path_year(r.original)) is not None and year_lo <= y <= year_hi
+    ]
+    logger.info(
+        "deblasio.scope enumerated=%d in_window[%d-%d]=%d",
+        len(records), year_lo, year_hi, len(in_window),
+    )
+
+    # Collapse www/www1 host duplicates to one capture per minted eo_id BEFORE
+    # building rows (see select_best_capture_per_identity — avoids false conflicts).
+    unique = select_best_capture_per_identity(in_window, parse_eo_assets_url)
+    result.unique_urls = len(unique)
+
+    build = build_wayback_rows(
+        client, unique, download=download, pdf_dir=pdf_dir, on_fetch=on_fetch,
+        parser=parse_eo_assets_url, source=config.SOURCE_WAYBACK_DEBLASIO,
+    )
+    result.flagged = build.flagged
+    result.downloaded = build.downloaded
+    result.cached = build.cached
+    result.errors = build.errors
+
+    wb_index, wb_manifest, deduped, conflicts = dedupe_rows(
+        build.index_rows, build.manifest_rows
+    )
+    result.wayback_rows = len(wb_index)
+    result.intra_deduped = deduped
+    result.conflicts = conflicts
+
+    live_path = Path(live_index_path) if live_index_path is not None else Path(index_dir) / "eo_index.json"
+    live_index = load_index_rows(live_path)
+
+    merged = merge_prefer_live(live_index, wb_index, wb_manifest)
+    result.merged_index = merged.index_rows
+    result.merged_manifest = merged.manifest_rows
+    result.dropped_wayback_ids = merged.dropped_wayback_ids
+    result.wayback_kept = merged.kept_wayback
+
+    reconcile_pdf_paths(merged.index_rows, pdf_dir)
+    _index = {ir.eo_id: ir for ir in merged.index_rows}
+    for mr in merged.manifest_rows:
+        ir = _index.get(mr.eo_id)
+        if ir is not None and not mr.pdf_path and ir.pdf_path:
+            mr.pdf_path = ir.pdf_path
+            if mr.download_status in ("skipped", "error"):
+                mr.download_status = "cached"
+
+    if write_outputs:
+        index_paths = write_index(merged.index_rows, index_dir)
+        manifest_path = write_manifest(merged.manifest_rows, out_dir)
+        gaps_path = write_gaps(merged.manifest_rows, out_dir)
+        result.output_paths = {
+            "index_json": index_paths["json"],
+            "index_csv": index_paths["csv"],
+            "manifest": manifest_path,
+            "gaps": gaps_path,
+        }
+
+    logger.info(
+        "deblasio.harvest.done enumerated=%d unique=%d wayback_rows=%d kept=%d "
+        "dropped_dup=%d flagged=%d downloaded=%d cached=%d errors=%d dry_run=%s",
+        result.enumerated, result.unique_urls, result.wayback_rows,
+        result.wayback_kept, len(result.dropped_wayback_ids), len(result.flagged),
+        result.downloaded, result.cached, result.errors, result.dry_run,
+    )
+    return result
+
+
 # Re-export for callers that want the locked field list without a second import.
 __all__ = [
     "ParsedEO",
     "parse_eo_filename",
+    "parse_eo_assets_url",
+    "assets_path_year",
     "select_best_capture_per_url",
+    "select_best_capture_per_identity",
     "enumerate_eo_captures",
+    "enumerate_eo_assets_captures",
     "build_wayback_rows",
     "load_index_rows",
     "reconcile_pdf_paths",
     "merge_prefer_live",
     "run_wayback_harvest",
+    "run_deblasio_harvest",
     "WaybackHarvestResult",
     "INDEX_FIELDS",
 ]

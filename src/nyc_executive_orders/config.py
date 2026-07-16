@@ -141,3 +141,39 @@ DAM_PDF_PATH_TEMPLATE = (
 LEGACY_ASSETS_PDF_PATH_TEMPLATE = (
     "/assets/home/downloads/pdf/executive-orders/{year}/{filename}"
 )
+
+# --- Phase B.4: de Blasio-era (2014-2021) regular+emergency backfill ---------
+# The current-era live source (Phase A, articlesearch.json) reaches back only to
+# ~2022 (COVERAGE_FLOOR_YEAR), and the historical Wayback path
+# (WAYBACK_EO_URL_PREFIX, `/html/records/...`) stops at 2013. So EVERY executive
+# order signed 2014-2021 (all of Mayor de Blasio's) fell into a harvest gap: no
+# side ever queried those years. This entire cohort is absent from the corpus.
+#
+# DISCOVERY (2026-07-16, CDX enumeration — authorized for this project; built
+# against the evidence, NOT guessed, §0): the de Blasio EO PDFs were published
+# under the pre-redesign `/assets/home/...` path, with the signing YEAR in the
+# DIRECTORY (not the filename) and a series+number filename:
+#   www.nyc.gov/assets/home/downloads/pdf/executive-orders/{year}/{eo|eeo}[-_]{n}.pdf
+# e.g. .../2014/eeo_1.pdf, .../2018/eo-34.pdf, .../2021/eeo-173.pdf. The
+# separator drifts across eras (`_` early, `-` later) and the number carries NO
+# year prefix. This is the SAME `/assets/home/...` root Phase B.2 uses for
+# current-era gap recovery, but a DIFFERENT filename convention (that path's
+# 2022+ gap files are `eeo-290.pdf`; de Blasio's are `eo_34.pdf`) — a per-era
+# filename trap. A live articlesearch.json probe of 2016/2018/2021 returned zero
+# results, confirming the live API cannot supply these years; Wayback is the only
+# source. CDX found regular EO numbers forming a clean 1..91 sequence across the
+# term (72 of 91 archived; the rest never captured -> gaps.md) plus the emergency
+# (EEO) series on the same path.
+WAYBACK_EO_ASSETS_URL_PREFIX = "www.nyc.gov/assets/home/downloads/pdf/executive-orders/"
+
+# de Blasio's two mayoral terms: Jan 1 2014 through Dec 31 2021. The backfill is
+# scoped to this window by the signing year parsed from the URL PATH (the same
+# `/assets/home/...` path also carries pre-2014 and 2022+ files, which are out of
+# scope here — pre-2014 lives in the historical Wayback set, 2022+ in Phase A).
+DEBLASIO_FLOOR_YEAR = 2014
+DEBLASIO_CEIL_YEAR = 2021
+
+# Provenance tag stamped on a row recovered by the de Blasio backfill. Distinct
+# from SOURCE_WAYBACK (1974->2013 historical) and SOURCE_WAYBACK_GAP (current-era
+# gap recovery) so all three Wayback recovery routes stay auditable in `source`.
+SOURCE_WAYBACK_DEBLASIO = "wayback-deblasio"
