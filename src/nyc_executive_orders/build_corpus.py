@@ -390,3 +390,92 @@ def build_corpus(
         "corpus_dir": str(corpus_dir),
     }
     return result
+
+
+# text_source -> textlayer classification, for the sweep's manifest (no re-probe).
+_CLASS_FOR_SOURCE = {
+    TEXT_SOURCE_BORN_DIGITAL: textlayer.CLASS_TEXT,
+    TEXT_SOURCE_OCR: textlayer.CLASS_SCANNED,
+    TEXT_SOURCE_OCR_FAILED: textlayer.CLASS_SCANNED,
+    TEXT_SOURCE_OCR_SKIPPED: textlayer.CLASS_SCANNED,
+}
+
+
+def clean_existing_corpus(
+    records: Iterable[dict],
+    *,
+    corpus_dir: str | Path,
+) -> BuildResult:
+    """Apply ONLY the clean stage to an already-parsed corpus and re-emit it.
+
+    This is the full-sweep post-process: it takes the existing ``eo.json`` records
+    (whose ``full_text`` is the verbatim OCR/extraction — the OCR layer is NOT
+    re-run) and rewrites ``corpus/YYYY/<eo_id>.md`` + ``eo.json`` + ``manifest.csv``
+    with the cleaned bodies, filled metadata, and clean provenance.
+
+    Non-destructive + idempotent: the raw input is taken from ``full_text_raw``
+    when present (a prior sweep preserved it), else from ``full_text`` (the
+    verbatim pre-clean corpus). So a re-run reads the same verbatim source and
+    yields identical output, and ``full_text_raw`` always holds the true original.
+    """
+    corpus_dir = Path(corpus_dir)
+    records = list(records)
+    result = BuildResult(total=len(records))
+    bulk: list[dict] = []
+    manifest_rows: list[dict] = []
+
+    for record in records:
+        year = int(record["year"])
+        eo_id = record["eo_id"]
+        text_source = record.get("text_source") or TEXT_SOURCE_NONE
+        page_count = record.get("page_count")
+        # Verbatim source: prefer a preserved raw (idempotent re-runs), else the
+        # current full_text (still verbatim on the first sweep).
+        raw_input = record.get("full_text_raw") or record.get("full_text", "")
+
+        clean = _run_clean_stage(record, raw_input, text_source=text_source,
+                                 year=year)
+        frontmatter = _build_frontmatter(
+            record, text_source=text_source, page_count=page_count,
+            title=clean["title"], date_signed=clean["date_signed"],
+            text_quality=clean["text_quality"], dropped_header=clean["dropped_header"],
+            dropped_marks=clean["dropped_marks"],
+        )
+        parsed = ParsedEO(
+            frontmatter=frontmatter, body=clean["body"],
+            classification=_CLASS_FOR_SOURCE.get(text_source),
+            char_count=len(clean["body"]), md_relpath=f"{year}/{eo_id}.md",
+            raw_body=clean["raw_body"],
+        )
+        result.bump(text_source)
+
+        md_path = corpus_dir / parsed.md_relpath
+        md_path.parent.mkdir(parents=True, exist_ok=True)
+        md_path.write_text(render_markdown(parsed), encoding="utf-8")
+
+        bulk.append({**frontmatter,
+                     "full_text": parsed.body,
+                     "full_text_raw": parsed.raw_body})
+        manifest_rows.append({
+            "eo_id": eo_id,
+            "year": year,
+            "text_source": text_source,
+            "classification": parsed.classification or "",
+            "char_count": parsed.char_count,
+            "page_count": "" if page_count is None else page_count,
+            "md_path": f"corpus/{parsed.md_relpath}",
+        })
+
+    corpus_dir.mkdir(parents=True, exist_ok=True)
+    eo_json = corpus_dir / "eo.json"
+    eo_json.write_text(json.dumps(bulk, ensure_ascii=False, indent=2) + "\n",
+                       encoding="utf-8")
+    manifest_path = corpus_dir / "manifest.csv"
+    with manifest_path.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=MANIFEST_FIELDS)
+        writer.writeheader()
+        writer.writerows(manifest_rows)
+
+    result.output_paths = {"eo_json": str(eo_json), "manifest": str(manifest_path),
+                           "corpus_dir": str(corpus_dir)}
+    return result
