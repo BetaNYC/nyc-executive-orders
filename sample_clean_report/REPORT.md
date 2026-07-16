@@ -2,7 +2,7 @@
 
 Deterministic 58-doc stratified sample of the 916 OCR docs. READ-ONLY on `corpus/`; nothing modified, no full sweep. Selection metrics computed by running the cleaner in memory over every OCR record.
 
-- **Lexicon source (title gate): `system:/usr/share/dict/words`** — REPRODUCIBILITY NOTE: freeze this word list into the repo before any full sweep / publish so title accept/reject is host-independent.
+- **Lexicon source (title gate): `frozen:wordlist.txt (234538 words)`** — FROZEN in-repo list; host dictionary not consulted, so title accept/reject is reproducible on every machine.
 - Sample size: **58** (55 OCR + 3 born-digital).
 
 ## text_quality distribution (selected sample)

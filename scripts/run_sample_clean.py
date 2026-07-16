@@ -220,8 +220,8 @@ def main() -> int:
                "no full sweep. Selection metrics computed by running the cleaner "
                "in memory over every OCR record.\n")
     out.append(f"- **Lexicon source (title gate): `{lexicon.english_lexicon_source()}`** "
-               "— REPRODUCIBILITY NOTE: freeze this word list into the repo before "
-               "any full sweep / publish so title accept/reject is host-independent.")
+               "— FROZEN in-repo list; host dictionary not consulted, so title "
+               "accept/reject is reproducible on every machine.")
     out.append(f"- Sample size: **{len(selected)}** ({len(ocr_sel)} OCR + "
                f"{len(selected) - len(ocr_sel)} born-digital).\n")
 

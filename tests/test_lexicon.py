@@ -46,5 +46,6 @@ def test_case_insensitive():
 
 
 def test_source_label_is_reported():
+    # Runtime must use the FROZEN in-repo list, never the host system dictionary.
     src = lexicon.english_lexicon_source()
-    assert src.startswith("system:") or src == "bundled-fallback"
+    assert src.startswith("frozen:"), src

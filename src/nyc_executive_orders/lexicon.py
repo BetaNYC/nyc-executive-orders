@@ -12,15 +12,13 @@ older system dictionary's missing plurals / ``-ing`` forms don't cause false
 rejects.
 
 Design constraints (engineering-standards §7 — local-first, reproducible):
-  * **No network, no dependency.** Pure stdlib + a small bundled fallback list.
-  * **Deterministic.** Same inputs → same recognition, no randomness.
-  * **Reproducibility caveat (loud, on purpose).** For the *sample prototype* we
-    prefer the system word list at ``/usr/share/dict/words`` when present (broad
-    coverage on macOS). That makes the accept/reject decision depend on the host
-    dictionary. BEFORE wiring this into a full corpus sweep or a published
-    artifact, FREEZE the word list into the repo so the decision is regenerable by
-    third parties. :func:`english_lexicon_source` reports which source was used so
-    the report can state it.
+  * **No network, no dependency.** Pure stdlib + a committed word list.
+  * **Deterministic + reproducible.** The recognizer loads ONLY the FROZEN
+    in-repo word list at ``data/wordlist.txt`` — the host ``/usr/share/dict/words``
+    is NOT consulted at runtime, so accept/reject is identical on every machine
+    (a hard requirement now that the gate writes the published corpus). Regenerate
+    the frozen list with ``scripts/build_wordlist.py`` (web2 ∪ domain ∪ acronyms).
+    :func:`english_lexicon_source` reports the source in effect.
 
 Err toward flagging: an unrecognized-but-real word (e.g. a rare proper noun) makes
 a good title hold as ``title-uncertain`` for human review — the safe direction.
@@ -32,9 +30,9 @@ import functools
 import re
 from pathlib import Path
 
-# Common system word list (BSD/macOS ships web2 here; many Linux distros install a
-# words file at the same path via `words`/`wamerican`). Used when present.
-SYSTEM_WORDS_PATH = Path("/usr/share/dict/words")
+# The FROZEN, committed word list — the ONLY dictionary consulted at runtime.
+# Built by scripts/build_wordlist.py from web2 ∪ domain lexicon ∪ acronyms.
+FROZEN_WORDLIST_PATH = Path(__file__).resolve().parent / "data" / "wordlist.txt"
 
 # --------------------------------------------------------------------------- #
 # Curated NYC / civic-gov domain lexicon — lowercase. Words that appear in EO
@@ -118,19 +116,24 @@ matters pertaining permit coordination
 
 @functools.lru_cache(maxsize=1)
 def _load() -> tuple[frozenset[str], str]:
-    """Return ``(english_word_set, source_label)``. Cached; read once per process."""
-    if SYSTEM_WORDS_PATH.exists():
+    """Return ``(english_word_set, source_label)``. Cached; read once per process.
+
+    Loads the FROZEN in-repo word list only. The host system dictionary is never
+    consulted — this is what makes the title gate reproducible across machines.
+    """
+    if FROZEN_WORDLIST_PATH.exists():
         try:
             words = {
                 w.strip().lower()
-                for w in SYSTEM_WORDS_PATH.read_text(encoding="utf-8", errors="ignore").splitlines()
-                if w.strip()
+                for w in FROZEN_WORDLIST_PATH.read_text(encoding="utf-8").splitlines()
+                if w.strip() and not w.startswith("#")
             }
-            words |= _FALLBACK_WORDS  # belt-and-suspenders for tiny dicts
-            return frozenset(words), f"system:{SYSTEM_WORDS_PATH}"
+            words |= _FALLBACK_WORDS  # guarantee the small fallback is always present
+            return frozenset(words), f"frozen:{FROZEN_WORDLIST_PATH.name} ({len(words)} words)"
         except OSError:
             pass
-    return _FALLBACK_WORDS, "bundled-fallback"
+    # Should not happen in a checked-out repo; degrade loudly rather than crash.
+    return _FALLBACK_WORDS, "bundled-fallback (FROZEN LIST MISSING)"
 
 
 def english_lexicon_source() -> str:
