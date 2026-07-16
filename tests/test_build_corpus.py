@@ -10,10 +10,12 @@ import yaml
 
 from nyc_executive_orders.build_corpus import (
     NO_TEXT_STUB,
+    TEXT_QUALITY_NO_TEXT,
     TEXT_SOURCE_NONE,
     TEXT_SOURCE_OCR,
     TEXT_SOURCE_OCR_SKIPPED,
     FRONTMATTER_FIELDS,
+    _run_clean_stage,
     build_corpus,
     render_markdown,
     parse_record,
@@ -146,6 +148,87 @@ def test_render_markdown_valid_yaml(tmp_path, born_digital_pdf):
     # Round-trips through a YAML parser without error.
     front = yaml.safe_load(md.split("---\n")[1])
     assert front["title"] == "Executive Order 5"
+
+
+# --------------------------------------------------------------------------- #
+# Clean-stage wiring (offline, no PDFs) — the integration point added to the
+# pipeline. These exercise _run_clean_stage directly with documented OCR shapes.
+# --------------------------------------------------------------------------- #
+
+def _bare_record(eo_id, year, **over):
+    r = {"eo_id": eo_id, "number": eo_id.split("-")[-1], "year": year,
+         "is_emergency": False, "date_signed": None, "title": "",
+         "source": "wayback", "source_pdf_url": "", "pdf_path": None}
+    r.update(over)
+    return r
+
+
+def test_clean_stage_ocr_trims_header_and_fills_metadata():
+    body = (
+        "routing stamp junk line\n"
+        "OFFICE OF THE MAYOR\n"
+        "EXECUTIVE ORDER NO. 64\n"
+        "July 26, 1976\n"
+        "ESTABLISHMENT OF THE MAYOR'S MIDTOWN ACTION OFFICE\n"
+        "Whereas, the offices had broad objectives; and\n"
+    )
+    out = _run_clean_stage(_bare_record("1976-EO-064", 1976), body,
+                           text_source=TEXT_SOURCE_OCR, year=1976)
+    assert "routing stamp junk" in out["dropped_header"]
+    assert "routing stamp junk" not in out["body"]
+    assert out["body"].startswith("OFFICE OF THE MAYOR")
+    assert out["raw_body"] == body                    # verbatim preserved
+    assert out["title"] == "ESTABLISHMENT OF THE MAYOR'S MIDTOWN ACTION OFFICE"
+    assert out["date_signed"] == "1976-07-26"
+    assert out["text_quality"] in ("clean", "minor-noise")
+
+
+def test_clean_stage_born_digital_body_is_byte_identical():
+    body = (
+        "THE CITY OF NEW YORK\n"
+        "OFFICE OF THE MAYOR\n"
+        "EXECUTIVE ORDER NO. 5\n"
+        "April 1, 2003\n"
+        "REAL SUBJECT LINE OF THIS ORDER\n"
+        "WHEREAS the following is ordered;\n"
+    )
+    out = _run_clean_stage(_bare_record("2003-EO-005", 2003), body,
+                           text_source=TEXT_SOURCE_BORN_DIGITAL, year=2003)
+    assert out["body"] == body                        # byte-for-byte unchanged
+    assert out["dropped_header"] == ""
+    assert out["dropped_marks"] == []
+    # An empty title/date is still gap-filled from the body.
+    assert out["title"] == "REAL SUBJECT LINE OF THIS ORDER"
+    assert out["date_signed"] == "2003-04-01"
+
+
+def test_clean_stage_existing_metadata_not_overwritten():
+    body = "EXECUTIVE ORDER NO. 5\nApril 1, 2003\nSOME CAPS LINE\nWHEREAS x;\n"
+    out = _run_clean_stage(
+        _bare_record("2003-EO-005", 2003, title="Real Title", date_signed="2003-01-02"),
+        body, text_source=TEXT_SOURCE_BORN_DIGITAL, year=2003)
+    assert out["title"] == "Real Title"
+    assert out["date_signed"] == "2003-01-02"
+
+
+def test_clean_stage_no_text_stub_not_cleaned():
+    out = _run_clean_stage(_bare_record("2022-EEO-290", 2022), NO_TEXT_STUB,
+                           text_source=TEXT_SOURCE_NONE, year=2022)
+    assert out["body"] == NO_TEXT_STUB
+    assert out["text_quality"] == TEXT_QUALITY_NO_TEXT
+    assert out["dropped_header"] == "" and out["dropped_marks"] == []
+
+
+def test_corpus_carries_clean_provenance_and_raw(tmp_path, born_digital_pdf, scanned_pdf):
+    _setup_repo(tmp_path, born_digital_pdf, scanned_pdf)
+    build_corpus(_records(), repo_root=tmp_path, corpus_dir=tmp_path / "corpus",
+                 index_dir=tmp_path / "index", do_ocr=False)
+    front = yaml.safe_load(
+        (tmp_path / "corpus" / "2003" / "2003-EO-005.md").read_text().split("---\n")[1])
+    for f in ("text_quality", "dropped_header", "dropped_marks"):
+        assert f in front
+    bulk = json.loads((tmp_path / "corpus" / "eo.json").read_text())
+    assert all("full_text_raw" in r for r in bulk)
 
 
 @pytest.mark.slow

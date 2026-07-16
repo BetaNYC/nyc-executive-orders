@@ -484,19 +484,27 @@ def clean_record(
     existing_title: str | None = None,
     existing_date_signed: str | None = None,
     text_source: str | None = None,
+    apply_body_edits: bool = True,
 ) -> CleanResult:
-    """Run all five passes on one order body. Pure; deterministic; idempotent.
+    """Run the passes on one order body. Pure; deterministic; idempotent.
 
     ``body`` is the extracted/OCR'd full text. ``year`` is the record's known
     signing year (from ``eo_id``) — used to cross-check any extracted date.
     ``existing_title`` / ``existing_date_signed`` are the current frontmatter
     values; a non-empty existing value is NEVER overwritten. ``text_source`` (e.g.
     ``born-digital`` / ``ocr``) only informs tiering.
+
+    ``apply_body_edits`` — when ``True`` (OCR docs), the header trim + file-mark
+    stripping + whitespace normalization run and can change the body. When
+    ``False`` (born-digital docs, whose text has no OCR header noise), the body is
+    passed through **byte-for-byte unchanged**; only the title/date gap-fill and
+    quality tier are computed. This is what keeps born-digital bodies identical
+    through the pipeline while still filling a genuinely-empty title/date.
     """
     raw = body
     flags: list[str] = []
 
-    # --- Pass 1: anchor detection ------------------------------------------- #
+    # --- Pass 1: anchor detection (always computed for the metric) ---------- #
     lines = raw.split("\n")
     anchor_idx: int | None = None
     anchor_label: str | None = None
@@ -505,6 +513,16 @@ def clean_record(
         if label is not None:
             anchor_idx, anchor_label = i, label
             break
+
+    if not apply_body_edits:
+        # Born-digital: no body edits at all. Body is verbatim; title/date still
+        # gap-filled from it below; nothing relocated.
+        return _finish(
+            raw=raw, cleaned=raw, dropped_header="", dropped_marks=[],
+            anchor_label=anchor_label, flags=flags, year=year,
+            existing_title=existing_title, existing_date_signed=existing_date_signed,
+            text_source=text_source,
+        )
     # First line that opens the order body ("WHEREAS", "BY VIRTUE", "BY THE POWER",
     # "NOW THEREFORE", ...). If real body begins ABOVE the earliest anchor, that
     # anchor is a body reference (e.g. "...Administrative Code of The City of New
@@ -544,12 +562,32 @@ def clean_record(
             dropped_header = header_text.strip()
             working = "\n".join(lines[anchor_idx:])
 
-    # --- Pass 2: file-mark stripping ---------------------------------------- #
+    # --- Pass 2: file-mark stripping + whitespace normalization ------------- #
     working, dropped_marks = _strip_file_marks(working)
-
-    # --- normalize whitespace (shared cleaning; paragraph-preserving) ------- #
     cleaned = _normalize_ws(working)
 
+    return _finish(
+        raw=raw, cleaned=cleaned, dropped_header=dropped_header,
+        dropped_marks=dropped_marks, anchor_label=anchor_label, flags=flags,
+        year=year, existing_title=existing_title,
+        existing_date_signed=existing_date_signed, text_source=text_source,
+    )
+
+
+def _finish(
+    *,
+    raw: str,
+    cleaned: str,
+    dropped_header: str,
+    dropped_marks: list[str],
+    anchor_label: str | None,
+    flags: list[str],
+    year: int,
+    existing_title: str | None,
+    existing_date_signed: str | None,
+    text_source: str | None,
+) -> CleanResult:
+    """Shared tail: title/date gap-fill + quality tiering + assemble result."""
     # --- Pass 3: title + date ----------------------------------------------- #
     body_lines = cleaned.split("\n")
     title = existing_title if (existing_title or "").strip() else None

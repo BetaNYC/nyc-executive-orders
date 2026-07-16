@@ -31,6 +31,7 @@ from typing import Iterable
 import yaml
 
 from . import textlayer
+from .clean import clean_record
 from .enrich import enrich_record
 from .extract import TEXT_SOURCE_BORN_DIGITAL, extract_pdf_text
 from .ocr import (
@@ -49,6 +50,10 @@ TEXT_SOURCE_UNREADABLE = "unreadable"    # PDF present but could not be opened
 
 # Stub body for orders with no recoverable text.
 NO_TEXT_STUB = "_No text available_"
+
+# text_quality value for records with no recoverable text (stubs) — the clean
+# stage is not run on them (nothing to clean).
+TEXT_QUALITY_NO_TEXT = "no-text"
 
 # Locked corpus frontmatter field order. Superset of the light index fields,
 # plus the derived + Phase-C + provenance fields.
@@ -71,6 +76,9 @@ FRONTMATTER_FIELDS = [
     "in_effect",
     "text_source",
     "page_count",
+    "text_quality",
+    "dropped_header",
+    "dropped_marks",
 ]
 
 MANIFEST_FIELDS = [
@@ -89,10 +97,11 @@ class ParsedEO:
     """One order fully parsed: frontmatter, body text, and bookkeeping."""
 
     frontmatter: dict
-    body: str
+    body: str                        # CLEANED full text (the .md body)
     classification: str | None       # textlayer class, or None if no PDF
     char_count: int
     md_relpath: str
+    raw_body: str = ""               # verbatim pre-clean text (-> eo.json full_text_raw)
 
     @property
     def text_source(self) -> str:
@@ -182,8 +191,22 @@ def parse_record(
         logger.warning("%s: pdf_path %s not found on disk", eo_id, record["pdf_path"])
         text_source = TEXT_SOURCE_NONE
 
-    frontmatter = _build_frontmatter(record, text_source=text_source,
-                                     page_count=page_count)
+    # --- Clean stage: post-process the extracted/OCR'd text ----------------- #
+    # OCR docs get the full clean (header trim, file-marks, title/date, tier).
+    # Born-digital docs pass through byte-for-byte (apply_body_edits=False) — only
+    # a genuinely-empty title/date is gap-filled. No-text stubs are not cleaned.
+    raw_body = body
+    clean = _run_clean_stage(record, body, text_source=text_source, year=year)
+    body = clean["body"]
+    raw_body = clean["raw_body"]
+    char_count = len(body)
+
+    frontmatter = _build_frontmatter(
+        record, text_source=text_source, page_count=page_count,
+        title=clean["title"], date_signed=clean["date_signed"],
+        text_quality=clean["text_quality"], dropped_header=clean["dropped_header"],
+        dropped_marks=clean["dropped_marks"],
+    )
     md_relpath = f"{year}/{eo_id}.md"
     return ParsedEO(
         frontmatter=frontmatter,
@@ -191,23 +214,69 @@ def parse_record(
         classification=classification,
         char_count=char_count,
         md_relpath=md_relpath,
+        raw_body=raw_body,
     )
 
 
-def _build_frontmatter(record: dict, *, text_source: str,
-                       page_count: int | None) -> dict:
-    """Assemble the locked frontmatter dict for one order."""
+def _run_clean_stage(record: dict, body: str, *, text_source: str,
+                     year: int) -> dict:
+    """Apply the clean stage per ``text_source``; return the fields the corpus needs.
+
+    * OCR -> full clean (body may change; header/marks relocated; title/date gate).
+    * born-digital -> pass-through body (byte-identical); title/date gap-fill only.
+    * anything else (no-text stub, ocr-skipped/failed, unreadable) -> not cleaned.
+    """
+    if text_source in (TEXT_SOURCE_BORN_DIGITAL, TEXT_SOURCE_OCR):
+        result = clean_record(
+            body,
+            year=year,
+            existing_title=record.get("title"),
+            existing_date_signed=record.get("date_signed"),
+            text_source=text_source,
+            apply_body_edits=(text_source == TEXT_SOURCE_OCR),
+        )
+        return {
+            "body": result.full_text,
+            "raw_body": result.full_text_raw,
+            "title": result.title,
+            "date_signed": result.date_signed,
+            "text_quality": result.text_quality,
+            "dropped_header": result.dropped_header,
+            "dropped_marks": result.dropped_marks,
+        }
+    # No recoverable text — leave everything as-is.
+    return {
+        "body": body,
+        "raw_body": body,
+        "title": record.get("title"),
+        "date_signed": record.get("date_signed"),
+        "text_quality": TEXT_QUALITY_NO_TEXT,
+        "dropped_header": "",
+        "dropped_marks": [],
+    }
+
+
+def _build_frontmatter(record: dict, *, text_source: str, page_count: int | None,
+                       title, date_signed, text_quality: str,
+                       dropped_header: str, dropped_marks: list) -> dict:
+    """Assemble the locked frontmatter dict for one order.
+
+    ``title`` / ``date_signed`` are the post-clean values (a gate-accepted
+    extraction fills a previously-empty field; existing values pass through). The
+    clean-stage provenance (``text_quality``/``dropped_header``/``dropped_marks``)
+    is carried so consumers can see what was relocated and how much to trust it.
+    """
     derived = enrich_record(record)
     merged = {
         "eo_id": record["eo_id"],
         "number": record.get("number"),
         "year": int(record["year"]),
         "is_emergency": bool(record["is_emergency"]),
-        "date_signed": record.get("date_signed"),
+        "date_signed": date_signed,
         "mayor": derived["mayor"],
         "administration": derived["administration"],
         "admin_note": derived["admin_note"],
-        "title": record.get("title"),
+        "title": title,
         "source": record.get("source"),
         "source_pdf_url": record.get("source_pdf_url"),
         "pdf_path": record.get("pdf_path"),
@@ -217,6 +286,9 @@ def _build_frontmatter(record: dict, *, text_source: str,
         "in_effect": derived["in_effect"],
         "text_source": text_source,
         "page_count": page_count,
+        "text_quality": text_quality,
+        "dropped_header": dropped_header,
+        "dropped_marks": dropped_marks,
     }
     # Emit in the locked order.
     return {k: merged[k] for k in FRONTMATTER_FIELDS}
@@ -277,8 +349,10 @@ def build_corpus(
         md_path.parent.mkdir(parents=True, exist_ok=True)
         md_path.write_text(render_markdown(parsed), encoding="utf-8")
 
-        # Accumulate the bulk record (metadata + full text).
-        bulk.append({**parsed.frontmatter, "full_text": parsed.body})
+        # Accumulate the bulk record (metadata + cleaned full text + verbatim raw).
+        bulk.append({**parsed.frontmatter,
+                     "full_text": parsed.body,
+                     "full_text_raw": parsed.raw_body})
         manifest_rows.append({
             "eo_id": parsed.frontmatter["eo_id"],
             "year": parsed.frontmatter["year"],
