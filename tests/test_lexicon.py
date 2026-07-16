@@ -35,9 +35,25 @@ def test_recognizes_acronyms_and_roman_numerals():
     assert not lexicon.is_roman_numeral("veterans")
 
 
+def test_recognizes_hybrid_queue_words():
+    # Real, uncommon words added 2026-07-16 to recover born-digital held titles.
+    # web2 omits these inflected forms / British spellings / legal terms; the
+    # domain lexicon + acronyms must now carry them. A regression here (e.g. a
+    # wordlist rebuilt without the domain source) would re-hold those titles.
+    for w in ("women", "specified", "theatre", "coordinator", "coordinated",
+              "controlled", "adjudicatory", "pre"):
+        assert lexicon.recognize(w), w
+    assert lexicon.recognize("HHS")   # acronym, case-insensitive
+    assert lexicon.recognize("hhs")
+
+
 def test_rejects_ocr_mangles():
-    # The exact mangles the prototype surfaced — none may be recognized.
-    for w in ("transpl", "ambl", "zzxqw", "trxnspl", "sryvce"):
+    # The exact mangles the corpus surfaced — none may be recognized. Growing the
+    # lexicon (hybrid queue recovery) must NOT widen the gate to admit any of these.
+    # Includes the full task-named guard set: Cray (->City), TRANSPL, AMBL,
+    # RAYMENTS, AGCRUED, plus synthetic garble.
+    for w in ("cray", "transpl", "ambl", "rayments", "agcrued", "agcrued",
+              "zzxqw", "trxnspl", "sryvce", "ofnce", "ofr"):
         assert not lexicon.recognize(w), w
 
 

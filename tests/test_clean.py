@@ -331,6 +331,42 @@ def test_single_unrecognized_token_holds_whole_title():
     assert r.text_quality == clean.TEXT_QUALITY_REVIEW
 
 
+def test_lexicon_growth_does_not_widen_title_gate_for_mangles():
+    # GUARD (2026-07-16): after growing the lexicon to recover born-digital titles,
+    # the known OCR-mangle titles MUST STILL be held (title left None). Each is a
+    # real corpus mangle from the review queue; none may auto-accept.
+    for caps in (
+        "Cray ENVIRONMENTAL QUALITY REVIEW",           # 1977-EO-091 (Cray for City)
+        "TRANSPL OF AMBL",                              # 1996-EO-027
+        "REGULATIONS GOVERNING CASH RAYMENTS FOR UNUSED ACCRUED",  # 1974-EO-008
+        "UNUSED AGCRUED ANNUAL LEAVE",                  # 1974-EO-009
+    ):
+        body = (
+            "EXECUTIVE ORDER NO. 1\n"
+            "March 3, 1996\n"
+            f"{caps}\n"
+            "By the power vested in me as Mayor, it is hereby ordered:\n"
+        )
+        r = clean_record(body, year=1996, text_source="ocr")
+        assert r.title is None, caps
+        assert any(f.startswith("title-uncertain:") for f in r.flags), caps
+
+
+def test_single_token_proper_name_title_is_held():
+    # 1980-EO-043: a lone "MARY" caps line. NOTE: `mary` IS a recognized token
+    # (a proper name in web2), so what holds this title is the >=2-meaningful-token
+    # rule, NOT word recognition. Guards that a single real word can't become a title.
+    body = (
+        "EXECUTIVE ORDER NO. 43\n"
+        "March 3, 1980\n"
+        "MARY\n"
+        "By the power vested in me as Mayor, it is hereby ordered:\n"
+    )
+    r = clean_record(body, year=1980, text_source="ocr")
+    assert r.title is None
+    assert any(f.startswith("title-uncertain:") for f in r.flags)
+
+
 # --------------------------------------------------------------------------- #
 # Pass 3 — date extraction                                                      #
 # --------------------------------------------------------------------------- #
