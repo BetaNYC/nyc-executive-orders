@@ -218,6 +218,47 @@ def test_mangled_title_surfaced_as_uncertain_not_written():
     assert r.text_quality == clean.TEXT_QUALITY_REVIEW
 
 
+def test_date_line_not_taken_as_title():
+    # 1974-EO-007: "DATED JANUARY I, 1974" (Roman-numeral day) must not become a
+    # title — it carries a month name and is a date line.
+    body = (
+        "EXECUTIVE ORDER NO. 7\n"
+        "DATED JANUARY I, 1974\n"
+        "ESTABLISHMENT OF A REAL COMMITTEE\n"
+        "By the power vested in me as Mayor, it is hereby ordered:\n"
+    )
+    r = clean_record(body, year=1974)
+    assert r.title == "ESTABLISHMENT OF A REAL COMMITTEE"
+
+
+def test_eo_number_fragment_and_month_line_skipped():
+    # 1978-EO-010 shape: one-word-per-line header split ("ORDER / No. 10 / APRIL").
+    # Neither the EO-number fragment nor the bare month line is a title.
+    body = (
+        "EXECUTIVE\n"
+        "ORDER No. 10\n"
+        "APRIL\n"
+        "By the power vested in me as Mayor, it is hereby ordered:\n"
+    )
+    r = clean_record(body, year=1978)
+    assert r.title is None
+
+
+def test_truncated_title_ending_in_function_word_is_held():
+    # 1994-EO-014 / 1974-EO-004: caps line ending in a dangling function word is a
+    # truncated line or a sentence, not a subject title.
+    for caps in ("TERMINATION OF CONTRACT WITH", "PROTECT THE PRINCIPLES WHICH"):
+        body = (
+            "EXECUTIVE ORDER NO. 14\n"
+            "March 3, 1994\n"
+            f"{caps}\n"
+            "By the power vested in me as Mayor, it is hereby ordered:\n"
+        )
+        r = clean_record(body, year=1994, text_source="ocr")
+        assert r.title is None, caps
+        assert any(f.startswith("title-uncertain:") for f in r.flags), caps
+
+
 def test_title_edge_junk_is_stripped():
     body = (
         "EXECUTIVE ORDER NO. 91\n"
@@ -264,7 +305,7 @@ def test_existing_title_never_overwritten():
     assert r.title_extracted is False
 
 
-def test_mangled_title_below_word_ratio_is_rejected():
+def test_mangled_title_rejected_by_lexicon_gate():
     body = (
         "EXECUTIVE ORDER NO. 27\n"
         "February 26, 1996\n"
@@ -273,6 +314,21 @@ def test_mangled_title_below_word_ratio_is_rejected():
     )
     r = clean_record(body, year=1996)
     assert r.title is None            # too mangled to trust into frontmatter
+
+
+def test_single_unrecognized_token_holds_whole_title():
+    # The "Cray" (for "City") case: one OCR-substituted word that still looks
+    # word-like must hold the ENTIRE title for review, not slip through.
+    body = (
+        "EXECUTIVE ORDER NO. 91\n"
+        "August 24, 1977\n"
+        "ZQXVW ENVIRONMENTAL QUALITY REVIEW\n"
+        "By the power vested in me as Mayor, it is hereby ordered:\n"
+    )
+    r = clean_record(body, year=1977, text_source="ocr")
+    assert r.title is None
+    assert any(f.startswith("title-uncertain:") for f in r.flags)
+    assert r.text_quality == clean.TEXT_QUALITY_REVIEW
 
 
 # --------------------------------------------------------------------------- #

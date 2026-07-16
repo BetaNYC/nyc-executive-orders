@@ -54,6 +54,8 @@ import re
 from dataclasses import dataclass, field
 from difflib import SequenceMatcher
 
+from . import lexicon
+
 logger = logging.getLogger("nyc_executive_orders.clean")
 
 # --------------------------------------------------------------------------- #
@@ -88,12 +90,12 @@ CLEAN_MAX_JUNK_RATIO = 0.05       # junk-char ceiling for "clean"
 REVIEW_MIN_WORD_RATIO = 0.70      # below this => needs-review
 REVIEW_MAX_JUNK_RATIO = 0.15      # above this => needs-review
 
-# Title confidence gate: fraction of the extracted title's words that must pass
-# the STRICT english-likeness test (below) before we trust the title enough to
-# write it to frontmatter. A caps line that clears this is a clean subject line; a
-# mangled one (e.g. "TRANSPL OF AMBL") falls short and is surfaced as
-# `title-uncertain` for a human rather than silently inserted.
-TITLE_MIN_STRONG_RATIO = 0.85
+# Title gate: a candidate title is auto-accepted ONLY if it has at least this many
+# meaningful (>=2-char alpha) tokens AND EVERY one of them is a recognized word
+# (see :mod:`lexicon`). One unrecognized token (e.g. the OCR mangle "Cray" for
+# "City") holds the whole title as `title-uncertain` for human review — the safe
+# direction, since a false hold just routes a good title to a person.
+TITLE_MIN_MEANINGFUL_TOKENS = 2
 # A title line/furniture line has at most this many tokens; longer caps lines that
 # happen to contain an anchor phrase (e.g. "...OF THE MAYOR'S MIDTOWN...") are real
 # titles, not letterhead, and must NOT be skipped during title extraction.
@@ -141,6 +143,21 @@ _MONTHS = {
     "jan": 1, "feb": 2, "mar": 3, "apr": 4, "jun": 6, "jul": 7, "aug": 8,
     "sep": 9, "sept": 9, "oct": 10, "nov": 11, "dec": 12,
 }
+# Full month names only (for the "is this line really a date line?" title guard —
+# "may" as a common word would over-trigger, so abbreviations are excluded here).
+_MONTH_WORDS = frozenset({
+    "january", "february", "march", "april", "may", "june", "july", "august",
+    "september", "october", "november", "december",
+})
+# Tokens that make a caps line an EO-number fragment (e.g. a one-word-per-line
+# "ORDER / No. 10" layout), to skip during title extraction rather than collect.
+_EO_NUMBER_TOKENS = frozenset({"EXECUTIVE", "EMERGENCY", "ORDER", "ORDERS", "NO", "NOS"})
+# Trailing function words that signal a TRUNCATED or sentence-like caps line, not a
+# real subject title — a title ending in one of these is held for review.
+_TITLE_TRAILING_STOP = frozenset({
+    "which", "with", "and", "the", "to", "of", "for", "in", "on", "by", "as",
+    "that", "from", "a", "an", "or", "at", "into", "under", "upon",
+})
 
 # Month-name date: <Month> <day> [,;] <4-digit-year>. Separators tolerate OCR
 # commas/semicolons/spaces. The day is a REAL 1-2 digit number or it does not
@@ -264,38 +281,42 @@ def _is_header_furniture(line: str) -> bool:
     if _ADDRESS_RE.search(line):
         return True
     tokens = _norm_tokens(line)
+    if not tokens:
+        return False
+    # EO-number fragment: every alpha token is EO-number furniture ("ORDER", "No",
+    # "EXECUTIVE"...). Catches one-word-per-line OCR layouts that split the header.
+    if all(t in _EO_NUMBER_TOKENS for t in tokens):
+        return True
     return len(tokens) <= FURNITURE_MAX_TOKENS and _line_anchor_label(line) is not None
 
 
-def _title_token_strong(token: str) -> bool:
-    """Stricter than :func:`_english_like`: used only for the title confidence gate.
+def _line_is_dateish(line: str) -> bool:
+    """True if a line carries a full month name (a date line, not a title line).
 
-    Requires a plausible vowel/consonant balance so OCR-mangled tokens that happen
-    to contain a stray vowel (``TRANSPL``, ``CLPY``) are rejected. A real English
-    word's vowel ratio sits well inside [0.2, 0.8]; consonant clusters of 4+ are
-    almost always OCR damage.
+    Broader than :data:`_MONTH_DATE_RE`, which needs a numeric day — this also
+    catches ``DATED JANUARY I, 1974`` (Roman-numeral day) and a bare ``APRIL`` line
+    from a split header, so neither is mistaken for a subject title.
     """
-    t = token.lower()
-    if not t.isalpha() or len(t) < 2 or len(t) > 20:
-        return False
-    vowels = sum(c in _VOWELS for c in t)
-    ratio = vowels / len(t)
-    if not (0.20 <= ratio <= 0.80):
-        return False
-    run = 0
-    for c in t:
-        run = 0 if c in _VOWELS else run + 1
-        if run >= 4:
-            return False
-    return True
+    return any(tok.lower() in _MONTH_WORDS for tok in _norm_tokens(line))
 
 
-def _title_confidence(title: str) -> float:
-    """Fraction of a title's >=2-char tokens that pass the strict test. 0 if none."""
+def _title_is_recognized(title: str) -> bool:
+    """True if the title is trustworthy: enough meaningful tokens, all recognized.
+
+    Meaningful token = a >=2-char alpha token (single letters, e.g. the ``S`` from
+    ``MAYOR'S``, are ignored). A title with fewer than
+    :data:`TITLE_MIN_MEANINGFUL_TOKENS` such tokens is not trusted (rejects
+    single-word OCR noise like ``MARY``). Every meaningful token must clear
+    :func:`lexicon.recognize`.
+    """
     toks = [w for w in re.findall(r"[A-Za-z]+", title) if len(w) >= 2]
-    if len(toks) < 2:
-        return 0.0
-    return sum(_title_token_strong(w) for w in toks) / len(toks)
+    if len(toks) < TITLE_MIN_MEANINGFUL_TOKENS:
+        return False
+    # A caps line ending in a dangling function word ("...CONTRACT WITH",
+    # "...PRINCIPLES WHICH") is a truncated line or a sentence, not a subject title.
+    if toks[-1].lower() in _TITLE_TRAILING_STOP:
+        return False
+    return all(lexicon.recognize(w) for w in toks)
 
 
 def _english_like(token: str) -> bool:
@@ -393,7 +414,8 @@ def _extract_title(lines: list[str]) -> tuple[str | None, str | None]:
             continue
         if _is_body_starter(s):
             break
-        if _is_header_furniture(s) or _MONTH_DATE_RE.search(s) or _NUMERIC_DATE_RE.search(s):
+        if (_is_header_furniture(s) or _line_is_dateish(s)
+                or _NUMERIC_DATE_RE.search(s)):
             if collected:
                 break
             continue
@@ -417,7 +439,7 @@ def _extract_title(lines: list[str]) -> tuple[str | None, str | None]:
     candidate = re.sub(r"^[^0-9A-Za-z]+|[^0-9A-Za-z]+$", "", " ".join(collected))
     if not candidate:
         return None, None
-    if _title_confidence(candidate) >= TITLE_MIN_STRONG_RATIO:
+    if _title_is_recognized(candidate):
         return candidate, candidate
     return None, candidate
 
@@ -568,6 +590,7 @@ def clean_record(
         "dropped_mark_count": len(dropped_marks),
         "raw_chars": len(raw),
         "clean_chars": len(cleaned),
+        "lexicon_source": lexicon.english_lexicon_source(),
     }
     # Any of these flags means a human should look before the field is trusted.
     review_flag = any(
