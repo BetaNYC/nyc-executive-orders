@@ -1,5 +1,7 @@
 # nyc-executive-orders
 
+> 🚧 **Work in progress.** This project is in process: the corpus is usable today, but text quality, metadata, and coverage are still being refined, and data shapes may change. Nothing here should yet be treated as a complete or authoritative record. [Issues](../../issues) and contributions welcome.
+
 An open, complete, machine-readable archive of **New York City mayoral executive orders** — the public compilation the City is *legally required* to maintain.
 
 > **Status: the archive is live.** The full 1974–present corpus — 2,192 orders as per-EO Markdown + bulk JSON, backed by 2,139 source PDFs — is published in [`corpus/`](corpus/). The 2014–2021 (de Blasio) cohort, previously an eight-year hole, was backfilled from the Internet Archive in July 2026 ([Phase B.4](#phase-b4--de-blasio-era-backfill-20142021)). The supersession graph is now populated deterministically from the corpus text ([Phase C](#phase-c--supersession-graph)); coverage and text are still being refined (OCR cleanup, metadata backfill), and known gaps and limits are documented, not hidden. See [Status](#status).
