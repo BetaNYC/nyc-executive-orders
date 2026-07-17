@@ -2,7 +2,7 @@
 
 An open, complete, machine-readable archive of **New York City mayoral executive orders** — the public compilation the City is *legally required* to maintain.
 
-> **Status: the archive is live.** The full 1974–present corpus — 2,192 orders as per-EO Markdown + bulk JSON, backed by 2,139 source PDFs — is published in [`corpus/`](corpus/). The 2014–2021 (de Blasio) cohort, previously an eight-year hole, was backfilled from the Internet Archive in July 2026 ([Phase B.4](#phase-b4--de-blasio-era-backfill-20142021)). Coverage and text are still being refined (OCR cleanup, supersession graph, metadata backfill); known gaps and limits are documented, not hidden. See [Status](#status).
+> **Status: the archive is live.** The full 1974–present corpus — 2,192 orders as per-EO Markdown + bulk JSON, backed by 2,139 source PDFs — is published in [`corpus/`](corpus/). The 2014–2021 (de Blasio) cohort, previously an eight-year hole, was backfilled from the Internet Archive in July 2026 ([Phase B.4](#phase-b4--de-blasio-era-backfill-20142021)). The supersession graph is now populated deterministically from the corpus text ([Phase C](#phase-c--supersession-graph)); coverage and text are still being refined (OCR cleanup, metadata backfill), and known gaps and limits are documented, not hidden. See [Status](#status).
 
 Vibe coded with [Claude](https://claude.ai) by [BetaNYC](https://beta.nyc).
 
@@ -68,7 +68,7 @@ Everything before ~2002 is scanned images requiring OCR; later orders are a mix 
 - [x] **Parse** PDFs to text (born-digital extraction with a local OCR fallback for scans).
 - [x] **Structure** a clean, machine-readable corpus with metadata — *supersession annotations are the next phase (fields present, not yet populated).*
 - [x] **Publish** the corpus (bulk-downloadable JSON + human-readable Markdown, matching the BetaNYC pattern).
-- [ ] **Annotate supersession** (`supersedes` / `superseded_by` / `in_effect`) and backfill remaining metadata (Phase C).
+- [x] **Annotate supersession** (`supersedes` / `superseded_by` / `in_effect` / `establishes_entity`) — deterministic, rule-based extraction from the corpus text ([Phase C](#phase-c--supersession-graph)); metadata backfill continues.
 - [ ] **Maintain** it forward as new orders are signed.
 - [ ] *(Explore)* an MCP server, and whether this folds into [`nyc-charter-laws-rules`](https://github.com/BetaNYC/nyc-charter-laws-rules).
 
@@ -366,8 +366,42 @@ bulk `corpus/eo.json` and `corpus/manifest.csv`.
 
 Every record carries a `text_source` (`born-digital` / `ocr` / none) and a `text_quality`
 tier (`clean` / `minor-noise` / `needs-review`) so consumers know exactly what they are
-getting. Supersession annotations (`supersedes` / `superseded_by` / `in_effect`) are the next
-phase — the fields exist but are not yet populated.
+getting. Supersession annotations are populated by [Phase C](#phase-c--supersession-graph).
+
+## Phase C — supersession graph
+
+The four graph fields the schema reserves (`supersedes`, `superseded_by`, `in_effect`,
+`establishes_entity`) are populated by a **deterministic, rule-based** post-process
+(`src/nyc_executive_orders/supersede.py`, run via `scripts/run_supersede.py`) — the same
+discipline as the clean stage: **no LLM, no network**, every edge traceable to a literal
+citation in the corpus text. This is what makes the corpus answer *"what's still in force?"* —
+the supersession annotation § 3-113.1 requires.
+
+- **Citations resolve year-scoped.** `Executive Order No. {n}, dated {Month} {day}, {year}, is
+  hereby REVOKED` (and rescinded / superseded / repealed / amended) resolves to the cited
+  *date's* year plus the series (`Emergency` ⇒ EEO, else EO), never the number alone —
+  per-mayor numbering resets and emergency numbers collide across administrations.
+- **Two edge sources**, tagged in the edge list: `body-citation` (the containing order is the
+  actor) and `header-xref` (the OCR'd archival `XREF: AMENDED BY 'EO 18) 1978'` stamp, where
+  the citing order is the actor).
+- **`in_effect` is conservative and regular-only.** `false` when a resolvable in-corpus order
+  *wholly* revokes/supersedes it (a section-scoped partial repeal or an amendment alone does
+  not flip it); `null` otherwise (we never assert a 1970s order is still in force). Emergency
+  `in_effect` stays `null` in v1 (expiry by operation of law is out of scope), and EEO
+  extension chains are not treated as supersession edges.
+- **`establishes_entity` auto-writes only exact, unambiguous matches** against the
+  [`ny-gov-web-registry`](https://github.com/BetaNYC/ny-gov-web-registry); fuzzy candidates go
+  to the report for human review.
+
+Outputs: the four fields written back into `corpus/eo.json` + every `corpus/YYYY/<eo_id>.md`
+(record count unchanged), the edge list `corpus/supersession.json` (verb + provenance per
+edge), and a human-readable `supersession_report.md`. Idempotent — a re-run yields identical
+output. Needs the registry cloned as a sibling (or `--registry <path>`):
+
+```bash
+uv run --no-project --with pyyaml python scripts/run_supersede.py --dry-run   # report only
+uv run --no-project --with pyyaml python scripts/run_supersede.py             # write in place
+```
 
 ## Status
 
@@ -380,8 +414,9 @@ been run against the full corpus, and the result — 2,192 orders — is publish
 
 It is the most complete open compilation of NYC mayoral executive orders we know of, but it is
 **not yet authoritative**: OCR text of the oldest scans is imperfect (faithful to the source,
-not perfected), 53 orders are documented as never publicly retrievable, and supersession
-annotation plus metadata backfill (Phase C) are still ongoing. The de Blasio regular series is
+not perfected), 53 orders are documented as never publicly retrievable, and while the
+supersession graph is now populated (Phase C: 239 edges, 136 regular orders computed out of
+force), metadata backfill continues. The de Blasio regular series is
 now near-complete — 72 of the ~91 orders issued (numbers run 1–91) were recovered; **19 numbers
 were never archived on Wayback and are unrecoverable from any known open source** (the live API
 returns nothing before 2022), including EO 31/2018 and EO 56/2020, which later orders cite as
