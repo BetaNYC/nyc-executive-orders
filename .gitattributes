@@ -1,3 +1,9 @@
 # Source PDFs are mirrored via git-LFS (project Decision 2 — permanent public
 # mirror of the source documents). Every PDF under pdfs/ is an LFS pointer.
 pdfs/** filter=lfs diff=lfs merge=lfs -text
+
+# Phase D — DORIS GPP integration. Dual-provenance copies and parked pre-1974
+# volumes live under sources/gpp/ and are mirrored via git-LFS too. Scoped to
+# *.pdf so the committed GPP input snapshots (JSON/TSV under sources/gpp/inputs/)
+# and the generated volumes manifest stay diffable/greppable, not LFS pointers.
+sources/**/*.pdf filter=lfs diff=lfs merge=lfs -text

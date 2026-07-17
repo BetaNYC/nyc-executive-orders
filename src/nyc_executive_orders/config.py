@@ -177,3 +177,52 @@ DEBLASIO_CEIL_YEAR = 2021
 # from SOURCE_WAYBACK (1974->2013 historical) and SOURCE_WAYBACK_GAP (current-era
 # gap recovery) so all three Wayback recovery routes stay auditable in `source`.
 SOURCE_WAYBACK_DEBLASIO = "wayback-deblasio"
+
+# --- Phase D: DORIS Government Publications Portal (GPP) integration ---------
+# The DORIS Government Publications Portal (a Samvera Hyrax repository) holds the
+# City's deposited copies of mayoral executive orders under Charter § 1133 / the
+# City Record umbrella. A 2026-07-17 browser-session harvest (recon report:
+# BetaNYC workspace `team/research/mayoral-executive-orders/2026-07-17-gpp-city-
+# record-recon.md`) pulled every file behind Report Type = "Executive Orders" into
+# a local staging dir. This integration folds those files into the corpus.
+#
+# Provenance tag stamped on records whose PRIMARY pdf now comes from GPP (the 80
+# net-new orders GPP supplies wholesale, and the 20 known-missing gap-closers that
+# had no corpus record). Distinct from the live/wayback tags so GPP-sourced orders
+# stay auditable in `source`. Gap-closer records that already existed keep their
+# original `source` (metadata origin unchanged) and record the GPP pdf lineage in
+# the provenance sidecar; dual orders are byte-preserved (sidecar only).
+SOURCE_GPP = "gpp"
+
+# GPP origin + the DOCUMENTED same-session download endpoint. Built against the
+# recon report's verified access path (§4: "`/downloads/<file_set_id>` — the PDF,
+# same session"), NOT guessed (engineering-standards §0). The Akamai Bot Manager
+# WAF means these URLs are only fetchable from inside a real browser session; the
+# harvest already captured the bytes, so this URL is recorded as provenance
+# (`source_pdf_url`), not re-fetched by this offline integration.
+GPP_ORIGIN = "https://a860-gpp.nyc.gov"
+GPP_DOWNLOAD_PATH_TEMPLATE = "/downloads/{fileset_id}"
+
+# Staged harvest layout: one PDF per GPP file-set id, named `gpp-<fileset_id>.pdf`
+# (recon report §1; the browser blob-download sweep writes this stable name). The
+# integration reads staging read-only and copies files into the repo; it never
+# downloads. Default location is a sibling of the repo under the flat ~/Code/ tree.
+GPP_STAGING_FILENAME_TEMPLATE = "gpp-{fileset_id}.pdf"
+DEFAULT_GPP_STAGING_DIR = _REPO_ROOT.parent / "gpp_staging"
+
+# Committed GPP input snapshots (the reproducibility record — a third party can
+# re-run the whole integration from these + the staging PDFs). Public civic
+# metadata, no PII, so committed raw for diffability/greppability.
+GPP_SOURCES_DIR = _REPO_ROOT / "sources" / "gpp"
+DEFAULT_GPP_INVENTORY = GPP_SOURCES_DIR / "inputs" / "gpp-eo-inventory-2026-07-17.json"
+DEFAULT_GPP_MANIFEST = GPP_SOURCES_DIR / "inputs" / "gpp-harvest-manifest-2026-07-17.json"
+
+# The provenance sidecar (committed alongside corpus/eo.json, like
+# corpus/supersession.json). Keyed by eo_id → the GPP lineage for that order (all
+# gpp item ids, file-set ids, local file paths, download URLs, disposition class).
+# A SIDECAR — not inline eo.json fields — because the corpus frontmatter field set
+# is LOCKED (build_corpus.FRONTMATTER_FIELDS) and re-emitted from that locked set
+# on every parse/clean/supersede pass, which would silently drop inline GPP keys.
+# The sidecar also keeps dual-provenance records byte-identical (their second GPP
+# lineage lives here, not in their record).
+GPP_PROVENANCE_JSON_NAME = "gpp_provenance.json"
