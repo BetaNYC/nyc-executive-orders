@@ -20,10 +20,8 @@ jobs:
       # Phase B depends on the sibling ny-gov-web-archiver (an editable path dep,
       # `../ny-gov-web-archiver` — see pyproject [tool.uv.sources]). Both repos
       # are checked out as siblings under $GITHUB_WORKSPACE so the relative path
-      # resolves. The archiver is a PRIVATE BetaNYC repo, so its checkout needs a
-      # token with read access to it — the default GITHUB_TOKEN is scoped to this
-      # repo only. Provision a fine-grained PAT (or App token) with contents:read
-      # on BetaNYC/ny-gov-web-archiver as the secret NY_GOV_ARCHIVER_TOKEN.
+      # resolves. The archiver is a PUBLIC BetaNYC repo (made public 2026-07-16),
+      # so its checkout needs no token.
       - name: Check out nyc-executive-orders
         uses: actions/checkout@v4
         with:
@@ -33,7 +31,6 @@ jobs:
         with:
           repository: BetaNYC/ny-gov-web-archiver
           path: ny-gov-web-archiver
-          token: ${{ secrets.NY_GOV_ARCHIVER_TOKEN }}
       - name: Install uv
         uses: astral-sh/setup-uv@v5
       - name: Run tests (offline)

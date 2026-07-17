@@ -423,6 +423,15 @@ returns nothing before 2022), including EO 31/2018 and EO 56/2020, which later o
 revoked. Those gaps are listed, not hidden. Follow along or contribute —
 [open an issue](https://github.com/BetaNYC/nyc-executive-orders/issues).
 
+## Part of BetaNYC's civic data tools
+
+This archive is the first application of a family of free, open civic data assets [BetaNYC](https://beta.nyc) builds and stewards:
+
+- [`ny-gov-web-registry`](https://github.com/BetaNYC/ny-gov-web-registry) — which NY government entities exist, and where they live on the web (the target of this corpus's `establishes_entity` links).
+- [`ny-gov-web-archiver`](https://github.com/BetaNYC/ny-gov-web-archiver) — the throttled Wayback Machine harvester behind this archive's historical backfills.
+- [`nyc-boundaries`](https://github.com/BetaNYC/nyc-boundaries) — NYC administrative boundaries, mapped and queryable.
+- Seven MCP servers giving AI agents direct access to NYC/NYS civic data: [Council legislation](https://github.com/BetaNYC/nyc-council-mcp), [City Record](https://github.com/BetaNYC/nyc-record-mcp), [Checkbook spending](https://github.com/BetaNYC/nyc-checkbook-mcp), [311](https://github.com/BetaNYC/nyc-311-mcp), [Charter/Code/Rules](https://github.com/BetaNYC/nyc-charter-laws-rules), [NYS legislation](https://github.com/BetaNYC/nys-openlegislation-mcp), and the [Council budget](https://github.com/BetaNYC/New-York-City-Budget).
+
 ## AI use in this project
 
 BetaNYC uses AI tools openly and with human accountability. This repository was built by AI agents (Anthropic's Claude) working under the direction and review of BetaNYC staff — the "vibe coded" tooling above was written by AI, but every live harvest run is a separate, supervised, human-run step, and the roadmap and scope decisions are human-made.
