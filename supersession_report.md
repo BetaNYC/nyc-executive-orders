@@ -1,6 +1,6 @@
 # Supersession graph — extraction report
 
-Corpus records: **2192**  |  Edges: **239**  |  Dangling citations: **142**  |  Extension citations skipped: **1536**
+Corpus records: **2291**  |  Edges: **244**  |  Dangling citations: **142**  |  Extension citations skipped: **1616**
 
 Deterministic, rule-based extraction (no LLM, no network). Body citations resolve year-scoped from the cited date; the containing order is the actor. Header XREFs (`X AMENDED BY Y`) make Y the actor.
 
@@ -8,12 +8,12 @@ Deterministic, rule-based extraction (no LLM, no network). Body citations resolv
 
 | verb | body-citation | header-xref | total |
 |---|---:|---:|---:|
-| amended | 90 | 1 | 91 |
+| amended | 91 | 1 | 92 |
 | repealed | 58 | 0 | 58 |
 | rescinded | 5 | 0 | 5 |
-| revoked | 81 | 0 | 81 |
+| revoked | 85 | 0 | 85 |
 | superseded | 4 | 0 | 4 |
-| **all** | 238 | 1 | 239 |
+| **all** | 243 | 1 | 244 |
 
 Of these, **55** are section/paragraph-scoped (partial) edits — recorded as edges but excluded from the `in_effect` computation (a partial repeal does not take an order out of force).
 
@@ -23,8 +23,8 @@ Regular EOs only carry a computed value; emergency EOs are `null` in v1 (expiry 
 
 | value | all | regular only |
 |---|---:|---:|
-| false | 136 | 136 |
-| null | 2056 | 817 |
+| false | 140 | 140 |
+| null | 2151 | 834 |
 | true | 0 | 0 |
 
 `false` regular EOs = wholly revoked/superseded by a resolvable in-corpus order. No EO is set `true` (we never assert a historical order is still in force without a principled basis).
@@ -34,8 +34,8 @@ Regular EOs only carry a computed value; emergency EOs are `null` in v1 (expiry 
 Recorded here, never written into the fields. `not-in-corpus` = the cited order was never archived; `no-year` = the citation carried no date, so it could not be year-scoped (never guessed by number alone).
 
 - **implausible-year**: 2
-- **no-year**: 88
-- **not-in-corpus**: 52
+- **no-year**: 90
+- **not-in-corpus**: 50
 
 Distinct unrecoverable targets (most-cited first):
 
@@ -52,8 +52,6 @@ Distinct unrecoverable targets (most-cited first):
 - `1967-EO-038` — cited 2×
 - `1969-EO-109` — cited 2×
 - `1970-EO-007` — cited 2×
-- `2018-EO-031` — cited 1×
-- `2020-EO-056` — cited 1×
 - `1973-EO-075` — cited 1×
 - `1957-EO-038` — cited 1×
 - `1962-EO-024` — cited 1×
@@ -74,13 +72,14 @@ Distinct unrecoverable targets (most-cited first):
 
 ## Establishes-entity
 
-Auto-written (exact, unambiguous registry match, one per order): **1**. Review candidates: **29**.
+Auto-written (exact, unambiguous registry match, one per order): **2**. Review candidates: **29**.
 
 ### Auto-written
 
 | eo_id | matched name | registry id |
 |---|---|---|
 | 1984-EO-077 | Office of Payroll) Administration | `office-of-payroll-administration` |
+| 2021-EO-080 | Taskforce on Racial Inclusion and Equity | `taskforce-on-racial-inclusion-and-equity` |
 
 ### Review candidates (NOT auto-written)
 

@@ -1,8 +1,15 @@
 {
   "generated_by": "scripts/run_supersede.py",
-  "corpus_records": 2192,
-  "edge_count": 239,
+  "corpus_records": 2291,
+  "edge_count": 244,
   "edges": [
+    {
+      "actor": "2022-EO-021",
+      "target": "2018-EO-031",
+      "verb": "revoked",
+      "source": "body-citation",
+      "partial": false
+    },
     {
       "actor": "2022-EO-020",
       "target": "2021-EO-091",
@@ -55,6 +62,13 @@
     {
       "actor": "2022-EO-007",
       "target": "2021-EO-071",
+      "verb": "revoked",
+      "source": "body-citation",
+      "partial": false
+    },
+    {
+      "actor": "2022-EO-005",
+      "target": "2020-EO-056",
       "verb": "revoked",
       "source": "body-citation",
       "partial": false
@@ -1675,29 +1689,36 @@
       "verb": "amended",
       "source": "body-citation",
       "partial": true
+    },
+    {
+      "actor": "2026-EO-015",
+      "target": "2022-EO-019",
+      "verb": "amended",
+      "source": "body-citation",
+      "partial": false
+    },
+    {
+      "actor": "2026-EO-015",
+      "target": "2018-EO-036",
+      "verb": "revoked",
+      "source": "body-citation",
+      "partial": false
+    },
+    {
+      "actor": "2026-EO-015",
+      "target": "2021-EO-068",
+      "verb": "revoked",
+      "source": "body-citation",
+      "partial": false
     }
   ],
   "dangling_citations": [
-    {
-      "actor": "2022-EO-021",
-      "target": "2018-EO-031",
-      "verb": "revoked",
-      "source": "body-citation",
-      "reason": "not-in-corpus"
-    },
     {
       "actor": "2022-EO-008",
       "target": "EO-122",
       "verb": "revoked",
       "source": "body-citation",
       "reason": "no-year"
-    },
-    {
-      "actor": "2022-EO-005",
-      "target": "2020-EO-056",
-      "verb": "revoked",
-      "source": "body-citation",
-      "reason": "not-in-corpus"
     },
     {
       "actor": "2026-EO-003",
@@ -2671,7 +2692,21 @@
       "verb": "amended",
       "source": "body-citation",
       "reason": "no-year"
+    },
+    {
+      "actor": "2021-EEO-248",
+      "target": "EEO-241",
+      "verb": "amended",
+      "source": "body-citation",
+      "reason": "no-year"
+    },
+    {
+      "actor": "2021-EEO-248",
+      "target": "EEO-245",
+      "verb": "amended",
+      "source": "body-citation",
+      "reason": "no-year"
     }
   ],
-  "extensions_skipped": 1536
+  "extensions_skipped": 1616
 }

@@ -4,6 +4,10 @@
 *.pdf
 !pdfs/
 !pdfs/**
+# Phase D — DORIS GPP dual-provenance copies + parked pre-1974 volumes under
+# sources/gpp/ are also committed via git-LFS (.gitattributes: sources/**/*.pdf).
+!sources/
+!sources/**
 # The tiny offline parse-pipeline test fixtures ARE committed (regenerate with
 # tests/fixtures/generate_fixtures.py) — the suite needs them.
 !tests/fixtures/*.pdf
