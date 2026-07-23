@@ -345,7 +345,14 @@ def test_integrate_idempotent(tmp_path):
 def test_real_inventory_disposition_counts():
     inv = gpp.load_inventory(COMMITTED_INVENTORY)
     corpus = json.loads(COMMITTED_CORPUS.read_text(encoding="utf-8"))
-    result = gpp.classify(inv, corpus)
+    # corpus/eo.json is now the POST-merge corpus (the gated merge is committed —
+    # PR #13), so already-integrated orders must be pinned via the provenance
+    # ledger or they'd reclassify as `dual` (their eo_id is already present).
+    # This also verifies re-deriving from scratch against the real ledger still
+    # reproduces the exact disposition breakdown — the resumability path itself,
+    # not just the original parser/overlap math.
+    prior_ledger = gpp.provenance_ledger(COMMITTED_CORPUS.parent)
+    result = gpp.classify(inv, corpus, prior_ledger=prior_ledger)
     counts = result.counts()
     assert counts == {
         gpp.NET_NEW: 79,
@@ -357,9 +364,10 @@ def test_real_inventory_disposition_counts():
     }
     minted = {o.eo_id for o in result.orders
               if o.disposition in (gpp.NET_NEW, gpp.GAP_CLOSER_MINT)}
-    # +99 records → 2,291 (NOT 2,272: the recon omitted the 20 gap-closer mints,
-    # and EEO 99 is dual not net-new — see the module docstring / handoff).
-    assert len(corpus) + len(minted) == 2291
+    assert len(minted) == 99
+    # All 99 are already folded into the committed corpus (2,291 records).
+    assert minted <= {r["eo_id"] for r in corpus}
+    assert len(corpus) == 2291
     # Both Phase-C dangling supersession targets are now minted.
     assert {"2018-EO-031", "2020-EO-056"} <= minted
     # Koch EO 9 minted; the 3 rescues resolve to existing (dual) records.
@@ -376,7 +384,10 @@ def test_real_inventory_derivation_matches_committed_tsvs():
     inputs = COMMITTED_INVENTORY.parent
     inv = gpp.load_inventory(COMMITTED_INVENTORY)
     corpus = json.loads(COMMITTED_CORPUS.read_text(encoding="utf-8"))
-    result = gpp.classify(inv, corpus)
+    # See test_real_inventory_disposition_counts: corpus/eo.json is post-merge,
+    # so already-integrated orders need the ledger to pin their real disposition.
+    prior_ledger = gpp.provenance_ledger(COMMITTED_CORPUS.parent)
+    result = gpp.classify(inv, corpus, prior_ledger=prior_ledger)
     counts = result.counts()
 
     def tsv_rows(name):
