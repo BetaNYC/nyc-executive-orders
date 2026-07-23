@@ -1025,7 +1025,8 @@ def render_report(
              f"(+{minted} minted: {counts.get(NET_NEW, 0)} net-new + "
              f"{counts.get(GAP_CLOSER_MINT, 0)} gap-closer mints). "
              f"No-file records drop from {counts.get(GAP_CLOSER_EXISTING, 0)} "
-             "toward ~1 (Bloomberg EO 59).")
+             "toward the 2 known unrecoverable gaps (Bloomberg EO 59, Adams "
+             "EEO 471).")
     L.append("")
 
     L.append("## Staging reconciliation")
@@ -1059,9 +1060,11 @@ def render_report(
 
     L.append("## Gaps after GPP integration")
     L.append("")
-    L.append("- **Bloomberg EO 59** — the sole missing numbered order 1962–present "
-             "outside the volumes; absent from GPP too. Chased only via Municipal "
-             "Archives / Law Dept FOIL.")
+    L.append("- **Bloomberg EO 59 and Adams EEO 471** — the two known missing "
+             "numbered orders 1962–present outside the volumes; both absent from "
+             "GPP too (EEO 471 falls between EEO 470 and EEO 472, both held, both "
+             "signed the same day). Chased only via Municipal Archives / Law Dept "
+             "FOIL.")
     L.append("- **Both Phase-C dangling supersession targets close:** 2018-EO-031 "
              "and 2020-EO-056 are now real records with text — re-run "
              "`scripts/run_supersede.py` to resolve them.")

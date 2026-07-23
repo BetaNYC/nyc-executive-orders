@@ -15,7 +15,7 @@ Deterministic, offline fold of the GPP harvest into the corpus (no network, no c
 | volume | 14 | park pre-1974 compilation → `sources/gpp/volumes/` |
 | excluded | 7 | non-EO / no-file items, skipped |
 
-**Corpus:** 2291 → **2390** (+99 minted: 79 net-new + 20 gap-closer mints). No-file records drop from 53 toward ~1 (Bloomberg EO 59).
+**Corpus:** 2291 → **2390** (+99 minted: 79 net-new + 20 gap-closer mints). No-file records drop from 53 toward the 2 known unrecoverable gaps (Bloomberg EO 59, Adams EEO 471).
 
 ## Staging reconciliation
 
@@ -30,13 +30,13 @@ Expected file-set ids to place: **2588** — 2346 of expected 2588 present | mis
 - gap-closer records filled: **53**
 - dual copies placed: **2128**
 - volume files placed: **14**
-- files written: **1640**
+- files written: **0**
 - deferred (file not staged): **242**
 - corpus: **2291 → 2291**
 
 ## Gaps after GPP integration
 
-- **Bloomberg EO 59** — the sole missing numbered order 1962–present outside the volumes; absent from GPP too. Chased only via Municipal Archives / Law Dept FOIL.
+- **Bloomberg EO 59 and Adams EEO 471** — the two known missing numbered orders 1962–present outside the volumes; both absent from GPP too (EEO 471 falls between EEO 470 and EEO 472, both held, both signed the same day). Chased only via Municipal Archives / Law Dept FOIL.
 - **Both Phase-C dangling supersession targets close:** 2018-EO-031 and 2020-EO-056 are now real records with text — re-run `scripts/run_supersede.py` to resolve them.
 - **Pre-1974 (14 volumes)** — parked under `sources/gpp/volumes/`; per-order splitting (bookmark/index segmentation + OCR) is a later phase, not done here.
 
