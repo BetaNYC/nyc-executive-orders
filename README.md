@@ -405,6 +405,38 @@ uv run --no-project --with pyyaml python scripts/run_supersede.py --dry-run   # 
 uv run --no-project --with pyyaml python scripts/run_supersede.py             # write in place
 ```
 
+## Phase D — DORIS GPP integration
+
+The **DORIS Government Publications Portal** ([a860-gpp.nyc.gov](https://a860-gpp.nyc.gov), a
+Samvera Hyrax repository) holds the City's deposited copies of executive orders. A browser-session
+harvest of every file under Report Type "Executive Orders" (2,587 items) is folded into the corpus
+by a **deterministic, offline, additive** integration (`src/nyc_executive_orders/gpp.py`, run via
+`scripts/run_gpp_integration.py`) — **no network, no cloud, no LLM** (it reads staged PDFs the
+harvest already downloaded). Dispositions are re-derived from the committed inventory + corpus:
+
+- **net-new (79)** and **known-missing gap-closers (20)** → mint a record, primary PDF → `pdfs/`.
+  This closes both Phase-C dangling supersession targets (2018-EO-031, 2020-EO-056) and Koch EO 9.
+- **gap-closer existing (53)** → attach the GPP PDF to an existing no-pdf record and re-parse for
+  text; the record's metadata is byte-preserved.
+- **dual (2,129)** → the GPP copy is a *second* source lineage under `sources/gpp/YYYY/`; the
+  primary `pdfs/` file and the corpus record are byte-identical.
+- **volumes (14)** → pre-1974 bound compilations parked under `sources/gpp/volumes/` (per-order
+  splitting is a later phase); **excluded (7)** non-EO / no-file strays are skipped.
+
+Every touched order's GPP lineage (item ids, file-set ids, download URLs, local paths) lands in a
+sidecar, `corpus/gpp_provenance.json` — kept out of `eo.json` so the locked frontmatter schema and
+dual byte-identity hold. Idempotent + resumable: the sidecar pins already-integrated orders, so a
+re-run over the same (or a more-complete) staging dir never duplicates. The merge carries the same
+human/operator authorization gate as the harvest runners; `--dry-run` previews with no gate. When
+run, the corpus grows **2,192 → 2,291**.
+
+```bash
+# Preview (read-only, no gate) — validate staging + print the plan, write nothing:
+uv run python scripts/run_gpp_integration.py --dry-run
+# Merge (born-digital only, fast). Gated; --operator-authorized or -i-am-…-supervised:
+uv run python scripts/run_gpp_integration.py --no-ocr --operator-authorized
+```
+
 ## Status
 
 The archive is **live and published**. Phase A (current-era harvester), Phase B (historical
@@ -412,7 +444,9 @@ Wayback backfill), Phase B.2 (current-era gap recovery), and Phase B.4 (de Blasi
 backfill) are built and offline-tested; each live harvest run is a separate, supervised,
 human-run step. The parse → corpus pipeline (probe → extract → OCR → enrich → clean → emit) has
 been run against the full corpus, and the result — 2,192 orders — is published in
-[`corpus/`](corpus/).
+[`corpus/`](corpus/). Phase D (DORIS GPP integration) tooling is built and offline-tested; the
+merge that folds in the harvest (growing the corpus to 2,291) is a separate, gated step that runs
+once the harvest completes.
 
 It is the most complete open compilation of NYC mayoral executive orders we know of, but it is
 **not yet authoritative**: OCR text of the oldest scans is imperfect (faithful to the source,
