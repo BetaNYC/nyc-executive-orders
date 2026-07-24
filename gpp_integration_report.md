@@ -19,19 +19,19 @@ Deterministic, offline fold of the GPP harvest into the corpus (no network, no c
 
 ## Staging reconciliation
 
-Expected file-set ids to place: **2588** — 2346 of expected 2588 present | missing 242 | corrupt 0 | extra 3.
+Expected file-set ids to place: **2588** — 2587 of expected 2588 present | missing 1 | corrupt 0 | extra 3.
 
-- **Not yet staged (242):** the harvest may still be downloading; these orders are DEFERRED and integrate on a later re-run (resumable).
+- **Not yet staged (1):** the harvest may still be downloading; these orders are DEFERRED and integrate on a later re-run (resumable).
 - **Extra (3):** staged but not integrated — the excluded items' harvested files + any leftovers; reported, never placed.
 
 ### This run
 
 - minted records: **0**
 - gap-closer records filled: **53**
-- dual copies placed: **2128**
+- dual copies placed: **2369**
 - volume files placed: **14**
-- files written: **0**
-- deferred (file not staged): **242**
+- files written: **241**
+- deferred (file not staged): **1**
 - corpus: **2291 → 2291**
 
 ## Gaps after GPP integration
