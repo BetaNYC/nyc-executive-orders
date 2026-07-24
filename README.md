@@ -4,7 +4,7 @@
 
 An open, complete, machine-readable archive of **New York City mayoral executive orders** — the public compilation the City is *legally required* to maintain.
 
-> **Status: the archive is live.** The full 1974–present corpus — 2,192 orders as per-EO Markdown + bulk JSON, backed by 2,139 source PDFs — is published in [`corpus/`](corpus/). The 2014–2021 (de Blasio) cohort, previously an eight-year hole, was backfilled from the Internet Archive in July 2026 ([Phase B.4](#phase-b4--de-blasio-era-backfill-20142021)). The supersession graph is now populated deterministically from the corpus text ([Phase C](#phase-c--supersession-graph)); coverage and text are still being refined (OCR cleanup, metadata backfill), and known gaps and limits are documented, not hidden. See [Status](#status).
+> **Status: the archive is live.** The full 1974–present corpus — **2,291 orders** as per-EO Markdown + bulk JSON, backed by 2,291 source PDFs plus 2,435 second-source scans from DORIS's Government Publications Portal — is published in [`corpus/`](corpus/). The 2014–2021 (de Blasio) cohort, previously an eight-year hole, was backfilled from the Internet Archive in July 2026 ([Phase B.4](#phase-b4--de-blasio-era-backfill-20142021)) and is now complete (91/91). The GPP integration ([Phase D](#phase-d--doris-gpp-integration)) closed all but 2 known-missing numbered orders. The supersession graph is populated deterministically from the corpus text ([Phase C](#phase-c--supersession-graph)); coverage and text are still being refined (OCR cleanup, metadata backfill, the pre-1974 volumes), and known gaps and limits are documented, not hidden. See [Status](#status).
 
 Vibe coded with [Claude](https://claude.ai) by [BetaNYC](https://beta.nyc).
 
@@ -50,6 +50,21 @@ Out of scope: state (gubernatorial) executive orders; agency rules and the Admin
 
 ---
 
+## What's in this repository
+
+| Path | What it is |
+|---|---|
+| [`corpus/`](corpus/) | **The published dataset** — 2,291 orders. One Markdown file per order (`corpus/YYYY/<eo_id>.md`: YAML frontmatter + full text) plus the bulk `corpus/eo.json`. `corpus/supersession.json` is the edge list from [Phase C](#phase-c--supersession-graph) (244 edges); `corpus/gpp_provenance.json` is the [Phase D](#phase-d--doris-gpp-integration) sidecar mapping each order to its GPP source item(s) — kept out of `eo.json` so the locked record schema holds. |
+| [`pdfs/`](pdfs/) | **Primary source PDFs**, one per order (`pdfs/YYYY/<eo_id>.pdf`, git-LFS) — what every corpus record's text was extracted or OCR'd from. |
+| [`sources/gpp/`](sources/gpp/) | **Second-source lineage from DORIS's Government Publications Portal.** `sources/gpp/YYYY/<eo_id>--<fileset_id>.pdf` (2,435 files) holds a GPP-scanned copy for orders that already have a primary PDF elsewhere — kept for provenance diversity, not as the record of truth (some orders have 2–3 GPP scans on file). `sources/gpp/volumes/` holds the 14 bound pre-1974 compilation scans (1946–1973, image-only, not yet split into per-order records). `sources/gpp/inputs/` is the committed GPP inventory + overlap-analysis snapshot the integration re-derives from, so the merge is reproducible and CI-checkable. |
+| [`src/nyc_executive_orders/`](src/nyc_executive_orders/) | The Python package: harvesters (`fetch.py`, `enumerate.py`, `download.py`), the parse pipeline (`textlayer.py`, `extract.py`, `ocr.py`, `enrich.py`, `clean.py`, `build_corpus.py`), the supersession engine (`supersede.py`), and the GPP integration (`gpp.py`). |
+| [`scripts/`](scripts/) | Supervised entry points for each live harvest phase, plus the offline `run_parse.py` and `run_supersede.py`. All live-network scripts are gated — see each Phase section below before running one. |
+| [`tests/`](tests/) | 315 offline tests (no live network calls); a real-data cross-check runs against the committed corpus + GPP inventory as a regression guard. |
+| `gpp_integration_report.md`, `supersession_report.md` | Generated summaries from the latest merge/supersede runs — regenerated on every run, not hand-edited. |
+| [`sample_clean_report/review_queue.md`](sample_clean_report/review_queue.md) | **A live worklist** — orders whose title the automated cleaner couldn't confidently extract and needs a human to set by hand from the source PDF. See [Want to help?](#want-to-help) below. |
+
+---
+
 ## The data landscape (preliminary)
 
 | Source | Coverage | Format | Notes |
@@ -59,7 +74,7 @@ Out of scope: state (gubernatorial) executive orders; agency rules and the Admin
 | Internet Archive (Wayback), `/assets/home/` | 2014–2021 (de Blasio) | Archived PDFs | The years neither the live API (≥2022) nor `/html/records/` (≤2013) reached; 72 regular + 270 emergency recovered (Phase B.4) |
 | NYC Municipal Archives / DORIS | 1600s–present | Finding aids, microfilm, some digitized | Largest collection; folder-level metadata only; access-restricted |
 
-Everything before ~2002 is scanned images requiring OCR; later orders are a mix of clean and scanned files. Full analysis lives in [`docs/`](docs/).
+Everything before ~2002 is scanned images requiring OCR; later orders are a mix of clean and scanned files.
 
 ---
 
@@ -68,9 +83,11 @@ Everything before ~2002 is scanned images requiring OCR; later orders are a mix 
 - [x] **Verify** whether the § 3-113.1 mandated compilation currently exists and is usable — *verified 2026-07-15: it does not. No compliant single-page, bulk-downloadable, 1974-complete compilation exists on nyc.gov.*
 - [x] **Gather** all available orders locally (live nyc.gov ✅ Phase A + Wayback historical set ✅ Phase B), respecting each source's access rules.
 - [x] **Parse** PDFs to text (born-digital extraction with a local OCR fallback for scans).
-- [x] **Structure** a clean, machine-readable corpus with metadata — *supersession annotations are the next phase (fields present, not yet populated).*
+- [x] **Structure** a clean, machine-readable corpus with metadata.
 - [x] **Publish** the corpus (bulk-downloadable JSON + human-readable Markdown, matching the BetaNYC pattern).
 - [x] **Annotate supersession** (`supersedes` / `superseded_by` / `in_effect` / `establishes_entity`) — deterministic, rule-based extraction from the corpus text ([Phase C](#phase-c--supersession-graph)); metadata backfill continues.
+- [x] **Cross-verify against the City's own deposits** — DORIS Government Publications Portal integration ([Phase D](#phase-d--doris-gpp-integration)): 79 net-new orders recovered, 73 of 74 previously-unrecoverable gaps closed, dual-provenance scans added for 2,129 orders.
+- [ ] **Split the pre-1974 volumes** (14 bound compilations, 1946–1973) into per-order records.
 - [ ] **Maintain** it forward as new orders are signed.
 - [ ] *(Explore)* an MCP server, and whether this folds into [`nyc-charter-laws-rules`](https://github.com/BetaNYC/nyc-charter-laws-rules).
 
@@ -357,7 +374,7 @@ install` once in a fresh clone.
 Once the source PDFs are gathered, a **six-stage pipeline** (`src/nyc_executive_orders/`,
 run via `scripts/run_parse.py`) turns them into the published corpus in [`corpus/`](corpus/):
 one Markdown file per order (`corpus/YYYY/<eo_id>.md` — YAML frontmatter + full text), plus a
-bulk `corpus/eo.json` and `corpus/manifest.csv`.
+bulk `corpus/eo.json`.
 
 1. **Text-layer probe** (`textlayer.py`) — classify each PDF as born-digital vs scanned (decides what needs OCR).
 2. **Extract** (`extract.py`) — PyMuPDF full text for born-digital PDFs.
@@ -440,24 +457,49 @@ uv run python scripts/run_gpp_integration.py --no-ocr --operator-authorized
 ## Status
 
 The archive is **live and published**. Phase A (current-era harvester), Phase B (historical
-Wayback backfill), Phase B.2 (current-era gap recovery), and Phase B.4 (de Blasio-era 2014–2021
-backfill) are built and offline-tested; each live harvest run is a separate, supervised,
-human-run step. The parse → corpus pipeline (probe → extract → OCR → enrich → clean → emit) has
-been run against the full corpus, and the result — 2,192 orders — is published in
-[`corpus/`](corpus/). Phase D (DORIS GPP integration) tooling is built and offline-tested; the
-merge that folds in the harvest (growing the corpus to 2,291) is a separate, gated step that runs
-once the harvest completes.
+Wayback backfill), Phase B.2 (current-era gap recovery), Phase B.4 (de Blasio-era 2014–2021
+backfill), and Phase D (DORIS GPP integration) are all built, offline-tested, and have completed
+their live harvest + merge — each live run is a separate, supervised, human-run step. The parse →
+corpus pipeline (probe → extract → OCR → enrich → clean → emit) has been run against the full
+corpus, and the result — **2,291 orders** — is published in [`corpus/`](corpus/).
 
 It is the most complete open compilation of NYC mayoral executive orders we know of, but it is
 **not yet authoritative**: OCR text of the oldest scans is imperfect (faithful to the source,
-not perfected), 53 orders are documented as never publicly retrievable, and while the
-supersession graph is now populated (Phase C: 239 edges, 136 regular orders computed out of
-force), metadata backfill continues. The de Blasio regular series is
-now near-complete — 72 of the ~91 orders issued (numbers run 1–91) were recovered; **19 numbers
-were never archived on Wayback and are unrecoverable from any known open source** (the live API
-returns nothing before 2022), including EO 31/2018 and EO 56/2020, which later orders cite as
-revoked. Those gaps are listed, not hidden. Follow along or contribute —
-[open an issue](https://github.com/BetaNYC/nyc-executive-orders/issues).
+not perfected), and while the supersession graph is populated (Phase C: 244 edges, 140 regular
+orders computed out of force), metadata backfill continues. The Phase D merge closed all but
+**2 known-missing numbered orders** — Bloomberg EO 59 and Adams EEO 471 — confirmed absent from
+every source we've checked, including GPP's own deposits; both are now accountability findings
+(the City's own records system doesn't have them either) rather than harvest gaps. The de Blasio
+regular series is complete (91 of 91 signed orders recovered, including EO 31/2018 and EO
+56/2020, which later orders cite as revoked). The 14 pre-1974 bound volumes (1946–1973) are
+harvested but not yet split into per-order records — that's the next phase. Gaps are listed, not
+hidden. See [Want to help?](#want-to-help) below.
+
+## Want to help?
+
+This is early-stage, openly built infrastructure — there's concrete work ready to pick up, not just "look around and see."
+
+**Two things ready right now:**
+- **[`sample_clean_report/review_queue.md`](sample_clean_report/review_queue.md)** — 69 orders whose title the automated cleaner couldn't confidently extract from a scanned PDF. The fix is reading the source PDF and hand-setting the title; no code changes needed. Bodies are already correct and untouched (`full_text_raw` preserves the verbatim OCR) — this is purely a title-review pass.
+- **Open issues:** [#1](https://github.com/BetaNYC/nyc-executive-orders/issues/1) (a scanned order misclassified as born-digital) and [#6](https://github.com/BetaNYC/nyc-executive-orders/issues/6) (28 orders with a bad title pulled from a caps-line header) — both root-cause bugs in `src/nyc_executive_orders/`, not one-off data fixes.
+
+**The one hard rule:** never invent or guess at content. Every title, date, and body must trace to the source PDF or an official record — an empty or flagged field is correct; a guess is a bug. This corpus is only as trustworthy as its provenance discipline (see [AI use in this project](#ai-use-in-this-project) below).
+
+**Getting set up:**
+
+```bash
+git clone https://github.com/BetaNYC/nyc-executive-orders.git && cd nyc-executive-orders
+git lfs install && git lfs pull        # source PDFs are LFS-tracked
+uv run --with pytest python -m pytest  # 315 tests, offline, no network
+```
+
+**Live harvests are not something to run casually.** Every `run_*_live.py` script under
+`scripts/` makes real, rate-limited calls to nyc.gov, the Internet Archive, or DORIS's GPP
+portal, and refuses to run without an explicit human-supervision flag — see each Phase section
+above before running one. Contributions to the code, tests, or corpus review don't need this;
+only fetching new source data does.
+
+Questions, ideas, or a gap you've spotted: [open an issue](https://github.com/BetaNYC/nyc-executive-orders/issues) or hello@beta.nyc.
 
 ## Part of BetaNYC's civic data tools
 
