@@ -162,6 +162,31 @@ KNOWN_MISSING_KEYS: frozenset[tuple[str, bool, str]] = frozenset(
     | {("Koch", False, "9")}
 )
 
+# Human-readable filenames for the 14 pre-1974 bound volumes, keyed by fileset id
+# (opaque GPP ids otherwise: sources/gpp/volumes/c821gm40c.pdf tells a reader
+# nothing). Date ranges + instrument type are read verbatim from each volume's
+# own GPP description (sources/gpp/inputs/gpp-eo-inventory-*.json), not guessed.
+# This set is CLOSED — GPP's pre-1974 collection is a fixed historical archive,
+# not one that grows — so a hand-verified map is correct here, not a slugifier.
+# A fileset id absent from this map (only possible if GPP ever adds a 15th
+# volume) falls back to the opaque <fileset_id>.pdf name in volume_dest() below.
+VOLUME_FILENAMES: dict[str, str] = {
+    "c821gm40c": "1946-01-07_1950-10-04_ODwyer-Impellitteri_Memoranda.pdf",
+    "pz50gx73n": "1950-11-16_1953-11-24_Impellitteri-Sharkey_Memoranda.pdf",
+    "7d278v79z": "1954-01-04_1957-11-26_Wagner-Theobald_Memoranda.pdf",
+    "5138jg298": "1958-01-01_1961-12-22_Wagner_Memoranda.pdf",
+    "9306t085s": "1962-01-23_1963-12-26_Wagner_Orders.pdf",
+    "pg15bg45d": "1964-01-10_1965-12-21_Wagner_Orders.pdf",
+    "1r66j294f": "1966-01-04_1967-12-22_Lindsay_Orders.pdf",
+    "cj82k9061": "1966-01-01_1968-05-13_Lindsay_Memoranda-Unnumbered.pdf",
+    "5h73px613": "1966-01-06_1968-12-16_Lindsay_Memoranda.pdf",
+    "12579v150": "1968-01-10_1969-12-29_Lindsay_Orders.pdf",
+    "6t053h76h": "1969-01-16_1971-12-27_Lindsay_Memoranda.pdf",
+    "wd375x968": "1970-01-01_1971-12-09_Lindsay_Orders.pdf",
+    "sj139367z": "1972-02-01_1973-11-12_Lindsay_Orders.pdf",
+    "h128ng45d": "1972-02-18_1973-11-05_Lindsay_Memoranda-Incomplete.pdf",
+}
+
 
 def mayor_from_creator(creators: str | None) -> str | None:
     """Resolve a corpus mayor label from a GPP ``cr`` (creators) string."""
@@ -607,8 +632,13 @@ def dual_dest(eo_id: str, year: int, fileset_id: str, sources_dir: Path) -> Path
 
 
 def volume_dest(fileset_id: str, sources_dir: Path) -> Path:
-    """Destination for a parked pre-1974 volume: ``<sources>/volumes/<fsid>.pdf``."""
-    return Path(sources_dir) / "volumes" / f"{fileset_id}.pdf"
+    """Destination for a parked pre-1974 volume.
+
+    Uses the human-readable name from ``VOLUME_FILENAMES`` when the fileset id
+    is one of the 14 known volumes; falls back to ``<fsid>.pdf`` otherwise.
+    """
+    name = VOLUME_FILENAMES.get(fileset_id, f"{fileset_id}.pdf")
+    return Path(sources_dir) / "volumes" / name
 
 
 # --------------------------------------------------------------------------- #
