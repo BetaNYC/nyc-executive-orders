@@ -34,9 +34,45 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
+# Scratch output from scripts/run_volume_ocr.py -- rendered page PNGs + model
+# output, regenerated per run, not source of truth. The per-page JSON that
+# Phase E actually consumes is published separately, and committed, under
+# sources/gpp/volumes/ocr/ (see scripts/run_volume_ocr.py).
+vlm-ocr-runs/
+
+# Picture-element crops from scripts/run_picture_clips.py -- city seals, mayoral
+# signatures and the odd figure, cut out of the volume PDFs. Lossless 300 dpi
+# PNGs, 472 MB of them, cheaply regenerable from the committed page JSON under
+# sources/gpp/volumes/ocr/ plus the LFS'd volume PDFs. Source of truth, and
+# still not committed -- same rule as the rendered pages above.
+#
+# What IS committed is the web derivative under vlm-pics-web/: the same crops at
+# JPEG q85, 53 MB, written by scripts/build_web_crops.py. The public explorer
+# serves those out of its own GitHub Pages build, which is the one thing the
+# PNGs cannot do -- Pages does not resolve LFS pointers, and 472 MB would not
+# fit under its 1 GB site cap regardless. Plain git rather than LFS,
+# deliberately, so that build can check this repo out without `lfs: true` and
+# spend no LFS bandwidth on images.
+vlm-pics/
+
+# Per-volume run transcripts from run_full_vlm_pipeline.sh. Console output of a
+# reproducible local job -- keep them to debug a run, not to share one.
+vlm-logs/
+
+# Scratch from the (now superseded) dots.ocr/MLX prototype under experiments/.
+experiments/dots-ocr-mlx/runs/
+
+# Single-page / short-range extracts cut out of the bound volumes while
+# developing the OCR pipeline. `!sources/**` above un-ignores everything under
+# sources/, and .gitattributes would push these through git-LFS, so without this
+# rule a stray `git add sources/` commits prototype scratch as LFS objects.
+# The 14 real volumes have no `_page` suffix and are unaffected.
+sources/gpp/volumes/*_page*.pdf
+
 # Node (if an MCP server is added later)
 node_modules/
 dist/
+dist-static/
 
 # OS / editor
 .DS_Store

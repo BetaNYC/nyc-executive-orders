@@ -1,0 +1,348 @@
+{
+  "page": 64,
+  "source_image": "page_0064.png",
+  "elements": [
+    {
+      "bbox": [
+        889,
+        353,
+        934,
+        389
+      ],
+      "category": "Page-header",
+      "text": "II",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3948,
+          "min": -1.7369
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2239,
+          "min": -0.4478
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.3286,
+          "min": -0.3286
+        }
+      },
+      "ink": {
+        "ink_px": 356,
+        "area_px": 1702,
+        "density": 0.20917,
+        "chars": 2,
+        "chars_per_1k_ink": 5.62
+      }
+    },
+    {
+      "bbox": [
+        165,
+        587,
+        1594,
+        1060
+      ],
+      "category": "Text",
+      "text": "Since the formulation and processing of the City's\nlegislative program normally involves conference with and reports by\nseveral City agencies and very often State officials, it is suggested\nthat department and agency heads recommending State legislation\ncommunicate with Mr. Condello, as soon as the need for the legislation\nis determined.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3669,
+          "min": -1.8307
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 65,
+          "mean": -0.0112,
+          "min": -0.6933
+        }
+      },
+      "ink": {
+        "ink_px": 31536,
+        "area_px": 633820,
+        "density": 0.04976,
+        "chars": 339,
+        "chars_per_1k_ink": 10.75
+      }
+    },
+    {
+      "bbox": [
+        174,
+        1075,
+        1656,
+        1309
+      ],
+      "category": "Text",
+      "text": "Special attention is directed to the need for State legislation\nto extend or make permanent any law which is due to expire before an\nintervening legislative session.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3208,
+          "min": -1.7733
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0014,
+          "min": -0.0316
+        }
+      },
+      "ink": {
+        "ink_px": 15432,
+        "area_px": 328068,
+        "density": 0.04704,
+        "chars": 165,
+        "chars_per_1k_ink": 10.69
+      }
+    },
+    {
+      "bbox": [
+        831,
+        1828,
+        1037,
+        1856
+      ],
+      "category": "Text",
+      "text": "**********",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2871,
+          "min": -1.3497
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2466,
+          "min": -0.2466
+        },
+        "text": {
+          "n_tokens": 2,
+          "mean": -0.3109,
+          "min": -0.3114
+        }
+      },
+      "ink": {
+        "ink_px": 1313,
+        "area_px": 6003,
+        "density": 0.21872,
+        "chars": 10,
+        "chars_per_1k_ink": 7.62
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 249,
+    "content": {
+      "n_tokens": 101,
+      "mean": -0.0171,
+      "min": -0.6933,
+      "p05": -0.0264,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 81,
+          "token_id": 1699,
+          "logprob": -0.6933,
+          "text": "\\n"
+        },
+        {
+          "index": 35,
+          "token_id": 5543,
+          "logprob": -0.3286,
+          "text": "II"
+        },
+        {
+          "index": 245,
+          "token_id": 334,
+          "logprob": -0.3114,
+          "text": "**"
+        },
+        {
+          "index": 244,
+          "token_id": 599,
+          "logprob": -0.3105,
+          "text": "********"
+        },
+        {
+          "index": 184,
+          "token_id": 59,
+          "logprob": -0.0316,
+          "text": "\\"
+        },
+        {
+          "index": 136,
+          "token_id": 1189,
+          "logprob": -0.0264,
+          "text": ".\""
+        },
+        {
+          "index": 201,
+          "token_id": 396,
+          "logprob": -0.0068,
+          "text": "int"
+        },
+        {
+          "index": 117,
+          "token_id": 25579,
+          "logprob": -0.0048,
+          "text": "communic"
+        },
+        {
+          "index": 202,
+          "token_id": 648,
+          "logprob": -0.0033,
+          "text": "erv"
+        },
+        {
+          "index": 197,
+          "token_id": 32563,
+          "logprob": -0.0011,
+          "text": " expire"
+        },
+        {
+          "index": 203,
+          "token_id": 6019,
+          "logprob": -0.001,
+          "text": "ening"
+        },
+        {
+          "index": 122,
+          "token_id": 44826,
+          "logprob": -0.0009,
+          "text": " Cond"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 85,
+      "mean": -0.3283,
+      "min": -1.8307,
+      "p05": -1.636,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 54,
+          "token_id": 19,
+          "logprob": -1.8307,
+          "text": "4"
+        },
+        {
+          "index": 150,
+          "token_id": 20,
+          "logprob": -1.7733,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.7369,
+          "text": "3"
+        },
+        {
+          "index": 17,
+          "token_id": 19,
+          "logprob": -1.6482,
+          "text": "4"
+        },
+        {
+          "index": 43,
+          "token_id": 20,
+          "logprob": -1.6459,
+          "text": "5"
+        },
+        {
+          "index": 48,
+          "token_id": 22,
+          "logprob": -1.5964,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.5838,
+          "text": "9"
+        },
+        {
+          "index": 156,
+          "token_id": 21,
+          "logprob": -1.5792,
+          "text": "6"
+        },
+        {
+          "index": 144,
+          "token_id": 19,
+          "logprob": -1.4287,
+          "text": "4"
+        },
+        {
+          "index": 226,
+          "token_id": 22,
+          "logprob": -1.3497,
+          "text": "7"
+        },
+        {
+          "index": 220,
+          "token_id": 23,
+          "logprob": -1.2621,
+          "text": "8"
+        },
+        {
+          "index": 232,
+          "token_id": 21,
+          "logprob": -1.2512,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 249,
+      "mean": -0.1193,
+      "min": -1.8307,
+      "p05": -1.1499,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.89,
+    "std": 14.26,
+    "dark_fraction": 0.01341
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      778.32,
+      1045.68
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      259,
+      348,
+      1902,
+      2556
+    ],
+    "ink_px": 48637,
+    "covered_px": 48637,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

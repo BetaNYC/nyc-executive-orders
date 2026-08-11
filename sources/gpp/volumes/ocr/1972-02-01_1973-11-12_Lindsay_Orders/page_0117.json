@@ -1,0 +1,376 @@
+{
+  "page": 117,
+  "source_image": "page_0117.png",
+  "elements": [
+    {
+      "bbox": [
+        387,
+        301,
+        874,
+        346
+      ],
+      "category": "Section-header",
+      "text": "## § 2. Implementation",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4034,
+          "min": -1.9563
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0177,
+          "min": -0.0354
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.083,
+          "min": -0.4853
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        541,
+        466,
+        1865,
+        1212
+      ],
+      "category": "List-item",
+      "text": "(a) The Deputy Mayor for the executive office or such other officials as the Mayor may designate pursuant to section 3 of the Charter, shall be responsible for establishing, administering and coordinating the City-wide Productivity Program. He shall seek to enlist, to the greatest extent possible the active cooperation and participation of City agencies and of employee organizations, and shall issue such further directives and instructions to agencies as are required to effectuate this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.311,
+          "min": -1.6374
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0018,
+          "min": -0.0036
+        },
+        "text": {
+          "n_tokens": 87,
+          "mean": -0.0003,
+          "min": -0.0102
+        }
+      },
+      "ink": {
+        "ink_px": 5956,
+        "area_px": 983974,
+        "density": 0.00605,
+        "chars": 497,
+        "chars_per_1k_ink": 83.45
+      }
+    },
+    {
+      "bbox": [
+        550,
+        1257,
+        1967,
+        1762
+      ],
+      "category": "List-item",
+      "text": "(b) Not later than the fifteenth day of August of each year, said Deputy Mayor, or other officials so designated under subdivision (a) of this section, shall submit to the Mayor a program setting forth the productivity objectives and standards to be met during the current fiscal year, for such agencies and in such units of measure as he may deem appropriate.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2882,
+          "min": -1.3901
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 72,
+          "mean": -0.0002,
+          "min": -0.0061
+        }
+      },
+      "ink": {
+        "ink_px": 5875,
+        "area_px": 689830,
+        "density": 0.00852,
+        "chars": 360,
+        "chars_per_1k_ink": 61.28
+      }
+    },
+    {
+      "bbox": [
+        405,
+        1811,
+        1617,
+        1856
+      ],
+      "category": "Section-header",
+      "text": "## § 3. Compilation and Analysis of Productivity Data",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2862,
+          "min": -1.5965
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0001,
+          "min": -0.001
+        }
+      },
+      "ink": {
+        "ink_px": 859,
+        "area_px": 54315,
+        "density": 0.01582,
+        "chars": 53,
+        "chars_per_1k_ink": 61.7
+      }
+    },
+    {
+      "bbox": [
+        556,
+        1894,
+        1960,
+        2486
+      ],
+      "category": "List-item",
+      "text": "(a) Bureau of the Budget. The Director of the Bureau of the Budget or such officer of the Bureau as the Director shall designate, shall, after consultation with each agency included in the Productivity Program, recommend to the Mayor and Deputy Mayor productivity objectives and standards; collect, compile and analyze quantitative productivity data for each agency; and monitor and report on agency productivity performance,",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3105,
+          "min": -1.7413
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0072,
+          "min": -0.0145
+        },
+        "text": {
+          "n_tokens": 75,
+          "mean": -0.0047,
+          "min": -0.2536
+        }
+      },
+      "ink": {
+        "ink_px": 4762,
+        "area_px": 805120,
+        "density": 0.00591,
+        "chars": 425,
+        "chars_per_1k_ink": 89.25
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 437,
+    "content": {
+      "n_tokens": 252,
+      "mean": -0.0036,
+      "min": -0.4853,
+      "p05": -0.0017,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 565,
+          "logprob": -0.4853,
+          "text": "##"
+        },
+        {
+          "index": 434,
+          "token_id": 1335,
+          "logprob": -0.2536,
+          "text": ",\""
+        },
+        {
+          "index": 363,
+          "token_id": 21802,
+          "logprob": -0.0839,
+          "text": " Bureau"
+        },
+        {
+          "index": 77,
+          "token_id": 11993,
+          "logprob": -0.0102,
+          "text": " \"("
+        },
+        {
+          "index": 132,
+          "token_id": 279,
+          "logprob": -0.0087,
+          "text": " the"
+        },
+        {
+          "index": 227,
+          "token_id": 59822,
+          "logprob": -0.0061,
+          "text": " subdivision"
+        },
+        {
+          "index": 36,
+          "token_id": 16625,
+          "logprob": -0.0058,
+          "text": " §"
+        },
+        {
+          "index": 386,
+          "token_id": 74124,
+          "logprob": -0.0056,
+          "text": " designate"
+        },
+        {
+          "index": 40,
+          "token_id": 30813,
+          "logprob": -0.0046,
+          "text": " Implementation"
+        },
+        {
+          "index": 368,
+          "token_id": 576,
+          "logprob": -0.0029,
+          "text": " The"
+        },
+        {
+          "index": 87,
+          "token_id": 476,
+          "logprob": -0.0027,
+          "text": " or"
+        },
+        {
+          "index": 213,
+          "token_id": 315,
+          "logprob": -0.0018,
+          "text": " of"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 111,
+      "mean": -0.2894,
+      "min": -1.9563,
+      "p05": -1.5851,
+      "p50": -0.002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.9563,
+          "text": "1"
+        },
+        {
+          "index": 22,
+          "token_id": 21,
+          "logprob": -1.7693,
+          "text": "6"
+        },
+        {
+          "index": 336,
+          "token_id": 19,
+          "logprob": -1.7413,
+          "text": "4"
+        },
+        {
+          "index": 17,
+          "token_id": 19,
+          "logprob": -1.6987,
+          "text": "4"
+        },
+        {
+          "index": 65,
+          "token_id": 17,
+          "logprob": -1.6374,
+          "text": "2"
+        },
+        {
+          "index": 286,
+          "token_id": 16,
+          "logprob": -1.5965,
+          "text": "1"
+        },
+        {
+          "index": 59,
+          "token_id": 20,
+          "logprob": -1.5737,
+          "text": "5"
+        },
+        {
+          "index": 53,
+          "token_id": 21,
+          "logprob": -1.5333,
+          "text": "6"
+        },
+        {
+          "index": 348,
+          "token_id": 21,
+          "logprob": -1.5238,
+          "text": "6"
+        },
+        {
+          "index": 342,
+          "token_id": 15,
+          "logprob": -1.5132,
+          "text": "0"
+        },
+        {
+          "index": 292,
+          "token_id": 22,
+          "logprob": -1.5017,
+          "text": "7"
+        },
+        {
+          "index": 183,
+          "token_id": 22,
+          "logprob": -1.3901,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 437,
+      "mean": -0.076,
+      "min": -1.9563,
+      "p05": -0.4856,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.4,
+    "std": 14.35,
+    "dark_fraction": 0.00401
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      782.64,
+      1269.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      260,
+      423,
+      1913,
+      3104
+    ],
+    "ink_px": 17751,
+    "covered_px": 17452,
+    "covered_fraction": 0.98316,
+    "uncovered_px": 299,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

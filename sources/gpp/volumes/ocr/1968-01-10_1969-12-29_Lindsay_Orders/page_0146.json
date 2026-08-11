@@ -1,0 +1,433 @@
+{
+  "page": 146,
+  "source_image": "page_0146.png",
+  "elements": [
+    {
+      "bbox": [
+        781,
+        17,
+        997,
+        99
+      ],
+      "category": "Page-header",
+      "text": "BROOKLYN IN A DIPLOMER\nGRAND ARMY PLAZA\nBROOKLYN, N. Y. 11238",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.4129,
+          "min": -1.6103
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0093,
+          "min": -0.0182
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.2434,
+          "min": -2.6633
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        737,
+        436,
+        882,
+        464
+      ],
+      "category": "Text",
+      "text": "May 21, 1968",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3145,
+          "min": -1.5177
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.001,
+          "min": -0.0082
+        }
+      },
+      "ink": {
+        "ink_px": 1139,
+        "area_px": 4205,
+        "density": 0.27087,
+        "chars": 12,
+        "chars_per_1k_ink": 10.54
+      }
+    },
+    {
+      "bbox": [
+        204,
+        558,
+        562,
+        587
+      ],
+      "category": "Text",
+      "text": "The Honorable John V. Lindsay",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2818,
+          "min": -1.257
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1302,
+          "min": -0.1302
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0017,
+          "min": -0.0109
+        }
+      },
+      "ink": {
+        "ink_px": 2334,
+        "area_px": 10740,
+        "density": 0.21732,
+        "chars": 29,
+        "chars_per_1k_ink": 12.43
+      }
+    },
+    {
+      "bbox": [
+        204,
+        656,
+        919,
+        783
+      ],
+      "category": "Text",
+      "text": "THIS IS TO CERTIFY that the attached is a true copy of the Resolution approved by the Board of Trustees of the Brooklyn Public Library at its regular meeting on May 21, 1968 and that the foregoing signature is that of the President of the Board, Henry Q. Middendorf.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2891,
+          "min": -1.335
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 63,
+          "mean": -0.0125,
+          "min": -0.387
+        }
+      },
+      "ink": {
+        "ink_px": 18725,
+        "area_px": 91264,
+        "density": 0.20517,
+        "chars": 266,
+        "chars_per_1k_ink": 14.21
+      }
+    },
+    {
+      "bbox": [
+        664,
+        870,
+        974,
+        1007
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4032,
+          "min": -2.1062
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1914,
+          "min": -0.1914
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 4867,
+        "area_px": 42470,
+        "density": 0.1146,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        209,
+        1043,
+        726,
+        1156
+      ],
+      "category": "Text",
+      "text": "Attest:\nJohn L. Grant\nKerleve R. Dronan",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3113,
+          "min": -1.5286
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2967,
+          "min": -0.2967
+        },
+        "text": {
+          "n_tokens": 18,
+          "mean": -0.583,
+          "min": -2.0495
+        }
+      },
+      "ink": {
+        "ink_px": 3459,
+        "area_px": 58824,
+        "density": 0.0588,
+        "chars": 39,
+        "chars_per_1k_ink": 11.27
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 338,
+    "content": {
+      "n_tokens": 134,
+      "mean": -0.1498,
+      "min": -2.6633,
+      "p05": -1.2433,
+      "p50": -0.0001,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 40,
+          "token_id": 422,
+          "logprob": -2.6633,
+          "text": " D"
+        },
+        {
+          "index": 324,
+          "token_id": 23736,
+          "logprob": -2.0495,
+          "text": " Grant"
+        },
+        {
+          "index": 45,
+          "token_id": 8626,
+          "logprob": -1.8586,
+          "text": "GR"
+        },
+        {
+          "index": 333,
+          "token_id": 2248,
+          "logprob": -1.8413,
+          "text": "ron"
+        },
+        {
+          "index": 330,
+          "token_id": 431,
+          "logprob": -1.5958,
+          "text": " R"
+        },
+        {
+          "index": 332,
+          "token_id": 422,
+          "logprob": -1.2681,
+          "text": " D"
+        },
+        {
+          "index": 43,
+          "token_id": 44268,
+          "logprob": -1.2447,
+          "text": "MER"
+        },
+        {
+          "index": 41,
+          "token_id": 3298,
+          "logprob": -1.2425,
+          "text": "IP"
+        },
+        {
+          "index": 328,
+          "token_id": 273,
+          "logprob": -1.156,
+          "text": "le"
+        },
+        {
+          "index": 326,
+          "token_id": 42,
+          "logprob": -0.9217,
+          "text": "K"
+        },
+        {
+          "index": 44,
+          "token_id": 1699,
+          "logprob": -0.6637,
+          "text": "\\n"
+        },
+        {
+          "index": 321,
+          "token_id": 13079,
+          "logprob": -0.5401,
+          "text": "John"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 116,
+      "mean": -0.3195,
+      "min": -2.1062,
+      "p05": -1.4721,
+      "p50": -0.0081,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 268,
+          "token_id": 19,
+          "logprob": -2.1062,
+          "text": "4"
+        },
+        {
+          "index": 11,
+          "token_id": 22,
+          "logprob": -1.6103,
+          "text": "7"
+        },
+        {
+          "index": 294,
+          "token_id": 18,
+          "logprob": -1.5286,
+          "text": "3"
+        },
+        {
+          "index": 299,
+          "token_id": 21,
+          "logprob": -1.5279,
+          "text": "6"
+        },
+        {
+          "index": 81,
+          "token_id": 21,
+          "logprob": -1.5177,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.489,
+          "text": "1"
+        },
+        {
+          "index": 305,
+          "token_id": 21,
+          "logprob": -1.4665,
+          "text": "6"
+        },
+        {
+          "index": 76,
+          "token_id": 22,
+          "logprob": -1.4578,
+          "text": "7"
+        },
+        {
+          "index": 274,
+          "token_id": 22,
+          "logprob": -1.3548,
+          "text": "7"
+        },
+        {
+          "index": 171,
+          "token_id": 24,
+          "logprob": -1.335,
+          "text": "9"
+        },
+        {
+          "index": 176,
+          "token_id": 18,
+          "logprob": -1.2834,
+          "text": "3"
+        },
+        {
+          "index": 16,
+          "token_id": 22,
+          "logprob": -1.2598,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 338,
+      "mean": -0.1693,
+      "min": -2.6633,
+      "p05": -1.2611,
+      "p50": -0.0,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 168.32,
+    "std": 18.58,
+    "dark_fraction": 0.02815
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      672.96,
+      431.04
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      143,
+      224,
+      1054,
+      1645
+    ],
+    "ink_px": 36435,
+    "covered_px": 30524,
+    "covered_fraction": 0.83777,
+    "uncovered_px": 5911,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          575,
+          464,
+          839,
+          656
+        ],
+        "ink_px": 2899
+      },
+      {
+        "bbox": [
+          359,
+          776,
+          527,
+          920
+        ],
+        "ink_px": 2272
+      },
+      {
+        "bbox": [
+          503,
+          776,
+          623,
+          824
+        ],
+        "ink_px": 561
+      }
+    ],
+    "cell_px": 24
+  }
+}

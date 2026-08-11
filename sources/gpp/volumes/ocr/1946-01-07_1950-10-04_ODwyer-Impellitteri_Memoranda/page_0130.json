@@ -1,0 +1,314 @@
+{
+  "page": 130,
+  "source_image": "page_0130.png",
+  "elements": [
+    {
+      "bbox": [
+        1661,
+        351,
+        1695,
+        391
+      ],
+      "category": "Page-header",
+      "text": "4",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3753,
+          "min": -1.7709
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0049,
+          "min": -0.0098
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 1,
+        "area_px": 210,
+        "density": 0.00476,
+        "chars": 1,
+        "chars_per_1k_ink": 1000.0
+      }
+    },
+    {
+      "bbox": [
+        200,
+        477,
+        1787,
+        1783
+      ],
+      "category": "Text",
+      "text": "Prior to the enactment of Chap. 201 L. 1948, the Corporation Counsel and the Attorney General had consistently ruled that in order to be eligible for the benefits of either section 43 or 245 Military Law, the duty performed by a city employee must be *ordered* and not *voluntary*. It is apparent, however, that as of March 12, 1948, the effective date of Chap. 201 of the L. of 1948, these sections were amended so as to enable an employee, otherwise eligible, to absent himself for a 30-day leave of absence with full pay for the purpose of performing *voluntary* military duty. For periods of military duty in excess of 30 days however, the duty performed must still be *ordered* and not *voluntary* in order to entitle a city employee to further benefits under either section of law.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4389,
+          "min": -1.969
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 198,
+          "mean": -0.0032,
+          "min": -0.464
+        }
+      },
+      "ink": {
+        "ink_px": 53957,
+        "area_px": 1951698,
+        "density": 0.02765,
+        "chars": 787,
+        "chars_per_1k_ink": 14.59
+      }
+    },
+    {
+      "bbox": [
+        196,
+        1864,
+        1872,
+        2755
+      ],
+      "category": "Text",
+      "text": "In this connection, it should be noted that for periods of ordered military duty in excess of 30 days, Mil. Law § 245, which section applies to public employees who acquired a guard, militia or reserve status on or before April 1, 1942, provides that a city employee shall be paid the excess, if any, of his city over his military pay. Military Law § 43 which applies to public employees who acquired a guard, militia or reserve status after April 1, 1942, has no such provision for military differential - it merely provides for a continued leave of absence while the",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.371,
+          "min": -1.8669
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 132,
+          "mean": -0.0059,
+          "min": -0.727
+        }
+      },
+      "ink": {
+        "ink_px": 40645,
+        "area_px": 1407480,
+        "density": 0.02888,
+        "chars": 568,
+        "chars_per_1k_ink": 13.97
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 444,
+    "content": {
+      "n_tokens": 331,
+      "mean": -0.0043,
+      "min": -0.727,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 332,
+          "token_id": 10147,
+          "logprob": -0.727,
+          "text": " Mil"
+        },
+        {
+          "index": 135,
+          "token_id": 353,
+          "logprob": -0.464,
+          "text": " *"
+        },
+        {
+          "index": 200,
+          "token_id": 27211,
+          "logprob": -0.0561,
+          "text": " absent"
+        },
+        {
+          "index": 243,
+          "token_id": 1969,
+          "logprob": -0.0549,
+          "text": " must"
+        },
+        {
+          "index": 92,
+          "token_id": 11,
+          "logprob": -0.0336,
+          "text": ","
+        },
+        {
+          "index": 321,
+          "token_id": 11457,
+          "logprob": -0.0298,
+          "text": " ordered"
+        },
+        {
+          "index": 429,
+          "token_id": 481,
+          "logprob": -0.0172,
+          "text": " -"
+        },
+        {
+          "index": 174,
+          "token_id": 315,
+          "logprob": -0.0111,
+          "text": " of"
+        },
+        {
+          "index": 319,
+          "token_id": 18346,
+          "logprob": -0.0025,
+          "text": " periods"
+        },
+        {
+          "index": 238,
+          "token_id": 4764,
+          "logprob": -0.0024,
+          "text": " however"
+        },
+        {
+          "index": 216,
+          "token_id": 7428,
+          "logprob": -0.0019,
+          "text": " purpose"
+        },
+        {
+          "index": 136,
+          "token_id": 10544,
+          "logprob": -0.0018,
+          "text": "ordered"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 65,
+      "mean": -0.3705,
+      "min": -1.969,
+      "p05": -1.8116,
+      "p50": -0.0023,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 62,
+          "token_id": 18,
+          "logprob": -1.969,
+          "text": "3"
+        },
+        {
+          "index": 285,
+          "token_id": 19,
+          "logprob": -1.8669,
+          "text": "4"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -1.8416,
+          "text": "7"
+        },
+        {
+          "index": 45,
+          "token_id": 15,
+          "logprob": -1.8153,
+          "text": "0"
+        },
+        {
+          "index": 297,
+          "token_id": 20,
+          "logprob": -1.7965,
+          "text": "5"
+        },
+        {
+          "index": 279,
+          "token_id": 21,
+          "logprob": -1.7926,
+          "text": "6"
+        },
+        {
+          "index": 8,
+          "token_id": 16,
+          "logprob": -1.7709,
+          "text": "1"
+        },
+        {
+          "index": 291,
+          "token_id": 17,
+          "logprob": -1.7515,
+          "text": "2"
+        },
+        {
+          "index": 19,
+          "token_id": 20,
+          "logprob": -1.7053,
+          "text": "5"
+        },
+        {
+          "index": 56,
+          "token_id": 22,
+          "logprob": -1.6391,
+          "text": "7"
+        },
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.5205,
+          "text": "1"
+        },
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.2863,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 444,
+      "mean": -0.0575,
+      "min": -1.969,
+      "p05": -0.1288,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 172.83,
+    "std": 17.76,
+    "dark_fraction": 0.02062
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      891.36,
+      1154.88
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      297,
+      384,
+      2178,
+      2823
+    ],
+    "ink_px": 94603,
+    "covered_px": 94603,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -473,6 +473,66 @@ def _validate_date(year: int, month: int, day: int, expected_year: int) -> str |
     return f"{year:04d}-{month:02d}-{day:02d}"
 
 
+# Ordinal-tolerant month-date pattern: "July 16th, 1951", "October 1st, 1953".
+# Typing a day as an ordinal was routine municipal style in the 1940s-50s and is
+# common in the bound volumes; without this those dates simply do not parse.
+#
+# Deliberately SEPARATE from _MONTH_DATE_RE rather than an edit to it. That regex
+# feeds _extract_date, which runs over all 2,291 committed 1974+ records on every
+# clean sweep; loosening it would newly match dates in existing bodies and could
+# silently change published date_signed values. Phase E gets its own pattern so
+# the modern corpus is provably untouched.
+_MONTH_DATE_ORDINAL_RE = re.compile(
+    r"\b(" + "|".join(_MONTHS) + r")" + _DATE_SEP +
+    r"(\d{1,2})(?:st|nd|rd|th)?" + _DATE_SEP + r"(\d{4})\b",
+    re.IGNORECASE,
+)
+
+
+def extract_date_in_range(
+    lines: list[str], min_year: int, max_year: int, *, scan_lines: int = DATE_SCAN_LINES
+) -> str | None:
+    """First parseable date falling inside ``[min_year, max_year]``, else None.
+
+    The sibling of :func:`_extract_date` for Phase E, where the year is what we
+    are trying to LEARN rather than something already known: a pre-1974 order is
+    dated only on its own face, and the record's year is derived from that date
+    (not the other way round). The bound comes from the containing volume's own
+    stated coverage (e.g. 1950-11-16 → 1953-11-24), so a misread year still can't
+    invent an order outside the volume's span.
+
+    Two-digit years are resolved into the 1900s and then range-checked, which is
+    unambiguous for a corpus that ends in 1973.
+    """
+    for line in lines[:scan_lines]:
+        m = _MONTH_DATE_ORDINAL_RE.search(line)
+        if m:
+            month = _MONTHS[m.group(1).lower()]
+            day, year = int(m.group(2)), int(m.group(3))
+            iso = _validate_date_in_range(year, month, day, min_year, max_year)
+            if iso:
+                return iso
+        m = _NUMERIC_DATE_RE.search(line)
+        if m:
+            month, day, yr = int(m.group(1)), int(m.group(2)), m.group(3)
+            year = int(yr) if len(yr) == 4 else 1900 + int(yr)
+            iso = _validate_date_in_range(year, month, day, min_year, max_year)
+            if iso:
+                return iso
+    return None
+
+
+def _validate_date_in_range(
+    year: int, month: int, day: int, min_year: int, max_year: int
+) -> str | None:
+    """ISO 8601 date if calendar-valid and the year is inside the bound."""
+    if not (min_year <= year <= max_year):
+        return None
+    if not (1 <= month <= 12 and 1 <= day <= 31):
+        return None
+    return f"{year:04d}-{month:02d}-{day:02d}"
+
+
 # --------------------------------------------------------------------------- #
 # Public entry                                                                  #
 # --------------------------------------------------------------------------- #
@@ -485,6 +545,7 @@ def clean_record(
     existing_date_signed: str | None = None,
     text_source: str | None = None,
     apply_body_edits: bool = True,
+    extract_title: bool = True,
 ) -> CleanResult:
     """Run the passes on one order body. Pure; deterministic; idempotent.
 
@@ -500,6 +561,17 @@ def clean_record(
     passed through **byte-for-byte unchanged**; only the title/date gap-fill and
     quality tier are computed. This is what keeps born-digital bodies identical
     through the pipeline while still filling a genuinely-empty title/date.
+
+    ``extract_title`` — set ``False`` when the caller has a better, era-specific
+    way to name the document, so this stage neither guesses nor flags a title.
+    :func:`_extract_title` accumulates consecutive ALL-CAPS lines, which is right
+    for a modern order whose caption is a caps subject block, and wrong for a
+    1940s-50s memorandum whose ENTIRE header is caps: there it welds
+    "MEMORANDUM NO. 26", "FROM: THE MAYOR", "TO: ALL CITY DEPARTMENTS AND
+    AGENCIES" and "SUBJECT: ..." into a single sentence-long "title". Phase E
+    opts out and reads the era's own ``SUBJECT:``/``RE:`` convention instead
+    (see :func:`volume_split.find_subject`). Defaults to ``True``, so every
+    existing caller behaves exactly as before.
     """
     raw = body
     flags: list[str] = []
@@ -521,7 +593,7 @@ def clean_record(
             raw=raw, cleaned=raw, dropped_header="", dropped_marks=[],
             anchor_label=anchor_label, flags=flags, year=year,
             existing_title=existing_title, existing_date_signed=existing_date_signed,
-            text_source=text_source,
+            text_source=text_source, extract_title=extract_title,
         )
     # First line that opens the order body ("WHEREAS", "BY VIRTUE", "BY THE POWER",
     # "NOW THEREFORE", ...). If real body begins ABOVE the earliest anchor, that
@@ -571,6 +643,7 @@ def clean_record(
         dropped_marks=dropped_marks, anchor_label=anchor_label, flags=flags,
         year=year, existing_title=existing_title,
         existing_date_signed=existing_date_signed, text_source=text_source,
+        extract_title=extract_title,
     )
 
 
@@ -586,13 +659,14 @@ def _finish(
     existing_title: str | None,
     existing_date_signed: str | None,
     text_source: str | None,
+    extract_title: bool = True,
 ) -> CleanResult:
     """Shared tail: title/date gap-fill + quality tiering + assemble result."""
     # --- Pass 3: title + date ----------------------------------------------- #
     body_lines = cleaned.split("\n")
     title = existing_title if (existing_title or "").strip() else None
     title_extracted = False
-    if title is None:
+    if title is None and extract_title:
         accepted, candidate = _extract_title(body_lines)
         if accepted:
             title, title_extracted = accepted, True

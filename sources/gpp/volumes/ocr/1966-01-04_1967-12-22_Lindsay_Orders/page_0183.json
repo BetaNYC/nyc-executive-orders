@@ -1,0 +1,309 @@
+{
+  "page": 183,
+  "source_image": "page_0183.png",
+  "elements": [
+    {
+      "bbox": [
+        1080,
+        1201,
+        1221,
+        1247
+      ],
+      "category": "Page-header",
+      "text": "- 4 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.392,
+          "min": -2.078
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0283,
+          "min": -0.055
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0406,
+          "min": -0.0895
+        }
+      },
+      "ink": {
+        "ink_px": 93,
+        "area_px": 6674,
+        "density": 0.01393,
+        "chars": 5,
+        "chars_per_1k_ink": 53.76
+      }
+    },
+    {
+      "bbox": [
+        623,
+        1421,
+        1970,
+        1481
+      ],
+      "category": "Text",
+      "text": "7. This order shall take effect November 1, 1967.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4176,
+          "min": -1.8467
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3486,
+          "min": -0.3486
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.0,
+          "min": -0.0002
+        }
+      },
+      "ink": {
+        "ink_px": 519,
+        "area_px": 82472,
+        "density": 0.00629,
+        "chars": 49,
+        "chars_per_1k_ink": 94.41
+      }
+    },
+    {
+      "bbox": [
+        1117,
+        1607,
+        2090,
+        2030
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.4514,
+          "min": -1.8562
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0077,
+          "min": -0.0077
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2435,
+        "area_px": 412848,
+        "density": 0.0059,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 132,
+    "content": {
+      "n_tokens": 21,
+      "mean": -0.0078,
+      "min": -0.0895,
+      "p05": -0.072,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 39,
+          "token_id": 220,
+          "logprob": -0.0895,
+          "text": " "
+        },
+        {
+          "index": 38,
+          "token_id": 6523,
+          "logprob": -0.072,
+          "text": " \"-"
+        },
+        {
+          "index": 41,
+          "token_id": 481,
+          "logprob": -0.0006,
+          "text": " -"
+        },
+        {
+          "index": 79,
+          "token_id": 22,
+          "logprob": -0.0002,
+          "text": "7"
+        },
+        {
+          "index": 84,
+          "token_id": 1896,
+          "logprob": -0.0002,
+          "text": " take"
+        },
+        {
+          "index": 40,
+          "token_id": 19,
+          "logprob": -0.0002,
+          "text": "4"
+        },
+        {
+          "index": 86,
+          "token_id": 6702,
+          "logprob": -0.0001,
+          "text": " November"
+        },
+        {
+          "index": 89,
+          "token_id": 11,
+          "logprob": -0.0001,
+          "text": ","
+        },
+        {
+          "index": 81,
+          "token_id": 1096,
+          "logprob": -0.0001,
+          "text": " This"
+        },
+        {
+          "index": 80,
+          "token_id": 13,
+          "logprob": -0.0,
+          "text": "."
+        },
+        {
+          "index": 93,
+          "token_id": 21,
+          "logprob": -0.0,
+          "text": "6"
+        },
+        {
+          "index": 95,
+          "token_id": 1189,
+          "logprob": -0.0,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 69,
+      "mean": -0.402,
+      "min": -2.078,
+      "p05": -1.8442,
+      "p50": -0.0182,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 14,
+          "token_id": 16,
+          "logprob": -2.078,
+          "text": "1"
+        },
+        {
+          "index": 20,
+          "token_id": 16,
+          "logprob": -1.8907,
+          "text": "1"
+        },
+        {
+          "index": 104,
+          "token_id": 22,
+          "logprob": -1.8562,
+          "text": "7"
+        },
+        {
+          "index": 49,
+          "token_id": 18,
+          "logprob": -1.8467,
+          "text": "3"
+        },
+        {
+          "index": 67,
+          "token_id": 16,
+          "logprob": -1.8405,
+          "text": "1"
+        },
+        {
+          "index": 116,
+          "token_id": 15,
+          "logprob": -1.8079,
+          "text": "0"
+        },
+        {
+          "index": 110,
+          "token_id": 22,
+          "logprob": -1.8051,
+          "text": "7"
+        },
+        {
+          "index": 55,
+          "token_id": 16,
+          "logprob": -1.7613,
+          "text": "1"
+        },
+        {
+          "index": 61,
+          "token_id": 15,
+          "logprob": -1.7057,
+          "text": "0"
+        },
+        {
+          "index": 122,
+          "token_id": 15,
+          "logprob": -1.6929,
+          "text": "0"
+        },
+        {
+          "index": 8,
+          "token_id": 15,
+          "logprob": -1.6133,
+          "text": "0"
+        },
+        {
+          "index": 26,
+          "token_id": 22,
+          "logprob": -1.5357,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 132,
+      "mean": -0.2131,
+      "min": -2.078,
+      "p05": -1.781,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 185.14,
+    "std": 8.5,
+    "dark_fraction": 0.00057
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      899.52,
+      1347.12
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      299,
+      449,
+      2199,
+      3292
+    ],
+    "ink_px": 3063,
+    "covered_px": 3047,
+    "covered_fraction": 0.99478,
+    "uncovered_px": 16,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

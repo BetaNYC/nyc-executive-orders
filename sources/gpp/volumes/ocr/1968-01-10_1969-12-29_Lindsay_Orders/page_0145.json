@@ -1,0 +1,274 @@
+{
+  "page": 145,
+  "source_image": "page_0145.png",
+  "elements": [
+    {
+      "bbox": [
+        131,
+        870,
+        807,
+        1601
+      ],
+      "category": "Text",
+      "text": "THE NEW YORKIAN\n\nTHE NEW YORKIAN is a weekly magazine published monthly by The New York Independent, a division of The New York Times.\n\nThe cover of The New York Independent is shown on the front cover of this magazine.\n\nThe cover of this magazine is shown on the front cover of The New Yorkian.\n\nThe inside front cover of this magazine is shown on the inside front cover of The New York Independent.\n\nThe inside front cover of The New York Independent is shown on the inside front cover of The New Yorkian.\n\nThe inside front cover of The New Yorkian is shown on the inside front cover of this magazine.\n\nThe inside front cover of this magazine is shown on the inside front cover of the cover of this magazine.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.6942,
+          "min": -2.1752
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.282,
+          "min": -0.282
+        },
+        "text": {
+          "n_tokens": 159,
+          "mean": -0.3949,
+          "min": -2.1311
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 485514,
+        "density": 0.0,
+        "chars": 710,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        742,
+        1675,
+        1054,
+        1742
+      ],
+      "category": "Text",
+      "text": "SUBSCRIBE TO THE NEW YORKIAN\n\nTO BE THE FIRST TO KNOW\n\nSUBSCRIBE TO THE NEW YORKIAN\n\nTO BE THE FIRST TO KNOW",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3443,
+          "min": -1.7445
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1587,
+          "min": -0.1587
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.3663,
+          "min": -3.2588
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 266,
+    "content": {
+      "n_tokens": 191,
+      "mean": -0.3901,
+      "min": -3.2588,
+      "p05": -1.5743,
+      "p50": -0.1164,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 242,
+          "token_id": 3168,
+          "logprob": -3.2588,
+          "text": " THE"
+        },
+        {
+          "index": 38,
+          "token_id": 22002,
+          "logprob": -2.1311,
+          "text": "IAN"
+        },
+        {
+          "index": 36,
+          "token_id": 16165,
+          "logprob": -1.9545,
+          "text": " NEW"
+        },
+        {
+          "index": 92,
+          "token_id": 6839,
+          "logprob": -1.8235,
+          "text": " shown"
+        },
+        {
+          "index": 67,
+          "token_id": 785,
+          "logprob": -1.8207,
+          "text": "The"
+        },
+        {
+          "index": 240,
+          "token_id": 5207,
+          "logprob": -1.8153,
+          "text": "TO"
+        },
+        {
+          "index": 87,
+          "token_id": 3421,
+          "logprob": -1.768,
+          "text": " cover"
+        },
+        {
+          "index": 55,
+          "token_id": 21994,
+          "logprob": -1.7112,
+          "text": " Independent"
+        },
+        {
+          "index": 56,
+          "token_id": 11,
+          "logprob": -1.6631,
+          "text": ","
+        },
+        {
+          "index": 58,
+          "token_id": 12804,
+          "logprob": -1.6006,
+          "text": " division"
+        },
+        {
+          "index": 173,
+          "token_id": 785,
+          "logprob": -1.548,
+          "text": "The"
+        },
+        {
+          "index": 35,
+          "token_id": 17229,
+          "logprob": -1.5075,
+          "text": "THE"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.4967,
+      "min": -2.1752,
+      "p05": -1.9562,
+      "p50": -0.081,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -2.1752,
+          "text": "1"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -2.0103,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.9648,
+          "text": "0"
+        },
+        {
+          "index": 17,
+          "token_id": 22,
+          "logprob": -1.792,
+          "text": "7"
+        },
+        {
+          "index": 207,
+          "token_id": 20,
+          "logprob": -1.7445,
+          "text": "5"
+        },
+        {
+          "index": 213,
+          "token_id": 19,
+          "logprob": -1.6656,
+          "text": "4"
+        },
+        {
+          "index": 219,
+          "token_id": 17,
+          "logprob": -1.6133,
+          "text": "2"
+        },
+        {
+          "index": 201,
+          "token_id": 17,
+          "logprob": -1.5114,
+          "text": "2"
+        },
+        {
+          "index": 6,
+          "token_id": 18,
+          "logprob": -1.1797,
+          "text": "3"
+        },
+        {
+          "index": 21,
+          "token_id": 21,
+          "logprob": -1.0992,
+          "text": "6"
+        },
+        {
+          "index": 11,
+          "token_id": 22,
+          "logprob": -0.7937,
+          "text": "7"
+        },
+        {
+          "index": 15,
+          "token_id": 23,
+          "logprob": -0.7811,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 266,
+      "mean": -0.3602,
+      "min": -3.2588,
+      "p05": -1.665,
+      "p50": -0.0557,
+      "n_below_threshold": 4
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.09,
+    "std": 7.9,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      662.16,
+      422.64
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      140,
+      220,
+      1033,
+      1619
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "page": 71,
+  "source_image": "page_0071.png",
+  "elements": [
+    {
+      "bbox": [
+        714,
+        1929,
+        1605,
+        1965
+      ],
+      "category": "Text",
+      "text": "Mortgage Company of V.A. Fellowship Company.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4255,
+          "min": -1.8848
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1948,
+          "min": -0.1948
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -1.2746,
+          "min": -2.8274
+        }
+      },
+      "ink": {
+        "ink_px": 34,
+        "area_px": 30168,
+        "density": 0.00113,
+        "chars": 44,
+        "chars_per_1k_ink": 1294.12
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "length",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 12000,
+    "content": {
+      "n_tokens": 11,
+      "mean": -1.2746,
+      "min": -2.8274,
+      "p05": -2.6548,
+      "p50": -0.9309,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 64642,
+          "logprob": -2.8274,
+          "text": " Fellowship"
+        },
+        {
+          "index": 37,
+          "token_id": 44,
+          "logprob": -2.4821,
+          "text": "M"
+        },
+        {
+          "index": 38,
+          "token_id": 371,
+          "logprob": -2.3879,
+          "text": "ort"
+        },
+        {
+          "index": 40,
+          "token_id": 8188,
+          "logprob": -2.1442,
+          "text": " Company"
+        },
+        {
+          "index": 42,
+          "token_id": 647,
+          "logprob": -1.5919,
+          "text": " V"
+        },
+        {
+          "index": 43,
+          "token_id": 875,
+          "logprob": -0.9309,
+          "text": ".A"
+        },
+        {
+          "index": 41,
+          "token_id": 315,
+          "logprob": -0.7622,
+          "text": " of"
+        },
+        {
+          "index": 47,
+          "token_id": 1189,
+          "logprob": -0.3529,
+          "text": ".\""
+        },
+        {
+          "index": 46,
+          "token_id": 8188,
+          "logprob": -0.2959,
+          "text": " Company"
+        },
+        {
+          "index": 44,
+          "token_id": 13,
+          "logprob": -0.1716,
+          "text": "."
+        },
+        {
+          "index": 39,
+          "token_id": 14943,
+          "logprob": -0.0734,
+          "text": "gage"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 22,
+      "mean": -0.415,
+      "min": -1.8848,
+      "p05": -1.8504,
+      "p50": -0.0178,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 19,
+          "token_id": 20,
+          "logprob": -1.8848,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.8542,
+          "text": "4"
+        },
+        {
+          "index": 25,
+          "token_id": 20,
+          "logprob": -1.7789,
+          "text": "5"
+        },
+        {
+          "index": 13,
+          "token_id": 24,
+          "logprob": -1.3158,
+          "text": "9"
+        },
+        {
+          "index": 5,
+          "token_id": 22,
+          "logprob": -0.6979,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -0.5284,
+          "text": "2"
+        },
+        {
+          "index": 6,
+          "token_id": 16,
+          "logprob": -0.5245,
+          "text": "1"
+        },
+        {
+          "index": 31,
+          "token_id": 1178,
+          "logprob": -0.1948,
+          "text": "Text"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -0.1637,
+          "text": "0"
+        },
+        {
+          "index": 24,
+          "token_id": 21,
+          "logprob": -0.1458,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 21,
+          "logprob": -0.0267,
+          "text": "6"
+        },
+        {
+          "index": 11,
+          "token_id": 24,
+          "logprob": -0.0088,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 12000,
+      "mean": -0.005,
+      "min": -2.8274,
+      "p05": -0.0018,
+      "p50": -0.0011,
+      "n_below_threshold": 5
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.93,
+    "std": 7.6,
+    "dark_fraction": 0.00013
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      634.8,
+      803.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      211,
+      267,
+      1552,
+      1964
+    ],
+    "ink_px": 288,
+    "covered_px": 34,
+    "covered_fraction": 0.11806,
+    "uncovered_px": 254,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

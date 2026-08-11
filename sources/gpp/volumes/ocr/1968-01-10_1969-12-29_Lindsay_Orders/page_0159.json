@@ -1,0 +1,246 @@
+{
+  "page": 159,
+  "source_image": "page_0159.png",
+  "elements": [
+    {
+      "bbox": [
+        1541,
+        1291,
+        1853,
+        1452
+      ],
+      "category": "Text",
+      "text": "The\nEnd\nof\nthe\nWorld\nin\na\nHole",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.7793,
+          "min": -2.2919
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2696,
+          "min": -0.2696
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -1.0185,
+          "min": -3.3729
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 101676,
+        "density": 0.0,
+        "chars": 30,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "length",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 12000,
+    "content": {
+      "n_tokens": 16,
+      "mean": -1.0185,
+      "min": -3.3729,
+      "p05": -2.9502,
+      "p50": -0.458,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 40,
+          "token_id": 3727,
+          "logprob": -3.3729,
+          "text": "End"
+        },
+        {
+          "index": 53,
+          "token_id": 1263,
+          "logprob": -2.8093,
+          "text": "ole"
+        },
+        {
+          "index": 52,
+          "token_id": 39,
+          "logprob": -2.3181,
+          "text": "H"
+        },
+        {
+          "index": 38,
+          "token_id": 785,
+          "logprob": -2.0774,
+          "text": "The"
+        },
+        {
+          "index": 39,
+          "token_id": 1699,
+          "logprob": -1.9816,
+          "text": "\\n"
+        },
+        {
+          "index": 41,
+          "token_id": 1699,
+          "logprob": -1.256,
+          "text": "\\n"
+        },
+        {
+          "index": 50,
+          "token_id": 64,
+          "logprob": -1.2166,
+          "text": "a"
+        },
+        {
+          "index": 46,
+          "token_id": 10134,
+          "logprob": -0.5664,
+          "text": "World"
+        },
+        {
+          "index": 42,
+          "token_id": 1055,
+          "logprob": -0.3495,
+          "text": "of"
+        },
+        {
+          "index": 44,
+          "token_id": 1782,
+          "logprob": -0.2137,
+          "text": "the"
+        },
+        {
+          "index": 48,
+          "token_id": 258,
+          "logprob": -0.0582,
+          "text": "in"
+        },
+        {
+          "index": 47,
+          "token_id": 1699,
+          "logprob": -0.0502,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 23,
+      "mean": -0.7571,
+      "min": -2.2919,
+      "p05": -2.2413,
+      "p50": -0.3565,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 8,
+          "token_id": 16,
+          "logprob": -2.2919,
+          "text": "1"
+        },
+        {
+          "index": 20,
+          "token_id": 18,
+          "logprob": -2.2545,
+          "text": "3"
+        },
+        {
+          "index": 14,
+          "token_id": 16,
+          "logprob": -2.123,
+          "text": "1"
+        },
+        {
+          "index": 26,
+          "token_id": 17,
+          "logprob": -2.0401,
+          "text": "2"
+        },
+        {
+          "index": 19,
+          "token_id": 20,
+          "logprob": -1.7091,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.6331,
+          "text": "4"
+        },
+        {
+          "index": 6,
+          "token_id": 20,
+          "logprob": -1.3261,
+          "text": "5"
+        },
+        {
+          "index": 5,
+          "token_id": 16,
+          "logprob": -1.0969,
+          "text": "1"
+        },
+        {
+          "index": 13,
+          "token_id": 24,
+          "logprob": -0.8616,
+          "text": "9"
+        },
+        {
+          "index": 25,
+          "token_id": 20,
+          "logprob": -0.8101,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 23,
+          "logprob": -0.3716,
+          "text": "8"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -0.3565,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 12000,
+      "mean": -0.0054,
+      "min": -3.3729,
+      "p05": -0.002,
+      "p50": -0.0002,
+      "n_below_threshold": 11
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.29,
+    "std": 7.93,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      2129.25,
+      1374.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      458,
+      709,
+      3358,
+      5205
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

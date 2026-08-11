@@ -1,0 +1,337 @@
+{
+  "page": 68,
+  "source_image": "page_0068.png",
+  "elements": [
+    {
+      "bbox": [
+        513,
+        113,
+        555,
+        133
+      ],
+      "category": "Page-header",
+      "text": "-6-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3167,
+          "min": -1.4258
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0015,
+          "min": -0.0017
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0019,
+          "min": -0.0053
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        91,
+        224,
+        1070,
+        340
+      ],
+      "category": "Text",
+      "text": "§9. The Executive Order of the Mayor, No. 55, effective November 2, 1967, is hereby rescinded. This Executive Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3073,
+          "min": -1.3724
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0017,
+          "min": -0.0017
+        },
+        "text": {
+          "n_tokens": 40,
+          "mean": -0.0004,
+          "min": -0.013
+        }
+      },
+      "ink": {
+        "ink_px": 396,
+        "area_px": 103240,
+        "density": 0.00384,
+        "chars": 146,
+        "chars_per_1k_ink": 368.69
+      }
+    },
+    {
+      "bbox": [
+        622,
+        311,
+        1045,
+        502
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3386,
+          "min": -1.7703
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0014,
+          "min": -0.0014
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 294,
+        "area_px": 78090,
+        "density": 0.00376,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        721,
+        429,
+        923,
+        471
+      ],
+      "category": "Caption",
+      "text": "John V. Lindsay\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2512,
+          "min": -1.1705
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1269,
+          "min": -0.1269
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0045,
+          "min": -0.0267
+        }
+      },
+      "ink": {
+        "ink_px": 33,
+        "area_px": 8526,
+        "density": 0.00387,
+        "chars": 21,
+        "chars_per_1k_ink": 636.36
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 186,
+    "content": {
+      "n_tokens": 51,
+      "mean": -0.0012,
+      "min": -0.0267,
+      "p05": -0.0051,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 181,
+          "token_id": 3022,
+          "logprob": -0.0267,
+          "text": "AY"
+        },
+        {
+          "index": 71,
+          "token_id": 17851,
+          "logprob": -0.013,
+          "text": "§"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0053,
+          "text": " \"-"
+        },
+        {
+          "index": 179,
+          "token_id": 1699,
+          "logprob": -0.0048,
+          "text": "\\n"
+        },
+        {
+          "index": 91,
+          "token_id": 11,
+          "logprob": -0.0037,
+          "text": ","
+        },
+        {
+          "index": 175,
+          "token_id": 13079,
+          "logprob": -0.0029,
+          "text": "John"
+        },
+        {
+          "index": 180,
+          "token_id": 44,
+          "logprob": -0.0009,
+          "text": "M"
+        },
+        {
+          "index": 178,
+          "token_id": 62784,
+          "logprob": -0.0009,
+          "text": " Lindsay"
+        },
+        {
+          "index": 35,
+          "token_id": 21,
+          "logprob": -0.0004,
+          "text": "6"
+        },
+        {
+          "index": 101,
+          "token_id": 16593,
+          "logprob": -0.0001,
+          "text": "inded"
+        },
+        {
+          "index": 36,
+          "token_id": 12,
+          "logprob": -0.0001,
+          "text": "-"
+        },
+        {
+          "index": 107,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 78,
+      "mean": -0.2862,
+      "min": -1.7703,
+      "p05": -1.3742,
+      "p50": -0.0013,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 129,
+          "token_id": 20,
+          "logprob": -1.7703,
+          "text": "5"
+        },
+        {
+          "index": 118,
+          "token_id": 17,
+          "logprob": -1.4822,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.4258,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.3848,
+          "text": "3"
+        },
+        {
+          "index": 43,
+          "token_id": 16,
+          "logprob": -1.3724,
+          "text": "1"
+        },
+        {
+          "index": 17,
+          "token_id": 20,
+          "logprob": -1.3572,
+          "text": "5"
+        },
+        {
+          "index": 54,
+          "token_id": 15,
+          "logprob": -1.3214,
+          "text": "0"
+        },
+        {
+          "index": 158,
+          "token_id": 18,
+          "logprob": -1.1705,
+          "text": "3"
+        },
+        {
+          "index": 48,
+          "token_id": 19,
+          "logprob": -1.1631,
+          "text": "4"
+        },
+        {
+          "index": 134,
+          "token_id": 17,
+          "logprob": -1.1581,
+          "text": "2"
+        },
+        {
+          "index": 22,
+          "token_id": 18,
+          "logprob": -1.1564,
+          "text": "3"
+        },
+        {
+          "index": 148,
+          "token_id": 16,
+          "logprob": -1.1263,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 186,
+      "mean": -0.1203,
+      "min": -1.7703,
+      "p05": -1.1577,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 168.18,
+    "std": 8.33,
+    "dark_fraction": 0.00066
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      539.28,
+      421.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      140,
+      179,
+      1030,
+      1318
+    ],
+    "ink_px": 673,
+    "covered_px": 673,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

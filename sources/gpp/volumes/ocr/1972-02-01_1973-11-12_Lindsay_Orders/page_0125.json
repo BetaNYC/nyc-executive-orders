@@ -1,0 +1,416 @@
+{
+  "page": 125,
+  "source_image": "page_0125.png",
+  "elements": [
+    {
+      "bbox": [
+        1876,
+        1094,
+        1916,
+        1686
+      ],
+      "category": "Title",
+      "text": "ENVIRONMENTAL REVIEW FORM",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3815,
+          "min": -1.9784
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.674,
+          "min": -0.674
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0157,
+          "min": -0.0423
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 12474,
+        "density": 0.0,
+        "chars": 25,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        1752,
+        181,
+        1790,
+        680
+      ],
+      "category": "Section-header",
+      "text": "I. Submitting Agency",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4693,
+          "min": -1.9253
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1145,
+          "min": -0.2289
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0905,
+          "min": -0.3363
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 10179,
+        "density": 0.0,
+        "chars": 20,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        1091,
+        176,
+        1747,
+        2590
+      ],
+      "category": "Table",
+      "text": "<table><tr><td>II. Applicant</td><td>For EPA Use Only</td></tr><tr><td>Name</td><td>Date Received</td></tr><tr><td>Address</td><td>Action</td></tr><tr><td>(name)</td><td></td></tr><tr><td>(title)</td><td></td></tr><tr><td>Phone</td><td></td></tr><tr><td>Address</td><td></td></tr><tr><td>Phone</td><td></td></tr><tr><td>Official City</td><td></td></tr><tr><td>Action Pending</td><td></td></tr></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.6465,
+          "min": -2.0781
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1692,
+          "min": -0.1692
+        },
+        "text": {
+          "n_tokens": 155,
+          "mean": -0.0287,
+          "min": -1.1998
+        }
+      },
+      "ink": {
+        "ink_px": 9,
+        "area_px": 1434643,
+        "density": 1e-05,
+        "chars": 401,
+        "chars_per_1k_ink": 44555.56
+      }
+    },
+    {
+      "bbox": [
+        1011,
+        176,
+        1054,
+        1376
+      ],
+      "category": "Section-header",
+      "text": "III. Project Location (applicable to parts V-VIII)",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3059,
+          "min": -1.8202
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1092,
+          "min": -0.2184
+        },
+        "text": {
+          "n_tokens": 13,
+          "mean": -0.0013,
+          "min": -0.0092
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 42196,
+        "density": 0.0,
+        "chars": 50,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        843,
+        173,
+        1004,
+        2590
+      ],
+      "category": "Table",
+      "text": "<table><tr><td>Street Address</td><td>Borough</td><td>Block #</td><td>Lot</td></tr></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4158,
+          "min": -2.1099
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0254,
+          "min": -0.0254
+        },
+        "text": {
+          "n_tokens": 35,
+          "mean": -0.0373,
+          "min": -0.8632
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 354851,
+        "density": 0.0,
+        "chars": 91,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        775,
+        173,
+        821,
+        1660
+      ],
+      "category": "Section-header",
+      "text": "IV. Project Description (attach additional sheet if necessary)",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3272,
+          "min": -1.8845
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0625,
+          "min": -0.125
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0078,
+          "min": -0.0765
+        }
+      },
+      "ink": {
+        "ink_px": 1,
+        "area_px": 58468,
+        "density": 2e-05,
+        "chars": 62,
+        "chars_per_1k_ink": 62000.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 447,
+    "content": {
+      "n_tokens": 224,
+      "mean": -0.0285,
+      "min": -1.1998,
+      "p05": -0.1255,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 127,
+          "token_id": 29,
+          "logprob": -1.1998,
+          "text": ">"
+        },
+        {
+          "index": 368,
+          "token_id": 29,
+          "logprob": -0.8632,
+          "text": ">"
+        },
+        {
+          "index": 240,
+          "token_id": 1472,
+          "logprob": -0.6339,
+          "text": "></"
+        },
+        {
+          "index": 131,
+          "token_id": 522,
+          "logprob": -0.4481,
+          "text": "</"
+        },
+        {
+          "index": 128,
+          "token_id": 5543,
+          "logprob": -0.3709,
+          "text": "II"
+        },
+        {
+          "index": 80,
+          "token_id": 40,
+          "logprob": -0.3363,
+          "text": "I"
+        },
+        {
+          "index": 369,
+          "token_id": 34547,
+          "logprob": -0.2762,
+          "text": "Street"
+        },
+        {
+          "index": 255,
+          "token_id": 1472,
+          "logprob": -0.2675,
+          "text": "></"
+        },
+        {
+          "index": 212,
+          "token_id": 1472,
+          "logprob": -0.2646,
+          "text": "></"
+        },
+        {
+          "index": 230,
+          "token_id": 1784,
+          "logprob": -0.2018,
+          "text": "><"
+        },
+        {
+          "index": 123,
+          "token_id": 1784,
+          "logprob": -0.1461,
+          "text": "><"
+        },
+        {
+          "index": 273,
+          "token_id": 1472,
+          "logprob": -0.1274,
+          "text": "></"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 132,
+      "mean": -0.4072,
+      "min": -2.1099,
+      "p05": -1.8813,
+      "p50": -0.0258,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 345,
+          "token_id": 19,
+          "logprob": -2.1099,
+          "text": "4"
+        },
+        {
+          "index": 334,
+          "token_id": 18,
+          "logprob": -2.0819,
+          "text": "3"
+        },
+        {
+          "index": 110,
+          "token_id": 15,
+          "logprob": -2.0781,
+          "text": "0"
+        },
+        {
+          "index": 14,
+          "token_id": 19,
+          "logprob": -1.9784,
+          "text": "4"
+        },
+        {
+          "index": 51,
+          "token_id": 17,
+          "logprob": -1.9253,
+          "text": "2"
+        },
+        {
+          "index": 93,
+          "token_id": 16,
+          "logprob": -1.8857,
+          "text": "1"
+        },
+        {
+          "index": 404,
+          "token_id": 20,
+          "logprob": -1.8845,
+          "text": "5"
+        },
+        {
+          "index": 98,
+          "token_id": 21,
+          "logprob": -1.8787,
+          "text": "6"
+        },
+        {
+          "index": 26,
+          "token_id": 21,
+          "logprob": -1.8731,
+          "text": "6"
+        },
+        {
+          "index": 8,
+          "token_id": 21,
+          "logprob": -1.8398,
+          "text": "6"
+        },
+        {
+          "index": 295,
+          "token_id": 19,
+          "logprob": -1.8202,
+          "text": "4"
+        },
+        {
+          "index": 20,
+          "token_id": 21,
+          "logprob": -1.7785,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 447,
+      "mean": -0.1357,
+      "min": -2.1099,
+      "p05": -1.1334,
+      "p50": -0.0001,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 181.28,
+    "std": 8.89,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      778.56,
+      1263.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      259,
+      421,
+      1903,
+      3088
+    ],
+    "ink_px": 10,
+    "covered_px": 10,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

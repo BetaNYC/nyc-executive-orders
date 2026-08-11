@@ -1,0 +1,269 @@
+{
+  "page": 385,
+  "source_image": "page_0385.png",
+  "elements": [
+    {
+      "bbox": [
+        480,
+        1537,
+        701,
+        1597
+      ],
+      "category": "Text",
+      "text": "DEPARTMENT OF COMMERCE\nOFFICE OF FISHERIES\nUNITED STATES DEPARTMENT OF COMMERCE\nOFFICE OF FISHERIES",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4046,
+          "min": -1.7439
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.038,
+          "min": -0.038
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.2512,
+          "min": -1.9632
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 13481,
+        "density": 0.0,
+        "chars": 99,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        531,
+        1609,
+        655,
+        1740
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3124,
+          "min": -1.5342
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": null
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 102,
+    "content": {
+      "n_tokens": 32,
+      "mean": -0.2512,
+      "min": -1.9632,
+      "p05": -0.9515,
+      "p50": -0.0234,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 1150,
+          "logprob": -1.9632,
+          "text": "DE"
+        },
+        {
+          "index": 61,
+          "token_id": 27068,
+          "logprob": -1.083,
+          "text": "OFF"
+        },
+        {
+          "index": 39,
+          "token_id": 7682,
+          "logprob": -0.8439,
+          "text": " COM"
+        },
+        {
+          "index": 51,
+          "token_id": 23040,
+          "logprob": -0.777,
+          "text": "UNIT"
+        },
+        {
+          "index": 46,
+          "token_id": 434,
+          "logprob": -0.7332,
+          "text": " F"
+        },
+        {
+          "index": 60,
+          "token_id": 1699,
+          "logprob": -0.5093,
+          "text": "\\n"
+        },
+        {
+          "index": 43,
+          "token_id": 27068,
+          "logprob": -0.4927,
+          "text": "OFF"
+        },
+        {
+          "index": 50,
+          "token_id": 1699,
+          "logprob": -0.3914,
+          "text": "\\n"
+        },
+        {
+          "index": 64,
+          "token_id": 434,
+          "logprob": -0.3127,
+          "text": " F"
+        },
+        {
+          "index": 47,
+          "token_id": 1637,
+          "logprob": -0.2811,
+          "text": "IS"
+        },
+        {
+          "index": 48,
+          "token_id": 3012,
+          "logprob": -0.199,
+          "text": "HER"
+        },
+        {
+          "index": 54,
+          "token_id": 3385,
+          "logprob": -0.1118,
+          "text": " DE"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3423,
+      "min": -1.7439,
+      "p05": -1.5168,
+      "p50": -0.0068,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 13,
+          "token_id": 22,
+          "logprob": -1.7439,
+          "text": "7"
+        },
+        {
+          "index": 86,
+          "token_id": 20,
+          "logprob": -1.5342,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.5226,
+          "text": "1"
+        },
+        {
+          "index": 24,
+          "token_id": 22,
+          "logprob": -1.4071,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 15,
+          "logprob": -1.1205,
+          "text": "0"
+        },
+        {
+          "index": 81,
+          "token_id": 24,
+          "logprob": -1.094,
+          "text": "9"
+        },
+        {
+          "index": 92,
+          "token_id": 15,
+          "logprob": -1.0593,
+          "text": "0"
+        },
+        {
+          "index": 75,
+          "token_id": 16,
+          "logprob": -1.0093,
+          "text": "1"
+        },
+        {
+          "index": 6,
+          "token_id": 23,
+          "logprob": -0.7518,
+          "text": "8"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -0.6401,
+          "text": "4"
+        },
+        {
+          "index": 74,
+          "token_id": 18,
+          "logprob": -0.5286,
+          "text": "3"
+        },
+        {
+          "index": 80,
+          "token_id": 15,
+          "logprob": -0.5232,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 102,
+      "mean": -0.2223,
+      "min": -1.9632,
+      "p05": -1.1192,
+      "p50": -0.0008,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 166.96,
+    "std": 7.58,
+    "dark_fraction": 8e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      658.8,
+      432.48
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      144,
+      219,
+      1057,
+      1610
+    ],
+    "ink_px": 107,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 107,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "page": 384,
+  "source_image": "page_0384.png",
+  "elements": [
+    {
+      "bbox": [
+        699,
+        97,
+        749,
+        122
+      ],
+      "category": "Page-header",
+      "text": "-3-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.4241,
+          "min": -1.6262
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0026,
+          "min": -0.0052
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0114,
+          "min": -0.0317
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        183,
+        205,
+        1352,
+        507
+      ],
+      "category": "Text",
+      "text": "the polling of that agency. The head of each city agency shall, upon receipt of these forms and instructions, conduct the censuses of the employees of that agency and report the results of those censuses to the chairman of the City Commission on Human Rights as soon as it is practicable, but in any case no later than thirty days from the date on which the forms and instructions are received by the agency.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.334,
+          "min": -1.5966
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 84,
+          "mean": -0.0027,
+          "min": -0.2259
+        }
+      },
+      "ink": {
+        "ink_px": 32,
+        "area_px": 316166,
+        "density": 0.0001,
+        "chars": 408,
+        "chars_per_1k_ink": 12750.0
+      }
+    },
+    {
+      "bbox": [
+        183,
+        529,
+        1312,
+        932
+      ],
+      "category": "Text",
+      "text": "## 5. Upon receipt of the results of the censuses of all city agencies, the chairman of the City Commission on Human Rights shall correlate those results and submit them to the Mayor and the Director of Personnel along with whatever recommendations the chairman may feel are necessary to resolve or ameliorate the problems in recruitment, assignment, promotion, and other aspects of employment of members of minority groups, women and handicapped persons in the civil service which are indicated by the results of the censuses.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2792,
+          "min": -1.623
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 101,
+          "mean": -0.0158,
+          "min": -1.3501
+        }
+      },
+      "ink": {
+        "ink_px": 71,
+        "area_px": 440882,
+        "density": 0.00016,
+        "chars": 527,
+        "chars_per_1k_ink": 7422.54
+      }
+    },
+    {
+      "bbox": [
+        183,
+        956,
+        1344,
+        1303
+      ],
+      "category": "Text",
+      "text": "## 6. No city employee shall be required to reveal any personal information for the purposes of these censuses concerning his racial or ethnic identification, sex or handicap against his wishes, Refusal to divulge such information shall not result in any adverse consequences concerning continued employment, or promotional or any other job-related opportunities, nor shall it result in any penalty or disciplinary action for the employee involved.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2271,
+          "min": -1.4681
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 79,
+          "mean": -0.0013,
+          "min": -0.07
+        }
+      },
+      "ink": {
+        "ink_px": 201,
+        "area_px": 380712,
+        "density": 0.00053,
+        "chars": 448,
+        "chars_per_1k_ink": 2228.86
+      }
+    },
+    {
+      "bbox": [
+        183,
+        1327,
+        1386,
+        1626
+      ],
+      "category": "Text",
+      "text": "## 7. Any board, authority, commission, public benefit corporation or other public agency or office which is not part of the city government but which utilizes either the testing or appointment procedures of the Department of Personnel, or the payroll services of the Finance Administrator and whose field of operations and jurisdiction lies mainly within the City of New York may comply with the provisions of this order by filing a notice",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2084,
+          "min": -1.5384
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 78,
+          "mean": -0.0099,
+          "min": -0.7436
+        }
+      },
+      "ink": {
+        "ink_px": 279,
+        "area_px": 299756,
+        "density": 0.00093,
+        "chars": 440,
+        "chars_per_1k_ink": 1577.06
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 524,
+    "content": {
+      "n_tokens": 345,
+      "mean": -0.0079,
+      "min": -1.3501,
+      "p05": -0.002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 190,
+          "token_id": 565,
+          "logprob": -1.3501,
+          "text": "##"
+        },
+        {
+          "index": 493,
+          "token_id": 28593,
+          "logprob": -0.7436,
+          "text": " Administrator"
+        },
+        {
+          "index": 86,
+          "token_id": 22567,
+          "logprob": -0.2259,
+          "text": " receipt"
+        },
+        {
+          "index": 191,
+          "token_id": 220,
+          "logprob": -0.1222,
+          "text": " "
+        },
+        {
+          "index": 193,
+          "token_id": 13,
+          "logprob": -0.0719,
+          "text": "."
+        },
+        {
+          "index": 363,
+          "token_id": 11,
+          "logprob": -0.07,
+          "text": ","
+        },
+        {
+          "index": 192,
+          "token_id": 20,
+          "logprob": -0.039,
+          "text": "5"
+        },
+        {
+          "index": 33,
+          "token_id": 6523,
+          "logprob": -0.0317,
+          "text": " \"-"
+        },
+        {
+          "index": 505,
+          "token_id": 4311,
+          "logprob": -0.0162,
+          "text": " City"
+        },
+        {
+          "index": 364,
+          "token_id": 8550,
+          "logprob": -0.0124,
+          "text": " Ref"
+        },
+        {
+          "index": 376,
+          "token_id": 30859,
+          "logprob": -0.0121,
+          "text": " adverse"
+        },
+        {
+          "index": 200,
+          "token_id": 279,
+          "logprob": -0.0047,
+          "text": " the"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 102,
+      "mean": -0.2724,
+      "min": -1.6262,
+      "p05": -1.4793,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 11,
+          "token_id": 22,
+          "logprob": -1.6262,
+          "text": "7"
+        },
+        {
+          "index": 173,
+          "token_id": 17,
+          "logprob": -1.623,
+          "text": "2"
+        },
+        {
+          "index": 43,
+          "token_id": 18,
+          "logprob": -1.5966,
+          "text": "3"
+        },
+        {
+          "index": 425,
+          "token_id": 21,
+          "logprob": -1.5384,
+          "text": "6"
+        },
+        {
+          "index": 54,
+          "token_id": 17,
+          "logprob": -1.5302,
+          "text": "2"
+        },
+        {
+          "index": 48,
+          "token_id": 20,
+          "logprob": -1.4799,
+          "text": "5"
+        },
+        {
+          "index": 309,
+          "token_id": 19,
+          "logprob": -1.4681,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.4419,
+          "text": "9"
+        },
+        {
+          "index": 21,
+          "token_id": 17,
+          "logprob": -1.4238,
+          "text": "2"
+        },
+        {
+          "index": 303,
+          "token_id": 21,
+          "logprob": -1.3279,
+          "text": "6"
+        },
+        {
+          "index": 59,
+          "token_id": 22,
+          "logprob": -1.3236,
+          "text": "7"
+        },
+        {
+          "index": 431,
+          "token_id": 21,
+          "logprob": -1.2699,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 524,
+      "mean": -0.0584,
+      "min": -1.6262,
+      "p05": -0.2222,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 172.64,
+    "std": 13.82,
+    "dark_fraction": 0.00038
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      653.52,
+      522.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      174,
+      217,
+      1276,
+      1598
+    ],
+    "ink_px": 583,
+    "covered_px": 583,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

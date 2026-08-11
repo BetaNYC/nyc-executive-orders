@@ -1,0 +1,302 @@
+{
+  "page": 22,
+  "source_image": "page_0022.png",
+  "elements": [
+    {
+      "bbox": [
+        1048,
+        216,
+        1167,
+        261
+      ],
+      "category": "Page-header",
+      "text": "- 5 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3679,
+          "min": -1.6778
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.017,
+          "min": -0.0334
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.1055,
+          "min": -0.394
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        934,
+        264,
+        1259,
+        306
+      ],
+      "category": "Caption",
+      "text": "VENDOR SERVICE",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2545,
+          "min": -1.2268
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5619,
+          "min": -0.5619
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0374,
+          "min": -0.1081
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        89,
+        306,
+        2240,
+        3077
+      ],
+      "category": "Table",
+      "text": "<table><thead><tr><th>Ven-dor</th><th>Mgmt. Sci.</th><th>S'vce. Bur.</th><th>Comm/ TM Shear.</th><th>Prog.</th><th>Consult Anal.</th><th>Software. Devel.</th><th>Sci/ Eng.</th><th>Educ. Train.</th><th>Prog. Pkg.</th><th>Mgmt./ Std.</th></tr></thead><tbody><tr><td>RCA</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td><td>X</td><td></td></tr><tr><td>REAL</td><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>REL</td><td></td><td></td><td></td><td>X</td><td>X</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>SCORE</td><td></td><td></td><td></td><td>X</td><td>X</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>SDC</td><td>X</td><td></td><td></td><td></td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td></td></tr><tr><td>SMI</td><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>SSI</td><td>X</td><td></td><td></td><td>X</td><td>X</td><td>X</td><td></td><td>X</td><td></td><td></td></tr><tr><td>TEL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TASC</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td></td><td></td><td></td><td></td></tr><tr><td>TECH.</td><td></td><td>X</td><td></td><td></td><td></td><td></td><td>X</td><td></td><td>X</td><td></td></tr><tr><td>TBS</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td></td><td></td><td>X</td><td>X</td></tr><tr><td>UNIV.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td></tr><tr><td>WEB</td><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>WELL</td><td>X</td><td></td><td>X</td><td></td><td>X</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4877,
+          "min": -1.9862
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0011,
+          "min": -0.0011
+        },
+        "text": {
+          "n_tokens": 854,
+          "mean": -0.0185,
+          "min": -1.1714
+        }
+      },
+      "ink": {
+        "ink_px": 128328,
+        "area_px": 4746162,
+        "density": 0.02704,
+        "chars": 1876,
+        "chars_per_1k_ink": 14.62
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 969,
+    "content": {
+      "n_tokens": 861,
+      "mean": -0.019,
+      "min": -1.1714,
+      "p05": -0.0803,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 150,
+          "token_id": 2932,
+          "logprob": -1.1714,
+          "text": " She"
+        },
+        {
+          "index": 965,
+          "token_id": 29,
+          "logprob": -0.7118,
+          "text": ">"
+        },
+        {
+          "index": 707,
+          "token_id": 76329,
+          "logprob": -0.635,
+          "text": ">X"
+        },
+        {
+          "index": 120,
+          "token_id": 50700,
+          "logprob": -0.6005,
+          "text": ">V"
+        },
+        {
+          "index": 205,
+          "token_id": 1725,
+          "logprob": -0.588,
+          "text": "./"
+        },
+        {
+          "index": 756,
+          "token_id": 76329,
+          "logprob": -0.5274,
+          "text": ">X"
+        },
+        {
+          "index": 121,
+          "token_id": 268,
+          "logprob": -0.5122,
+          "text": "en"
+        },
+        {
+          "index": 923,
+          "token_id": 1472,
+          "logprob": -0.4861,
+          "text": "></"
+        },
+        {
+          "index": 475,
+          "token_id": 1472,
+          "logprob": -0.4764,
+          "text": "></"
+        },
+        {
+          "index": 122,
+          "token_id": 1737,
+          "logprob": -0.4581,
+          "text": "-d"
+        },
+        {
+          "index": 281,
+          "token_id": 1472,
+          "logprob": -0.4335,
+          "text": "></"
+        },
+        {
+          "index": 37,
+          "token_id": 220,
+          "logprob": -0.394,
+          "text": " "
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 62,
+      "mean": -0.3557,
+      "min": -1.9862,
+      "p05": -1.6665,
+      "p50": -0.0037,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 84,
+          "token_id": 24,
+          "logprob": -1.9862,
+          "text": "9"
+        },
+        {
+          "index": 101,
+          "token_id": 22,
+          "logprob": -1.8618,
+          "text": "7"
+        },
+        {
+          "index": 95,
+          "token_id": 15,
+          "logprob": -1.8121,
+          "text": "0"
+        },
+        {
+          "index": 19,
+          "token_id": 22,
+          "logprob": -1.6778,
+          "text": "7"
+        },
+        {
+          "index": 13,
+          "token_id": 21,
+          "logprob": -1.4524,
+          "text": "6"
+        },
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.3514,
+          "text": "1"
+        },
+        {
+          "index": 83,
+          "token_id": 23,
+          "logprob": -1.2852,
+          "text": "8"
+        },
+        {
+          "index": 8,
+          "token_id": 23,
+          "logprob": -1.2727,
+          "text": "8"
+        },
+        {
+          "index": 63,
+          "token_id": 21,
+          "logprob": -1.2268,
+          "text": "6"
+        },
+        {
+          "index": 47,
+          "token_id": 19,
+          "logprob": -1.1463,
+          "text": "4"
+        },
+        {
+          "index": 52,
+          "token_id": 19,
+          "logprob": -1.1056,
+          "text": "4"
+        },
+        {
+          "index": 89,
+          "token_id": 21,
+          "logprob": -0.8156,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 969,
+      "mean": -0.0397,
+      "min": -1.9862,
+      "p05": -0.1967,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 172.27,
+    "std": 21.52,
+    "dark_fraction": 0.02702
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      918.48,
+      1159.92
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      306,
+      386,
+      2245,
+      2835
+    ],
+    "ink_px": 128328,
+    "covered_px": 128328,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

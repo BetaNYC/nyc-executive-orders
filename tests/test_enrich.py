@@ -5,10 +5,14 @@ from __future__ import annotations
 import pytest
 
 from nyc_executive_orders.enrich import (
+    ADMIN_NOTE_AMBIGUOUS_YEAR,
+    ADMIN_NOTE_BEFORE_RECORD,
     ADMIN_NOTE_PENDING,
     administration_fields,
     enrich_record,
+    mayor_for_date,
     mayor_for_year,
+    pre1974_administration,
 )
 
 
@@ -73,3 +77,72 @@ def test_enrich_record_2026_is_mamdani():
     assert out["mayor"] == "Mamdani"
     assert out["administration"] == "Mamdani"
     assert out["admin_note"] is None
+
+
+# --------------------------------------------------------------------------- #
+# Phase E — pre-1974, where year alone is NOT enough                            #
+# --------------------------------------------------------------------------- #
+
+@pytest.mark.parametrize(
+    "iso_date, mayor",
+    [
+        ("1946-01-07", "O'Dwyer"),       # first day of the earliest volume
+        ("1950-08-31", "O'Dwyer"),       # his last day in office
+        ("1950-09-01", "Impellitteri"),  # Acting Mayor from the very next day
+        ("1950-11-14", "Impellitteri"),  # sworn in after the special election
+        ("1953-12-31", "Impellitteri"),  # end of his term
+        ("1954-01-01", "Wagner"),
+        ("1965-12-31", "Wagner"),
+        ("1966-01-01", "Lindsay"),
+        ("1973-11-12", "Lindsay"),       # last day covered by any volume
+    ],
+)
+def test_mayor_for_date_covers_the_1950_handover(iso_date, mayor):
+    assert mayor_for_date(iso_date) == mayor
+
+
+def test_mayor_for_date_rejects_garbage_rather_than_raising():
+    """A mangled OCR date must leave the field empty, never crash a build."""
+    assert mayor_for_date("not-a-date") is None
+    assert mayor_for_date("") is None
+    assert mayor_for_date(None) is None
+
+
+def test_1950_without_a_date_is_not_guessed():
+    """1950 has two administrations, so the year alone cannot resolve it.
+
+    "An empty or flagged field is correct; a guess is a bug."
+    """
+    mayor, note = pre1974_administration(1950, None)
+    assert mayor is None
+    assert note == ADMIN_NOTE_AMBIGUOUS_YEAR
+
+
+def test_unambiguous_pre_1974_year_resolves_without_a_date():
+    assert pre1974_administration(1951, None) == ("Impellitteri", None)
+    assert pre1974_administration(1970, None) == ("Lindsay", None)
+
+
+def test_pre_1974_enrich_prefers_the_signing_date():
+    out = enrich_record({"year": 1950, "date_signed": "1950-11-16"})
+    assert out["mayor"] == "Impellitteri"
+    assert out["admin_note"] is None
+    # Same year, other side of the handover.
+    out = enrich_record({"year": 1950, "date_signed": "1950-01-04"})
+    assert out["mayor"] == "O'Dwyer"
+
+
+def test_before_the_earliest_volume_is_null():
+    mayor, note = pre1974_administration(1930, None)
+    assert mayor is None
+    assert note == ADMIN_NOTE_BEFORE_RECORD
+
+
+def test_mayor_for_year_still_returns_none_pre_1974():
+    """The year-granular lookup keeps its old contract exactly.
+
+    Phase E resolves the pre-1974 era through a SEPARATE date-granular table, so
+    this function — and every 1974+ record that flows through it — is unchanged.
+    """
+    assert mayor_for_year(1973) is None
+    assert mayor_for_year(1950) is None

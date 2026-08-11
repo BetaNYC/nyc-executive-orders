@@ -1,0 +1,309 @@
+{
+  "page": 88,
+  "source_image": "page_0088.png",
+  "elements": [
+    {
+      "bbox": [
+        101,
+        280,
+        1836,
+        422
+      ],
+      "category": "Text",
+      "text": "N. Subject to the direction of the Mayor, the Operations Board, for its Chairman, will submit and publish such reports as may further the purposes of this Executive Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4526,
+          "min": -2.0254
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.576,
+          "min": -0.576
+        },
+        "text": {
+          "n_tokens": 34,
+          "mean": -0.0255,
+          "min": -0.4072
+        }
+      },
+      "ink": {
+        "ink_px": 1944,
+        "area_px": 52140,
+        "density": 0.03728,
+        "chars": 171,
+        "chars_per_1k_ink": 87.96
+      }
+    },
+    {
+      "bbox": [
+        101,
+        463,
+        1912,
+        614
+      ],
+      "category": "Text",
+      "text": "O. Subject to the authorization of the Mayor, the Operations Board is authorized to hire or otherwise secure such staff, obtain such space, and procure such other facilities as the Chairman may direct.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3016,
+          "min": -1.6869
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 38,
+          "mean": -0.043,
+          "min": -1.445
+        }
+      },
+      "ink": {
+        "ink_px": 12586,
+        "area_px": 251864,
+        "density": 0.04997,
+        "chars": 201,
+        "chars_per_1k_ink": 15.97
+      }
+    },
+    {
+      "bbox": [
+        974,
+        905,
+        1693,
+        1060
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.383,
+          "min": -1.8266
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.005,
+          "min": -0.005
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 11580,
+        "area_px": 112944,
+        "density": 0.10253,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 176,
+    "content": {
+      "n_tokens": 72,
+      "mean": -0.0347,
+      "min": -1.445,
+      "p05": -0.1077,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 117,
+          "token_id": 374,
+          "logprob": -1.445,
+          "text": " is"
+        },
+        {
+          "index": 49,
+          "token_id": 369,
+          "logprob": -0.4072,
+          "text": " for"
+        },
+        {
+          "index": 35,
+          "token_id": 45,
+          "logprob": -0.3891,
+          "text": "N"
+        },
+        {
+          "index": 135,
+          "token_id": 12786,
+          "logprob": -0.1756,
+          "text": " facilities"
+        },
+        {
+          "index": 63,
+          "token_id": 9895,
+          "logprob": -0.0521,
+          "text": " purposes"
+        },
+        {
+          "index": 48,
+          "token_id": 11,
+          "logprob": -0.0091,
+          "text": ","
+        },
+        {
+          "index": 68,
+          "token_id": 1189,
+          "logprob": -0.005,
+          "text": ".\""
+        },
+        {
+          "index": 36,
+          "token_id": 13,
+          "logprob": -0.003,
+          "text": "."
+        },
+        {
+          "index": 104,
+          "token_id": 46,
+          "logprob": -0.0026,
+          "text": "O"
+        },
+        {
+          "index": 132,
+          "token_id": 79679,
+          "logprob": -0.0021,
+          "text": " procure"
+        },
+        {
+          "index": 138,
+          "token_id": 26294,
+          "logprob": -0.0015,
+          "text": " Chairman"
+        },
+        {
+          "index": 121,
+          "token_id": 476,
+          "logprob": -0.0014,
+          "text": " or"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 61,
+      "mean": -0.37,
+      "min": -2.0254,
+      "p05": -1.7608,
+      "p50": -0.0014,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -2.0254,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -1.8311,
+          "text": "6"
+        },
+        {
+          "index": 160,
+          "token_id": 18,
+          "logprob": -1.8266,
+          "text": "3"
+        },
+        {
+          "index": 154,
+          "token_id": 20,
+          "logprob": -1.7608,
+          "text": "5"
+        },
+        {
+          "index": 149,
+          "token_id": 19,
+          "logprob": -1.7139,
+          "text": "4"
+        },
+        {
+          "index": 87,
+          "token_id": 17,
+          "logprob": -1.6869,
+          "text": "2"
+        },
+        {
+          "index": 81,
+          "token_id": 18,
+          "logprob": -1.6369,
+          "text": "3"
+        },
+        {
+          "index": 92,
+          "token_id": 19,
+          "logprob": -1.5687,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.4168,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.2262,
+          "text": "0"
+        },
+        {
+          "index": 166,
+          "token_id": 15,
+          "logprob": -1.092,
+          "text": "0"
+        },
+        {
+          "index": 5,
+          "token_id": 16,
+          "logprob": -0.8112,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 176,
+      "mean": -0.1454,
+      "min": -2.0254,
+      "p05": -1.4239,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.84,
+    "std": 11.08,
+    "dark_fraction": 0.00627
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      800.88,
+      1165.92
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      267,
+      388,
+      1958,
+      2850
+    ],
+    "ink_px": 26110,
+    "covered_px": 26110,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "page": 71,
+  "source_image": "page_0071.png",
+  "elements": [
+    {
+      "bbox": [
+        134,
+        581,
+        1830,
+        706
+      ],
+      "category": "Text",
+      "text": "2. The effective date of this Executive Order shall be retroactive to and shall be deemed to have been in full force and effect from and after July 1, 1972.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4553,
+          "min": -1.8814
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.089,
+          "min": -0.089
+        },
+        "text": {
+          "n_tokens": 39,
+          "mean": -0.0173,
+          "min": -0.665
+        }
+      },
+      "ink": {
+        "ink_px": 5514,
+        "area_px": 197442,
+        "density": 0.02793,
+        "chars": 156,
+        "chars_per_1k_ink": 28.29
+      }
+    },
+    {
+      "bbox": [
+        1048,
+        782,
+        1758,
+        1100
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.402,
+          "min": -1.9314
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0076,
+          "min": -0.0076
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 12083,
+        "area_px": 226490,
+        "density": 0.05335,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1226,
+        1027,
+        1575,
+        1103
+      ],
+      "category": "Caption",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3062,
+          "min": -1.6094
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2817,
+          "min": -0.2817
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0158,
+          "min": -0.1802
+        }
+      },
+      "ink": {
+        "ink_px": 926,
+        "area_px": 26873,
+        "density": 0.03446,
+        "chars": 21,
+        "chars_per_1k_ink": 22.68
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 159,
+    "content": {
+      "n_tokens": 51,
+      "mean": -0.017,
+      "min": -0.665,
+      "p05": -0.0071,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 17,
+          "logprob": -0.665,
+          "text": "2"
+        },
+        {
+          "index": 154,
+          "token_id": 3022,
+          "logprob": -0.1802,
+          "text": "AY"
+        },
+        {
+          "index": 36,
+          "token_id": 13,
+          "logprob": -0.0085,
+          "text": "."
+        },
+        {
+          "index": 152,
+          "token_id": 1699,
+          "logprob": -0.0056,
+          "text": "\\n"
+        },
+        {
+          "index": 153,
+          "token_id": 44,
+          "logprob": -0.0023,
+          "text": "M"
+        },
+        {
+          "index": 144,
+          "token_id": 26145,
+          "logprob": -0.0007,
+          "text": "JO"
+        },
+        {
+          "index": 150,
+          "token_id": 50,
+          "logprob": -0.0005,
+          "text": "S"
+        },
+        {
+          "index": 37,
+          "token_id": 576,
+          "logprob": -0.0005,
+          "text": " The"
+        },
+        {
+          "index": 46,
+          "token_id": 16771,
+          "logprob": -0.0004,
+          "text": " retro"
+        },
+        {
+          "index": 147,
+          "token_id": 13,
+          "logprob": -0.0004,
+          "text": "."
+        },
+        {
+          "index": 47,
+          "token_id": 3028,
+          "logprob": -0.0001,
+          "text": "active"
+        },
+        {
+          "index": 149,
+          "token_id": 5245,
+          "logprob": -0.0001,
+          "text": "IND"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 65,
+      "mean": -0.3724,
+      "min": -1.9314,
+      "p05": -1.7146,
+      "p50": -0.0076,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 87,
+          "token_id": 17,
+          "logprob": -1.9314,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.8814,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.809,
+          "text": "1"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -1.7182,
+          "text": "6"
+        },
+        {
+          "index": 82,
+          "token_id": 23,
+          "logprob": -1.7004,
+          "text": "8"
+        },
+        {
+          "index": 120,
+          "token_id": 22,
+          "logprob": -1.6094,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.5959,
+          "text": "0"
+        },
+        {
+          "index": 114,
+          "token_id": 21,
+          "logprob": -1.5877,
+          "text": "6"
+        },
+        {
+          "index": 126,
+          "token_id": 20,
+          "logprob": -1.5857,
+          "text": "5"
+        },
+        {
+          "index": 93,
+          "token_id": 23,
+          "logprob": -1.5186,
+          "text": "8"
+        },
+        {
+          "index": 132,
+          "token_id": 18,
+          "logprob": -1.3978,
+          "text": "3"
+        },
+        {
+          "index": 99,
+          "token_id": 15,
+          "logprob": -1.2836,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 159,
+      "mean": -0.1583,
+      "min": -1.9314,
+      "p05": -1.5859,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 181.85,
+    "std": 9.77,
+    "dark_fraction": 0.00403
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      785.04,
+      1259.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      261,
+      419,
+      1919,
+      3078
+    ],
+    "ink_px": 17761,
+    "covered_px": 17597,
+    "covered_fraction": 0.99077,
+    "uncovered_px": 164,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

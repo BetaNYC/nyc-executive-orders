@@ -1,0 +1,269 @@
+{
+  "page": 229,
+  "source_image": "page_0229.png",
+  "elements": [
+    {
+      "bbox": [
+        466,
+        1577,
+        689,
+        1641
+      ],
+      "category": "Text",
+      "text": "UNITED STATES DISTRICT COURT\nEASTERN DISTRICT OF KANSAS CITY",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.485,
+          "min": -2.0052
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.009,
+          "min": -0.009
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.4592,
+          "min": -2.1873
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 10927,
+        "density": 0.0,
+        "chars": 60,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        516,
+        1652,
+        642,
+        1785
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3451,
+          "min": -1.8309
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0009,
+          "min": -0.0009
+        },
+        "text": null
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 87,
+    "content": {
+      "n_tokens": 17,
+      "mean": -0.4592,
+      "min": -2.1873,
+      "p05": -1.4883,
+      "p50": -0.0875,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 23040,
+          "logprob": -2.1873,
+          "text": "UNIT"
+        },
+        {
+          "index": 49,
+          "token_id": 730,
+          "logprob": -1.3135,
+          "text": " K"
+        },
+        {
+          "index": 44,
+          "token_id": 6349,
+          "logprob": -1.113,
+          "text": "AST"
+        },
+        {
+          "index": 43,
+          "token_id": 36,
+          "logprob": -1.0563,
+          "text": "E"
+        },
+        {
+          "index": 39,
+          "token_id": 36103,
+          "logprob": -1.0196,
+          "text": " DIST"
+        },
+        {
+          "index": 45,
+          "token_id": 13660,
+          "logprob": -0.637,
+          "text": "ERN"
+        },
+        {
+          "index": 52,
+          "token_id": 46552,
+          "logprob": -0.1637,
+          "text": " CITY"
+        },
+        {
+          "index": 41,
+          "token_id": 95700,
+          "logprob": -0.1033,
+          "text": " COURT"
+        },
+        {
+          "index": 50,
+          "token_id": 11692,
+          "logprob": -0.0875,
+          "text": "ANS"
+        },
+        {
+          "index": 48,
+          "token_id": 3008,
+          "logprob": -0.0473,
+          "text": " OF"
+        },
+        {
+          "index": 42,
+          "token_id": 1699,
+          "logprob": -0.0426,
+          "text": "\\n"
+        },
+        {
+          "index": 46,
+          "token_id": 36103,
+          "logprob": -0.0315,
+          "text": " DIST"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3955,
+      "min": -2.0052,
+      "p05": -1.8203,
+      "p50": -0.0136,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -2.0052,
+          "text": "6"
+        },
+        {
+          "index": 13,
+          "token_id": 22,
+          "logprob": -1.8372,
+          "text": "7"
+        },
+        {
+          "index": 77,
+          "token_id": 20,
+          "logprob": -1.8309,
+          "text": "5"
+        },
+        {
+          "index": 66,
+          "token_id": 17,
+          "logprob": -1.6193,
+          "text": "2"
+        },
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.5862,
+          "text": "1"
+        },
+        {
+          "index": 60,
+          "token_id": 21,
+          "logprob": -1.5618,
+          "text": "6"
+        },
+        {
+          "index": 71,
+          "token_id": 17,
+          "logprob": -1.4817,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 24,
+          "logprob": -1.348,
+          "text": "9"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -1.1068,
+          "text": "4"
+        },
+        {
+          "index": 17,
+          "token_id": 23,
+          "logprob": -0.5806,
+          "text": "8"
+        },
+        {
+          "index": 6,
+          "token_id": 21,
+          "logprob": -0.5336,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -0.4629,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 87,
+      "mean": -0.3003,
+      "min": -2.1873,
+      "p05": -1.6363,
+      "p50": -0.0005,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.22,
+    "std": 8.41,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      666.96,
+      421.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      140,
+      222,
+      1030,
+      1630
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

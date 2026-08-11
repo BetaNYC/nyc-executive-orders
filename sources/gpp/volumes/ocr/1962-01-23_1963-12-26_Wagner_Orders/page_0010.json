@@ -1,0 +1,337 @@
+{
+  "page": 10,
+  "source_image": "page_0010.png",
+  "elements": [
+    {
+      "bbox": [
+        1119,
+        237,
+        1371,
+        276
+      ],
+      "category": "Text",
+      "text": "May 29, 1963",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.299,
+          "min": -1.4579
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0142,
+          "min": -0.0142
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0001,
+          "min": -0.0004
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        840,
+        290,
+        987,
+        453
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2244,
+          "min": -1.0506
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0047,
+          "min": -0.0047
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 4825,
+        "area_px": 16758,
+        "density": 0.28792,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1180,
+        571,
+        1428,
+        610
+      ],
+      "category": "Text",
+      "text": "Index Page 3",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.1971,
+          "min": -1.037
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3673,
+          "min": -0.3673
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0002,
+          "min": -0.0006
+        }
+      },
+      "ink": {
+        "ink_px": 330,
+        "area_px": 9711,
+        "density": 0.03398,
+        "chars": 12,
+        "chars_per_1k_ink": 36.36
+      }
+    },
+    {
+      "bbox": [
+        157,
+        628,
+        1492,
+        1056
+      ],
+      "category": "Text",
+      "text": "Space requirements 24\n68\n\nSwitchboards, Hours of 7\n\nTelephones 7\n35\n75\n\nTravel, Official 21\n\nUnited Nations, Commissioner to 1",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2478,
+          "min": -1.2988
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2015,
+          "min": -0.2015
+        },
+        "text": {
+          "n_tokens": 46,
+          "mean": -0.0176,
+          "min": -0.3701
+        }
+      },
+      "ink": {
+        "ink_px": 2013,
+        "area_px": 543560,
+        "density": 0.0037,
+        "chars": 126,
+        "chars_per_1k_ink": 62.59
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 200,
+    "content": {
+      "n_tokens": 60,
+      "mean": -0.0135,
+      "min": -0.3701,
+      "p05": -0.0484,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 157,
+          "token_id": 21,
+          "logprob": -0.3701,
+          "text": "6"
+        },
+        {
+          "index": 153,
+          "token_id": 220,
+          "logprob": -0.1575,
+          "text": " "
+        },
+        {
+          "index": 160,
+          "token_id": 1699,
+          "logprob": -0.1454,
+          "text": "\\n"
+        },
+        {
+          "index": 175,
+          "token_id": 18,
+          "logprob": -0.0433,
+          "text": "3"
+        },
+        {
+          "index": 178,
+          "token_id": 22,
+          "logprob": -0.0244,
+          "text": "7"
+        },
+        {
+          "index": 169,
+          "token_id": 1699,
+          "logprob": -0.0233,
+          "text": "\\n"
+        },
+        {
+          "index": 172,
+          "token_id": 220,
+          "logprob": -0.0182,
+          "text": " "
+        },
+        {
+          "index": 156,
+          "token_id": 1699,
+          "logprob": -0.0083,
+          "text": "\\n"
+        },
+        {
+          "index": 171,
+          "token_id": 16729,
+          "logprob": -0.0051,
+          "text": "phones"
+        },
+        {
+          "index": 166,
+          "token_id": 220,
+          "logprob": -0.0046,
+          "text": " "
+        },
+        {
+          "index": 161,
+          "token_id": 16837,
+          "logprob": -0.0046,
+          "text": "Switch"
+        },
+        {
+          "index": 173,
+          "token_id": 22,
+          "logprob": -0.001,
+          "text": "7"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 82,
+      "mean": -0.2379,
+      "min": -1.4579,
+      "p05": -1.2591,
+      "p50": -0.0024,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 8,
+          "token_id": 24,
+          "logprob": -1.4579,
+          "text": "9"
+        },
+        {
+          "index": 13,
+          "token_id": 22,
+          "logprob": -1.315,
+          "text": "7"
+        },
+        {
+          "index": 122,
+          "token_id": 22,
+          "logprob": -1.2988,
+          "text": "7"
+        },
+        {
+          "index": 19,
+          "token_id": 16,
+          "logprob": -1.2908,
+          "text": "1"
+        },
+        {
+          "index": 139,
+          "token_id": 21,
+          "logprob": -1.2593,
+          "text": "6"
+        },
+        {
+          "index": 133,
+          "token_id": 17,
+          "logprob": -1.2555,
+          "text": "2"
+        },
+        {
+          "index": 24,
+          "token_id": 21,
+          "logprob": -1.2274,
+          "text": "6"
+        },
+        {
+          "index": 63,
+          "token_id": 22,
+          "logprob": -1.0506,
+          "text": "7"
+        },
+        {
+          "index": 94,
+          "token_id": 23,
+          "logprob": -1.037,
+          "text": "8"
+        },
+        {
+          "index": 68,
+          "token_id": 18,
+          "logprob": -1.0125,
+          "text": "3"
+        },
+        {
+          "index": 127,
+          "token_id": 23,
+          "logprob": -0.9922,
+          "text": "8"
+        },
+        {
+          "index": 88,
+          "token_id": 16,
+          "logprob": -0.9669,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 200,
+      "mean": -0.1019,
+      "min": -1.4579,
+      "p05": -0.9932,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 186.45,
+    "std": 10.39,
+    "dark_fraction": 0.00248
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      664.56,
+      1018.08
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      221,
+      339,
+      1624,
+      2488
+    ],
+    "ink_px": 7479,
+    "covered_px": 7168,
+    "covered_fraction": 0.95842,
+    "uncovered_px": 311,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

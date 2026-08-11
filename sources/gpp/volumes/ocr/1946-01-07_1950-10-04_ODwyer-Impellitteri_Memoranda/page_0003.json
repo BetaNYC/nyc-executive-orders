@@ -1,0 +1,280 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        563,
+        272,
+        1291,
+        405
+      ],
+      "category": "Section-header",
+      "text": "INDEX TO THE\nEXECUTIVE ORDERS OF THE MAYOR\n1946-1950",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3584,
+          "min": -1.8677
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3022,
+          "min": -0.6045
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0025,
+          "min": -0.0253
+        }
+      },
+      "ink": {
+        "ink_px": 1008,
+        "area_px": 36500,
+        "density": 0.02762,
+        "chars": 52,
+        "chars_per_1k_ink": 51.59
+      }
+    },
+    {
+      "bbox": [
+        234,
+        483,
+        1810,
+        2660
+      ],
+      "category": "Text",
+      "text": "| SUBJECT | NUMBER | DATE |\n|---|---|---|\n| Analysis, Division of, Budget Director's Office | 34 | 12/29/47 |\n| Analysis, Division of, Municipal Management Program | 46 | 9/23/49 |\n| Annual reports, printing restrictions rescinded | 7 | 5/7/46 |\n| Appropriations cut | 2 | 3/21/42 |\n| Athletic activities | 19 | 4/15/47 |\n|  | 22 | 5/15/47 |\n| Blood donors | 51 | 8/2/50 |\n| Borough consolidation, anniversary | 39 | 6/3/48 |\n| Budget Director, Division of Analysis | 34 | 12/29/47 |\n| Budget reductions | 2 | 3/21/42 |\n| Bulletin boards, number of | 20 | 5/1/47 |\n| Career and Salary Plan | 52 | 8/1/50 |\n| City jobs, welfare recipients | 25 | 7/12/47 |\n| Collier's article on New York | 50 | 6/13/50 |\n| Correspondence with other gov't agencies thru Mayor's Office | 1 | 1/7/46 |\n| Disaster or Emergency Plan, city departments | 42 | 12/3/48 |\n| Economy and Efficiency Suggestion Contest | 29 | 9/4/47 |\n| Efficiency study | 49 | 1/10/50 |\n| Fifth anniversary of Greater City of New York Committee established | 21 | 5/13/47 |\n| Foster home program | 44 | 2/2/49 |\n| Fuel oil, shortage of | 5 | 2/7/46 |\n|  | 32 | 12/17/47 |",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3468,
+          "min": -1.6408
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1799,
+          "min": -0.1799
+        },
+        "text": {
+          "n_tokens": 467,
+          "mean": -0.0058,
+          "min": -0.5446
+        }
+      },
+      "ink": {
+        "ink_px": 48523,
+        "area_px": 3283032,
+        "density": 0.01478,
+        "chars": 1126,
+        "chars_per_1k_ink": 23.21
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 564,
+    "content": {
+      "n_tokens": 490,
+      "mean": -0.0057,
+      "min": -0.5446,
+      "p05": -0.0016,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 207,
+          "token_id": 760,
+          "logprob": -0.5446,
+          "text": " |"
+        },
+        {
+          "index": 482,
+          "token_id": 22843,
+          "logprob": -0.4707,
+          "text": " Fifth"
+        },
+        {
+          "index": 103,
+          "token_id": 4421,
+          "logprob": -0.365,
+          "text": "---"
+        },
+        {
+          "index": 200,
+          "token_id": 19698,
+          "logprob": -0.3151,
+          "text": " Ath"
+        },
+        {
+          "index": 528,
+          "token_id": 11,
+          "logprob": -0.2257,
+          "text": ","
+        },
+        {
+          "index": 219,
+          "token_id": 220,
+          "logprob": -0.213,
+          "text": " "
+        },
+        {
+          "index": 96,
+          "token_id": 760,
+          "logprob": -0.1852,
+          "text": " |"
+        },
+        {
+          "index": 94,
+          "token_id": 25203,
+          "logprob": -0.1391,
+          "text": " \"|"
+        },
+        {
+          "index": 316,
+          "token_id": 315,
+          "logprob": -0.0576,
+          "text": " of"
+        },
+        {
+          "index": 117,
+          "token_id": 10560,
+          "logprob": -0.0472,
+          "text": " Director"
+        },
+        {
+          "index": 534,
+          "token_id": 760,
+          "logprob": -0.0436,
+          "text": " |"
+        },
+        {
+          "index": 95,
+          "token_id": 95880,
+          "logprob": -0.0336,
+          "text": " SUBJECT"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.346,
+      "min": -1.8677,
+      "p05": -1.6097,
+      "p50": -0.0028,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.8677,
+          "text": "5"
+        },
+        {
+          "index": 77,
+          "token_id": 15,
+          "logprob": -1.6408,
+          "text": "0"
+        },
+        {
+          "index": 71,
+          "token_id": 18,
+          "logprob": -1.6112,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.5812,
+          "text": "2"
+        },
+        {
+          "index": 66,
+          "token_id": 19,
+          "logprob": -1.5325,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.4577,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.4181,
+          "text": "3"
+        },
+        {
+          "index": 83,
+          "token_id": 15,
+          "logprob": -1.1029,
+          "text": "0"
+        },
+        {
+          "index": 29,
+          "token_id": 9620,
+          "logprob": -0.6045,
+          "text": "Section"
+        },
+        {
+          "index": 82,
+          "token_id": 21,
+          "logprob": -0.4774,
+          "text": "6"
+        },
+        {
+          "index": 76,
+          "token_id": 16,
+          "logprob": -0.3588,
+          "text": "1"
+        },
+        {
+          "index": 89,
+          "token_id": 1178,
+          "logprob": -0.1799,
+          "text": "Text"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 564,
+      "mean": -0.0311,
+      "min": -1.8677,
+      "p05": -0.0467,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.46,
+    "std": 16.69,
+    "dark_fraction": 0.01253
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      827.04,
+      1071.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      275,
+      357,
+      2022,
+      2620
+    ],
+    "ink_px": 49538,
+    "covered_px": 49531,
+    "covered_fraction": 0.99986,
+    "uncovered_px": 7,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

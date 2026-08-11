@@ -1,0 +1,377 @@
+{
+  "page": 112,
+  "source_image": "page_0112.png",
+  "elements": [
+    {
+      "bbox": [
+        889,
+        516,
+        997,
+        553
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4161,
+          "min": -1.6897
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0521,
+          "min": -0.1011
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0712,
+          "min": -0.2077
+        }
+      },
+      "ink": {
+        "ink_px": 346,
+        "area_px": 4033,
+        "density": 0.08579,
+        "chars": 5,
+        "chars_per_1k_ink": 14.45
+      }
+    },
+    {
+      "bbox": [
+        194,
+        637,
+        1621,
+        760
+      ],
+      "category": "Text",
+      "text": "All materials submitted to the Staff in writing shall be in sets of 10 copies and addressed to Deputy Mayor Paul F. O'Keefe, Room 1, City Hall, New York 7, N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3671,
+          "min": -1.7015
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 45,
+          "mean": -0.0115,
+          "min": -0.3169
+        }
+      },
+      "ink": {
+        "ink_px": 25730,
+        "area_px": 169880,
+        "density": 0.15146,
+        "chars": 160,
+        "chars_per_1k_ink": 6.22
+      }
+    },
+    {
+      "bbox": [
+        198,
+        798,
+        1685,
+        878
+      ],
+      "category": "Text",
+      "text": "I expect the full cooperation from all city agencies in assisting the Staff to carry out its functions to a successful conclusion.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3568,
+          "min": -1.6451
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0013,
+          "min": -0.0205
+        }
+      },
+      "ink": {
+        "ink_px": 20111,
+        "area_px": 116154,
+        "density": 0.17314,
+        "chars": 130,
+        "chars_per_1k_ink": 6.46
+      }
+    },
+    {
+      "bbox": [
+        936,
+        891,
+        1665,
+        1040
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3728,
+          "min": -1.8511
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 3865,
+        "area_px": 109950,
+        "density": 0.03515,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1028,
+        1035,
+        1354,
+        1116
+      ],
+      "category": "Caption",
+      "text": "ROBERT P. WAGNER\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.2768,
+          "min": -1.5184
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2812,
+          "min": -0.2812
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0643,
+          "min": -0.4741
+        }
+      },
+      "ink": {
+        "ink_px": 6094,
+        "area_px": 26649,
+        "density": 0.22868,
+        "chars": 22,
+        "chars_per_1k_ink": 3.61
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 257,
+    "content": {
+      "n_tokens": 81,
+      "mean": -0.0174,
+      "min": -0.4741,
+      "p05": -0.0593,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 247,
+          "token_id": 393,
+          "logprob": -0.4741,
+          "text": " P"
+        },
+        {
+          "index": 96,
+          "token_id": 434,
+          "logprob": -0.3169,
+          "text": " F"
+        },
+        {
+          "index": 35,
+          "token_id": 220,
+          "logprob": -0.2077,
+          "text": " "
+        },
+        {
+          "index": 100,
+          "token_id": 6608,
+          "logprob": -0.1305,
+          "text": "Ke"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0593,
+          "text": " \"-"
+        },
+        {
+          "index": 251,
+          "token_id": 13896,
+          "logprob": -0.0485,
+          "text": "NER"
+        },
+        {
+          "index": 106,
+          "token_id": 11,
+          "logprob": -0.0436,
+          "text": ","
+        },
+        {
+          "index": 250,
+          "token_id": 1890,
+          "logprob": -0.0426,
+          "text": "AG"
+        },
+        {
+          "index": 164,
+          "token_id": 279,
+          "logprob": -0.0205,
+          "text": " the"
+        },
+        {
+          "index": 36,
+          "token_id": 17,
+          "logprob": -0.017,
+          "text": "2"
+        },
+        {
+          "index": 99,
+          "token_id": 6,
+          "logprob": -0.0146,
+          "text": "'"
+        },
+        {
+          "index": 84,
+          "token_id": 7289,
+          "logprob": -0.0086,
+          "text": " sets"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 104,
+      "mean": -0.3382,
+      "min": -1.8511,
+      "p05": -1.6318,
+      "p50": -0.001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 194,
+          "token_id": 20,
+          "logprob": -1.8511,
+          "text": "5"
+        },
+        {
+          "index": 56,
+          "token_id": 16,
+          "logprob": -1.7015,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.6897,
+          "text": "6"
+        },
+        {
+          "index": 183,
+          "token_id": 21,
+          "logprob": -1.675,
+          "text": "6"
+        },
+        {
+          "index": 136,
+          "token_id": 20,
+          "logprob": -1.6451,
+          "text": "5"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -1.6339,
+          "text": "7"
+        },
+        {
+          "index": 45,
+          "token_id": 19,
+          "logprob": -1.6199,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 18,
+          "logprob": -1.6089,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.5585,
+          "text": "9"
+        },
+        {
+          "index": 227,
+          "token_id": 19,
+          "logprob": -1.5184,
+          "text": "4"
+        },
+        {
+          "index": 221,
+          "token_id": 20,
+          "logprob": -1.5089,
+          "text": "5"
+        },
+        {
+          "index": 188,
+          "token_id": 16,
+          "logprob": -1.5023,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 257,
+      "mean": -0.1424,
+      "min": -1.8511,
+      "p05": -1.4023,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.99,
+    "std": 15.46,
+    "dark_fraction": 0.01637
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      779.52,
+      985.92
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      259,
+      328,
+      1906,
+      2410
+    ],
+    "ink_px": 56146,
+    "covered_px": 56146,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

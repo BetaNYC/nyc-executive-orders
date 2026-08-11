@@ -1,0 +1,331 @@
+{
+  "page": 300,
+  "source_image": "page_0300.png",
+  "elements": [
+    {
+      "bbox": [
+        611,
+        0,
+        716,
+        152
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.2901,
+          "min": -1.4758
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1006,
+          "min": -0.1006
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        547,
+        163,
+        780,
+        228
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7, N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.293,
+          "min": -1.3828
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.344,
+          "min": -0.344
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0012,
+          "min": -0.0116
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        1019,
+        273,
+        1036,
+        295
+      ],
+      "category": "Text",
+      "text": "4",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.294,
+          "min": -1.4667
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0233,
+          "min": -0.0233
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0184,
+          "min": -0.0184
+        }
+      },
+      "ink": {
+        "ink_px": 23,
+        "area_px": 414,
+        "density": 0.05556,
+        "chars": 1,
+        "chars_per_1k_ink": 43.48
+      }
+    },
+    {
+      "bbox": [
+        232,
+        392,
+        1136,
+        1507
+      ],
+      "category": "Text",
+      "text": "§ 3. Pursuant to Chapter 870 of the Laws of 1969 and subdivision 1 of section B3-36.3 of the Administrative Code (L.1964, ch 954), the reduced-rate-of contribution factor shall be five percent in the case of all members of the Uniformed Correction Force, as defined by Laws 1964, Chapter 954, who elected the optional plan of retirement provided for by such Chapter pursuant to its terms and who were members of the New York City Employees' Retirement System under such plan immediately prior to the commencement date of the 1969-1970 increased-take-home pay period. The reduced rate of contribution factor in the case of all members of the Uniformed Correction Force, as defined in Laws of 1964, Chapter 954, who on or after the commencement date of the 1969-1970 increased-take-home pay period, have the privilege, under such Chapter, of electing the optional plan of retirement provided for by such Chapter, and who elect, within the time limited therefor, by such Chapter 954, an optional plan of retirement pursuant to such chapter shall be five percent, and such benefit shall be effective from the date of commencement of membership in the New York City Employees' Retirement System, or from the date of commencement of service in the Uniformed Correction Force, whichever is later, provided however that such benefits shall not be effective from any",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3412,
+          "min": -1.6106
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0182,
+          "min": -0.0182
+        },
+        "text": {
+          "n_tokens": 318,
+          "mean": -0.0032,
+          "min": -0.664
+        }
+      },
+      "ink": {
+        "ink_px": 9972,
+        "area_px": 1001728,
+        "density": 0.00995,
+        "chars": 1357,
+        "chars_per_1k_ink": 136.08
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 476,
+    "content": {
+      "n_tokens": 340,
+      "mean": -0.0031,
+      "min": -0.664,
+      "p05": -0.0032,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 300,
+          "token_id": 2291,
+          "logprob": -0.664,
+          "text": " pay"
+        },
+        {
+          "index": 178,
+          "token_id": 220,
+          "logprob": -0.1347,
+          "text": " "
+        },
+        {
+          "index": 155,
+          "token_id": 17851,
+          "logprob": -0.061,
+          "text": "§"
+        },
+        {
+          "index": 374,
+          "token_id": 4045,
+          "logprob": -0.0249,
+          "text": " elect"
+        },
+        {
+          "index": 246,
+          "token_id": 879,
+          "logprob": -0.0238,
+          "text": " who"
+        },
+        {
+          "index": 118,
+          "token_id": 19,
+          "logprob": -0.0184,
+          "text": "4"
+        },
+        {
+          "index": 61,
+          "token_id": 34,
+          "logprob": -0.0116,
+          "text": "C"
+        },
+        {
+          "index": 195,
+          "token_id": 13,
+          "logprob": -0.0111,
+          "text": "."
+        },
+        {
+          "index": 397,
+          "token_id": 11,
+          "logprob": -0.0099,
+          "text": ","
+        },
+        {
+          "index": 78,
+          "token_id": 11,
+          "logprob": -0.0087,
+          "text": ","
+        },
+        {
+          "index": 463,
+          "token_id": 4764,
+          "logprob": -0.0087,
+          "text": " however"
+        },
+        {
+          "index": 191,
+          "token_id": 51841,
+          "logprob": -0.007,
+          "text": " Administrative"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 78,
+      "mean": -0.2962,
+      "min": -1.6106,
+      "p05": -1.4411,
+      "p50": -0.0038,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 137,
+          "token_id": 21,
+          "logprob": -1.6106,
+          "text": "6"
+        },
+        {
+          "index": 126,
+          "token_id": 17,
+          "logprob": -1.5594,
+          "text": "2"
+        },
+        {
+          "index": 20,
+          "token_id": 17,
+          "logprob": -1.4758,
+          "text": "2"
+        },
+        {
+          "index": 95,
+          "token_id": 18,
+          "logprob": -1.4667,
+          "text": "3"
+        },
+        {
+          "index": 143,
+          "token_id": 22,
+          "logprob": -1.4365,
+          "text": "7"
+        },
+        {
+          "index": 15,
+          "token_id": 21,
+          "logprob": -1.4204,
+          "text": "6"
+        },
+        {
+          "index": 101,
+          "token_id": 21,
+          "logprob": -1.408,
+          "text": "6"
+        },
+        {
+          "index": 39,
+          "token_id": 18,
+          "logprob": -1.3828,
+          "text": "3"
+        },
+        {
+          "index": 131,
+          "token_id": 17,
+          "logprob": -1.3427,
+          "text": "2"
+        },
+        {
+          "index": 34,
+          "token_id": 22,
+          "logprob": -1.3365,
+          "text": "7"
+        },
+        {
+          "index": 106,
+          "token_id": 20,
+          "logprob": -1.1951,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.1074,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 476,
+      "mean": -0.0509,
+      "min": -1.6106,
+      "p05": -0.1425,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 168.68,
+    "std": 14.29,
+    "dark_fraction": 0.0068
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      716.64,
+      460.8
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      153,
+      238,
+      1126,
+      1752
+    ],
+    "ink_px": 10023,
+    "covered_px": 9995,
+    "covered_fraction": 0.99721,
+    "uncovered_px": 28,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "page": 236,
+  "source_image": "page_0236.png",
+  "elements": [
+    {
+      "bbox": [
+        637,
+        74,
+        801,
+        243
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.6083,
+          "min": -2.0265
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2036,
+          "min": -0.2036
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 3116,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        695,
+        189,
+        746,
+        215
+      ],
+      "category": "Page-header",
+      "text": "-3-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3285,
+          "min": -1.6188
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0981,
+          "min": -0.182
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0008,
+          "min": -0.002
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        114,
+        291,
+        1350,
+        658
+      ],
+      "category": "Text",
+      "text": "notify the head of the administration, department or agency that the\naforesaid documents have been received. Upon receipt of such notification,\nthe head of the administration, department or agency may, in his discretion,\nthen make the appointment. If, however, the employee does not receive\nclearance for employment following the completion of the background in-\nvestigation by the Department of Investigation, his employment shall be\nterminated promptly.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3273,
+          "min": -1.511
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 92,
+          "mean": -0.0039,
+          "min": -0.3145
+        }
+      },
+      "ink": {
+        "ink_px": 55,
+        "area_px": 400405,
+        "density": 0.00014,
+        "chars": 455,
+        "chars_per_1k_ink": 8272.73
+      }
+    },
+    {
+      "bbox": [
+        125,
+        669,
+        1287,
+        819
+      ],
+      "category": "Text",
+      "text": "These procedures shall apply to all appointments made on and after\nthe date of this order and shall include those appointments now awaiting\nclearance by the Department of Investigation.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2833,
+          "min": -1.3003
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 34,
+          "mean": -0.0003,
+          "min": -0.0059
+        }
+      },
+      "ink": {
+        "ink_px": 6,
+        "area_px": 164550,
+        "density": 4e-05,
+        "chars": 185,
+        "chars_per_1k_ink": 30833.33
+      }
+    },
+    {
+      "bbox": [
+        869,
+        803,
+        1347,
+        960
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3741,
+          "min": -1.7523
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0072,
+          "min": -0.0072
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 17,
+        "area_px": 64213,
+        "density": 0.00026,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1009,
+        939,
+        1253,
+        990
+      ],
+      "category": "Caption",
+      "text": "John V. Lindsay\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2494,
+          "min": -1.3901
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0549,
+          "min": -0.0549
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0022,
+          "min": -0.0063
+        }
+      },
+      "ink": {
+        "ink_px": 7,
+        "area_px": 12636,
+        "density": 0.00055,
+        "chars": 21,
+        "chars_per_1k_ink": 3000.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 338,
+    "content": {
+      "n_tokens": 137,
+      "mean": -0.0029,
+      "min": -0.3145,
+      "p05": -0.0048,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 112,
+          "token_id": 1699,
+          "logprob": -0.3145,
+          "text": "\\n"
+        },
+        {
+          "index": 113,
+          "token_id": 64,
+          "logprob": -0.0146,
+          "text": "a"
+        },
+        {
+          "index": 191,
+          "token_id": 1189,
+          "logprob": -0.01,
+          "text": ".\""
+        },
+        {
+          "index": 333,
+          "token_id": 3022,
+          "logprob": -0.0063,
+          "text": "AY"
+        },
+        {
+          "index": 238,
+          "token_id": 1699,
+          "logprob": -0.0059,
+          "text": "\\n"
+        },
+        {
+          "index": 189,
+          "token_id": 51199,
+          "logprob": -0.0058,
+          "text": "minated"
+        },
+        {
+          "index": 331,
+          "token_id": 1699,
+          "logprob": -0.005,
+          "text": "\\n"
+        },
+        {
+          "index": 144,
+          "token_id": 77,
+          "logprob": -0.0047,
+          "text": "n"
+        },
+        {
+          "index": 159,
+          "token_id": 59,
+          "logprob": -0.0041,
+          "text": "\\"
+        },
+        {
+          "index": 330,
+          "token_id": 62784,
+          "logprob": -0.0022,
+          "text": " Lindsay"
+        },
+        {
+          "index": 62,
+          "token_id": 6523,
+          "logprob": -0.002,
+          "text": " \"-"
+        },
+        {
+          "index": 186,
+          "token_id": 59,
+          "logprob": -0.0019,
+          "text": "\\"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 119,
+      "mean": -0.3396,
+      "min": -2.0265,
+      "p05": -1.5464,
+      "p50": -0.0038,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 11,
+          "token_id": 19,
+          "logprob": -2.0265,
+          "text": "4"
+        },
+        {
+          "index": 21,
+          "token_id": 18,
+          "logprob": -1.9158,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.8916,
+          "text": "7"
+        },
+        {
+          "index": 284,
+          "token_id": 15,
+          "logprob": -1.7523,
+          "text": "0"
+        },
+        {
+          "index": 16,
+          "token_id": 16,
+          "logprob": -1.7171,
+          "text": "1"
+        },
+        {
+          "index": 35,
+          "token_id": 20,
+          "logprob": -1.6188,
+          "text": "5"
+        },
+        {
+          "index": 273,
+          "token_id": 18,
+          "logprob": -1.5384,
+          "text": "3"
+        },
+        {
+          "index": 72,
+          "token_id": 19,
+          "logprob": -1.511,
+          "text": "4"
+        },
+        {
+          "index": 279,
+          "token_id": 22,
+          "logprob": -1.4377,
+          "text": "7"
+        },
+        {
+          "index": 310,
+          "token_id": 18,
+          "logprob": -1.3901,
+          "text": "3"
+        },
+        {
+          "index": 45,
+          "token_id": 21,
+          "logprob": -1.3834,
+          "text": "6"
+        },
+        {
+          "index": 83,
+          "token_id": 15,
+          "logprob": -1.3493,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 338,
+      "mean": -0.1207,
+      "min": -2.0265,
+      "p05": -1.1407,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.83,
+    "std": 9.47,
+    "dark_fraction": 5e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      671.04,
+      519.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      173,
+      223,
+      1270,
+      1640
+    ],
+    "ink_px": 82,
+    "covered_px": 82,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

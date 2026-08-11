@@ -1,0 +1,410 @@
+{
+  "page": 180,
+  "source_image": "page_0180.png",
+  "elements": [
+    {
+      "bbox": [
+        709,
+        134,
+        756,
+        162
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.404,
+          "min": -1.7214
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0059,
+          "min": -0.0115
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0023,
+          "min": -0.0048
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        284,
+        320,
+        1166,
+        473
+      ],
+      "category": "Text",
+      "text": "NOW THEREFORE, by the power vested in me as Mayor of the City of New York, it is hereby ordered as follows:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3533,
+          "min": -1.6491
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 26,
+          "mean": -0.0138,
+          "min": -0.3488
+        }
+      },
+      "ink": {
+        "ink_px": 15,
+        "area_px": 136444,
+        "density": 0.00011,
+        "chars": 107,
+        "chars_per_1k_ink": 7133.33
+      }
+    },
+    {
+      "bbox": [
+        284,
+        507,
+        1178,
+        602
+      ],
+      "category": "Text",
+      "text": "Section 1. The preamble of Executive Order No. 71 is hereby amended to read as follows:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2658,
+          "min": -1.2496
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.0004,
+          "min": -0.0036
+        }
+      },
+      "ink": {
+        "ink_px": 10,
+        "area_px": 86208,
+        "density": 0.00012,
+        "chars": 87,
+        "chars_per_1k_ink": 8700.0
+      }
+    },
+    {
+      "bbox": [
+        284,
+        630,
+        1206,
+        1094
+      ],
+      "category": "Text",
+      "text": "WHEREAS, it is the policy of the City of New York to provide that in the performance of City contracts equal opportunity for and in employment be given to all qualified persons without discrimination because of race, creed, color, national origin, sex or age, and to achieve such objectives through affirmative programs to be undertaken by contractors of The City of New York and their subcontractors; and",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2273,
+          "min": -1.4669
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 76,
+          "mean": -0.0005,
+          "min": -0.0142
+        }
+      },
+      "ink": {
+        "ink_px": 41,
+        "area_px": 430590,
+        "density": 0.0001,
+        "chars": 405,
+        "chars_per_1k_ink": 9878.05
+      }
+    },
+    {
+      "bbox": [
+        284,
+        1123,
+        1204,
+        1339
+      ],
+      "category": "Text",
+      "text": "WHEREAS, it is necessary and desirable that The City of New York provide a program for the implementation and enforcement of such policy and the contractual provisions of City contracts in furtherance thereof;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2296,
+          "min": -1.2242
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 37,
+          "mean": -0.0001,
+          "min": -0.0036
+        }
+      },
+      "ink": {
+        "ink_px": 52,
+        "area_px": 200508,
+        "density": 0.00026,
+        "chars": 209,
+        "chars_per_1k_ink": 4019.23
+      }
+    },
+    {
+      "bbox": [
+        284,
+        1366,
+        1280,
+        1460
+      ],
+      "category": "Text",
+      "text": "§2. Paragraphs (1) and (2) of subdivision (a) of section 2 of such order are hereby amended to read as follows:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2445,
+          "min": -1.3351
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0013,
+          "min": -0.0013
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0026,
+          "min": -0.0816
+        }
+      },
+      "ink": {
+        "ink_px": 7,
+        "area_px": 92720,
+        "density": 8e-05,
+        "chars": 111,
+        "chars_per_1k_ink": 15857.14
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 412,
+    "content": {
+      "n_tokens": 196,
+      "mean": -0.0026,
+      "min": -0.3488,
+      "p05": -0.0032,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 84,
+          "token_id": 315,
+          "logprob": -0.3488,
+          "text": " of"
+        },
+        {
+          "index": 378,
+          "token_id": 17851,
+          "logprob": -0.0816,
+          "text": "§"
+        },
+        {
+          "index": 204,
+          "token_id": 311,
+          "logprob": -0.0142,
+          "text": " to"
+        },
+        {
+          "index": 231,
+          "token_id": 91007,
+          "logprob": -0.0079,
+          "text": " creed"
+        },
+        {
+          "index": 252,
+          "token_id": 44079,
+          "logprob": -0.0074,
+          "text": " undertaken"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0048,
+          "text": " \"-"
+        },
+        {
+          "index": 255,
+          "token_id": 315,
+          "logprob": -0.0037,
+          "text": " of"
+        },
+        {
+          "index": 147,
+          "token_id": 374,
+          "logprob": -0.0036,
+          "text": " is"
+        },
+        {
+          "index": 340,
+          "token_id": 10892,
+          "logprob": -0.0036,
+          "text": ";\""
+        },
+        {
+          "index": 133,
+          "token_id": 9620,
+          "logprob": -0.0033,
+          "text": "Section"
+        },
+        {
+          "index": 72,
+          "token_id": 43929,
+          "logprob": -0.0031,
+          "text": "NOW"
+        },
+        {
+          "index": 74,
+          "token_id": 33023,
+          "logprob": -0.0028,
+          "text": "FORE"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 125,
+      "mean": -0.2684,
+      "min": -1.7214,
+      "p05": -1.4166,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.7214,
+          "text": "4"
+        },
+        {
+          "index": 55,
+          "token_id": 21,
+          "logprob": -1.6491,
+          "text": "6"
+        },
+        {
+          "index": 60,
+          "token_id": 18,
+          "logprob": -1.5944,
+          "text": "3"
+        },
+        {
+          "index": 22,
+          "token_id": 17,
+          "logprob": -1.5435,
+          "text": "2"
+        },
+        {
+          "index": 44,
+          "token_id": 19,
+          "logprob": -1.4997,
+          "text": "4"
+        },
+        {
+          "index": 173,
+          "token_id": 21,
+          "logprob": -1.4669,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 21,
+          "logprob": -1.4307,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.3601,
+          "text": "9"
+        },
+        {
+          "index": 354,
+          "token_id": 21,
+          "logprob": -1.3351,
+          "text": "6"
+        },
+        {
+          "index": 179,
+          "token_id": 19,
+          "logprob": -1.2712,
+          "text": "4"
+        },
+        {
+          "index": 110,
+          "token_id": 22,
+          "logprob": -1.2496,
+          "text": "7"
+        },
+        {
+          "index": 116,
+          "token_id": 23,
+          "logprob": -1.2487,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 412,
+      "mean": -0.0829,
+      "min": -1.7214,
+      "p05": -0.8585,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.62,
+    "std": 11.43,
+    "dark_fraction": 8e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      674.88,
+      515.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      171,
+      225,
+      1260,
+      1650
+    ],
+    "ink_px": 125,
+    "covered_px": 125,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

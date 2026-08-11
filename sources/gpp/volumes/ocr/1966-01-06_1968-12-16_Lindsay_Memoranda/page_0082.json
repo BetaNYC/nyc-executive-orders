@@ -1,0 +1,348 @@
+{
+  "page": 82,
+  "source_image": "page_0082.png",
+  "elements": [
+    {
+      "bbox": [
+        1089,
+        431,
+        1167,
+        475
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.419,
+          "min": -1.6731
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0012,
+          "min": -0.0023
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0007,
+          "min": -0.0018
+        }
+      },
+      "ink": {
+        "ink_px": 309,
+        "area_px": 3555,
+        "density": 0.08692,
+        "chars": 3,
+        "chars_per_1k_ink": 9.71
+      }
+    },
+    {
+      "bbox": [
+        261,
+        635,
+        1923,
+        825
+      ],
+      "category": "Text",
+      "text": "30-day requirement does not apply where a finding of imminent peril has been made or where the agency certifies that good cause exists for waiving the same and a statement of such certification is published with the rule, regulation, amendment or addition.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4148,
+          "min": -1.8916
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0098,
+          "min": -0.0098
+        },
+        "text": {
+          "n_tokens": 49,
+          "mean": -0.0001,
+          "min": -0.0041
+        }
+      },
+      "ink": {
+        "ink_px": 34640,
+        "area_px": 311903,
+        "density": 0.11106,
+        "chars": 256,
+        "chars_per_1k_ink": 7.39
+      }
+    },
+    {
+      "bbox": [
+        261,
+        859,
+        1957,
+        1175
+      ],
+      "category": "Text",
+      "text": "4. The foregoing provisions of section 1105 do not apply to rules, regulations or amendments or additions thereto (1) which are promulgated by the Board of Estimate, or (2) which relate to the organization or internal management of an agency and do not materially affect the rights of or procedures available to the public, or (3) where and to the extent that there is no other specific provision of law as to notice, opportunity for comment, or effective date.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2857,
+          "min": -1.5729
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 99,
+          "mean": -0.0001,
+          "min": -0.0036
+        }
+      },
+      "ink": {
+        "ink_px": 63215,
+        "area_px": 528439,
+        "density": 0.11963,
+        "chars": 461,
+        "chars_per_1k_ink": 7.29
+      }
+    },
+    {
+      "bbox": [
+        1214,
+        1294,
+        1957,
+        1488
+      ],
+      "category": "Text",
+      "text": "Timothy W. Costello\nDeputy Mayor-City Administrator",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3248,
+          "min": -1.9335
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0642,
+          "min": -0.0642
+        },
+        "text": {
+          "n_tokens": 13,
+          "mean": -0.0032,
+          "min": -0.0281
+        }
+      },
+      "ink": {
+        "ink_px": 7349,
+        "area_px": 144885,
+        "density": 0.05072,
+        "chars": 51,
+        "chars_per_1k_ink": 6.94
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 312,
+    "content": {
+      "n_tokens": 164,
+      "mean": -0.0004,
+      "min": -0.0281,
+      "p05": -0.0015,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 298,
+          "token_id": 467,
+          "logprob": -0.0281,
+          "text": " W"
+        },
+        {
+          "index": 296,
+          "token_id": 20217,
+          "logprob": -0.0074,
+          "text": "Tim"
+        },
+        {
+          "index": 300,
+          "token_id": 11194,
+          "logprob": -0.0042,
+          "text": " Cost"
+        },
+        {
+          "index": 88,
+          "token_id": 1012,
+          "logprob": -0.0041,
+          "text": " been"
+        },
+        {
+          "index": 220,
+          "token_id": 315,
+          "logprob": -0.0036,
+          "text": " of"
+        },
+        {
+          "index": 189,
+          "token_id": 2706,
+          "logprob": -0.0024,
+          "text": " prom"
+        },
+        {
+          "index": 180,
+          "token_id": 476,
+          "logprob": -0.0022,
+          "text": " or"
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.0018,
+          "text": " \"-"
+        },
+        {
+          "index": 250,
+          "token_id": 6638,
+          "logprob": -0.0016,
+          "text": " opportunity"
+        },
+        {
+          "index": 302,
+          "token_id": 1699,
+          "logprob": -0.0008,
+          "text": "\\n"
+        },
+        {
+          "index": 190,
+          "token_id": 54999,
+          "logprob": -0.0007,
+          "text": "ulg"
+        },
+        {
+          "index": 203,
+          "token_id": 28143,
+          "logprob": -0.0006,
+          "text": " relate"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 86,
+      "mean": -0.3395,
+      "min": -1.9335,
+      "p05": -1.7597,
+      "p50": -0.0007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 272,
+          "token_id": 19,
+          "logprob": -1.9335,
+          "text": "4"
+        },
+        {
+          "index": 57,
+          "token_id": 18,
+          "logprob": -1.8916,
+          "text": "3"
+        },
+        {
+          "index": 51,
+          "token_id": 20,
+          "logprob": -1.8407,
+          "text": "5"
+        },
+        {
+          "index": 62,
+          "token_id": 20,
+          "logprob": -1.7906,
+          "text": "5"
+        },
+        {
+          "index": 266,
+          "token_id": 19,
+          "logprob": -1.786,
+          "text": "4"
+        },
+        {
+          "index": 46,
+          "token_id": 16,
+          "logprob": -1.6807,
+          "text": "1"
+        },
+        {
+          "index": 19,
+          "token_id": 22,
+          "logprob": -1.6731,
+          "text": "7"
+        },
+        {
+          "index": 24,
+          "token_id": 20,
+          "logprob": -1.6671,
+          "text": "5"
+        },
+        {
+          "index": 8,
+          "token_id": 24,
+          "logprob": -1.6525,
+          "text": "9"
+        },
+        {
+          "index": 147,
+          "token_id": 20,
+          "logprob": -1.5729,
+          "text": "5"
+        },
+        {
+          "index": 141,
+          "token_id": 22,
+          "logprob": -1.5696,
+          "text": "7"
+        },
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.5112,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 312,
+      "mean": -0.0938,
+      "min": -1.9335,
+      "p05": -0.6047,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.82,
+    "std": 20.37,
+    "dark_fraction": 0.02468
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      865.68,
+      1108.08
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      288,
+      369,
+      2116,
+      2708
+    ],
+    "ink_px": 105529,
+    "covered_px": 105513,
+    "covered_fraction": 0.99985,
+    "uncovered_px": 16,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

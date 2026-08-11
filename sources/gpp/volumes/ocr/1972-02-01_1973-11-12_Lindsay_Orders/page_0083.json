@@ -1,0 +1,348 @@
+{
+  "page": 83,
+  "source_image": "page_0083.png",
+  "elements": [
+    {
+      "bbox": [
+        579,
+        380,
+        1607,
+        1010
+      ],
+      "category": "List-item",
+      "text": "(5) A monthly report shall be sent to the Deputy Mayor stating the number of positions in the agency, the number of filled, the number of vacancies (both regular and leave of absence), the number pending establishment, and the position each agency expects to fill. Accompanying this report should be a list of vacancies by code and line number, title, schedule line rates, and the rate at which the position will be filled. A duplicate copy of this information must be submitted to the Bureau of the Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4556,
+          "min": -1.7478
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0005,
+          "min": -0.0009
+        },
+        "text": {
+          "n_tokens": 103,
+          "mean": -0.0037,
+          "min": -0.2943
+        }
+      },
+      "ink": {
+        "ink_px": 13366,
+        "area_px": 609026,
+        "density": 0.02195,
+        "chars": 507,
+        "chars_per_1k_ink": 37.93
+      }
+    },
+    {
+      "bbox": [
+        595,
+        1047,
+        1640,
+        1365
+      ],
+      "category": "List-item",
+      "text": "(6) All agencies shall forward to the Deputy Mayor monthly a listing of the positions that have been filled giving the code, the line number, the title, the schedule rate and the appointment rate. A duplicate copy of this listing must be submitted to the Bureau of the Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3293,
+          "min": -1.6027
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 56,
+          "mean": -0.0005,
+          "min": -0.0128
+        }
+      },
+      "ink": {
+        "ink_px": 15158,
+        "area_px": 333484,
+        "density": 0.04545,
+        "chars": 276,
+        "chars_per_1k_ink": 18.21
+      }
+    },
+    {
+      "bbox": [
+        602,
+        1394,
+        1737,
+        1725
+      ],
+      "category": "List-item",
+      "text": "(7) The reports required by Paragraphs (4) and (5) are necessary for review of requests for filling of vacancies by the Vacancy Control Board. Consideration of filling of vacancies shall be deferred in all cases where agencies have failed to comply until such time as the agency submit such reports.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3073,
+          "min": -1.563
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 61,
+          "mean": -0.0001,
+          "min": -0.0027
+        }
+      },
+      "ink": {
+        "ink_px": 12952,
+        "area_px": 378002,
+        "density": 0.03426,
+        "chars": 299,
+        "chars_per_1k_ink": 23.09
+      }
+    },
+    {
+      "bbox": [
+        609,
+        1754,
+        1707,
+        2042
+      ],
+      "category": "List-item",
+      "text": "(8) Any increase in the rate provided for employees of the competitive class, employed pursuant to Rule X of the Rules and Regulations of the New York City Civil Service Commission, shall be granted only upon approval of the Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2939,
+          "min": -1.5285
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 45,
+          "mean": -0.0006,
+          "min": -0.0234
+        }
+      },
+      "ink": {
+        "ink_px": 5831,
+        "area_px": 318240,
+        "density": 0.01832,
+        "chars": 231,
+        "chars_per_1k_ink": 39.62
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 414,
+    "content": {
+      "n_tokens": 265,
+      "mean": -0.0016,
+      "min": -0.2943,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 109,
+          "token_id": 1555,
+          "logprob": -0.2943,
+          "text": " line"
+        },
+        {
+          "index": 61,
+          "token_id": 10199,
+          "logprob": -0.0562,
+          "text": " filled"
+        },
+        {
+          "index": 383,
+          "token_id": 19446,
+          "logprob": -0.0234,
+          "text": " employed"
+        },
+        {
+          "index": 210,
+          "token_id": 4379,
+          "logprob": -0.0128,
+          "text": " rate"
+        },
+        {
+          "index": 47,
+          "token_id": 31624,
+          "logprob": -0.0118,
+          "text": " Deputy"
+        },
+        {
+          "index": 187,
+          "token_id": 15088,
+          "logprob": -0.0079,
+          "text": " monthly"
+        },
+        {
+          "index": 197,
+          "token_id": 7086,
+          "logprob": -0.0037,
+          "text": " giving"
+        },
+        {
+          "index": 43,
+          "token_id": 387,
+          "logprob": -0.003,
+          "text": " be"
+        },
+        {
+          "index": 288,
+          "token_id": 3395,
+          "logprob": -0.0027,
+          "text": " review"
+        },
+        {
+          "index": 217,
+          "token_id": 22513,
+          "logprob": -0.0024,
+          "text": " duplicate"
+        },
+        {
+          "index": 36,
+          "token_id": 11993,
+          "logprob": -0.0021,
+          "text": " \"("
+        },
+        {
+          "index": 77,
+          "token_id": 15280,
+          "logprob": -0.0016,
+          "text": " pending"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 91,
+      "mean": -0.3149,
+      "min": -1.7478,
+      "p05": -1.5676,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.7478,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.7106,
+          "text": "9"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.6073,
+          "text": "0"
+        },
+        {
+          "index": 146,
+          "token_id": 20,
+          "logprob": -1.6027,
+          "text": "5"
+        },
+        {
+          "index": 164,
+          "token_id": 20,
+          "logprob": -1.5722,
+          "text": "5"
+        },
+        {
+          "index": 245,
+          "token_id": 19,
+          "logprob": -1.563,
+          "text": "4"
+        },
+        {
+          "index": 152,
+          "token_id": 22,
+          "logprob": -1.5572,
+          "text": "7"
+        },
+        {
+          "index": 251,
+          "token_id": 22,
+          "logprob": -1.5469,
+          "text": "7"
+        },
+        {
+          "index": 343,
+          "token_id": 19,
+          "logprob": -1.5285,
+          "text": "4"
+        },
+        {
+          "index": 158,
+          "token_id": 15,
+          "logprob": -1.5273,
+          "text": "0"
+        },
+        {
+          "index": 24,
+          "token_id": 15,
+          "logprob": -1.5004,
+          "text": "0"
+        },
+        {
+          "index": 239,
+          "token_id": 17,
+          "logprob": -1.5001,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 414,
+      "mean": -0.0703,
+      "min": -1.7478,
+      "p05": -0.3387,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.21,
+    "std": 17.27,
+    "dark_fraction": 0.01084
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      780.48,
+      1255.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      260,
+      418,
+      1907,
+      3068
+    ],
+    "ink_px": 47307,
+    "covered_px": 47307,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

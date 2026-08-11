@@ -1,0 +1,382 @@
+{
+  "page": 166,
+  "source_image": "page_0166.png",
+  "elements": [
+    {
+      "bbox": [
+        681,
+        355,
+        721,
+        374
+      ],
+      "category": "Page-header",
+      "text": "-4-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3839,
+          "min": -1.6654
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0243,
+          "min": -0.0434
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0038,
+          "min": -0.0091
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 800,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        251,
+        458,
+        1206,
+        924
+      ],
+      "category": "Text",
+      "text": "approved for appointment by the Bureau of Investigations of the City Civil Service Commission, or (B) the individual has been previously certified for employment by the Department of Investigation. Certification procedures shall also be followed for any person appointed to a position of a sensitive nature, regardless of salary, except those individuals specifically excluded under (A) or (B) of this paragraph. Certification procedures, however, need not be followed for an individual already employed by the City who, while remaining in the same job title, has his salary increased by a salary increment or by a meritorious increase to a level equal to or greater than the minimum rate of M-1 or E-1 of the Managerial or Executive Pay Plans.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3378,
+          "min": -1.5897
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 142,
+          "mean": -0.001,
+          "min": -0.079
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 446019,
+        "density": 0.0,
+        "chars": 744,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        259,
+        974,
+        1166,
+        1278
+      ],
+      "category": "Text",
+      "text": "Certification may be secured by submitting the name, home address, date of birth, social security number, position and salary of the prospective employee to the Commissioner of Investigation who will arrange to have the questionnaire completed by the prospective employee. The Commissioner of Investigation will then certify to the head of the administration, department or agency that the questionnaire has been satisfactorily completed and if not, the reasons therefor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2748,
+          "min": -1.3891
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 81,
+          "mean": -0.0001,
+          "min": -0.0024
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 276318,
+        "density": 0.0,
+        "chars": 471,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        264,
+        1323,
+        1204,
+        1434
+      ],
+      "category": "Text",
+      "text": "These procedures shall apply to all appointments made on and after August 20, 1970, which have not previously been submitted for certification.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2453,
+          "min": -1.3868
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 31,
+          "mean": -0.0,
+          "min": -0.0004
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 105768,
+        "density": 0.0,
+        "chars": 143,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        266,
+        1481,
+        1192,
+        1551
+      ],
+      "category": "Text",
+      "text": "85. It is essential that every member of the City administration cooperate fully with all investigations conducted by law enforcement",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2431,
+          "min": -1.3898
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0022,
+          "min": -0.0022
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.0118,
+          "min": -0.2404
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 65462,
+        "density": 0.0,
+        "chars": 133,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 461,
+    "content": {
+      "n_tokens": 279,
+      "mean": -0.0015,
+      "min": -0.2404,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 436,
+          "token_id": 23,
+          "logprob": -0.2404,
+          "text": "8"
+        },
+        {
+          "index": 82,
+          "token_id": 4311,
+          "logprob": -0.079,
+          "text": " City"
+        },
+        {
+          "index": 103,
+          "token_id": 46897,
+          "logprob": -0.0401,
+          "text": " Investigation"
+        },
+        {
+          "index": 79,
+          "token_id": 88105,
+          "logprob": -0.0107,
+          "text": " Investigations"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0091,
+          "text": " \"-"
+        },
+        {
+          "index": 457,
+          "token_id": 13324,
+          "logprob": -0.0082,
+          "text": " enforcement"
+        },
+        {
+          "index": 449,
+          "token_id": 46803,
+          "logprob": -0.0056,
+          "text": " cooperate"
+        },
+        {
+          "index": 72,
+          "token_id": 33912,
+          "logprob": -0.0033,
+          "text": "approved"
+        },
+        {
+          "index": 448,
+          "token_id": 8567,
+          "logprob": -0.0028,
+          "text": " administration"
+        },
+        {
+          "index": 282,
+          "token_id": 46897,
+          "logprob": -0.0024,
+          "text": " Investigation"
+        },
+        {
+          "index": 207,
+          "token_id": 10567,
+          "logprob": -0.0017,
+          "text": " Manager"
+        },
+        {
+          "index": 35,
+          "token_id": 19,
+          "logprob": -0.0015,
+          "text": "4"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 105,
+      "mean": -0.2775,
+      "min": -1.6654,
+      "p05": -1.3886,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -1.6654,
+          "text": "5"
+        },
+        {
+          "index": 22,
+          "token_id": 19,
+          "logprob": -1.6026,
+          "text": "4"
+        },
+        {
+          "index": 55,
+          "token_id": 21,
+          "logprob": -1.5897,
+          "text": "6"
+        },
+        {
+          "index": 60,
+          "token_id": 19,
+          "logprob": -1.4108,
+          "text": "4"
+        },
+        {
+          "index": 418,
+          "token_id": 17,
+          "logprob": -1.3898,
+          "text": "2"
+        },
+        {
+          "index": 232,
+          "token_id": 21,
+          "logprob": -1.3891,
+          "text": "6"
+        },
+        {
+          "index": 344,
+          "token_id": 18,
+          "logprob": -1.3868,
+          "text": "3"
+        },
+        {
+          "index": 226,
+          "token_id": 19,
+          "logprob": -1.3802,
+          "text": "4"
+        },
+        {
+          "index": 350,
+          "token_id": 19,
+          "logprob": -1.3754,
+          "text": "4"
+        },
+        {
+          "index": 49,
+          "token_id": 23,
+          "logprob": -1.3241,
+          "text": "8"
+        },
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -1.3121,
+          "text": "1"
+        },
+        {
+          "index": 44,
+          "token_id": 16,
+          "logprob": -1.2667,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 461,
+      "mean": -0.065,
+      "min": -1.6654,
+      "p05": -0.3185,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.99,
+    "std": 10.33,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      667.92,
+      510.96
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      170,
+      222,
+      1249,
+      1633
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

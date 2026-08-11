@@ -1,0 +1,246 @@
+{
+  "page": 8,
+  "source_image": "page_0008.png",
+  "elements": [
+    {
+      "bbox": [
+        849,
+        1135,
+        1034,
+        1347
+      ],
+      "category": "Table",
+      "text": "<table><tr><td>Municipal Building and<br/>New York City</td></tr><tr><td>RECEIVED</td></tr><tr><td>JAN 17 1973</td></tr><tr><td>MUNICIPAL BUILDING</td></tr><tr><td>NEW YORK CITY</td></tr></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3142,
+          "min": -1.4443
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2876,
+          "min": -0.2876
+        },
+        "text": {
+          "n_tokens": 80,
+          "mean": -0.111,
+          "min": -2.1984
+        }
+      },
+      "ink": {
+        "ink_px": 2959,
+        "area_px": 36270,
+        "density": 0.08158,
+        "chars": 195,
+        "chars_per_1k_ink": 65.9
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 119,
+    "content": {
+      "n_tokens": 80,
+      "mean": -0.111,
+      "min": -2.1984,
+      "p05": -0.6582,
+      "p50": -0.0002,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 16858,
+          "logprob": -2.1984,
+          "text": " Building"
+        },
+        {
+          "index": 49,
+          "token_id": 3564,
+          "logprob": -1.2248,
+          "text": "New"
+        },
+        {
+          "index": 43,
+          "token_id": 13603,
+          "logprob": -0.812,
+          "text": "unicip"
+        },
+        {
+          "index": 47,
+          "token_id": 9480,
+          "logprob": -0.7584,
+          "text": "<br"
+        },
+        {
+          "index": 48,
+          "token_id": 9685,
+          "logprob": -0.653,
+          "text": "/>"
+        },
+        {
+          "index": 38,
+          "token_id": 1784,
+          "logprob": -0.5776,
+          "text": "><"
+        },
+        {
+          "index": 54,
+          "token_id": 1472,
+          "logprob": -0.5761,
+          "text": "></"
+        },
+        {
+          "index": 42,
+          "token_id": 37432,
+          "logprob": -0.3945,
+          "text": ">M"
+        },
+        {
+          "index": 52,
+          "token_id": 522,
+          "logprob": -0.3613,
+          "text": "</"
+        },
+        {
+          "index": 51,
+          "token_id": 4311,
+          "logprob": -0.3305,
+          "text": " City"
+        },
+        {
+          "index": 115,
+          "token_id": 29,
+          "logprob": -0.2816,
+          "text": ">"
+        },
+        {
+          "index": 39,
+          "token_id": 376,
+          "logprob": -0.1653,
+          "text": "tr"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 22,
+      "mean": -0.313,
+      "min": -1.4443,
+      "p05": -1.3367,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 19,
+          "token_id": 19,
+          "logprob": -1.4443,
+          "text": "4"
+        },
+        {
+          "index": 13,
+          "token_id": 20,
+          "logprob": -1.3404,
+          "text": "5"
+        },
+        {
+          "index": 25,
+          "token_id": 22,
+          "logprob": -1.2673,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -0.9799,
+          "text": "9"
+        },
+        {
+          "index": 6,
+          "token_id": 19,
+          "logprob": -0.6868,
+          "text": "4"
+        },
+        {
+          "index": 5,
+          "token_id": 23,
+          "logprob": -0.6529,
+          "text": "8"
+        },
+        {
+          "index": 31,
+          "token_id": 2556,
+          "logprob": -0.2876,
+          "text": "Table"
+        },
+        {
+          "index": 24,
+          "token_id": 19,
+          "logprob": -0.1622,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -0.0319,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -0.031,
+          "text": "3"
+        },
+        {
+          "index": 11,
+          "token_id": 16,
+          "logprob": -0.0005,
+          "text": "1"
+        },
+        {
+          "index": 17,
+          "token_id": 15,
+          "logprob": -0.0001,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 119,
+      "mean": -0.1325,
+      "min": -2.1984,
+      "p05": -0.8288,
+      "p50": -0.0001,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 169.49,
+    "std": 9.3,
+    "dark_fraction": 0.0029
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      540.0,
+      424.08
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      141,
+      180,
+      1036,
+      1320
+    ],
+    "ink_px": 2959,
+    "covered_px": 2959,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

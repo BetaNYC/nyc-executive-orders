@@ -1,0 +1,439 @@
+{
+  "page": 1,
+  "source_image": "page_0001.png",
+  "elements": [
+    {
+      "bbox": [
+        942,
+        71,
+        1130,
+        280
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3922,
+          "min": -1.65
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0307,
+          "min": -0.0307
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        824,
+        297,
+        1250,
+        427
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7, N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3806,
+          "min": -1.7988
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0145,
+          "min": -0.0145
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0242,
+          "min": -0.4742
+        }
+      },
+      "ink": {
+        "ink_px": 53,
+        "area_px": 4664,
+        "density": 0.01136,
+        "chars": 53,
+        "chars_per_1k_ink": 1000.0
+      }
+    },
+    {
+      "bbox": [
+        790,
+        507,
+        1365,
+        560
+      ],
+      "category": "Text",
+      "text": "EXECUTIVE ORDER NO. 19",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3369,
+          "min": -1.5878
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3354,
+          "min": -0.3354
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0018,
+          "min": -0.0134
+        }
+      },
+      "ink": {
+        "ink_px": 557,
+        "area_px": 30942,
+        "density": 0.018,
+        "chars": 22,
+        "chars_per_1k_ink": 39.5
+      }
+    },
+    {
+      "bbox": [
+        658,
+        828,
+        1213,
+        874
+      ],
+      "category": "Text",
+      "text": "MAYOR JOHN V. LINDSAY",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3441,
+          "min": -1.6502
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0959,
+          "min": -0.0959
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0001,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 272,
+        "area_px": 26038,
+        "density": 0.01045,
+        "chars": 21,
+        "chars_per_1k_ink": 77.21
+      }
+    },
+    {
+      "bbox": [
+        716,
+        960,
+        1133,
+        1005
+      ],
+      "category": "Text",
+      "text": "EXECUTIVE ORDERS",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2795,
+          "min": -1.4989
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0068,
+          "min": -0.0068
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0002,
+          "min": -0.0007
+        }
+      },
+      "ink": {
+        "ink_px": 81,
+        "area_px": 19136,
+        "density": 0.00423,
+        "chars": 16,
+        "chars_per_1k_ink": 197.53
+      }
+    },
+    {
+      "bbox": [
+        798,
+        1090,
+        977,
+        1137
+      ],
+      "category": "Text",
+      "text": "NO.1-57",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2658,
+          "min": -1.279
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0092,
+          "min": -0.0549
+        }
+      },
+      "ink": {
+        "ink_px": 248,
+        "area_px": 8592,
+        "density": 0.02886,
+        "chars": 7,
+        "chars_per_1k_ink": 28.23
+      }
+    },
+    {
+      "bbox": [
+        746,
+        1524,
+        983,
+        1573
+      ],
+      "category": "Text",
+      "text": "1966-1967",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2634,
+          "min": -1.4721
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0,
+          "min": -0.0
+        }
+      },
+      "ink": {
+        "ink_px": 303,
+        "area_px": 11850,
+        "density": 0.02557,
+        "chars": 9,
+        "chars_per_1k_ink": 29.7
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 305,
+    "content": {
+      "n_tokens": 60,
+      "mean": -0.0097,
+      "min": -0.4742,
+      "p05": -0.0142,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 83,
+          "token_id": 7507,
+          "logprob": -0.4742,
+          "text": ".Y"
+        },
+        {
+          "index": 253,
+          "token_id": 16,
+          "logprob": -0.0549,
+          "text": "1"
+        },
+        {
+          "index": 64,
+          "token_id": 34,
+          "logprob": -0.0307,
+          "text": "C"
+        },
+        {
+          "index": 124,
+          "token_id": 5664,
+          "logprob": -0.0134,
+          "text": " NO"
+        },
+        {
+          "index": 125,
+          "token_id": 13,
+          "logprob": -0.0018,
+          "text": "."
+        },
+        {
+          "index": 81,
+          "token_id": 11,
+          "logprob": -0.0012,
+          "text": ","
+        },
+        {
+          "index": 65,
+          "token_id": 3333,
+          "logprob": -0.0009,
+          "text": "ITY"
+        },
+        {
+          "index": 120,
+          "token_id": 46340,
+          "logprob": -0.0008,
+          "text": "EXEC"
+        },
+        {
+          "index": 210,
+          "token_id": 46340,
+          "logprob": -0.0007,
+          "text": "EXEC"
+        },
+        {
+          "index": 167,
+          "token_id": 75175,
+          "logprob": -0.0005,
+          "text": " JOHN"
+        },
+        {
+          "index": 172,
+          "token_id": 50,
+          "logprob": -0.0002,
+          "text": "S"
+        },
+        {
+          "index": 77,
+          "token_id": 20594,
+          "logprob": -0.0002,
+          "text": "NEW"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 142,
+      "mean": -0.3091,
+      "min": -1.7988,
+      "p05": -1.4976,
+      "p50": -0.0013,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 19,
+          "logprob": -1.7988,
+          "text": "4"
+        },
+        {
+          "index": 41,
+          "token_id": 22,
+          "logprob": -1.6758,
+          "text": "7"
+        },
+        {
+          "index": 147,
+          "token_id": 18,
+          "logprob": -1.6502,
+          "text": "3"
+        },
+        {
+          "index": 11,
+          "token_id": 16,
+          "logprob": -1.65,
+          "text": "1"
+        },
+        {
+          "index": 97,
+          "token_id": 22,
+          "logprob": -1.5878,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 17,
+          "logprob": -1.5076,
+          "text": "2"
+        },
+        {
+          "index": 103,
+          "token_id": 20,
+          "logprob": -1.5032,
+          "text": "5"
+        },
+        {
+          "index": 192,
+          "token_id": 18,
+          "logprob": -1.4989,
+          "text": "3"
+        },
+        {
+          "index": 270,
+          "token_id": 19,
+          "logprob": -1.4721,
+          "text": "4"
+        },
+        {
+          "index": 47,
+          "token_id": 15,
+          "logprob": -1.4713,
+          "text": "0"
+        },
+        {
+          "index": 141,
+          "token_id": 23,
+          "logprob": -1.4484,
+          "text": "8"
+        },
+        {
+          "index": 152,
+          "token_id": 19,
+          "logprob": -1.4358,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 305,
+      "mean": -0.1458,
+      "min": -1.7988,
+      "p05": -1.3464,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 184.48,
+    "std": 7.08,
+    "dark_fraction": 0.00034
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      812.4,
+      1246.32
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      270,
+      415,
+      1986,
+      3046
+    ],
+    "ink_px": 1514,
+    "covered_px": 1514,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

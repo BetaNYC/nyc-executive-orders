@@ -1,0 +1,280 @@
+{
+  "page": 6,
+  "source_image": "page_0006.png",
+  "elements": [
+    {
+      "bbox": [
+        576,
+        211,
+        1267,
+        333
+      ],
+      "category": "Section-header",
+      "text": "INDEX TO THE\nEXECUTIVE ORDERS OF THE MAYOR\n1958-1961",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3143,
+          "min": -1.4321
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2372,
+          "min": -0.4745
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0042,
+          "min": -0.058
+        }
+      },
+      "ink": {
+        "ink_px": 104,
+        "area_px": 5552,
+        "density": 0.01873,
+        "chars": 52,
+        "chars_per_1k_ink": 500.0
+      }
+    },
+    {
+      "bbox": [
+        188,
+        360,
+        1642,
+        2464
+      ],
+      "category": "Text",
+      "text": "| SUBJECT | NUMBER | DATE |\n|---|---|---|\n| Aged, services to | 84 | 11/28/60 |\n| Air pollution, city installations | 59 | 2/5/59 |\n| Appointees, resignations and reappointments | 104 | 12/1/61 |\n| Automobiles, city limousine restrictions | 65 | 7/1/59 |\n| | 66 | 7/10/59 |\n| | 105 | 12/8/61 |\n| Awards - Mayor's Medal | 100 | 10/31/61 |\n| Blood credit program | 97 | 10/23/61 |\n| Career and Salary Plan - leave regulations | 52 | 5/5/58 |\n| Census enumerators | 74 | 3/14/60 |\n| Charter and administrative code revision | 103 | 12/1/61 |\n| Charter revision staff | 72 | 2/18/60 |\n| | 72A | 2/18/60 |\n| Chief security officer | 54 | 10/9/58 |\n| Civil defense plan | 91 | 3/23/61 |\n| Contractors - graft to city employees, policy | 93 | 6/5/61 |\n| | 93S | 6/15/61 |\n| Correspondence - agency letterheads | 96 | 7/28/61 |\n| Correspondence - reply forms | 87 | 2/9/61 |\n| Correspondence - replies to Mayor's office | 82 | 9/6/60 |\n| Departmental problems, information request | 89 | 3/10/61 |\n| Emergency control plan | 107 | 12/22/61 |\n| Fallout shelters | 95 | 7/24/61 |\n| Ford Foundation Grant, executive training | 56 | 11/28/58 |",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3021,
+          "min": -1.5682
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.387,
+          "min": -0.387
+        },
+        "text": {
+          "n_tokens": 509,
+          "mean": -0.0071,
+          "min": -0.823
+        }
+      },
+      "ink": {
+        "ink_px": 55876,
+        "area_px": 2842895,
+        "density": 0.01965,
+        "chars": 1131,
+        "chars_per_1k_ink": 20.24
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 606,
+    "content": {
+      "n_tokens": 532,
+      "mean": -0.007,
+      "min": -0.823,
+      "p05": -0.0041,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 192,
+          "token_id": 760,
+          "logprob": -0.823,
+          "text": " |"
+        },
+        {
+          "index": 219,
+          "token_id": 760,
+          "logprob": -0.7017,
+          "text": " |"
+        },
+        {
+          "index": 203,
+          "token_id": 760,
+          "logprob": -0.5908,
+          "text": " |"
+        },
+        {
+          "index": 103,
+          "token_id": 4421,
+          "logprob": -0.4883,
+          "text": "---"
+        },
+        {
+          "index": 220,
+          "token_id": 220,
+          "logprob": -0.2017,
+          "text": " "
+        },
+        {
+          "index": 96,
+          "token_id": 760,
+          "logprob": -0.1315,
+          "text": " |"
+        },
+        {
+          "index": 236,
+          "token_id": 22658,
+          "logprob": -0.1156,
+          "text": " Awards"
+        },
+        {
+          "index": 94,
+          "token_id": 25203,
+          "logprob": -0.1135,
+          "text": " \"|"
+        },
+        {
+          "index": 565,
+          "token_id": 51788,
+          "logprob": -0.0707,
+          "text": " shelters"
+        },
+        {
+          "index": 39,
+          "token_id": 1699,
+          "logprob": -0.058,
+          "text": "\\n"
+        },
+        {
+          "index": 498,
+          "token_id": 50942,
+          "logprob": -0.0488,
+          "text": " Correspond"
+        },
+        {
+          "index": 349,
+          "token_id": 760,
+          "logprob": -0.0417,
+          "text": " |"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3066,
+      "min": -1.5682,
+      "p05": -1.4175,
+      "p50": -0.0025,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 77,
+          "token_id": 17,
+          "logprob": -1.5682,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.4321,
+          "text": "6"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.4186,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.3985,
+          "text": "1"
+        },
+        {
+          "index": 83,
+          "token_id": 19,
+          "logprob": -1.3773,
+          "text": "4"
+        },
+        {
+          "index": 66,
+          "token_id": 23,
+          "logprob": -1.3768,
+          "text": "8"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.2847,
+          "text": "7"
+        },
+        {
+          "index": 71,
+          "token_id": 15,
+          "logprob": -0.7361,
+          "text": "0"
+        },
+        {
+          "index": 70,
+          "token_id": 21,
+          "logprob": -0.6338,
+          "text": "6"
+        },
+        {
+          "index": 29,
+          "token_id": 9620,
+          "logprob": -0.4745,
+          "text": "Section"
+        },
+        {
+          "index": 89,
+          "token_id": 1178,
+          "logprob": -0.387,
+          "text": "Text"
+        },
+        {
+          "index": 65,
+          "token_id": 23,
+          "logprob": -0.2041,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 606,
+      "mean": -0.0277,
+      "min": -1.5682,
+      "p05": -0.0372,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.36,
+    "std": 16.54,
+    "dark_fraction": 0.01688
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      758.64,
+      979.92
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      252,
+      326,
+      1855,
+      2395
+    ],
+    "ink_px": 55980,
+    "covered_px": 55980,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

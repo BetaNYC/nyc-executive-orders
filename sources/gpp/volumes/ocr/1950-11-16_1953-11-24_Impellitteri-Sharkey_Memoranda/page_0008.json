@@ -1,0 +1,274 @@
+{
+  "page": 8,
+  "source_image": "page_0008.png",
+  "elements": [
+    {
+      "bbox": [
+        848,
+        233,
+        1000,
+        272
+      ],
+      "category": "Page-header",
+      "text": "PAGE 2",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2914,
+          "min": -1.4918
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0029,
+          "min": -0.0052
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0015,
+          "min": -0.0042
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        276,
+        308,
+        1784,
+        1743
+      ],
+      "category": "Text",
+      "text": "| SUBJECT | NUMBER | DATE |\n|---|---|---|\n| Legislation, state, city-sponsored | 8 <br> 21 <br> 38 | 6/29/51 <br> 6/12/52 <br> 8/17/53 |\n| Legislation, state, city representative reports | 26 | 11/16/52 |\n| MacArthur Parade | 5 | 4/17/51 |\n| Management Improvement, board of, established | 9 | 7/9/51 |\n| Management improvements | 31 | 2/27/53 |\n| Mayor's Trophy Game | 22 <br> 23 <br> 35 | 6/16/52 <br> 7/8/52 <br> 6/2/53 |\n| National Safety Council parade | 24 <br> 36 | 8/7/52 <br> 7/20/53 |\n| Red Cross Armed Forces blood drive | 13 | 11/23/51 |\n| Red Cross fund drive | 4 <br> 18 <br> 29 | 2/15/51 <br> 2/6/52 <br> 2/9/53 |\n| Salary Classification Plan | 6 <br> 11 | 6/8/51 <br> 8/17/51 |\n| Strike, Coal and fuel oil drivers | 17 | 12/20/51 |\n| Tickets, half-price, \"A Night in Venice\" | 37 | 7/24/53 |",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3334,
+          "min": -1.8428
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.6331,
+          "min": -0.6331
+        },
+        "text": {
+          "n_tokens": 398,
+          "mean": -0.0052,
+          "min": -0.9262
+        }
+      },
+      "ink": {
+        "ink_px": 31065,
+        "area_px": 2099364,
+        "density": 0.0148,
+        "chars": 807,
+        "chars_per_1k_ink": 25.98
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 475,
+    "content": {
+      "n_tokens": 401,
+      "mean": -0.0052,
+      "min": -0.9262,
+      "p05": -0.0009,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 100,
+          "token_id": 366,
+          "logprob": -0.9262,
+          "text": " <"
+        },
+        {
+          "index": 91,
+          "token_id": 71967,
+          "logprob": -0.3212,
+          "text": " Legislation"
+        },
+        {
+          "index": 74,
+          "token_id": 25203,
+          "logprob": -0.2675,
+          "text": " \"|"
+        },
+        {
+          "index": 83,
+          "token_id": 4421,
+          "logprob": -0.2647,
+          "text": "---"
+        },
+        {
+          "index": 76,
+          "token_id": 760,
+          "logprob": -0.1762,
+          "text": " |"
+        },
+        {
+          "index": 151,
+          "token_id": 18239,
+          "logprob": -0.0377,
+          "text": " representative"
+        },
+        {
+          "index": 75,
+          "token_id": 95880,
+          "logprob": -0.0147,
+          "text": " SUBJECT"
+        },
+        {
+          "index": 194,
+          "token_id": 9555,
+          "logprob": -0.0069,
+          "text": " established"
+        },
+        {
+          "index": 97,
+          "token_id": 760,
+          "logprob": -0.0066,
+          "text": " |"
+        },
+        {
+          "index": 245,
+          "token_id": 18,
+          "logprob": -0.0059,
+          "text": "3"
+        },
+        {
+          "index": 36,
+          "token_id": 37374,
+          "logprob": -0.0042,
+          "text": "PAGE"
+        },
+        {
+          "index": 283,
+          "token_id": 760,
+          "logprob": -0.0035,
+          "text": " |"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3058,
+      "min": -1.8428,
+      "p05": -1.5014,
+      "p50": -0.0022,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 57,
+          "token_id": 19,
+          "logprob": -1.8428,
+          "text": "4"
+        },
+        {
+          "index": 46,
+          "token_id": 21,
+          "logprob": -1.6231,
+          "text": "6"
+        },
+        {
+          "index": 63,
+          "token_id": 18,
+          "logprob": -1.5019,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.4918,
+          "text": "2"
+        },
+        {
+          "index": 51,
+          "token_id": 23,
+          "logprob": -1.412,
+          "text": "8"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.376,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.2257,
+          "text": "8"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -0.7339,
+          "text": "0"
+        },
+        {
+          "index": 69,
+          "token_id": 1178,
+          "logprob": -0.6331,
+          "text": "Text"
+        },
+        {
+          "index": 15,
+          "token_id": 16,
+          "logprob": -0.2835,
+          "text": "1"
+        },
+        {
+          "index": 6,
+          "token_id": 19,
+          "logprob": -0.2585,
+          "text": "4"
+        },
+        {
+          "index": 50,
+          "token_id": 15,
+          "logprob": -0.1429,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 475,
+      "mean": -0.0314,
+      "min": -1.8428,
+      "p05": -0.0153,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 183.29,
+    "std": 13.38,
+    "dark_fraction": 0.00826
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      804.72,
+      1048.32
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      268,
+      349,
+      1967,
+      2562
+    ],
+    "ink_px": 31065,
+    "covered_px": 31065,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

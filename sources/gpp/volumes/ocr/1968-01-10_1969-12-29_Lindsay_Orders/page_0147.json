@@ -1,0 +1,210 @@
+{
+  "page": 147,
+  "source_image": "page_0147.png",
+  "elements": [
+    {
+      "bbox": [
+        191,
+        777,
+        273,
+        807
+      ],
+      "category": "Text",
+      "text": "THE\nMIDDLE\nAGE",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.59,
+          "min": -2.1221
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0825,
+          "min": -0.0825
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -1.3059,
+          "min": -2.8156
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 2573,
+        "density": 0.0,
+        "chars": 14,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "length",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 12000,
+    "content": {
+      "n_tokens": 6,
+      "mean": -1.3059,
+      "min": -2.8156,
+      "p05": -2.5362,
+      "p50": -1.4158,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 44,
+          "logprob": -2.8156,
+          "text": "M"
+        },
+        {
+          "index": 34,
+          "token_id": 17229,
+          "logprob": -1.6979,
+          "text": "THE"
+        },
+        {
+          "index": 37,
+          "token_id": 48175,
+          "logprob": -1.4696,
+          "text": "IDDLE"
+        },
+        {
+          "index": 35,
+          "token_id": 1699,
+          "logprob": -1.3619,
+          "text": "\\n"
+        },
+        {
+          "index": 39,
+          "token_id": 3585,
+          "logprob": -0.3471,
+          "text": "AGE"
+        },
+        {
+          "index": 38,
+          "token_id": 1699,
+          "logprob": -0.1431,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 19,
+      "mean": -0.5633,
+      "min": -2.1221,
+      "p05": -2.0795,
+      "p50": -0.1738,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -2.1221,
+          "text": "1"
+        },
+        {
+          "index": 17,
+          "token_id": 18,
+          "logprob": -2.0748,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.8701,
+          "text": "7"
+        },
+        {
+          "index": 22,
+          "token_id": 22,
+          "logprob": -1.7161,
+          "text": "7"
+        },
+        {
+          "index": 10,
+          "token_id": 22,
+          "logprob": -0.7216,
+          "text": "7"
+        },
+        {
+          "index": 11,
+          "token_id": 22,
+          "logprob": -0.6506,
+          "text": "7"
+        },
+        {
+          "index": 6,
+          "token_id": 24,
+          "logprob": -0.4904,
+          "text": "9"
+        },
+        {
+          "index": 16,
+          "token_id": 22,
+          "logprob": -0.4309,
+          "text": "7"
+        },
+        {
+          "index": 5,
+          "token_id": 16,
+          "logprob": -0.2431,
+          "text": "1"
+        },
+        {
+          "index": 15,
+          "token_id": 17,
+          "logprob": -0.1738,
+          "text": "2"
+        },
+        {
+          "index": 21,
+          "token_id": 15,
+          "logprob": -0.0971,
+          "text": "0"
+        },
+        {
+          "index": 28,
+          "token_id": 1178,
+          "logprob": -0.0825,
+          "text": "Text"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 12000,
+      "mean": -0.0047,
+      "min": -2.8156,
+      "p05": -0.0008,
+      "p50": -0.0001,
+      "n_below_threshold": 5
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.53,
+    "std": 7.98,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      662.16,
+      422.64
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      140,
+      220,
+      1033,
+      1619
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

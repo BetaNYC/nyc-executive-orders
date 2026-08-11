@@ -1,0 +1,371 @@
+{
+  "page": 92,
+  "source_image": "page_0092.png",
+  "elements": [
+    {
+      "bbox": [
+        583,
+        147,
+        651,
+        167
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2942,
+          "min": -1.3912
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0018,
+          "min": -0.0033
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0277,
+          "min": -0.0891
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        147,
+        266,
+        982,
+        381
+      ],
+      "category": "Text",
+      "text": "§3. The Commission is empowered to prescribe its own procedures and to employ such assistants as it deems necessary, within the amounts appropriated therefor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2785,
+          "min": -1.3331
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0125,
+          "min": -0.0125
+        },
+        "text": {
+          "n_tokens": 30,
+          "mean": -0.001,
+          "min": -0.0266
+        }
+      },
+      "ink": {
+        "ink_px": 399,
+        "area_px": 95450,
+        "density": 0.00418,
+        "chars": 158,
+        "chars_per_1k_ink": 395.99
+      }
+    },
+    {
+      "bbox": [
+        149,
+        405,
+        983,
+        519
+      ],
+      "category": "Text",
+      "text": "§4. All departments and agencies of the City are directed to furnish the Commission with such facilities, services and cooperation as it may request from time to time.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2706,
+          "min": -1.15
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0002,
+          "min": -0.0041
+        }
+      },
+      "ink": {
+        "ink_px": 299,
+        "area_px": 95450,
+        "density": 0.00313,
+        "chars": 167,
+        "chars_per_1k_ink": 558.53
+      }
+    },
+    {
+      "bbox": [
+        215,
+        542,
+        821,
+        568
+      ],
+      "category": "Text",
+      "text": "§5. This order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2521,
+          "min": -1.1618
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0001,
+          "min": -0.0004
+        }
+      },
+      "ink": {
+        "ink_px": 80,
+        "area_px": 15678,
+        "density": 0.0051,
+        "chars": 45,
+        "chars_per_1k_ink": 562.5
+      }
+    },
+    {
+      "bbox": [
+        610,
+        551,
+        1058,
+        748
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3197,
+          "min": -1.1677
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0053,
+          "min": -0.0053
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1390,
+        "area_px": 82712,
+        "density": 0.01681,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 245,
+    "content": {
+      "n_tokens": 76,
+      "mean": -0.0019,
+      "min": -0.0891,
+      "p05": -0.0029,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 220,
+          "logprob": -0.0891,
+          "text": " "
+        },
+        {
+          "index": 72,
+          "token_id": 17851,
+          "logprob": -0.0266,
+          "text": "§"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0213,
+          "text": " \"-"
+        },
+        {
+          "index": 148,
+          "token_id": 311,
+          "logprob": -0.0041,
+          "text": " to"
+        },
+        {
+          "index": 83,
+          "token_id": 15966,
+          "logprob": -0.0025,
+          "text": " procedures"
+        },
+        {
+          "index": 158,
+          "token_id": 23046,
+          "logprob": -0.0007,
+          "text": " cooperation"
+        },
+        {
+          "index": 97,
+          "token_id": 14713,
+          "logprob": -0.0005,
+          "text": " amounts"
+        },
+        {
+          "index": 208,
+          "token_id": 1896,
+          "logprob": -0.0004,
+          "text": " take"
+        },
+        {
+          "index": 88,
+          "token_id": 56519,
+          "logprob": -0.0004,
+          "text": " assistants"
+        },
+        {
+          "index": 37,
+          "token_id": 481,
+          "logprob": -0.0003,
+          "text": " -"
+        },
+        {
+          "index": 100,
+          "token_id": 1958,
+          "logprob": -0.0003,
+          "text": "for"
+        },
+        {
+          "index": 91,
+          "token_id": 409,
+          "logprob": -0.0002,
+          "text": " de"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 97,
+      "mean": -0.2661,
+      "min": -1.3912,
+      "p05": -1.1683,
+      "p50": -0.0007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.3912,
+          "text": "3"
+        },
+        {
+          "index": 55,
+          "token_id": 17,
+          "logprob": -1.3331,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.3293,
+          "text": "7"
+        },
+        {
+          "index": 50,
+          "token_id": 21,
+          "logprob": -1.2768,
+          "text": "6"
+        },
+        {
+          "index": 45,
+          "token_id": 22,
+          "logprob": -1.1709,
+          "text": "7"
+        },
+        {
+          "index": 224,
+          "token_id": 16,
+          "logprob": -1.1677,
+          "text": "1"
+        },
+        {
+          "index": 175,
+          "token_id": 20,
+          "logprob": -1.1618,
+          "text": "5"
+        },
+        {
+          "index": 230,
+          "token_id": 23,
+          "logprob": -1.1607,
+          "text": "8"
+        },
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -1.1532,
+          "text": "1"
+        },
+        {
+          "index": 119,
+          "token_id": 18,
+          "logprob": -1.15,
+          "text": "3"
+        },
+        {
+          "index": 114,
+          "token_id": 20,
+          "logprob": -1.0811,
+          "text": "5"
+        },
+        {
+          "index": 60,
+          "token_id": 16,
+          "logprob": -1.0307,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 245,
+      "mean": -0.1088,
+      "min": -1.3912,
+      "p05": -1.022,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 166.41,
+    "std": 10.04,
+    "dark_fraction": 0.00215
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      531.36,
+      420.48
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      140,
+      177,
+      1027,
+      1298
+    ],
+    "ink_px": 2138,
+    "covered_px": 2138,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

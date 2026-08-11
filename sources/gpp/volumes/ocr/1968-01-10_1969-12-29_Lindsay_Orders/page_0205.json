@@ -1,0 +1,160 @@
+{
+  "page": 205,
+  "source_image": "page_0205.png",
+  "elements": [
+    {
+      "bbox": [
+        45,
+        21,
+        1160,
+        1848
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.562,
+          "min": -1.8929
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5776,
+          "min": -0.5776
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1266909,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 32,
+    "content": null,
+    "layout": {
+      "n_tokens": 19,
+      "mean": -0.5628,
+      "min": -1.8929,
+      "p05": -1.7206,
+      "p50": -0.1938,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 16,
+          "token_id": 15,
+          "logprob": -1.8929,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 11,
+          "logprob": -1.7015,
+          "text": ","
+        },
+        {
+          "index": 10,
+          "token_id": 16,
+          "logprob": -1.5741,
+          "text": "1"
+        },
+        {
+          "index": 6,
+          "token_id": 20,
+          "logprob": -1.4413,
+          "text": "5"
+        },
+        {
+          "index": 15,
+          "token_id": 21,
+          "logprob": -1.2458,
+          "text": "6"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -0.8204,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 23,
+          "logprob": -0.5842,
+          "text": "8"
+        },
+        {
+          "index": 28,
+          "token_id": 24669,
+          "logprob": -0.5776,
+          "text": "Picture"
+        },
+        {
+          "index": 9,
+          "token_id": 17,
+          "logprob": -0.4948,
+          "text": "2"
+        },
+        {
+          "index": 21,
+          "token_id": 19,
+          "logprob": -0.1938,
+          "text": "4"
+        },
+        {
+          "index": 20,
+          "token_id": 23,
+          "logprob": -0.126,
+          "text": "8"
+        },
+        {
+          "index": 19,
+          "token_id": 16,
+          "logprob": -0.0352,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 32,
+      "mean": -0.354,
+      "min": -1.8929,
+      "p05": -1.6314,
+      "p50": -0.0006,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.96,
+    "std": 8.02,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      664.56,
+      427.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      221,
+      1045,
+      1624
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

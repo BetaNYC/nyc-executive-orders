@@ -1,0 +1,343 @@
+{
+  "page": 8,
+  "source_image": "page_0008.png",
+  "elements": [
+    {
+      "bbox": [
+        782,
+        220,
+        932,
+        381
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2861,
+          "min": -1.3581
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0495,
+          "min": -0.0495
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 882,
+        "area_px": 6493,
+        "density": 0.13584,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        687,
+        394,
+        1025,
+        495
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7, N. Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2617,
+          "min": -1.2555
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0135,
+          "min": -0.0135
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.0413,
+          "min": -0.7225
+        }
+      },
+      "ink": {
+        "ink_px": 1411,
+        "area_px": 34476,
+        "density": 0.04093,
+        "chars": 54,
+        "chars_per_1k_ink": 38.27
+      }
+    },
+    {
+      "bbox": [
+        1229,
+        619,
+        1477,
+        661
+      ],
+      "category": "Text",
+      "text": "Index Page 7",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2358,
+          "min": -1.2977
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1794,
+          "min": -0.1794
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0003,
+          "min": -0.001
+        }
+      },
+      "ink": {
+        "ink_px": 91,
+        "area_px": 10664,
+        "density": 0.00853,
+        "chars": 12,
+        "chars_per_1k_ink": 131.87
+      }
+    },
+    {
+      "bbox": [
+        208,
+        697,
+        1477,
+        1101
+      ],
+      "category": "Table",
+      "text": "<table><tr><td>Water Conservation Program</td><td>137</td></tr><tr><td>Water Meters-Public Buildings</td><td>171</td></tr><tr><td>Welfare Department-Hospital Cases</td><td>165<br>177</td></tr><tr><td>Youth House, Inc.</td><td>85</td></tr><tr><td>Youth Work Programs</td><td>118</td></tr></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2426,
+          "min": -1.3025
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0182,
+          "min": -0.0182
+        },
+        "text": {
+          "n_tokens": 116,
+          "mean": -0.0105,
+          "min": -0.4288
+        }
+      },
+      "ink": {
+        "ink_px": 906,
+        "area_px": 504252,
+        "density": 0.0018,
+        "chars": 295,
+        "chars_per_1k_ink": 325.61
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 280,
+    "content": {
+      "n_tokens": 142,
+      "mean": -0.015,
+      "min": -0.7225,
+      "p05": -0.0545,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 81,
+          "token_id": 11,
+          "logprob": -0.7225,
+          "text": ","
+        },
+        {
+          "index": 163,
+          "token_id": 1784,
+          "logprob": -0.4288,
+          "text": "><"
+        },
+        {
+          "index": 225,
+          "token_id": 9480,
+          "logprob": -0.3018,
+          "text": "<br"
+        },
+        {
+          "index": 83,
+          "token_id": 13,
+          "logprob": -0.1643,
+          "text": "."
+        },
+        {
+          "index": 226,
+          "token_id": 29,
+          "logprob": -0.1298,
+          "text": ">"
+        },
+        {
+          "index": 164,
+          "token_id": 376,
+          "logprob": -0.1056,
+          "text": "tr"
+        },
+        {
+          "index": 162,
+          "token_id": 2005,
+          "logprob": -0.062,
+          "text": "table"
+        },
+        {
+          "index": 238,
+          "token_id": 54521,
+          "logprob": -0.0551,
+          "text": ">You"
+        },
+        {
+          "index": 191,
+          "token_id": 9299,
+          "logprob": -0.0435,
+          "text": "-P"
+        },
+        {
+          "index": 258,
+          "token_id": 54521,
+          "logprob": -0.0381,
+          "text": ">You"
+        },
+        {
+          "index": 180,
+          "token_id": 1296,
+          "logprob": -0.0205,
+          "text": "td"
+        },
+        {
+          "index": 64,
+          "token_id": 34,
+          "logprob": -0.0148,
+          "text": "C"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.2463,
+      "min": -1.3581,
+      "p05": -1.2555,
+      "p50": -0.0033,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 17,
+          "token_id": 17,
+          "logprob": -1.3581,
+          "text": "2"
+        },
+        {
+          "index": 133,
+          "token_id": 23,
+          "logprob": -1.3025,
+          "text": "8"
+        },
+        {
+          "index": 105,
+          "token_id": 22,
+          "logprob": -1.2977,
+          "text": "7"
+        },
+        {
+          "index": 150,
+          "token_id": 16,
+          "logprob": -1.2668,
+          "text": "1"
+        },
+        {
+          "index": 47,
+          "token_id": 20,
+          "logprob": -1.2555,
+          "text": "5"
+        },
+        {
+          "index": 138,
+          "token_id": 22,
+          "logprob": -1.2347,
+          "text": "7"
+        },
+        {
+          "index": 36,
+          "token_id": 22,
+          "logprob": -1.2252,
+          "text": "7"
+        },
+        {
+          "index": 52,
+          "token_id": 20,
+          "logprob": -1.1871,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 17,
+          "logprob": -1.1333,
+          "text": "2"
+        },
+        {
+          "index": 22,
+          "token_id": 16,
+          "logprob": -1.1318,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.0982,
+          "text": "0"
+        },
+        {
+          "index": 41,
+          "token_id": 19,
+          "logprob": -1.0902,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 280,
+      "mean": -0.0789,
+      "min": -1.3581,
+      "p05": -0.6852,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 183.77,
+    "std": 8.23,
+    "dark_fraction": 0.00104
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      693.12,
+      1019.52
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      231,
+      339,
+      1694,
+      2492
+    ],
+    "ink_px": 3290,
+    "covered_px": 3290,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

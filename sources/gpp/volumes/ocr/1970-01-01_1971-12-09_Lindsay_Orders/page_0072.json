@@ -1,0 +1,336 @@
+{
+  "page": 72,
+  "source_image": "page_0072.png",
+  "elements": [
+    {
+      "bbox": [
+        563,
+        84,
+        604,
+        106
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.3448,
+          "min": -1.4289
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0097,
+          "min": -0.0192
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0052,
+          "min": -0.0147
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        63,
+        126,
+        245,
+        149
+      ],
+      "category": "Text",
+      "text": "the following:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.3154,
+          "min": -1.4031
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0162,
+          "min": -0.0162
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0021,
+          "min": -0.0054
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        59,
+        168,
+        1107,
+        753
+      ],
+      "category": "Text",
+      "text": "Section 1. Coverage. The appended Schedule was prepared specifically for usage by City administration and agencies which do not have City-wide or central responsibility for the administrative services documented by such house-keeping records. For example, the recommendation with regard to the retention of personnel folders should be adopted by all departments and administrations except the Department of Personnel. The recommendations covering payrolls and vouchers should likewise be adopted by all except the Comptroller's Office since the latter is, in this instance, the office of record or City-wide responsibility. Although offices of record are not necessarily precluded from adopting any of the recommendations relating to records which document their official City-wide functions, it is felt that specific provisions of the City Charter as well as unique internal operating requirements need special examination and appraisal with regard to records retention scheduling.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3125,
+          "min": -1.503
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 160,
+          "mean": -0.0043,
+          "min": -0.4181
+        }
+      },
+      "ink": {
+        "ink_px": 743,
+        "area_px": 515347,
+        "density": 0.00144,
+        "chars": 982,
+        "chars_per_1k_ink": 1321.67
+      }
+    },
+    {
+      "bbox": [
+        59,
+        771,
+        1064,
+        1270
+      ],
+      "category": "Text",
+      "text": "## 2. Exceptions.\nSince disposal of all municipal records, including those listed on the appended Schedule, must be accomplished in strict accordance with provisions appearing in the Administrative Code, the Law Department will, as in the past, continue to disapprove the disposal of any records needed as a result of litigation. Another potential exception to the unqualified adoption of the Schedule results from Federal and State aid received by various City administrations and agencies. In some instances it may be necessary to retain specific records beyond the retention periods stated in the Schedule for reasons of Federal and State audits. However, this exception is regarded as minimal, and should only apply to records specifically requested for external audit purposes, and only when such audits have not been completed within the prescribed period. In such",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2885,
+          "min": -1.5211
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 152,
+          "mean": -0.0034,
+          "min": -0.1653
+        }
+      },
+      "ink": {
+        "ink_px": 685,
+        "area_px": 447048,
+        "density": 0.00153,
+        "chars": 870,
+        "chars_per_1k_ink": 1270.07
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 456,
+    "content": {
+      "n_tokens": 318,
+      "mean": -0.0038,
+      "min": -0.4181,
+      "p05": -0.002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 177,
+          "token_id": 38274,
+          "logprob": -0.4181,
+          "text": "rolls"
+        },
+        {
+          "index": 301,
+          "token_id": 565,
+          "logprob": -0.1653,
+          "text": "##"
+        },
+        {
+          "index": 106,
+          "token_id": 9620,
+          "logprob": -0.1346,
+          "text": "Section"
+        },
+        {
+          "index": 308,
+          "token_id": 12549,
+          "logprob": -0.1273,
+          "text": "Since"
+        },
+        {
+          "index": 306,
+          "token_id": 7110,
+          "logprob": -0.1129,
+          "text": ".\\"
+        },
+        {
+          "index": 110,
+          "token_id": 55669,
+          "logprob": -0.0996,
+          "text": " Coverage"
+        },
+        {
+          "index": 426,
+          "token_id": 1172,
+          "logprob": -0.0586,
+          "text": " only"
+        },
+        {
+          "index": 303,
+          "token_id": 17,
+          "logprob": -0.024,
+          "text": "2"
+        },
+        {
+          "index": 33,
+          "token_id": 6523,
+          "logprob": -0.0147,
+          "text": " \"-"
+        },
+        {
+          "index": 305,
+          "token_id": 64629,
+          "logprob": -0.0117,
+          "text": " Exceptions"
+        },
+        {
+          "index": 118,
+          "token_id": 369,
+          "logprob": -0.0098,
+          "text": " for"
+        },
+        {
+          "index": 176,
+          "token_id": 2291,
+          "logprob": -0.0095,
+          "text": " pay"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 76,
+      "mean": -0.2943,
+      "min": -1.5211,
+      "p05": -1.4043,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 283,
+          "token_id": 19,
+          "logprob": -1.5211,
+          "text": "4"
+        },
+        {
+          "index": 94,
+          "token_id": 18,
+          "logprob": -1.503,
+          "text": "3"
+        },
+        {
+          "index": 11,
+          "token_id": 19,
+          "logprob": -1.4289,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.4077,
+          "text": "3"
+        },
+        {
+          "index": 52,
+          "token_id": 20,
+          "logprob": -1.4031,
+          "text": "5"
+        },
+        {
+          "index": 16,
+          "token_id": 19,
+          "logprob": -1.3205,
+          "text": "4"
+        },
+        {
+          "index": 42,
+          "token_id": 18,
+          "logprob": -1.2816,
+          "text": "3"
+        },
+        {
+          "index": 89,
+          "token_id": 22,
+          "logprob": -1.238,
+          "text": "7"
+        },
+        {
+          "index": 21,
+          "token_id": 21,
+          "logprob": -1.1985,
+          "text": "6"
+        },
+        {
+          "index": 83,
+          "token_id": 23,
+          "logprob": -1.1791,
+          "text": "8"
+        },
+        {
+          "index": 47,
+          "token_id": 21,
+          "logprob": -1.1787,
+          "text": "6"
+        },
+        {
+          "index": 277,
+          "token_id": 16,
+          "logprob": -1.1044,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 456,
+      "mean": -0.0533,
+      "min": -1.5211,
+      "p05": -0.2603,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 163.39,
+    "std": 13.38,
+    "dark_fraction": 0.00142
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      538.32,
+      420.48
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      140,
+      179,
+      1027,
+      1316
+    ],
+    "ink_px": 1428,
+    "covered_px": 1428,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

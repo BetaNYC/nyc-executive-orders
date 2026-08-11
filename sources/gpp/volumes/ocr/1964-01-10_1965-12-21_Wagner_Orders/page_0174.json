@@ -1,0 +1,348 @@
+{
+  "page": 174,
+  "source_image": "page_0174.png",
+  "elements": [
+    {
+      "bbox": [
+        999,
+        384,
+        1130,
+        433
+      ],
+      "category": "Page-header",
+      "text": "- 3 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4547,
+          "min": -2.0536
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.003,
+          "min": -0.006
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0624,
+          "min": -0.2259
+        }
+      },
+      "ink": {
+        "ink_px": 85,
+        "area_px": 3168,
+        "density": 0.02683,
+        "chars": 5,
+        "chars_per_1k_ink": 58.82
+      }
+    },
+    {
+      "bbox": [
+        216,
+        499,
+        1925,
+        680
+      ],
+      "category": "Text",
+      "text": "**Section 4.** The provisions of this resolution shall not imply any obligation, commitment or promise that the benefits herein granted shall be continued beyond the termination date thereof, as hereinabove prescribed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4236,
+          "min": -1.833
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0025,
+          "min": -0.0025
+        },
+        "text": {
+          "n_tokens": 39,
+          "mean": -0.0053,
+          "min": -0.1936
+        }
+      },
+      "ink": {
+        "ink_px": 8042,
+        "area_px": 297021,
+        "density": 0.02708,
+        "chars": 218,
+        "chars_per_1k_ink": 27.11
+      }
+    },
+    {
+      "bbox": [
+        216,
+        712,
+        1797,
+        856
+      ],
+      "category": "Text",
+      "text": "**Section 5.** The Controller of the Authority is hereby authorized and directed to do and perform all acts necessary to carry out and implement this resolution.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2984,
+          "min": -1.6784
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "text": {
+          "n_tokens": 31,
+          "mean": -0.0001,
+          "min": -0.0025
+        }
+      },
+      "ink": {
+        "ink_px": 5196,
+        "area_px": 217872,
+        "density": 0.02385,
+        "chars": 161,
+        "chars_per_1k_ink": 30.99
+      }
+    },
+    {
+      "bbox": [
+        216,
+        882,
+        1797,
+        980
+      ],
+      "category": "Text",
+      "text": "**Section 6.** This resolution is subject to approval by the Mayor of the City of New York.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2308,
+          "min": -1.4928
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.0002,
+          "min": -0.0041
+        }
+      },
+      "ink": {
+        "ink_px": 3906,
+        "area_px": 148274,
+        "density": 0.02634,
+        "chars": 91,
+        "chars_per_1k_ink": 23.3
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 235,
+    "content": {
+      "n_tokens": 96,
+      "mean": -0.0049,
+      "min": -0.2259,
+      "p05": -0.0029,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 220,
+          "logprob": -0.2259,
+          "text": " "
+        },
+        {
+          "index": 73,
+          "token_id": 67961,
+          "logprob": -0.1936,
+          "text": " \"**"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0222,
+          "text": " \"-"
+        },
+        {
+          "index": 86,
+          "token_id": 33508,
+          "logprob": -0.0111,
+          "text": " imply"
+        },
+        {
+          "index": 217,
+          "token_id": 1096,
+          "logprob": -0.0041,
+          "text": " This"
+        },
+        {
+          "index": 164,
+          "token_id": 323,
+          "logprob": -0.0025,
+          "text": " and"
+        },
+        {
+          "index": 74,
+          "token_id": 9620,
+          "logprob": -0.0012,
+          "text": "Section"
+        },
+        {
+          "index": 38,
+          "token_id": 481,
+          "logprob": -0.0009,
+          "text": " -"
+        },
+        {
+          "index": 37,
+          "token_id": 18,
+          "logprob": -0.0007,
+          "text": "3"
+        },
+        {
+          "index": 226,
+          "token_id": 315,
+          "logprob": -0.0006,
+          "text": " of"
+        },
+        {
+          "index": 88,
+          "token_id": 28572,
+          "logprob": -0.0004,
+          "text": " obligation"
+        },
+        {
+          "index": 159,
+          "token_id": 18630,
+          "logprob": -0.0004,
+          "text": " authorized"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.3302,
+      "min": -2.0536,
+      "p05": -1.6784,
+      "p50": -0.0003,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -2.0536,
+          "text": "4"
+        },
+        {
+          "index": 57,
+          "token_id": 20,
+          "logprob": -1.833,
+          "text": "5"
+        },
+        {
+          "index": 46,
+          "token_id": 21,
+          "logprob": -1.7976,
+          "text": "6"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.732,
+          "text": "3"
+        },
+        {
+          "index": 124,
+          "token_id": 17,
+          "logprob": -1.6784,
+          "text": "2"
+        },
+        {
+          "index": 62,
+          "token_id": 15,
+          "logprob": -1.5812,
+          "text": "0"
+        },
+        {
+          "index": 135,
+          "token_id": 21,
+          "logprob": -1.564,
+          "text": "6"
+        },
+        {
+          "index": 51,
+          "token_id": 24,
+          "logprob": -1.5457,
+          "text": "9"
+        },
+        {
+          "index": 189,
+          "token_id": 17,
+          "logprob": -1.4928,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.471,
+          "text": "9"
+        },
+        {
+          "index": 200,
+          "token_id": 15,
+          "logprob": -1.4455,
+          "text": "0"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.421,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 235,
+      "mean": -0.1158,
+      "min": -2.0536,
+      "p05": -1.3741,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 213.41,
+    "std": 15.5,
+    "dark_fraction": 0.00374
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      845.04,
+      1229.52
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      281,
+      409,
+      2066,
+      3006
+    ],
+    "ink_px": 17319,
+    "covered_px": 17229,
+    "covered_fraction": 0.9948,
+    "uncovered_px": 90,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

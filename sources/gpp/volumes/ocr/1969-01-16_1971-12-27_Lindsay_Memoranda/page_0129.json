@@ -1,0 +1,342 @@
+{
+  "page": 129,
+  "source_image": "page_0129.png",
+  "elements": [
+    {
+      "bbox": [
+        1014,
+        207,
+        1207,
+        273
+      ],
+      "category": "Page-header",
+      "text": "9",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5025,
+          "min": -2.1359
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.001,
+          "min": -0.0019
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0926,
+          "min": -0.0926
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        321,
+        437,
+        2037,
+        1433
+      ],
+      "category": "Text",
+      "text": "While the Hatch Act does not apply to local government generally, its approach is relevant. Elected officials and members of the President's cabinet are not restricted by that law from engaging in politics. The heads of important regulatory agencies such as the Interstate Commerce Commission, the Securities and Exchange Commission and the Federal Trade Commission are also free to engage in partisan political activity. In New York, there is no law or practice which prohibits appointees of the Governor such as heads of departments from holding a political party office; nor is there any in the City of New York.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4883,
+          "min": -2.1335
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 111,
+          "mean": -0.0006,
+          "min": -0.0498
+        }
+      },
+      "ink": {
+        "ink_px": 8255,
+        "area_px": 1702876,
+        "density": 0.00485,
+        "chars": 615,
+        "chars_per_1k_ink": 74.5
+      }
+    },
+    {
+      "bbox": [
+        321,
+        1460,
+        2030,
+        1807
+      ],
+      "category": "Text",
+      "text": "Despite the fact that neither the federal nor state governments have restricted department heads against holding political party office, we believe the City should go further than either in that respect.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3158,
+          "min": -1.7352
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0001,
+          "min": -0.0007
+        }
+      },
+      "ink": {
+        "ink_px": 3067,
+        "area_px": 593649,
+        "density": 0.00517,
+        "chars": 203,
+        "chars_per_1k_ink": 66.19
+      }
+    },
+    {
+      "bbox": [
+        312,
+        1834,
+        2080,
+        2360
+      ],
+      "category": "Text",
+      "text": "In our opinion the heads of agencies such as Police, Fire, Sanitation, Law, Personnel and City Planning should not hold office in a political party. As Mayor LaGuardia said, \"There is no 'Republican' or 'Democratic' way to clean the streets.\" Nor is there any \"Conservative\" or \"Liberal\" or any other \"political party way\" to run a municipal department. We",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.38,
+          "min": -1.852
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 83,
+          "mean": -0.0025,
+          "min": -0.1674
+        }
+      },
+      "ink": {
+        "ink_px": 5737,
+        "area_px": 927520,
+        "density": 0.00619,
+        "chars": 356,
+        "chars_per_1k_ink": 62.05
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 378,
+    "content": {
+      "n_tokens": 228,
+      "mean": -0.0016,
+      "min": -0.1674,
+      "p05": -0.0012,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 346,
+          "token_id": 86865,
+          "logprob": -0.1674,
+          "text": ".\\\""
+        },
+        {
+          "index": 37,
+          "token_id": 24,
+          "logprob": -0.0926,
+          "text": "9"
+        },
+        {
+          "index": 84,
+          "token_id": 8789,
+          "logprob": -0.0498,
+          "text": " generally"
+        },
+        {
+          "index": 335,
+          "token_id": 68455,
+          "logprob": -0.0166,
+          "text": "Republican"
+        },
+        {
+          "index": 325,
+          "token_id": 4929,
+          "logprob": -0.0066,
+          "text": " La"
+        },
+        {
+          "index": 116,
+          "token_id": 22515,
+          "logprob": -0.0042,
+          "text": " regulatory"
+        },
+        {
+          "index": 339,
+          "token_id": 89899,
+          "logprob": -0.0037,
+          "text": "Democratic"
+        },
+        {
+          "index": 352,
+          "token_id": 15220,
+          "logprob": -0.0026,
+          "text": "Cons"
+        },
+        {
+          "index": 157,
+          "token_id": 9540,
+          "logprob": -0.0025,
+          "text": " appoint"
+        },
+        {
+          "index": 166,
+          "token_id": 25215,
+          "logprob": -0.0017,
+          "text": " departments"
+        },
+        {
+          "index": 76,
+          "token_id": 58894,
+          "logprob": -0.0012,
+          "text": " Hatch"
+        },
+        {
+          "index": 326,
+          "token_id": 20806,
+          "logprob": -0.0012,
+          "text": "Guard"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 87,
+      "mean": -0.3957,
+      "min": -2.1359,
+      "p05": -1.9022,
+      "p50": -0.0005,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 8,
+          "token_id": 19,
+          "logprob": -2.1359,
+          "text": "4"
+        },
+        {
+          "index": 62,
+          "token_id": 18,
+          "logprob": -2.1335,
+          "text": "3"
+        },
+        {
+          "index": 45,
+          "token_id": 16,
+          "logprob": -2.0591,
+          "text": "1"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -1.9664,
+          "text": "7"
+        },
+        {
+          "index": 24,
+          "token_id": 18,
+          "logprob": -1.914,
+          "text": "3"
+        },
+        {
+          "index": 56,
+          "token_id": 22,
+          "logprob": -1.8745,
+          "text": "7"
+        },
+        {
+          "index": 268,
+          "token_id": 19,
+          "logprob": -1.852,
+          "text": "4"
+        },
+        {
+          "index": 13,
+          "token_id": 22,
+          "logprob": -1.7984,
+          "text": "7"
+        },
+        {
+          "index": 262,
+          "token_id": 17,
+          "logprob": -1.7548,
+          "text": "2"
+        },
+        {
+          "index": 19,
+          "token_id": 22,
+          "logprob": -1.7389,
+          "text": "7"
+        },
+        {
+          "index": 210,
+          "token_id": 22,
+          "logprob": -1.7352,
+          "text": "7"
+        },
+        {
+          "index": 274,
+          "token_id": 15,
+          "logprob": -1.5301,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 378,
+      "mean": -0.0942,
+      "min": -2.1359,
+      "p05": -0.5637,
+      "p50": -0.0,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.81,
+    "std": 15.27,
+    "dark_fraction": 0.00373
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      892.32,
+      1149.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      297,
+      383,
+      2181,
+      2810
+    ],
+    "ink_px": 17059,
+    "covered_px": 17059,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

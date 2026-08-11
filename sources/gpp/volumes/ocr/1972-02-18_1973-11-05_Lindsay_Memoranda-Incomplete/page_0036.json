@@ -1,0 +1,343 @@
+{
+  "page": 36,
+  "source_image": "page_0036.png",
+  "elements": [
+    {
+      "bbox": [
+        576,
+        341,
+        1741,
+        481
+      ],
+      "category": "Section-header",
+      "text": "## Cooperation From Transportation",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4779,
+          "min": -1.9882
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0052,
+          "min": -0.0105
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0542,
+          "min": -0.2157
+        }
+      },
+      "ink": {
+        "ink_px": 747,
+        "area_px": 84240,
+        "density": 0.00887,
+        "chars": 34,
+        "chars_per_1k_ink": 45.52
+      }
+    },
+    {
+      "bbox": [
+        576,
+        441,
+        970,
+        547
+      ],
+      "category": "Section-header",
+      "text": "### Operators",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4887,
+          "min": -1.797
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1566,
+          "min": -0.3133
+        },
+        "text": {
+          "n_tokens": 2,
+          "mean": -0.0058,
+          "min": -0.01
+        }
+      },
+      "ink": {
+        "ink_px": 92,
+        "area_px": 42372,
+        "density": 0.00217,
+        "chars": 13,
+        "chars_per_1k_ink": 141.3
+      }
+    },
+    {
+      "bbox": [
+        568,
+        481,
+        2052,
+        1106
+      ],
+      "category": "Text",
+      "text": "This shifting of passengers affected the operations of the areas transportation systems and many already have made adjustments in their schedules. After identifying transportation difficulties, the project sponsors met with commuter rail and transit systems operators to suggest certain schedule and service changes to better serve project participants. As a result, extra trains were added or service changes were made by PATH, the New York City Transit Authority, and the Erie-Lackawanna, Penn Central and Central Railroad of New Jersey commuter lines.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4167,
+          "min": -2.0208
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 93,
+          "mean": -0.0002,
+          "min": -0.0086
+        }
+      },
+      "ink": {
+        "ink_px": 15610,
+        "area_px": 935720,
+        "density": 0.01668,
+        "chars": 554,
+        "chars_per_1k_ink": 35.49
+      }
+    },
+    {
+      "bbox": [
+        404,
+        1464,
+        2156,
+        3054
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4378,
+          "min": -2.0982
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 7035,
+        "area_px": 2720960,
+        "density": 0.00259,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 241,
+    "content": {
+      "n_tokens": 99,
+      "mean": -0.0025,
+      "min": -0.2157,
+      "p05": -0.0026,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 565,
+          "logprob": -0.2157,
+          "text": "##"
+        },
+        {
+          "index": 75,
+          "token_id": 14374,
+          "logprob": -0.01,
+          "text": "###"
+        },
+        {
+          "index": 192,
+          "token_id": 672,
+          "logprob": -0.0086,
+          "text": "aw"
+        },
+        {
+          "index": 160,
+          "token_id": 8683,
+          "logprob": -0.0031,
+          "text": " serve"
+        },
+        {
+          "index": 122,
+          "token_id": 5671,
+          "logprob": -0.0027,
+          "text": " areas"
+        },
+        {
+          "index": 149,
+          "token_id": 5942,
+          "logprob": -0.0026,
+          "text": " systems"
+        },
+        {
+          "index": 76,
+          "token_id": 64420,
+          "logprob": -0.0016,
+          "text": " Operators"
+        },
+        {
+          "index": 119,
+          "token_id": 7525,
+          "logprob": -0.0011,
+          "text": " operations"
+        },
+        {
+          "index": 37,
+          "token_id": 72708,
+          "logprob": -0.001,
+          "text": " Cooperation"
+        },
+        {
+          "index": 162,
+          "token_id": 13026,
+          "logprob": -0.0008,
+          "text": " participants"
+        },
+        {
+          "index": 199,
+          "token_id": 69017,
+          "logprob": -0.0006,
+          "text": " Railroad"
+        },
+        {
+          "index": 205,
+          "token_id": 1189,
+          "logprob": -0.0004,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 84,
+      "mean": -0.4253,
+      "min": -2.0982,
+      "p05": -1.9801,
+      "p50": -0.0009,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 219,
+          "token_id": 19,
+          "logprob": -2.0982,
+          "text": "4"
+        },
+        {
+          "index": 231,
+          "token_id": 19,
+          "logprob": -2.0805,
+          "text": "4"
+        },
+        {
+          "index": 101,
+          "token_id": 21,
+          "logprob": -2.0208,
+          "text": "6"
+        },
+        {
+          "index": 213,
+          "token_id": 19,
+          "logprob": -2.0051,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.9882,
+          "text": "6"
+        },
+        {
+          "index": 95,
+          "token_id": 17,
+          "logprob": -1.9346,
+          "text": "2"
+        },
+        {
+          "index": 225,
+          "token_id": 21,
+          "logprob": -1.9042,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.8779,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.826,
+          "text": "1"
+        },
+        {
+          "index": 62,
+          "token_id": 22,
+          "logprob": -1.797,
+          "text": "7"
+        },
+        {
+          "index": 84,
+          "token_id": 23,
+          "logprob": -1.7156,
+          "text": "8"
+        },
+        {
+          "index": 52,
+          "token_id": 16,
+          "logprob": -1.6874,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 241,
+      "mean": -0.1551,
+      "min": -2.0982,
+      "p05": -1.6843,
+      "p50": -0.0,
+      "n_below_threshold": 4
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 181.68,
+    "std": 16.11,
+    "dark_fraction": 0.00452
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      940.8,
+      1233.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      313,
+      411,
+      2300,
+      3014
+    ],
+    "ink_px": 23389,
+    "covered_px": 23389,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

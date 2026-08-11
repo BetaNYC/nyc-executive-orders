@@ -1,0 +1,51 @@
+{
+  "page": 19,
+  "source_image": "page_0019.png",
+  "elements": [],
+  "parse_error": "could not find valid JSON in model output",
+  "raw_text": "[{\"bbox\": [39, 21, 1173, 1847], \"category\": \"Text\", \"text\": \"",
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 35,
+    "content": null,
+    "layout": null,
+    "all": {
+      "n_tokens": 35,
+      "mean": -0.376,
+      "min": -2.0524,
+      "p05": -1.9476,
+      "p50": -0.0001,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.91,
+    "std": 6.94,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      685.68,
+      435.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      145,
+      228,
+      1064,
+      1676
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

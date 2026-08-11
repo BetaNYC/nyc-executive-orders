@@ -1,0 +1,421 @@
+{
+  "page": 116,
+  "source_image": "page_0116.png",
+  "elements": [
+    {
+      "bbox": [
+        139,
+        80,
+        431,
+        104
+      ],
+      "category": "Page-header",
+      "text": "EXECUTIVE ORDER NO. 74",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.3656,
+          "min": -1.3575
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.008,
+          "min": -0.0161
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0004,
+          "min": -0.0018
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        587,
+        82,
+        655,
+        104
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.3477,
+          "min": -1.4795
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0034,
+          "min": -0.0067
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0105,
+          "min": -0.0235
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        823,
+        84,
+        1011,
+        109
+      ],
+      "category": "Text",
+      "text": "April 29, 1968",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.267,
+          "min": -1.3481
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5239,
+          "min": -0.5239
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0004,
+          "min": -0.0027
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        139,
+        169,
+        1112,
+        197
+      ],
+      "category": "Text",
+      "text": "subject only to the extent to which the organization is prescribed by law.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2671,
+          "min": -1.4468
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0001,
+          "min": -0.001
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        139,
+        213,
+        1101,
+        283
+      ],
+      "category": "Text",
+      "text": "3. The Economic Development Administrator is designated to act as the representative of the City of New York in relation to economic development administration programs of state and federal agencies.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2736,
+          "min": -1.4267
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0111,
+          "min": -0.0111
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0001,
+          "min": -0.0008
+        }
+      },
+      "ink": {
+        "ink_px": 5,
+        "area_px": 54221,
+        "density": 9e-05,
+        "chars": 199,
+        "chars_per_1k_ink": 39800.0
+      }
+    },
+    {
+      "bbox": [
+        684,
+        351,
+        1094,
+        518
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.406,
+          "min": -2.1481
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0086,
+          "min": -0.0086
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 113,
+        "area_px": 63336,
+        "density": 0.00178,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        756,
+        457,
+        956,
+        503
+      ],
+      "category": "Caption",
+      "text": "John V. Lindsay\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3148,
+          "min": -1.3335
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0434,
+          "min": -0.0434
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0029,
+          "min": -0.0077
+        }
+      },
+      "ink": {
+        "ink_px": 8,
+        "area_px": 9494,
+        "density": 0.00084,
+        "chars": 21,
+        "chars_per_1k_ink": 2625.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 313,
+    "content": {
+      "n_tokens": 75,
+      "mean": -0.0009,
+      "min": -0.0235,
+      "p05": -0.0036,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 76,
+          "token_id": 6523,
+          "logprob": -0.0235,
+          "text": " \"-"
+        },
+        {
+          "index": 77,
+          "token_id": 220,
+          "logprob": -0.0183,
+          "text": " "
+        },
+        {
+          "index": 308,
+          "token_id": 1699,
+          "logprob": -0.0077,
+          "text": "\\n"
+        },
+        {
+          "index": 309,
+          "token_id": 85574,
+          "logprob": -0.0039,
+          "text": "Mayor"
+        },
+        {
+          "index": 307,
+          "token_id": 62784,
+          "logprob": -0.0034,
+          "text": " Lindsay"
+        },
+        {
+          "index": 122,
+          "token_id": 21,
+          "logprob": -0.0027,
+          "text": "6"
+        },
+        {
+          "index": 304,
+          "token_id": 13079,
+          "logprob": -0.0024,
+          "text": "John"
+        },
+        {
+          "index": 38,
+          "token_id": 5664,
+          "logprob": -0.0018,
+          "text": " NO"
+        },
+        {
+          "index": 34,
+          "token_id": 46340,
+          "logprob": -0.0013,
+          "text": "EXEC"
+        },
+        {
+          "index": 159,
+          "token_id": 11501,
+          "logprob": -0.001,
+          "text": "subject"
+        },
+        {
+          "index": 217,
+          "token_id": 1160,
+          "logprob": -0.0008,
+          "text": " act"
+        },
+        {
+          "index": 114,
+          "token_id": 28046,
+          "logprob": -0.0005,
+          "text": "April"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 136,
+      "mean": -0.3029,
+      "min": -2.1481,
+      "p05": -1.3538,
+      "p50": -0.0036,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 258,
+          "token_id": 19,
+          "logprob": -2.1481,
+          "text": "4"
+        },
+        {
+          "index": 247,
+          "token_id": 19,
+          "logprob": -1.7805,
+          "text": "4"
+        },
+        {
+          "index": 54,
+          "token_id": 17,
+          "logprob": -1.4795,
+          "text": "2"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -1.4507,
+          "text": "7"
+        },
+        {
+          "index": 142,
+          "token_id": 17,
+          "logprob": -1.4468,
+          "text": "2"
+        },
+        {
+          "index": 196,
+          "token_id": 18,
+          "logprob": -1.4267,
+          "text": "3"
+        },
+        {
+          "index": 21,
+          "token_id": 19,
+          "logprob": -1.3575,
+          "text": "4"
+        },
+        {
+          "index": 252,
+          "token_id": 16,
+          "logprob": -1.3526,
+          "text": "1"
+        },
+        {
+          "index": 87,
+          "token_id": 18,
+          "logprob": -1.3481,
+          "text": "3"
+        },
+        {
+          "index": 277,
+          "token_id": 21,
+          "logprob": -1.3335,
+          "text": "6"
+        },
+        {
+          "index": 16,
+          "token_id": 16,
+          "logprob": -1.3327,
+          "text": "1"
+        },
+        {
+          "index": 292,
+          "token_id": 18,
+          "logprob": -1.3288,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 313,
+      "mean": -0.1323,
+      "min": -2.1481,
+      "p05": -1.2283,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.44,
+    "std": 8.97,
+    "dark_fraction": 9e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      675.6,
+      434.88
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      144,
+      225,
+      1063,
+      1651
+    ],
+    "ink_px": 121,
+    "covered_px": 118,
+    "covered_fraction": 0.97521,
+    "uncovered_px": 3,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "page": 318,
+  "source_image": "page_0318.png",
+  "elements": [
+    {
+      "bbox": [
+        526,
+        43,
+        628,
+        154
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.3577,
+          "min": -1.5268
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0906,
+          "min": -0.0906
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        463,
+        165,
+        694,
+        232
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7, N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3001,
+          "min": -1.4785
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.284,
+          "min": -0.284
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0021,
+          "min": -0.0188
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        549,
+        269,
+        591,
+        291
+      ],
+      "category": "Text",
+      "text": "-3-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2718,
+          "min": -1.0665
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.027,
+          "min": -0.027
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0015,
+          "min": -0.0033
+        }
+      },
+      "ink": {
+        "ink_px": 40,
+        "area_px": 989,
+        "density": 0.04044,
+        "chars": 3,
+        "chars_per_1k_ink": 75.0
+      }
+    },
+    {
+      "bbox": [
+        359,
+        429,
+        1012,
+        646
+      ],
+      "category": "List-item",
+      "text": "(2) The Vacancy Control Board, consisting of the Deputy Mayor, City Administrator, the Director of the Budget and the Personnel Director appointed on January 24, 1966 is hereby continued in operation for the purpose of investigating and recommending for approval by the Mayor of request for the filling of positions in these agencies.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2829,
+          "min": -1.3779
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 67,
+          "mean": -0.0003,
+          "min": -0.0086
+        }
+      },
+      "ink": {
+        "ink_px": 2573,
+        "area_px": 144540,
+        "density": 0.0178,
+        "chars": 334,
+        "chars_per_1k_ink": 129.81
+      }
+    },
+    {
+      "bbox": [
+        365,
+        664,
+        1080,
+        985
+      ],
+      "category": "List-item",
+      "text": "(3) The Vacancy Control Board is hereby authorized to act in such a manner as to give the various agencies maximum flexibility in filling vacancies, consistent with the responsibility of operating the City government within the amounts appropriated for the fiscal year 1969-1970. However, the head of agencies must cooperate with the Vacancy Control Board to the maximum extent possible in realizing savings required to meet potential budget deficits that may arise during the fiscal year.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2512,
+          "min": -1.2436
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 93,
+          "mean": -0.0002,
+          "min": -0.0072
+        }
+      },
+      "ink": {
+        "ink_px": 1249,
+        "area_px": 233206,
+        "density": 0.00536,
+        "chars": 489,
+        "chars_per_1k_ink": 391.51
+      }
+    },
+    {
+      "bbox": [
+        372,
+        997,
+        1093,
+        1291
+      ],
+      "category": "List-item",
+      "text": "(4) A monthly report shall be sent to the Deputy Mayor stating the number of positions in the agency, the number filled, the number of vacancies (both regular and leave of absence), the number pending establishment, and the positions each agency expects to fill. Accompanying this report should be a list of vacancies by code and line number, title, schedule line rate, and the rate at which the position will be filled. A duplicate copy of this information must be submitted to the Bureau of the Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2365,
+          "min": -1.2622
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 102,
+          "mean": -0.0031,
+          "min": -0.2574
+        }
+      },
+      "ink": {
+        "ink_px": 1455,
+        "area_px": 214760,
+        "density": 0.00678,
+        "chars": 504,
+        "chars_per_1k_ink": 346.39
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 489,
+    "content": {
+      "n_tokens": 286,
+      "mean": -0.0014,
+      "min": -0.2574,
+      "p05": -0.0021,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 437,
+          "token_id": 52964,
+          "logprob": -0.2574,
+          "text": " Accom"
+        },
+        {
+          "index": 422,
+          "token_id": 701,
+          "logprob": -0.0201,
+          "text": "),"
+        },
+        {
+          "index": 457,
+          "token_id": 1555,
+          "logprob": -0.0191,
+          "text": " line"
+        },
+        {
+          "index": 62,
+          "token_id": 34,
+          "logprob": -0.0188,
+          "text": "C"
+        },
+        {
+          "index": 81,
+          "token_id": 7507,
+          "logprob": -0.0144,
+          "text": ".Y"
+        },
+        {
+          "index": 193,
+          "token_id": 374,
+          "logprob": -0.0086,
+          "text": " is"
+        },
+        {
+          "index": 430,
+          "token_id": 9892,
+          "logprob": -0.0082,
+          "text": " positions"
+        },
+        {
+          "index": 438,
+          "token_id": 1981,
+          "logprob": -0.0081,
+          "text": "pany"
+        },
+        {
+          "index": 288,
+          "token_id": 11752,
+          "logprob": -0.0072,
+          "text": " responsibility"
+        },
+        {
+          "index": 165,
+          "token_id": 279,
+          "logprob": -0.0054,
+          "text": " the"
+        },
+        {
+          "index": 154,
+          "token_id": 11993,
+          "logprob": -0.0033,
+          "text": " \"("
+        },
+        {
+          "index": 116,
+          "token_id": 6523,
+          "logprob": -0.0033,
+          "text": " \"-"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 120,
+      "mean": -0.2638,
+      "min": -1.5268,
+      "p05": -1.2759,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 11,
+          "token_id": 18,
+          "logprob": -1.5268,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.4945,
+          "text": "6"
+        },
+        {
+          "index": 35,
+          "token_id": 18,
+          "logprob": -1.4785,
+          "text": "3"
+        },
+        {
+          "index": 40,
+          "token_id": 20,
+          "logprob": -1.3785,
+          "text": "5"
+        },
+        {
+          "index": 137,
+          "token_id": 17,
+          "logprob": -1.3779,
+          "text": "2"
+        },
+        {
+          "index": 142,
+          "token_id": 21,
+          "logprob": -1.2771,
+          "text": "6"
+        },
+        {
+          "index": 50,
+          "token_id": 17,
+          "logprob": -1.2759,
+          "text": "2"
+        },
+        {
+          "index": 21,
+          "token_id": 19,
+          "logprob": -1.2683,
+          "text": "4"
+        },
+        {
+          "index": 367,
+          "token_id": 18,
+          "logprob": -1.2622,
+          "text": "3"
+        },
+        {
+          "index": 233,
+          "token_id": 19,
+          "logprob": -1.2436,
+          "text": "4"
+        },
+        {
+          "index": 361,
+          "token_id": 22,
+          "logprob": -1.2314,
+          "text": "7"
+        },
+        {
+          "index": 45,
+          "token_id": 19,
+          "logprob": -1.1624,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 489,
+      "mean": -0.0656,
+      "min": -1.5268,
+      "p05": -0.6171,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 166.99,
+    "std": 14.26,
+    "dark_fraction": 0.00369
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      706.8,
+      457.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      152,
+      235,
+      1117,
+      1728
+    ],
+    "ink_px": 5317,
+    "covered_px": 5317,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

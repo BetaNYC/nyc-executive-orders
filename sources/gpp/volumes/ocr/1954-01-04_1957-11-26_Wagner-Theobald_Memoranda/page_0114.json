@@ -1,0 +1,343 @@
+{
+  "page": 114,
+  "source_image": "page_0114.png",
+  "elements": [
+    {
+      "bbox": [
+        948,
+        824,
+        1018,
+        855
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3488,
+          "min": -1.6289
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0119,
+          "min": -0.0215
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0059,
+          "min": -0.0164
+        }
+      },
+      "ink": {
+        "ink_px": 323,
+        "area_px": 2232,
+        "density": 0.14471,
+        "chars": 3,
+        "chars_per_1k_ink": 9.29
+      }
+    },
+    {
+      "bbox": [
+        281,
+        984,
+        1707,
+        1241
+      ],
+      "category": "Text",
+      "text": "The two respective reporting systems are inter-related.\nIn the installation of these systems, it will be necessary for every\ndepartment to coordinate its internal reporting procedures and the\nassignment of reporting personnel to furnish the City Administrator\nand the Budget Director with the information each needs to carry\nout his part of the assigned task.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3409,
+          "min": -1.7713
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 66,
+          "mean": -0.0048,
+          "min": -0.2812
+        }
+      },
+      "ink": {
+        "ink_px": 27746,
+        "area_px": 368538,
+        "density": 0.07529,
+        "chars": 359,
+        "chars_per_1k_ink": 12.94
+      }
+    },
+    {
+      "bbox": [
+        277,
+        1282,
+        1617,
+        1362
+      ],
+      "category": "Text",
+      "text": "I request that your agency give fullest cooperation to both offices.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3025,
+          "min": -1.5925
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0483,
+          "min": -0.576
+        }
+      },
+      "ink": {
+        "ink_px": 6184,
+        "area_px": 109188,
+        "density": 0.05664,
+        "chars": 68,
+        "chars_per_1k_ink": 11.0
+      }
+    },
+    {
+      "bbox": [
+        1067,
+        1503,
+        1903,
+        1683
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3919,
+          "min": -1.9923
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0554,
+          "min": -0.0554
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5555,
+        "area_px": 151380,
+        "density": 0.0367,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 225,
+    "content": {
+      "n_tokens": 81,
+      "mean": -0.0113,
+      "min": -0.576,
+      "p05": -0.0111,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 186,
+          "token_id": 2176,
+          "logprob": -0.576,
+          "text": " both"
+        },
+        {
+          "index": 82,
+          "token_id": 7110,
+          "logprob": -0.2812,
+          "text": ".\\"
+        },
+        {
+          "index": 98,
+          "token_id": 303,
+          "logprob": -0.0207,
+          "text": "nd"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0164,
+          "text": " \"-"
+        },
+        {
+          "index": 84,
+          "token_id": 641,
+          "logprob": -0.0111,
+          "text": "In"
+        },
+        {
+          "index": 188,
+          "token_id": 1189,
+          "logprob": -0.0025,
+          "text": ".\""
+        },
+        {
+          "index": 139,
+          "token_id": 1189,
+          "logprob": -0.0019,
+          "text": ".\""
+        },
+        {
+          "index": 36,
+          "token_id": 17,
+          "logprob": -0.0009,
+          "text": "2"
+        },
+        {
+          "index": 178,
+          "token_id": 1681,
+          "logprob": -0.0006,
+          "text": " request"
+        },
+        {
+          "index": 110,
+          "token_id": 29951,
+          "logprob": -0.0004,
+          "text": "assignment"
+        },
+        {
+          "index": 97,
+          "token_id": 59,
+          "logprob": -0.0003,
+          "text": "\\"
+        },
+        {
+          "index": 37,
+          "token_id": 12,
+          "logprob": -0.0003,
+          "text": "-"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 87,
+      "mean": -0.3276,
+      "min": -1.9923,
+      "p05": -1.6275,
+      "p50": -0.0005,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 203,
+          "token_id": 18,
+          "logprob": -1.9923,
+          "text": "3"
+        },
+        {
+          "index": 209,
+          "token_id": 18,
+          "logprob": -1.8418,
+          "text": "3"
+        },
+        {
+          "index": 50,
+          "token_id": 19,
+          "logprob": -1.7713,
+          "text": "4"
+        },
+        {
+          "index": 197,
+          "token_id": 22,
+          "logprob": -1.6876,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.6289,
+          "text": "8"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.624,
+          "text": "4"
+        },
+        {
+          "index": 215,
+          "token_id": 18,
+          "logprob": -1.602,
+          "text": "3"
+        },
+        {
+          "index": 153,
+          "token_id": 17,
+          "logprob": -1.5925,
+          "text": "2"
+        },
+        {
+          "index": 165,
+          "token_id": 17,
+          "logprob": -1.5687,
+          "text": "2"
+        },
+        {
+          "index": 62,
+          "token_id": 16,
+          "logprob": -1.4507,
+          "text": "1"
+        },
+        {
+          "index": 56,
+          "token_id": 22,
+          "logprob": -1.3913,
+          "text": "7"
+        },
+        {
+          "index": 45,
+          "token_id": 16,
+          "logprob": -1.3677,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 225,
+      "mean": -0.1308,
+      "min": -1.9923,
+      "p05": -1.3656,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.85,
+    "std": 13.02,
+    "dark_fraction": 0.01083
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      790.08,
+      1043.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      263,
+      347,
+      1931,
+      2550
+    ],
+    "ink_px": 39808,
+    "covered_px": 39808,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

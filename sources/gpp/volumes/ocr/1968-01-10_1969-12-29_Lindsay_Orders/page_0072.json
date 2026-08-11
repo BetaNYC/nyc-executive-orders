@@ -1,0 +1,371 @@
+{
+  "page": 72,
+  "source_image": "page_0072.png",
+  "elements": [
+    {
+      "bbox": [
+        119,
+        152,
+        366,
+        174
+      ],
+      "category": "Page-header",
+      "text": "EXECUTIVE ORDER NO. 70",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3362,
+          "min": -1.3523
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3719,
+          "min": -0.7438
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0026,
+          "min": -0.0137
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        118,
+        240,
+        984,
+        329
+      ],
+      "category": "Text",
+      "text": "(2) Upon request of the Chairman, each executive department and agency is authorized and directed, consistent with the law, to furnish the Council available information which the Council may require in the performance of its functions.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2875,
+          "min": -1.2391
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0012,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 42,
+          "mean": -0.0084,
+          "min": -0.2852
+        }
+      },
+      "ink": {
+        "ink_px": 1,
+        "area_px": 75960,
+        "density": 1e-05,
+        "chars": 235,
+        "chars_per_1k_ink": 235000.0
+      }
+    },
+    {
+      "bbox": [
+        118,
+        353,
+        929,
+        397
+      ],
+      "category": "Text",
+      "text": "Section 4. Effective date. This order shall become effective March 19, 1968.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2597,
+          "min": -1.2995
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0028,
+          "min": -0.0307
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 35460,
+        "density": 0.0,
+        "chars": 76,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        590,
+        407,
+        1026,
+        651
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3058,
+          "min": -1.4193
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0046,
+          "min": -0.0046
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 107555,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        441,
+        1414,
+        1041,
+        1487
+      ],
+      "category": "Text",
+      "text": "issuance, award, and sale of bonds, certificates of indebtedness, notes, or other fiscal obligations of the City, or consisting thereof;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.213,
+          "min": -1.2326
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1614,
+          "min": -0.1614
+        },
+        "text": {
+          "n_tokens": 30,
+          "mean": -0.0005,
+          "min": -0.0112
+        }
+      },
+      "ink": {
+        "ink_px": 1117,
+        "area_px": 44696,
+        "density": 0.02499,
+        "chars": 136,
+        "chars_per_1k_ink": 121.75
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 276,
+    "content": {
+      "n_tokens": 104,
+      "mean": -0.0044,
+      "min": -0.2852,
+      "p05": -0.0133,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 105,
+          "token_id": 2500,
+          "logprob": -0.2852,
+          "text": " available"
+        },
+        {
+          "index": 90,
+          "token_id": 9088,
+          "logprob": -0.0382,
+          "text": " agency"
+        },
+        {
+          "index": 157,
+          "token_id": 46923,
+          "logprob": -0.0307,
+          "text": " Effective"
+        },
+        {
+          "index": 77,
+          "token_id": 11993,
+          "logprob": -0.0209,
+          "text": " \"("
+        },
+        {
+          "index": 165,
+          "token_id": 5470,
+          "logprob": -0.019,
+          "text": " March"
+        },
+        {
+          "index": 35,
+          "token_id": 46340,
+          "logprob": -0.0137,
+          "text": "EXEC"
+        },
+        {
+          "index": 254,
+          "token_id": 34437,
+          "logprob": -0.0112,
+          "text": " certificates"
+        },
+        {
+          "index": 39,
+          "token_id": 5664,
+          "logprob": -0.0093,
+          "text": " NO"
+        },
+        {
+          "index": 160,
+          "token_id": 1096,
+          "logprob": -0.0077,
+          "text": " This"
+        },
+        {
+          "index": 153,
+          "token_id": 9620,
+          "logprob": -0.0038,
+          "text": "Section"
+        },
+        {
+          "index": 84,
+          "token_id": 26294,
+          "logprob": -0.0032,
+          "text": " Chairman"
+        },
+        {
+          "index": 272,
+          "token_id": 26,
+          "logprob": -0.0026,
+          "text": ";"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 100,
+      "mean": -0.271,
+      "min": -1.4193,
+      "p05": -1.2421,
+      "p50": -0.0034,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 194,
+          "token_id": 21,
+          "logprob": -1.4193,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 21,
+          "logprob": -1.3523,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.3372,
+          "text": "2"
+        },
+        {
+          "index": 188,
+          "token_id": 22,
+          "logprob": -1.3017,
+          "text": "7"
+        },
+        {
+          "index": 131,
+          "token_id": 18,
+          "logprob": -1.2995,
+          "text": "3"
+        },
+        {
+          "index": 51,
+          "token_id": 23,
+          "logprob": -1.2391,
+          "text": "8"
+        },
+        {
+          "index": 22,
+          "token_id": 19,
+          "logprob": -1.2356,
+          "text": "4"
+        },
+        {
+          "index": 225,
+          "token_id": 16,
+          "logprob": -1.2326,
+          "text": "1"
+        },
+        {
+          "index": 61,
+          "token_id": 19,
+          "logprob": -1.191,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.175,
+          "text": "9"
+        },
+        {
+          "index": 199,
+          "token_id": 16,
+          "logprob": -1.1172,
+          "text": "1"
+        },
+        {
+          "index": 219,
+          "token_id": 19,
+          "logprob": -1.0648,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 276,
+      "mean": -0.1004,
+      "min": -1.4193,
+      "p05": -1.0387,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 172.03,
+    "std": 11.52,
+    "dark_fraction": 0.00085
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      674.88,
+      435.12
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      145,
+      225,
+      1063,
+      1650
+    ],
+    "ink_px": 1118,
+    "covered_px": 1118,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

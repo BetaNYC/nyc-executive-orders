@@ -1,0 +1,251 @@
+{
+  "page": 49,
+  "source_image": "page_0049.png",
+  "elements": [
+    {
+      "bbox": [
+        174,
+        1674,
+        461,
+        1694
+      ],
+      "category": "Text",
+      "text": "THE LOST COUNTRY OF THE SWAPES",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.6061,
+          "min": -2.1626
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2257,
+          "min": -0.2257
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -1.615,
+          "min": -2.8017
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        540,
+        1801,
+        699,
+        1844
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5865,
+          "min": -2.2562
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0523,
+          "min": -0.0523
+        },
+        "text": null
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 80,
+    "content": {
+      "n_tokens": 10,
+      "mean": -1.615,
+      "min": -2.8017,
+      "p05": -2.8001,
+      "p50": -1.3796,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 43,
+          "token_id": 13387,
+          "logprob": -2.8017,
+          "text": " SW"
+        },
+        {
+          "index": 36,
+          "token_id": 17229,
+          "logprob": -2.7981,
+          "text": "THE"
+        },
+        {
+          "index": 37,
+          "token_id": 444,
+          "logprob": -2.6795,
+          "text": " L"
+        },
+        {
+          "index": 40,
+          "token_id": 48768,
+          "logprob": -2.0868,
+          "text": "OUNTRY"
+        },
+        {
+          "index": 39,
+          "token_id": 356,
+          "logprob": -1.6312,
+          "text": " C"
+        },
+        {
+          "index": 42,
+          "token_id": 3168,
+          "logprob": -1.128,
+          "text": " THE"
+        },
+        {
+          "index": 45,
+          "token_id": 1570,
+          "logprob": -1.1035,
+          "text": "ES"
+        },
+        {
+          "index": 38,
+          "token_id": 4233,
+          "logprob": -1.0471,
+          "text": "OST"
+        },
+        {
+          "index": 41,
+          "token_id": 3008,
+          "logprob": -0.4863,
+          "text": " OF"
+        },
+        {
+          "index": 44,
+          "token_id": 2537,
+          "logprob": -0.3874,
+          "text": "AP"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.5745,
+      "min": -2.2562,
+      "p05": -2.1533,
+      "p50": -0.2165,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 53,
+          "token_id": 15,
+          "logprob": -2.2562,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -2.1626,
+          "text": "4"
+        },
+        {
+          "index": 59,
+          "token_id": 16,
+          "logprob": -2.1554,
+          "text": "1"
+        },
+        {
+          "index": 13,
+          "token_id": 19,
+          "logprob": -2.1137,
+          "text": "4"
+        },
+        {
+          "index": 24,
+          "token_id": 19,
+          "logprob": -1.9722,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.8988,
+          "text": "1"
+        },
+        {
+          "index": 64,
+          "token_id": 24,
+          "logprob": -1.5065,
+          "text": "9"
+        },
+        {
+          "index": 70,
+          "token_id": 19,
+          "logprob": -1.4347,
+          "text": "4"
+        },
+        {
+          "index": 52,
+          "token_id": 19,
+          "logprob": -1.174,
+          "text": "4"
+        },
+        {
+          "index": 6,
+          "token_id": 22,
+          "logprob": -1.0022,
+          "text": "7"
+        },
+        {
+          "index": 69,
+          "token_id": 19,
+          "logprob": -0.9908,
+          "text": "4"
+        },
+        {
+          "index": 5,
+          "token_id": 16,
+          "logprob": -0.8519,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 80,
+      "mean": -0.5158,
+      "min": -2.8017,
+      "p05": -2.1672,
+      "p50": -0.0134,
+      "n_below_threshold": 8
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.83,
+    "std": 8.16,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      665.52,
+      426.24
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      221,
+      1041,
+      1627
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

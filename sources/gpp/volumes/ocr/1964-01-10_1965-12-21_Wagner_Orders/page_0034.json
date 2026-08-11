@@ -1,0 +1,382 @@
+{
+  "page": 34,
+  "source_image": "page_0034.png",
+  "elements": [
+    {
+      "bbox": [
+        115,
+        574,
+        567,
+        611
+      ],
+      "category": "Page-header",
+      "text": "Executive Order No. 94",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4205,
+          "min": -1.7734
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0006,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0002,
+          "min": -0.0006
+        }
+      },
+      "ink": {
+        "ink_px": 115,
+        "area_px": 12578,
+        "density": 0.00914,
+        "chars": 22,
+        "chars_per_1k_ink": 191.3
+      }
+    },
+    {
+      "bbox": [
+        805,
+        581,
+        863,
+        615
+      ],
+      "category": "Page-header",
+      "text": "-6-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3729,
+          "min": -1.6626
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0063,
+          "min": -0.0125
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0003,
+          "min": -0.0004
+        }
+      },
+      "ink": {
+        "ink_px": 50,
+        "area_px": 2006,
+        "density": 0.02493,
+        "chars": 3,
+        "chars_per_1k_ink": 60.0
+      }
+    },
+    {
+      "bbox": [
+        1148,
+        589,
+        1397,
+        630
+      ],
+      "category": "Text",
+      "text": "May 27, 1964",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3209,
+          "min": -1.4256
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1603,
+          "min": -0.1603
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 127,
+        "area_px": 10209,
+        "density": 0.01244,
+        "chars": 12,
+        "chars_per_1k_ink": 94.49
+      }
+    },
+    {
+      "bbox": [
+        113,
+        713,
+        1277,
+        1380
+      ],
+      "category": "Text",
+      "text": "certify by executive order that the conditions precedent to applicability with respect to the benefits so granted have been satisfied as to such members included within such agreement, and such benefits shall be applicable to such members at the rate of 5%, effective as of the date and for the term specified in such order, or if no such date and term are therein specified, then as of and beginning with the first day of the 1964-1965 increased-take-home-pay period and extending to and including the last day thereof.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3499,
+          "min": -1.7742
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 109,
+          "mean": -0.0016,
+          "min": -0.0579
+        }
+      },
+      "ink": {
+        "ink_px": 2365,
+        "area_px": 690270,
+        "density": 0.00343,
+        "chars": 520,
+        "chars_per_1k_ink": 219.87
+      }
+    },
+    {
+      "bbox": [
+        108,
+        1408,
+        1335,
+        2075
+      ],
+      "category": "Text",
+      "text": "(d) Notwithstanding the foregoing provisions of this Paragraph 4, the benefits provided by Paragraph 2 of this order shall apply, with a reduced-rate-of-contribution factor of 2 1/2%, to each member conditionally excluded, under the provisions of subparagraph (a) of this Paragraph 4, from benefits computed on the basis of a reduced-rate-of-contribution factor of 5%; unless the conditions of such exclusion are satisfied, as specified in the applicable provisions of subparagraphs (b) and (c) of this Paragraph 4, so as to entitle such member to the",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3172,
+          "min": -1.6633
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0381,
+          "min": -0.0381
+        },
+        "text": {
+          "n_tokens": 122,
+          "mean": -0.0049,
+          "min": -0.594
+        }
+      },
+      "ink": {
+        "ink_px": 1263,
+        "area_px": 727744,
+        "density": 0.00174,
+        "chars": 551,
+        "chars_per_1k_ink": 436.26
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 431,
+    "content": {
+      "n_tokens": 251,
+      "mean": -0.0031,
+      "min": -0.594,
+      "p05": -0.0007,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 338,
+          "token_id": 14859,
+          "logprob": -0.594,
+          "text": "-con"
+        },
+        {
+          "index": 255,
+          "token_id": 2385,
+          "logprob": -0.0579,
+          "text": "-t"
+        },
+        {
+          "index": 170,
+          "token_id": 311,
+          "logprob": -0.0451,
+          "text": " to"
+        },
+        {
+          "index": 230,
+          "token_id": 57079,
+          "logprob": -0.0264,
+          "text": " therein"
+        },
+        {
+          "index": 263,
+          "token_id": 323,
+          "logprob": -0.024,
+          "text": " and"
+        },
+        {
+          "index": 161,
+          "token_id": 12246,
+          "logprob": -0.0128,
+          "text": "cert"
+        },
+        {
+          "index": 233,
+          "token_id": 1221,
+          "logprob": -0.0048,
+          "text": " then"
+        },
+        {
+          "index": 254,
+          "token_id": 7172,
+          "logprob": -0.0023,
+          "text": " increased"
+        },
+        {
+          "index": 387,
+          "token_id": 16175,
+          "logprob": -0.0022,
+          "text": "%;"
+        },
+        {
+          "index": 382,
+          "token_id": 31140,
+          "logprob": -0.0016,
+          "text": "tribution"
+        },
+        {
+          "index": 381,
+          "token_id": 14859,
+          "logprob": -0.0009,
+          "text": "-con"
+        },
+        {
+          "index": 354,
+          "token_id": 27444,
+          "logprob": -0.0007,
+          "text": " excluded"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 104,
+      "mean": -0.3324,
+      "min": -1.7742,
+      "p05": -1.6215,
+      "p50": -0.0013,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 137,
+          "token_id": 18,
+          "logprob": -1.7742,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.7734,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.7619,
+          "text": "4"
+        },
+        {
+          "index": 289,
+          "token_id": 20,
+          "logprob": -1.6633,
+          "text": "5"
+        },
+        {
+          "index": 59,
+          "token_id": 18,
+          "logprob": -1.6626,
+          "text": "3"
+        },
+        {
+          "index": 64,
+          "token_id": 20,
+          "logprob": -1.6242,
+          "text": "5"
+        },
+        {
+          "index": 49,
+          "token_id": 20,
+          "logprob": -1.606,
+          "text": "5"
+        },
+        {
+          "index": 22,
+          "token_id": 16,
+          "logprob": -1.5959,
+          "text": "1"
+        },
+        {
+          "index": 132,
+          "token_id": 18,
+          "logprob": -1.5351,
+          "text": "3"
+        },
+        {
+          "index": 295,
+          "token_id": 20,
+          "logprob": -1.5341,
+          "text": "5"
+        },
+        {
+          "index": 17,
+          "token_id": 22,
+          "logprob": -1.5023,
+          "text": "7"
+        },
+        {
+          "index": 98,
+          "token_id": 22,
+          "logprob": -1.4256,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 431,
+      "mean": -0.0821,
+      "min": -1.7742,
+      "p05": -0.5617,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.81,
+    "std": 11.4,
+    "dark_fraction": 0.00122
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      702.72,
+      1022.88
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      234,
+      341,
+      1717,
+      2500
+    ],
+    "ink_px": 3921,
+    "covered_px": 3920,
+    "covered_fraction": 0.99974,
+    "uncovered_px": 1,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

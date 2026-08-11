@@ -1,0 +1,405 @@
+{
+  "page": 119,
+  "source_image": "page_0119.png",
+  "elements": [
+    {
+      "bbox": [
+        960,
+        180,
+        1034,
+        219
+      ],
+      "category": "Page-header",
+      "text": "-4-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4478,
+          "min": -1.9616
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0011,
+          "min": -0.0021
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0037,
+          "min": -0.0091
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        767,
+        297,
+        1873,
+        514
+      ],
+      "category": "Text",
+      "text": "public the Productivity Program objectives and standards previously submitted to the Mayor pursuant to section 2 (b) of this order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4233,
+          "min": -1.9783
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0016,
+          "min": -0.0016
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0042,
+          "min": -0.1002
+        }
+      },
+      "ink": {
+        "ink_px": 1886,
+        "area_px": 100464,
+        "density": 0.01877,
+        "chars": 131,
+        "chars_per_1k_ink": 69.46
+      }
+    },
+    {
+      "bbox": [
+        384,
+        524,
+        867,
+        577
+      ],
+      "category": "Section-header",
+      "text": "§ 5. Effective Date",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4307,
+          "min": -1.747
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0129,
+          "min": -0.0258
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.1173,
+          "min": -0.5338
+        }
+      },
+      "ink": {
+        "ink_px": 1161,
+        "area_px": 25546,
+        "density": 0.04545,
+        "chars": 19,
+        "chars_per_1k_ink": 16.37
+      }
+    },
+    {
+      "bbox": [
+        528,
+        607,
+        1494,
+        672
+      ],
+      "category": "Text",
+      "text": "This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3314,
+          "min": -1.6105
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0012,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0001,
+          "min": -0.0002
+        }
+      },
+      "ink": {
+        "ink_px": 1484,
+        "area_px": 62725,
+        "density": 0.02366,
+        "chars": 41,
+        "chars_per_1k_ink": 27.63
+      }
+    },
+    {
+      "bbox": [
+        1061,
+        637,
+        2015,
+        1089
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4211,
+          "min": -2.0021
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0047,
+          "min": -0.0047
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5498,
+        "area_px": 376968,
+        "density": 0.01458,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1307,
+        863,
+        1659,
+        942
+      ],
+      "category": "Caption",
+      "text": "John V. Lindsay\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3343,
+          "min": -1.6102
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1003,
+          "min": -0.1003
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0033,
+          "min": -0.0144
+        }
+      },
+      "ink": {
+        "ink_px": 1940,
+        "area_px": 27887,
+        "density": 0.06957,
+        "chars": 21,
+        "chars_per_1k_ink": 10.82
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 260,
+    "content": {
+      "n_tokens": 49,
+      "mean": -0.0173,
+      "min": -0.5338,
+      "p05": -0.0659,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 133,
+          "token_id": 17851,
+          "logprob": -0.5338,
+          "text": "§"
+        },
+        {
+          "index": 137,
+          "token_id": 46923,
+          "logprob": -0.1655,
+          "text": " Effective"
+        },
+        {
+          "index": 79,
+          "token_id": 323,
+          "logprob": -0.1002,
+          "text": " and"
+        },
+        {
+          "index": 255,
+          "token_id": 3022,
+          "logprob": -0.0144,
+          "text": "AY"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0091,
+          "text": " \"-"
+        },
+        {
+          "index": 253,
+          "token_id": 1699,
+          "logprob": -0.0073,
+          "text": "\\n"
+        },
+        {
+          "index": 73,
+          "token_id": 888,
+          "logprob": -0.0044,
+          "text": "public"
+        },
+        {
+          "index": 136,
+          "token_id": 13,
+          "logprob": -0.0042,
+          "text": "."
+        },
+        {
+          "index": 254,
+          "token_id": 44,
+          "logprob": -0.0024,
+          "text": "M"
+        },
+        {
+          "index": 249,
+          "token_id": 13079,
+          "logprob": -0.0018,
+          "text": "John"
+        },
+        {
+          "index": 36,
+          "token_id": 19,
+          "logprob": -0.0015,
+          "text": "4"
+        },
+        {
+          "index": 37,
+          "token_id": 12,
+          "logprob": -0.0006,
+          "text": "-"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 124,
+      "mean": -0.3731,
+      "min": -2.0021,
+      "p05": -1.7427,
+      "p50": -0.0057,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 200,
+          "token_id": 20,
+          "logprob": -2.0021,
+          "text": "5"
+        },
+        {
+          "index": 56,
+          "token_id": 18,
+          "logprob": -1.9783,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 19,
+          "logprob": -1.9616,
+          "text": "4"
+        },
+        {
+          "index": 61,
+          "token_id": 19,
+          "logprob": -1.9521,
+          "text": "4"
+        },
+        {
+          "index": 189,
+          "token_id": 16,
+          "logprob": -1.7889,
+          "text": "1"
+        },
+        {
+          "index": 45,
+          "token_id": 22,
+          "logprob": -1.7694,
+          "text": "7"
+        },
+        {
+          "index": 120,
+          "token_id": 22,
+          "logprob": -1.747,
+          "text": "7"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -1.7184,
+          "text": "7"
+        },
+        {
+          "index": 110,
+          "token_id": 19,
+          "logprob": -1.6888,
+          "text": "4"
+        },
+        {
+          "index": 105,
+          "token_id": 19,
+          "logprob": -1.6743,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.6517,
+          "text": "0"
+        },
+        {
+          "index": 162,
+          "token_id": 17,
+          "logprob": -1.6105,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 260,
+      "mean": -0.1833,
+      "min": -2.0021,
+      "p05": -1.5847,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 182.76,
+    "std": 8.43,
+    "dark_fraction": 0.00214
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      774.24,
+      1269.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      258,
+      423,
+      1892,
+      3104
+    ],
+    "ink_px": 9355,
+    "covered_px": 9217,
+    "covered_fraction": 0.98525,
+    "uncovered_px": 138,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

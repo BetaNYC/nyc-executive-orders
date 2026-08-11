@@ -1,0 +1,309 @@
+{
+  "page": 202,
+  "source_image": "page_0202.png",
+  "elements": [
+    {
+      "bbox": [
+        77,
+        97,
+        992,
+        284
+      ],
+      "category": "List-item",
+      "text": "4. Effective immediately, all agencies which receive or apply for Federal or State aid or grants, shall obtain from the central staff agencies pertinent cost data for inclusion in claims for reimbursement. Such central staff agencies are directed to provide this information as expeditiously as possible. In order to assist in effectuating compliance with this Executive Order, the Deputy Mayor-City Administrator is directed to establish and conduct a \"City-wide Cost Determination Program\".",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.462,
+          "min": -1.8351
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3466,
+          "min": -0.6932
+        },
+        "text": {
+          "n_tokens": 88,
+          "mean": -0.0001,
+          "min": -0.0033
+        }
+      },
+      "ink": {
+        "ink_px": 1883,
+        "area_px": 50400,
+        "density": 0.03736,
+        "chars": 492,
+        "chars_per_1k_ink": 261.29
+      }
+    },
+    {
+      "bbox": [
+        637,
+        356,
+        1124,
+        555
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3928,
+          "min": -1.7899
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0034,
+          "min": -0.0034
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1400,
+        "area_px": 84018,
+        "density": 0.01666,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        704,
+        503,
+        908,
+        547
+      ],
+      "category": "Caption",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2747,
+          "min": -1.2427
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1429,
+          "min": -0.1429
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0018,
+          "min": -0.0144
+        }
+      },
+      "ink": {
+        "ink_px": 291,
+        "area_px": 9135,
+        "density": 0.03186,
+        "chars": 21,
+        "chars_per_1k_ink": 72.16
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 200,
+    "content": {
+      "n_tokens": 100,
+      "mean": -0.0003,
+      "min": -0.0144,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 195,
+          "token_id": 3022,
+          "logprob": -0.0144,
+          "text": "AY"
+        },
+        {
+          "index": 193,
+          "token_id": 1699,
+          "logprob": -0.005,
+          "text": "\\n"
+        },
+        {
+          "index": 33,
+          "token_id": 19,
+          "logprob": -0.0033,
+          "text": "4"
+        },
+        {
+          "index": 92,
+          "token_id": 53543,
+          "logprob": -0.0027,
+          "text": "uating"
+        },
+        {
+          "index": 82,
+          "token_id": 13307,
+          "logprob": -0.0019,
+          "text": "iously"
+        },
+        {
+          "index": 119,
+          "token_id": 2105,
+          "logprob": -0.0011,
+          "text": "\\\""
+        },
+        {
+          "index": 101,
+          "token_id": 22093,
+          "logprob": -0.001,
+          "text": " Mayor"
+        },
+        {
+          "index": 185,
+          "token_id": 26145,
+          "logprob": -0.0007,
+          "text": "JO"
+        },
+        {
+          "index": 194,
+          "token_id": 44,
+          "logprob": -0.0005,
+          "text": "M"
+        },
+        {
+          "index": 58,
+          "token_id": 13304,
+          "logprob": -0.0005,
+          "text": " agencies"
+        },
+        {
+          "index": 191,
+          "token_id": 50,
+          "logprob": -0.0004,
+          "text": "S"
+        },
+        {
+          "index": 35,
+          "token_id": 46923,
+          "logprob": -0.0003,
+          "text": " Effective"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 57,
+      "mean": -0.3621,
+      "min": -1.8351,
+      "p05": -1.6635,
+      "p50": -0.0298,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 20,
+          "token_id": 19,
+          "logprob": -1.8351,
+          "text": "4"
+        },
+        {
+          "index": 139,
+          "token_id": 19,
+          "logprob": -1.7899,
+          "text": "4"
+        },
+        {
+          "index": 6,
+          "token_id": 22,
+          "logprob": -1.6798,
+          "text": "7"
+        },
+        {
+          "index": 15,
+          "token_id": 17,
+          "logprob": -1.6594,
+          "text": "2"
+        },
+        {
+          "index": 133,
+          "token_id": 21,
+          "logprob": -1.6301,
+          "text": "6"
+        },
+        {
+          "index": 10,
+          "token_id": 22,
+          "logprob": -1.6024,
+          "text": "7"
+        },
+        {
+          "index": 128,
+          "token_id": 22,
+          "logprob": -1.5907,
+          "text": "7"
+        },
+        {
+          "index": 144,
+          "token_id": 20,
+          "logprob": -1.3785,
+          "text": "5"
+        },
+        {
+          "index": 163,
+          "token_id": 18,
+          "logprob": -1.2427,
+          "text": "3"
+        },
+        {
+          "index": 158,
+          "token_id": 19,
+          "logprob": -1.1961,
+          "text": "4"
+        },
+        {
+          "index": 173,
+          "token_id": 22,
+          "logprob": -1.0206,
+          "text": "7"
+        },
+        {
+          "index": 168,
+          "token_id": 23,
+          "logprob": -0.9826,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 200,
+      "mean": -0.1045,
+      "min": -1.8351,
+      "p05": -1.0294,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.57,
+    "std": 10.91,
+    "dark_fraction": 0.00268
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      678.0,
+      428.64
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      226,
+      1048,
+      1657
+    ],
+    "ink_px": 3477,
+    "covered_px": 3283,
+    "covered_fraction": 0.9442,
+    "uncovered_px": 194,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

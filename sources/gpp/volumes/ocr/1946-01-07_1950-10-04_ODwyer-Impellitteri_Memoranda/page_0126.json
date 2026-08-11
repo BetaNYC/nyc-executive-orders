@@ -1,0 +1,348 @@
+{
+  "page": 126,
+  "source_image": "page_0126.png",
+  "elements": [
+    {
+      "bbox": [
+        675,
+        573,
+        1745,
+        809
+      ],
+      "category": "Text",
+      "text": "(1) may absent himself from his\ncity employment while engaged in ordered\nmilitary duty;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4717,
+          "min": -2.0018
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3485,
+          "min": -0.3485
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0285,
+          "min": -0.5765
+        }
+      },
+      "ink": {
+        "ink_px": 5629,
+        "area_px": 252992,
+        "density": 0.02225,
+        "chars": 87,
+        "chars_per_1k_ink": 15.46
+      }
+    },
+    {
+      "bbox": [
+        683,
+        881,
+        1758,
+        1387
+      ],
+      "category": "Text",
+      "text": "(2) the first 30 days of military\nduty in any one calendar year shall be\ndeemed ordered, notwithstanding the\nfact that orders therefor are or may\nbe issued with the employee's consent;\n(this provision added by L. 1948 c. 201)",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3824,
+          "min": -1.7707
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 65,
+          "mean": -0.0005,
+          "min": -0.0142
+        }
+      },
+      "ink": {
+        "ink_px": 11944,
+        "area_px": 544962,
+        "density": 0.02192,
+        "chars": 225,
+        "chars_per_1k_ink": 18.84
+      }
+    },
+    {
+      "bbox": [
+        719,
+        1459,
+        1685,
+        1697
+      ],
+      "category": "Text",
+      "text": "(3) for the first 30 days of such\nduty the employee shall receive his\nfull city salary;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3073,
+          "min": -1.6036
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0001,
+          "min": -0.0018
+        }
+      },
+      "ink": {
+        "ink_px": 6531,
+        "area_px": 231352,
+        "density": 0.02823,
+        "chars": 87,
+        "chars_per_1k_ink": 13.32
+      }
+    },
+    {
+      "bbox": [
+        725,
+        1769,
+        1803,
+        2373
+      ],
+      "category": "Text",
+      "text": "(4) if the period of ordered military\nduty exceeds 30 days in any one calendar\nyear, then for the balance of such\nordered military duty the employee\nshall receive such part of his city\nsalary as equals the excess, if any,\nof his military salary.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3114,
+          "min": -1.6109
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 59,
+          "mean": -0.0002,
+          "min": -0.0077
+        }
+      },
+      "ink": {
+        "ink_px": 18210,
+        "area_px": 651240,
+        "density": 0.02796,
+        "chars": 245,
+        "chars_per_1k_ink": 13.45
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 313,
+    "content": {
+      "n_tokens": 170,
+      "mean": -0.0038,
+      "min": -0.5765,
+      "p05": -0.0019,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 42,
+          "token_id": 59,
+          "logprob": -0.5765,
+          "text": "\\"
+        },
+        {
+          "index": 38,
+          "token_id": 27211,
+          "logprob": -0.0167,
+          "text": " absent"
+        },
+        {
+          "index": 112,
+          "token_id": 42341,
+          "logprob": -0.0142,
+          "text": "nde"
+        },
+        {
+          "index": 282,
+          "token_id": 1699,
+          "logprob": -0.0077,
+          "text": "\\n"
+        },
+        {
+          "index": 137,
+          "token_id": 1394,
+          "logprob": -0.0072,
+          "text": "(this"
+        },
+        {
+          "index": 101,
+          "token_id": 59,
+          "logprob": -0.0046,
+          "text": "\\"
+        },
+        {
+          "index": 51,
+          "token_id": 76,
+          "logprob": -0.0034,
+          "text": "m"
+        },
+        {
+          "index": 119,
+          "token_id": 33110,
+          "logprob": -0.0021,
+          "text": "fact"
+        },
+        {
+          "index": 111,
+          "token_id": 59,
+          "logprob": -0.0019,
+          "text": "\\"
+        },
+        {
+          "index": 215,
+          "token_id": 10892,
+          "logprob": -0.0018,
+          "text": ";\""
+        },
+        {
+          "index": 34,
+          "token_id": 11993,
+          "logprob": -0.0013,
+          "text": " \"("
+        },
+        {
+          "index": 283,
+          "token_id": 10544,
+          "logprob": -0.001,
+          "text": "ordered"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 85,
+      "mean": -0.3524,
+      "min": -2.0018,
+      "p05": -1.62,
+      "p50": -0.0006,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -2.0018,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.9422,
+          "text": "3"
+        },
+        {
+          "index": 62,
+          "token_id": 18,
+          "logprob": -1.7707,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.7707,
+          "text": "5"
+        },
+        {
+          "index": 79,
+          "token_id": 22,
+          "logprob": -1.6222,
+          "text": "7"
+        },
+        {
+          "index": 223,
+          "token_id": 20,
+          "logprob": -1.6109,
+          "text": "5"
+        },
+        {
+          "index": 174,
+          "token_id": 20,
+          "logprob": -1.6036,
+          "text": "5"
+        },
+        {
+          "index": 67,
+          "token_id": 16,
+          "logprob": -1.5908,
+          "text": "1"
+        },
+        {
+          "index": 241,
+          "token_id": 18,
+          "logprob": -1.5838,
+          "text": "3"
+        },
+        {
+          "index": 235,
+          "token_id": 18,
+          "logprob": -1.5477,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 24,
+          "logprob": -1.3629,
+          "text": "9"
+        },
+        {
+          "index": 73,
+          "token_id": 23,
+          "logprob": -1.2816,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 313,
+      "mean": -0.0978,
+      "min": -2.0018,
+      "p05": -0.8204,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.36,
+    "std": 13.04,
+    "dark_fraction": 0.00927
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      887.76,
+      1155.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      295,
+      385,
+      2170,
+      2825
+    ],
+    "ink_px": 42432,
+    "covered_px": 42314,
+    "covered_fraction": 0.99722,
+    "uncovered_px": 118,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

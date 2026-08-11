@@ -1,0 +1,371 @@
+{
+  "page": 174,
+  "source_image": "page_0174.png",
+  "elements": [
+    {
+      "bbox": [
+        1069,
+        240,
+        1157,
+        283
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4349,
+          "min": -1.8581
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0022,
+          "min": -0.0042
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.001,
+          "min": -0.0017
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        214,
+        507,
+        2029,
+        756
+      ],
+      "category": "Text",
+      "text": "All contracts with the above firms or with any firm, partnership or corporation of which Melvin Weintraub and Gerald Weintraub are a member, partner, director or officer shall be cancelled or terminated, subject only to payment of any monies owing for goods delivered or work done prior to such cancellation or termination.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4264,
+          "min": -1.954
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 63,
+          "mean": -0.0041,
+          "min": -0.1604
+        }
+      },
+      "ink": {
+        "ink_px": 33942,
+        "area_px": 433509,
+        "density": 0.0783,
+        "chars": 323,
+        "chars_per_1k_ink": 9.52
+      }
+    },
+    {
+      "bbox": [
+        214,
+        787,
+        2031,
+        1074
+      ],
+      "category": "Text",
+      "text": "In the event the above-named persons or firms submit bids for any contract to be awarded by a City agency, the name of such bidder should be referred to the Board of Responsibility for determination of such bidder's responsibility in accordance with Sect. 5(c) of the Resolution of the Board of Estimate adopted on June 30, 1949 (Cal. No. 3180A), as amended.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3388,
+          "min": -1.7221
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 87,
+          "mean": -0.0002,
+          "min": -0.0077
+        }
+      },
+      "ink": {
+        "ink_px": 34149,
+        "area_px": 500528,
+        "density": 0.06823,
+        "chars": 358,
+        "chars_per_1k_ink": 10.48
+      }
+    },
+    {
+      "bbox": [
+        214,
+        1111,
+        1975,
+        1304
+      ],
+      "category": "Text",
+      "text": "Requests for such a meeting of the Board of Responsibility should be addressed to Deputy Comptroller Joseph J. Perrini, and copies thereof forwarded to the Corporation Counsel and the Commissioner of Investigation.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3428,
+          "min": -1.7702
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 38,
+          "mean": -0.0001,
+          "min": -0.0018
+        }
+      },
+      "ink": {
+        "ink_px": 19225,
+        "area_px": 325591,
+        "density": 0.05905,
+        "chars": 214,
+        "chars_per_1k_ink": 11.13
+      }
+    },
+    {
+      "bbox": [
+        1127,
+        1391,
+        2003,
+        1623
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.4389,
+          "min": -2.0674
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0182,
+          "min": -0.0182
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 14830,
+        "area_px": 203928,
+        "density": 0.07272,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 371,
+    "content": {
+      "n_tokens": 191,
+      "mean": -0.0015,
+      "min": -0.1604,
+      "p05": -0.0012,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 92,
+          "token_id": 70513,
+          "logprob": -0.1604,
+          "text": " Wein"
+        },
+        {
+          "index": 85,
+          "token_id": 15305,
+          "logprob": -0.0491,
+          "text": " partnership"
+        },
+        {
+          "index": 111,
+          "token_id": 25681,
+          "logprob": -0.049,
+          "text": " cancelled"
+        },
+        {
+          "index": 193,
+          "token_id": 4311,
+          "logprob": -0.0077,
+          "text": " City"
+        },
+        {
+          "index": 246,
+          "token_id": 8851,
+          "logprob": -0.0044,
+          "text": "Cal"
+        },
+        {
+          "index": 223,
+          "token_id": 1337,
+          "logprob": -0.0024,
+          "text": "(c"
+        },
+        {
+          "index": 333,
+          "token_id": 46897,
+          "logprob": -0.0018,
+          "text": " Investigation"
+        },
+        {
+          "index": 37,
+          "token_id": 17,
+          "logprob": -0.0017,
+          "text": "2"
+        },
+        {
+          "index": 219,
+          "token_id": 94766,
+          "logprob": -0.0014,
+          "text": " Sect"
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.0013,
+          "text": " \"-"
+        },
+        {
+          "index": 213,
+          "token_id": 77531,
+          "logprob": -0.0011,
+          "text": " bidder"
+        },
+        {
+          "index": 307,
+          "token_id": 1265,
+          "logprob": -0.001,
+          "text": " should"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 108,
+      "mean": -0.3746,
+      "min": -2.0674,
+      "p05": -1.7844,
+      "p50": -0.0005,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 355,
+          "token_id": 18,
+          "logprob": -2.0674,
+          "text": "3"
+        },
+        {
+          "index": 46,
+          "token_id": 19,
+          "logprob": -1.954,
+          "text": "4"
+        },
+        {
+          "index": 24,
+          "token_id": 18,
+          "logprob": -1.8581,
+          "text": "3"
+        },
+        {
+          "index": 51,
+          "token_id": 22,
+          "logprob": -1.8014,
+          "text": "7"
+        },
+        {
+          "index": 361,
+          "token_id": 18,
+          "logprob": -1.7881,
+          "text": "3"
+        },
+        {
+          "index": 343,
+          "token_id": 22,
+          "logprob": -1.7854,
+          "text": "7"
+        },
+        {
+          "index": 349,
+          "token_id": 16,
+          "logprob": -1.7824,
+          "text": "1"
+        },
+        {
+          "index": 279,
+          "token_id": 20,
+          "logprob": -1.7702,
+          "text": "5"
+        },
+        {
+          "index": 62,
+          "token_id": 21,
+          "logprob": -1.762,
+          "text": "6"
+        },
+        {
+          "index": 161,
+          "token_id": 19,
+          "logprob": -1.7221,
+          "text": "4"
+        },
+        {
+          "index": 273,
+          "token_id": 16,
+          "logprob": -1.7201,
+          "text": "1"
+        },
+        {
+          "index": 19,
+          "token_id": 22,
+          "logprob": -1.688,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 371,
+      "mean": -0.1099,
+      "min": -2.0674,
+      "p05": -1.1951,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.41,
+    "std": 19.53,
+    "dark_fraction": 0.0225
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      879.12,
+      1159.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      293,
+      386,
+      2148,
+      2833
+    ],
+    "ink_px": 102146,
+    "covered_px": 102146,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

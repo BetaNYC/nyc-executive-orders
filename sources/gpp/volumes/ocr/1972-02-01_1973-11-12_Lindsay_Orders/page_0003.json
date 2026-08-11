@@ -1,0 +1,314 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        256,
+        313,
+        1777,
+        1710
+      ],
+      "category": "Table",
+      "text": "<table><thead><tr><th>Subject</th><th>Order No.</th></tr></thead><tbody><tr><td>Offices established (continued):</td><td></td></tr><tr><td>Mayor's Office for Veteran Action</td><td>84</td></tr><tr><td>Neighborhood Preservation Program</td><td>80</td></tr><tr><td>Planned Unit Development Implementation Council (PUD), Borough of Richmond</td><td>58</td></tr><tr><td>Productivity Program</td><td>86</td></tr><tr><td>Retirement--Increased-take-home-pay-plan during 1972-1973 fiscal year:</td><td></td></tr><tr><td>Board of Education Retirement System</td><td>69</td></tr><tr><td>Certain City-paid officers and employees</td><td>64</td></tr><tr><td>New York City Health and Hospitals Corporation</td><td>63</td></tr><tr><td>Housing Authority</td><td>67</td></tr><tr><td>Housing Development Corporation</td><td>66</td></tr><tr><td>Transit Authority</td><td>65</td></tr><tr><td>Triborough Bridge and Tunnel Authority</td><td>68</td></tr><tr><td>Richmond, Borough of--Establishment of the Executive Planned Unit Development Implementation Council (PUD)</td><td>58</td></tr><tr><td>Salary Adjustment Plan--Continuation</td><td>61</td></tr><tr><td>Salaries--See \"Retirement\"</td><td></td></tr><tr><td>Staten Island Planned Unit Development Implementation Council--Established</td><td>58</td></tr><tr><td>Transit Authority--Increased-take-home-pay-plan</td><td>65</td></tr><tr><td>Triborough Bridge and Tunnel Authority--Increased-take-home-pay-plan</td><td>68</td></tr><tr><td>Union activities--Time spent on conduct of labor relations</td><td>75</td></tr><tr><td>Urban Design Council--Amendments in Executive Order No. 62 issued February 5, 1968 (Order created the Council)</td><td>56</td></tr><tr><td>Urban Design Group--Designation as part of the Department of City Planning</td><td>55</td></tr><tr><td>Veteran Action, Mayor's Office for--Established</td><td>84</td></tr><tr><td>Work force--Census concerning its composition in City agencies (Amendment of Executive Order No. 49)</td><td>60</td></tr><tr><td>Water--Payment for use</td><td>77</td></tr></tbody></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5208,
+          "min": -2.1998
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.6348,
+          "min": -0.6348
+        },
+        "text": {
+          "n_tokens": 665,
+          "mean": -0.0034,
+          "min": -0.3487
+        }
+      },
+      "ink": {
+        "ink_px": 45476,
+        "area_px": 1938613,
+        "density": 0.02346,
+        "chars": 2062,
+        "chars_per_1k_ink": 45.34
+      }
+    },
+    {
+      "bbox": [
+        921,
+        2433,
+        1089,
+        2464
+      ],
+      "category": "Page-footer",
+      "text": "- Page 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3967,
+          "min": -1.9906
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0636,
+          "min": -0.1129
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0028,
+          "min": -0.0077
+        }
+      },
+      "ink": {
+        "ink_px": 222,
+        "area_px": 5208,
+        "density": 0.04263,
+        "chars": 10,
+        "chars_per_1k_ink": 45.05
+      }
+    },
+    {
+      "bbox": [
+        187,
+        2709,
+        1727,
+        2791
+      ],
+      "category": "Page-footer",
+      "text": "Charter, §230 shall be required before approval by the Buildings",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4404,
+          "min": -1.8909
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0734,
+          "min": -0.1454
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0743,
+          "min": -0.9908
+        }
+      },
+      "ink": {
+        "ink_px": 4643,
+        "area_px": 119802,
+        "density": 0.03876,
+        "chars": 64,
+        "chars_per_1k_ink": 13.78
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 798,
+    "content": {
+      "n_tokens": 685,
+      "mean": -0.0049,
+      "min": -0.9908,
+      "p05": -0.0043,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 780,
+          "token_id": 4768,
+          "logprob": -0.9908,
+          "text": "Char"
+        },
+        {
+          "index": 37,
+          "token_id": 1784,
+          "logprob": -0.3487,
+          "text": "><"
+        },
+        {
+          "index": 236,
+          "token_id": 522,
+          "logprob": -0.2948,
+          "text": "</"
+        },
+        {
+          "index": 136,
+          "token_id": 84203,
+          "logprob": -0.2617,
+          "text": " Borough"
+        },
+        {
+          "index": 329,
+          "token_id": 28550,
+          "logprob": -0.2523,
+          "text": ">T"
+        },
+        {
+          "index": 42,
+          "token_id": 339,
+          "logprob": -0.2016,
+          "text": "th"
+        },
+        {
+          "index": 176,
+          "token_id": 313,
+          "logprob": -0.1627,
+          "text": "--"
+        },
+        {
+          "index": 783,
+          "token_id": 16625,
+          "logprob": -0.0805,
+          "text": " §"
+        },
+        {
+          "index": 699,
+          "token_id": 9877,
+          "logprob": -0.0792,
+          "text": ">\""
+        },
+        {
+          "index": 390,
+          "token_id": 313,
+          "logprob": -0.0744,
+          "text": "--"
+        },
+        {
+          "index": 83,
+          "token_id": 29,
+          "logprob": -0.0566,
+          "text": ">"
+        },
+        {
+          "index": 43,
+          "token_id": 29,
+          "logprob": -0.0476,
+          "text": ">"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 67,
+      "mean": -0.4314,
+      "min": -2.1998,
+      "p05": -1.9278,
+      "p50": -0.0142,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -2.1998,
+          "text": "3"
+        },
+        {
+          "index": 24,
+          "token_id": 15,
+          "logprob": -2.0294,
+          "text": "0"
+        },
+        {
+          "index": 713,
+          "token_id": 18,
+          "logprob": -1.9906,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.9436,
+          "text": "6"
+        },
+        {
+          "index": 755,
+          "token_id": 24,
+          "logprob": -1.8909,
+          "text": "9"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.852,
+          "text": "7"
+        },
+        {
+          "index": 725,
+          "token_id": 19,
+          "logprob": -1.7986,
+          "text": "4"
+        },
+        {
+          "index": 767,
+          "token_id": 16,
+          "logprob": -1.7842,
+          "text": "1"
+        },
+        {
+          "index": 749,
+          "token_id": 22,
+          "logprob": -1.6443,
+          "text": "7"
+        },
+        {
+          "index": 761,
+          "token_id": 22,
+          "logprob": -1.4859,
+          "text": "7"
+        },
+        {
+          "index": 719,
+          "token_id": 24,
+          "logprob": -1.3024,
+          "text": "9"
+        },
+        {
+          "index": 707,
+          "token_id": 16,
+          "logprob": -1.1202,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 798,
+      "mean": -0.0406,
+      "min": -2.1998,
+      "p05": -0.0751,
+      "p50": -0.0,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.2,
+    "std": 15.55,
+    "dark_fraction": 0.01139
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      783.6,
+      1265.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      261,
+      421,
+      1915,
+      3093
+    ],
+    "ink_px": 50358,
+    "covered_px": 50341,
+    "covered_fraction": 0.99966,
+    "uncovered_px": 17,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

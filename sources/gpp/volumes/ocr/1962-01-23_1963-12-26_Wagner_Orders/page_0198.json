@@ -1,0 +1,382 @@
+{
+  "page": 198,
+  "source_image": "page_0198.png",
+  "elements": [
+    {
+      "bbox": [
+        823,
+        371,
+        928,
+        406
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3907,
+          "min": -1.6425
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0006,
+          "min": -0.0011
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0527,
+          "min": -0.2019
+        }
+      },
+      "ink": {
+        "ink_px": 204,
+        "area_px": 3816,
+        "density": 0.05346,
+        "chars": 5,
+        "chars_per_1k_ink": 24.51
+      }
+    },
+    {
+      "bbox": [
+        273,
+        487,
+        1511,
+        700
+      ],
+      "category": "Text",
+      "text": "of Administrative Code section B3-30.1, as amended, shall be applicable to and for the benefit of all Members, officers and employees of the Authority who are members of the New York City Employees' Retirement System, the reduced-rate-of-contribution factor to be five per centum.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4129,
+          "min": -1.8816
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 60,
+          "mean": -0.011,
+          "min": -0.4289
+        }
+      },
+      "ink": {
+        "ink_px": 20744,
+        "area_px": 263694,
+        "density": 0.07867,
+        "chars": 280,
+        "chars_per_1k_ink": 13.5
+      }
+    },
+    {
+      "bbox": [
+        267,
+        704,
+        1545,
+        872
+      ],
+      "category": "Text",
+      "text": "**Section 3.** The provisions of this resolution shall not imply any obligation, commitment or promise that the benefits herein granted shall be continued beyond the termination date thereof, as hereinabove prescribed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3305,
+          "min": -1.7261
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 39,
+          "mean": -0.0059,
+          "min": -0.1979
+        }
+      },
+      "ink": {
+        "ink_px": 16604,
+        "area_px": 214704,
+        "density": 0.07733,
+        "chars": 218,
+        "chars_per_1k_ink": 13.13
+      }
+    },
+    {
+      "bbox": [
+        262,
+        877,
+        1439,
+        1014
+      ],
+      "category": "Text",
+      "text": "**Section 4.** The Controller of the Authority is hereby authorized and directed to do and perform all acts necessary to carry out and implement this resolution.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.267,
+          "min": -1.5129
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 31,
+          "mean": -0.0001,
+          "min": -0.0023
+        }
+      },
+      "ink": {
+        "ink_px": 12150,
+        "area_px": 162426,
+        "density": 0.0748,
+        "chars": 161,
+        "chars_per_1k_ink": 13.25
+      }
+    },
+    {
+      "bbox": [
+        260,
+        1016,
+        1495,
+        1105
+      ],
+      "category": "Text",
+      "text": "**Section 5.** This resolution is subject to approval by the Mayor of the City of New York.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2619,
+          "min": -1.7329
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.0,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 7683,
+        "area_px": 109915,
+        "density": 0.0699,
+        "chars": 91,
+        "chars_per_1k_ink": 11.84
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 332,
+    "content": {
+      "n_tokens": 156,
+      "mean": -0.0071,
+      "min": -0.4289,
+      "p05": -0.0119,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 90,
+          "token_id": 8415,
+          "logprob": -0.4289,
+          "text": " applicable"
+        },
+        {
+          "index": 35,
+          "token_id": 220,
+          "logprob": -0.2019,
+          "text": " "
+        },
+        {
+          "index": 167,
+          "token_id": 67961,
+          "logprob": -0.1979,
+          "text": " \"**"
+        },
+        {
+          "index": 105,
+          "token_id": 21914,
+          "logprob": -0.1275,
+          "text": " Authority"
+        },
+        {
+          "index": 81,
+          "token_id": 15,
+          "logprob": -0.0397,
+          "text": "0"
+        },
+        {
+          "index": 123,
+          "token_id": 14859,
+          "logprob": -0.036,
+          "text": "-con"
+        },
+        {
+          "index": 180,
+          "token_id": 33508,
+          "logprob": -0.0302,
+          "text": " imply"
+        },
+        {
+          "index": 77,
+          "token_id": 425,
+          "logprob": -0.0264,
+          "text": " B"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0071,
+          "text": " \"-"
+        },
+        {
+          "index": 259,
+          "token_id": 323,
+          "logprob": -0.0023,
+          "text": " and"
+        },
+        {
+          "index": 124,
+          "token_id": 31140,
+          "logprob": -0.0017,
+          "text": "tribution"
+        },
+        {
+          "index": 37,
+          "token_id": 481,
+          "logprob": -0.0015,
+          "text": " -"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 103,
+      "mean": -0.3107,
+      "min": -1.8816,
+      "p05": -1.6376,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 61,
+          "token_id": 15,
+          "logprob": -1.8816,
+          "text": "0"
+        },
+        {
+          "index": 56,
+          "token_id": 16,
+          "logprob": -1.7463,
+          "text": "1"
+        },
+        {
+          "index": 297,
+          "token_id": 20,
+          "logprob": -1.7329,
+          "text": "5"
+        },
+        {
+          "index": 156,
+          "token_id": 17,
+          "logprob": -1.7261,
+          "text": "2"
+        },
+        {
+          "index": 45,
+          "token_id": 18,
+          "logprob": -1.6869,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.6425,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.594,
+          "text": "3"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -1.5928,
+          "text": "7"
+        },
+        {
+          "index": 230,
+          "token_id": 19,
+          "logprob": -1.5129,
+          "text": "4"
+        },
+        {
+          "index": 151,
+          "token_id": 20,
+          "logprob": -1.5113,
+          "text": "5"
+        },
+        {
+          "index": 22,
+          "token_id": 21,
+          "logprob": -1.5104,
+          "text": "6"
+        },
+        {
+          "index": 145,
+          "token_id": 19,
+          "logprob": -1.4668,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 332,
+      "mean": -0.0997,
+      "min": -1.8816,
+      "p05": -1.1179,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.91,
+    "std": 16.77,
+    "dark_fraction": 0.01856
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      684.72,
+      1013.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      228,
+      337,
+      1673,
+      2477
+    ],
+    "ink_px": 57400,
+    "covered_px": 57385,
+    "covered_fraction": 0.99974,
+    "uncovered_px": 15,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

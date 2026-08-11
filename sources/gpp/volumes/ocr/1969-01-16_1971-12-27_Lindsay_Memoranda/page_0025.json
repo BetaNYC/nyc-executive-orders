@@ -1,0 +1,274 @@
+{
+  "page": 25,
+  "source_image": "page_0025.png",
+  "elements": [
+    {
+      "bbox": [
+        1075,
+        255,
+        1195,
+        300
+      ],
+      "category": "Page-header",
+      "text": "- 8 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3602,
+          "min": -1.7604
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0009,
+          "min": -0.0016
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0805,
+          "min": -0.2413
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        307,
+        429,
+        1875,
+        2947
+      ],
+      "category": "Table",
+      "text": "<table><thead><tr><th>SYMBOL</th><th>NAME AND ADDRESS</th></tr></thead><tbody><tr><td>ERNST</td><td>Ernst &amp; Ernst<br>Cleveland</td></tr><tr><td>ESI</td><td>Electric Sciences Institute<br>Whippany, N.J. 07981</td></tr><tr><td>FAIM</td><td>FAIM Information Services, Inc.<br>521 - Fifth Avenue, N.Y. 10017</td></tr><tr><td>GDG</td><td>GDG Data Systems, Inc.<br>33 Fort Hill Rd., Yonkers, N.Y. 10710</td></tr><tr><td>GE</td><td>General Electric<br>570 Lexington Avenue, N.Y. 10022</td></tr><tr><td>HOSP</td><td>Hospital Computer Applications, Inc.<br>Station Plaza East, Great Neck L.I., 11021</td></tr><tr><td>IBM</td><td>International Business Machines Corp.<br>59 Maiden Lane, New York</td></tr><tr><td>INF</td><td>Information Management Facilities, Inc.<br>425 Park Avenue, N.Y. 10022</td></tr><tr><td>INNO</td><td>Innovation Consultants, Inc.<br>4 East State Street, Doylestown, Pa. 18901</td></tr><tr><td>INTL</td><td>International Programming Corporation<br>9 East 41st Street, N.Y. 10017</td></tr><tr><td>ITT</td><td>ITT Data Services<br>P.O. Box 402, Paramus, N.J.</td></tr><tr><td>JOYNT</td><td>John B. Joynt &amp; Associates, Inc.<br>10 Park Avenue, N.Y. 10016</td></tr><tr><td>KETT</td><td>Kettelle Associates, Inc.<br>1770 Lancaster Pike, Phil.</td></tr><tr><td>LMC</td><td>LMC Data Inc.<br>116 East 27th Street, N.Y. 10016</td></tr><tr><td>LOCK</td><td>Lockhead Aircraft Corp.<br>745 Chrysler Bldg., N.Y. 10017</td></tr><tr><td>MAUCH</td><td>Mauchly Associates, Inc.<br>Montgomeryville, Pa. 18936</td></tr><tr><td>MCDON</td><td>Mc Donnell Automation Center<br>Box 516, St. Louis, Mo. 63166</td></tr></tbody></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4264,
+          "min": -2.04
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.634,
+          "min": -0.634
+        },
+        "text": {
+          "n_tokens": 661,
+          "mean": -0.0045,
+          "min": -0.6932
+        }
+      },
+      "ink": {
+        "ink_px": 90855,
+        "area_px": 3774372,
+        "density": 0.02407,
+        "chars": 1630,
+        "chars_per_1k_ink": 17.94
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 739,
+    "content": {
+      "n_tokens": 665,
+      "mean": -0.0049,
+      "min": -0.6932,
+      "p05": -0.0031,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 77,
+          "token_id": 1784,
+          "logprob": -0.6932,
+          "text": "><"
+        },
+        {
+          "index": 121,
+          "token_id": 25630,
+          "logprob": -0.6434,
+          "text": ">C"
+        },
+        {
+          "index": 117,
+          "token_id": 1121,
+          "logprob": -0.5947,
+          "text": "amp"
+        },
+        {
+          "index": 37,
+          "token_id": 220,
+          "logprob": -0.2413,
+          "text": " "
+        },
+        {
+          "index": 82,
+          "token_id": 339,
+          "logprob": -0.1798,
+          "text": "th"
+        },
+        {
+          "index": 352,
+          "token_id": 36409,
+          "logprob": -0.1761,
+          "text": "INF"
+        },
+        {
+          "index": 83,
+          "token_id": 29,
+          "logprob": -0.1433,
+          "text": ">"
+        },
+        {
+          "index": 145,
+          "token_id": 573,
+          "logprob": -0.1168,
+          "text": "ip"
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.0796,
+          "text": " \"-"
+        },
+        {
+          "index": 351,
+          "token_id": 29,
+          "logprob": -0.0693,
+          "text": ">"
+        },
+        {
+          "index": 76,
+          "token_id": 2005,
+          "logprob": -0.0339,
+          "text": "table"
+        },
+        {
+          "index": 149,
+          "token_id": 3503,
+          "logprob": -0.0306,
+          "text": ".J"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 43,
+      "mean": -0.3806,
+      "min": -2.04,
+      "p05": -1.7181,
+      "p50": -0.012,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 58,
+          "token_id": 20,
+          "logprob": -2.04,
+          "text": "5"
+        },
+        {
+          "index": 8,
+          "token_id": 20,
+          "logprob": -1.7604,
+          "text": "5"
+        },
+        {
+          "index": 19,
+          "token_id": 20,
+          "logprob": -1.7249,
+          "text": "5"
+        },
+        {
+          "index": 13,
+          "token_id": 20,
+          "logprob": -1.6575,
+          "text": "5"
+        },
+        {
+          "index": 47,
+          "token_id": 22,
+          "logprob": -1.5984,
+          "text": "7"
+        },
+        {
+          "index": 64,
+          "token_id": 22,
+          "logprob": -1.5912,
+          "text": "7"
+        },
+        {
+          "index": 24,
+          "token_id": 15,
+          "logprob": -1.4149,
+          "text": "0"
+        },
+        {
+          "index": 52,
+          "token_id": 24,
+          "logprob": -0.894,
+          "text": "9"
+        },
+        {
+          "index": 51,
+          "token_id": 17,
+          "logprob": -0.6484,
+          "text": "2"
+        },
+        {
+          "index": 70,
+          "token_id": 2556,
+          "logprob": -0.634,
+          "text": "Table"
+        },
+        {
+          "index": 55,
+          "token_id": 16,
+          "logprob": -0.4769,
+          "text": "1"
+        },
+        {
+          "index": 56,
+          "token_id": 23,
+          "logprob": -0.4711,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 739,
+      "mean": -0.0266,
+      "min": -2.04,
+      "p05": -0.0128,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.67,
+    "std": 17.35,
+    "dark_fraction": 0.01916
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      918.96,
+      1157.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      306,
+      385,
+      2246,
+      2829
+    ],
+    "ink_px": 90855,
+    "covered_px": 90855,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "page": 10,
+  "source_image": "page_0010.png",
+  "elements": [
+    {
+      "bbox": [
+        158,
+        261,
+        1617,
+        1274
+      ],
+      "category": "Text",
+      "text": "| SUBJECT | NUMBER | DATE |\n|---|---|---|\n| Neighborhood Pedestrian Safety Month | 51 | 5/5/58 |\n| Public contact - city employees | 76 | 5/2/60 |\n| Radiation, interagency council | 55 | 12/8/58 |\n| Real Estate Dept. established | 64 | 4/28/59 |\n| Red Cross fund drive | 73 | 3/3/60 |\n| Senior Citizens Month proclaimed | 50<br>63 | 4/18/58<br>4/17/59 |\n| Sites, public structures, multiple purpose | 69 | 11/13/59 |\n| Snow emergency | 86 | 2/5/61 |\n| Telephone tie lines - Mayor's office | 92<br>94 | 3/11/61<br>6/5/61 |\n| Youth Board, N.Y.C., Youth Services Commissioner | 61 | 3/31/59 |",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3437,
+          "min": -1.5787
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0342,
+          "min": -0.0342
+        },
+        "text": {
+          "n_tokens": 252,
+          "mean": -0.0059,
+          "min": -0.8224
+        }
+      },
+      "ink": {
+        "ink_px": 29753,
+        "area_px": 1299480,
+        "density": 0.0229,
+        "chars": 589,
+        "chars_per_1k_ink": 19.8
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 290,
+    "content": {
+      "n_tokens": 252,
+      "mean": -0.0059,
+      "min": -0.8224,
+      "p05": -0.0009,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 162,
+          "token_id": 9480,
+          "logprob": -0.8224,
+          "text": "<br"
+        },
+        {
+          "index": 44,
+          "token_id": 4421,
+          "logprob": -0.325,
+          "text": "---"
+        },
+        {
+          "index": 35,
+          "token_id": 25203,
+          "logprob": -0.165,
+          "text": " \"|"
+        },
+        {
+          "index": 37,
+          "token_id": 760,
+          "logprob": -0.1178,
+          "text": " |"
+        },
+        {
+          "index": 193,
+          "token_id": 7428,
+          "logprob": -0.0185,
+          "text": " purpose"
+        },
+        {
+          "index": 36,
+          "token_id": 95880,
+          "logprob": -0.0106,
+          "text": " SUBJECT"
+        },
+        {
+          "index": 229,
+          "token_id": 18131,
+          "logprob": -0.0018,
+          "text": " tie"
+        },
+        {
+          "index": 192,
+          "token_id": 5248,
+          "logprob": -0.0016,
+          "text": " multiple"
+        },
+        {
+          "index": 228,
+          "token_id": 56930,
+          "logprob": -0.0015,
+          "text": " Telephone"
+        },
+        {
+          "index": 166,
+          "token_id": 760,
+          "logprob": -0.0014,
+          "text": " |"
+        },
+        {
+          "index": 41,
+          "token_id": 63596,
+          "logprob": -0.0011,
+          "text": " |\\"
+        },
+        {
+          "index": 74,
+          "token_id": 3645,
+          "logprob": -0.0009,
+          "text": " contact"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 21,
+      "mean": -0.3289,
+      "min": -1.5787,
+      "p05": -1.5692,
+      "p50": -0.0072,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 24,
+          "token_id": 19,
+          "logprob": -1.5787,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.5692,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.4718,
+          "text": "8"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.2199,
+          "text": "1"
+        },
+        {
+          "index": 5,
+          "token_id": 16,
+          "logprob": -0.4824,
+          "text": "1"
+        },
+        {
+          "index": 11,
+          "token_id": 21,
+          "logprob": -0.1821,
+          "text": "6"
+        },
+        {
+          "index": 6,
+          "token_id": 20,
+          "logprob": -0.175,
+          "text": "5"
+        },
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -0.1631,
+          "text": "1"
+        },
+        {
+          "index": 30,
+          "token_id": 1178,
+          "logprob": -0.0342,
+          "text": "Text"
+        },
+        {
+          "index": 10,
+          "token_id": 17,
+          "logprob": -0.0235,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -0.0072,
+          "text": "7"
+        },
+        {
+          "index": 16,
+          "token_id": 21,
+          "logprob": -0.0006,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 290,
+      "mean": -0.0289,
+      "min": -1.5787,
+      "p05": -0.015,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.26,
+    "std": 12.54,
+    "dark_fraction": 0.00901
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      756.0,
+      980.16
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      252,
+      326,
+      1848,
+      2396
+    ],
+    "ink_px": 29753,
+    "covered_px": 29753,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

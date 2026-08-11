@@ -972,12 +972,19 @@ def write_provenance(result: IntegrationResult, corpus_dir: str | Path) -> Path:
 
 
 def write_volumes_manifest(result: IntegrationResult, sources_dir: str | Path) -> Path:
-    """Write the pre-1974 volumes manifest (parked, no records this phase)."""
+    """Write the pre-1974 volumes manifest.
+
+    This file is the input Phase E reads (``build_pre1974.load_volumes``), so the
+    note describes where per-order splitting now happens rather than deferring it.
+    """
     path = Path(sources_dir) / "volumes.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = {
-        "note": "Pre-1974 bound compilations, parked. Per-order splitting is a "
-                "later phase (recon report §3). No corpus records minted here.",
+        "note": "Pre-1974 bound compilations (1946-1973). Per-order splitting is "
+                "Phase E: scripts/run_volume_ocr.py OCRs each volume locally, "
+                "scripts/run_pre1974_build.py segments it into corpus records "
+                "under corpus/YYYY/ + corpus/eo_pre1974.json. This manifest is "
+                "that pipeline's input; the GPP integration still owns it.",
         "volumes": sorted(result.volumes_manifest, key=lambda v: v["date_published"] or ""),
     }
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
@@ -1099,8 +1106,9 @@ def render_report(
              "and 2020-EO-056 are now real records with text — re-run "
              "`scripts/run_supersede.py` to resolve them.")
     L.append("- **Pre-1974 (14 volumes)** — parked under `sources/gpp/volumes/`; "
-             "per-order splitting (bookmark/index segmentation + OCR) is a later "
-             "phase, not done here.")
+             "per-order splitting (local VLM OCR + index segmentation) is Phase E, "
+             "not done here — `scripts/run_volume_ocr.py` then "
+             "`scripts/run_pre1974_build.py`, reported in `pre1974_report.md`.")
     L.append("")
     L.append("## Accountability correction")
     L.append("")

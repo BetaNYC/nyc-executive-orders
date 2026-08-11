@@ -1,0 +1,405 @@
+{
+  "page": 328,
+  "source_image": "page_0328.png",
+  "elements": [
+    {
+      "bbox": [
+        537,
+        56,
+        643,
+        167
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.3676,
+          "min": -1.5609
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0342,
+          "min": -0.0342
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        474,
+        179,
+        707,
+        245
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7, N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3088,
+          "min": -1.4707
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2848,
+          "min": -0.2848
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0059,
+          "min": -0.1007
+        }
+      },
+      "ink": {
+        "ink_px": 443,
+        "area_px": 2320,
+        "density": 0.19095,
+        "chars": 53,
+        "chars_per_1k_ink": 119.64
+      }
+    },
+    {
+      "bbox": [
+        542,
+        285,
+        585,
+        307
+      ],
+      "category": "Text",
+      "text": "-8-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2787,
+          "min": -1.2988
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0173,
+          "min": -0.0173
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.002,
+          "min": -0.003
+        }
+      },
+      "ink": {
+        "ink_px": 88,
+        "area_px": 1012,
+        "density": 0.08696,
+        "chars": 3,
+        "chars_per_1k_ink": 34.09
+      }
+    },
+    {
+      "bbox": [
+        391,
+        402,
+        1160,
+        933
+      ],
+      "category": "List-item",
+      "text": "(3) Where the number of days of employment is indicated, each day shall constitute eight (8) working hours for all titles, except the titles of Cable Splicer and Lineman (Departments of Traffic and Police), Lineman's Helper, Boilermaker, Boilermaker's Helper, Armature Winder, Bricklayer, Bridge Painter, Carpenter, Cement Mason, Compositor (Job) (Borough President of Queens), Core Drill Operator (Department of Public Works), Core Drill Operator's Helper, Electrician's Helper, Flagger, Glazier, (Public Works), Mason's Helper, Painter, Paver, Pipe Caulker, Plumber, Plumber's Helper, Rammer, Sheet Metal Worker, Sheet Metal Worker's Helper, Sign Painter, Steam Fitter, Steam Fitter's Helper, Thermostat Repairer, Tinsmith, Laborer (County Clerk's Offices), and Foreman of any of the skilled trades herein for which each day shall constitute seven (7) working hours, and Electrician, Foreman Electrician, Plasterer and Plasterer's Helper for which each day shall constitute six (6) working hours, unless otherwise specified.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3072,
+          "min": -1.3954
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0081,
+          "min": -0.0161
+        },
+        "text": {
+          "n_tokens": 244,
+          "mean": -0.0065,
+          "min": -0.7638
+        }
+      },
+      "ink": {
+        "ink_px": 8874,
+        "area_px": 393024,
+        "density": 0.02258,
+        "chars": 1026,
+        "chars_per_1k_ink": 115.62
+      }
+    },
+    {
+      "bbox": [
+        321,
+        955,
+        680,
+        980
+      ],
+      "category": "Section-header",
+      "text": "## SNOW AND ICE REMOVAL",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3637,
+          "min": -1.7984
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1438,
+          "min": -0.2876
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.1328,
+          "min": -0.6414
+        }
+      },
+      "ink": {
+        "ink_px": 241,
+        "area_px": 9282,
+        "density": 0.02596,
+        "chars": 23,
+        "chars_per_1k_ink": 95.44
+      }
+    },
+    {
+      "bbox": [
+        394,
+        992,
+        1103,
+        1136
+      ],
+      "category": "Text",
+      "text": "Funds provided for this purpose in Code 098-98-901 \"Snow and Ice Removal\" shall be allocated only upon approval of the Mayor and payment to all persons engaged in Snow and Ice Removal shall be made in accordance with the terms and conditions contained therein. All laborers",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2454,
+          "min": -1.2864
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0017,
+          "min": -0.0017
+        },
+        "text": {
+          "n_tokens": 61,
+          "mean": -0.0007,
+          "min": -0.0339
+        }
+      },
+      "ink": {
+        "ink_px": 2366,
+        "area_px": 102784,
+        "density": 0.02302,
+        "chars": 273,
+        "chars_per_1k_ink": 115.38
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 541,
+    "content": {
+      "n_tokens": 337,
+      "mean": -0.0083,
+      "min": -0.7638,
+      "p05": -0.0156,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 233,
+          "token_id": 966,
+          "logprob": -0.7638,
+          "text": "pos"
+        },
+        {
+          "index": 434,
+          "token_id": 17924,
+          "logprob": -0.6414,
+          "text": " SN"
+        },
+        {
+          "index": 433,
+          "token_id": 565,
+          "logprob": -0.4162,
+          "text": "##"
+        },
+        {
+          "index": 369,
+          "token_id": 20598,
+          "logprob": -0.2261,
+          "text": " Electric"
+        },
+        {
+          "index": 80,
+          "token_id": 451,
+          "logprob": -0.1007,
+          "text": " N"
+        },
+        {
+          "index": 314,
+          "token_id": 434,
+          "logprob": -0.0797,
+          "text": " F"
+        },
+        {
+          "index": 209,
+          "token_id": 2516,
+          "logprob": -0.0756,
+          "text": " Bo"
+        },
+        {
+          "index": 292,
+          "token_id": 1818,
+          "logprob": -0.0484,
+          "text": " Pl"
+        },
+        {
+          "index": 265,
+          "token_id": 2988,
+          "logprob": -0.0398,
+          "text": " Fl"
+        },
+        {
+          "index": 164,
+          "token_id": 374,
+          "logprob": -0.0342,
+          "text": " is"
+        },
+        {
+          "index": 477,
+          "token_id": 37,
+          "logprob": -0.0339,
+          "text": "F"
+        },
+        {
+          "index": 376,
+          "token_id": 1818,
+          "logprob": -0.0306,
+          "text": " Pl"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 118,
+      "mean": -0.2945,
+      "min": -1.7984,
+      "p05": -1.3839,
+      "p50": -0.0032,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 405,
+          "token_id": 16,
+          "logprob": -1.7984,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.5609,
+          "text": "7"
+        },
+        {
+          "index": 410,
+          "token_id": 20,
+          "logprob": -1.5389,
+          "text": "5"
+        },
+        {
+          "index": 11,
+          "token_id": 21,
+          "logprob": -1.5389,
+          "text": "6"
+        },
+        {
+          "index": 35,
+          "token_id": 19,
+          "logprob": -1.4707,
+          "text": "4"
+        },
+        {
+          "index": 126,
+          "token_id": 16,
+          "logprob": -1.3954,
+          "text": "1"
+        },
+        {
+          "index": 16,
+          "token_id": 18,
+          "logprob": -1.3819,
+          "text": "3"
+        },
+        {
+          "index": 142,
+          "token_id": 18,
+          "logprob": -1.3682,
+          "text": "3"
+        },
+        {
+          "index": 137,
+          "token_id": 15,
+          "logprob": -1.3254,
+          "text": "0"
+        },
+        {
+          "index": 50,
+          "token_id": 20,
+          "logprob": -1.3126,
+          "text": "5"
+        },
+        {
+          "index": 100,
+          "token_id": 20,
+          "logprob": -1.2988,
+          "text": "5"
+        },
+        {
+          "index": 459,
+          "token_id": 18,
+          "logprob": -1.2864,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 541,
+      "mean": -0.0697,
+      "min": -1.7984,
+      "p05": -0.5214,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 168.0,
+    "std": 15.33,
+    "dark_fraction": 0.00829
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      708.0,
+      459.6
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      153,
+      236,
+      1123,
+      1730
+    ],
+    "ink_px": 12020,
+    "covered_px": 12012,
+    "covered_fraction": 0.99933,
+    "uncovered_px": 8,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

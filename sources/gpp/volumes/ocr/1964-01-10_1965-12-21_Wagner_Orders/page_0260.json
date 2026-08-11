@@ -1,0 +1,372 @@
+{
+  "page": 260,
+  "source_image": "page_0260.png",
+  "elements": [
+    {
+      "bbox": [
+        1181,
+        661,
+        1434,
+        937
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5426,
+          "min": -2.2166
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0054,
+          "min": -0.0054
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 70612,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        1256,
+        1260,
+        1336,
+        1299
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3579,
+          "min": -1.9771
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.5885,
+          "min": -0.6932
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0011,
+          "min": -0.0016
+        }
+      },
+      "ink": {
+        "ink_px": 1,
+        "area_px": 3240,
+        "density": 0.00031,
+        "chars": 3,
+        "chars_per_1k_ink": 3000.0
+      }
+    },
+    {
+      "bbox": [
+        637,
+        1461,
+        1970,
+        1736
+      ],
+      "category": "Text",
+      "text": "It is anticipated that you will appoint an official in your department to effectuate this order with the architect assigned. You shall consult with the architect in selecting the artists for such works of art. The artist is to participate in the planning, as appropriate.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3561,
+          "min": -1.7119
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 50,
+          "mean": -0.0016,
+          "min": -0.0789
+        }
+      },
+      "ink": {
+        "ink_px": 189,
+        "area_px": 368964,
+        "density": 0.00051,
+        "chars": 271,
+        "chars_per_1k_ink": 1433.86
+      }
+    },
+    {
+      "bbox": [
+        641,
+        1758,
+        1917,
+        1943
+      ],
+      "category": "Text",
+      "text": "In carrying out this order your objective should be not to seek the lowest cost only but to acquire the greatest value for the money available, including quality and beauty.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2958,
+          "min": -1.4792
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0002,
+          "min": -0.004
+        }
+      },
+      "ink": {
+        "ink_px": 56,
+        "area_px": 237150,
+        "density": 0.00024,
+        "chars": 173,
+        "chars_per_1k_ink": 3089.29
+      }
+    },
+    {
+      "bbox": [
+        1347,
+        2007,
+        2132,
+        2223
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3611,
+          "min": -1.8554
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0015,
+          "min": -0.0015
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 548,
+        "area_px": 156674,
+        "density": 0.0035,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 264,
+    "content": {
+      "n_tokens": 85,
+      "mean": -0.0011,
+      "min": -0.0789,
+      "p05": -0.0007,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 117,
+          "token_id": 3946,
+          "logprob": -0.0789,
+          "text": " official"
+        },
+        {
+          "index": 205,
+          "token_id": 537,
+          "logprob": -0.004,
+          "text": " not"
+        },
+        {
+          "index": 70,
+          "token_id": 17,
+          "logprob": -0.0016,
+          "text": "2"
+        },
+        {
+          "index": 69,
+          "token_id": 6523,
+          "logprob": -0.0013,
+          "text": " \"-"
+        },
+        {
+          "index": 203,
+          "token_id": 1265,
+          "logprob": -0.0007,
+          "text": " should"
+        },
+        {
+          "index": 115,
+          "token_id": 9540,
+          "logprob": -0.0005,
+          "text": " appoint"
+        },
+        {
+          "index": 201,
+          "token_id": 697,
+          "logprob": -0.0004,
+          "text": " your"
+        },
+        {
+          "index": 227,
+          "token_id": 1189,
+          "logprob": -0.0004,
+          "text": ".\""
+        },
+        {
+          "index": 71,
+          "token_id": 12,
+          "logprob": -0.0003,
+          "text": "-"
+        },
+        {
+          "index": 148,
+          "token_id": 10049,
+          "logprob": -0.0003,
+          "text": " artist"
+        },
+        {
+          "index": 138,
+          "token_id": 26301,
+          "logprob": -0.0002,
+          "text": " selecting"
+        },
+        {
+          "index": 207,
+          "token_id": 5931,
+          "logprob": -0.0001,
+          "text": " seek"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 112,
+      "mean": -0.3709,
+      "min": -2.2166,
+      "p05": -1.8415,
+      "p50": -0.0015,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -2.2166,
+          "text": "1"
+        },
+        {
+          "index": 8,
+          "token_id": 16,
+          "logprob": -2.1384,
+          "text": "1"
+        },
+        {
+          "index": 19,
+          "token_id": 19,
+          "logprob": -2.1021,
+          "text": "4"
+        },
+        {
+          "index": 39,
+          "token_id": 21,
+          "logprob": -1.9771,
+          "text": "6"
+        },
+        {
+          "index": 24,
+          "token_id": 22,
+          "logprob": -1.9199,
+          "text": "7"
+        },
+        {
+          "index": 248,
+          "token_id": 17,
+          "logprob": -1.8554,
+          "text": "2"
+        },
+        {
+          "index": 254,
+          "token_id": 18,
+          "logprob": -1.8301,
+          "text": "3"
+        },
+        {
+          "index": 79,
+          "token_id": 22,
+          "logprob": -1.7119,
+          "text": "7"
+        },
+        {
+          "index": 242,
+          "token_id": 22,
+          "logprob": -1.6555,
+          "text": "7"
+        },
+        {
+          "index": 97,
+          "token_id": 21,
+          "logprob": -1.655,
+          "text": "6"
+        },
+        {
+          "index": 51,
+          "token_id": 21,
+          "logprob": -1.6501,
+          "text": "6"
+        },
+        {
+          "index": 236,
+          "token_id": 22,
+          "logprob": -1.6284,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 264,
+      "mean": -0.1578,
+      "min": -2.2166,
+      "p05": -1.4785,
+      "p50": -0.0,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.72,
+    "std": 7.79,
+    "dark_fraction": 0.00017
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      845.28,
+      1224.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      281,
+      408,
+      2066,
+      2992
+    ],
+    "ink_px": 794,
+    "covered_px": 794,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

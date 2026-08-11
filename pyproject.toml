@@ -2,6 +2,15 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.uv]
+# `vlm` (mlx, Apple Silicon) and `vlm-cuda` (torch/transformers, NVIDIA) run
+# the same model on hardware that is never the same machine, and their
+# transitive deps (transformers in particular) don't share one resolvable
+# version range. Without this, `uv lock`'s universal resolution tries to
+# satisfy both extras' constraints at once and fails even though no one ever
+# installs both together.
+conflicts = [[{ extra = "vlm" }, { extra = "vlm-cuda" }]]
+
 [project]
 name = "nyc-executive-orders"
 version = "0.1.0"
@@ -30,6 +39,14 @@ dependencies = [
   "pymupdf>=1.28,<2",
   # PyYAML — emits the corpus Markdown frontmatter (build_corpus.py). Bounded.
   "pyyaml>=6,<7",
+  # NumPy + Pillow — Phase E page-image measurement (vlm_ocr.py): the blank /
+  # bleed-through classifier, ink-coverage reconciliation, and bbox overlays.
+  # Core rather than part of the `vlm` extra on purpose: the render-only
+  # calibration path (`--classify-blank-only`) must run on any machine, not just
+  # Apple Silicon, since that is how a new volume's thresholds get checked
+  # before a long OCR run. Both are light pure-wheel installs next to pymupdf.
+  "numpy>=2,<3",
+  "pillow>=10,<12",
 ]
 
 [tool.uv.sources]
@@ -50,6 +67,41 @@ live = ["playwright>=1.44,<2"]
 # mirroring the `live`/Playwright pattern. The gated full-corpus OCR run installs
 # this extra: `pip install 'nyc-executive-orders[ocr]'`.
 ocr = ["ocrmypdf>=17.8,<18"]
+# Phase E: the dots.ocr VLM backend (vlm_ocr.py) for the pre-1974 bound volumes.
+# APPLE SILICON ONLY — mlx has no CPU/CUDA build — and lazily imported behind
+# `vlm_ocr.backend()`, so the package installs and its offline tests run without
+# it, exactly like the `ocr` and `live` extras. Pinned against the versions the
+# proven 126-page Impellitteri-Sharkey run used (engineering-standards §0 — built
+# against a real interface, not a guessed one).
+#
+# torch/torchvision are NOT used for compute (MLX does that). transformers'
+# AutoProcessor for the Qwen2-VL family — which dots.ocr is built on —
+# unconditionally loads a video sub-processor that requires both to merely be
+# importable, so they ride along as import-time satisfiers.
+vlm = [
+  "mlx-vlm>=0.6.8,<0.7",
+  "torch>=2.13,<3",
+  "torchvision>=0.28,<1",
+]
+# Phase E, CUDA path: the same dots.ocr model run through transformers/torch on
+# an NVIDIA GPU instead of MLX -- for OCR done on a Linux CUDA box rather than
+# the Apple Silicon dev machine. Lazily imported behind
+# `vlm_ocr.backend("cuda")`, exactly like the `vlm` extra, so installing (or
+# not) this extra never affects the mlx path or the offline tests.
+#
+# Loads the upstream rednote-hilab/dots.ocr checkpoint (mlx-community's repos
+# above are converted FROM this one) with trust_remote_code=True, which is
+# required by its custom modeling code -- and runs code from that HF repo on
+# load, a materially different trust boundary than the mlx path. bitsandbytes
+# is what makes `--quantization 8bit/4bit` possible; accelerate is what makes
+# `device_map="auto"` possible.
+vlm-cuda = [
+  "torch>=2.13,<3",
+  "torchvision>=0.28,<1",
+  "transformers>=4.46,<5",
+  "accelerate>=0.34,<2",
+  "bitsandbytes>=0.43,<1",
+]
 # `wayback` is declared here as a TEST dependency: the Phase B offline tests
 # build real `wayback.CdxRecord` instances (faithful mocks, engineering-standards
 # §0), mirroring the archiver's own test approach. At runtime `wayback` is pulled
@@ -78,14 +130,19 @@ ny-gov-web-archiver = ["ny_gov_web_archiver"]
 pyyaml = ["yaml"]
 # PyMuPDF imports as `fitz` (the historical module name we use).
 pymupdf = ["fitz", "pymupdf"]
+# Pillow imports as `PIL`; mlx-vlm imports as `mlx_vlm` (and pulls `mlx`).
+pillow = ["PIL"]
+mlx-vlm = ["mlx_vlm", "mlx"]
 
 [tool.deptry.per_rule_ignores]
 # playwright (`live` extra) and ocrmypdf (`ocr` extra) are both optional and
 # lazily imported (fetch.py / ocr.py); deptry sees the import but treats the
-# optional-extra dep as unused/misplaced. Silence those signals for both.
-DEP001 = ["playwright", "ocrmypdf"]
-DEP002 = ["playwright", "ocrmypdf"]
-DEP004 = ["playwright", "ocrmypdf"]
+# optional-extra dep as unused/misplaced. Silence those signals for both, plus
+# the `vlm` (mlx) and `vlm-cuda` (torch/transformers) backends in vlm_ocr.py,
+# both lazily imported behind vlm_ocr.backend(kind).
+DEP001 = ["playwright", "ocrmypdf", "mlx", "mlx_vlm", "transformers", "accelerate", "bitsandbytes"]
+DEP002 = ["playwright", "ocrmypdf", "mlx-vlm", "torch", "torchvision", "transformers", "accelerate", "bitsandbytes"]
+DEP004 = ["playwright", "ocrmypdf", "mlx", "mlx_vlm", "transformers", "accelerate", "bitsandbytes"]
 
 [tool.pytest.ini_options]
 # Make src/ (and the scripts/ entry points) importable in tests without an

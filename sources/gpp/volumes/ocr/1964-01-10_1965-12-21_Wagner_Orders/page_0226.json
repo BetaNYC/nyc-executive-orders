@@ -1,0 +1,400 @@
+{
+  "page": 226,
+  "source_image": "page_0226.png",
+  "elements": [
+    {
+      "bbox": [
+        895,
+        174,
+        1077,
+        375
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3798,
+          "min": -1.8396
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0217,
+          "min": -0.0217
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        783,
+        391,
+        1190,
+        514
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7, N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3613,
+          "min": -1.7261
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0024,
+          "min": -0.0024
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0067,
+          "min": -0.113
+        }
+      },
+      "ink": {
+        "ink_px": 55,
+        "area_px": 42945,
+        "density": 0.00128,
+        "chars": 53,
+        "chars_per_1k_ink": 963.64
+      }
+    },
+    {
+      "bbox": [
+        0,
+        600,
+        600,
+        647
+      ],
+      "category": "Text",
+      "text": "EXECUTIVE ORDER NO. 161",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.3701,
+          "min": -1.6288
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3912,
+          "min": -0.3912
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.1584,
+          "min": -1.5797
+        }
+      },
+      "ink": {
+        "ink_px": 13,
+        "area_px": 15648,
+        "density": 0.00083,
+        "chars": 23,
+        "chars_per_1k_ink": 1769.23
+      }
+    },
+    {
+      "bbox": [
+        269,
+        729,
+        1862,
+        900
+      ],
+      "category": "List-item",
+      "text": "22. The Comptroller shall not authorize the payment of any compensation to any person appointed on or after July 1, of this year which is not in conformity with the provisions of this directive.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3912,
+          "min": -1.7061
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0635,
+          "min": -0.127
+        },
+        "text": {
+          "n_tokens": 41,
+          "mean": -0.0001,
+          "min": -0.0009
+        }
+      },
+      "ink": {
+        "ink_px": 17,
+        "area_px": 273480,
+        "density": 6e-05,
+        "chars": 194,
+        "chars_per_1k_ink": 11411.76
+      }
+    },
+    {
+      "bbox": [
+        1211,
+        1141,
+        2060,
+        1297
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3873,
+          "min": -1.8213
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0024,
+          "min": -0.0024
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 812,
+        "area_px": 127327,
+        "density": 0.00638,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1245,
+        1280,
+        1645,
+        1360
+      ],
+      "category": "Text",
+      "text": "ROBERT F. WAGNER\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.2778,
+          "min": -1.6492
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2014,
+          "min": -0.2014
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0016,
+          "min": -0.0162
+        }
+      },
+      "ink": {
+        "ink_px": 32,
+        "area_px": 32481,
+        "density": 0.00099,
+        "chars": 22,
+        "chars_per_1k_ink": 687.5
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 290,
+    "content": {
+      "n_tokens": 83,
+      "mean": -0.021,
+      "min": -1.5797,
+      "p05": -0.0104,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 118,
+          "token_id": 46340,
+          "logprob": -1.5797,
+          "text": "EXEC"
+        },
+        {
+          "index": 84,
+          "token_id": 7507,
+          "logprob": -0.113,
+          "text": ".Y"
+        },
+        {
+          "index": 285,
+          "token_id": 3022,
+          "logprob": -0.0162,
+          "text": "AY"
+        },
+        {
+          "index": 65,
+          "token_id": 34,
+          "logprob": -0.0149,
+          "text": "C"
+        },
+        {
+          "index": 82,
+          "token_id": 11,
+          "logprob": -0.0112,
+          "text": ","
+        },
+        {
+          "index": 122,
+          "token_id": 5664,
+          "logprob": -0.0033,
+          "text": " NO"
+        },
+        {
+          "index": 190,
+          "token_id": 315,
+          "logprob": -0.0009,
+          "text": " of"
+        },
+        {
+          "index": 119,
+          "token_id": 1381,
+          "logprob": -0.0009,
+          "text": "UT"
+        },
+        {
+          "index": 66,
+          "token_id": 3333,
+          "logprob": -0.0006,
+          "text": "ITY"
+        },
+        {
+          "index": 197,
+          "token_id": 89201,
+          "logprob": -0.0006,
+          "text": " conformity"
+        },
+        {
+          "index": 170,
+          "token_id": 1468,
+          "logprob": -0.0005,
+          "text": "roller"
+        },
+        {
+          "index": 284,
+          "token_id": 44,
+          "logprob": -0.0005,
+          "text": "M"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 124,
+      "mean": -0.3453,
+      "min": -1.8396,
+      "p05": -1.6703,
+      "p50": -0.0016,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.8396,
+          "text": "4"
+        },
+        {
+          "index": 231,
+          "token_id": 22,
+          "logprob": -1.8213,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.8182,
+          "text": "5"
+        },
+        {
+          "index": 37,
+          "token_id": 18,
+          "logprob": -1.7261,
+          "text": "3"
+        },
+        {
+          "index": 219,
+          "token_id": 16,
+          "logprob": -1.7079,
+          "text": "1"
+        },
+        {
+          "index": 146,
+          "token_id": 17,
+          "logprob": -1.7061,
+          "text": "2"
+        },
+        {
+          "index": 213,
+          "token_id": 16,
+          "logprob": -1.6739,
+          "text": "1"
+        },
+        {
+          "index": 53,
+          "token_id": 19,
+          "logprob": -1.6501,
+          "text": "4"
+        },
+        {
+          "index": 246,
+          "token_id": 20,
+          "logprob": -1.6492,
+          "text": "5"
+        },
+        {
+          "index": 96,
+          "token_id": 15,
+          "logprob": -1.6288,
+          "text": "0"
+        },
+        {
+          "index": 225,
+          "token_id": 15,
+          "logprob": -1.5814,
+          "text": "0"
+        },
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.5459,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 290,
+      "mean": -0.1537,
+      "min": -1.8396,
+      "p05": -1.4708,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 215.64,
+    "std": 8.94,
+    "dark_fraction": 0.0002
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      827.76,
+      1225.92
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      276,
+      408,
+      2024,
+      2997
+    ],
+    "ink_px": 923,
+    "covered_px": 923,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

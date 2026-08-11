@@ -1,0 +1,382 @@
+{
+  "page": 54,
+  "source_image": "page_0054.png",
+  "elements": [
+    {
+      "bbox": [
+        993,
+        431,
+        1070,
+        472
+      ],
+      "category": "Page-header",
+      "text": "-3-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4425,
+          "min": -1.929
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0135,
+          "min": -0.0269
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0441,
+          "min": -0.0704
+        }
+      },
+      "ink": {
+        "ink_px": 1,
+        "area_px": 3276,
+        "density": 0.00031,
+        "chars": 3,
+        "chars_per_1k_ink": 3000.0
+      }
+    },
+    {
+      "bbox": [
+        297,
+        574,
+        1895,
+        840
+      ],
+      "category": "Text",
+      "text": "Please feel free to call on either Mr. Drabkin (566-6886) or Mr. Kriegel (566-7787) during this period to discuss any problems or to explore the potential of any Federal programs. The Washington office can obtain for you copies of legislation and rules and regulations. There is also a file of this material in Mr. Kriegel's office in City Hall.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4342,
+          "min": -2.0409
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 90,
+          "mean": -0.0012,
+          "min": -0.0893
+        }
+      },
+      "ink": {
+        "ink_px": 4076,
+        "area_px": 427734,
+        "density": 0.00953,
+        "chars": 345,
+        "chars_per_1k_ink": 84.64
+      }
+    },
+    {
+      "bbox": [
+        297,
+        876,
+        1877,
+        1132
+      ],
+      "category": "Text",
+      "text": "Please notify either Mr. Drabkin or Mr. Kriegel of any other Federal aid problems you may have either with grant applications or with pending legislation. The Washington office will from time to time be sending copies of pending legislation to the Federal Programs Officer designated by you for comment and analysis.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3248,
+          "min": -1.7075
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 59,
+          "mean": -0.0011,
+          "min": -0.0167
+        }
+      },
+      "ink": {
+        "ink_px": 6200,
+        "area_px": 405504,
+        "density": 0.01529,
+        "chars": 316,
+        "chars_per_1k_ink": 50.97
+      }
+    },
+    {
+      "bbox": [
+        297,
+        1176,
+        1915,
+        1431
+      ],
+      "category": "Text",
+      "text": "Any City official who intends to testify before the Congress, to submit a statement, or to take any other official position on a Federal matter of concern to the City is to submit to Mr. Drabkin a copy of his remarks or statement 5 days in advance of transmittal to the Federal government.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2668,
+          "min": -1.7425
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 62,
+          "mean": -0.0018,
+          "min": -0.1003
+        }
+      },
+      "ink": {
+        "ink_px": 6620,
+        "area_px": 415232,
+        "density": 0.01594,
+        "chars": 289,
+        "chars_per_1k_ink": 43.66
+      }
+    },
+    {
+      "bbox": [
+        297,
+        1477,
+        1891,
+        1782
+      ],
+      "category": "Text",
+      "text": "It would also be helpful if you would provide Mr. Drabkin and the Washington office with advance notice of any trips you will be making to Washington to meet with Federal officials. This information will allow the office to respond accurately to agency and press inquiries and will permit Mr. Drabkin to represent the City more effectively before the Federal government and with the press.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2467,
+          "min": -1.5434
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 73,
+          "mean": -0.0002,
+          "min": -0.0111
+        }
+      },
+      "ink": {
+        "ink_px": 11011,
+        "area_px": 487390,
+        "density": 0.02259,
+        "chars": 389,
+        "chars_per_1k_ink": 35.33
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 469,
+    "content": {
+      "n_tokens": 287,
+      "mean": -0.0015,
+      "min": -0.1003,
+      "p05": -0.0036,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 327,
+          "token_id": 374,
+          "logprob": -0.1003,
+          "text": " is"
+        },
+        {
+          "index": 99,
+          "token_id": 82491,
+          "logprob": -0.0893,
+          "text": "rieg"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0704,
+          "text": " \"-"
+        },
+        {
+          "index": 37,
+          "token_id": 12,
+          "logprob": -0.0506,
+          "text": "-"
+        },
+        {
+          "index": 248,
+          "token_id": 37616,
+          "logprob": -0.0167,
+          "text": " Programs"
+        },
+        {
+          "index": 235,
+          "token_id": 504,
+          "logprob": -0.0143,
+          "text": " from"
+        },
+        {
+          "index": 215,
+          "token_id": 1008,
+          "logprob": -0.0142,
+          "text": " other"
+        },
+        {
+          "index": 36,
+          "token_id": 18,
+          "logprob": -0.0114,
+          "text": "3"
+        },
+        {
+          "index": 455,
+          "token_id": 4311,
+          "logprob": -0.0111,
+          "text": " City"
+        },
+        {
+          "index": 126,
+          "token_id": 7468,
+          "logprob": -0.008,
+          "text": " programs"
+        },
+        {
+          "index": 222,
+          "token_id": 2987,
+          "logprob": -0.0064,
+          "text": " either"
+        },
+        {
+          "index": 211,
+          "token_id": 82491,
+          "logprob": -0.0053,
+          "text": "rieg"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 106,
+      "mean": -0.3204,
+      "min": -2.0409,
+      "p05": -1.7441,
+      "p50": -0.0001,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 50,
+          "token_id": 19,
+          "logprob": -2.0409,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.929,
+          "text": "3"
+        },
+        {
+          "index": 56,
+          "token_id": 20,
+          "logprob": -1.894,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.8815,
+          "text": "1"
+        },
+        {
+          "index": 45,
+          "token_id": 22,
+          "logprob": -1.7513,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.7446,
+          "text": "2"
+        },
+        {
+          "index": 277,
+          "token_id": 20,
+          "logprob": -1.7425,
+          "text": "5"
+        },
+        {
+          "index": 175,
+          "token_id": 21,
+          "logprob": -1.7075,
+          "text": "6"
+        },
+        {
+          "index": 271,
+          "token_id": 21,
+          "logprob": -1.6662,
+          "text": "6"
+        },
+        {
+          "index": 187,
+          "token_id": 17,
+          "logprob": -1.6417,
+          "text": "2"
+        },
+        {
+          "index": 181,
+          "token_id": 22,
+          "logprob": -1.5701,
+          "text": "7"
+        },
+        {
+          "index": 376,
+          "token_id": 16,
+          "logprob": -1.5434,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 469,
+      "mean": -0.0733,
+      "min": -2.0409,
+      "p05": -0.3019,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.2,
+    "std": 17.27,
+    "dark_fraction": 0.00644
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      878.4,
+      1106.4
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      292,
+      368,
+      2147,
+      2705
+    ],
+    "ink_px": 27908,
+    "covered_px": 27908,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

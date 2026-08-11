@@ -1,0 +1,309 @@
+{
+  "page": 30,
+  "source_image": "page_0030.png",
+  "elements": [
+    {
+      "bbox": [
+        199,
+        680,
+        1702,
+        784
+      ],
+      "category": "Text",
+      "text": "NOW, THEREFORE, by the power vested in me as Mayor of the City of New York, it is hereby ordered",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.5174,
+          "min": -2.1257
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 24,
+          "mean": -0.0133,
+          "min": -0.3134
+        }
+      },
+      "ink": {
+        "ink_px": 5675,
+        "area_px": 152145,
+        "density": 0.0373,
+        "chars": 96,
+        "chars_per_1k_ink": 16.92
+      }
+    },
+    {
+      "bbox": [
+        199,
+        819,
+        1770,
+        1102
+      ],
+      "category": "Text",
+      "text": "that the annexed resolution of the Board of Education, adopted on June 9, 1972, amending the provisions governing the Board of Education Retirement System to the extent necessary to put into effect a pensions-providing-for-increased-take-home-pay plan for the fiscal year 1972-1973 analogous to that authorized by Laws 1962, Ch. 789, is hereby approved.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3695,
+          "min": -1.9873
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 93,
+          "mean": -0.0016,
+          "min": -0.0702
+        }
+      },
+      "ink": {
+        "ink_px": 18674,
+        "area_px": 432345,
+        "density": 0.04319,
+        "chars": 353,
+        "chars_per_1k_ink": 18.9
+      }
+    },
+    {
+      "bbox": [
+        1127,
+        1138,
+        1967,
+        1450
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3882,
+          "min": -1.7712
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0067,
+          "min": -0.0067
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 11242,
+        "area_px": 250087,
+        "density": 0.04495,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 224,
+    "content": {
+      "n_tokens": 117,
+      "mean": -0.004,
+      "min": -0.3134,
+      "p05": -0.0018,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 49,
+          "token_id": 279,
+          "logprob": -0.3134,
+          "text": " the"
+        },
+        {
+          "index": 104,
+          "token_id": 11668,
+          "logprob": -0.0702,
+          "text": " Education"
+        },
+        {
+          "index": 146,
+          "token_id": 2385,
+          "logprob": -0.0581,
+          "text": "-t"
+        },
+        {
+          "index": 144,
+          "token_id": 837,
+          "logprob": -0.0071,
+          "text": "cre"
+        },
+        {
+          "index": 145,
+          "token_id": 1475,
+          "logprob": -0.0062,
+          "text": "ased"
+        },
+        {
+          "index": 40,
+          "token_id": 553,
+          "logprob": -0.002,
+          "text": " by"
+        },
+        {
+          "index": 187,
+          "token_id": 1189,
+          "logprob": -0.0018,
+          "text": ".\""
+        },
+        {
+          "index": 143,
+          "token_id": 3419,
+          "logprob": -0.0013,
+          "text": "-in"
+        },
+        {
+          "index": 170,
+          "token_id": 40989,
+          "logprob": -0.001,
+          "text": " Laws"
+        },
+        {
+          "index": 127,
+          "token_id": 69189,
+          "logprob": -0.001,
+          "text": " Retirement"
+        },
+        {
+          "index": 42,
+          "token_id": 2355,
+          "logprob": -0.0009,
+          "text": " power"
+        },
+        {
+          "index": 161,
+          "token_id": 16,
+          "logprob": -0.0008,
+          "text": "1"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 64,
+      "mean": -0.4026,
+      "min": -2.1257,
+      "p05": -1.7702,
+      "p50": -0.0074,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -2.1257,
+          "text": "4"
+        },
+        {
+          "index": 83,
+          "token_id": 17,
+          "logprob": -1.9873,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.8689,
+          "text": "2"
+        },
+        {
+          "index": 208,
+          "token_id": 22,
+          "logprob": -1.7712,
+          "text": "7"
+        },
+        {
+          "index": 196,
+          "token_id": 22,
+          "logprob": -1.7642,
+          "text": "7"
+        },
+        {
+          "index": 202,
+          "token_id": 23,
+          "logprob": -1.6347,
+          "text": "8"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.5849,
+          "text": "9"
+        },
+        {
+          "index": 214,
+          "token_id": 15,
+          "logprob": -1.5138,
+          "text": "0"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.5102,
+          "text": "0"
+        },
+        {
+          "index": 71,
+          "token_id": 24,
+          "logprob": -1.4249,
+          "text": "9"
+        },
+        {
+          "index": 77,
+          "token_id": 15,
+          "logprob": -1.3053,
+          "text": "0"
+        },
+        {
+          "index": 66,
+          "token_id": 24,
+          "logprob": -1.1425,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 224,
+      "mean": -0.12,
+      "min": -2.1257,
+      "p05": -1.1076,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 184.09,
+    "std": 13.38,
+    "dark_fraction": 0.0081
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      790.32,
+      1251.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      263,
+      417,
+      1932,
+      3058
+    ],
+    "ink_px": 35714,
+    "covered_px": 35591,
+    "covered_fraction": 0.99656,
+    "uncovered_px": 123,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "page": 88,
+  "source_image": "page_0088.png",
+  "elements": [
+    {
+      "bbox": [
+        921,
+        297,
+        1219,
+        627
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4193,
+          "min": -1.7632
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0271,
+          "min": -0.0271
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 8101,
+        "area_px": 72059,
+        "density": 0.11242,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        789,
+        649,
+        1345,
+        795
+      ],
+      "category": "Text",
+      "text": "THE CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK, N. Y. 10007",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3898,
+          "min": -1.7337
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0635,
+          "min": -0.0635
+        },
+        "text": {
+          "n_tokens": 26,
+          "mean": -0.0078,
+          "min": -0.2014
+        }
+      },
+      "ink": {
+        "ink_px": 7969,
+        "area_px": 81176,
+        "density": 0.09817,
+        "chars": 62,
+        "chars_per_1k_ink": 7.78
+      }
+    },
+    {
+      "bbox": [
+        951,
+        873,
+        1119,
+        915
+      ],
+      "category": "Page-header",
+      "text": "- 22 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3722,
+          "min": -1.6541
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.289,
+          "min": -0.576
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0048,
+          "min": -0.017
+        }
+      },
+      "ink": {
+        "ink_px": 447,
+        "area_px": 7098,
+        "density": 0.06298,
+        "chars": 6,
+        "chars_per_1k_ink": 13.42
+      }
+    },
+    {
+      "bbox": [
+        544,
+        1009,
+        1797,
+        1331
+      ],
+      "category": "List-item",
+      "text": "8. The Comptroller shall not authorize the payment of any compensation to any person appointed on or after July 1, of this year which is not in conformity with the provisions of this directive unless specifically authorized by the Mayor or his duly authorized representative.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3152,
+          "min": -1.666
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0002,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 51,
+          "mean": -0.0001,
+          "min": -0.0017
+        }
+      },
+      "ink": {
+        "ink_px": 38276,
+        "area_px": 403466,
+        "density": 0.09487,
+        "chars": 275,
+        "chars_per_1k_ink": 7.18
+      }
+    },
+    {
+      "bbox": [
+        549,
+        1371,
+        1696,
+        1470
+      ],
+      "category": "List-item",
+      "text": "9. This executive order shall take effect July 1, 1970.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2949,
+          "min": -1.426
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 18,
+          "mean": -0.0027,
+          "min": -0.0491
+        }
+      },
+      "ink": {
+        "ink_px": 8851,
+        "area_px": 113553,
+        "density": 0.07795,
+        "chars": 55,
+        "chars_per_1k_ink": 6.21
+      }
+    },
+    {
+      "bbox": [
+        1141,
+        1463,
+        2008,
+        1875
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3004,
+          "min": -1.5574
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0053,
+          "min": -0.0053
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 15558,
+        "area_px": 357204,
+        "density": 0.04355,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 312,
+    "content": {
+      "n_tokens": 100,
+      "mean": -0.0028,
+      "min": -0.2014,
+      "p05": -0.001,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 82,
+          "token_id": 13,
+          "logprob": -0.2014,
+          "text": "."
+        },
+        {
+          "index": 266,
+          "token_id": 5768,
+          "logprob": -0.0491,
+          "text": " July"
+        },
+        {
+          "index": 126,
+          "token_id": 6523,
+          "logprob": -0.017,
+          "text": " \"-"
+        },
+        {
+          "index": 127,
+          "token_id": 220,
+          "logprob": -0.0067,
+          "text": " "
+        },
+        {
+          "index": 208,
+          "token_id": 7241,
+          "logprob": -0.0017,
+          "text": " unless"
+        },
+        {
+          "index": 65,
+          "token_id": 17229,
+          "logprob": -0.0009,
+          "text": "THE"
+        },
+        {
+          "index": 204,
+          "token_id": 19156,
+          "logprob": -0.0009,
+          "text": " provisions"
+        },
+        {
+          "index": 170,
+          "token_id": 13,
+          "logprob": -0.0007,
+          "text": "."
+        },
+        {
+          "index": 174,
+          "token_id": 1468,
+          "logprob": -0.0005,
+          "text": "roller"
+        },
+        {
+          "index": 78,
+          "token_id": 20594,
+          "logprob": -0.0003,
+          "text": "NEW"
+        },
+        {
+          "index": 130,
+          "token_id": 481,
+          "logprob": -0.0002,
+          "text": " -"
+        },
+        {
+          "index": 172,
+          "token_id": 1198,
+          "logprob": -0.0002,
+          "text": " Com"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 130,
+      "mean": -0.3272,
+      "min": -1.7632,
+      "p05": -1.5798,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.7632,
+          "text": "1"
+        },
+        {
+          "index": 48,
+          "token_id": 20,
+          "logprob": -1.7337,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.7277,
+          "text": "7"
+        },
+        {
+          "index": 138,
+          "token_id": 19,
+          "logprob": -1.666,
+          "text": "4"
+        },
+        {
+          "index": 103,
+          "token_id": 18,
+          "logprob": -1.6541,
+          "text": "3"
+        },
+        {
+          "index": 53,
+          "token_id": 20,
+          "logprob": -1.6459,
+          "text": "5"
+        },
+        {
+          "index": 114,
+          "token_id": 20,
+          "logprob": -1.5884,
+          "text": "5"
+        },
+        {
+          "index": 98,
+          "token_id": 16,
+          "logprob": -1.5693,
+          "text": "1"
+        },
+        {
+          "index": 290,
+          "token_id": 18,
+          "logprob": -1.5574,
+          "text": "3"
+        },
+        {
+          "index": 302,
+          "token_id": 20,
+          "logprob": -1.5149,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.468,
+          "text": "7"
+        },
+        {
+          "index": 239,
+          "token_id": 21,
+          "logprob": -1.426,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 312,
+      "mean": -0.1375,
+      "min": -1.7632,
+      "p05": -1.2804,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.85,
+    "std": 16.85,
+    "dark_fraction": 0.01718
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      896.16,
+      1159.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      298,
+      386,
+      2191,
+      2833
+    ],
+    "ink_px": 79563,
+    "covered_px": 79202,
+    "covered_fraction": 0.99546,
+    "uncovered_px": 361,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

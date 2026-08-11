@@ -1,0 +1,414 @@
+{
+  "page": 152,
+  "source_image": "page_0152.png",
+  "elements": [
+    {
+      "bbox": [
+        539,
+        132,
+        580,
+        153
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3305,
+          "min": -1.4416
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0025,
+          "min": -0.0048
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0005,
+          "min": -0.0008
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        631,
+        178,
+        928,
+        199
+      ],
+      "category": "Page-header",
+      "text": "Executive Order No. 79",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2653,
+          "min": -1.0896
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0563,
+          "min": -0.1126
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0001,
+          "min": -0.0005
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        109,
+        265,
+        1037,
+        444
+      ],
+      "category": "Text",
+      "text": "2. This order shall take effect June 14, 1968, provided however, that this order shall not take effect unless a bill entitled \"An Act to amend the administrative code of the city of New York and the judiciary law, in relation to authorizing pensions-providing-for-increased-take-home-pay, death benefits and reductions in member retirement contributions with respect to members and other persons entitled to benefits under certain retirement and pension systems or funds supported by the city of New York is enacted into law.\"",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2568,
+          "min": -1.2714
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 107,
+          "mean": -0.0042,
+          "min": -0.2289
+        }
+      },
+      "ink": {
+        "ink_px": 4711,
+        "area_px": 159120,
+        "density": 0.02961,
+        "chars": 526,
+        "chars_per_1k_ink": 111.65
+      }
+    },
+    {
+      "bbox": [
+        578,
+        510,
+        780,
+        553
+      ],
+      "category": "Text",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2696,
+          "min": -1.2939
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0045,
+          "min": -0.0045
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0003,
+          "min": -0.0015
+        }
+      },
+      "ink": {
+        "ink_px": 304,
+        "area_px": 8844,
+        "density": 0.03437,
+        "chars": 21,
+        "chars_per_1k_ink": 69.08
+      }
+    },
+    {
+      "bbox": [
+        459,
+        620,
+        487,
+        642
+      ],
+      "category": "Text",
+      "text": "by",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2602,
+          "min": -1.0523
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 4,
+        "area_px": 667,
+        "density": 0.006,
+        "chars": 2,
+        "chars_per_1k_ink": 500.0
+      }
+    },
+    {
+      "bbox": [
+        580,
+        664,
+        782,
+        707
+      ],
+      "category": "Text",
+      "text": "ROBERT W. SWEET\nDeputy Mayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.236,
+          "min": -1.05
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0061,
+          "min": -0.0061
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0002,
+          "min": -0.0012
+        }
+      },
+      "ink": {
+        "ink_px": 324,
+        "area_px": 8844,
+        "density": 0.03664,
+        "chars": 28,
+        "chars_per_1k_ink": 86.42
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 350,
+    "content": {
+      "n_tokens": 141,
+      "mean": -0.0032,
+      "min": -0.2289,
+      "p05": -0.0012,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 133,
+          "token_id": 4764,
+          "logprob": -0.2289,
+          "text": " however"
+        },
+        {
+          "index": 175,
+          "token_id": 3419,
+          "logprob": -0.1475,
+          "text": "-in"
+        },
+        {
+          "index": 176,
+          "token_id": 837,
+          "logprob": -0.0544,
+          "text": "cre"
+        },
+        {
+          "index": 162,
+          "token_id": 71875,
+          "logprob": -0.005,
+          "text": " judiciary"
+        },
+        {
+          "index": 178,
+          "token_id": 2385,
+          "logprob": -0.0036,
+          "text": "-t"
+        },
+        {
+          "index": 172,
+          "token_id": 1301,
+          "logprob": -0.0018,
+          "text": "vid"
+        },
+        {
+          "index": 264,
+          "token_id": 44,
+          "logprob": -0.0015,
+          "text": "M"
+        },
+        {
+          "index": 336,
+          "token_id": 1285,
+          "logprob": -0.0012,
+          "text": "RO"
+        },
+        {
+          "index": 263,
+          "token_id": 1699,
+          "logprob": -0.001,
+          "text": "\\n"
+        },
+        {
+          "index": 35,
+          "token_id": 17,
+          "logprob": -0.0008,
+          "text": "2"
+        },
+        {
+          "index": 174,
+          "token_id": 15193,
+          "logprob": -0.0006,
+          "text": "-for"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0006,
+          "text": " \"-"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 117,
+      "mean": -0.2523,
+      "min": -1.4416,
+      "p05": -1.1256,
+      "p50": -0.002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.4416,
+          "text": "2"
+        },
+        {
+          "index": 243,
+          "token_id": 18,
+          "logprob": -1.2939,
+          "text": "3"
+        },
+        {
+          "index": 91,
+          "token_id": 20,
+          "logprob": -1.2714,
+          "text": "5"
+        },
+        {
+          "index": 22,
+          "token_id": 18,
+          "logprob": -1.1703,
+          "text": "3"
+        },
+        {
+          "index": 97,
+          "token_id": 22,
+          "logprob": -1.158,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.142,
+          "text": "9"
+        },
+        {
+          "index": 102,
+          "token_id": 19,
+          "logprob": -1.1215,
+          "text": "4"
+        },
+        {
+          "index": 54,
+          "token_id": 23,
+          "logprob": -1.0896,
+          "text": "8"
+        },
+        {
+          "index": 49,
+          "token_id": 23,
+          "logprob": -1.0715,
+          "text": "8"
+        },
+        {
+          "index": 284,
+          "token_id": 22,
+          "logprob": -1.0523,
+          "text": "7"
+        },
+        {
+          "index": 319,
+          "token_id": 17,
+          "logprob": -1.05,
+          "text": "2"
+        },
+        {
+          "index": 44,
+          "token_id": 16,
+          "logprob": -1.03,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 350,
+      "mean": -0.0864,
+      "min": -1.4416,
+      "p05": -0.8929,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.23,
+    "std": 12.32,
+    "dark_fraction": 0.0056
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      674.4,
+      429.12
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      143,
+      224,
+      1048,
+      1649
+    ],
+    "ink_px": 7222,
+    "covered_px": 5343,
+    "covered_fraction": 0.73982,
+    "uncovered_px": 1879,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          599,
+          536,
+          839,
+          680
+        ],
+        "ink_px": 1640
+      }
+    ],
+    "cell_px": 24
+  }
+}

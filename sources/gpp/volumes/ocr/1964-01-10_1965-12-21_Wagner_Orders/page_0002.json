@@ -1,0 +1,343 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        785,
+        223,
+        935,
+        382
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2641,
+          "min": -1.283
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0558,
+          "min": -0.0558
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 906,
+        "area_px": 6536,
+        "density": 0.13862,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        692,
+        397,
+        1029,
+        495
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7. N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2501,
+          "min": -1.2349
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0117,
+          "min": -0.0117
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.049,
+          "min": -0.852
+        }
+      },
+      "ink": {
+        "ink_px": 1473,
+        "area_px": 33320,
+        "density": 0.04421,
+        "chars": 53,
+        "chars_per_1k_ink": 35.98
+      }
+    },
+    {
+      "bbox": [
+        684,
+        569,
+        1075,
+        710
+      ],
+      "category": "Section-header",
+      "text": "EXECUTIVE ORDERS\n1964-65\nOFFICE OF THE MAYOR\nINDEX",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.258,
+          "min": -1.1777
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.051,
+          "min": -0.1019
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.0029,
+          "min": -0.0498
+        }
+      },
+      "ink": {
+        "ink_px": 129,
+        "area_px": 55554,
+        "density": 0.00232,
+        "chars": 50,
+        "chars_per_1k_ink": 387.6
+      }
+    },
+    {
+      "bbox": [
+        213,
+        767,
+        1482,
+        2542
+      ],
+      "category": "Table",
+      "text": "<table>\n  <tbody>\n    <tr>\n      <td>American Municipal Association, Annual Congress</td>\n      <td>104</td>\n    </tr>\n    <tr>\n      <td>Anti-Poverty Operations Board</td>\n      <td>141</td>\n    </tr>\n    <tr>\n      <td>Anti-Poverty Projects, Coordinating of Appellate Division (First Dept.) Pensions</td>\n      <td>159</td>\n    </tr>\n    <tr>\n      <td>Architectural Design, Public Buildings</td>\n      <td>180</td>\n    </tr>\n    <tr>\n      <td>Archives and Records Management</td>\n      <td>123</td>\n    </tr>\n    <tr>\n      <td>Bidders, Disqualified List</td>\n      <td>129</td>\n    </tr>\n    <tr>\n      <td>Addendum #1-4</td>\n      <td>138</td>\n    </tr>\n    <tr>\n      <td>Blood Credit Program</td>\n      <td>89</td>\n    </tr>\n    <tr>\n      <td>Board of Education Retirement System</td>\n      <td>110</td>\n    </tr>\n    <tr>\n      <td>Bronx Golden Jubilee Parade</td>\n      <td>120</td>\n    </tr>\n    <tr>\n      <td>Brooklyn Public Library, Pensions</td>\n      <td>102</td>\n    </tr>\n    <tr>\n      <td>Budget, Expense</td>\n      <td>169</td>\n    </tr>\n    <tr>\n      <td>Budget Appropriations, Administration of</td>\n      <td>161</td>\n    </tr>\n    <tr>\n      <td>Modifications</td>\n      <td>83</td>\n    </tr>\n    <tr>\n      <td>Transfer of Funds</td>\n      <td>112</td>\n    </tr>\n    <tr>\n      <td>Building Violations-Emergency Repairs</td>\n      <td>134</td>\n    </tr>\n    <tr>\n      <td>Buildings, Public-Architectural Design</td>\n      <td>180</td>\n    </tr>\n    <tr>\n      <td>Public-Demolition</td>\n      <td>174</td>\n    </tr>\n    <tr>\n      <td>Buildings Department-Housing Code Enforcement</td>\n      <td>135</td>\n    </tr>\n    <tr>\n      <td>Capital Budget Corrections</td>\n      <td>128</td>\n    </tr>\n  </tbody>\n</table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2952,
+          "min": -1.6143
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.062,
+          "min": -0.062
+        },
+        "text": {
+          "n_tokens": 716,
+          "mean": -0.0085,
+          "min": -0.6442
+        }
+      },
+      "ink": {
+        "ink_px": 3349,
+        "area_px": 2161576,
+        "density": 0.00155,
+        "chars": 1743,
+        "chars_per_1k_ink": 520.45
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 897,
+    "content": {
+      "n_tokens": 759,
+      "mean": -0.0095,
+      "min": -0.852,
+      "p05": -0.0165,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 81,
+          "token_id": 13,
+          "logprob": -0.852,
+          "text": "."
+        },
+        {
+          "index": 718,
+          "token_id": 30133,
+          "logprob": -0.6442,
+          "text": "Building"
+        },
+        {
+          "index": 297,
+          "token_id": 522,
+          "logprob": -0.5144,
+          "text": "</"
+        },
+        {
+          "index": 180,
+          "token_id": 8449,
+          "logprob": -0.4741,
+          "text": ">\\"
+        },
+        {
+          "index": 656,
+          "token_id": 4459,
+          "logprob": -0.4461,
+          "text": "Mod"
+        },
+        {
+          "index": 265,
+          "token_id": 29,
+          "logprob": -0.4061,
+          "text": ">"
+        },
+        {
+          "index": 184,
+          "token_id": 10095,
+          "logprob": -0.3897,
+          "text": "tbody"
+        },
+        {
+          "index": 295,
+          "token_id": 20,
+          "logprob": -0.3298,
+          "text": "5"
+        },
+        {
+          "index": 569,
+          "token_id": 15,
+          "logprob": -0.3091,
+          "text": "0"
+        },
+        {
+          "index": 699,
+          "token_id": 17,
+          "logprob": -0.2377,
+          "text": "2"
+        },
+        {
+          "index": 655,
+          "token_id": 29,
+          "logprob": -0.2278,
+          "text": ">"
+        },
+        {
+          "index": 686,
+          "token_id": 21970,
+          "logprob": -0.1969,
+          "text": "Transfer"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.2536,
+      "min": -1.6143,
+      "p05": -1.2349,
+      "p50": -0.002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 161,
+          "token_id": 17,
+          "logprob": -1.6143,
+          "text": "2"
+        },
+        {
+          "index": 150,
+          "token_id": 18,
+          "logprob": -1.5764,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.283,
+          "text": "3"
+        },
+        {
+          "index": 155,
+          "token_id": 22,
+          "logprob": -1.2361,
+          "text": "7"
+        },
+        {
+          "index": 36,
+          "token_id": 17,
+          "logprob": -1.2349,
+          "text": "2"
+        },
+        {
+          "index": 167,
+          "token_id": 17,
+          "logprob": -1.2341,
+          "text": "2"
+        },
+        {
+          "index": 17,
+          "token_id": 20,
+          "logprob": -1.224,
+          "text": "5"
+        },
+        {
+          "index": 52,
+          "token_id": 20,
+          "logprob": -1.2088,
+          "text": "5"
+        },
+        {
+          "index": 103,
+          "token_id": 20,
+          "logprob": -1.1777,
+          "text": "5"
+        },
+        {
+          "index": 41,
+          "token_id": 22,
+          "logprob": -1.1585,
+          "text": "7"
+        },
+        {
+          "index": 22,
+          "token_id": 17,
+          "logprob": -1.1046,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.082,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 897,
+      "mean": -0.031,
+      "min": -1.6143,
+      "p05": -0.0637,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.62,
+    "std": 11.84,
+    "dark_fraction": 0.00182
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      709.92,
+      1018.08
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      236,
+      339,
+      1735,
+      2488
+    ],
+    "ink_px": 5857,
+    "covered_px": 5857,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

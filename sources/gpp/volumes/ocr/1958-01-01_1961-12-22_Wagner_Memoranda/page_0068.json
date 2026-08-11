@@ -1,0 +1,337 @@
+{
+  "page": 68,
+  "source_image": "page_0068.png",
+  "elements": [
+    {
+      "bbox": [
+        977,
+        130,
+        1041,
+        171
+      ],
+      "category": "Page-header",
+      "text": "-4-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3675,
+          "min": -1.613
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0017,
+          "min": -0.003
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0018,
+          "min": -0.0037
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        356,
+        281,
+        1711,
+        507
+      ],
+      "category": "Text",
+      "text": "I request that you acknowledge receipt of this Executive Order and indicate the name and title of an officer who, in addition to the head of the agency, is authorized to sign the legislative reports. A copy of this acknowledgment should be sent to Mr. Ruggieri at the De Witt Clinton Hotel, Albany, New York.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4043,
+          "min": -1.7867
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 64,
+          "mean": -0.0011,
+          "min": -0.0487
+        }
+      },
+      "ink": {
+        "ink_px": 2189,
+        "area_px": 242614,
+        "density": 0.00902,
+        "chars": 308,
+        "chars_per_1k_ink": 140.7
+      }
+    },
+    {
+      "bbox": [
+        1026,
+        646,
+        1764,
+        819
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4762,
+          "min": -2.0723
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0047,
+          "min": -0.0047
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 103,
+        "area_px": 128366,
+        "density": 0.0008,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1026,
+        743,
+        1345,
+        820
+      ],
+      "category": "Caption",
+      "text": "ROBERT F. WAGNER\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2776,
+          "min": -1.4614
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2519,
+          "min": -0.2519
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0054,
+          "min": -0.0551
+        }
+      },
+      "ink": {
+        "ink_px": 57,
+        "area_px": 25038,
+        "density": 0.00228,
+        "chars": 22,
+        "chars_per_1k_ink": 385.96
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 218,
+    "content": {
+      "n_tokens": 78,
+      "mean": -0.0017,
+      "min": -0.0551,
+      "p05": -0.0047,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 213,
+          "token_id": 3022,
+          "logprob": -0.0551,
+          "text": "AY"
+        },
+        {
+          "index": 82,
+          "token_id": 7217,
+          "logprob": -0.0487,
+          "text": " Order"
+        },
+        {
+          "index": 123,
+          "token_id": 2596,
+          "logprob": -0.0094,
+          "text": "ugg"
+        },
+        {
+          "index": 122,
+          "token_id": 431,
+          "logprob": -0.007,
+          "text": " R"
+        },
+        {
+          "index": 124,
+          "token_id": 53939,
+          "logprob": -0.0043,
+          "text": "ieri"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0037,
+          "text": " \"-"
+        },
+        {
+          "index": 211,
+          "token_id": 1699,
+          "logprob": -0.0023,
+          "text": "\\n"
+        },
+        {
+          "index": 36,
+          "token_id": 19,
+          "logprob": -0.0014,
+          "text": "4"
+        },
+        {
+          "index": 204,
+          "token_id": 1285,
+          "logprob": -0.0009,
+          "text": "RO"
+        },
+        {
+          "index": 212,
+          "token_id": 44,
+          "logprob": -0.0006,
+          "text": "M"
+        },
+        {
+          "index": 210,
+          "token_id": 13896,
+          "logprob": -0.0004,
+          "text": "NER"
+        },
+        {
+          "index": 109,
+          "token_id": 6682,
+          "logprob": -0.0004,
+          "text": " reports"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 83,
+      "mean": -0.3615,
+      "min": -2.0723,
+      "p05": -1.7349,
+      "p50": -0.0065,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 156,
+          "token_id": 19,
+          "logprob": -2.0723,
+          "text": "4"
+        },
+        {
+          "index": 145,
+          "token_id": 21,
+          "logprob": -1.8103,
+          "text": "6"
+        },
+        {
+          "index": 61,
+          "token_id": 22,
+          "logprob": -1.7867,
+          "text": "7"
+        },
+        {
+          "index": 150,
+          "token_id": 21,
+          "logprob": -1.766,
+          "text": "6"
+        },
+        {
+          "index": 45,
+          "token_id": 21,
+          "logprob": -1.7485,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.613,
+          "text": "7"
+        },
+        {
+          "index": 161,
+          "token_id": 24,
+          "logprob": -1.6027,
+          "text": "9"
+        },
+        {
+          "index": 56,
+          "token_id": 16,
+          "logprob": -1.565,
+          "text": "1"
+        },
+        {
+          "index": 50,
+          "token_id": 16,
+          "logprob": -1.486,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.4763,
+          "text": "1"
+        },
+        {
+          "index": 187,
+          "token_id": 20,
+          "logprob": -1.4614,
+          "text": "5"
+        },
+        {
+          "index": 181,
+          "token_id": 18,
+          "logprob": -1.449,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 218,
+      "mean": -0.1397,
+      "min": -2.0723,
+      "p05": -1.4508,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.41,
+    "std": 7.85,
+    "dark_fraction": 0.00067
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      780.0,
+      983.52
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      260,
+      327,
+      1906,
+      2404
+    ],
+    "ink_px": 2292,
+    "covered_px": 2292,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

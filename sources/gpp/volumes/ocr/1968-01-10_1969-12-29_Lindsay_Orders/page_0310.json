@@ -1,0 +1,314 @@
+{
+  "page": 310,
+  "source_image": "page_0310.png",
+  "elements": [
+    {
+      "bbox": [
+        386,
+        241,
+        763,
+        261
+      ],
+      "category": "Section-header",
+      "text": "EXECUTIVE ORDERS NO.101-106",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3119,
+          "min": -1.5534
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2944,
+          "min": -0.5888
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0106,
+          "min": -0.0763
+        }
+      },
+      "ink": {
+        "ink_px": 60,
+        "area_px": 8001,
+        "density": 0.0075,
+        "chars": 27,
+        "chars_per_1k_ink": 450.0
+      }
+    },
+    {
+      "bbox": [
+        291,
+        424,
+        968,
+        583
+      ],
+      "category": "Text",
+      "text": "These orders deal with continuation of salary\nadjustment plan. A sample of these orders, no.105\nis included. A complete series for 1969 can be\nseen in nos. 77 to 81",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2845,
+          "min": -1.378
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 50,
+          "mean": -0.0159,
+          "min": -0.6452
+        }
+      },
+      "ink": {
+        "ink_px": 536,
+        "area_px": 109963,
+        "density": 0.00487,
+        "chars": 164,
+        "chars_per_1k_ink": 305.97
+      }
+    },
+    {
+      "bbox": [
+        681,
+        1497,
+        844,
+        1520
+      ],
+      "category": "Text",
+      "text": "Deputy Mayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2548,
+          "min": -1.2995
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0064,
+          "min": -0.0064
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0008,
+          "min": -0.0011
+        }
+      },
+      "ink": {
+        "ink_px": 159,
+        "area_px": 3960,
+        "density": 0.04015,
+        "chars": 12,
+        "chars_per_1k_ink": 75.47
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 175,
+    "content": {
+      "n_tokens": 67,
+      "mean": -0.0141,
+      "min": -0.6452,
+      "p05": -0.0656,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 130,
+          "token_id": 220,
+          "logprob": -0.6452,
+          "text": " "
+        },
+        {
+          "index": 90,
+          "token_id": 1699,
+          "logprob": -0.0829,
+          "text": "\\n"
+        },
+        {
+          "index": 35,
+          "token_id": 46340,
+          "logprob": -0.0763,
+          "text": "EXEC"
+        },
+        {
+          "index": 42,
+          "token_id": 16,
+          "logprob": -0.07,
+          "text": "1"
+        },
+        {
+          "index": 132,
+          "token_id": 16,
+          "logprob": -0.0556,
+          "text": "1"
+        },
+        {
+          "index": 122,
+          "token_id": 28312,
+          "logprob": -0.0031,
+          "text": "seen"
+        },
+        {
+          "index": 131,
+          "token_id": 23,
+          "logprob": -0.002,
+          "text": "8"
+        },
+        {
+          "index": 40,
+          "token_id": 5664,
+          "logprob": -0.0017,
+          "text": " NO"
+        },
+        {
+          "index": 171,
+          "token_id": 22093,
+          "logprob": -0.0011,
+          "text": " Mayor"
+        },
+        {
+          "index": 91,
+          "token_id": 38719,
+          "logprob": -0.0011,
+          "text": "adjust"
+        },
+        {
+          "index": 103,
+          "token_id": 16,
+          "logprob": -0.0011,
+          "text": "1"
+        },
+        {
+          "index": 83,
+          "token_id": 9485,
+          "logprob": -0.0008,
+          "text": "These"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.2738,
+      "min": -1.5534,
+      "p05": -1.3035,
+      "p50": -0.0018,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.5534,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 18,
+          "logprob": -1.4402,
+          "text": "3"
+        },
+        {
+          "index": 71,
+          "token_id": 18,
+          "logprob": -1.378,
+          "text": "3"
+        },
+        {
+          "index": 146,
+          "token_id": 22,
+          "logprob": -1.2995,
+          "text": "7"
+        },
+        {
+          "index": 151,
+          "token_id": 19,
+          "logprob": -1.2495,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 16,
+          "logprob": -1.1859,
+          "text": "1"
+        },
+        {
+          "index": 61,
+          "token_id": 19,
+          "logprob": -1.1772,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.1587,
+          "text": "1"
+        },
+        {
+          "index": 66,
+          "token_id": 23,
+          "logprob": -1.1471,
+          "text": "8"
+        },
+        {
+          "index": 140,
+          "token_id": 16,
+          "logprob": -1.1351,
+          "text": "1"
+        },
+        {
+          "index": 56,
+          "token_id": 16,
+          "logprob": -1.0241,
+          "text": "1"
+        },
+        {
+          "index": 157,
+          "token_id": 15,
+          "logprob": -0.8325,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 175,
+      "mean": -0.1015,
+      "min": -1.5534,
+      "p05": -1.1387,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.35,
+    "std": 9.44,
+    "dark_fraction": 0.00057
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      710.4,
+      457.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      152,
+      236,
+      1117,
+      1737
+    ],
+    "ink_px": 822,
+    "covered_px": 755,
+    "covered_fraction": 0.91849,
+    "uncovered_px": 67,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

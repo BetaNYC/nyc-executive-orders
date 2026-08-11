@@ -1,0 +1,371 @@
+{
+  "page": 66,
+  "source_image": "page_0066.png",
+  "elements": [
+    {
+      "bbox": [
+        84,
+        80,
+        1094,
+        154
+      ],
+      "category": "Text",
+      "text": "potential impact of the air pollution episode on the public health and shall\nreport its findings and recommendations to the Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.3911,
+          "min": -1.6307
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0177,
+          "min": -0.3873
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        80,
+        167,
+        1134,
+        331
+      ],
+      "category": "Text",
+      "text": "§ 1. Upon the declaration by the Mayor of the existence of the \"Emergency Srate\" as provided for in Section 2, the Board of Health immediately shall take such measures as it deems appropriate and accordingly advise the Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3102,
+          "min": -1.4556
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0789,
+          "min": -0.0789
+        },
+        "text": {
+          "n_tokens": 48,
+          "mean": -0.0425,
+          "min": -0.9605
+        }
+      },
+      "ink": {
+        "ink_px": 4,
+        "area_px": 94451,
+        "density": 4e-05,
+        "chars": 225,
+        "chars_per_1k_ink": 56250.0
+      }
+    },
+    {
+      "bbox": [
+        227,
+        344,
+        865,
+        377
+      ],
+      "category": "Text",
+      "text": "§ 8. This order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2878,
+          "min": -1.3928
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0005,
+          "min": -0.0017
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 21760,
+        "density": 0.0,
+        "chars": 46,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        638,
+        420,
+        1127,
+        627
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3455,
+          "min": -1.5946
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0129,
+          "min": -0.0129
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 324,
+        "area_px": 87776,
+        "density": 0.00369,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        444,
+        1435,
+        1048,
+        1509
+      ],
+      "category": "Text",
+      "text": "issuance, award, and sale of bonds, certificates of indebtedness, notes, or other fiscal obligations of the City, or consisting thereof;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2347,
+          "min": -1.2481
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2051,
+          "min": -0.2051
+        },
+        "text": {
+          "n_tokens": 30,
+          "mean": -0.0085,
+          "min": -0.2018
+        }
+      },
+      "ink": {
+        "ink_px": 1085,
+        "area_px": 45450,
+        "density": 0.02387,
+        "chars": 136,
+        "chars_per_1k_ink": 125.35
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 283,
+    "content": {
+      "n_tokens": 112,
+      "mean": -0.0241,
+      "min": -0.9605,
+      "p05": -0.0671,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 107,
+          "token_id": 328,
+          "logprob": -0.9605,
+          "text": " S"
+        },
+        {
+          "index": 105,
+          "token_id": 7245,
+          "logprob": -0.6328,
+          "text": " \\\""
+        },
+        {
+          "index": 46,
+          "token_id": 1699,
+          "logprob": -0.3873,
+          "text": "\\n"
+        },
+        {
+          "index": 92,
+          "token_id": 16,
+          "logprob": -0.2571,
+          "text": "1"
+        },
+        {
+          "index": 261,
+          "token_id": 34437,
+          "logprob": -0.2018,
+          "text": " certificates"
+        },
+        {
+          "index": 93,
+          "token_id": 13,
+          "logprob": -0.097,
+          "text": "."
+        },
+        {
+          "index": 90,
+          "token_id": 17851,
+          "logprob": -0.0426,
+          "text": "§"
+        },
+        {
+          "index": 274,
+          "token_id": 4311,
+          "logprob": -0.0339,
+          "text": " City"
+        },
+        {
+          "index": 108,
+          "token_id": 7698,
+          "logprob": -0.026,
+          "text": "rate"
+        },
+        {
+          "index": 279,
+          "token_id": 26,
+          "logprob": -0.0161,
+          "text": ";"
+        },
+        {
+          "index": 55,
+          "token_id": 1189,
+          "logprob": -0.0099,
+          "text": ".\""
+        },
+        {
+          "index": 100,
+          "token_id": 315,
+          "logprob": -0.0087,
+          "text": " of"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 98,
+      "mean": -0.298,
+      "min": -1.6307,
+      "p05": -1.409,
+      "p50": -0.0026,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 6,
+          "token_id": 19,
+          "logprob": -1.6307,
+          "text": "4"
+        },
+        {
+          "index": 16,
+          "token_id": 19,
+          "logprob": -1.6298,
+          "text": "4"
+        },
+        {
+          "index": 201,
+          "token_id": 22,
+          "logprob": -1.5946,
+          "text": "7"
+        },
+        {
+          "index": 21,
+          "token_id": 19,
+          "logprob": -1.5637,
+          "text": "4"
+        },
+        {
+          "index": 73,
+          "token_id": 19,
+          "logprob": -1.4556,
+          "text": "4"
+        },
+        {
+          "index": 67,
+          "token_id": 22,
+          "logprob": -1.4008,
+          "text": "7"
+        },
+        {
+          "index": 155,
+          "token_id": 20,
+          "logprob": -1.3928,
+          "text": "5"
+        },
+        {
+          "index": 190,
+          "token_id": 23,
+          "logprob": -1.3845,
+          "text": "8"
+        },
+        {
+          "index": 220,
+          "token_id": 19,
+          "logprob": -1.2481,
+          "text": "4"
+        },
+        {
+          "index": 150,
+          "token_id": 19,
+          "logprob": -1.2467,
+          "text": "4"
+        },
+        {
+          "index": 145,
+          "token_id": 22,
+          "logprob": -1.2335,
+          "text": "7"
+        },
+        {
+          "index": 206,
+          "token_id": 22,
+          "logprob": -1.2016,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 283,
+      "mean": -0.1129,
+      "min": -1.6307,
+      "p05": -1.1713,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.25,
+    "std": 11.75,
+    "dark_fraction": 0.00107
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      684.72,
+      433.92
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      144,
+      228,
+      1061,
+      1673
+    ],
+    "ink_px": 1413,
+    "covered_px": 1413,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

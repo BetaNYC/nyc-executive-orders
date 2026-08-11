@@ -1,0 +1,210 @@
+{
+  "page": 327,
+  "source_image": "page_0327.png",
+  "elements": [
+    {
+      "bbox": [
+        388,
+        644,
+        480,
+        667
+      ],
+      "category": "Text",
+      "text": "BOSTON, MASS.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.6778,
+          "min": -2.0358
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3742,
+          "min": -0.3742
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -1.0553,
+          "min": -2.5563
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 2256,
+        "density": 0.0,
+        "chars": 13,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "length",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 12000,
+    "content": {
+      "n_tokens": 6,
+      "mean": -1.0553,
+      "min": -2.5563,
+      "p05": -2.3439,
+      "p50": -0.9046,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 34,
+          "token_id": 33,
+          "logprob": -2.5563,
+          "text": "B"
+        },
+        {
+          "index": 35,
+          "token_id": 4233,
+          "logprob": -1.7067,
+          "text": "OST"
+        },
+        {
+          "index": 37,
+          "token_id": 11,
+          "logprob": -1.0889,
+          "text": ","
+        },
+        {
+          "index": 39,
+          "token_id": 1189,
+          "logprob": -0.7204,
+          "text": ".\""
+        },
+        {
+          "index": 38,
+          "token_id": 92613,
+          "logprob": -0.2525,
+          "text": " MASS"
+        },
+        {
+          "index": 36,
+          "token_id": 711,
+          "logprob": -0.0072,
+          "text": "ON"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 19,
+      "mean": -0.6619,
+      "min": -2.0358,
+      "p05": -2.03,
+      "p50": -0.3687,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 22,
+          "token_id": 22,
+          "logprob": -2.0358,
+          "text": "7"
+        },
+        {
+          "index": 17,
+          "token_id": 15,
+          "logprob": -2.0294,
+          "text": "0"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -2.0031,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.8014,
+          "text": "8"
+        },
+        {
+          "index": 6,
+          "token_id": 23,
+          "logprob": -1.4397,
+          "text": "8"
+        },
+        {
+          "index": 16,
+          "token_id": 23,
+          "logprob": -0.8534,
+          "text": "8"
+        },
+        {
+          "index": 15,
+          "token_id": 19,
+          "logprob": -0.6139,
+          "text": "4"
+        },
+        {
+          "index": 21,
+          "token_id": 21,
+          "logprob": -0.5408,
+          "text": "6"
+        },
+        {
+          "index": 28,
+          "token_id": 1178,
+          "logprob": -0.3742,
+          "text": "Text"
+        },
+        {
+          "index": 11,
+          "token_id": 19,
+          "logprob": -0.3687,
+          "text": "4"
+        },
+        {
+          "index": 5,
+          "token_id": 18,
+          "logprob": -0.3041,
+          "text": "3"
+        },
+        {
+          "index": 10,
+          "token_id": 21,
+          "logprob": -0.1861,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 12000,
+      "mean": -0.0039,
+      "min": -2.5563,
+      "p05": -0.0005,
+      "p50": -0.0,
+      "n_below_threshold": 6
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 166.35,
+    "std": 7.38,
+    "dark_fraction": 8e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      656.64,
+      426.24
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      218,
+      1041,
+      1605
+    ],
+    "ink_px": 103,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 103,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

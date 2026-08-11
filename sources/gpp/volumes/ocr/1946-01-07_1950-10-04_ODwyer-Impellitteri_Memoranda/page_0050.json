@@ -1,0 +1,382 @@
+{
+  "page": 50,
+  "source_image": "page_0050.png",
+  "elements": [
+    {
+      "bbox": [
+        270,
+        358,
+        1765,
+        605
+      ],
+      "category": "Text",
+      "text": "Memorial Day or Armistice Day fell on a Saturday. (Note, that when a legal holiday falls on Sunday, the succeeding Monday is regarded as a holiday under General Construction Law Section 24).",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4739,
+          "min": -2.0064
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 42,
+          "mean": -0.0002,
+          "min": -0.0036
+        }
+      },
+      "ink": {
+        "ink_px": 3132,
+        "area_px": 185500,
+        "density": 0.01688,
+        "chars": 190,
+        "chars_per_1k_ink": 60.66
+      }
+    },
+    {
+      "bbox": [
+        270,
+        631,
+        1790,
+        1039
+      ],
+      "category": "Text",
+      "text": "In the cases stated, the employee would be absent on the holidays *not* because the days are Memorial Day or Armistice Day but, in the one case, because the employee is not working for the City when the holidays occur or, in the other case, because the days are Saturdays.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4014,
+          "min": -1.6642
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 60,
+          "mean": -0.012,
+          "min": -0.5916
+        }
+      },
+      "ink": {
+        "ink_px": 10846,
+        "area_px": 617181,
+        "density": 0.01757,
+        "chars": 272,
+        "chars_per_1k_ink": 25.08
+      }
+    },
+    {
+      "bbox": [
+        270,
+        1077,
+        1927,
+        1671
+      ],
+      "category": "Text",
+      "text": "On the other hand, if an employee is working for the City during the weeks when Armistice Day or Memorial Day occurs, he is entitled to those days off with pay, regardless of the fact that his work closes down because of those holidays. The mere fact that there is no work for him to do on those holidays cannot operate to deprive him of his right to a day's pay, if the reason that there is no work is because it is Armistice Day or Memorial Day.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3569,
+          "min": -1.8659
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 100,
+          "mean": -0.0008,
+          "min": -0.0623
+        }
+      },
+      "ink": {
+        "ink_px": 12674,
+        "area_px": 979370,
+        "density": 0.01294,
+        "chars": 447,
+        "chars_per_1k_ink": 35.27
+      }
+    },
+    {
+      "bbox": [
+        1063,
+        1841,
+        1625,
+        1894
+      ],
+      "category": "Text",
+      "text": "(signed) JOHN J. BENNETT",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3518,
+          "min": -1.9465
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.006,
+          "min": -0.006
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0027,
+          "min": -0.0154
+        }
+      },
+      "ink": {
+        "ink_px": 520,
+        "area_px": 30510,
+        "density": 0.01704,
+        "chars": 24,
+        "chars_per_1k_ink": 46.15
+      }
+    },
+    {
+      "bbox": [
+        953,
+        3158,
+        1023,
+        3201
+      ],
+      "category": "Page-footer",
+      "text": "-4-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3822,
+          "min": -1.7712
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.001,
+          "min": -0.0017
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0001,
+          "min": -0.0001
+        }
+      },
+      "ink": {
+        "ink_px": 224,
+        "area_px": 3124,
+        "density": 0.0717,
+        "chars": 3,
+        "chars_per_1k_ink": 13.39
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 399,
+    "content": {
+      "n_tokens": 214,
+      "mean": -0.0039,
+      "min": -0.5916,
+      "p05": -0.0016,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 126,
+          "token_id": 353,
+          "logprob": -0.5916,
+          "text": " *"
+        },
+        {
+          "index": 125,
+          "token_id": 24421,
+          "logprob": -0.113,
+          "text": " holidays"
+        },
+        {
+          "index": 274,
+          "token_id": 24421,
+          "logprob": -0.0623,
+          "text": " holidays"
+        },
+        {
+          "index": 347,
+          "token_id": 11993,
+          "logprob": -0.0154,
+          "text": " \"("
+        },
+        {
+          "index": 278,
+          "token_id": 35880,
+          "logprob": -0.01,
+          "text": " depr"
+        },
+        {
+          "index": 141,
+          "token_id": 11,
+          "logprob": -0.0076,
+          "text": ","
+        },
+        {
+          "index": 348,
+          "token_id": 2215,
+          "logprob": -0.0038,
+          "text": "signed"
+        },
+        {
+          "index": 53,
+          "token_id": 264,
+          "logprob": -0.0036,
+          "text": " a"
+        },
+        {
+          "index": 354,
+          "token_id": 15373,
+          "logprob": -0.0028,
+          "text": "NET"
+        },
+        {
+          "index": 243,
+          "token_id": 448,
+          "logprob": -0.0023,
+          "text": " with"
+        },
+        {
+          "index": 35,
+          "token_id": 18816,
+          "logprob": -0.0019,
+          "text": "Mem"
+        },
+        {
+          "index": 353,
+          "token_id": 82834,
+          "logprob": -0.0014,
+          "text": " BEN"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 109,
+      "mean": -0.3697,
+      "min": -2.0064,
+      "p05": -1.7843,
+      "p50": -0.0003,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -2.0064,
+          "text": "5"
+        },
+        {
+          "index": 318,
+          "token_id": 18,
+          "logprob": -1.9465,
+          "text": "3"
+        },
+        {
+          "index": 198,
+          "token_id": 16,
+          "logprob": -1.8659,
+          "text": "1"
+        },
+        {
+          "index": 336,
+          "token_id": 19,
+          "logprob": -1.8517,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.8165,
+          "text": "5"
+        },
+        {
+          "index": 330,
+          "token_id": 20,
+          "logprob": -1.793,
+          "text": "5"
+        },
+        {
+          "index": 381,
+          "token_id": 16,
+          "logprob": -1.7712,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 15,
+          "logprob": -1.7695,
+          "text": "0"
+        },
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.747,
+          "text": "8"
+        },
+        {
+          "index": 375,
+          "token_id": 18,
+          "logprob": -1.7365,
+          "text": "3"
+        },
+        {
+          "index": 186,
+          "token_id": 22,
+          "logprob": -1.7297,
+          "text": "7"
+        },
+        {
+          "index": 89,
+          "token_id": 16,
+          "logprob": -1.6642,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 399,
+      "mean": -0.1032,
+      "min": -2.0064,
+      "p05": -0.7779,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 167.15,
+    "std": 10.58,
+    "dark_fraction": 0.00497
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      858.96,
+      1440.72
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      286,
+      480,
+      2099,
+      3521
+    ],
+    "ink_px": 27396,
+    "covered_px": 27396,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

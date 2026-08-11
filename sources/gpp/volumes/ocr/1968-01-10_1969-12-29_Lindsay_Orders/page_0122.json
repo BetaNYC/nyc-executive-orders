@@ -1,0 +1,370 @@
+{
+  "page": 122,
+  "source_image": "page_0122.png",
+  "elements": [
+    {
+      "bbox": [
+        139,
+        60,
+        429,
+        82
+      ],
+      "category": "Page-header",
+      "text": "EXECUTIVE ORDER NO. 76",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.3591,
+          "min": -1.2021
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1009,
+          "min": -0.2018
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0024,
+          "min": -0.0111
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        836,
+        62,
+        993,
+        85
+      ],
+      "category": "Text",
+      "text": "June 4, 1968",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.3379,
+          "min": -1.3093
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5761,
+          "min": -0.5761
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0003,
+          "min": -0.0016
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        139,
+        143,
+        1125,
+        234
+      ],
+      "category": "Text",
+      "text": "§ 3. The Parks, Recreation and Cultural Affairs Administrator is designated to act as the representative of the City of New York in relation to conservation, recreation, and cultural programs of state and federal agencies.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2708,
+          "min": -1.345
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0024,
+          "min": -0.0024
+        },
+        "text": {
+          "n_tokens": 41,
+          "mean": -0.0014,
+          "min": -0.0436
+        }
+      },
+      "ink": {
+        "ink_px": 1,
+        "area_px": 9210,
+        "density": 0.00011,
+        "chars": 222,
+        "chars_per_1k_ink": 222000.0
+      }
+    },
+    {
+      "bbox": [
+        138,
+        249,
+        1045,
+        297
+      ],
+      "category": "Text",
+      "text": "§ 4. Executive Order No. 33 dated November 21, 1966, is hereby repealed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2638,
+          "min": -1.2482
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 27,
+          "mean": -0.0003,
+          "min": -0.0039
+        }
+      },
+      "ink": {
+        "ink_px": 12,
+        "area_px": 44443,
+        "density": 0.00027,
+        "chars": 72,
+        "chars_per_1k_ink": 6000.0
+      }
+    },
+    {
+      "bbox": [
+        716,
+        472,
+        915,
+        514
+      ],
+      "category": "Text",
+      "text": "John V. Lindsay\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2648,
+          "min": -1.3094
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0093,
+          "min": -0.0093
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0069,
+          "min": -0.0304
+        }
+      },
+      "ink": {
+        "ink_px": 38,
+        "area_px": 8686,
+        "density": 0.00437,
+        "chars": 21,
+        "chars_per_1k_ink": 552.63
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 266,
+    "content": {
+      "n_tokens": 94,
+      "mean": -0.0015,
+      "min": -0.0436,
+      "p05": -0.0064,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 118,
+          "token_id": 17851,
+          "logprob": -0.0436,
+          "text": "§"
+        },
+        {
+          "index": 255,
+          "token_id": 13079,
+          "logprob": -0.0304,
+          "text": "John"
+        },
+        {
+          "index": 261,
+          "token_id": 3022,
+          "logprob": -0.021,
+          "text": "AY"
+        },
+        {
+          "index": 130,
+          "token_id": 374,
+          "logprob": -0.0113,
+          "text": " is"
+        },
+        {
+          "index": 37,
+          "token_id": 5664,
+          "logprob": -0.0111,
+          "text": " NO"
+        },
+        {
+          "index": 194,
+          "token_id": 17851,
+          "logprob": -0.0039,
+          "text": "§"
+        },
+        {
+          "index": 33,
+          "token_id": 46340,
+          "logprob": -0.0036,
+          "text": "EXEC"
+        },
+        {
+          "index": 259,
+          "token_id": 1699,
+          "logprob": -0.003,
+          "text": "\\n"
+        },
+        {
+          "index": 40,
+          "token_id": 22,
+          "logprob": -0.0028,
+          "text": "7"
+        },
+        {
+          "index": 41,
+          "token_id": 21,
+          "logprob": -0.0026,
+          "text": "6"
+        },
+        {
+          "index": 81,
+          "token_id": 21,
+          "logprob": -0.0016,
+          "text": "6"
+        },
+        {
+          "index": 218,
+          "token_id": 21799,
+          "logprob": -0.0012,
+          "text": " hereby"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 94,
+      "mean": -0.2858,
+      "min": -1.345,
+      "p05": -1.2695,
+      "p50": -0.003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 95,
+          "token_id": 18,
+          "logprob": -1.345,
+          "text": "3"
+        },
+        {
+          "index": 101,
+          "token_id": 20,
+          "logprob": -1.3331,
+          "text": "5"
+        },
+        {
+          "index": 228,
+          "token_id": 21,
+          "logprob": -1.3094,
+          "text": "6"
+        },
+        {
+          "index": 49,
+          "token_id": 21,
+          "logprob": -1.3093,
+          "text": "6"
+        },
+        {
+          "index": 106,
+          "token_id": 19,
+          "logprob": -1.2717,
+          "text": "4"
+        },
+        {
+          "index": 53,
+          "token_id": 17,
+          "logprob": -1.2683,
+          "text": "2"
+        },
+        {
+          "index": 166,
+          "token_id": 23,
+          "logprob": -1.2482,
+          "text": "8"
+        },
+        {
+          "index": 20,
+          "token_id": 17,
+          "logprob": -1.2021,
+          "text": "2"
+        },
+        {
+          "index": 177,
+          "token_id": 20,
+          "logprob": -1.1816,
+          "text": "5"
+        },
+        {
+          "index": 58,
+          "token_id": 18,
+          "logprob": -1.1614,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.1348,
+          "text": "9"
+        },
+        {
+          "index": 182,
+          "token_id": 22,
+          "logprob": -1.1241,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 266,
+      "mean": -0.1018,
+      "min": -1.345,
+      "p05": -1.0834,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.75,
+    "std": 8.12,
+    "dark_fraction": 0.00014
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      674.4,
+      436.08
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      145,
+      224,
+      1066,
+      1649
+    ],
+    "ink_px": 183,
+    "covered_px": 51,
+    "covered_fraction": 0.27869,
+    "uncovered_px": 132,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

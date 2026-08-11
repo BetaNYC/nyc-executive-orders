@@ -1,0 +1,343 @@
+{
+  "page": 169,
+  "source_image": "page_0169.png",
+  "elements": [
+    {
+      "bbox": [
+        547,
+        1381,
+        899,
+        1461
+      ],
+      "category": "Text",
+      "text": "MAYOR\nRobert F. Wagner",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5009,
+          "min": -1.8689
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1676,
+          "min": -0.1676
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.2159,
+          "min": -0.7223
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 28160,
+        "density": 0.0,
+        "chars": 22,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        251,
+        1260,
+        963,
+        1404
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5084,
+          "min": -2.0981
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0078,
+          "min": -0.0078
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 103095,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        371,
+        961,
+        1632,
+        1143
+      ],
+      "category": "Text",
+      "text": "Each period under the provisions of this Executive Order, each period, the amount of his required contributions for time exceeded the amount of his required contributions for time exceeded the amount by which the contributions of each period under the Executive Order, the amount of the contributions of each period under the Executive Order, the amount by which the contributions of each period under the Executive Order, the amount by which the contributions",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4177,
+          "min": -1.9026
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0027,
+          "min": -0.0027
+        },
+        "text": {
+          "n_tokens": 78,
+          "mean": -0.3177,
+          "min": -2.3333
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 230031,
+        "density": 0.0,
+        "chars": 460,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        581,
+        757,
+        1632,
+        821
+      ],
+      "category": "Text",
+      "text": "Executive Order No. 40 - May 24, 1969\nMay 24, 1969",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4287,
+          "min": -1.7597
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2555,
+          "min": -0.2555
+        },
+        "text": {
+          "n_tokens": 29,
+          "mean": -0.1694,
+          "min": -1.2157
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 68120,
+        "density": 0.0,
+        "chars": 50,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 256,
+    "content": {
+      "n_tokens": 115,
+      "mean": -0.2732,
+      "min": -2.3333,
+      "p05": -1.1716,
+      "p50": -0.0755,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 123,
+          "token_id": 11,
+          "logprob": -2.3333,
+          "text": ","
+        },
+        {
+          "index": 132,
+          "token_id": 33808,
+          "logprob": -1.7048,
+          "text": " exceeded"
+        },
+        {
+          "index": 121,
+          "token_id": 1817,
+          "logprob": -1.3879,
+          "text": " each"
+        },
+        {
+          "index": 124,
+          "token_id": 279,
+          "logprob": -1.3809,
+          "text": " the"
+        },
+        {
+          "index": 155,
+          "token_id": 11,
+          "logprob": -1.2614,
+          "text": ","
+        },
+        {
+          "index": 240,
+          "token_id": 21,
+          "logprob": -1.2157,
+          "text": "6"
+        },
+        {
+          "index": 159,
+          "token_id": 279,
+          "logprob": -1.1527,
+          "text": " the"
+        },
+        {
+          "index": 148,
+          "token_id": 315,
+          "logprob": -1.1118,
+          "text": " of"
+        },
+        {
+          "index": 151,
+          "token_id": 1212,
+          "logprob": -1.0331,
+          "text": " under"
+        },
+        {
+          "index": 128,
+          "token_id": 2567,
+          "logprob": -1.0135,
+          "text": " required"
+        },
+        {
+          "index": 156,
+          "token_id": 279,
+          "logprob": -0.9863,
+          "text": " the"
+        },
+        {
+          "index": 169,
+          "token_id": 279,
+          "logprob": -0.9434,
+          "text": " the"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 83,
+      "mean": -0.4472,
+      "min": -2.0981,
+      "p05": -1.8977,
+      "p50": -0.0205,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 68,
+          "token_id": 19,
+          "logprob": -2.0981,
+          "text": "4"
+        },
+        {
+          "index": 51,
+          "token_id": 16,
+          "logprob": -2.0764,
+          "text": "1"
+        },
+        {
+          "index": 62,
+          "token_id": 18,
+          "logprob": -1.9639,
+          "text": "3"
+        },
+        {
+          "index": 93,
+          "token_id": 17,
+          "logprob": -1.9026,
+          "text": "2"
+        },
+        {
+          "index": 99,
+          "token_id": 18,
+          "logprob": -1.9009,
+          "text": "3"
+        },
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.8689,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.8359,
+          "text": "7"
+        },
+        {
+          "index": 201,
+          "token_id": 22,
+          "logprob": -1.7597,
+          "text": "7"
+        },
+        {
+          "index": 82,
+          "token_id": 16,
+          "logprob": -1.7155,
+          "text": "1"
+        },
+        {
+          "index": 87,
+          "token_id": 16,
+          "logprob": -1.6901,
+          "text": "1"
+        },
+        {
+          "index": 212,
+          "token_id": 16,
+          "logprob": -1.6673,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 24,
+          "logprob": -1.5396,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 256,
+      "mean": -0.271,
+      "min": -2.3333,
+      "p05": -1.5716,
+      "p50": -0.0143,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 221.26,
+    "std": 6.72,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      702.72,
+      1047.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      234,
+      349,
+      1717,
+      2560
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

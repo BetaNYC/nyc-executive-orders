@@ -1,0 +1,246 @@
+{
+  "page": 269,
+  "source_image": "page_0269.png",
+  "elements": [
+    {
+      "bbox": [
+        39,
+        18,
+        1160,
+        1848
+      ],
+      "category": "Text",
+      "text": "This image does not contain any text. It is a receipt or a list of ingredients.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.5512,
+          "min": -1.9028
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.6385,
+          "min": -0.6385
+        },
+        "text": {
+          "n_tokens": 18,
+          "mean": -0.5864,
+          "min": -2.8214
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1260588,
+        "density": 0.0,
+        "chars": 79,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 54,
+    "content": {
+      "n_tokens": 18,
+      "mean": -0.5864,
+      "min": -2.8214,
+      "p05": -2.4131,
+      "p50": -0.2246,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 22567,
+          "logprob": -2.8214,
+          "text": " receipt"
+        },
+        {
+          "index": 34,
+          "token_id": 1986,
+          "logprob": -2.341,
+          "text": "This"
+        },
+        {
+          "index": 48,
+          "token_id": 1140,
+          "logprob": -1.7975,
+          "text": " list"
+        },
+        {
+          "index": 50,
+          "token_id": 13966,
+          "logprob": -0.6576,
+          "text": " ingredients"
+        },
+        {
+          "index": 43,
+          "token_id": 374,
+          "logprob": -0.6133,
+          "text": " is"
+        },
+        {
+          "index": 47,
+          "token_id": 264,
+          "logprob": -0.5677,
+          "text": " a"
+        },
+        {
+          "index": 51,
+          "token_id": 1189,
+          "logprob": -0.5655,
+          "text": ".\""
+        },
+        {
+          "index": 46,
+          "token_id": 476,
+          "logprob": -0.5089,
+          "text": " or"
+        },
+        {
+          "index": 38,
+          "token_id": 6644,
+          "logprob": -0.3155,
+          "text": " contain"
+        },
+        {
+          "index": 44,
+          "token_id": 264,
+          "logprob": -0.1338,
+          "text": " a"
+        },
+        {
+          "index": 49,
+          "token_id": 315,
+          "logprob": -0.0709,
+          "text": " of"
+        },
+        {
+          "index": 40,
+          "token_id": 1467,
+          "logprob": -0.0691,
+          "text": " text"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 19,
+      "mean": -0.5558,
+      "min": -1.9028,
+      "p05": -1.7214,
+      "p50": -0.1695,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 6,
+          "token_id": 24,
+          "logprob": -1.9028,
+          "text": "9"
+        },
+        {
+          "index": 10,
+          "token_id": 23,
+          "logprob": -1.7013,
+          "text": "8"
+        },
+        {
+          "index": 5,
+          "token_id": 18,
+          "logprob": -1.5777,
+          "text": "3"
+        },
+        {
+          "index": 16,
+          "token_id": 15,
+          "logprob": -1.4974,
+          "text": "0"
+        },
+        {
+          "index": 21,
+          "token_id": 19,
+          "logprob": -0.8994,
+          "text": "4"
+        },
+        {
+          "index": 15,
+          "token_id": 21,
+          "logprob": -0.8779,
+          "text": "6"
+        },
+        {
+          "index": 9,
+          "token_id": 16,
+          "logprob": -0.6804,
+          "text": "1"
+        },
+        {
+          "index": 28,
+          "token_id": 1178,
+          "logprob": -0.6385,
+          "text": "Text"
+        },
+        {
+          "index": 22,
+          "token_id": 23,
+          "logprob": -0.542,
+          "text": "8"
+        },
+        {
+          "index": 20,
+          "token_id": 23,
+          "logprob": -0.1695,
+          "text": "8"
+        },
+        {
+          "index": 19,
+          "token_id": 16,
+          "logprob": -0.0331,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 11,
+          "logprob": -0.0197,
+          "text": ","
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 54,
+      "mean": -0.4052,
+      "min": -2.8214,
+      "p05": -1.8343,
+      "p50": -0.0223,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 164.53,
+    "std": 7.6,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      661.2,
+      427.68
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      220,
+      1045,
+      1616
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

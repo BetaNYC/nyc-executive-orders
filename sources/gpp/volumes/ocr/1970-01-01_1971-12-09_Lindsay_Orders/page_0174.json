@@ -1,0 +1,314 @@
+{
+  "page": 174,
+  "source_image": "page_0174.png",
+  "elements": [
+    {
+      "bbox": [
+        219,
+        278,
+        1154,
+        744
+      ],
+      "category": "Text",
+      "text": "and shall make available to it all necessary information as to age and sex qualifications presently imposed. The Commission shall make recommendations to the Personnel Director for changes in age and sex qualification in cases where it finds these qualifications to be unreasonable or unnecessary. The Personnel Director shall make these recommendations available to the City Civil Service Commission for its consideration.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4446,
+          "min": -2.047
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.07,
+          "min": -0.07
+        },
+        "text": {
+          "n_tokens": 65,
+          "mean": -0.0073,
+          "min": -0.2238
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 440391,
+        "density": 0.0,
+        "chars": 423,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        219,
+        775,
+        1170,
+        1295
+      ],
+      "category": "Text",
+      "text": "§ 4. When any new class of positions is created in the City service which specifically imposes an age or sex qualification, the Personnel Director shall submit such proposed sex or age qualification for such class of positions to the Commission on Human Rights for its recommendations as to such age or sex qualification. Upon receipt of a recommendation from the Commission on Human Rights, the Personnel Director shall submit such recommendations to the City Civil Service Commission for its consideration.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2841,
+          "min": -1.5462
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.006,
+          "min": -0.006
+        },
+        "text": {
+          "n_tokens": 87,
+          "mean": -0.0088,
+          "min": -0.7237
+        }
+      },
+      "ink": {
+        "ink_px": 30,
+        "area_px": 499465,
+        "density": 6e-05,
+        "chars": 508,
+        "chars_per_1k_ink": 16933.33
+      }
+    },
+    {
+      "bbox": [
+        219,
+        1325,
+        1169,
+        1476
+      ],
+      "category": "Text",
+      "text": "§ 5. Executive Order No. 41, dated June 7, 1957, prohibiting discrimination in employment by City departments or agencies against City employees because of race, creed,",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2508,
+          "min": -1.2641
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 41,
+          "mean": -0.0033,
+          "min": -0.0581
+        }
+      },
+      "ink": {
+        "ink_px": 7,
+        "area_px": 145008,
+        "density": 5e-05,
+        "chars": 168,
+        "chars_per_1k_ink": 24000.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 303,
+    "content": {
+      "n_tokens": 193,
+      "mean": -0.0071,
+      "min": -0.7237,
+      "p05": -0.0109,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 136,
+          "token_id": 17851,
+          "logprob": -0.7237,
+          "text": "§"
+        },
+        {
+          "index": 78,
+          "token_id": 58425,
+          "logprob": -0.2238,
+          "text": " unreasonable"
+        },
+        {
+          "index": 68,
+          "token_id": 45060,
+          "logprob": -0.1133,
+          "text": " qualification"
+        },
+        {
+          "index": 44,
+          "token_id": 438,
+          "logprob": -0.0627,
+          "text": " as"
+        },
+        {
+          "index": 283,
+          "token_id": 78366,
+          "logprob": -0.0581,
+          "text": " prohibiting"
+        },
+        {
+          "index": 300,
+          "token_id": 1335,
+          "logprob": -0.0309,
+          "text": ",\""
+        },
+        {
+          "index": 40,
+          "token_id": 432,
+          "logprob": -0.0168,
+          "text": " it"
+        },
+        {
+          "index": 288,
+          "token_id": 4311,
+          "logprob": -0.0143,
+          "text": " City"
+        },
+        {
+          "index": 154,
+          "token_id": 87281,
+          "logprob": -0.0142,
+          "text": " imposes"
+        },
+        {
+          "index": 53,
+          "token_id": 576,
+          "logprob": -0.0113,
+          "text": " The"
+        },
+        {
+          "index": 280,
+          "token_id": 20,
+          "logprob": -0.0107,
+          "text": "5"
+        },
+        {
+          "index": 51,
+          "token_id": 25980,
+          "logprob": -0.0085,
+          "text": " imposed"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 63,
+      "mean": -0.3091,
+      "min": -2.047,
+      "p05": -1.5389,
+      "p50": -0.0005,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 19,
+          "logprob": -2.047,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.7245,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.5925,
+          "text": "9"
+        },
+        {
+          "index": 112,
+          "token_id": 20,
+          "logprob": -1.5462,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.4729,
+          "text": "8"
+        },
+        {
+          "index": 124,
+          "token_id": 20,
+          "logprob": -1.2798,
+          "text": "5"
+        },
+        {
+          "index": 248,
+          "token_id": 21,
+          "logprob": -1.2641,
+          "text": "6"
+        },
+        {
+          "index": 236,
+          "token_id": 20,
+          "logprob": -1.214,
+          "text": "5"
+        },
+        {
+          "index": 118,
+          "token_id": 15,
+          "logprob": -1.1497,
+          "text": "0"
+        },
+        {
+          "index": 242,
+          "token_id": 24,
+          "logprob": -1.0441,
+          "text": "9"
+        },
+        {
+          "index": 230,
+          "token_id": 24,
+          "logprob": -0.9912,
+          "text": "9"
+        },
+        {
+          "index": 107,
+          "token_id": 24,
+          "logprob": -0.7554,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 303,
+      "mean": -0.0689,
+      "min": -2.047,
+      "p05": -0.5256,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.47,
+    "std": 8.91,
+    "dark_fraction": 2e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      677.52,
+      515.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      171,
+      225,
+      1260,
+      1656
+    ],
+    "ink_px": 37,
+    "covered_px": 37,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

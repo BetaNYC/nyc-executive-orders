@@ -1,0 +1,297 @@
+{
+  "page": 265,
+  "source_image": "page_0265.png",
+  "elements": [
+    {
+      "bbox": [
+        484,
+        1564,
+        703,
+        1624
+      ],
+      "category": "Text",
+      "text": "THE CIVIL WAR RECORD\nOF A FIGHTER IN A CAMP",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4996,
+          "min": -2.0484
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0109,
+          "min": -0.0109
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -1.329,
+          "min": -3.0765
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 8322,
+        "density": 0.0,
+        "chars": 43,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        531,
+        1640,
+        657,
+        1765
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3101,
+          "min": -1.5404
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0017,
+          "min": -0.0017
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        214,
+        1771,
+        1054,
+        1820
+      ],
+      "category": "Text",
+      "text": "THE CIVIL WAR RECORD\nOF A FIGHTER IN A CAMP\nAND IN A FIGHT.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3558,
+          "min": -2.116
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1494,
+          "min": -0.1494
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.4575,
+          "min": -2.0662
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 145,
+    "content": {
+      "n_tokens": 39,
+      "mean": -0.815,
+      "min": -3.0765,
+      "p05": -2.1345,
+      "p50": -0.7457,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 434,
+          "logprob": -3.0765,
+          "text": " F"
+        },
+        {
+          "index": 37,
+          "token_id": 356,
+          "logprob": -2.749,
+          "text": " C"
+        },
+        {
+          "index": 140,
+          "token_id": 434,
+          "logprob": -2.0662,
+          "text": " F"
+        },
+        {
+          "index": 50,
+          "token_id": 356,
+          "logprob": -1.925,
+          "text": " C"
+        },
+        {
+          "index": 46,
+          "token_id": 4631,
+          "logprob": -1.8403,
+          "text": "IGHT"
+        },
+        {
+          "index": 36,
+          "token_id": 17229,
+          "logprob": -1.7637,
+          "text": "THE"
+        },
+        {
+          "index": 49,
+          "token_id": 362,
+          "logprob": -1.4442,
+          "text": " A"
+        },
+        {
+          "index": 137,
+          "token_id": 3976,
+          "logprob": -1.429,
+          "text": "AND"
+        },
+        {
+          "index": 121,
+          "token_id": 356,
+          "logprob": -1.3344,
+          "text": " C"
+        },
+        {
+          "index": 120,
+          "token_id": 17229,
+          "logprob": -1.3335,
+          "text": "THE"
+        },
+        {
+          "index": 44,
+          "token_id": 362,
+          "logprob": -1.3329,
+          "text": " A"
+        },
+        {
+          "index": 41,
+          "token_id": 55993,
+          "logprob": -1.2266,
+          "text": " RECORD"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 64,
+      "mean": -0.3723,
+      "min": -2.116,
+      "p05": -1.8838,
+      "p50": -0.024,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 102,
+          "token_id": 19,
+          "logprob": -2.116,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -2.0484,
+          "text": "4"
+        },
+        {
+          "index": 13,
+          "token_id": 19,
+          "logprob": -1.9043,
+          "text": "4"
+        },
+        {
+          "index": 96,
+          "token_id": 16,
+          "logprob": -1.8975,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.8061,
+          "text": "3"
+        },
+        {
+          "index": 90,
+          "token_id": 19,
+          "logprob": -1.7879,
+          "text": "4"
+        },
+        {
+          "index": 24,
+          "token_id": 19,
+          "logprob": -1.7567,
+          "text": "4"
+        },
+        {
+          "index": 76,
+          "token_id": 20,
+          "logprob": -1.5404,
+          "text": "5"
+        },
+        {
+          "index": 70,
+          "token_id": 22,
+          "logprob": -1.37,
+          "text": "7"
+        },
+        {
+          "index": 59,
+          "token_id": 16,
+          "logprob": -1.1846,
+          "text": "1"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -1.0513,
+          "text": "4"
+        },
+        {
+          "index": 6,
+          "token_id": 23,
+          "logprob": -0.928,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 145,
+      "mean": -0.3964,
+      "min": -3.0765,
+      "p05": -1.886,
+      "p50": -0.0039,
+      "n_below_threshold": 5
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 165.21,
+    "std": 7.6,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      656.16,
+      429.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      143,
+      218,
+      1050,
+      1604
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

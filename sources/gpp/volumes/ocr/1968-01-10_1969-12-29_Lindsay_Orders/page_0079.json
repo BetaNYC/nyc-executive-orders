@@ -1,0 +1,216 @@
+{
+  "page": 79,
+  "source_image": "page_0079.png",
+  "elements": [
+    {
+      "bbox": [
+        24,
+        1701,
+        37,
+        1770
+      ],
+      "category": "Page-header",
+      "text": "191",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.5348,
+          "min": -2.0994
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0676,
+          "min": -0.1002
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -1.2723,
+          "min": -1.4894
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        40,
+        27,
+        1167,
+        1844
+      ],
+      "category": "Text",
+      "text": "",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.6412,
+          "min": -2.1807
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1004,
+          "min": -0.1004
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1270212,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 74,
+    "content": {
+      "n_tokens": 3,
+      "mean": -1.2723,
+      "min": -1.4894,
+      "p05": -1.4791,
+      "p50": -1.3862,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 16,
+          "logprob": -1.4894,
+          "text": "1"
+        },
+        {
+          "index": 37,
+          "token_id": 16,
+          "logprob": -1.3862,
+          "text": "1"
+        },
+        {
+          "index": 36,
+          "token_id": 24,
+          "logprob": -0.9412,
+          "text": "9"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 39,
+      "mean": -0.5488,
+      "min": -2.1807,
+      "p05": -2.1027,
+      "p50": -0.0806,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 54,
+          "token_id": 22,
+          "logprob": -2.1807,
+          "text": "7"
+        },
+        {
+          "index": 44,
+          "token_id": 15,
+          "logprob": -2.1328,
+          "text": "0"
+        },
+        {
+          "index": 6,
+          "token_id": 19,
+          "logprob": -2.0994,
+          "text": "4"
+        },
+        {
+          "index": 48,
+          "token_id": 22,
+          "logprob": -1.9934,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.6873,
+          "text": "1"
+        },
+        {
+          "index": 16,
+          "token_id": 22,
+          "logprob": -1.5637,
+          "text": "7"
+        },
+        {
+          "index": 60,
+          "token_id": 19,
+          "logprob": -1.4791,
+          "text": "4"
+        },
+        {
+          "index": 5,
+          "token_id": 17,
+          "logprob": -1.4181,
+          "text": "2"
+        },
+        {
+          "index": 22,
+          "token_id": 15,
+          "logprob": -1.2131,
+          "text": "0"
+        },
+        {
+          "index": 43,
+          "token_id": 19,
+          "logprob": -1.039,
+          "text": "4"
+        },
+        {
+          "index": 53,
+          "token_id": 21,
+          "logprob": -1.0235,
+          "text": "6"
+        },
+        {
+          "index": 47,
+          "token_id": 17,
+          "logprob": -0.9002,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 74,
+      "mean": -0.3748,
+      "min": -2.1807,
+      "p05": -1.8778,
+      "p50": -0.0005,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.16,
+    "std": 6.77,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      664.08,
+      429.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      143,
+      221,
+      1049,
+      1623
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

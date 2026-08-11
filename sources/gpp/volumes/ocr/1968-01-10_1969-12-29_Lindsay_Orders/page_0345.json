@@ -1,0 +1,222 @@
+{
+  "page": 345,
+  "source_image": "page_0345.png",
+  "elements": [
+    {
+      "bbox": [
+        297,
+        1017,
+        413,
+        1041
+      ],
+      "category": "List-item",
+      "text": "(a) 1890",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.403,
+          "min": -1.7997
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1583,
+          "min": -0.3167
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -1.2413,
+          "min": -2.1123
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 2925,
+        "density": 0.0,
+        "chars": 8,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "length",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 12000,
+    "content": {
+      "n_tokens": 8,
+      "mean": -1.2413,
+      "min": -2.1123,
+      "p05": -2.0803,
+      "p50": -1.6537,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 43,
+          "token_id": 15,
+          "logprob": -2.1123,
+          "text": "0"
+        },
+        {
+          "index": 39,
+          "token_id": 220,
+          "logprob": -2.0211,
+          "text": " "
+        },
+        {
+          "index": 42,
+          "token_id": 24,
+          "logprob": -1.794,
+          "text": "9"
+        },
+        {
+          "index": 41,
+          "token_id": 23,
+          "logprob": -1.6985,
+          "text": "8"
+        },
+        {
+          "index": 40,
+          "token_id": 16,
+          "logprob": -1.6089,
+          "text": "1"
+        },
+        {
+          "index": 37,
+          "token_id": 64,
+          "logprob": -0.5213,
+          "text": "a"
+        },
+        {
+          "index": 36,
+          "token_id": 11993,
+          "logprob": -0.1528,
+          "text": " \"("
+        },
+        {
+          "index": 38,
+          "token_id": 8,
+          "logprob": -0.0214,
+          "text": ")"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 22,
+      "mean": -0.3808,
+      "min": -1.7997,
+      "p05": -1.7841,
+      "p50": -0.0393,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.7997,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.7907,
+          "text": "7"
+        },
+        {
+          "index": 13,
+          "token_id": 22,
+          "logprob": -1.6578,
+          "text": "7"
+        },
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.5409,
+          "text": "1"
+        },
+        {
+          "index": 5,
+          "token_id": 17,
+          "logprob": -0.6392,
+          "text": "2"
+        },
+        {
+          "index": 30,
+          "token_id": 852,
+          "logprob": -0.3167,
+          "text": "List"
+        },
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -0.2061,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -0.1399,
+          "text": "1"
+        },
+        {
+          "index": 6,
+          "token_id": 24,
+          "logprob": -0.1228,
+          "text": "9"
+        },
+        {
+          "index": 16,
+          "token_id": 19,
+          "logprob": -0.0814,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -0.0739,
+          "text": "4"
+        },
+        {
+          "index": 10,
+          "token_id": 16,
+          "logprob": -0.0046,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 12000,
+      "mean": -0.0163,
+      "min": -3.8124,
+      "p05": -0.0902,
+      "p50": -0.0001,
+      "n_below_threshold": 8
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 165.62,
+    "std": 7.22,
+    "dark_fraction": 9e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      662.4,
+      424.8
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      141,
+      220,
+      1038,
+      1619
+    ],
+    "ink_px": 109,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 109,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

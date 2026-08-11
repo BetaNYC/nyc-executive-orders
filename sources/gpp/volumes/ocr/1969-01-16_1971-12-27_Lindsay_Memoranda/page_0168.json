@@ -1,0 +1,308 @@
+{
+  "page": 168,
+  "source_image": "page_0168.png",
+  "elements": [
+    {
+      "bbox": [
+        1041,
+        349,
+        1157,
+        385
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3741,
+          "min": -1.5824
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0103,
+          "min": -0.0199
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0447,
+          "min": -0.1604
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        315,
+        484,
+        1970,
+        903
+      ],
+      "category": "Text",
+      "text": "Please plan to have the shifts take place on or before January 31. I would appreciate receiving by January 14, a report of (a) your plans, including the name of your designated representative, (b) how many employees not presently on the 8:30-4:30 shift will go on the new time schedule, and (c) the total number of employees who have been shifted during our original program and are now in the enlarged program. Following our previous pattern, by May 1, we will be sending you questionnaires for distribution to those participating in order to evaluate the expanded program.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3917,
+          "min": -1.7902
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 127,
+          "mean": -0.0006,
+          "min": -0.062
+        }
+      },
+      "ink": {
+        "ink_px": 9504,
+        "area_px": 698054,
+        "density": 0.01361,
+        "chars": 574,
+        "chars_per_1k_ink": 60.4
+      }
+    },
+    {
+      "bbox": [
+        324,
+        949,
+        1972,
+        1087
+      ],
+      "category": "Text",
+      "text": "Your assistance and support is critical to the success of what I believe is an important step in relieving rush hour congestion as well as improving employee morale.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3017,
+          "min": -1.459
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 30,
+          "mean": -0.0001,
+          "min": -0.0017
+        }
+      },
+      "ink": {
+        "ink_px": 3253,
+        "area_px": 228942,
+        "density": 0.01421,
+        "chars": 165,
+        "chars_per_1k_ink": 50.72
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 270,
+    "content": {
+      "n_tokens": 161,
+      "mean": -0.0016,
+      "min": -0.1604,
+      "p05": -0.0008,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 37,
+          "token_id": 220,
+          "logprob": -0.1604,
+          "text": " "
+        },
+        {
+          "index": 90,
+          "token_id": 13,
+          "logprob": -0.062,
+          "text": "."
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.0167,
+          "text": " \"-"
+        },
+        {
+          "index": 125,
+          "token_id": 49701,
+          "logprob": -0.0126,
+          "text": " presently"
+        },
+        {
+          "index": 256,
+          "token_id": 58544,
+          "logprob": -0.0017,
+          "text": " relie"
+        },
+        {
+          "index": 39,
+          "token_id": 481,
+          "logprob": -0.0014,
+          "text": " -"
+        },
+        {
+          "index": 104,
+          "token_id": 320,
+          "logprob": -0.001,
+          "text": " ("
+        },
+        {
+          "index": 172,
+          "token_id": 22713,
+          "logprob": -0.001,
+          "text": " Following"
+        },
+        {
+          "index": 159,
+          "token_id": 28973,
+          "logprob": -0.0008,
+          "text": " shifted"
+        },
+        {
+          "index": 243,
+          "token_id": 9023,
+          "logprob": -0.0004,
+          "text": " critical"
+        },
+        {
+          "index": 38,
+          "token_id": 17,
+          "logprob": -0.0002,
+          "text": "2"
+        },
+        {
+          "index": 169,
+          "token_id": 73017,
+          "logprob": -0.0002,
+          "text": " enlarged"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 63,
+      "mean": -0.333,
+      "min": -1.7902,
+      "p05": -1.5838,
+      "p50": -0.0007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 47,
+          "token_id": 20,
+          "logprob": -1.7902,
+          "text": "5"
+        },
+        {
+          "index": 52,
+          "token_id": 19,
+          "logprob": -1.7081,
+          "text": "4"
+        },
+        {
+          "index": 63,
+          "token_id": 18,
+          "logprob": -1.5956,
+          "text": "3"
+        },
+        {
+          "index": 58,
+          "token_id": 15,
+          "logprob": -1.5839,
+          "text": "0"
+        },
+        {
+          "index": 24,
+          "token_id": 20,
+          "logprob": -1.5824,
+          "text": "5"
+        },
+        {
+          "index": 19,
+          "token_id": 22,
+          "logprob": -1.5117,
+          "text": "7"
+        },
+        {
+          "index": 13,
+          "token_id": 24,
+          "logprob": -1.4946,
+          "text": "9"
+        },
+        {
+          "index": 209,
+          "token_id": 19,
+          "logprob": -1.459,
+          "text": "4"
+        },
+        {
+          "index": 220,
+          "token_id": 17,
+          "logprob": -1.4533,
+          "text": "2"
+        },
+        {
+          "index": 8,
+          "token_id": 16,
+          "logprob": -1.3381,
+          "text": "1"
+        },
+        {
+          "index": 226,
+          "token_id": 22,
+          "logprob": -1.2935,
+          "text": "7"
+        },
+        {
+          "index": 214,
+          "token_id": 24,
+          "logprob": -1.1967,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 270,
+      "mean": -0.0787,
+      "min": -1.7902,
+      "p05": -0.5122,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 183.86,
+    "std": 11.33,
+    "dark_fraction": 0.00284
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      871.68,
+      1155.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      290,
+      385,
+      2131,
+      2824
+    ],
+    "ink_px": 12757,
+    "covered_px": 12757,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

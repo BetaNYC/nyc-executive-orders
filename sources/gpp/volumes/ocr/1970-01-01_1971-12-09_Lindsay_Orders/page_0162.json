@@ -1,0 +1,382 @@
+{
+  "page": 162,
+  "source_image": "page_0162.png",
+  "elements": [
+    {
+      "bbox": [
+        666,
+        369,
+        704,
+        390
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3565,
+          "min": -1.5067
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0325,
+          "min": -0.0628
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0035,
+          "min": -0.007
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 858,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        249,
+        503,
+        1160,
+        646
+      ],
+      "category": "Text",
+      "text": "misconduct, including any conflict of interest, involving any officer or employee of the City. This notification must be given by the head of the agency before the agency takes any action whatsoever in the matter.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3058,
+          "min": -1.4314
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0018,
+          "min": -0.0018
+        },
+        "text": {
+          "n_tokens": 40,
+          "mean": -0.0016,
+          "min": -0.0559
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 132385,
+        "density": 0.0,
+        "chars": 213,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        254,
+        701,
+        1145,
+        924
+      ],
+      "category": "Text",
+      "text": "(c) Each agency shall establish a procedure to receive complaints by the general public concerning the competency or integrity of any employee or officer of the agency. The agency head shall designate a person or persons directly under his supervision to receive such complaints. All members of the staff of the agency shall be advised of the persons who have been so designated.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.266,
+          "min": -1.3983
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2254,
+          "min": -0.2254
+        },
+        "text": {
+          "n_tokens": 68,
+          "mean": -0.0002,
+          "min": -0.0091
+        }
+      },
+      "ink": {
+        "ink_px": 1,
+        "area_px": 201818,
+        "density": 0.0,
+        "chars": 379,
+        "chars_per_1k_ink": 379000.0
+      }
+    },
+    {
+      "bbox": [
+        257,
+        974,
+        1184,
+        1355
+      ],
+      "category": "Text",
+      "text": "§2. (a) Each agency head shall notify the Dept. of Investigation immediately of any activity by any employee or official of any private concern doing business with any City agency which indicates or suggests an attempt to involve a city officer or employee in a situation involving possible corruption or misconduct, including a conflict of interest. Each agency head shall instruct all personnel within his agency that they are to advise him immediately upon the receipt of any allegation or indication of corruption or questionable action by any person or company doing business with or seeking to do business with any City agency.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2646,
+          "min": -1.5541
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0028,
+          "min": -0.0028
+        },
+        "text": {
+          "n_tokens": 111,
+          "mean": -0.0021,
+          "min": -0.2114
+        }
+      },
+      "ink": {
+        "ink_px": 8,
+        "area_px": 356736,
+        "density": 2e-05,
+        "chars": 633,
+        "chars_per_1k_ink": 79125.0
+      }
+    },
+    {
+      "bbox": [
+        261,
+        1405,
+        1194,
+        1548
+      ],
+      "category": "Text",
+      "text": "(b) The Department of Investigation should be consulted if any agency has a question concerning the ownership of or the nature of the financial backing of any company doing business with or attempting to do business with any city agency when the ownership of or the",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.228,
+          "min": -1.4248
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 48,
+          "mean": -0.0003,
+          "min": -0.0076
+        }
+      },
+      "ink": {
+        "ink_px": 4,
+        "area_px": 135575,
+        "density": 3e-05,
+        "chars": 265,
+        "chars_per_1k_ink": 66250.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 448,
+    "content": {
+      "n_tokens": 270,
+      "mean": -0.0012,
+      "min": -0.2114,
+      "p05": -0.001,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 250,
+          "token_id": 17851,
+          "logprob": -0.2114,
+          "text": "§"
+        },
+        {
+          "index": 83,
+          "token_id": 9452,
+          "logprob": -0.0559,
+          "text": " officer"
+        },
+        {
+          "index": 146,
+          "token_id": 11993,
+          "logprob": -0.0091,
+          "text": " \"("
+        },
+        {
+          "index": 416,
+          "token_id": 315,
+          "logprob": -0.0076,
+          "text": " of"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.007,
+          "text": " \"-"
+        },
+        {
+          "index": 286,
+          "token_id": 14807,
+          "logprob": -0.006,
+          "text": " indicates"
+        },
+        {
+          "index": 72,
+          "token_id": 33865,
+          "logprob": -0.0038,
+          "text": "mis"
+        },
+        {
+          "index": 431,
+          "token_id": 19405,
+          "logprob": -0.0034,
+          "text": " attempting"
+        },
+        {
+          "index": 107,
+          "token_id": 35634,
+          "logprob": -0.003,
+          "text": " whatsoever"
+        },
+        {
+          "index": 35,
+          "token_id": 17,
+          "logprob": -0.0028,
+          "text": "2"
+        },
+        {
+          "index": 265,
+          "token_id": 46897,
+          "logprob": -0.0027,
+          "text": " Investigation"
+        },
+        {
+          "index": 274,
+          "token_id": 3946,
+          "logprob": -0.0027,
+          "text": " official"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 103,
+      "mean": -0.2685,
+      "min": -1.5541,
+      "p05": -1.4221,
+      "p50": -0.0012,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 226,
+          "token_id": 19,
+          "logprob": -1.5541,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.5067,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 19,
+          "logprob": -1.462,
+          "text": "4"
+        },
+        {
+          "index": 49,
+          "token_id": 18,
+          "logprob": -1.4314,
+          "text": "3"
+        },
+        {
+          "index": 232,
+          "token_id": 19,
+          "logprob": -1.4271,
+          "text": "4"
+        },
+        {
+          "index": 380,
+          "token_id": 19,
+          "logprob": -1.4248,
+          "text": "4"
+        },
+        {
+          "index": 130,
+          "token_id": 20,
+          "logprob": -1.3983,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.3763,
+          "text": "9"
+        },
+        {
+          "index": 119,
+          "token_id": 19,
+          "logprob": -1.2513,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 15,
+          "logprob": -1.2321,
+          "text": "0"
+        },
+        {
+          "index": 60,
+          "token_id": 21,
+          "logprob": -1.2045,
+          "text": "6"
+        },
+        {
+          "index": 55,
+          "token_id": 15,
+          "logprob": -1.2014,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 448,
+      "mean": -0.0625,
+      "min": -1.5541,
+      "p05": -0.3887,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.38,
+    "std": 11.23,
+    "dark_fraction": 1e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      658.56,
+      514.56
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      171,
+      219,
+      1258,
+      1610
+    ],
+    "ink_px": 13,
+    "covered_px": 13,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

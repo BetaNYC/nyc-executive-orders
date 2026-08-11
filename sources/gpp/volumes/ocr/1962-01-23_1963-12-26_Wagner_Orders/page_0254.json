@@ -1,0 +1,280 @@
+{
+  "page": 254,
+  "source_image": "page_0254.png",
+  "elements": [
+    {
+      "bbox": [
+        441,
+        569,
+        997,
+        613
+      ],
+      "category": "Page-header",
+      "text": "EXECUTIVE ORDERS NO. , 56",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3893,
+          "min": -1.6951
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1144,
+          "min": -0.2288
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0342,
+          "min": -0.318
+        }
+      },
+      "ink": {
+        "ink_px": 1334,
+        "area_px": 24420,
+        "density": 0.05463,
+        "chars": 25,
+        "chars_per_1k_ink": 18.74
+      }
+    },
+    {
+      "bbox": [
+        236,
+        878,
+        1483,
+        990
+      ],
+      "category": "Text",
+      "text": "These orders dealt with internal matters in specific agencies and were not released to any but the agencies concerned",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3879,
+          "min": -1.8028
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0316,
+          "min": -0.2555
+        }
+      },
+      "ink": {
+        "ink_px": 5902,
+        "area_px": 140572,
+        "density": 0.04199,
+        "chars": 117,
+        "chars_per_1k_ink": 19.82
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 103,
+    "content": {
+      "n_tokens": 30,
+      "mean": -0.0325,
+      "min": -0.318,
+      "p05": -0.241,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 42,
+          "token_id": 1154,
+          "logprob": -0.318,
+          "text": " ,"
+        },
+        {
+          "index": 90,
+          "token_id": 323,
+          "logprob": -0.2555,
+          "text": " and"
+        },
+        {
+          "index": 88,
+          "token_id": 3151,
+          "logprob": -0.2232,
+          "text": " specific"
+        },
+        {
+          "index": 83,
+          "token_id": 25934,
+          "logprob": -0.0699,
+          "text": " dealt"
+        },
+        {
+          "index": 41,
+          "token_id": 13,
+          "logprob": -0.0546,
+          "text": "."
+        },
+        {
+          "index": 81,
+          "token_id": 9485,
+          "logprob": -0.05,
+          "text": "These"
+        },
+        {
+          "index": 35,
+          "token_id": 46340,
+          "logprob": -0.0013,
+          "text": "EXEC"
+        },
+        {
+          "index": 43,
+          "token_id": 220,
+          "logprob": -0.0013,
+          "text": " "
+        },
+        {
+          "index": 95,
+          "token_id": 894,
+          "logprob": -0.0004,
+          "text": " any"
+        },
+        {
+          "index": 40,
+          "token_id": 5664,
+          "logprob": -0.0003,
+          "text": " NO"
+        },
+        {
+          "index": 82,
+          "token_id": 10163,
+          "logprob": -0.0002,
+          "text": " orders"
+        },
+        {
+          "index": 96,
+          "token_id": 714,
+          "logprob": -0.0002,
+          "text": " but"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 40,
+      "mean": -0.3651,
+      "min": -1.8028,
+      "p05": -1.6105,
+      "p50": -0.0015,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 64,
+          "token_id": 18,
+          "logprob": -1.8028,
+          "text": "3"
+        },
+        {
+          "index": 22,
+          "token_id": 18,
+          "logprob": -1.6951,
+          "text": "3"
+        },
+        {
+          "index": 53,
+          "token_id": 21,
+          "logprob": -1.6061,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.5475,
+          "text": "9"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.5201,
+          "text": "1"
+        },
+        {
+          "index": 58,
+          "token_id": 23,
+          "logprob": -1.4498,
+          "text": "8"
+        },
+        {
+          "index": 69,
+          "token_id": 15,
+          "logprob": -1.4046,
+          "text": "0"
+        },
+        {
+          "index": 17,
+          "token_id": 22,
+          "logprob": -1.345,
+          "text": "7"
+        },
+        {
+          "index": 57,
+          "token_id": 22,
+          "logprob": -0.6567,
+          "text": "7"
+        },
+        {
+          "index": 11,
+          "token_id": 21,
+          "logprob": -0.3643,
+          "text": "6"
+        },
+        {
+          "index": 68,
+          "token_id": 24,
+          "logprob": -0.2539,
+          "text": "9"
+        },
+        {
+          "index": 28,
+          "token_id": 2665,
+          "logprob": -0.2288,
+          "text": "Page"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 103,
+      "mean": -0.1526,
+      "min": -1.8028,
+      "p05": -1.4453,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 186.76,
+    "std": 8.36,
+    "dark_fraction": 0.00232
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      683.04,
+      1024.56
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      227,
+      341,
+      1670,
+      2504
+    ],
+    "ink_px": 7243,
+    "covered_px": 7236,
+    "covered_fraction": 0.99903,
+    "uncovered_px": 7,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

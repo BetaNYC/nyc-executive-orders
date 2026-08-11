@@ -1,0 +1,303 @@
+{
+  "page": 153,
+  "source_image": "page_0153.png",
+  "elements": [
+    {
+      "bbox": [
+        104,
+        1417,
+        1000,
+        1594
+      ],
+      "category": "Text",
+      "text": "The film was released in 1968 in the United States and in 1969 in the United Kingdom. It was also shown in 1968 in the United Kingdom, but with a different score andvodiaru. The film received critical acclaim in both countries, with reviews in both countries being positive. The film was well-received in the United States, with reviews in both the press and among film critics being positive. The film received critical acclaim in the United Kingdom, with reviews in both the press and among film critics being positive. The film received critical acclaim in both countries, with reviews in both the press and among film critics being positive.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.5321,
+          "min": -2.096
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 137,
+          "mean": -0.6323,
+          "min": -4.6138
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 152397,
+        "density": 0.0,
+        "chars": 645,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        504,
+        1146,
+        821,
+        1357
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.594,
+          "min": -2.1749
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0019,
+          "min": -0.0019
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 67628,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        606,
+        1654,
+        897,
+        1681
+      ],
+      "category": "Page-footer",
+      "text": "Distribution: United States - 1968",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4317,
+          "min": -1.9987
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3045,
+          "min": -0.6088
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.8862,
+          "min": -1.6079
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 255,
+    "content": {
+      "n_tokens": 147,
+      "mean": -0.6496,
+      "min": -4.6138,
+      "p05": -2.0128,
+      "p50": -0.3978,
+      "n_below_threshold": 8,
+      "worst_tokens": [
+        {
+          "index": 38,
+          "token_id": 4531,
+          "logprob": -4.6138,
+          "text": " film"
+        },
+        {
+          "index": 86,
+          "token_id": 84,
+          "logprob": -2.8523,
+          "text": "u"
+        },
+        {
+          "index": 68,
+          "token_id": 220,
+          "logprob": -2.3313,
+          "text": " "
+        },
+        {
+          "index": 87,
+          "token_id": 13,
+          "logprob": -2.3091,
+          "text": "."
+        },
+        {
+          "index": 84,
+          "token_id": 91010,
+          "logprob": -2.1832,
+          "text": "vod"
+        },
+        {
+          "index": 120,
+          "token_id": 279,
+          "logprob": -2.0878,
+          "text": " the"
+        },
+        {
+          "index": 40,
+          "token_id": 5880,
+          "logprob": -2.0517,
+          "text": " released"
+        },
+        {
+          "index": 65,
+          "token_id": 1083,
+          "logprob": -2.0204,
+          "text": " also"
+        },
+        {
+          "index": 46,
+          "token_id": 23,
+          "logprob": -1.9952,
+          "text": "8"
+        },
+        {
+          "index": 39,
+          "token_id": 572,
+          "logprob": -1.8668,
+          "text": " was"
+        },
+        {
+          "index": 132,
+          "token_id": 9023,
+          "logprob": -1.8527,
+          "text": " critical"
+        },
+        {
+          "index": 85,
+          "token_id": 13572,
+          "logprob": -1.7779,
+          "text": "iar"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 65,
+      "mean": -0.4969,
+      "min": -2.1749,
+      "p05": -2.0155,
+      "p50": -0.0277,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 181,
+          "token_id": 19,
+          "logprob": -2.1749,
+          "text": "4"
+        },
+        {
+          "index": 187,
+          "token_id": 21,
+          "logprob": -2.1735,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -2.096,
+          "text": "4"
+        },
+        {
+          "index": 13,
+          "token_id": 22,
+          "logprob": -2.0197,
+          "text": "7"
+        },
+        {
+          "index": 218,
+          "token_id": 19,
+          "logprob": -1.9987,
+          "text": "4"
+        },
+        {
+          "index": 212,
+          "token_id": 21,
+          "logprob": -1.9872,
+          "text": "6"
+        },
+        {
+          "index": 198,
+          "token_id": 22,
+          "logprob": -1.9775,
+          "text": "7"
+        },
+        {
+          "index": 25,
+          "token_id": 19,
+          "logprob": -1.9696,
+          "text": "4"
+        },
+        {
+          "index": 192,
+          "token_id": 16,
+          "logprob": -1.8776,
+          "text": "1"
+        },
+        {
+          "index": 19,
+          "token_id": 15,
+          "logprob": -1.8158,
+          "text": "0"
+        },
+        {
+          "index": 229,
+          "token_id": 16,
+          "logprob": -1.6354,
+          "text": "1"
+        },
+        {
+          "index": 223,
+          "token_id": 22,
+          "logprob": -1.6141,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 255,
+      "mean": -0.5074,
+      "min": -4.6138,
+      "p05": -1.9962,
+      "p50": -0.1259,
+      "n_below_threshold": 12
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.15,
+    "std": 8.2,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      663.36,
+      423.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      141,
+      221,
+      1036,
+      1621
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

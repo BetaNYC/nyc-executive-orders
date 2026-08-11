@@ -1,0 +1,332 @@
+{
+  "page": 46,
+  "source_image": "page_0046.png",
+  "elements": [
+    {
+      "bbox": [
+        114,
+        104,
+        2316,
+        1485
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5668,
+          "min": -2.172
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 9797,
+        "area_px": 2128665,
+        "density": 0.0046,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        241,
+        1505,
+        2047,
+        1635
+      ],
+      "category": "Text",
+      "text": "Wouldn't You Rather Switch-Than Fight!",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4478,
+          "min": -2.0767
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0427,
+          "min": -0.3176
+        }
+      },
+      "ink": {
+        "ink_px": 510,
+        "area_px": 226237,
+        "density": 0.00225,
+        "chars": 38,
+        "chars_per_1k_ink": 74.51
+      }
+    },
+    {
+      "bbox": [
+        114,
+        1635,
+        2452,
+        3042
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4379,
+          "min": -1.9595
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0086,
+          "min": -0.0086
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 10968,
+        "area_px": 2800980,
+        "density": 0.00392,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        671,
+        3143,
+        1628,
+        3253
+      ],
+      "category": "Text",
+      "text": "Adopt Staggered Work Hours",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4093,
+          "min": -2.014
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0008,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0009,
+          "min": -0.0023
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 157,
+    "content": {
+      "n_tokens": 17,
+      "mean": -0.0255,
+      "min": -0.3176,
+      "p05": -0.1392,
+      "p50": -0.0008,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 76,
+          "token_id": 18629,
+          "logprob": -0.3176,
+          "text": " Fight"
+        },
+        {
+          "index": 74,
+          "token_id": 12,
+          "logprob": -0.0946,
+          "text": "-"
+        },
+        {
+          "index": 77,
+          "token_id": 8958,
+          "logprob": -0.01,
+          "text": "!\""
+        },
+        {
+          "index": 149,
+          "token_id": 794,
+          "logprob": -0.0023,
+          "text": " St"
+        },
+        {
+          "index": 147,
+          "token_id": 2589,
+          "logprob": -0.002,
+          "text": "Ad"
+        },
+        {
+          "index": 71,
+          "token_id": 1446,
+          "logprob": -0.002,
+          "text": " You"
+        },
+        {
+          "index": 150,
+          "token_id": 10114,
+          "logprob": -0.002,
+          "text": "agger"
+        },
+        {
+          "index": 75,
+          "token_id": 26067,
+          "logprob": -0.0011,
+          "text": "Than"
+        },
+        {
+          "index": 68,
+          "token_id": 27989,
+          "logprob": -0.0008,
+          "text": "Would"
+        },
+        {
+          "index": 73,
+          "token_id": 15586,
+          "logprob": -0.0004,
+          "text": " Switch"
+        },
+        {
+          "index": 153,
+          "token_id": 29092,
+          "logprob": -0.0001,
+          "text": " Hours"
+        },
+        {
+          "index": 148,
+          "token_id": 2912,
+          "logprob": -0.0001,
+          "text": "opt"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 87,
+      "mean": -0.443,
+      "min": -2.172,
+      "p05": -2.0344,
+      "p50": -0.0086,
+      "n_below_threshold": 6,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -2.172,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -2.1674,
+          "text": "4"
+        },
+        {
+          "index": 24,
+          "token_id": 20,
+          "logprob": -2.134,
+          "text": "5"
+        },
+        {
+          "index": 44,
+          "token_id": 20,
+          "logprob": -2.0767,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -2.0432,
+          "text": "6"
+        },
+        {
+          "index": 123,
+          "token_id": 18,
+          "logprob": -2.014,
+          "text": "3"
+        },
+        {
+          "index": 38,
+          "token_id": 16,
+          "logprob": -1.9674,
+          "text": "1"
+        },
+        {
+          "index": 103,
+          "token_id": 17,
+          "logprob": -1.9595,
+          "text": "2"
+        },
+        {
+          "index": 56,
+          "token_id": 20,
+          "logprob": -1.9386,
+          "text": "5"
+        },
+        {
+          "index": 97,
+          "token_id": 17,
+          "logprob": -1.8573,
+          "text": "2"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -1.8312,
+          "text": "7"
+        },
+        {
+          "index": 117,
+          "token_id": 16,
+          "logprob": -1.7134,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 157,
+      "mean": -0.2484,
+      "min": -2.172,
+      "p05": -1.9427,
+      "p50": -0.0001,
+      "n_below_threshold": 6
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.32,
+    "std": 16.87,
+    "dark_fraction": 0.00405
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      944.88,
+      1246.8
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      315,
+      415,
+      2310,
+      3048
+    ],
+    "ink_px": 21275,
+    "covered_px": 21275,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

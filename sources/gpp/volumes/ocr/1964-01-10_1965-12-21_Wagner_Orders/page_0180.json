@@ -1,0 +1,376 @@
+{
+  "page": 180,
+  "source_image": "page_0180.png",
+  "elements": [
+    {
+      "bbox": [
+        493,
+        301,
+        1530,
+        401
+      ],
+      "category": "Text",
+      "text": "continued beyond the termination date thereof, as herein prescribed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4641,
+          "min": -2.1021
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0239,
+          "min": -0.0239
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0007,
+          "min": -0.0036
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        401,
+        443,
+        1595,
+        549
+      ],
+      "category": "List-item",
+      "text": "6. This resolution shall not take effect unless approved by the Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3667,
+          "min": -1.8084
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0027,
+          "min": -0.0053
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0001,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 1698,
+        "area_px": 128400,
+        "density": 0.01322,
+        "chars": 70,
+        "chars_per_1k_ink": 41.22
+      }
+    },
+    {
+      "bbox": [
+        899,
+        645,
+        1750,
+        745
+      ],
+      "category": "Text",
+      "text": "NEW YORK CITY TRANSIT AUTHORITY\nBy",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3671,
+          "min": -1.8412
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.4316,
+          "min": -0.4316
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.012,
+          "min": -0.0997
+        }
+      },
+      "ink": {
+        "ink_px": 1011,
+        "area_px": 86456,
+        "density": 0.01169,
+        "chars": 34,
+        "chars_per_1k_ink": 33.63
+      }
+    },
+    {
+      "bbox": [
+        1180,
+        843,
+        1500,
+        940
+      ],
+      "category": "Text",
+      "text": "Lloyd Peterson\nSecretary",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2939,
+          "min": -1.4812
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0002,
+          "min": -0.0004
+        }
+      },
+      "ink": {
+        "ink_px": 54,
+        "area_px": 31234,
+        "density": 0.00173,
+        "chars": 24,
+        "chars_per_1k_ink": 444.44
+      }
+    },
+    {
+      "bbox": [
+        1192,
+        940,
+        1485,
+        991
+      ],
+      "category": "Text",
+      "text": "June 16, 1965",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2798,
+          "min": -1.4939
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 44,
+        "area_px": 15340,
+        "density": 0.00287,
+        "chars": 13,
+        "chars_per_1k_ink": 295.45
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 230,
+    "content": {
+      "n_tokens": 49,
+      "mean": -0.0024,
+      "min": -0.0997,
+      "p05": -0.0033,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 139,
+          "token_id": 1359,
+          "logprob": -0.0997,
+          "text": "By"
+        },
+        {
+          "index": 138,
+          "token_id": 1699,
+          "logprob": -0.0068,
+          "text": "\\n"
+        },
+        {
+          "index": 43,
+          "token_id": 35781,
+          "logprob": -0.0036,
+          "text": " herein"
+        },
+        {
+          "index": 45,
+          "token_id": 1189,
+          "logprob": -0.0027,
+          "text": ".\""
+        },
+        {
+          "index": 131,
+          "token_id": 20594,
+          "logprob": -0.0016,
+          "text": "NEW"
+        },
+        {
+          "index": 35,
+          "token_id": 85857,
+          "logprob": -0.0013,
+          "text": "continued"
+        },
+        {
+          "index": 82,
+          "token_id": 21,
+          "logprob": -0.0005,
+          "text": "6"
+        },
+        {
+          "index": 177,
+          "token_id": 25796,
+          "logprob": -0.0004,
+          "text": "loyd"
+        },
+        {
+          "index": 217,
+          "token_id": 27160,
+          "logprob": -0.0003,
+          "text": "June"
+        },
+        {
+          "index": 180,
+          "token_id": 97928,
+          "logprob": -0.0003,
+          "text": "Secretary"
+        },
+        {
+          "index": 176,
+          "token_id": 43,
+          "logprob": -0.0002,
+          "text": "L"
+        },
+        {
+          "index": 91,
+          "token_id": 11792,
+          "logprob": -0.0002,
+          "text": " approved"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 103,
+      "mean": -0.3369,
+      "min": -2.1021,
+      "p05": -1.6462,
+      "p50": -0.0007,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -2.1021,
+          "text": "1"
+        },
+        {
+          "index": 108,
+          "token_id": 20,
+          "logprob": -1.8412,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.8348,
+          "text": "3"
+        },
+        {
+          "index": 58,
+          "token_id": 18,
+          "logprob": -1.8084,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.6781,
+          "text": "1"
+        },
+        {
+          "index": 64,
+          "token_id": 20,
+          "logprob": -1.6466,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.6426,
+          "text": "0"
+        },
+        {
+          "index": 119,
+          "token_id": 20,
+          "logprob": -1.595,
+          "text": "5"
+        },
+        {
+          "index": 114,
+          "token_id": 15,
+          "logprob": -1.5062,
+          "text": "0"
+        },
+        {
+          "index": 200,
+          "token_id": 20,
+          "logprob": -1.4939,
+          "text": "5"
+        },
+        {
+          "index": 153,
+          "token_id": 18,
+          "logprob": -1.4812,
+          "text": "3"
+        },
+        {
+          "index": 53,
+          "token_id": 16,
+          "logprob": -1.4043,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 230,
+      "mean": -0.1515,
+      "min": -2.1021,
+      "p05": -1.3726,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 213.3,
+    "std": 9.53,
+    "dark_fraction": 0.00061
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      829.92,
+      1235.76
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      276,
+      411,
+      2029,
+      3021
+    ],
+    "ink_px": 2807,
+    "covered_px": 2807,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

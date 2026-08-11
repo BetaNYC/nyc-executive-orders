@@ -1,0 +1,309 @@
+{
+  "page": 48,
+  "source_image": "page_0048.png",
+  "elements": [
+    {
+      "bbox": [
+        416,
+        711,
+        1774,
+        1970
+      ],
+      "category": "Text",
+      "text": "This is to advise you that I will expect all de-\npartments and agencies and the employees therein to cooper-\nate fully with the Chairman and members of The Task Force\non Municipal Archives, as well as persons acting with their\nauthority. It is anticipated that The Task Force will wish to\ninspect the records in your custody or under your control,\nand will require detailed information about such matters as\nmicrofilm programs, storage arrangements and policies for\nrecord retention, disposal and destruction. This enumera-\ntion of Task Force activities is not inclusive. You are\nhereby requested to afford such aid and assistance as may\nbe necessary to facilitate the speedy attainment of its objec-\ntives.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4741,
+          "min": -2.0542
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 145,
+          "mean": -0.006,
+          "min": -0.4306
+        }
+      },
+      "ink": {
+        "ink_px": 54063,
+        "area_px": 1709520,
+        "density": 0.03162,
+        "chars": 707,
+        "chars_per_1k_ink": 13.08
+      }
+    },
+    {
+      "bbox": [
+        1077,
+        1890,
+        1963,
+        2190
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3956,
+          "min": -1.9885
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5029,
+        "area_px": 267288,
+        "density": 0.01881,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1341,
+        2153,
+        1762,
+        2247
+      ],
+      "category": "Caption",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3531,
+          "min": -1.8886
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.4742,
+          "min": -0.4742
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0013,
+          "min": -0.0146
+        }
+      },
+      "ink": {
+        "ink_px": 1932,
+        "area_px": 39668,
+        "density": 0.0487,
+        "chars": 21,
+        "chars_per_1k_ink": 10.87
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 267,
+    "content": {
+      "n_tokens": 157,
+      "mean": -0.0056,
+      "min": -0.4306,
+      "p05": -0.0074,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 48,
+          "token_id": 77,
+          "logprob": -0.4306,
+          "text": "n"
+        },
+        {
+          "index": 46,
+          "token_id": 409,
+          "logprob": -0.3516,
+          "text": " de"
+        },
+        {
+          "index": 47,
+          "token_id": 30529,
+          "logprob": -0.0198,
+          "text": "-\\"
+        },
+        {
+          "index": 138,
+          "token_id": 10153,
+          "logprob": -0.0159,
+          "text": " enumer"
+        },
+        {
+          "index": 260,
+          "token_id": 1699,
+          "logprob": -0.0146,
+          "text": "\\n"
+        },
+        {
+          "index": 60,
+          "token_id": 77,
+          "logprob": -0.0123,
+          "text": "n"
+        },
+        {
+          "index": 58,
+          "token_id": 21676,
+          "logprob": -0.0107,
+          "text": " cooper"
+        },
+        {
+          "index": 98,
+          "token_id": 82054,
+          "logprob": -0.0078,
+          "text": "inspect"
+        },
+        {
+          "index": 139,
+          "token_id": 64,
+          "logprob": -0.0073,
+          "text": "a"
+        },
+        {
+          "index": 49,
+          "token_id": 4480,
+          "logprob": -0.0018,
+          "text": "part"
+        },
+        {
+          "index": 175,
+          "token_id": 2839,
+          "logprob": -0.0017,
+          "text": " obj"
+        },
+        {
+          "index": 136,
+          "token_id": 13,
+          "logprob": -0.0012,
+          "text": "."
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 67,
+      "mean": -0.3944,
+      "min": -2.0542,
+      "p05": -1.9882,
+      "p50": -0.0024,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -2.0542,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -2.0428,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 19,
+          "logprob": -2.0279,
+          "text": "4"
+        },
+        {
+          "index": 189,
+          "token_id": 22,
+          "logprob": -1.9885,
+          "text": "7"
+        },
+        {
+          "index": 201,
+          "token_id": 18,
+          "logprob": -1.9873,
+          "text": "3"
+        },
+        {
+          "index": 234,
+          "token_id": 17,
+          "logprob": -1.8886,
+          "text": "2"
+        },
+        {
+          "index": 228,
+          "token_id": 18,
+          "logprob": -1.802,
+          "text": "3"
+        },
+        {
+          "index": 24,
+          "token_id": 15,
+          "logprob": -1.7078,
+          "text": "0"
+        },
+        {
+          "index": 222,
+          "token_id": 16,
+          "logprob": -1.5639,
+          "text": "1"
+        },
+        {
+          "index": 240,
+          "token_id": 22,
+          "logprob": -1.5029,
+          "text": "7"
+        },
+        {
+          "index": 195,
+          "token_id": 15,
+          "logprob": -1.3739,
+          "text": "0"
+        },
+        {
+          "index": 207,
+          "token_id": 15,
+          "logprob": -1.261,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 267,
+      "mean": -0.1023,
+      "min": -2.0542,
+      "p05": -0.569,
+      "p50": -0.0,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.05,
+    "std": 15.36,
+    "dark_fraction": 0.01373
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      877.44,
+      1106.16
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      292,
+      368,
+      2145,
+      2704
+    ],
+    "ink_px": 59421,
+    "covered_px": 59421,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "page": 51,
+  "source_image": "page_0051.png",
+  "elements": [
+    {
+      "bbox": [
+        529,
+        1656,
+        663,
+        1817
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4865,
+          "min": -1.9599
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0211,
+          "min": -0.0211
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        469,
+        1817,
+        702,
+        1837
+      ],
+      "category": "Page-footer",
+      "text": "www.rejoice.in.co.uk",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3382,
+          "min": -1.5056
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3135,
+          "min": -0.6237
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -1.0239,
+          "min": -2.5077
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 78,
+    "content": {
+      "n_tokens": 7,
+      "mean": -1.0239,
+      "min": -2.5077,
+      "p05": -2.4533,
+      "p50": -0.6985,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 68,
+          "token_id": 2136,
+          "logprob": -2.5077,
+          "text": "www"
+        },
+        {
+          "index": 69,
+          "token_id": 1327,
+          "logprob": -2.3262,
+          "text": ".re"
+        },
+        {
+          "index": 73,
+          "token_id": 6830,
+          "logprob": -1.4443,
+          "text": ".co"
+        },
+        {
+          "index": 72,
+          "token_id": 1858,
+          "logprob": -0.6985,
+          "text": ".in"
+        },
+        {
+          "index": 74,
+          "token_id": 15194,
+          "logprob": -0.1738,
+          "text": ".uk"
+        },
+        {
+          "index": 70,
+          "token_id": 7305,
+          "logprob": -0.0126,
+          "text": "jo"
+        },
+        {
+          "index": 71,
+          "token_id": 558,
+          "logprob": -0.0039,
+          "text": "ice"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 43,
+      "mean": -0.3986,
+      "min": -1.9599,
+      "p05": -1.7281,
+      "p50": -0.0211,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 13,
+          "token_id": 21,
+          "logprob": -1.9599,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.9147,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.7528,
+          "text": "9"
+        },
+        {
+          "index": 49,
+          "token_id": 17,
+          "logprob": -1.5056,
+          "text": "2"
+        },
+        {
+          "index": 55,
+          "token_id": 22,
+          "logprob": -1.4941,
+          "text": "7"
+        },
+        {
+          "index": 24,
+          "token_id": 22,
+          "logprob": -1.4629,
+          "text": "7"
+        },
+        {
+          "index": 38,
+          "token_id": 24,
+          "logprob": -1.2784,
+          "text": "9"
+        },
+        {
+          "index": 6,
+          "token_id": 17,
+          "logprob": -1.1701,
+          "text": "2"
+        },
+        {
+          "index": 44,
+          "token_id": 22,
+          "logprob": -1.1494,
+          "text": "7"
+        },
+        {
+          "index": 5,
+          "token_id": 20,
+          "logprob": -0.8238,
+          "text": "5"
+        },
+        {
+          "index": 61,
+          "token_id": 2665,
+          "logprob": -0.6237,
+          "text": "Page"
+        },
+        {
+          "index": 37,
+          "token_id": 21,
+          "logprob": -0.5929,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 78,
+      "mean": -0.3175,
+      "min": -2.5077,
+      "p05": -1.7771,
+      "p50": -0.0001,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.31,
+    "std": 7.46,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      666.96,
+      429.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      143,
+      222,
+      1050,
+      1630
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

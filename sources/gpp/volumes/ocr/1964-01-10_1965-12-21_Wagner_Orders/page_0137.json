@@ -1,0 +1,377 @@
+{
+  "page": 137,
+  "source_image": "page_0137.png",
+  "elements": [
+    {
+      "bbox": [
+        914,
+        1121,
+        986,
+        1157
+      ],
+      "category": "Page-header",
+      "text": "-3-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3872,
+          "min": -1.7678
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0076,
+          "min": -0.013
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.003,
+          "min": -0.0048
+        }
+      },
+      "ink": {
+        "ink_px": 246,
+        "area_px": 2701,
+        "density": 0.09108,
+        "chars": 3,
+        "chars_per_1k_ink": 12.2
+      }
+    },
+    {
+      "bbox": [
+        392,
+        1274,
+        1690,
+        1550
+      ],
+      "category": "Text",
+      "text": "10. The use of automatic sprinklers or other means of watering lawns and gardens is prohibited except on Saturdays between 6 A.M. and 9 A.M. and 8 P.M. - 11 P.M.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3446,
+          "min": -1.7503
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0036,
+          "min": -0.0036
+        },
+        "text": {
+          "n_tokens": 48,
+          "mean": -0.0015,
+          "min": -0.0407
+        }
+      },
+      "ink": {
+        "ink_px": 15465,
+        "area_px": 360377,
+        "density": 0.04291,
+        "chars": 161,
+        "chars_per_1k_ink": 10.41
+      }
+    },
+    {
+      "bbox": [
+        392,
+        1587,
+        1567,
+        1714
+      ],
+      "category": "Text",
+      "text": "The use of hoses or other devices for flushing sidewalks or filling pools is prohibited.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3242,
+          "min": -1.6726
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -0.0005,
+          "min": -0.0062
+        }
+      },
+      "ink": {
+        "ink_px": 9712,
+        "area_px": 151962,
+        "density": 0.06391,
+        "chars": 88,
+        "chars_per_1k_ink": 9.06
+      }
+    },
+    {
+      "bbox": [
+        1045,
+        1805,
+        1800,
+        1981
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.363,
+          "min": -1.8251
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0007,
+          "min": -0.0007
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5268,
+        "area_px": 133989,
+        "density": 0.03932,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1241,
+        1984,
+        1619,
+        2061
+      ],
+      "category": "Text",
+      "text": "ROBERT F. WAGNER\nM A Y O R",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.282,
+          "min": -1.6163
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5759,
+          "min": -0.5759
+        },
+        "text": {
+          "n_tokens": 13,
+          "mean": -0.0016,
+          "min": -0.0186
+        }
+      },
+      "ink": {
+        "ink_px": 2296,
+        "area_px": 29640,
+        "density": 0.07746,
+        "chars": 26,
+        "chars_per_1k_ink": 11.32
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 264,
+    "content": {
+      "n_tokens": 80,
+      "mean": -0.0014,
+      "min": -0.0407,
+      "p05": -0.0049,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 110,
+          "token_id": 13,
+          "logprob": -0.0407,
+          "text": "."
+        },
+        {
+          "index": 117,
+          "token_id": 481,
+          "logprob": -0.0246,
+          "text": " -"
+        },
+        {
+          "index": 257,
+          "token_id": 362,
+          "logprob": -0.0186,
+          "text": " A"
+        },
+        {
+          "index": 170,
+          "token_id": 81735,
+          "logprob": -0.0062,
+          "text": " sidewalks"
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.0048,
+          "text": " \"-"
+        },
+        {
+          "index": 37,
+          "token_id": 18,
+          "logprob": -0.0038,
+          "text": "3"
+        },
+        {
+          "index": 98,
+          "token_id": 75214,
+          "logprob": -0.0022,
+          "text": " Saturdays"
+        },
+        {
+          "index": 103,
+          "token_id": 1321,
+          "logprob": -0.002,
+          "text": ".M"
+        },
+        {
+          "index": 76,
+          "token_id": 16,
+          "logprob": -0.0014,
+          "text": "1"
+        },
+        {
+          "index": 89,
+          "token_id": 72741,
+          "logprob": -0.0007,
+          "text": " watering"
+        },
+        {
+          "index": 169,
+          "token_id": 90532,
+          "logprob": -0.0007,
+          "text": " flushing"
+        },
+        {
+          "index": 256,
+          "token_id": 44,
+          "logprob": -0.0007,
+          "text": "M"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 112,
+      "mean": -0.3266,
+      "min": -1.8251,
+      "p05": -1.6552,
+      "p50": -0.0004,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 185,
+          "token_id": 20,
+          "logprob": -1.8251,
+          "text": "5"
+        },
+        {
+          "index": 197,
+          "token_id": 15,
+          "logprob": -1.7871,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.7678,
+          "text": "4"
+        },
+        {
+          "index": 52,
+          "token_id": 19,
+          "logprob": -1.7503,
+          "text": "4"
+        },
+        {
+          "index": 191,
+          "token_id": 20,
+          "logprob": -1.7304,
+          "text": "5"
+        },
+        {
+          "index": 149,
+          "token_id": 19,
+          "logprob": -1.6726,
+          "text": "4"
+        },
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.6411,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -1.6309,
+          "text": "6"
+        },
+        {
+          "index": 143,
+          "token_id": 22,
+          "logprob": -1.6301,
+          "text": "7"
+        },
+        {
+          "index": 224,
+          "token_id": 19,
+          "logprob": -1.6163,
+          "text": "4"
+        },
+        {
+          "index": 46,
+          "token_id": 17,
+          "logprob": -1.5717,
+          "text": "2"
+        },
+        {
+          "index": 137,
+          "token_id": 22,
+          "logprob": -1.548,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 264,
+      "mean": -0.139,
+      "min": -1.8251,
+      "p05": -1.3839,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.16,
+    "std": 11.97,
+    "dark_fraction": 0.00793
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      797.28,
+      1170.48
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      265,
+      390,
+      1949,
+      2861
+    ],
+    "ink_px": 32987,
+    "covered_px": 32987,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

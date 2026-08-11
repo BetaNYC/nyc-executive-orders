@@ -1,0 +1,308 @@
+{
+  "page": 131,
+  "source_image": "page_0131.png",
+  "elements": [
+    {
+      "bbox": [
+        1121,
+        274,
+        1364,
+        325
+      ],
+      "category": "Page-header",
+      "text": "- 11 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.469,
+          "min": -2.1332
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0007,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0429,
+          "min": -0.166
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        391,
+        359,
+        2060,
+        826
+      ],
+      "category": "Text",
+      "text": "of public issues. For example, there should be no question about the right of a department head to reply to critics of his agency even in a political campaign. This principle has been expressed by the United States Supreme Court in the following terms:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.5647,
+          "min": -2.1136
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 48,
+          "mean": -0.0121,
+          "min": -0.5762
+        }
+      },
+      "ink": {
+        "ink_px": 8245,
+        "area_px": 741252,
+        "density": 0.01112,
+        "chars": 252,
+        "chars_per_1k_ink": 30.56
+      }
+    },
+    {
+      "bbox": [
+        513,
+        837,
+        2070,
+        1350
+      ],
+      "category": "Text",
+      "text": "\"It is only partisan political activity that is interdicted. It is active participation in political management and political campaigns. Expressions, public or private, on public affairs, personalities and matters of public interest, not an objective of party action, are unrestricted by law so long as the Government employee does not direct his activities towards party success.\"\n\nUnited Public Workers v. Mitchell, 330 U.S., pp. 99-101.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4674,
+          "min": -2.0474
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0038,
+          "min": -0.0038
+        },
+        "text": {
+          "n_tokens": 95,
+          "mean": -0.0162,
+          "min": -0.7118
+        }
+      },
+      "ink": {
+        "ink_px": 11474,
+        "area_px": 800316,
+        "density": 0.01434,
+        "chars": 439,
+        "chars_per_1k_ink": 38.26
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 256,
+    "content": {
+      "n_tokens": 148,
+      "mean": -0.0158,
+      "min": -0.7118,
+      "p05": -0.0176,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 229,
+          "token_id": 1699,
+          "logprob": -0.7118,
+          "text": "\\n"
+        },
+        {
+          "index": 88,
+          "token_id": 911,
+          "logprob": -0.5762,
+          "text": " about"
+        },
+        {
+          "index": 226,
+          "token_id": 13,
+          "logprob": -0.3512,
+          "text": "."
+        },
+        {
+          "index": 159,
+          "token_id": 15898,
+          "logprob": -0.3498,
+          "text": " \"\\\""
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.166,
+          "text": " \"-"
+        },
+        {
+          "index": 230,
+          "token_id": 22372,
+          "logprob": -0.072,
+          "text": "United"
+        },
+        {
+          "index": 37,
+          "token_id": 220,
+          "logprob": -0.0331,
+          "text": " "
+        },
+        {
+          "index": 163,
+          "token_id": 48538,
+          "logprob": -0.0189,
+          "text": " partisan"
+        },
+        {
+          "index": 40,
+          "token_id": 481,
+          "logprob": -0.0153,
+          "text": " -"
+        },
+        {
+          "index": 209,
+          "token_id": 77839,
+          "logprob": -0.0059,
+          "text": " unrestricted"
+        },
+        {
+          "index": 194,
+          "token_id": 43808,
+          "logprob": -0.0055,
+          "text": " personalities"
+        },
+        {
+          "index": 220,
+          "token_id": 2118,
+          "logprob": -0.0049,
+          "text": " direct"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 63,
+      "mean": -0.4677,
+      "min": -2.1332,
+      "p05": -2.0403,
+      "p50": -0.0096,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 19,
+          "token_id": 19,
+          "logprob": -2.1332,
+          "text": "4"
+        },
+        {
+          "index": 64,
+          "token_id": 21,
+          "logprob": -2.1136,
+          "text": "6"
+        },
+        {
+          "index": 13,
+          "token_id": 19,
+          "logprob": -2.0793,
+          "text": "4"
+        },
+        {
+          "index": 148,
+          "token_id": 15,
+          "logprob": -2.0474,
+          "text": "0"
+        },
+        {
+          "index": 24,
+          "token_id": 20,
+          "logprob": -1.9763,
+          "text": "5"
+        },
+        {
+          "index": 48,
+          "token_id": 16,
+          "logprob": -1.9329,
+          "text": "1"
+        },
+        {
+          "index": 131,
+          "token_id": 18,
+          "logprob": -1.873,
+          "text": "3"
+        },
+        {
+          "index": 59,
+          "token_id": 15,
+          "logprob": -1.8708,
+          "text": "0"
+        },
+        {
+          "index": 142,
+          "token_id": 15,
+          "logprob": -1.8468,
+          "text": "0"
+        },
+        {
+          "index": 8,
+          "token_id": 16,
+          "logprob": -1.7683,
+          "text": "1"
+        },
+        {
+          "index": 53,
+          "token_id": 24,
+          "logprob": -1.7233,
+          "text": "9"
+        },
+        {
+          "index": 136,
+          "token_id": 22,
+          "logprob": -1.6347,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 256,
+      "mean": -0.1243,
+      "min": -2.1332,
+      "p05": -0.8222,
+      "p50": -0.0,
+      "n_below_threshold": 4
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.37,
+    "std": 12.67,
+    "dark_fraction": 0.00435
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      882.96,
+      1153.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      294,
+      384,
+      2158,
+      2819
+    ],
+    "ink_px": 19757,
+    "covered_px": 19719,
+    "covered_fraction": 0.99808,
+    "uncovered_px": 38,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

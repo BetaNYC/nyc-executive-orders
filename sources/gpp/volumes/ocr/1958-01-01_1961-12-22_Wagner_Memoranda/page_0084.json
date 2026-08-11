@@ -1,0 +1,393 @@
+{
+  "page": 84,
+  "source_image": "page_0084.png",
+  "elements": [
+    {
+      "bbox": [
+        201,
+        262,
+        741,
+        307
+      ],
+      "category": "Page-header",
+      "text": "Executive Order No. 64",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4112,
+          "min": -1.7515
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0001,
+          "min": -0.0004
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        880,
+        267,
+        1003,
+        307
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3341,
+          "min": -1.75
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.001,
+          "min": -0.0019
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0115,
+          "min": -0.0381
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        1213,
+        269,
+        1554,
+        317
+      ],
+      "category": "Page-header",
+      "text": "April 28, 1959",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3357,
+          "min": -1.7365
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1407,
+          "min": -0.2813
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0,
+          "min": -0.0002
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        205,
+        451,
+        1743,
+        864
+      ],
+      "category": "Text",
+      "text": "In all other cases, the City Commissioner of Real Estate will, and is hereby authorized to, exercise control over the purchase or rental of properties for the use of city departments, and the sale or leasing of city properties to private or outside interests.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3532,
+          "min": -1.7451
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 49,
+          "mean": -0.0003,
+          "min": -0.012
+        }
+      },
+      "ink": {
+        "ink_px": 14920,
+        "area_px": 610001,
+        "density": 0.02446,
+        "chars": 259,
+        "chars_per_1k_ink": 17.36
+      }
+    },
+    {
+      "bbox": [
+        209,
+        911,
+        1700,
+        1323
+      ],
+      "category": "Text",
+      "text": "It should be borne in mind that even preliminary negotiations carried on by an individual agency or department can have a detrimental effect on the over-all city interest. At all stages matters involving real estate are the concern of the new city department.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3236,
+          "min": -1.5342
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 46,
+          "mean": -0.0026,
+          "min": -0.0699
+        }
+      },
+      "ink": {
+        "ink_px": 15257,
+        "area_px": 592242,
+        "density": 0.02576,
+        "chars": 259,
+        "chars_per_1k_ink": 16.98
+      }
+    },
+    {
+      "bbox": [
+        1057,
+        1543,
+        1933,
+        1775
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3656,
+          "min": -1.9455
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0025,
+          "min": -0.0025
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2035,
+        "area_px": 194555,
+        "density": 0.01046,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 330,
+    "content": {
+      "n_tokens": 116,
+      "mean": -0.0016,
+      "min": -0.0699,
+      "p05": -0.0016,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 277,
+          "token_id": 13,
+          "logprob": -0.0699,
+          "text": "."
+        },
+        {
+          "index": 273,
+          "token_id": 916,
+          "logprob": -0.0491,
+          "text": " over"
+        },
+        {
+          "index": 77,
+          "token_id": 6523,
+          "logprob": -0.0381,
+          "text": " \"-"
+        },
+        {
+          "index": 196,
+          "token_id": 25215,
+          "logprob": -0.012,
+          "text": " departments"
+        },
+        {
+          "index": 78,
+          "token_id": 220,
+          "logprob": -0.0077,
+          "text": " "
+        },
+        {
+          "index": 173,
+          "token_id": 24443,
+          "logprob": -0.0018,
+          "text": " Estate"
+        },
+        {
+          "index": 257,
+          "token_id": 23449,
+          "logprob": -0.0016,
+          "text": " negotiations"
+        },
+        {
+          "index": 172,
+          "token_id": 8800,
+          "logprob": -0.0007,
+          "text": " Real"
+        },
+        {
+          "index": 40,
+          "token_id": 21,
+          "logprob": -0.0004,
+          "text": "6"
+        },
+        {
+          "index": 80,
+          "token_id": 481,
+          "logprob": -0.0003,
+          "text": " -"
+        },
+        {
+          "index": 281,
+          "token_id": 12850,
+          "logprob": -0.0003,
+          "text": " matters"
+        },
+        {
+          "index": 118,
+          "token_id": 28046,
+          "logprob": -0.0002,
+          "text": "April"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 127,
+      "mean": -0.3305,
+      "min": -1.9455,
+      "p05": -1.6964,
+      "p50": -0.001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 314,
+          "token_id": 18,
+          "logprob": -1.9455,
+          "text": "3"
+        },
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -1.7515,
+          "text": "1"
+        },
+        {
+          "index": 60,
+          "token_id": 18,
+          "logprob": -1.75,
+          "text": "3"
+        },
+        {
+          "index": 146,
+          "token_id": 18,
+          "logprob": -1.7451,
+          "text": "3"
+        },
+        {
+          "index": 100,
+          "token_id": 19,
+          "logprob": -1.7365,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.7295,
+          "text": "2"
+        },
+        {
+          "index": 89,
+          "token_id": 18,
+          "logprob": -1.7093,
+          "text": "3"
+        },
+        {
+          "index": 308,
+          "token_id": 18,
+          "logprob": -1.6664,
+          "text": "3"
+        },
+        {
+          "index": 302,
+          "token_id": 22,
+          "logprob": -1.6414,
+          "text": "7"
+        },
+        {
+          "index": 320,
+          "token_id": 20,
+          "logprob": -1.5943,
+          "text": "5"
+        },
+        {
+          "index": 135,
+          "token_id": 20,
+          "logprob": -1.5375,
+          "text": "5"
+        },
+        {
+          "index": 236,
+          "token_id": 18,
+          "logprob": -1.5342,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 330,
+      "mean": -0.1278,
+      "min": -1.9455,
+      "p05": -1.3782,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.63,
+    "std": 13.75,
+    "dark_fraction": 0.00959
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      771.84,
+      976.08
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      257,
+      325,
+      1886,
+      2386
+    ],
+    "ink_px": 32212,
+    "covered_px": 32212,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

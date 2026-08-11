@@ -1,0 +1,256 @@
+{
+  "page": 113,
+  "source_image": "page_0113.png",
+  "elements": [
+    {
+      "bbox": [
+        41,
+        117,
+        924,
+        200
+      ],
+      "category": "Text",
+      "text": "Section 1. The amended resolution of the New York City Transit Authority, Adopted by such Authority on June 5, 1970 is hereby approved.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.4578,
+          "min": -2.0716
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0065,
+          "min": -0.0065
+        },
+        "text": {
+          "n_tokens": 34,
+          "mean": -0.057,
+          "min": -0.7748
+        }
+      },
+      "ink": {
+        "ink_px": 22,
+        "area_px": 12592,
+        "density": 0.00175,
+        "chars": 135,
+        "chars_per_1k_ink": 6136.36
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 69,
+    "content": {
+      "n_tokens": 34,
+      "mean": -0.057,
+      "min": -0.7748,
+      "p05": -0.4993,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 45855,
+          "logprob": -0.7748,
+          "text": " Transit"
+        },
+        {
+          "index": 48,
+          "token_id": 85280,
+          "logprob": -0.5762,
+          "text": " Adopt"
+        },
+        {
+          "index": 38,
+          "token_id": 29911,
+          "logprob": -0.4579,
+          "text": " amended"
+        },
+        {
+          "index": 63,
+          "token_id": 374,
+          "logprob": -0.0749,
+          "text": " is"
+        },
+        {
+          "index": 33,
+          "token_id": 9620,
+          "logprob": -0.0302,
+          "text": "Section"
+        },
+        {
+          "index": 65,
+          "token_id": 11792,
+          "logprob": -0.0069,
+          "text": " approved"
+        },
+        {
+          "index": 51,
+          "token_id": 1741,
+          "logprob": -0.0046,
+          "text": " such"
+        },
+        {
+          "index": 53,
+          "token_id": 389,
+          "logprob": -0.004,
+          "text": " on"
+        },
+        {
+          "index": 39,
+          "token_id": 10935,
+          "logprob": -0.0013,
+          "text": " resolution"
+        },
+        {
+          "index": 41,
+          "token_id": 279,
+          "logprob": -0.0012,
+          "text": " the"
+        },
+        {
+          "index": 40,
+          "token_id": 315,
+          "logprob": -0.0011,
+          "text": " of"
+        },
+        {
+          "index": 62,
+          "token_id": 15,
+          "logprob": -0.0009,
+          "text": "0"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 18,
+      "mean": -0.4327,
+      "min": -2.0716,
+      "p05": -1.6746,
+      "p50": -0.0103,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 6,
+          "token_id": 16,
+          "logprob": -2.0716,
+          "text": "1"
+        },
+        {
+          "index": 16,
+          "token_id": 19,
+          "logprob": -1.6046,
+          "text": "4"
+        },
+        {
+          "index": 11,
+          "token_id": 22,
+          "logprob": -1.5724,
+          "text": "7"
+        },
+        {
+          "index": 21,
+          "token_id": 15,
+          "logprob": -1.4153,
+          "text": "0"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -0.6527,
+          "text": "4"
+        },
+        {
+          "index": 19,
+          "token_id": 17,
+          "logprob": -0.3133,
+          "text": "2"
+        },
+        {
+          "index": 10,
+          "token_id": 16,
+          "logprob": -0.0834,
+          "text": "1"
+        },
+        {
+          "index": 15,
+          "token_id": 17,
+          "logprob": -0.0539,
+          "text": "2"
+        },
+        {
+          "index": 20,
+          "token_id": 15,
+          "logprob": -0.014,
+          "text": "0"
+        },
+        {
+          "index": 27,
+          "token_id": 1178,
+          "logprob": -0.0065,
+          "text": "Text"
+        },
+        {
+          "index": 9,
+          "token_id": 16,
+          "logprob": -0.0007,
+          "text": "1"
+        },
+        {
+          "index": 14,
+          "token_id": 24,
+          "logprob": -0.0004,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 69,
+      "mean": -0.1449,
+      "min": -2.0716,
+      "p05": -1.1591,
+      "p50": -0.0003,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.34,
+    "std": 9.21,
+    "dark_fraction": 0.00517
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      550.32,
+      424.56
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      141,
+      183,
+      1038,
+      1345
+    ],
+    "ink_px": 5392,
+    "covered_px": 22,
+    "covered_fraction": 0.00408,
+    "uncovered_px": 5370,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          141,
+          255,
+          1038,
+          327
+        ],
+        "ink_px": 5358
+      }
+    ],
+    "cell_px": 24
+  }
+}

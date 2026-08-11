@@ -1,0 +1,643 @@
+:root {
+  --bg: #f6f6f4;
+  --panel: #ffffff;
+  --line: #dcdcd6;
+  --ink: #1e1e1c;
+  --muted: #6d6d66;
+  --accent: #1f77b4;
+  --skip: #b8860b;
+  --classified: #3a5f8a;
+  --error: #c0392b;
+  --ok: #2e7d54;
+  /* Lighter steps of the same hues, for meter tracks and tile washes -- the
+     unfilled part of a meter has to read as the same scale as its fill. */
+  --ok-soft: #dceee4;
+  --skip-soft: #f6e7c3;
+  --classified-soft: #e4ecf5;
+  --error-soft: #f7dcd8;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font:
+    14px/1.5 -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ---------- top bar ---------- */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 14px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  flex: none;
+}
+
+.brand {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.field span {
+  color: var(--muted);
+}
+
+select {
+  font: inherit;
+  padding: 4px 6px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  max-width: 440px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.counter {
+  min-width: 110px;
+  text-align: center;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+button {
+  font: inherit;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #f0f0ec;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.toggle {
+  display: flex;
+}
+
+.toggle button {
+  border-radius: 0;
+  margin-left: -1px;
+}
+
+.toggle button:first-child {
+  border-radius: 6px 0 0 6px;
+  margin-left: 0;
+}
+
+.toggle button:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.toggle button.on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.error-bar {
+  padding: 8px 14px;
+  background: #fdecea;
+  color: var(--error);
+  border-bottom: 1px solid var(--line);
+}
+
+/* ---------- layout ---------- */
+
+.body {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.rail {
+  flex: none;
+  width: 68px;
+  overflow-y: auto;
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  padding: 6px;
+}
+
+.rail-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid transparent;
+  background: transparent;
+  padding: 4px 6px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.rail-item.selected {
+  background: var(--accent);
+  color: #fff;
+}
+
+.rail-page {
+  font-variant-numeric: tabular-nums;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.status-skipped .dot,
+.status-classified_blank .dot {
+  background: var(--skip);
+}
+
+.status-classified_keep .dot {
+  background: var(--classified);
+}
+
+.status-pending .dot {
+  background: #c4c4bd;
+}
+
+.status-parse_error .dot,
+.status-unreadable .dot {
+  background: var(--error);
+}
+
+.pane {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.image-pane {
+  overflow: hidden;
+  background: #2a2a28;
+  padding: 12px;
+  align-items: center;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.image-pane.zoomed {
+  cursor: grab;
+}
+
+.image-pane img {
+  display: block;
+  max-width: 100%;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  -webkit-user-drag: none;
+  will-change: transform;
+}
+
+.image-pane img.fit {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+  margin: auto;
+}
+
+.floating-note {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.text-pane {
+  border-left: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.text-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--line);
+  min-height: 42px;
+  flex: none;
+}
+
+.text-scroll {
+  flex: 1;
+  overflow: auto;
+  padding: 20px 26px 60px;
+}
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #e8eef5;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge.status-skipped,
+.badge.status-classified_blank {
+  background: #faf0d7;
+  color: var(--skip);
+}
+
+.badge.status-classified_keep {
+  background: var(--classified-soft);
+  color: var(--classified);
+}
+
+.badge.status-pending {
+  background: #eeeeea;
+  color: var(--muted);
+}
+
+.badge.status-parse_error,
+.badge.status-unreadable,
+.badge.warn {
+  background: #fdecea;
+  color: var(--error);
+}
+
+/* ---------- content ---------- */
+
+.markdown {
+  max-width: 62ch;
+  font-size: 15px;
+}
+
+.markdown h1 {
+  font-size: 1.5em;
+}
+
+.markdown h2 {
+  font-size: 1.2em;
+}
+
+.markdown em {
+  color: var(--muted);
+}
+
+.markdown table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.markdown td,
+.markdown th {
+  border: 1px solid var(--line);
+  padding: 4px 8px;
+}
+
+.json {
+  font:
+    12px/1.5 ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #f4f4f0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.sub {
+  margin: 18px 0 6px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 11px;
+}
+
+.notice {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--muted);
+  border-radius: 6px;
+  padding: 14px 16px;
+  background: #fafaf7;
+  max-width: 62ch;
+}
+
+.notice h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.notice.skipped {
+  border-left-color: var(--skip);
+  background: #fdf8ea;
+}
+
+.notice.error {
+  border-left-color: var(--error);
+  background: #fdf1f0;
+}
+
+.notice p {
+  margin: 0 0 8px;
+}
+
+.stats {
+  display: flex;
+  gap: 22px;
+  margin: 10px 0 0;
+}
+
+.stats dt {
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.stats dd {
+  margin: 2px 0 0;
+  font-variant-numeric: tabular-nums;
+  font-size: 16px;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: #eeeeea;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.empty {
+  color: var(--muted);
+  margin: auto;
+  padding: 40px;
+}
+
+/* ---------- QA tab ---------- */
+
+/* Severity is never carried by color alone: a flagged rail item keeps its
+   status dot, and every badge and tile states its condition in words. */
+.rail-item.flag-warn {
+  box-shadow: inset 3px 0 0 var(--skip);
+}
+
+.rail-item.flag-critical {
+  box-shadow: inset 3px 0 0 var(--error);
+}
+
+button.badge {
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.badge.flag-warn {
+  background: var(--skip-soft);
+  color: var(--skip);
+}
+
+.badge.flag-critical {
+  background: var(--error-soft);
+  color: var(--error);
+}
+
+/* The generic button:hover fill would otherwise grey out a flag's severity, so
+   re-assert it and let brightness carry the hover affordance instead. */
+button.badge:hover:not(:disabled) {
+  filter: brightness(0.96);
+}
+
+.badge.flag-warn:hover {
+  background: var(--skip-soft);
+}
+
+.badge.flag-critical:hover {
+  background: var(--error-soft);
+}
+
+.qa {
+  max-width: 70ch;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tile {
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--ok);
+  border-radius: 6px;
+  padding: 10px 12px;
+  background: #fafaf7;
+}
+
+.tile.sev-warn {
+  border-top-color: var(--skip);
+}
+
+.tile.sev-critical {
+  border-top-color: var(--error);
+}
+
+.tile-label {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* Proportional figures: these are standalone display numbers, not a column. */
+.tile-value {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.tile-sub {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.meter {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--ok-soft);
+  overflow: hidden;
+}
+
+.meter.sev-warn {
+  background: var(--skip-soft);
+}
+
+.meter.sev-critical {
+  background: var(--error-soft);
+}
+
+.meter span {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: var(--ok);
+}
+
+.meter.sev-warn span {
+  background: var(--skip);
+}
+
+.meter.sev-critical span {
+  background: var(--error);
+}
+
+.notice.ok {
+  border-left-color: var(--ok);
+  background: #f2f9f5;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.qa-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0 4px;
+  font-size: 13px;
+}
+
+.qa-table th {
+  text-align: left;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--line);
+  padding: 4px 8px 4px 0;
+}
+
+.qa-table td {
+  padding: 5px 8px 5px 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+
+/* Columns of numbers line up; standalone display values above do not. */
+.qa-table .numeric {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.qa-table .snippet {
+  max-width: 28ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+.qa-table .meter-col {
+  width: 90px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 2px 8px;
+  background: #fafaf7;
+}
+
+.chip code {
+  background: none;
+  padding: 0;
+}
+
+.chip em {
+  color: var(--muted);
+  font-style: normal;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+ul.plain {
+  padding-left: 0;
+  list-style: none;
+  margin: 8px 0;
+}
+
+ul.plain li {
+  padding: 4px 0;
+  border-bottom: 1px solid var(--line);
+}

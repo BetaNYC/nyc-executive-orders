@@ -1,0 +1,337 @@
+{
+  "page": 14,
+  "source_image": "page_0014.png",
+  "elements": [
+    {
+      "bbox": [
+        1199,
+        304,
+        1240,
+        351
+      ],
+      "category": "Page-header",
+      "text": "2",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4083,
+          "min": -1.9512
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0218,
+          "min": -0.0434
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        297,
+        591,
+        2177,
+        870
+      ],
+      "category": "Text",
+      "text": "contract to be awarded by a City agency, the name of such\nbidder shall be referred to the Board of Responsibility\nfor determination of such bidder's responsibility in\naccordance with Sect. 5(c) of the Resolution of the Board of\nEstimate adopted on June 30, 1949 (Cal. No. 3180A), as amended.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4508,
+          "min": -1.9621
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 81,
+          "mean": -0.0056,
+          "min": -0.4322
+        }
+      },
+      "ink": {
+        "ink_px": 14086,
+        "area_px": 520520,
+        "density": 0.02706,
+        "chars": 291,
+        "chars_per_1k_ink": 20.66
+      }
+    },
+    {
+      "bbox": [
+        297,
+        891,
+        2181,
+        1115
+      ],
+      "category": "Text",
+      "text": "Requests for such a meeting of the Board of Responsibility\nshould be addressed to Deputy Comptroller Joseph R. Perrini,\nand copies forwarded to the Corporation Counsel and the\nDirector of the Office of Contract Compliance.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3707,
+          "min": -1.8997
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 44,
+          "mean": -0.0102,
+          "min": -0.4289
+        }
+      },
+      "ink": {
+        "ink_px": 5146,
+        "area_px": 419175,
+        "density": 0.01228,
+        "chars": 222,
+        "chars_per_1k_ink": 43.14
+      }
+    },
+    {
+      "bbox": [
+        1227,
+        1191,
+        2157,
+        1411
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.4474,
+          "min": -1.9533
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0113,
+          "min": -0.0113
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1986,
+        "area_px": 205088,
+        "density": 0.00968,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 270,
+    "content": {
+      "n_tokens": 126,
+      "mean": -0.0071,
+      "min": -0.4322,
+      "p05": -0.002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 86,
+          "token_id": 1699,
+          "logprob": -0.4322,
+          "text": "\\n"
+        },
+        {
+          "index": 200,
+          "token_id": 1699,
+          "logprob": -0.4289,
+          "text": "\\n"
+        },
+        {
+          "index": 192,
+          "token_id": 1741,
+          "logprob": -0.016,
+          "text": " such"
+        },
+        {
+          "index": 87,
+          "token_id": 20648,
+          "logprob": -0.004,
+          "text": "bid"
+        },
+        {
+          "index": 140,
+          "token_id": 8851,
+          "logprob": -0.0025,
+          "text": "Cal"
+        },
+        {
+          "index": 102,
+          "token_id": 77531,
+          "logprob": -0.0022,
+          "text": " bidder"
+        },
+        {
+          "index": 111,
+          "token_id": 94766,
+          "logprob": -0.002,
+          "text": " Sect"
+        },
+        {
+          "index": 73,
+          "token_id": 20257,
+          "logprob": -0.0018,
+          "text": "contract"
+        },
+        {
+          "index": 115,
+          "token_id": 1337,
+          "logprob": -0.0014,
+          "text": "(c"
+        },
+        {
+          "index": 207,
+          "token_id": 417,
+          "logprob": -0.0011,
+          "text": "pt"
+        },
+        {
+          "index": 208,
+          "token_id": 1468,
+          "logprob": -0.0009,
+          "text": "roller"
+        },
+        {
+          "index": 190,
+          "token_id": 35295,
+          "logprob": -0.0008,
+          "text": "Requests"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 86,
+      "mean": -0.3959,
+      "min": -1.9621,
+      "p05": -1.8915,
+      "p50": -0.0046,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 22,
+          "logprob": -1.9621,
+          "text": "7"
+        },
+        {
+          "index": 242,
+          "token_id": 22,
+          "logprob": -1.9533,
+          "text": "7"
+        },
+        {
+          "index": 13,
+          "token_id": 19,
+          "logprob": -1.9512,
+          "text": "4"
+        },
+        {
+          "index": 254,
+          "token_id": 22,
+          "logprob": -1.9157,
+          "text": "7"
+        },
+        {
+          "index": 178,
+          "token_id": 20,
+          "logprob": -1.8997,
+          "text": "5"
+        },
+        {
+          "index": 248,
+          "token_id": 16,
+          "logprob": -1.8669,
+          "text": "1"
+        },
+        {
+          "index": 172,
+          "token_id": 16,
+          "logprob": -1.8426,
+          "text": "1"
+        },
+        {
+          "index": 166,
+          "token_id": 16,
+          "logprob": -1.8354,
+          "text": "1"
+        },
+        {
+          "index": 56,
+          "token_id": 22,
+          "logprob": -1.819,
+          "text": "7"
+        },
+        {
+          "index": 260,
+          "token_id": 16,
+          "logprob": -1.7894,
+          "text": "1"
+        },
+        {
+          "index": 61,
+          "token_id": 15,
+          "logprob": -1.6807,
+          "text": "0"
+        },
+        {
+          "index": 50,
+          "token_id": 16,
+          "logprob": -1.6327,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 270,
+      "mean": -0.1295,
+      "min": -1.9621,
+      "p05": -1.327,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 184.96,
+    "std": 12.21,
+    "dark_fraction": 0.00412
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      934.08,
+      1237.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      311,
+      412,
+      2283,
+      3025
+    ],
+    "ink_px": 21239,
+    "covered_px": 21218,
+    "covered_fraction": 0.99901,
+    "uncovered_px": 21,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        254,
+        344,
+        1855,
+        2900
+      ],
+      "category": "Text",
+      "text": "Disaster Preparedness Program-\nNYU\n67/7\n\nDrabkin, Murray\n66/32, 66/39, 66/49\n\nDraft Deferment\n66/46\n\nEqual Employment Opportunity-\nContact Compliance\n66/23, 68/7\n\nExecutive Salary Board\n66/42\n\nExpense Budget Modification-\nProcessing of requests\n66/15\n\nFederal Aid-Applications\n67/13\n\nSurvey\n66/32\n\nFederal and State Aid\n67/6\n\nGifts\n66/51, 68/18\n\nGreater N. Y. Fund Campaign\n67/20\n\nGregory, Joan\n67/21\n\nHonorariums\n67/15\n\nIndictments-Contractors\n(List of)\n68/14\n\nInformation Systems\n68/2\n\nInformation Telephone Numbers\n68/1\n\nInstitute on Municipal Mgt.-\nAnnual Conference\n66/22\n\nKramarsky, Werner-Data Coordinator\n66/16\n\nLabor Relations\n67/30\n\nAgreement\n67/23\n\nLegislative Assistant-\nRichard M. Rosen\n66/2\n\nLegislative Hearings-\nAttendance and Participation\n68/13\n\nLegislative Memoranda\n67/1, 67/3, 67/10,\n67/11, 67/16\n\nLegislative Program\n66/1, 66/37, 66/41\n66/48, 66/52, 66/53\n67/32, 67/35, 67/36,\n68/11",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4224,
+          "min": -1.9467
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3882,
+          "min": -0.3882
+        },
+        "text": {
+          "n_tokens": 428,
+          "mean": -0.0129,
+          "min": -0.7411
+        }
+      },
+      "ink": {
+        "ink_px": 26358,
+        "area_px": 3715357,
+        "density": 0.00709,
+        "chars": 904,
+        "chars_per_1k_ink": 34.3
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 467,
+    "content": {
+      "n_tokens": 428,
+      "mean": -0.0129,
+      "min": -0.7411,
+      "p05": -0.029,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 1699,
+          "logprob": -0.7411,
+          "text": "\\n"
+        },
+        {
+          "index": 309,
+          "token_id": 1699,
+          "logprob": -0.7214,
+          "text": "\\n"
+        },
+        {
+          "index": 417,
+          "token_id": 1699,
+          "logprob": -0.7171,
+          "text": "\\n"
+        },
+        {
+          "index": 270,
+          "token_id": 12612,
+          "logprob": -0.5424,
+          "text": ".-"
+        },
+        {
+          "index": 416,
+          "token_id": 16,
+          "logprob": -0.4459,
+          "text": "1"
+        },
+        {
+          "index": 234,
+          "token_id": 10278,
+          "logprob": -0.4311,
+          "text": "(List"
+        },
+        {
+          "index": 41,
+          "token_id": 30529,
+          "logprob": -0.3751,
+          "text": "-\\"
+        },
+        {
+          "index": 51,
+          "token_id": 1699,
+          "logprob": -0.1819,
+          "text": "\\n"
+        },
+        {
+          "index": 378,
+          "token_id": 26266,
+          "logprob": -0.1454,
+          "text": ",\\"
+        },
+        {
+          "index": 36,
+          "token_id": 4839,
+          "logprob": -0.0949,
+          "text": "Dis"
+        },
+        {
+          "index": 38,
+          "token_id": 87167,
+          "logprob": -0.0915,
+          "text": " Prepared"
+        },
+        {
+          "index": 285,
+          "token_id": 1561,
+          "logprob": -0.0798,
+          "text": "ars"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 21,
+      "mean": -0.4207,
+      "min": -1.9467,
+      "p05": -1.8176,
+      "p50": -0.0076,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.9467,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.8176,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.6652,
+          "text": "4"
+        },
+        {
+          "index": 24,
+          "token_id": 15,
+          "logprob": -1.4896,
+          "text": "0"
+        },
+        {
+          "index": 22,
+          "token_id": 24,
+          "logprob": -0.6329,
+          "text": "9"
+        },
+        {
+          "index": 6,
+          "token_id": 20,
+          "logprob": -0.5197,
+          "text": "5"
+        },
+        {
+          "index": 30,
+          "token_id": 1178,
+          "logprob": -0.3882,
+          "text": "Text"
+        },
+        {
+          "index": 17,
+          "token_id": 20,
+          "logprob": -0.2814,
+          "text": "5"
+        },
+        {
+          "index": 11,
+          "token_id": 19,
+          "logprob": -0.0682,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 15,
+          "logprob": -0.0137,
+          "text": "0"
+        },
+        {
+          "index": 16,
+          "token_id": 23,
+          "logprob": -0.0076,
+          "text": "8"
+        },
+        {
+          "index": 10,
+          "token_id": 18,
+          "logprob": -0.0035,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 467,
+      "mean": -0.0312,
+      "min": -1.9467,
+      "p05": -0.068,
+      "p50": -0.0001,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 184.43,
+    "std": 13.66,
+    "dark_fraction": 0.00627
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      842.88,
+      1122.96
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      281,
+      374,
+      2060,
+      2745
+    ],
+    "ink_px": 26438,
+    "covered_px": 26358,
+    "covered_fraction": 0.99697,
+    "uncovered_px": 80,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

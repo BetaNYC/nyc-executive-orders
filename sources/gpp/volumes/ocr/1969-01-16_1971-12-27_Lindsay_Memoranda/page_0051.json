@@ -1,0 +1,382 @@
+{
+  "page": 51,
+  "source_image": "page_0051.png",
+  "elements": [
+    {
+      "bbox": [
+        218,
+        551,
+        381,
+        592
+      ],
+      "category": "Section-header",
+      "text": "Notes:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4557,
+          "min": -1.8592
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0108,
+          "min": -0.0215
+        },
+        "text": {
+          "n_tokens": 2,
+          "mean": -0.0338,
+          "min": -0.0634
+        }
+      },
+      "ink": {
+        "ink_px": 115,
+        "area_px": 3280,
+        "density": 0.03506,
+        "chars": 6,
+        "chars_per_1k_ink": 52.17
+      }
+    },
+    {
+      "bbox": [
+        227,
+        641,
+        1771,
+        794
+      ],
+      "category": "List-item",
+      "text": "(1) If in Diagram II, Step 2(b), both clearinghouses say project is o.k., city agency may submit application to Federal agency immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3433,
+          "min": -1.595
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0003,
+          "min": -0.0007
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0001,
+          "min": -0.0016
+        }
+      },
+      "ink": {
+        "ink_px": 7721,
+        "area_px": 225675,
+        "density": 0.03421,
+        "chars": 139,
+        "chars_per_1k_ink": 18.0
+      }
+    },
+    {
+      "bbox": [
+        227,
+        825,
+        1743,
+        971
+      ],
+      "category": "List-item",
+      "text": "(2) If both clearinghouses do not notify in Diagram II, Step 2(a), city agency proceeds to steps 3 & 4 for each clearinghouse.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2947,
+          "min": -1.6154
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 34,
+          "mean": -0.0001,
+          "min": -0.0009
+        }
+      },
+      "ink": {
+        "ink_px": 6792,
+        "area_px": 211262,
+        "density": 0.03215,
+        "chars": 126,
+        "chars_per_1k_ink": 18.55
+      }
+    },
+    {
+      "bbox": [
+        227,
+        1009,
+        1823,
+        1206
+      ],
+      "category": "List-item",
+      "text": "(3) If clearinghouse notifies city agency that there are problems in Diagram I, Step 2, city agency may always elect to begin Step 5 immediately after Step 2, even though conferences are being held.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2724,
+          "min": -1.6036
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 44,
+          "mean": -0.0001,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 10271,
+        "area_px": 300819,
+        "density": 0.03414,
+        "chars": 198,
+        "chars_per_1k_ink": 19.28
+      }
+    },
+    {
+      "bbox": [
+        230,
+        1241,
+        1910,
+        1480
+      ],
+      "category": "List-item",
+      "text": "(4) Please note that although problems may have been resolved with one clearinghouse, formal application cannot be submitted to Federal agency until the other clearinghouse has resolved problems or until Step 4(a) (Diagram I) has been completed by city agency for that clearinghouse.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3139,
+          "min": -1.3834
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 55,
+          "mean": -0.0003,
+          "min": -0.0143
+        }
+      },
+      "ink": {
+        "ink_px": 16129,
+        "area_px": 385746,
+        "density": 0.04181,
+        "chars": 283,
+        "chars_per_1k_ink": 17.55
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 348,
+    "content": {
+      "n_tokens": 167,
+      "mean": -0.0006,
+      "min": -0.0634,
+      "p05": -0.0004,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 21667,
+          "logprob": -0.0634,
+          "text": "Notes"
+        },
+        {
+          "index": 332,
+          "token_id": 92895,
+          "logprob": -0.0143,
+          "text": "Diagram"
+        },
+        {
+          "index": 36,
+          "token_id": 2974,
+          "logprob": -0.0042,
+          "text": ":\""
+        },
+        {
+          "index": 91,
+          "token_id": 297,
+          "logprob": -0.0016,
+          "text": " o"
+        },
+        {
+          "index": 72,
+          "token_id": 11993,
+          "logprob": -0.0013,
+          "text": " \"("
+        },
+        {
+          "index": 162,
+          "token_id": 7354,
+          "logprob": -0.0009,
+          "text": " steps"
+        },
+        {
+          "index": 83,
+          "token_id": 1883,
+          "logprob": -0.0006,
+          "text": "(b"
+        },
+        {
+          "index": 214,
+          "token_id": 32750,
+          "logprob": -0.0005,
+          "text": " clearing"
+        },
+        {
+          "index": 216,
+          "token_id": 96589,
+          "logprob": -0.0004,
+          "text": " notifies"
+        },
+        {
+          "index": 234,
+          "token_id": 2677,
+          "logprob": -0.0004,
+          "text": " always"
+        },
+        {
+          "index": 229,
+          "token_id": 17,
+          "logprob": -0.0003,
+          "text": "2"
+        },
+        {
+          "index": 225,
+          "token_id": 358,
+          "logprob": -0.0002,
+          "text": " I"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 108,
+      "mean": -0.3024,
+      "min": -1.8592,
+      "p05": -1.591,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -1.8592,
+          "text": "1"
+        },
+        {
+          "index": 22,
+          "token_id": 17,
+          "logprob": -1.8541,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.7207,
+          "text": "8"
+        },
+        {
+          "index": 116,
+          "token_id": 20,
+          "logprob": -1.6154,
+          "text": "5"
+        },
+        {
+          "index": 192,
+          "token_id": 18,
+          "logprob": -1.6036,
+          "text": "3"
+        },
+        {
+          "index": 60,
+          "token_id": 19,
+          "logprob": -1.595,
+          "text": "4"
+        },
+        {
+          "index": 122,
+          "token_id": 18,
+          "logprob": -1.5836,
+          "text": "3"
+        },
+        {
+          "index": 44,
+          "token_id": 22,
+          "logprob": -1.5548,
+          "text": "7"
+        },
+        {
+          "index": 55,
+          "token_id": 16,
+          "logprob": -1.5234,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.5064,
+          "text": "1"
+        },
+        {
+          "index": 198,
+          "token_id": 21,
+          "logprob": -1.4435,
+          "text": "6"
+        },
+        {
+          "index": 261,
+          "token_id": 15,
+          "logprob": -1.3834,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 348,
+      "mean": -0.0945,
+      "min": -1.8592,
+      "p05": -0.829,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.53,
+    "std": 13.73,
+    "dark_fraction": 0.00874
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      910.32,
+      1159.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      303,
+      386,
+      2225,
+      2833
+    ],
+    "ink_px": 41089,
+    "covered_px": 41028,
+    "covered_fraction": 0.99852,
+    "uncovered_px": 61,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

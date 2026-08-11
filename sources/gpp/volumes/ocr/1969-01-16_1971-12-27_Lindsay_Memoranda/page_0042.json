@@ -1,0 +1,348 @@
+{
+  "page": 42,
+  "source_image": "page_0042.png",
+  "elements": [
+    {
+      "bbox": [
+        181,
+        457,
+        800,
+        553
+      ],
+      "category": "Text",
+      "text": "TO: City Agency Heads\nPage 5",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4539,
+          "min": -1.8796
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1335,
+          "min": -0.1335
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0034,
+          "min": -0.0216
+        }
+      },
+      "ink": {
+        "ink_px": 1636,
+        "area_px": 48216,
+        "density": 0.03393,
+        "chars": 28,
+        "chars_per_1k_ink": 17.11
+      }
+    },
+    {
+      "bbox": [
+        1576,
+        476,
+        1929,
+        520
+      ],
+      "category": "Text",
+      "text": "Dec. 16, 1969",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3504,
+          "min": -1.7916
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0002,
+          "min": -0.0017
+        }
+      },
+      "ink": {
+        "ink_px": 681,
+        "area_px": 15930,
+        "density": 0.04275,
+        "chars": 13,
+        "chars_per_1k_ink": 19.09
+      }
+    },
+    {
+      "bbox": [
+        547,
+        647,
+        1877,
+        794
+      ],
+      "category": "Text",
+      "text": "comment on the application in a shorter period of\ntime. (Section 204 programs are those _not_ marked\nby an asterisk listed in Appendix A).",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3653,
+          "min": -1.6539
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0217,
+          "min": -0.0217
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.0501,
+          "min": -1.1046
+        }
+      },
+      "ink": {
+        "ink_px": 9959,
+        "area_px": 196840,
+        "density": 0.05059,
+        "chars": 138,
+        "chars_per_1k_ink": 13.86
+      }
+    },
+    {
+      "bbox": [
+        324,
+        830,
+        1877,
+        1023
+      ],
+      "category": "List-item",
+      "text": "V. Each formal application to a Federal agency must be accompanied by a statement from the city agency de-scribing the action taken to comply with the Circular A-95 procedures and clearinghouse comments if any.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2891,
+          "min": -1.7874
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0149,
+          "min": -0.0299
+        },
+        "text": {
+          "n_tokens": 42,
+          "mean": -0.0152,
+          "min": -0.6223
+        }
+      },
+      "ink": {
+        "ink_px": 15467,
+        "area_px": 301282,
+        "density": 0.05134,
+        "chars": 210,
+        "chars_per_1k_ink": 13.58
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 242,
+    "content": {
+      "n_tokens": 98,
+      "mean": -0.0252,
+      "min": -1.1046,
+      "p05": -0.0061,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 147,
+          "token_id": 716,
+          "logprob": -1.1046,
+          "text": " _"
+        },
+        {
+          "index": 134,
+          "token_id": 59,
+          "logprob": -0.6934,
+          "text": "\\"
+        },
+        {
+          "index": 217,
+          "token_id": 409,
+          "logprob": -0.6223,
+          "text": " de"
+        },
+        {
+          "index": 39,
+          "token_id": 1699,
+          "logprob": -0.0216,
+          "text": "\\n"
+        },
+        {
+          "index": 218,
+          "token_id": 1331,
+          "logprob": -0.0085,
+          "text": "-s"
+        },
+        {
+          "index": 209,
+          "token_id": 23943,
+          "logprob": -0.0057,
+          "text": " accompanied"
+        },
+        {
+          "index": 40,
+          "token_id": 2665,
+          "logprob": -0.0051,
+          "text": "Page"
+        },
+        {
+          "index": 34,
+          "token_id": 5207,
+          "logprob": -0.003,
+          "text": "TO"
+        },
+        {
+          "index": 125,
+          "token_id": 6182,
+          "logprob": -0.0024,
+          "text": "comment"
+        },
+        {
+          "index": 84,
+          "token_id": 11,
+          "logprob": -0.0017,
+          "text": ","
+        },
+        {
+          "index": 219,
+          "token_id": 43531,
+          "logprob": -0.0017,
+          "text": "cribing"
+        },
+        {
+          "index": 135,
+          "token_id": 406,
+          "logprob": -0.0007,
+          "text": "nt"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 82,
+      "mean": -0.3425,
+      "min": -1.8796,
+      "p05": -1.6937,
+      "p50": -0.0011,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 22,
+          "token_id": 18,
+          "logprob": -1.8796,
+          "text": "3"
+        },
+        {
+          "index": 56,
+          "token_id": 21,
+          "logprob": -1.7916,
+          "text": "6"
+        },
+        {
+          "index": 168,
+          "token_id": 19,
+          "logprob": -1.7874,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.737,
+          "text": "7"
+        },
+        {
+          "index": 51,
+          "token_id": 21,
+          "logprob": -1.6957,
+          "text": "6"
+        },
+        {
+          "index": 97,
+          "token_id": 22,
+          "logprob": -1.6539,
+          "text": "7"
+        },
+        {
+          "index": 113,
+          "token_id": 19,
+          "logprob": -1.6021,
+          "text": "4"
+        },
+        {
+          "index": 102,
+          "token_id": 22,
+          "logprob": -1.562,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.5306,
+          "text": "1"
+        },
+        {
+          "index": 185,
+          "token_id": 18,
+          "logprob": -1.4732,
+          "text": "3"
+        },
+        {
+          "index": 17,
+          "token_id": 15,
+          "logprob": -1.3936,
+          "text": "0"
+        },
+        {
+          "index": 108,
+          "token_id": 22,
+          "logprob": -1.3806,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 242,
+      "mean": -0.1263,
+      "min": -1.8796,
+      "p05": -1.2753,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 182.48,
+    "std": 11.83,
+    "dark_fraction": 0.00583
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      926.64,
+      1151.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      308,
+      383,
+      2265,
+      2814
+    ],
+    "ink_px": 27743,
+    "covered_px": 27743,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

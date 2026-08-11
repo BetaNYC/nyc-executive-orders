@@ -1,0 +1,303 @@
+{
+  "page": 112,
+  "source_image": "page_0112.png",
+  "elements": [
+    {
+      "bbox": [
+        869,
+        193,
+        1044,
+        380
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3922,
+          "min": -1.842
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0062,
+          "min": -0.0062
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        761,
+        393,
+        1147,
+        513
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7, N. Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3777,
+          "min": -1.8603
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0011,
+          "min": -0.0011
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.0196,
+          "min": -0.387
+        }
+      },
+      "ink": {
+        "ink_px": 5008,
+        "area_px": 46706,
+        "density": 0.10722,
+        "chars": 54,
+        "chars_per_1k_ink": 10.78
+      }
+    },
+    {
+      "bbox": [
+        348,
+        986,
+        1271,
+        1045
+      ],
+      "category": "Text",
+      "text": "Executive Order no. 30 never published.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3504,
+          "min": -1.7156
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0068,
+          "min": -0.0068
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0212,
+          "min": -0.1522
+        }
+      },
+      "ink": {
+        "ink_px": 352,
+        "area_px": 55260,
+        "density": 0.00637,
+        "chars": 39,
+        "chars_per_1k_ink": 110.8
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 135,
+    "content": {
+      "n_tokens": 32,
+      "mean": -0.0201,
+      "min": -0.387,
+      "p05": -0.0922,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 84,
+          "token_id": 13,
+          "logprob": -0.387,
+          "text": "."
+        },
+        {
+          "index": 130,
+          "token_id": 2581,
+          "logprob": -0.1522,
+          "text": " never"
+        },
+        {
+          "index": 128,
+          "token_id": 18,
+          "logprob": -0.0431,
+          "text": "3"
+        },
+        {
+          "index": 65,
+          "token_id": 34,
+          "logprob": -0.0421,
+          "text": "C"
+        },
+        {
+          "index": 125,
+          "token_id": 902,
+          "logprob": -0.0137,
+          "text": " no"
+        },
+        {
+          "index": 126,
+          "token_id": 13,
+          "logprob": -0.0015,
+          "text": "."
+        },
+        {
+          "index": 127,
+          "token_id": 220,
+          "logprob": -0.0011,
+          "text": " "
+        },
+        {
+          "index": 66,
+          "token_id": 3333,
+          "logprob": -0.0008,
+          "text": "ITY"
+        },
+        {
+          "index": 82,
+          "token_id": 11,
+          "logprob": -0.0003,
+          "text": ","
+        },
+        {
+          "index": 124,
+          "token_id": 7217,
+          "logprob": -0.0002,
+          "text": " Order"
+        },
+        {
+          "index": 75,
+          "token_id": 39230,
+          "logprob": -0.0001,
+          "text": " MAY"
+        },
+        {
+          "index": 86,
+          "token_id": 1189,
+          "logprob": -0.0001,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 61,
+      "mean": -0.3549,
+      "min": -1.8603,
+      "p05": -1.7156,
+      "p50": -0.0009,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 42,
+          "token_id": 18,
+          "logprob": -1.8603,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.842,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 19,
+          "logprob": -1.7948,
+          "text": "4"
+        },
+        {
+          "index": 99,
+          "token_id": 21,
+          "logprob": -1.7156,
+          "text": "6"
+        },
+        {
+          "index": 111,
+          "token_id": 20,
+          "logprob": -1.6607,
+          "text": "5"
+        },
+        {
+          "index": 53,
+          "token_id": 18,
+          "logprob": -1.6482,
+          "text": "3"
+        },
+        {
+          "index": 105,
+          "token_id": 16,
+          "logprob": -1.6109,
+          "text": "1"
+        },
+        {
+          "index": 37,
+          "token_id": 16,
+          "logprob": -1.5466,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.5266,
+          "text": "9"
+        },
+        {
+          "index": 94,
+          "token_id": 23,
+          "logprob": -1.5086,
+          "text": "8"
+        },
+        {
+          "index": 48,
+          "token_id": 22,
+          "logprob": -1.4574,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 15,
+          "logprob": -1.2877,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 135,
+      "mean": -0.1652,
+      "min": -1.8603,
+      "p05": -1.5659,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 184.26,
+    "std": 7.38,
+    "dark_fraction": 0.0013
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      793.68,
+      1165.92
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      264,
+      388,
+      1940,
+      2850
+    ],
+    "ink_px": 5380,
+    "covered_px": 5360,
+    "covered_fraction": 0.99628,
+    "uncovered_px": 20,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "page": 6,
+  "source_image": "page_0006.png",
+  "elements": [
+    {
+      "bbox": [
+        927,
+        629,
+        1448,
+        732
+      ],
+      "category": "Title",
+      "text": "Mayor Lindsay's Memoranda\n1972 - 1973",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3698,
+          "min": -1.7838
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5356,
+          "min": -0.5356
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -0.0027,
+          "min": -0.017
+        }
+      },
+      "ink": {
+        "ink_px": 470,
+        "area_px": 54705,
+        "density": 0.00859,
+        "chars": 37,
+        "chars_per_1k_ink": 78.72
+      }
+    },
+    {
+      "bbox": [
+        1136,
+        785,
+        1243,
+        820
+      ],
+      "category": "Section-header",
+      "text": "Index",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.237,
+          "min": -1.2748
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.252,
+          "min": -0.5039
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.042,
+          "min": -0.042
+        }
+      },
+      "ink": {
+        "ink_px": 75,
+        "area_px": 3888,
+        "density": 0.01929,
+        "chars": 5,
+        "chars_per_1k_ink": 66.67
+      }
+    },
+    {
+      "bbox": [
+        152,
+        964,
+        2140,
+        2544
+      ],
+      "category": "Text",
+      "text": "| Subject | Date |\n|---|---|\n| Absenteeism and lateness of employees | 12/8/72 |\n| Complaint response standards | 3/28/72 |\n| Contracts, Cancelled | 4/25/72, 5/3/72 |\n|  | 6/27/72, 11/1/72 |\n|  | 12/5/72, 1/17/72 |\n|  | 1/19/72, 2/18/72 |\n|  | 2/24/72, 3/27/72 |\n|  | 3/27/72, 4/5/72 |\n| Contracts, Revocation of cancellation (Deltown Foods, Inc.) | 4/14/72 |\n| Employees--Sick leave and lateness | 4/19/72 |\n| Energy crisis--Conservation of energy and contingency plans in case of fuel shortages | 12/8/72 |\n| Fuel shortage--Conservation of energy and contingency plans in case of fuel shortages | 11/5/73 |\n| Fund for City of New York, Transition study | 11/5/73 |\n| High School Volunteer Programs Conferences of December 6 and 7 (1972?) | 6/28/73 |\n| Imprest funds, Use of | 10/11/72 |\n| Labor Relations, Office of--City Council legislation | 12/20/72 |\n| Maternity leave regulations (Career and Salary Plan Employees) | 1/19/72 |\n| Service and complaints response standards | 3/28/72 |\n| Staggered hours of work | 3/21/72 |\n| State Legislative Program | 1973 |\n| 1974 | 8/1/72 |\n| Telephone--Abuses of telephone facilities | 9/1/73 |\n| Transition study undertaken by Fund for City of New York | 11/20/72 |\n| Travel expenses, Approval of | 6/28/73 |\n| United Fund of Greater New York | 3/13/72 |\n|  | 8/3/72 |",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4418,
+          "min": -1.911
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0121,
+          "min": -0.0121
+        },
+        "text": {
+          "n_tokens": 547,
+          "mean": -0.0071,
+          "min": -0.6426
+        }
+      },
+      "ink": {
+        "ink_px": 5263,
+        "area_px": 2894450,
+        "density": 0.00182,
+        "chars": 1312,
+        "chars_per_1k_ink": 249.29
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 674,
+    "content": {
+      "n_tokens": 564,
+      "mean": -0.007,
+      "min": -0.6426,
+      "p05": -0.01,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 131,
+          "token_id": 4421,
+          "logprob": -0.6426,
+          "text": "---"
+        },
+        {
+          "index": 146,
+          "token_id": 760,
+          "logprob": -0.5387,
+          "text": " |"
+        },
+        {
+          "index": 570,
+          "token_id": 16,
+          "logprob": -0.4291,
+          "text": "1"
+        },
+        {
+          "index": 306,
+          "token_id": 70559,
+          "logprob": -0.3505,
+          "text": " Contracts"
+        },
+        {
+          "index": 197,
+          "token_id": 220,
+          "logprob": -0.2699,
+          "text": " "
+        },
+        {
+          "index": 585,
+          "token_id": 56930,
+          "logprob": -0.2033,
+          "text": " Telephone"
+        },
+        {
+          "index": 194,
+          "token_id": 63596,
+          "logprob": -0.1957,
+          "text": " |\\"
+        },
+        {
+          "index": 124,
+          "token_id": 25203,
+          "logprob": -0.1916,
+          "text": " \"|"
+        },
+        {
+          "index": 562,
+          "token_id": 16,
+          "logprob": -0.1529,
+          "text": "1"
+        },
+        {
+          "index": 126,
+          "token_id": 760,
+          "logprob": -0.1418,
+          "text": " |"
+        },
+        {
+          "index": 352,
+          "token_id": 12354,
+          "logprob": -0.101,
+          "text": " Energy"
+        },
+        {
+          "index": 576,
+          "token_id": 23,
+          "logprob": -0.1007,
+          "text": "8"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 63,
+      "mean": -0.3437,
+      "min": -1.911,
+      "p05": -1.6602,
+      "p50": -0.0034,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 107,
+          "token_id": 15,
+          "logprob": -1.911,
+          "text": "0"
+        },
+        {
+          "index": 101,
+          "token_id": 19,
+          "logprob": -1.8736,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.7838,
+          "text": "2"
+        },
+        {
+          "index": 113,
+          "token_id": 19,
+          "logprob": -1.6667,
+          "text": "4"
+        },
+        {
+          "index": 96,
+          "token_id": 17,
+          "logprob": -1.6018,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.4881,
+          "text": "7"
+        },
+        {
+          "index": 70,
+          "token_id": 18,
+          "logprob": -1.2748,
+          "text": "3"
+        },
+        {
+          "index": 64,
+          "token_id": 20,
+          "logprob": -1.1984,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 23,
+          "logprob": -1.1457,
+          "text": "8"
+        },
+        {
+          "index": 59,
+          "token_id": 21,
+          "logprob": -1.1352,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.0919,
+          "text": "9"
+        },
+        {
+          "index": 75,
+          "token_id": 15,
+          "logprob": -0.7274,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 674,
+      "mean": -0.0391,
+      "min": -1.911,
+      "p05": -0.1153,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 185.03,
+    "std": 10.34,
+    "dark_fraction": 0.00114
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      935.52,
+      1223.04
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      311,
+      407,
+      2287,
+      2990
+    ],
+    "ink_px": 5827,
+    "covered_px": 5808,
+    "covered_fraction": 0.99674,
+    "uncovered_px": 19,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "page": 78,
+  "source_image": "page_0078.png",
+  "elements": [
+    {
+      "bbox": [
+        127,
+        669,
+        1337,
+        905
+      ],
+      "category": "Text",
+      "text": "Mayor Edward Hamilton and Mr. Victor Gotbaum, Executive Director of District Council #37 of the can Federation of State, County and Municipal Employees will again serve as Co-Chairmen of theicipal campaign.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4978,
+          "min": -2.024
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0018,
+          "min": -0.0018
+        },
+        "text": {
+          "n_tokens": 43,
+          "mean": -0.1189,
+          "min": -1.9428
+        }
+      },
+      "ink": {
+        "ink_px": 2128,
+        "area_px": 252518,
+        "density": 0.00843,
+        "chars": 206,
+        "chars_per_1k_ink": 96.8
+      }
+    },
+    {
+      "bbox": [
+        127,
+        916,
+        1402,
+        1357
+      ],
+      "category": "Text",
+      "text": "campaign will be conducted this fall with author-\ns deductions being made early in 1973. Therefore,\neffectively organize this campaign, I ask that you\nint a senior member of your executive staff to\nbe as United Fund chairman for your Administration\ndepartment. He or she should enlist as Co-Chairmen\nrepresentative of your major employee union. The\nes of these United Fund Chairmen and Co-Chairmen\nuld be forwarded to Deputy Mayor Hamilton within\nnext three weeks.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.315,
+          "min": -1.8073
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 105,
+          "mean": -0.0715,
+          "min": -1.8586
+        }
+      },
+      "ink": {
+        "ink_px": 3440,
+        "area_px": 499944,
+        "density": 0.00688,
+        "chars": 464,
+        "chars_per_1k_ink": 134.88
+      }
+    },
+    {
+      "bbox": [
+        127,
+        1375,
+        1252,
+        1441
+      ],
+      "category": "Text",
+      "text": "now I can count on your wholehearted support.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2876,
+          "min": -1.7216
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0656,
+          "min": -0.7134
+        }
+      },
+      "ink": {
+        "ink_px": 395,
+        "area_px": 65459,
+        "density": 0.00603,
+        "chars": 45,
+        "chars_per_1k_ink": 113.92
+      }
+    },
+    {
+      "bbox": [
+        732,
+        1677,
+        861,
+        1706
+      ],
+      "category": "Text",
+      "text": "* * *",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3363,
+          "min": -1.5731
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0119,
+          "min": -0.0119
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0872,
+          "min": -0.2581
+        }
+      },
+      "ink": {
+        "ink_px": 66,
+        "area_px": 3870,
+        "density": 0.01705,
+        "chars": 5,
+        "chars_per_1k_ink": 75.76
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 308,
+    "content": {
+      "n_tokens": 162,
+      "mean": -0.084,
+      "min": -1.9428,
+      "p05": -0.641,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 74,
+          "token_id": 8442,
+          "logprob": -1.9428,
+          "text": "icip"
+        },
+        {
+          "index": 159,
+          "token_id": 1371,
+          "logprob": -1.8586,
+          "text": "be"
+        },
+        {
+          "index": 35,
+          "token_id": 85574,
+          "logprob": -1.6669,
+          "text": "Mayor"
+        },
+        {
+          "index": 114,
+          "token_id": 37339,
+          "logprob": -1.1714,
+          "text": "campaign"
+        },
+        {
+          "index": 206,
+          "token_id": 36568,
+          "logprob": -0.9078,
+          "text": "uld"
+        },
+        {
+          "index": 256,
+          "token_id": 3328,
+          "logprob": -0.7134,
+          "text": "now"
+        },
+        {
+          "index": 63,
+          "token_id": 43641,
+          "logprob": -0.6605,
+          "text": " Employees"
+        },
+        {
+          "index": 149,
+          "token_id": 396,
+          "logprob": -0.6517,
+          "text": "int"
+        },
+        {
+          "index": 55,
+          "token_id": 646,
+          "logprob": -0.6464,
+          "text": " can"
+        },
+        {
+          "index": 193,
+          "token_id": 288,
+          "logprob": -0.5395,
+          "text": "es"
+        },
+        {
+          "index": 123,
+          "token_id": 4412,
+          "logprob": -0.538,
+          "text": "ns"
+        },
+        {
+          "index": 167,
+          "token_id": 59,
+          "logprob": -0.4783,
+          "text": "\\"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 84,
+      "mean": -0.3397,
+      "min": -2.024,
+      "p05": -1.7127,
+      "p50": -0.0008,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -2.024,
+          "text": "7"
+        },
+        {
+          "index": 96,
+          "token_id": 17,
+          "logprob": -1.8073,
+          "text": "2"
+        },
+        {
+          "index": 232,
+          "token_id": 20,
+          "logprob": -1.7216,
+          "text": "5"
+        },
+        {
+          "index": 238,
+          "token_id": 17,
+          "logprob": -1.7201,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.7144,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.7027,
+          "text": "7"
+        },
+        {
+          "index": 90,
+          "token_id": 21,
+          "logprob": -1.6175,
+          "text": "6"
+        },
+        {
+          "index": 274,
+          "token_id": 17,
+          "logprob": -1.5731,
+          "text": "2"
+        },
+        {
+          "index": 244,
+          "token_id": 16,
+          "logprob": -1.5636,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.5555,
+          "text": "9"
+        },
+        {
+          "index": 291,
+          "token_id": 21,
+          "logprob": -1.4926,
+          "text": "6"
+        },
+        {
+          "index": 285,
+          "token_id": 16,
+          "logprob": -1.4798,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 308,
+      "mean": -0.1369,
+      "min": -2.024,
+      "p05": -1.4379,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 186.53,
+    "std": 10.42,
+    "dark_fraction": 0.00163
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      813.12,
+      1053.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      271,
+      351,
+      1987,
+      2574
+    ],
+    "ink_px": 6227,
+    "covered_px": 6029,
+    "covered_fraction": 0.9682,
+    "uncovered_px": 198,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

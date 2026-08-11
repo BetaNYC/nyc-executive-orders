@@ -1,0 +1,221 @@
+{
+  "page": 371,
+  "source_image": "page_0371.png",
+  "elements": [
+    {
+      "bbox": [
+        528,
+        1796,
+        656,
+        1837
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3632,
+          "min": -1.5483
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1436,
+          "min": -0.1436
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        497,
+        1834,
+        704,
+        1848
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3685,
+          "min": -2.0383
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.7038,
+          "min": -0.7038
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.3604,
+          "min": -1.6862
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 75,
+    "content": {
+      "n_tokens": 5,
+      "mean": -0.3604,
+      "min": -1.6862,
+      "p05": -1.3666,
+      "p50": -0.0208,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 67,
+          "token_id": 34,
+          "logprob": -1.6862,
+          "text": "C"
+        },
+        {
+          "index": 68,
+          "token_id": 3333,
+          "logprob": -0.088,
+          "text": "ITY"
+        },
+        {
+          "index": 69,
+          "token_id": 3008,
+          "logprob": -0.0208,
+          "text": " OF"
+        },
+        {
+          "index": 70,
+          "token_id": 16165,
+          "logprob": -0.0065,
+          "text": " NEW"
+        },
+        {
+          "index": 71,
+          "token_id": 46304,
+          "logprob": -0.0004,
+          "text": " YORK"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3686,
+      "min": -2.0383,
+      "p05": -1.545,
+      "p50": -0.0044,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 44,
+          "token_id": 19,
+          "logprob": -2.0383,
+          "text": "4"
+        },
+        {
+          "index": 38,
+          "token_id": 22,
+          "logprob": -1.6648,
+          "text": "7"
+        },
+        {
+          "index": 13,
+          "token_id": 21,
+          "logprob": -1.5483,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -1.4812,
+          "text": "6"
+        },
+        {
+          "index": 49,
+          "token_id": 19,
+          "logprob": -1.4315,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.3803,
+          "text": "8"
+        },
+        {
+          "index": 24,
+          "token_id": 22,
+          "logprob": -1.3309,
+          "text": "7"
+        },
+        {
+          "index": 55,
+          "token_id": 23,
+          "logprob": -1.1472,
+          "text": "8"
+        },
+        {
+          "index": 5,
+          "token_id": 20,
+          "logprob": -0.8715,
+          "text": "5"
+        },
+        {
+          "index": 61,
+          "token_id": 1178,
+          "logprob": -0.7038,
+          "text": "Text"
+        },
+        {
+          "index": 54,
+          "token_id": 19,
+          "logprob": -0.5283,
+          "text": "4"
+        },
+        {
+          "index": 6,
+          "token_id": 17,
+          "logprob": -0.4183,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 75,
+      "mean": -0.2394,
+      "min": -2.0383,
+      "p05": -1.5014,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 165.44,
+    "std": 6.66,
+    "dark_fraction": 8e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      660.0,
+      428.64
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      220,
+      1048,
+      1613
+    ],
+    "ink_px": 96,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 96,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

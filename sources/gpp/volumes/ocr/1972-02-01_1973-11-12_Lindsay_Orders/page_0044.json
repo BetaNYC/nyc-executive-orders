@@ -1,0 +1,342 @@
+{
+  "page": 44,
+  "source_image": "page_0044.png",
+  "elements": [
+    {
+      "bbox": [
+        980,
+        310,
+        1069,
+        350
+      ],
+      "category": "Page-header",
+      "text": "-14-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3901,
+          "min": -1.9601
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0033,
+          "min": -0.006
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0018,
+          "min": -0.0045
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        842,
+        487,
+        1725,
+        619
+      ],
+      "category": "List-item",
+      "text": "(5) The provisions of subdivision (n) shall not apply to the Board of Education.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3792,
+          "min": -1.8126
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0107,
+          "min": -0.0213
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0009,
+          "min": -0.0111
+        }
+      },
+      "ink": {
+        "ink_px": 5736,
+        "area_px": 117480,
+        "density": 0.04883,
+        "chars": 80,
+        "chars_per_1k_ink": 13.95
+      }
+    },
+    {
+      "bbox": [
+        725,
+        665,
+        1334,
+        712
+      ],
+      "category": "Section-header",
+      "text": "(O) GENERAL PURCHASE FUND",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3127,
+          "min": -1.7896
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1044,
+          "min": -0.2088
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0359,
+          "min": -0.2468
+        }
+      },
+      "ink": {
+        "ink_px": 2666,
+        "area_px": 29472,
+        "density": 0.09046,
+        "chars": 25,
+        "chars_per_1k_ink": 9.38
+      }
+    },
+    {
+      "bbox": [
+        949,
+        761,
+        1822,
+        1957
+      ],
+      "category": "Text",
+      "text": "Subject to the provisions of sub-division \"L\" herein, the appro-priations provided for the various agencies for supplies, materials, equipment, and certain contractual services are hereby made to the Department of Purchase to the extent of the amounts set forth in the amended schedules of the Mayor's Budget Message for this fiscal year and as also indicated in brackets opposite departmental appropriations for Other Than Personal Service, and the Comptroller is hereby authorized and directed to transfer from the respective appro-priations the amounts stated in the said schedule to the General Purchase Fund herein established for the Department of Purchase. The balance remaining in the said appropriations, after the amounts stated in the said schedule have been transferred to the General Purchase Fund, shall be under the jurisdiction of and control of the various agencies.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3268,
+          "min": -1.4566
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0015,
+          "min": -0.0015
+        },
+        "text": {
+          "n_tokens": 157,
+          "mean": -0.0158,
+          "min": -0.7111
+        }
+      },
+      "ink": {
+        "ink_px": 78513,
+        "area_px": 1047768,
+        "density": 0.07493,
+        "chars": 883,
+        "chars_per_1k_ink": 11.25
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 331,
+    "content": {
+      "n_tokens": 188,
+      "mean": -0.0148,
+      "min": -0.7111,
+      "p05": -0.0106,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 178,
+          "token_id": 12,
+          "logprob": -0.7111,
+          "text": "-"
+        },
+        {
+          "index": 177,
+          "token_id": 1186,
+          "logprob": -0.6948,
+          "text": " sub"
+        },
+        {
+          "index": 186,
+          "token_id": 2984,
+          "logprob": -0.686,
+          "text": " appro"
+        },
+        {
+          "index": 128,
+          "token_id": 11993,
+          "logprob": -0.2468,
+          "text": " \"("
+        },
+        {
+          "index": 179,
+          "token_id": 28764,
+          "logprob": -0.2277,
+          "text": "division"
+        },
+        {
+          "index": 187,
+          "token_id": 2268,
+          "logprob": -0.095,
+          "text": "-p"
+        },
+        {
+          "index": 290,
+          "token_id": 13,
+          "logprob": -0.0299,
+          "text": "."
+        },
+        {
+          "index": 129,
+          "token_id": 46,
+          "logprob": -0.0231,
+          "text": "O"
+        },
+        {
+          "index": 131,
+          "token_id": 52312,
+          "logprob": -0.0167,
+          "text": " GENERAL"
+        },
+        {
+          "index": 74,
+          "token_id": 11993,
+          "logprob": -0.0111,
+          "text": " \"("
+        },
+        {
+          "index": 268,
+          "token_id": 2268,
+          "logprob": -0.0099,
+          "text": "-p"
+        },
+        {
+          "index": 267,
+          "token_id": 2984,
+          "logprob": -0.0059,
+          "text": " appro"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 84,
+      "mean": -0.3254,
+      "min": -1.9601,
+      "p05": -1.4836,
+      "p50": -0.0028,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.9601,
+          "text": "0"
+        },
+        {
+          "index": 57,
+          "token_id": 20,
+          "logprob": -1.8126,
+          "text": "5"
+        },
+        {
+          "index": 105,
+          "token_id": 20,
+          "logprob": -1.7896,
+          "text": "5"
+        },
+        {
+          "index": 51,
+          "token_id": 22,
+          "logprob": -1.6218,
+          "text": "7"
+        },
+        {
+          "index": 111,
+          "token_id": 19,
+          "logprob": -1.4884,
+          "text": "4"
+        },
+        {
+          "index": 154,
+          "token_id": 17,
+          "logprob": -1.4566,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 24,
+          "logprob": -1.3826,
+          "text": "9"
+        },
+        {
+          "index": 116,
+          "token_id": 17,
+          "logprob": -1.3638,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 15,
+          "logprob": -1.309,
+          "text": "0"
+        },
+        {
+          "index": 143,
+          "token_id": 24,
+          "logprob": -1.274,
+          "text": "9"
+        },
+        {
+          "index": 160,
+          "token_id": 22,
+          "logprob": -1.222,
+          "text": "7"
+        },
+        {
+          "index": 148,
+          "token_id": 16,
+          "logprob": -1.206,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 331,
+      "mean": -0.091,
+      "min": -1.9601,
+      "p05": -0.716,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.33,
+    "std": 17.66,
+    "dark_fraction": 0.01963
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      791.04,
+      1255.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      263,
+      418,
+      1934,
+      3068
+    ],
+    "ink_px": 86932,
+    "covered_px": 86915,
+    "covered_fraction": 0.9998,
+    "uncovered_px": 17,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

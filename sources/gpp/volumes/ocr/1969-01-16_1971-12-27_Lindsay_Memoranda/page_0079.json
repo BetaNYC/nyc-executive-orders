@@ -1,0 +1,377 @@
+{
+  "page": 79,
+  "source_image": "page_0079.png",
+  "elements": [
+    {
+      "bbox": [
+        977,
+        281,
+        1277,
+        612
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4183,
+          "min": -1.8708
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0708,
+          "min": -0.0708
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2076,
+        "area_px": 66378,
+        "density": 0.03128,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        859,
+        634,
+        1381,
+        767
+      ],
+      "category": "Text",
+      "text": "THE CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK, N.Y. 10007",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3721,
+          "min": -1.8784
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0149,
+          "min": -0.0149
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0006,
+          "min": -0.0111
+        }
+      },
+      "ink": {
+        "ink_px": 1017,
+        "area_px": 69814,
+        "density": 0.01457,
+        "chars": 61,
+        "chars_per_1k_ink": 59.98
+      }
+    },
+    {
+      "bbox": [
+        994,
+        817,
+        1161,
+        860
+      ],
+      "category": "Text",
+      "text": "- 13 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3436,
+          "min": -1.6688
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2521,
+          "min": -0.2521
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0188,
+          "min": -0.079
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 7348,
+        "density": 0.0,
+        "chars": 6,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        830,
+        954,
+        1812,
+        1417
+      ],
+      "category": "Text",
+      "text": "No contract or proposal for work to be performed chargeable to this budget, for the Board of Education, the cost of which is estimated to be in excess of $50,000 but not more than $100,000 shall be advertised until such contract and specifications or proposal shall have been submitted to and approved by the Director of the Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3053,
+          "min": -1.6086
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 75,
+          "mean": -0.0005,
+          "min": -0.0298
+        }
+      },
+      "ink": {
+        "ink_px": 4382,
+        "area_px": 452298,
+        "density": 0.00969,
+        "chars": 332,
+        "chars_per_1k_ink": 75.76
+      }
+    },
+    {
+      "bbox": [
+        706,
+        1458,
+        1997,
+        2557
+      ],
+      "category": "Text",
+      "text": "(2) Contracts and specifications or proposals for work estimated to cost in excess of $50,000, except for work to be performed by the Board of Education, shall be submitted to and approved by the Mayor before such contracts and specifications or proposals are advertised. Contracts and specifications or proposals for work to be performed for the Board of Education, estimated to cost in excess of $100,000 shall be submitted to and approved by the Mayor before such contracts and specifications or proposals are advertised. When specifications have been approved by the Mayor, addenda thereto may be approved by the Director of the Budget, provided, however, that the estimated cost is not increased or that the change is not material. The specifications for the supplies, materials, and equipment in such contracts shall comply with the requirements of Subsection \"1\" herein.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2996,
+          "min": -1.4973
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.6326,
+          "min": -0.6326
+        },
+        "text": {
+          "n_tokens": 172,
+          "mean": -0.0074,
+          "min": -0.6364
+        }
+      },
+      "ink": {
+        "ink_px": 5768,
+        "area_px": 1410552,
+        "density": 0.00409,
+        "chars": 877,
+        "chars_per_1k_ink": 152.05
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 450,
+    "content": {
+      "n_tokens": 277,
+      "mean": -0.0051,
+      "min": -0.6364,
+      "p05": -0.0008,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 391,
+          "token_id": 8962,
+          "logprob": -0.6364,
+          "text": " ther"
+        },
+        {
+          "index": 390,
+          "token_id": 9696,
+          "logprob": -0.4864,
+          "text": "enda"
+        },
+        {
+          "index": 444,
+          "token_id": 16,
+          "logprob": -0.1203,
+          "text": "1"
+        },
+        {
+          "index": 125,
+          "token_id": 220,
+          "logprob": -0.079,
+          "text": " "
+        },
+        {
+          "index": 172,
+          "token_id": 387,
+          "logprob": -0.0298,
+          "text": " be"
+        },
+        {
+          "index": 124,
+          "token_id": 6523,
+          "logprob": -0.0149,
+          "text": " \"-"
+        },
+        {
+          "index": 389,
+          "token_id": 912,
+          "logprob": -0.0146,
+          "text": " add"
+        },
+        {
+          "index": 82,
+          "token_id": 7507,
+          "logprob": -0.0111,
+          "text": ".Y"
+        },
+        {
+          "index": 283,
+          "token_id": 24258,
+          "logprob": -0.0066,
+          "text": " proposals"
+        },
+        {
+          "index": 276,
+          "token_id": 11993,
+          "logprob": -0.0052,
+          "text": " \"("
+        },
+        {
+          "index": 443,
+          "token_id": 7245,
+          "logprob": -0.0033,
+          "text": " \\\""
+        },
+        {
+          "index": 65,
+          "token_id": 17229,
+          "logprob": -0.0026,
+          "text": "THE"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 103,
+      "mean": -0.339,
+      "min": -1.8784,
+      "p05": -1.6066,
+      "p50": -0.0015,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 42,
+          "token_id": 19,
+          "logprob": -1.8784,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.8708,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.8399,
+          "text": "1"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.6999,
+          "text": "2"
+        },
+        {
+          "index": 97,
+          "token_id": 19,
+          "logprob": -1.6688,
+          "text": "4"
+        },
+        {
+          "index": 141,
+          "token_id": 19,
+          "logprob": -1.6086,
+          "text": "4"
+        },
+        {
+          "index": 48,
+          "token_id": 16,
+          "logprob": -1.589,
+          "text": "1"
+        },
+        {
+          "index": 108,
+          "token_id": 16,
+          "logprob": -1.5681,
+          "text": "1"
+        },
+        {
+          "index": 147,
+          "token_id": 17,
+          "logprob": -1.5139,
+          "text": "2"
+        },
+        {
+          "index": 247,
+          "token_id": 21,
+          "logprob": -1.4973,
+          "text": "6"
+        },
+        {
+          "index": 102,
+          "token_id": 22,
+          "logprob": -1.486,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.4653,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 450,
+      "mean": -0.0808,
+      "min": -1.8784,
+      "p05": -0.5693,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.18,
+    "std": 17.12,
+    "dark_fraction": 0.00283
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      903.6,
+      1164.72
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      301,
+      388,
+      2208,
+      2847
+    ],
+    "ink_px": 13263,
+    "covered_px": 13243,
+    "covered_fraction": 0.99849,
+    "uncovered_px": 20,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

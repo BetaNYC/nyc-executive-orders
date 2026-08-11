@@ -1,0 +1,274 @@
+{
+  "page": 10,
+  "source_image": "page_0010.png",
+  "elements": [
+    {
+      "bbox": [
+        887,
+        138,
+        1040,
+        182
+      ],
+      "category": "Page-header",
+      "text": "PAGE 3",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3495,
+          "min": -1.5472
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0029,
+          "min": -0.0054
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0024,
+          "min": -0.0053
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        211,
+        216,
+        1777,
+        1280
+      ],
+      "category": "Text",
+      "text": "| SUBJECT | NUMBER | DATE |\n|---|---|---|\n| Reception Committee, Dept of Commerce | 13 | 6/30/54 |\n| Red Cross fund drive | 3 | 1/28/54 |\n| School construction | 17 | 2/23/55 |\n| Security clearance | 6, 19 | 3/24/54, 2/14/55 |\n| Television, commercial programming | 27 | 10/11/55 |\n| Transit strike | 11A | 6/10/54 |\n| Union dues, check-off | 43 | 8/28/57 |\n| Union duties, time allowance | 34 | 12/13/56 |\n| Vaccinations | | |\n|  Asiatic flu | 42 | 8/13/57 |\n|  polio | 37 | mem. 8/26/57, 3/12/57 |\n| Voting, permanent registration | 40 | 5/29/57 |",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3643,
+          "min": -1.732
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2821,
+          "min": -0.2821
+        },
+        "text": {
+          "n_tokens": 264,
+          "mean": -0.0177,
+          "min": -0.9571
+        }
+      },
+      "ink": {
+        "ink_px": 19737,
+        "area_px": 1410185,
+        "density": 0.014,
+        "chars": 549,
+        "chars_per_1k_ink": 27.82
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 341,
+    "content": {
+      "n_tokens": 267,
+      "mean": -0.0175,
+      "min": -0.9571,
+      "p05": -0.0286,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 270,
+          "token_id": 220,
+          "logprob": -0.9571,
+          "text": " "
+        },
+        {
+          "index": 290,
+          "token_id": 220,
+          "logprob": -0.7002,
+          "text": " "
+        },
+        {
+          "index": 266,
+          "token_id": 760,
+          "logprob": -0.6328,
+          "text": " |"
+        },
+        {
+          "index": 271,
+          "token_id": 87710,
+          "logprob": -0.4746,
+          "text": " Asi"
+        },
+        {
+          "index": 308,
+          "token_id": 11,
+          "logprob": -0.3961,
+          "text": ","
+        },
+        {
+          "index": 155,
+          "token_id": 11,
+          "logprob": -0.3292,
+          "text": ","
+        },
+        {
+          "index": 83,
+          "token_id": 4421,
+          "logprob": -0.2951,
+          "text": "---"
+        },
+        {
+          "index": 298,
+          "token_id": 1833,
+          "logprob": -0.1812,
+          "text": " mem"
+        },
+        {
+          "index": 74,
+          "token_id": 25203,
+          "logprob": -0.1719,
+          "text": " \"|"
+        },
+        {
+          "index": 76,
+          "token_id": 760,
+          "logprob": -0.1393,
+          "text": " |"
+        },
+        {
+          "index": 279,
+          "token_id": 220,
+          "logprob": -0.1015,
+          "text": " "
+        },
+        {
+          "index": 168,
+          "token_id": 11,
+          "logprob": -0.0607,
+          "text": ","
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3384,
+      "min": -1.732,
+      "p05": -1.6706,
+      "p50": -0.0057,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 46,
+          "token_id": 16,
+          "logprob": -1.732,
+          "text": "1"
+        },
+        {
+          "index": 57,
+          "token_id": 22,
+          "logprob": -1.7166,
+          "text": "7"
+        },
+        {
+          "index": 51,
+          "token_id": 21,
+          "logprob": -1.6771,
+          "text": "6"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.5472,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.3595,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.3167,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.2207,
+          "text": "8"
+        },
+        {
+          "index": 63,
+          "token_id": 15,
+          "logprob": -1.1812,
+          "text": "0"
+        },
+        {
+          "index": 11,
+          "token_id": 18,
+          "logprob": -0.4306,
+          "text": "3"
+        },
+        {
+          "index": 5,
+          "token_id": 23,
+          "logprob": -0.3989,
+          "text": "8"
+        },
+        {
+          "index": 62,
+          "token_id": 23,
+          "logprob": -0.3882,
+          "text": "8"
+        },
+        {
+          "index": 69,
+          "token_id": 1178,
+          "logprob": -0.2821,
+          "text": "Text"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 341,
+      "mean": -0.0554,
+      "min": -1.732,
+      "p05": -0.2951,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 181.17,
+    "std": 10.82,
+    "dark_fraction": 0.00537
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      792.72,
+      1040.88
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      264,
+      347,
+      1937,
+      2544
+    ],
+    "ink_px": 19737,
+    "covered_px": 19737,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

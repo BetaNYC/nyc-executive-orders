@@ -1,0 +1,303 @@
+{
+  "page": 108,
+  "source_image": "page_0108.png",
+  "elements": [
+    {
+      "bbox": [
+        213,
+        311,
+        1723,
+        614
+      ],
+      "category": "Text",
+      "text": "I request that you acknowledge receipt of this Executive Order and indicate the name and title of an officer who, in addition to the head of the agency, is authorized to sign the legislative reports. A copy of this acknowledgment should be sent to Mr. Ruggieri at the Manger De Witt Clinton Hotel, Albany, New York.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4774,
+          "min": -2.0582
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 66,
+          "mean": -0.0019,
+          "min": -0.1129
+        }
+      },
+      "ink": {
+        "ink_px": 31734,
+        "area_px": 425408,
+        "density": 0.0746,
+        "chars": 315,
+        "chars_per_1k_ink": 9.93
+      }
+    },
+    {
+      "bbox": [
+        870,
+        706,
+        1677,
+        927
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4374,
+          "min": -1.8503
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 7447,
+        "area_px": 180042,
+        "density": 0.04136,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        937,
+        2451,
+        1016,
+        2493
+      ],
+      "category": "Page-footer",
+      "text": "-4-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3296,
+          "min": -1.6921
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0003,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0001,
+          "min": -0.0002
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 174,
+    "content": {
+      "n_tokens": 69,
+      "mean": -0.0018,
+      "min": -0.1129,
+      "p05": -0.001,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 43,
+          "token_id": 17880,
+          "logprob": -0.1129,
+          "text": " Executive"
+        },
+        {
+          "index": 91,
+          "token_id": 1581,
+          "logprob": -0.007,
+          "text": " De"
+        },
+        {
+          "index": 85,
+          "token_id": 2596,
+          "logprob": -0.0014,
+          "text": "ugg"
+        },
+        {
+          "index": 89,
+          "token_id": 386,
+          "logprob": -0.0012,
+          "text": " M"
+        },
+        {
+          "index": 90,
+          "token_id": 4003,
+          "logprob": -0.0006,
+          "text": "anger"
+        },
+        {
+          "index": 86,
+          "token_id": 53939,
+          "logprob": -0.0003,
+          "text": "ieri"
+        },
+        {
+          "index": 35,
+          "token_id": 40,
+          "logprob": -0.0003,
+          "text": "I"
+        },
+        {
+          "index": 168,
+          "token_id": 6523,
+          "logprob": -0.0002,
+          "text": " \"-"
+        },
+        {
+          "index": 36,
+          "token_id": 1681,
+          "logprob": -0.0002,
+          "text": " request"
+        },
+        {
+          "index": 170,
+          "token_id": 12,
+          "logprob": -0.0002,
+          "text": "-"
+        },
+        {
+          "index": 84,
+          "token_id": 431,
+          "logprob": -0.0001,
+          "text": " R"
+        },
+        {
+          "index": 44,
+          "token_id": 7217,
+          "logprob": -0.0001,
+          "text": " Order"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 63,
+      "mean": -0.3858,
+      "min": -2.0582,
+      "p05": -1.8983,
+      "p50": -0.0014,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -2.0582,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.997,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.9676,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.9037,
+          "text": "1"
+        },
+        {
+          "index": 113,
+          "token_id": 21,
+          "logprob": -1.8503,
+          "text": "6"
+        },
+        {
+          "index": 119,
+          "token_id": 22,
+          "logprob": -1.7024,
+          "text": "7"
+        },
+        {
+          "index": 150,
+          "token_id": 21,
+          "logprob": -1.6921,
+          "text": "6"
+        },
+        {
+          "index": 144,
+          "token_id": 16,
+          "logprob": -1.6185,
+          "text": "1"
+        },
+        {
+          "index": 108,
+          "token_id": 15,
+          "logprob": -1.588,
+          "text": "0"
+        },
+        {
+          "index": 138,
+          "token_id": 22,
+          "logprob": -1.5802,
+          "text": "7"
+        },
+        {
+          "index": 156,
+          "token_id": 18,
+          "logprob": -1.5621,
+          "text": "3"
+        },
+        {
+          "index": 124,
+          "token_id": 22,
+          "logprob": -1.4479,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 174,
+      "mean": -0.1404,
+      "min": -2.0582,
+      "p05": -1.583,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.91,
+    "std": 13.81,
+    "dark_fraction": 0.01153
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      779.76,
+      976.8
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      259,
+      325,
+      1906,
+      2388
+    ],
+    "ink_px": 39181,
+    "covered_px": 39181,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "page": 235,
+  "source_image": "page_0235.png",
+  "elements": [
+    {
+      "bbox": [
+        481,
+        1608,
+        701,
+        1669
+      ],
+      "category": "Text",
+      "text": "UNITED STATES DISTRICT COURT\nCHIEF JUDGE: K. K. BAKER\nUNITED STATES MAGISTRATE JUDGE: K. K. BAKER",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3829,
+          "min": -1.5807
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0273,
+          "min": -0.0273
+        },
+        "text": {
+          "n_tokens": 35,
+          "mean": -0.6162,
+          "min": -1.9839
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 9546,
+        "density": 0.0,
+        "chars": 97,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        531,
+        1683,
+        656,
+        1805
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3759,
+          "min": -1.9873
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": null
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 105,
+    "content": {
+      "n_tokens": 35,
+      "mean": -0.6162,
+      "min": -1.9839,
+      "p05": -1.6941,
+      "p50": -0.158,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 49,
+          "token_id": 730,
+          "logprob": -1.9839,
+          "text": " K"
+        },
+        {
+          "index": 53,
+          "token_id": 425,
+          "logprob": -1.9321,
+          "text": " B"
+        },
+        {
+          "index": 48,
+          "token_id": 25,
+          "logprob": -1.5921,
+          "text": ":"
+        },
+        {
+          "index": 65,
+          "token_id": 730,
+          "logprob": -1.5803,
+          "text": " K"
+        },
+        {
+          "index": 44,
+          "token_id": 5371,
+          "logprob": -1.4807,
+          "text": "IE"
+        },
+        {
+          "index": 54,
+          "token_id": 76487,
+          "logprob": -1.4547,
+          "text": "AKER"
+        },
+        {
+          "index": 46,
+          "token_id": 619,
+          "logprob": -1.3681,
+          "text": " J"
+        },
+        {
+          "index": 36,
+          "token_id": 23040,
+          "logprob": -1.3182,
+          "text": "UNIT"
+        },
+        {
+          "index": 43,
+          "token_id": 2149,
+          "logprob": -1.2197,
+          "text": "CH"
+        },
+        {
+          "index": 50,
+          "token_id": 13,
+          "logprob": -1.0793,
+          "text": "."
+        },
+        {
+          "index": 52,
+          "token_id": 13,
+          "logprob": -1.0536,
+          "text": "."
+        },
+        {
+          "index": 51,
+          "token_id": 730,
+          "logprob": -1.0205,
+          "text": " K"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.362,
+      "min": -1.9873,
+      "p05": -1.5791,
+      "p50": -0.0223,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 95,
+          "token_id": 20,
+          "logprob": -1.9873,
+          "text": "5"
+        },
+        {
+          "index": 84,
+          "token_id": 18,
+          "logprob": -1.6599,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.5807,
+          "text": "1"
+        },
+        {
+          "index": 13,
+          "token_id": 23,
+          "logprob": -1.5485,
+          "text": "8"
+        },
+        {
+          "index": 89,
+          "token_id": 21,
+          "logprob": -1.4642,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.3186,
+          "text": "1"
+        },
+        {
+          "index": 78,
+          "token_id": 16,
+          "logprob": -1.1902,
+          "text": "1"
+        },
+        {
+          "index": 24,
+          "token_id": 24,
+          "logprob": -1.0522,
+          "text": "9"
+        },
+        {
+          "index": 94,
+          "token_id": 15,
+          "logprob": -0.6737,
+          "text": "0"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -0.6552,
+          "text": "6"
+        },
+        {
+          "index": 6,
+          "token_id": 23,
+          "logprob": -0.5393,
+          "text": "8"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -0.434,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 105,
+      "mean": -0.3509,
+      "min": -1.9873,
+      "p05": -1.5806,
+      "p50": -0.0079,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.62,
+    "std": 8.76,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      676.8,
+      424.08
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      141,
+      225,
+      1036,
+      1654
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

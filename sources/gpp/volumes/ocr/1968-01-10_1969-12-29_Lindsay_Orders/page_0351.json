@@ -1,0 +1,331 @@
+{
+  "page": 351,
+  "source_image": "page_0351.png",
+  "elements": [
+    {
+      "bbox": [
+        255,
+        1452,
+        385,
+        1477
+      ],
+      "category": "Section-header",
+      "text": "(A) Latin.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3995,
+          "min": -1.9368
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3833,
+          "min": -0.7667
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.6139,
+          "min": -2.2232
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 3564,
+        "density": 0.0,
+        "chars": 10,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        444,
+        1589,
+        657,
+        1654
+      ],
+      "category": "Text",
+      "text": "THE EXCELLENT STILES\nOF THE OLD ENGLISH LEXICON\nOF THE NEW YORK\nDIACRITIS BY J. B. NEDERLOF.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3776,
+          "min": -1.7551
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0094,
+          "min": -0.0094
+        },
+        "text": {
+          "n_tokens": 39,
+          "mean": -0.7747,
+          "min": -2.5649
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 2808,
+        "density": 0.0,
+        "chars": 92,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        503,
+        1663,
+        615,
+        1797
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3737,
+          "min": -1.9131
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        463,
+        1797,
+        680,
+        1817
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF MUNICIPAL LIBRARY.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3005,
+          "min": -1.6162
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1666,
+          "min": -0.1666
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.4661,
+          "min": -2.0211
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 202,
+    "content": {
+      "n_tokens": 61,
+      "mean": -0.6755,
+      "min": -2.5649,
+      "p05": -2.0567,
+      "p50": -0.4142,
+      "n_below_threshold": 6,
+      "worst_tokens": [
+        {
+          "index": 78,
+          "token_id": 4063,
+          "logprob": -2.5649,
+          "text": " EX"
+        },
+        {
+          "index": 96,
+          "token_id": 3168,
+          "logprob": -2.2828,
+          "text": " THE"
+        },
+        {
+          "index": 39,
+          "token_id": 19458,
+          "logprob": -2.2232,
+          "text": " Latin"
+        },
+        {
+          "index": 100,
+          "token_id": 17625,
+          "logprob": -2.0567,
+          "text": "DI"
+        },
+        {
+          "index": 106,
+          "token_id": 619,
+          "logprob": -2.0395,
+          "text": " J"
+        },
+        {
+          "index": 192,
+          "token_id": 386,
+          "logprob": -2.0211,
+          "text": " M"
+        },
+        {
+          "index": 105,
+          "token_id": 7710,
+          "logprob": -1.5432,
+          "text": " BY"
+        },
+        {
+          "index": 89,
+          "token_id": 5190,
+          "logprob": -1.4936,
+          "text": " EN"
+        },
+        {
+          "index": 114,
+          "token_id": 37,
+          "logprob": -1.4337,
+          "text": "F"
+        },
+        {
+          "index": 92,
+          "token_id": 3257,
+          "logprob": -1.2922,
+          "text": "EX"
+        },
+        {
+          "index": 77,
+          "token_id": 17229,
+          "logprob": -1.2507,
+          "text": "THE"
+        },
+        {
+          "index": 111,
+          "token_id": 1479,
+          "logprob": -1.2457,
+          "text": "ED"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 85,
+      "mean": -0.3526,
+      "min": -1.9368,
+      "p05": -1.6124,
+      "p50": -0.0094,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.9368,
+          "text": "5"
+        },
+        {
+          "index": 134,
+          "token_id": 20,
+          "logprob": -1.9131,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.7712,
+          "text": "5"
+        },
+        {
+          "index": 48,
+          "token_id": 19,
+          "logprob": -1.7551,
+          "text": "4"
+        },
+        {
+          "index": 171,
+          "token_id": 22,
+          "logprob": -1.6162,
+          "text": "7"
+        },
+        {
+          "index": 123,
+          "token_id": 18,
+          "logprob": -1.5974,
+          "text": "3"
+        },
+        {
+          "index": 13,
+          "token_id": 17,
+          "logprob": -1.5886,
+          "text": "2"
+        },
+        {
+          "index": 129,
+          "token_id": 18,
+          "logprob": -1.5609,
+          "text": "3"
+        },
+        {
+          "index": 65,
+          "token_id": 19,
+          "logprob": -1.4682,
+          "text": "4"
+        },
+        {
+          "index": 24,
+          "token_id": 22,
+          "logprob": -1.4498,
+          "text": "7"
+        },
+        {
+          "index": 59,
+          "token_id": 22,
+          "logprob": -1.4011,
+          "text": "7"
+        },
+        {
+          "index": 140,
+          "token_id": 22,
+          "logprob": -1.3544,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 202,
+      "mean": -0.3533,
+      "min": -2.5649,
+      "p05": -1.6152,
+      "p50": -0.0085,
+      "n_below_threshold": 6
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 165.51,
+    "std": 7.19,
+    "dark_fraction": 9e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      658.8,
+      427.68
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      219,
+      1045,
+      1610
+    ],
+    "ink_px": 113,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 113,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}
