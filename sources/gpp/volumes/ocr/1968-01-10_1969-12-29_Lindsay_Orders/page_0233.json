@@ -1,0 +1,297 @@
+{
+  "page": 233,
+  "source_image": "page_0233.png",
+  "elements": [
+    {
+      "bbox": [
+        466,
+        1589,
+        691,
+        1655
+      ],
+      "category": "Text",
+      "text": "THE\nSTATE\nOF\nNEW\nHORIZON\nFROM\nTHE\nWORLD\nOF\nEXCELLENCE",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4669,
+          "min": -1.956
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0511,
+          "min": -0.0511
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.6743,
+          "min": -2.6924
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 8288,
+        "density": 0.0,
+        "chars": 53,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        518,
+        1667,
+        646,
+        1841
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3613,
+          "min": -1.6003
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0022,
+          "min": -0.0022
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        542,
+        1841,
+        691,
+        1856
+      ],
+      "category": "Text",
+      "text": "THE\nSTATE\nOF\nNEW\nHORIZON",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5785,
+          "min": -2.0684
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.038,
+          "min": -0.038
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.4447,
+          "min": -2.4636
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 142,
+    "content": {
+      "n_tokens": 36,
+      "mean": -0.6041,
+      "min": -2.6924,
+      "p05": -2.5079,
+      "p50": -0.1119,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 38,
+          "token_id": 24628,
+          "logprob": -2.6924,
+          "text": "STATE"
+        },
+        {
+          "index": 37,
+          "token_id": 1699,
+          "logprob": -2.6408,
+          "text": "\\n"
+        },
+        {
+          "index": 128,
+          "token_id": 17229,
+          "logprob": -2.4636,
+          "text": "THE"
+        },
+        {
+          "index": 36,
+          "token_id": 17229,
+          "logprob": -2.2343,
+          "text": "THE"
+        },
+        {
+          "index": 57,
+          "token_id": 3257,
+          "logprob": -1.7233,
+          "text": "EX"
+        },
+        {
+          "index": 129,
+          "token_id": 1699,
+          "logprob": -1.6736,
+          "text": "\\n"
+        },
+        {
+          "index": 52,
+          "token_id": 54,
+          "logprob": -1.6516,
+          "text": "W"
+        },
+        {
+          "index": 42,
+          "token_id": 20594,
+          "logprob": -1.4126,
+          "text": "NEW"
+        },
+        {
+          "index": 48,
+          "token_id": 30093,
+          "logprob": -1.0981,
+          "text": "FROM"
+        },
+        {
+          "index": 45,
+          "token_id": 24683,
+          "logprob": -0.9187,
+          "text": "ORIZ"
+        },
+        {
+          "index": 58,
+          "token_id": 41664,
+          "logprob": -0.6455,
+          "text": "CEL"
+        },
+        {
+          "index": 50,
+          "token_id": 17229,
+          "logprob": -0.5439,
+          "text": "THE"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 63,
+      "mean": -0.448,
+      "min": -2.0684,
+      "p05": -1.724,
+      "p50": -0.0298,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 99,
+          "token_id": 17,
+          "logprob": -2.0684,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.956,
+          "text": "6"
+        },
+        {
+          "index": 110,
+          "token_id": 16,
+          "logprob": -1.7994,
+          "text": "1"
+        },
+        {
+          "index": 116,
+          "token_id": 21,
+          "logprob": -1.7295,
+          "text": "6"
+        },
+        {
+          "index": 13,
+          "token_id": 24,
+          "logprob": -1.674,
+          "text": "9"
+        },
+        {
+          "index": 24,
+          "token_id": 20,
+          "logprob": -1.6635,
+          "text": "5"
+        },
+        {
+          "index": 79,
+          "token_id": 21,
+          "logprob": -1.6003,
+          "text": "6"
+        },
+        {
+          "index": 109,
+          "token_id": 24,
+          "logprob": -1.5791,
+          "text": "9"
+        },
+        {
+          "index": 74,
+          "token_id": 22,
+          "logprob": -1.5728,
+          "text": "7"
+        },
+        {
+          "index": 85,
+          "token_id": 16,
+          "logprob": -1.5545,
+          "text": "1"
+        },
+        {
+          "index": 68,
+          "token_id": 23,
+          "logprob": -1.4993,
+          "text": "8"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.4466,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 142,
+      "mean": -0.3588,
+      "min": -2.6924,
+      "p05": -1.7292,
+      "p50": -0.0017,
+      "n_below_threshold": 5
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.67,
+    "std": 8.72,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      664.56,
+      419.76
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      139,
+      221,
+      1026,
+      1624
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

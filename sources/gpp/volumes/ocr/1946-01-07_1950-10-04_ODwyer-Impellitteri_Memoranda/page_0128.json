@@ -1,0 +1,426 @@
+{
+  "page": 128,
+  "source_image": "page_0128.png",
+  "elements": [
+    {
+      "bbox": [
+        1727,
+        374,
+        1757,
+        413
+      ],
+      "category": "Page-header",
+      "text": "3",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3689,
+          "min": -1.7818
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0026,
+          "min": -0.0052
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0007,
+          "min": -0.0007
+        }
+      },
+      "ink": {
+        "ink_px": 72,
+        "area_px": 868,
+        "density": 0.08295,
+        "chars": 1,
+        "chars_per_1k_ink": 13.89
+      }
+    },
+    {
+      "bbox": [
+        797,
+        507,
+        1251,
+        555
+      ],
+      "category": "Section-header",
+      "text": "Military Law § 43",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3628,
+          "min": -1.7657
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0427,
+          "min": -0.0853
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0642,
+          "min": -0.267
+        }
+      },
+      "ink": {
+        "ink_px": 1825,
+        "area_px": 22295,
+        "density": 0.08186,
+        "chars": 17,
+        "chars_per_1k_ink": 9.32
+      }
+    },
+    {
+      "bbox": [
+        501,
+        601,
+        1733,
+        1001
+      ],
+      "category": "Text",
+      "text": "A city officer or employee who, after April 1, 1942, became or becomes a member of the National Guard, Naval Militia or of the reserve corps or force in the federal military naval or marine service",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3392,
+          "min": -1.7676
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 46,
+          "mean": -0.0022,
+          "min": -0.079
+        }
+      },
+      "ink": {
+        "ink_px": 16876,
+        "area_px": 493200,
+        "density": 0.03422,
+        "chars": 197,
+        "chars_per_1k_ink": 11.67
+      }
+    },
+    {
+      "bbox": [
+        636,
+        1087,
+        1714,
+        1317
+      ],
+      "category": "Text",
+      "text": "(1) may absent himself from his city employment while engaged in ordered military duty;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2859,
+          "min": -1.6036
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2519,
+          "min": -0.2519
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.0008,
+          "min": -0.0088
+        }
+      },
+      "ink": {
+        "ink_px": 6883,
+        "area_px": 249249,
+        "density": 0.02761,
+        "chars": 87,
+        "chars_per_1k_ink": 12.64
+      }
+    },
+    {
+      "bbox": [
+        636,
+        1397,
+        1742,
+        1897
+      ],
+      "category": "Text",
+      "text": "(2) the first 30 days of military duty in any one calendar year shall be deemed ordered, notwithstanding the fact that orders therefor are or may be issued with the employee's consent (this provision added by L. 1948 c. 201);",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2432,
+          "min": -1.4639
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 58,
+          "mean": -0.0001,
+          "min": -0.0039
+        }
+      },
+      "ink": {
+        "ink_px": 18128,
+        "area_px": 553500,
+        "density": 0.03275,
+        "chars": 225,
+        "chars_per_1k_ink": 12.41
+      }
+    },
+    {
+      "bbox": [
+        636,
+        1978,
+        1797,
+        2483
+      ],
+      "category": "Text",
+      "text": "(3) during such absence the employee shall receive his full city salary for a period or periods not exceeding 30 days in any one continuous period and not exceeding 30 days in any one calendar year.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2174,
+          "min": -1.329
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 43,
+          "mean": -0.0001,
+          "min": -0.0021
+        }
+      },
+      "ink": {
+        "ink_px": 17627,
+        "area_px": 586810,
+        "density": 0.03004,
+        "chars": 198,
+        "chars_per_1k_ink": 11.23
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 390,
+    "content": {
+      "n_tokens": 171,
+      "mean": -0.003,
+      "min": -0.267,
+      "p05": -0.0018,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 74,
+          "token_id": 85326,
+          "logprob": -0.267,
+          "text": "Military"
+        },
+        {
+          "index": 76,
+          "token_id": 16625,
+          "logprob": -0.1182,
+          "text": " §"
+        },
+        {
+          "index": 124,
+          "token_id": 5813,
+          "logprob": -0.079,
+          "text": " April"
+        },
+        {
+          "index": 158,
+          "token_id": 45298,
+          "logprob": -0.0152,
+          "text": " naval"
+        },
+        {
+          "index": 206,
+          "token_id": 3283,
+          "logprob": -0.0088,
+          "text": " city"
+        },
+        {
+          "index": 202,
+          "token_id": 27211,
+          "logprob": -0.0039,
+          "text": " absent"
+        },
+        {
+          "index": 292,
+          "token_id": 17136,
+          "logprob": -0.0039,
+          "text": " provision"
+        },
+        {
+          "index": 373,
+          "token_id": 19259,
+          "logprob": -0.0021,
+          "text": " continuous"
+        },
+        {
+          "index": 134,
+          "token_id": 6116,
+          "logprob": -0.0018,
+          "text": " became"
+        },
+        {
+          "index": 144,
+          "token_id": 45729,
+          "logprob": -0.0017,
+          "text": " Naval"
+        },
+        {
+          "index": 287,
+          "token_id": 9364,
+          "logprob": -0.001,
+          "text": " employee"
+        },
+        {
+          "index": 150,
+          "token_id": 20499,
+          "logprob": -0.001,
+          "text": " reserve"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 130,
+      "mean": -0.2852,
+      "min": -1.7818,
+      "p05": -1.5499,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 13,
+          "token_id": 19,
+          "logprob": -1.7818,
+          "text": "4"
+        },
+        {
+          "index": 98,
+          "token_id": 18,
+          "logprob": -1.7676,
+          "text": "3"
+        },
+        {
+          "index": 61,
+          "token_id": 20,
+          "logprob": -1.7657,
+          "text": "5"
+        },
+        {
+          "index": 181,
+          "token_id": 19,
+          "logprob": -1.6036,
+          "text": "4"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -1.5781,
+          "text": "7"
+        },
+        {
+          "index": 24,
+          "token_id": 18,
+          "logprob": -1.5681,
+          "text": "3"
+        },
+        {
+          "index": 45,
+          "token_id": 22,
+          "logprob": -1.5512,
+          "text": "7"
+        },
+        {
+          "index": 56,
+          "token_id": 16,
+          "logprob": -1.5484,
+          "text": "1"
+        },
+        {
+          "index": 8,
+          "token_id": 22,
+          "logprob": -1.5174,
+          "text": "7"
+        },
+        {
+          "index": 234,
+          "token_id": 17,
+          "logprob": -1.4639,
+          "text": "2"
+        },
+        {
+          "index": 175,
+          "token_id": 22,
+          "logprob": -1.4571,
+          "text": "7"
+        },
+        {
+          "index": 104,
+          "token_id": 16,
+          "logprob": -1.4386,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 390,
+      "mean": -0.0971,
+      "min": -1.7818,
+      "p05": -1.2653,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.66,
+    "std": 14.74,
+    "dark_fraction": 0.0138
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      887.28,
+      1157.76
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      295,
+      385,
+      2169,
+      2830
+    ],
+    "ink_px": 63225,
+    "covered_px": 61411,
+    "covered_fraction": 0.97131,
+    "uncovered_px": 1814,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          799,
+          553,
+          1255,
+          577
+        ],
+        "ink_px": 1812
+      }
+    ],
+    "cell_px": 24
+  }
+}

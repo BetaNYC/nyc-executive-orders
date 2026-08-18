@@ -1,0 +1,331 @@
+{
+  "page": 329,
+  "source_image": "page_0329.png",
+  "elements": [
+    {
+      "bbox": [
+        331,
+        1414,
+        371,
+        1440
+      ],
+      "category": "Text",
+      "text": "(1)",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4173,
+          "min": -1.738
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0219,
+          "min": -0.0219
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.3269,
+          "min": -0.8399
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1107,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        409,
+        1578,
+        621,
+        1642
+      ],
+      "category": "Text",
+      "text": "THE LION, THE LION, ALEA\nDARK AS THE GRAVE AS THE SEA",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3956,
+          "min": -1.5613
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0037,
+          "min": -0.0037
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -1.0559,
+          "min": -2.2308
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 4945,
+        "density": 0.0,
+        "chars": 53,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        467,
+        1649,
+        564,
+        1780
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3449,
+          "min": -1.5677
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        404,
+        1780,
+        621,
+        1810
+      ],
+      "category": "Text",
+      "text": "THE LION, THE LION, ALEA\nDARK AS THE SEA",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.33,
+          "min": -1.9027
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0164,
+          "min": -0.0164
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.1944,
+          "min": -1.5606
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 182,
+    "content": {
+      "n_tokens": 41,
+      "mean": -0.6454,
+      "min": -2.2308,
+      "p05": -1.9789,
+      "p50": -0.2796,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 76,
+          "token_id": 1271,
+          "logprob": -2.2308,
+          "text": "ION"
+        },
+        {
+          "index": 75,
+          "token_id": 444,
+          "logprob": -2.2043,
+          "text": " L"
+        },
+        {
+          "index": 74,
+          "token_id": 17229,
+          "logprob": -1.9789,
+          "text": "THE"
+        },
+        {
+          "index": 82,
+          "token_id": 362,
+          "logprob": -1.6359,
+          "text": " A"
+        },
+        {
+          "index": 162,
+          "token_id": 17229,
+          "logprob": -1.5606,
+          "text": "THE"
+        },
+        {
+          "index": 87,
+          "token_id": 9094,
+          "logprob": -1.5193,
+          "text": "ARK"
+        },
+        {
+          "index": 88,
+          "token_id": 5752,
+          "logprob": -1.5102,
+          "text": " AS"
+        },
+        {
+          "index": 90,
+          "token_id": 64020,
+          "logprob": -1.5011,
+          "text": " GRA"
+        },
+        {
+          "index": 91,
+          "token_id": 4491,
+          "logprob": -1.4407,
+          "text": "VE"
+        },
+        {
+          "index": 92,
+          "token_id": 5752,
+          "logprob": -1.3491,
+          "text": " AS"
+        },
+        {
+          "index": 84,
+          "token_id": 32,
+          "logprob": -1.2509,
+          "text": "A"
+        },
+        {
+          "index": 94,
+          "token_id": 77811,
+          "logprob": -1.2155,
+          "text": " SEA"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 84,
+      "mean": -0.3547,
+      "min": -1.9027,
+      "p05": -1.5668,
+      "p50": -0.0124,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 150,
+          "token_id": 15,
+          "logprob": -1.9027,
+          "text": "0"
+        },
+        {
+          "index": 13,
+          "token_id": 19,
+          "logprob": -1.738,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.7374,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.7302,
+          "text": "1"
+        },
+        {
+          "index": 113,
+          "token_id": 19,
+          "logprob": -1.5677,
+          "text": "4"
+        },
+        {
+          "index": 62,
+          "token_id": 17,
+          "logprob": -1.5613,
+          "text": "2"
+        },
+        {
+          "index": 102,
+          "token_id": 22,
+          "logprob": -1.5448,
+          "text": "7"
+        },
+        {
+          "index": 56,
+          "token_id": 16,
+          "logprob": -1.4786,
+          "text": "1"
+        },
+        {
+          "index": 51,
+          "token_id": 23,
+          "logprob": -1.4765,
+          "text": "8"
+        },
+        {
+          "index": 139,
+          "token_id": 15,
+          "logprob": -1.4361,
+          "text": "0"
+        },
+        {
+          "index": 45,
+          "token_id": 24,
+          "logprob": -1.2914,
+          "text": "9"
+        },
+        {
+          "index": 119,
+          "token_id": 15,
+          "logprob": -1.2887,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 182,
+      "mean": -0.3117,
+      "min": -2.2308,
+      "p05": -1.5613,
+      "p50": -0.0008,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 165.49,
+    "std": 7.11,
+    "dark_fraction": 9e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      657.6,
+      427.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      219,
+      1045,
+      1607
+    ],
+    "ink_px": 110,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 110,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

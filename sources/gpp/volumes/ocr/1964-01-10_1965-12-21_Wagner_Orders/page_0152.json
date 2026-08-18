@@ -1,0 +1,376 @@
+{
+  "page": 152,
+  "source_image": "page_0152.png",
+  "elements": [
+    {
+      "bbox": [
+        1138,
+        149,
+        1211,
+        185
+      ],
+      "category": "Page-header",
+      "text": "-8-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3772,
+          "min": -1.7077
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0012,
+          "min": -0.0024
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0013,
+          "min": -0.0033
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        394,
+        236,
+        2233,
+        1284
+      ],
+      "category": "List-item",
+      "text": "2. Under the direction of the Mayor, to supervise the allocation or expenditure of such monies as may be specifically allocated to the Anti-Poverty Program in the City Budget, or be allocated for the same purposes by agencies of the Federal or State Governments (unless these allocations are specifically earmarked for a particular city agency by the State agencies concerned), exclusive of funds allocated by the Federal Government under the Economic Opportunity Act of 1964.\n\nThe Board is authorized to make recommendations to the Mayor, to the Board of Education or to other non-mayoral agencies, as appropriate, with regard to specific provisions in the budgets of such agencies and to specific programs being conducted by such agencies, as to the relationship of such budgeted items or programs to any phase of the anti-poverty effort.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5367,
+          "min": -2.1968
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 162,
+          "mean": -0.0007,
+          "min": -0.0623
+        }
+      },
+      "ink": {
+        "ink_px": 7948,
+        "area_px": 1464788,
+        "density": 0.00543,
+        "chars": 840,
+        "chars_per_1k_ink": 105.69
+      }
+    },
+    {
+      "bbox": [
+        394,
+        1316,
+        2233,
+        1850
+      ],
+      "category": "List-item",
+      "text": "3. To fund, to arrange for the operation of, or to operate such programs and activities as will advance the purposes of this Executive Order, in cases where such programs are not likely to be funded or operated under the terms of the Economic Opportunity Act of 1964, or, where having merit, as judged by the Board, such programs have failed to receive approval or funding under the terms of the Economic Opportunity Act of 1964.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2498,
+          "min": -1.8217
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 93,
+          "mean": -0.0001,
+          "min": -0.0019
+        }
+      },
+      "ink": {
+        "ink_px": 7153,
+        "area_px": 889809,
+        "density": 0.00804,
+        "chars": 429,
+        "chars_per_1k_ink": 59.97
+      }
+    },
+    {
+      "bbox": [
+        390,
+        1885,
+        2233,
+        2677
+      ],
+      "category": "List-item",
+      "text": "4. To exercise such supervisory and coordinating jurisdiction as the City Government has or may have with regard to neighborhood action and planning groups and programs, including the negotiation of contracts and, subject to the direction of the Mayor, the allocation and channeling of funds allocated or appropriated for such purposes.\n\nThe Board is authorized to represent the City Government with respect to any negotiations involving State, Federal or other grants to such neighborhood action groups, in regard to activities defined or referred to in this Executive Order except for negotiations involving grants under the Economic Opportunity Act of 1964.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2691,
+          "min": -1.8946
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 116,
+          "mean": -0.0005,
+          "min": -0.0233
+        }
+      },
+      "ink": {
+        "ink_px": 13500,
+        "area_px": 1320495,
+        "density": 0.01022,
+        "chars": 660,
+        "chars_per_1k_ink": 48.89
+      }
+    },
+    {
+      "bbox": [
+        375,
+        2707,
+        2233,
+        2930
+      ],
+      "category": "List-item",
+      "text": "5. To maintain contacts with, and cooperation between neighborhood councils, agencies and groups through which programs and activities under the jurisdiction of the Board are being or are to be conducted.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.276,
+          "min": -1.609
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 35,
+          "mean": -0.0055,
+          "min": -0.18
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 375424,
+        "density": 0.0,
+        "chars": 204,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 598,
+    "content": {
+      "n_tokens": 409,
+      "mean": -0.0009,
+      "min": -0.18,
+      "p05": -0.0009,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 571,
+          "token_id": 12534,
+          "logprob": -0.18,
+          "text": " neighborhood"
+        },
+        {
+          "index": 165,
+          "token_id": 7110,
+          "logprob": -0.0623,
+          "text": ".\\"
+        },
+        {
+          "index": 166,
+          "token_id": 77,
+          "logprob": -0.0263,
+          "text": "n"
+        },
+        {
+          "index": 465,
+          "token_id": 77,
+          "logprob": -0.0233,
+          "text": "n"
+        },
+        {
+          "index": 464,
+          "token_id": 7110,
+          "logprob": -0.0182,
+          "text": ".\\"
+        },
+        {
+          "index": 154,
+          "token_id": 1212,
+          "logprob": -0.0127,
+          "text": " under"
+        },
+        {
+          "index": 577,
+          "token_id": 1526,
+          "logprob": -0.0076,
+          "text": " through"
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.0033,
+          "text": " \"-"
+        },
+        {
+          "index": 513,
+          "token_id": 22546,
+          "logprob": -0.0029,
+          "text": " Economic"
+        },
+        {
+          "index": 454,
+          "token_id": 5496,
+          "logprob": -0.0025,
+          "text": " channel"
+        },
+        {
+          "index": 90,
+          "token_id": 44326,
+          "logprob": -0.0022,
+          "text": " expenditure"
+        },
+        {
+          "index": 500,
+          "token_id": 13862,
+          "logprob": -0.002,
+          "text": " referred"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 113,
+      "mean": -0.3095,
+      "min": -2.1968,
+      "p05": -1.7453,
+      "p50": -0.0003,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 57,
+          "token_id": 18,
+          "logprob": -2.1968,
+          "text": "3"
+        },
+        {
+          "index": 51,
+          "token_id": 21,
+          "logprob": -1.9253,
+          "text": "6"
+        },
+        {
+          "index": 382,
+          "token_id": 20,
+          "logprob": -1.8946,
+          "text": "5"
+        },
+        {
+          "index": 63,
+          "token_id": 19,
+          "logprob": -1.8435,
+          "text": "4"
+        },
+        {
+          "index": 251,
+          "token_id": 21,
+          "logprob": -1.8217,
+          "text": "6"
+        },
+        {
+          "index": 46,
+          "token_id": 19,
+          "logprob": -1.8018,
+          "text": "4"
+        },
+        {
+          "index": 8,
+          "token_id": 23,
+          "logprob": -1.7077,
+          "text": "8"
+        },
+        {
+          "index": 24,
+          "token_id": 20,
+          "logprob": -1.6446,
+          "text": "5"
+        },
+        {
+          "index": 19,
+          "token_id": 16,
+          "logprob": -1.6359,
+          "text": "1"
+        },
+        {
+          "index": 536,
+          "token_id": 22,
+          "logprob": -1.609,
+          "text": "7"
+        },
+        {
+          "index": 13,
+          "token_id": 24,
+          "logprob": -1.5136,
+          "text": "9"
+        },
+        {
+          "index": 394,
+          "token_id": 22,
+          "logprob": -1.4799,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 598,
+      "mean": -0.0591,
+      "min": -2.1968,
+      "p05": -0.2393,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 203.95,
+    "std": 21.65,
+    "dark_fraction": 0.0063
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      839.28,
+      1212.96
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      279,
+      404,
+      2052,
+      2965
+    ],
+    "ink_px": 28601,
+    "covered_px": 28601,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "page": 61,
+  "source_image": "page_0061.png",
+  "elements": [
+    {
+      "bbox": [
+        49,
+        29,
+        1147,
+        1848
+      ],
+      "category": "Text",
+      "text": "This image does not contain any text. It is a drawing of a horse.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.5504,
+          "min": -1.9551
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.6936,
+          "min": -0.6936
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -0.4819,
+          "min": -1.8956
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1270521,
+        "density": 0.0,
+        "chars": 65,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 52,
+    "content": {
+      "n_tokens": 16,
+      "mean": -0.4819,
+      "min": -1.8956,
+      "p05": -1.6999,
+      "p50": -0.1026,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 13330,
+          "logprob": -1.8956,
+          "text": " drawing"
+        },
+        {
+          "index": 34,
+          "token_id": 1986,
+          "logprob": -1.6346,
+          "text": "This"
+        },
+        {
+          "index": 48,
+          "token_id": 15223,
+          "logprob": -1.4315,
+          "text": " horse"
+        },
+        {
+          "index": 49,
+          "token_id": 1189,
+          "logprob": -1.4083,
+          "text": ".\""
+        },
+        {
+          "index": 43,
+          "token_id": 374,
+          "logprob": -0.4715,
+          "text": " is"
+        },
+        {
+          "index": 38,
+          "token_id": 6644,
+          "logprob": -0.2537,
+          "text": " contain"
+        },
+        {
+          "index": 47,
+          "token_id": 264,
+          "logprob": -0.2341,
+          "text": " a"
+        },
+        {
+          "index": 46,
+          "token_id": 315,
+          "logprob": -0.1182,
+          "text": " of"
+        },
+        {
+          "index": 40,
+          "token_id": 1467,
+          "logprob": -0.0869,
+          "text": " text"
+        },
+        {
+          "index": 44,
+          "token_id": 264,
+          "logprob": -0.0842,
+          "text": " a"
+        },
+        {
+          "index": 41,
+          "token_id": 13,
+          "logprob": -0.0327,
+          "text": "."
+        },
+        {
+          "index": 35,
+          "token_id": 2168,
+          "logprob": -0.0301,
+          "text": " image"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 19,
+      "mean": -0.558,
+      "min": -1.9551,
+      "p05": -1.7682,
+      "p50": -0.2612,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 16,
+          "token_id": 22,
+          "logprob": -1.9551,
+          "text": "7"
+        },
+        {
+          "index": 10,
+          "token_id": 24,
+          "logprob": -1.7475,
+          "text": "9"
+        },
+        {
+          "index": 6,
+          "token_id": 24,
+          "logprob": -1.7012,
+          "text": "9"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -1.1843,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 23,
+          "logprob": -1.1608,
+          "text": "8"
+        },
+        {
+          "index": 9,
+          "token_id": 17,
+          "logprob": -0.8504,
+          "text": "2"
+        },
+        {
+          "index": 28,
+          "token_id": 1178,
+          "logprob": -0.6936,
+          "text": "Text"
+        },
+        {
+          "index": 15,
+          "token_id": 19,
+          "logprob": -0.5504,
+          "text": "4"
+        },
+        {
+          "index": 21,
+          "token_id": 19,
+          "logprob": -0.3569,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 11,
+          "logprob": -0.2612,
+          "text": ","
+        },
+        {
+          "index": 20,
+          "token_id": 23,
+          "logprob": -0.1036,
+          "text": "8"
+        },
+        {
+          "index": 19,
+          "token_id": 16,
+          "logprob": -0.0324,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 52,
+      "mean": -0.3706,
+      "min": -1.9551,
+      "p05": -1.722,
+      "p50": -0.0237,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.03,
+    "std": 7.43,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      666.72,
+      427.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      222,
+      1045,
+      1629
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "page": 6,
+  "source_image": "page_0006.png",
+  "elements": [
+    {
+      "bbox": [
+        698,
+        166,
+        1435,
+        293
+      ],
+      "category": "Section-header",
+      "text": "INDEX TO THE\nEXECUTIVE ORDERS OF THE MAYOR\n1954-1957",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3053,
+          "min": -1.5204
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1676,
+          "min": -0.3352
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0055,
+          "min": -0.0923
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        191,
+        331,
+        1781,
+        2644
+      ],
+      "category": "Text",
+      "text": "| SUBJECT | NUMBER | DATE |\n|---|---|---|\n| Administrative report request | 5 | 3-18-54 |\n| Analysis, division of, transfer to Division of Administration | 22 | 6/2/55 |\n| Automobiles, drivers & city emblems | 26 | 8/26/55 |\n| Baseball, sandlot | 10B 23 | 5/25/54 6/3/55 |\n| Budget, Bureau of - Performance Standard Council | 46 | 9/9/57 |\n| Career and Salary plan - leave regulations | 31 | 6/26/56 |\n| Census, New York City | 39 | 5/21/57 |\n| Census coordinator appointed | 36 | 2/26/57 |\n| Charities, request thru Mayor's office | 10A | 5/24/54 |\n| Check-off, union dues | 43 | 8/28/57 |\n| Chief security officer appointed | 6 19 | 3/24/54 2/14/55 |\n| City emblems, automobiles | 26 | 8/26/55 |\n| City jobs, discrimination prohibited | 41 | 6/7/57 |\n| Civil defense test | 9 24 32 | 5/21/54 6/9/55 7/6/56 |\n| Commerce, dept. of, Mayor's receptions | 13 | 6/30/54 |\n| Constitutional convention | 38A | 5/21/57 |\n| Construction sites, unloading of furniture | 12 | 6/17/54 |\n| Correspondence, foreign, thru Mayor's Office | 1 | 1/4/54 |\n| Correspondence, procedure | 2 | 1/8/54 |\n| Departmental reporting | 30 | 7/24/56 |\n| Employees, handicapped | 29 | 3/6/56 |\n| Furniture, new buildings | 12 | 6/17/54 |",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.309,
+          "min": -1.8285
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.4742,
+          "min": -0.4742
+        },
+        "text": {
+          "n_tokens": 520,
+          "mean": -0.0022,
+          "min": -0.3597
+        }
+      },
+      "ink": {
+        "ink_px": 61747,
+        "area_px": 3359886,
+        "density": 0.01838,
+        "chars": 1207,
+        "chars_per_1k_ink": 19.55
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 617,
+    "content": {
+      "n_tokens": 543,
+      "mean": -0.0024,
+      "min": -0.3597,
+      "p05": -0.0007,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 103,
+          "token_id": 4421,
+          "logprob": -0.3597,
+          "text": "---"
+        },
+        {
+          "index": 187,
+          "token_id": 220,
+          "logprob": -0.2808,
+          "text": " "
+        },
+        {
+          "index": 94,
+          "token_id": 25203,
+          "logprob": -0.1442,
+          "text": " \"|"
+        },
+        {
+          "index": 199,
+          "token_id": 220,
+          "logprob": -0.1382,
+          "text": " "
+        },
+        {
+          "index": 39,
+          "token_id": 1699,
+          "logprob": -0.0923,
+          "text": "\\n"
+        },
+        {
+          "index": 96,
+          "token_id": 760,
+          "logprob": -0.0685,
+          "text": " |"
+        },
+        {
+          "index": 160,
+          "token_id": 976,
+          "logprob": -0.0403,
+          "text": " em"
+        },
+        {
+          "index": 136,
+          "token_id": 14489,
+          "logprob": -0.0396,
+          "text": " Division"
+        },
+        {
+          "index": 573,
+          "token_id": 21,
+          "logprob": -0.0241,
+          "text": "6"
+        },
+        {
+          "index": 36,
+          "token_id": 44331,
+          "logprob": -0.0231,
+          "text": "INDEX"
+        },
+        {
+          "index": 95,
+          "token_id": 95880,
+          "logprob": -0.0104,
+          "text": " SUBJECT"
+        },
+        {
+          "index": 213,
+          "token_id": 481,
+          "logprob": -0.0101,
+          "text": " -"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3045,
+      "min": -1.8285,
+      "p05": -1.4471,
+      "p50": -0.0025,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 77,
+          "token_id": 16,
+          "logprob": -1.8285,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.5204,
+          "text": "5"
+        },
+        {
+          "index": 83,
+          "token_id": 19,
+          "logprob": -1.4505,
+          "text": "4"
+        },
+        {
+          "index": 71,
+          "token_id": 16,
+          "logprob": -1.382,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.366,
+          "text": "8"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.3292,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.262,
+          "text": "6"
+        },
+        {
+          "index": 66,
+          "token_id": 16,
+          "logprob": -1.0682,
+          "text": "1"
+        },
+        {
+          "index": 89,
+          "token_id": 1178,
+          "logprob": -0.4742,
+          "text": "Text"
+        },
+        {
+          "index": 29,
+          "token_id": 9620,
+          "logprob": -0.3352,
+          "text": "Section"
+        },
+        {
+          "index": 65,
+          "token_id": 24,
+          "logprob": -0.2268,
+          "text": "9"
+        },
+        {
+          "index": 5,
+          "token_id": 21,
+          "logprob": -0.1838,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 617,
+      "mean": -0.0232,
+      "min": -1.8285,
+      "p05": -0.0081,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.32,
+    "std": 17.25,
+    "dark_fraction": 0.0161
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      814.32,
+      1056.96
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      271,
+      352,
+      1990,
+      2583
+    ],
+    "ink_px": 61747,
+    "covered_px": 61747,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

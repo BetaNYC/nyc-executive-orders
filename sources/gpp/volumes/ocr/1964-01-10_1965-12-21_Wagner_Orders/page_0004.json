@@ -1,0 +1,343 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        802,
+        232,
+        951,
+        393
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2732,
+          "min": -1.227
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0633,
+          "min": -0.0633
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1112,
+        "area_px": 7800,
+        "density": 0.14256,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        706,
+        405,
+        1042,
+        506
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7. N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2471,
+          "min": -1.246
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0484,
+          "min": -0.0484
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0455,
+          "min": -0.8348
+        }
+      },
+      "ink": {
+        "ink_px": 1554,
+        "area_px": 34476,
+        "density": 0.04507,
+        "chars": 53,
+        "chars_per_1k_ink": 34.11
+      }
+    },
+    {
+      "bbox": [
+        1244,
+        611,
+        1489,
+        653
+      ],
+      "category": "Text",
+      "text": "Index Page 3",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2308,
+          "min": -1.121
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0953,
+          "min": -0.0953
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0007,
+          "min": -0.0018
+        }
+      },
+      "ink": {
+        "ink_px": 173,
+        "area_px": 10868,
+        "density": 0.01592,
+        "chars": 12,
+        "chars_per_1k_ink": 69.36
+      }
+    },
+    {
+      "bbox": [
+        207,
+        699,
+        1491,
+        2510
+      ],
+      "category": "Table",
+      "text": "<table>\n  <tbody>\n    <tr>\n      <td>Drug Addiction-Mayor's Commission</td>\n      <td>182</td>\n    </tr>\n    <tr>\n      <td>Dwellings-Essential Services, Repairs</td>\n      <td>134</td>\n    </tr>\n    <tr>\n      <td>Economic Opportunity Committee</td>\n      <td>160<br>163</td>\n    </tr>\n    <tr>\n      <td>Education, Bd. of-Retirement System</td>\n      <td>110</td>\n    </tr>\n    <tr>\n      <td>Emergency Control Board, Members</td>\n      <td>82</td>\n    </tr>\n    <tr>\n      <td>Emergency Repair Action Committee</td>\n      <td>134</td>\n    </tr>\n    <tr>\n      <td>Employees Retirement System</td>\n      <td>94</td>\n    </tr>\n    <tr>\n      <td>Employment-Youth</td>\n      <td>118</td>\n    </tr>\n    <tr>\n      <td>Executive Program Coordinator</td>\n      <td>157</td>\n    </tr>\n    <tr>\n      <td>Executive Roster of Career Personnel</td>\n      <td>173</td>\n    </tr>\n    <tr>\n      <td>Expense Budget</td>\n      <td>105</td>\n    </tr>\n    <tr>\n      <td>Fire Department Pension Fund</td>\n      <td>90<br>91<br>142<br>143</td>\n    </tr>\n    <tr>\n      <td>First Judicial District Retirement Fund</td>\n      <td>148</td>\n    </tr>\n    <tr>\n      <td>Fiscal Requirements-City Agencies</td>\n      <td>176</td>\n    </tr>\n    <tr>\n      <td>Government Trainee Program</td>\n      <td>119</td>\n    </tr>\n    <tr>\n      <td>Greater New York Fund Campaign</td>\n      <td>86<br>140</td>\n    </tr>\n    <tr>\n      <td>Grievances-Welfare Dept. Employees</td>\n      <td>164</td>\n    </tr>\n    <tr>\n      <td>Health Dept.-Pensions</td>\n      <td>98<br>150</td>\n    </tr>\n    <tr>\n      <td>Health Insurance Membership-Retired City Employees</td>\n      <td>170</td>\n    </tr>\n    <tr>\n      <td>\"Holds\" on City Property</td>\n      <td>84</td>\n    </tr>\n    <tr>\n      <td>Hospital Cases-Investigating, Billing, Collecting</td>\n      <td>177</td>\n    </tr>\n    <tr>\n      <td>Housing and Development Coordinator</td>\n      <td>181</td>\n    </tr>\n    <tr>\n      <td>Housing Authority-Pensions</td>\n      <td>99<br>151</td>\n    </tr>\n  </tbody>\n</table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2987,
+          "min": -1.473
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0182,
+          "min": -0.0182
+        },
+        "text": {
+          "n_tokens": 836,
+          "mean": -0.0025,
+          "min": -0.5774
+        }
+      },
+      "ink": {
+        "ink_px": 6248,
+        "area_px": 2294871,
+        "density": 0.00272,
+        "chars": 2037,
+        "chars_per_1k_ink": 326.02
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 999,
+    "content": {
+      "n_tokens": 861,
+      "mean": -0.0036,
+      "min": -0.8348,
+      "p05": -0.0027,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 81,
+          "token_id": 13,
+          "logprob": -0.8348,
+          "text": "."
+        },
+        {
+          "index": 166,
+          "token_id": 10095,
+          "logprob": -0.5774,
+          "text": "tbody"
+        },
+        {
+          "index": 162,
+          "token_id": 8449,
+          "logprob": -0.4741,
+          "text": ">\\"
+        },
+        {
+          "index": 265,
+          "token_id": 9480,
+          "logprob": -0.2483,
+          "text": "<br"
+        },
+        {
+          "index": 823,
+          "token_id": 522,
+          "logprob": -0.114,
+          "text": "</"
+        },
+        {
+          "index": 164,
+          "token_id": 220,
+          "logprob": -0.0817,
+          "text": " "
+        },
+        {
+          "index": 84,
+          "token_id": 1189,
+          "logprob": -0.0645,
+          "text": ".\""
+        },
+        {
+          "index": 172,
+          "token_id": 8449,
+          "logprob": -0.062,
+          "text": ">\\"
+        },
+        {
+          "index": 889,
+          "token_id": 31500,
+          "logprob": -0.0552,
+          "text": "-In"
+        },
+        {
+          "index": 266,
+          "token_id": 29,
+          "logprob": -0.0536,
+          "text": ">"
+        },
+        {
+          "index": 893,
+          "token_id": 11,
+          "logprob": -0.0533,
+          "text": ","
+        },
+        {
+          "index": 616,
+          "token_id": 23,
+          "logprob": -0.0531,
+          "text": "8"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.2522,
+      "min": -1.473,
+      "p05": -1.149,
+      "p50": -0.0024,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 143,
+          "token_id": 16,
+          "logprob": -1.473,
+          "text": "1"
+        },
+        {
+          "index": 132,
+          "token_id": 22,
+          "logprob": -1.4201,
+          "text": "7"
+        },
+        {
+          "index": 52,
+          "token_id": 21,
+          "logprob": -1.246,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.227,
+          "text": "2"
+        },
+        {
+          "index": 47,
+          "token_id": 17,
+          "logprob": -1.149,
+          "text": "2"
+        },
+        {
+          "index": 36,
+          "token_id": 21,
+          "logprob": -1.1439,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 17,
+          "logprob": -1.1334,
+          "text": "2"
+        },
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -1.1233,
+          "text": "1"
+        },
+        {
+          "index": 109,
+          "token_id": 18,
+          "logprob": -1.121,
+          "text": "3"
+        },
+        {
+          "index": 22,
+          "token_id": 18,
+          "logprob": -1.0967,
+          "text": "3"
+        },
+        {
+          "index": 41,
+          "token_id": 20,
+          "logprob": -1.0275,
+          "text": "5"
+        },
+        {
+          "index": 93,
+          "token_id": 19,
+          "logprob": -0.9995,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 999,
+      "mean": -0.0236,
+      "min": -1.473,
+      "p05": -0.0179,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.59,
+    "std": 12.61,
+    "dark_fraction": 0.00284
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      696.96,
+      1031.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      232,
+      343,
+      1703,
+      2521
+    ],
+    "ink_px": 9087,
+    "covered_px": 9087,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

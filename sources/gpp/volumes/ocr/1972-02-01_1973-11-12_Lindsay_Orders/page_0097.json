@@ -1,0 +1,370 @@
+{
+  "page": 97,
+  "source_image": "page_0097.png",
+  "elements": [
+    {
+      "bbox": [
+        830,
+        191,
+        925,
+        231
+      ],
+      "category": "Page-header",
+      "text": "-18-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4747,
+          "min": -2.2241
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0006,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0017,
+          "min": -0.0038
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        513,
+        336,
+        747,
+        374
+      ],
+      "category": "Section-header",
+      "text": "(v) FORMS",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4123,
+          "min": -2.0098
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3466,
+          "min": -0.6933
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0673,
+          "min": -0.3344
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        627,
+        408,
+        1603,
+        723
+      ],
+      "category": "Text",
+      "text": "It is necessary that the Director of the Budget maintain a Master Budget. Accordingly, all modifications and changes in units of appropriations shall be transmitted to the Director of the Budget on forms provided by the Bureau of the Budget (Revised Form M).",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.399,
+          "min": -1.8209
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 48,
+          "mean": -0.0007,
+          "min": -0.0234
+        }
+      },
+      "ink": {
+        "ink_px": 14819,
+        "area_px": 299815,
+        "density": 0.04943,
+        "chars": 258,
+        "chars_per_1k_ink": 17.41
+      }
+    },
+    {
+      "bbox": [
+        646,
+        761,
+        1765,
+        1345
+      ],
+      "category": "List-item",
+      "text": "(1) The Departmental Modification form submitted by a department in accordance with Section 124 (a) and Section 124 (b) of the New York City Charter shall be approved or validated, as appropriate, by the Director of the Budget or his authorized representative, and distributed as follows: two (2) copies to the Office of the Comptroller, one (1) copy returned to the Department for Payroll entry, and one (1) copy to be retained by the Bureau of the Budget and used to update the Master Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3353,
+          "min": -1.8632
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0063,
+          "min": -0.0126
+        },
+        "text": {
+          "n_tokens": 114,
+          "mean": -0.0011,
+          "min": -0.0544
+        }
+      },
+      "ink": {
+        "ink_px": 36945,
+        "area_px": 660962,
+        "density": 0.0559,
+        "chars": 494,
+        "chars_per_1k_ink": 13.37
+      }
+    },
+    {
+      "bbox": [
+        667,
+        1379,
+        1765,
+        2104
+      ],
+      "category": "List-item",
+      "text": "(2) The Department Modification form submitted by a department in accordance with Section 124 (c) of the New York City Charter shall, after review and examination be attached to the necessary Calendar Memos and Reports for submission to the City Council and the Board of Estimate, and forwarded to the Mayor for his signature and processing. After action by the Mayor, the Board of Estimate and the City Council, a certificate of the Budget Director shall be issued and distributed as follows: two (2) copies to the Office of the Comptroller, one (1) copy to the Bureau of the Budget for updating the Master Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3037,
+          "min": -1.4043
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 127,
+          "mean": -0.004,
+          "min": -0.4744
+        }
+      },
+      "ink": {
+        "ink_px": 40930,
+        "area_px": 804440,
+        "density": 0.05088,
+        "chars": 615,
+        "chars_per_1k_ink": 15.03
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 476,
+    "content": {
+      "n_tokens": 298,
+      "mean": -0.0034,
+      "min": -0.4744,
+      "p05": -0.0015,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 352,
+          "token_id": 73855,
+          "logprob": -0.4744,
+          "text": " Modification"
+        },
+        {
+          "index": 72,
+          "token_id": 11993,
+          "logprob": -0.3344,
+          "text": " \"("
+        },
+        {
+          "index": 305,
+          "token_id": 2647,
+          "logprob": -0.0544,
+          "text": " update"
+        },
+        {
+          "index": 255,
+          "token_id": 4237,
+          "logprob": -0.0281,
+          "text": " distributed"
+        },
+        {
+          "index": 119,
+          "token_id": 279,
+          "logprob": -0.0234,
+          "text": " the"
+        },
+        {
+          "index": 196,
+          "token_id": 11993,
+          "logprob": -0.0137,
+          "text": " \"("
+        },
+        {
+          "index": 283,
+          "token_id": 11471,
+          "logprob": -0.0135,
+          "text": " Pay"
+        },
+        {
+          "index": 381,
+          "token_id": 387,
+          "logprob": -0.0116,
+          "text": " be"
+        },
+        {
+          "index": 125,
+          "token_id": 13,
+          "logprob": -0.0077,
+          "text": "."
+        },
+        {
+          "index": 386,
+          "token_id": 16841,
+          "logprob": -0.0061,
+          "text": " Calendar"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0038,
+          "text": " \"-"
+        },
+        {
+          "index": 260,
+          "token_id": 320,
+          "logprob": -0.0032,
+          "text": " ("
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 105,
+      "mean": -0.3556,
+      "min": -2.2241,
+      "p05": -1.8206,
+      "p50": -0.0025,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -2.2241,
+          "text": "1"
+        },
+        {
+          "index": 55,
+          "token_id": 22,
+          "logprob": -2.0098,
+          "text": "7"
+        },
+        {
+          "index": 17,
+          "token_id": 20,
+          "logprob": -1.9449,
+          "text": "5"
+        },
+        {
+          "index": 22,
+          "token_id": 16,
+          "logprob": -1.8794,
+          "text": "1"
+        },
+        {
+          "index": 178,
+          "token_id": 20,
+          "logprob": -1.8632,
+          "text": "5"
+        },
+        {
+          "index": 100,
+          "token_id": 18,
+          "logprob": -1.8209,
+          "text": "3"
+        },
+        {
+          "index": 95,
+          "token_id": 18,
+          "logprob": -1.8196,
+          "text": "3"
+        },
+        {
+          "index": 50,
+          "token_id": 21,
+          "logprob": -1.7711,
+          "text": "6"
+        },
+        {
+          "index": 60,
+          "token_id": 19,
+          "logprob": -1.6009,
+          "text": "4"
+        },
+        {
+          "index": 89,
+          "token_id": 23,
+          "logprob": -1.5261,
+          "text": "8"
+        },
+        {
+          "index": 167,
+          "token_id": 21,
+          "logprob": -1.4437,
+          "text": "6"
+        },
+        {
+          "index": 84,
+          "token_id": 22,
+          "logprob": -1.4417,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 476,
+      "mean": -0.0806,
+      "min": -2.2241,
+      "p05": -0.4941,
+      "p50": -0.0,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.34,
+    "std": 19.27,
+    "dark_fraction": 0.02135
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      770.16,
+      1263.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      256,
+      421,
+      1883,
+      3089
+    ],
+    "ink_px": 92694,
+    "covered_px": 92694,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

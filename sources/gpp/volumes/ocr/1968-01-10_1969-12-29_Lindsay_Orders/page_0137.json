@@ -1,0 +1,309 @@
+{
+  "page": 137,
+  "source_image": "page_0137.png",
+  "elements": [
+    {
+      "bbox": [
+        548,
+        817,
+        827,
+        1003
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.5958,
+          "min": -2.0493
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0081,
+          "min": -0.0081
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 52921,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        604,
+        1051,
+        760,
+        1094
+      ],
+      "category": "Text",
+      "text": "THE\nMIDDLE\nAGE",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5245,
+          "min": -2.122
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.7178,
+          "min": -0.7178
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -1.5379,
+          "min": -2.6516
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 6952,
+        "density": 0.0,
+        "chars": 14,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        101,
+        1157,
+        999,
+        1567
+      ],
+      "category": "Text",
+      "text": "THE\nMIDDLE\nAGE\nINTO\nTHE\nFIFTH\nCENTURY\nOF\nTHE\nLAST\nCENTURY\nOF\nTHE\nMIDDLE\nAGE\nOF\nTHE\nLIFETIME\nOF\nTHE\nMAN\nOF\nTHE\nHOUSEHOLD\nAND\nOF\nTHE\nCITY\nOF\nBordeaux\nBY\nJOÃO\nFILIPPO\nBOZZO\nAND\nJOÃO\nFILIPPO\nBOZZO\nTRANSLATED\nBY\nCATHERINE\nBOWEN\nWITH\nNOTES\nBY\nJOÃO\nFILIPPO\nBOZZO",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.6316,
+          "min": -2.1674
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 134,
+          "mean": -0.4997,
+          "min": -2.4497
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 355880,
+        "density": 0.0,
+        "chars": 255,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 245,
+    "content": {
+      "n_tokens": 140,
+      "mean": -0.5442,
+      "min": -2.6516,
+      "p05": -1.9369,
+      "p50": -0.1249,
+      "n_below_threshold": 7,
+      "worst_tokens": [
+        {
+          "index": 68,
+          "token_id": 44,
+          "logprob": -2.6516,
+          "text": "M"
+        },
+        {
+          "index": 149,
+          "token_id": 43,
+          "logprob": -2.4497,
+          "text": "L"
+        },
+        {
+          "index": 66,
+          "token_id": 17229,
+          "logprob": -2.3549,
+          "text": "THE"
+        },
+        {
+          "index": 193,
+          "token_id": 33536,
+          "logprob": -2.3461,
+          "text": "ZZ"
+        },
+        {
+          "index": 226,
+          "token_id": 14065,
+          "logprob": -2.1464,
+          "text": "NOT"
+        },
+        {
+          "index": 192,
+          "token_id": 4677,
+          "logprob": -2.1348,
+          "text": "BO"
+        },
+        {
+          "index": 179,
+          "token_id": 52118,
+          "logprob": -2.0915,
+          "text": "orde"
+        },
+        {
+          "index": 196,
+          "token_id": 3976,
+          "logprob": -1.9287,
+          "text": "AND"
+        },
+        {
+          "index": 110,
+          "token_id": 44,
+          "logprob": -1.907,
+          "text": "M"
+        },
+        {
+          "index": 198,
+          "token_id": 26145,
+          "logprob": -1.8684,
+          "text": "JO"
+        },
+        {
+          "index": 67,
+          "token_id": 1699,
+          "logprob": -1.856,
+          "text": "\\n"
+        },
+        {
+          "index": 221,
+          "token_id": 3307,
+          "logprob": -1.8245,
+          "text": "OW"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 62,
+      "mean": -0.5672,
+      "min": -2.1674,
+      "p05": -2.0375,
+      "p50": -0.1004,
+      "n_below_threshold": 7,
+      "worst_tokens": [
+        {
+          "index": 90,
+          "token_id": 24,
+          "logprob": -2.1674,
+          "text": "9"
+        },
+        {
+          "index": 37,
+          "token_id": 19,
+          "logprob": -2.122,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -2.0493,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -2.0382,
+          "text": "8"
+        },
+        {
+          "index": 48,
+          "token_id": 15,
+          "logprob": -2.0229,
+          "text": "0"
+        },
+        {
+          "index": 54,
+          "token_id": 19,
+          "logprob": -2.0157,
+          "text": "4"
+        },
+        {
+          "index": 43,
+          "token_id": 16,
+          "logprob": -2.0047,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.9469,
+          "text": "7"
+        },
+        {
+          "index": 96,
+          "token_id": 22,
+          "logprob": -1.9395,
+          "text": "7"
+        },
+        {
+          "index": 85,
+          "token_id": 22,
+          "logprob": -1.8936,
+          "text": "7"
+        },
+        {
+          "index": 17,
+          "token_id": 22,
+          "logprob": -1.833,
+          "text": "7"
+        },
+        {
+          "index": 79,
+          "token_id": 16,
+          "logprob": -1.6386,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 245,
+      "mean": -0.4607,
+      "min": -2.6516,
+      "p05": -2.0135,
+      "p50": -0.0358,
+      "n_below_threshold": 14
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.64,
+    "std": 7.81,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      663.36,
+      427.68
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      221,
+      1045,
+      1621
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

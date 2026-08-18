@@ -1,0 +1,376 @@
+{
+  "page": 103,
+  "source_image": "page_0103.png",
+  "elements": [
+    {
+      "bbox": [
+        941,
+        209,
+        1016,
+        247
+      ],
+      "category": "Page-header",
+      "text": "-5-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4335,
+          "min": -1.8057
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.008,
+          "min": -0.0157
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0028,
+          "min": -0.0048
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        129,
+        309,
+        1857,
+        924
+      ],
+      "category": "Text",
+      "text": "Commission or department head, the departmental designee, and the grievant and his representative shall work for a satisfactory resolution of the grievance through conference, negotiation and agreement. Such conference shall be held at an appropriate time consistent with the requirements of the department or agency. The determination of the commissioner or department head shall be issued within ten (10) working days after receipt of the appeal and shall be in writing, copies of which shall be transmitted to the grievant or his representative upon issuance.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4161,
+          "min": -1.8503
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0012,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 100,
+          "mean": -0.0048,
+          "min": -0.4467
+        }
+      },
+      "ink": {
+        "ink_px": 7666,
+        "area_px": 807576,
+        "density": 0.00949,
+        "chars": 562,
+        "chars_per_1k_ink": 73.31
+      }
+    },
+    {
+      "bbox": [
+        131,
+        946,
+        1977,
+        1547
+      ],
+      "category": "Text",
+      "text": "Step 4. An appeal from an unsatisfactory decision at Step 3 shall be presented by the employee and/or the certified employee organization to the City Director of Labor Relations, in writing, within ten (10) working days of the receipt of the Step 3 decision. Copies of such appeals shall be sent to the agency head. The City Director of Labor Relations, or his designee, shall review all appeals from Step 3 decisions and shall answer such appeals within twenty (20) working days or, if a hearing is held, within twenty (20) days of the hearing of the appeal.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3476,
+          "min": -1.7171
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 125,
+          "mean": -0.0003,
+          "min": -0.0289
+        }
+      },
+      "ink": {
+        "ink_px": 13615,
+        "area_px": 985905,
+        "density": 0.01381,
+        "chars": 559,
+        "chars_per_1k_ink": 41.06
+      }
+    },
+    {
+      "bbox": [
+        131,
+        1575,
+        2001,
+        2427
+      ],
+      "category": "Text",
+      "text": "b. For purposes of subdivision a of this section, the term \"grievance\" shall mean (A) a dispute concerning the application of interpretation of the terms of (i) a written, executed collective bargaining agreement; or (ii) a determination under Section two hundred twenty of the Labor Law affecting terms and conditions of employment; (B) a claimed violation, misinterpretation, or misapplication of the written rules or regulations of the mayoral agency by whom the grievant is employed affecting the terms and conditions of his or her employment; and (C) a claimed assignment of a grievant to duties substantially different from those stated in his or her job classification. The term \"grievant\" shall include all grievants in the case of a group grievance.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.272,
+          "min": -1.7608
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0337,
+          "min": -0.0337
+        },
+        "text": {
+          "n_tokens": 158,
+          "mean": -0.0018,
+          "min": -0.1667
+        }
+      },
+      "ink": {
+        "ink_px": 18859,
+        "area_px": 1396290,
+        "density": 0.01351,
+        "chars": 758,
+        "chars_per_1k_ink": 40.19
+      }
+    },
+    {
+      "bbox": [
+        229,
+        2437,
+        1923,
+        2502
+      ],
+      "category": "Text",
+      "text": "c. Any employee may present his or her own grievance through the first",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3395,
+          "min": -1.782
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0022,
+          "min": -0.0022
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0001,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 1613,
+        "area_px": 107910,
+        "density": 0.01495,
+        "chars": 70,
+        "chars_per_1k_ink": 43.4
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 584,
+    "content": {
+      "n_tokens": 401,
+      "mean": -0.002,
+      "min": -0.4467,
+      "p05": -0.0014,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 86,
+          "token_id": 49913,
+          "logprob": -0.4467,
+          "text": " griev"
+        },
+        {
+          "index": 518,
+          "token_id": 49913,
+          "logprob": -0.1667,
+          "text": " griev"
+        },
+        {
+          "index": 491,
+          "token_id": 49913,
+          "logprob": -0.0345,
+          "text": " griev"
+        },
+        {
+          "index": 209,
+          "token_id": 8304,
+          "logprob": -0.0289,
+          "text": "Step"
+        },
+        {
+          "index": 104,
+          "token_id": 48048,
+          "logprob": -0.0195,
+          "text": " negotiation"
+        },
+        {
+          "index": 377,
+          "token_id": 264,
+          "logprob": -0.0151,
+          "text": " a"
+        },
+        {
+          "index": 506,
+          "token_id": 13,
+          "logprob": -0.0111,
+          "text": "."
+        },
+        {
+          "index": 165,
+          "token_id": 49913,
+          "logprob": -0.0104,
+          "text": " griev"
+        },
+        {
+          "index": 375,
+          "token_id": 315,
+          "logprob": -0.0084,
+          "text": " of"
+        },
+        {
+          "index": 385,
+          "token_id": 70,
+          "logprob": -0.0072,
+          "text": "g"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0048,
+          "text": " \"-"
+        },
+        {
+          "index": 392,
+          "token_id": 320,
+          "logprob": -0.0042,
+          "text": " ("
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 106,
+      "mean": -0.3395,
+      "min": -1.8503,
+      "p05": -1.668,
+      "p50": -0.0006,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 61,
+          "token_id": 19,
+          "logprob": -1.8503,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -1.8057,
+          "text": "6"
+        },
+        {
+          "index": 548,
+          "token_id": 18,
+          "logprob": -1.782,
+          "text": "3"
+        },
+        {
+          "index": 347,
+          "token_id": 20,
+          "logprob": -1.7608,
+          "text": "5"
+        },
+        {
+          "index": 185,
+          "token_id": 21,
+          "logprob": -1.7171,
+          "text": "6"
+        },
+        {
+          "index": 554,
+          "token_id": 17,
+          "logprob": -1.6722,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.6553,
+          "text": "1"
+        },
+        {
+          "index": 353,
+          "token_id": 16,
+          "logprob": -1.6279,
+          "text": "1"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.5492,
+          "text": "7"
+        },
+        {
+          "index": 56,
+          "token_id": 22,
+          "logprob": -1.5479,
+          "text": "7"
+        },
+        {
+          "index": 50,
+          "token_id": 24,
+          "logprob": -1.5369,
+          "text": "9"
+        },
+        {
+          "index": 542,
+          "token_id": 22,
+          "logprob": -1.522,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 584,
+      "mean": -0.0632,
+      "min": -1.8503,
+      "p05": -0.3271,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.88,
+    "std": 16.97,
+    "dark_fraction": 0.00959
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      774.48,
+      1261.68
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      258,
+      420,
+      1893,
+      3084
+    ],
+    "ink_px": 41753,
+    "covered_px": 41753,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "page": 35,
+  "source_image": "page_0035.png",
+  "elements": [
+    {
+      "bbox": [
+        381,
+        3694,
+        1087,
+        3757
+      ],
+      "category": "Page-header",
+      "text": "MANKINDRA\nHEALTH",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.5465,
+          "min": -2.1521
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2205,
+          "min": -0.4397
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.8354,
+          "min": -1.9089
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        381,
+        591,
+        2290,
+        3770
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5097,
+          "min": -2.0815
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0147,
+          "min": -0.0147
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 593050,
+        "area_px": 32382312,
+        "density": 0.01831,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        381,
+        3621,
+        1087,
+        3694
+      ],
+      "category": "Page-footer",
+      "text": "HERALD PAGES",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4029,
+          "min": -2.0032
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1978,
+          "min": -0.3133
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.4091,
+          "min": -0.9414
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 122,
+    "content": {
+      "n_tokens": 12,
+      "mean": -0.6578,
+      "min": -1.9089,
+      "p05": -1.5773,
+      "p50": -0.5536,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 41,
+          "token_id": 5609,
+          "logprob": -1.9089,
+          "text": "RA"
+        },
+        {
+          "index": 40,
+          "token_id": 5245,
+          "logprob": -1.306,
+          "text": "IND"
+        },
+        {
+          "index": 114,
+          "token_id": 3012,
+          "logprob": -0.9414,
+          "text": "HER"
+        },
+        {
+          "index": 39,
+          "token_id": 16012,
+          "logprob": -0.8652,
+          "text": "ANK"
+        },
+        {
+          "index": 38,
+          "token_id": 44,
+          "logprob": -0.8562,
+          "text": "M"
+        },
+        {
+          "index": 42,
+          "token_id": 1699,
+          "logprob": -0.6217,
+          "text": "\\n"
+        },
+        {
+          "index": 116,
+          "token_id": 35,
+          "logprob": -0.4855,
+          "text": "D"
+        },
+        {
+          "index": 115,
+          "token_id": 969,
+          "logprob": -0.3598,
+          "text": "AL"
+        },
+        {
+          "index": 43,
+          "token_id": 1799,
+          "logprob": -0.2886,
+          "text": "HE"
+        },
+        {
+          "index": 118,
+          "token_id": 11238,
+          "logprob": -0.1442,
+          "text": "AGES"
+        },
+        {
+          "index": 117,
+          "token_id": 393,
+          "logprob": -0.1145,
+          "text": " P"
+        },
+        {
+          "index": 44,
+          "token_id": 43149,
+          "logprob": -0.0012,
+          "text": "ALTH"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 67,
+      "mean": -0.4624,
+      "min": -2.1521,
+      "p05": -1.9976,
+      "p50": -0.1497,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 13,
+          "token_id": 19,
+          "logprob": -2.1521,
+          "text": "4"
+        },
+        {
+          "index": 19,
+          "token_id": 22,
+          "logprob": -2.082,
+          "text": "7"
+        },
+        {
+          "index": 69,
+          "token_id": 15,
+          "logprob": -2.0815,
+          "text": "0"
+        },
+        {
+          "index": 89,
+          "token_id": 16,
+          "logprob": -2.0032,
+          "text": "1"
+        },
+        {
+          "index": 63,
+          "token_id": 15,
+          "logprob": -1.9845,
+          "text": "0"
+        },
+        {
+          "index": 57,
+          "token_id": 16,
+          "logprob": -1.8001,
+          "text": "1"
+        },
+        {
+          "index": 25,
+          "token_id": 22,
+          "logprob": -1.7735,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.7541,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.109,
+          "text": "9"
+        },
+        {
+          "index": 95,
+          "token_id": 22,
+          "logprob": -0.9537,
+          "text": "7"
+        },
+        {
+          "index": 52,
+          "token_id": 16,
+          "logprob": -0.9118,
+          "text": "1"
+        },
+        {
+          "index": 88,
+          "token_id": 17,
+          "logprob": -0.9038,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 122,
+      "mean": -0.3276,
+      "min": -2.1521,
+      "p05": -1.7988,
+      "p50": -0.0019,
+      "n_below_threshold": 4
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 171.21,
+    "std": 15.67,
+    "dark_fraction": 0.01566
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      2469.75,
+      3446.25
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      823,
+      1148,
+      6037,
+      8424
+    ],
+    "ink_px": 593954,
+    "covered_px": 593050,
+    "covered_fraction": 0.99848,
+    "uncovered_px": 904,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          5671,
+          1820,
+          5935,
+          1844
+        ],
+        "ink_px": 456
+      }
+    ],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "page": 250,
+  "source_image": "page_0250.png",
+  "elements": [
+    {
+      "bbox": [
+        1168,
+        361,
+        1413,
+        401
+      ],
+      "category": "Text",
+      "text": "June 28, 1963",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3581,
+          "min": -1.6265
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0053,
+          "min": -0.0053
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0056,
+          "min": -0.0549
+        }
+      },
+      "ink": {
+        "ink_px": 20,
+        "area_px": 10086,
+        "density": 0.00198,
+        "chars": 13,
+        "chars_per_1k_ink": 650.0
+      }
+    },
+    {
+      "bbox": [
+        203,
+        417,
+        641,
+        457
+      ],
+      "category": "Text",
+      "text": "Executive Order # 55",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3067,
+          "min": -1.3848
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0125,
+          "min": -0.0125
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0,
+          "min": -0.0001
+        }
+      },
+      "ink": {
+        "ink_px": 32,
+        "area_px": 16640,
+        "density": 0.00192,
+        "chars": 20,
+        "chars_per_1k_ink": 625.0
+      }
+    },
+    {
+      "bbox": [
+        839,
+        736,
+        902,
+        773
+      ],
+      "category": "Text",
+      "text": "-4-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.32,
+          "min": -1.4265
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0024,
+          "min": -0.0024
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0005,
+          "min": -0.0007
+        }
+      },
+      "ink": {
+        "ink_px": 48,
+        "area_px": 2432,
+        "density": 0.01974,
+        "chars": 3,
+        "chars_per_1k_ink": 62.5
+      }
+    },
+    {
+      "bbox": [
+        158,
+        837,
+        939,
+        876
+      ],
+      "category": "Text",
+      "text": "be submitted later than July 30, 1963.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2882,
+          "min": -1.2399
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0,
+          "min": -0.0001
+        }
+      },
+      "ink": {
+        "ink_px": 713,
+        "area_px": 27846,
+        "density": 0.02561,
+        "chars": 38,
+        "chars_per_1k_ink": 53.3
+      }
+    },
+    {
+      "bbox": [
+        673,
+        1003,
+        1417,
+        1181
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3063,
+          "min": -1.4886
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2267,
+        "area_px": 132610,
+        "density": 0.0171,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        155,
+        1283,
+        1449,
+        1389
+      ],
+      "category": "Text",
+      "text": "Note: If your agency is not a Mayor's agency, this is for your information and appropriate action.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2582,
+          "min": -1.3425
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0021,
+          "min": -0.0021
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0008,
+          "min": -0.0161
+        }
+      },
+      "ink": {
+        "ink_px": 2247,
+        "area_px": 129744,
+        "density": 0.01732,
+        "chars": 98,
+        "chars_per_1k_ink": 43.61
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 263,
+    "content": {
+      "n_tokens": 55,
+      "mean": -0.0014,
+      "min": -0.0549,
+      "p05": -0.0008,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 41,
+          "token_id": 220,
+          "logprob": -0.0549,
+          "text": " "
+        },
+        {
+          "index": 256,
+          "token_id": 1995,
+          "logprob": -0.0161,
+          "text": " information"
+        },
+        {
+          "index": 36,
+          "token_id": 27160,
+          "logprob": -0.001,
+          "text": "June"
+        },
+        {
+          "index": 121,
+          "token_id": 12,
+          "logprob": -0.0007,
+          "text": "-"
+        },
+        {
+          "index": 119,
+          "token_id": 6523,
+          "logprob": -0.0006,
+          "text": " \"-"
+        },
+        {
+          "index": 40,
+          "token_id": 11,
+          "logprob": -0.0004,
+          "text": ","
+        },
+        {
+          "index": 156,
+          "token_id": 1371,
+          "logprob": -0.0001,
+          "text": "be"
+        },
+        {
+          "index": 157,
+          "token_id": 14634,
+          "logprob": -0.0001,
+          "text": " submitted"
+        },
+        {
+          "index": 244,
+          "token_id": 9088,
+          "logprob": -0.0001,
+          "text": " agency"
+        },
+        {
+          "index": 44,
+          "token_id": 21,
+          "logprob": -0.0001,
+          "text": "6"
+        },
+        {
+          "index": 83,
+          "token_id": 220,
+          "logprob": -0.0001,
+          "text": " "
+        },
+        {
+          "index": 45,
+          "token_id": 18,
+          "logprob": -0.0001,
+          "text": "3"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 122,
+      "mean": -0.291,
+      "min": -1.6265,
+      "p05": -1.3836,
+      "p50": -0.001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 19,
+          "token_id": 18,
+          "logprob": -1.6265,
+          "text": "3"
+        },
+        {
+          "index": 8,
+          "token_id": 23,
+          "logprob": -1.6147,
+          "text": "8"
+        },
+        {
+          "index": 190,
+          "token_id": 22,
+          "logprob": -1.4886,
+          "text": "7"
+        },
+        {
+          "index": 178,
+          "token_id": 18,
+          "logprob": -1.482,
+          "text": "3"
+        },
+        {
+          "index": 98,
+          "token_id": 21,
+          "logprob": -1.4265,
+          "text": "6"
+        },
+        {
+          "index": 184,
+          "token_id": 18,
+          "logprob": -1.4232,
+          "text": "3"
+        },
+        {
+          "index": 53,
+          "token_id": 18,
+          "logprob": -1.3848,
+          "text": "3"
+        },
+        {
+          "index": 103,
+          "token_id": 17,
+          "logprob": -1.3603,
+          "text": "2"
+        },
+        {
+          "index": 216,
+          "token_id": 18,
+          "logprob": -1.3425,
+          "text": "3"
+        },
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.3198,
+          "text": "1"
+        },
+        {
+          "index": 58,
+          "token_id": 22,
+          "logprob": -1.3158,
+          "text": "7"
+        },
+        {
+          "index": 210,
+          "token_id": 20,
+          "logprob": -1.3135,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 263,
+      "mean": -0.1353,
+      "min": -1.6265,
+      "p05": -1.279,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.87,
+    "std": 7.66,
+    "dark_fraction": 0.00175
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      674.88,
+      1013.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      225,
+      337,
+      1650,
+      2477
+    ],
+    "ink_px": 5327,
+    "covered_px": 5327,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

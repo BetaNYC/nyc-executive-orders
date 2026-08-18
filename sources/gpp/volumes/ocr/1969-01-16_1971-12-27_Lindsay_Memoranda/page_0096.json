@@ -1,0 +1,280 @@
+{
+  "page": 96,
+  "source_image": "page_0096.png",
+  "elements": [
+    {
+      "bbox": [
+        178,
+        429,
+        2084,
+        591
+      ],
+      "category": "Text",
+      "text": "concur in the agency head's decision, four copies of the report shall be filed with the Municipal Reference and Research Center.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.5478,
+          "min": -2.0118
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1036,
+          "min": -0.1036
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0299,
+          "min": -0.3883
+        }
+      },
+      "ink": {
+        "ink_px": 31,
+        "area_px": 292585,
+        "density": 0.00011,
+        "chars": 128,
+        "chars_per_1k_ink": 4129.03
+      }
+    },
+    {
+      "bbox": [
+        81,
+        613,
+        2193,
+        1784
+      ],
+      "category": "Text",
+      "text": "(b) Annual Report on Professional Services Contracts. In connection with the Annual Report of the Mayor provided for under Section 5 of the Charter, the Office of Administration shall prepare an annual review of work done for the City under professional services contracts awarded without public letting. The review shall include work done under professional services contracts in such areas as management analysis, management information and data systems, management evaluation, and project management. The review shall also summarize work accomplished under professional services contracts not intended to result in a final report or where a final report has not been produced within twelve months after the work has begun. The review shall include a listing of all professional services contracts excluding architectural and engineering contracts) approved in the previous twelve months.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.5561,
+          "min": -2.1983
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1798,
+          "min": -0.1798
+        },
+        "text": {
+          "n_tokens": 144,
+          "mean": -0.0155,
+          "min": -0.8506
+        }
+      },
+      "ink": {
+        "ink_px": 1407,
+        "area_px": 2237928,
+        "density": 0.00063,
+        "chars": 890,
+        "chars_per_1k_ink": 632.55
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 240,
+    "content": {
+      "n_tokens": 169,
+      "mean": -0.0176,
+      "min": -0.8506,
+      "p05": -0.0918,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 225,
+          "token_id": 43778,
+          "logprob": -0.8506,
+          "text": " excluding"
+        },
+        {
+          "index": 97,
+          "token_id": 24947,
+          "logprob": -0.3932,
+          "text": " Annual"
+        },
+        {
+          "index": 35,
+          "token_id": 443,
+          "logprob": -0.3883,
+          "text": "con"
+        },
+        {
+          "index": 36,
+          "token_id": 2352,
+          "logprob": -0.3142,
+          "text": "cur"
+        },
+        {
+          "index": 164,
+          "token_id": 6240,
+          "logprob": -0.1813,
+          "text": " management"
+        },
+        {
+          "index": 94,
+          "token_id": 11993,
+          "logprob": -0.1797,
+          "text": " \"("
+        },
+        {
+          "index": 201,
+          "token_id": 702,
+          "logprob": -0.1652,
+          "text": " has"
+        },
+        {
+          "index": 177,
+          "token_id": 576,
+          "logprob": -0.1128,
+          "text": " The"
+        },
+        {
+          "index": 119,
+          "token_id": 315,
+          "logprob": -0.1,
+          "text": " of"
+        },
+        {
+          "index": 104,
+          "token_id": 758,
+          "logprob": -0.0796,
+          "text": " In"
+        },
+        {
+          "index": 230,
+          "token_id": 8,
+          "logprob": -0.0505,
+          "text": ")"
+        },
+        {
+          "index": 145,
+          "token_id": 20194,
+          "logprob": -0.0263,
+          "text": " letting"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 40,
+      "mean": -0.5315,
+      "min": -2.1983,
+      "p05": -1.9654,
+      "p50": -0.1353,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 77,
+          "token_id": 18,
+          "logprob": -2.1983,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 19,
+          "logprob": -2.0118,
+          "text": "4"
+        },
+        {
+          "index": 71,
+          "token_id": 18,
+          "logprob": -1.963,
+          "text": "3"
+        },
+        {
+          "index": 83,
+          "token_id": 19,
+          "logprob": -1.9518,
+          "text": "4"
+        },
+        {
+          "index": 66,
+          "token_id": 16,
+          "logprob": -1.9178,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.8973,
+          "text": "8"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.8089,
+          "text": "9"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -1.8011,
+          "text": "1"
+        },
+        {
+          "index": 65,
+          "token_id": 23,
+          "logprob": -1.2557,
+          "text": "8"
+        },
+        {
+          "index": 6,
+          "token_id": 22,
+          "logprob": -0.9043,
+          "text": "7"
+        },
+        {
+          "index": 22,
+          "token_id": 24,
+          "logprob": -0.5759,
+          "text": "9"
+        },
+        {
+          "index": 11,
+          "token_id": 17,
+          "logprob": -0.5721,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 240,
+      "mean": -0.101,
+      "min": -2.1983,
+      "p05": -0.5723,
+      "p50": -0.0,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.88,
+    "std": 10.3,
+    "dark_fraction": 0.00032
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      901.44,
+      1162.56
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      300,
+      387,
+      2203,
+      2842
+    ],
+    "ink_px": 1500,
+    "covered_px": 1438,
+    "covered_fraction": 0.95867,
+    "uncovered_px": 62,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

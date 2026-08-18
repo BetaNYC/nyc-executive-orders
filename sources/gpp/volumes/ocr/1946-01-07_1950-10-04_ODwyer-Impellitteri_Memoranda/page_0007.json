@@ -1,0 +1,274 @@
+{
+  "page": 7,
+  "source_image": "page_0007.png",
+  "elements": [
+    {
+      "bbox": [
+        856,
+        224,
+        1010,
+        266
+      ],
+      "category": "Page-header",
+      "text": "PAGE 3",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3281,
+          "min": -1.5597
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0079,
+          "min": -0.0156
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0027,
+          "min": -0.0061
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        203,
+        301,
+        1762,
+        1819
+      ],
+      "category": "Text",
+      "text": "| SUBJECT | NUMBER | DATE |\n|---|---|---|\n| Per/diem employees, paid holidays | 12 | 10/5/46 |\n| Publicity - Collier's magazine article <br> Holiday magazine story | 50 <br> 23 | 6/13/50 <br> 5/20/47 |\n| Public improvements | 38 | 3/10/48 |\n| Public Works Dept, study of useable <br> space | 37 | 1/26/48 |\n| Public relations & administration <br> policy | 16 | 12/31/46 |\n| Registration Week Proclamation | 55 | 10/4/50 |\n| Reserves, Armed Forces, information <br> to city employees | 45 | 5/12/49 |\n| Residence, city jobs | 4 | 1/21/46 |\n| Salary increase requests | 13 | 10/17/46 |\n| Sites for public improvement procedure | 38 | 3/10/48 |\n| Snow duty, chauffeurs | 35 | 12/30/47 |\n| Suggestion contest | 29 | 9/4/47 |\n| Telephone procedure, city employees | 24 | 5/29/47 |\n| Vaccinations urged | 18 | 4/14/47 |\n| Voting - registration week | 55 | 10/4/50 |\n| Welfare recipients, city jobs | 25 | 7/12/47 |",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3669,
+          "min": -1.7793
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.6938,
+          "min": -0.6938
+        },
+        "text": {
+          "n_tokens": 386,
+          "mean": -0.0069,
+          "min": -0.8894
+        }
+      },
+      "ink": {
+        "ink_px": 44616,
+        "area_px": 2179672,
+        "density": 0.02047,
+        "chars": 909,
+        "chars_per_1k_ink": 20.37
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 463,
+    "content": {
+      "n_tokens": 389,
+      "mean": -0.0068,
+      "min": -0.8894,
+      "p05": -0.0025,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 122,
+          "token_id": 366,
+          "logprob": -0.8894,
+          "text": " <"
+        },
+        {
+          "index": 132,
+          "token_id": 366,
+          "logprob": -0.5338,
+          "text": " <"
+        },
+        {
+          "index": 83,
+          "token_id": 4421,
+          "logprob": -0.494,
+          "text": "---"
+        },
+        {
+          "index": 76,
+          "token_id": 760,
+          "logprob": -0.1938,
+          "text": " |"
+        },
+        {
+          "index": 74,
+          "token_id": 25203,
+          "logprob": -0.1736,
+          "text": " \"|"
+        },
+        {
+          "index": 92,
+          "token_id": 3446,
+          "logprob": -0.1355,
+          "text": "/d"
+        },
+        {
+          "index": 187,
+          "token_id": 366,
+          "logprob": -0.1014,
+          "text": " <"
+        },
+        {
+          "index": 91,
+          "token_id": 3616,
+          "logprob": -0.0253,
+          "text": " Per"
+        },
+        {
+          "index": 75,
+          "token_id": 95880,
+          "logprob": -0.0227,
+          "text": " SUBJECT"
+        },
+        {
+          "index": 124,
+          "token_id": 29,
+          "logprob": -0.0175,
+          "text": ">"
+        },
+        {
+          "index": 93,
+          "token_id": 26862,
+          "logprob": -0.0066,
+          "text": "iem"
+        },
+        {
+          "index": 422,
+          "token_id": 481,
+          "logprob": -0.0063,
+          "text": " -"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.34,
+      "min": -1.7793,
+      "p05": -1.5534,
+      "p50": -0.0039,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 57,
+          "token_id": 17,
+          "logprob": -1.7793,
+          "text": "2"
+        },
+        {
+          "index": 46,
+          "token_id": 18,
+          "logprob": -1.642,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -1.5597,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.4341,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.4098,
+          "text": "4"
+        },
+        {
+          "index": 51,
+          "token_id": 16,
+          "logprob": -1.3435,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.0668,
+          "text": "0"
+        },
+        {
+          "index": 63,
+          "token_id": 24,
+          "logprob": -0.7842,
+          "text": "9"
+        },
+        {
+          "index": 69,
+          "token_id": 1178,
+          "logprob": -0.6938,
+          "text": "Text"
+        },
+        {
+          "index": 62,
+          "token_id": 16,
+          "logprob": -0.6334,
+          "text": "1"
+        },
+        {
+          "index": 49,
+          "token_id": 18,
+          "logprob": -0.576,
+          "text": "3"
+        },
+        {
+          "index": 44,
+          "token_id": 17,
+          "logprob": -0.3869,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 463,
+      "mean": -0.0366,
+      "min": -1.7793,
+      "p05": -0.0471,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.45,
+    "std": 14.71,
+    "dark_fraction": 0.01136
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      819.36,
+      1075.92
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      273,
+      358,
+      2002,
+      2630
+    ],
+    "ink_px": 44616,
+    "covered_px": 44616,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

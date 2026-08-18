@@ -1,0 +1,302 @@
+{
+  "page": 161,
+  "source_image": "page_0161.png",
+  "elements": [
+    {
+      "bbox": [
+        354,
+        1501,
+        799,
+        1614
+      ],
+      "category": "Text",
+      "text": "THE\nOFFICE\nOF\nTHE\nATTORNEY\nGENERAL\nOF\nTHE\nSTATE\nOF\nNEW\nHORIZON\nOF\nTHE\nHISpanic\nOriental\nFAMILY",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5293,
+          "min": -2.0155
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0925,
+          "min": -0.0925
+        },
+        "text": {
+          "n_tokens": 43,
+          "mean": -0.7262,
+          "min": -2.7829
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 51414,
+        "density": 0.0,
+        "chars": 94,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        524,
+        1633,
+        695,
+        1657
+      ],
+      "category": "Text",
+      "text": "GOOD 24' 7/8\"",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3387,
+          "min": -1.6601
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0119,
+          "min": -0.0119
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -1.031,
+          "min": -2.4898
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        472,
+        1676,
+        758,
+        1700
+      ],
+      "category": "Text",
+      "text": "EXECUTIVE ORDER NO. 10",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2935,
+          "min": -1.5481
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0017,
+          "min": -0.0017
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.2947,
+          "min": -1.1777
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 173,
+    "content": {
+      "n_tokens": 62,
+      "mean": -0.7127,
+      "min": -2.7829,
+      "p05": -2.4627,
+      "p50": -0.3108,
+      "n_below_threshold": 7,
+      "worst_tokens": [
+        {
+          "index": 38,
+          "token_id": 27068,
+          "logprob": -2.7829,
+          "text": "OFF"
+        },
+        {
+          "index": 36,
+          "token_id": 17229,
+          "logprob": -2.4909,
+          "text": "THE"
+        },
+        {
+          "index": 115,
+          "token_id": 69733,
+          "logprob": -2.4898,
+          "text": "GOOD"
+        },
+        {
+          "index": 37,
+          "token_id": 1699,
+          "logprob": -2.4639,
+          "text": "\\n"
+        },
+        {
+          "index": 74,
+          "token_id": 461,
+          "logprob": -2.4405,
+          "text": "ri"
+        },
+        {
+          "index": 77,
+          "token_id": 37,
+          "logprob": -2.379,
+          "text": "F"
+        },
+        {
+          "index": 116,
+          "token_id": 220,
+          "logprob": -2.2465,
+          "text": " "
+        },
+        {
+          "index": 73,
+          "token_id": 46,
+          "logprob": -1.9695,
+          "text": "O"
+        },
+        {
+          "index": 69,
+          "token_id": 39,
+          "logprob": -1.9124,
+          "text": "H"
+        },
+        {
+          "index": 65,
+          "token_id": 12483,
+          "logprob": -1.6815,
+          "text": "OF"
+        },
+        {
+          "index": 59,
+          "token_id": 20594,
+          "logprob": -1.6428,
+          "text": "NEW"
+        },
+        {
+          "index": 45,
+          "token_id": 21614,
+          "logprob": -1.4937,
+          "text": "ATT"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 63,
+      "mean": -0.3704,
+      "min": -2.0155,
+      "p05": -1.6489,
+      "p50": -0.0047,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -2.0155,
+          "text": "4"
+        },
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.8557,
+          "text": "1"
+        },
+        {
+          "index": 24,
+          "token_id": 19,
+          "logprob": -1.8506,
+          "text": "4"
+        },
+        {
+          "index": 92,
+          "token_id": 18,
+          "logprob": -1.6601,
+          "text": "3"
+        },
+        {
+          "index": 132,
+          "token_id": 17,
+          "logprob": -1.5481,
+          "text": "2"
+        },
+        {
+          "index": 86,
+          "token_id": 19,
+          "logprob": -1.5202,
+          "text": "4"
+        },
+        {
+          "index": 138,
+          "token_id": 21,
+          "logprob": -1.4508,
+          "text": "6"
+        },
+        {
+          "index": 97,
+          "token_id": 20,
+          "logprob": -1.3999,
+          "text": "5"
+        },
+        {
+          "index": 103,
+          "token_id": 22,
+          "logprob": -1.3061,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 24,
+          "logprob": -1.2099,
+          "text": "9"
+        },
+        {
+          "index": 143,
+          "token_id": 23,
+          "logprob": -1.1721,
+          "text": "8"
+        },
+        {
+          "index": 5,
+          "token_id": 18,
+          "logprob": -1.0382,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 173,
+      "mean": -0.3971,
+      "min": -2.7829,
+      "p05": -1.9352,
+      "p50": -0.0096,
+      "n_below_threshold": 8
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.74,
+    "std": 7.88,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      663.6,
+      427.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      221,
+      1045,
+      1622
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

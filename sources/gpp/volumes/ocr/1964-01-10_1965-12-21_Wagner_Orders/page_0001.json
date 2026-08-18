@@ -1,0 +1,290 @@
+{
+  "page": 1,
+  "source_image": "page_0001.png",
+  "elements": [
+    {
+      "bbox": [
+        1359,
+        181,
+        1705,
+        457
+      ],
+      "category": "Table",
+      "text": "<table><tr><td>MUNICIPAL REFERENCE LIBRARY</td></tr><tr><td>RECEIVED</td></tr><tr><td>MUNICIPAL REFERENCE LIBRARY</td></tr><tr><td>NEW YORK CITY</td></tr></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3943,
+          "min": -1.7899
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0231,
+          "min": -0.0231
+        },
+        "text": {
+          "n_tokens": 63,
+          "mean": -0.0406,
+          "min": -0.6135
+        }
+      },
+      "ink": {
+        "ink_px": 4070,
+        "area_px": 39675,
+        "density": 0.10258,
+        "chars": 162,
+        "chars_per_1k_ink": 39.8
+      }
+    },
+    {
+      "bbox": [
+        397,
+        1295,
+        1594,
+        1515
+      ],
+      "category": "Text",
+      "text": "REFERENCE ONLY",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4694,
+          "min": -2.1614
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 2,
+          "mean": -0.0014,
+          "min": -0.0028
+        }
+      },
+      "ink": {
+        "ink_px": 13391,
+        "area_px": 264624,
+        "density": 0.0506,
+        "chars": 14,
+        "chars_per_1k_ink": 1.05
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 140,
+    "content": {
+      "n_tokens": 65,
+      "mean": -0.0394,
+      "min": -0.6135,
+      "p05": -0.3455,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 71,
+          "token_id": 1861,
+          "logprob": -0.6135,
+          "text": "UN"
+        },
+        {
+          "index": 48,
+          "token_id": 30271,
+          "logprob": -0.4367,
+          "text": " LIB"
+        },
+        {
+          "index": 77,
+          "token_id": 30271,
+          "logprob": -0.3525,
+          "text": " LIB"
+        },
+        {
+          "index": 37,
+          "token_id": 1784,
+          "logprob": -0.3493,
+          "text": "><"
+        },
+        {
+          "index": 75,
+          "token_id": 38029,
+          "logprob": -0.3304,
+          "text": " REF"
+        },
+        {
+          "index": 70,
+          "token_id": 37432,
+          "logprob": -0.1543,
+          "text": ">M"
+        },
+        {
+          "index": 38,
+          "token_id": 376,
+          "logprob": -0.0771,
+          "text": "tr"
+        },
+        {
+          "index": 72,
+          "token_id": 1317,
+          "logprob": -0.0467,
+          "text": "IC"
+        },
+        {
+          "index": 79,
+          "token_id": 522,
+          "logprob": -0.0343,
+          "text": "</"
+        },
+        {
+          "index": 73,
+          "token_id": 3298,
+          "logprob": -0.0264,
+          "text": "IP"
+        },
+        {
+          "index": 46,
+          "token_id": 38029,
+          "logprob": -0.0196,
+          "text": " REF"
+        },
+        {
+          "index": 59,
+          "token_id": 787,
+          "logprob": -0.0164,
+          "text": "RE"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 43,
+      "mean": -0.4132,
+      "min": -2.1614,
+      "p05": -2.0419,
+      "p50": -0.0206,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 111,
+          "token_id": 20,
+          "logprob": -2.1614,
+          "text": "5"
+        },
+        {
+          "index": 117,
+          "token_id": 19,
+          "logprob": -2.0723,
+          "text": "4"
+        },
+        {
+          "index": 123,
+          "token_id": 20,
+          "logprob": -2.0531,
+          "text": "5"
+        },
+        {
+          "index": 105,
+          "token_id": 22,
+          "logprob": -1.9414,
+          "text": "7"
+        },
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.7899,
+          "text": "1"
+        },
+        {
+          "index": 19,
+          "token_id": 20,
+          "logprob": -1.7885,
+          "text": "5"
+        },
+        {
+          "index": 24,
+          "token_id": 22,
+          "logprob": -1.5711,
+          "text": "7"
+        },
+        {
+          "index": 8,
+          "token_id": 24,
+          "logprob": -1.2363,
+          "text": "9"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -0.7584,
+          "text": "5"
+        },
+        {
+          "index": 104,
+          "token_id": 24,
+          "logprob": -0.4621,
+          "text": "9"
+        },
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -0.3968,
+          "text": "5"
+        },
+        {
+          "index": 110,
+          "token_id": 24,
+          "logprob": -0.3891,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 140,
+      "mean": -0.1453,
+      "min": -2.1614,
+      "p05": -1.2531,
+      "p50": -0.0001,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 161.08,
+    "std": 8.97,
+    "dark_fraction": 0.0056
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      711.6,
+      1029.6
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      237,
+      343,
+      1739,
+      2516
+    ],
+    "ink_px": 18278,
+    "covered_px": 17461,
+    "covered_fraction": 0.9553,
+    "uncovered_px": 817,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1293,
+          487,
+          1461,
+          511
+        ],
+        "ink_px": 459
+      }
+    ],
+    "cell_px": 24
+  }
+}

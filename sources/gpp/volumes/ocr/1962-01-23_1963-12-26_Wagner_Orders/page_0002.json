@@ -1,0 +1,324 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        141,
+        504,
+        378,
+        756
+      ],
+      "category": "Table",
+      "text": "<table><tr><td>NEW YORK CITY<br/>145.59</td></tr><tr><td>MUNICIPAL REFERENCE LIBRARY</td></tr></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4101,
+          "min": -1.6632
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0305,
+          "min": -0.0305
+        },
+        "text": {
+          "n_tokens": 42,
+          "mean": -0.0517,
+          "min": -0.641
+        }
+      },
+      "ink": {
+        "ink_px": 7015,
+        "area_px": 39060,
+        "density": 0.1796,
+        "chars": 102,
+        "chars_per_1k_ink": 14.54
+      }
+    },
+    {
+      "bbox": [
+        1259,
+        171,
+        1607,
+        459
+      ],
+      "category": "Table",
+      "text": "<table><tr><td>MUNICIPAL REFERENCE</td></tr></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4326,
+          "min": -1.8552
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0008,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 20,
+          "mean": -0.0127,
+          "min": -0.0624
+        }
+      },
+      "ink": {
+        "ink_px": 1658,
+        "area_px": 42350,
+        "density": 0.03915,
+        "chars": 52,
+        "chars_per_1k_ink": 31.36
+      }
+    },
+    {
+      "bbox": [
+        1290,
+        540,
+        1636,
+        821
+      ],
+      "category": "Table",
+      "text": "<table><tr><td>MUNICIPAL REFERENCE<br/>LIBRARY<br/>RECEIVED</td></tr><tr><td>MAY 18 1965</td></tr><tr><td>MUNICIPAL BUILDING<br/>NEW YORK CITY</td></tr></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3299,
+          "min": -1.7484
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 67,
+          "mean": -0.0139,
+          "min": -0.4373
+        }
+      },
+      "ink": {
+        "ink_px": 15492,
+        "area_px": 98069,
+        "density": 0.15797,
+        "chars": 160,
+        "chars_per_1k_ink": 10.33
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 235,
+    "content": {
+      "n_tokens": 129,
+      "mean": -0.026,
+      "min": -0.641,
+      "p05": -0.1396,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 43,
+          "token_id": 9480,
+          "logprob": -0.641,
+          "text": "<br"
+        },
+        {
+          "index": 65,
+          "token_id": 18794,
+          "logprob": -0.6377,
+          "text": "ERENCE"
+        },
+        {
+          "index": 225,
+          "token_id": 522,
+          "logprob": -0.4373,
+          "text": "</"
+        },
+        {
+          "index": 45,
+          "token_id": 16,
+          "logprob": -0.2984,
+          "text": "1"
+        },
+        {
+          "index": 35,
+          "token_id": 1784,
+          "logprob": -0.254,
+          "text": "><"
+        },
+        {
+          "index": 178,
+          "token_id": 9480,
+          "logprob": -0.178,
+          "text": "<br"
+        },
+        {
+          "index": 44,
+          "token_id": 9685,
+          "logprob": -0.1571,
+          "text": "/>"
+        },
+        {
+          "index": 231,
+          "token_id": 29,
+          "logprob": -0.1134,
+          "text": ">"
+        },
+        {
+          "index": 179,
+          "token_id": 9685,
+          "logprob": -0.0896,
+          "text": "/>"
+        },
+        {
+          "index": 36,
+          "token_id": 376,
+          "logprob": -0.0798,
+          "text": "tr"
+        },
+        {
+          "index": 110,
+          "token_id": 4055,
+          "logprob": -0.0624,
+          "text": " \"<"
+        },
+        {
+          "index": 123,
+          "token_id": 522,
+          "logprob": -0.0472,
+          "text": "</"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 61,
+      "mean": -0.3715,
+      "min": -1.8552,
+      "p05": -1.5793,
+      "p50": -0.0017,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 94,
+          "token_id": 22,
+          "logprob": -1.8552,
+          "text": "7"
+        },
+        {
+          "index": 149,
+          "token_id": 21,
+          "logprob": -1.7484,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.6632,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 21,
+          "logprob": -1.5793,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.4178,
+          "text": "1"
+        },
+        {
+          "index": 88,
+          "token_id": 16,
+          "logprob": -1.3944,
+          "text": "1"
+        },
+        {
+          "index": 17,
+          "token_id": 23,
+          "logprob": -1.3181,
+          "text": "8"
+        },
+        {
+          "index": 154,
+          "token_id": 16,
+          "logprob": -1.3113,
+          "text": "1"
+        },
+        {
+          "index": 143,
+          "token_id": 15,
+          "logprob": -1.1904,
+          "text": "0"
+        },
+        {
+          "index": 83,
+          "token_id": 24,
+          "logprob": -1.1787,
+          "text": "9"
+        },
+        {
+          "index": 82,
+          "token_id": 20,
+          "logprob": -1.1432,
+          "text": "5"
+        },
+        {
+          "index": 93,
+          "token_id": 15,
+          "logprob": -1.0523,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 235,
+      "mean": -0.1107,
+      "min": -1.8552,
+      "p05": -1.0038,
+      "p50": -0.0001,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 166.46,
+    "std": 10.74,
+    "dark_fraction": 0.00903
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      677.76,
+      1016.4
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      225,
+      338,
+      1657,
+      2485
+    ],
+    "ink_px": 27767,
+    "covered_px": 24165,
+    "covered_fraction": 0.87028,
+    "uncovered_px": 3602,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1209,
+          482,
+          1657,
+          530
+        ],
+        "ink_px": 3207
+      }
+    ],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "page": 79,
+  "source_image": "page_0079.png",
+  "elements": [
+    {
+      "bbox": [
+        243,
+        627,
+        1997,
+        825
+      ],
+      "category": "Text",
+      "text": "I request that you acknowledge receipt of this Memorandum to me at the Mayor's Office, and that a copy of the acknowledgement be sent to me at 111 Washington Avenue, Room 203, Albany, New York, 12210.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4627,
+          "min": -1.9404
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 55,
+          "mean": -0.0096,
+          "min": -0.5234
+        }
+      },
+      "ink": {
+        "ink_px": 9526,
+        "area_px": 340290,
+        "density": 0.02799,
+        "chars": 200,
+        "chars_per_1k_ink": 21.0
+      }
+    },
+    {
+      "bbox": [
+        1291,
+        832,
+        2082,
+        1026
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3716,
+          "min": -1.9228
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0013,
+          "min": -0.0013
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5069,
+        "area_px": 154440,
+        "density": 0.03282,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1192,
+        1084,
+        1766,
+        1240
+      ],
+      "category": "Caption",
+      "text": "RICHARD M. ROSEN\nAssistant to the Mayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3433,
+          "min": -1.8498
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.4288,
+          "min": -0.4288
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0077,
+          "min": -0.0909
+        }
+      },
+      "ink": {
+        "ink_px": 2765,
+        "area_px": 90432,
+        "density": 0.03058,
+        "chars": 39,
+        "chars_per_1k_ink": 14.1
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 175,
+    "content": {
+      "n_tokens": 67,
+      "mean": -0.0092,
+      "min": -0.5234,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 311,
+          "logprob": -0.5234,
+          "text": " to"
+        },
+        {
+          "index": 168,
+          "token_id": 71703,
+          "logprob": -0.0909,
+          "text": "Assistant"
+        },
+        {
+          "index": 165,
+          "token_id": 11813,
+          "logprob": -0.0011,
+          "text": " RO"
+        },
+        {
+          "index": 43,
+          "token_id": 72666,
+          "logprob": -0.0011,
+          "text": " Memor"
+        },
+        {
+          "index": 59,
+          "token_id": 66923,
+          "logprob": -0.001,
+          "text": " acknowledgement"
+        },
+        {
+          "index": 89,
+          "token_id": 1189,
+          "logprob": -0.0003,
+          "text": ".\""
+        },
+        {
+          "index": 72,
+          "token_id": 10420,
+          "logprob": -0.0002,
+          "text": " Room"
+        },
+        {
+          "index": 160,
+          "token_id": 49,
+          "logprob": -0.0002,
+          "text": "R"
+        },
+        {
+          "index": 69,
+          "token_id": 6515,
+          "logprob": -0.0002,
+          "text": " Washington"
+        },
+        {
+          "index": 35,
+          "token_id": 40,
+          "logprob": -0.0001,
+          "text": "I"
+        },
+        {
+          "index": 79,
+          "token_id": 11,
+          "logprob": -0.0001,
+          "text": ","
+        },
+        {
+          "index": 163,
+          "token_id": 386,
+          "logprob": -0.0001,
+          "text": " M"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 65,
+      "mean": -0.3781,
+      "min": -1.9404,
+      "p05": -1.8083,
+      "p50": -0.0018,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.9404,
+          "text": "3"
+        },
+        {
+          "index": 109,
+          "token_id": 17,
+          "logprob": -1.9228,
+          "text": "2"
+        },
+        {
+          "index": 136,
+          "token_id": 19,
+          "logprob": -1.8498,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.8182,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.7691,
+          "text": "7"
+        },
+        {
+          "index": 115,
+          "token_id": 21,
+          "logprob": -1.7126,
+          "text": "6"
+        },
+        {
+          "index": 103,
+          "token_id": 17,
+          "logprob": -1.6586,
+          "text": "2"
+        },
+        {
+          "index": 142,
+          "token_id": 21,
+          "logprob": -1.6575,
+          "text": "6"
+        },
+        {
+          "index": 130,
+          "token_id": 17,
+          "logprob": -1.5373,
+          "text": "2"
+        },
+        {
+          "index": 98,
+          "token_id": 16,
+          "logprob": -1.459,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.4458,
+          "text": "7"
+        },
+        {
+          "index": 148,
+          "token_id": 15,
+          "logprob": -1.2684,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 175,
+      "mean": -0.144,
+      "min": -1.9404,
+      "p05": -1.4825,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 182.63,
+    "std": 11.01,
+    "dark_fraction": 0.00409
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      867.6,
+      1108.08
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      289,
+      369,
+      2120,
+      2708
+    ],
+    "ink_px": 17514,
+    "covered_px": 17360,
+    "covered_fraction": 0.99121,
+    "uncovered_px": 154,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

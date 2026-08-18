@@ -1,0 +1,314 @@
+{
+  "page": 125,
+  "source_image": "page_0125.png",
+  "elements": [
+    {
+      "bbox": [
+        277,
+        2431,
+        691,
+        2741
+      ],
+      "category": "Table",
+      "text": "<table>\n  <tr>\n    <td>MUNICIPAL REFERENCE LIBRARY</td>\n  </tr>\n  <tr>\n    <td>RECEIVED</td>\n  </tr>\n  <tr>\n    <td>FEB 2 - 1960</td>\n  </tr>\n  <tr>\n    <td>MUNICIPAL BUILDING</td>\n  </tr>\n  <tr>\n    <td>NEW YORK CITY</td>\n  </tr>\n</table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3717,
+          "min": -1.6143
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0011,
+          "min": -0.0011
+        },
+        "text": {
+          "n_tokens": 126,
+          "mean": -0.0104,
+          "min": -0.5532
+        }
+      },
+      "ink": {
+        "ink_px": 521,
+        "area_px": 34445,
+        "density": 0.01513,
+        "chars": 239,
+        "chars_per_1k_ink": 458.73
+      }
+    },
+    {
+      "bbox": [
+        240,
+        147,
+        497,
+        420
+      ],
+      "category": "Table",
+      "text": "<table>\n  <tr>\n    <td>NEW YORK CITY</td>\n  </tr>\n  <tr>\n    <td>MUNICIPAL REFERENCE LIBRARY</td>\n  </tr>\n  <tr>\n    <td>NEW YORK 15.43</td>\n  </tr>\n</table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4233,
+          "min": -1.6242
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 80,
+          "mean": -0.0745,
+          "min": -1.0743
+        }
+      },
+      "ink": {
+        "ink_px": 290,
+        "area_px": 18644,
+        "density": 0.01555,
+        "chars": 157,
+        "chars_per_1k_ink": 541.38
+      }
+    },
+    {
+      "bbox": [
+        421,
+        1244,
+        1813,
+        1466
+      ],
+      "category": "Text",
+      "text": "REFERENCE ONLY",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4105,
+          "min": -1.9073
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0145,
+          "min": -0.0145
+        },
+        "text": {
+          "n_tokens": 2,
+          "mean": -0.2719,
+          "min": -0.4858
+        }
+      },
+      "ink": {
+        "ink_px": 4970,
+        "area_px": 311808,
+        "density": 0.01594,
+        "chars": 14,
+        "chars_per_1k_ink": 2.82
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 316,
+    "content": {
+      "n_tokens": 208,
+      "mean": -0.0376,
+      "min": -1.0743,
+      "p05": -0.1881,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 258,
+          "token_id": 20,
+          "logprob": -1.0743,
+          "text": "5"
+        },
+        {
+          "index": 256,
+          "token_id": 220,
+          "logprob": -0.8755,
+          "text": " "
+        },
+        {
+          "index": 254,
+          "token_id": 20594,
+          "logprob": -0.8205,
+          "text": "NEW"
+        },
+        {
+          "index": 253,
+          "token_id": 29,
+          "logprob": -0.7001,
+          "text": ">"
+        },
+        {
+          "index": 257,
+          "token_id": 16,
+          "logprob": -0.5855,
+          "text": "1"
+        },
+        {
+          "index": 54,
+          "token_id": 30271,
+          "logprob": -0.5532,
+          "text": " LIB"
+        },
+        {
+          "index": 311,
+          "token_id": 81076,
+          "logprob": -0.4858,
+          "text": "REFERENCE"
+        },
+        {
+          "index": 198,
+          "token_id": 220,
+          "logprob": -0.2423,
+          "text": " "
+        },
+        {
+          "index": 228,
+          "token_id": 1861,
+          "logprob": -0.2138,
+          "text": "UN"
+        },
+        {
+          "index": 227,
+          "token_id": 37432,
+          "logprob": -0.207,
+          "text": ">M"
+        },
+        {
+          "index": 245,
+          "token_id": 220,
+          "logprob": -0.202,
+          "text": " "
+        },
+        {
+          "index": 37,
+          "token_id": 8449,
+          "logprob": -0.1623,
+          "text": ">\\"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 62,
+      "mean": -0.3821,
+      "min": -1.9073,
+      "p05": -1.7682,
+      "p50": -0.007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 293,
+          "token_id": 18,
+          "logprob": -1.9073,
+          "text": "3"
+        },
+        {
+          "index": 287,
+          "token_id": 19,
+          "logprob": -1.8829,
+          "text": "4"
+        },
+        {
+          "index": 299,
+          "token_id": 21,
+          "logprob": -1.8103,
+          "text": "6"
+        },
+        {
+          "index": 281,
+          "token_id": 16,
+          "logprob": -1.7758,
+          "text": "1"
+        },
+        {
+          "index": 173,
+          "token_id": 22,
+          "logprob": -1.6242,
+          "text": "7"
+        },
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.6143,
+          "text": "1"
+        },
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.5059,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.4943,
+          "text": "1"
+        },
+        {
+          "index": 178,
+          "token_id": 22,
+          "logprob": -1.4858,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.4753,
+          "text": "7"
+        },
+        {
+          "index": 168,
+          "token_id": 15,
+          "logprob": -1.3328,
+          "text": "0"
+        },
+        {
+          "index": 183,
+          "token_id": 15,
+          "logprob": -1.087,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 316,
+      "mean": -0.0998,
+      "min": -1.9073,
+      "p05": -0.6732,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 163.77,
+    "std": 7.19,
+    "dark_fraction": 0.0016
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      785.28,
+      1028.88
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      261,
+      342,
+      1920,
+      2515
+    ],
+    "ink_px": 5781,
+    "covered_px": 5781,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

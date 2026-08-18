@@ -1,0 +1,411 @@
+{
+  "page": 220,
+  "source_image": "page_0220.png",
+  "elements": [
+    {
+      "bbox": [
+        691,
+        242,
+        741,
+        265
+      ],
+      "category": "Page-header",
+      "text": "-5-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3162,
+          "min": -1.309
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0043,
+          "min": -0.0082
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0026,
+          "min": -0.0069
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1224,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        147,
+        294,
+        1352,
+        539
+      ],
+      "category": "Text",
+      "text": "to Federal and State governments, and the undertaking of joint studies involving the City and State, Multi-State and Federal agencies, shall be consistent with the plan and shall be undertaken only after consultation among the Director and the City agencies concerned. The Director shall consult also with the Borough President when appropriate.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3154,
+          "min": -1.482
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 58,
+          "mean": -0.0008,
+          "min": -0.034
+        }
+      },
+      "ink": {
+        "ink_px": 2,
+        "area_px": 269724,
+        "density": 1e-05,
+        "chars": 345,
+        "chars_per_1k_ink": 172500.0
+      }
+    },
+    {
+      "bbox": [
+        147,
+        561,
+        1276,
+        1278
+      ],
+      "category": "List-item",
+      "text": "4. City agencies responsible for providing public improvements and services in the Jamaica area including the Economic Development Administration, the Housing and Development Administration, the Municipal Service Administration, the Parks, Recreation and Cultural Affairs Administration, the Health Services Administration, the Environmental Protection Administration, the Transportation Administration, the Human Resources Administration, the Fire Department and the Police Department shall cooperate with the Director of Jamaica Planning and Development in the performance of his functions and duties as set forth herein. Upon the request of the Director, every such agency is directed to designate a staff member at policy level to be its liaison with the Office of Jamaica Planning and Development and to cooperate in furnishing such available staff resources for service within the Jamaica area as may be requested by the Director;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2653,
+          "min": -1.5455
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3466,
+          "min": -0.6932
+        },
+        "text": {
+          "n_tokens": 146,
+          "mean": -0.0077,
+          "min": -1.1075
+        }
+      },
+      "ink": {
+        "ink_px": 33,
+        "area_px": 787332,
+        "density": 4e-05,
+        "chars": 936,
+        "chars_per_1k_ink": 28363.64
+      }
+    },
+    {
+      "bbox": [
+        229,
+        1302,
+        952,
+        1332
+      ],
+      "category": "List-item",
+      "text": "5. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2795,
+          "min": -1.5584
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0003,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0001,
+          "min": -0.0004
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 22568,
+        "density": 0.0,
+        "chars": 44,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        700,
+        1337,
+        1318,
+        1637
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3273,
+          "min": -1.3689
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0161,
+          "min": -0.0161
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 3,
+        "area_px": 162960,
+        "density": 2e-05,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        856,
+        1515,
+        1092,
+        1565
+      ],
+      "category": "Caption",
+      "text": "John V. Lindsay\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2459,
+          "min": -1.3453
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1269,
+          "min": -0.1269
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0037,
+          "min": -0.0144
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 12138,
+        "density": 0.0,
+        "chars": 21,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 439,
+    "content": {
+      "n_tokens": 224,
+      "mean": -0.0054,
+      "min": -1.1075,
+      "p05": -0.0012,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 167,
+          "token_id": 19,
+          "logprob": -1.1075,
+          "text": "4"
+        },
+        {
+          "index": 84,
+          "token_id": 15860,
+          "logprob": -0.034,
+          "text": " involving"
+        },
+        {
+          "index": 434,
+          "token_id": 3022,
+          "logprob": -0.0144,
+          "text": "AY"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0069,
+          "text": " \"-"
+        },
+        {
+          "index": 91,
+          "token_id": 86515,
+          "logprob": -0.0067,
+          "text": "-State"
+        },
+        {
+          "index": 432,
+          "token_id": 1699,
+          "logprob": -0.0065,
+          "text": "\\n"
+        },
+        {
+          "index": 312,
+          "token_id": 10892,
+          "logprob": -0.0041,
+          "text": ";\""
+        },
+        {
+          "index": 111,
+          "token_id": 10560,
+          "logprob": -0.0041,
+          "text": " Director"
+        },
+        {
+          "index": 431,
+          "token_id": 62784,
+          "logprob": -0.0039,
+          "text": " Lindsay"
+        },
+        {
+          "index": 428,
+          "token_id": 13079,
+          "logprob": -0.0035,
+          "text": "John"
+        },
+        {
+          "index": 433,
+          "token_id": 44,
+          "logprob": -0.0013,
+          "text": "M"
+        },
+        {
+          "index": 196,
+          "token_id": 5362,
+          "logprob": -0.0012,
+          "text": " Service"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 128,
+      "mean": -0.2771,
+      "min": -1.5584,
+      "p05": -1.3497,
+      "p50": -0.0005,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 331,
+          "token_id": 17,
+          "logprob": -1.5584,
+          "text": "2"
+        },
+        {
+          "index": 148,
+          "token_id": 21,
+          "logprob": -1.5455,
+          "text": "6"
+        },
+        {
+          "index": 55,
+          "token_id": 17,
+          "logprob": -1.482,
+          "text": "2"
+        },
+        {
+          "index": 44,
+          "token_id": 22,
+          "logprob": -1.4314,
+          "text": "7"
+        },
+        {
+          "index": 49,
+          "token_id": 19,
+          "logprob": -1.4115,
+          "text": "4"
+        },
+        {
+          "index": 384,
+          "token_id": 22,
+          "logprob": -1.3689,
+          "text": "7"
+        },
+        {
+          "index": 378,
+          "token_id": 23,
+          "logprob": -1.3521,
+          "text": "8"
+        },
+        {
+          "index": 410,
+          "token_id": 17,
+          "logprob": -1.3453,
+          "text": "2"
+        },
+        {
+          "index": 372,
+          "token_id": 22,
+          "logprob": -1.3158,
+          "text": "7"
+        },
+        {
+          "index": 22,
+          "token_id": 20,
+          "logprob": -1.309,
+          "text": "5"
+        },
+        {
+          "index": 404,
+          "token_id": 20,
+          "logprob": -1.3029,
+          "text": "5"
+        },
+        {
+          "index": 337,
+          "token_id": 17,
+          "logprob": -1.2869,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 439,
+      "mean": -0.0836,
+      "min": -1.5584,
+      "p05": -0.9866,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.44,
+    "std": 12.28,
+    "dark_fraction": 2e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      668.16,
+      517.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      172,
+      222,
+      1264,
+      1633
+    ],
+    "ink_px": 38,
+    "covered_px": 38,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

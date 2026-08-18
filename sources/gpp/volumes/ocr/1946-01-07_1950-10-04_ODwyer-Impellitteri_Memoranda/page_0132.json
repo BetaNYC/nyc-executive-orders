@@ -1,0 +1,314 @@
+{
+  "page": 132,
+  "source_image": "page_0132.png",
+  "elements": [
+    {
+      "bbox": [
+        228,
+        556,
+        1218,
+        605
+      ],
+      "category": "Text",
+      "text": "employee is on ordered military duty.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4324,
+          "min": -1.955
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0786,
+          "min": -0.5427
+        }
+      },
+      "ink": {
+        "ink_px": 3019,
+        "area_px": 45900,
+        "density": 0.06577,
+        "chars": 37,
+        "chars_per_1k_ink": 12.26
+      }
+    },
+    {
+      "bbox": [
+        961,
+        728,
+        1705,
+        866
+      ],
+      "category": "Text",
+      "text": "(SIGNED) JOHN P. MC GRATH\nCorporation Counsel",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3683,
+          "min": -1.636
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1457,
+          "min": -0.1457
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0058,
+          "min": -0.0386
+        }
+      },
+      "ink": {
+        "ink_px": 3105,
+        "area_px": 103694,
+        "density": 0.02994,
+        "chars": 45,
+        "chars_per_1k_ink": 14.49
+      }
+    },
+    {
+      "bbox": [
+        232,
+        1000,
+        639,
+        1049
+      ],
+      "category": "Text",
+      "text": "August 12, 1948",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3147,
+          "min": -1.5267
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0,
+          "min": -0.0002
+        }
+      },
+      "ink": {
+        "ink_px": 933,
+        "area_px": 16900,
+        "density": 0.05521,
+        "chars": 15,
+        "chars_per_1k_ink": 16.08
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 140,
+    "content": {
+      "n_tokens": 32,
+      "mean": -0.0199,
+      "min": -0.5427,
+      "p05": -0.0375,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 38,
+          "token_id": 11457,
+          "logprob": -0.5427,
+          "text": " ordered"
+        },
+        {
+          "index": 84,
+          "token_id": 14773,
+          "logprob": -0.0386,
+          "text": " GR"
+        },
+        {
+          "index": 87,
+          "token_id": 10580,
+          "logprob": -0.0366,
+          "text": "Cor"
+        },
+        {
+          "index": 35,
+          "token_id": 12946,
+          "logprob": -0.0063,
+          "text": "employee"
+        },
+        {
+          "index": 83,
+          "token_id": 20869,
+          "logprob": -0.0042,
+          "text": " MC"
+        },
+        {
+          "index": 86,
+          "token_id": 1699,
+          "logprob": -0.0026,
+          "text": "\\n"
+        },
+        {
+          "index": 78,
+          "token_id": 25015,
+          "logprob": -0.0019,
+          "text": "IGNED"
+        },
+        {
+          "index": 88,
+          "token_id": 4308,
+          "logprob": -0.0011,
+          "text": "por"
+        },
+        {
+          "index": 80,
+          "token_id": 75175,
+          "logprob": -0.0006,
+          "text": " JOHN"
+        },
+        {
+          "index": 76,
+          "token_id": 11993,
+          "logprob": -0.0006,
+          "text": " \"("
+        },
+        {
+          "index": 36,
+          "token_id": 374,
+          "logprob": -0.0005,
+          "text": " is"
+        },
+        {
+          "index": 41,
+          "token_id": 1189,
+          "logprob": -0.0003,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 61,
+      "mean": -0.355,
+      "min": -1.955,
+      "p05": -1.636,
+      "p50": -0.002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.955,
+          "text": "6"
+        },
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.7433,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.6481,
+          "text": "8"
+        },
+        {
+          "index": 60,
+          "token_id": 20,
+          "logprob": -1.636,
+          "text": "5"
+        },
+        {
+          "index": 65,
+          "token_id": 21,
+          "logprob": -1.5704,
+          "text": "6"
+        },
+        {
+          "index": 98,
+          "token_id": 17,
+          "logprob": -1.5267,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 23,
+          "logprob": -1.4436,
+          "text": "8"
+        },
+        {
+          "index": 54,
+          "token_id": 23,
+          "logprob": -1.4279,
+          "text": "8"
+        },
+        {
+          "index": 104,
+          "token_id": 15,
+          "logprob": -1.3376,
+          "text": "0"
+        },
+        {
+          "index": 49,
+          "token_id": 16,
+          "logprob": -1.2049,
+          "text": "1"
+        },
+        {
+          "index": 109,
+          "token_id": 24,
+          "logprob": -1.1329,
+          "text": "9"
+        },
+        {
+          "index": 115,
+          "token_id": 24,
+          "logprob": -0.9331,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 140,
+      "mean": -0.1593,
+      "min": -1.955,
+      "p05": -1.4287,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.15,
+    "std": 7.4,
+    "dark_fraction": 0.00152
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      908.16,
+      1171.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      302,
+      390,
+      2220,
+      2863
+    ],
+    "ink_px": 7192,
+    "covered_px": 7057,
+    "covered_fraction": 0.98123,
+    "uncovered_px": 135,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

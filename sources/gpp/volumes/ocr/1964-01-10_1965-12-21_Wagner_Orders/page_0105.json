@@ -1,0 +1,399 @@
+{
+  "page": 105,
+  "source_image": "page_0105.png",
+  "elements": [
+    {
+      "bbox": [
+        93,
+        217,
+        640,
+        262
+      ],
+      "category": "Page-header",
+      "text": "EXECUTIVE ORDER NO. 125",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.4657,
+          "min": -1.8106
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0009,
+          "min": -0.0074
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        937,
+        223,
+        1012,
+        262
+      ],
+      "category": "Page-header",
+      "text": "-3-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3261,
+          "min": -1.7222
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0002,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0004,
+          "min": -0.0007
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        93,
+        376,
+        1525,
+        505
+      ],
+      "category": "Text",
+      "text": "be referred to the agency head for disciplinary action of the\nnegligent parties.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3433,
+          "min": -1.817
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.0256,
+          "min": -0.4328
+        }
+      },
+      "ink": {
+        "ink_px": 2604,
+        "area_px": 148239,
+        "density": 0.01757,
+        "chars": 80,
+        "chars_per_1k_ink": 30.72
+      }
+    },
+    {
+      "bbox": [
+        93,
+        532,
+        1718,
+        821
+      ],
+      "category": "Text",
+      "text": "This program is a business-like program, and in\nputting it into effect, the City means business. I direct all agency\nheads to implement it at the earliest possible date, but no later\nthan January 1, 1964.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3516,
+          "min": -1.725
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 52,
+          "mean": -0.0004,
+          "min": -0.0087
+        }
+      },
+      "ink": {
+        "ink_px": 5735,
+        "area_px": 425442,
+        "density": 0.01348,
+        "chars": 204,
+        "chars_per_1k_ink": 35.57
+      }
+    },
+    {
+      "bbox": [
+        93,
+        852,
+        1530,
+        981
+      ],
+      "category": "Text",
+      "text": "Supervision of this order will be under the\ndirection of The Interagency Committee on Light Conservation.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3348,
+          "min": -1.7114
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.001,
+          "min": -0.0206
+        }
+      },
+      "ink": {
+        "ink_px": 2273,
+        "area_px": 165360,
+        "density": 0.01375,
+        "chars": 105,
+        "chars_per_1k_ink": 46.19
+      }
+    },
+    {
+      "bbox": [
+        870,
+        1070,
+        1710,
+        1287
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3983,
+          "min": -1.6555
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0015,
+          "min": -0.0015
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1280,
+        "area_px": 185274,
+        "density": 0.00691,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 310,
+    "content": {
+      "n_tokens": 104,
+      "mean": -0.0047,
+      "min": -0.4328,
+      "p05": -0.0031,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 127,
+          "token_id": 1699,
+          "logprob": -0.4328,
+          "text": "\\n"
+        },
+        {
+          "index": 263,
+          "token_id": 59,
+          "logprob": -0.0206,
+          "text": "\\"
+        },
+        {
+          "index": 173,
+          "token_id": 2025,
+          "logprob": -0.0087,
+          "text": " program"
+        },
+        {
+          "index": 34,
+          "token_id": 46340,
+          "logprob": -0.0074,
+          "text": "EXEC"
+        },
+        {
+          "index": 198,
+          "token_id": 518,
+          "logprob": -0.0068,
+          "text": " at"
+        },
+        {
+          "index": 178,
+          "token_id": 628,
+          "logprob": -0.0033,
+          "text": "put"
+        },
+        {
+          "index": 132,
+          "token_id": 1189,
+          "logprob": -0.0022,
+          "text": ".\""
+        },
+        {
+          "index": 194,
+          "token_id": 35810,
+          "logprob": -0.0017,
+          "text": "heads"
+        },
+        {
+          "index": 185,
+          "token_id": 4311,
+          "logprob": -0.0011,
+          "text": " City"
+        },
+        {
+          "index": 38,
+          "token_id": 5664,
+          "logprob": -0.0011,
+          "text": " NO"
+        },
+        {
+          "index": 80,
+          "token_id": 18,
+          "logprob": -0.0007,
+          "text": "3"
+        },
+        {
+          "index": 265,
+          "token_id": 2866,
+          "logprob": -0.0007,
+          "text": "irection"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 119,
+      "mean": -0.3446,
+      "min": -1.817,
+      "p05": -1.7125,
+      "p50": -0.0004,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 99,
+          "token_id": 20,
+          "logprob": -1.817,
+          "text": "5"
+        },
+        {
+          "index": 6,
+          "token_id": 18,
+          "logprob": -1.8106,
+          "text": "3"
+        },
+        {
+          "index": 11,
+          "token_id": 22,
+          "logprob": -1.8029,
+          "text": "7"
+        },
+        {
+          "index": 21,
+          "token_id": 17,
+          "logprob": -1.7712,
+          "text": "2"
+        },
+        {
+          "index": 144,
+          "token_id": 17,
+          "logprob": -1.725,
+          "text": "2"
+        },
+        {
+          "index": 56,
+          "token_id": 18,
+          "logprob": -1.7222,
+          "text": "3"
+        },
+        {
+          "index": 236,
+          "token_id": 15,
+          "logprob": -1.7114,
+          "text": "0"
+        },
+        {
+          "index": 93,
+          "token_id": 21,
+          "logprob": -1.7001,
+          "text": "6"
+        },
+        {
+          "index": 16,
+          "token_id": 15,
+          "logprob": -1.6889,
+          "text": "0"
+        },
+        {
+          "index": 62,
+          "token_id": 17,
+          "logprob": -1.6722,
+          "text": "2"
+        },
+        {
+          "index": 300,
+          "token_id": 22,
+          "logprob": -1.6555,
+          "text": "7"
+        },
+        {
+          "index": 104,
+          "token_id": 20,
+          "logprob": -1.6293,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 310,
+      "mean": -0.1343,
+      "min": -1.817,
+      "p05": -1.4325,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.48,
+    "std": 9.58,
+    "dark_fraction": 0.00284
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      800.88,
+      1172.16
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      267,
+      390,
+      1958,
+      2865
+    ],
+    "ink_px": 11892,
+    "covered_px": 11892,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "page": 349,
+  "source_image": "page_0349.png",
+  "elements": [
+    {
+      "bbox": [
+        438,
+        1584,
+        659,
+        1647
+      ],
+      "category": "Text",
+      "text": "NEW YORK\nSTATE OF NEW YORK\nCOUNTY OF RICHMOND\nCOUNTY OF NEW YORK",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5474,
+          "min": -1.9451
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0087,
+          "min": -0.0087
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.4964,
+          "min": -1.779
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 4032,
+        "density": 0.0,
+        "chars": 64,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        511,
+        1657,
+        609,
+        1754
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3712,
+          "min": -1.7657
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0013,
+          "min": -0.0013
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        438,
+        1802,
+        653,
+        1819
+      ],
+      "category": "Text",
+      "text": "COUNTY OF NEW YORK\nCOUNTY OF RICHMOND\nCOUNTY OF NEW YORK",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3578,
+          "min": -1.5454
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5787,
+          "min": -0.5787
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0752,
+          "min": -0.4984
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 146,
+    "content": {
+      "n_tokens": 40,
+      "mean": -0.2964,
+      "min": -1.779,
+      "p05": -1.4369,
+      "p50": -0.0226,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 39,
+          "token_id": 24628,
+          "logprob": -1.779,
+          "text": "STATE"
+        },
+        {
+          "index": 48,
+          "token_id": 32829,
+          "logprob": -1.5464,
+          "text": "ICH"
+        },
+        {
+          "index": 36,
+          "token_id": 20594,
+          "logprob": -1.4311,
+          "text": "NEW"
+        },
+        {
+          "index": 55,
+          "token_id": 16165,
+          "logprob": -1.1853,
+          "text": " NEW"
+        },
+        {
+          "index": 38,
+          "token_id": 1699,
+          "logprob": -1.0075,
+          "text": "\\n"
+        },
+        {
+          "index": 44,
+          "token_id": 38143,
+          "logprob": -0.9412,
+          "text": "COUNT"
+        },
+        {
+          "index": 47,
+          "token_id": 431,
+          "logprob": -0.9069,
+          "text": " R"
+        },
+        {
+          "index": 52,
+          "token_id": 38143,
+          "logprob": -0.8872,
+          "text": "COUNT"
+        },
+        {
+          "index": 127,
+          "token_id": 16165,
+          "logprob": -0.4984,
+          "text": " NEW"
+        },
+        {
+          "index": 40,
+          "token_id": 3008,
+          "logprob": -0.3235,
+          "text": " OF"
+        },
+        {
+          "index": 129,
+          "token_id": 1699,
+          "logprob": -0.2917,
+          "text": "\\n"
+        },
+        {
+          "index": 130,
+          "token_id": 38143,
+          "logprob": -0.2258,
+          "text": "COUNT"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 63,
+      "mean": -0.4145,
+      "min": -1.9451,
+      "p05": -1.6215,
+      "p50": -0.0117,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 13,
+          "token_id": 19,
+          "logprob": -1.9451,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.8734,
+          "text": "8"
+        },
+        {
+          "index": 81,
+          "token_id": 19,
+          "logprob": -1.7657,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 24,
+          "logprob": -1.6299,
+          "text": "9"
+        },
+        {
+          "index": 101,
+          "token_id": 17,
+          "logprob": -1.5454,
+          "text": "2"
+        },
+        {
+          "index": 64,
+          "token_id": 16,
+          "logprob": -1.5399,
+          "text": "1"
+        },
+        {
+          "index": 70,
+          "token_id": 22,
+          "logprob": -1.4676,
+          "text": "7"
+        },
+        {
+          "index": 112,
+          "token_id": 24,
+          "logprob": -1.4662,
+          "text": "9"
+        },
+        {
+          "index": 24,
+          "token_id": 22,
+          "logprob": -1.4464,
+          "text": "7"
+        },
+        {
+          "index": 106,
+          "token_id": 18,
+          "logprob": -1.4041,
+          "text": "3"
+        },
+        {
+          "index": 95,
+          "token_id": 23,
+          "logprob": -1.1183,
+          "text": "8"
+        },
+        {
+          "index": 75,
+          "token_id": 24,
+          "logprob": -1.0958,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 146,
+      "mean": -0.2676,
+      "min": -1.9451,
+      "p05": -1.5218,
+      "p50": -0.0005,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 165.64,
+    "std": 7.46,
+    "dark_fraction": 0.0001
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      656.16,
+      426.48
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      218,
+      1042,
+      1604
+    ],
+    "ink_px": 121,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 121,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

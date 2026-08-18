@@ -1,0 +1,269 @@
+{
+  "page": 281,
+  "source_image": "page_0281.png",
+  "elements": [
+    {
+      "bbox": [
+        479,
+        1578,
+        697,
+        1641
+      ],
+      "category": "Text",
+      "text": "THE AMERICAN ACADEMY\nOF ART\nAND SCIENCE\nOF THE UNITED STATES\nOF AMERICA",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4587,
+          "min": -1.6913
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0104,
+          "min": -0.0104
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.4472,
+          "min": -1.525
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 10560,
+        "density": 0.0,
+        "chars": 71,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        526,
+        1655,
+        650,
+        1782
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3255,
+          "min": -1.6404
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": null
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 92,
+    "content": {
+      "n_tokens": 22,
+      "mean": -0.4472,
+      "min": -1.525,
+      "p05": -1.3662,
+      "p50": -0.3466,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 37,
+          "token_id": 6769,
+          "logprob": -1.525,
+          "text": " AM"
+        },
+        {
+          "index": 44,
+          "token_id": 33879,
+          "logprob": -1.3709,
+          "text": " ART"
+        },
+        {
+          "index": 56,
+          "token_id": 6769,
+          "logprob": -1.2758,
+          "text": " AM"
+        },
+        {
+          "index": 39,
+          "token_id": 362,
+          "logprob": -0.7839,
+          "text": " A"
+        },
+        {
+          "index": 36,
+          "token_id": 17229,
+          "logprob": -0.7537,
+          "text": "THE"
+        },
+        {
+          "index": 52,
+          "token_id": 84510,
+          "logprob": -0.6981,
+          "text": " UNITED"
+        },
+        {
+          "index": 51,
+          "token_id": 3168,
+          "logprob": -0.6856,
+          "text": " THE"
+        },
+        {
+          "index": 45,
+          "token_id": 1699,
+          "logprob": -0.5907,
+          "text": "\\n"
+        },
+        {
+          "index": 55,
+          "token_id": 12483,
+          "logprob": -0.4248,
+          "text": "OF"
+        },
+        {
+          "index": 46,
+          "token_id": 3976,
+          "logprob": -0.3998,
+          "text": "AND"
+        },
+        {
+          "index": 54,
+          "token_id": 1699,
+          "logprob": -0.352,
+          "text": "\\n"
+        },
+        {
+          "index": 38,
+          "token_id": 89511,
+          "logprob": -0.3413,
+          "text": "ERICAN"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3737,
+      "min": -1.6913,
+      "p05": -1.6192,
+      "p50": -0.0088,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.6913,
+          "text": "9"
+        },
+        {
+          "index": 82,
+          "token_id": 17,
+          "logprob": -1.6404,
+          "text": "2"
+        },
+        {
+          "index": 71,
+          "token_id": 20,
+          "logprob": -1.6226,
+          "text": "5"
+        },
+        {
+          "index": 65,
+          "token_id": 21,
+          "logprob": -1.5545,
+          "text": "6"
+        },
+        {
+          "index": 13,
+          "token_id": 23,
+          "logprob": -1.551,
+          "text": "8"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.4732,
+          "text": "7"
+        },
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.4199,
+          "text": "1"
+        },
+        {
+          "index": 76,
+          "token_id": 15,
+          "logprob": -1.2023,
+          "text": "0"
+        },
+        {
+          "index": 6,
+          "token_id": 22,
+          "logprob": -0.9252,
+          "text": "7"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -0.9048,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -0.5593,
+          "text": "7"
+        },
+        {
+          "index": 75,
+          "token_id": 20,
+          "logprob": -0.35,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 92,
+      "mean": -0.2849,
+      "min": -1.6913,
+      "p05": -1.5367,
+      "p50": -0.0049,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 163.98,
+    "std": 7.59,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      663.84,
+      425.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      141,
+      221,
+      1040,
+      1622
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

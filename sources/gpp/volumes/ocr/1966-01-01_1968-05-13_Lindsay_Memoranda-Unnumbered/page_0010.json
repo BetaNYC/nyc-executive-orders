@@ -1,0 +1,410 @@
+{
+  "page": 10,
+  "source_image": "page_0010.png",
+  "elements": [
+    {
+      "bbox": [
+        1047,
+        319,
+        1489,
+        361
+      ],
+      "category": "Title",
+      "text": "EXECUTIVE MEMORANDA",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3902,
+          "min": -1.8385
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.103,
+          "min": -0.103
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0189,
+          "min": -0.1321
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        217,
+        509,
+        1504,
+        561
+      ],
+      "category": "Text",
+      "text": "January 4, 1968- By Harry J. O'Donnell, Press Secretary.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.406,
+          "min": -1.7378
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0166,
+          "min": -0.0166
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.0115,
+          "min": -0.2419
+        }
+      },
+      "ink": {
+        "ink_px": 4555,
+        "area_px": 63812,
+        "density": 0.07138,
+        "chars": 56,
+        "chars_per_1k_ink": 12.29
+      }
+    },
+    {
+      "bbox": [
+        614,
+        600,
+        2349,
+        749
+      ],
+      "category": "Text",
+      "text": "Information-type and special telephone numbers for use by public; requesting City agencies establishing same to contact Mr. Philip C. Hitchins, New York Telephone Company Account Manager for the City.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3895,
+          "min": -1.6416
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.0035,
+          "min": -0.0772
+        }
+      },
+      "ink": {
+        "ink_px": 19341,
+        "area_px": 242657,
+        "density": 0.07971,
+        "chars": 200,
+        "chars_per_1k_ink": 10.34
+      }
+    },
+    {
+      "bbox": [
+        224,
+        840,
+        1189,
+        888
+      ],
+      "category": "Text",
+      "text": "April 12, 1968- By John V. Lindsay, Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3343,
+          "min": -1.5868
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0069,
+          "min": -0.0069
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0004,
+          "min": -0.0056
+        }
+      },
+      "ink": {
+        "ink_px": 3637,
+        "area_px": 43561,
+        "density": 0.08349,
+        "chars": 42,
+        "chars_per_1k_ink": 11.55
+      }
+    },
+    {
+      "bbox": [
+        617,
+        923,
+        2370,
+        1070
+      ],
+      "category": "Text",
+      "text": "Modification of Executive Order No. 5, dated January 19, 1966 and Executive Memorandum Instructions issued Feb. 2, 1967 relating to positions, the salary of which is $13,000 or more a year.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3246,
+          "min": -1.608
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 57,
+          "mean": -0.0005,
+          "min": -0.0111
+        }
+      },
+      "ink": {
+        "ink_px": 18194,
+        "area_px": 237392,
+        "density": 0.07664,
+        "chars": 189,
+        "chars_per_1k_ink": 10.39
+      }
+    },
+    {
+      "bbox": [
+        1051,
+        1156,
+        1514,
+        1203
+      ],
+      "category": "Text",
+      "text": "# # # #",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3107,
+          "min": -1.6547
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0245,
+          "min": -0.0573
+        }
+      },
+      "ink": {
+        "ink_px": 772,
+        "area_px": 22320,
+        "density": 0.03459,
+        "chars": 7,
+        "chars_per_1k_ink": 9.07
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 362,
+    "content": {
+      "n_tokens": 145,
+      "mean": -0.0044,
+      "min": -0.2419,
+      "p05": -0.0064,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 87,
+          "token_id": 12,
+          "logprob": -0.2419,
+          "text": "-"
+        },
+        {
+          "index": 36,
+          "token_id": 46340,
+          "logprob": -0.1321,
+          "text": "EXEC"
+        },
+        {
+          "index": 145,
+          "token_id": 26,
+          "logprob": -0.0772,
+          "text": ";"
+        },
+        {
+          "index": 356,
+          "token_id": 671,
+          "logprob": -0.0573,
+          "text": " #"
+        },
+        {
+          "index": 355,
+          "token_id": 5869,
+          "logprob": -0.0369,
+          "text": " \"#"
+        },
+        {
+          "index": 147,
+          "token_id": 4311,
+          "logprob": -0.0329,
+          "text": " City"
+        },
+        {
+          "index": 280,
+          "token_id": 21,
+          "logprob": -0.0111,
+          "text": "6"
+        },
+        {
+          "index": 136,
+          "token_id": 10604,
+          "logprob": -0.0066,
+          "text": "-type"
+        },
+        {
+          "index": 216,
+          "token_id": 12,
+          "logprob": -0.0056,
+          "text": "-"
+        },
+        {
+          "index": 170,
+          "token_id": 1189,
+          "logprob": -0.0055,
+          "text": ".\""
+        },
+        {
+          "index": 283,
+          "token_id": 72666,
+          "logprob": -0.0046,
+          "text": " Memor"
+        },
+        {
+          "index": 99,
+          "token_id": 1189,
+          "logprob": -0.0041,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 125,
+      "mean": -0.3418,
+      "min": -1.8385,
+      "p05": -1.6437,
+      "p50": -0.0019,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.8385,
+          "text": "1"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -1.7378,
+          "text": "7"
+        },
+        {
+          "index": 61,
+          "token_id": 19,
+          "logprob": -1.694,
+          "text": "4"
+        },
+        {
+          "index": 8,
+          "token_id": 22,
+          "logprob": -1.6619,
+          "text": "7"
+        },
+        {
+          "index": 338,
+          "token_id": 19,
+          "logprob": -1.6547,
+          "text": "4"
+        },
+        {
+          "index": 332,
+          "token_id": 21,
+          "logprob": -1.6536,
+          "text": "6"
+        },
+        {
+          "index": 66,
+          "token_id": 16,
+          "logprob": -1.6442,
+          "text": "1"
+        },
+        {
+          "index": 107,
+          "token_id": 19,
+          "logprob": -1.6416,
+          "text": "4"
+        },
+        {
+          "index": 344,
+          "token_id": 18,
+          "logprob": -1.6102,
+          "text": "3"
+        },
+        {
+          "index": 237,
+          "token_id": 18,
+          "logprob": -1.608,
+          "text": "3"
+        },
+        {
+          "index": 178,
+          "token_id": 19,
+          "logprob": -1.5868,
+          "text": "4"
+        },
+        {
+          "index": 243,
+          "token_id": 15,
+          "logprob": -1.4987,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 362,
+      "mean": -0.1214,
+      "min": -1.8385,
+      "p05": -1.2902,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.18,
+    "std": 11.61,
+    "dark_fraction": 0.0079
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      908.88,
+      1453.68
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      303,
+      484,
+      2222,
+      3553
+    ],
+    "ink_px": 46512,
+    "covered_px": 46499,
+    "covered_fraction": 0.99972,
+    "uncovered_px": 13,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

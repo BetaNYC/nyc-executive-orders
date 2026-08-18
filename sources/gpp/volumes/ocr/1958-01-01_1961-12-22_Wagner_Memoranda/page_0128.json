@@ -1,0 +1,411 @@
+{
+  "page": 128,
+  "source_image": "page_0128.png",
+  "elements": [
+    {
+      "bbox": [
+        919,
+        350,
+        1027,
+        387
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4101,
+          "min": -1.5314
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0119,
+          "min": -0.0236
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0355,
+          "min": -0.1135
+        }
+      },
+      "ink": {
+        "ink_px": 32,
+        "area_px": 4142,
+        "density": 0.00773,
+        "chars": 5,
+        "chars_per_1k_ink": 156.25
+      }
+    },
+    {
+      "bbox": [
+        141,
+        431,
+        1535,
+        677
+      ],
+      "category": "Text",
+      "text": "2. That the department or agency, if it has no current training program in the field of relations of its employees with the public, arrange with the New York City Department of Personnel to set up a training program for that agency or department. Those which have such programs are to review their programs with the Department of Personnel.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3851,
+          "min": -1.8046
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3869,
+          "min": -0.3869
+        },
+        "text": {
+          "n_tokens": 64,
+          "mean": -0.0005,
+          "min": -0.0337
+        }
+      },
+      "ink": {
+        "ink_px": 101,
+        "area_px": 316110,
+        "density": 0.00032,
+        "chars": 340,
+        "chars_per_1k_ink": 3366.34
+      }
+    },
+    {
+      "bbox": [
+        141,
+        715,
+        1556,
+        840
+      ],
+      "category": "Text",
+      "text": "3. That the department or agency report to me, within 30 days, what steps it has taken or is about to take, to carry out the intention of this executive order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.335,
+          "min": -1.6629
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "text": {
+          "n_tokens": 38,
+          "mean": -0.0,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 43,
+        "area_px": 163250,
+        "density": 0.00026,
+        "chars": 159,
+        "chars_per_1k_ink": 3697.67
+      }
+    },
+    {
+      "bbox": [
+        141,
+        877,
+        1477,
+        1002
+      ],
+      "category": "Text",
+      "text": "4. That, thereafter, the agency or department submit quarterly reports to the Department of Personnel on the continued training of employees in the field of relations with the public.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3052,
+          "min": -1.6186
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0,
+          "min": -0.0
+        }
+      },
+      "ink": {
+        "ink_px": 47,
+        "area_px": 154476,
+        "density": 0.0003,
+        "chars": 183,
+        "chars_per_1k_ink": 3893.62
+      }
+    },
+    {
+      "bbox": [
+        919,
+        1277,
+        1747,
+        1433
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4123,
+          "min": -1.8465
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0026,
+          "min": -0.0026
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 506,
+        "area_px": 130467,
+        "density": 0.00388,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        943,
+        1431,
+        1267,
+        1507
+      ],
+      "category": "Caption",
+      "text": "ROBERT F. WAGNER\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2875,
+          "min": -1.622
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1427,
+          "min": -0.1427
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0002,
+          "min": -0.0013
+        }
+      },
+      "ink": {
+        "ink_px": 10,
+        "area_px": 24776,
+        "density": 0.0004,
+        "chars": 22,
+        "chars_per_1k_ink": 2200.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 363,
+    "content": {
+      "n_tokens": 150,
+      "mean": -0.0012,
+      "min": -0.1135,
+      "p05": -0.0003,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 220,
+          "logprob": -0.1135,
+          "text": " "
+        },
+        {
+          "index": 87,
+          "token_id": 4862,
+          "logprob": -0.0337,
+          "text": " training"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0275,
+          "text": " \"-"
+        },
+        {
+          "index": 356,
+          "token_id": 1699,
+          "logprob": -0.0013,
+          "text": "\\n"
+        },
+        {
+          "index": 38,
+          "token_id": 481,
+          "logprob": -0.0009,
+          "text": " -"
+        },
+        {
+          "index": 349,
+          "token_id": 1285,
+          "logprob": -0.0004,
+          "text": "RO"
+        },
+        {
+          "index": 188,
+          "token_id": 2849,
+          "logprob": -0.0003,
+          "text": " days"
+        },
+        {
+          "index": 74,
+          "token_id": 17,
+          "logprob": -0.0003,
+          "text": "2"
+        },
+        {
+          "index": 101,
+          "token_id": 30893,
+          "logprob": -0.0003,
+          "text": " arrange"
+        },
+        {
+          "index": 37,
+          "token_id": 17,
+          "logprob": -0.0002,
+          "text": "2"
+        },
+        {
+          "index": 355,
+          "token_id": 13896,
+          "logprob": -0.0002,
+          "text": "NER"
+        },
+        {
+          "index": 350,
+          "token_id": 61437,
+          "logprob": -0.0002,
+          "text": "BERT"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 126,
+      "mean": -0.3399,
+      "min": -1.8465,
+      "p05": -1.6212,
+      "p50": -0.0004,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 287,
+          "token_id": 24,
+          "logprob": -1.8465,
+          "text": "9"
+        },
+        {
+          "index": 293,
+          "token_id": 22,
+          "logprob": -1.8183,
+          "text": "7"
+        },
+        {
+          "index": 305,
+          "token_id": 18,
+          "logprob": -1.8137,
+          "text": "3"
+        },
+        {
+          "index": 57,
+          "token_id": 20,
+          "logprob": -1.8046,
+          "text": "5"
+        },
+        {
+          "index": 299,
+          "token_id": 22,
+          "logprob": -1.7995,
+          "text": "7"
+        },
+        {
+          "index": 150,
+          "token_id": 20,
+          "logprob": -1.6629,
+          "text": "5"
+        },
+        {
+          "index": 319,
+          "token_id": 18,
+          "logprob": -1.622,
+          "text": "3"
+        },
+        {
+          "index": 235,
+          "token_id": 17,
+          "logprob": -1.6186,
+          "text": "2"
+        },
+        {
+          "index": 156,
+          "token_id": 21,
+          "logprob": -1.6152,
+          "text": "6"
+        },
+        {
+          "index": 46,
+          "token_id": 16,
+          "logprob": -1.5993,
+          "text": "1"
+        },
+        {
+          "index": 51,
+          "token_id": 16,
+          "logprob": -1.5578,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.5314,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 363,
+      "mean": -0.1185,
+      "min": -1.8465,
+      "p05": -1.4026,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.79,
+    "std": 9.18,
+    "dark_fraction": 0.00022
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      768.48,
+      972.96
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      256,
+      324,
+      1878,
+      2378
+    ],
+    "ink_px": 739,
+    "covered_px": 739,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

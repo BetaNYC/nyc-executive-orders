@@ -1,0 +1,314 @@
+{
+  "page": 40,
+  "source_image": "page_0040.png",
+  "elements": [
+    {
+      "bbox": [
+        451,
+        716,
+        1537,
+        765
+      ],
+      "category": "Text",
+      "text": "release iron and steel scrap for prompt disposal.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3965,
+          "min": -1.8484
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0129,
+          "min": -0.0129
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0016,
+          "min": -0.0131
+        }
+      },
+      "ink": {
+        "ink_px": 6070,
+        "area_px": 54600,
+        "density": 0.11117,
+        "chars": 49,
+        "chars_per_1k_ink": 8.07
+      }
+    },
+    {
+      "bbox": [
+        451,
+        804,
+        1854,
+        1295
+      ],
+      "category": "Text",
+      "text": "Inasmuch as most salvage operations of the City are\nconducted through the Department of Purchase, I have designated\nthat agency as the focal point for this drive. Please give\nCommissioner Pleydell and his staff every cooperation to the\nend that all available iron and steel scrap starts moving to\nthe mills quickly.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3334,
+          "min": -1.7615
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 67,
+          "mean": -0.0011,
+          "min": -0.0644
+        }
+      },
+      "ink": {
+        "ink_px": 37324,
+        "area_px": 693720,
+        "density": 0.0538,
+        "chars": 315,
+        "chars_per_1k_ink": 8.44
+      }
+    },
+    {
+      "bbox": [
+        1389,
+        1651,
+        1597,
+        1696
+      ],
+      "category": "Text",
+      "text": "Mayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3156,
+          "min": -1.497
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0037,
+          "min": -0.0037
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0207,
+          "min": -0.0207
+        }
+      },
+      "ink": {
+        "ink_px": 683,
+        "area_px": 9660,
+        "density": 0.0707,
+        "chars": 5,
+        "chars_per_1k_ink": 7.32
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 189,
+    "content": {
+      "n_tokens": 77,
+      "mean": -0.0014,
+      "min": -0.0644,
+      "p05": -0.0023,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 91,
+          "token_id": 1699,
+          "logprob": -0.0644,
+          "text": "\\n"
+        },
+        {
+          "index": 185,
+          "token_id": 85574,
+          "logprob": -0.0207,
+          "text": "Mayor"
+        },
+        {
+          "index": 35,
+          "token_id": 22998,
+          "logprob": -0.0131,
+          "text": "release"
+        },
+        {
+          "index": 146,
+          "token_id": 1189,
+          "logprob": -0.0025,
+          "text": ".\""
+        },
+        {
+          "index": 117,
+          "token_id": 73750,
+          "logprob": -0.0022,
+          "text": "Commission"
+        },
+        {
+          "index": 127,
+          "token_id": 23046,
+          "logprob": -0.0009,
+          "text": " cooperation"
+        },
+        {
+          "index": 39,
+          "token_id": 20843,
+          "logprob": -0.0007,
+          "text": " scrap"
+        },
+        {
+          "index": 120,
+          "token_id": 3179,
+          "logprob": -0.0006,
+          "text": "ley"
+        },
+        {
+          "index": 89,
+          "token_id": 4311,
+          "logprob": -0.0005,
+          "text": " City"
+        },
+        {
+          "index": 92,
+          "token_id": 443,
+          "logprob": -0.0004,
+          "text": "con"
+        },
+        {
+          "index": 93,
+          "token_id": 53915,
+          "logprob": -0.0004,
+          "text": "ducted"
+        },
+        {
+          "index": 138,
+          "token_id": 20843,
+          "logprob": -0.0002,
+          "text": " scrap"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 64,
+      "mean": -0.3307,
+      "min": -1.8484,
+      "p05": -1.5871,
+      "p50": -0.0007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.8484,
+          "text": "6"
+        },
+        {
+          "index": 56,
+          "token_id": 19,
+          "logprob": -1.7615,
+          "text": "4"
+        },
+        {
+          "index": 62,
+          "token_id": 19,
+          "logprob": -1.7147,
+          "text": "4"
+        },
+        {
+          "index": 68,
+          "token_id": 20,
+          "logprob": -1.5874,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.5853,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.5212,
+          "text": "7"
+        },
+        {
+          "index": 161,
+          "token_id": 16,
+          "logprob": -1.497,
+          "text": "1"
+        },
+        {
+          "index": 173,
+          "token_id": 21,
+          "logprob": -1.4564,
+          "text": "6"
+        },
+        {
+          "index": 167,
+          "token_id": 22,
+          "logprob": -1.3861,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.3528,
+          "text": "1"
+        },
+        {
+          "index": 51,
+          "token_id": 16,
+          "logprob": -1.338,
+          "text": "1"
+        },
+        {
+          "index": 155,
+          "token_id": 24,
+          "logprob": -1.253,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 189,
+      "mean": -0.1127,
+      "min": -1.8484,
+      "p05": -1.3469,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 170.14,
+    "std": 12.07,
+    "dark_fraction": 0.01
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      880.32,
+      1137.6
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      293,
+      379,
+      2152,
+      2780
+    ],
+    "ink_px": 44646,
+    "covered_px": 44077,
+    "covered_fraction": 0.98726,
+    "uncovered_px": 569,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

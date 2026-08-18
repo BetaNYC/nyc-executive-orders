@@ -1,0 +1,269 @@
+{
+  "page": 245,
+  "source_image": "page_0245.png",
+  "elements": [
+    {
+      "bbox": [
+        480,
+        1561,
+        699,
+        1624
+      ],
+      "category": "Text",
+      "text": "WILLIAMSON & A. ALLMAN\nDECEMBER 15, 1975\nBY THE REV. JOHN L. ALLMAN",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3967,
+          "min": -1.7152
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0114,
+          "min": -0.0114
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.8427,
+          "min": -2.4161
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 14144,
+        "density": 0.0,
+        "chars": 67,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        528,
+        1637,
+        653,
+        1770
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3105,
+          "min": -1.5476
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0031,
+          "min": -0.0031
+        },
+        "text": null
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 102,
+    "content": {
+      "n_tokens": 32,
+      "mean": -0.8427,
+      "min": -2.4161,
+      "p05": -2.2121,
+      "p50": -0.6518,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 61,
+          "token_id": 65823,
+          "logprob": -2.4161,
+          "text": " REV"
+        },
+        {
+          "index": 36,
+          "token_id": 54,
+          "logprob": -2.3987,
+          "text": "W"
+        },
+        {
+          "index": 59,
+          "token_id": 19912,
+          "logprob": -2.0594,
+          "text": "BY"
+        },
+        {
+          "index": 43,
+          "token_id": 13097,
+          "logprob": -1.9035,
+          "text": " ALL"
+        },
+        {
+          "index": 40,
+          "token_id": 609,
+          "logprob": -1.7115,
+          "text": " &"
+        },
+        {
+          "index": 51,
+          "token_id": 20,
+          "logprob": -1.5576,
+          "text": "5"
+        },
+        {
+          "index": 39,
+          "token_id": 2703,
+          "logprob": -1.5272,
+          "text": "SON"
+        },
+        {
+          "index": 56,
+          "token_id": 22,
+          "logprob": -1.449,
+          "text": "7"
+        },
+        {
+          "index": 57,
+          "token_id": 20,
+          "logprob": -1.4391,
+          "text": "5"
+        },
+        {
+          "index": 63,
+          "token_id": 75175,
+          "logprob": -1.4137,
+          "text": " JOHN"
+        },
+        {
+          "index": 44,
+          "token_id": 22310,
+          "logprob": -1.3741,
+          "text": "MAN"
+        },
+        {
+          "index": 41,
+          "token_id": 362,
+          "logprob": -1.3597,
+          "text": " A"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3371,
+      "min": -1.7152,
+      "p05": -1.5411,
+      "p50": -0.0056,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 24,
+          "token_id": 19,
+          "logprob": -1.7152,
+          "text": "4"
+        },
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.6958,
+          "text": "1"
+        },
+        {
+          "index": 86,
+          "token_id": 18,
+          "logprob": -1.5476,
+          "text": "3"
+        },
+        {
+          "index": 81,
+          "token_id": 22,
+          "logprob": -1.4171,
+          "text": "7"
+        },
+        {
+          "index": 92,
+          "token_id": 15,
+          "logprob": -1.3536,
+          "text": "0"
+        },
+        {
+          "index": 18,
+          "token_id": 24,
+          "logprob": -1.2352,
+          "text": "9"
+        },
+        {
+          "index": 75,
+          "token_id": 23,
+          "logprob": -1.2058,
+          "text": "8"
+        },
+        {
+          "index": 7,
+          "token_id": 15,
+          "logprob": -1.1024,
+          "text": "0"
+        },
+        {
+          "index": 6,
+          "token_id": 23,
+          "logprob": -0.8553,
+          "text": "8"
+        },
+        {
+          "index": 16,
+          "token_id": 21,
+          "logprob": -0.4747,
+          "text": "6"
+        },
+        {
+          "index": 91,
+          "token_id": 22,
+          "logprob": -0.3145,
+          "text": "7"
+        },
+        {
+          "index": 22,
+          "token_id": 21,
+          "logprob": -0.2933,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 102,
+      "mean": -0.404,
+      "min": -2.4161,
+      "p05": -1.7107,
+      "p50": -0.0063,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.49,
+    "std": 8.72,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      664.56,
+      423.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      141,
+      221,
+      1036,
+      1624
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

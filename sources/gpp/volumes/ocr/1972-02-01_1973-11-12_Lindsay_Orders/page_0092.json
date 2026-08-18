@@ -1,0 +1,342 @@
+{
+  "page": 92,
+  "source_image": "page_0092.png",
+  "elements": [
+    {
+      "bbox": [
+        904,
+        186,
+        994,
+        224
+      ],
+      "category": "Page-header",
+      "text": "-13-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4603,
+          "min": -2.1561
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0006,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0017,
+          "min": -0.0047
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        702,
+        362,
+        1649,
+        584
+      ],
+      "category": "List-item",
+      "text": "(2) No call directors, automatic switchboards, leased lines except for Civil Defense services, etc., shall be contracted for unless approved by the Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3584,
+          "min": -1.7764
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.001,
+          "min": -0.0019
+        },
+        "text": {
+          "n_tokens": 31,
+          "mean": -0.0006,
+          "min": -0.0096
+        }
+      },
+      "ink": {
+        "ink_px": 6907,
+        "area_px": 155144,
+        "density": 0.04452,
+        "chars": 154,
+        "chars_per_1k_ink": 22.3
+      }
+    },
+    {
+      "bbox": [
+        704,
+        632,
+        1754,
+        1566
+      ],
+      "category": "List-item",
+      "text": "(3) Telephone Service Orders issued by the New York Telephone Company will reflect the required installations, deletions and changes, but not the cost thereof. The using agency shall certify the charges reflected on the telephone bills and certify the bills for payment in accordance with the tariff chart. These certified bills are to be forwarded promptly to the Comptroller's Office for payment. If there are discrepancies holding up certification of a previous month's bill, an agency shall process subsequent monthly bills without delay where such bills can be certified. Where questionable toll charges appear on a bill, such charges shall be deducted from the bill on which they appear and the remainder of the bill processed for payment immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.334,
+          "min": -1.609
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 135,
+          "mean": -0.0011,
+          "min": -0.0466
+        }
+      },
+      "ink": {
+        "ink_px": 50802,
+        "area_px": 977784,
+        "density": 0.05196,
+        "chars": 757,
+        "chars_per_1k_ink": 14.9
+      }
+    },
+    {
+      "bbox": [
+        716,
+        1611,
+        1692,
+        2009
+      ],
+      "category": "List-item",
+      "text": "(4) All contracts for the rental of tabulating and auxiliary tabulating equipment shall be restricted to the equipment provided for under the contract in force when this budget takes effect. Modifications or proposals involving additional equipment shall not be effective except and in the manner approved by the Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2876,
+          "min": -1.5505
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 55,
+          "mean": -0.0004,
+          "min": -0.0123
+        }
+      },
+      "ink": {
+        "ink_px": 17422,
+        "area_px": 388050,
+        "density": 0.0449,
+        "chars": 319,
+        "chars_per_1k_ink": 18.31
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 369,
+    "content": {
+      "n_tokens": 225,
+      "mean": -0.0009,
+      "min": -0.0466,
+      "p05": -0.0032,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 183,
+          "token_id": 92230,
+          "logprob": -0.0466,
+          "text": " certify"
+        },
+        {
+          "index": 171,
+          "token_id": 1667,
+          "logprob": -0.024,
+          "text": " using"
+        },
+        {
+          "index": 244,
+          "token_id": 43278,
+          "logprob": -0.0234,
+          "text": " questionable"
+        },
+        {
+          "index": 212,
+          "token_id": 13,
+          "logprob": -0.0142,
+          "text": "."
+        },
+        {
+          "index": 266,
+          "token_id": 26313,
+          "logprob": -0.0129,
+          "text": " remainder"
+        },
+        {
+          "index": 358,
+          "token_id": 323,
+          "logprob": -0.0123,
+          "text": " and"
+        },
+        {
+          "index": 82,
+          "token_id": 19270,
+          "logprob": -0.0096,
+          "text": "boards"
+        },
+        {
+          "index": 174,
+          "token_id": 92230,
+          "logprob": -0.0082,
+          "text": " certify"
+        },
+        {
+          "index": 73,
+          "token_id": 11993,
+          "logprob": -0.0055,
+          "text": " \"("
+        },
+        {
+          "index": 335,
+          "token_id": 369,
+          "logprob": -0.0048,
+          "text": " for"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0047,
+          "text": " \"-"
+        },
+        {
+          "index": 347,
+          "token_id": 95616,
+          "logprob": -0.0036,
+          "text": " Modifications"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 86,
+      "mean": -0.3235,
+      "min": -2.1561,
+      "p05": -1.7124,
+      "p50": -0.0016,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -2.1561,
+          "text": "6"
+        },
+        {
+          "index": 22,
+          "token_id": 19,
+          "logprob": -1.8957,
+          "text": "4"
+        },
+        {
+          "index": 50,
+          "token_id": 17,
+          "logprob": -1.7764,
+          "text": "2"
+        },
+        {
+          "index": 61,
+          "token_id": 19,
+          "logprob": -1.765,
+          "text": "4"
+        },
+        {
+          "index": 17,
+          "token_id": 19,
+          "logprob": -1.7468,
+          "text": "4"
+        },
+        {
+          "index": 116,
+          "token_id": 17,
+          "logprob": -1.609,
+          "text": "2"
+        },
+        {
+          "index": 294,
+          "token_id": 17,
+          "logprob": -1.5505,
+          "text": "2"
+        },
+        {
+          "index": 288,
+          "token_id": 16,
+          "logprob": -1.5188,
+          "text": "1"
+        },
+        {
+          "index": 122,
+          "token_id": 19,
+          "logprob": -1.5162,
+          "text": "4"
+        },
+        {
+          "index": 111,
+          "token_id": 19,
+          "logprob": -1.5146,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.4663,
+          "text": "4"
+        },
+        {
+          "index": 128,
+          "token_id": 21,
+          "logprob": -1.4239,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 369,
+      "mean": -0.0759,
+      "min": -2.1561,
+      "p05": -0.3934,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.87,
+    "std": 17.96,
+    "dark_fraction": 0.01733
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      774.24,
+      1256.88
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      258,
+      419,
+      1892,
+      3072
+    ],
+    "ink_px": 75131,
+    "covered_px": 75131,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

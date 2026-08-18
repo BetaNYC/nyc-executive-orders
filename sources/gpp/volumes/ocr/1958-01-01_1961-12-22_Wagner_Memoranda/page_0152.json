@@ -1,0 +1,405 @@
+{
+  "page": 152,
+  "source_image": "page_0152.png",
+  "elements": [
+    {
+      "bbox": [
+        1114,
+        261,
+        1454,
+        301
+      ],
+      "category": "Page-header",
+      "text": "executive order/2",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3546,
+          "min": -1.7675
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2103,
+          "min": -0.4206
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0023,
+          "min": -0.0078
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        461,
+        550,
+        1765,
+        995
+      ],
+      "category": "Text",
+      "text": "I hereby designate the City Administrator to coordinate the implementation of this program. Commissioners, heads of agencies, and committee chairmen mentioned in my remarks are directed to develop specific action programs to carry out my intent of providing the best services within the City's available resources to our aged. The City Administrator's office will be in touch with commissioners, heads of agencies, and committee chairmen to assist in the preparation of these programs and, at the same time, to develop a formal progress reporting system to keep me informed of the implementation of this program.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3649,
+          "min": -1.7138
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 108,
+          "mean": -0.0013,
+          "min": -0.0909
+        }
+      },
+      "ink": {
+        "ink_px": 4950,
+        "area_px": 583840,
+        "density": 0.00848,
+        "chars": 612,
+        "chars_per_1k_ink": 123.64
+      }
+    },
+    {
+      "bbox": [
+        465,
+        1033,
+        1721,
+        1236
+      ],
+      "category": "Text",
+      "text": "Commissioners and heads of agencies not under the jurisdiction of the Mayor are requested to extend their full cooperation in carrying out this administration's accepted responsibility of making the declining years of our aging population as pleasant and useful as humanly possible.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2974,
+          "min": -1.5783
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 46,
+          "mean": -0.0003,
+          "min": -0.0111
+        }
+      },
+      "ink": {
+        "ink_px": 1525,
+        "area_px": 257652,
+        "density": 0.00592,
+        "chars": 282,
+        "chars_per_1k_ink": 184.92
+      }
+    },
+    {
+      "bbox": [
+        1017,
+        1285,
+        1770,
+        1434
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3814,
+          "min": -1.8872
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2599,
+        "area_px": 113700,
+        "density": 0.02286,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1114,
+        1427,
+        1433,
+        1499
+      ],
+      "category": "Caption",
+      "text": "ROBERT F. WAGNER\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.2496,
+          "min": -1.5516
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.016,
+          "min": -0.016
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0003,
+          "min": -0.002
+        }
+      },
+      "ink": {
+        "ink_px": 399,
+        "area_px": 23506,
+        "density": 0.01697,
+        "chars": 22,
+        "chars_per_1k_ink": 55.14
+      }
+    },
+    {
+      "bbox": [
+        477,
+        2013,
+        1634,
+        2174
+      ],
+      "category": "Text",
+      "text": "Attachment: Remarks by Mayor Robert F. Wagner at the first meeting of the Citizens Committee on Aging of the Community Council, delivered at City Hall, October 28, 1960.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2935,
+          "min": -1.6727
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0151,
+          "min": -0.0151
+        },
+        "text": {
+          "n_tokens": 40,
+          "mean": -0.0018,
+          "min": -0.056
+        }
+      },
+      "ink": {
+        "ink_px": 2247,
+        "area_px": 188568,
+        "density": 0.01192,
+        "chars": 169,
+        "chars_per_1k_ink": 75.21
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 429,
+    "content": {
+      "n_tokens": 210,
+      "mean": -0.0012,
+      "min": -0.0909,
+      "p05": -0.0037,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 83,
+          "token_id": 311,
+          "logprob": -0.0909,
+          "text": " to"
+        },
+        {
+          "index": 388,
+          "token_id": 25,
+          "logprob": -0.056,
+          "text": ":"
+        },
+        {
+          "index": 130,
+          "token_id": 19749,
+          "logprob": -0.0159,
+          "text": " aged"
+        },
+        {
+          "index": 104,
+          "token_id": 23325,
+          "logprob": -0.0131,
+          "text": " remarks"
+        },
+        {
+          "index": 230,
+          "token_id": 279,
+          "logprob": -0.0111,
+          "text": " the"
+        },
+        {
+          "index": 40,
+          "token_id": 14,
+          "logprob": -0.0078,
+          "text": "/"
+        },
+        {
+          "index": 389,
+          "token_id": 84582,
+          "logprob": -0.0062,
+          "text": " Remarks"
+        },
+        {
+          "index": 99,
+          "token_id": 10496,
+          "logprob": -0.0052,
+          "text": " chair"
+        },
+        {
+          "index": 117,
+          "token_id": 315,
+          "logprob": -0.0041,
+          "text": " of"
+        },
+        {
+          "index": 402,
+          "token_id": 39896,
+          "logprob": -0.0039,
+          "text": " Citizens"
+        },
+        {
+          "index": 79,
+          "token_id": 74124,
+          "logprob": -0.0038,
+          "text": " designate"
+        },
+        {
+          "index": 37,
+          "token_id": 11748,
+          "logprob": -0.0037,
+          "text": "exec"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 132,
+      "mean": -0.3088,
+      "min": -1.8872,
+      "p05": -1.6629,
+      "p50": -0.0005,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 294,
+          "token_id": 19,
+          "logprob": -1.8872,
+          "text": "4"
+        },
+        {
+          "index": 282,
+          "token_id": 20,
+          "logprob": -1.8386,
+          "text": "5"
+        },
+        {
+          "index": 288,
+          "token_id": 15,
+          "logprob": -1.8086,
+          "text": "0"
+        },
+        {
+          "index": 19,
+          "token_id": 19,
+          "logprob": -1.7675,
+          "text": "4"
+        },
+        {
+          "index": 8,
+          "token_id": 19,
+          "logprob": -1.7423,
+          "text": "4"
+        },
+        {
+          "index": 60,
+          "token_id": 20,
+          "logprob": -1.7138,
+          "text": "5"
+        },
+        {
+          "index": 363,
+          "token_id": 18,
+          "logprob": -1.6727,
+          "text": "3"
+        },
+        {
+          "index": 276,
+          "token_id": 22,
+          "logprob": -1.6548,
+          "text": "7"
+        },
+        {
+          "index": 65,
+          "token_id": 20,
+          "logprob": -1.5849,
+          "text": "5"
+        },
+        {
+          "index": 198,
+          "token_id": 18,
+          "logprob": -1.5783,
+          "text": "3"
+        },
+        {
+          "index": 369,
+          "token_id": 19,
+          "logprob": -1.573,
+          "text": "4"
+        },
+        {
+          "index": 321,
+          "token_id": 18,
+          "logprob": -1.5516,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 429,
+      "mean": -0.0958,
+      "min": -1.8872,
+      "p05": -1.0555,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 171.01,
+    "std": 13.72,
+    "dark_fraction": 0.0035
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      769.92,
+      976.56
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      256,
+      325,
+      1882,
+      2387
+    ],
+    "ink_px": 11721,
+    "covered_px": 11699,
+    "covered_fraction": 0.99812,
+    "uncovered_px": 22,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "page": 100,
+  "source_image": "page_0100.png",
+  "elements": [
+    {
+      "bbox": [
+        379,
+        447,
+        2048,
+        800
+      ],
+      "category": "Text",
+      "text": "Considering such reasoning and opinions, I have no doubt that a City department Head may legally accept an appointment to the faculty of Columbia University School of Public Health and Administrative Medicine, to perform an occasional lecture (for compensation) and \"the equivalent of one day a week\" on weekends as a consultant to the New York University Institute of Environmental Medicine.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.5177,
+          "min": -1.8896
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 68,
+          "mean": -0.0642,
+          "min": -1.5213
+        }
+      },
+      "ink": {
+        "ink_px": 3832,
+        "area_px": 588348,
+        "density": 0.00651,
+        "chars": 392,
+        "chars_per_1k_ink": 102.3
+      }
+    },
+    {
+      "bbox": [
+        379,
+        826,
+        2090,
+        1307
+      ],
+      "category": "Text",
+      "text": "These opinions have all been based upon the position of this office since December 1956, and under the above described cases, that occasional activities outside of official duties which do not require an officer to devote a substantial amount of his time thereto, such as the writing of articles for publications, acting as a mediator in labor disputes, acting as an officer or director of a corporation but without substantial business duties or as an executive or trustee without substantial business duties, do not conflict within the prohibition of Section 1100 of the Charter.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3663,
+          "min": -1.914
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 110,
+          "mean": -0.036,
+          "min": -2.8717
+        }
+      },
+      "ink": {
+        "ink_px": 4494,
+        "area_px": 819143,
+        "density": 0.00549,
+        "chars": 581,
+        "chars_per_1k_ink": 129.28
+      }
+    },
+    {
+      "bbox": [
+        1131,
+        1343,
+        1967,
+        1660
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.4138,
+          "min": -1.8336
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0699,
+          "min": -0.0699
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 874,
+        "area_px": 264894,
+        "density": 0.0033,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 285,
+    "content": {
+      "n_tokens": 178,
+      "mean": -0.0467,
+      "min": -2.8717,
+      "p05": -0.1783,
+      "p50": -0.0001,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 234,
+          "token_id": 12055,
+          "logprob": -2.8717,
+          "text": " conflict"
+        },
+        {
+          "index": 49,
+          "token_id": 11203,
+          "logprob": -1.5213,
+          "text": " Head"
+        },
+        {
+          "index": 43,
+          "token_id": 902,
+          "logprob": -0.7158,
+          "text": " no"
+        },
+        {
+          "index": 44,
+          "token_id": 10492,
+          "logprob": -0.6588,
+          "text": " doubt"
+        },
+        {
+          "index": 224,
+          "token_id": 10905,
+          "logprob": -0.5633,
+          "text": " executive"
+        },
+        {
+          "index": 35,
+          "token_id": 82796,
+          "logprob": -0.3621,
+          "text": "Considering"
+        },
+        {
+          "index": 47,
+          "token_id": 4311,
+          "logprob": -0.315,
+          "text": " City"
+        },
+        {
+          "index": 77,
+          "token_id": 8,
+          "logprob": -0.2421,
+          "text": ")"
+        },
+        {
+          "index": 235,
+          "token_id": 2878,
+          "logprob": -0.2258,
+          "text": " within"
+        },
+        {
+          "index": 54,
+          "token_id": 17635,
+          "logprob": -0.1699,
+          "text": " appointment"
+        },
+        {
+          "index": 57,
+          "token_id": 21564,
+          "logprob": -0.143,
+          "text": " faculty"
+        },
+        {
+          "index": 48,
+          "token_id": 9292,
+          "logprob": -0.113,
+          "text": " department"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 64,
+      "mean": -0.4115,
+      "min": -1.914,
+      "p05": -1.7821,
+      "p50": -0.0076,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 115,
+          "token_id": 21,
+          "logprob": -1.914,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.8896,
+          "text": "7"
+        },
+        {
+          "index": 269,
+          "token_id": 22,
+          "logprob": -1.8336,
+          "text": "7"
+        },
+        {
+          "index": 263,
+          "token_id": 18,
+          "logprob": -1.783,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.7772,
+          "text": "9"
+        },
+        {
+          "index": 23,
+          "token_id": 15,
+          "logprob": -1.7574,
+          "text": "0"
+        },
+        {
+          "index": 275,
+          "token_id": 15,
+          "logprob": -1.7553,
+          "text": "0"
+        },
+        {
+          "index": 121,
+          "token_id": 15,
+          "logprob": -1.7176,
+          "text": "0"
+        },
+        {
+          "index": 127,
+          "token_id": 22,
+          "logprob": -1.6782,
+          "text": "7"
+        },
+        {
+          "index": 257,
+          "token_id": 16,
+          "logprob": -1.6196,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 23,
+          "logprob": -1.5018,
+          "text": "8"
+        },
+        {
+          "index": 110,
+          "token_id": 24,
+          "logprob": -1.0658,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 285,
+      "mean": -0.1216,
+      "min": -2.8717,
+      "p05": -0.7953,
+      "p50": -0.0001,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.71,
+    "std": 11.13,
+    "dark_fraction": 0.00203
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      892.56,
+      1147.92
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      297,
+      382,
+      2182,
+      2806
+    ],
+    "ink_px": 9288,
+    "covered_px": 9200,
+    "covered_fraction": 0.99053,
+    "uncovered_px": 88,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

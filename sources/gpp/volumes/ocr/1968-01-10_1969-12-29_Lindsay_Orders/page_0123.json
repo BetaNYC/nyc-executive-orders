@@ -1,0 +1,221 @@
+{
+  "page": 123,
+  "source_image": "page_0123.png",
+  "elements": [
+    {
+      "bbox": [
+        30,
+        1691,
+        47,
+        1758
+      ],
+      "category": "Page-header",
+      "text": "1920",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4384,
+          "min": -1.5897
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2395,
+          "min": -0.3872
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -1.5475,
+          "min": -2.6017
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        45,
+        19,
+        1172,
+        1811
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.5782,
+          "min": -2.2219
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3138,
+          "min": -0.3138
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1259685,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 71,
+    "content": {
+      "n_tokens": 4,
+      "mean": -1.5475,
+      "min": -2.6017,
+      "p05": -2.4674,
+      "p50": -1.5729,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 16,
+          "logprob": -2.6017,
+          "text": "1"
+        },
+        {
+          "index": 37,
+          "token_id": 17,
+          "logprob": -1.7064,
+          "text": "2"
+        },
+        {
+          "index": 38,
+          "token_id": 15,
+          "logprob": -1.4394,
+          "text": "0"
+        },
+        {
+          "index": 36,
+          "token_id": 24,
+          "logprob": -0.4425,
+          "text": "9"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 39,
+      "mean": -0.4895,
+      "min": -2.2219,
+      "p05": -1.6788,
+      "p50": -0.0917,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 61,
+          "token_id": 16,
+          "logprob": -2.2219,
+          "text": "1"
+        },
+        {
+          "index": 45,
+          "token_id": 20,
+          "logprob": -2.1154,
+          "text": "5"
+        },
+        {
+          "index": 49,
+          "token_id": 24,
+          "logprob": -1.6303,
+          "text": "9"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.5897,
+          "text": "1"
+        },
+        {
+          "index": 6,
+          "token_id": 15,
+          "logprob": -1.557,
+          "text": "0"
+        },
+        {
+          "index": 16,
+          "token_id": 22,
+          "logprob": -1.477,
+          "text": "7"
+        },
+        {
+          "index": 22,
+          "token_id": 23,
+          "logprob": -1.423,
+          "text": "8"
+        },
+        {
+          "index": 55,
+          "token_id": 17,
+          "logprob": -1.3873,
+          "text": "2"
+        },
+        {
+          "index": 5,
+          "token_id": 18,
+          "logprob": -0.9962,
+          "text": "3"
+        },
+        {
+          "index": 44,
+          "token_id": 19,
+          "logprob": -0.8467,
+          "text": "4"
+        },
+        {
+          "index": 54,
+          "token_id": 22,
+          "logprob": -0.8084,
+          "text": "7"
+        },
+        {
+          "index": 48,
+          "token_id": 16,
+          "logprob": -0.5942,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 71,
+      "mean": -0.3656,
+      "min": -2.6017,
+      "p05": -1.6683,
+      "p50": -0.001,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.57,
+    "std": 8.41,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      660.96,
+      427.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      220,
+      1045,
+      1615
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

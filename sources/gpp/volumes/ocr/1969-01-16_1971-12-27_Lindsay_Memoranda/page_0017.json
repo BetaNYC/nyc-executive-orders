@@ -1,0 +1,416 @@
+{
+  "page": 17,
+  "source_image": "page_0017.png",
+  "elements": [
+    {
+      "bbox": [
+        688,
+        551,
+        1489,
+        784
+      ],
+      "category": "Title",
+      "text": "VENDORS OF DATA PROCESSING SERVICES\n\n---\n\nA Partial List",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4566,
+          "min": -1.8579
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0506,
+          "min": -0.0506
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.0444,
+          "min": -0.719
+        }
+      },
+      "ink": {
+        "ink_px": 10678,
+        "area_px": 188370,
+        "density": 0.05669,
+        "chars": 56,
+        "chars_per_1k_ink": 5.24
+      }
+    },
+    {
+      "bbox": [
+        948,
+        1151,
+        1226,
+        1290
+      ],
+      "category": "Text",
+      "text": "by\n\nDavid Berger",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3468,
+          "min": -1.77
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0875,
+          "min": -0.4307
+        }
+      },
+      "ink": {
+        "ink_px": 2576,
+        "area_px": 39200,
+        "density": 0.06571,
+        "chars": 16,
+        "chars_per_1k_ink": 6.21
+      }
+    },
+    {
+      "bbox": [
+        745,
+        1604,
+        1432,
+        1648
+      ],
+      "category": "Text",
+      "text": "Under the General Direction of",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3116,
+          "min": -1.6995
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0,
+          "min": -0.0001
+        }
+      },
+      "ink": {
+        "ink_px": 5246,
+        "area_px": 31095,
+        "density": 0.16871,
+        "chars": 30,
+        "chars_per_1k_ink": 5.72
+      }
+    },
+    {
+      "bbox": [
+        818,
+        1738,
+        1386,
+        1832
+      ],
+      "category": "Text",
+      "text": "E. S. Savas\nDeputy City Administrator",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2804,
+          "min": -1.3779
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0001,
+          "min": -0.0007
+        }
+      },
+      "ink": {
+        "ink_px": 6422,
+        "area_px": 54245,
+        "density": 0.11839,
+        "chars": 37,
+        "chars_per_1k_ink": 5.76
+      }
+    },
+    {
+      "bbox": [
+        752,
+        2290,
+        1461,
+        2480
+      ],
+      "category": "Text",
+      "text": "Office of the Mayor\nOffice of Administration\nTimothy W. Costello\nDeputy Mayor-City Administrator",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2829,
+          "min": -1.4331
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.0001,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 16148,
+        "area_px": 136896,
+        "density": 0.11796,
+        "chars": 96,
+        "chars_per_1k_ink": 5.95
+      }
+    },
+    {
+      "bbox": [
+        960,
+        2749,
+        1193,
+        2796
+      ],
+      "category": "Text",
+      "text": "June, 1969",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.277,
+          "min": -1.5108
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0009,
+          "min": -0.0009
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0,
+          "min": -0.0001
+        }
+      },
+      "ink": {
+        "ink_px": 1641,
+        "area_px": 11515,
+        "density": 0.14251,
+        "chars": 10,
+        "chars_per_1k_ink": 6.09
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 290,
+    "content": {
+      "n_tokens": 67,
+      "mean": -0.0178,
+      "min": -0.719,
+      "p05": -0.0088,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 4421,
+          "logprob": -0.719,
+          "text": "---"
+        },
+        {
+          "index": 91,
+          "token_id": 1699,
+          "logprob": -0.4307,
+          "text": "\\n"
+        },
+        {
+          "index": 35,
+          "token_id": 53,
+          "logprob": -0.0187,
+          "text": "V"
+        },
+        {
+          "index": 44,
+          "token_id": 1699,
+          "logprob": -0.0097,
+          "text": "\\n"
+        },
+        {
+          "index": 92,
+          "token_id": 22286,
+          "logprob": -0.0068,
+          "text": "David"
+        },
+        {
+          "index": 49,
+          "token_id": 32,
+          "logprob": -0.0022,
+          "text": "A"
+        },
+        {
+          "index": 42,
+          "token_id": 25633,
+          "logprob": -0.0018,
+          "text": " SERVICES"
+        },
+        {
+          "index": 36,
+          "token_id": 4689,
+          "logprob": -0.0015,
+          "text": "END"
+        },
+        {
+          "index": 48,
+          "token_id": 1699,
+          "logprob": -0.0009,
+          "text": "\\n"
+        },
+        {
+          "index": 177,
+          "token_id": 20079,
+          "logprob": -0.0007,
+          "text": " Sav"
+        },
+        {
+          "index": 230,
+          "token_id": 20217,
+          "logprob": -0.0005,
+          "text": "Tim"
+        },
+        {
+          "index": 50,
+          "token_id": 24552,
+          "logprob": -0.0003,
+          "text": " Partial"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 130,
+      "mean": -0.3092,
+      "min": -1.8579,
+      "p05": -1.5235,
+      "p50": -0.0005,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.8579,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.7879,
+          "text": "8"
+        },
+        {
+          "index": 65,
+          "token_id": 16,
+          "logprob": -1.77,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.7173,
+          "text": "1"
+        },
+        {
+          "index": 107,
+          "token_id": 19,
+          "logprob": -1.6995,
+          "text": "4"
+        },
+        {
+          "index": 71,
+          "token_id": 21,
+          "logprob": -1.6619,
+          "text": "6"
+        },
+        {
+          "index": 101,
+          "token_id": 20,
+          "logprob": -1.5339,
+          "text": "5"
+        },
+        {
+          "index": 262,
+          "token_id": 18,
+          "logprob": -1.5108,
+          "text": "3"
+        },
+        {
+          "index": 113,
+          "token_id": 17,
+          "logprob": -1.4588,
+          "text": "2"
+        },
+        {
+          "index": 59,
+          "token_id": 23,
+          "logprob": -1.4536,
+          "text": "8"
+        },
+        {
+          "index": 191,
+          "token_id": 17,
+          "logprob": -1.4331,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 24,
+          "logprob": -1.3794,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 290,
+      "mean": -0.1435,
+      "min": -1.8579,
+      "p05": -1.3053,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.44,
+    "std": 12.2,
+    "dark_fraction": 0.00896
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      920.64,
+      1161.6
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      306,
+      387,
+      2251,
+      2839
+    ],
+    "ink_px": 42711,
+    "covered_px": 42711,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

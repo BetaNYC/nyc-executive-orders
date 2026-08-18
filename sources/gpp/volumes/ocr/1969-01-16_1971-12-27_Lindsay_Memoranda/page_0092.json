@@ -1,0 +1,314 @@
+{
+  "page": 92,
+  "source_image": "page_0092.png",
+  "elements": [
+    {
+      "bbox": [
+        537,
+        471,
+        1981,
+        710
+      ],
+      "category": "Text",
+      "text": "of an RFP is Standard 05.20 of the New York City Data Processing Standards, available from the Office of Administration.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4868,
+          "min": -1.9408
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3493,
+          "min": -0.3493
+        },
+        "text": {
+          "n_tokens": 28,
+          "mean": -0.0106,
+          "min": -0.1358
+        }
+      },
+      "ink": {
+        "ink_px": 57,
+        "area_px": 348240,
+        "density": 0.00016,
+        "chars": 120,
+        "chars_per_1k_ink": 2105.26
+      }
+    },
+    {
+      "bbox": [
+        429,
+        751,
+        2125,
+        2277
+      ],
+      "category": "List-item",
+      "text": "2. The agency head should designate a panel of at least three persons as an evaluation panel to review the proposals submitted by contractors in response to the RFP. In many instances, it will be appropriate to include on the panel: representatives of the Budget Bureau and/or the Office of Administration who have experience and expertise in the subject matter of the RFP. The evaluation panel should rank the proposals in order of its preference after taking into account such factors as (a) responsiveness to the criteria and requirements set forth in the RFP, (b) qualifications of the proposed contractor, including prior experience and staff availability, and (c) anticipated cost to the City. In case the agency head declines to accept the recommendations of the evaluation panel, he should inform the Director of the Budget of his reasons for doing so and should describe the alternative method of selection he proposes to follow.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4227,
+          "min": -1.9819
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.003,
+          "min": -0.006
+        },
+        "text": {
+          "n_tokens": 174,
+          "mean": -0.0041,
+          "min": -0.5357
+        }
+      },
+      "ink": {
+        "ink_px": 1619,
+        "area_px": 2607120,
+        "density": 0.00062,
+        "chars": 938,
+        "chars_per_1k_ink": 579.37
+      }
+    },
+    {
+      "bbox": [
+        454,
+        2291,
+        2173,
+        2932
+      ],
+      "category": "List-item",
+      "text": "3. In cases where professional services are to be carried out under contract but where the RFP procedure is inappropriate for such reasons as (a) the scope of services cannot be sufficiently defined or detailed to allow preparation of an RFP, (b) the nature of the work is such as to require the professional ability or competence possessed by only a single individual or organization, or (c) the work is an",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3708,
+          "min": -2.003
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0002,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 82,
+          "mean": -0.0076,
+          "min": -0.5761
+        }
+      },
+      "ink": {
+        "ink_px": 481,
+        "area_px": 979818,
+        "density": 0.00049,
+        "chars": 407,
+        "chars_per_1k_ink": 846.15
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 397,
+    "content": {
+      "n_tokens": 284,
+      "mean": -0.0057,
+      "min": -0.5761,
+      "p05": -0.0047,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 369,
+          "token_id": 438,
+          "logprob": -0.5761,
+          "text": " as"
+        },
+        {
+          "index": 145,
+          "token_id": 25,
+          "logprob": -0.5357,
+          "text": ":"
+        },
+        {
+          "index": 47,
+          "token_id": 315,
+          "logprob": -0.1358,
+          "text": " of"
+        },
+        {
+          "index": 53,
+          "token_id": 28125,
+          "logprob": -0.1133,
+          "text": " Processing"
+        },
+        {
+          "index": 214,
+          "token_id": 11,
+          "logprob": -0.0433,
+          "text": ","
+        },
+        {
+          "index": 190,
+          "token_id": 320,
+          "logprob": -0.0382,
+          "text": " ("
+        },
+        {
+          "index": 338,
+          "token_id": 320,
+          "logprob": -0.0348,
+          "text": " ("
+        },
+        {
+          "index": 61,
+          "token_id": 16713,
+          "logprob": -0.0254,
+          "text": " Administration"
+        },
+        {
+          "index": 151,
+          "token_id": 323,
+          "logprob": -0.0155,
+          "text": " and"
+        },
+        {
+          "index": 189,
+          "token_id": 438,
+          "logprob": -0.0138,
+          "text": " as"
+        },
+        {
+          "index": 146,
+          "token_id": 23130,
+          "logprob": -0.0116,
+          "text": " representatives"
+        },
+        {
+          "index": 230,
+          "token_id": 4311,
+          "logprob": -0.0099,
+          "text": " City"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 65,
+      "mean": -0.3977,
+      "min": -2.003,
+      "p05": -1.834,
+      "p50": -0.0027,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 293,
+          "token_id": 18,
+          "logprob": -2.003,
+          "text": "3"
+        },
+        {
+          "index": 81,
+          "token_id": 20,
+          "logprob": -1.9819,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.9408,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 15,
+          "logprob": -1.8504,
+          "text": "0"
+        },
+        {
+          "index": 299,
+          "token_id": 17,
+          "logprob": -1.768,
+          "text": "2"
+        },
+        {
+          "index": 281,
+          "token_id": 19,
+          "logprob": -1.7581,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.7431,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.7356,
+          "text": "1"
+        },
+        {
+          "index": 75,
+          "token_id": 16,
+          "logprob": -1.6737,
+          "text": "1"
+        },
+        {
+          "index": 287,
+          "token_id": 16,
+          "logprob": -1.6162,
+          "text": "1"
+        },
+        {
+          "index": 87,
+          "token_id": 22,
+          "logprob": -1.5329,
+          "text": "7"
+        },
+        {
+          "index": 70,
+          "token_id": 24,
+          "logprob": -1.3942,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 397,
+      "mean": -0.0701,
+      "min": -2.003,
+      "p05": -0.3665,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.36,
+    "std": 11.9,
+    "dark_fraction": 0.00047
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      890.4,
+      1171.68
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      296,
+      390,
+      2177,
+      2864
+    ],
+    "ink_px": 2183,
+    "covered_px": 2157,
+    "covered_fraction": 0.98809,
+    "uncovered_px": 26,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

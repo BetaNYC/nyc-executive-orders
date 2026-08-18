@@ -1,0 +1,339 @@
+{
+  "page": 36,
+  "source_image": "page_0036.png",
+  "elements": [
+    {
+      "bbox": [
+        198,
+        891,
+        2600,
+        3362
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.7186,
+          "min": -2.1939
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0148,
+          "min": -0.0148
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1290507,
+        "area_px": 26134640,
+        "density": 0.04938,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        2404,
+        977,
+        2571,
+        2936
+      ],
+      "category": "Caption",
+      "text": "Pilot study shows progress in community service plan\n\nCommunity service branch",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4954,
+          "min": -2.0192
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.4948,
+          "min": -0.4948
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -1.3411,
+          "min": -2.8158
+        }
+      },
+      "ink": {
+        "ink_px": 8951,
+        "area_px": 346810,
+        "density": 0.02581,
+        "chars": 78,
+        "chars_per_1k_ink": 8.71
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 85,
+    "content": {
+      "n_tokens": 14,
+      "mean": -1.3411,
+      "min": -2.8158,
+      "p05": -2.7727,
+      "p50": -1.1282,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 79,
+          "token_id": 33768,
+          "logprob": -2.8158,
+          "text": "Community"
+        },
+        {
+          "index": 71,
+          "token_id": 4933,
+          "logprob": -2.7496,
+          "text": " shows"
+        },
+        {
+          "index": 75,
+          "token_id": 2473,
+          "logprob": -2.375,
+          "text": " service"
+        },
+        {
+          "index": 72,
+          "token_id": 5098,
+          "logprob": -1.9182,
+          "text": " progress"
+        },
+        {
+          "index": 76,
+          "token_id": 3119,
+          "logprob": -1.26,
+          "text": " plan"
+        },
+        {
+          "index": 80,
+          "token_id": 2473,
+          "logprob": -1.185,
+          "text": " service"
+        },
+        {
+          "index": 73,
+          "token_id": 304,
+          "logprob": -1.1377,
+          "text": " in"
+        },
+        {
+          "index": 74,
+          "token_id": 3942,
+          "logprob": -1.1187,
+          "text": " community"
+        },
+        {
+          "index": 77,
+          "token_id": 1699,
+          "logprob": -1.1159,
+          "text": "\\n"
+        },
+        {
+          "index": 81,
+          "token_id": 8870,
+          "logprob": -1.0971,
+          "text": " branch"
+        },
+        {
+          "index": 70,
+          "token_id": 3920,
+          "logprob": -0.6616,
+          "text": " study"
+        },
+        {
+          "index": 68,
+          "token_id": 47,
+          "logprob": -0.6293,
+          "text": "P"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 43,
+      "mean": -0.5881,
+      "min": -2.1939,
+      "p05": -2.0327,
+      "p50": -0.2543,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 24,
+          "token_id": 17,
+          "logprob": -2.1939,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -2.1387,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -2.0342,
+          "text": "8"
+        },
+        {
+          "index": 39,
+          "token_id": 19,
+          "logprob": -2.0192,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.9889,
+          "text": "0"
+        },
+        {
+          "index": 50,
+          "token_id": 16,
+          "logprob": -1.9838,
+          "text": "1"
+        },
+        {
+          "index": 44,
+          "token_id": 22,
+          "logprob": -1.9469,
+          "text": "7"
+        },
+        {
+          "index": 56,
+          "token_id": 21,
+          "logprob": -1.8889,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 15,
+          "logprob": -1.4287,
+          "text": "0"
+        },
+        {
+          "index": 16,
+          "token_id": 21,
+          "logprob": -0.972,
+          "text": "6"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -0.7985,
+          "text": "6"
+        },
+        {
+          "index": 22,
+          "token_id": 18,
+          "logprob": -0.6801,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 85,
+      "mean": -0.5381,
+      "min": -2.8158,
+      "p05": -2.1178,
+      "p50": -0.0191,
+      "n_below_threshold": 7
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 161.46,
+    "std": 22.51,
+    "dark_fraction": 0.0406
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      2235.75,
+      3274.5
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      745,
+      1091,
+      5465,
+      8004
+    ],
+    "ink_px": 1324793,
+    "covered_px": 1290507,
+    "covered_fraction": 0.97412,
+    "uncovered_px": 34286,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          745,
+          1475,
+          5449,
+          1667
+        ],
+        "ink_px": 23247
+      },
+      {
+        "bbox": [
+          4105,
+          7787,
+          5401,
+          7883
+        ],
+        "ink_px": 3619
+      },
+      {
+        "bbox": [
+          2545,
+          7715,
+          3289,
+          7787
+        ],
+        "ink_px": 1938
+      },
+      {
+        "bbox": [
+          3313,
+          7763,
+          3865,
+          7811
+        ],
+        "ink_px": 1382
+      },
+      {
+        "bbox": [
+          2017,
+          7715,
+          2521,
+          7763
+        ],
+        "ink_px": 1330
+      },
+      {
+        "bbox": [
+          1633,
+          7691,
+          1993,
+          7739
+        ],
+        "ink_px": 934
+      },
+      {
+        "bbox": [
+          3865,
+          7787,
+          4081,
+          7811
+        ],
+        "ink_px": 502
+      }
+    ],
+    "cell_px": 24
+  }
+}

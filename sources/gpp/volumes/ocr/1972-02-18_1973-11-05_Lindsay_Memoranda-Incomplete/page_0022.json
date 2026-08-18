@@ -1,0 +1,411 @@
+{
+  "page": 22,
+  "source_image": "page_0022.png",
+  "elements": [
+    {
+      "bbox": [
+        1069,
+        261,
+        1351,
+        571
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.411,
+          "min": -1.7412
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0103,
+          "min": -0.0103
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 605,
+        "area_px": 45315,
+        "density": 0.01335,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        909,
+        596,
+        1472,
+        743
+      ],
+      "category": "Text",
+      "text": "THE CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK, N.Y. 10007",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4238,
+          "min": -1.9316
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1274,
+          "min": -0.1274
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0018,
+          "min": -0.043
+        }
+      },
+      "ink": {
+        "ink_px": 2355,
+        "area_px": 83202,
+        "density": 0.0283,
+        "chars": 61,
+        "chars_per_1k_ink": 25.9
+      }
+    },
+    {
+      "bbox": [
+        116,
+        844,
+        455,
+        923
+      ],
+      "category": "Text",
+      "text": "DEWAR K. HAMILTON\nGENERAL MAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.5556,
+          "min": -2.0937
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.7793,
+          "min": -2.3526
+        }
+      },
+      "ink": {
+        "ink_px": 214,
+        "area_px": 11600,
+        "density": 0.01845,
+        "chars": 31,
+        "chars_per_1k_ink": 144.86
+      }
+    },
+    {
+      "bbox": [
+        466,
+        984,
+        1776,
+        1325
+      ],
+      "category": "Text",
+      "text": "TO: ALL AGENCIES\n\nFROM: EDWARD K. HAMILTON 3/13/72\n\nRE: Change in Procedure for Approval of Travel Requests",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4439,
+          "min": -1.8652
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0024,
+          "min": -0.0024
+        },
+        "text": {
+          "n_tokens": 38,
+          "mean": -0.0363,
+          "min": -0.5236
+        }
+      },
+      "ink": {
+        "ink_px": 2932,
+        "area_px": 449097,
+        "density": 0.00653,
+        "chars": 107,
+        "chars_per_1k_ink": 36.49
+      }
+    },
+    {
+      "bbox": [
+        460,
+        1547,
+        1890,
+        1947
+      ],
+      "category": "Text",
+      "text": "Effective immediately, all requests for approval of travel expenses should be sent to the Director of the Budget. Only those involving expenses over $500 will be reviewed by the Deputy Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.35,
+          "min": -1.5214
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 37,
+          "mean": -0.0008,
+          "min": -0.0298
+        }
+      },
+      "ink": {
+        "ink_px": 2412,
+        "area_px": 573363,
+        "density": 0.00421,
+        "chars": 191,
+        "chars_per_1k_ink": 79.19
+      }
+    },
+    {
+      "bbox": [
+        469,
+        2370,
+        528,
+        2423
+      ],
+      "category": "Text",
+      "text": "/S",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3199,
+          "min": -1.5074
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.079,
+          "min": -0.079
+        },
+        "text": {
+          "n_tokens": 2,
+          "mean": -0.0065,
+          "min": -0.0126
+        }
+      },
+      "ink": {
+        "ink_px": 146,
+        "area_px": 3240,
+        "density": 0.04506,
+        "chars": 2,
+        "chars_per_1k_ink": 13.7
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 325,
+    "content": {
+      "n_tokens": 114,
+      "mean": -0.0949,
+      "min": -2.3526,
+      "p05": -0.4131,
+      "p50": -0.0,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 134,
+          "token_id": 94736,
+          "logprob": -2.3526,
+          "text": "GENERAL"
+        },
+        {
+          "index": 126,
+          "token_id": 54,
+          "logprob": -1.9685,
+          "text": "W"
+        },
+        {
+          "index": 127,
+          "token_id": 934,
+          "logprob": -1.9302,
+          "text": "AR"
+        },
+        {
+          "index": 125,
+          "token_id": 1150,
+          "logprob": -1.6546,
+          "text": "DE"
+        },
+        {
+          "index": 128,
+          "token_id": 730,
+          "logprob": -1.0058,
+          "text": " K"
+        },
+        {
+          "index": 209,
+          "token_id": 18097,
+          "logprob": -0.5236,
+          "text": " Travel"
+        },
+        {
+          "index": 176,
+          "token_id": 362,
+          "logprob": -0.3537,
+          "text": " A"
+        },
+        {
+          "index": 135,
+          "token_id": 39230,
+          "logprob": -0.3473,
+          "text": " MAY"
+        },
+        {
+          "index": 181,
+          "token_id": 1699,
+          "logprob": -0.2257,
+          "text": "\\n"
+        },
+        {
+          "index": 191,
+          "token_id": 220,
+          "logprob": -0.2148,
+          "text": " "
+        },
+        {
+          "index": 131,
+          "token_id": 40651,
+          "logprob": -0.0771,
+          "text": "AMIL"
+        },
+        {
+          "index": 83,
+          "token_id": 7507,
+          "logprob": -0.043,
+          "text": ".Y"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 124,
+      "mean": -0.3961,
+      "min": -2.0937,
+      "p05": -1.7666,
+      "p50": -0.0048,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 98,
+          "token_id": 21,
+          "logprob": -2.0937,
+          "text": "6"
+        },
+        {
+          "index": 49,
+          "token_id": 17,
+          "logprob": -1.9316,
+          "text": "2"
+        },
+        {
+          "index": 149,
+          "token_id": 19,
+          "logprob": -1.8652,
+          "text": "4"
+        },
+        {
+          "index": 144,
+          "token_id": 21,
+          "logprob": -1.8599,
+          "text": "6"
+        },
+        {
+          "index": 43,
+          "token_id": 21,
+          "logprob": -1.8566,
+          "text": "6"
+        },
+        {
+          "index": 103,
+          "token_id": 19,
+          "logprob": -1.8045,
+          "text": "4"
+        },
+        {
+          "index": 161,
+          "token_id": 20,
+          "logprob": -1.7709,
+          "text": "5"
+        },
+        {
+          "index": 54,
+          "token_id": 18,
+          "logprob": -1.7424,
+          "text": "3"
+        },
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.7412,
+          "text": "1"
+        },
+        {
+          "index": 97,
+          "token_id": 16,
+          "logprob": -1.7337,
+          "text": "1"
+        },
+        {
+          "index": 19,
+          "token_id": 16,
+          "logprob": -1.7135,
+          "text": "1"
+        },
+        {
+          "index": 155,
+          "token_id": 21,
+          "logprob": -1.7079,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 325,
+      "mean": -0.1846,
+      "min": -2.3526,
+      "p05": -1.6802,
+      "p50": -0.0,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 185.7,
+    "std": 9.59,
+    "dark_fraction": 0.00175
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      941.52,
+      1235.76
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      313,
+      411,
+      2302,
+      3021
+    ],
+    "ink_px": 9075,
+    "covered_px": 8664,
+    "covered_fraction": 0.95471,
+    "uncovered_px": 411,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

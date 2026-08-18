@@ -1,0 +1,308 @@
+{
+  "page": 153,
+  "source_image": "page_0153.png",
+  "elements": [
+    {
+      "bbox": [
+        1057,
+        330,
+        1197,
+        375
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4411,
+          "min": -1.8816
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0042,
+          "min": -0.0083
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0506,
+          "min": -0.1801
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        366,
+        551,
+        1981,
+        1800
+      ],
+      "category": "Text",
+      "text": "Section 1. In addition to the City Charter and Administrative Code relating to conflict of interest and other applicable provisions of law, all Administrators, Deputy Administrators, Assistant Administrators, Commissioners, Deputy Commissioners, departmental Counsel, members of the Mayor's executive and personal staff and salaried full-time Chairman of City Commissions, who are licensed to engage in or practice a profession, shall be prohibited from in any way engaging in the private practice of their respective professions during their term of service for the City. However, this shall not preclude any of the above from teaching, writing, or accepting occasional lecture engagements on their own time; provided that these activities do not interfere with their duties.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4525,
+          "min": -2.0006
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0036,
+          "min": -0.0036
+        },
+        "text": {
+          "n_tokens": 140,
+          "mean": -0.0018,
+          "min": -0.1481
+        }
+      },
+      "ink": {
+        "ink_px": 49588,
+        "area_px": 2019633,
+        "density": 0.02455,
+        "chars": 776,
+        "chars_per_1k_ink": 15.65
+      }
+    },
+    {
+      "bbox": [
+        375,
+        1880,
+        1925,
+        2496
+      ],
+      "category": "Text",
+      "text": "Section 2. In order to effectively carry out the policy set forth in Section 1, all persons holding positions enumerated therein, shall remove, or cause to be removed, his name from any private firm or company listing, directory, circular, card or stationery, which shall identify him as a present member of such firm or company.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.385,
+          "min": -1.9227
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 68,
+          "mean": -0.0001,
+          "min": -0.0016
+        }
+      },
+      "ink": {
+        "ink_px": 23208,
+        "area_px": 956032,
+        "density": 0.02428,
+        "chars": 329,
+        "chars_per_1k_ink": 14.18
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 323,
+    "content": {
+      "n_tokens": 212,
+      "mean": -0.0021,
+      "min": -0.1801,
+      "p05": -0.0015,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 37,
+          "token_id": 220,
+          "logprob": -0.1801,
+          "text": " "
+        },
+        {
+          "index": 76,
+          "token_id": 9620,
+          "logprob": -0.1481,
+          "text": "Section"
+        },
+        {
+          "index": 113,
+          "token_id": 96245,
+          "logprob": -0.0335,
+          "text": " Commissioners"
+        },
+        {
+          "index": 132,
+          "token_id": 4274,
+          "logprob": -0.0242,
+          "text": " sal"
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.0212,
+          "text": " \"-"
+        },
+        {
+          "index": 158,
+          "token_id": 304,
+          "logprob": -0.0113,
+          "text": " in"
+        },
+        {
+          "index": 86,
+          "token_id": 323,
+          "logprob": -0.0111,
+          "text": " and"
+        },
+        {
+          "index": 79,
+          "token_id": 13,
+          "logprob": -0.0059,
+          "text": "."
+        },
+        {
+          "index": 122,
+          "token_id": 3613,
+          "logprob": -0.0032,
+          "text": " members"
+        },
+        {
+          "index": 260,
+          "token_id": 13444,
+          "logprob": -0.0016,
+          "text": " effectively"
+        },
+        {
+          "index": 185,
+          "token_id": 857,
+          "logprob": -0.0016,
+          "text": "clude"
+        },
+        {
+          "index": 196,
+          "token_id": 24667,
+          "logprob": -0.0015,
+          "text": " accepting"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 65,
+      "mean": -0.3996,
+      "min": -2.0006,
+      "p05": -1.9055,
+      "p50": -0.0005,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 47,
+          "token_id": 21,
+          "logprob": -2.0006,
+          "text": "6"
+        },
+        {
+          "index": 58,
+          "token_id": 16,
+          "logprob": -1.9306,
+          "text": "1"
+        },
+        {
+          "index": 235,
+          "token_id": 20,
+          "logprob": -1.9227,
+          "text": "5"
+        },
+        {
+          "index": 52,
+          "token_id": 16,
+          "logprob": -1.9115,
+          "text": "1"
+        },
+        {
+          "index": 24,
+          "token_id": 20,
+          "logprob": -1.8816,
+          "text": "5"
+        },
+        {
+          "index": 223,
+          "token_id": 20,
+          "logprob": -1.8811,
+          "text": "5"
+        },
+        {
+          "index": 8,
+          "token_id": 22,
+          "logprob": -1.8689,
+          "text": "7"
+        },
+        {
+          "index": 241,
+          "token_id": 21,
+          "logprob": -1.7817,
+          "text": "6"
+        },
+        {
+          "index": 229,
+          "token_id": 15,
+          "logprob": -1.765,
+          "text": "0"
+        },
+        {
+          "index": 19,
+          "token_id": 22,
+          "logprob": -1.6857,
+          "text": "7"
+        },
+        {
+          "index": 64,
+          "token_id": 15,
+          "logprob": -1.6175,
+          "text": "0"
+        },
+        {
+          "index": 13,
+          "token_id": 15,
+          "logprob": -1.5409,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 323,
+      "mean": -0.084,
+      "min": -2.0006,
+      "p05": -0.4646,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.76,
+    "std": 17.51,
+    "dark_fraction": 0.01605
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      877.44,
+      1159.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      292,
+      386,
+      2145,
+      2833
+    ],
+    "ink_px": 72796,
+    "covered_px": 72796,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

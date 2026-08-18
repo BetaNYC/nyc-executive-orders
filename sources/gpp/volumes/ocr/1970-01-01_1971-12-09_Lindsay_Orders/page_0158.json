@@ -1,0 +1,343 @@
+{
+  "page": 158,
+  "source_image": "page_0158.png",
+  "elements": [
+    {
+      "bbox": [
+        181,
+        256,
+        1253,
+        341
+      ],
+      "category": "Text",
+      "text": "enforcement of this order consistent with its powers granted under\nExecutive Order 71.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3724,
+          "min": -1.6959
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 18,
+          "mean": -0.0198,
+          "min": -0.3508
+        }
+      },
+      "ink": {
+        "ink_px": 6,
+        "area_px": 90780,
+        "density": 7e-05,
+        "chars": 86,
+        "chars_per_1k_ink": 14333.33
+      }
+    },
+    {
+      "bbox": [
+        263,
+        371,
+        990,
+        404
+      ],
+      "category": "Text",
+      "text": "85: This order shall take effect in 60 days.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4498,
+          "min": -1.8483
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0287,
+          "min": -0.362
+        }
+      },
+      "ink": {
+        "ink_px": 8,
+        "area_px": 24650,
+        "density": 0.00032,
+        "chars": 44,
+        "chars_per_1k_ink": 5500.0
+      }
+    },
+    {
+      "bbox": [
+        735,
+        466,
+        1394,
+        743
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.5097,
+          "min": -2.1091
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.03,
+          "min": -0.03
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 24,
+        "area_px": 143520,
+        "density": 0.00017,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        944,
+        618,
+        1185,
+        670
+      ],
+      "category": "Caption",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2854,
+          "min": -1.3884
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.387,
+          "min": -0.387
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0088,
+          "min": -0.1004
+        }
+      },
+      "ink": {
+        "ink_px": 12,
+        "area_px": 12532,
+        "density": 0.00096,
+        "chars": 21,
+        "chars_per_1k_ink": 1750.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 181,
+    "content": {
+      "n_tokens": 44,
+      "mean": -0.0196,
+      "min": -0.362,
+      "p05": -0.0893,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 87,
+          "token_id": 23,
+          "logprob": -0.362,
+          "text": "8"
+        },
+        {
+          "index": 46,
+          "token_id": 1699,
+          "logprob": -0.3508,
+          "text": "\\n"
+        },
+        {
+          "index": 176,
+          "token_id": 3022,
+          "logprob": -0.1004,
+          "text": "AY"
+        },
+        {
+          "index": 100,
+          "token_id": 1189,
+          "logprob": -0.0263,
+          "text": ".\""
+        },
+        {
+          "index": 89,
+          "token_id": 25,
+          "logprob": -0.0126,
+          "text": ":"
+        },
+        {
+          "index": 174,
+          "token_id": 1699,
+          "logprob": -0.0028,
+          "text": "\\n"
+        },
+        {
+          "index": 47,
+          "token_id": 72618,
+          "logprob": -0.0015,
+          "text": "Executive"
+        },
+        {
+          "index": 52,
+          "token_id": 1189,
+          "logprob": -0.0014,
+          "text": ".\""
+        },
+        {
+          "index": 166,
+          "token_id": 26145,
+          "logprob": -0.0012,
+          "text": "JO"
+        },
+        {
+          "index": 36,
+          "token_id": 10927,
+          "logprob": -0.0008,
+          "text": "forcement"
+        },
+        {
+          "index": 169,
+          "token_id": 13,
+          "logprob": -0.0006,
+          "text": "."
+        },
+        {
+          "index": 41,
+          "token_id": 448,
+          "logprob": -0.0005,
+          "text": " with"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 79,
+      "mean": -0.3886,
+      "min": -2.1091,
+      "p05": -1.6984,
+      "p50": -0.0033,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 119,
+          "token_id": 19,
+          "logprob": -2.1091,
+          "text": "4"
+        },
+        {
+          "index": 108,
+          "token_id": 20,
+          "logprob": -1.8515,
+          "text": "5"
+        },
+        {
+          "index": 70,
+          "token_id": 15,
+          "logprob": -1.8483,
+          "text": "0"
+        },
+        {
+          "index": 60,
+          "token_id": 18,
+          "logprob": -1.7208,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.6959,
+          "text": "3"
+        },
+        {
+          "index": 118,
+          "token_id": 24,
+          "logprob": -1.673,
+          "text": "9"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.6538,
+          "text": "6"
+        },
+        {
+          "index": 75,
+          "token_id": 19,
+          "logprob": -1.5882,
+          "text": "4"
+        },
+        {
+          "index": 124,
+          "token_id": 18,
+          "logprob": -1.5671,
+          "text": "3"
+        },
+        {
+          "index": 113,
+          "token_id": 21,
+          "logprob": -1.5309,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.4967,
+          "text": "1"
+        },
+        {
+          "index": 149,
+          "token_id": 20,
+          "logprob": -1.3884,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 181,
+      "mean": -0.1761,
+      "min": -2.1091,
+      "p05": -1.5309,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.05,
+    "std": 7.38,
+    "dark_fraction": 2e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      671.04,
+      511.92
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      170,
+      223,
+      1251,
+      1640
+    ],
+    "ink_px": 38,
+    "covered_px": 38,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

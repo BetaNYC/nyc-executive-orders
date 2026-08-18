@@ -1,0 +1,439 @@
+{
+  "page": 100,
+  "source_image": "page_0100.png",
+  "elements": [
+    {
+      "bbox": [
+        548,
+        67,
+        589,
+        87
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.3376,
+          "min": -1.2883
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0019,
+          "min": -0.0037
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0064,
+          "min": -0.0186
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        233,
+        154,
+        934,
+        267
+      ],
+      "category": "List-item",
+      "text": "§2. All processing backlogs in all agencies be eliminated and workloads reduced to current status by July 30, 1970;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2873,
+          "min": -1.3906
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 31,
+          "mean": -0.001,
+          "min": -0.0127
+        }
+      },
+      "ink": {
+        "ink_px": 253,
+        "area_px": 63090,
+        "density": 0.00401,
+        "chars": 115,
+        "chars_per_1k_ink": 454.55
+      }
+    },
+    {
+      "bbox": [
+        233,
+        286,
+        1000,
+        441
+      ],
+      "category": "List-item",
+      "text": "§3. The Director of the Bureau of the Budget is authorized to approve overtime requests in conformity with existing City policy as required to accomplish this end;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2161,
+          "min": -1.1735
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 30,
+          "mean": -0.0027,
+          "min": -0.0801
+        }
+      },
+      "ink": {
+        "ink_px": 268,
+        "area_px": 119652,
+        "density": 0.00224,
+        "chars": 163,
+        "chars_per_1k_ink": 608.21
+      }
+    },
+    {
+      "bbox": [
+        235,
+        463,
+        998,
+        575
+      ],
+      "category": "List-item",
+      "text": "§4. All City agencies cooperate with and comply with the directives issued by the joint Mayor-Comptroller task force.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2614,
+          "min": -1.2096
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0007,
+          "min": -0.0072
+        }
+      },
+      "ink": {
+        "ink_px": 162,
+        "area_px": 86219,
+        "density": 0.00188,
+        "chars": 117,
+        "chars_per_1k_ink": 722.22
+      }
+    },
+    {
+      "bbox": [
+        235,
+        597,
+        901,
+        623
+      ],
+      "category": "List-item",
+      "text": "§5. This order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2508,
+          "min": -1.1825
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0001,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 46,
+        "area_px": 17982,
+        "density": 0.00256,
+        "chars": 45,
+        "chars_per_1k_ink": 978.26
+      }
+    },
+    {
+      "bbox": [
+        634,
+        661,
+        998,
+        797
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3526,
+          "min": -1.5476
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0043,
+          "min": -0.0043
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 426,
+        "area_px": 50005,
+        "density": 0.00852,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        731,
+        748,
+        930,
+        793
+      ],
+      "category": "Caption",
+      "text": "John V. Lindsay\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2322,
+          "min": -1.0143
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0182,
+          "min": -0.0182
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0032,
+          "min": -0.0077
+        }
+      },
+      "ink": {
+        "ink_px": 75,
+        "area_px": 9200,
+        "density": 0.00815,
+        "chars": 21,
+        "chars_per_1k_ink": 280.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 344,
+    "content": {
+      "n_tokens": 105,
+      "mean": -0.0016,
+      "min": -0.0801,
+      "p05": -0.0072,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 161,
+          "token_id": 2567,
+          "logprob": -0.0801,
+          "text": " required"
+        },
+        {
+          "index": 32,
+          "token_id": 6523,
+          "logprob": -0.0186,
+          "text": " \"-"
+        },
+        {
+          "index": 70,
+          "token_id": 17851,
+          "logprob": -0.0127,
+          "text": "§"
+        },
+        {
+          "index": 75,
+          "token_id": 1182,
+          "logprob": -0.0098,
+          "text": " back"
+        },
+        {
+          "index": 340,
+          "token_id": 85574,
+          "logprob": -0.0077,
+          "text": "Mayor"
+        },
+        {
+          "index": 219,
+          "token_id": 22093,
+          "logprob": -0.0072,
+          "text": " Mayor"
+        },
+        {
+          "index": 339,
+          "token_id": 1699,
+          "logprob": -0.007,
+          "text": "\\n"
+        },
+        {
+          "index": 81,
+          "token_id": 33273,
+          "logprob": -0.0056,
+          "text": " eliminated"
+        },
+        {
+          "index": 221,
+          "token_id": 1092,
+          "logprob": -0.0042,
+          "text": "Com"
+        },
+        {
+          "index": 338,
+          "token_id": 62784,
+          "logprob": -0.0033,
+          "text": " Lindsay"
+        },
+        {
+          "index": 220,
+          "token_id": 12,
+          "logprob": -0.0021,
+          "text": "-"
+        },
+        {
+          "index": 85,
+          "token_id": 11046,
+          "logprob": -0.001,
+          "text": " reduced"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 137,
+      "mean": -0.2515,
+      "min": -1.5476,
+      "p05": -1.2105,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 279,
+          "token_id": 19,
+          "logprob": -1.5476,
+          "text": "4"
+        },
+        {
+          "index": 289,
+          "token_id": 23,
+          "logprob": -1.4627,
+          "text": "8"
+        },
+        {
+          "index": 47,
+          "token_id": 19,
+          "logprob": -1.3906,
+          "text": "4"
+        },
+        {
+          "index": 52,
+          "token_id": 19,
+          "logprob": -1.373,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.2883,
+          "text": "8"
+        },
+        {
+          "index": 11,
+          "token_id": 22,
+          "logprob": -1.269,
+          "text": "7"
+        },
+        {
+          "index": 42,
+          "token_id": 18,
+          "logprob": -1.2139,
+          "text": "3"
+        },
+        {
+          "index": 174,
+          "token_id": 20,
+          "logprob": -1.2096,
+          "text": "5"
+        },
+        {
+          "index": 244,
+          "token_id": 16,
+          "logprob": -1.1825,
+          "text": "1"
+        },
+        {
+          "index": 113,
+          "token_id": 21,
+          "logprob": -1.1735,
+          "text": "6"
+        },
+        {
+          "index": 294,
+          "token_id": 22,
+          "logprob": -1.1714,
+          "text": "7"
+        },
+        {
+          "index": 249,
+          "token_id": 18,
+          "logprob": -1.1457,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 344,
+      "mean": -0.1007,
+      "min": -1.5476,
+      "p05": -1.0131,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 164.48,
+    "std": 9.52,
+    "dark_fraction": 0.00115
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      534.48,
+      422.64
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      140,
+      178,
+      1033,
+      1306
+    ],
+    "ink_px": 1155,
+    "covered_px": 1155,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

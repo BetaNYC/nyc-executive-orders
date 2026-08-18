@@ -1,0 +1,269 @@
+{
+  "page": 241,
+  "source_image": "page_0241.png",
+  "elements": [
+    {
+      "bbox": [
+        473,
+        1574,
+        700,
+        1639
+      ],
+      "category": "Text",
+      "text": "NEW AGE, 1921\nDANCE OF THE PRIDE\nDREAM OF NEW AGE",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4269,
+          "min": -2.1111
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0043,
+          "min": -0.0043
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.6786,
+          "min": -2.2753
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 11856,
+        "density": 0.0,
+        "chars": 49,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        527,
+        1651,
+        653,
+        1781
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2997,
+          "min": -1.527
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0015,
+          "min": -0.0015
+        },
+        "text": null
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 91,
+    "content": {
+      "n_tokens": 21,
+      "mean": -0.6786,
+      "min": -2.2753,
+      "p05": -1.8305,
+      "p50": -0.5133,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 49,
+          "token_id": 8575,
+          "logprob": -2.2753,
+          "text": " PR"
+        },
+        {
+          "index": 53,
+          "token_id": 15915,
+          "logprob": -1.8305,
+          "text": "REAM"
+        },
+        {
+          "index": 36,
+          "token_id": 20594,
+          "logprob": -1.3398,
+          "text": "NEW"
+        },
+        {
+          "index": 42,
+          "token_id": 17,
+          "logprob": -1.2214,
+          "text": "2"
+        },
+        {
+          "index": 37,
+          "token_id": 90588,
+          "logprob": -1.1327,
+          "text": " AGE"
+        },
+        {
+          "index": 39,
+          "token_id": 220,
+          "logprob": -0.9516,
+          "text": " "
+        },
+        {
+          "index": 52,
+          "token_id": 35,
+          "logprob": -0.7989,
+          "text": "D"
+        },
+        {
+          "index": 50,
+          "token_id": 12146,
+          "logprob": -0.796,
+          "text": "IDE"
+        },
+        {
+          "index": 43,
+          "token_id": 16,
+          "logprob": -0.7936,
+          "text": "1"
+        },
+        {
+          "index": 41,
+          "token_id": 24,
+          "logprob": -0.7481,
+          "text": "9"
+        },
+        {
+          "index": 46,
+          "token_id": 8440,
+          "logprob": -0.5133,
+          "text": "ANCE"
+        },
+        {
+          "index": 38,
+          "token_id": 11,
+          "logprob": -0.4913,
+          "text": ","
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3461,
+      "min": -2.1111,
+      "p05": -1.5256,
+      "p50": -0.003,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -2.1111,
+          "text": "3"
+        },
+        {
+          "index": 13,
+          "token_id": 19,
+          "logprob": -1.7424,
+          "text": "4"
+        },
+        {
+          "index": 81,
+          "token_id": 16,
+          "logprob": -1.527,
+          "text": "1"
+        },
+        {
+          "index": 75,
+          "token_id": 18,
+          "logprob": -1.4994,
+          "text": "3"
+        },
+        {
+          "index": 64,
+          "token_id": 22,
+          "logprob": -1.3814,
+          "text": "7"
+        },
+        {
+          "index": 24,
+          "token_id": 24,
+          "logprob": -1.168,
+          "text": "9"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.0731,
+          "text": "0"
+        },
+        {
+          "index": 70,
+          "token_id": 16,
+          "logprob": -1.0272,
+          "text": "1"
+        },
+        {
+          "index": 6,
+          "token_id": 22,
+          "logprob": -0.6727,
+          "text": "7"
+        },
+        {
+          "index": 16,
+          "token_id": 22,
+          "logprob": -0.5765,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -0.5231,
+          "text": "3"
+        },
+        {
+          "index": 69,
+          "token_id": 20,
+          "logprob": -0.4321,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 91,
+      "mean": -0.3167,
+      "min": -2.2753,
+      "p05": -1.5132,
+      "p50": -0.0017,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.08,
+    "std": 8.65,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      669.6,
+      421.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      140,
+      223,
+      1030,
+      1636
+    ],
+    "ink_px": 2,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 2,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "page": 155,
+  "source_image": "page_0155.png",
+  "elements": [
+    {
+      "bbox": [
+        1016,
+        231,
+        1110,
+        271
+      ],
+      "category": "Page-header",
+      "text": "-11-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3946,
+          "min": -1.8725
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0005,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0008,
+          "min": -0.0023
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        197,
+        396,
+        1974,
+        813
+      ],
+      "category": "Text",
+      "text": "for operating programs which are, or are proposed for, assistance under the Economic Opportunity Act of 1964. Application for financial assistance under the Act will be submitted to the Corporation for technical review and any necessary technical assistance prior to being forwarded to Planning and Coordination Committee of the Council.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4525,
+          "min": -2.0378
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 59,
+          "mean": -0.0082,
+          "min": -0.3524
+        }
+      },
+      "ink": {
+        "ink_px": 15356,
+        "area_px": 694722,
+        "density": 0.0221,
+        "chars": 337,
+        "chars_per_1k_ink": 21.95
+      }
+    },
+    {
+      "bbox": [
+        971,
+        904,
+        1607,
+        1054
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4289,
+          "min": -1.8414
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 96489,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        1030,
+        1041,
+        1409,
+        1128
+      ],
+      "category": "Caption",
+      "text": "Robert F. Wagner\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.2818,
+          "min": -1.253
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3484,
+          "min": -0.3484
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0083,
+          "min": -0.0436
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 33528,
+        "density": 0.0,
+        "chars": 22,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 212,
+    "content": {
+      "n_tokens": 69,
+      "mean": -0.0078,
+      "min": -0.3524,
+      "p05": -0.0027,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 75,
+          "token_id": 1958,
+          "logprob": -0.3524,
+          "text": "for"
+        },
+        {
+          "index": 88,
+          "token_id": 279,
+          "logprob": -0.127,
+          "text": " the"
+        },
+        {
+          "index": 208,
+          "token_id": 85574,
+          "logprob": -0.0436,
+          "text": "Mayor"
+        },
+        {
+          "index": 207,
+          "token_id": 1699,
+          "logprob": -0.0029,
+          "text": "\\n"
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.0023,
+          "text": " \"-"
+        },
+        {
+          "index": 206,
+          "token_id": 51375,
+          "logprob": -0.0022,
+          "text": " Wagner"
+        },
+        {
+          "index": 204,
+          "token_id": 434,
+          "logprob": -0.0009,
+          "text": " F"
+        },
+        {
+          "index": 37,
+          "token_id": 16,
+          "logprob": -0.0006,
+          "text": "1"
+        },
+        {
+          "index": 90,
+          "token_id": 47279,
+          "logprob": -0.0004,
+          "text": " Opportunity"
+        },
+        {
+          "index": 203,
+          "token_id": 34532,
+          "logprob": -0.0003,
+          "text": "Robert"
+        },
+        {
+          "index": 89,
+          "token_id": 22546,
+          "logprob": -0.0003,
+          "text": " Economic"
+        },
+        {
+          "index": 125,
+          "token_id": 27680,
+          "logprob": -0.0003,
+          "text": " Planning"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 86,
+      "mean": -0.3676,
+      "min": -2.0378,
+      "p05": -1.8453,
+      "p50": -0.002,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 63,
+          "token_id": 18,
+          "logprob": -2.0378,
+          "text": "3"
+        },
+        {
+          "index": 52,
+          "token_id": 21,
+          "logprob": -1.9448,
+          "text": "6"
+        },
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.8725,
+          "text": "1"
+        },
+        {
+          "index": 8,
+          "token_id": 21,
+          "logprob": -1.8609,
+          "text": "6"
+        },
+        {
+          "index": 47,
+          "token_id": 22,
+          "logprob": -1.8466,
+          "text": "7"
+        },
+        {
+          "index": 146,
+          "token_id": 19,
+          "logprob": -1.8414,
+          "text": "4"
+        },
+        {
+          "index": 19,
+          "token_id": 15,
+          "logprob": -1.7953,
+          "text": "0"
+        },
+        {
+          "index": 58,
+          "token_id": 19,
+          "logprob": -1.7891,
+          "text": "4"
+        },
+        {
+          "index": 158,
+          "token_id": 19,
+          "logprob": -1.7186,
+          "text": "4"
+        },
+        {
+          "index": 152,
+          "token_id": 22,
+          "logprob": -1.7047,
+          "text": "7"
+        },
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.4076,
+          "text": "1"
+        },
+        {
+          "index": 141,
+          "token_id": 16,
+          "logprob": -1.3349,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 212,
+      "mean": -0.1517,
+      "min": -2.0378,
+      "p05": -1.3676,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.08,
+    "std": 9.91,
+    "dark_fraction": 0.00374
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      788.64,
+      1167.6
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      262,
+      389,
+      1928,
+      2854
+    ],
+    "ink_px": 15356,
+    "covered_px": 15356,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

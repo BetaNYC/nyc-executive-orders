@@ -1,0 +1,377 @@
+{
+  "page": 184,
+  "source_image": "page_0184.png",
+  "elements": [
+    {
+      "bbox": [
+        1005,
+        385,
+        1103,
+        430
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3951,
+          "min": -2.0109
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.004,
+          "min": -0.008
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.047,
+          "min": -0.1799
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 2079,
+        "density": 0.0,
+        "chars": 5,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        537,
+        564,
+        1570,
+        1100
+      ],
+      "category": "List-item",
+      "text": "(2) that pursuant to the provisions of Section B3-36.1 of the Administrative Code, the exclusion under paragraph (1) of this resolution of officers and employees of Triborough Bridge and Tunnel Authority employed in the titles therein set forth is hereby declared to be conditional and shall remain in effect unless the conditions for termination of such exclusion are satisfied as prescribed in such paragraph (1); and be it further",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3755,
+          "min": -1.8969
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0168,
+          "min": -0.0337
+        },
+        "text": {
+          "n_tokens": 83,
+          "mean": -0.0004,
+          "min": -0.0164
+        }
+      },
+      "ink": {
+        "ink_px": 11,
+        "area_px": 551008,
+        "density": 2e-05,
+        "chars": 433,
+        "chars_per_1k_ink": 39363.64
+      }
+    },
+    {
+      "bbox": [
+        336,
+        1151,
+        1870,
+        1343
+      ],
+      "category": "Text",
+      "text": "RESOLVED, That such election unanimously adopted by the Members of the Authority is subject to the approval of the Mayor of The City of New York as required pursuant to said Section B3-36.1 of said Administrative Code.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2988,
+          "min": -1.5808
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0007,
+          "min": -0.0007
+        },
+        "text": {
+          "n_tokens": 47,
+          "mean": -0.0002,
+          "min": -0.0078
+        }
+      },
+      "ink": {
+        "ink_px": 427,
+        "area_px": 293184,
+        "density": 0.00146,
+        "chars": 218,
+        "chars_per_1k_ink": 510.54
+      }
+    },
+    {
+      "bbox": [
+        332,
+        2026,
+        1064,
+        2270
+      ],
+      "category": "Text",
+      "text": "I hereby certify that the foregoing is a true and exact copy of a Resolution adopted by Triborough Bridge and Tunnel Authority at its meeting held on June 18, 1965.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2685,
+          "min": -1.5125
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 39,
+          "mean": -0.0013,
+          "min": -0.0431
+        }
+      },
+      "ink": {
+        "ink_px": 86,
+        "area_px": 177876,
+        "density": 0.00048,
+        "chars": 164,
+        "chars_per_1k_ink": 1906.98
+      }
+    },
+    {
+      "bbox": [
+        356,
+        2290,
+        1070,
+        2476
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4513,
+          "min": -1.9314
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0182,
+          "min": -0.0182
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 48,
+        "area_px": 132246,
+        "density": 0.00036,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 354,
+    "content": {
+      "n_tokens": 173,
+      "mean": -0.0016,
+      "min": -0.1799,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 37,
+          "token_id": 220,
+          "logprob": -0.1799,
+          "text": " "
+        },
+        {
+          "index": 286,
+          "token_id": 374,
+          "logprob": -0.0431,
+          "text": " is"
+        },
+        {
+          "index": 123,
+          "token_id": 57079,
+          "logprob": -0.0164,
+          "text": " therein"
+        },
+        {
+          "index": 114,
+          "token_id": 14438,
+          "logprob": -0.0085,
+          "text": "orough"
+        },
+        {
+          "index": 204,
+          "token_id": 17827,
+          "logprob": -0.0078,
+          "text": " adopted"
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.0075,
+          "text": " \"-"
+        },
+        {
+          "index": 294,
+          "token_id": 37116,
+          "logprob": -0.0042,
+          "text": " Resolution"
+        },
+        {
+          "index": 197,
+          "token_id": 1930,
+          "logprob": -0.0016,
+          "text": "OL"
+        },
+        {
+          "index": 76,
+          "token_id": 11993,
+          "logprob": -0.0014,
+          "text": " \"("
+        },
+        {
+          "index": 86,
+          "token_id": 425,
+          "logprob": -0.0009,
+          "text": " B"
+        },
+        {
+          "index": 148,
+          "token_id": 30931,
+          "logprob": -0.0006,
+          "text": " prescribed"
+        },
+        {
+          "index": 39,
+          "token_id": 481,
+          "logprob": -0.0005,
+          "text": " -"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 110,
+      "mean": -0.3351,
+      "min": -2.0109,
+      "p05": -1.671,
+      "p50": -0.0013,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 13,
+          "token_id": 20,
+          "logprob": -2.0109,
+          "text": "5"
+        },
+        {
+          "index": 326,
+          "token_id": 21,
+          "logprob": -1.9314,
+          "text": "6"
+        },
+        {
+          "index": 52,
+          "token_id": 19,
+          "logprob": -1.8969,
+          "text": "4"
+        },
+        {
+          "index": 19,
+          "token_id": 18,
+          "logprob": -1.834,
+          "text": "3"
+        },
+        {
+          "index": 8,
+          "token_id": 20,
+          "logprob": -1.7716,
+          "text": "5"
+        },
+        {
+          "index": 58,
+          "token_id": 15,
+          "logprob": -1.739,
+          "text": "0"
+        },
+        {
+          "index": 47,
+          "token_id": 22,
+          "logprob": -1.5878,
+          "text": "7"
+        },
+        {
+          "index": 344,
+          "token_id": 21,
+          "logprob": -1.585,
+          "text": "6"
+        },
+        {
+          "index": 172,
+          "token_id": 16,
+          "logprob": -1.5808,
+          "text": "1"
+        },
+        {
+          "index": 184,
+          "token_id": 18,
+          "logprob": -1.5175,
+          "text": "3"
+        },
+        {
+          "index": 256,
+          "token_id": 21,
+          "logprob": -1.5125,
+          "text": "6"
+        },
+        {
+          "index": 64,
+          "token_id": 15,
+          "logprob": -1.4508,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 354,
+      "mean": -0.1053,
+      "min": -2.0109,
+      "p05": -1.1785,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 212.64,
+    "std": 13.08,
+    "dark_fraction": 0.00013
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      832.08,
+      1229.52
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      277,
+      409,
+      2034,
+      3006
+    ],
+    "ink_px": 613,
+    "covered_px": 572,
+    "covered_fraction": 0.93312,
+    "uncovered_px": 41,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

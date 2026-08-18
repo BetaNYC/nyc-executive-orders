@@ -1,0 +1,393 @@
+{
+  "page": 226,
+  "source_image": "page_0226.png",
+  "elements": [
+    {
+      "bbox": [
+        157,
+        177,
+        635,
+        210
+      ],
+      "category": "Page-header",
+      "text": "Honorable Board of Estimate",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4261,
+          "min": -1.996
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0007,
+          "min": -0.0013
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0788,
+          "min": -0.3762
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        927,
+        177,
+        974,
+        208
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3459,
+          "min": -1.4814
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.003,
+          "min": -0.0057
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0101,
+          "min": -0.0235
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        1278,
+        177,
+        1490,
+        215
+      ],
+      "category": "Text",
+      "text": "May 31, 1963",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3109,
+          "min": -1.6139
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.161,
+          "min": -0.161
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0001,
+          "min": -0.0006
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        352,
+        489,
+        1394,
+        663
+      ],
+      "category": "Text",
+      "text": "THIS IS TO CERTIFY that the fore said is a true copy of the\nresult approved by the Board of Trustees of the Brooklyn\nPublic Library at its special meeting on May 31, 1963 and\nthat the foregoing signature is that of the President of the\nBoard, Charles J. Mylod.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3756,
+          "min": -1.7599
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 66,
+          "mean": -0.1029,
+          "min": -1.9055
+        }
+      },
+      "ink": {
+        "ink_px": 9945,
+        "area_px": 180960,
+        "density": 0.05496,
+        "chars": 260,
+        "chars_per_1k_ink": 26.14
+      }
+    },
+    {
+      "bbox": [
+        1107,
+        727,
+        1457,
+        801
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4132,
+          "min": -1.7076
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 3244,
+        "area_px": 26250,
+        "density": 0.12358,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1152,
+        801,
+        1464,
+        868
+      ],
+      "category": "Text",
+      "text": "Irving Engo\nSecretary, pro tem",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.301,
+          "min": -1.4967
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.576,
+          "min": -0.576
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.1553,
+          "min": -0.7889
+        }
+      },
+      "ink": {
+        "ink_px": 3246,
+        "area_px": 21216,
+        "density": 0.153,
+        "chars": 30,
+        "chars_per_1k_ink": 9.24
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 303,
+    "content": {
+      "n_tokens": 93,
+      "mean": -0.0926,
+      "min": -1.9055,
+      "p05": -0.703,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 166,
+          "token_id": 1053,
+          "logprob": -1.9055,
+          "text": " said"
+        },
+        {
+          "index": 174,
+          "token_id": 1382,
+          "logprob": -1.3683,
+          "text": "result"
+        },
+        {
+          "index": 209,
+          "token_id": 429,
+          "logprob": -1.1732,
+          "text": " that"
+        },
+        {
+          "index": 294,
+          "token_id": 78,
+          "logprob": -0.7889,
+          "text": "o"
+        },
+        {
+          "index": 175,
+          "token_id": 11792,
+          "logprob": -0.757,
+          "text": " approved"
+        },
+        {
+          "index": 165,
+          "token_id": 2241,
+          "logprob": -0.667,
+          "text": " fore"
+        },
+        {
+          "index": 292,
+          "token_id": 4405,
+          "logprob": -0.5265,
+          "text": "ving"
+        },
+        {
+          "index": 39,
+          "token_id": 72715,
+          "logprob": -0.3762,
+          "text": " Estimate"
+        },
+        {
+          "index": 202,
+          "token_id": 323,
+          "logprob": -0.2861,
+          "text": " and"
+        },
+        {
+          "index": 222,
+          "token_id": 82482,
+          "logprob": -0.2029,
+          "text": "lod"
+        },
+        {
+          "index": 204,
+          "token_id": 9033,
+          "logprob": -0.1465,
+          "text": "that"
+        },
+        {
+          "index": 173,
+          "token_id": 1699,
+          "logprob": -0.1052,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 123,
+      "mean": -0.3437,
+      "min": -1.996,
+      "p05": -1.613,
+      "p50": -0.0013,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 17,
+          "token_id": 20,
+          "logprob": -1.996,
+          "text": "5"
+        },
+        {
+          "index": 141,
+          "token_id": 19,
+          "logprob": -1.7599,
+          "text": "4"
+        },
+        {
+          "index": 237,
+          "token_id": 22,
+          "logprob": -1.7076,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.6841,
+          "text": "7"
+        },
+        {
+          "index": 243,
+          "token_id": 22,
+          "logprob": -1.6371,
+          "text": "7"
+        },
+        {
+          "index": 146,
+          "token_id": 18,
+          "logprob": -1.6243,
+          "text": "3"
+        },
+        {
+          "index": 101,
+          "token_id": 20,
+          "logprob": -1.6139,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.6044,
+          "text": "7"
+        },
+        {
+          "index": 232,
+          "token_id": 22,
+          "logprob": -1.5974,
+          "text": "7"
+        },
+        {
+          "index": 248,
+          "token_id": 16,
+          "logprob": -1.5526,
+          "text": "1"
+        },
+        {
+          "index": 130,
+          "token_id": 17,
+          "logprob": -1.5365,
+          "text": "2"
+        },
+        {
+          "index": 274,
+          "token_id": 19,
+          "logprob": -1.4967,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 303,
+      "mean": -0.1691,
+      "min": -1.996,
+      "p05": -1.4094,
+      "p50": -0.0001,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.66,
+    "std": 9.88,
+    "dark_fraction": 0.00537
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      683.04,
+      1013.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      227,
+      337,
+      1670,
+      2477
+    ],
+    "ink_px": 16578,
+    "covered_px": 16226,
+    "covered_fraction": 0.97877,
+    "uncovered_px": 352,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

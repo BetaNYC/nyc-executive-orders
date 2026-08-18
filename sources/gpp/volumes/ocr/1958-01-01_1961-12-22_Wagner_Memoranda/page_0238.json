@@ -1,0 +1,370 @@
+{
+  "page": 238,
+  "source_image": "page_0238.png",
+  "elements": [
+    {
+      "bbox": [
+        937,
+        202,
+        1044,
+        243
+      ],
+      "category": "Page-header",
+      "text": "- 3 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3997,
+          "min": -1.8395
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0104,
+          "min": -0.0207
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0557,
+          "min": -0.2017
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        419,
+        281,
+        1612,
+        324
+      ],
+      "category": "Text",
+      "text": "An Emergency Control Office shall be available at all times.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3692,
+          "min": -1.7819
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0159,
+          "min": -0.0159
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0008,
+          "min": -0.0069
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        277,
+        358,
+        821,
+        407
+      ],
+      "category": "Section-header",
+      "text": "## 4. RULES AND REGULATIONS",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4342,
+          "min": -1.9297
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.008,
+          "min": -0.0161
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0324,
+          "min": -0.321
+        }
+      },
+      "ink": {
+        "ink_px": 2099,
+        "area_px": 27250,
+        "density": 0.07703,
+        "chars": 27,
+        "chars_per_1k_ink": 12.86
+      }
+    },
+    {
+      "bbox": [
+        281,
+        443,
+        1657,
+        728
+      ],
+      "category": "Text",
+      "text": "Rules and regulations promulgated by the Emergency Control Board shall constitute additional provisions of the Mayor's Emergency Control Plan and shall be complied with by all departments and agencies.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3193,
+          "min": -1.4575
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0012,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0002,
+          "min": -0.0032
+        }
+      },
+      "ink": {
+        "ink_px": 3061,
+        "area_px": 395199,
+        "density": 0.00775,
+        "chars": 201,
+        "chars_per_1k_ink": 65.66
+      }
+    },
+    {
+      "bbox": [
+        901,
+        809,
+        1087,
+        850
+      ],
+      "category": "Text",
+      "text": "# # # # #",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3157,
+          "min": -1.5199
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0076,
+          "min": -0.0076
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0404,
+          "min": -0.1729
+        }
+      },
+      "ink": {
+        "ink_px": 76,
+        "area_px": 7854,
+        "density": 0.00968,
+        "chars": 9,
+        "chars_per_1k_ink": 118.42
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 240,
+    "content": {
+      "n_tokens": 63,
+      "mean": -0.0121,
+      "min": -0.321,
+      "p05": -0.0267,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 120,
+          "token_id": 565,
+          "logprob": -0.321,
+          "text": "##"
+        },
+        {
+          "index": 36,
+          "token_id": 220,
+          "logprob": -0.2017,
+          "text": " "
+        },
+        {
+          "index": 232,
+          "token_id": 5869,
+          "logprob": -0.1729,
+          "text": " \"#"
+        },
+        {
+          "index": 233,
+          "token_id": 671,
+          "logprob": -0.0276,
+          "text": " #"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0189,
+          "text": " \"-"
+        },
+        {
+          "index": 75,
+          "token_id": 31608,
+          "logprob": -0.0069,
+          "text": " Emergency"
+        },
+        {
+          "index": 175,
+          "token_id": 8751,
+          "logprob": -0.0032,
+          "text": " Board"
+        },
+        {
+          "index": 124,
+          "token_id": 43797,
+          "logprob": -0.0022,
+          "text": " RULE"
+        },
+        {
+          "index": 165,
+          "token_id": 26008,
+          "logprob": -0.0019,
+          "text": "Rules"
+        },
+        {
+          "index": 84,
+          "token_id": 1189,
+          "logprob": -0.0015,
+          "text": ".\""
+        },
+        {
+          "index": 236,
+          "token_id": 671,
+          "logprob": -0.0015,
+          "text": " #"
+        },
+        {
+          "index": 37,
+          "token_id": 18,
+          "logprob": -0.0014,
+          "text": "3"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 101,
+      "mean": -0.3421,
+      "min": -1.9297,
+      "p05": -1.6555,
+      "p50": -0.0012,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 102,
+          "token_id": 16,
+          "logprob": -1.9297,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 19,
+          "logprob": -1.8395,
+          "text": "4"
+        },
+        {
+          "index": 57,
+          "token_id": 17,
+          "logprob": -1.7819,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.747,
+          "text": "7"
+        },
+        {
+          "index": 107,
+          "token_id": 22,
+          "logprob": -1.6925,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.6555,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.6234,
+          "text": "3"
+        },
+        {
+          "index": 92,
+          "token_id": 22,
+          "logprob": -1.5869,
+          "text": "7"
+        },
+        {
+          "index": 62,
+          "token_id": 19,
+          "logprob": -1.553,
+          "text": "4"
+        },
+        {
+          "index": 216,
+          "token_id": 22,
+          "logprob": -1.5199,
+          "text": "7"
+        },
+        {
+          "index": 148,
+          "token_id": 22,
+          "logprob": -1.4575,
+          "text": "7"
+        },
+        {
+          "index": 46,
+          "token_id": 24,
+          "logprob": -1.437,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 240,
+      "mean": -0.1473,
+      "min": -1.9297,
+      "p05": -1.4107,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 182.22,
+    "std": 9.28,
+    "dark_fraction": 0.00159
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      755.52,
+      979.92
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      251,
+      326,
+      1847,
+      2395
+    ],
+    "ink_px": 5236,
+    "covered_px": 5236,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "page": 34,
+  "source_image": "page_0034.png",
+  "elements": [
+    {
+      "bbox": [
+        974,
+        410,
+        1040,
+        444
+      ],
+      "category": "Page-header",
+      "text": "-4-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4227,
+          "min": -2.0051
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0042,
+          "min": -0.0081
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0026,
+          "min": -0.0048
+        }
+      },
+      "ink": {
+        "ink_px": 186,
+        "area_px": 1876,
+        "density": 0.09915,
+        "chars": 3,
+        "chars_per_1k_ink": 16.13
+      }
+    },
+    {
+      "bbox": [
+        651,
+        537,
+        1761,
+        760
+      ],
+      "category": "List-item",
+      "text": "(4) Requests for filling of vacancies and the processing of VCB certificates will be made in accordance with the instructions on the Bureau of the Budget circular dated January 9, 1971.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3788,
+          "min": -1.9862
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0004,
+          "min": -0.0007
+        },
+        "text": {
+          "n_tokens": 41,
+          "mean": -0.0004,
+          "min": -0.0101
+        }
+      },
+      "ink": {
+        "ink_px": 12448,
+        "area_px": 250432,
+        "density": 0.04971,
+        "chars": 185,
+        "chars_per_1k_ink": 14.86
+      }
+    },
+    {
+      "bbox": [
+        651,
+        807,
+        1673,
+        1425
+      ],
+      "category": "List-item",
+      "text": "(5) A monthly report shall be sent to the Deputy Mayor stating the number of positions in the agency, the number of filled, the number of vacancies (both regular and leave of absence), the number pending establishment, and the position each agency expects to fill. Accompanying this report should be a list of vacancies by code and line number, title, schedule line rates, and the rate at which the position will be filled. A duplicate copy of this information must be submitted to the Bureau of the Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2703,
+          "min": -1.7192
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 103,
+          "mean": -0.0003,
+          "min": -0.0134
+        }
+      },
+      "ink": {
+        "ink_px": 38368,
+        "area_px": 637980,
+        "density": 0.06014,
+        "chars": 507,
+        "chars_per_1k_ink": 13.21
+      }
+    },
+    {
+      "bbox": [
+        651,
+        1478,
+        1702,
+        1781
+      ],
+      "category": "List-item",
+      "text": "(6) All agencies shall forward to the Deputy Mayor monthly a listing of the positions that have been filled giving the code, the line number, the title, the schedule rate and the appointment rate. A duplicate copy of this listing must be submitted to the Bureau of the Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2739,
+          "min": -1.7011
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 56,
+          "mean": -0.0006,
+          "min": -0.0158
+        }
+      },
+      "ink": {
+        "ink_px": 20884,
+        "area_px": 322690,
+        "density": 0.06472,
+        "chars": 276,
+        "chars_per_1k_ink": 13.22
+      }
+    },
+    {
+      "bbox": [
+        651,
+        1834,
+        1789,
+        2140
+      ],
+      "category": "List-item",
+      "text": "(7) The reports required by Paragraphs (4) and (5) are necessary for review of requests for filling of vacancies by the Vacancy Control Board. Consideration of filling of vacancies shall be deferred in all cases where agencies have failed to comply until such time as the agency submit such reports.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2358,
+          "min": -1.4558
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0002,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 61,
+          "mean": -0.0002,
+          "min": -0.0075
+        }
+      },
+      "ink": {
+        "ink_px": 21996,
+        "area_px": 351822,
+        "density": 0.06252,
+        "chars": 299,
+        "chars_per_1k_ink": 13.59
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 446,
+    "content": {
+      "n_tokens": 264,
+      "mean": -0.0004,
+      "min": -0.0158,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 324,
+          "token_id": 4379,
+          "logprob": -0.0158,
+          "text": " rate"
+        },
+        {
+          "index": 223,
+          "token_id": 1555,
+          "logprob": -0.0134,
+          "text": " line"
+        },
+        {
+          "index": 73,
+          "token_id": 11993,
+          "logprob": -0.0101,
+          "text": " \"("
+        },
+        {
+          "index": 301,
+          "token_id": 15088,
+          "logprob": -0.0096,
+          "text": " monthly"
+        },
+        {
+          "index": 440,
+          "token_id": 9318,
+          "logprob": -0.0075,
+          "text": " submit"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0048,
+          "text": " \"-"
+        },
+        {
+          "index": 175,
+          "token_id": 10199,
+          "logprob": -0.0047,
+          "text": " filled"
+        },
+        {
+          "index": 207,
+          "token_id": 1895,
+          "logprob": -0.0042,
+          "text": " report"
+        },
+        {
+          "index": 331,
+          "token_id": 22513,
+          "logprob": -0.0033,
+          "text": " duplicate"
+        },
+        {
+          "index": 311,
+          "token_id": 7086,
+          "logprob": -0.0033,
+          "text": " giving"
+        },
+        {
+          "index": 191,
+          "token_id": 15280,
+          "logprob": -0.0027,
+          "text": " pending"
+        },
+        {
+          "index": 37,
+          "token_id": 12,
+          "logprob": -0.0022,
+          "text": "-"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 110,
+      "mean": -0.285,
+      "min": -2.0051,
+      "p05": -1.5131,
+      "p50": -0.0005,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -2.0051,
+          "text": "4"
+        },
+        {
+          "index": 56,
+          "token_id": 16,
+          "logprob": -1.9862,
+          "text": "1"
+        },
+        {
+          "index": 132,
+          "token_id": 18,
+          "logprob": -1.7192,
+          "text": "3"
+        },
+        {
+          "index": 272,
+          "token_id": 17,
+          "logprob": -1.7011,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.6098,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.515,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.5107,
+          "text": "0"
+        },
+        {
+          "index": 359,
+          "token_id": 19,
+          "logprob": -1.4558,
+          "text": "4"
+        },
+        {
+          "index": 138,
+          "token_id": 20,
+          "logprob": -1.4553,
+          "text": "5"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -1.4309,
+          "text": "7"
+        },
+        {
+          "index": 126,
+          "token_id": 22,
+          "logprob": -1.3794,
+          "text": "7"
+        },
+        {
+          "index": 266,
+          "token_id": 23,
+          "logprob": -1.3453,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 446,
+      "mean": -0.0705,
+      "min": -2.0051,
+      "p05": -0.5334,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.45,
+    "std": 18.35,
+    "dark_fraction": 0.02127
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      791.28,
+      1251.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      263,
+      417,
+      1934,
+      3058
+    ],
+    "ink_px": 93882,
+    "covered_px": 93882,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "page": 142,
+  "source_image": "page_0142.png",
+  "elements": [
+    {
+      "bbox": [
+        991,
+        623,
+        1120,
+        663
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3978,
+          "min": -1.7751
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0656,
+          "min": -0.0889
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0305,
+          "min": -0.1131
+        }
+      },
+      "ink": {
+        "ink_px": 287,
+        "area_px": 5330,
+        "density": 0.05385,
+        "chars": 5,
+        "chars_per_1k_ink": 17.42
+      }
+    },
+    {
+      "bbox": [
+        201,
+        761,
+        1757,
+        1101
+      ],
+      "category": "Text",
+      "text": "Please reply on the prescribed form for comments on\nlegislation by City agencies in accordance with the Mayor's\nExecutive Order dated January 1, 1957, using the above file\nreference number instead of the usual introductory numbers.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3578,
+          "min": -1.642
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0157,
+          "min": -0.0157
+        },
+        "text": {
+          "n_tokens": 49,
+          "mean": -0.0005,
+          "min": -0.0242
+        }
+      },
+      "ink": {
+        "ink_px": 19920,
+        "area_px": 504108,
+        "density": 0.03952,
+        "chars": 231,
+        "chars_per_1k_ink": 11.6
+      }
+    },
+    {
+      "bbox": [
+        457,
+        1145,
+        1241,
+        1195
+      ],
+      "category": "Text",
+      "text": "Thank you for your cooperation.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2912,
+          "min": -1.5489
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0006,
+          "min": -0.0033
+        }
+      },
+      "ink": {
+        "ink_px": 2523,
+        "area_px": 39780,
+        "density": 0.06342,
+        "chars": 31,
+        "chars_per_1k_ink": 12.29
+      }
+    },
+    {
+      "bbox": [
+        1109,
+        1457,
+        1910,
+        1580
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.382,
+          "min": -1.6083
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0891,
+          "min": -0.0891
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5698,
+        "area_px": 99625,
+        "density": 0.05719,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 203,
+    "content": {
+      "n_tokens": 59,
+      "mean": -0.0026,
+      "min": -0.1131,
+      "p05": -0.0038,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 220,
+          "logprob": -0.1131,
+          "text": " "
+        },
+        {
+          "index": 84,
+          "token_id": 1699,
+          "logprob": -0.0242,
+          "text": "\\n"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.008,
+          "text": " \"-"
+        },
+        {
+          "index": 166,
+          "token_id": 1189,
+          "logprob": -0.0033,
+          "text": ".\""
+        },
+        {
+          "index": 114,
+          "token_id": 1699,
+          "logprob": -0.0008,
+          "text": "\\n"
+        },
+        {
+          "index": 38,
+          "token_id": 481,
+          "logprob": -0.0006,
+          "text": " -"
+        },
+        {
+          "index": 88,
+          "token_id": 4311,
+          "logprob": -0.0004,
+          "text": " City"
+        },
+        {
+          "index": 94,
+          "token_id": 22093,
+          "logprob": -0.0002,
+          "text": " Mayor"
+        },
+        {
+          "index": 86,
+          "token_id": 58221,
+          "logprob": -0.0002,
+          "text": "islation"
+        },
+        {
+          "index": 85,
+          "token_id": 1937,
+          "logprob": -0.0002,
+          "text": "leg"
+        },
+        {
+          "index": 123,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        },
+        {
+          "index": 37,
+          "token_id": 17,
+          "logprob": -0.0001,
+          "text": "2"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 87,
+      "mean": -0.3387,
+      "min": -1.7751,
+      "p05": -1.5791,
+      "p50": -0.0005,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.7751,
+          "text": "3"
+        },
+        {
+          "index": 63,
+          "token_id": 16,
+          "logprob": -1.642,
+          "text": "1"
+        },
+        {
+          "index": 46,
+          "token_id": 16,
+          "logprob": -1.6288,
+          "text": "1"
+        },
+        {
+          "index": 175,
+          "token_id": 24,
+          "logprob": -1.6083,
+          "text": "9"
+        },
+        {
+          "index": 181,
+          "token_id": 22,
+          "logprob": -1.5821,
+          "text": "7"
+        },
+        {
+          "index": 51,
+          "token_id": 16,
+          "logprob": -1.5722,
+          "text": "1"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.5721,
+          "text": "3"
+        },
+        {
+          "index": 137,
+          "token_id": 20,
+          "logprob": -1.5489,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.5472,
+          "text": "1"
+        },
+        {
+          "index": 187,
+          "token_id": 15,
+          "logprob": -1.5391,
+          "text": "0"
+        },
+        {
+          "index": 143,
+          "token_id": 16,
+          "logprob": -1.5292,
+          "text": "1"
+        },
+        {
+          "index": 149,
+          "token_id": 20,
+          "logprob": -1.4453,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 203,
+      "mean": -0.1461,
+      "min": -1.7751,
+      "p05": -1.5208,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.94,
+    "std": 11.28,
+    "dark_fraction": 0.00737
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      821.28,
+      1052.88
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      273,
+      351,
+      2008,
+      2574
+    ],
+    "ink_px": 28428,
+    "covered_px": 28428,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "page": 259,
+  "source_image": "page_0259.png",
+  "elements": [
+    {
+      "bbox": [
+        489,
+        1574,
+        710,
+        1637
+      ],
+      "category": "Text",
+      "text": "DE AUSTENITA\nCHIESE DI UNA\nCIA DI UNA",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4251,
+          "min": -1.7261
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0129,
+          "min": -0.0129
+        },
+        "text": {
+          "n_tokens": 18,
+          "mean": -1.3774,
+          "min": -2.3506
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 11220,
+        "density": 0.0,
+        "chars": 37,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        539,
+        1651,
+        663,
+        1781
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2944,
+          "min": -1.3657
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0016,
+          "min": -0.0016
+        },
+        "text": null
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 88,
+    "content": {
+      "n_tokens": 18,
+      "mean": -1.3774,
+      "min": -2.3506,
+      "p05": -2.3498,
+      "p50": -1.148,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 47,
+          "token_id": 32,
+          "logprob": -2.3506,
+          "text": "A"
+        },
+        {
+          "index": 38,
+          "token_id": 8553,
+          "logprob": -2.3497,
+          "text": "UST"
+        },
+        {
+          "index": 51,
+          "token_id": 16536,
+          "logprob": -2.0211,
+          "text": " DI"
+        },
+        {
+          "index": 46,
+          "token_id": 6643,
+          "logprob": -2.0193,
+          "text": " UN"
+        },
+        {
+          "index": 36,
+          "token_id": 1150,
+          "logprob": -1.9855,
+          "text": "DE"
+        },
+        {
+          "index": 43,
+          "token_id": 5371,
+          "logprob": -1.9171,
+          "text": "IE"
+        },
+        {
+          "index": 52,
+          "token_id": 6643,
+          "logprob": -1.9096,
+          "text": " UN"
+        },
+        {
+          "index": 37,
+          "token_id": 362,
+          "logprob": -1.2835,
+          "text": " A"
+        },
+        {
+          "index": 42,
+          "token_id": 2149,
+          "logprob": -1.1678,
+          "text": "CH"
+        },
+        {
+          "index": 40,
+          "token_id": 63186,
+          "logprob": -1.1283,
+          "text": "ITA"
+        },
+        {
+          "index": 49,
+          "token_id": 34,
+          "logprob": -1.0984,
+          "text": "C"
+        },
+        {
+          "index": 53,
+          "token_id": 32,
+          "logprob": -1.014,
+          "text": "A"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.343,
+      "min": -1.7261,
+      "p05": -1.3633,
+      "p50": -0.0025,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 13,
+          "token_id": 19,
+          "logprob": -1.7261,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.5902,
+          "text": "9"
+        },
+        {
+          "index": 78,
+          "token_id": 16,
+          "logprob": -1.3657,
+          "text": "1"
+        },
+        {
+          "index": 72,
+          "token_id": 18,
+          "logprob": -1.3174,
+          "text": "3"
+        },
+        {
+          "index": 24,
+          "token_id": 22,
+          "logprob": -1.3106,
+          "text": "7"
+        },
+        {
+          "index": 61,
+          "token_id": 24,
+          "logprob": -1.1476,
+          "text": "9"
+        },
+        {
+          "index": 6,
+          "token_id": 23,
+          "logprob": -1.0866,
+          "text": "8"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.0513,
+          "text": "0"
+        },
+        {
+          "index": 67,
+          "token_id": 16,
+          "logprob": -1.031,
+          "text": "1"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -0.8146,
+          "text": "4"
+        },
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -0.5327,
+          "text": "1"
+        },
+        {
+          "index": 66,
+          "token_id": 20,
+          "logprob": -0.4759,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 88,
+      "mean": -0.4539,
+      "min": -2.3506,
+      "p05": -1.9615,
+      "p50": -0.0014,
+      "n_below_threshold": 4
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 166.24,
+    "std": 7.94,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      660.0,
+      428.64
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      220,
+      1048,
+      1613
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "page": 64,
+  "source_image": "page_0064.png",
+  "elements": [
+    {
+      "bbox": [
+        983,
+        150,
+        1057,
+        191
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.396,
+          "min": -1.6343
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0043,
+          "min": -0.0085
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0109,
+          "min": -0.0311
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        269,
+        274,
+        1852,
+        572
+      ],
+      "category": "Text",
+      "text": "Cooperative Education trainees; to assist agency efforts to help Cooperative Education trainees adjust to work, develop good work habits and obtain gainful employment after graduation from high school; to explore and develop avenues for the continued employment of trainees in the City service after graduation; and to audit and evaluate the Program and to report to me annually on its status.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4359,
+          "min": -1.9666
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.4742,
+          "min": -0.4742
+        },
+        "text": {
+          "n_tokens": 71,
+          "mean": -0.0002,
+          "min": -0.0029
+        }
+      },
+      "ink": {
+        "ink_px": 2617,
+        "area_px": 290238,
+        "density": 0.00902,
+        "chars": 393,
+        "chars_per_1k_ink": 150.17
+      }
+    },
+    {
+      "bbox": [
+        176,
+        595,
+        1887,
+        1093
+      ],
+      "category": "List-item",
+      "text": "C. The Board of Education is responsible for the overall organization, administration and supervision of the Cooperative Education and Work Program with respect to the selection, guidance, placement and supervision of students in line with the City objectives which were approved by the Board of Education, Department of Personnel, and the Ford Foundation when this project was initiated. These include drawing student participants from among those upon whom economic and other pressures to drop out before finishing high school are strong, consideration being given to ability to complete high school, to perform the assigned tasks and to benefit from participation in the program.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3648,
+          "min": -1.7917
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0005,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 113,
+          "mean": -0.0002,
+          "min": -0.0179
+        }
+      },
+      "ink": {
+        "ink_px": 34415,
+        "area_px": 809250,
+        "density": 0.04253,
+        "chars": 682,
+        "chars_per_1k_ink": 19.82
+      }
+    },
+    {
+      "bbox": [
+        845,
+        1254,
+        1686,
+        1472
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.414,
+          "min": -1.9016
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0012,
+          "min": -0.0012
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 6150,
+        "area_px": 184617,
+        "density": 0.03331,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1070,
+        1411,
+        1450,
+        1499
+      ],
+      "category": "Caption",
+      "text": "ROBERT F. WAGNER\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.2927,
+          "min": -1.4867
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.062,
+          "min": -0.062
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0026,
+          "min": -0.0235
+        }
+      },
+      "ink": {
+        "ink_px": 2081,
+        "area_px": 33909,
+        "density": 0.06137,
+        "chars": 22,
+        "chars_per_1k_ink": 10.57
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 378,
+    "content": {
+      "n_tokens": 198,
+      "mean": -0.0005,
+      "min": -0.0311,
+      "p05": -0.0013,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0311,
+          "text": " \"-"
+        },
+        {
+          "index": 373,
+          "token_id": 3022,
+          "logprob": -0.0235,
+          "text": "AY"
+        },
+        {
+          "index": 181,
+          "token_id": 34,
+          "logprob": -0.0179,
+          "text": "C"
+        },
+        {
+          "index": 116,
+          "token_id": 14402,
+          "logprob": -0.0029,
+          "text": " employment"
+        },
+        {
+          "index": 81,
+          "token_id": 9088,
+          "logprob": -0.0018,
+          "text": " agency"
+        },
+        {
+          "index": 371,
+          "token_id": 1699,
+          "logprob": -0.0018,
+          "text": "\\n"
+        },
+        {
+          "index": 99,
+          "token_id": 8722,
+          "logprob": -0.0016,
+          "text": " gain"
+        },
+        {
+          "index": 364,
+          "token_id": 1285,
+          "logprob": -0.0016,
+          "text": "RO"
+        },
+        {
+          "index": 74,
+          "token_id": 42619,
+          "logprob": -0.0015,
+          "text": "operative"
+        },
+        {
+          "index": 36,
+          "token_id": 17,
+          "logprob": -0.0014,
+          "text": "2"
+        },
+        {
+          "index": 129,
+          "token_id": 24275,
+          "logprob": -0.0013,
+          "text": " audit"
+        },
+        {
+          "index": 85,
+          "token_id": 85705,
+          "logprob": -0.0011,
+          "text": " Cooperative"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 108,
+      "mean": -0.3591,
+      "min": -1.9666,
+      "p05": -1.8632,
+      "p50": -0.0021,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 56,
+          "token_id": 17,
+          "logprob": -1.9666,
+          "text": "2"
+        },
+        {
+          "index": 61,
+          "token_id": 17,
+          "logprob": -1.9364,
+          "text": "2"
+        },
+        {
+          "index": 307,
+          "token_id": 19,
+          "logprob": -1.9016,
+          "text": "4"
+        },
+        {
+          "index": 50,
+          "token_id": 19,
+          "logprob": -1.8906,
+          "text": "4"
+        },
+        {
+          "index": 313,
+          "token_id": 21,
+          "logprob": -1.8765,
+          "text": "6"
+        },
+        {
+          "index": 301,
+          "token_id": 20,
+          "logprob": -1.8749,
+          "text": "5"
+        },
+        {
+          "index": 319,
+          "token_id": 17,
+          "logprob": -1.8415,
+          "text": "2"
+        },
+        {
+          "index": 156,
+          "token_id": 20,
+          "logprob": -1.7917,
+          "text": "5"
+        },
+        {
+          "index": 151,
+          "token_id": 21,
+          "logprob": -1.7718,
+          "text": "6"
+        },
+        {
+          "index": 168,
+          "token_id": 18,
+          "logprob": -1.6982,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.6343,
+          "text": "3"
+        },
+        {
+          "index": 162,
+          "token_id": 22,
+          "logprob": -1.5252,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 378,
+      "mean": -0.1029,
+      "min": -1.9666,
+      "p05": -0.8775,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.62,
+    "std": 15.4,
+    "dark_fraction": 0.01052
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      797.28,
+      1167.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      265,
+      389,
+      1949,
+      2854
+    ],
+    "ink_px": 43682,
+    "covered_px": 43682,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

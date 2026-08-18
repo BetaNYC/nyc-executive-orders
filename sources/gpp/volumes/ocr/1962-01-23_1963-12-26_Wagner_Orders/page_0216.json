@@ -1,0 +1,411 @@
+{
+  "page": 216,
+  "source_image": "page_0216.png",
+  "elements": [
+    {
+      "bbox": [
+        887,
+        347,
+        945,
+        383
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3869,
+          "min": -1.6683
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0019,
+          "min": -0.0037
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0034,
+          "min": -0.0083
+        }
+      },
+      "ink": {
+        "ink_px": 154,
+        "area_px": 2124,
+        "density": 0.0725,
+        "chars": 3,
+        "chars_per_1k_ink": 19.48
+      }
+    },
+    {
+      "bbox": [
+        454,
+        461,
+        1345,
+        697
+      ],
+      "category": "Text",
+      "text": "Triborough Bridge and Tunnel Authority employed\nin the titles therein set forth is hereby declared to\nbe conditional and shall remain in effect unless the\nconditions for termination of such exclusion are\nsatisfied as prescribed in such paragraph (1); and\nbe it further",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3383,
+          "min": -1.6801
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 53,
+          "mean": -0.0167,
+          "min": -0.5236
+        }
+      },
+      "ink": {
+        "ink_px": 12305,
+        "area_px": 209332,
+        "density": 0.05878,
+        "chars": 268,
+        "chars_per_1k_ink": 21.78
+      }
+    },
+    {
+      "bbox": [
+        272,
+        737,
+        1491,
+        893
+      ],
+      "category": "Text",
+      "text": "RESOLVED, That such election unanimously adopted by the\nMembers of the Authority is subject to the approval of the Mayor of\nThe City of New York as required pursuant to said Section B3-36.1\nof said Administrative Code.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3296,
+          "min": -1.5109
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 50,
+          "mean": -0.0088,
+          "min": -0.4292
+        }
+      },
+      "ink": {
+        "ink_px": 14398,
+        "area_px": 189228,
+        "density": 0.07609,
+        "chars": 218,
+        "chars_per_1k_ink": 15.14
+      }
+    },
+    {
+      "bbox": [
+        272,
+        1240,
+        881,
+        1441
+      ],
+      "category": "Text",
+      "text": "I hereby certify that the foregoing\nis a true and exact copy of a\nResolution adopted by Triborough\nBridge and Tunnel Authority at its\nmeeting held on May 29, 1963.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2599,
+          "min": -1.2969
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 43,
+          "mean": -0.0002,
+          "min": -0.0028
+        }
+      },
+      "ink": {
+        "ink_px": 8304,
+        "area_px": 121806,
+        "density": 0.06817,
+        "chars": 163,
+        "chars_per_1k_ink": 19.63
+      }
+    },
+    {
+      "bbox": [
+        371,
+        1466,
+        837,
+        1557
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4797,
+          "min": -2.1325
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0046,
+          "min": -0.0046
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1965,
+        "area_px": 42315,
+        "density": 0.04644,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        487,
+        1557,
+        657,
+        1597
+      ],
+      "category": "Text",
+      "text": "Secretary",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2637,
+          "min": -1.2854
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0012,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0014,
+          "min": -0.0014
+        }
+      },
+      "ink": {
+        "ink_px": 359,
+        "area_px": 6800,
+        "density": 0.05279,
+        "chars": 9,
+        "chars_per_1k_ink": 25.07
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 360,
+    "content": {
+      "n_tokens": 150,
+      "mean": -0.009,
+      "min": -0.5236,
+      "p05": -0.0024,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 80,
+          "token_id": 1699,
+          "logprob": -0.5236,
+          "text": "\\n"
+        },
+        {
+          "index": 171,
+          "token_id": 1699,
+          "logprob": -0.4292,
+          "text": "\\n"
+        },
+        {
+          "index": 72,
+          "token_id": 51,
+          "logprob": -0.3473,
+          "text": "T"
+        },
+        {
+          "index": 84,
+          "token_id": 57079,
+          "logprob": -0.0089,
+          "text": " therein"
+        },
+        {
+          "index": 35,
+          "token_id": 17,
+          "logprob": -0.0083,
+          "text": "2"
+        },
+        {
+          "index": 197,
+          "token_id": 425,
+          "logprob": -0.0043,
+          "text": " B"
+        },
+        {
+          "index": 172,
+          "token_id": 24371,
+          "logprob": -0.0043,
+          "text": "Members"
+        },
+        {
+          "index": 266,
+          "token_id": 14438,
+          "logprob": -0.0028,
+          "text": "orough"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0018,
+          "text": " \"-"
+        },
+        {
+          "index": 268,
+          "token_id": 32848,
+          "logprob": -0.0018,
+          "text": "Bridge"
+        },
+        {
+          "index": 161,
+          "token_id": 1930,
+          "logprob": -0.0017,
+          "text": "OL"
+        },
+        {
+          "index": 356,
+          "token_id": 97928,
+          "logprob": -0.0014,
+          "text": "Secretary"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 123,
+      "mean": -0.323,
+      "min": -2.1325,
+      "p05": -1.5575,
+      "p50": -0.0006,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 313,
+          "token_id": 22,
+          "logprob": -2.1325,
+          "text": "7"
+        },
+        {
+          "index": 44,
+          "token_id": 19,
+          "logprob": -1.6801,
+          "text": "4"
+        },
+        {
+          "index": 302,
+          "token_id": 21,
+          "logprob": -1.6755,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 20,
+          "logprob": -1.6683,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.6483,
+          "text": "7"
+        },
+        {
+          "index": 22,
+          "token_id": 18,
+          "logprob": -1.5902,
+          "text": "3"
+        },
+        {
+          "index": 55,
+          "token_id": 20,
+          "logprob": -1.5581,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.5519,
+          "text": "7"
+        },
+        {
+          "index": 148,
+          "token_id": 18,
+          "logprob": -1.5109,
+          "text": "3"
+        },
+        {
+          "index": 307,
+          "token_id": 22,
+          "logprob": -1.4952,
+          "text": "7"
+        },
+        {
+          "index": 137,
+          "token_id": 22,
+          "logprob": -1.4587,
+          "text": "7"
+        },
+        {
+          "index": 60,
+          "token_id": 22,
+          "logprob": -1.4246,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 360,
+      "mean": -0.1141,
+      "min": -2.1325,
+      "p05": -1.2818,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.7,
+    "std": 14.25,
+    "dark_fraction": 0.01228
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      681.36,
+      1018.08
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      227,
+      339,
+      1665,
+      2488
+    ],
+    "ink_px": 37940,
+    "covered_px": 37485,
+    "covered_fraction": 0.98801,
+    "uncovered_px": 455,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

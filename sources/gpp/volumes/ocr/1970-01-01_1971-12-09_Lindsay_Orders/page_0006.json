@@ -1,0 +1,246 @@
+{
+  "page": 6,
+  "source_image": "page_0006.png",
+  "elements": [
+    {
+      "bbox": [
+        184,
+        95,
+        1067,
+        548
+      ],
+      "category": "Table",
+      "text": "<table><thead><tr><td>Subject</td><td>Order No.</td></tr></thead><tbody><tr><td>Police corruption--Appointing a commission to investigate allegations of police corruption and the City's anti-corruption procedures</td><td>11</td></tr><tr><td>Public Utilities, Interdepartmental Committee on--Established Records, uniform--Retention practices</td><td>25</td></tr><tr><td>Retirement or termination of services, Regulations on leave and overtime liquidation</td><td>26</td></tr><tr><td>--Cash payments upon death of employee</td><td>34</td></tr><tr><td>--Cash payments upon termination of employment</td><td>36</td></tr><tr><td>Special Assistant to the Mayor, Appointed to handle Section 210 of the Civil Service Law</td><td>32</td></tr><tr><td>State-City Relations, Commission on--Established United Nations, Commission for--Established Vendors--Payment of City vendors and contractors</td><td>39</td></tr><tr><td>Water supply, Payment for use of--Charitable institutions</td><td>12</td></tr><tr><td>Work force--Census concerning the composition of the work force of City agencies</td><td>49</td></tr></tbody></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4316,
+          "min": -1.8384
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1486,
+          "min": -0.1486
+        },
+        "text": {
+          "n_tokens": 312,
+          "mean": -0.0082,
+          "min": -0.5762
+        }
+      },
+      "ink": {
+        "ink_px": 3337,
+        "area_px": 321255,
+        "density": 0.01039,
+        "chars": 1114,
+        "chars_per_1k_ink": 333.83
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 348,
+    "content": {
+      "n_tokens": 312,
+      "mean": -0.0082,
+      "min": -0.5762,
+      "p05": -0.0257,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 40,
+          "token_id": 1296,
+          "logprob": -0.5762,
+          "text": "td"
+        },
+        {
+          "index": 304,
+          "token_id": 17,
+          "logprob": -0.5244,
+          "text": "2"
+        },
+        {
+          "index": 125,
+          "token_id": 522,
+          "logprob": -0.3703,
+          "text": "</"
+        },
+        {
+          "index": 35,
+          "token_id": 1784,
+          "logprob": -0.2015,
+          "text": "><"
+        },
+        {
+          "index": 262,
+          "token_id": 647,
+          "logprob": -0.1502,
+          "text": " V"
+        },
+        {
+          "index": 66,
+          "token_id": 2164,
+          "logprob": -0.0816,
+          "text": "App"
+        },
+        {
+          "index": 276,
+          "token_id": 18,
+          "logprob": -0.073,
+          "text": "3"
+        },
+        {
+          "index": 218,
+          "token_id": 11113,
+          "logprob": -0.069,
+          "text": " Section"
+        },
+        {
+          "index": 344,
+          "token_id": 29,
+          "logprob": -0.0623,
+          "text": ">"
+        },
+        {
+          "index": 109,
+          "token_id": 313,
+          "logprob": -0.0622,
+          "text": "--"
+        },
+        {
+          "index": 278,
+          "token_id": 522,
+          "logprob": -0.0613,
+          "text": "</"
+        },
+        {
+          "index": 72,
+          "token_id": 19314,
+          "logprob": -0.0426,
+          "text": " investigate"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 19,
+      "mean": -0.4167,
+      "min": -1.8384,
+      "p05": -1.8061,
+      "p50": -0.0123,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 11,
+          "token_id": 20,
+          "logprob": -1.8384,
+          "text": "5"
+        },
+        {
+          "index": 17,
+          "token_id": 22,
+          "logprob": -1.8026,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.567,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 23,
+          "logprob": -1.3576,
+          "text": "8"
+        },
+        {
+          "index": 21,
+          "token_id": 19,
+          "logprob": -0.5347,
+          "text": "4"
+        },
+        {
+          "index": 16,
+          "token_id": 21,
+          "logprob": -0.3583,
+          "text": "6"
+        },
+        {
+          "index": 10,
+          "token_id": 24,
+          "logprob": -0.17,
+          "text": "9"
+        },
+        {
+          "index": 28,
+          "token_id": 2556,
+          "logprob": -0.1486,
+          "text": "Table"
+        },
+        {
+          "index": 6,
+          "token_id": 23,
+          "logprob": -0.1239,
+          "text": "8"
+        },
+        {
+          "index": 5,
+          "token_id": 16,
+          "logprob": -0.0123,
+          "text": "1"
+        },
+        {
+          "index": 15,
+          "token_id": 15,
+          "logprob": -0.0025,
+          "text": "0"
+        },
+        {
+          "index": 20,
+          "token_id": 20,
+          "logprob": -0.0018,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 348,
+      "mean": -0.0301,
+      "min": -1.8384,
+      "p05": -0.0623,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 165.44,
+    "std": 10.62,
+    "dark_fraction": 0.00317
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      552.72,
+      444.24
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      148,
+      184,
+      1085,
+      1351
+    ],
+    "ink_px": 3467,
+    "covered_px": 3337,
+    "covered_fraction": 0.9625,
+    "uncovered_px": 130,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

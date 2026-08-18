@@ -1,0 +1,392 @@
+{
+  "page": 90,
+  "source_image": "page_0090.png",
+  "elements": [
+    {
+      "bbox": [
+        997,
+        384,
+        1072,
+        421
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4021,
+          "min": -1.8403
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0082,
+          "min": -0.0163
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0016,
+          "min": -0.0036
+        }
+      },
+      "ink": {
+        "ink_px": 285,
+        "area_px": 2888,
+        "density": 0.09868,
+        "chars": 3,
+        "chars_per_1k_ink": 10.53
+      }
+    },
+    {
+      "bbox": [
+        308,
+        495,
+        1816,
+        868
+      ],
+      "category": "Text",
+      "text": "as the agencies responsible for implementation of the Career and Salary Plan, directing that reports of progress be submitted to you covering the establishment of its several essentials. In accordance with these instructions, the first such report is respectfully submitted.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3893,
+          "min": -1.8237
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 44,
+          "mean": -0.0036,
+          "min": -0.0633
+        }
+      },
+      "ink": {
+        "ink_px": 25527,
+        "area_px": 566250,
+        "density": 0.04508,
+        "chars": 274,
+        "chars_per_1k_ink": 10.73
+      }
+    },
+    {
+      "bbox": [
+        774,
+        940,
+        1287,
+        984
+      ],
+      "category": "Section-header",
+      "text": "## CLASSIFICATION BUREAU",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3375,
+          "min": -1.7439
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0025,
+          "min": -0.0049
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.1113,
+          "min": -0.6669
+        }
+      },
+      "ink": {
+        "ink_px": 2954,
+        "area_px": 23175,
+        "density": 0.12746,
+        "chars": 24,
+        "chars_per_1k_ink": 8.12
+      }
+    },
+    {
+      "bbox": [
+        290,
+        1019,
+        1829,
+        2111
+      ],
+      "category": "Text",
+      "text": "We have determined initially the staff required and the personnel cost of the new Classification Bureau. These are detailed in the attached Appendix \"A\". It has been agreed that, upon appointment of the bureau's administrative staff, it will begin work immediately to organize itself, formulate its procedures, and then address itself to substantive matter. As staff additions are required they will be provided, but full use will be made of the qualified personnel within the Civil Service Commission, the Bureau of the Budget, and other city agencies. Each major city agency is to provide for a Personnel Unit headed by a personnel officer. The unit will expedite the agency's part in this classification program and will train an adequate number of personnel in the principles and methods of job classification.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3223,
+          "min": -1.3878
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 148,
+          "mean": -0.0002,
+          "min": -0.0205
+        }
+      },
+      "ink": {
+        "ink_px": 68099,
+        "area_px": 1688936,
+        "density": 0.04032,
+        "chars": 814,
+        "chars_per_1k_ink": 11.95
+      }
+    },
+    {
+      "bbox": [
+        284,
+        2141,
+        1774,
+        2440
+      ],
+      "category": "Text",
+      "text": "The new Classification Bureau will have the overall responsibility for continuing survey, investigation and research relative to the classification of positions and their place in the classified service. Its immediate task will be",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2713,
+          "min": -1.6063
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 35,
+          "mean": -0.0004,
+          "min": -0.01
+        }
+      },
+      "ink": {
+        "ink_px": 18623,
+        "area_px": 449092,
+        "density": 0.04147,
+        "chars": 230,
+        "chars_per_1k_ink": 12.35
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 419,
+    "content": {
+      "n_tokens": 236,
+      "mean": -0.0037,
+      "min": -0.6669,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 153,
+          "token_id": 565,
+          "logprob": -0.6669,
+          "text": "##"
+        },
+        {
+          "index": 92,
+          "token_id": 14634,
+          "logprob": -0.0633,
+          "text": " submitted"
+        },
+        {
+          "index": 82,
+          "token_id": 323,
+          "logprob": -0.062,
+          "text": " and"
+        },
+        {
+          "index": 101,
+          "token_id": 58786,
+          "logprob": -0.024,
+          "text": " essentials"
+        },
+        {
+          "index": 259,
+          "token_id": 13,
+          "logprob": -0.0205,
+          "text": "."
+        },
+        {
+          "index": 396,
+          "token_id": 3412,
+          "logprob": -0.01,
+          "text": " research"
+        },
+        {
+          "index": 114,
+          "token_id": 92345,
+          "logprob": -0.0041,
+          "text": " respectfully"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0036,
+          "text": " \"-"
+        },
+        {
+          "index": 405,
+          "token_id": 1992,
+          "logprob": -0.0019,
+          "text": " place"
+        },
+        {
+          "index": 104,
+          "token_id": 18353,
+          "logprob": -0.0014,
+          "text": " accordance"
+        },
+        {
+          "index": 36,
+          "token_id": 17,
+          "logprob": -0.0012,
+          "text": "2"
+        },
+        {
+          "index": 86,
+          "token_id": 44990,
+          "logprob": -0.0011,
+          "text": " directing"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 106,
+      "mean": -0.3201,
+      "min": -1.8403,
+      "p05": -1.6277,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.8403,
+          "text": "4"
+        },
+        {
+          "index": 50,
+          "token_id": 20,
+          "logprob": -1.8237,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.8077,
+          "text": "7"
+        },
+        {
+          "index": 140,
+          "token_id": 19,
+          "logprob": -1.7439,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.7306,
+          "text": "2"
+        },
+        {
+          "index": 56,
+          "token_id": 21,
+          "logprob": -1.6348,
+          "text": "6"
+        },
+        {
+          "index": 363,
+          "token_id": 19,
+          "logprob": -1.6063,
+          "text": "4"
+        },
+        {
+          "index": 124,
+          "token_id": 19,
+          "logprob": -1.5784,
+          "text": "4"
+        },
+        {
+          "index": 45,
+          "token_id": 23,
+          "logprob": -1.5042,
+          "text": "8"
+        },
+        {
+          "index": 135,
+          "token_id": 22,
+          "logprob": -1.4925,
+          "text": "7"
+        },
+        {
+          "index": 351,
+          "token_id": 19,
+          "logprob": -1.4542,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -1.4518,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 419,
+      "mean": -0.0833,
+      "min": -1.8403,
+      "p05": -0.5457,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.9,
+    "std": 21.28,
+    "dark_fraction": 0.03127
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      807.12,
+      1041.12
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      269,
+      347,
+      1972,
+      2544
+    ],
+    "ink_px": 117008,
+    "covered_px": 115488,
+    "covered_fraction": 0.98701,
+    "uncovered_px": 1520,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          773,
+          971,
+          1301,
+          995
+        ],
+        "ink_px": 1520
+      }
+    ],
+    "cell_px": 24
+  }
+}

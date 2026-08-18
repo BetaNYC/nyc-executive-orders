@@ -1,0 +1,245 @@
+{
+  "page": 361,
+  "source_image": "page_0361.png",
+  "elements": [
+    {
+      "bbox": [
+        480,
+        1567,
+        701,
+        1627
+      ],
+      "category": "Text",
+      "text": "The President's Advisory Council on Human Resources",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4626,
+          "min": -1.8846
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.048,
+          "min": -0.048
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -1.4276,
+          "min": -2.8412
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 7700,
+        "density": 0.0,
+        "chars": 51,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        529,
+        1638,
+        655,
+        1766
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.359,
+          "min": -1.7058
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": null
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 78,
+    "content": {
+      "n_tokens": 8,
+      "mean": -1.4276,
+      "min": -2.8412,
+      "p05": -2.8301,
+      "p50": -1.258,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 785,
+          "logprob": -2.8412,
+          "text": "The"
+        },
+        {
+          "index": 39,
+          "token_id": 43913,
+          "logprob": -2.8095,
+          "text": " Advisory"
+        },
+        {
+          "index": 37,
+          "token_id": 4795,
+          "logprob": -2.3487,
+          "text": " President"
+        },
+        {
+          "index": 42,
+          "token_id": 11097,
+          "logprob": -1.6726,
+          "text": " Human"
+        },
+        {
+          "index": 38,
+          "token_id": 594,
+          "logprob": -0.8434,
+          "text": "'s"
+        },
+        {
+          "index": 43,
+          "token_id": 16209,
+          "logprob": -0.5208,
+          "text": " Resources"
+        },
+        {
+          "index": 40,
+          "token_id": 9074,
+          "logprob": -0.2581,
+          "text": " Council"
+        },
+        {
+          "index": 41,
+          "token_id": 389,
+          "logprob": -0.1262,
+          "text": " on"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3924,
+      "min": -1.8846,
+      "p05": -1.7235,
+      "p50": -0.0323,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 13,
+          "token_id": 22,
+          "logprob": -1.8846,
+          "text": "7"
+        },
+        {
+          "index": 24,
+          "token_id": 22,
+          "logprob": -1.7526,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.7244,
+          "text": "1"
+        },
+        {
+          "index": 68,
+          "token_id": 21,
+          "logprob": -1.7058,
+          "text": "6"
+        },
+        {
+          "index": 62,
+          "token_id": 20,
+          "logprob": -1.6048,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 15,
+          "logprob": -1.42,
+          "text": "0"
+        },
+        {
+          "index": 57,
+          "token_id": 23,
+          "logprob": -1.4177,
+          "text": "8"
+        },
+        {
+          "index": 51,
+          "token_id": 24,
+          "logprob": -1.1786,
+          "text": "9"
+        },
+        {
+          "index": 6,
+          "token_id": 23,
+          "logprob": -0.5996,
+          "text": "8"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -0.5937,
+          "text": "4"
+        },
+        {
+          "index": 56,
+          "token_id": 18,
+          "logprob": -0.4763,
+          "text": "3"
+        },
+        {
+          "index": 50,
+          "token_id": 17,
+          "logprob": -0.4736,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 78,
+      "mean": -0.3626,
+      "min": -2.8412,
+      "p05": -1.7724,
+      "p50": -0.0001,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 167.99,
+    "std": 8.06,
+    "dark_fraction": 9e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      652.56,
+      428.64
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      217,
+      1048,
+      1595
+    ],
+    "ink_px": 111,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 111,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

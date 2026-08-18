@@ -1,0 +1,274 @@
+{
+  "page": 80,
+  "source_image": "page_0080.png",
+  "elements": [
+    {
+      "bbox": [
+        563,
+        73,
+        605,
+        94
+      ],
+      "category": "Page-header",
+      "text": "-6-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.2389,
+          "min": -1.0627
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0068,
+          "min": -0.0129
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0033,
+          "min": -0.0071
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        50,
+        115,
+        1059,
+        1116
+      ],
+      "category": "Table",
+      "text": "<table><thead><tr><th colspan=\"3\">RECORD RETENTION PERIOD ( IN YEARS)</th></tr><tr><th>OFFICE<br>YEARS</th><th>REC. CTR.<br>YEARS</th><th>TOTAL<br>YEARS</th></tr></thead><tbody><tr><td>Journal Entry Books---P</td><td>-</td><td>P</td></tr><tr><td colspan=\"3\">Motor Vehicle & Travel Records</td></tr><tr><td>Daily Reports, Operators & Mileage-2</td><td>-</td><td>2</td></tr><tr><td>Maintenance and Repair Records-3</td><td>-</td><td>33</td></tr><tr><td>Expense Reports---3</td><td>-</td><td>3</td></tr><tr><td>Summary Reports, Other Than Daily-3</td><td>-</td><td>3</td></tr><tr><td colspan=\"3\">Payroll Records:</td></tr><tr><td>Earnings Record Card---T+1</td><td>9</td><td>T+10</td></tr><tr><td>Payroll Orders and Vouchers---2</td><td>4</td><td>6</td></tr><tr><td>Payroll Sheets and Recaps---3</td><td>-</td><td>3</td></tr><tr><td>Payroll Change Notices---3</td><td>-</td><td>3</td></tr><tr><td>Payroll Deduction Notices---3</td><td>-</td><td>3</td></tr><tr><td colspan=\"3\">Personnel Records:</td></tr><tr><td>Index Or History Cards---T+10</td><td>-</td><td>T+10</td></tr><tr><td>Medical and Health Records---File With Personnel Folder</td><td>-</td><td></td></tr><tr><td>Personnel Changes Notices---3</td><td>-</td><td>3</td></tr><tr><td>Personnel & Civil Service Forms & Corres.---3</td><td>-</td><td>3</td></tr><tr><td>Personnel Folders-Employee---T+1</td><td>9</td><td>T+10</td></tr><tr><td colspan=\"3\">RECORDS TITLE</td></tr><tr><td colspan=\"3\">Purchasing Records</td></tr><tr><td>Open Market Orders---1</td><td>3</td><td>4</td></tr><tr><td>Purchase Orders, Official Copy---1</td><td>3</td><td>4</td></tr><tr><td>Purchase Requisitions---1</td><td>3</td><td>4</td></tr><tr><td>Purchasing Ledger or Register---2</td><td>4</td><td>6</td></tr><tr><td colspan=\"3\">Stores And Supplies Records</td></tr><tr><td>Receiving Reports---4</td><td>-</td><td>4</td></tr><tr><td>Stock Inventories---2</td><td>-</td><td>2</td></tr><tr><td>Stores Reports (Issues & Withdrawals)--4</td><td>-</td><td>4</td></tr><tr><td>Stores Requisitions---1</td><td>3</td><td>4</td></tr><tr><td>Supply Requisitions---1</td><td>-</td><td>1</td></tr><tr><td colspan=\"3\">Vouchering Records</td></tr><tr><td>Vouchers (All Types)--2</td><td>4</td><td>6</td></tr><tr><td>Voucher Registers---5</td><td>10</td><td>15</td></tr><tr><td>Voucher Schedules---2</td><td>-</td><td>2</td></tr></tbody></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3431,
+          "min": -1.6921
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0068,
+          "min": -0.0068
+        },
+        "text": {
+          "n_tokens": 922,
+          "mean": -0.0171,
+          "min": -1.2067
+        }
+      },
+      "ink": {
+        "ink_px": 1988,
+        "area_px": 837634,
+        "density": 0.00237,
+        "chars": 2363,
+        "chars_per_1k_ink": 1188.63
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 994,
+    "content": {
+      "n_tokens": 925,
+      "mean": -0.017,
+      "min": -1.2067,
+      "p05": -0.0271,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 309,
+          "token_id": 4421,
+          "logprob": -1.2067,
+          "text": "---"
+        },
+        {
+          "index": 145,
+          "token_id": 4421,
+          "logprob": -1.1885,
+          "text": "---"
+        },
+        {
+          "index": 554,
+          "token_id": 13,
+          "logprob": -1.1709,
+          "text": "."
+        },
+        {
+          "index": 241,
+          "token_id": 4421,
+          "logprob": -1.1432,
+          "text": "---"
+        },
+        {
+          "index": 141,
+          "token_id": 29,
+          "logprob": -0.874,
+          "text": ">"
+        },
+        {
+          "index": 190,
+          "token_id": 12,
+          "logprob": -0.8561,
+          "text": "-"
+        },
+        {
+          "index": 510,
+          "token_id": 1472,
+          "logprob": -0.7147,
+          "text": "></"
+        },
+        {
+          "index": 165,
+          "token_id": 16848,
+          "logprob": -0.7135,
+          "text": " colspan"
+        },
+        {
+          "index": 216,
+          "token_id": 12,
+          "logprob": -0.7132,
+          "text": "-"
+        },
+        {
+          "index": 101,
+          "token_id": 9480,
+          "logprob": -0.6853,
+          "text": "<br"
+        },
+        {
+          "index": 522,
+          "token_id": 95253,
+          "logprob": -0.4998,
+          "text": " Notices"
+        },
+        {
+          "index": 77,
+          "token_id": 16848,
+          "logprob": -0.4329,
+          "text": " colspan"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 38,
+      "mean": -0.2727,
+      "min": -1.6921,
+      "p05": -1.1287,
+      "p50": -0.0015,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 52,
+          "token_id": 24,
+          "logprob": -1.6921,
+          "text": "9"
+        },
+        {
+          "index": 41,
+          "token_id": 15,
+          "logprob": -1.4634,
+          "text": "0"
+        },
+        {
+          "index": 58,
+          "token_id": 21,
+          "logprob": -1.0696,
+          "text": "6"
+        },
+        {
+          "index": 16,
+          "token_id": 20,
+          "logprob": -1.0627,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.0361,
+          "text": "3"
+        },
+        {
+          "index": 46,
+          "token_id": 20,
+          "logprob": -1.012,
+          "text": "5"
+        },
+        {
+          "index": 11,
+          "token_id": 18,
+          "logprob": -0.8754,
+          "text": "3"
+        },
+        {
+          "index": 20,
+          "token_id": 19,
+          "logprob": -0.8123,
+          "text": "4"
+        },
+        {
+          "index": 40,
+          "token_id": 20,
+          "logprob": -0.6284,
+          "text": "5"
+        },
+        {
+          "index": 51,
+          "token_id": 20,
+          "logprob": -0.4473,
+          "text": "5"
+        },
+        {
+          "index": 57,
+          "token_id": 16,
+          "logprob": -0.1848,
+          "text": "1"
+        },
+        {
+          "index": 6,
+          "token_id": 21,
+          "logprob": -0.0287,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 994,
+      "mean": -0.0263,
+      "min": -1.6921,
+      "p05": -0.0624,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 166.71,
+    "std": 12.49,
+    "dark_fraction": 0.00201
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      533.52,
+      422.4
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      140,
+      177,
+      1033,
+      1304
+    ],
+    "ink_px": 2024,
+    "covered_px": 1988,
+    "covered_fraction": 0.98221,
+    "uncovered_px": 36,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

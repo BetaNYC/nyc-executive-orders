@@ -1,0 +1,376 @@
+{
+  "page": 40,
+  "source_image": "page_0040.png",
+  "elements": [
+    {
+      "bbox": [
+        874,
+        371,
+        963,
+        407
+      ],
+      "category": "Page-header",
+      "text": "-10-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4795,
+          "min": -2.1827
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0061,
+          "min": -0.0116
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0023,
+          "min": -0.0063
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        731,
+        507,
+        1740,
+        900
+      ],
+      "category": "Text",
+      "text": "The Department of Purchase shall accept no requisitions encumbering appropriations after June 30, 1973, and for purposes of efficient operation may set such date earlier in that month. Agencies shall place neither orders chargeable to, nor further encumbrances on, annual requirement contracts issued for the fiscal year 1972-1973 after June 30, 1973.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3943,
+          "min": -1.5267
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 87,
+          "mean": -0.0012,
+          "min": -0.072
+        }
+      },
+      "ink": {
+        "ink_px": 21394,
+        "area_px": 400698,
+        "density": 0.05339,
+        "chars": 351,
+        "chars_per_1k_ink": 16.41
+      }
+    },
+    {
+      "bbox": [
+        625,
+        954,
+        1071,
+        989
+      ],
+      "category": "Section-header",
+      "text": "(1) SPECIFICATIONS",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2969,
+          "min": -1.4452
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1604,
+          "min": -0.3207
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.058,
+          "min": -0.2889
+        }
+      },
+      "ink": {
+        "ink_px": 1697,
+        "area_px": 16164,
+        "density": 0.10499,
+        "chars": 18,
+        "chars_per_1k_ink": 10.61
+      }
+    },
+    {
+      "bbox": [
+        743,
+        1043,
+        1882,
+        1884
+      ],
+      "category": "List-item",
+      "text": "(1) All contracts and open market orders except those of the Board of Education, for supplies, materials, and equipment, chargeable to appropriations classified as \"Other Than Personal Service,\" shall be based upon specifications which have been approved by the Board of Standardization in accordance with the New York City Charter. In the absence of such Standard or Tentative Standard Specifications for the particular supplies, materials or equipment required, contracts and open market orders shall be based upon specifications which are definite and certain and which permit of competition, as required by the New York City Charter or which comply with Section 12 of the regulations of the Board of Estimate adopted June 30, 1949 (Cal. No. 318-A).",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2805,
+          "min": -1.7544
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0049,
+          "min": -0.0097
+        },
+        "text": {
+          "n_tokens": 149,
+          "mean": -0.0006,
+          "min": -0.0403
+        }
+      },
+      "ink": {
+        "ink_px": 53269,
+        "area_px": 965468,
+        "density": 0.05517,
+        "chars": 752,
+        "chars_per_1k_ink": 14.12
+      }
+    },
+    {
+      "bbox": [
+        751,
+        1931,
+        1830,
+        2425
+      ],
+      "category": "List-item",
+      "text": "(2) The head of the agency awarding the contract shall, at the time the contract is transmitted to the Comptroller for registration, certify that such contract is based upon specifications which comply with the above provisions. All open market orders issued shall contain a certificate by the head of the agency issuing the orders that such order is based upon specifications which comply with the above provisions.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2747,
+          "min": -1.8207
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0007,
+          "min": -0.0014
+        },
+        "text": {
+          "n_tokens": 76,
+          "mean": -0.0007,
+          "min": -0.045
+        }
+      },
+      "ink": {
+        "ink_px": 27734,
+        "area_px": 536978,
+        "density": 0.05165,
+        "chars": 416,
+        "chars_per_1k_ink": 15.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 501,
+    "content": {
+      "n_tokens": 321,
+      "mean": -0.0017,
+      "min": -0.2889,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 195,
+          "token_id": 11993,
+          "logprob": -0.2889,
+          "text": " \"("
+        },
+        {
+          "index": 138,
+          "token_id": 220,
+          "logprob": -0.072,
+          "text": " "
+        },
+        {
+          "index": 452,
+          "token_id": 92230,
+          "logprob": -0.045,
+          "text": " certify"
+        },
+        {
+          "index": 376,
+          "token_id": 8851,
+          "logprob": -0.0403,
+          "text": "Cal"
+        },
+        {
+          "index": 385,
+          "token_id": 568,
+          "logprob": -0.0213,
+          "text": ")."
+        },
+        {
+          "index": 79,
+          "token_id": 902,
+          "logprob": -0.0098,
+          "text": " no"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0063,
+          "text": " \"-"
+        },
+        {
+          "index": 82,
+          "token_id": 3209,
+          "logprob": -0.0049,
+          "text": " enc"
+        },
+        {
+          "index": 334,
+          "token_id": 323,
+          "logprob": -0.0041,
+          "text": " and"
+        },
+        {
+          "index": 81,
+          "token_id": 5930,
+          "logprob": -0.0035,
+          "text": "itions"
+        },
+        {
+          "index": 113,
+          "token_id": 90186,
+          "logprob": -0.0034,
+          "text": " Agencies"
+        },
+        {
+          "index": 348,
+          "token_id": 476,
+          "logprob": -0.0024,
+          "text": " or"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 107,
+      "mean": -0.3156,
+      "min": -2.1827,
+      "p05": -1.5257,
+      "p50": -0.0017,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -2.1827,
+          "text": "1"
+        },
+        {
+          "index": 17,
+          "token_id": 18,
+          "logprob": -1.9938,
+          "text": "3"
+        },
+        {
+          "index": 399,
+          "token_id": 16,
+          "logprob": -1.8207,
+          "text": "1"
+        },
+        {
+          "index": 219,
+          "token_id": 17,
+          "logprob": -1.7544,
+          "text": "2"
+        },
+        {
+          "index": 22,
+          "token_id": 22,
+          "logprob": -1.6068,
+          "text": "7"
+        },
+        {
+          "index": 56,
+          "token_id": 15,
+          "logprob": -1.5267,
+          "text": "0"
+        },
+        {
+          "index": 61,
+          "token_id": 15,
+          "logprob": -1.5236,
+          "text": "0"
+        },
+        {
+          "index": 225,
+          "token_id": 19,
+          "logprob": -1.5107,
+          "text": "4"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -1.5032,
+          "text": "7"
+        },
+        {
+          "index": 172,
+          "token_id": 19,
+          "logprob": -1.4452,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.441,
+          "text": "4"
+        },
+        {
+          "index": 411,
+          "token_id": 20,
+          "logprob": -1.3692,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 501,
+      "mean": -0.0685,
+      "min": -2.1827,
+      "p05": -0.3925,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.48,
+    "std": 19.44,
+    "dark_fraction": 0.02347
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      791.04,
+      1257.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      263,
+      419,
+      1934,
+      3073
+    ],
+    "ink_px": 104101,
+    "covered_px": 104094,
+    "covered_fraction": 0.99993,
+    "uncovered_px": 7,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

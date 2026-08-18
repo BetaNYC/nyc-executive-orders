@@ -227,7 +227,7 @@ def parse_record(
     raw_body = clean["raw_body"]
     char_count = len(body)
 
-    frontmatter = _build_frontmatter(
+    frontmatter = build_frontmatter(
         record, text_source=text_source, page_count=page_count,
         title=clean["title"], date_signed=clean["date_signed"],
         text_quality=clean["text_quality"], dropped_header=clean["dropped_header"],
@@ -282,10 +282,15 @@ def _run_clean_stage(record: dict, body: str, *, text_source: str,
     }
 
 
-def _build_frontmatter(record: dict, *, text_source: str, page_count: int | None,
-                       title, date_signed, text_quality: str,
-                       dropped_header: str, dropped_marks: list) -> dict:
+def build_frontmatter(record: dict, *, text_source: str, page_count: int | None,
+                      title, date_signed, text_quality: str,
+                      dropped_header: str, dropped_marks: list) -> dict:
     """Assemble the locked frontmatter dict for one order.
+
+    Public (it was ``_build_frontmatter``) because Phase E's
+    :mod:`build_pre1974` emits through it too. Every corpus writer routes the
+    field set through this one function, so ``FRONTMATTER_FIELDS`` stays the
+    single definition of the schema and no era can drift its own shape.
 
     ``title`` / ``date_signed`` are the post-clean values (a gate-accepted
     extraction fills a previously-empty field; existing values pass through). The
@@ -482,7 +487,7 @@ def clean_existing_corpus(
 
         clean = _run_clean_stage(record, raw_input, text_source=text_source,
                                  year=year)
-        frontmatter = _build_frontmatter(
+        frontmatter = build_frontmatter(
             record, text_source=text_source, page_count=page_count,
             title=clean["title"], date_signed=clean["date_signed"],
             text_quality=clean["text_quality"], dropped_header=clean["dropped_header"],

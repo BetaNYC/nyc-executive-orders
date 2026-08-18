@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import pytest
+
 from nyc_executive_orders.enumerate import parse_is_emergency, parse_number
-from nyc_executive_orders.identity import mint_eo_id
+from nyc_executive_orders.identity import mint_eo_id, mint_pre1974_id
 
 
 def test_regular_eo_id():
@@ -81,3 +83,62 @@ def test_adams_plain_integer_emergency_still_parses():
 def test_regular_eo_still_zero_padded():
     assert _id_from_title("Executive Order No. 17") == "2026-EO-017"
     assert _id_from_title("Executive Order 08") == "2026-EO-008"
+
+
+# --------------------------------------------------------------------------- #
+# Phase E — pre-1974 instrument ids                                             #
+# --------------------------------------------------------------------------- #
+
+@pytest.mark.parametrize(
+    "year, number, series, expected",
+    [
+        (1951, 14, "EO", "1951-EO-014"),      # zero-padded like the modern scheme
+        (1951, "1", "EM", "1951-EM-001"),
+        (1972, "7", "AM", "1972-AM-007"),
+        (1951, "7A", "EO", "1951-EO-007A"),   # digits pad, letter suffix kept
+        (1951, "7a", "EO", "1951-EO-007A"),   # suffix normalized to upper
+        (1968, "104", "EO", "1968-EO-104"),   # 3+ digits are not truncated
+    ],
+)
+def test_mint_pre1974_id_numbered(year, number, series, expected):
+    assert mint_pre1974_id(year, number, series) == expected
+
+
+def test_mint_pre1974_id_unnumbered_is_date_derived():
+    """Date-derived, not sequence-derived: a sequence number would shift every
+    id in the volume whenever segmentation changed by one document."""
+    assert mint_pre1974_id(1967, None, "EM", month_day="0104") == "1967-EM-D0104"
+
+
+def test_mint_pre1974_id_disambiguates_same_date_collisions():
+    first = mint_pre1974_id(1967, None, "EM", month_day="0104", occurrence=0)
+    second = mint_pre1974_id(1967, None, "EM", month_day="0104", occurrence=1)
+    third = mint_pre1974_id(1967, None, "EM", month_day="0104", occurrence=2)
+    assert (first, second, third) == (
+        "1967-EM-D0104", "1967-EM-D0104b", "1967-EM-D0104c")
+    assert len({first, second, third}) == 3
+
+
+def test_mint_pre1974_id_numbered_collision_is_also_suffixed():
+    """Two documents claiming one number must never overwrite each other."""
+    a = mint_pre1974_id(1951, 14, "EO", occurrence=0)
+    b = mint_pre1974_id(1951, 14, "EO", occurrence=1)
+    assert (a, b) == ("1951-EO-014", "1951-EO-014b")
+
+
+def test_mint_pre1974_id_with_neither_number_nor_date():
+    assert mint_pre1974_id(1967, None, "EM") == "1967-EM-UNK"
+
+
+def test_mint_pre1974_id_rejects_an_unknown_series():
+    # "EEO" is modern-only — there is no emergency series before 1974.
+    with pytest.raises(ValueError):
+        mint_pre1974_id(1951, 1, "EEO")
+
+
+def test_mint_eo_id_is_untouched_by_phase_e():
+    """The LOCKED modern scheme must be byte-identical; 2,291 records depend on it."""
+    assert mint_eo_id(2024, 42, False) == "2024-EO-042"
+    assert mint_eo_id(2026, "1.37", True) == "2026-EEO-1.37"
+    assert mint_eo_id(1974, 1, False) == "1974-EO-001"
+    assert mint_eo_id(2024, None, False) == "2024-EO-UNK"

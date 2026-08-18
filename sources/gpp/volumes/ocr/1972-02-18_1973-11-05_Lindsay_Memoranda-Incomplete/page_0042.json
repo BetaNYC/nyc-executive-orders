@@ -1,0 +1,343 @@
+{
+  "page": 42,
+  "source_image": "page_0042.png",
+  "elements": [
+    {
+      "bbox": [
+        416,
+        460,
+        1499,
+        551
+      ],
+      "category": "Section-header",
+      "text": "## Most Preferred Work Schedule",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4522,
+          "min": -1.9999
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0032,
+          "min": -0.0063
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0093,
+          "min": -0.0365
+        }
+      },
+      "ink": {
+        "ink_px": 3630,
+        "area_px": 100096,
+        "density": 0.03627,
+        "chars": 31,
+        "chars_per_1k_ink": 8.54
+      }
+    },
+    {
+      "bbox": [
+        416,
+        498,
+        1886,
+        800
+      ],
+      "category": "Text",
+      "text": "Despite the 9 to 5 tradition, the survey of downtown Manhattan workers finds that 8:30-4:30 is actually the most popular schedule with those who responded. Second is 8:45-4:45, and third are three schedules of about equal popularity: 8 to 4, 8:15-4:15, and 9 to 5.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3777,
+          "min": -1.8389
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 85,
+          "mean": -0.0002,
+          "min": -0.0093
+        }
+      },
+      "ink": {
+        "ink_px": 8356,
+        "area_px": 449008,
+        "density": 0.01861,
+        "chars": 264,
+        "chars_per_1k_ink": 31.59
+      }
+    },
+    {
+      "bbox": [
+        416,
+        790,
+        1886,
+        1100
+      ],
+      "category": "Text",
+      "text": "Further analysis provides considerable insight on the flexibility of workers. At least 70 percent of the respondents indicated, that after being assigned to one of seven given schedules beginning as early as 8:00 or as late as 9:30 A.M., they would be willing to stick with that schedule.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.245,
+          "min": -1.4918
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 63,
+          "mean": -0.0002,
+          "min": -0.0036
+        }
+      },
+      "ink": {
+        "ink_px": 4160,
+        "area_px": 459347,
+        "density": 0.00906,
+        "chars": 288,
+        "chars_per_1k_ink": 69.23
+      }
+    },
+    {
+      "bbox": [
+        330,
+        1347,
+        2033,
+        3182
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4318,
+          "min": -2.1219
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 7977,
+        "area_px": 2884770,
+        "density": 0.00277,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 295,
+    "content": {
+      "n_tokens": 153,
+      "mean": -0.0005,
+      "min": -0.0365,
+      "p05": -0.001,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 565,
+          "logprob": -0.0365,
+          "text": "##"
+        },
+        {
+          "index": 37,
+          "token_id": 7496,
+          "logprob": -0.0093,
+          "text": " Most"
+        },
+        {
+          "index": 90,
+          "token_id": 7337,
+          "logprob": -0.0093,
+          "text": " workers"
+        },
+        {
+          "index": 229,
+          "token_id": 7167,
+          "logprob": -0.0036,
+          "text": " beginning"
+        },
+        {
+          "index": 227,
+          "token_id": 2661,
+          "logprob": -0.0033,
+          "text": " given"
+        },
+        {
+          "index": 98,
+          "token_id": 12,
+          "logprob": -0.003,
+          "text": "-"
+        },
+        {
+          "index": 76,
+          "token_id": 19810,
+          "logprob": -0.0014,
+          "text": "Despite"
+        },
+        {
+          "index": 218,
+          "token_id": 11,
+          "logprob": -0.0013,
+          "text": ","
+        },
+        {
+          "index": 38,
+          "token_id": 62503,
+          "logprob": -0.0007,
+          "text": " Preferred"
+        },
+        {
+          "index": 223,
+          "token_id": 311,
+          "logprob": -0.0007,
+          "text": " to"
+        },
+        {
+          "index": 132,
+          "token_id": 315,
+          "logprob": -0.0006,
+          "text": " of"
+        },
+        {
+          "index": 160,
+          "token_id": 1189,
+          "logprob": -0.0005,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 84,
+      "mean": -0.3541,
+      "min": -2.1219,
+      "p05": -1.8331,
+      "p50": -0.0032,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 285,
+          "token_id": 17,
+          "logprob": -2.1219,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -1.9999,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.915,
+          "text": "6"
+        },
+        {
+          "index": 279,
+          "token_id": 18,
+          "logprob": -1.8849,
+          "text": "3"
+        },
+        {
+          "index": 59,
+          "token_id": 21,
+          "logprob": -1.8389,
+          "text": "6"
+        },
+        {
+          "index": 273,
+          "token_id": 22,
+          "logprob": -1.8002,
+          "text": "7"
+        },
+        {
+          "index": 53,
+          "token_id": 23,
+          "logprob": -1.6394,
+          "text": "8"
+        },
+        {
+          "index": 185,
+          "token_id": 15,
+          "logprob": -1.4918,
+          "text": "0"
+        },
+        {
+          "index": 267,
+          "token_id": 15,
+          "logprob": -1.3596,
+          "text": "0"
+        },
+        {
+          "index": 64,
+          "token_id": 15,
+          "logprob": -1.2495,
+          "text": "0"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.2069,
+          "text": "0"
+        },
+        {
+          "index": 173,
+          "token_id": 15,
+          "logprob": -1.1347,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 295,
+      "mean": -0.103,
+      "min": -2.1219,
+      "p05": -0.7806,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 181.9,
+    "std": 15.4,
+    "dark_fraction": 0.0042
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      941.04,
+      1241.52
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      313,
+      413,
+      2300,
+      3035
+    ],
+    "ink_px": 21893,
+    "covered_px": 21846,
+    "covered_fraction": 0.99785,
+    "uncovered_px": 47,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "page": 8,
+  "source_image": "page_0008.png",
+  "elements": [
+    {
+      "bbox": [
+        774,
+        174,
+        920,
+        212
+      ],
+      "category": "Page-header",
+      "text": "PAGE 2",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3162,
+          "min": -1.3487
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0051,
+          "min": -0.0098
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0015,
+          "min": -0.0041
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        168,
+        244,
+        1632,
+        2458
+      ],
+      "category": "Text",
+      "text": "| SUBJECT | NUMBER | DATE |\n|---|---|---|\n| Housing and City Renewal, Mayor's advisor on | 67 | 8/27/59 |\n| Housing and redevelopment | 75<br>77 | 4/12/60<br>5/4/60 |\n| Information center established | 78 | 6/20/60 |\n| Juvenile delinquency, summer jobs | 79 | 7/14/60 |\n| Labor relations - city employees | 49 | 3/31/58 |\n| Leased property, city-owned | 81 | 8/26/60 |\n| Leaves of absence | 52<br>62<br>60 | 5/5/58<br>4/1/59<br>3/26/59 |\n| Career and salary plan pay deduction union activities | 52<br>62<br>60 | 5/5/58 |\n| Legislation | 53<br>60<br>48<br>58<br>71<br>83<br>106 | 9/2/58<br>9/9/59<br>1/1/58<br>1/1/59<br>12/28/59<br>12/15/60<br>12/15/61 |\n| deadline for submission of state, city sponsored procedure for reporting on | 53<br>60<br>48<br>58<br>71<br>83<br>106 | 9/2/58 |\n| Legislative meetings, approval to attend | 57<br>70<br>85<br>102 | 12/12/58<br>12/10/59<br>12/16/60<br>11/28/61 |\n| Legislative program, N.Y.C. | 53<br>68<br>80<br>98 | 9/2/58<br>9/9/59<br>8/18/60<br>9/25/61 |\n| Limousines, city, restrictions | 65<br>66 | 7/1/59<br>7/10/59 |\n| Management training program | 56 | 11/28/58 |\n| Mayor's Medal - outstanding city employee | 100 | 10/31/61 |\n| Mental Health Services commissioner appointed | 101 | 10/31/61 |\n| Multiple dwellings, violations registry | 88 | 3/10/61 |\n| Narcotics Addiction Service | 94 | 11/3/61 |",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3124,
+          "min": -1.5964
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.633,
+          "min": -0.633
+        },
+        "text": {
+          "n_tokens": 650,
+          "mean": -0.0153,
+          "min": -0.7251
+        }
+      },
+      "ink": {
+        "ink_px": 61764,
+        "area_px": 2811875,
+        "density": 0.02197,
+        "chars": 1347,
+        "chars_per_1k_ink": 21.81
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 726,
+    "content": {
+      "n_tokens": 653,
+      "mean": -0.0152,
+      "min": -0.7251,
+      "p05": -0.0293,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 276,
+          "token_id": 40476,
+          "logprob": -0.7251,
+          "text": " Career"
+        },
+        {
+          "index": 315,
+          "token_id": 15,
+          "logprob": -0.6987,
+          "text": "0"
+        },
+        {
+          "index": 285,
+          "token_id": 220,
+          "logprob": -0.6942,
+          "text": " "
+        },
+        {
+          "index": 123,
+          "token_id": 9480,
+          "logprob": -0.6842,
+          "text": "<br"
+        },
+        {
+          "index": 237,
+          "token_id": 220,
+          "logprob": -0.6331,
+          "text": " "
+        },
+        {
+          "index": 238,
+          "token_id": 20,
+          "logprob": -0.5778,
+          "text": "5"
+        },
+        {
+          "index": 298,
+          "token_id": 20,
+          "logprob": -0.5589,
+          "text": "5"
+        },
+        {
+          "index": 454,
+          "token_id": 67405,
+          "logprob": -0.5577,
+          "text": " Legislative"
+        },
+        {
+          "index": 712,
+          "token_id": 19,
+          "logprob": -0.5186,
+          "text": "4"
+        },
+        {
+          "index": 280,
+          "token_id": 2291,
+          "logprob": -0.4375,
+          "text": " pay"
+        },
+        {
+          "index": 297,
+          "token_id": 220,
+          "logprob": -0.4293,
+          "text": " "
+        },
+        {
+          "index": 82,
+          "token_id": 4421,
+          "logprob": -0.4065,
+          "text": "---"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 41,
+      "mean": -0.3069,
+      "min": -1.5964,
+      "p05": -1.3487,
+      "p50": -0.0032,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 23,
+          "logprob": -1.5964,
+          "text": "8"
+        },
+        {
+          "index": 56,
+          "token_id": 17,
+          "logprob": -1.5592,
+          "text": "2"
+        },
+        {
+          "index": 22,
+          "token_id": 17,
+          "logprob": -1.3487,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.323,
+          "text": "4"
+        },
+        {
+          "index": 50,
+          "token_id": 19,
+          "logprob": -1.2755,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.2662,
+          "text": "4"
+        },
+        {
+          "index": 17,
+          "token_id": 15,
+          "logprob": -1.2081,
+          "text": "0"
+        },
+        {
+          "index": 62,
+          "token_id": 23,
+          "logprob": -1.1909,
+          "text": "8"
+        },
+        {
+          "index": 68,
+          "token_id": 1178,
+          "logprob": -0.633,
+          "text": "Text"
+        },
+        {
+          "index": 16,
+          "token_id": 17,
+          "logprob": -0.2878,
+          "text": "2"
+        },
+        {
+          "index": 61,
+          "token_id": 20,
+          "logprob": -0.2822,
+          "text": "5"
+        },
+        {
+          "index": 5,
+          "token_id": 22,
+          "logprob": -0.1616,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 726,
+      "mean": -0.031,
+      "min": -1.5964,
+      "p05": -0.0547,
+      "p50": -0.0001,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.39,
+    "std": 17.52,
+    "dark_fraction": 0.01901
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      752.88,
+      968.4
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      251,
+      322,
+      1840,
+      2367
+    ],
+    "ink_px": 61764,
+    "covered_px": 61764,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

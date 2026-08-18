@@ -1,0 +1,376 @@
+{
+  "page": 130,
+  "source_image": "page_0130.png",
+  "elements": [
+    {
+      "bbox": [
+        1359,
+        261,
+        1580,
+        310
+      ],
+      "category": "Page-header",
+      "text": "- 10 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4499,
+          "min": -1.8125
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0004,
+          "min": -0.0007
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0271,
+          "min": -0.0795
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        724,
+        477,
+        2345,
+        731
+      ],
+      "category": "Text",
+      "text": "recommend that all Administrators, heads of departments and commissions should be precluded from holding official positions in political parties.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.5165,
+          "min": -2.0194
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0035,
+          "min": -0.0701
+        }
+      },
+      "ink": {
+        "ink_px": 20,
+        "area_px": 380715,
+        "density": 5e-05,
+        "chars": 145,
+        "chars_per_1k_ink": 7250.0
+      }
+    },
+    {
+      "bbox": [
+        677,
+        748,
+        2355,
+        1747
+      ],
+      "category": "Text",
+      "text": "With respect to elected officials, however, their right to participate in politics as party officers or otherwise should in no way be restricted. They are chosen by the electorate with the expectation that they will pursue the policies which they have advocated in their political campaigns and their actions are subject to review by their constitutency whenever they seek elective office. As an elected official, the Mayor is expected to carry out political objectives and he should not be limited in his selection of personal aids on an executive level, such as the Deputy Mayors and Assistants to the Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.438,
+          "min": -1.9941
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 111,
+          "mean": -0.0048,
+          "min": -0.5014
+        }
+      },
+      "ink": {
+        "ink_px": 41,
+        "area_px": 1543080,
+        "density": 3e-05,
+        "chars": 610,
+        "chars_per_1k_ink": 14878.05
+      }
+    },
+    {
+      "bbox": [
+        659,
+        1737,
+        2373,
+        2135
+      ],
+      "category": "Text",
+      "text": "These principles should also apply to corresponding appointees and assistants of the Comptroller, the President of the Council and each of the Borough Presidents, all of whom are elected to carry out politically announced objectives.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3849,
+          "min": -1.9616
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 41,
+          "mean": -0.0001,
+          "min": -0.001
+        }
+      },
+      "ink": {
+        "ink_px": 46,
+        "area_px": 623200,
+        "density": 7e-05,
+        "chars": 233,
+        "chars_per_1k_ink": 5065.22
+      }
+    },
+    {
+      "bbox": [
+        637,
+        2099,
+        2283,
+        2683
+      ],
+      "category": "Text",
+      "text": "We wish to make it clear that the constitutional right to express opinions on political questions and political candidates must not be infringed. Even if our recommendation that Administrators and department heads be restricted from holding office in a political party is accepted, they should not be precluded from participating in the discussion",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3761,
+          "min": -1.9996
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 58,
+          "mean": -0.0002,
+          "min": -0.0032
+        }
+      },
+      "ink": {
+        "ink_px": 12,
+        "area_px": 925880,
+        "density": 1e-05,
+        "chars": 347,
+        "chars_per_1k_ink": 28916.67
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 422,
+    "content": {
+      "n_tokens": 238,
+      "mean": -0.0032,
+      "min": -0.5014,
+      "p05": -0.0012,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 193,
+          "token_id": 8952,
+          "logprob": -0.5014,
+          "text": " constit"
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.0795,
+          "text": " \"-"
+        },
+        {
+          "index": 86,
+          "token_id": 53664,
+          "logprob": -0.0701,
+          "text": " commissions"
+        },
+        {
+          "index": 37,
+          "token_id": 220,
+          "logprob": -0.0557,
+          "text": " "
+        },
+        {
+          "index": 195,
+          "token_id": 2251,
+          "logprob": -0.0069,
+          "text": "ency"
+        },
+        {
+          "index": 76,
+          "token_id": 66589,
+          "logprob": -0.0068,
+          "text": "recommend"
+        },
+        {
+          "index": 166,
+          "token_id": 61468,
+          "logprob": -0.0063,
+          "text": " electorate"
+        },
+        {
+          "index": 194,
+          "token_id": 332,
+          "logprob": -0.0042,
+          "text": "ut"
+        },
+        {
+          "index": 219,
+          "token_id": 537,
+          "logprob": -0.0033,
+          "text": " not"
+        },
+        {
+          "index": 389,
+          "token_id": 27682,
+          "logprob": -0.0032,
+          "text": " recommendation"
+        },
+        {
+          "index": 376,
+          "token_id": 4755,
+          "logprob": -0.0029,
+          "text": " questions"
+        },
+        {
+          "index": 81,
+          "token_id": 11,
+          "logprob": -0.0018,
+          "text": ","
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 107,
+      "mean": -0.407,
+      "min": -2.0194,
+      "p05": -1.9402,
+      "p50": -0.0006,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 48,
+          "token_id": 19,
+          "logprob": -2.0194,
+          "text": "4"
+        },
+        {
+          "index": 343,
+          "token_id": 18,
+          "logprob": -1.9996,
+          "text": "3"
+        },
+        {
+          "index": 59,
+          "token_id": 20,
+          "logprob": -1.9957,
+          "text": "5"
+        },
+        {
+          "index": 117,
+          "token_id": 20,
+          "logprob": -1.9941,
+          "text": "5"
+        },
+        {
+          "index": 265,
+          "token_id": 18,
+          "logprob": -1.9616,
+          "text": "3"
+        },
+        {
+          "index": 64,
+          "token_id": 16,
+          "logprob": -1.9489,
+          "text": "1"
+        },
+        {
+          "index": 53,
+          "token_id": 22,
+          "logprob": -1.92,
+          "text": "7"
+        },
+        {
+          "index": 123,
+          "token_id": 22,
+          "logprob": -1.9096,
+          "text": "7"
+        },
+        {
+          "index": 349,
+          "token_id": 18,
+          "logprob": -1.8666,
+          "text": "3"
+        },
+        {
+          "index": 271,
+          "token_id": 20,
+          "logprob": -1.824,
+          "text": "5"
+        },
+        {
+          "index": 8,
+          "token_id": 24,
+          "logprob": -1.8125,
+          "text": "9"
+        },
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.7365,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 422,
+      "mean": -0.105,
+      "min": -2.0194,
+      "p05": -0.6712,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 181.81,
+    "std": 12.11,
+    "dark_fraction": 3e-05
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      907.2,
+      1151.52
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      302,
+      383,
+      2217,
+      2815
+    ],
+    "ink_px": 117,
+    "covered_px": 117,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

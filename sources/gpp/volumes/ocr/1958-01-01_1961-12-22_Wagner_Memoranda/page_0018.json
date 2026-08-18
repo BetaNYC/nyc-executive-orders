@@ -1,0 +1,309 @@
+{
+  "page": 18,
+  "source_image": "page_0018.png",
+  "elements": [
+    {
+      "bbox": [
+        219,
+        407,
+        1604,
+        631
+      ],
+      "category": "Text",
+      "text": "I request that you acknowledge receipt of this Executive Order and indicate the name and title of an officer who, in addition to the head of the agency, is authorized to sign the legislative reports. A copy of this acknowledgment should be sent to Mr. Ruggieri at the De Witt Clinton Hotel, Albany, New York.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4622,
+          "min": -1.8823
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 64,
+          "mean": -0.004,
+          "min": -0.2519
+        }
+      },
+      "ink": {
+        "ink_px": 18779,
+        "area_px": 305100,
+        "density": 0.06155,
+        "chars": 308,
+        "chars_per_1k_ink": 16.4
+      }
+    },
+    {
+      "bbox": [
+        987,
+        736,
+        1747,
+        864
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4807,
+          "min": -1.9109
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1081,
+        "area_px": 98685,
+        "density": 0.01095,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1007,
+        867,
+        1328,
+        947
+      ],
+      "category": "Caption",
+      "text": "ROBERT F. WAGNER\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3033,
+          "min": -1.5691
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3485,
+          "min": -0.3485
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0007,
+          "min": -0.0033
+        }
+      },
+      "ink": {
+        "ink_px": 1175,
+        "area_px": 26244,
+        "density": 0.04477,
+        "chars": 22,
+        "chars_per_1k_ink": 18.72
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 179,
+    "content": {
+      "n_tokens": 75,
+      "mean": -0.0035,
+      "min": -0.2519,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 323,
+          "logprob": -0.2519,
+          "text": " and"
+        },
+        {
+          "index": 85,
+          "token_id": 2596,
+          "logprob": -0.0037,
+          "text": "ugg"
+        },
+        {
+          "index": 174,
+          "token_id": 3022,
+          "logprob": -0.0033,
+          "text": "AY"
+        },
+        {
+          "index": 172,
+          "token_id": 1699,
+          "logprob": -0.0019,
+          "text": "\\n"
+        },
+        {
+          "index": 165,
+          "token_id": 1285,
+          "logprob": -0.0008,
+          "text": "RO"
+        },
+        {
+          "index": 72,
+          "token_id": 13,
+          "logprob": -0.0008,
+          "text": "."
+        },
+        {
+          "index": 86,
+          "token_id": 53939,
+          "logprob": -0.0006,
+          "text": "ieri"
+        },
+        {
+          "index": 173,
+          "token_id": 44,
+          "logprob": -0.0005,
+          "text": "M"
+        },
+        {
+          "index": 171,
+          "token_id": 13896,
+          "logprob": -0.0004,
+          "text": "NER"
+        },
+        {
+          "index": 36,
+          "token_id": 1681,
+          "logprob": -0.0002,
+          "text": " request"
+        },
+        {
+          "index": 91,
+          "token_id": 8120,
+          "logprob": -0.0002,
+          "text": " Clinton"
+        },
+        {
+          "index": 92,
+          "token_id": 14552,
+          "logprob": -0.0002,
+          "text": " Hotel"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 61,
+      "mean": -0.3988,
+      "min": -1.9109,
+      "p05": -1.8646,
+      "p50": -0.0167,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 106,
+          "token_id": 22,
+          "logprob": -1.9109,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 19,
+          "logprob": -1.8823,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -1.8718,
+          "text": "1"
+        },
+        {
+          "index": 111,
+          "token_id": 21,
+          "logprob": -1.8646,
+          "text": "6"
+        },
+        {
+          "index": 122,
+          "token_id": 19,
+          "logprob": -1.8484,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.747,
+          "text": "7"
+        },
+        {
+          "index": 117,
+          "token_id": 22,
+          "logprob": -1.7181,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.6735,
+          "text": "9"
+        },
+        {
+          "index": 137,
+          "token_id": 22,
+          "logprob": -1.5691,
+          "text": "7"
+        },
+        {
+          "index": 142,
+          "token_id": 22,
+          "logprob": -1.4314,
+          "text": "7"
+        },
+        {
+          "index": 153,
+          "token_id": 22,
+          "logprob": -1.2862,
+          "text": "7"
+        },
+        {
+          "index": 148,
+          "token_id": 23,
+          "logprob": -1.2339,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 179,
+      "mean": -0.1374,
+      "min": -1.9109,
+      "p05": -1.4451,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 172.99,
+    "std": 10.32,
+    "dark_fraction": 0.0062
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      769.44,
+      988.56
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      256,
+      329,
+      1881,
+      2416
+    ],
+    "ink_px": 21035,
+    "covered_px": 21035,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

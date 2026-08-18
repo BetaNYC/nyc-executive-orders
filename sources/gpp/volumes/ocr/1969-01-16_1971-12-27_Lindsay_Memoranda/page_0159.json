@@ -1,0 +1,376 @@
+{
+  "page": 159,
+  "source_image": "page_0159.png",
+  "elements": [
+    {
+      "bbox": [
+        966,
+        271,
+        1051,
+        311
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3955,
+          "min": -1.7836
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0016,
+          "min": -0.0026
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0016,
+          "min": -0.0043
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        217,
+        369,
+        1959,
+        1092
+      ],
+      "category": "Text",
+      "text": "The attached brochure will indicate the wide range of professional services and personal benefits offered ASPA members including: Public Administration Review, Public Administration News and Views, Public Administration Recruiter, Personnel Exchange, low cost group life insurance and supplemental hospital payment plan. There are four levels of involvement - individual, local, regional and national. Other society services include: affiliation with various professional groups; a special section of the society, Conference of Minority Public Administrators; Blue Ribbon Task Forces; a Minority Fellowship Program, etc. In addition, the New York Chapter of ASPA provides an excellent opportunity to meet fellow administrators and to participate in workshops and discussion groups.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4253,
+          "min": -1.8142
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 128,
+          "mean": -0.0011,
+          "min": -0.062
+        }
+      },
+      "ink": {
+        "ink_px": 48991,
+        "area_px": 1187370,
+        "density": 0.04126,
+        "chars": 781,
+        "chars_per_1k_ink": 15.94
+      }
+    },
+    {
+      "bbox": [
+        240,
+        1123,
+        2022,
+        1347
+      ],
+      "category": "Text",
+      "text": "I hope that you will circulate and post the attached information about ASPA and that you and your staff will consider joining - annual membership dues: (tax-deductible) - $25; for those under 29, an introductory membership (full-services) - $10.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3512,
+          "min": -1.82
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 59,
+          "mean": -0.0004,
+          "min": -0.0125
+        }
+      },
+      "ink": {
+        "ink_px": 16755,
+        "area_px": 391658,
+        "density": 0.04278,
+        "chars": 245,
+        "chars_per_1k_ink": 14.62
+      }
+    },
+    {
+      "bbox": [
+        245,
+        1378,
+        1922,
+        1557
+      ],
+      "category": "Text",
+      "text": "For further information and application forms please contact, Assistant City Administrator Sigmund G. Ginsburg, 566-6719.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3129,
+          "min": -1.6024
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 30,
+          "mean": -0.0001,
+          "min": -0.0014
+        }
+      },
+      "ink": {
+        "ink_px": 9176,
+        "area_px": 293940,
+        "density": 0.03122,
+        "chars": 121,
+        "chars_per_1k_ink": 13.19
+      }
+    },
+    {
+      "bbox": [
+        257,
+        1976,
+        370,
+        2016
+      ],
+      "category": "Text",
+      "text": "Enc.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3041,
+          "min": -1.5076
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0041,
+          "min": -0.0041
+        },
+        "text": {
+          "n_tokens": 2,
+          "mean": -0.0004,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 311,
+        "area_px": 3444,
+        "density": 0.0903,
+        "chars": 4,
+        "chars_per_1k_ink": 12.86
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 405,
+    "content": {
+      "n_tokens": 222,
+      "mean": -0.0008,
+      "min": -0.062,
+      "p05": -0.0013,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 82,
+          "token_id": 315,
+          "logprob": -0.062,
+          "text": " of"
+        },
+        {
+          "index": 118,
+          "token_id": 67951,
+          "logprob": -0.0405,
+          "text": " supplemental"
+        },
+        {
+          "index": 129,
+          "token_id": 481,
+          "logprob": -0.0176,
+          "text": " -"
+        },
+        {
+          "index": 256,
+          "token_id": 498,
+          "logprob": -0.0125,
+          "text": " you"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0043,
+          "text": " \"-"
+        },
+        {
+          "index": 106,
+          "token_id": 82640,
+          "logprob": -0.0042,
+          "text": " Recru"
+        },
+        {
+          "index": 250,
+          "token_id": 1995,
+          "logprob": -0.0041,
+          "text": " information"
+        },
+        {
+          "index": 89,
+          "token_id": 48409,
+          "logprob": -0.0026,
+          "text": " ASP"
+        },
+        {
+          "index": 244,
+          "token_id": 4225,
+          "logprob": -0.0024,
+          "text": " circ"
+        },
+        {
+          "index": 274,
+          "token_id": 481,
+          "logprob": -0.0019,
+          "text": " -"
+        },
+        {
+          "index": 192,
+          "token_id": 37112,
+          "logprob": -0.0019,
+          "text": " administrators"
+        },
+        {
+          "index": 341,
+          "token_id": 4486,
+          "logprob": -0.0014,
+          "text": " please"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 107,
+      "mean": -0.337,
+      "min": -1.82,
+      "p05": -1.6317,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 221,
+          "token_id": 17,
+          "logprob": -1.82,
+          "text": "2"
+        },
+        {
+          "index": 45,
+          "token_id": 22,
+          "logprob": -1.8142,
+          "text": "7"
+        },
+        {
+          "index": 215,
+          "token_id": 18,
+          "logprob": -1.8102,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.7836,
+          "text": "6"
+        },
+        {
+          "index": 62,
+          "token_id": 17,
+          "logprob": -1.7171,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.6442,
+          "text": "1"
+        },
+        {
+          "index": 305,
+          "token_id": 20,
+          "logprob": -1.6024,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.602,
+          "text": "1"
+        },
+        {
+          "index": 317,
+          "token_id": 17,
+          "logprob": -1.5868,
+          "text": "2"
+        },
+        {
+          "index": 378,
+          "token_id": 21,
+          "logprob": -1.5076,
+          "text": "6"
+        },
+        {
+          "index": 50,
+          "token_id": 24,
+          "logprob": -1.4869,
+          "text": "9"
+        },
+        {
+          "index": 56,
+          "token_id": 24,
+          "logprob": -1.465,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 405,
+      "mean": -0.0894,
+      "min": -1.82,
+      "p05": -0.7604,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.59,
+    "std": 18.58,
+    "dark_fraction": 0.01691
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      866.16,
+      1151.76
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      288,
+      384,
+      2117,
+      2816
+    ],
+    "ink_px": 75237,
+    "covered_px": 75233,
+    "covered_fraction": 0.99995,
+    "uncovered_px": 4,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

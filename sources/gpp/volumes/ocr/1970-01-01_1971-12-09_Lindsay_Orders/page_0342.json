@@ -1,0 +1,371 @@
+{
+  "page": 342,
+  "source_image": "page_0342.png",
+  "elements": [
+    {
+      "bbox": [
+        1296,
+        205,
+        1313,
+        229
+      ],
+      "category": "Page-header",
+      "text": "2",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3099,
+          "min": -1.6603
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.005,
+          "min": -0.0099
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0007,
+          "min": -0.0007
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        141,
+        342,
+        1280,
+        432
+      ],
+      "category": "List-item",
+      "text": "1. The annexed resolution of the Triborough Bridge and Tunnel Authority adopted by such Authority on June 25, 1971, is hereby approved.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3052,
+          "min": -1.3795
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.031,
+          "min": -0.062
+        },
+        "text": {
+          "n_tokens": 34,
+          "mean": -0.0004,
+          "min": -0.0062
+        }
+      },
+      "ink": {
+        "ink_px": 6249,
+        "area_px": 99450,
+        "density": 0.06284,
+        "chars": 135,
+        "chars_per_1k_ink": 21.6
+      }
+    },
+    {
+      "bbox": [
+        319,
+        452,
+        1080,
+        483
+      ],
+      "category": "List-item",
+      "text": "2. This order shall take effect July 1, 1971.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2955,
+          "min": -1.4023
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0002,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.0001,
+          "min": -0.0007
+        }
+      },
+      "ink": {
+        "ink_px": 2029,
+        "area_px": 24352,
+        "density": 0.08332,
+        "chars": 45,
+        "chars_per_1k_ink": 22.18
+      }
+    },
+    {
+      "bbox": [
+        723,
+        587,
+        969,
+        670
+      ],
+      "category": "Text",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3271,
+          "min": -1.3431
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0234,
+          "min": -0.0234
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0097,
+          "min": -0.1134
+        }
+      },
+      "ink": {
+        "ink_px": 1015,
+        "area_px": 20418,
+        "density": 0.04971,
+        "chars": 21,
+        "chars_per_1k_ink": 20.69
+      }
+    },
+    {
+      "bbox": [
+        723,
+        751,
+        1342,
+        914
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4165,
+          "min": -1.9567
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2526,
+          "min": -0.2526
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5178,
+        "area_px": 90791,
+        "density": 0.05703,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 240,
+    "content": {
+      "n_tokens": 64,
+      "mean": -0.0021,
+      "min": -0.1134,
+      "p05": -0.0019,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 204,
+          "token_id": 44,
+          "logprob": -0.1134,
+          "text": "M"
+        },
+        {
+          "index": 86,
+          "token_id": 65601,
+          "logprob": -0.0062,
+          "text": " Tunnel"
+        },
+        {
+          "index": 83,
+          "token_id": 14438,
+          "logprob": -0.0043,
+          "text": "orough"
+        },
+        {
+          "index": 205,
+          "token_id": 3022,
+          "logprob": -0.002,
+          "text": "AY"
+        },
+        {
+          "index": 106,
+          "token_id": 11792,
+          "logprob": -0.0018,
+          "text": " approved"
+        },
+        {
+          "index": 82,
+          "token_id": 20523,
+          "logprob": -0.0009,
+          "text": " Trib"
+        },
+        {
+          "index": 77,
+          "token_id": 53268,
+          "logprob": -0.0009,
+          "text": " annex"
+        },
+        {
+          "index": 146,
+          "token_id": 1096,
+          "logprob": -0.0007,
+          "text": " This"
+        },
+        {
+          "index": 37,
+          "token_id": 17,
+          "logprob": -0.0007,
+          "text": "2"
+        },
+        {
+          "index": 201,
+          "token_id": 50,
+          "logprob": -0.0004,
+          "text": "S"
+        },
+        {
+          "index": 149,
+          "token_id": 1896,
+          "logprob": -0.0004,
+          "text": " take"
+        },
+        {
+          "index": 203,
+          "token_id": 1699,
+          "logprob": -0.0002,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 103,
+      "mean": -0.3083,
+      "min": -1.9567,
+      "p05": -1.4,
+      "p50": -0.0023,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 225,
+          "token_id": 17,
+          "logprob": -1.9567,
+          "text": "2"
+        },
+        {
+          "index": 13,
+          "token_id": 20,
+          "logprob": -1.6603,
+          "text": "5"
+        },
+        {
+          "index": 8,
+          "token_id": 21,
+          "logprob": -1.5342,
+          "text": "6"
+        },
+        {
+          "index": 230,
+          "token_id": 19,
+          "logprob": -1.4845,
+          "text": "4"
+        },
+        {
+          "index": 19,
+          "token_id": 18,
+          "logprob": -1.4761,
+          "text": "3"
+        },
+        {
+          "index": 131,
+          "token_id": 18,
+          "logprob": -1.4023,
+          "text": "3"
+        },
+        {
+          "index": 61,
+          "token_id": 17,
+          "logprob": -1.3795,
+          "text": "2"
+        },
+        {
+          "index": 120,
+          "token_id": 17,
+          "logprob": -1.3738,
+          "text": "2"
+        },
+        {
+          "index": 50,
+          "token_id": 17,
+          "logprob": -1.3677,
+          "text": "2"
+        },
+        {
+          "index": 45,
+          "token_id": 16,
+          "logprob": -1.3553,
+          "text": "1"
+        },
+        {
+          "index": 173,
+          "token_id": 22,
+          "logprob": -1.3431,
+          "text": "7"
+        },
+        {
+          "index": 214,
+          "token_id": 18,
+          "logprob": -1.284,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 240,
+      "mean": -0.1329,
+      "min": -1.9567,
+      "p05": -1.2722,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.46,
+    "std": 12.64,
+    "dark_fraction": 0.00943
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      660.24,
+      523.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      174,
+      220,
+      1279,
+      1613
+    ],
+    "ink_px": 14513,
+    "covered_px": 14471,
+    "covered_fraction": 0.99711,
+    "uncovered_px": 42,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

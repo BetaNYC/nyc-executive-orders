@@ -1,0 +1,411 @@
+{
+  "page": 189,
+  "source_image": "page_0189.png",
+  "elements": [
+    {
+      "bbox": [
+        253,
+        354,
+        951,
+        414
+      ],
+      "category": "Page-header",
+      "text": "Honorable Robert F. Wagner, Mayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4266,
+          "min": -1.8095
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0397,
+          "min": -0.0793
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0007,
+          "min": -0.0048
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 3370,
+        "density": 0.0,
+        "chars": 33,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        1319,
+        389,
+        1590,
+        435
+      ],
+      "category": "Text",
+      "text": "June 11, 1965",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2997,
+          "min": -1.4199
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0125,
+          "min": -0.0125
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0,
+          "min": -0.0002
+        }
+      },
+      "ink": {
+        "ink_px": 7,
+        "area_px": 7072,
+        "density": 0.00099,
+        "chars": 13,
+        "chars_per_1k_ink": 1857.14
+      }
+    },
+    {
+      "bbox": [
+        1319,
+        435,
+        1487,
+        473
+      ],
+      "category": "Text",
+      "text": "Page two",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2339,
+          "min": -1.3807
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0049,
+          "min": -0.0049
+        },
+        "text": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 6591,
+        "density": 0.0,
+        "chars": 8,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        253,
+        609,
+        1714,
+        807
+      ],
+      "category": "Text",
+      "text": "THIS IS TO CERTIFY that the foregoing is a true copy of the resolution approved by the Board of Trustees of the Brooklyn Public Library at its regular meeting on May 18, 1965 and that the foregoing signature is that of the President of the Board, Charles J. Mylod.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3501,
+          "min": -1.6107
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 61,
+          "mean": -0.0094,
+          "min": -0.5241
+        }
+      },
+      "ink": {
+        "ink_px": 176,
+        "area_px": 287600,
+        "density": 0.00061,
+        "chars": 264,
+        "chars_per_1k_ink": 1500.0
+      }
+    },
+    {
+      "bbox": [
+        1283,
+        857,
+        1779,
+        965
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3931,
+          "min": -1.7117
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 3,
+        "area_px": 54282,
+        "density": 6e-05,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1309,
+        971,
+        1705,
+        1059
+      ],
+      "category": "Caption",
+      "text": "William C. Mattison\nSecretary",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2691,
+          "min": -1.4397
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1128,
+          "min": -0.1128
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0012,
+          "min": -0.0043
+        }
+      },
+      "ink": {
+        "ink_px": 103,
+        "area_px": 35333,
+        "density": 0.00292,
+        "chars": 29,
+        "chars_per_1k_ink": 281.55
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 301,
+    "content": {
+      "n_tokens": 88,
+      "mean": -0.0067,
+      "min": -0.5241,
+      "p05": -0.0032,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 221,
+          "token_id": 82482,
+          "logprob": -0.5241,
+          "text": "lod"
+        },
+        {
+          "index": 177,
+          "token_id": 11792,
+          "logprob": -0.0431,
+          "text": " approved"
+        },
+        {
+          "index": 35,
+          "token_id": 70807,
+          "logprob": -0.0048,
+          "text": "Hon"
+        },
+        {
+          "index": 291,
+          "token_id": 44787,
+          "logprob": -0.0043,
+          "text": "William"
+        },
+        {
+          "index": 209,
+          "token_id": 429,
+          "logprob": -0.0038,
+          "text": " that"
+        },
+        {
+          "index": 294,
+          "token_id": 13374,
+          "logprob": -0.0022,
+          "text": " Matt"
+        },
+        {
+          "index": 165,
+          "token_id": 62357,
+          "logprob": -0.0014,
+          "text": " CERT"
+        },
+        {
+          "index": 296,
+          "token_id": 1699,
+          "logprob": -0.0013,
+          "text": "\\n"
+        },
+        {
+          "index": 220,
+          "token_id": 3017,
+          "logprob": -0.0006,
+          "text": " My"
+        },
+        {
+          "index": 167,
+          "token_id": 429,
+          "logprob": -0.0003,
+          "text": " that"
+        },
+        {
+          "index": 36,
+          "token_id": 24715,
+          "logprob": -0.0003,
+          "text": "orable"
+        },
+        {
+          "index": 79,
+          "token_id": 27160,
+          "logprob": -0.0002,
+          "text": "June"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 125,
+      "mean": -0.3098,
+      "min": -1.8095,
+      "p05": -1.5861,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 22,
+          "token_id": 19,
+          "logprob": -1.8095,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.7863,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.7176,
+          "text": "3"
+        },
+        {
+          "index": 247,
+          "token_id": 20,
+          "logprob": -1.7117,
+          "text": "5"
+        },
+        {
+          "index": 231,
+          "token_id": 18,
+          "logprob": -1.6402,
+          "text": "3"
+        },
+        {
+          "index": 150,
+          "token_id": 22,
+          "logprob": -1.6107,
+          "text": "7"
+        },
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -1.5868,
+          "text": "1"
+        },
+        {
+          "index": 242,
+          "token_id": 24,
+          "logprob": -1.5832,
+          "text": "9"
+        },
+        {
+          "index": 236,
+          "token_id": 22,
+          "logprob": -1.5271,
+          "text": "7"
+        },
+        {
+          "index": 145,
+          "token_id": 19,
+          "logprob": -1.5163,
+          "text": "4"
+        },
+        {
+          "index": 273,
+          "token_id": 20,
+          "logprob": -1.4397,
+          "text": "5"
+        },
+        {
+          "index": 67,
+          "token_id": 20,
+          "logprob": -1.4199,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 301,
+      "mean": -0.1308,
+      "min": -1.8095,
+      "p05": -1.2233,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 213.54,
+    "std": 9.05,
+    "dark_fraction": 6e-05
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      837.84,
+      1231.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      279,
+      410,
+      2048,
+      3010
+    ],
+    "ink_px": 289,
+    "covered_px": 289,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

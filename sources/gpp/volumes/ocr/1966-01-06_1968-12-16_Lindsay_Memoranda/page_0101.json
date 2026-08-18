@@ -1,0 +1,377 @@
+{
+  "page": 101,
+  "source_image": "page_0101.png",
+  "elements": [
+    {
+      "bbox": [
+        1103,
+        371,
+        1221,
+        412
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4319,
+          "min": -1.8549
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0198,
+          "min": -0.039
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.1054,
+          "min": -0.3877
+        }
+      },
+      "ink": {
+        "ink_px": 19,
+        "area_px": 4760,
+        "density": 0.00399,
+        "chars": 5,
+        "chars_per_1k_ink": 263.16
+      }
+    },
+    {
+      "bbox": [
+        263,
+        531,
+        1845,
+        648
+      ],
+      "category": "Text",
+      "text": "It is planned to hold another community conference next year to review the year's efforts, and to make further recommendations.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3948,
+          "min": -1.7698
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0014,
+          "min": -0.0249
+        }
+      },
+      "ink": {
+        "ink_px": 1655,
+        "area_px": 184316,
+        "density": 0.00898,
+        "chars": 127,
+        "chars_per_1k_ink": 76.74
+      }
+    },
+    {
+      "bbox": [
+        260,
+        666,
+        1818,
+        862
+      ],
+      "category": "Text",
+      "text": "Coordination of the follow-up work will be handled by Miss Marta Valle, Assistant Deputy Administrator in the Human Resources Administration, who organized the conference. If you have questions, please call Miss Marta Valle at 566-4326 or 3907.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3484,
+          "min": -1.668
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 58,
+          "mean": -0.0004,
+          "min": -0.0182
+        }
+      },
+      "ink": {
+        "ink_px": 3452,
+        "area_px": 302395,
+        "density": 0.01142,
+        "chars": 244,
+        "chars_per_1k_ink": 70.68
+      }
+    },
+    {
+      "bbox": [
+        981,
+        852,
+        1981,
+        1188
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3805,
+          "min": -1.814
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0041,
+          "min": -0.0041
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 3417,
+        "area_px": 337344,
+        "density": 0.01013,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        244,
+        2447,
+        310,
+        2476
+      ],
+      "category": "Page-footer",
+      "text": "cmc",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2676,
+          "min": -1.3552
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0021,
+          "min": -0.0041
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0318,
+          "min": -0.0318
+        }
+      },
+      "ink": {
+        "ink_px": 7,
+        "area_px": 660,
+        "density": 0.01061,
+        "chars": 3,
+        "chars_per_1k_ink": 428.57
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 263,
+    "content": {
+      "n_tokens": 86,
+      "mean": -0.0059,
+      "min": -0.3877,
+      "p05": -0.0156,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 37,
+          "token_id": 220,
+          "logprob": -0.3877,
+          "text": " "
+        },
+        {
+          "index": 259,
+          "token_id": 94866,
+          "logprob": -0.0318,
+          "text": "cmc"
+        },
+        {
+          "index": 36,
+          "token_id": 6523,
+          "logprob": -0.0313,
+          "text": " \"-"
+        },
+        {
+          "index": 85,
+          "token_id": 311,
+          "logprob": -0.0249,
+          "text": " to"
+        },
+        {
+          "index": 144,
+          "token_id": 8906,
+          "logprob": -0.0182,
+          "text": " Miss"
+        },
+        {
+          "index": 79,
+          "token_id": 3331,
+          "logprob": -0.0076,
+          "text": " hold"
+        },
+        {
+          "index": 39,
+          "token_id": 481,
+          "logprob": -0.0023,
+          "text": " -"
+        },
+        {
+          "index": 158,
+          "token_id": 879,
+          "logprob": -0.0013,
+          "text": " who"
+        },
+        {
+          "index": 133,
+          "token_id": 19437,
+          "logprob": -0.0009,
+          "text": "Coord"
+        },
+        {
+          "index": 38,
+          "token_id": 17,
+          "logprob": -0.0003,
+          "text": "2"
+        },
+        {
+          "index": 147,
+          "token_id": 77494,
+          "logprob": -0.0003,
+          "text": " Valle"
+        },
+        {
+          "index": 190,
+          "token_id": 1189,
+          "logprob": -0.0003,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 105,
+      "mean": -0.3406,
+      "min": -1.8549,
+      "p05": -1.7295,
+      "p50": -0.0004,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.8549,
+          "text": "1"
+        },
+        {
+          "index": 8,
+          "token_id": 18,
+          "logprob": -1.8265,
+          "text": "3"
+        },
+        {
+          "index": 209,
+          "token_id": 16,
+          "logprob": -1.814,
+          "text": "1"
+        },
+        {
+          "index": 58,
+          "token_id": 20,
+          "logprob": -1.7698,
+          "text": "5"
+        },
+        {
+          "index": 47,
+          "token_id": 18,
+          "logprob": -1.739,
+          "text": "3"
+        },
+        {
+          "index": 198,
+          "token_id": 16,
+          "logprob": -1.7343,
+          "text": "1"
+        },
+        {
+          "index": 24,
+          "token_id": 17,
+          "logprob": -1.7104,
+          "text": "2"
+        },
+        {
+          "index": 121,
+          "token_id": 17,
+          "logprob": -1.668,
+          "text": "2"
+        },
+        {
+          "index": 203,
+          "token_id": 17,
+          "logprob": -1.6232,
+          "text": "2"
+        },
+        {
+          "index": 110,
+          "token_id": 21,
+          "logprob": -1.5853,
+          "text": "6"
+        },
+        {
+          "index": 19,
+          "token_id": 16,
+          "logprob": -1.5527,
+          "text": "1"
+        },
+        {
+          "index": 52,
+          "token_id": 16,
+          "logprob": -1.4077,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 263,
+      "mean": -0.1379,
+      "min": -1.8549,
+      "p05": -1.3495,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 183.41,
+    "std": 9.74,
+    "dark_fraction": 0.00198
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      869.28,
+      1116.48
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      289,
+      372,
+      2125,
+      2729
+    ],
+    "ink_px": 8547,
+    "covered_px": 8547,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

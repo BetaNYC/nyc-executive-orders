@@ -1,0 +1,343 @@
+{
+  "page": 76,
+  "source_image": "page_0076.png",
+  "elements": [
+    {
+      "bbox": [
+        949,
+        384,
+        1027,
+        424
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.44,
+          "min": -1.9618
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0045,
+          "min": -0.0077
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0014,
+          "min": -0.0037
+        }
+      },
+      "ink": {
+        "ink_px": 128,
+        "area_px": 3239,
+        "density": 0.03952,
+        "chars": 3,
+        "chars_per_1k_ink": 23.44
+      }
+    },
+    {
+      "bbox": [
+        303,
+        576,
+        1664,
+        710
+      ],
+      "category": "List-item",
+      "text": "7) To conduct through appropriate city agencies various necessary studies and to consider recommendations of other research groups.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4058,
+          "min": -1.7948
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0003,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 20,
+          "mean": -0.0035,
+          "min": -0.0634
+        }
+      },
+      "ink": {
+        "ink_px": 801,
+        "area_px": 182240,
+        "density": 0.0044,
+        "chars": 131,
+        "chars_per_1k_ink": 163.55
+      }
+    },
+    {
+      "bbox": [
+        300,
+        751,
+        1612,
+        881
+      ],
+      "category": "Text",
+      "text": "All Heads of City Departments and Agencies involved are hereby directed to extend their fullest cooperation to insure the success of this program.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.329,
+          "min": -1.5418
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 24,
+          "mean": -0.0003,
+          "min": -0.0026
+        }
+      },
+      "ink": {
+        "ink_px": 883,
+        "area_px": 171741,
+        "density": 0.00514,
+        "chars": 146,
+        "chars_per_1k_ink": 165.35
+      }
+    },
+    {
+      "bbox": [
+        1060,
+        881,
+        1777,
+        1071
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3651,
+          "min": -1.6918
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0029,
+          "min": -0.0029
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 412,
+        "area_px": 136947,
+        "density": 0.00301,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 188,
+    "content": {
+      "n_tokens": 47,
+      "mean": -0.0017,
+      "min": -0.0634,
+      "p05": -0.0034,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 75,
+          "token_id": 8,
+          "logprob": -0.0634,
+          "text": ")"
+        },
+        {
+          "index": 83,
+          "token_id": 5871,
+          "logprob": -0.0041,
+          "text": " necessary"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0037,
+          "text": " \"-"
+        },
+        {
+          "index": 130,
+          "token_id": 70507,
+          "logprob": -0.0026,
+          "text": " Heads"
+        },
+        {
+          "index": 146,
+          "token_id": 69532,
+          "logprob": -0.0023,
+          "text": " insure"
+        },
+        {
+          "index": 81,
+          "token_id": 13304,
+          "logprob": -0.0006,
+          "text": " agencies"
+        },
+        {
+          "index": 78,
+          "token_id": 1526,
+          "logprob": -0.0006,
+          "text": " through"
+        },
+        {
+          "index": 36,
+          "token_id": 17,
+          "logprob": -0.0004,
+          "text": "2"
+        },
+        {
+          "index": 82,
+          "token_id": 5257,
+          "logprob": -0.0004,
+          "text": " various"
+        },
+        {
+          "index": 138,
+          "token_id": 21799,
+          "logprob": -0.0003,
+          "text": " hereby"
+        },
+        {
+          "index": 152,
+          "token_id": 1189,
+          "logprob": -0.0003,
+          "text": ".\""
+        },
+        {
+          "index": 136,
+          "token_id": 6398,
+          "logprob": -0.0003,
+          "text": " involved"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 84,
+      "mean": -0.3571,
+      "min": -1.9618,
+      "p05": -1.6519,
+      "p50": -0.0009,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.9618,
+          "text": "4"
+        },
+        {
+          "index": 56,
+          "token_id": 19,
+          "logprob": -1.7948,
+          "text": "4"
+        },
+        {
+          "index": 50,
+          "token_id": 21,
+          "logprob": -1.7877,
+          "text": "6"
+        },
+        {
+          "index": 172,
+          "token_id": 22,
+          "logprob": -1.6918,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.653,
+          "text": "4"
+        },
+        {
+          "index": 178,
+          "token_id": 16,
+          "logprob": -1.6452,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.6413,
+          "text": "7"
+        },
+        {
+          "index": 45,
+          "token_id": 18,
+          "logprob": -1.5871,
+          "text": "3"
+        },
+        {
+          "index": 112,
+          "token_id": 17,
+          "logprob": -1.5418,
+          "text": "2"
+        },
+        {
+          "index": 61,
+          "token_id": 15,
+          "logprob": -1.4385,
+          "text": "0"
+        },
+        {
+          "index": 117,
+          "token_id": 16,
+          "logprob": -1.3775,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.3711,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 188,
+      "mean": -0.1602,
+      "min": -1.9618,
+      "p05": -1.4172,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.0,
+    "std": 7.79,
+    "dark_fraction": 0.00066
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      774.96,
+      976.08
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      258,
+      325,
+      1894,
+      2386
+    ],
+    "ink_px": 2224,
+    "covered_px": 2224,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "page": 98,
+  "source_image": "page_0098.png",
+  "elements": [
+    {
+      "bbox": [
+        108,
+        266,
+        567,
+        311
+      ],
+      "category": "Page-header",
+      "text": "Executive Order #69",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4097,
+          "min": -1.7552
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0093,
+          "min": -0.0187
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0001,
+          "min": -0.0003
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        925,
+        273,
+        997,
+        311
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3712,
+          "min": -1.7265
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0056,
+          "min": -0.0111
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0001,
+          "min": -0.0001
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        1301,
+        275,
+        1710,
+        320
+      ],
+      "category": "Text",
+      "text": "November 13, 1959",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3184,
+          "min": -1.6235
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1133,
+          "min": -0.1133
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0001,
+          "min": -0.001
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        373,
+        456,
+        1684,
+        647
+      ],
+      "category": "Text",
+      "text": "3) To report to the Bureau of the Budget and the City Planning Commission the result of your own effort, and the conclusion of the Department of Real Estate, when submitting the application for site approval.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3449,
+          "min": -1.6321
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.6327,
+          "min": -0.6327
+        },
+        "text": {
+          "n_tokens": 40,
+          "mean": -0.0023,
+          "min": -0.0623
+        }
+      },
+      "ink": {
+        "ink_px": 25019,
+        "area_px": 251929,
+        "density": 0.09931,
+        "chars": 208,
+        "chars_per_1k_ink": 8.31
+      }
+    },
+    {
+      "bbox": [
+        114,
+        691,
+        1714,
+        868
+      ],
+      "category": "Text",
+      "text": "The Department of Real Estate is instructed to check any site, or area, with multiple purpose use in mind, and to interest private developers in such use whenever and wherever this seems feasible.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3198,
+          "min": -1.5332
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 37,
+          "mean": -0.0001,
+          "min": -0.0014
+        }
+      },
+      "ink": {
+        "ink_px": 19921,
+        "area_px": 259659,
+        "density": 0.07672,
+        "chars": 196,
+        "chars_per_1k_ink": 9.84
+      }
+    },
+    {
+      "bbox": [
+        1017,
+        967,
+        1845,
+        1151
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.382,
+          "min": -1.8819
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0026,
+          "min": -0.0026
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5304,
+        "area_px": 153272,
+        "density": 0.03461,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 305,
+    "content": {
+      "n_tokens": 95,
+      "mean": -0.001,
+      "min": -0.0623,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 159,
+          "token_id": 8,
+          "logprob": -0.0623,
+          "text": ")"
+        },
+        {
+          "index": 170,
+          "token_id": 4311,
+          "logprob": -0.0233,
+          "text": " City"
+        },
+        {
+          "index": 178,
+          "token_id": 5041,
+          "logprob": -0.0068,
+          "text": " effort"
+        },
+        {
+          "index": 257,
+          "token_id": 2734,
+          "logprob": -0.0014,
+          "text": " interest"
+        },
+        {
+          "index": 243,
+          "token_id": 2747,
+          "logprob": -0.0013,
+          "text": " site"
+        },
+        {
+          "index": 121,
+          "token_id": 20,
+          "logprob": -0.001,
+          "text": "5"
+        },
+        {
+          "index": 158,
+          "token_id": 18,
+          "logprob": -0.0003,
+          "text": "3"
+        },
+        {
+          "index": 35,
+          "token_id": 72618,
+          "logprob": -0.0003,
+          "text": "Executive"
+        },
+        {
+          "index": 169,
+          "token_id": 279,
+          "logprob": -0.0002,
+          "text": " the"
+        },
+        {
+          "index": 36,
+          "token_id": 7217,
+          "logprob": -0.0002,
+          "text": " Order"
+        },
+        {
+          "index": 269,
+          "token_id": 1189,
+          "logprob": -0.0001,
+          "text": ".\""
+        },
+        {
+          "index": 37,
+          "token_id": 671,
+          "logprob": -0.0001,
+          "text": " #"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 123,
+      "mean": -0.3403,
+      "min": -1.8819,
+      "p05": -1.632,
+      "p50": -0.0026,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 289,
+          "token_id": 20,
+          "logprob": -1.8819,
+          "text": "5"
+        },
+        {
+          "index": 278,
+          "token_id": 22,
+          "logprob": -1.7661,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.7552,
+          "text": "6"
+        },
+        {
+          "index": 47,
+          "token_id": 20,
+          "logprob": -1.7265,
+          "text": "5"
+        },
+        {
+          "index": 295,
+          "token_id": 16,
+          "logprob": -1.6385,
+          "text": "1"
+        },
+        {
+          "index": 52,
+          "token_id": 18,
+          "logprob": -1.6376,
+          "text": "3"
+        },
+        {
+          "index": 141,
+          "token_id": 19,
+          "logprob": -1.6321,
+          "text": "4"
+        },
+        {
+          "index": 130,
+          "token_id": 18,
+          "logprob": -1.6307,
+          "text": "3"
+        },
+        {
+          "index": 85,
+          "token_id": 16,
+          "logprob": -1.6235,
+          "text": "1"
+        },
+        {
+          "index": 283,
+          "token_id": 22,
+          "logprob": -1.597,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.5856,
+          "text": "8"
+        },
+        {
+          "index": 205,
+          "token_id": 19,
+          "logprob": -1.5332,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 305,
+      "mean": -0.1378,
+      "min": -1.8819,
+      "p05": -1.4412,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.65,
+    "std": 15.39,
+    "dark_fraction": 0.01488
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      769.92,
+      983.04
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      256,
+      327,
+      1882,
+      2403
+    ],
+    "ink_px": 50244,
+    "covered_px": 50244,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "page": 365,
+  "source_image": "page_0365.png",
+  "elements": [
+    {
+      "bbox": [
+        521,
+        1797,
+        645,
+        1839
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3692,
+          "min": -1.5742
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1007,
+          "min": -0.1007
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        623,
+        1837,
+        672,
+        1846
+      ],
+      "category": "Page-footer",
+      "text": "TYCO\nTESTING",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3372,
+          "min": -1.5986
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.5323,
+          "min": -0.6359
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -1.3845,
+          "min": -3.0578
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 76,
+    "content": {
+      "n_tokens": 5,
+      "mean": -1.3845,
+      "min": -3.0578,
+      "p05": -2.8647,
+      "p50": -1.2138,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 68,
+          "token_id": 22098,
+          "logprob": -3.0578,
+          "text": "TY"
+        },
+        {
+          "index": 69,
+          "token_id": 8281,
+          "logprob": -2.0924,
+          "text": "CO"
+        },
+        {
+          "index": 72,
+          "token_id": 1718,
+          "logprob": -1.2138,
+          "text": "ING"
+        },
+        {
+          "index": 71,
+          "token_id": 10033,
+          "logprob": -0.2896,
+          "text": "TEST"
+        },
+        {
+          "index": 70,
+          "token_id": 1699,
+          "logprob": -0.2687,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 43,
+      "mean": -0.3557,
+      "min": -1.5986,
+      "p05": -1.4729,
+      "p50": -0.0038,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 49,
+          "token_id": 17,
+          "logprob": -1.5986,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.5742,
+          "text": "5"
+        },
+        {
+          "index": 44,
+          "token_id": 22,
+          "logprob": -1.4739,
+          "text": "7"
+        },
+        {
+          "index": 38,
+          "token_id": 18,
+          "logprob": -1.4643,
+          "text": "3"
+        },
+        {
+          "index": 13,
+          "token_id": 22,
+          "logprob": -1.3907,
+          "text": "7"
+        },
+        {
+          "index": 55,
+          "token_id": 21,
+          "logprob": -1.3515,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.2034,
+          "text": "1"
+        },
+        {
+          "index": 5,
+          "token_id": 20,
+          "logprob": -0.8797,
+          "text": "5"
+        },
+        {
+          "index": 24,
+          "token_id": 24,
+          "logprob": -0.8426,
+          "text": "9"
+        },
+        {
+          "index": 61,
+          "token_id": 2665,
+          "logprob": -0.6359,
+          "text": "Page"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -0.6332,
+          "text": "3"
+        },
+        {
+          "index": 6,
+          "token_id": 17,
+          "logprob": -0.6311,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 76,
+      "mean": -0.3125,
+      "min": -3.0578,
+      "p05": -1.4989,
+      "p50": -0.0001,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 165.81,
+    "std": 7.04,
+    "dark_fraction": 9e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      660.0,
+      431.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      143,
+      220,
+      1054,
+      1613
+    ],
+    "ink_px": 112,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 112,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

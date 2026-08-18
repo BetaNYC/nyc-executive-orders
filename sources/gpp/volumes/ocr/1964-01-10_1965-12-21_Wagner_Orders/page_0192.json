@@ -1,0 +1,424 @@
+{
+  "page": 192,
+  "source_image": "page_0192.png",
+  "elements": [
+    {
+      "bbox": [
+        1015,
+        251,
+        1080,
+        288
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3682,
+          "min": -1.7497
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0138,
+          "min": -0.0274
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0006,
+          "min": -0.0015
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        341,
+        401,
+        934,
+        497
+      ],
+      "category": "Text",
+      "text": "Mr. Bernard Friedlander\nCorporation Counsel's Office",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3758,
+          "min": -1.6566
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0103,
+          "min": -0.0103
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0017,
+          "min": -0.0109
+        }
+      },
+      "ink": {
+        "ink_px": 956,
+        "area_px": 52536,
+        "density": 0.0182,
+        "chars": 52,
+        "chars_per_1k_ink": 54.39
+      }
+    },
+    {
+      "bbox": [
+        1419,
+        391,
+        1671,
+        440
+      ],
+      "category": "Text",
+      "text": "May 13, 1965",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3042,
+          "min": -1.4036
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0,
+          "min": -0.0001
+        }
+      },
+      "ink": {
+        "ink_px": 654,
+        "area_px": 7874,
+        "density": 0.08306,
+        "chars": 12,
+        "chars_per_1k_ink": 18.35
+      }
+    },
+    {
+      "bbox": [
+        564,
+        701,
+        1647,
+        1094
+      ],
+      "category": "Text",
+      "text": "approved by Executive Order No. 102 issued by the\nMayor on May 27, 1964; and (b) to recognize for the\npurpose of providing such reductions without\ninterruption, that where any such member was shifted\nfrom a monthly payroll basis to a bi-weekly payroll\nbasis during the period of effectiveness of such\nresolution approved by Executive Order No. 102, such\nreductions under such resolution terminated with\nrespect to such member as of April 11, 1965.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3293,
+          "min": -1.6872
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 117,
+          "mean": -0.0047,
+          "min": -0.3887
+        }
+      },
+      "ink": {
+        "ink_px": 2745,
+        "area_px": 429066,
+        "density": 0.0064,
+        "chars": 447,
+        "chars_per_1k_ink": 162.84
+      }
+    },
+    {
+      "bbox": [
+        1241,
+        1172,
+        1934,
+        1427
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3026,
+          "min": -1.794
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0337,
+          "min": -0.0337
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5752,
+        "area_px": 178432,
+        "density": 0.03224,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        334,
+        1409,
+        464,
+        1449
+      ],
+      "category": "Text",
+      "text": "BMW/r1-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3373,
+          "min": -2.1939
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3136,
+          "min": -0.3136
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.1134,
+          "min": -0.3729
+        }
+      },
+      "ink": {
+        "ink_px": 355,
+        "area_px": 5371,
+        "density": 0.0661,
+        "chars": 7,
+        "chars_per_1k_ink": 19.72
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 360,
+    "content": {
+      "n_tokens": 146,
+      "mean": -0.007,
+      "min": -0.3887,
+      "p05": -0.0095,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 180,
+          "token_id": 1699,
+          "logprob": -0.3887,
+          "text": "\\n"
+        },
+        {
+          "index": 356,
+          "token_id": 12,
+          "logprob": -0.3729,
+          "text": "-"
+        },
+        {
+          "index": 200,
+          "token_id": 369,
+          "logprob": -0.0897,
+          "text": " for"
+        },
+        {
+          "index": 258,
+          "token_id": 265,
+          "logprob": -0.0389,
+          "text": "re"
+        },
+        {
+          "index": 355,
+          "token_id": 16,
+          "logprob": -0.037,
+          "text": "1"
+        },
+        {
+          "index": 354,
+          "token_id": 7382,
+          "logprob": -0.0336,
+          "text": "/r"
+        },
+        {
+          "index": 78,
+          "token_id": 1699,
+          "logprob": -0.0109,
+          "text": "\\n"
+        },
+        {
+          "index": 353,
+          "token_id": 97636,
+          "logprob": -0.0102,
+          "text": "BMW"
+        },
+        {
+          "index": 167,
+          "token_id": 33912,
+          "logprob": -0.0077,
+          "text": "approved"
+        },
+        {
+          "index": 210,
+          "token_id": 396,
+          "logprob": -0.0063,
+          "text": "int"
+        },
+        {
+          "index": 76,
+          "token_id": 30251,
+          "logprob": -0.005,
+          "text": " Fried"
+        },
+        {
+          "index": 209,
+          "token_id": 1699,
+          "logprob": -0.0049,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 127,
+      "mean": -0.3196,
+      "min": -2.1939,
+      "p05": -1.5308,
+      "p50": -0.0009,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 335,
+          "token_id": 19,
+          "logprob": -2.1939,
+          "text": "4"
+        },
+        {
+          "index": 304,
+          "token_id": 19,
+          "logprob": -1.794,
+          "text": "4"
+        },
+        {
+          "index": 8,
+          "token_id": 20,
+          "logprob": -1.7497,
+          "text": "5"
+        },
+        {
+          "index": 138,
+          "token_id": 19,
+          "logprob": -1.6872,
+          "text": "4"
+        },
+        {
+          "index": 56,
+          "token_id": 19,
+          "logprob": -1.6566,
+          "text": "4"
+        },
+        {
+          "index": 155,
+          "token_id": 19,
+          "logprob": -1.6396,
+          "text": "4"
+        },
+        {
+          "index": 61,
+          "token_id": 22,
+          "logprob": -1.58,
+          "text": "7"
+        },
+        {
+          "index": 51,
+          "token_id": 16,
+          "logprob": -1.4158,
+          "text": "1"
+        },
+        {
+          "index": 104,
+          "token_id": 16,
+          "logprob": -1.4036,
+          "text": "1"
+        },
+        {
+          "index": 298,
+          "token_id": 17,
+          "logprob": -1.373,
+          "text": "2"
+        },
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.3623,
+          "text": "1"
+        },
+        {
+          "index": 149,
+          "token_id": 22,
+          "logprob": -1.3516,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 360,
+      "mean": -0.1156,
+      "min": -2.1939,
+      "p05": -1.1894,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 211.2,
+    "std": 15.5,
+    "dark_fraction": 0.00263
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      840.24,
+      1227.6
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      280,
+      409,
+      2053,
+      3000
+    ],
+    "ink_px": 12086,
+    "covered_px": 10462,
+    "covered_fraction": 0.86563,
+    "uncovered_px": 1624,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1192,
+          2833,
+          1792,
+          2857
+        ],
+        "ink_px": 971
+      },
+      {
+        "bbox": [
+          1816,
+          2833,
+          2053,
+          2857
+        ],
+        "ink_px": 464
+      }
+    ],
+    "cell_px": 24
+  }
+}

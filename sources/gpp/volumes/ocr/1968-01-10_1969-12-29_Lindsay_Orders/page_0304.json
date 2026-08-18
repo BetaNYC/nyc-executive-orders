@@ -1,0 +1,393 @@
+{
+  "page": 304,
+  "source_image": "page_0304.png",
+  "elements": [
+    {
+      "bbox": [
+        634,
+        0,
+        739,
+        142
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.2902,
+          "min": -1.4121
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0897,
+          "min": -0.0897
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        571,
+        153,
+        803,
+        219
+      ],
+      "category": "Page-header",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7, N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3301,
+          "min": -1.4247
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3941,
+          "min": -0.7882
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0036,
+          "min": -0.0269
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        1020,
+        166,
+        1037,
+        191
+      ],
+      "category": "Page-header",
+      "text": "6",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3007,
+          "min": -1.5955
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0093,
+          "min": -0.0182
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0234,
+          "min": -0.0234
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        259,
+        262,
+        1093,
+        343
+      ],
+      "category": "Text",
+      "text": "Retirement System who are employees of the board of higher education of the City of New York.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3177,
+          "min": -1.5648
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0057,
+          "min": -0.0057
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0178,
+          "min": -0.3255
+        }
+      },
+      "ink": {
+        "ink_px": 70,
+        "area_px": 67068,
+        "density": 0.00104,
+        "chars": 93,
+        "chars_per_1k_ink": 1328.57
+      }
+    },
+    {
+      "bbox": [
+        263,
+        380,
+        1085,
+        887
+      ],
+      "category": "Text",
+      "text": "(b) Beginning with the payroll period the first day of which is nearest to June 30, 1969, and ending with the payroll period the last day of which is August 31, 1970, the provisions of paragraph four of such subdivision 1 and the provisions of subparagraph (c) of paragraph one of subdivision 1 of such Section B20-41.1, and the provisions of subdivision e and f of such section shall be applicable to and for the benefit of all contributors to the New York City Teachers' Retirement System who are employees of the board of higher education of the City of New York.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2981,
+          "min": -1.7391
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.387,
+          "min": -0.387
+        },
+        "text": {
+          "n_tokens": 134,
+          "mean": -0.0005,
+          "min": -0.0367
+        }
+      },
+      "ink": {
+        "ink_px": 134,
+        "area_px": 413712,
+        "density": 0.00032,
+        "chars": 566,
+        "chars_per_1k_ink": 4223.88
+      }
+    },
+    {
+      "bbox": [
+        276,
+        889,
+        1128,
+        1348
+      ],
+      "category": "Text",
+      "text": "(c) Pursuant to subparagraph (g) of paragraph one of subdivision 1 of Section B20-41.1 of the Administrative Code, beginning with the payroll period, the first day of which is nearest to July 1, 1969, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30, 1970, the provisions of paragraph four of subdivision 1 of Section B20-41.1 and the provisions of subdivisions e and f of such section shall be applicable to and for the benefit of (1) all contributors who are transferred contributors and",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3116,
+          "min": -1.291
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 134,
+          "mean": -0.0029,
+          "min": -0.2523
+        }
+      },
+      "ink": {
+        "ink_px": 172,
+        "area_px": 388314,
+        "density": 0.00044,
+        "chars": 546,
+        "chars_per_1k_ink": 3174.42
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 515,
+    "content": {
+      "n_tokens": 309,
+      "mean": -0.0029,
+      "min": -0.3255,
+      "p05": -0.0034,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 167,
+          "token_id": 6731,
+          "logprob": -0.3255,
+          "text": " education"
+        },
+        {
+          "index": 510,
+          "token_id": 20343,
+          "logprob": -0.2523,
+          "text": " contributors"
+        },
+        {
+          "index": 486,
+          "token_id": 91445,
+          "logprob": -0.0782,
+          "text": " subdivisions"
+        },
+        {
+          "index": 502,
+          "token_id": 320,
+          "logprob": -0.0384,
+          "text": " ("
+        },
+        {
+          "index": 209,
+          "token_id": 11993,
+          "logprob": -0.0367,
+          "text": " \"("
+        },
+        {
+          "index": 80,
+          "token_id": 451,
+          "logprob": -0.0269,
+          "text": " N"
+        },
+        {
+          "index": 62,
+          "token_id": 34,
+          "logprob": -0.0255,
+          "text": "C"
+        },
+        {
+          "index": 120,
+          "token_id": 21,
+          "logprob": -0.0234,
+          "text": "6"
+        },
+        {
+          "index": 79,
+          "token_id": 11,
+          "logprob": -0.01,
+          "text": ","
+        },
+        {
+          "index": 443,
+          "token_id": 429,
+          "logprob": -0.0072,
+          "text": " that"
+        },
+        {
+          "index": 81,
+          "token_id": 7507,
+          "logprob": -0.0058,
+          "text": ".Y"
+        },
+        {
+          "index": 267,
+          "token_id": 220,
+          "logprob": -0.0057,
+          "text": " "
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 120,
+      "mean": -0.2985,
+      "min": -1.7391,
+      "p05": -1.4127,
+      "p50": -0.0031,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 193,
+          "token_id": 20,
+          "logprob": -1.7391,
+          "text": "5"
+        },
+        {
+          "index": 96,
+          "token_id": 21,
+          "logprob": -1.5955,
+          "text": "6"
+        },
+        {
+          "index": 144,
+          "token_id": 18,
+          "logprob": -1.5648,
+          "text": "3"
+        },
+        {
+          "index": 139,
+          "token_id": 18,
+          "logprob": -1.5526,
+          "text": "3"
+        },
+        {
+          "index": 133,
+          "token_id": 17,
+          "logprob": -1.4692,
+          "text": "2"
+        },
+        {
+          "index": 34,
+          "token_id": 16,
+          "logprob": -1.4247,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.4121,
+          "text": "4"
+        },
+        {
+          "index": 39,
+          "token_id": 18,
+          "logprob": -1.4033,
+          "text": "3"
+        },
+        {
+          "index": 44,
+          "token_id": 18,
+          "logprob": -1.3675,
+          "text": "3"
+        },
+        {
+          "index": 20,
+          "token_id": 17,
+          "logprob": -1.3479,
+          "text": "2"
+        },
+        {
+          "index": 361,
+          "token_id": 23,
+          "logprob": -1.291,
+          "text": "8"
+        },
+        {
+          "index": 182,
+          "token_id": 18,
+          "logprob": -1.287,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 515,
+      "mean": -0.0713,
+      "min": -1.7391,
+      "p05": -0.5565,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 170.28,
+    "std": 10.06,
+    "dark_fraction": 0.00026
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      715.44,
+      459.6
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      153,
+      238,
+      1123,
+      1749
+    ],
+    "ink_px": 376,
+    "covered_px": 376,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "page": 234,
+  "source_image": "page_0234.png",
+  "elements": [
+    {
+      "bbox": [
+        657,
+        180,
+        705,
+        207
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3535,
+          "min": -1.6224
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0056,
+          "min": -0.0087
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0018,
+          "min": -0.0037
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        114,
+        221,
+        1306,
+        921
+      ],
+      "category": "Text",
+      "text": "equal to or greater than the minimum rate of M-1 or E-1 of the Managerial or Executive Pay Plans, but not limited to members of those plans, certification by the Commissioner of Investigation must be secured that the prospective employee has been cleared following a background investigation. This clearance procedure shall also be followed for an individual already employed by the City whose salary, as a result of a change in job title and regardless of his previous salary, will be equal to or greater than the minimum rate of M-1 or E-1 of the Managerial or Executive Pay Plans, unless (A) the individual has been a permanent competitive Civil Service employee for a period of more than six months and has been previously approved for appointment by the Investigation Division of the City Department of Personnel, or (B) the individual has been previously cleared for employment by the Department of Investigation.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4588,
+          "min": -2.1095
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0013,
+          "min": -0.0013
+        },
+        "text": {
+          "n_tokens": 174,
+          "mean": -0.0002,
+          "min": -0.0182
+        }
+      },
+      "ink": {
+        "ink_px": 10,
+        "area_px": 759930,
+        "density": 1e-05,
+        "chars": 919,
+        "chars_per_1k_ink": 91900.0
+      }
+    },
+    {
+      "bbox": [
+        136,
+        921,
+        1280,
+        1078
+      ],
+      "category": "Text",
+      "text": "Clearance procedures shall also be followed for any person appointed to a position of a sensitive nature, regardless of salary, except those individuals specifically excluded under (A) or (B) of this paragraph.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.362,
+          "min": -1.4077
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 40,
+          "mean": -0.0017,
+          "min": -0.0624
+        }
+      },
+      "ink": {
+        "ink_px": 3,
+        "area_px": 171915,
+        "density": 2e-05,
+        "chars": 210,
+        "chars_per_1k_ink": 70000.0
+      }
+    },
+    {
+      "bbox": [
+        141,
+        1078,
+        1330,
+        1342
+      ],
+      "category": "Text",
+      "text": "Clearance procedures however, need not be followed for an individual already employed by the City who, while remaining in the same job title, has his salary increased by a salary increment or by a meritorious increase of a level equal to or greater than the minimum rate of M-1 or E-1 of the Managerial or Executive Pay Plans.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2737,
+          "min": -1.4054
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 70,
+          "mean": -0.0002,
+          "min": -0.0029
+        }
+      },
+      "ink": {
+        "ink_px": 12,
+        "area_px": 289080,
+        "density": 4e-05,
+        "chars": 326,
+        "chars_per_1k_ink": 27166.67
+      }
+    },
+    {
+      "bbox": [
+        147,
+        1344,
+        1320,
+        1765
+      ],
+      "category": "Text",
+      "text": "Authorization for hiring a prospective employee shall be secured by submitting to the Commissioner of Investigation particulars as to the name, home address, date of birth, social security number, position and salary of the prospective employee, and an acknowledgement of the employee that his continued employment is subject to clearance by the Department of Investigation. Upon the submission to the Department of Investigation of such particulars and the prospective employee's completed questionnaire and his fingerprints, the Commissioner of Investigation shall immediately",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2644,
+          "min": -1.3579
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 89,
+          "mean": -0.0001,
+          "min": -0.0042
+        }
+      },
+      "ink": {
+        "ink_px": 20,
+        "area_px": 333975,
+        "density": 6e-05,
+        "chars": 578,
+        "chars_per_1k_ink": 28900.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 558,
+    "content": {
+      "n_tokens": 376,
+      "mean": -0.0004,
+      "min": -0.0624,
+      "p05": -0.0009,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 307,
+          "token_id": 7775,
+          "logprob": -0.0624,
+          "text": " individuals"
+        },
+        {
+          "index": 92,
+          "token_id": 476,
+          "logprob": -0.0182,
+          "text": " or"
+        },
+        {
+          "index": 526,
+          "token_id": 13,
+          "logprob": -0.0042,
+          "text": "."
+        },
+        {
+          "index": 245,
+          "token_id": 1189,
+          "logprob": -0.0038,
+          "text": ".\""
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0037,
+          "text": " \"-"
+        },
+        {
+          "index": 362,
+          "token_id": 4764,
+          "logprob": -0.0029,
+          "text": " however"
+        },
+        {
+          "index": 398,
+          "token_id": 1919,
+          "logprob": -0.0021,
+          "text": "itor"
+        },
+        {
+          "index": 466,
+          "token_id": 18124,
+          "logprob": -0.0016,
+          "text": "Authorization"
+        },
+        {
+          "index": 308,
+          "token_id": 11689,
+          "logprob": -0.0016,
+          "text": " specifically"
+        },
+        {
+          "index": 547,
+          "token_id": 76677,
+          "logprob": -0.0015,
+          "text": " fingerprints"
+        },
+        {
+          "index": 86,
+          "token_id": 12,
+          "logprob": -0.0015,
+          "text": "-"
+        },
+        {
+          "index": 219,
+          "token_id": 46897,
+          "logprob": -0.0015,
+          "text": " Investigation"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 105,
+      "mean": -0.3203,
+      "min": -2.1095,
+      "p05": -1.4049,
+      "p50": -0.0013,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 55,
+          "token_id": 21,
+          "logprob": -2.1095,
+          "text": "6"
+        },
+        {
+          "index": 44,
+          "token_id": 19,
+          "logprob": -1.7637,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.6224,
+          "text": "7"
+        },
+        {
+          "index": 17,
+          "token_id": 20,
+          "logprob": -1.5303,
+          "text": "5"
+        },
+        {
+          "index": 253,
+          "token_id": 21,
+          "logprob": -1.4077,
+          "text": "6"
+        },
+        {
+          "index": 347,
+          "token_id": 17,
+          "logprob": -1.4054,
+          "text": "2"
+        },
+        {
+          "index": 49,
+          "token_id": 16,
+          "logprob": -1.403,
+          "text": "1"
+        },
+        {
+          "index": 264,
+          "token_id": 15,
+          "logprob": -1.3771,
+          "text": "0"
+        },
+        {
+          "index": 454,
+          "token_id": 20,
+          "logprob": -1.3579,
+          "text": "5"
+        },
+        {
+          "index": 60,
+          "token_id": 16,
+          "logprob": -1.3196,
+          "text": "1"
+        },
+        {
+          "index": 442,
+          "token_id": 19,
+          "logprob": -1.3092,
+          "text": "4"
+        },
+        {
+          "index": 329,
+          "token_id": 16,
+          "logprob": -1.2764,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 558,
+      "mean": -0.0605,
+      "min": -2.1095,
+      "p05": -0.3175,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.85,
+    "std": 12.85,
+    "dark_fraction": 3e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      672.48,
+      518.4
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      172,
+      224,
+      1267,
+      1643
+    ],
+    "ink_px": 45,
+    "covered_px": 45,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

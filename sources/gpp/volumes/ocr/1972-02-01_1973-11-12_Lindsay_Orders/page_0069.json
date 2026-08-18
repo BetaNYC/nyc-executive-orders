@@ -1,0 +1,371 @@
+{
+  "page": 69,
+  "source_image": "page_0069.png",
+  "elements": [
+    {
+      "bbox": [
+        881,
+        330,
+        947,
+        367
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.5409,
+          "min": -2.0374
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0083,
+          "min": -0.0166
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0075,
+          "min": -0.0111
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        0,
+        475,
+        1743,
+        677
+      ],
+      "category": "Text",
+      "text": "of the Budget, the City Personnel Director and all other officers or agencies of the City having any jurisdiction over the matters provided in this Order are hereby requested, pursuant to the powers vested in them, to take the steps necessary to effectuate the provisions of this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.4563,
+          "min": -2.1057
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0147,
+          "min": -0.0147
+        },
+        "text": {
+          "n_tokens": 53,
+          "mean": -0.0224,
+          "min": -1.0773
+        }
+      },
+      "ink": {
+        "ink_px": 2386,
+        "area_px": 302876,
+        "density": 0.00788,
+        "chars": 286,
+        "chars_per_1k_ink": 119.87
+      }
+    },
+    {
+      "bbox": [
+        487,
+        715,
+        1576,
+        758
+      ],
+      "category": "Text",
+      "text": "§ 5. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.39,
+          "min": -1.9216
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5138,
+          "min": -0.5138
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0033,
+          "min": -0.0351
+        }
+      },
+      "ink": {
+        "ink_px": 506,
+        "area_px": 48268,
+        "density": 0.01048,
+        "chars": 46,
+        "chars_per_1k_ink": 90.91
+      }
+    },
+    {
+      "bbox": [
+        967,
+        840,
+        1645,
+        1136
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4316,
+          "min": -1.9752
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0039,
+          "min": -0.0039
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 6382,
+        "area_px": 202851,
+        "density": 0.03146,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1172,
+        1067,
+        1519,
+        1144
+      ],
+      "category": "Caption",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.2914,
+          "min": -1.579
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.089,
+          "min": -0.089
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0025,
+          "min": -0.0235
+        }
+      },
+      "ink": {
+        "ink_px": 275,
+        "area_px": 27300,
+        "density": 0.01007,
+        "chars": 21,
+        "chars_per_1k_ink": 76.36
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 253,
+    "content": {
+      "n_tokens": 79,
+      "mean": -0.0162,
+      "min": -1.0773,
+      "p05": -0.0244,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 70,
+          "token_id": 1055,
+          "logprob": -1.0773,
+          "text": "of"
+        },
+        {
+          "index": 83,
+          "token_id": 13304,
+          "logprob": -0.0533,
+          "text": " agencies"
+        },
+        {
+          "index": 158,
+          "token_id": 17851,
+          "logprob": -0.0351,
+          "text": "§"
+        },
+        {
+          "index": 94,
+          "token_id": 304,
+          "logprob": -0.0318,
+          "text": " in"
+        },
+        {
+          "index": 248,
+          "token_id": 3022,
+          "logprob": -0.0235,
+          "text": "AY"
+        },
+        {
+          "index": 107,
+          "token_id": 1105,
+          "logprob": -0.0113,
+          "text": " them"
+        },
+        {
+          "index": 35,
+          "token_id": 17,
+          "logprob": -0.0111,
+          "text": "2"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0106,
+          "text": " \"-"
+        },
+        {
+          "index": 121,
+          "token_id": 7217,
+          "logprob": -0.0091,
+          "text": " Order"
+        },
+        {
+          "index": 246,
+          "token_id": 1699,
+          "logprob": -0.0038,
+          "text": "\\n"
+        },
+        {
+          "index": 82,
+          "token_id": 476,
+          "logprob": -0.0019,
+          "text": " or"
+        },
+        {
+          "index": 122,
+          "token_id": 1189,
+          "logprob": -0.0016,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 102,
+      "mean": -0.3979,
+      "min": -2.1057,
+      "p05": -1.8874,
+      "p50": -0.0063,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 47,
+          "token_id": 20,
+          "logprob": -2.1057,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -2.0374,
+          "text": "0"
+        },
+        {
+          "index": 187,
+          "token_id": 20,
+          "logprob": -1.9752,
+          "text": "5"
+        },
+        {
+          "index": 53,
+          "token_id": 18,
+          "logprob": -1.9737,
+          "text": "3"
+        },
+        {
+          "index": 135,
+          "token_id": 20,
+          "logprob": -1.9216,
+          "text": "5"
+        },
+        {
+          "index": 176,
+          "token_id": 22,
+          "logprob": -1.8953,
+          "text": "7"
+        },
+        {
+          "index": 193,
+          "token_id": 21,
+          "logprob": -1.7375,
+          "text": "6"
+        },
+        {
+          "index": 22,
+          "token_id": 22,
+          "logprob": -1.7267,
+          "text": "7"
+        },
+        {
+          "index": 141,
+          "token_id": 21,
+          "logprob": -1.6857,
+          "text": "6"
+        },
+        {
+          "index": 214,
+          "token_id": 22,
+          "logprob": -1.579,
+          "text": "7"
+        },
+        {
+          "index": 58,
+          "token_id": 22,
+          "logprob": -1.5674,
+          "text": "7"
+        },
+        {
+          "index": 130,
+          "token_id": 22,
+          "logprob": -1.5627,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 253,
+      "mean": -0.1657,
+      "min": -2.1057,
+      "p05": -1.519,
+      "p50": -0.0,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 181.65,
+    "std": 9.57,
+    "dark_fraction": 0.00211
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      791.04,
+      1259.52
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      263,
+      419,
+      1934,
+      3079
+    ],
+    "ink_px": 9363,
+    "covered_px": 9295,
+    "covered_fraction": 0.99274,
+    "uncovered_px": 68,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

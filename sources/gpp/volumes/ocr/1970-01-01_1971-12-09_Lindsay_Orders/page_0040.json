@@ -1,0 +1,411 @@
+{
+  "page": 40,
+  "source_image": "page_0040.png",
+  "elements": [
+    {
+      "bbox": [
+        509,
+        469,
+        554,
+        490
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3428,
+          "min": -1.5127
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0435,
+          "min": -0.0486
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0013,
+          "min": -0.003
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 990,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        61,
+        553,
+        1057,
+        668
+      ],
+      "category": "Text",
+      "text": "the Mayor's State Legislative representative, the City Actuary, a member of the City Council selected by the City Council and the Secretary of the New York City Retirement System, who shall serve as Secretary.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3308,
+          "min": -1.3606
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0009,
+          "min": -0.0009
+        },
+        "text": {
+          "n_tokens": 40,
+          "mean": -0.0243,
+          "min": -0.6561
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 102776,
+        "density": 0.0,
+        "chars": 209,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        61,
+        678,
+        984,
+        798
+      ],
+      "category": "Text",
+      "text": "§3. The Mayor's Committee on Pensions shall advise the Mayor on city pension policies, proposed pension legislation and on all matters affecting the City's pension systems.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.3088,
+          "min": -1.3273
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0046,
+          "min": -0.0046
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0272,
+          "min": -0.6328
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 100320,
+        "density": 0.0,
+        "chars": 172,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        127,
+        811,
+        729,
+        843
+      ],
+      "category": "Text",
+      "text": "§4. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2675,
+          "min": -1.1851
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.026,
+          "min": -0.2545
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 19272,
+        "density": 0.0,
+        "chars": 45,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        654,
+        839,
+        1097,
+        1013
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3978,
+          "min": -2.1008
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0264,
+          "min": -0.0264
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5,
+        "area_px": 65772,
+        "density": 8e-05,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        726,
+        951,
+        928,
+        996
+      ],
+      "category": "Caption",
+      "text": "JOHN V. LINDSAY\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2445,
+          "min": -1.1727
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0889,
+          "min": -0.0889
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0016,
+          "min": -0.0081
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 9246,
+        "density": 0.0,
+        "chars": 21,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 299,
+    "content": {
+      "n_tokens": 96,
+      "mean": -0.0224,
+      "min": -0.6561,
+      "p05": -0.0697,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 99,
+          "token_id": 1532,
+          "logprob": -0.6561,
+          "text": " New"
+        },
+        {
+          "index": 172,
+          "token_id": 4311,
+          "logprob": -0.6328,
+          "text": " City"
+        },
+        {
+          "index": 86,
+          "token_id": 279,
+          "logprob": -0.3133,
+          "text": " the"
+        },
+        {
+          "index": 144,
+          "token_id": 17851,
+          "logprob": -0.2624,
+          "text": "§"
+        },
+        {
+          "index": 211,
+          "token_id": 17851,
+          "logprob": -0.2545,
+          "text": "§"
+        },
+        {
+          "index": 295,
+          "token_id": 85574,
+          "logprob": -0.0081,
+          "text": "Mayor"
+        },
+        {
+          "index": 294,
+          "token_id": 1699,
+          "logprob": -0.0052,
+          "text": "\\n"
+        },
+        {
+          "index": 218,
+          "token_id": 2456,
+          "logprob": -0.0041,
+          "text": " effect"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.003,
+          "text": " \"-"
+        },
+        {
+          "index": 286,
+          "token_id": 26145,
+          "logprob": -0.0016,
+          "text": "JO"
+        },
+        {
+          "index": 89,
+          "token_id": 4091,
+          "logprob": -0.001,
+          "text": " selected"
+        },
+        {
+          "index": 217,
+          "token_id": 1896,
+          "logprob": -0.001,
+          "text": " take"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 116,
+      "mean": -0.2996,
+      "min": -2.1008,
+      "p05": -1.2935,
+      "p50": -0.002,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 239,
+          "token_id": 22,
+          "logprob": -2.1008,
+          "text": "7"
+        },
+        {
+          "index": 228,
+          "token_id": 19,
+          "logprob": -1.7165,
+          "text": "4"
+        },
+        {
+          "index": 17,
+          "token_id": 19,
+          "logprob": -1.5127,
+          "text": "4"
+        },
+        {
+          "index": 245,
+          "token_id": 18,
+          "logprob": -1.4384,
+          "text": "3"
+        },
+        {
+          "index": 48,
+          "token_id": 18,
+          "logprob": -1.3606,
+          "text": "3"
+        },
+        {
+          "index": 127,
+          "token_id": 19,
+          "logprob": -1.3273,
+          "text": "4"
+        },
+        {
+          "index": 43,
+          "token_id": 16,
+          "logprob": -1.2822,
+          "text": "1"
+        },
+        {
+          "index": 117,
+          "token_id": 16,
+          "logprob": -1.2615,
+          "text": "1"
+        },
+        {
+          "index": 54,
+          "token_id": 22,
+          "logprob": -1.2273,
+          "text": "7"
+        },
+        {
+          "index": 233,
+          "token_id": 24,
+          "logprob": -1.1898,
+          "text": "9"
+        },
+        {
+          "index": 184,
+          "token_id": 22,
+          "logprob": -1.1851,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.1845,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 299,
+      "mean": -0.1235,
+      "min": -2.1008,
+      "p05": -1.1227,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 164.26,
+    "std": 7.26,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      541.92,
+      419.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      139,
+      180,
+      1025,
+      1325
+    ],
+    "ink_px": 5,
+    "covered_px": 5,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

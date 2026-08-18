@@ -1,0 +1,377 @@
+{
+  "page": 171,
+  "source_image": "page_0171.png",
+  "elements": [
+    {
+      "bbox": [
+        980,
+        555,
+        1133,
+        720
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4526,
+          "min": -2.0006
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0201,
+          "min": -0.0201
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 25564,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        887,
+        733,
+        1232,
+        835
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK, N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.414,
+          "min": -1.9465
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1703,
+          "min": -0.1703
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0981,
+          "min": -0.8001
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 35741,
+        "density": 0.0,
+        "chars": 51,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        634,
+        927,
+        893,
+        970
+      ],
+      "category": "Text",
+      "text": "May 24, 1963",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4267,
+          "min": -1.8197
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0289,
+          "min": -0.1934
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 11484,
+        "density": 0.0,
+        "chars": 12,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        467,
+        1034,
+        1632,
+        1362
+      ],
+      "category": "Text",
+      "text": "SUBJECT: REDUCTION OF CONTRIBUTIONS FOR MEMBERS OF THE POLICE FEDERATION FUND ARTICLE 1\n\nFROM: ROBERT P. WAGNER, MAYOR\n\nTO: POLICE DEPARTMENT FEDERATION FUND\n\nEXECUTIVE ORDER NO. 47",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4622,
+          "min": -1.9913
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0087,
+          "min": -0.0087
+        },
+        "text": {
+          "n_tokens": 64,
+          "mean": -0.1428,
+          "min": -1.9047
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 384930,
+        "density": 0.0,
+        "chars": 181,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        369,
+        1441,
+        1645,
+        2531
+      ],
+      "category": "Text",
+      "text": "1. Prior to the provisions of Administrative Code section 1116-3-1, as added by R. 1963 c. 121, the Mayor, by this Executive Order adopted prior to June 1, 1963, hereby directs that in the case of each member of the Police Force on or after the date of adoption of this Executive Pension Fund, Article 1, in active service in the Police Department, and beginning with the first full payroll period October, and beginning with the first full payroll period October, 1963 and ending with the payroll period October, and beginning with the first full pay period October, 1964, the first day of which is nearest to June 30, 1964, the deductions from the pay, salary or compensation of each member made pursuant to the provisions of Article 1 of Title 8 of Chapter 18 of the Administrative Code, shall be reduced by 2-1/2 per cent of each pay, salary or compensation.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4294,
+          "min": -1.9894
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0077,
+          "min": -0.0077
+        },
+        "text": {
+          "n_tokens": 218,
+          "mean": -0.1424,
+          "min": -2.2227
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1401414,
+        "density": 0.0,
+        "chars": 862,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 486,
+    "content": {
+      "n_tokens": 311,
+      "mean": -0.1361,
+      "min": -2.2227,
+      "p05": -0.73,
+      "p50": -0.0094,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 411,
+          "token_id": 1156,
+          "logprob": -2.2227,
+          "text": " first"
+        },
+        {
+          "index": 268,
+          "token_id": 31399,
+          "logprob": -1.9589,
+          "text": " Prior"
+        },
+        {
+          "index": 181,
+          "token_id": 434,
+          "logprob": -1.9047,
+          "text": " F"
+        },
+        {
+          "index": 271,
+          "token_id": 19156,
+          "logprob": -1.2239,
+          "text": " provisions"
+        },
+        {
+          "index": 279,
+          "token_id": 16,
+          "logprob": -1.1623,
+          "text": "1"
+        },
+        {
+          "index": 404,
+          "token_id": 220,
+          "logprob": -1.0691,
+          "text": " "
+        },
+        {
+          "index": 400,
+          "token_id": 2291,
+          "logprob": -1.0462,
+          "text": " pay"
+        },
+        {
+          "index": 175,
+          "token_id": 24478,
+          "logprob": -1.0122,
+          "text": " MEM"
+        },
+        {
+          "index": 430,
+          "token_id": 70637,
+          "logprob": -0.9483,
+          "text": " deductions"
+        },
+        {
+          "index": 266,
+          "token_id": 16,
+          "logprob": -0.8691,
+          "text": "1"
+        },
+        {
+          "index": 377,
+          "token_id": 45108,
+          "logprob": -0.8657,
+          "text": " payroll"
+        },
+        {
+          "index": 394,
+          "token_id": 323,
+          "logprob": -0.8245,
+          "text": " and"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 103,
+      "mean": -0.4182,
+      "min": -2.0006,
+      "p05": -1.8681,
+      "p50": -0.0261,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -2.0006,
+          "text": "5"
+        },
+        {
+          "index": 141,
+          "token_id": 19,
+          "logprob": -1.9913,
+          "text": "4"
+        },
+        {
+          "index": 248,
+          "token_id": 20,
+          "logprob": -1.9894,
+          "text": "5"
+        },
+        {
+          "index": 37,
+          "token_id": 22,
+          "logprob": -1.9465,
+          "text": "7"
+        },
+        {
+          "index": 147,
+          "token_id": 17,
+          "logprob": -1.9288,
+          "text": "2"
+        },
+        {
+          "index": 135,
+          "token_id": 22,
+          "logprob": -1.8683,
+          "text": "7"
+        },
+        {
+          "index": 254,
+          "token_id": 16,
+          "logprob": -1.8669,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.8604,
+          "text": "3"
+        },
+        {
+          "index": 153,
+          "token_id": 17,
+          "logprob": -1.8396,
+          "text": "2"
+        },
+        {
+          "index": 42,
+          "token_id": 18,
+          "logprob": -1.8228,
+          "text": "3"
+        },
+        {
+          "index": 91,
+          "token_id": 19,
+          "logprob": -1.8197,
+          "text": "4"
+        },
+        {
+          "index": 101,
+          "token_id": 18,
+          "logprob": -1.7451,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 486,
+      "mean": -0.1761,
+      "min": -2.2227,
+      "p05": -1.0689,
+      "p50": -0.0058,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 220.17,
+    "std": 6.8,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      697.68,
+      1050.48
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      232,
+      350,
+      1705,
+      2567
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "page": 6,
+  "source_image": "page_0006.png",
+  "elements": [
+    {
+      "bbox": [
+        216,
+        284,
+        1807,
+        1165
+      ],
+      "category": "Text",
+      "text": "Telephone Service 66/5\nTitle Searches 67/17\nTow-Away Program 67/8\nTransportation BondIssue 67/33\nUnited Negro College Fund 66/50\nUrban Action Task Forces-Brooklyn 68/17\nVacancy Control Board 66/8, 66/12\nWashington Office-Murray Drabkin 66/32, 66/39, 66/49\nWorld Trade Center 66/18",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3978,
+          "min": -1.8842
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0269,
+          "min": -0.0269
+        },
+        "text": {
+          "n_tokens": 118,
+          "mean": -0.0094,
+          "min": -0.9189
+        }
+      },
+      "ink": {
+        "ink_px": 7420,
+        "area_px": 1211812,
+        "density": 0.00612,
+        "chars": 280,
+        "chars_per_1k_ink": 37.74
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 157,
+    "content": {
+      "n_tokens": 118,
+      "mean": -0.0094,
+      "min": -0.9189,
+      "p05": -0.0029,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 90,
+          "token_id": 7671,
+          "logprob": -0.9189,
+          "text": "-B"
+        },
+        {
+          "index": 67,
+          "token_id": 42006,
+          "logprob": -0.0569,
+          "text": "Issue"
+        },
+        {
+          "index": 44,
+          "token_id": 3851,
+          "logprob": -0.0382,
+          "text": "Title"
+        },
+        {
+          "index": 92,
+          "token_id": 82187,
+          "logprob": -0.0339,
+          "text": "oklyn"
+        },
+        {
+          "index": 38,
+          "token_id": 220,
+          "logprob": -0.0267,
+          "text": " "
+        },
+        {
+          "index": 121,
+          "token_id": 2926,
+          "logprob": -0.0074,
+          "text": " Dr"
+        },
+        {
+          "index": 95,
+          "token_id": 23,
+          "logprob": -0.0022,
+          "text": "8"
+        },
+        {
+          "index": 53,
+          "token_id": 51,
+          "logprob": -0.002,
+          "text": "T"
+        },
+        {
+          "index": 91,
+          "token_id": 299,
+          "logprob": -0.0019,
+          "text": "ro"
+        },
+        {
+          "index": 108,
+          "token_id": 23,
+          "logprob": -0.0016,
+          "text": "8"
+        },
+        {
+          "index": 36,
+          "token_id": 67391,
+          "logprob": -0.0013,
+          "text": "Telephone"
+        },
+        {
+          "index": 86,
+          "token_id": 93268,
+          "logprob": -0.0012,
+          "text": "Urban"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 21,
+      "mean": -0.3801,
+      "min": -1.8842,
+      "p05": -1.8821,
+      "p50": -0.0112,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.8842,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.8821,
+          "text": "6"
+        },
+        {
+          "index": 24,
+          "token_id": 20,
+          "logprob": -1.8751,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.544,
+          "text": "7"
+        },
+        {
+          "index": 17,
+          "token_id": 15,
+          "logprob": -0.2553,
+          "text": "0"
+        },
+        {
+          "index": 6,
+          "token_id": 16,
+          "logprob": -0.1755,
+          "text": "1"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -0.1648,
+          "text": "6"
+        },
+        {
+          "index": 11,
+          "token_id": 23,
+          "logprob": -0.1387,
+          "text": "8"
+        },
+        {
+          "index": 30,
+          "token_id": 1178,
+          "logprob": -0.0269,
+          "text": "Text"
+        },
+        {
+          "index": 5,
+          "token_id": 17,
+          "logprob": -0.0182,
+          "text": "2"
+        },
+        {
+          "index": 16,
+          "token_id": 23,
+          "logprob": -0.0112,
+          "text": "8"
+        },
+        {
+          "index": 15,
+          "token_id": 16,
+          "logprob": -0.0044,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 157,
+      "mean": -0.0585,
+      "min": -1.8842,
+      "p05": -0.1439,
+      "p50": -0.0001,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 184.41,
+    "std": 8.09,
+    "dark_fraction": 0.00183
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      837.84,
+      1116.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      279,
+      372,
+      2048,
+      2728
+    ],
+    "ink_px": 7612,
+    "covered_px": 7420,
+    "covered_fraction": 0.97478,
+    "uncovered_px": 192,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

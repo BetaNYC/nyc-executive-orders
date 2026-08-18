@@ -1,0 +1,411 @@
+{
+  "page": 212,
+  "source_image": "page_0212.png",
+  "elements": [
+    {
+      "bbox": [
+        626,
+        0,
+        777,
+        237
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.384,
+          "min": -1.6422
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0838,
+          "min": -0.0838
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 351,
+        "area_px": 1976,
+        "density": 0.17763,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        547,
+        259,
+        855,
+        334
+      ],
+      "category": "Text",
+      "text": "THE CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK, N.Y. 10007",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3233,
+          "min": -1.4442
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0017,
+          "min": -0.0017
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0051,
+          "min": -0.127
+        }
+      },
+      "ink": {
+        "ink_px": 105,
+        "area_px": 23560,
+        "density": 0.00446,
+        "chars": 61,
+        "chars_per_1k_ink": 580.95
+      }
+    },
+    {
+      "bbox": [
+        331,
+        419,
+        1086,
+        581
+      ],
+      "category": "Title",
+      "text": "OFFICE OF THE MAYOR\nEXECUTIVE ORDER NO. 29\nESTABLISHMENT OF THE OFFICE OF JAMAICA PLANNING\nAND DEVELOPMENT",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3314,
+          "min": -1.5272
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0165,
+          "min": -0.0165
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.0286,
+          "min": -0.9277
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 122796,
+        "density": 0.0,
+        "chars": 106,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        141,
+        660,
+        1214,
+        850
+      ],
+      "category": "Text",
+      "text": "WHEREAS, the Board of Estimate in December 1968, approved a site in Jamaica, Queens for York College, a new senior college of the City University, together with an urban renewal designation and community development plan in connection therewith; and",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2945,
+          "min": -1.4908
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 51,
+          "mean": -0.0041,
+          "min": -0.2026
+        }
+      },
+      "ink": {
+        "ink_px": 4,
+        "area_px": 200168,
+        "density": 2e-05,
+        "chars": 249,
+        "chars_per_1k_ink": 62250.0
+      }
+    },
+    {
+      "bbox": [
+        144,
+        874,
+        1229,
+        1167
+      ],
+      "category": "Text",
+      "text": "WHEREAS, the City Planning Commission in December , 1969 designated a Jamaica Center Development Area and approved a first stage unassisted urban renewal development plan to encourage the rebuilding of sections of downtown Jamaica, to enhance its character as a multi-function metropolitan sub-centre for commercial, governmental, and institutional activities in the Borough of Queens; and",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2482,
+          "min": -1.2621
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 70,
+          "mean": -0.0187,
+          "min": -0.802
+        }
+      },
+      "ink": {
+        "ink_px": 31,
+        "area_px": 311459,
+        "density": 0.0001,
+        "chars": 389,
+        "chars_per_1k_ink": 12548.39
+      }
+    },
+    {
+      "bbox": [
+        147,
+        1192,
+        1208,
+        1432
+      ],
+      "category": "Text",
+      "text": "WHEREAS, the Department of City Planning, in conjunction with the Economic Development Administration and the Housing Development Administration, is preparing an amendment to the zoning resolution for creation of a special zoning district in downtown Jamaica in connection with the Jamaica Center Development Area and plan",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2283,
+          "min": -1.1717
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 50,
+          "mean": -0.0001,
+          "min": -0.0028
+        }
+      },
+      "ink": {
+        "ink_px": 19,
+        "area_px": 250080,
+        "density": 8e-05,
+        "chars": 322,
+        "chars_per_1k_ink": 16947.37
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 439,
+    "content": {
+      "n_tokens": 232,
+      "mean": -0.0116,
+      "min": -0.9277,
+      "p05": -0.0029,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 128,
+          "token_id": 46340,
+          "logprob": -0.9277,
+          "text": "EXEC"
+        },
+        {
+          "index": 288,
+          "token_id": 1154,
+          "logprob": -0.802,
+          "text": " ,"
+        },
+        {
+          "index": 337,
+          "token_id": 51711,
+          "logprob": -0.3259,
+          "text": " governmental"
+        },
+        {
+          "index": 208,
+          "token_id": 264,
+          "logprob": -0.2026,
+          "text": " a"
+        },
+        {
+          "index": 333,
+          "token_id": 265,
+          "logprob": -0.1636,
+          "text": "re"
+        },
+        {
+          "index": 78,
+          "token_id": 7507,
+          "logprob": -0.127,
+          "text": ".Y"
+        },
+        {
+          "index": 138,
+          "token_id": 5177,
+          "logprob": -0.0499,
+          "text": "EST"
+        },
+        {
+          "index": 153,
+          "token_id": 1699,
+          "logprob": -0.0337,
+          "text": "\\n"
+        },
+        {
+          "index": 332,
+          "token_id": 21217,
+          "logprob": -0.0115,
+          "text": "-cent"
+        },
+        {
+          "index": 132,
+          "token_id": 5664,
+          "logprob": -0.0076,
+          "text": " NO"
+        },
+        {
+          "index": 140,
+          "token_id": 16444,
+          "logprob": -0.0057,
+          "text": "ISH"
+        },
+        {
+          "index": 294,
+          "token_id": 23195,
+          "logprob": -0.003,
+          "text": " designated"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 119,
+      "mean": -0.2833,
+      "min": -1.6422,
+      "p05": -1.3713,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.6422,
+          "text": "6"
+        },
+        {
+          "index": 104,
+          "token_id": 21,
+          "logprob": -1.5272,
+          "text": "6"
+        },
+        {
+          "index": 175,
+          "token_id": 19,
+          "logprob": -1.4908,
+          "text": "4"
+        },
+        {
+          "index": 34,
+          "token_id": 22,
+          "logprob": -1.4442,
+          "text": "7"
+        },
+        {
+          "index": 15,
+          "token_id": 22,
+          "logprob": -1.4026,
+          "text": "7"
+        },
+        {
+          "index": 44,
+          "token_id": 20,
+          "logprob": -1.3747,
+          "text": "5"
+        },
+        {
+          "index": 20,
+          "token_id": 22,
+          "logprob": -1.3709,
+          "text": "7"
+        },
+        {
+          "index": 49,
+          "token_id": 19,
+          "logprob": -1.2905,
+          "text": "4"
+        },
+        {
+          "index": 164,
+          "token_id": 16,
+          "logprob": -1.2848,
+          "text": "1"
+        },
+        {
+          "index": 39,
+          "token_id": 24,
+          "logprob": -1.2845,
+          "text": "9"
+        },
+        {
+          "index": 109,
+          "token_id": 16,
+          "logprob": -1.2718,
+          "text": "1"
+        },
+        {
+          "index": 255,
+          "token_id": 19,
+          "logprob": -1.2621,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 439,
+      "mean": -0.0831,
+      "min": -1.6422,
+      "p05": -0.9289,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.59,
+    "std": 11.86,
+    "dark_fraction": 0.00033
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      673.68,
+      515.76
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      171,
+      224,
+      1261,
+      1647
+    ],
+    "ink_px": 510,
+    "covered_px": 510,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "page": 36,
+  "source_image": "page_0036.png",
+  "elements": [
+    {
+      "bbox": [
+        965,
+        394,
+        1031,
+        427
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3363,
+          "min": -1.698
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0362,
+          "min": -0.0711
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0007,
+          "min": -0.0016
+        }
+      },
+      "ink": {
+        "ink_px": 253,
+        "area_px": 2211,
+        "density": 0.11443,
+        "chars": 3,
+        "chars_per_1k_ink": 11.86
+      }
+    },
+    {
+      "bbox": [
+        291,
+        550,
+        1572,
+        675
+      ],
+      "category": "Text",
+      "text": "The Division of Analysis will be the working arm of\nthe new Board and will continue to coordinate its work with the\ndepartment analysis units.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3423,
+          "min": -1.65
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 30,
+          "mean": -0.0224,
+          "min": -0.6328
+        }
+      },
+      "ink": {
+        "ink_px": 8988,
+        "area_px": 160625,
+        "density": 0.05596,
+        "chars": 142,
+        "chars_per_1k_ink": 15.8
+      }
+    },
+    {
+      "bbox": [
+        291,
+        714,
+        1672,
+        805
+      ],
+      "category": "Text",
+      "text": "I anticipate the fullest cooperation from every department\nin assisting the Board to carry out its objectives.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3192,
+          "min": -1.6064
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0004,
+          "min": -0.0028
+        }
+      },
+      "ink": {
+        "ink_px": 8038,
+        "area_px": 127420,
+        "density": 0.06308,
+        "chars": 110,
+        "chars_per_1k_ink": 13.68
+      }
+    },
+    {
+      "bbox": [
+        911,
+        883,
+        1747,
+        1061
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4087,
+          "min": -1.9802
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0077,
+          "min": -0.0077
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2446,
+        "area_px": 149342,
+        "density": 0.01638,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1076,
+        1018,
+        1263,
+        1059
+      ],
+      "category": "Text",
+      "text": "Mayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.2898,
+          "min": -1.709
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.252,
+          "min": -0.252
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0041,
+          "min": -0.0041
+        }
+      },
+      "ink": {
+        "ink_px": 413,
+        "area_px": 7708,
+        "density": 0.05358,
+        "chars": 5,
+        "chars_per_1k_ink": 12.11
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 230,
+    "content": {
+      "n_tokens": 53,
+      "mean": -0.0129,
+      "min": -0.6328,
+      "p05": -0.0033,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 83,
+          "token_id": 1699,
+          "logprob": -0.6328,
+          "text": "\\n"
+        },
+        {
+          "index": 97,
+          "token_id": 303,
+          "logprob": -0.0341,
+          "text": "nd"
+        },
+        {
+          "index": 226,
+          "token_id": 85574,
+          "logprob": -0.0041,
+          "text": "Mayor"
+        },
+        {
+          "index": 89,
+          "token_id": 3060,
+          "logprob": -0.0029,
+          "text": " continue"
+        },
+        {
+          "index": 141,
+          "token_id": 76696,
+          "logprob": -0.0028,
+          "text": " fullest"
+        },
+        {
+          "index": 146,
+          "token_id": 1699,
+          "logprob": -0.0017,
+          "text": "\\n"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0016,
+          "text": " \"-"
+        },
+        {
+          "index": 156,
+          "token_id": 1189,
+          "logprob": -0.0015,
+          "text": ".\""
+        },
+        {
+          "index": 148,
+          "token_id": 45827,
+          "logprob": -0.0007,
+          "text": " assisting"
+        },
+        {
+          "index": 36,
+          "token_id": 17,
+          "logprob": -0.0005,
+          "text": "2"
+        },
+        {
+          "index": 102,
+          "token_id": 1189,
+          "logprob": -0.0004,
+          "text": ".\""
+        },
+        {
+          "index": 99,
+          "token_id": 3195,
+          "logprob": -0.0003,
+          "text": "artment"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 105,
+      "mean": -0.3223,
+      "min": -1.9802,
+      "p05": -1.646,
+      "p50": -0.0007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 169,
+          "token_id": 18,
+          "logprob": -1.9802,
+          "text": "3"
+        },
+        {
+          "index": 175,
+          "token_id": 22,
+          "logprob": -1.7868,
+          "text": "7"
+        },
+        {
+          "index": 164,
+          "token_id": 16,
+          "logprob": -1.7777,
+          "text": "1"
+        },
+        {
+          "index": 208,
+          "token_id": 18,
+          "logprob": -1.709,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.698,
+          "text": "5"
+        },
+        {
+          "index": 61,
+          "token_id": 20,
+          "logprob": -1.65,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.6297,
+          "text": "4"
+        },
+        {
+          "index": 56,
+          "token_id": 17,
+          "logprob": -1.6268,
+          "text": "2"
+        },
+        {
+          "index": 181,
+          "token_id": 16,
+          "logprob": -1.6192,
+          "text": "1"
+        },
+        {
+          "index": 115,
+          "token_id": 19,
+          "logprob": -1.6064,
+          "text": "4"
+        },
+        {
+          "index": 196,
+          "token_id": 21,
+          "logprob": -1.6023,
+          "text": "6"
+        },
+        {
+          "index": 126,
+          "token_id": 20,
+          "logprob": -1.5844,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 230,
+      "mean": -0.1508,
+      "min": -1.9802,
+      "p05": -1.5066,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 181.6,
+    "std": 9.94,
+    "dark_fraction": 0.00545
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      777.84,
+      1043.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      259,
+      347,
+      1901,
+      2550
+    ],
+    "ink_px": 19725,
+    "covered_px": 19725,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

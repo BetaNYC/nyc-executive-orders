@@ -1,0 +1,406 @@
+{
+  "page": 114,
+  "source_image": "page_0114.png",
+  "elements": [
+    {
+      "bbox": [
+        428,
+        280,
+        520,
+        377
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2785,
+          "min": -1.2394
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.002,
+          "min": -0.002
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 180,
+        "area_px": 9118,
+        "density": 0.01974,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        373,
+        389,
+        577,
+        471
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7, N.Y.\n-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.304,
+          "min": -1.2983
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0275,
+          "min": -0.0275
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0022,
+          "min": -0.0192
+        }
+      },
+      "ink": {
+        "ink_px": 453,
+        "area_px": 17181,
+        "density": 0.02637,
+        "chars": 57,
+        "chars_per_1k_ink": 125.83
+      }
+    },
+    {
+      "bbox": [
+        514,
+        582,
+        752,
+        603
+      ],
+      "category": "Text",
+      "text": "Executive Order No.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2311,
+          "min": -1.1741
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2753,
+          "min": -0.2753
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0056,
+          "min": -0.0211
+        }
+      },
+      "ink": {
+        "ink_px": 230,
+        "area_px": 5324,
+        "density": 0.0432,
+        "chars": 19,
+        "chars_per_1k_ink": 82.61
+      }
+    },
+    {
+      "bbox": [
+        165,
+        643,
+        803,
+        667
+      ],
+      "category": "Text",
+      "text": "§2. This order shall take effect June 16, 1970.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2509,
+          "min": -1.2582
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0008,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0072,
+          "min": -0.1335
+        }
+      },
+      "ink": {
+        "ink_px": 718,
+        "area_px": 16150,
+        "density": 0.04446,
+        "chars": 47,
+        "chars_per_1k_ink": 65.46
+      }
+    },
+    {
+      "bbox": [
+        514,
+        728,
+        703,
+        770
+      ],
+      "category": "Text",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.224,
+          "min": -0.9835
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0098,
+          "min": -0.0098
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0004,
+          "min": -0.0024
+        }
+      },
+      "ink": {
+        "ink_px": 220,
+        "area_px": 8256,
+        "density": 0.02665,
+        "chars": 21,
+        "chars_per_1k_ink": 95.45
+      }
+    },
+    {
+      "bbox": [
+        413,
+        784,
+        830,
+        899
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3573,
+          "min": -1.3998
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0099,
+          "min": -0.0099
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1373,
+        "area_px": 48645,
+        "density": 0.02822,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 257,
+    "content": {
+      "n_tokens": 60,
+      "mean": -0.0036,
+      "min": -0.1335,
+      "p05": -0.0183,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 160,
+          "token_id": 17851,
+          "logprob": -0.1335,
+          "text": "§"
+        },
+        {
+          "index": 125,
+          "token_id": 1189,
+          "logprob": -0.0211,
+          "text": ".\""
+        },
+        {
+          "index": 86,
+          "token_id": 17,
+          "logprob": -0.0192,
+          "text": "2"
+        },
+        {
+          "index": 82,
+          "token_id": 7507,
+          "logprob": -0.0183,
+          "text": ".Y"
+        },
+        {
+          "index": 85,
+          "token_id": 12,
+          "logprob": -0.0051,
+          "text": "-"
+        },
+        {
+          "index": 63,
+          "token_id": 34,
+          "logprob": -0.005,
+          "text": "C"
+        },
+        {
+          "index": 80,
+          "token_id": 11,
+          "logprob": -0.005,
+          "text": ","
+        },
+        {
+          "index": 221,
+          "token_id": 1699,
+          "logprob": -0.0024,
+          "text": "\\n"
+        },
+        {
+          "index": 168,
+          "token_id": 5534,
+          "logprob": -0.0023,
+          "text": " June"
+        },
+        {
+          "index": 122,
+          "token_id": 72618,
+          "logprob": -0.001,
+          "text": "Executive"
+        },
+        {
+          "index": 213,
+          "token_id": 26145,
+          "logprob": -0.0008,
+          "text": "JO"
+        },
+        {
+          "index": 163,
+          "token_id": 1096,
+          "logprob": -0.0006,
+          "text": " This"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 114,
+      "mean": -0.2627,
+      "min": -1.3998,
+      "p05": -1.1543,
+      "p50": -0.002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 237,
+          "token_id": 19,
+          "logprob": -1.3998,
+          "text": "4"
+        },
+        {
+          "index": 51,
+          "token_id": 16,
+          "logprob": -1.2983,
+          "text": "1"
+        },
+        {
+          "index": 138,
+          "token_id": 18,
+          "logprob": -1.2582,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.2394,
+          "text": "8"
+        },
+        {
+          "index": 36,
+          "token_id": 18,
+          "logprob": -1.2018,
+          "text": "3"
+        },
+        {
+          "index": 105,
+          "token_id": 17,
+          "logprob": -1.1741,
+          "text": "2"
+        },
+        {
+          "index": 242,
+          "token_id": 15,
+          "logprob": -1.1437,
+          "text": "0"
+        },
+        {
+          "index": 232,
+          "token_id": 18,
+          "logprob": -1.0873,
+          "text": "3"
+        },
+        {
+          "index": 148,
+          "token_id": 22,
+          "logprob": -1.0632,
+          "text": "7"
+        },
+        {
+          "index": 133,
+          "token_id": 20,
+          "logprob": -1.0538,
+          "text": "5"
+        },
+        {
+          "index": 110,
+          "token_id": 18,
+          "logprob": -1.0305,
+          "text": "3"
+        },
+        {
+          "index": 46,
+          "token_id": 22,
+          "logprob": -1.0104,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 257,
+      "mean": -0.119,
+      "min": -1.3998,
+      "p05": -0.9848,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 160.96,
+    "std": 13.53,
+    "dark_fraction": 0.00501
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      570.72,
+      397.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      132,
+      190,
+      971,
+      1395
+    ],
+    "ink_px": 5067,
+    "covered_px": 3174,
+    "covered_fraction": 0.62641,
+    "uncovered_px": 1893,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

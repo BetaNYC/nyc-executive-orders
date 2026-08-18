@@ -1,0 +1,411 @@
+{
+  "page": 71,
+  "source_image": "page_0071.png",
+  "elements": [
+    {
+      "bbox": [
+        277,
+        463,
+        1897,
+        534
+      ],
+      "category": "Page-header",
+      "text": "MEMORANDUM - Mayor's Amusement-Resort Advisory Committee, p. 2",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4268,
+          "min": -1.9331
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.01,
+          "min": -0.02
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0011,
+          "min": -0.0146
+        }
+      },
+      "ink": {
+        "ink_px": 5076,
+        "area_px": 114310,
+        "density": 0.04441,
+        "chars": 62,
+        "chars_per_1k_ink": 12.21
+      }
+    },
+    {
+      "bbox": [
+        523,
+        736,
+        1977,
+        915
+      ],
+      "category": "List-item",
+      "text": "2. Copies of press releases which you may issue relating to your department's activities in the concerned resort areas, be forwarded to Commissioner Tyler.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3785,
+          "min": -1.69
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 28,
+          "mean": -0.0131,
+          "min": -0.3502
+        }
+      },
+      "ink": {
+        "ink_px": 12014,
+        "area_px": 262080,
+        "density": 0.04584,
+        "chars": 155,
+        "chars_per_1k_ink": 12.9
+      }
+    },
+    {
+      "bbox": [
+        523,
+        956,
+        1927,
+        1085
+      ],
+      "category": "List-item",
+      "text": "3. Attend meetings of this Committee, when matters of concern to your department or agency are under consideration.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3226,
+          "min": -1.6094
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0001,
+          "min": -0.0011
+        }
+      },
+      "ink": {
+        "ink_px": 9022,
+        "area_px": 181374,
+        "density": 0.04974,
+        "chars": 115,
+        "chars_per_1k_ink": 12.75
+      }
+    },
+    {
+      "bbox": [
+        523,
+        1131,
+        1821,
+        1224
+      ],
+      "category": "List-item",
+      "text": "4. Cooperate with Commissioner Tyler and the Committee to help its purposes.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2755,
+          "min": -1.795
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0008,
+          "min": -0.0072
+        }
+      },
+      "ink": {
+        "ink_px": 6363,
+        "area_px": 122200,
+        "density": 0.05207,
+        "chars": 76,
+        "chars_per_1k_ink": 11.94
+      }
+    },
+    {
+      "bbox": [
+        1023,
+        1141,
+        1960,
+        1511
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.4483,
+          "min": -2.2039
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0043,
+          "min": -0.0043
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 13784,
+        "area_px": 348369,
+        "density": 0.03957,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1176,
+        1397,
+        1565,
+        1485
+      ],
+      "category": "Caption",
+      "text": "John V. Lindsay\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3083,
+          "min": -1.6785
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.062,
+          "min": -0.062
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0045,
+          "min": -0.0188
+        }
+      },
+      "ink": {
+        "ink_px": 2218,
+        "area_px": 34799,
+        "density": 0.06374,
+        "chars": 21,
+        "chars_per_1k_ink": 9.47
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 310,
+    "content": {
+      "n_tokens": 89,
+      "mean": -0.0048,
+      "min": -0.3502,
+      "p05": -0.007,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 117,
+          "token_id": 31220,
+          "logprob": -0.3502,
+          "text": " Tyler"
+        },
+        {
+          "index": 306,
+          "token_id": 85574,
+          "logprob": -0.0188,
+          "text": "Mayor"
+        },
+        {
+          "index": 46,
+          "token_id": 1061,
+          "logprob": -0.0146,
+          "text": "Res"
+        },
+        {
+          "index": 93,
+          "token_id": 79568,
+          "logprob": -0.0081,
+          "text": " Copies"
+        },
+        {
+          "index": 217,
+          "token_id": 23517,
+          "logprob": -0.0072,
+          "text": " Cooper"
+        },
+        {
+          "index": 305,
+          "token_id": 1699,
+          "logprob": -0.0068,
+          "text": "\\n"
+        },
+        {
+          "index": 101,
+          "token_id": 22527,
+          "logprob": -0.0066,
+          "text": " relating"
+        },
+        {
+          "index": 224,
+          "token_id": 10341,
+          "logprob": -0.0034,
+          "text": " Committee"
+        },
+        {
+          "index": 40,
+          "token_id": 481,
+          "logprob": -0.0026,
+          "text": " -"
+        },
+        {
+          "index": 36,
+          "token_id": 31970,
+          "logprob": -0.0019,
+          "text": "MEM"
+        },
+        {
+          "index": 175,
+          "token_id": 17879,
+          "logprob": -0.0011,
+          "text": " consideration"
+        },
+        {
+          "index": 301,
+          "token_id": 13079,
+          "logprob": -0.001,
+          "text": "John"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 133,
+      "mean": -0.3329,
+      "min": -2.2039,
+      "p05": -1.732,
+      "p50": -0.0005,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 244,
+          "token_id": 16,
+          "logprob": -2.2039,
+          "text": "1"
+        },
+        {
+          "index": 238,
+          "token_id": 18,
+          "logprob": -2.0363,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.9331,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.9008,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.8805,
+          "text": "4"
+        },
+        {
+          "index": 250,
+          "token_id": 15,
+          "logprob": -1.8437,
+          "text": "0"
+        },
+        {
+          "index": 196,
+          "token_id": 16,
+          "logprob": -1.795,
+          "text": "1"
+        },
+        {
+          "index": 67,
+          "token_id": 21,
+          "logprob": -1.69,
+          "text": "6"
+        },
+        {
+          "index": 78,
+          "token_id": 20,
+          "logprob": -1.6791,
+          "text": "5"
+        },
+        {
+          "index": 283,
+          "token_id": 20,
+          "logprob": -1.6785,
+          "text": "5"
+        },
+        {
+          "index": 271,
+          "token_id": 21,
+          "logprob": -1.664,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.6129,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 310,
+      "mean": -0.1445,
+      "min": -2.2039,
+      "p05": -1.539,
+      "p50": -0.0,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.13,
+    "std": 13.48,
+    "dark_fraction": 0.00992
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      867.6,
+      1106.4
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      289,
+      368,
+      2120,
+      2705
+    ],
+    "ink_px": 42460,
+    "covered_px": 42420,
+    "covered_fraction": 0.99906,
+    "uncovered_px": 40,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

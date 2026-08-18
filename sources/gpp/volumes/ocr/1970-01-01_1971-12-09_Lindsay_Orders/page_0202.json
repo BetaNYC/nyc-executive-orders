@@ -1,0 +1,405 @@
+{
+  "page": 202,
+  "source_image": "page_0202.png",
+  "elements": [
+    {
+      "bbox": [
+        694,
+        160,
+        745,
+        185
+      ],
+      "category": "Page-header",
+      "text": "-3-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3742,
+          "min": -1.736
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0027,
+          "min": -0.0045
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0053,
+          "min": -0.0095
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        147,
+        240,
+        1294,
+        645
+      ],
+      "category": "Text",
+      "text": "guidelines should insure that complainants are referred to an agency\nthat is equipped to help the complainant. Further, the Mayor's\nCommittee on Exploitation of Workers may publicize its availability\nto assist individuals with labor problems. At the request of the\nEconomic Development Administration, the Mayor's Committee on\nExploitation of Workers shall catalog individual complaints made to the\nCommittee so as to discover which employers, unions, industries,\netc., are the cause of most complaints.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3048,
+          "min": -1.6058
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0041,
+          "min": -0.0041
+        },
+        "text": {
+          "n_tokens": 103,
+          "mean": -0.006,
+          "min": -0.5763
+        }
+      },
+      "ink": {
+        "ink_px": 610,
+        "area_px": 438615,
+        "density": 0.00139,
+        "chars": 503,
+        "chars_per_1k_ink": 824.59
+      }
+    },
+    {
+      "bbox": [
+        151,
+        670,
+        1194,
+        858
+      ],
+      "category": "Text",
+      "text": "§4. The Mayor's Committee on Exploitation of Workers may request of other City administrations, departments and agencies such information as it deems necessary to carry out its stated purposes.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2763,
+          "min": -1.361
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0298,
+          "min": -0.0298
+        },
+        "text": {
+          "n_tokens": 37,
+          "mean": -0.0091,
+          "min": -0.3136
+        }
+      },
+      "ink": {
+        "ink_px": 145,
+        "area_px": 191948,
+        "density": 0.00076,
+        "chars": 193,
+        "chars_per_1k_ink": 1331.03
+      }
+    },
+    {
+      "bbox": [
+        280,
+        884,
+        1014,
+        919
+      ],
+      "category": "Text",
+      "text": "§5. This order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2734,
+          "min": -1.3994
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0005,
+          "min": -0.0046
+        }
+      },
+      "ink": {
+        "ink_px": 19,
+        "area_px": 25655,
+        "density": 0.00074,
+        "chars": 45,
+        "chars_per_1k_ink": 2368.42
+      }
+    },
+    {
+      "bbox": [
+        717,
+        949,
+        1369,
+        1228
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4426,
+          "min": -2.0119
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0126,
+          "min": -0.0126
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 133,
+        "area_px": 150381,
+        "density": 0.00088,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        901,
+        1103,
+        1139,
+        1154
+      ],
+      "category": "Caption",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2643,
+          "min": -1.3196
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.6326,
+          "min": -0.6326
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.005,
+          "min": -0.0553
+        }
+      },
+      "ink": {
+        "ink_px": 37,
+        "area_px": 12138,
+        "density": 0.00305,
+        "chars": 21,
+        "chars_per_1k_ink": 567.57
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 375,
+    "content": {
+      "n_tokens": 165,
+      "mean": -0.0063,
+      "min": -0.5763,
+      "p05": -0.0046,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 84,
+          "token_id": 1699,
+          "logprob": -0.5763,
+          "text": "\\n"
+        },
+        {
+          "index": 224,
+          "token_id": 1681,
+          "logprob": -0.3136,
+          "text": " request"
+        },
+        {
+          "index": 370,
+          "token_id": 3022,
+          "logprob": -0.0553,
+          "text": "AY"
+        },
+        {
+          "index": 210,
+          "token_id": 17851,
+          "logprob": -0.0217,
+          "text": "§"
+        },
+        {
+          "index": 72,
+          "token_id": 23448,
+          "logprob": -0.0137,
+          "text": "guid"
+        },
+        {
+          "index": 35,
+          "token_id": 18,
+          "logprob": -0.0095,
+          "text": "3"
+        },
+        {
+          "index": 75,
+          "token_id": 69532,
+          "logprob": -0.0093,
+          "text": " insure"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0061,
+          "text": " \"-"
+        },
+        {
+          "index": 282,
+          "token_id": 17851,
+          "logprob": -0.0046,
+          "text": "§"
+        },
+        {
+          "index": 165,
+          "token_id": 4711,
+          "logprob": -0.0045,
+          "text": "net"
+        },
+        {
+          "index": 140,
+          "token_id": 385,
+          "logprob": -0.0031,
+          "text": "lo"
+        },
+        {
+          "index": 368,
+          "token_id": 1699,
+          "logprob": -0.003,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 123,
+      "mean": -0.3094,
+      "min": -2.0119,
+      "p05": -1.3956,
+      "p50": -0.0019,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 299,
+          "token_id": 22,
+          "logprob": -2.0119,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.736,
+          "text": "4"
+        },
+        {
+          "index": 55,
+          "token_id": 19,
+          "logprob": -1.6058,
+          "text": "4"
+        },
+        {
+          "index": 310,
+          "token_id": 24,
+          "logprob": -1.5894,
+          "text": "9"
+        },
+        {
+          "index": 17,
+          "token_id": 20,
+          "logprob": -1.5416,
+          "text": "5"
+        },
+        {
+          "index": 44,
+          "token_id": 22,
+          "logprob": -1.4836,
+          "text": "7"
+        },
+        {
+          "index": 265,
+          "token_id": 19,
+          "logprob": -1.3994,
+          "text": "4"
+        },
+        {
+          "index": 193,
+          "token_id": 19,
+          "logprob": -1.361,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 20,
+          "logprob": -1.3545,
+          "text": "5"
+        },
+        {
+          "index": 316,
+          "token_id": 23,
+          "logprob": -1.3524,
+          "text": "8"
+        },
+        {
+          "index": 259,
+          "token_id": 19,
+          "logprob": -1.3277,
+          "text": "4"
+        },
+        {
+          "index": 336,
+          "token_id": 18,
+          "logprob": -1.3196,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 375,
+      "mean": -0.1043,
+      "min": -2.0119,
+      "p05": -0.94,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.58,
+    "std": 11.17,
+    "dark_fraction": 0.00059
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      675.12,
+      512.88
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      171,
+      225,
+      1254,
+      1650
+    ],
+    "ink_px": 907,
+    "covered_px": 907,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

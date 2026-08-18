@@ -1,0 +1,246 @@
+{
+  "page": 103,
+  "source_image": "page_0103.png",
+  "elements": [
+    {
+      "bbox": [
+        141,
+        747,
+        977,
+        796
+      ],
+      "category": "Text",
+      "text": "THE CITY OF CHICAGO IS AN EXCELLENT LOCATION FOR A CIVILIAN RESIDENCE.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.6582,
+          "min": -2.2454
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0245,
+          "min": -0.0245
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.963,
+          "min": -2.2672
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 42200,
+        "density": 0.0,
+        "chars": 70,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "length",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 12000,
+    "content": {
+      "n_tokens": 23,
+      "mean": -0.963,
+      "min": -2.2672,
+      "p05": -2.1469,
+      "p50": -0.9881,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 50,
+          "token_id": 3090,
+          "logprob": -2.2672,
+          "text": "IV"
+        },
+        {
+          "index": 34,
+          "token_id": 17229,
+          "logprob": -2.1588,
+          "text": "THE"
+        },
+        {
+          "index": 37,
+          "token_id": 6826,
+          "logprob": -2.0398,
+          "text": " CH"
+        },
+        {
+          "index": 35,
+          "token_id": 46552,
+          "logprob": -1.9705,
+          "text": " CITY"
+        },
+        {
+          "index": 49,
+          "token_id": 356,
+          "logprob": -1.6343,
+          "text": " C"
+        },
+        {
+          "index": 41,
+          "token_id": 2100,
+          "logprob": -1.4075,
+          "text": " AN"
+        },
+        {
+          "index": 46,
+          "token_id": 65583,
+          "logprob": -1.3882,
+          "text": " LOCATION"
+        },
+        {
+          "index": 56,
+          "token_id": 1189,
+          "logprob": -1.3236,
+          "text": ".\""
+        },
+        {
+          "index": 54,
+          "token_id": 915,
+          "logprob": -1.1246,
+          "text": "ID"
+        },
+        {
+          "index": 52,
+          "token_id": 22002,
+          "logprob": -1.0733,
+          "text": "IAN"
+        },
+        {
+          "index": 36,
+          "token_id": 3008,
+          "logprob": -1.0293,
+          "text": " OF"
+        },
+        {
+          "index": 53,
+          "token_id": 13170,
+          "logprob": -0.9881,
+          "text": " RES"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 19,
+      "mean": -0.6248,
+      "min": -2.2454,
+      "p05": -1.9974,
+      "p50": -0.258,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -2.2454,
+          "text": "1"
+        },
+        {
+          "index": 17,
+          "token_id": 22,
+          "logprob": -1.9698,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.9133,
+          "text": "7"
+        },
+        {
+          "index": 22,
+          "token_id": 21,
+          "logprob": -1.8863,
+          "text": "6"
+        },
+        {
+          "index": 6,
+          "token_id": 19,
+          "logprob": -0.8928,
+          "text": "4"
+        },
+        {
+          "index": 16,
+          "token_id": 22,
+          "logprob": -0.8025,
+          "text": "7"
+        },
+        {
+          "index": 15,
+          "token_id": 24,
+          "logprob": -0.7015,
+          "text": "9"
+        },
+        {
+          "index": 20,
+          "token_id": 22,
+          "logprob": -0.5091,
+          "text": "7"
+        },
+        {
+          "index": 11,
+          "token_id": 19,
+          "logprob": -0.4331,
+          "text": "4"
+        },
+        {
+          "index": 5,
+          "token_id": 16,
+          "logprob": -0.258,
+          "text": "1"
+        },
+        {
+          "index": 10,
+          "token_id": 22,
+          "logprob": -0.1226,
+          "text": "7"
+        },
+        {
+          "index": 21,
+          "token_id": 24,
+          "logprob": -0.1119,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 12000,
+      "mean": -0.0111,
+      "min": -2.6359,
+      "p05": -0.0123,
+      "p50": -0.0001,
+      "n_below_threshold": 15
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.79,
+    "std": 6.93,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      666.48,
+      426.96
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      222,
+      1043,
+      1629
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

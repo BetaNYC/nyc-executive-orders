@@ -1,0 +1,377 @@
+{
+  "page": 28,
+  "source_image": "page_0028.png",
+  "elements": [
+    {
+      "bbox": [
+        499,
+        344,
+        1981,
+        764
+      ],
+      "category": "Text",
+      "text": "## An Old Problem\nIn Manhattan, the nation's most crowded and productive central business district, some 2,000,000 people come to work every day from New York City's five boroughs and the hundreds of communities in the surrounding Metropolitan area of three States — New York, New Jersey, and Connecticut.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4693,
+          "min": -1.9877
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 67,
+          "mean": -0.0236,
+          "min": -0.7691
+        }
+      },
+      "ink": {
+        "ink_px": 9914,
+        "area_px": 522639,
+        "density": 0.01897,
+        "chars": 305,
+        "chars_per_1k_ink": 30.76
+      }
+    },
+    {
+      "bbox": [
+        517,
+        707,
+        1981,
+        1255
+      ],
+      "category": "Text",
+      "text": "Most of these people work on a 9 to 5 schedule. Why? Largely because it's always been done that way. Just traditional. The result is brutal congestion twice a day on the transportation facilities. The subways, highways, railroads, buses, ferries and every other mode of getting to and from work are overtaxed within the narrow time bands of morning and evening rush hours. At other times of day, even as little as 30 minutes outside these peak hours, the facilities are much less heavily traveled.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4569,
+          "min": -1.9672
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 109,
+          "mean": -0.0021,
+          "min": -0.0876
+        }
+      },
+      "ink": {
+        "ink_px": 12416,
+        "area_px": 806108,
+        "density": 0.0154,
+        "chars": 497,
+        "chars_per_1k_ink": 40.03
+      }
+    },
+    {
+      "bbox": [
+        543,
+        1195,
+        2018,
+        1502
+      ],
+      "category": "Text",
+      "text": "Every one of these travelers knows the discomfort and irritation in such human concentration. Time is wasted; most of the transit delays occur in the peak periods. Workers arrive late at their offices, people's spirits sag, efficiency is impaired.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3958,
+          "min": -1.9575
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 46,
+          "mean": -0.0031,
+          "min": -0.1225
+        }
+      },
+      "ink": {
+        "ink_px": 6186,
+        "area_px": 456456,
+        "density": 0.01355,
+        "chars": 247,
+        "chars_per_1k_ink": 39.93
+      }
+    },
+    {
+      "bbox": [
+        557,
+        1440,
+        2021,
+        1625
+      ],
+      "category": "Text",
+      "text": "There must be a better way of coping with such a costly and vexatious problem. And there is!",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3565,
+          "min": -1.868
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.0006,
+          "min": -0.0058
+        }
+      },
+      "ink": {
+        "ink_px": 2518,
+        "area_px": 273606,
+        "density": 0.0092,
+        "chars": 92,
+        "chars_per_1k_ink": 36.54
+      }
+    },
+    {
+      "bbox": [
+        718,
+        1947,
+        1960,
+        2913
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.485,
+          "min": -1.8222
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0046,
+          "min": -0.0046
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 6111,
+        "area_px": 1204320,
+        "density": 0.00507,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 424,
+    "content": {
+      "n_tokens": 244,
+      "mean": -0.0081,
+      "min": -0.7691,
+      "p05": -0.0072,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 92,
+          "token_id": 1959,
+          "logprob": -0.7691,
+          "text": " —"
+        },
+        {
+          "index": 35,
+          "token_id": 565,
+          "logprob": -0.4173,
+          "text": "##"
+        },
+        {
+          "index": 40,
+          "token_id": 641,
+          "logprob": -0.3492,
+          "text": "In"
+        },
+        {
+          "index": 293,
+          "token_id": 65410,
+          "logprob": -0.1225,
+          "text": " irritation"
+        },
+        {
+          "index": 138,
+          "token_id": 13319,
+          "logprob": -0.0876,
+          "text": "Most"
+        },
+        {
+          "index": 154,
+          "token_id": 444,
+          "logprob": -0.0856,
+          "text": " L"
+        },
+        {
+          "index": 153,
+          "token_id": 30,
+          "logprob": -0.0161,
+          "text": "?"
+        },
+        {
+          "index": 86,
+          "token_id": 14590,
+          "logprob": -0.0129,
+          "text": " surrounding"
+        },
+        {
+          "index": 206,
+          "token_id": 42561,
+          "logprob": -0.0098,
+          "text": " overt"
+        },
+        {
+          "index": 101,
+          "token_id": 1189,
+          "logprob": -0.0098,
+          "text": ".\""
+        },
+        {
+          "index": 76,
+          "token_id": 4236,
+          "logprob": -0.0087,
+          "text": " five"
+        },
+        {
+          "index": 91,
+          "token_id": 4180,
+          "logprob": -0.0083,
+          "text": " States"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 107,
+      "mean": -0.4116,
+      "min": -1.9877,
+      "p05": -1.8892,
+      "p50": -0.0052,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.9877,
+          "text": "4"
+        },
+        {
+          "index": 109,
+          "token_id": 22,
+          "logprob": -1.9672,
+          "text": "7"
+        },
+        {
+          "index": 260,
+          "token_id": 20,
+          "logprob": -1.9575,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.9369,
+          "text": "1"
+        },
+        {
+          "index": 254,
+          "token_id": 18,
+          "logprob": -1.9203,
+          "text": "3"
+        },
+        {
+          "index": 126,
+          "token_id": 20,
+          "logprob": -1.8983,
+          "text": "5"
+        },
+        {
+          "index": 355,
+          "token_id": 20,
+          "logprob": -1.868,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.8623,
+          "text": "4"
+        },
+        {
+          "index": 272,
+          "token_id": 17,
+          "logprob": -1.8412,
+          "text": "2"
+        },
+        {
+          "index": 414,
+          "token_id": 18,
+          "logprob": -1.8222,
+          "text": "3"
+        },
+        {
+          "index": 402,
+          "token_id": 22,
+          "logprob": -1.82,
+          "text": "7"
+        },
+        {
+          "index": 396,
+          "token_id": 23,
+          "logprob": -1.8079,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 424,
+      "mean": -0.1103,
+      "min": -1.9877,
+      "p05": -0.7608,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 181.27,
+    "std": 16.43,
+    "dark_fraction": 0.00648
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      951.36,
+      1237.68
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      317,
+      412,
+      2325,
+      3025
+    ],
+    "ink_px": 34019,
+    "covered_px": 32926,
+    "covered_fraction": 0.96787,
+    "uncovered_px": 1093,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

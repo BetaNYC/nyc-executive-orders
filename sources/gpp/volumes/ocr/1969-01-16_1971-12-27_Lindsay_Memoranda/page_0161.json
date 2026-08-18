@@ -1,0 +1,314 @@
+{
+  "page": 161,
+  "source_image": "page_0161.png",
+  "elements": [
+    {
+      "bbox": [
+        787,
+        634,
+        934,
+        674
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4927,
+          "min": -1.9416
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0174,
+          "min": -0.0342
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0217,
+          "min": -0.0551
+        }
+      },
+      "ink": {
+        "ink_px": 14,
+        "area_px": 6109,
+        "density": 0.00229,
+        "chars": 5,
+        "chars_per_1k_ink": 357.14
+      }
+    },
+    {
+      "bbox": [
+        220,
+        894,
+        1687,
+        1204
+      ],
+      "category": "Text",
+      "text": "In order to assure an early start on this effort, I urge each administrator to prepare by October 30th preliminary proposals for special studies that can be accomplished through the Urban Analysis Center during the next six to twelve months. Each agency should give special priority to studies that will also qualify for Federal and non-City support.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3855,
+          "min": -1.9009
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 65,
+          "mean": -0.002,
+          "min": -0.1213
+        }
+      },
+      "ink": {
+        "ink_px": 3883,
+        "area_px": 438984,
+        "density": 0.00885,
+        "chars": 350,
+        "chars_per_1k_ink": 90.14
+      }
+    },
+    {
+      "bbox": [
+        226,
+        1256,
+        1660,
+        1464
+      ],
+      "category": "Text",
+      "text": "I have asked the Budget Director to coordinate the development and review of these proposals. Proposals should be submitted to the University Policy Committee with copy to the Budget Director by October 30th.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3211,
+          "min": -1.6723
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 39,
+          "mean": -0.0,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 2266,
+        "area_px": 288420,
+        "density": 0.00786,
+        "chars": 208,
+        "chars_per_1k_ink": 91.79
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 217,
+    "content": {
+      "n_tokens": 108,
+      "mean": -0.002,
+      "min": -0.1213,
+      "p05": -0.0008,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 87,
+          "token_id": 1817,
+          "logprob": -0.1213,
+          "text": " each"
+        },
+        {
+          "index": 35,
+          "token_id": 220,
+          "logprob": -0.0551,
+          "text": " "
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.031,
+          "text": " \"-"
+        },
+        {
+          "index": 118,
+          "token_id": 13,
+          "logprob": -0.0028,
+          "text": "."
+        },
+        {
+          "index": 77,
+          "token_id": 34915,
+          "logprob": -0.0018,
+          "text": " assure"
+        },
+        {
+          "index": 105,
+          "token_id": 26237,
+          "logprob": -0.001,
+          "text": " accomplished"
+        },
+        {
+          "index": 37,
+          "token_id": 481,
+          "logprob": -0.0006,
+          "text": " -"
+        },
+        {
+          "index": 185,
+          "token_id": 4401,
+          "logprob": -0.0003,
+          "text": " development"
+        },
+        {
+          "index": 86,
+          "token_id": 32047,
+          "logprob": -0.0003,
+          "text": " urge"
+        },
+        {
+          "index": 116,
+          "token_id": 29235,
+          "logprob": -0.0002,
+          "text": " twelve"
+        },
+        {
+          "index": 36,
+          "token_id": 17,
+          "logprob": -0.0002,
+          "text": "2"
+        },
+        {
+          "index": 130,
+          "token_id": 25384,
+          "logprob": -0.0002,
+          "text": " qualify"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 63,
+      "mean": -0.3707,
+      "min": -1.9416,
+      "p05": -1.8863,
+      "p50": -0.0008,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.9416,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.9352,
+          "text": "7"
+        },
+        {
+          "index": 17,
+          "token_id": 19,
+          "logprob": -1.9082,
+          "text": "4"
+        },
+        {
+          "index": 50,
+          "token_id": 19,
+          "logprob": -1.9009,
+          "text": "4"
+        },
+        {
+          "index": 62,
+          "token_id": 19,
+          "logprob": -1.7552,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 19,
+          "logprob": -1.7258,
+          "text": "4"
+        },
+        {
+          "index": 146,
+          "token_id": 21,
+          "logprob": -1.6723,
+          "text": "6"
+        },
+        {
+          "index": 152,
+          "token_id": 21,
+          "logprob": -1.6092,
+          "text": "6"
+        },
+        {
+          "index": 56,
+          "token_id": 22,
+          "logprob": -1.5491,
+          "text": "7"
+        },
+        {
+          "index": 164,
+          "token_id": 19,
+          "logprob": -1.5237,
+          "text": "4"
+        },
+        {
+          "index": 158,
+          "token_id": 15,
+          "logprob": -1.4559,
+          "text": "0"
+        },
+        {
+          "index": 45,
+          "token_id": 15,
+          "logprob": -1.3753,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 217,
+      "mean": -0.1086,
+      "min": -1.9416,
+      "p05": -1.3914,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 182.59,
+    "std": 10.54,
+    "dark_fraction": 0.00138
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      871.68,
+      1151.76
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      290,
+      384,
+      2131,
+      2816
+    ],
+    "ink_px": 6163,
+    "covered_px": 6163,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

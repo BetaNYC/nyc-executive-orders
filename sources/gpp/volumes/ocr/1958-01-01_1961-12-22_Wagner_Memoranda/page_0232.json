@@ -1,0 +1,377 @@
+{
+  "page": 232,
+  "source_image": "page_0232.png",
+  "elements": [
+    {
+      "bbox": [
+        205,
+        577,
+        1817,
+        731
+      ],
+      "category": "List-item",
+      "text": "3. Envelopes containing legislative reports should bear the legend \"Legislative Report\" typed in the lower left hand corner, and should not contain any other correspondence.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4241,
+          "min": -1.8781
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0713,
+          "min": -0.1427
+        },
+        "text": {
+          "n_tokens": 34,
+          "mean": -0.0001,
+          "min": -0.0008
+        }
+      },
+      "ink": {
+        "ink_px": 14706,
+        "area_px": 243360,
+        "density": 0.06043,
+        "chars": 173,
+        "chars_per_1k_ink": 11.76
+      }
+    },
+    {
+      "bbox": [
+        205,
+        808,
+        1799,
+        996
+      ],
+      "category": "List-item",
+      "text": "C. Requests for comments by State Agencies and requests for appearances before legislative committees are to be forwarded to Mr. Ruggieri in strict accordance with Executive Order #102.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3391,
+          "min": -1.6904
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.0002,
+          "min": -0.0018
+        }
+      },
+      "ink": {
+        "ink_px": 13041,
+        "area_px": 293170,
+        "density": 0.04448,
+        "chars": 185,
+        "chars_per_1k_ink": 14.19
+      }
+    },
+    {
+      "bbox": [
+        205,
+        1082,
+        1717,
+        1365
+      ],
+      "category": "Text",
+      "text": "I request that you acknowledge receipt of this Executive Order and indicate the name and title of an officer who, in addition to the head of the agency, is authorized to sign the legislative reports. A copy of this acknowledgment should be sent to Mr. Ruggieri at the Manger DeWitt Clinton Hotel, Albany, New York.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3394,
+          "min": -1.7609
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0008,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 67,
+          "mean": -0.0002,
+          "min": -0.0107
+        }
+      },
+      "ink": {
+        "ink_px": 19385,
+        "area_px": 417846,
+        "density": 0.04639,
+        "chars": 314,
+        "chars_per_1k_ink": 16.2
+      }
+    },
+    {
+      "bbox": [
+        637,
+        1531,
+        1455,
+        1721
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4074,
+          "min": -1.8759
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0062,
+          "min": -0.0062
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 6005,
+        "area_px": 156864,
+        "density": 0.03828,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        921,
+        2373,
+        1002,
+        2415
+      ],
+      "category": "Page-footer",
+      "text": "-3-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3257,
+          "min": -1.7674
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0001,
+          "min": -0.0001
+        }
+      },
+      "ink": {
+        "ink_px": 61,
+        "area_px": 1394,
+        "density": 0.04376,
+        "chars": 3,
+        "chars_per_1k_ink": 49.18
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 321,
+    "content": {
+      "n_tokens": 140,
+      "mean": -0.0002,
+      "min": -0.0107,
+      "p05": -0.0005,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 233,
+          "token_id": 386,
+          "logprob": -0.0107,
+          "text": " M"
+        },
+        {
+          "index": 120,
+          "token_id": 41447,
+          "logprob": -0.0018,
+          "text": " committees"
+        },
+        {
+          "index": 235,
+          "token_id": 1581,
+          "logprob": -0.0009,
+          "text": " De"
+        },
+        {
+          "index": 54,
+          "token_id": 31969,
+          "logprob": -0.0008,
+          "text": " typed"
+        },
+        {
+          "index": 113,
+          "token_id": 90186,
+          "logprob": -0.0005,
+          "text": " Agencies"
+        },
+        {
+          "index": 129,
+          "token_id": 2596,
+          "logprob": -0.0005,
+          "text": "ugg"
+        },
+        {
+          "index": 128,
+          "token_id": 431,
+          "logprob": -0.0005,
+          "text": " R"
+        },
+        {
+          "index": 133,
+          "token_id": 18353,
+          "logprob": -0.0005,
+          "text": " accordance"
+        },
+        {
+          "index": 236,
+          "token_id": 54,
+          "logprob": -0.0005,
+          "text": "W"
+        },
+        {
+          "index": 106,
+          "token_id": 34,
+          "logprob": -0.0005,
+          "text": "C"
+        },
+        {
+          "index": 36,
+          "token_id": 18,
+          "logprob": -0.0004,
+          "text": "3"
+        },
+        {
+          "index": 59,
+          "token_id": 1424,
+          "logprob": -0.0004,
+          "text": " hand"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 109,
+      "mean": -0.341,
+      "min": -1.8781,
+      "p05": -1.6868,
+      "p50": -0.0008,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.8781,
+          "text": "5"
+        },
+        {
+          "index": 265,
+          "token_id": 20,
+          "logprob": -1.8759,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.855,
+          "text": "7"
+        },
+        {
+          "index": 297,
+          "token_id": 17,
+          "logprob": -1.7674,
+          "text": "2"
+        },
+        {
+          "index": 155,
+          "token_id": 17,
+          "logprob": -1.7609,
+          "text": "2"
+        },
+        {
+          "index": 93,
+          "token_id": 21,
+          "logprob": -1.6904,
+          "text": "6"
+        },
+        {
+          "index": 253,
+          "token_id": 22,
+          "logprob": -1.6815,
+          "text": "7"
+        },
+        {
+          "index": 161,
+          "token_id": 22,
+          "logprob": -1.6483,
+          "text": "7"
+        },
+        {
+          "index": 291,
+          "token_id": 18,
+          "logprob": -1.6326,
+          "text": "3"
+        },
+        {
+          "index": 167,
+          "token_id": 20,
+          "logprob": -1.6262,
+          "text": "5"
+        },
+        {
+          "index": 271,
+          "token_id": 16,
+          "logprob": -1.5174,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.5157,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 321,
+      "mean": -0.1159,
+      "min": -1.8781,
+      "p05": -1.4112,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 169.47,
+    "std": 16.04,
+    "dark_fraction": 0.01614
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      753.36,
+      981.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      251,
+      327,
+      1841,
+      2400
+    ],
+    "ink_px": 53198,
+    "covered_px": 53198,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

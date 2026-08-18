@@ -1,0 +1,342 @@
+{
+  "page": 242,
+  "source_image": "page_0242.png",
+  "elements": [
+    {
+      "bbox": [
+        665,
+        105,
+        708,
+        129
+      ],
+      "category": "Page-header",
+      "text": "-3-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4075,
+          "min": -1.6146
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0024,
+          "min": -0.0036
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0112,
+          "min": -0.0167
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        105,
+        182,
+        1284,
+        324
+      ],
+      "category": "Text",
+      "text": "except for contracts exempted in accordance with Section 4 of Executive Order 71, the provisions required by Executive Order 71 and the following provisions:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3749,
+          "min": -1.8784
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0023,
+          "min": -0.0704
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 109500,
+        "density": 0.0,
+        "chars": 157,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        187,
+        345,
+        1299,
+        964
+      ],
+      "category": "List-item",
+      "text": "1. The contractor shall employ minority individuals for training level jobs and shall participate in an on-the-job training program for them, which is acceptable to the City of New York. The program set forth in the training agreement dated December 10, 1970 between the New York Building and Construction Industry Board of Urban Affairs Fund, executed by the Mayor and any such other signatories thereto, which is incorporated herein by references and shall be included in rules and regulations to be adopted pursuant to Executive Order #20, is a program acceptable to the City of New York. Training programs required by Executive Order #20 shall be consistent and in no way conflict with the Training Agreement referred to above.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.309,
+          "min": -1.3896
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0063,
+          "min": -0.0127
+        },
+        "text": {
+          "n_tokens": 142,
+          "mean": -0.0013,
+          "min": -0.1137
+        }
+      },
+      "ink": {
+        "ink_px": 16,
+        "area_px": 665743,
+        "density": 2e-05,
+        "chars": 731,
+        "chars_per_1k_ink": 45687.5
+      }
+    },
+    {
+      "bbox": [
+        258,
+        990,
+        1315,
+        1654
+      ],
+      "category": "Text",
+      "text": "The contractor shall make a good faith effort to achieve the goal of one trainee to every four journeymen of each trade, where practical. The term \"where practical\" shall mean and include, but it is not limited to, the following situations indigenous to the nature and practice of the building and construction industry: the length of the job in terms of the amount of time required from start to completion of the work; the physical layout of the job and the feasibility of handling trainees; the unemployment ratio in any particular trade; the number of men already in training related to job opportunity; the dollar value of the contract; the type of work involved in its relation to the trade involved; availability of potential trainees; geographical location of the job site.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2933,
+          "min": -1.7308
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0434,
+          "min": -0.0434
+        },
+        "text": {
+          "n_tokens": 150,
+          "mean": -0.0008,
+          "min": -0.0662
+        }
+      },
+      "ink": {
+        "ink_px": 12,
+        "area_px": 661599,
+        "density": 2e-05,
+        "chars": 781,
+        "chars_per_1k_ink": 65083.33
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 470,
+    "content": {
+      "n_tokens": 327,
+      "mean": -0.0013,
+      "min": -0.1137,
+      "p05": -0.0016,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 226,
+          "token_id": 15057,
+          "logprob": -0.1137,
+          "text": " references"
+        },
+        {
+          "index": 85,
+          "token_id": 7217,
+          "logprob": -0.0704,
+          "text": " Order"
+        },
+        {
+          "index": 337,
+          "token_id": 11618,
+          "logprob": -0.0662,
+          "text": " journey"
+        },
+        {
+          "index": 174,
+          "token_id": 13,
+          "logprob": -0.0549,
+          "text": "."
+        },
+        {
+          "index": 338,
+          "token_id": 5676,
+          "logprob": -0.0223,
+          "text": "men"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0167,
+          "text": " \"-"
+        },
+        {
+          "index": 35,
+          "token_id": 18,
+          "logprob": -0.0099,
+          "text": "3"
+        },
+        {
+          "index": 417,
+          "token_id": 11341,
+          "logprob": -0.0098,
+          "text": " ratio"
+        },
+        {
+          "index": 150,
+          "token_id": 2188,
+          "logprob": -0.0071,
+          "text": " level"
+        },
+        {
+          "index": 36,
+          "token_id": 12,
+          "logprob": -0.0069,
+          "text": "-"
+        },
+        {
+          "index": 379,
+          "token_id": 25,
+          "logprob": -0.0044,
+          "text": ":"
+        },
+        {
+          "index": 348,
+          "token_id": 7245,
+          "logprob": -0.0037,
+          "text": " \\\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 82,
+      "mean": -0.3202,
+      "min": -1.8784,
+      "p05": -1.4765,
+      "p50": -0.0021,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 55,
+          "token_id": 19,
+          "logprob": -1.8784,
+          "text": "4"
+        },
+        {
+          "index": 49,
+          "token_id": 17,
+          "logprob": -1.7631,
+          "text": "2"
+        },
+        {
+          "index": 300,
+          "token_id": 20,
+          "logprob": -1.7308,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -1.6146,
+          "text": "5"
+        },
+        {
+          "index": 60,
+          "token_id": 19,
+          "logprob": -1.4788,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.4341,
+          "text": "5"
+        },
+        {
+          "index": 17,
+          "token_id": 23,
+          "logprob": -1.391,
+          "text": "8"
+        },
+        {
+          "index": 116,
+          "token_id": 20,
+          "logprob": -1.3896,
+          "text": "5"
+        },
+        {
+          "index": 122,
+          "token_id": 24,
+          "logprob": -1.3548,
+          "text": "9"
+        },
+        {
+          "index": 127,
+          "token_id": 19,
+          "logprob": -1.3342,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 24,
+          "logprob": -1.2748,
+          "text": "9"
+        },
+        {
+          "index": 289,
+          "token_id": 23,
+          "logprob": -1.2684,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 470,
+      "mean": -0.0568,
+      "min": -1.8784,
+      "p05": -0.1622,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.85,
+    "std": 11.9,
+    "dark_fraction": 2e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      671.28,
+      518.4
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      172,
+      223,
+      1267,
+      1641
+    ],
+    "ink_px": 28,
+    "covered_px": 28,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

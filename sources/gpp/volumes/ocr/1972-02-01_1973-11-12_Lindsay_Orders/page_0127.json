@@ -1,0 +1,348 @@
+{
+  "page": 127,
+  "source_image": "page_0127.png",
+  "elements": [
+    {
+      "bbox": [
+        554,
+        507,
+        1452,
+        559
+      ],
+      "category": "Title",
+      "text": "# Guideline for Submitting Environmental",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4092,
+          "min": -1.801
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5566,
+          "min": -0.5566
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0682,
+          "min": -0.4478
+        }
+      },
+      "ink": {
+        "ink_px": 304,
+        "area_px": 47435,
+        "density": 0.00641,
+        "chars": 40,
+        "chars_per_1k_ink": 131.58
+      }
+    },
+    {
+      "bbox": [
+        436,
+        584,
+        1574,
+        641
+      ],
+      "category": "Title",
+      "text": "## Review Information Under Executive Order #",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3257,
+          "min": -1.7863
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.319,
+          "min": -0.319
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0339,
+          "min": -0.16
+        }
+      },
+      "ink": {
+        "ink_px": 351,
+        "area_px": 65772,
+        "density": 0.00534,
+        "chars": 45,
+        "chars_per_1k_ink": 128.21
+      }
+    },
+    {
+      "bbox": [
+        146,
+        741,
+        1925,
+        896
+      ],
+      "category": "Text",
+      "text": "Pursuant to the City Environmental Executive Order #______, the following agencies are responsible for submitting the environmental review form, except if there is evidence that such information has been previously submitted.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2952,
+          "min": -1.5919
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 37,
+          "mean": -0.04,
+          "min": -0.9663
+        }
+      },
+      "ink": {
+        "ink_px": 2407,
+        "area_px": 254436,
+        "density": 0.00946,
+        "chars": 225,
+        "chars_per_1k_ink": 93.48
+      }
+    },
+    {
+      "bbox": [
+        144,
+        940,
+        1955,
+        2288
+      ],
+      "category": "Table",
+      "text": "<table><thead><tr><th>Agency</th><th>Project Type</th></tr></thead><tbody><tr><td>1. City Planning Commission</td><td>a. Private development with zoning change, map change, or special permit.<br>b. Programs with Federal, State or City funding.<br>c. City housing and park mapping.</td></tr><tr><td>2. Site Selection Board</td><td>a. City projects (except housing and parks).<br>b. Waterfront Construction (city).</td></tr><tr><td>3. Ports and Terminals</td><td>Waterfront Construction (private).</td></tr><tr><td>4. Dept. of Buildings</td><td>Private development without zoning variance.</td></tr><tr><td>5. Board of Standards and Appeals</td><td>Private development with zoning variance.</td></tr><tr><td>6. Transportation Administration</td><td>a. Subway and bus routes.<br>b. Mapping or designation of right-of-way of highways.</td></tr><tr><td>7. Landmarks Commission</td><td>Landmark site.</td></tr><tr><td>8. Office of the Mayor Development Offices</td><td>Recommendation to the Mayor on any of the above project types.</td></tr></tbody></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3477,
+          "min": -1.821
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0555,
+          "min": -0.0555
+        },
+        "text": {
+          "n_tokens": 288,
+          "mean": -0.0061,
+          "min": -0.3622
+        }
+      },
+      "ink": {
+        "ink_px": 8180,
+        "area_px": 2206743,
+        "density": 0.00371,
+        "chars": 1051,
+        "chars_per_1k_ink": 128.48
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 481,
+    "content": {
+      "n_tokens": 339,
+      "mean": -0.0117,
+      "min": -0.9663,
+      "p05": -0.0142,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 128,
+          "token_id": 2130,
+          "logprob": -0.9663,
+          "text": "____"
+        },
+        {
+          "index": 129,
+          "token_id": 10445,
+          "logprob": -0.5041,
+          "text": "__,"
+        },
+        {
+          "index": 34,
+          "token_id": 5869,
+          "logprob": -0.4478,
+          "text": " \"#"
+        },
+        {
+          "index": 450,
+          "token_id": 10816,
+          "logprob": -0.3622,
+          "text": " Development"
+        },
+        {
+          "index": 245,
+          "token_id": 51407,
+          "logprob": -0.3575,
+          "text": ">b"
+        },
+        {
+          "index": 197,
+          "token_id": 339,
+          "logprob": -0.3485,
+          "text": "th"
+        },
+        {
+          "index": 198,
+          "token_id": 29,
+          "logprob": -0.1786,
+          "text": ">"
+        },
+        {
+          "index": 79,
+          "token_id": 9449,
+          "logprob": -0.16,
+          "text": " Under"
+        },
+        {
+          "index": 301,
+          "token_id": 66233,
+          "logprob": -0.1282,
+          "text": ").</"
+        },
+        {
+          "index": 229,
+          "token_id": 43875,
+          "logprob": -0.104,
+          "text": ">a"
+        },
+        {
+          "index": 76,
+          "token_id": 565,
+          "logprob": -0.0648,
+          "text": "##"
+        },
+        {
+          "index": 192,
+          "token_id": 1784,
+          "logprob": -0.055,
+          "text": "><"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.339,
+      "min": -1.821,
+      "p05": -1.6211,
+      "p50": -0.0178,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 173,
+          "token_id": 20,
+          "logprob": -1.821,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.801,
+          "text": "4"
+        },
+        {
+          "index": 59,
+          "token_id": 19,
+          "logprob": -1.7863,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.773,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.6211,
+          "text": "7"
+        },
+        {
+          "index": 101,
+          "token_id": 20,
+          "logprob": -1.5919,
+          "text": "5"
+        },
+        {
+          "index": 162,
+          "token_id": 19,
+          "logprob": -1.398,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 24,
+          "logprob": -1.3837,
+          "text": "9"
+        },
+        {
+          "index": 64,
+          "token_id": 16,
+          "logprob": -1.3532,
+          "text": "1"
+        },
+        {
+          "index": 53,
+          "token_id": 19,
+          "logprob": -1.3525,
+          "text": "4"
+        },
+        {
+          "index": 90,
+          "token_id": 21,
+          "logprob": -1.3436,
+          "text": "6"
+        },
+        {
+          "index": 106,
+          "token_id": 21,
+          "logprob": -1.3357,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 481,
+      "mean": -0.0666,
+      "min": -1.821,
+      "p05": -0.3575,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.92,
+    "std": 12.74,
+    "dark_fraction": 0.0026
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      772.32,
+      1263.6
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      257,
+      421,
+      1888,
+      3088
+    ],
+    "ink_px": 11318,
+    "covered_px": 11242,
+    "covered_fraction": 0.99329,
+    "uncovered_px": 76,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

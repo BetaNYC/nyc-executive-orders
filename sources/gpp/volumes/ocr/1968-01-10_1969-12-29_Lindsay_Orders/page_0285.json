@@ -1,0 +1,269 @@
+{
+  "page": 285,
+  "source_image": "page_0285.png",
+  "elements": [
+    {
+      "bbox": [
+        486,
+        1574,
+        705,
+        1637
+      ],
+      "category": "Text",
+      "text": "The State of New York\nDepartment of State\nOffice of the Attorney General",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4499,
+          "min": -1.9851
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0133,
+          "min": -0.0133
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -1.0903,
+          "min": -3.0038
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 11596,
+        "density": 0.0,
+        "chars": 72,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        535,
+        1648,
+        659,
+        1775
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3255,
+          "min": -1.6202
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": null
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 85,
+    "content": {
+      "n_tokens": 15,
+      "mean": -1.0903,
+      "min": -3.0038,
+      "p05": -2.5972,
+      "p50": -1.212,
+      "n_below_threshold": 5,
+      "worst_tokens": [
+        {
+          "index": 37,
+          "token_id": 3234,
+          "logprob": -3.0038,
+          "text": " State"
+        },
+        {
+          "index": 36,
+          "token_id": 785,
+          "logprob": -2.423,
+          "text": "The"
+        },
+        {
+          "index": 42,
+          "token_id": 26627,
+          "logprob": -2.2913,
+          "text": "Department"
+        },
+        {
+          "index": 44,
+          "token_id": 3234,
+          "logprob": -2.0454,
+          "text": " State"
+        },
+        {
+          "index": 39,
+          "token_id": 1532,
+          "logprob": -2.0142,
+          "text": " New"
+        },
+        {
+          "index": 46,
+          "token_id": 23914,
+          "logprob": -1.4172,
+          "text": "Office"
+        },
+        {
+          "index": 49,
+          "token_id": 18412,
+          "logprob": -1.2916,
+          "text": " Attorney"
+        },
+        {
+          "index": 41,
+          "token_id": 1699,
+          "logprob": -1.212,
+          "text": "\\n"
+        },
+        {
+          "index": 48,
+          "token_id": 279,
+          "logprob": -0.5437,
+          "text": " the"
+        },
+        {
+          "index": 38,
+          "token_id": 315,
+          "logprob": -0.0615,
+          "text": " of"
+        },
+        {
+          "index": 45,
+          "token_id": 1699,
+          "logprob": -0.0248,
+          "text": "\\n"
+        },
+        {
+          "index": 50,
+          "token_id": 3251,
+          "logprob": -0.0143,
+          "text": " General"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.3696,
+      "min": -1.9851,
+      "p05": -1.7655,
+      "p50": -0.0078,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.9851,
+          "text": "6"
+        },
+        {
+          "index": 13,
+          "token_id": 19,
+          "logprob": -1.9084,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.7731,
+          "text": "5"
+        },
+        {
+          "index": 75,
+          "token_id": 20,
+          "logprob": -1.6202,
+          "text": "5"
+        },
+        {
+          "index": 24,
+          "token_id": 22,
+          "logprob": -1.4792,
+          "text": "7"
+        },
+        {
+          "index": 58,
+          "token_id": 20,
+          "logprob": -1.4188,
+          "text": "5"
+        },
+        {
+          "index": 64,
+          "token_id": 23,
+          "logprob": -1.309,
+          "text": "8"
+        },
+        {
+          "index": 69,
+          "token_id": 24,
+          "logprob": -0.9232,
+          "text": "9"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -0.6953,
+          "text": "4"
+        },
+        {
+          "index": 68,
+          "token_id": 20,
+          "logprob": -0.6951,
+          "text": "5"
+        },
+        {
+          "index": 6,
+          "token_id": 23,
+          "logprob": -0.482,
+          "text": "8"
+        },
+        {
+          "index": 63,
+          "token_id": 19,
+          "logprob": -0.4319,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 85,
+      "mean": -0.3783,
+      "min": -3.0038,
+      "p05": -2.0084,
+      "p50": -0.0003,
+      "n_below_threshold": 5
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 163.68,
+    "std": 7.77,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      666.24,
+      427.68
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      222,
+      1045,
+      1628
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

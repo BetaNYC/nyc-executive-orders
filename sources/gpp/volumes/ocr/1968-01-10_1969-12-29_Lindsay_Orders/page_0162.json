@@ -1,0 +1,405 @@
+{
+  "page": 162,
+  "source_image": "page_0162.png",
+  "elements": [
+    {
+      "bbox": [
+        608,
+        197,
+        904,
+        221
+      ],
+      "category": "Page-header",
+      "text": "Executive Order No. 80",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3258,
+          "min": -1.4746
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1965,
+          "min": -0.393
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0004,
+          "min": -0.0027
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        74,
+        238,
+        1011,
+        333
+      ],
+      "category": "Text",
+      "text": "persons entitled to benefits under certain retirement and pension\nsystems or funds supported by the City of New York\" amending paragraph\ntwo of subdivision m of section B3-36.1 of such code by the addition\nof subparagraph f thereto, is enacted into law.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3141,
+          "min": -1.4146
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 57,
+          "mean": -0.0028,
+          "min": -0.1003
+        }
+      },
+      "ink": {
+        "ink_px": 5161,
+        "area_px": 81985,
+        "density": 0.06295,
+        "chars": 253,
+        "chars_per_1k_ink": 49.02
+      }
+    },
+    {
+      "bbox": [
+        608,
+        376,
+        810,
+        422
+      ],
+      "category": "Text",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2967,
+          "min": -1.3446
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0298,
+          "min": -0.0298
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0007,
+          "min": -0.004
+        }
+      },
+      "ink": {
+        "ink_px": 570,
+        "area_px": 9494,
+        "density": 0.06004,
+        "chars": 21,
+        "chars_per_1k_ink": 36.84
+      }
+    },
+    {
+      "bbox": [
+        540,
+        485,
+        570,
+        511
+      ],
+      "category": "Text",
+      "text": "by",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3151,
+          "min": -1.4754
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0008,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0007,
+          "min": -0.0007
+        }
+      },
+      "ink": {
+        "ink_px": 28,
+        "area_px": 837,
+        "density": 0.03345,
+        "chars": 2,
+        "chars_per_1k_ink": 71.43
+      }
+    },
+    {
+      "bbox": [
+        562,
+        396,
+        880,
+        578
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3764,
+          "min": -1.786
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0163,
+          "min": -0.0163
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 3092,
+        "area_px": 57694,
+        "density": 0.05359,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        608,
+        531,
+        810,
+        577
+      ],
+      "category": "Caption",
+      "text": "ROBERT W. SWEET\nDeputy Mayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2302,
+          "min": -1.0609
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0549,
+          "min": -0.0549
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0002,
+          "min": -0.0015
+        }
+      },
+      "ink": {
+        "ink_px": 612,
+        "area_px": 9494,
+        "density": 0.06446,
+        "chars": 28,
+        "chars_per_1k_ink": 45.75
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 291,
+    "content": {
+      "n_tokens": 88,
+      "mean": -0.002,
+      "min": -0.1003,
+      "p05": -0.0032,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 85,
+          "token_id": 1699,
+          "logprob": -0.1003,
+          "text": "\\n"
+        },
+        {
+          "index": 104,
+          "token_id": 59822,
+          "logprob": -0.0299,
+          "text": " subdivision"
+        },
+        {
+          "index": 76,
+          "token_id": 76651,
+          "logprob": -0.0253,
+          "text": "persons"
+        },
+        {
+          "index": 177,
+          "token_id": 3022,
+          "logprob": -0.004,
+          "text": "AY"
+        },
+        {
+          "index": 176,
+          "token_id": 44,
+          "logprob": -0.0034,
+          "text": "M"
+        },
+        {
+          "index": 35,
+          "token_id": 72618,
+          "logprob": -0.0027,
+          "text": "Executive"
+        },
+        {
+          "index": 96,
+          "token_id": 2105,
+          "logprob": -0.0019,
+          "text": "\\\""
+        },
+        {
+          "index": 277,
+          "token_id": 1285,
+          "logprob": -0.0015,
+          "text": "RO"
+        },
+        {
+          "index": 86,
+          "token_id": 45554,
+          "logprob": -0.0009,
+          "text": "systems"
+        },
+        {
+          "index": 213,
+          "token_id": 1694,
+          "logprob": -0.0007,
+          "text": "by"
+        },
+        {
+          "index": 101,
+          "token_id": 406,
+          "logprob": -0.0006,
+          "text": "nt"
+        },
+        {
+          "index": 132,
+          "token_id": 1189,
+          "logprob": -0.0005,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 115,
+      "mean": -0.2952,
+      "min": -1.786,
+      "p05": -1.3517,
+      "p50": -0.0078,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 226,
+          "token_id": 21,
+          "logprob": -1.786,
+          "text": "6"
+        },
+        {
+          "index": 191,
+          "token_id": 20,
+          "logprob": -1.4754,
+          "text": "5"
+        },
+        {
+          "index": 17,
+          "token_id": 19,
+          "logprob": -1.4746,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.468,
+          "text": "8"
+        },
+        {
+          "index": 64,
+          "token_id": 18,
+          "logprob": -1.4146,
+          "text": "3"
+        },
+        {
+          "index": 48,
+          "token_id": 19,
+          "logprob": -1.3683,
+          "text": "4"
+        },
+        {
+          "index": 155,
+          "token_id": 17,
+          "logprob": -1.3446,
+          "text": "2"
+        },
+        {
+          "index": 221,
+          "token_id": 17,
+          "logprob": -1.3172,
+          "text": "2"
+        },
+        {
+          "index": 59,
+          "token_id": 16,
+          "logprob": -1.3155,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.3024,
+          "text": "7"
+        },
+        {
+          "index": 145,
+          "token_id": 21,
+          "logprob": -1.236,
+          "text": "6"
+        },
+        {
+          "index": 22,
+          "token_id": 16,
+          "logprob": -1.22,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 291,
+      "mean": -0.1184,
+      "min": -1.786,
+      "p05": -1.0462,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.39,
+    "std": 12.02,
+    "dark_fraction": 0.00684
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      670.8,
+      431.04
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      143,
+      223,
+      1054,
+      1640
+    ],
+    "ink_px": 8832,
+    "covered_px": 8577,
+    "covered_fraction": 0.97113,
+    "uncovered_px": 255,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

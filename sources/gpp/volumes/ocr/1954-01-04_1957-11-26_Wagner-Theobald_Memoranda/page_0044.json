@@ -1,0 +1,376 @@
+{
+  "page": 44,
+  "source_image": "page_0044.png",
+  "elements": [
+    {
+      "bbox": [
+        257,
+        136,
+        947,
+        798
+      ],
+      "category": "Text",
+      "text": "In the matter of the\ndispute between -\nDepartment of Hospitals\n- and -\nLocal 814, Van Drivers,\nHelpers & Packers, IET,\nA.F.L.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.5752,
+          "min": -1.9922
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3331,
+          "min": -0.3331
+        },
+        "text": {
+          "n_tokens": 44,
+          "mean": -0.1165,
+          "min": -0.9368
+        }
+      },
+      "ink": {
+        "ink_px": 27505,
+        "area_px": 312117,
+        "density": 0.08812,
+        "chars": 125,
+        "chars_per_1k_ink": 4.54
+      }
+    },
+    {
+      "bbox": [
+        1100,
+        418,
+        1574,
+        511
+      ],
+      "category": "Title",
+      "text": "Fact-Finding Committee\nReport",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3416,
+          "min": -1.6019
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2538,
+          "min": -0.2538
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0042,
+          "min": -0.0174
+        }
+      },
+      "ink": {
+        "ink_px": 10167,
+        "area_px": 44650,
+        "density": 0.2277,
+        "chars": 29,
+        "chars_per_1k_ink": 2.85
+      }
+    },
+    {
+      "bbox": [
+        254,
+        1003,
+        1797,
+        1479
+      ],
+      "category": "Text",
+      "text": "Construction on Bellevue Hospital Nurses' Home was halted on February 24, 1954 by a work stoppage emanating from a dispute over the jurisdictional rights of Local 814, Van Drivers, Helpers and Packers, I.B.T., A.F. of L., over the unloading and distributing of furniture to be used in new buildings. The Building and Construction Trades' Council honored the picket line that was established.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3049,
+          "min": -1.6591
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 91,
+          "mean": -0.0063,
+          "min": -0.3545
+        }
+      },
+      "ink": {
+        "ink_px": 122399,
+        "area_px": 734103,
+        "density": 0.16673,
+        "chars": 391,
+        "chars_per_1k_ink": 3.19
+      }
+    },
+    {
+      "bbox": [
+        240,
+        1513,
+        1885,
+        2517
+      ],
+      "category": "Text",
+      "text": "The dispute was terminated at your request pending a study by a Fact-Finding Committee of the merits of the jurisdictional rights of Local 814. On March 1st, you appointed a Fact-Finding Committee with instructions to conduct a study of the practices that apply in the private construction industry in the City of New York and to suggest recommendations to the City on how the City may most efficiently comply with the best practices of private industry. Your Fact-Finding Committee has conducted an exhaustive study of this phase of the private construction industry. We have studied the briefs submitted to us by Local 814 and by various City Departments who would be affected by any recommendation made by this Committee. We held hearings at which all parties concerned were able to present their points of view.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2791,
+          "min": -1.6867
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 157,
+          "mean": -0.0008,
+          "min": -0.0789
+        }
+      },
+      "ink": {
+        "ink_px": 264935,
+        "area_px": 1635135,
+        "density": 0.16203,
+        "chars": 815,
+        "chars_per_1k_ink": 3.08
+      }
+    },
+    {
+      "bbox": [
+        240,
+        2553,
+        1922,
+        2697
+      ],
+      "category": "Text",
+      "text": "We find that in private industry, the traditional practices are -\n(1) purchase contracts for furniture specify that such furniture be delivered",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2523,
+          "min": -1.4299
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0017,
+          "min": -0.0017
+        },
+        "text": {
+          "n_tokens": 27,
+          "mean": -0.0226,
+          "min": -0.5768
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 509,
+    "content": {
+      "n_tokens": 325,
+      "mean": -0.0199,
+      "min": -0.9368,
+      "p05": -0.0586,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 51,
+          "token_id": 12,
+          "logprob": -0.9368,
+          "text": "-"
+        },
+        {
+          "index": 39,
+          "token_id": 59,
+          "logprob": -0.8801,
+          "text": "\\"
+        },
+        {
+          "index": 34,
+          "token_id": 641,
+          "logprob": -0.8571,
+          "text": "In"
+        },
+        {
+          "index": 71,
+          "token_id": 1348,
+          "logprob": -0.7453,
+          "text": "ET"
+        },
+        {
+          "index": 491,
+          "token_id": 59,
+          "logprob": -0.5768,
+          "text": "\\"
+        },
+        {
+          "index": 66,
+          "token_id": 28430,
+          "logprob": -0.4913,
+          "text": "Helpers"
+        },
+        {
+          "index": 178,
+          "token_id": 553,
+          "logprob": -0.3545,
+          "text": " by"
+        },
+        {
+          "index": 77,
+          "token_id": 1189,
+          "logprob": -0.3213,
+          "text": ".\""
+        },
+        {
+          "index": 45,
+          "token_id": 59,
+          "logprob": -0.2339,
+          "text": "\\"
+        },
+        {
+          "index": 44,
+          "token_id": 481,
+          "logprob": -0.2006,
+          "text": " -"
+        },
+        {
+          "index": 50,
+          "token_id": 1699,
+          "logprob": -0.1101,
+          "text": "\\n"
+        },
+        {
+          "index": 64,
+          "token_id": 26266,
+          "logprob": -0.1041,
+          "text": ",\\"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 106,
+      "mean": -0.3333,
+      "min": -1.9922,
+      "p05": -1.5972,
+      "p50": -0.0007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.9922,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.8987,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 22,
+          "logprob": -1.772,
+          "text": "7"
+        },
+        {
+          "index": 267,
+          "token_id": 20,
+          "logprob": -1.6867,
+          "text": "5"
+        },
+        {
+          "index": 127,
+          "token_id": 19,
+          "logprob": -1.6591,
+          "text": "4"
+        },
+        {
+          "index": 97,
+          "token_id": 19,
+          "logprob": -1.6019,
+          "text": "4"
+        },
+        {
+          "index": 133,
+          "token_id": 18,
+          "logprob": -1.583,
+          "text": "3"
+        },
+        {
+          "index": 91,
+          "token_id": 23,
+          "logprob": -1.5438,
+          "text": "8"
+        },
+        {
+          "index": 102,
+          "token_id": 16,
+          "logprob": -1.4825,
+          "text": "1"
+        },
+        {
+          "index": 461,
+          "token_id": 17,
+          "logprob": -1.4299,
+          "text": "2"
+        },
+        {
+          "index": 22,
+          "token_id": 23,
+          "logprob": -1.4281,
+          "text": "8"
+        },
+        {
+          "index": 139,
+          "token_id": 22,
+          "logprob": -1.3749,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 509,
+      "mean": -0.0828,
+      "min": -1.9922,
+      "p05": -0.612,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 162.51,
+    "std": 37.37,
+    "dark_fraction": 0.11837
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      775.68,
+      1038.48
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      258,
+      346,
+      1896,
+      2538
+    ],
+    "ink_px": 425007,
+    "covered_px": 425006,
+    "covered_fraction": 1.0,
+    "uncovered_px": 1,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

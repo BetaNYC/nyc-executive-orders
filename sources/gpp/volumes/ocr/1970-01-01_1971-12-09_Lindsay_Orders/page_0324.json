@@ -1,0 +1,371 @@
+{
+  "page": 324,
+  "source_image": "page_0324.png",
+  "elements": [
+    {
+      "bbox": [
+        597,
+        121,
+        647,
+        145
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3522,
+          "min": -1.6503
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0135,
+          "min": -0.0265
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0007,
+          "min": -0.0018
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        127,
+        224,
+        887,
+        265
+      ],
+      "category": "Text",
+      "text": "82. This order shall take effect July 1, 1971.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3145,
+          "min": -1.3988
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.163,
+          "min": -0.163
+        },
+        "text": {
+          "n_tokens": 18,
+          "mean": -0.019,
+          "min": -0.341
+        }
+      },
+      "ink": {
+        "ink_px": 142,
+        "area_px": 29820,
+        "density": 0.00476,
+        "chars": 46,
+        "chars_per_1k_ink": 323.94
+      }
+    },
+    {
+      "bbox": [
+        740,
+        372,
+        986,
+        423
+      ],
+      "category": "Text",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.282,
+          "min": -1.2705
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0054,
+          "min": -0.0054
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0022,
+          "min": -0.0237
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 12792,
+        "density": 0.0,
+        "chars": 21,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        738,
+        460,
+        1275,
+        561
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4926,
+          "min": -2.0661
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1138,
+          "min": -0.1138
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 169,
+        "area_px": 54570,
+        "density": 0.0031,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        753,
+        561,
+        1050,
+        616
+      ],
+      "category": "Text",
+      "text": "RICHARD R. AURELIO\nDeputy Mayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2392,
+          "min": -1.3145
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.6326,
+          "min": -0.6326
+        },
+        "text": {
+          "n_tokens": 13,
+          "mean": -0.0094,
+          "min": -0.1214
+        }
+      },
+      "ink": {
+        "ink_px": 41,
+        "area_px": 16872,
+        "density": 0.00243,
+        "chars": 31,
+        "chars_per_1k_ink": 756.1
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 216,
+    "content": {
+      "n_tokens": 46,
+      "mean": -0.0107,
+      "min": -0.341,
+      "p05": -0.0182,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 71,
+          "token_id": 23,
+          "logprob": -0.341,
+          "text": "8"
+        },
+        {
+          "index": 200,
+          "token_id": 49,
+          "logprob": -0.1214,
+          "text": "R"
+        },
+        {
+          "index": 133,
+          "token_id": 3022,
+          "logprob": -0.0237,
+          "text": "AY"
+        },
+        {
+          "index": 129,
+          "token_id": 50,
+          "logprob": -0.0019,
+          "text": "S"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0018,
+          "text": " \"-"
+        },
+        {
+          "index": 77,
+          "token_id": 1896,
+          "logprob": -0.0011,
+          "text": " take"
+        },
+        {
+          "index": 132,
+          "token_id": 44,
+          "logprob": -0.0005,
+          "text": "M"
+        },
+        {
+          "index": 206,
+          "token_id": 4521,
+          "logprob": -0.0004,
+          "text": "URE"
+        },
+        {
+          "index": 207,
+          "token_id": 43,
+          "logprob": -0.0004,
+          "text": "L"
+        },
+        {
+          "index": 35,
+          "token_id": 17,
+          "logprob": -0.0003,
+          "text": "2"
+        },
+        {
+          "index": 72,
+          "token_id": 17,
+          "logprob": -0.0001,
+          "text": "2"
+        },
+        {
+          "index": 123,
+          "token_id": 26145,
+          "logprob": -0.0001,
+          "text": "JO"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 98,
+      "mean": -0.3257,
+      "min": -2.0661,
+      "p05": -1.3537,
+      "p50": -0.0048,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 153,
+          "token_id": 20,
+          "logprob": -2.0661,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.6503,
+          "text": "7"
+        },
+        {
+          "index": 147,
+          "token_id": 15,
+          "logprob": -1.5933,
+          "text": "0"
+        },
+        {
+          "index": 158,
+          "token_id": 16,
+          "logprob": -1.4712,
+          "text": "1"
+        },
+        {
+          "index": 59,
+          "token_id": 20,
+          "logprob": -1.3988,
+          "text": "5"
+        },
+        {
+          "index": 44,
+          "token_id": 22,
+          "logprob": -1.3457,
+          "text": "7"
+        },
+        {
+          "index": 54,
+          "token_id": 22,
+          "logprob": -1.3268,
+          "text": "7"
+        },
+        {
+          "index": 172,
+          "token_id": 18,
+          "logprob": -1.3145,
+          "text": "3"
+        },
+        {
+          "index": 17,
+          "token_id": 22,
+          "logprob": -1.2728,
+          "text": "7"
+        },
+        {
+          "index": 101,
+          "token_id": 17,
+          "logprob": -1.2705,
+          "text": "2"
+        },
+        {
+          "index": 49,
+          "token_id": 19,
+          "logprob": -1.2333,
+          "text": "4"
+        },
+        {
+          "index": 106,
+          "token_id": 21,
+          "logprob": -1.2294,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 216,
+      "mean": -0.1501,
+      "min": -2.0661,
+      "p05": -1.2304,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.88,
+    "std": 7.27,
+    "dark_fraction": 0.00023
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      659.28,
+      521.52
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      173,
+      219,
+      1275,
+      1612
+    ],
+    "ink_px": 354,
+    "covered_px": 351,
+    "covered_fraction": 0.99153,
+    "uncovered_px": 3,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

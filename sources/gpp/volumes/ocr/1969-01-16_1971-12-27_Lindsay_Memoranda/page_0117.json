@@ -1,0 +1,382 @@
+{
+  "page": 117,
+  "source_image": "page_0117.png",
+  "elements": [
+    {
+      "bbox": [
+        1314,
+        571,
+        1392,
+        611
+      ],
+      "category": "Page-header",
+      "text": "-4-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.421,
+          "min": -1.847
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0198,
+          "min": -0.0395
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0057,
+          "min": -0.0118
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 3239,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        667,
+        697,
+        2187,
+        1442
+      ],
+      "category": "Text",
+      "text": "The fact that the individual pays the New York City Income Tax for residents does not conclusively establish domicile. Significantly, the definition of \"resident\" for purposes of the City Income Tax is not synonymous with \"domestic.\" Thus, a person who is not domiciled in the City, but maintains a permanent place of abode in the City and spends in the aggregate more than 183 days of the year in the City is deemed to be a \"resident\" for purposes of the tax. Such a person might not be a \"resident\" under the Public Officers Law, if, under the above-mentioned tests, his domicile is outside of New York City. Nevertheless, the fact that the individual does pay a New York City Income Tax is an indication that he considers himself to be either a domiciliary or at least a resident within the requirements of the tax law.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4257,
+          "min": -1.8367
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0018,
+          "min": -0.0018
+        },
+        "text": {
+          "n_tokens": 176,
+          "mean": -0.0148,
+          "min": -1.9772
+        }
+      },
+      "ink": {
+        "ink_px": 114,
+        "area_px": 1138360,
+        "density": 0.0001,
+        "chars": 822,
+        "chars_per_1k_ink": 7210.53
+      }
+    },
+    {
+      "bbox": [
+        667,
+        1527,
+        1913,
+        1672
+      ],
+      "category": "List-item",
+      "text": "#### IV. Is the maintenance of an apartment, plus voting and the paying of taxes sufficient to establish a New York City domicile?",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3241,
+          "min": -1.9194
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.4526,
+          "min": -0.9052
+        },
+        "text": {
+          "n_tokens": 26,
+          "mean": -0.0331,
+          "min": -0.8388
+        }
+      },
+      "ink": {
+        "ink_px": 50,
+        "area_px": 181685,
+        "density": 0.00028,
+        "chars": 130,
+        "chars_per_1k_ink": 2600.0
+      }
+    },
+    {
+      "bbox": [
+        667,
+        1756,
+        2097,
+        1887
+      ],
+      "category": "Text",
+      "text": "By themselves these three factors would not be sufficient to establish New York City as an individual's domicile.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2804,
+          "min": -1.5629
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0076,
+          "min": -0.0076
+        },
+        "text": {
+          "n_tokens": 20,
+          "mean": -0.0005,
+          "min": -0.0088
+        }
+      },
+      "ink": {
+        "ink_px": 126,
+        "area_px": 189684,
+        "density": 0.00066,
+        "chars": 113,
+        "chars_per_1k_ink": 896.83
+      }
+    },
+    {
+      "bbox": [
+        667,
+        1934,
+        2155,
+        2118
+      ],
+      "category": "Text",
+      "text": "Each of the factors mentioned in sections III A and B would be considered to determine from the facts whether the location had actually become a domicile by intention and practice.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2841,
+          "min": -1.724
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0007,
+          "min": -0.018
+        }
+      },
+      "ink": {
+        "ink_px": 318,
+        "area_px": 276760,
+        "density": 0.00115,
+        "chars": 180,
+        "chars_per_1k_ink": 566.04
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 443,
+    "content": {
+      "n_tokens": 257,
+      "mean": -0.0137,
+      "min": -1.9772,
+      "p05": -0.0108,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 118,
+          "token_id": 9826,
+          "logprob": -1.9772,
+          "text": "estic"
+        },
+        {
+          "index": 289,
+          "token_id": 820,
+          "logprob": -0.8388,
+          "text": "####"
+        },
+        {
+          "index": 117,
+          "token_id": 5600,
+          "logprob": -0.1914,
+          "text": "dom"
+        },
+        {
+          "index": 128,
+          "token_id": 2181,
+          "logprob": -0.1005,
+          "text": "iled"
+        },
+        {
+          "index": 131,
+          "token_id": 4311,
+          "logprob": -0.1004,
+          "text": " City"
+        },
+        {
+          "index": 183,
+          "token_id": 7245,
+          "logprob": -0.0623,
+          "text": " \\\""
+        },
+        {
+          "index": 210,
+          "token_id": 33953,
+          "logprob": -0.0469,
+          "text": " Nevertheless"
+        },
+        {
+          "index": 236,
+          "token_id": 53885,
+          "logprob": -0.0297,
+          "text": " domic"
+        },
+        {
+          "index": 127,
+          "token_id": 53885,
+          "logprob": -0.0244,
+          "text": " domic"
+        },
+        {
+          "index": 425,
+          "token_id": 504,
+          "logprob": -0.018,
+          "text": " from"
+        },
+        {
+          "index": 154,
+          "token_id": 18,
+          "logprob": -0.0162,
+          "text": "3"
+        },
+        {
+          "index": 291,
+          "token_id": 13,
+          "logprob": -0.0142,
+          "text": "."
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 110,
+      "mean": -0.3323,
+      "min": -1.9194,
+      "p05": -1.7928,
+      "p50": -0.0011,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 276,
+          "token_id": 17,
+          "logprob": -1.9194,
+          "text": "2"
+        },
+        {
+          "index": 270,
+          "token_id": 18,
+          "logprob": -1.8959,
+          "text": "3"
+        },
+        {
+          "index": 8,
+          "token_id": 19,
+          "logprob": -1.847,
+          "text": "4"
+        },
+        {
+          "index": 19,
+          "token_id": 17,
+          "logprob": -1.8416,
+          "text": "2"
+        },
+        {
+          "index": 63,
+          "token_id": 17,
+          "logprob": -1.8367,
+          "text": "2"
+        },
+        {
+          "index": 46,
+          "token_id": 22,
+          "logprob": -1.8077,
+          "text": "7"
+        },
+        {
+          "index": 57,
+          "token_id": 22,
+          "logprob": -1.7745,
+          "text": "7"
+        },
+        {
+          "index": 13,
+          "token_id": 16,
+          "logprob": -1.7659,
+          "text": "1"
+        },
+        {
+          "index": 391,
+          "token_id": 20,
+          "logprob": -1.724,
+          "text": "5"
+        },
+        {
+          "index": 51,
+          "token_id": 22,
+          "logprob": -1.7219,
+          "text": "7"
+        },
+        {
+          "index": 385,
+          "token_id": 19,
+          "logprob": -1.6225,
+          "text": "4"
+        },
+        {
+          "index": 264,
+          "token_id": 22,
+          "logprob": -1.5756,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 443,
+      "mean": -0.0905,
+      "min": -1.9772,
+      "p05": -0.7746,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 182.92,
+    "std": 8.73,
+    "dark_fraction": 0.00013
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      911.28,
+      1157.04
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      303,
+      385,
+      2228,
+      2828
+    ],
+    "ink_px": 617,
+    "covered_px": 608,
+    "covered_fraction": 0.98541,
+    "uncovered_px": 9,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

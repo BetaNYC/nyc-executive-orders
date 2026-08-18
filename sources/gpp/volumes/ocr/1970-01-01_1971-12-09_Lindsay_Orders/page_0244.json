@@ -1,0 +1,274 @@
+{
+  "page": 244,
+  "source_image": "page_0244.png",
+  "elements": [
+    {
+      "bbox": [
+        691,
+        116,
+        753,
+        138
+      ],
+      "category": "Page-header",
+      "text": "-3a-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4235,
+          "min": -1.7843
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0731,
+          "min": -0.1445
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.005,
+          "min": -0.0089
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        194,
+        171,
+        1342,
+        412
+      ],
+      "category": "List-item",
+      "text": "2. The contractor shall participate in programs for rapid advancement to full journeymen pay scale for new minority employees who by training and experience can perform the duties of a qualified journeyman, as long as such programs are not inconsistent with the agreed upon Training Program referred to herein.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2945,
+          "min": -1.5706
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0013,
+          "min": -0.0026
+        },
+        "text": {
+          "n_tokens": 54,
+          "mean": -0.0036,
+          "min": -0.1828
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 200784,
+        "density": 0.0,
+        "chars": 310,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 130,
+    "content": {
+      "n_tokens": 58,
+      "mean": -0.0037,
+      "min": -0.1828,
+      "p05": -0.005,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 88,
+          "token_id": 5676,
+          "logprob": -0.1828,
+          "text": "men"
+        },
+        {
+          "index": 87,
+          "token_id": 11618,
+          "logprob": -0.0109,
+          "text": " journey"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0089,
+          "text": " \"-"
+        },
+        {
+          "index": 35,
+          "token_id": 18,
+          "logprob": -0.0043,
+          "text": "3"
+        },
+        {
+          "index": 36,
+          "token_id": 64,
+          "logprob": -0.0041,
+          "text": "a"
+        },
+        {
+          "index": 37,
+          "token_id": 12,
+          "logprob": -0.0027,
+          "text": "-"
+        },
+        {
+          "index": 121,
+          "token_id": 5193,
+          "logprob": -0.0004,
+          "text": " upon"
+        },
+        {
+          "index": 96,
+          "token_id": 553,
+          "logprob": -0.0003,
+          "text": " by"
+        },
+        {
+          "index": 120,
+          "token_id": 7230,
+          "logprob": -0.0002,
+          "text": " agreed"
+        },
+        {
+          "index": 89,
+          "token_id": 2291,
+          "logprob": -0.0002,
+          "text": " pay"
+        },
+        {
+          "index": 127,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        },
+        {
+          "index": 86,
+          "token_id": 2480,
+          "logprob": -0.0002,
+          "text": " full"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 41,
+      "mean": -0.326,
+      "min": -1.7843,
+      "p05": -1.5706,
+      "p50": -0.0026,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 17,
+          "token_id": 18,
+          "logprob": -1.7843,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.7324,
+          "text": "6"
+        },
+        {
+          "index": 56,
+          "token_id": 17,
+          "logprob": -1.5706,
+          "text": "2"
+        },
+        {
+          "index": 61,
+          "token_id": 17,
+          "logprob": -1.2647,
+          "text": "2"
+        },
+        {
+          "index": 22,
+          "token_id": 23,
+          "logprob": -1.2268,
+          "text": "8"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.1136,
+          "text": "1"
+        },
+        {
+          "index": 50,
+          "token_id": 16,
+          "logprob": -1.057,
+          "text": "1"
+        },
+        {
+          "index": 45,
+          "token_id": 19,
+          "logprob": -1.0015,
+          "text": "4"
+        },
+        {
+          "index": 21,
+          "token_id": 18,
+          "logprob": -0.5241,
+          "text": "3"
+        },
+        {
+          "index": 11,
+          "token_id": 16,
+          "logprob": -0.5073,
+          "text": "1"
+        },
+        {
+          "index": 6,
+          "token_id": 24,
+          "logprob": -0.3945,
+          "text": "9"
+        },
+        {
+          "index": 55,
+          "token_id": 19,
+          "logprob": -0.3476,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 130,
+      "mean": -0.1045,
+      "min": -1.7843,
+      "p05": -1.032,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.19,
+    "std": 6.91,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      674.16,
+      516.96
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      172,
+      224,
+      1263,
+      1648
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

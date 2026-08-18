@@ -1,0 +1,246 @@
+{
+  "page": 135,
+  "source_image": "page_0135.png",
+  "elements": [
+    {
+      "bbox": [
+        101,
+        631,
+        1021,
+        1620
+      ],
+      "category": "Text",
+      "text": "The following are the specifications and requirements for the new model of automobile. They are as follows:\n\n1. The engine should be a high performance engine capable of reaching 1000 RPM.\n2. The transmission should have a high efficiency ratio and be able to reach 90% efficiency at 60 RPM.\n3. The body should be made of high quality material and should have a weight of 1000 pounds.\n4. The interior should be designed to be comfortable and have all the necessary amenities.\n5. The exterior should be designed to be attractive and have a high level of aerodynamics.\n6. The price should be reasonable, but should have a starting price of $5000.\n7. The sales should be high, with a target of selling 1000 units.\n8. The company should be established in the United States and have offices in New York City.\n9. The company should be able to produce 100 units a year.\n10. The company should be able to reach 1 million units in the first five years.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.7354,
+          "min": -2.1165
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0034,
+          "min": -0.0034
+        },
+        "text": {
+          "n_tokens": 233,
+          "mean": -0.5332,
+          "min": -3.7501
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 876650,
+        "density": 0.0,
+        "chars": 943,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 271,
+    "content": {
+      "n_tokens": 233,
+      "mean": -0.5332,
+      "min": -3.7501,
+      "p05": -1.7714,
+      "p50": -0.2594,
+      "n_below_threshold": 10,
+      "worst_tokens": [
+        {
+          "index": 37,
+          "token_id": 2701,
+          "logprob": -3.7501,
+          "text": " following"
+        },
+        {
+          "index": 45,
+          "token_id": 501,
+          "logprob": -2.873,
+          "text": " new"
+        },
+        {
+          "index": 40,
+          "token_id": 28703,
+          "logprob": -2.8487,
+          "text": " specifications"
+        },
+        {
+          "index": 108,
+          "token_id": 2487,
+          "logprob": -2.5113,
+          "text": " body"
+        },
+        {
+          "index": 237,
+          "token_id": 2952,
+          "logprob": -2.348,
+          "text": " able"
+        },
+        {
+          "index": 171,
+          "token_id": 3349,
+          "logprob": -2.3034,
+          "text": " price"
+        },
+        {
+          "index": 46,
+          "token_id": 1614,
+          "logprob": -2.2438,
+          "text": " model"
+        },
+        {
+          "index": 48,
+          "token_id": 34428,
+          "logprob": -2.1733,
+          "text": " automobile"
+        },
+        {
+          "index": 85,
+          "token_id": 1550,
+          "logprob": -2.1076,
+          "text": " high"
+        },
+        {
+          "index": 133,
+          "token_id": 14791,
+          "logprob": -2.0471,
+          "text": " interior"
+        },
+        {
+          "index": 193,
+          "token_id": 6625,
+          "logprob": -1.9151,
+          "text": " sales"
+        },
+        {
+          "index": 120,
+          "token_id": 4680,
+          "logprob": -1.874,
+          "text": " weight"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 21,
+      "mean": -0.7006,
+      "min": -2.1165,
+      "p05": -2.1144,
+      "p50": -0.6112,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -2.1165,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -2.1144,
+          "text": "1"
+        },
+        {
+          "index": 24,
+          "token_id": 15,
+          "logprob": -1.8512,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.648,
+          "text": "1"
+        },
+        {
+          "index": 5,
+          "token_id": 16,
+          "logprob": -1.5308,
+          "text": "1"
+        },
+        {
+          "index": 6,
+          "token_id": 15,
+          "logprob": -1.2258,
+          "text": "0"
+        },
+        {
+          "index": 10,
+          "token_id": 21,
+          "logprob": -0.7687,
+          "text": "6"
+        },
+        {
+          "index": 21,
+          "token_id": 16,
+          "logprob": -0.7066,
+          "text": "1"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -0.6738,
+          "text": "2"
+        },
+        {
+          "index": 17,
+          "token_id": 17,
+          "logprob": -0.6448,
+          "text": "2"
+        },
+        {
+          "index": 22,
+          "token_id": 21,
+          "logprob": -0.6112,
+          "text": "6"
+        },
+        {
+          "index": 11,
+          "token_id": 18,
+          "logprob": -0.5644,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 271,
+      "mean": -0.5136,
+      "min": -3.7501,
+      "p05": -1.8626,
+      "p50": -0.2424,
+      "n_below_threshold": 12
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 174.22,
+    "std": 7.75,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      671.76,
+      427.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      223,
+      1045,
+      1642
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

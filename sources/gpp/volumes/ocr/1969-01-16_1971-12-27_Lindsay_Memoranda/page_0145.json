@@ -1,0 +1,411 @@
+{
+  "page": 145,
+  "source_image": "page_0145.png",
+  "elements": [
+    {
+      "bbox": [
+        977,
+        416,
+        1063,
+        457
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4177,
+          "min": -1.9014
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0017,
+          "min": -0.0033
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0013,
+          "min": -0.0029
+        }
+      },
+      "ink": {
+        "ink_px": 10,
+        "area_px": 3608,
+        "density": 0.00277,
+        "chars": 3,
+        "chars_per_1k_ink": 300.0
+      }
+    },
+    {
+      "bbox": [
+        534,
+        586,
+        1718,
+        1057
+      ],
+      "category": "Text",
+      "text": "2. Where such an employee has worked the equivalent of more than three days of over-time compensable in cash payment during a three-month period, the agency personnel office shall report this to the agency official who authorized the overtime. This official shall prohibit future assignments of overtime to this employee until the conditions set forth in paragraph A above have been met.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4025,
+          "min": -1.8913
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3869,
+          "min": -0.3869
+        },
+        "text": {
+          "n_tokens": 69,
+          "mean": -0.0102,
+          "min": -0.6945
+        }
+      },
+      "ink": {
+        "ink_px": 1204,
+        "area_px": 559548,
+        "density": 0.00215,
+        "chars": 387,
+        "chars_per_1k_ink": 321.43
+      }
+    },
+    {
+      "bbox": [
+        534,
+        1097,
+        1658,
+        1333
+      ],
+      "category": "Text",
+      "text": "3. These restrictions shall not obtain where the employee approaching retirement eligibility is functioning as part of a work crew and the entire crew is directed to work overtime.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2716,
+          "min": -1.6346
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 31,
+          "mean": -0.0001,
+          "min": -0.0021
+        }
+      },
+      "ink": {
+        "ink_px": 904,
+        "area_px": 266208,
+        "density": 0.0034,
+        "chars": 180,
+        "chars_per_1k_ink": 199.12
+      }
+    },
+    {
+      "bbox": [
+        534,
+        1374,
+        1815,
+        1745
+      ],
+      "category": "Text",
+      "text": "4. The Mayor's Committee on Pensions shall be furnished, for its review and recommendations, quarterly reports listing by agency and civil service title pension applicants whose cash overtime payments exceed 5% of their average annual rate of compensation for the 12-month period preceding the effective date of their retirement.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.279,
+          "min": -1.6717
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 60,
+          "mean": -0.0002,
+          "min": -0.0075
+        }
+      },
+      "ink": {
+        "ink_px": 2156,
+        "area_px": 477106,
+        "density": 0.00452,
+        "chars": 329,
+        "chars_per_1k_ink": 152.6
+      }
+    },
+    {
+      "bbox": [
+        1084,
+        1686,
+        2093,
+        2140
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.4035,
+          "min": -2.0067
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0009,
+          "min": -0.0009
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2313,
+        "area_px": 459902,
+        "density": 0.00503,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1270,
+        1963,
+        1677,
+        2050
+      ],
+      "category": "Caption",
+      "text": "John V. Lindsay\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.2762,
+          "min": -1.5811
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1128,
+          "min": -0.1128
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0022,
+          "min": -0.0078
+        }
+      },
+      "ink": {
+        "ink_px": 295,
+        "area_px": 35583,
+        "density": 0.00829,
+        "chars": 21,
+        "chars_per_1k_ink": 71.19
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 390,
+    "content": {
+      "n_tokens": 171,
+      "mean": -0.0043,
+      "min": -0.6945,
+      "p05": -0.0013,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 90,
+          "token_id": 916,
+          "logprob": -0.6945,
+          "text": " over"
+        },
+        {
+          "index": 385,
+          "token_id": 3022,
+          "logprob": -0.0078,
+          "text": "AY"
+        },
+        {
+          "index": 265,
+          "token_id": 18564,
+          "logprob": -0.0075,
+          "text": " recommendations"
+        },
+        {
+          "index": 379,
+          "token_id": 13079,
+          "logprob": -0.0059,
+          "text": "John"
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0029,
+          "text": " \"-"
+        },
+        {
+          "index": 186,
+          "token_id": 6851,
+          "logprob": -0.0021,
+          "text": " obtain"
+        },
+        {
+          "index": 383,
+          "token_id": 1699,
+          "logprob": -0.0021,
+          "text": "\\n"
+        },
+        {
+          "index": 91,
+          "token_id": 7246,
+          "logprob": -0.0014,
+          "text": "-time"
+        },
+        {
+          "index": 384,
+          "token_id": 44,
+          "logprob": -0.0013,
+          "text": "M"
+        },
+        {
+          "index": 117,
+          "token_id": 38499,
+          "logprob": -0.0013,
+          "text": " overtime"
+        },
+        {
+          "index": 142,
+          "token_id": 1189,
+          "logprob": -0.0011,
+          "text": ".\""
+        },
+        {
+          "index": 75,
+          "token_id": 13,
+          "logprob": -0.0011,
+          "text": "."
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 132,
+      "mean": -0.3258,
+      "min": -2.0067,
+      "p05": -1.7686,
+      "p50": -0.0006,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 322,
+          "token_id": 21,
+          "logprob": -2.0067,
+          "text": "6"
+        },
+        {
+          "index": 328,
+          "token_id": 18,
+          "logprob": -1.9968,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.9014,
+          "text": "3"
+        },
+        {
+          "index": 45,
+          "token_id": 19,
+          "logprob": -1.8913,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.8571,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.8439,
+          "text": "6"
+        },
+        {
+          "index": 50,
+          "token_id": 21,
+          "logprob": -1.7976,
+          "text": "6"
+        },
+        {
+          "index": 316,
+          "token_id": 19,
+          "logprob": -1.7449,
+          "text": "4"
+        },
+        {
+          "index": 224,
+          "token_id": 19,
+          "logprob": -1.6717,
+          "text": "4"
+        },
+        {
+          "index": 168,
+          "token_id": 18,
+          "logprob": -1.6346,
+          "text": "3"
+        },
+        {
+          "index": 62,
+          "token_id": 22,
+          "logprob": -1.5988,
+          "text": "7"
+        },
+        {
+          "index": 355,
+          "token_id": 18,
+          "logprob": -1.5811,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 390,
+      "mean": -0.1123,
+      "min": -2.0067,
+      "p05": -1.1864,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.73,
+    "std": 12.22,
+    "dark_fraction": 0.00136
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      879.36,
+      1159.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      293,
+      386,
+      2149,
+      2833
+    ],
+    "ink_px": 6160,
+    "covered_px": 6160,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

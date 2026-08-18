@@ -1,0 +1,365 @@
+{
+  "page": 298,
+  "source_image": "page_0298.png",
+  "elements": [
+    {
+      "bbox": [
+        628,
+        0,
+        730,
+        154
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.2924,
+          "min": -1.434
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0167,
+          "min": -0.0167
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        563,
+        163,
+        794,
+        231
+      ],
+      "category": "Text",
+      "text": "CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK 7, N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3261,
+          "min": -1.5289
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.359,
+          "min": -0.359
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0016,
+          "min": -0.013
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        1015,
+        251,
+        1031,
+        274
+      ],
+      "category": "Text",
+      "text": "3",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2902,
+          "min": -1.3692
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5762,
+          "min": -0.5762
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0017,
+          "min": -0.0017
+        }
+      },
+      "ink": {
+        "ink_px": 12,
+        "area_px": 432,
+        "density": 0.02778,
+        "chars": 1,
+        "chars_per_1k_ink": 83.33
+      }
+    },
+    {
+      "bbox": [
+        250,
+        368,
+        1045,
+        542
+      ],
+      "category": "Text",
+      "text": "(d) wherever such subdivision refers to adoption of a resolution by the board of estimate, such subdivision instead referred to adoption of an executive order by the mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3024,
+          "min": -1.3114
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0337,
+          "min": -0.0337
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0294,
+          "min": -0.3409
+        }
+      },
+      "ink": {
+        "ink_px": 254,
+        "area_px": 140525,
+        "density": 0.00181,
+        "chars": 172,
+        "chars_per_1k_ink": 677.17
+      }
+    },
+    {
+      "bbox": [
+        252,
+        578,
+        1104,
+        1404
+      ],
+      "category": "Text",
+      "text": "§ 2. Effective during the period of time from and including the payroll period the first day of which is nearest to July 1, 1969 (which first day is hereinafter referred to as the commencement date of the 1969-1970 increased-take-home-pay period) and to and including the payroll period immediately preceding that, the first day of which is nearest to June 30, 1970 (which total period of time is hereinafter referred to as the \"1969-1970 increased take-home-pay period\"), the governing provisions of subdivision 14 of such subdivision j, is hereby made applicable, and the provisions of subdivisions g, h and i of such section B3-36.1 shall be applicable to and for the benefit of all other-than-authority members of the New York City Employees' Retirement System, provided, however, that the reduced rate of contribution to be used in computing the reduction of contributions shall be four per cent, except as otherwise provided in sections three and four of this executive order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3272,
+          "min": -1.6073
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 228,
+          "mean": -0.0039,
+          "min": -0.458
+        }
+      },
+      "ink": {
+        "ink_px": 926,
+        "area_px": 712940,
+        "density": 0.0013,
+        "chars": 982,
+        "chars_per_1k_ink": 1060.48
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 451,
+    "content": {
+      "n_tokens": 282,
+      "mean": -0.0066,
+      "min": -0.458,
+      "p05": -0.0067,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 358,
+          "token_id": 502,
+          "logprob": -0.458,
+          "text": " j"
+        },
+        {
+          "index": 155,
+          "token_id": 8,
+          "logprob": -0.3409,
+          "text": ")"
+        },
+        {
+          "index": 156,
+          "token_id": 27478,
+          "logprob": -0.2691,
+          "text": " wherever"
+        },
+        {
+          "index": 161,
+          "token_id": 24376,
+          "logprob": -0.1859,
+          "text": " adoption"
+        },
+        {
+          "index": 361,
+          "token_id": 21799,
+          "logprob": -0.1819,
+          "text": " hereby"
+        },
+        {
+          "index": 231,
+          "token_id": 504,
+          "logprob": -0.1271,
+          "text": " from"
+        },
+        {
+          "index": 153,
+          "token_id": 11993,
+          "logprob": -0.0998,
+          "text": " \"("
+        },
+        {
+          "index": 374,
+          "token_id": 600,
+          "logprob": -0.044,
+          "text": " i"
+        },
+        {
+          "index": 176,
+          "token_id": 24376,
+          "logprob": -0.0385,
+          "text": " adoption"
+        },
+        {
+          "index": 378,
+          "token_id": 425,
+          "logprob": -0.0134,
+          "text": " B"
+        },
+        {
+          "index": 80,
+          "token_id": 7507,
+          "logprob": -0.013,
+          "text": ".Y"
+        },
+        {
+          "index": 221,
+          "token_id": 17851,
+          "logprob": -0.0115,
+          "text": "§"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 98,
+      "mean": -0.3023,
+      "min": -1.6073,
+      "p05": -1.4264,
+      "p50": -0.002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 192,
+          "token_id": 17,
+          "logprob": -1.6073,
+          "text": "2"
+        },
+        {
+          "index": 39,
+          "token_id": 18,
+          "logprob": -1.5289,
+          "text": "3"
+        },
+        {
+          "index": 34,
+          "token_id": 18,
+          "logprob": -1.5042,
+          "text": "3"
+        },
+        {
+          "index": 203,
+          "token_id": 19,
+          "logprob": -1.4915,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.434,
+          "text": "8"
+        },
+        {
+          "index": 20,
+          "token_id": 19,
+          "logprob": -1.425,
+          "text": "4"
+        },
+        {
+          "index": 209,
+          "token_id": 19,
+          "logprob": -1.3886,
+          "text": "4"
+        },
+        {
+          "index": 44,
+          "token_id": 19,
+          "logprob": -1.3762,
+          "text": "4"
+        },
+        {
+          "index": 106,
+          "token_id": 19,
+          "logprob": -1.3692,
+          "text": "4"
+        },
+        {
+          "index": 101,
+          "token_id": 16,
+          "logprob": -1.3355,
+          "text": "1"
+        },
+        {
+          "index": 90,
+          "token_id": 20,
+          "logprob": -1.3168,
+          "text": "5"
+        },
+        {
+          "index": 142,
+          "token_id": 17,
+          "logprob": -1.3114,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 451,
+      "mean": -0.0699,
+      "min": -1.6073,
+      "p05": -0.4662,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 170.2,
+    "std": 11.6,
+    "dark_fraction": 0.0008
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      716.64,
+      467.04
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      155,
+      238,
+      1142,
+      1752
+    ],
+    "ink_px": 1195,
+    "covered_px": 1192,
+    "covered_fraction": 0.99749,
+    "uncovered_px": 3,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

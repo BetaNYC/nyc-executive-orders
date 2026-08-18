@@ -1,0 +1,297 @@
+{
+  "page": 367,
+  "source_image": "page_0367.png",
+  "elements": [
+    {
+      "bbox": [
+        470,
+        1567,
+        694,
+        1631
+      ],
+      "category": "Text",
+      "text": "1828 AGENT OF A. B.\nCustodian of the Records\nof the United States",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4185,
+          "min": -1.7566
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0297,
+          "min": -0.0297
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.979,
+          "min": -2.8238
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 12992,
+        "density": 0.0,
+        "chars": 65,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        523,
+        1643,
+        647,
+        1776
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3132,
+          "min": -1.5493
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": null
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        116,
+        1818,
+        922,
+        1856
+      ],
+      "category": "Page-footer",
+      "text": "Copyright by the author is subject to a license agreement. This work may be used by permission of the author. Copyright © 1988 by the author. All rights reserved. No part of this work may be reproduced without prior written permission from the author. This work may be used by permission of the author. Copyright © 1988 by the author. All rights reserved. No part of this work may be reproduced without permission of the author.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4191,
+          "min": -1.747
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1583,
+          "min": -0.3156
+        },
+        "text": {
+          "n_tokens": 93,
+          "mean": -0.4554,
+          "min": -2.9373
+        }
+      },
+      "ink": null
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 222,
+    "content": {
+      "n_tokens": 116,
+      "mean": -0.5592,
+      "min": -2.9373,
+      "p05": -2.1207,
+      "p50": -0.174,
+      "n_below_threshold": 8,
+      "worst_tokens": [
+        {
+          "index": 129,
+          "token_id": 279,
+          "logprob": -2.9373,
+          "text": " the"
+        },
+        {
+          "index": 44,
+          "token_id": 13,
+          "logprob": -2.8238,
+          "text": "."
+        },
+        {
+          "index": 127,
+          "token_id": 13547,
+          "logprob": -2.725,
+          "text": "Copyright"
+        },
+        {
+          "index": 48,
+          "token_id": 34,
+          "logprob": -2.5822,
+          "text": "C"
+        },
+        {
+          "index": 45,
+          "token_id": 425,
+          "logprob": -2.3456,
+          "text": " B"
+        },
+        {
+          "index": 134,
+          "token_id": 264,
+          "logprob": -2.1298,
+          "text": " a"
+        },
+        {
+          "index": 36,
+          "token_id": 16,
+          "logprob": -2.1177,
+          "text": "1"
+        },
+        {
+          "index": 149,
+          "token_id": 2955,
+          "logprob": -2.0386,
+          "text": " Copyright"
+        },
+        {
+          "index": 130,
+          "token_id": 3150,
+          "logprob": -1.9416,
+          "text": " author"
+        },
+        {
+          "index": 38,
+          "token_id": 17,
+          "logprob": -1.8455,
+          "text": "2"
+        },
+        {
+          "index": 139,
+          "token_id": 975,
+          "logprob": -1.7867,
+          "text": " work"
+        },
+        {
+          "index": 39,
+          "token_id": 23,
+          "logprob": -1.752,
+          "text": "8"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 64,
+      "mean": -0.3651,
+      "min": -1.7566,
+      "p05": -1.7015,
+      "p50": -0.0154,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 19,
+          "logprob": -1.7566,
+          "text": "4"
+        },
+        {
+          "index": 97,
+          "token_id": 21,
+          "logprob": -1.747,
+          "text": "6"
+        },
+        {
+          "index": 108,
+          "token_id": 17,
+          "logprob": -1.7392,
+          "text": "2"
+        },
+        {
+          "index": 103,
+          "token_id": 23,
+          "logprob": -1.7166,
+          "text": "8"
+        },
+        {
+          "index": 13,
+          "token_id": 22,
+          "logprob": -1.6162,
+          "text": "7"
+        },
+        {
+          "index": 114,
+          "token_id": 21,
+          "logprob": -1.6136,
+          "text": "6"
+        },
+        {
+          "index": 66,
+          "token_id": 18,
+          "logprob": -1.5493,
+          "text": "3"
+        },
+        {
+          "index": 83,
+          "token_id": 21,
+          "logprob": -1.526,
+          "text": "6"
+        },
+        {
+          "index": 72,
+          "token_id": 18,
+          "logprob": -1.5133,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 15,
+          "logprob": -1.5114,
+          "text": "0"
+        },
+        {
+          "index": 24,
+          "token_id": 16,
+          "logprob": -1.4935,
+          "text": "1"
+        },
+        {
+          "index": 77,
+          "token_id": 22,
+          "logprob": -1.2905,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 222,
+      "mean": -0.4025,
+      "min": -2.9373,
+      "p05": -1.7563,
+      "p50": -0.0397,
+      "n_below_threshold": 8
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 163.67,
+    "std": 6.87,
+    "dark_fraction": 9e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      660.0,
+      431.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      143,
+      220,
+      1054,
+      1613
+    ],
+    "ink_px": 118,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 118,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

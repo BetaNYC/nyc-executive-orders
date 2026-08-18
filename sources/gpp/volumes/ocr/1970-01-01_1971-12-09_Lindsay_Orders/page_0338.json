@@ -1,0 +1,405 @@
+{
+  "page": 338,
+  "source_image": "page_0338.png",
+  "elements": [
+    {
+      "bbox": [
+        1267,
+        178,
+        1285,
+        204
+      ],
+      "category": "Page-header",
+      "text": "5",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3036,
+          "min": -1.5164
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0008,
+          "min": -0.0015
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        416,
+        294,
+        660,
+        317
+      ],
+      "category": "Text",
+      "text": "EFFECTIVE DATE.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2904,
+          "min": -1.3799
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3955,
+          "min": -0.3955
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0019,
+          "min": -0.0064
+        }
+      },
+      "ink": {
+        "ink_px": 185,
+        "area_px": 5928,
+        "density": 0.03121,
+        "chars": 15,
+        "chars_per_1k_ink": 81.08
+      }
+    },
+    {
+      "bbox": [
+        287,
+        349,
+        1132,
+        378
+      ],
+      "category": "Text",
+      "text": "§ 13. This order shall take effect on July 1, 1971.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2959,
+          "min": -1.4277
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0337,
+          "min": -0.0337
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0428,
+          "min": -0.8942
+        }
+      },
+      "ink": {
+        "ink_px": 1148,
+        "area_px": 24708,
+        "density": 0.04646,
+        "chars": 51,
+        "chars_per_1k_ink": 44.43
+      }
+    },
+    {
+      "bbox": [
+        693,
+        544,
+        939,
+        624
+      ],
+      "category": "Text",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2748,
+          "min": -1.2626
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0303,
+          "min": -0.0303
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0009,
+          "min": -0.0099
+        }
+      },
+      "ink": {
+        "ink_px": 552,
+        "area_px": 19920,
+        "density": 0.02771,
+        "chars": 21,
+        "chars_per_1k_ink": 38.04
+      }
+    },
+    {
+      "bbox": [
+        693,
+        736,
+        1276,
+        846
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3609,
+          "min": -1.6256
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1275,
+          "min": -0.1275
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2518,
+        "area_px": 64680,
+        "density": 0.03893,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        808,
+        846,
+        1099,
+        901
+      ],
+      "category": "Text",
+      "text": "RICHARD R. AURELIO\nDeputy Mayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2415,
+          "min": -1.0795
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2254,
+          "min": -0.2254
+        },
+        "text": {
+          "n_tokens": 13,
+          "mean": -0.0018,
+          "min": -0.0211
+        }
+      },
+      "ink": {
+        "ink_px": 370,
+        "area_px": 16464,
+        "density": 0.02247,
+        "chars": 31,
+        "chars_per_1k_ink": 83.78
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 260,
+    "content": {
+      "n_tokens": 52,
+      "mean": -0.0181,
+      "min": -0.8942,
+      "p05": -0.008,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 112,
+          "token_id": 17851,
+          "logprob": -0.8942,
+          "text": "§"
+        },
+        {
+          "index": 244,
+          "token_id": 49,
+          "logprob": -0.0211,
+          "text": "R"
+        },
+        {
+          "index": 176,
+          "token_id": 44,
+          "logprob": -0.0099,
+          "text": "M"
+        },
+        {
+          "index": 72,
+          "token_id": 36,
+          "logprob": -0.0064,
+          "text": "E"
+        },
+        {
+          "index": 76,
+          "token_id": 1189,
+          "logprob": -0.0029,
+          "text": ".\""
+        },
+        {
+          "index": 250,
+          "token_id": 4521,
+          "logprob": -0.0014,
+          "text": "URE"
+        },
+        {
+          "index": 117,
+          "token_id": 1096,
+          "logprob": -0.0012,
+          "text": " This"
+        },
+        {
+          "index": 120,
+          "token_id": 1896,
+          "logprob": -0.0011,
+          "text": " take"
+        },
+        {
+          "index": 122,
+          "token_id": 389,
+          "logprob": -0.0009,
+          "text": " on"
+        },
+        {
+          "index": 37,
+          "token_id": 20,
+          "logprob": -0.0006,
+          "text": "5"
+        },
+        {
+          "index": 251,
+          "token_id": 43,
+          "logprob": -0.0006,
+          "text": "L"
+        },
+        {
+          "index": 177,
+          "token_id": 3022,
+          "logprob": -0.0004,
+          "text": "AY"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 120,
+      "mean": -0.2844,
+      "min": -1.6256,
+      "p05": -1.3689,
+      "p50": -0.0028,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 202,
+          "token_id": 21,
+          "logprob": -1.6256,
+          "text": "6"
+        },
+        {
+          "index": 197,
+          "token_id": 21,
+          "logprob": -1.6014,
+          "text": "6"
+        },
+        {
+          "index": 8,
+          "token_id": 22,
+          "logprob": -1.5164,
+          "text": "7"
+        },
+        {
+          "index": 95,
+          "token_id": 17,
+          "logprob": -1.4277,
+          "text": "2"
+        },
+        {
+          "index": 45,
+          "token_id": 21,
+          "logprob": -1.3799,
+          "text": "6"
+        },
+        {
+          "index": 191,
+          "token_id": 21,
+          "logprob": -1.3699,
+          "text": "6"
+        },
+        {
+          "index": 19,
+          "token_id": 20,
+          "logprob": -1.3689,
+          "text": "5"
+        },
+        {
+          "index": 13,
+          "token_id": 23,
+          "logprob": -1.3502,
+          "text": "8"
+        },
+        {
+          "index": 50,
+          "token_id": 19,
+          "logprob": -1.2868,
+          "text": "4"
+        },
+        {
+          "index": 24,
+          "token_id": 19,
+          "logprob": -1.2661,
+          "text": "4"
+        },
+        {
+          "index": 84,
+          "token_id": 22,
+          "logprob": -1.263,
+          "text": "7"
+        },
+        {
+          "index": 140,
+          "token_id": 18,
+          "logprob": -1.2626,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 260,
+      "mean": -0.1351,
+      "min": -1.6256,
+      "p05": -1.0799,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.48,
+    "std": 9.8,
+    "dark_fraction": 0.00313
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      671.52,
+      527.52
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      175,
+      223,
+      1290,
+      1642
+    ],
+    "ink_px": 4954,
+    "covered_px": 4773,
+    "covered_fraction": 0.96346,
+    "uncovered_px": 181,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "page": 6,
+  "source_image": "page_0006.png",
+  "elements": [
+    {
+      "bbox": [
+        626,
+        241,
+        1336,
+        371
+      ],
+      "category": "Section-header",
+      "text": "INDEX TO THE\nEXECUTIVE ORDERS OF THE MAYOR\n1950-1953",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2303,
+          "min": -1.375
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.125,
+          "min": -0.25
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0054,
+          "min": -0.125
+        }
+      },
+      "ink": {
+        "ink_px": 534,
+        "area_px": 15730,
+        "density": 0.03395,
+        "chars": 52,
+        "chars_per_1k_ink": 97.38
+      }
+    },
+    {
+      "bbox": [
+        230,
+        397,
+        1728,
+        2656
+      ],
+      "category": "Table",
+      "text": "<table><thead><tr><th>SUBJECT</th><th>NUMBER</th><th>DATE</th></tr></thead><tbody><tr><td>American Legion Convention</td><td>10</td><td>7/20/51</td></tr><tr><td></td><td>25</td><td>8/12/52</td></tr><tr><td>Automobiles, city owned</td><td>12</td><td>9/12/51</td></tr><tr><td>Baseball, sandlot, supports</td><td>22</td><td>6/16/52</td></tr><tr><td></td><td>23</td><td>7/8/52</td></tr><tr><td></td><td>35</td><td>6/2/53</td></tr><tr><td>Blood drive, Red Cross</td><td>13</td><td>11/23/51</td></tr><tr><td>Career and Salary Plan</td><td>30</td><td>1/16/53</td></tr><tr><td></td><td>33</td><td>5/19/53</td></tr><tr><td>Christmas greeting</td><td>15</td><td>12/19/51</td></tr><tr><td>Civil Defense - city organization</td><td>28</td><td>2/5/53</td></tr><tr><td>Civil Service Commission Salary Plan</td><td>30</td><td>1/16/53</td></tr><tr><td></td><td>33</td><td>5/19/53</td></tr><tr><td>Classification plan, salary</td><td>6</td><td>6/8/51</td></tr><tr><td></td><td>11</td><td>8/17/51</td></tr><tr><td>Conflict of interest</td><td>1</td><td>11/16/50</td></tr><tr><td>Construction material</td><td>7</td><td>6/13/51</td></tr><tr><td></td><td>7A</td><td>7/16/51</td></tr><tr><td>Correspondence</td><td>3</td><td>1/18/51</td></tr><tr><td>Fuel, shortage, strike</td><td>17</td><td>12/20/51</td></tr><tr><td>Gifts discouraged</td><td>1</td><td>11/16/50</td></tr><tr><td>Greater New York fund drive</td><td>20</td><td>5/1/52</td></tr><tr><td></td><td>34</td><td>6/1/53</td></tr><tr><td>Green Cross parade</td><td>24</td><td>8/7/52</td></tr><tr><td></td><td>36</td><td>7/20/53</td></tr><tr><td>Leaves of Absence</td><td></td><td></td></tr><tr><td>American Legion Convention</td><td>10</td><td>7/20/51</td></tr><tr><td></td><td>25</td><td>8/12/52</td></tr><tr><td>Christmas</td><td>14</td><td>12/12/51</td></tr><tr><td></td><td>2</td><td>12/14/50</td></tr><tr><td>Thanksgiving</td><td>27</td><td>11/17/52</td></tr><tr><td></td><td>27</td><td>11/17/52</td></tr><tr><td>MacArthur Parade</td><td>39</td><td>11/24/53</td></tr><tr><td></td><td>5</td><td>4/17/51</td></tr><tr><td>Legislation before Governor</td><td>19</td><td>2/21/52</td></tr><tr><td></td><td>32</td><td>3/4/53</td></tr></tbody></table>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.225,
+          "min": -1.25
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "text": {
+          "n_tokens": 1098,
+          "mean": -0.0008,
+          "min": -0.75
+        }
+      },
+      "ink": {
+        "ink_px": 48573,
+        "area_px": 3182550,
+        "density": 0.01526,
+        "chars": 2184,
+        "chars_per_1k_ink": 44.96
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 1195,
+    "content": {
+      "n_tokens": 1121,
+      "mean": -0.0009,
+      "min": -0.75,
+      "p05": 0.0,
+      "p50": 0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 101,
+          "token_id": 339,
+          "logprob": -0.75,
+          "text": "th"
+        },
+        {
+          "index": 39,
+          "token_id": 1699,
+          "logprob": -0.125,
+          "text": "\\n"
+        },
+        {
+          "index": 1016,
+          "token_id": 29,
+          "logprob": -0.125,
+          "text": ">"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 42,
+      "mean": -0.2173,
+      "min": -1.375,
+      "p05": -1.1187,
+      "p50": 0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -1.375,
+          "text": "6"
+        },
+        {
+          "index": 77,
+          "token_id": 23,
+          "logprob": -1.25,
+          "text": "8"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.125,
+          "text": "6"
+        },
+        {
+          "index": 83,
+          "token_id": 21,
+          "logprob": -1.0,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -0.875,
+          "text": "1"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -0.875,
+          "text": "1"
+        },
+        {
+          "index": 66,
+          "token_id": 15,
+          "logprob": -0.875,
+          "text": "0"
+        },
+        {
+          "index": 71,
+          "token_id": 22,
+          "logprob": -0.875,
+          "text": "7"
+        },
+        {
+          "index": 76,
+          "token_id": 17,
+          "logprob": -0.375,
+          "text": "2"
+        },
+        {
+          "index": 29,
+          "token_id": 9620,
+          "logprob": -0.25,
+          "text": "Section"
+        },
+        {
+          "index": 22,
+          "token_id": 22,
+          "logprob": -0.125,
+          "text": "7"
+        },
+        {
+          "index": 65,
+          "token_id": 18,
+          "logprob": -0.125,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 1195,
+      "mean": -0.0086,
+      "min": -1.375,
+      "p05": 0.0,
+      "p50": 0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 182.28,
+    "std": 16.21,
+    "dark_fraction": 0.01314
+  },
+  "ink_coverage": {
+    "roi": [
+      266,
+      349,
+      1955,
+      2562
+    ],
+    "ink_px": 49120,
+    "covered_px": 49107,
+    "covered_fraction": 0.99974,
+    "uncovered_px": 13,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

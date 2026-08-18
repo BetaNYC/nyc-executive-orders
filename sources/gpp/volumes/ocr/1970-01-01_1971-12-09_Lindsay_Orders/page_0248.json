@@ -1,0 +1,377 @@
+{
+  "page": 248,
+  "source_image": "page_0248.png",
+  "elements": [
+    {
+      "bbox": [
+        141,
+        176,
+        1305,
+        257
+      ],
+      "category": "Text",
+      "text": "proceeding or conferences of the City Administrator, except as provided herein.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3927,
+          "min": -1.6203
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0017,
+          "min": -0.0143
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 35040,
+        "density": 0.0,
+        "chars": 79,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        141,
+        283,
+        1401,
+        529
+      ],
+      "category": "Text",
+      "text": "b) The Office of the City Administrator is authorized to adopt and promulgate rules, regulations and orders necessary for the enforcement of this Order in accordance with its powers granted under Executive Order 71; which shall not be inconsistent with the provisions of the Training Agreement dated December 10, 1970 herein above referred to.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3259,
+          "min": -1.8715
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0549,
+          "min": -0.0549
+        },
+        "text": {
+          "n_tokens": 69,
+          "mean": -0.0002,
+          "min": -0.0069
+        }
+      },
+      "ink": {
+        "ink_px": 6,
+        "area_px": 269370,
+        "density": 2e-05,
+        "chars": 343,
+        "chars_per_1k_ink": 57166.67
+      }
+    },
+    {
+      "bbox": [
+        224,
+        555,
+        969,
+        588
+      ],
+      "category": "Text",
+      "text": "c: This order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3254,
+          "min": -1.3788
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0032,
+          "min": -0.0032
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.2385,
+          "min": -1.2698
+        }
+      },
+      "ink": {
+        "ink_px": 3,
+        "area_px": 25126,
+        "density": 0.00012,
+        "chars": 44,
+        "chars_per_1k_ink": 14666.67
+      }
+    },
+    {
+      "bbox": [
+        777,
+        642,
+        1343,
+        861
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4521,
+          "min": -2.1011
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.017,
+          "min": -0.017
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 11,
+        "area_px": 109281,
+        "density": 0.0001,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        969,
+        774,
+        1211,
+        826
+      ],
+      "category": "Caption",
+      "text": "John V. Lindsay\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.293,
+          "min": -1.397
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2256,
+          "min": -0.2256
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0152,
+          "min": -0.0843
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 12773,
+        "density": 0.0,
+        "chars": 21,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 273,
+    "content": {
+      "n_tokens": 101,
+      "mean": -0.0229,
+      "min": -1.2698,
+      "p05": -0.0143,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 188,
+          "token_id": 66,
+          "logprob": -1.2698,
+          "text": "c"
+        },
+        {
+          "index": 189,
+          "token_id": 25,
+          "logprob": -0.8397,
+          "text": ":"
+        },
+        {
+          "index": 263,
+          "token_id": 647,
+          "logprob": -0.0843,
+          "text": " V"
+        },
+        {
+          "index": 190,
+          "token_id": 1096,
+          "logprob": -0.0358,
+          "text": " This"
+        },
+        {
+          "index": 262,
+          "token_id": 13079,
+          "logprob": -0.0207,
+          "text": "John"
+        },
+        {
+          "index": 48,
+          "token_id": 35781,
+          "logprob": -0.0143,
+          "text": " herein"
+        },
+        {
+          "index": 266,
+          "token_id": 1699,
+          "logprob": -0.0125,
+          "text": "\\n"
+        },
+        {
+          "index": 35,
+          "token_id": 776,
+          "logprob": -0.0109,
+          "text": "pro"
+        },
+        {
+          "index": 125,
+          "token_id": 26,
+          "logprob": -0.0069,
+          "text": ";"
+        },
+        {
+          "index": 86,
+          "token_id": 8,
+          "logprob": -0.0042,
+          "text": ")"
+        },
+        {
+          "index": 268,
+          "token_id": 3022,
+          "logprob": -0.0021,
+          "text": "AY"
+        },
+        {
+          "index": 111,
+          "token_id": 419,
+          "logprob": -0.002,
+          "text": " this"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 99,
+      "mean": -0.3431,
+      "min": -2.1011,
+      "p05": -1.5459,
+      "p50": -0.0048,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 215,
+          "token_id": 18,
+          "logprob": -2.1011,
+          "text": "3"
+        },
+        {
+          "index": 68,
+          "token_id": 16,
+          "logprob": -1.8715,
+          "text": "1"
+        },
+        {
+          "index": 204,
+          "token_id": 22,
+          "logprob": -1.8066,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.6203,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.613,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.5384,
+          "text": "1"
+        },
+        {
+          "index": 62,
+          "token_id": 18,
+          "logprob": -1.5147,
+          "text": "3"
+        },
+        {
+          "index": 220,
+          "token_id": 16,
+          "logprob": -1.4953,
+          "text": "1"
+        },
+        {
+          "index": 209,
+          "token_id": 17,
+          "logprob": -1.4932,
+          "text": "2"
+        },
+        {
+          "index": 239,
+          "token_id": 19,
+          "logprob": -1.397,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.3897,
+          "text": "7"
+        },
+        {
+          "index": 166,
+          "token_id": 20,
+          "logprob": -1.3788,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 273,
+      "mean": -0.134,
+      "min": -2.1011,
+      "p05": -1.2828,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.18,
+    "std": 8.01,
+    "dark_fraction": 1e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      672.24,
+      518.88
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      173,
+      224,
+      1268,
+      1643
+    ],
+    "ink_px": 20,
+    "covered_px": 20,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "page": 141,
+  "source_image": "page_0141.png",
+  "elements": [
+    {
+      "bbox": [
+        229,
+        336,
+        797,
+        526
+      ],
+      "category": "Text",
+      "text": "Hon. Percy E. Sutton\nHon. Carol Greitzer\nMunicipal Bldg.\nNew York, N.Y.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4204,
+          "min": -1.781
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0187,
+          "min": -0.0187
+        },
+        "text": {
+          "n_tokens": 27,
+          "mean": -0.0004,
+          "min": -0.0067
+        }
+      },
+      "ink": {
+        "ink_px": 2442,
+        "area_px": 70923,
+        "density": 0.03443,
+        "chars": 71,
+        "chars_per_1k_ink": 29.07
+      }
+    },
+    {
+      "bbox": [
+        1707,
+        441,
+        1870,
+        488
+      ],
+      "category": "Text",
+      "text": "4/5/71",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3131,
+          "min": -1.426
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0003,
+          "min": -0.0016
+        }
+      },
+      "ink": {
+        "ink_px": 581,
+        "area_px": 7920,
+        "density": 0.07336,
+        "chars": 6,
+        "chars_per_1k_ink": 10.33
+      }
+    },
+    {
+      "bbox": [
+        1130,
+        727,
+        1269,
+        765
+      ],
+      "category": "Text",
+      "text": "- 3 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3137,
+          "min": -1.472
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0033,
+          "min": -0.0098
+        }
+      },
+      "ink": {
+        "ink_px": 215,
+        "area_px": 5499,
+        "density": 0.0391,
+        "chars": 5,
+        "chars_per_1k_ink": 23.26
+      }
+    },
+    {
+      "bbox": [
+        241,
+        957,
+        1982,
+        1193
+      ],
+      "category": "Text",
+      "text": "are completed and will inform you of the design for the affirmative action programs as they are formulated. I would suggest that should you desire further information before then, that you communicate with Human Rights Commissioner Eleanor Holmes Norton, who has continuing responsibility for this matter.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3029,
+          "min": -1.5578
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 50,
+          "mean": -0.0001,
+          "min": -0.0009
+        }
+      },
+      "ink": {
+        "ink_px": 8462,
+        "area_px": 400530,
+        "density": 0.02113,
+        "chars": 305,
+        "chars_per_1k_ink": 36.04
+      }
+    },
+    {
+      "bbox": [
+        246,
+        1234,
+        1932,
+        1428
+      ],
+      "category": "Text",
+      "text": "We appreciate the concerns evidenced in your letter to City agencies and trust that you will recognize the procedure the Mayor has ordered as the most efficient one for getting the results you and we desire.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3,
+          "min": -1.6541
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 37,
+          "mean": -0.0001,
+          "min": -0.0017
+        }
+      },
+      "ink": {
+        "ink_px": 5244,
+        "area_px": 318160,
+        "density": 0.01648,
+        "chars": 207,
+        "chars_per_1k_ink": 39.47
+      }
+    },
+    {
+      "bbox": [
+        1303,
+        1556,
+        1899,
+        1884
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3041,
+          "min": -1.4274
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.016,
+          "min": -0.016
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2114,
+        "area_px": 196742,
+        "density": 0.01075,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 338,
+    "content": {
+      "n_tokens": 124,
+      "mean": -0.0003,
+      "min": -0.0098,
+      "p05": -0.001,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 139,
+          "token_id": 220,
+          "logprob": -0.0098,
+          "text": " "
+        },
+        {
+          "index": 36,
+          "token_id": 74686,
+          "logprob": -0.0067,
+          "text": " Percy"
+        },
+        {
+          "index": 138,
+          "token_id": 6523,
+          "logprob": -0.0026,
+          "text": " \"-"
+        },
+        {
+          "index": 275,
+          "token_id": 13304,
+          "logprob": -0.0017,
+          "text": " agencies"
+        },
+        {
+          "index": 102,
+          "token_id": 16,
+          "logprob": -0.0016,
+          "text": "1"
+        },
+        {
+          "index": 272,
+          "token_id": 6524,
+          "logprob": -0.0013,
+          "text": " letter"
+        },
+        {
+          "index": 41,
+          "token_id": 70807,
+          "logprob": -0.001,
+          "text": "Hon"
+        },
+        {
+          "index": 178,
+          "token_id": 546,
+          "logprob": -0.0009,
+          "text": "are"
+        },
+        {
+          "index": 189,
+          "token_id": 67641,
+          "logprob": -0.0008,
+          "text": " affirmative"
+        },
+        {
+          "index": 207,
+          "token_id": 1221,
+          "logprob": -0.0006,
+          "text": " then"
+        },
+        {
+          "index": 141,
+          "token_id": 481,
+          "logprob": -0.0006,
+          "text": " -"
+        },
+        {
+          "index": 45,
+          "token_id": 20480,
+          "logprob": -0.0006,
+          "text": "itzer"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 127,
+      "mean": -0.3085,
+      "min": -1.781,
+      "p05": -1.4974,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.781,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.6616,
+          "text": "9"
+        },
+        {
+          "index": 247,
+          "token_id": 17,
+          "logprob": -1.6541,
+          "text": "2"
+        },
+        {
+          "index": 22,
+          "token_id": 21,
+          "logprob": -1.5993,
+          "text": "6"
+        },
+        {
+          "index": 241,
+          "token_id": 19,
+          "logprob": -1.5818,
+          "text": "4"
+        },
+        {
+          "index": 160,
+          "token_id": 17,
+          "logprob": -1.5578,
+          "text": "2"
+        },
+        {
+          "index": 17,
+          "token_id": 22,
+          "logprob": -1.5032,
+          "text": "7"
+        },
+        {
+          "index": 166,
+          "token_id": 18,
+          "logprob": -1.484,
+          "text": "3"
+        },
+        {
+          "index": 116,
+          "token_id": 22,
+          "logprob": -1.472,
+          "text": "7"
+        },
+        {
+          "index": 235,
+          "token_id": 21,
+          "logprob": -1.4548,
+          "text": "6"
+        },
+        {
+          "index": 154,
+          "token_id": 22,
+          "logprob": -1.4345,
+          "text": "7"
+        },
+        {
+          "index": 328,
+          "token_id": 19,
+          "logprob": -1.4274,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 338,
+      "mean": -0.1161,
+      "min": -1.781,
+      "p05": -1.2265,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 181.35,
+    "std": 12.26,
+    "dark_fraction": 0.00418
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      888.48,
+      1157.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      296,
+      385,
+      2171,
+      2829
+    ],
+    "ink_px": 19154,
+    "covered_px": 19058,
+    "covered_fraction": 0.99499,
+    "uncovered_px": 96,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

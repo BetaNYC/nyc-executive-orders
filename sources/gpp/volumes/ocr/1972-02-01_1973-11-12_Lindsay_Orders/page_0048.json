@@ -1,0 +1,308 @@
+{
+  "page": 48,
+  "source_image": "page_0048.png",
+  "elements": [
+    {
+      "bbox": [
+        919,
+        358,
+        1010,
+        392
+      ],
+      "category": "Page-header",
+      "text": "-18-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4468,
+          "min": -1.9271
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.005,
+          "min": -0.0098
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0018,
+          "min": -0.0034
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        806,
+        490,
+        1760,
+        1156
+      ],
+      "category": "List-item",
+      "text": "(1) The Departmental Modification form submitted by a department in accordance with Section 124 (a) and Section 124 (b) of the New York City Charter shall be approved or validated, as appropriate, by the Director of the Budget or his authorized representative, and distributed as follows: two (2) copies to the Office of the Comptroller, one (1) copy returned to the Department for Payroll entry, and one (1) copy to be retained by the Bureau of the Budget and used to update the Master Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3342,
+          "min": -1.6523
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0018,
+          "min": -0.0036
+        },
+        "text": {
+          "n_tokens": 114,
+          "mean": -0.0004,
+          "min": -0.0165
+        }
+      },
+      "ink": {
+        "ink_px": 30555,
+        "area_px": 634410,
+        "density": 0.04816,
+        "chars": 494,
+        "chars_per_1k_ink": 16.17
+      }
+    },
+    {
+      "bbox": [
+        809,
+        1207,
+        1837,
+        2003
+      ],
+      "category": "List-item",
+      "text": "(2) The Department Modification form submitted by a department in accordance with Section 124 (c) of the New York City Charter shall, after review and examination be attached to the necessary Calendar Memos and Reports for submission to the City Council and the Board of Estimate, and forwarded to the Mayor for his signature and processing. After action by the Mayor, the Board of Estimate and the City Council, a certificate of the Budget Director shall be issued and distributed as follows: two (2) copies to the Office of the Comptroller, one (1) copy to the Bureau of the Budget for updating the Master Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.322,
+          "min": -1.8342
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 127,
+          "mean": -0.0008,
+          "min": -0.0299
+        }
+      },
+      "ink": {
+        "ink_px": 41287,
+        "area_px": 817260,
+        "density": 0.05052,
+        "chars": 615,
+        "chars_per_1k_ink": 14.9
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 355,
+    "content": {
+      "n_tokens": 245,
+      "mean": -0.0006,
+      "min": -0.0299,
+      "p05": -0.0018,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 307,
+          "token_id": 11,
+          "logprob": -0.0299,
+          "text": ","
+        },
+        {
+          "index": 292,
+          "token_id": 13,
+          "logprob": -0.0299,
+          "text": "."
+        },
+        {
+          "index": 231,
+          "token_id": 73855,
+          "logprob": -0.0236,
+          "text": " Modification"
+        },
+        {
+          "index": 83,
+          "token_id": 14634,
+          "logprob": -0.0165,
+          "text": " submitted"
+        },
+        {
+          "index": 75,
+          "token_id": 11993,
+          "logprob": -0.0106,
+          "text": " \"("
+        },
+        {
+          "index": 260,
+          "token_id": 387,
+          "logprob": -0.0062,
+          "text": " be"
+        },
+        {
+          "index": 139,
+          "token_id": 320,
+          "logprob": -0.0047,
+          "text": " ("
+        },
+        {
+          "index": 35,
+          "token_id": 6523,
+          "logprob": -0.0034,
+          "text": " \"-"
+        },
+        {
+          "index": 36,
+          "token_id": 16,
+          "logprob": -0.0025,
+          "text": "1"
+        },
+        {
+          "index": 266,
+          "token_id": 13550,
+          "logprob": -0.0024,
+          "text": " Mem"
+        },
+        {
+          "index": 347,
+          "token_id": 369,
+          "logprob": -0.0023,
+          "text": " for"
+        },
+        {
+          "index": 81,
+          "token_id": 73855,
+          "logprob": -0.002,
+          "text": " Modification"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 66,
+      "mean": -0.3326,
+      "min": -1.9271,
+      "p05": -1.6918,
+      "p50": -0.0018,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.9271,
+          "text": "8"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.9078,
+          "text": "2"
+        },
+        {
+          "index": 208,
+          "token_id": 22,
+          "logprob": -1.8342,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.7049,
+          "text": "0"
+        },
+        {
+          "index": 57,
+          "token_id": 15,
+          "logprob": -1.6523,
+          "text": "0"
+        },
+        {
+          "index": 63,
+          "token_id": 21,
+          "logprob": -1.5877,
+          "text": "6"
+        },
+        {
+          "index": 214,
+          "token_id": 18,
+          "logprob": -1.4317,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.3673,
+          "text": "9"
+        },
+        {
+          "index": 202,
+          "token_id": 22,
+          "logprob": -1.2965,
+          "text": "7"
+        },
+        {
+          "index": 46,
+          "token_id": 21,
+          "logprob": -1.2616,
+          "text": "6"
+        },
+        {
+          "index": 51,
+          "token_id": 15,
+          "logprob": -1.2535,
+          "text": "0"
+        },
+        {
+          "index": 207,
+          "token_id": 18,
+          "logprob": -0.7337,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 355,
+      "mean": -0.0623,
+      "min": -1.9271,
+      "p05": -0.3632,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 179.61,
+    "std": 16.72,
+    "dark_fraction": 0.01613
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      795.12,
+      1257.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      265,
+      419,
+      1943,
+      3073
+    ],
+    "ink_px": 71850,
+    "covered_px": 71842,
+    "covered_fraction": 0.99989,
+    "uncovered_px": 8,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

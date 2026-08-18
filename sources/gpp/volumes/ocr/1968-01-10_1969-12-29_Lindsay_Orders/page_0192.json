@@ -1,0 +1,371 @@
+{
+  "page": 192,
+  "source_image": "page_0192.png",
+  "elements": [
+    {
+      "bbox": [
+        585,
+        120,
+        653,
+        140
+      ],
+      "category": "Page-header",
+      "text": "- 4 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3489,
+          "min": -1.5265
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0068,
+          "min": -0.0127
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.048,
+          "min": -0.1274
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        106,
+        160,
+        1137,
+        337
+      ],
+      "category": "Text",
+      "text": "h) Officers, Committees and Staff. The Council shall elect from its members its own officers who shall be a Chairman, Vice-Chairman and Secretary, and shall do so in consultation with the Mayor. The Council may establish such standing committees as it deems necessary including an executive committee which shall act for the Council when not in session. All actions of the executive committee must be ratified by the Council at its next regular meeting. The Council may have a staff to assist it in performing its functions.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3089,
+          "min": -1.3389
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1798,
+          "min": -0.1798
+        },
+        "text": {
+          "n_tokens": 100,
+          "mean": -0.0062,
+          "min": -0.5245
+        }
+      },
+      "ink": {
+        "ink_px": 150,
+        "area_px": 102480,
+        "density": 0.00146,
+        "chars": 524,
+        "chars_per_1k_ink": 3493.33
+      }
+    },
+    {
+      "bbox": [
+        106,
+        354,
+        1070,
+        393
+      ],
+      "category": "Text",
+      "text": "§ 2 Effective Date. This amendment shall be effective July 1, 1968.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2928,
+          "min": -1.5203
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0081,
+          "min": -0.0081
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0051,
+          "min": -0.0997
+        }
+      },
+      "ink": {
+        "ink_px": 25,
+        "area_px": 36600,
+        "density": 0.00068,
+        "chars": 67,
+        "chars_per_1k_ink": 2680.0
+      }
+    },
+    {
+      "bbox": [
+        556,
+        483,
+        1110,
+        719
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4052,
+          "min": -1.8423
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0233,
+          "min": -0.0233
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1606,
+        "area_px": 118708,
+        "density": 0.01353,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        686,
+        610,
+        988,
+        654
+      ],
+      "category": "Text",
+      "text": "John V. Lindsay\nMayor, City of New York",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.304,
+          "min": -1.2618
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1427,
+          "min": -0.1427
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0095,
+          "min": -0.0983
+        }
+      },
+      "ink": {
+        "ink_px": 130,
+        "area_px": 13288,
+        "density": 0.00978,
+        "chars": 39,
+        "chars_per_1k_ink": 300.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 307,
+    "content": {
+      "n_tokens": 136,
+      "mean": -0.0075,
+      "min": -0.5245,
+      "p05": -0.0106,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 87,
+          "token_id": 3613,
+          "logprob": -0.5245,
+          "text": " members"
+        },
+        {
+          "index": 35,
+          "token_id": 220,
+          "logprob": -0.1274,
+          "text": " "
+        },
+        {
+          "index": 208,
+          "token_id": 17851,
+          "logprob": -0.0997,
+          "text": "§"
+        },
+        {
+          "index": 296,
+          "token_id": 62784,
+          "logprob": -0.0983,
+          "text": " Lindsay"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0634,
+          "text": " \"-"
+        },
+        {
+          "index": 129,
+          "token_id": 12801,
+          "logprob": -0.0456,
+          "text": " committee"
+        },
+        {
+          "index": 75,
+          "token_id": 48847,
+          "logprob": -0.0194,
+          "text": " Officers"
+        },
+        {
+          "index": 126,
+          "token_id": 2670,
+          "logprob": -0.0076,
+          "text": " including"
+        },
+        {
+          "index": 73,
+          "token_id": 71,
+          "logprob": -0.0067,
+          "text": "h"
+        },
+        {
+          "index": 226,
+          "token_id": 21,
+          "logprob": -0.0036,
+          "text": "6"
+        },
+        {
+          "index": 211,
+          "token_id": 46923,
+          "logprob": -0.0033,
+          "text": " Effective"
+        },
+        {
+          "index": 98,
+          "token_id": 29553,
+          "logprob": -0.0032,
+          "text": "-Ch"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 99,
+      "mean": -0.3157,
+      "min": -1.8423,
+      "p05": -1.352,
+      "p50": -0.0082,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 247,
+          "token_id": 15,
+          "logprob": -1.8423,
+          "text": "0"
+        },
+        {
+          "index": 236,
+          "token_id": 21,
+          "logprob": -1.585,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.5265,
+          "text": "5"
+        },
+        {
+          "index": 185,
+          "token_id": 19,
+          "logprob": -1.5203,
+          "text": "4"
+        },
+        {
+          "index": 196,
+          "token_id": 18,
+          "logprob": -1.3818,
+          "text": "3"
+        },
+        {
+          "index": 241,
+          "token_id": 18,
+          "logprob": -1.3487,
+          "text": "3"
+        },
+        {
+          "index": 45,
+          "token_id": 21,
+          "logprob": -1.3389,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 18,
+          "logprob": -1.3241,
+          "text": "3"
+        },
+        {
+          "index": 191,
+          "token_id": 15,
+          "logprob": -1.2989,
+          "text": "0"
+        },
+        {
+          "index": 56,
+          "token_id": 22,
+          "logprob": -1.2964,
+          "text": "7"
+        },
+        {
+          "index": 276,
+          "token_id": 23,
+          "logprob": -1.2618,
+          "text": "8"
+        },
+        {
+          "index": 266,
+          "token_id": 21,
+          "logprob": -1.2493,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 307,
+      "mean": -0.1067,
+      "min": -1.8423,
+      "p05": -1.0441,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 172.68,
+    "std": 10.72,
+    "dark_fraction": 0.00151
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      672.96,
+      433.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      144,
+      224,
+      1059,
+      1645
+    ],
+    "ink_px": 1965,
+    "covered_px": 1781,
+    "covered_fraction": 0.90636,
+    "uncovered_px": 184,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

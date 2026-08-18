@@ -1,0 +1,348 @@
+{
+  "page": 164,
+  "source_image": "page_0164.png",
+  "elements": [
+    {
+      "bbox": [
+        681,
+        323,
+        722,
+        346
+      ],
+      "category": "Page-header",
+      "text": "-3-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3448,
+          "min": -1.4158
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3204,
+          "min": -0.6372
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0051,
+          "min": -0.0132
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 984,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        251,
+        445,
+        1112,
+        512
+      ],
+      "category": "Text",
+      "text": "nature of the financial backing of the company may relate to the\nquestion of its responsibility as a bidder.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2716,
+          "min": -1.327
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0053,
+          "min": -0.0053
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0304,
+          "min": -0.6328
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 58412,
+        "density": 0.0,
+        "chars": 108,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        251,
+        563,
+        1193,
+        873
+      ],
+      "category": "Text",
+      "text": "§3. All agency heads should review Executive Order No. 59 issued January 15, 1968 concerning emergency contracts which order requires that the Mayor, the Department of Investigation and other City agencies be notified immediately of any Declaration of Emergency, together with a record of competitive bids or proposals obtained. This notification must be made prior to the actual awarding of the contract. Each agency head must insure that Executive Order No. 59 is being strictly complied with by his agency.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2792,
+          "min": -1.4479
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2519,
+          "min": -0.2519
+        },
+        "text": {
+          "n_tokens": 101,
+          "mean": -0.0062,
+          "min": -0.4618
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 291400,
+        "density": 0.0,
+        "chars": 509,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        257,
+        924,
+        1175,
+        1506
+      ],
+      "category": "Text",
+      "text": "§4. If any appointment is to be made to a position with a salary equal to or greater than the minimum rate of M-1 or E-1 of the Managerial or Executive Pay Plans, but not limited to members of those plans, certification by the Commissioner of Investigation that the prospective employee has satisfactorily completed the Department of Investigation's personal history questionnaire must be secured prior to submission of any request for a certificate to fill a vacancy pursuant to Executive Order No. 5, January 19, 1966, or a request for a budget modification. This certification procedure shall also be followed for an individual already employed by the City whose salary, as a result of a change in job title and regardless of his previous salary, will be equal to or greater than the minimum rate of M-1 or E-1 of the Managerial or Executive Pay Plans, unless (A) the individual has been a permanent competitive Civil Service employee for a period of more than six months and has been previously",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2695,
+          "min": -1.4412
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 204,
+          "mean": -0.0007,
+          "min": -0.0625
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 532196,
+        "density": 0.0,
+        "chars": 998,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 472,
+    "content": {
+      "n_tokens": 329,
+      "mean": -0.0043,
+      "min": -0.6328,
+      "p05": -0.0011,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 84,
+          "token_id": 1699,
+          "logprob": -0.6328,
+          "text": "\\n"
+        },
+        {
+          "index": 128,
+          "token_id": 17851,
+          "logprob": -0.4618,
+          "text": "§"
+        },
+        {
+          "index": 139,
+          "token_id": 13,
+          "logprob": -0.1602,
+          "text": "."
+        },
+        {
+          "index": 280,
+          "token_id": 16107,
+          "logprob": -0.0625,
+          "text": " salary"
+        },
+        {
+          "index": 372,
+          "token_id": 21,
+          "logprob": -0.043,
+          "text": "6"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0132,
+          "text": " \"-"
+        },
+        {
+          "index": 265,
+          "token_id": 17851,
+          "logprob": -0.011,
+          "text": "§"
+        },
+        {
+          "index": 268,
+          "token_id": 1416,
+          "logprob": -0.0054,
+          "text": " If"
+        },
+        {
+          "index": 211,
+          "token_id": 69532,
+          "logprob": -0.003,
+          "text": " insure"
+        },
+        {
+          "index": 299,
+          "token_id": 10567,
+          "logprob": -0.0025,
+          "text": " Manager"
+        },
+        {
+          "index": 72,
+          "token_id": 66712,
+          "logprob": -0.0023,
+          "text": "nature"
+        },
+        {
+          "index": 92,
+          "token_id": 1189,
+          "logprob": -0.0021,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.2835,
+      "min": -1.4479,
+      "p05": -1.4033,
+      "p50": -0.0006,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 105,
+          "token_id": 18,
+          "logprob": -1.4479,
+          "text": "3"
+        },
+        {
+          "index": 247,
+          "token_id": 20,
+          "logprob": -1.4412,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.4158,
+          "text": "3"
+        },
+        {
+          "index": 17,
+          "token_id": 17,
+          "logprob": -1.4047,
+          "text": "2"
+        },
+        {
+          "index": 111,
+          "token_id": 18,
+          "logprob": -1.4033,
+          "text": "3"
+        },
+        {
+          "index": 236,
+          "token_id": 22,
+          "logprob": -1.399,
+          "text": "7"
+        },
+        {
+          "index": 55,
+          "token_id": 17,
+          "logprob": -1.327,
+          "text": "2"
+        },
+        {
+          "index": 253,
+          "token_id": 21,
+          "logprob": -1.2892,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.2868,
+          "text": "1"
+        },
+        {
+          "index": 60,
+          "token_id": 17,
+          "logprob": -1.2318,
+          "text": "2"
+        },
+        {
+          "index": 116,
+          "token_id": 18,
+          "logprob": -1.2278,
+          "text": "3"
+        },
+        {
+          "index": 49,
+          "token_id": 20,
+          "logprob": -1.2088,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 472,
+      "mean": -0.0529,
+      "min": -1.4479,
+      "p05": -0.1789,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.37,
+    "std": 11.38,
+    "dark_fraction": 0.00022
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      672.72,
+      512.4
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      170,
+      224,
+      1253,
+      1644
+    ],
+    "ink_px": 336,
+    "covered_px": 0,
+    "covered_fraction": 0.0,
+    "uncovered_px": 336,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "page": 106,
+  "source_image": "page_0106.png",
+  "elements": [
+    {
+      "bbox": [
+        757,
+        296,
+        883,
+        330
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4131,
+          "min": -1.7873
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0018,
+          "min": -0.0034
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0369,
+          "min": -0.1272
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        357,
+        416,
+        1697,
+        635
+      ],
+      "category": "List-item",
+      "text": "4. The steps that your agency will take to reduce the use of fuels and electricity in case severe shortages develop. These steps are to be listed in increasing order of stringency, including phased curtailment of operations and hours of work.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3635,
+          "min": -1.647
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 48,
+          "mean": -0.0035,
+          "min": -0.1634
+        }
+      },
+      "ink": {
+        "ink_px": 104,
+        "area_px": 297687,
+        "density": 0.00035,
+        "chars": 242,
+        "chars_per_1k_ink": 2326.92
+      }
+    },
+    {
+      "bbox": [
+        357,
+        668,
+        1668,
+        849
+      ],
+      "category": "List-item",
+      "text": "5. The name of the member of your agency whom you delegate to deal with the energy problem and to coordinate all of your agency efforts in procuring adequate fuel supplies and in consuming energy.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2746,
+          "min": -1.3586
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 38,
+          "mean": -0.0001,
+          "min": -0.0009
+        }
+      },
+      "ink": {
+        "ink_px": 153,
+        "area_px": 239876,
+        "density": 0.00064,
+        "chars": 196,
+        "chars_per_1k_ink": 1281.05
+      }
+    },
+    {
+      "bbox": [
+        178,
+        920,
+        1723,
+        1296
+      ],
+      "category": "Text",
+      "text": "I have also directed the Chairman of the Mayor's Inter-departmental Committee on Public Utilities, together with the Environmental Protection Administrator, the Director of the Mayor's Emergency Control Board, and the Commissioner of the Department of Purchase, to review all agency plans and to submit to me recommendations for a comprehensive plan for conservation of energy by all City agencies and steps to be taken in case of severe shortages of fuel in the City during the coming winter.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3103,
+          "min": -1.5962
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0135,
+          "min": -0.0135
+        },
+        "text": {
+          "n_tokens": 88,
+          "mean": -0.0004,
+          "min": -0.0333
+        }
+      },
+      "ink": {
+        "ink_px": 193,
+        "area_px": 553770,
+        "density": 0.00035,
+        "chars": 493,
+        "chars_per_1k_ink": 2554.4
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 322,
+    "content": {
+      "n_tokens": 178,
+      "mean": -0.002,
+      "min": -0.1634,
+      "p05": -0.0006,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 112,
+          "token_id": 2847,
+          "logprob": -0.1634,
+          "text": " cur"
+        },
+        {
+          "index": 35,
+          "token_id": 220,
+          "logprob": -0.1272,
+          "text": " "
+        },
+        {
+          "index": 243,
+          "token_id": 6810,
+          "logprob": -0.0333,
+          "text": "-de"
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0188,
+          "text": " \"-"
+        },
+        {
+          "index": 93,
+          "token_id": 15386,
+          "logprob": -0.0043,
+          "text": " severe"
+        },
+        {
+          "index": 244,
+          "token_id": 35991,
+          "logprob": -0.0025,
+          "text": "partment"
+        },
+        {
+          "index": 37,
+          "token_id": 481,
+          "logprob": -0.0012,
+          "text": " -"
+        },
+        {
+          "index": 170,
+          "token_id": 13380,
+          "logprob": -0.0009,
+          "text": " delegate"
+        },
+        {
+          "index": 104,
+          "token_id": 7703,
+          "logprob": -0.0007,
+          "text": " increasing"
+        },
+        {
+          "index": 186,
+          "token_id": 13674,
+          "logprob": -0.0006,
+          "text": " proc"
+        },
+        {
+          "index": 237,
+          "token_id": 26294,
+          "logprob": -0.0004,
+          "text": " Chairman"
+        },
+        {
+          "index": 273,
+          "token_id": 5887,
+          "logprob": -0.0004,
+          "text": " Department"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 83,
+      "mean": -0.3106,
+      "min": -1.7873,
+      "p05": -1.6111,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.7873,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.7544,
+          "text": "7"
+        },
+        {
+          "index": 17,
+          "token_id": 18,
+          "logprob": -1.735,
+          "text": "3"
+        },
+        {
+          "index": 61,
+          "token_id": 20,
+          "logprob": -1.647,
+          "text": "5"
+        },
+        {
+          "index": 50,
+          "token_id": 21,
+          "logprob": -1.6128,
+          "text": "6"
+        },
+        {
+          "index": 214,
+          "token_id": 18,
+          "logprob": -1.5962,
+          "text": "3"
+        },
+        {
+          "index": 45,
+          "token_id": 22,
+          "logprob": -1.5283,
+          "text": "7"
+        },
+        {
+          "index": 220,
+          "token_id": 21,
+          "logprob": -1.3847,
+          "text": "6"
+        },
+        {
+          "index": 56,
+          "token_id": 22,
+          "logprob": -1.3797,
+          "text": "7"
+        },
+        {
+          "index": 134,
+          "token_id": 23,
+          "logprob": -1.3586,
+          "text": "8"
+        },
+        {
+          "index": 203,
+          "token_id": 23,
+          "logprob": -1.2871,
+          "text": "8"
+        },
+        {
+          "index": 22,
+          "token_id": 15,
+          "logprob": -1.2371,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 322,
+      "mean": -0.0813,
+      "min": -1.7873,
+      "p05": -0.6255,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 188.48,
+    "std": 8.88,
+    "dark_fraction": 0.00012
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      799.92,
+      1041.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      266,
+      347,
+      1955,
+      2546
+    ],
+    "ink_px": 456,
+    "covered_px": 450,
+    "covered_fraction": 0.98684,
+    "uncovered_px": 6,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

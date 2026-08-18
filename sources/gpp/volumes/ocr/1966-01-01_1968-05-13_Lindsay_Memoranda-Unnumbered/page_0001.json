@@ -1,0 +1,314 @@
+{
+  "page": 1,
+  "source_image": "page_0001.png",
+  "elements": [
+    {
+      "bbox": [
+        1929,
+        1449,
+        2213,
+        1497
+      ],
+      "category": "Text",
+      "text": "May 13, 1968",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3605,
+          "min": -1.9302
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0002,
+          "min": -0.0007
+        }
+      },
+      "ink": {
+        "ink_px": 679,
+        "area_px": 13632,
+        "density": 0.04981,
+        "chars": 12,
+        "chars_per_1k_ink": 17.67
+      }
+    },
+    {
+      "bbox": [
+        688,
+        1760,
+        1653,
+        1857
+      ],
+      "category": "Text",
+      "text": "LISTING OF UN-NUMBERED EXECUTIVE MEMORANDA\nISSUED BY MAYOR'S OFFICE FROM JAN. 1, 1966",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3481,
+          "min": -1.7247
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.4218,
+          "min": -0.4218
+        },
+        "text": {
+          "n_tokens": 35,
+          "mean": -0.0042,
+          "min": -0.0868
+        }
+      },
+      "ink": {
+        "ink_px": 8715,
+        "area_px": 93314,
+        "density": 0.09339,
+        "chars": 85,
+        "chars_per_1k_ink": 9.75
+      }
+    },
+    {
+      "bbox": [
+        1886,
+        2827,
+        2240,
+        2965
+      ],
+      "category": "Text",
+      "text": "COMPILED BY:\nPHILIP SHUMSKY.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3422,
+          "min": -1.9451
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0166,
+          "min": -0.0166
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0008,
+          "min": -0.0047
+        }
+      },
+      "ink": {
+        "ink_px": 531,
+        "area_px": 48852,
+        "density": 0.01087,
+        "chars": 28,
+        "chars_per_1k_ink": 52.73
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 174,
+    "content": {
+      "n_tokens": 59,
+      "mean": -0.0027,
+      "min": -0.0868,
+      "p05": -0.0035,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 101,
+          "token_id": 30849,
+          "logprob": -0.0868,
+          "text": "ISS"
+        },
+        {
+          "index": 89,
+          "token_id": 11250,
+          "logprob": -0.0519,
+          "text": "-N"
+        },
+        {
+          "index": 164,
+          "token_id": 10842,
+          "logprob": -0.0047,
+          "text": "PH"
+        },
+        {
+          "index": 85,
+          "token_id": 22852,
+          "logprob": -0.0034,
+          "text": "LIST"
+        },
+        {
+          "index": 158,
+          "token_id": 8696,
+          "logprob": -0.0025,
+          "text": "COM"
+        },
+        {
+          "index": 119,
+          "token_id": 21,
+          "logprob": -0.0011,
+          "text": "6"
+        },
+        {
+          "index": 167,
+          "token_id": 6434,
+          "logprob": -0.0011,
+          "text": " SH"
+        },
+        {
+          "index": 100,
+          "token_id": 1699,
+          "logprob": -0.0008,
+          "text": "\\n"
+        },
+        {
+          "index": 169,
+          "token_id": 15699,
+          "logprob": -0.0007,
+          "text": "SK"
+        },
+        {
+          "index": 42,
+          "token_id": 11,
+          "logprob": -0.0007,
+          "text": ","
+        },
+        {
+          "index": 159,
+          "token_id": 1893,
+          "logprob": -0.0007,
+          "text": "PI"
+        },
+        {
+          "index": 46,
+          "token_id": 21,
+          "logprob": -0.0007,
+          "text": "6"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 68,
+      "mean": -0.3413,
+      "min": -1.9451,
+      "p05": -1.7043,
+      "p50": -0.0006,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 128,
+          "token_id": 21,
+          "logprob": -1.9451,
+          "text": "6"
+        },
+        {
+          "index": 20,
+          "token_id": 18,
+          "logprob": -1.9302,
+          "text": "3"
+        },
+        {
+          "index": 146,
+          "token_id": 20,
+          "logprob": -1.7583,
+          "text": "5"
+        },
+        {
+          "index": 67,
+          "token_id": 18,
+          "logprob": -1.7247,
+          "text": "3"
+        },
+        {
+          "index": 73,
+          "token_id": 22,
+          "logprob": -1.6663,
+          "text": "7"
+        },
+        {
+          "index": 134,
+          "token_id": 22,
+          "logprob": -1.6528,
+          "text": "7"
+        },
+        {
+          "index": 26,
+          "token_id": 22,
+          "logprob": -1.5756,
+          "text": "7"
+        },
+        {
+          "index": 8,
+          "token_id": 24,
+          "logprob": -1.4933,
+          "text": "9"
+        },
+        {
+          "index": 55,
+          "token_id": 23,
+          "logprob": -1.4735,
+          "text": "8"
+        },
+        {
+          "index": 14,
+          "token_id": 24,
+          "logprob": -1.4662,
+          "text": "9"
+        },
+        {
+          "index": 61,
+          "token_id": 15,
+          "logprob": -1.2627,
+          "text": "0"
+        },
+        {
+          "index": 140,
+          "token_id": 15,
+          "logprob": -1.0412,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 174,
+      "mean": -0.1346,
+      "min": -1.9451,
+      "p05": -1.4688,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 176.85,
+    "std": 6.75,
+    "dark_fraction": 0.0017
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      913.44,
+      1481.76
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      304,
+      493,
+      2233,
+      3622
+    ],
+    "ink_px": 10245,
+    "covered_px": 9925,
+    "covered_fraction": 0.96877,
+    "uncovered_px": 320,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

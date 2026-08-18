@@ -1,0 +1,405 @@
+{
+  "page": 49,
+  "source_image": "page_0049.png",
+  "elements": [
+    {
+      "bbox": [
+        870,
+        249,
+        961,
+        287
+      ],
+      "category": "Page-header",
+      "text": "-19-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4492,
+          "min": -1.9286
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0006,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0016,
+          "min": -0.0054
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        734,
+        423,
+        1711,
+        740
+      ],
+      "category": "List-item",
+      "text": "(3) All modifications of appropriations, for which proportionate supplementary revenue such as state and federal aid is anticipated shall reflect the changes in such supplementary revenue in addition to the changes made in the tax levy.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4034,
+          "min": -1.8163
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0004,
+          "min": -0.0007
+        },
+        "text": {
+          "n_tokens": 41,
+          "mean": -0.0007,
+          "min": -0.0126
+        }
+      },
+      "ink": {
+        "ink_px": 14548,
+        "area_px": 312594,
+        "density": 0.04654,
+        "chars": 236,
+        "chars_per_1k_ink": 16.22
+      }
+    },
+    {
+      "bbox": [
+        738,
+        781,
+        1737,
+        994
+      ],
+      "category": "List-item",
+      "text": "(4) Personal Service expenditures, etc., made pursuant to this Executive Order are to be reported periodically as required by the Director of the Budget on forms provided by his office.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3381,
+          "min": -1.4393
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 35,
+          "mean": -0.0001,
+          "min": -0.0006
+        }
+      },
+      "ink": {
+        "ink_px": 12564,
+        "area_px": 215070,
+        "density": 0.05842,
+        "chars": 185,
+        "chars_per_1k_ink": 14.72
+      }
+    },
+    {
+      "bbox": [
+        257,
+        1045,
+        1777,
+        1280
+      ],
+      "category": "Text",
+      "text": "§8. In any case where the provisions of this executive order are not complied with, the Comptroller shall not authorize the payments of any compensation to any person appointed on or after July 1 of this year unless the Mayor or his duly authorized representative has specifically authorized such exception.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2805,
+          "min": -1.6254
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1332,
+          "min": -0.1332
+        },
+        "text": {
+          "n_tokens": 57,
+          "mean": -0.0116,
+          "min": -0.5766
+        }
+      },
+      "ink": {
+        "ink_px": 26629,
+        "area_px": 361188,
+        "density": 0.07373,
+        "chars": 307,
+        "chars_per_1k_ink": 11.53
+      }
+    },
+    {
+      "bbox": [
+        261,
+        1361,
+        1575,
+        1447
+      ],
+      "category": "Text",
+      "text": "§9. This executive order shall take effect on July 1, 1972.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2651,
+          "min": -1.4297
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0013,
+          "min": -0.0013
+        },
+        "text": {
+          "n_tokens": 20,
+          "mean": -0.0046,
+          "min": -0.09
+        }
+      },
+      "ink": {
+        "ink_px": 4632,
+        "area_px": 114927,
+        "density": 0.0403,
+        "chars": 59,
+        "chars_per_1k_ink": 12.74
+      }
+    },
+    {
+      "bbox": [
+        1017,
+        1592,
+        1786,
+        1963
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3955,
+          "min": -1.8363
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.006,
+          "min": -0.006
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 7726,
+        "area_px": 288702,
+        "density": 0.02676,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 371,
+    "content": {
+      "n_tokens": 157,
+      "mean": -0.0051,
+      "min": -0.5766,
+      "p05": -0.0021,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 221,
+          "token_id": 17851,
+          "logprob": -0.5766,
+          "text": "§"
+        },
+        {
+          "index": 325,
+          "token_id": 5768,
+          "logprob": -0.09,
+          "text": " July"
+        },
+        {
+          "index": 264,
+          "token_id": 7241,
+          "logprob": -0.0803,
+          "text": " unless"
+        },
+        {
+          "index": 86,
+          "token_id": 12957,
+          "logprob": -0.0126,
+          "text": " revenue"
+        },
+        {
+          "index": 80,
+          "token_id": 11,
+          "logprob": -0.0059,
+          "text": ","
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0054,
+          "text": " \"-"
+        },
+        {
+          "index": 73,
+          "token_id": 11993,
+          "logprob": -0.0044,
+          "text": " \"("
+        },
+        {
+          "index": 83,
+          "token_id": 21117,
+          "logprob": -0.0029,
+          "text": " proportion"
+        },
+        {
+          "index": 87,
+          "token_id": 1741,
+          "logprob": -0.0019,
+          "text": " such"
+        },
+        {
+          "index": 222,
+          "token_id": 23,
+          "logprob": -0.0016,
+          "text": "8"
+        },
+        {
+          "index": 255,
+          "token_id": 389,
+          "logprob": -0.0008,
+          "text": " on"
+        },
+        {
+          "index": 85,
+          "token_id": 79406,
+          "logprob": -0.0007,
+          "text": " supplementary"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 129,
+      "mean": -0.3293,
+      "min": -1.9286,
+      "p05": -1.6915,
+      "p50": -0.0007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -1.9286,
+          "text": "1"
+        },
+        {
+          "index": 343,
+          "token_id": 22,
+          "logprob": -1.8363,
+          "text": "7"
+        },
+        {
+          "index": 50,
+          "token_id": 18,
+          "logprob": -1.8163,
+          "text": "3"
+        },
+        {
+          "index": 56,
+          "token_id": 16,
+          "logprob": -1.7961,
+          "text": "1"
+        },
+        {
+          "index": 355,
+          "token_id": 21,
+          "logprob": -1.7114,
+          "text": "6"
+        },
+        {
+          "index": 361,
+          "token_id": 18,
+          "logprob": -1.7099,
+          "text": "3"
+        },
+        {
+          "index": 45,
+          "token_id": 19,
+          "logprob": -1.7081,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.6666,
+          "text": "9"
+        },
+        {
+          "index": 197,
+          "token_id": 20,
+          "logprob": -1.6254,
+          "text": "5"
+        },
+        {
+          "index": 349,
+          "token_id": 17,
+          "logprob": -1.6221,
+          "text": "2"
+        },
+        {
+          "index": 22,
+          "token_id": 22,
+          "logprob": -1.6169,
+          "text": "7"
+        },
+        {
+          "index": 132,
+          "token_id": 22,
+          "logprob": -1.4393,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 371,
+      "mean": -0.1179,
+      "min": -1.9286,
+      "p05": -1.3148,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.22,
+    "std": 16.01,
+    "dark_fraction": 0.01499
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      790.56,
+      1253.04
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      263,
+      417,
+      1932,
+      3063
+    ],
+    "ink_px": 66191,
+    "covered_px": 66099,
+    "covered_fraction": 0.99861,
+    "uncovered_px": 92,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

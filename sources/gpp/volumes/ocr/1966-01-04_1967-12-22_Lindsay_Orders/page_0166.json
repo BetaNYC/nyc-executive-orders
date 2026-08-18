@@ -1,0 +1,314 @@
+{
+  "page": 166,
+  "source_image": "page_0166.png",
+  "elements": [
+    {
+      "bbox": [
+        1195,
+        1127,
+        1336,
+        1167
+      ],
+      "category": "Page-header",
+      "text": "- 4 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3782,
+          "min": -1.9351
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.006,
+          "min": -0.0115
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0413,
+          "min": -0.1429
+        }
+      },
+      "ink": {
+        "ink_px": 37,
+        "area_px": 5822,
+        "density": 0.00636,
+        "chars": 5,
+        "chars_per_1k_ink": 135.14
+      }
+    },
+    {
+      "bbox": [
+        419,
+        1306,
+        2173,
+        2514
+      ],
+      "category": "Text",
+      "text": "(2) with a certified employee organization, council or group of certified employee organizations designated by the board of certification as representing more than 50% of all employees subject to the Career and Salary Plan, and only with such employee organization or organizations, on city-wide matters which must be uniform for all such employees, such as overtime, and time and leave rules. The terms agreed upon in such bargaining shall be applicable to and binding upon all such employees. The effective date of such terms as to any bargaining unit shall be the subject of collective bargaining, except that the terms agreed upon in such negotiations shall not become effective prior to July 1, 1967. The foregoing shall not: (A) prevent the City from meeting with any other employee organization representing such employees for the purpose of hearing the views and requests of its members on such matters, provided that the organization, council or group designated as representing more than fifty per cent of such employees is informed in advance of the meeting, and any changes in the terms of such city-wide matters is effected only through negotiations with it, or (b) be construed to deny to the City or a certified employee organization the right to bargain for a variation or a particular application of any city-wide policy or any term of an agreement executed pursuant to this Section 5 (a) (2) governing any city-wide matter, where considerations special and unique to a particular department, class of employees, or collective bargaining unit are involved.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3931,
+          "min": -2.0146
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0298,
+          "min": -0.0298
+        },
+        "text": {
+          "n_tokens": 296,
+          "mean": -0.0001,
+          "min": -0.0072
+        }
+      },
+      "ink": {
+        "ink_px": 60162,
+        "area_px": 2115208,
+        "density": 0.02844,
+        "chars": 1573,
+        "chars_per_1k_ink": 26.15
+      }
+    },
+    {
+      "bbox": [
+        429,
+        2535,
+        2210,
+        3305
+      ],
+      "category": "Text",
+      "text": "(3) with an employee organization, council or group of employee organizations designated by the board of certification as representing more than fifty per cent of all employees within a department on matters which must be uniform for all employees in the department, but only if such organization, or in the case of a group or council, each organization in such group or council, has been previously certified as a city-wide bargaining representative for an appropriate bargaining unit. The foregoing shall not prevent the City from meeting with any other employee organization representing such employees for the purpose of hearing the views and requests of its members on such matters, provided that the organization, council or group designated as representing fifty per cent of such employees is informed in advance of the meeting, and any changes in the terms of such department-wide matters is effected only through negotiations with it.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3467,
+          "min": -1.8466
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 163,
+          "mean": -0.0002,
+          "min": -0.0112
+        }
+      },
+      "ink": {
+        "ink_px": 30163,
+        "area_px": 1319276,
+        "density": 0.02286,
+        "chars": 943,
+        "chars_per_1k_ink": 31.26
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 575,
+    "content": {
+      "n_tokens": 463,
+      "mean": -0.0005,
+      "min": -0.1429,
+      "p05": -0.0004,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 39,
+          "token_id": 220,
+          "logprob": -0.1429,
+          "text": " "
+        },
+        {
+          "index": 38,
+          "token_id": 6523,
+          "logprob": -0.0216,
+          "text": " \"-"
+        },
+        {
+          "index": 472,
+          "token_id": 1817,
+          "logprob": -0.0112,
+          "text": " each"
+        },
+        {
+          "index": 78,
+          "token_id": 11993,
+          "logprob": -0.0072,
+          "text": " \"("
+        },
+        {
+          "index": 421,
+          "token_id": 315,
+          "logprob": -0.0052,
+          "text": " of"
+        },
+        {
+          "index": 429,
+          "token_id": 27606,
+          "logprob": -0.0038,
+          "text": " certification"
+        },
+        {
+          "index": 88,
+          "token_id": 476,
+          "logprob": -0.0025,
+          "text": " or"
+        },
+        {
+          "index": 569,
+          "token_id": 23449,
+          "logprob": -0.0019,
+          "text": " negotiations"
+        },
+        {
+          "index": 124,
+          "token_id": 7321,
+          "logprob": -0.0018,
+          "text": " organization"
+        },
+        {
+          "index": 495,
+          "token_id": 13,
+          "logprob": -0.0017,
+          "text": "."
+        },
+        {
+          "index": 304,
+          "token_id": 311,
+          "logprob": -0.0015,
+          "text": " to"
+        },
+        {
+          "index": 443,
+          "token_id": 389,
+          "logprob": -0.0014,
+          "text": " on"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 68,
+      "mean": -0.3514,
+      "min": -2.0146,
+      "p05": -1.81,
+      "p50": -0.0029,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 61,
+          "token_id": 18,
+          "logprob": -2.0146,
+          "text": "3"
+        },
+        {
+          "index": 8,
+          "token_id": 20,
+          "logprob": -1.9351,
+          "text": "5"
+        },
+        {
+          "index": 387,
+          "token_id": 20,
+          "logprob": -1.8466,
+          "text": "5"
+        },
+        {
+          "index": 55,
+          "token_id": 21,
+          "logprob": -1.8146,
+          "text": "6"
+        },
+        {
+          "index": 67,
+          "token_id": 19,
+          "logprob": -1.8016,
+          "text": "4"
+        },
+        {
+          "index": 14,
+          "token_id": 22,
+          "logprob": -1.7918,
+          "text": "7"
+        },
+        {
+          "index": 20,
+          "token_id": 21,
+          "logprob": -1.7882,
+          "text": "6"
+        },
+        {
+          "index": 399,
+          "token_id": 20,
+          "logprob": -1.7314,
+          "text": "5"
+        },
+        {
+          "index": 49,
+          "token_id": 24,
+          "logprob": -1.5128,
+          "text": "9"
+        },
+        {
+          "index": 26,
+          "token_id": 22,
+          "logprob": -1.4376,
+          "text": "7"
+        },
+        {
+          "index": 393,
+          "token_id": 15,
+          "logprob": -1.4121,
+          "text": "0"
+        },
+        {
+          "index": 381,
+          "token_id": 24,
+          "logprob": -1.1252,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 575,
+      "mean": -0.042,
+      "min": -2.0146,
+      "p05": -0.0276,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.48,
+    "std": 20.49,
+    "dark_fraction": 0.01653
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      915.36,
+      1339.68
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      305,
+      446,
+      2237,
+      3275
+    ],
+    "ink_px": 90371,
+    "covered_px": 90362,
+    "covered_fraction": 0.9999,
+    "uncovered_px": 9,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

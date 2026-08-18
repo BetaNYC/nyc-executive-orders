@@ -1,0 +1,303 @@
+{
+  "page": 55,
+  "source_image": "page_0055.png",
+  "elements": [
+    {
+      "bbox": [
+        372,
+        351,
+        1447,
+        414
+      ],
+      "category": "Text",
+      "text": "§5. This order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4331,
+          "min": -1.801
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0714,
+          "min": -0.0714
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0025,
+          "min": -0.0225
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        1177,
+        417,
+        1977,
+        776
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4015,
+          "min": -1.7847
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0089,
+          "min": -0.0089
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1178,
+        "area_px": 274120,
+        "density": 0.0043,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1384,
+        611,
+        1731,
+        691
+      ],
+      "category": "Text",
+      "text": "JOHN V. LINDSAY\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3331,
+          "min": -1.6055
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.4746,
+          "min": -0.4746
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.001,
+          "min": -0.0036
+        }
+      },
+      "ink": {
+        "ink_px": 172,
+        "area_px": 28188,
+        "density": 0.0061,
+        "chars": 21,
+        "chars_per_1k_ink": 122.09
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 125,
+    "content": {
+      "n_tokens": 20,
+      "mean": -0.0017,
+      "min": -0.0225,
+      "p05": -0.0046,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0225,
+          "text": "§"
+        },
+        {
+          "index": 121,
+          "token_id": 85574,
+          "logprob": -0.0036,
+          "text": "Mayor"
+        },
+        {
+          "index": 115,
+          "token_id": 13,
+          "logprob": -0.0021,
+          "text": "."
+        },
+        {
+          "index": 112,
+          "token_id": 26145,
+          "logprob": -0.0017,
+          "text": "JO"
+        },
+        {
+          "index": 120,
+          "token_id": 1699,
+          "logprob": -0.0008,
+          "text": "\\n"
+        },
+        {
+          "index": 118,
+          "token_id": 50,
+          "logprob": -0.0007,
+          "text": "S"
+        },
+        {
+          "index": 38,
+          "token_id": 1096,
+          "logprob": -0.0007,
+          "text": " This"
+        },
+        {
+          "index": 116,
+          "token_id": 444,
+          "logprob": -0.0006,
+          "text": " L"
+        },
+        {
+          "index": 44,
+          "token_id": 1189,
+          "logprob": -0.0004,
+          "text": ".\""
+        },
+        {
+          "index": 36,
+          "token_id": 20,
+          "logprob": -0.0003,
+          "text": "5"
+        },
+        {
+          "index": 41,
+          "token_id": 1896,
+          "logprob": -0.0002,
+          "text": " take"
+        },
+        {
+          "index": 43,
+          "token_id": 7069,
+          "logprob": -0.0002,
+          "text": " immediately"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 62,
+      "mean": -0.3786,
+      "min": -1.801,
+      "p05": -1.7088,
+      "p50": -0.009,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 17,
+          "logprob": -1.801,
+          "text": "2"
+        },
+        {
+          "index": 53,
+          "token_id": 22,
+          "logprob": -1.7847,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.7481,
+          "text": "4"
+        },
+        {
+          "index": 64,
+          "token_id": 22,
+          "logprob": -1.7124,
+          "text": "7"
+        },
+        {
+          "index": 69,
+          "token_id": 21,
+          "logprob": -1.6396,
+          "text": "6"
+        },
+        {
+          "index": 84,
+          "token_id": 19,
+          "logprob": -1.6055,
+          "text": "4"
+        },
+        {
+          "index": 89,
+          "token_id": 16,
+          "logprob": -1.6023,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.551,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.5462,
+          "text": "7"
+        },
+        {
+          "index": 95,
+          "token_id": 16,
+          "logprob": -1.4216,
+          "text": "1"
+        },
+        {
+          "index": 58,
+          "token_id": 22,
+          "logprob": -1.3921,
+          "text": "7"
+        },
+        {
+          "index": 100,
+          "token_id": 16,
+          "logprob": -1.1488,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 125,
+      "mean": -0.1894,
+      "min": -1.801,
+      "p05": -1.5921,
+      "p50": -0.0001,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 184.63,
+    "std": 7.4,
+    "dark_fraction": 0.00026
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      797.04,
+      1257.36
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      265,
+      419,
+      1948,
+      3073
+    ],
+    "ink_px": 1178,
+    "covered_px": 1178,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

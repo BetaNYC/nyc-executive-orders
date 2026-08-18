@@ -1,0 +1,371 @@
+{
+  "page": 68,
+  "source_image": "page_0068.png",
+  "elements": [
+    {
+      "bbox": [
+        1041,
+        167,
+        1128,
+        210
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4234,
+          "min": -1.6557
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0032,
+          "min": -0.0059
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0008,
+          "min": -0.0013
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        161,
+        441,
+        2070,
+        790
+      ],
+      "category": "Text",
+      "text": "In the event the above-named person or firms submit bids for any contract to be awarded by a City agency, the name of such bidder should be referred to the Board of Responsibility for determination of such bidder's responsibility in accordance with Sect. 5(c) of the Resolution of the Board of Estimate adopted on June 30, 1949 (Cal. No. 3180A), as amended.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4174,
+          "min": -1.5996
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 87,
+          "mean": -0.0003,
+          "min": -0.0068
+        }
+      },
+      "ink": {
+        "ink_px": 14558,
+        "area_px": 617058,
+        "density": 0.02359,
+        "chars": 357,
+        "chars_per_1k_ink": 24.52
+      }
+    },
+    {
+      "bbox": [
+        174,
+        786,
+        2080,
+        1037
+      ],
+      "category": "Text",
+      "text": "Requests for such a meeting of the Board of Responsibility should be addressed to Deputy Comptroller Joseph J. Perrini, and copies thereof forwarded to the Corporation Counsel and the Commissioner of Investigation.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3585,
+          "min": -1.7886
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 38,
+          "mean": -0.0002,
+          "min": -0.0016
+        }
+      },
+      "ink": {
+        "ink_px": 5984,
+        "area_px": 447304,
+        "density": 0.01338,
+        "chars": 214,
+        "chars_per_1k_ink": 35.76
+      }
+    },
+    {
+      "bbox": [
+        1196,
+        1094,
+        2035,
+        1254
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.4146,
+          "min": -1.9357
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0068,
+          "min": -0.0068
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1140,
+        "area_px": 135562,
+        "density": 0.00841,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1114,
+        1241,
+        2035,
+        1358
+      ],
+      "category": "Caption",
+      "text": "Edward A. Morrison\nDeputy Mayor-City Administrator",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.306,
+          "min": -1.7384
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0486,
+          "min": -0.0486
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0022,
+          "min": -0.0179
+        }
+      },
+      "ink": {
+        "ink_px": 1415,
+        "area_px": 109032,
+        "density": 0.01298,
+        "chars": 50,
+        "chars_per_1k_ink": 35.34
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 320,
+    "content": {
+      "n_tokens": 139,
+      "mean": -0.0005,
+      "min": -0.0179,
+      "p05": -0.0022,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 306,
+          "token_id": 84501,
+          "logprob": -0.0179,
+          "text": "Edward"
+        },
+        {
+          "index": 94,
+          "token_id": 4311,
+          "logprob": -0.0068,
+          "text": " City"
+        },
+        {
+          "index": 86,
+          "token_id": 369,
+          "logprob": -0.0052,
+          "text": " for"
+        },
+        {
+          "index": 310,
+          "token_id": 1699,
+          "logprob": -0.004,
+          "text": "\\n"
+        },
+        {
+          "index": 147,
+          "token_id": 8851,
+          "logprob": -0.0039,
+          "text": "Cal"
+        },
+        {
+          "index": 124,
+          "token_id": 1337,
+          "logprob": -0.0033,
+          "text": "(c"
+        },
+        {
+          "index": 120,
+          "token_id": 94766,
+          "logprob": -0.0026,
+          "text": " Sect"
+        },
+        {
+          "index": 83,
+          "token_id": 18809,
+          "logprob": -0.0022,
+          "text": " firms"
+        },
+        {
+          "index": 233,
+          "token_id": 46897,
+          "logprob": -0.0016,
+          "text": " Investigation"
+        },
+        {
+          "index": 85,
+          "token_id": 43499,
+          "logprob": -0.0016,
+          "text": " bids"
+        },
+        {
+          "index": 207,
+          "token_id": 1265,
+          "logprob": -0.0015,
+          "text": " should"
+        },
+        {
+          "index": 313,
+          "token_id": 22093,
+          "logprob": -0.0014,
+          "text": " Mayor"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 109,
+      "mean": -0.3622,
+      "min": -1.9357,
+      "p05": -1.7053,
+      "p50": -0.0009,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 261,
+          "token_id": 19,
+          "logprob": -1.9357,
+          "text": "4"
+        },
+        {
+          "index": 243,
+          "token_id": 21,
+          "logprob": -1.9317,
+          "text": "6"
+        },
+        {
+          "index": 255,
+          "token_id": 20,
+          "logprob": -1.8909,
+          "text": "5"
+        },
+        {
+          "index": 249,
+          "token_id": 19,
+          "logprob": -1.8808,
+          "text": "4"
+        },
+        {
+          "index": 168,
+          "token_id": 19,
+          "logprob": -1.7886,
+          "text": "4"
+        },
+        {
+          "index": 276,
+          "token_id": 19,
+          "logprob": -1.7384,
+          "text": "4"
+        },
+        {
+          "index": 8,
+          "token_id": 16,
+          "logprob": -1.6557,
+          "text": "1"
+        },
+        {
+          "index": 13,
+          "token_id": 22,
+          "logprob": -1.6239,
+          "text": "7"
+        },
+        {
+          "index": 185,
+          "token_id": 22,
+          "logprob": -1.6129,
+          "text": "7"
+        },
+        {
+          "index": 62,
+          "token_id": 15,
+          "logprob": -1.5996,
+          "text": "0"
+        },
+        {
+          "index": 57,
+          "token_id": 15,
+          "logprob": -1.5873,
+          "text": "0"
+        },
+        {
+          "index": 282,
+          "token_id": 16,
+          "logprob": -1.5497,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 320,
+      "mean": -0.1236,
+      "min": -1.9357,
+      "p05": -1.3648,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 185.13,
+    "std": 12.2,
+    "dark_fraction": 0.00438
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      948.72,
+      1243.44
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      316,
+      414,
+      2319,
+      3039
+    ],
+    "ink_px": 23052,
+    "covered_px": 23052,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

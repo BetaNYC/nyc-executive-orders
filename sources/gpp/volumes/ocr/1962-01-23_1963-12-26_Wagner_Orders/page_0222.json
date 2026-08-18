@@ -1,0 +1,348 @@
+{
+  "page": 222,
+  "source_image": "page_0222.png",
+  "elements": [
+    {
+      "bbox": [
+        621,
+        318,
+        1177,
+        357
+      ],
+      "category": "Section-header",
+      "text": "THE NEW YORK PUBLIC LIBRARY",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4099,
+          "min": -1.5692
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.4451,
+          "min": -0.8903
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0046,
+          "min": -0.0277
+        }
+      },
+      "ink": {
+        "ink_px": 301,
+        "area_px": 10564,
+        "density": 0.02849,
+        "chars": 27,
+        "chars_per_1k_ink": 89.7
+      }
+    },
+    {
+      "bbox": [
+        798,
+        439,
+        1014,
+        471
+      ],
+      "category": "Section-header",
+      "text": "RESOLUTION",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3028,
+          "min": -1.5521
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0034,
+          "min": -0.0068
+        },
+        "text": {
+          "n_tokens": 2,
+          "mean": -0.2239,
+          "min": -0.4478
+        }
+      },
+      "ink": {
+        "ink_px": 45,
+        "area_px": 7128,
+        "density": 0.00631,
+        "chars": 10,
+        "chars_per_1k_ink": 222.22
+      }
+    },
+    {
+      "bbox": [
+        351,
+        714,
+        1437,
+        1027
+      ],
+      "category": "Text",
+      "text": "BE IT RESOLVED, That pursuant to the provisions of Section 70-a of the Retirement and Social Security Law, as amended by L. 1963, c. 54, The Board of Trustees of The New York Public Library does hereby elect as a participating employer with respect to the New York State Employees' Retirement System to make contributions to the pension accumulation fund pursuant to such Section 70-a, as so amended, for the purpose of providing death benefits and pensions-providing-for-increased-take-home-pay; and be it further",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2885,
+          "min": -1.3816
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 116,
+          "mean": -0.0007,
+          "min": -0.0699
+        }
+      },
+      "ink": {
+        "ink_px": 9905,
+        "area_px": 339918,
+        "density": 0.02914,
+        "chars": 514,
+        "chars_per_1k_ink": 51.89
+      }
+    },
+    {
+      "bbox": [
+        353,
+        1070,
+        1425,
+        1458
+      ],
+      "category": "Text",
+      "text": "RESOLVED, That the reductions, pursuant to such Section 70-a, as so amended, in the contributions of members of such Retirement System in the employ of The New York Public Library, shall be made beginning with the payroll period commencing on April 1, 1963; it being the intent of this resolution that the reductions in the contributions of such members hereby provided, pursuant to L. 1963, c. 54, shall succeed without interruption, the reductions provided for such members, pursuant to L. 1962, c. 104, by the resolution of this Board of Trustees approved by resolution of the Board of Estimate on May 24, 1962 (Cal. No. 364-j).",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2404,
+          "min": -1.3227
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 163,
+          "mean": -0.0001,
+          "min": -0.0017
+        }
+      },
+      "ink": {
+        "ink_px": 11021,
+        "area_px": 414864,
+        "density": 0.02657,
+        "chars": 631,
+        "chars_per_1k_ink": 57.25
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 435,
+    "content": {
+      "n_tokens": 287,
+      "mean": -0.002,
+      "min": -0.4478,
+      "p05": -0.0006,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 78,
+          "token_id": 7012,
+          "logprob": -0.4478,
+          "text": "RES"
+        },
+        {
+          "index": 133,
+          "token_id": 315,
+          "logprob": -0.0699,
+          "text": " of"
+        },
+        {
+          "index": 36,
+          "token_id": 17229,
+          "logprob": -0.0277,
+          "text": "THE"
+        },
+        {
+          "index": 196,
+          "token_id": 1741,
+          "logprob": -0.0019,
+          "text": " such"
+        },
+        {
+          "index": 317,
+          "token_id": 1063,
+          "logprob": -0.0017,
+          "text": " comm"
+        },
+        {
+          "index": 221,
+          "token_id": 837,
+          "logprob": -0.0015,
+          "text": "cre"
+        },
+        {
+          "index": 223,
+          "token_id": 2385,
+          "logprob": -0.0012,
+          "text": "-t"
+        },
+        {
+          "index": 220,
+          "token_id": 3419,
+          "logprob": -0.0011,
+          "text": "-in"
+        },
+        {
+          "index": 119,
+          "token_id": 1930,
+          "logprob": -0.0011,
+          "text": "OL"
+        },
+        {
+          "index": 318,
+          "token_id": 11373,
+          "logprob": -0.0009,
+          "text": "encing"
+        },
+        {
+          "index": 216,
+          "token_id": 9838,
+          "logprob": -0.0008,
+          "text": "-pro"
+        },
+        {
+          "index": 217,
+          "token_id": 1301,
+          "logprob": -0.0008,
+          "text": "vid"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 85,
+      "mean": -0.2971,
+      "min": -1.5692,
+      "p05": -1.3628,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.5692,
+          "text": "8"
+        },
+        {
+          "index": 60,
+          "token_id": 19,
+          "logprob": -1.5521,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.4064,
+          "text": "7"
+        },
+        {
+          "index": 92,
+          "token_id": 19,
+          "logprob": -1.3816,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.3716,
+          "text": "7"
+        },
+        {
+          "index": 98,
+          "token_id": 22,
+          "logprob": -1.3275,
+          "text": "7"
+        },
+        {
+          "index": 251,
+          "token_id": 20,
+          "logprob": -1.3227,
+          "text": "5"
+        },
+        {
+          "index": 104,
+          "token_id": 22,
+          "logprob": -1.2884,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.2803,
+          "text": "1"
+        },
+        {
+          "index": 49,
+          "token_id": 23,
+          "logprob": -1.199,
+          "text": "8"
+        },
+        {
+          "index": 65,
+          "token_id": 16,
+          "logprob": -1.1966,
+          "text": "1"
+        },
+        {
+          "index": 239,
+          "token_id": 18,
+          "logprob": -1.1346,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 435,
+      "mean": -0.0607,
+      "min": -1.5692,
+      "p05": -0.4566,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 175.08,
+    "std": 13.5,
+    "dark_fraction": 0.00688
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      684.72,
+      1013.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      228,
+      337,
+      1673,
+      2477
+    ],
+    "ink_px": 21275,
+    "covered_px": 21272,
+    "covered_fraction": 0.99986,
+    "uncovered_px": 3,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

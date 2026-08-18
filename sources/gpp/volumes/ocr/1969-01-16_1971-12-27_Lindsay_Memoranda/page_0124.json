@@ -1,0 +1,348 @@
+{
+  "page": 124,
+  "source_image": "page_0124.png",
+  "elements": [
+    {
+      "bbox": [
+        880,
+        460,
+        2167,
+        801
+      ],
+      "category": "Text",
+      "text": "(3) An employee appointed by the President, by and with the consent of the Senate, who determines policies to be pursued by the U.S. in its relations with foreign powers or in the nationwide administration of Federal laws. (Title 5 U.S.C. Section 7324).",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.5087,
+          "min": -2.126
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5763,
+          "min": -0.5763
+        },
+        "text": {
+          "n_tokens": 60,
+          "mean": -0.0281,
+          "min": -0.8537
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 440069,
+        "density": 0.0,
+        "chars": 253,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        626,
+        819,
+        2357,
+        2280
+      ],
+      "category": "Text",
+      "text": "With the exceptions noted, the Federal law prohibits participation in partisan political management as well as partisan political activities. (Title 5, U.S.C. Sections 1502, 7323, 7324). Partisan political activity has been construed by the U.S. Civil Service Commission as \"that which is identified with a state or national political party.\" The U.S. Civil Service Commission in a series of questions and answers on the subject of the Hatch Act has stated that as the general rule, employees who are covered by the Act must refrain from active participation in partisan political campaigns and are prohibited from holding any official position in a national or state political party. No restriction, however, was placed on participation in non-partisan elections, the right to register, to vote, or to express opinions on political questions and political candidates. (U.S. Civil Service Commission pamphlet G.C. 36 - 1970).",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5501,
+          "min": -2.1236
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 195,
+          "mean": -0.0002,
+          "min": -0.0087
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 2325195,
+        "density": 0.0,
+        "chars": 925,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        615,
+        2260,
+        2177,
+        2420
+      ],
+      "category": "Text",
+      "text": "In defining its opinion, the U.S. Civil Service Commission stated:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4042,
+          "min": -1.9682
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0001,
+          "min": -0.0008
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 250677,
+        "density": 0.0,
+        "chars": 66,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        729,
+        2436,
+        2100,
+        2842
+      ],
+      "category": "Text",
+      "text": "\"With regard to political questions and public issues, employees are entitled to express their views as citizens. The law, however, restricts them from engaging in political activity in connection with a question that is specifically identified with a national or State political party. Questions involving the government of their own",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3826,
+          "min": -1.9535
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 57,
+          "mean": -0.0013,
+          "min": -0.0486
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 478100,
+        "density": 0.0,
+        "chars": 334,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 472,
+    "content": {
+      "n_tokens": 326,
+      "mean": -0.0055,
+      "min": -0.8537,
+      "p05": -0.0027,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 79,
+          "token_id": 320,
+          "logprob": -0.8537,
+          "text": " ("
+        },
+        {
+          "index": 78,
+          "token_id": 13,
+          "logprob": -0.7796,
+          "text": "."
+        },
+        {
+          "index": 412,
+          "token_id": 15898,
+          "logprob": -0.0486,
+          "text": " \"\\\""
+        },
+        {
+          "index": 43,
+          "token_id": 11,
+          "logprob": -0.0182,
+          "text": ","
+        },
+        {
+          "index": 41,
+          "token_id": 279,
+          "logprob": -0.0143,
+          "text": " the"
+        },
+        {
+          "index": 458,
+          "token_id": 3234,
+          "logprob": -0.0099,
+          "text": " State"
+        },
+        {
+          "index": 139,
+          "token_id": 20239,
+          "logprob": -0.0087,
+          "text": " participation"
+        },
+        {
+          "index": 445,
+          "token_id": 304,
+          "logprob": -0.0071,
+          "text": " in"
+        },
+        {
+          "index": 136,
+          "token_id": 12137,
+          "logprob": -0.0054,
+          "text": " Federal"
+        },
+        {
+          "index": 141,
+          "token_id": 48538,
+          "logprob": -0.0051,
+          "text": " partisan"
+        },
+        {
+          "index": 64,
+          "token_id": 304,
+          "logprob": -0.0047,
+          "text": " in"
+        },
+        {
+          "index": 147,
+          "token_id": 48538,
+          "logprob": -0.0043,
+          "text": " partisan"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 85,
+      "mean": -0.4443,
+      "min": -2.126,
+      "p05": -1.9391,
+      "p50": -0.0083,
+      "n_below_threshold": 3,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -2.126,
+          "text": "1"
+        },
+        {
+          "index": 118,
+          "token_id": 15,
+          "logprob": -2.1236,
+          "text": "0"
+        },
+        {
+          "index": 101,
+          "token_id": 21,
+          "logprob": -2.0488,
+          "text": "6"
+        },
+        {
+          "index": 332,
+          "token_id": 20,
+          "logprob": -1.9682,
+          "text": "5"
+        },
+        {
+          "index": 401,
+          "token_id": 17,
+          "logprob": -1.9535,
+          "text": "2"
+        },
+        {
+          "index": 112,
+          "token_id": 22,
+          "logprob": -1.8814,
+          "text": "7"
+        },
+        {
+          "index": 344,
+          "token_id": 22,
+          "logprob": -1.8619,
+          "text": "7"
+        },
+        {
+          "index": 389,
+          "token_id": 21,
+          "logprob": -1.8513,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.8394,
+          "text": "7"
+        },
+        {
+          "index": 350,
+          "token_id": 15,
+          "logprob": -1.7719,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 15,
+          "logprob": -1.6583,
+          "text": "0"
+        },
+        {
+          "index": 395,
+          "token_id": 15,
+          "logprob": -1.6402,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 472,
+      "mean": -0.0839,
+      "min": -2.126,
+      "p05": -0.5661,
+      "p50": -0.0,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 181.98,
+    "std": 6.85,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      903.6,
+      1142.4
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      301,
+      380,
+      2208,
+      2793
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

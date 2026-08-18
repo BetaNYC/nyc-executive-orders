@@ -1,0 +1,377 @@
+{
+  "page": 7,
+  "source_image": "page_0007.png",
+  "elements": [
+    {
+      "bbox": [
+        371,
+        617,
+        1799,
+        750
+      ],
+      "category": "Text",
+      "text": "procedure, provided it shall meet at least once a month, considering July and August a single month.\"",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4434,
+          "min": -1.8241
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.002,
+          "min": -0.002
+        },
+        "text": {
+          "n_tokens": 20,
+          "mean": -0.005,
+          "min": -0.0476
+        }
+      },
+      "ink": {
+        "ink_px": 1071,
+        "area_px": 192424,
+        "density": 0.00557,
+        "chars": 101,
+        "chars_per_1k_ink": 94.3
+      }
+    },
+    {
+      "bbox": [
+        369,
+        770,
+        1822,
+        1237
+      ],
+      "category": "Text",
+      "text": "\"§7. Executive Director. The Council will have an Executive Director to be appointed by the Mayor. The Executive Director may maintain an office with requisite secretarial and other assistance, the costs of which shall be paid by The City of New York within the amounts appropriated therefore and subject to the approval of the Director of the Budget.\"",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3935,
+          "min": -2.0755
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2016,
+          "min": -0.2016
+        },
+        "text": {
+          "n_tokens": 66,
+          "mean": -0.0016,
+          "min": -0.0369
+        }
+      },
+      "ink": {
+        "ink_px": 7942,
+        "area_px": 680826,
+        "density": 0.01167,
+        "chars": 352,
+        "chars_per_1k_ink": 44.32
+      }
+    },
+    {
+      "bbox": [
+        369,
+        1265,
+        1907,
+        1330
+      ],
+      "category": "Text",
+      "text": "§ 2. Effective Date. This order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2918,
+          "min": -1.7525
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0025,
+          "min": -0.0025
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0011,
+          "min": -0.0116
+        }
+      },
+      "ink": {
+        "ink_px": 1312,
+        "area_px": 102036,
+        "density": 0.01286,
+        "chars": 62,
+        "chars_per_1k_ink": 47.26
+      }
+    },
+    {
+      "bbox": [
+        1068,
+        1467,
+        1847,
+        1752
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.4497,
+          "min": -2.1908
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0026,
+          "min": -0.0026
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2366,
+        "area_px": 223440,
+        "density": 0.01059,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        171,
+        2700,
+        1697,
+        2787
+      ],
+      "category": "Text",
+      "text": "The requirements of General City Law, §36 and New York City Charter, §230 shall be required before approval by the Buildings",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.397,
+          "min": -1.9661
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1699,
+          "min": -0.1699
+        },
+        "text": {
+          "n_tokens": 28,
+          "mean": -0.1642,
+          "min": -2.6081
+        }
+      },
+      "ink": {
+        "ink_px": 4624,
+        "area_px": 125454,
+        "density": 0.03686,
+        "chars": 124,
+        "chars_per_1k_ink": 26.82
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 308,
+    "content": {
+      "n_tokens": 128,
+      "mean": -0.0376,
+      "min": -2.6081,
+      "p05": -0.0352,
+      "p50": -0.0,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 277,
+          "token_id": 785,
+          "logprob": -2.6081,
+          "text": "The"
+        },
+        {
+          "index": 278,
+          "token_id": 8502,
+          "logprob": -1.3366,
+          "text": " requirements"
+        },
+        {
+          "index": 279,
+          "token_id": 315,
+          "logprob": -0.4609,
+          "text": " of"
+        },
+        {
+          "index": 297,
+          "token_id": 4880,
+          "logprob": -0.1131,
+          "text": " shall"
+        },
+        {
+          "index": 47,
+          "token_id": 12831,
+          "logprob": -0.0476,
+          "text": " considering"
+        },
+        {
+          "index": 54,
+          "token_id": 86865,
+          "logprob": -0.047,
+          "text": ".\\\""
+        },
+        {
+          "index": 90,
+          "token_id": 15898,
+          "logprob": -0.0369,
+          "text": " \"\\\""
+        },
+        {
+          "index": 284,
+          "token_id": 16625,
+          "logprob": -0.0321,
+          "text": " §"
+        },
+        {
+          "index": 94,
+          "token_id": 17880,
+          "logprob": -0.0283,
+          "text": " Executive"
+        },
+        {
+          "index": 91,
+          "token_id": 17851,
+          "logprob": -0.0151,
+          "text": "§"
+        },
+        {
+          "index": 280,
+          "token_id": 3251,
+          "logprob": -0.0135,
+          "text": " General"
+        },
+        {
+          "index": 299,
+          "token_id": 2567,
+          "logprob": -0.012,
+          "text": " required"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 108,
+      "mean": -0.3799,
+      "min": -2.1908,
+      "p05": -1.785,
+      "p50": -0.0041,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 227,
+          "token_id": 22,
+          "logprob": -2.1908,
+          "text": "7"
+        },
+        {
+          "index": 73,
+          "token_id": 17,
+          "logprob": -2.0755,
+          "text": "2"
+        },
+        {
+          "index": 253,
+          "token_id": 15,
+          "logprob": -1.9661,
+          "text": "0"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.8241,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 15,
+          "logprob": -1.8232,
+          "text": "0"
+        },
+        {
+          "index": 233,
+          "token_id": 17,
+          "logprob": -1.8025,
+          "text": "2"
+        },
+        {
+          "index": 169,
+          "token_id": 20,
+          "logprob": -1.7525,
+          "text": "5"
+        },
+        {
+          "index": 215,
+          "token_id": 23,
+          "logprob": -1.7497,
+          "text": "8"
+        },
+        {
+          "index": 221,
+          "token_id": 22,
+          "logprob": -1.6914,
+          "text": "7"
+        },
+        {
+          "index": 247,
+          "token_id": 16,
+          "logprob": -1.6856,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.5589,
+          "text": "1"
+        },
+        {
+          "index": 79,
+          "token_id": 22,
+          "logprob": -1.5339,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 308,
+      "mean": -0.1498,
+      "min": -2.6081,
+      "p05": -1.3552,
+      "p50": -0.0,
+      "n_below_threshold": 3
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 183.02,
+    "std": 12.43,
+    "dark_fraction": 0.0039
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      789.84,
+      1265.28
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      263,
+      421,
+      1930,
+      3093
+    ],
+    "ink_px": 17381,
+    "covered_px": 17315,
+    "covered_fraction": 0.9962,
+    "uncovered_px": 66,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

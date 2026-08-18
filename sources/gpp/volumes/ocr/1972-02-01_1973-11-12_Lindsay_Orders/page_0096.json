@@ -1,0 +1,376 @@
+{
+  "page": 96,
+  "source_image": "page_0096.png",
+  "elements": [
+    {
+      "bbox": [
+        861,
+        155,
+        950,
+        189
+      ],
+      "category": "Page-header",
+      "text": "-17-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4819,
+          "min": -2.0297
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0007,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0024,
+          "min": -0.0061
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        664,
+        374,
+        1627,
+        987
+      ],
+      "category": "List-item",
+      "text": "(2) In addition, any agency financed in whole or in part by the City of New York making an application for a State, Federal, Foundation or other grant or aid, receipt of which involves a commitment of City funds (for example, in the form of matching commitments of cash or personal services), shall submit a copy of such application to the Bureau of the Budget for its comments as to the availability of City funds before the application is filed with the grantor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3604,
+          "min": -1.7279
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0009,
+          "min": -0.0018
+        },
+        "text": {
+          "n_tokens": 94,
+          "mean": -0.0007,
+          "min": -0.0487
+        }
+      },
+      "ink": {
+        "ink_px": 25580,
+        "area_px": 552900,
+        "density": 0.04627,
+        "chars": 464,
+        "chars_per_1k_ink": 18.14
+      }
+    },
+    {
+      "bbox": [
+        681,
+        1040,
+        1637,
+        1609
+      ],
+      "category": "List-item",
+      "text": "(3) In addition, any agency having any grant awards or aid shall submit quarterly reports on such grants or aid on Form BBG-1, \"Quarterly Grant and Aid Report\" in accordance with the instructions relating to such form and in accordance with the Budget Director's memorandum to all agency heads, entitled, \"Grant and Aid Reporting\". Such reports shall be submitted to the Bureau of the Budget not later than 30 days after the end of each quarter.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2957,
+          "min": -1.3326
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0002,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 95,
+          "mean": -0.0002,
+          "min": -0.0064
+        }
+      },
+      "ink": {
+        "ink_px": 32192,
+        "area_px": 550836,
+        "density": 0.05844,
+        "chars": 445,
+        "chars_per_1k_ink": 13.82
+      }
+    },
+    {
+      "bbox": [
+        578,
+        1652,
+        1575,
+        1744
+      ],
+      "category": "Section-header",
+      "text": "(u) NEW FACILITIES FUNDS IN THE HEALTH AND HOSPITALS CORPORATION",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2811,
+          "min": -1.5282
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3209,
+          "min": -0.6419
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.019,
+          "min": -0.2826
+        }
+      },
+      "ink": {
+        "ink_px": 4330,
+        "area_px": 93279,
+        "density": 0.04642,
+        "chars": 64,
+        "chars_per_1k_ink": 14.78
+      }
+    },
+    {
+      "bbox": [
+        690,
+        1782,
+        1670,
+        2240
+      ],
+      "category": "Text",
+      "text": "Funds included in the expense budget for the New York City Health and Hospitals Corporation reserved for New Facilities (within Programs IIa and IIb \"Hospital Care Services including Corporate Administration\") can be expended only upon the approval of the Director of the Budget. This approval will include a maximum annualized spending rate authority for appropriate uses.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3444,
+          "min": -1.847
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0078,
+          "min": -0.0078
+        },
+        "text": {
+          "n_tokens": 65,
+          "mean": -0.0014,
+          "min": -0.0434
+        }
+      },
+      "ink": {
+        "ink_px": 19204,
+        "area_px": 455007,
+        "density": 0.04221,
+        "chars": 373,
+        "chars_per_1k_ink": 19.42
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 457,
+    "content": {
+      "n_tokens": 275,
+      "mean": -0.0019,
+      "min": -0.2826,
+      "p05": -0.002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 336,
+          "token_id": 11993,
+          "logprob": -0.2826,
+          "text": " \"("
+        },
+        {
+          "index": 82,
+          "token_id": 304,
+          "logprob": -0.0487,
+          "text": " in"
+        },
+        {
+          "index": 418,
+          "token_id": 7245,
+          "logprob": -0.0434,
+          "text": " \\\""
+        },
+        {
+          "index": 339,
+          "token_id": 16165,
+          "logprob": -0.0303,
+          "text": " NEW"
+        },
+        {
+          "index": 413,
+          "token_id": 7946,
+          "logprob": -0.0241,
+          "text": " II"
+        },
+        {
+          "index": 425,
+          "token_id": 62705,
+          "logprob": -0.0089,
+          "text": "\\\")"
+        },
+        {
+          "index": 73,
+          "token_id": 11993,
+          "logprob": -0.0085,
+          "text": " \"("
+        },
+        {
+          "index": 348,
+          "token_id": 472,
+          "logprob": -0.0071,
+          "text": " H"
+        },
+        {
+          "index": 234,
+          "token_id": 7245,
+          "logprob": -0.0064,
+          "text": " \\\""
+        },
+        {
+          "index": 34,
+          "token_id": 6523,
+          "logprob": -0.0061,
+          "text": " \"-"
+        },
+        {
+          "index": 424,
+          "token_id": 16713,
+          "logprob": -0.0049,
+          "text": " Administration"
+        },
+        {
+          "index": 439,
+          "token_id": 13,
+          "logprob": -0.0032,
+          "text": "."
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 109,
+      "mean": -0.3259,
+      "min": -2.0297,
+      "p05": -1.5829,
+      "p50": -0.0017,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -2.0297,
+          "text": "5"
+        },
+        {
+          "index": 366,
+          "token_id": 17,
+          "logprob": -1.847,
+          "text": "2"
+        },
+        {
+          "index": 17,
+          "token_id": 15,
+          "logprob": -1.7845,
+          "text": "0"
+        },
+        {
+          "index": 56,
+          "token_id": 22,
+          "logprob": -1.7279,
+          "text": "7"
+        },
+        {
+          "index": 372,
+          "token_id": 15,
+          "logprob": -1.6569,
+          "text": "0"
+        },
+        {
+          "index": 50,
+          "token_id": 19,
+          "logprob": -1.5985,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 24,
+          "logprob": -1.5596,
+          "text": "9"
+        },
+        {
+          "index": 312,
+          "token_id": 17,
+          "logprob": -1.5282,
+          "text": "2"
+        },
+        {
+          "index": 318,
+          "token_id": 20,
+          "logprob": -1.5251,
+          "text": "5"
+        },
+        {
+          "index": 324,
+          "token_id": 19,
+          "logprob": -1.5234,
+          "text": "4"
+        },
+        {
+          "index": 61,
+          "token_id": 22,
+          "logprob": -1.4867,
+          "text": "7"
+        },
+        {
+          "index": 186,
+          "token_id": 22,
+          "logprob": -1.3326,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 457,
+      "mean": -0.0789,
+      "min": -2.0297,
+      "p05": -0.6253,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.82,
+    "std": 18.57,
+    "dark_fraction": 0.01873
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      770.16,
+      1263.84
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      256,
+      421,
+      1883,
+      3089
+    ],
+    "ink_px": 81306,
+    "covered_px": 81306,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

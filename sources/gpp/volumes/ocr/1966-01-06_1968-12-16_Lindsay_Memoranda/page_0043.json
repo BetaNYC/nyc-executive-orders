@@ -1,0 +1,430 @@
+{
+  "page": 43,
+  "source_image": "page_0043.png",
+  "elements": [
+    {
+      "bbox": [
+        1269,
+        466,
+        1540,
+        513
+      ],
+      "category": "Text",
+      "text": "June 6, 1966",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4435,
+          "min": -1.9071
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0009,
+          "min": -0.0009
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0005,
+          "min": -0.004
+        }
+      },
+      "ink": {
+        "ink_px": 122,
+        "area_px": 13104,
+        "density": 0.00931,
+        "chars": 12,
+        "chars_per_1k_ink": 98.36
+      }
+    },
+    {
+      "bbox": [
+        931,
+        660,
+        1430,
+        707
+      ],
+      "category": "Title",
+      "text": "MEMORANDUM",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3795,
+          "min": -1.3532
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1656,
+          "min": -0.1656
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.001,
+          "min": -0.0038
+        }
+      },
+      "ink": {
+        "ink_px": 75,
+        "area_px": 24096,
+        "density": 0.00311,
+        "chars": 10,
+        "chars_per_1k_ink": 133.33
+      }
+    },
+    {
+      "bbox": [
+        485,
+        853,
+        1722,
+        911
+      ],
+      "category": "Text",
+      "text": "TO : ALL CITY DEPARTMENTS AND AGENCIES",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3647,
+          "min": -1.6853
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5231,
+          "min": -0.5231
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0053,
+          "min": -0.0298
+        }
+      },
+      "ink": {
+        "ink_px": 500,
+        "area_px": 73337,
+        "density": 0.00682,
+        "chars": 38,
+        "chars_per_1k_ink": 76.0
+      }
+    },
+    {
+      "bbox": [
+        485,
+        986,
+        1710,
+        1085
+      ],
+      "category": "Text",
+      "text": "FROM: TIMOTHY W. COSTELLO\nDEPUTY MAYOR - CITY ADMINISTRATOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2649,
+          "min": -1.5308
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0043,
+          "min": -0.0681
+        }
+      },
+      "ink": {
+        "ink_px": 787,
+        "area_px": 121869,
+        "density": 0.00646,
+        "chars": 59,
+        "chars_per_1k_ink": 74.97
+      }
+    },
+    {
+      "bbox": [
+        485,
+        1318,
+        1983,
+        1894
+      ],
+      "category": "Text",
+      "text": "Victor Gotbaum, Executive Director, District Council 37, American Federation of State, County & Municipal Employees, has registered a complaint with the city that despite a ruling of the Civil Service Commission, employees of the city are being assigned out of title to the job of operating motor vehicles. Motor Vehicle Operators earn their position by passing a competitive examination and where the principal job in an assignment is the driving of a motor vehicle, a qualified motor vehicle operator holding that Civil Service Title should be assigned to it.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.267,
+          "min": -1.6158
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 102,
+          "mean": -0.0002,
+          "min": -0.0161
+        }
+      },
+      "ink": {
+        "ink_px": 6149,
+        "area_px": 866880,
+        "density": 0.00709,
+        "chars": 561,
+        "chars_per_1k_ink": 91.23
+      }
+    },
+    {
+      "bbox": [
+        1636,
+        177,
+        2082,
+        556
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.4093,
+          "min": -1.9199
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.148,
+          "min": -0.148
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2934,
+        "area_px": 83963,
+        "density": 0.03494,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 361,
+    "content": {
+      "n_tokens": 148,
+      "mean": -0.0012,
+      "min": -0.0681,
+      "p05": -0.004,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 178,
+          "token_id": 1150,
+          "logprob": -0.0681,
+          "text": "DE"
+        },
+        {
+          "index": 120,
+          "token_id": 549,
+          "logprob": -0.0298,
+          "text": " :"
+        },
+        {
+          "index": 127,
+          "token_id": 362,
+          "logprob": -0.0252,
+          "text": " A"
+        },
+        {
+          "index": 168,
+          "token_id": 25,
+          "logprob": -0.0164,
+          "text": ":"
+        },
+        {
+          "index": 238,
+          "token_id": 11,
+          "logprob": -0.0161,
+          "text": ","
+        },
+        {
+          "index": 124,
+          "token_id": 33490,
+          "logprob": -0.0073,
+          "text": "PART"
+        },
+        {
+          "index": 177,
+          "token_id": 1699,
+          "logprob": -0.0056,
+          "text": "\\n"
+        },
+        {
+          "index": 36,
+          "token_id": 27160,
+          "logprob": -0.004,
+          "text": "June"
+        },
+        {
+          "index": 80,
+          "token_id": 31970,
+          "logprob": -0.0038,
+          "text": "MEM"
+        },
+        {
+          "index": 227,
+          "token_id": 24528,
+          "logprob": -0.0021,
+          "text": " Got"
+        },
+        {
+          "index": 129,
+          "token_id": 34,
+          "logprob": -0.0013,
+          "text": "C"
+        },
+        {
+          "index": 286,
+          "token_id": 64420,
+          "logprob": -0.0006,
+          "text": " Operators"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 125,
+      "mean": -0.3435,
+      "min": -1.9199,
+      "p05": -1.6691,
+      "p50": -0.0013,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 335,
+          "token_id": 21,
+          "logprob": -1.9199,
+          "text": "6"
+        },
+        {
+          "index": 13,
+          "token_id": 21,
+          "logprob": -1.9071,
+          "text": "6"
+        },
+        {
+          "index": 346,
+          "token_id": 17,
+          "logprob": -1.8835,
+          "text": "2"
+        },
+        {
+          "index": 8,
+          "token_id": 24,
+          "logprob": -1.7617,
+          "text": "9"
+        },
+        {
+          "index": 24,
+          "token_id": 18,
+          "logprob": -1.6868,
+          "text": "3"
+        },
+        {
+          "index": 102,
+          "token_id": 17,
+          "logprob": -1.6853,
+          "text": "2"
+        },
+        {
+          "index": 91,
+          "token_id": 20,
+          "logprob": -1.6748,
+          "text": "5"
+        },
+        {
+          "index": 340,
+          "token_id": 22,
+          "logprob": -1.6462,
+          "text": "7"
+        },
+        {
+          "index": 351,
+          "token_id": 21,
+          "logprob": -1.627,
+          "text": "6"
+        },
+        {
+          "index": 207,
+          "token_id": 18,
+          "logprob": -1.6158,
+          "text": "3"
+        },
+        {
+          "index": 19,
+          "token_id": 15,
+          "logprob": -1.5583,
+          "text": "0"
+        },
+        {
+          "index": 155,
+          "token_id": 20,
+          "logprob": -1.5308,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 361,
+      "mean": -0.1214,
+      "min": -1.9199,
+      "p05": -1.3191,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 182.59,
+    "std": 11.67,
+    "dark_fraction": 0.00273
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      890.88,
+      1106.64
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      297,
+      368,
+      2178,
+      2705
+    ],
+    "ink_px": 11982,
+    "covered_px": 10567,
+    "covered_fraction": 0.88191,
+    "uncovered_px": 1415,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          2097,
+          560,
+          2178,
+          584
+        ],
+        "ink_px": 435
+      },
+      {
+        "bbox": [
+          1905,
+          584,
+          2025,
+          656
+        ],
+        "ink_px": 421
+      }
+    ],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "page": 282,
+  "source_image": "page_0282.png",
+  "elements": [
+    {
+      "bbox": [
+        348,
+        333,
+        675,
+        364
+      ],
+      "category": "Section-header",
+      "text": "§ 3. Effective Date",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3812,
+          "min": -1.6455
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0066,
+          "min": -0.0132
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0214,
+          "min": -0.0711
+        }
+      },
+      "ink": {
+        "ink_px": 1,
+        "area_px": 10432,
+        "density": 0.0001,
+        "chars": 19,
+        "chars_per_1k_ink": 19000.0
+      }
+    },
+    {
+      "bbox": [
+        348,
+        387,
+        1029,
+        416
+      ],
+      "category": "Text",
+      "text": "This Order shall take effect July 1, 1971.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2597,
+          "min": -1.2492
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 1,
+        "area_px": 20310,
+        "density": 5e-05,
+        "chars": 42,
+        "chars_per_1k_ink": 42000.0
+      }
+    },
+    {
+      "bbox": [
+        754,
+        534,
+        1299,
+        818
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.381,
+          "min": -1.6299
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0147,
+          "min": -0.0147
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 554,
+        "area_px": 148816,
+        "density": 0.00372,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        865,
+        709,
+        1108,
+        788
+      ],
+      "category": "Text",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3239,
+          "min": -1.4292
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5235,
+          "min": -0.5235
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0018,
+          "min": -0.0184
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 19360,
+        "density": 0.0,
+        "chars": 21,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 171,
+    "content": {
+      "n_tokens": 33,
+      "mean": -0.0046,
+      "min": -0.0711,
+      "p05": -0.0338,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0711,
+          "text": "§"
+        },
+        {
+          "index": 39,
+          "token_id": 46923,
+          "logprob": -0.0568,
+          "text": " Effective"
+        },
+        {
+          "index": 166,
+          "token_id": 3022,
+          "logprob": -0.0184,
+          "text": "AY"
+        },
+        {
+          "index": 165,
+          "token_id": 44,
+          "logprob": -0.0022,
+          "text": "M"
+        },
+        {
+          "index": 164,
+          "token_id": 1699,
+          "logprob": -0.0007,
+          "text": "\\n"
+        },
+        {
+          "index": 38,
+          "token_id": 13,
+          "logprob": -0.0003,
+          "text": "."
+        },
+        {
+          "index": 162,
+          "token_id": 50,
+          "logprob": -0.0003,
+          "text": "S"
+        },
+        {
+          "index": 79,
+          "token_id": 1896,
+          "logprob": -0.0003,
+          "text": " take"
+        },
+        {
+          "index": 156,
+          "token_id": 26145,
+          "logprob": -0.0002,
+          "text": "JO"
+        },
+        {
+          "index": 159,
+          "token_id": 13,
+          "logprob": -0.0001,
+          "text": "."
+        },
+        {
+          "index": 40,
+          "token_id": 2631,
+          "logprob": -0.0001,
+          "text": " Date"
+        },
+        {
+          "index": 81,
+          "token_id": 5768,
+          "logprob": -0.0001,
+          "text": " July"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 80,
+      "mean": -0.3217,
+      "min": -1.6455,
+      "p05": -1.5215,
+      "p50": -0.0103,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.6455,
+          "text": "3"
+        },
+        {
+          "index": 98,
+          "token_id": 19,
+          "logprob": -1.6299,
+          "text": "4"
+        },
+        {
+          "index": 17,
+          "token_id": 20,
+          "logprob": -1.5769,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.5254,
+          "text": "8"
+        },
+        {
+          "index": 103,
+          "token_id": 19,
+          "logprob": -1.5213,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 19,
+          "logprob": -1.4909,
+          "text": "4"
+        },
+        {
+          "index": 128,
+          "token_id": 20,
+          "logprob": -1.4292,
+          "text": "5"
+        },
+        {
+          "index": 109,
+          "token_id": 24,
+          "logprob": -1.3193,
+          "text": "9"
+        },
+        {
+          "index": 64,
+          "token_id": 21,
+          "logprob": -1.2492,
+          "text": "6"
+        },
+        {
+          "index": 114,
+          "token_id": 23,
+          "logprob": -1.2358,
+          "text": "8"
+        },
+        {
+          "index": 53,
+          "token_id": 22,
+          "logprob": -1.2137,
+          "text": "7"
+        },
+        {
+          "index": 139,
+          "token_id": 23,
+          "logprob": -1.1593,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 171,
+      "mean": -0.1528,
+      "min": -1.6455,
+      "p05": -1.2425,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 178.56,
+    "std": 7.5,
+    "dark_fraction": 0.00036
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      662.16,
+      520.32
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      173,
+      220,
+      1272,
+      1619
+    ],
+    "ink_px": 556,
+    "covered_px": 556,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

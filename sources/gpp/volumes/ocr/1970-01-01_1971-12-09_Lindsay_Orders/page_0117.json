@@ -1,0 +1,256 @@
+{
+  "page": 117,
+  "source_image": "page_0117.png",
+  "elements": [
+    {
+      "bbox": [
+        636,
+        156,
+        837,
+        219
+      ],
+      "category": "Text",
+      "text": "LLOYD PETERSON\nLloyd Peterson\nSecretary",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.348,
+          "min": -1.4677
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0057,
+          "min": -0.0057
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0077,
+          "min": -0.0398
+        }
+      },
+      "ink": {
+        "ink_px": 5,
+        "area_px": 7917,
+        "density": 0.00063,
+        "chars": 39,
+        "chars_per_1k_ink": 7800.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 49,
+    "content": {
+      "n_tokens": 12,
+      "mean": -0.0077,
+      "min": -0.0398,
+      "p05": -0.0291,
+      "p50": -0.0014,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 38,
+          "token_id": 20243,
+          "logprob": -0.0398,
+          "text": "ETER"
+        },
+        {
+          "index": 39,
+          "token_id": 2703,
+          "logprob": -0.0204,
+          "text": "SON"
+        },
+        {
+          "index": 35,
+          "token_id": 35666,
+          "logprob": -0.0172,
+          "text": "LOY"
+        },
+        {
+          "index": 43,
+          "token_id": 39791,
+          "logprob": -0.0096,
+          "text": " Peterson"
+        },
+        {
+          "index": 34,
+          "token_id": 43,
+          "logprob": -0.0017,
+          "text": "L"
+        },
+        {
+          "index": 41,
+          "token_id": 43,
+          "logprob": -0.0016,
+          "text": "L"
+        },
+        {
+          "index": 37,
+          "token_id": 393,
+          "logprob": -0.0012,
+          "text": " P"
+        },
+        {
+          "index": 45,
+          "token_id": 97928,
+          "logprob": -0.0009,
+          "text": "Secretary"
+        },
+        {
+          "index": 42,
+          "token_id": 25796,
+          "logprob": -0.0003,
+          "text": "loyd"
+        },
+        {
+          "index": 44,
+          "token_id": 1699,
+          "logprob": -0.0,
+          "text": "\\n"
+        },
+        {
+          "index": 40,
+          "token_id": 1699,
+          "logprob": -0.0,
+          "text": "\\n"
+        },
+        {
+          "index": 36,
+          "token_id": 35,
+          "logprob": -0.0,
+          "text": "D"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 19,
+      "mean": -0.33,
+      "min": -1.4677,
+      "p05": -1.3446,
+      "p50": -0.0191,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.4677,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.331,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 22,
+          "logprob": -1.2115,
+          "text": "7"
+        },
+        {
+          "index": 22,
+          "token_id": 24,
+          "logprob": -0.9192,
+          "text": "9"
+        },
+        {
+          "index": 5,
+          "token_id": 21,
+          "logprob": -0.4882,
+          "text": "6"
+        },
+        {
+          "index": 21,
+          "token_id": 16,
+          "logprob": -0.4809,
+          "text": "1"
+        },
+        {
+          "index": 20,
+          "token_id": 17,
+          "logprob": -0.2014,
+          "text": "2"
+        },
+        {
+          "index": 16,
+          "token_id": 18,
+          "logprob": -0.114,
+          "text": "3"
+        },
+        {
+          "index": 6,
+          "token_id": 18,
+          "logprob": -0.0299,
+          "text": "3"
+        },
+        {
+          "index": 11,
+          "token_id": 20,
+          "logprob": -0.0191,
+          "text": "5"
+        },
+        {
+          "index": 28,
+          "token_id": 1178,
+          "logprob": -0.0057,
+          "text": "Text"
+        },
+        {
+          "index": 10,
+          "token_id": 16,
+          "logprob": -0.0013,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 49,
+      "mean": -0.1308,
+      "min": -1.4677,
+      "p05": -1.0946,
+      "p50": -0.0002,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.66,
+    "std": 19.54,
+    "dark_fraction": 0.03965
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      549.12,
+      425.52
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      141,
+      183,
+      1040,
+      1342
+    ],
+    "ink_px": 41315,
+    "covered_px": 5,
+    "covered_fraction": 0.00012,
+    "uncovered_px": 41310,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          141,
+          279,
+          1040,
+          375
+        ],
+        "ink_px": 41307
+      }
+    ],
+    "cell_px": 24
+  }
+}

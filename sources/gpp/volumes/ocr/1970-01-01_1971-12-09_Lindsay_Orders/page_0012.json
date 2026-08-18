@@ -1,0 +1,246 @@
+{
+  "page": 12,
+  "source_image": "page_0012.png",
+  "elements": [
+    {
+      "bbox": [
+        429,
+        521,
+        774,
+        585
+      ],
+      "category": "Title",
+      "text": "LINDSAY'S EXECUTIVE ORDERS\n1970-71",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3445,
+          "min": -1.3546
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2303,
+          "min": -0.2303
+        },
+        "text": {
+          "n_tokens": 18,
+          "mean": -0.0336,
+          "min": -0.5761
+        }
+      },
+      "ink": {
+        "ink_px": 189,
+        "area_px": 22144,
+        "density": 0.00854,
+        "chars": 34,
+        "chars_per_1k_ink": 179.89
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 55,
+    "content": {
+      "n_tokens": 18,
+      "mean": -0.0336,
+      "min": -0.5761,
+      "p05": -0.1097,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 16,
+          "logprob": -0.5761,
+          "text": "1"
+        },
+        {
+          "index": 34,
+          "token_id": 43,
+          "logprob": -0.0274,
+          "text": "L"
+        },
+        {
+          "index": 36,
+          "token_id": 50,
+          "logprob": -0.0012,
+          "text": "S"
+        },
+        {
+          "index": 38,
+          "token_id": 13272,
+          "logprob": -0.0004,
+          "text": "'S"
+        },
+        {
+          "index": 44,
+          "token_id": 1699,
+          "logprob": -0.0003,
+          "text": "\\n"
+        },
+        {
+          "index": 42,
+          "token_id": 69269,
+          "logprob": -0.0001,
+          "text": " ORD"
+        },
+        {
+          "index": 35,
+          "token_id": 5245,
+          "logprob": -0.0001,
+          "text": "IND"
+        },
+        {
+          "index": 39,
+          "token_id": 62247,
+          "logprob": -0.0,
+          "text": " EXEC"
+        },
+        {
+          "index": 40,
+          "token_id": 1381,
+          "logprob": -0.0,
+          "text": "UT"
+        },
+        {
+          "index": 37,
+          "token_id": 3022,
+          "logprob": -0.0,
+          "text": "AY"
+        },
+        {
+          "index": 49,
+          "token_id": 12,
+          "logprob": -0.0,
+          "text": "-"
+        },
+        {
+          "index": 50,
+          "token_id": 22,
+          "logprob": -0.0,
+          "text": "7"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 19,
+      "mean": -0.3385,
+      "min": -1.3546,
+      "p05": -1.3046,
+      "p50": -0.0134,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 17,
+          "token_id": 19,
+          "logprob": -1.3546,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 20,
+          "logprob": -1.299,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.2932,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.1084,
+          "text": "9"
+        },
+        {
+          "index": 6,
+          "token_id": 17,
+          "logprob": -0.5358,
+          "text": "2"
+        },
+        {
+          "index": 21,
+          "token_id": 23,
+          "logprob": -0.354,
+          "text": "8"
+        },
+        {
+          "index": 28,
+          "token_id": 3851,
+          "logprob": -0.2303,
+          "text": "Title"
+        },
+        {
+          "index": 11,
+          "token_id": 17,
+          "logprob": -0.2262,
+          "text": "2"
+        },
+        {
+          "index": 16,
+          "token_id": 22,
+          "logprob": -0.0149,
+          "text": "7"
+        },
+        {
+          "index": 5,
+          "token_id": 19,
+          "logprob": -0.0134,
+          "text": "4"
+        },
+        {
+          "index": 10,
+          "token_id": 20,
+          "logprob": -0.0008,
+          "text": "5"
+        },
+        {
+          "index": 15,
+          "token_id": 22,
+          "logprob": -0.0004,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 55,
+      "mean": -0.1313,
+      "min": -1.3546,
+      "p05": -1.1638,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 169.69,
+    "std": 7.02,
+    "dark_fraction": 0.00019
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      534.0,
+      424.32
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      141,
+      178,
+      1037,
+      1305
+    ],
+    "ink_px": 189,
+    "covered_px": 189,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "page": 260,
+  "source_image": "page_0260.png",
+  "elements": [
+    {
+      "bbox": [
+        141,
+        166,
+        401,
+        186
+      ],
+      "category": "Page-header",
+      "text": "EXECUTIVE ORDER 96",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3171,
+          "min": -1.4068
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.004,
+          "min": -0.008
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0029,
+          "min": -0.0145
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        571,
+        119,
+        641,
+        139
+      ],
+      "category": "Page-header",
+      "text": "- 2 -",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3002,
+          "min": -1.0482
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0004,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0629,
+          "min": -0.2395
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        808,
+        168,
+        1007,
+        190
+      ],
+      "category": "Text",
+      "text": "March 10, 1969",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2519,
+          "min": -1.1734
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0002,
+          "min": -0.0008
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        514,
+        240,
+        1089,
+        451
+      ],
+      "category": "Text",
+      "text": "No contract or proposal for work to be performed chargeable to this budget, for the Board of Education, the cost of which is estimated to be in excess of $50,000 but not more than $100,000 shall be advertised until such contract and specifications or proposal shall have been submitted to and approved by the Director of the Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2448,
+          "min": -1.0984
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 75,
+          "mean": -0.0074,
+          "min": -0.5242
+        }
+      },
+      "ink": {
+        "ink_px": 9,
+        "area_px": 121476,
+        "density": 7e-05,
+        "chars": 332,
+        "chars_per_1k_ink": 36888.89
+      }
+    },
+    {
+      "bbox": [
+        466,
+        469,
+        1108,
+        980
+      ],
+      "category": "List-item",
+      "text": "(2) Contracts and specifications or proposals for work estimated to cost in excess of $50,000, except for work to be performed for the Board of Education, shall be submitted to and approved by the Mayor before such contracts and specifications or proposals are advertised. Contracts and specifications or proposals for work to be performed for the Board of Education estimated to cost in excess of $100,000, shall be submitted to and approved by the Mayor before such contracts and specifications or proposals are advertised. When specifications have been approved by the Mayor, addenda thereto may be approved by the Director of the Budget, provided, however, that the estimated cost is not increased or that the change is not material. The specifications for the supplies, materials, and equipment in such contracts shall comply with the requirements of Subsection \"1\" herein.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2755,
+          "min": -1.176
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.002,
+          "min": -0.0041
+        },
+        "text": {
+          "n_tokens": 172,
+          "mean": -0.0018,
+          "min": -0.156
+        }
+      },
+      "ink": {
+        "ink_px": 37,
+        "area_px": 326529,
+        "density": 0.00011,
+        "chars": 878,
+        "chars_per_1k_ink": 23729.73
+      }
+    },
+    {
+      "bbox": [
+        527,
+        993,
+        1124,
+        1139
+      ],
+      "category": "Text",
+      "text": "The Board of Education is authorized to advertise contracts and specifications or proposals the cost of which is estimated to be not more than $50,000 without prior submission and approval by the Director of the Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2472,
+          "min": -1.2925
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0438,
+          "min": -0.0438
+        },
+        "text": {
+          "n_tokens": 43,
+          "mean": -0.0017,
+          "min": -0.0712
+        }
+      },
+      "ink": {
+        "ink_px": 1,
+        "area_px": 86870,
+        "density": 1e-05,
+        "chars": 219,
+        "chars_per_1k_ink": 219000.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 523,
+    "content": {
+      "n_tokens": 311,
+      "mean": -0.0039,
+      "min": -0.5242,
+      "p05": -0.0021,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 168,
+          "token_id": 10660,
+          "logprob": -0.5242,
+          "text": " performed"
+        },
+        {
+          "index": 77,
+          "token_id": 220,
+          "logprob": -0.2395,
+          "text": " "
+        },
+        {
+          "index": 438,
+          "token_id": 16,
+          "logprob": -0.156,
+          "text": "1"
+        },
+        {
+          "index": 491,
+          "token_id": 279,
+          "logprob": -0.0712,
+          "text": " the"
+        },
+        {
+          "index": 270,
+          "token_id": 11993,
+          "logprob": -0.0655,
+          "text": " \"("
+        },
+        {
+          "index": 383,
+          "token_id": 912,
+          "logprob": -0.0428,
+          "text": " add"
+        },
+        {
+          "index": 421,
+          "token_id": 11,
+          "logprob": -0.0207,
+          "text": ","
+        },
+        {
+          "index": 199,
+          "token_id": 714,
+          "logprob": -0.0161,
+          "text": " but"
+        },
+        {
+          "index": 41,
+          "token_id": 21,
+          "logprob": -0.0145,
+          "text": "6"
+        },
+        {
+          "index": 76,
+          "token_id": 6523,
+          "logprob": -0.0115,
+          "text": " \"-"
+        },
+        {
+          "index": 415,
+          "token_id": 13,
+          "logprob": -0.0047,
+          "text": "."
+        },
+        {
+          "index": 40,
+          "token_id": 24,
+          "logprob": -0.0026,
+          "text": "9"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 122,
+      "mean": -0.2523,
+      "min": -1.4068,
+      "p05": -1.1714,
+      "p50": -0.0004,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.4068,
+          "text": "6"
+        },
+        {
+          "index": 454,
+          "token_id": 18,
+          "logprob": -1.2925,
+          "text": "3"
+        },
+        {
+          "index": 460,
+          "token_id": 19,
+          "logprob": -1.2534,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 21,
+          "logprob": -1.2455,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -1.2242,
+          "text": "1"
+        },
+        {
+          "index": 258,
+          "token_id": 15,
+          "logprob": -1.176,
+          "text": "0"
+        },
+        {
+          "index": 98,
+          "token_id": 22,
+          "logprob": -1.1734,
+          "text": "7"
+        },
+        {
+          "index": 242,
+          "token_id": 21,
+          "logprob": -1.1327,
+          "text": "6"
+        },
+        {
+          "index": 253,
+          "token_id": 23,
+          "logprob": -1.1134,
+          "text": "8"
+        },
+        {
+          "index": 148,
+          "token_id": 16,
+          "logprob": -1.0984,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.0899,
+          "text": "1"
+        },
+        {
+          "index": 92,
+          "token_id": 23,
+          "logprob": -1.0674,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 523,
+      "mean": -0.0612,
+      "min": -1.4068,
+      "p05": -0.542,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 169.74,
+    "std": 11.76,
+    "dark_fraction": 8e-05
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      714.24,
+      460.8
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      153,
+      238,
+      1126,
+      1745
+    ],
+    "ink_px": 122,
+    "covered_px": 47,
+    "covered_fraction": 0.38525,
+    "uncovered_px": 75,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

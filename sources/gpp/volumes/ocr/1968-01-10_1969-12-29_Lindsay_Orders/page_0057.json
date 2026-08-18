@@ -1,0 +1,348 @@
+{
+  "page": 57,
+  "source_image": "page_0057.png",
+  "elements": [
+    {
+      "bbox": [
+        139,
+        859,
+        551,
+        891
+      ],
+      "category": "Text",
+      "text": "the first law of thermodynamics",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.5724,
+          "min": -1.8978
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0131,
+          "min": -0.0131
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -1.7877,
+          "min": -3.623
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 12928,
+        "density": 0.0,
+        "chars": 31,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        139,
+        900,
+        1000,
+        1141
+      ],
+      "category": "Text",
+      "text": "states that a quantity of heat in a system is equal to the sum of all the work done by all the processes that occur during the process. In other words, the total work done by all the processes in a system is equal to the total work done by all the processes in a system is equal to the total work done by all the processes that occur during the process.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.5206,
+          "min": -2.1233
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 75,
+          "mean": -0.4736,
+          "min": -2.2395
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 204368,
+        "density": 0.0,
+        "chars": 353,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        139,
+        1152,
+        997,
+        1225
+      ],
+      "category": "Text",
+      "text": "The second law of thermodynamics",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3879,
+          "min": -1.9083
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.002,
+          "min": -0.002
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.4674,
+          "min": -1.4427
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 61685,
+        "density": 0.0,
+        "chars": 32,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        139,
+        1236,
+        1017,
+        1655
+      ],
+      "category": "Text",
+      "text": "states that the total work done by all the processes that occur during the process is equal to the total work done by all the processes in a system is equal to the total work done by all the processes that occur during the process.\n\nThe second law of thermodynamics can be stated in the following way:\n\n> The second law of thermodynamics states that the total work done by all the processes that occur during the process is equal to the total work done by all the processes in a system is equal to the total work done by all the processes that occur during the process.\n\nThis law is also known as the law of conservation of work.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3834,
+          "min": -1.9381
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 132,
+          "mean": -0.2041,
+          "min": -2.0264
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 356380,
+        "density": 0.0,
+        "chars": 629,
+        "chars_per_1k_ink": null
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 364,
+    "content": {
+      "n_tokens": 219,
+      "mean": -0.347,
+      "min": -3.623,
+      "p05": -1.3893,
+      "p50": -0.0444,
+      "n_below_threshold": 4,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 1156,
+          "logprob": -3.623,
+          "text": " first"
+        },
+        {
+          "index": 36,
+          "token_id": 2329,
+          "logprob": -2.7137,
+          "text": " law"
+        },
+        {
+          "index": 93,
+          "token_id": 975,
+          "logprob": -2.2395,
+          "text": " work"
+        },
+        {
+          "index": 358,
+          "token_id": 28611,
+          "logprob": -2.0264,
+          "text": " conservation"
+        },
+        {
+          "index": 34,
+          "token_id": 1782,
+          "logprob": -1.7012,
+          "text": "the"
+        },
+        {
+          "index": 288,
+          "token_id": 279,
+          "logprob": -1.6295,
+          "text": " the"
+        },
+        {
+          "index": 105,
+          "token_id": 758,
+          "logprob": -1.5363,
+          "text": " In"
+        },
+        {
+          "index": 100,
+          "token_id": 12170,
+          "logprob": -1.452,
+          "text": " occur"
+        },
+        {
+          "index": 187,
+          "token_id": 785,
+          "logprob": -1.4427,
+          "text": "The"
+        },
+        {
+          "index": 351,
+          "token_id": 374,
+          "logprob": -1.4165,
+          "text": " is"
+        },
+        {
+          "index": 349,
+          "token_id": 1986,
+          "logprob": -1.4147,
+          "text": "This"
+        },
+        {
+          "index": 37,
+          "token_id": 315,
+          "logprob": -1.3865,
+          "text": " of"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 83,
+      "mean": -0.4402,
+      "min": -2.1233,
+      "p05": -1.8971,
+      "p50": -0.0515,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 58,
+          "token_id": 15,
+          "logprob": -2.1233,
+          "text": "0"
+        },
+        {
+          "index": 218,
+          "token_id": 20,
+          "logprob": -1.9381,
+          "text": "5"
+        },
+        {
+          "index": 212,
+          "token_id": 22,
+          "logprob": -1.9241,
+          "text": "7"
+        },
+        {
+          "index": 175,
+          "token_id": 20,
+          "logprob": -1.9083,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.8978,
+          "text": "9"
+        },
+        {
+          "index": 164,
+          "token_id": 17,
+          "logprob": -1.8905,
+          "text": "2"
+        },
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -1.8292,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.8275,
+          "text": "9"
+        },
+        {
+          "index": 22,
+          "token_id": 16,
+          "logprob": -1.7203,
+          "text": "1"
+        },
+        {
+          "index": 64,
+          "token_id": 16,
+          "logprob": -1.6283,
+          "text": "1"
+        },
+        {
+          "index": 169,
+          "token_id": 22,
+          "logprob": -1.5944,
+          "text": "7"
+        },
+        {
+          "index": 206,
+          "token_id": 21,
+          "logprob": -1.5117,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 364,
+      "mean": -0.3129,
+      "min": -3.623,
+      "p05": -1.5028,
+      "p50": -0.017,
+      "n_below_threshold": 5
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 173.49,
+    "std": 6.89,
+    "dark_fraction": 0.0
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      670.56,
+      428.64
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      142,
+      223,
+      1048,
+      1639
+    ],
+    "ink_px": 0,
+    "covered_px": 0,
+    "covered_fraction": null,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

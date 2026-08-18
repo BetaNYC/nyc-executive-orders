@@ -1,0 +1,404 @@
+{
+  "page": 30,
+  "source_image": "page_0030.png",
+  "elements": [
+    {
+      "bbox": [
+        121,
+        290,
+        590,
+        330
+      ],
+      "category": "Page-header",
+      "text": "Executive Order No. 94",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4233,
+          "min": -1.4978
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0004,
+          "min": -0.0015
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        747,
+        290,
+        812,
+        327
+      ],
+      "category": "Page-header",
+      "text": "-2-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3903,
+          "min": -1.7195
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0133,
+          "min": -0.0265
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0002,
+          "min": -0.0004
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        1171,
+        305,
+        1422,
+        347
+      ],
+      "category": "Text",
+      "text": "May 27, 1964",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3272,
+          "min": -1.7484
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 6,
+        "area_px": 2277,
+        "density": 0.00264,
+        "chars": 12,
+        "chars_per_1k_ink": 2000.0
+      }
+    },
+    {
+      "bbox": [
+        329,
+        393,
+        1220,
+        585
+      ],
+      "category": "Text",
+      "text": "(c) wherever \"board of estimate\" is referred to in such subdivision j, the word \"mayor\" were substituted therefor; and",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3541,
+          "min": -1.656
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 29,
+          "mean": -0.0134,
+          "min": -0.3869
+        }
+      },
+      "ink": {
+        "ink_px": 1305,
+        "area_px": 172542,
+        "density": 0.00756,
+        "chars": 118,
+        "chars_per_1k_ink": 90.42
+      }
+    },
+    {
+      "bbox": [
+        331,
+        603,
+        1222,
+        922
+      ],
+      "category": "Text",
+      "text": "(d) wherever such subdivision refers to adoption of a resolution by the board of estimate, such subdivision instead referred to adoption of an executive order by the mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2927,
+          "min": -1.4832
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0004,
+          "min": -0.0114
+        }
+      },
+      "ink": {
+        "ink_px": 1579,
+        "area_px": 286974,
+        "density": 0.0055,
+        "chars": 172,
+        "chars_per_1k_ink": 108.93
+      }
+    },
+    {
+      "bbox": [
+        121,
+        949,
+        1424,
+        1817
+      ],
+      "category": "Text",
+      "text": "2. Effective during the period of time from and including the payroll period the first day of which is nearest to July 1, 1964 and to and including the payroll period immediately preceding that, the first day of which is nearest to June 30, 1965 (which total period of time is hereinafter referred to as the \"1964-1965 increased take-home-pay period\"), the governing provisions of subdivision 14 of such subdivision j, as hereby made applicable, and the provisions of subdivisions g, h and i of such section B3-36.1 shall be applicable to and for the benefit of all other-than-authority-members of the New York City Employees' Retirement System, except as otherwise provided in Paragraph 4 of this executive order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2811,
+          "min": -1.4634
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 167,
+          "mean": -0.0021,
+          "min": -0.1371
+        }
+      },
+      "ink": {
+        "ink_px": 6198,
+        "area_px": 1039974,
+        "density": 0.00596,
+        "chars": 714,
+        "chars_per_1k_ink": 115.2
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 459,
+    "content": {
+      "n_tokens": 248,
+      "mean": -0.0031,
+      "min": -0.3869,
+      "p05": -0.0017,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 167,
+          "token_id": 2105,
+          "logprob": -0.3869,
+          "text": "\\\""
+        },
+        {
+          "index": 412,
+          "token_id": 425,
+          "logprob": -0.1371,
+          "text": " B"
+        },
+        {
+          "index": 403,
+          "token_id": 91445,
+          "logprob": -0.091,
+          "text": " subdivisions"
+        },
+        {
+          "index": 444,
+          "token_id": 3650,
+          "logprob": -0.0494,
+          "text": " except"
+        },
+        {
+          "index": 433,
+          "token_id": 85840,
+          "logprob": -0.0374,
+          "text": "-members"
+        },
+        {
+          "index": 245,
+          "token_id": 24376,
+          "logprob": -0.0114,
+          "text": " adoption"
+        },
+        {
+          "index": 450,
+          "token_id": 220,
+          "logprob": -0.0087,
+          "text": " "
+        },
+        {
+          "index": 421,
+          "token_id": 8415,
+          "logprob": -0.0072,
+          "text": " applicable"
+        },
+        {
+          "index": 431,
+          "token_id": 42702,
+          "logprob": -0.0041,
+          "text": "-author"
+        },
+        {
+          "index": 323,
+          "token_id": 323,
+          "logprob": -0.0031,
+          "text": " and"
+        },
+        {
+          "index": 329,
+          "token_id": 37746,
+          "logprob": -0.003,
+          "text": " preceding"
+        },
+        {
+          "index": 386,
+          "token_id": 220,
+          "logprob": -0.0028,
+          "text": " "
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 122,
+      "mean": -0.3207,
+      "min": -1.7484,
+      "p05": -1.4971,
+      "p50": -0.0007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 98,
+          "token_id": 17,
+          "logprob": -1.7484,
+          "text": "2"
+        },
+        {
+          "index": 59,
+          "token_id": 17,
+          "logprob": -1.7195,
+          "text": "2"
+        },
+        {
+          "index": 137,
+          "token_id": 18,
+          "logprob": -1.656,
+          "text": "3"
+        },
+        {
+          "index": 49,
+          "token_id": 22,
+          "logprob": -1.655,
+          "text": "7"
+        },
+        {
+          "index": 148,
+          "token_id": 20,
+          "logprob": -1.6385,
+          "text": "5"
+        },
+        {
+          "index": 92,
+          "token_id": 20,
+          "logprob": -1.6108,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.4978,
+          "text": "1"
+        },
+        {
+          "index": 200,
+          "token_id": 18,
+          "logprob": -1.4832,
+          "text": "3"
+        },
+        {
+          "index": 272,
+          "token_id": 19,
+          "logprob": -1.4634,
+          "text": "4"
+        },
+        {
+          "index": 64,
+          "token_id": 22,
+          "logprob": -1.4292,
+          "text": "7"
+        },
+        {
+          "index": 17,
+          "token_id": 15,
+          "logprob": -1.423,
+          "text": "0"
+        },
+        {
+          "index": 261,
+          "token_id": 16,
+          "logprob": -1.406,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 459,
+      "mean": -0.087,
+      "min": -1.7484,
+      "p05": -0.7878,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 177.76,
+    "std": 12.21,
+    "dark_fraction": 0.00282
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      707.76,
+      1021.2
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      235,
+      340,
+      1730,
+      2496
+    ],
+    "ink_px": 9088,
+    "covered_px": 9088,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

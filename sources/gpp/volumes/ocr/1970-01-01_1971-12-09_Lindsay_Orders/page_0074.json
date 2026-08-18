@@ -1,0 +1,376 @@
+{
+  "page": 74,
+  "source_image": "page_0074.png",
+  "elements": [
+    {
+      "bbox": [
+        545,
+        70,
+        586,
+        91
+      ],
+      "category": "Page-header",
+      "text": "-3-",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 16,
+          "mean": -0.3812,
+          "min": -1.5399
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0175,
+          "min": -0.0348
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0059,
+          "min": -0.0147
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        57,
+        115,
+        1025,
+        182
+      ],
+      "category": "Text",
+      "text": "instances, authorization for disposal should be promptly requested of the Board of Estimate upon completion of audit.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.307,
+          "min": -1.4739
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0014,
+          "min": -0.0014
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0141,
+          "min": -0.252
+        }
+      },
+      "ink": {
+        "ink_px": 0,
+        "area_px": 4395,
+        "density": 0.0,
+        "chars": 117,
+        "chars_per_1k_ink": null
+      }
+    },
+    {
+      "bbox": [
+        57,
+        202,
+        1063,
+        659
+      ],
+      "category": "Text",
+      "text": "§3. Application and implementation. The Municipal Archives and Records Center will give technical assistance to any component of City government so that it may promptly, effectively and comprehensively apply the terms set forth in the appended Schedule to specific records maintained. Technical assistance includes recommendations on the establishment of filing systems and procedures compatible with the spontaneous and continuing application of the Schedule, preparation of disposal lists and requests for approval by the Board of Estimate, preparation of initial and annual listings of records scheduled for transfer to the Municipal Archives and Records Center, and the formulation of special instructions for the maintenance and disposition of records.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2705,
+          "min": -1.5297
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0009,
+          "min": -0.0009
+        },
+        "text": {
+          "n_tokens": 117,
+          "mean": -0.0123,
+          "min": -0.7369
+        }
+      },
+      "ink": {
+        "ink_px": 257,
+        "area_px": 408020,
+        "density": 0.00063,
+        "chars": 757,
+        "chars_per_1k_ink": 2945.53
+      }
+    },
+    {
+      "bbox": [
+        62,
+        678,
+        1096,
+        1125
+      ],
+      "category": "Text",
+      "text": "§4. Compliance and enforcement. It is essentially the responsibility of each City administration or agency to assure full and continuing compliance with the terms of the appended Schedule. For this reason, each organizational element of the City government must designate in writing a staff member to serve as its records management officer and file a copy of such designation with the Municipal Services Administrator. One of the major duties of a records management officer is to assure full and complete compliance with the terms of this Schedule. It is, therefore, essential for such a records officer to make frequent and continuing examinations of records maintained by his department if full and complete compliance is to be achieved.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2783,
+          "min": -1.369
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 127,
+          "mean": -0.0006,
+          "min": -0.0725
+        }
+      },
+      "ink": {
+        "ink_px": 322,
+        "area_px": 399150,
+        "density": 0.00081,
+        "chars": 741,
+        "chars_per_1k_ink": 2301.24
+      }
+    },
+    {
+      "bbox": [
+        67,
+        1146,
+        1025,
+        1255
+      ],
+      "category": "Text",
+      "text": "§5. Revision. The massive restructuring of the City government, rapid technological advances in information storage and recall methods, and continuing changes in statutory requirements all indicate rather",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2288,
+          "min": -1.1714
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0001,
+          "min": -0.0007
+        }
+      },
+      "ink": {
+        "ink_px": 109,
+        "area_px": 97569,
+        "density": 0.00112,
+        "chars": 204,
+        "chars_per_1k_ink": 1871.56
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 472,
+    "content": {
+      "n_tokens": 298,
+      "mean": -0.0061,
+      "min": -0.7369,
+      "p05": -0.0005,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 125,
+          "token_id": 7323,
+          "logprob": -0.7369,
+          "text": " Application"
+        },
+        {
+          "index": 122,
+          "token_id": 17851,
+          "logprob": -0.6945,
+          "text": "§"
+        },
+        {
+          "index": 80,
+          "token_id": 8751,
+          "logprob": -0.252,
+          "text": " Board"
+        },
+        {
+          "index": 274,
+          "token_id": 17851,
+          "logprob": -0.0725,
+          "text": "§"
+        },
+        {
+          "index": 32,
+          "token_id": 6523,
+          "logprob": -0.0147,
+          "text": " \"-"
+        },
+        {
+          "index": 78,
+          "token_id": 315,
+          "logprob": -0.0129,
+          "text": " of"
+        },
+        {
+          "index": 175,
+          "token_id": 21269,
+          "logprob": -0.0043,
+          "text": " establishment"
+        },
+        {
+          "index": 69,
+          "token_id": 47825,
+          "logprob": -0.0031,
+          "text": "instances"
+        },
+        {
+          "index": 33,
+          "token_id": 18,
+          "logprob": -0.0023,
+          "text": "3"
+        },
+        {
+          "index": 286,
+          "token_id": 315,
+          "logprob": -0.0013,
+          "text": " of"
+        },
+        {
+          "index": 34,
+          "token_id": 12,
+          "logprob": -0.0008,
+          "text": "-"
+        },
+        {
+          "index": 437,
+          "token_id": 17851,
+          "logprob": -0.0007,
+          "text": "§"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 97,
+      "mean": -0.2721,
+      "min": -1.5399,
+      "p05": -1.3855,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.5399,
+          "text": "5"
+        },
+        {
+          "index": 16,
+          "token_id": 21,
+          "logprob": -1.5343,
+          "text": "6"
+        },
+        {
+          "index": 105,
+          "token_id": 18,
+          "logprob": -1.5297,
+          "text": "3"
+        },
+        {
+          "index": 52,
+          "token_id": 20,
+          "logprob": -1.4739,
+          "text": "5"
+        },
+        {
+          "index": 57,
+          "token_id": 17,
+          "logprob": -1.4515,
+          "text": "2"
+        },
+        {
+          "index": 256,
+          "token_id": 21,
+          "logprob": -1.369,
+          "text": "6"
+        },
+        {
+          "index": 46,
+          "token_id": 20,
+          "logprob": -1.2677,
+          "text": "5"
+        },
+        {
+          "index": 41,
+          "token_id": 22,
+          "logprob": -1.2604,
+          "text": "7"
+        },
+        {
+          "index": 245,
+          "token_id": 17,
+          "logprob": -1.2551,
+          "text": "2"
+        },
+        {
+          "index": 20,
+          "token_id": 16,
+          "logprob": -1.1717,
+          "text": "1"
+        },
+        {
+          "index": 413,
+          "token_id": 21,
+          "logprob": -1.1714,
+          "text": "6"
+        },
+        {
+          "index": 262,
+          "token_id": 20,
+          "logprob": -1.1519,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 472,
+      "mean": -0.0608,
+      "min": -1.5399,
+      "p05": -0.4275,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 164.43,
+    "std": 12.69,
+    "dark_fraction": 0.00068
+  },
+  "rotation": {
+    "applied_cw": 90,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      536.4,
+      420.24
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      140,
+      178,
+      1027,
+      1311
+    ],
+    "ink_px": 688,
+    "covered_px": 688,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

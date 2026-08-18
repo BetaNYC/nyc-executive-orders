@@ -1,0 +1,377 @@
+{
+  "page": 14,
+  "source_image": "page_0014.png",
+  "elements": [
+    {
+      "bbox": [
+        185,
+        493,
+        1731,
+        711
+      ],
+      "category": "Text",
+      "text": "Section 1. Paragraph 3 of subdivision (a) of Section 3 of Executive Order No. 2 (2nd) dated January 21, 1970, is hereby amended to read as follows:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.5361,
+          "min": -2.2069
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0128,
+          "min": -0.0128
+        },
+        "text": {
+          "n_tokens": 47,
+          "mean": -0.0013,
+          "min": -0.0381
+        }
+      },
+      "ink": {
+        "ink_px": 10439,
+        "area_px": 318716,
+        "density": 0.03275,
+        "chars": 147,
+        "chars_per_1k_ink": 14.08
+      }
+    },
+    {
+      "bbox": [
+        185,
+        734,
+        1731,
+        1273
+      ],
+      "category": "Text",
+      "text": "3. No change that involves a change in the scope of a contract (such as the size or character of a structure) shall be authorized until after review and approval by the Director of the Budget. However, in connection with changes in the scope of contracts involving on-the-job training programs of the Manpower and Career Development Agency, the Director of the Budget, in his discretion, may authorize an agency to approve such changes.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3508,
+          "min": -2.0894
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2014,
+          "min": -0.2014
+        },
+        "text": {
+          "n_tokens": 85,
+          "mean": -0.0006,
+          "min": -0.0236
+        }
+      },
+      "ink": {
+        "ink_px": 42871,
+        "area_px": 789480,
+        "density": 0.0543,
+        "chars": 436,
+        "chars_per_1k_ink": 10.17
+      }
+    },
+    {
+      "bbox": [
+        421,
+        1290,
+        1740,
+        1352
+      ],
+      "category": "Text",
+      "text": "2. This executive order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3693,
+          "min": -1.8425
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0031,
+          "min": -0.0031
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.031,
+          "min": -0.3085
+        }
+      },
+      "ink": {
+        "ink_px": 4497,
+        "area_px": 82908,
+        "density": 0.05424,
+        "chars": 54,
+        "chars_per_1k_ink": 12.01
+      }
+    },
+    {
+      "bbox": [
+        1100,
+        1314,
+        1940,
+        1727
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.4618,
+          "min": -2.1414
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0038,
+          "min": -0.0038
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 16446,
+        "area_px": 346094,
+        "density": 0.04752,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1366,
+        1505,
+        1724,
+        1580
+      ],
+      "category": "Caption",
+      "text": "JOHN V. LINDSAY\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3173,
+          "min": -1.7564
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1427,
+          "min": -0.1427
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0312,
+          "min": -0.2259
+        }
+      },
+      "ink": {
+        "ink_px": 3200,
+        "area_px": 27208,
+        "density": 0.11761,
+        "chars": 21,
+        "chars_per_1k_ink": 6.56
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 336,
+    "content": {
+      "n_tokens": 154,
+      "mean": -0.0052,
+      "min": -0.3085,
+      "p05": -0.0033,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 240,
+          "token_id": 17,
+          "logprob": -0.3085,
+          "text": "2"
+        },
+        {
+          "index": 323,
+          "token_id": 647,
+          "logprob": -0.2259,
+          "text": " V"
+        },
+        {
+          "index": 331,
+          "token_id": 3022,
+          "logprob": -0.1434,
+          "text": "AY"
+        },
+        {
+          "index": 51,
+          "token_id": 315,
+          "logprob": -0.0381,
+          "text": " of"
+        },
+        {
+          "index": 157,
+          "token_id": 13,
+          "logprob": -0.0236,
+          "text": "."
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0225,
+          "text": "Section"
+        },
+        {
+          "index": 158,
+          "token_id": 4354,
+          "logprob": -0.0187,
+          "text": " However"
+        },
+        {
+          "index": 131,
+          "token_id": 5116,
+          "logprob": -0.0037,
+          "text": " contract"
+        },
+        {
+          "index": 329,
+          "token_id": 1699,
+          "logprob": -0.003,
+          "text": "\\n"
+        },
+        {
+          "index": 330,
+          "token_id": 44,
+          "logprob": -0.0016,
+          "text": "M"
+        },
+        {
+          "index": 118,
+          "token_id": 18,
+          "logprob": -0.0013,
+          "text": "3"
+        },
+        {
+          "index": 172,
+          "token_id": 69948,
+          "logprob": -0.001,
+          "text": "-job"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 109,
+      "mean": -0.3896,
+      "min": -2.2069,
+      "p05": -1.896,
+      "p50": -0.007,
+      "n_below_threshold": 5,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -2.2069,
+          "text": "1"
+        },
+        {
+          "index": 264,
+          "token_id": 19,
+          "logprob": -2.1414,
+          "text": "4"
+        },
+        {
+          "index": 106,
+          "token_id": 18,
+          "logprob": -2.0894,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -2.0816,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -2.0477,
+          "text": "5"
+        },
+        {
+          "index": 94,
+          "token_id": 19,
+          "logprob": -1.9317,
+          "text": "4"
+        },
+        {
+          "index": 228,
+          "token_id": 17,
+          "logprob": -1.8425,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.8241,
+          "text": "1"
+        },
+        {
+          "index": 222,
+          "token_id": 15,
+          "logprob": -1.7832,
+          "text": "0"
+        },
+        {
+          "index": 297,
+          "token_id": 20,
+          "logprob": -1.7564,
+          "text": "5"
+        },
+        {
+          "index": 270,
+          "token_id": 15,
+          "logprob": -1.7552,
+          "text": "0"
+        },
+        {
+          "index": 291,
+          "token_id": 21,
+          "logprob": -1.7037,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 336,
+      "mean": -0.1291,
+      "min": -2.2069,
+      "p05": -1.3252,
+      "p50": -0.0,
+      "n_below_threshold": 5
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 180.4,
+    "std": 16.55,
+    "dark_fraction": 0.01623
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect-backfill",
+    "pdf_page_size": [
+      793.68,
+      1258.08
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      264,
+      419,
+      1940,
+      3075
+    ],
+    "ink_px": 72253,
+    "covered_px": 71949,
+    "covered_fraction": 0.99579,
+    "uncovered_px": 304,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}
