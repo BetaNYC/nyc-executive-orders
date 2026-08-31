@@ -1,0 +1,57 @@
+{
+  "_comment": "How each agency name is matched against the order text. Any name of 5 characters or fewer must be found with the same capitals by default (an acronym written in capitals is matched in capitals). Anything longer is found whatever the case. This file records the EXCEPTIONS, each with the measurement that justifies it. A short name found more than max_hits_without_a_rule times MUST be listed here — lineage.namelist.names_needing_a_rule() finds the ones that are missing and test_real_corpus.py fails the build on them, so the decision cannot stay unspoken. match: 'same-case' (only with these capitals), 'never' (never on its own; a longer name containing it still matches), 'any-case'.",
+  "_measured": "2026-08-26 against 3202 scannable records (corpus/eo.json + corpus/eo_pre1974.json), 592 registry surfaces.",
+  "_review": "CHECKPOINT 1 - seeded from measurement, awaiting human review. Every note below quotes real corpus text.",
+  "short_name_length": 5,
+  "max_hits_without_a_rule": 200,
+  "rules": {
+    "DOC": {
+      "match": "same-case",
+      "note": "2117 hits, genuine. Department of Correction. Corpus: \"the Department of Correction's (DOC's) staffing levels\". Kept explicitly because it exceeds max_default_hits."
+    },
+    "DHS": {
+      "match": "same-case",
+      "note": "234 hits, genuine. Department of Homeless Services. Corpus: \"people who are currently using the DHS Shelter System\". Kept explicitly because it exceeds max_default_hits."
+    },
+    "LAW": {
+      "match": "never",
+      "note": "4949 case-insensitive hits, 14 case-sensitive, and all 14 are false. Corpus: \"SECTION 210 OF THE CIVIL SERVICE LAW\", \"LOCAL LAW NO. 438 OF 1978\". Match 'Law Department' instead."
+    },
+    "Law": {
+      "match": "never",
+      "note": "2900 hits even case-sensitive, all false. Corpus: \"the New York Executive Law, the New York City Charter\". Case sensitivity does not save this one; the long form must carry it. NOTE: hidden by 'LAW' — names are deduplicated after tidying, so only one spelling survives and it keeps the rule. Both rules say reject, so the outcome is the same; the entry stays as the record of the measurement, and lineage.namelist.unused_rules() reports it."
+    },
+    "UP": {
+      "match": "never",
+      "note": "221 case-insensitive hits, 5 case-sensitive, all false. Corpus: \"EMPLOYER PICK-UP PURSUANT TO SECTION 414(h)\" - the hyphen is not a word character, so the guard does not stop it."
+    },
+    "CORE": {
+      "match": "never",
+      "note": "4 hits, all false. Corpus: \"THE CATHOLIC CHURCH OF JAMAICA IS A CORE PART OF\"."
+    },
+    "OM": {
+      "match": "never",
+      "note": "3 hits, all false. Two are OCR damage to other acronyms: \"(“OM/WBE”)\" for M/WBE and \"(\"OM E\")\" for OME."
+    },
+    "MOE": {
+      "match": "never",
+      "note": "1 hit, OCR garbage in 1977-EO-093: \"{NOT LATER TaN 5 MOE auogér}\"."
+    },
+    "ECF": {
+      "match": "never",
+      "note": "1 hit, a typist's initials in 1967-EO-043b: \"ECF/pt cc: Mr. John J. Lanigan\"."
+    },
+    "LOFT": {
+      "match": "never",
+      "note": "3 hits. Every one sits inside a longer name that the gazetteer should carry - \"INDUSTRIAL LOFT ADVISORY COUNCIL\", \"NEW YORK CITY LOFT BOARD\". The bare token adds nothing and risks the English word."
+    },
+    "311": {
+      "match": "never",
+      "note": "27 hits, genuinely mixed and unresolvable by a bare number: \"EMERGENCY EXECUTIVE ORDER NO. 311\", \"section 311(i) of the New York City Charter\", and real service references \"directed to 311 online (nyc.gov/311)\". A digit string cannot be disambiguated by case. Match 'NYC311' instead."
+    },
+    "DoITT": {
+      "match": "any-case",
+      "note": "5 characters, so the default would demand these exact capitals. The corpus uses two spellings — 'DoITT' in 7 orders and 'DOITT' in 8 — and both tidy down to the same key, so the name list keeps only one of them and the other would never be found. 'doitt' is not an English word, so ignoring capitals costs nothing: it matches 15 orders and no others."
+    }
+  }
+}
