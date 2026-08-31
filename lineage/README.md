@@ -1,11 +1,12 @@
-# `lineage/` — finding agency names in the executive orders
+# `lineage/` — tracing NYC agencies through the executive orders
 
-Finds where NYC agencies are named in the orders, so their history can be traced
-through renames and reorganizations. Two passes only; building the actual family
-tree comes later.
+Finds where NYC agencies are named in the orders, then reads the sentences that
+link one body to another — established, renamed, abolished, transferred — and the
+citations that link one order to another. Four passes.
 
 Standalone: this reads `corpus/*.json` as data, writes only into `lineage/out/`,
-and never imports `nyc_executive_orders`.
+and never imports `nyc_executive_orders`. Where it reuses logic from that package
+the source is named in a comment, so the two stay comparable.
 
 ## Why it exists
 
@@ -24,7 +25,7 @@ a name out of a "there is hereby established" sentence, and the registry is aske
 whether that name is known. Nothing ever reads the orders asking *where a known
 name appears*. Here, the registry does the searching.
 
-## The two passes
+## The four passes
 
 **Pass one — names we already know** (`scan.py`). Every agency name from the
 registry, looked for in every order, as one big pattern with the longest names
@@ -39,6 +40,12 @@ Pass two is **not** a backstop. The registry lists 317 agencies and marks every 
 shut down can only turn up in pass two. That is where DoITT, the Board of Estimate,
 the Bureau of the Budget, and the 1998 Technology Steering Committee come from —
 and the history is made of exactly those.
+
+**Pass three — what the orders DO to agencies** (`reorg.py`). The family tree. See
+"The reorganization sentences" below.
+
+**Pass four — what the orders do to EACH OTHER** (`citations.py`). One order
+revoking, amending or superseding another. See "Order-to-order supersession".
 
 ## The letterhead
 
@@ -93,10 +100,140 @@ Three things depend on that:
 and `letterhead_count` split it. The report counts the body and says how many it set
 aside.
 
+## The reorganization sentences
+
+Pass three reads the sentences that link two bodies. Measured over the 3,202 orders
+that carry text: **361 events**, of which **96** pin down a registry agency on every
+side, plus **496** sentences kept for review.
+
+| what the order does | events |
+|---|---:|
+| `establishes` | 269 |
+| `continues` | 40 |
+| `renames` | 21 |
+| `transfers_to` | 21 |
+| `abolishes` | 8 |
+| `merges_into` | 1 |
+| `succeeds` | 1 |
+
+`supersede.py` is the ancestor of this and it catches very little. Its one pattern
+reads the existential shape, `there is hereby established a <Name>`, which is 133
+sentences in the whole corpus. The far commoner shape puts the name **first** — `The
+Office of the Auditor General ... is hereby established in the Office of the Mayor`
+— and it sees none of them. It also has nowhere to put a rename or an abolition,
+because it writes one scalar field.
+
+**Both sides must be an agency, and that is the whole filter.** The two commonest
+verbs are also the two least trustworthy:
+
+* `designated` — 258 hits. `The Honorable Paul R. Screvane is hereby designated
+  Vice-Chairman` is a person taking a post. But the word cannot simply be dropped:
+  `2022-EO-003` reads *"The Department of Information Technology and
+  Telecommunications shall hereafter be designated as the Office of Technology and
+  Innovation"*, and that is the DoITT-to-OTI hand-off, the most important edge in
+  the corpus.
+* `transferred` — 61 hits, and `salaries or wages transferred to "UNCLAIMED"
+  account` is money.
+
+So the filter is not a word list. **Every side of a sentence must land on a span
+pass one or pass two already found.** A person keeps their post and money keeps
+moving, and neither makes an edge, because neither names a body on both sides.
+
+Four rules earn their place, and each has a test:
+
+* **The nearest span wins, not pass one.** Position is the grammatical signal and
+  the pass is not. *"There is hereby established in the Office of the Mayor an M/WBE
+  Advisory Committee"* names the parent first and the new body second; the new body
+  is the one pass two found. Preferring pass one records the Office of the Mayor as
+  the thing established.
+* **A blank line does not end a sentence.** PDF extraction drops them mid-sentence:
+  `2022-EO-003` reads `...and Telecommunications\n\nshall hereafter be designated
+  as...`. Treating that gap as a full stop cuts the subject off its own verb and
+  loses the DoITT edge outright.
+* **A name already given to an earlier sentence cannot become the subject of the
+  next one.** *"One shall be designated the First Deputy Mayor, one shall be
+  designated the Deputy Mayor for Operations, ..."* is a list of appointments. The
+  nearest name before the second verb is the FIRST post, so without this rule the
+  roster reads as a chain of renames — **84 false edges**, the single largest wrong
+  class measured.
+* **A name inside an "in"/"within" phrase is the wrapper, not the subject.** *"The
+  Mayor's Reception Committee, in the Office of the Mayor, is hereby consolidated"*
+  is about the committee.
+* **One verb can govern a list of bodies.** `2022-EO-003` § 3 reads *"The Office of
+  Cyber Command ..., the Office of Data Analytics ... and the Office of Information
+  Privacy ... shall be continued and established within the Office of Technology and
+  Innovation"*. Three offices move into OTI. Taking only the nearest name records
+  the Office of Information Privacy and drops two thirds of what the order did. See
+  below.
+
+### When one verb governs a list
+
+A name before the verb joins the nearest one while the text **between** them is
+nothing but list glue. Four things make a gap glue, and each one stops a different
+wrong join:
+
+| The gap must | Or else |
+|---|---|
+| be short (≤ 90 characters) | a list item carries a phrase, not a clause |
+| hold no `.` `;` `:` `§` | the list ended |
+| hold a comma, `and`, or `&` | the two names are merely adjacent |
+| hold **no finite verb** | *"...hereby is revoked and the Committee ... is hereby abolished"* is otherwise perfect glue, and the revoked order's body gets abolished along with the real one |
+
+A single bare comma is not enough on its own. Two names joined by one are as likely
+to be an apposition: `1955-EO-022` reads *"The Division of Analysis, Bureau of the
+Budget, together with its functions and staff, is hereby transferred to..."*, where
+the second name is the first one's **parent** and only the Division moves. So a
+chain earns its length one of two ways — a gap uses `and`/`&`, or the chain reaches
+**three** names. `1976-EO-063` needs the second arm: it abolishes four planning
+offices, and its final "and" sits *inside* a pass-two span rather than in a gap.
+
+Asked only of names **before** the verb, which is where the evidence is. After it,
+*"established a Committee ... and the Council"* is likelier the body being advised
+than a second body being created.
+
+Narrow on purpose: **two** sentences in the whole corpus take more than one body on
+a side, and both are lists a person would read the same way.
+
+**Both ends can be the same agency, and that is recorded.** It happens when the
+name list has already merged two names — the old spelling filed under the new
+agency's id — so the edge runs from a node to itself and says nothing changed. Four
+events read that way today. The count is in the payload as
+`same_agency_event_count` rather than hidden, because each one is a place where the
+name list has made a judgement the graph would otherwise make for itself.
+
+`doitt` is deliberately **not** one of them. See below.
+
+## Order-to-order supersession
+
+Pass four is a port of `src/nyc_executive_orders/supersede.py` and
+`identity.py::mint_eo_id`, copied rather than imported so this package still stands
+alone. **Keep the two in step.** Measured: **294 edges** (121 amended, 87 revoked,
+70 repealed, 10 rescinded, 6 superseded), **150 citations that went nowhere**, and
+**1,617 extensions counted and skipped** — an emergency order expires by operation
+of law, which is not supersession.
+
+Two things here are on purpose, and both differ from `supersede.py`:
+
+* **Every order is read.** `supersede.py` runs over `corpus/eo.json` alone, so the
+  978 orders of the bound volumes contribute nothing to `corpus/supersession.json`.
+  This reads them, which is most of the difference between 294 edges and 244.
+* **An id must match exactly.** Only 526 of the 978 pre-1974 orders carry the plain
+  `YYYY-EO-NNN` shape; the rest carry a letter suffix (`1966-EO-019g`) or a
+  different series (`EM`, `AM`) that the minter cannot produce, and 86 id stems are
+  shared by more than one order — `1966-EO-019` alone covers 50. A citation whose
+  minted id is absent, but whose stem does match orders we hold, is recorded as a
+  dangle saying `suffix-variant`, never attached to one of them. (Measured today:
+  none. Pre-1974 citations overwhelmingly carry no year at all, which is the
+  `no-year` reason on 125 of the 150.)
+
+`in_effect` is not computed. That field belongs to the corpus records, and this
+package writes only its own output.
+
 ## The promise
 
-`full_text[start:end] == text`, character for character, for every find in both
-passes. Checked over all 23,504 real finds by `test_real_corpus.py`.
+`full_text[start:end] == text`, character for character, for every find in every
+pass — and for every reorganization sentence and each role inside it. Checked over
+the real corpus by `test_real_corpus.py`.
 
 `text` is what the order literally says, newlines and all — pulling text out of a
 PDF wraps agency names across lines constantly, so `"Cyber\nCommand"` is an
@@ -127,10 +264,24 @@ Results land in `lineage/out/`:
 | File | What it is |
 |---|---|
 | `mentions.json` | The data. Same shape as `corpus/supersession.json` — a `generated_by` line, a count next to every list, and separate lists for what worked and what did not, where each failure says why. |
-| `report.md` | The summary to read, including both safety checks and the review list. |
+| `report.md` | The summary to read, including both safety checks and both review lists. |
 
-What it currently finds: **15,164** known names and **8,340** proposed new ones
-across 3,202 orders, boiling down to **617** names for a person to review.
+What it currently finds: **15,331** known names and **8,262** proposed new ones
+across 3,202 orders; **361** reorganization events with **496** sentences for a
+person to review; and **294** order-to-order edges.
+
+The keys `mentions.json` carries, beyond the name finds:
+
+| key | what it holds |
+|---|---|
+| `agency_events` | The 361 events. Each carries the sentence, its span, and one `roles` entry per side (`from`, `to`, `parent`) with that side's own span and `agency_id`. |
+| `unresolved_events` | The 496 sentences that named nothing we could attach, each saying why. |
+| `order_edges` | The 294 order-to-order edges: `actor`, `target`, `verb`, `source`, `partial`. |
+| `order_dangles` | The 150 citations that resolved to no order we hold, each saying why. |
+
+A `role` whose `agency_id` is `null` came from pass two. That is not a failure — it
+says the body is not on the name list yet, which is what `extra_agencies.json` is
+for.
 
 ## The published copy
 
@@ -151,7 +302,8 @@ only ids are ever compared, and useless anywhere else: handed
 
 So a run carries the registry's own record for every agency it matched — 178 of
 the registry's 317, never all of them, because the corpus does not name the other
-139. Each row holds the name, acronym, former names, level, classification,
+139 — plus every hand-written body from `extra_agencies.json` that the run found,
+which is `doitt` today. 179 rows in all. Each row holds the name, acronym, former names, level, classification,
 parent, website and status. 121 also carry the agency's **own** description of
 itself, captured verbatim by the registry's crawl and cut to 600 characters.
 
@@ -164,7 +316,7 @@ That text is **CC BY-SA 4.0**. The payload states the credit in
 uv run --no-project --with pytest python -m pytest lineage/tests -q
 ```
 
-122 tests, none of which touch the network — `conftest.py` makes any attempt raise.
+208 tests, none of which touch the network — `conftest.py` makes any attempt raise.
 `test_real_corpus.py` pins the numbers against the committed corpus and skips
 cleanly when the corpus or the registry is missing.
 
@@ -207,7 +359,26 @@ belong here ("a guess is a bug").
 
 How it goes: run both passes, read the review list in `out/report.md`, and move the
 real ones across by hand. Running again then shifts them from pass two into pass
-one. It starts empty, and filling it is the slow part.
+one. Filling it is the slow part.
+
+**A renamed body gets its own id, never the new body's.** `doitt` is the worked
+example and the reason the rule is written down. DoITT and the Office of Technology
+and Innovation are one office in law and two in time. Filing the old name under
+`oti` looks tidier and quietly destroys the thing being built: the 2022 rename
+becomes an edge whose two ends are the same node, and there is nothing left to say
+that anything changed. Split, `doitt` runs 1995 to 2022 across 57 orders, `oti`
+runs 2022 onward across 6, and `2022-EO-003` is the single order naming both.
+
+So the entry carries `status: "renamed"` and a `dissolution_date` taken from that
+order. It is also read by `agencies.py`, so the published file carries a full row
+for a body no registry holds — otherwise `doitt` would ship as a bare slug that a
+reader cannot label.
+
+One warning that belongs with the entry: MODA's record NYC_GOID_000382 lists both
+DoITT names under OTI's alternate-or-former fields, and those two values are the
+only ones out of 306 MODA records that `../ny-gov-web-registry` is missing. Fixing
+that upstream would hand OTI the DoITT names as `other_names` and silently undo the
+split. Keep those two names off the `oti` row.
 
 ## The files
 
@@ -217,9 +388,12 @@ one. It starts empty, and filling it is the slow part.
 | `textquality.py` | Decides whether a found name is readable. Ported from `clean.py`'s REVIEW cutoffs. |
 | `records.py` | Loads the orders. Leaves out the 67 `_No text available_` placeholders. |
 | `namelist.py` | Registry + extra agencies + rules → the list of names to search for, and both safety checks. |
+| `agencies.py` | The registry's own row for every agency a run matched, plus the hand-written ones, so the file can be read without the registry. |
 | `letterhead.py` | Tells the mayoral stationery apart from a real reference to the office. |
 | `scan.py` | Pass one. |
 | `discover.py` | Pass two. |
+| `reorg.py` | Pass three. What an order does to an agency. |
+| `citations.py` | Pass four. What an order does to another order. Ported from `supersede.py` + `identity.py`; keep the three in step. |
 | `mentions.py` | What a run records, and how it is written out. |
 | `run_scan.py` | The command. |
 
@@ -251,10 +425,37 @@ running again on unchanged input writes an identical `mentions.json`.
   gains; see "The letterhead" above.
 - **`english_like` rejects any run of 5 consonants**, which costs a few real words
   ("strengths"). Inherited from `clean.py` and left alone to match it.
+- **An event is only as good as the two passes under it.** A body missing from
+  `extra_agencies.json` gives an unresolved sentence, never a silent link. 265 of
+  the 361 events name at least one body that has no `agency_id` yet.
+- **A list needs its items found separately.** `1976-EO-063` records three bodies
+  where the order names four, because pass two returned *"Office of Downtown
+  Brooklyn Development and the Upper Manhattan Planning and Development Office"* as
+  one span. The list rule can only join what the earlier passes split.
+- **`renames` and `succeeds` never take a list.** One body becomes one other; a
+  list on either side is likelier a mis-read than a real multi-way rename.
+- **A sentence stops at a full stop**, so `Dept. of Health` cuts a window short and
+  loses an edge. Short is the safe way to be wrong: a short window never invents an
+  edge, it only misses one.
+- **`renames` is a review-grade list, not a finished one.** 21 events, and a hand
+  check of 5 found 2 wrong (`designated as the administering agency` is a job, not
+  a rename). Every one is meant to be read.
 
 ## Next
 
-The family tree. `mentions.json` gives the agencies; the links between them come
-from reorganization verbs — renamed, abolished, transferred, merged, succeeded —
-pulled out the way `supersede.py` pulls out revocations. That is roughly 200
-sentences across the whole corpus, so every one can be checked by hand.
+The edges exist; the graph does not. What is left:
+
+1. **Work the review lists.** 496 unresolved sentences and 617 proposed names, and
+   the `one-side-only` half of the first list is the part that pays: each row names
+   a body that belongs in `extra_agencies.json`. Every name moved across turns
+   unresolved sentences into edges on the next run.
+2. **Give each agency a lifespan.** `valid_from` and `valid_to` from the dates of
+   the establishing and abolishing orders, so "which office held IT in 2005?"
+   becomes one query.
+3. **Walk the graph.** A lineage is a connected component over the `renames`,
+   `succeeds` and `merges_into` edges, ordered by date. Load the JSON into NetworkX;
+   there is no reason for a graph database at this size.
+4. **State the gaps.** Executive orders are not the whole lineage — Local Law and
+   the Charter create and abolish agencies too, and DoITT itself was created by a
+   Charter change rather than by an order. The EO-only graph WILL have holes. Say
+   so in the output, the way this repository states its other known gaps.

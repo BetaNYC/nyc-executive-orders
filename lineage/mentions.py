@@ -38,6 +38,27 @@ WHY_UNREADABLE = "unreadable"
 WHY_JUST_A_NOUN = "just-a-noun"
 WHY_ALREADY_MATCHED = "already-matched-by-name"
 
+# Which side of a reorganization an agency stands on. "parent" is the body a new
+# office is placed INSIDE ("established in the Office of the Mayor"), which is a
+# different fact from the one being established.
+ROLE_FROM = "from"      # the body the order acts ON
+ROLE_TO = "to"          # the body the order produces, or hands work to
+ROLE_PARENT = "parent"  # the body the result sits within
+
+# Why a reorganization sentence produced no edge.
+WHY_NO_AGENCY_NAMED = "no-agency-named"   # neither side named a body we know of
+WHY_ONE_SIDE_ONLY = "one-side-only"       # one side named a body, the other did not
+
+# Where an order-to-order edge was read.
+SOURCE_BODY_CITATION = "body-citation"   # operative language in the order
+SOURCE_HEADER_XREF = "header-xref"       # the archival stamp in the dropped header
+
+# Why a citation produced no order-to-order edge.
+REASON_NO_YEAR = "no-year"                    # nothing to scope the number by
+REASON_IMPLAUSIBLE_YEAR = "implausible-year"  # OCR damage, such as "1474"
+REASON_NOT_IN_CORPUS = "not-in-corpus"        # a real order we do not hold
+REASON_SUFFIX_VARIANT = "suffix-variant"      # the stem matches, the exact id does not
+
 
 @dataclass(frozen=True)
 class Mention:
@@ -101,6 +122,124 @@ class Discarded:
         return {"name": self.name, "why": self.why, "count": self.count}
 
 
+@dataclass(frozen=True)
+class Role:
+    """One agency standing on one side of a reorganization sentence.
+
+    The span is not found here. It is a span one of the two earlier passes already
+    recorded, reused — so ``agency_id`` is filled in when the known-name pass found
+    it, and ``None`` when only the new-name pass did. A ``None`` is not a failure:
+    it says the body is not on the name list yet, which is exactly the case the
+    extra-agencies file exists to fix.
+    """
+
+    role: str
+    agency_id: str | None
+    name: str
+    start: int
+    end: int
+    text: str
+    found_by: str
+
+    def as_dict(self) -> dict:
+        return {"role": self.role, "agency_id": self.agency_id, "name": self.name,
+                "start": self.start, "end": self.end, "text": self.text,
+                "found_by": self.found_by}
+
+
+@dataclass(frozen=True)
+class AgencyEvent:
+    """One thing an order does to an agency: establish, rename, abolish, transfer.
+
+    ``start``/``end``/``text`` cover the SENTENCE, so the claim can be read back out
+    of the order and judged. Each role carries its own span for the same reason.
+    """
+
+    eo_id: str
+    kind: str
+    verb: str
+    start: int
+    end: int
+    text: str
+    roles: tuple[Role, ...]
+
+    @property
+    def fully_resolved(self) -> bool:
+        """True when every side pins down an agency the name list already knows."""
+        return bool(self.roles) and all(r.agency_id for r in self.roles)
+
+    @property
+    def same_agency(self) -> bool:
+        """True when both sides land on ONE agency id — a rename already absorbed.
+
+        ``2022-EO-003`` renames DoITT to the Office of Technology and Innovation,
+        and both names resolve to ``oti``, because
+        ``lineage/data/extra_agencies.json`` deliberately files the old name under
+        the new agency. So the edge is real and its two ends are the same node. It
+        is counted rather than hidden: it says the name list has already made the
+        judgement the graph would otherwise have to make.
+        """
+        sides = [r for r in self.roles if r.role in (ROLE_FROM, ROLE_TO)]
+        ids = {r.agency_id for r in sides}
+        return len(sides) == 2 and len(ids) == 1 and None not in ids
+
+    def as_dict(self) -> dict:
+        return {"eo_id": self.eo_id, "kind": self.kind, "verb": self.verb,
+                "start": self.start, "end": self.end, "text": self.text,
+                "fully_resolved": self.fully_resolved,
+                "roles": [r.as_dict() for r in self.roles]}
+
+
+@dataclass(frozen=True)
+class UnresolvedEvent:
+    """A reorganization sentence that named no agency we could attach it to.
+
+    Kept, never quietly dropped: this is the review list that tells a person which
+    bodies are missing from ``lineage/data/extra_agencies.json``.
+    """
+
+    eo_id: str
+    verb: str
+    start: int
+    end: int
+    text: str
+    why: str
+
+    def as_dict(self) -> dict:
+        return {"eo_id": self.eo_id, "verb": self.verb, "start": self.start,
+                "end": self.end, "text": self.text, "why": self.why}
+
+
+@dataclass(frozen=True)
+class OrderEdge:
+    """One order acting on another: ``actor`` revokes or amends ``target``."""
+
+    actor: str
+    target: str
+    verb: str
+    source: str
+    partial: bool = False
+
+    def as_dict(self) -> dict:
+        return {"actor": self.actor, "target": self.target, "verb": self.verb,
+                "source": self.source, "partial": self.partial}
+
+
+@dataclass(frozen=True)
+class OrderDangle:
+    """A citation we resolved to an order we do not hold, and why."""
+
+    actor: str
+    target: str
+    verb: str
+    source: str
+    reason: str
+
+    def as_dict(self) -> dict:
+        return {"actor": self.actor, "target": self.target, "verb": self.verb,
+                "source": self.source, "reason": self.reason}
+
+
 @dataclass
 class RunResult:
     """Everything one run produced, before it is turned into JSON or Markdown."""
@@ -111,6 +250,13 @@ class RunResult:
     # The registry's own record for each agency the run matched — see
     # :mod:`lineage.agencies`. Empty when the known-name pass did not run.
     agencies: list[dict] = field(default_factory=list)
+    # What the orders DO to agencies, and the sentences we could not attach.
+    agency_events: list[AgencyEvent] = field(default_factory=list)
+    unresolved_events: list[UnresolvedEvent] = field(default_factory=list)
+    # What the orders do to each other.
+    order_edges: list[OrderEdge] = field(default_factory=list)
+    order_dangles: list[OrderDangle] = field(default_factory=list)
+    extensions_skipped: int = 0
     corpus_records: int = 0
     orders_read: int = 0
     orders_without_text: int = 0
@@ -155,6 +301,20 @@ def build_payload(result: RunResult, *, generated_by: str,
     discarded = sorted(result.discarded, key=lambda d: (-d.count, d.name, d.why))
     letterhead_count = sum(1 for m in mentions if m.in_letterhead)
 
+    events = sorted(result.agency_events,
+                    key=lambda e: (e.eo_id, e.start, e.end, e.verb, e.kind))
+    unresolved = sorted(result.unresolved_events,
+                        key=lambda e: (e.eo_id, e.start, e.end, e.verb))
+    order_edges = sorted(result.order_edges,
+                         key=lambda e: (e.actor, e.target, e.verb, e.source,
+                                        e.partial))
+    order_dangles = sorted(result.order_dangles,
+                           key=lambda d: (d.actor, d.target, d.verb, d.source,
+                                          d.reason))
+    events_by_kind: dict[str, int] = {}
+    for e in events:
+        events_by_kind[e.kind] = events_by_kind.get(e.kind, 0) + 1
+
     return {
         "generated_by": generated_by,
         "corpus_records": result.corpus_records,
@@ -181,6 +341,23 @@ def build_payload(result: RunResult, *, generated_by: str,
         "to_review": to_review,
         "rare": rare,
         "discarded": [d.as_dict() for d in discarded],
+        # What the orders do to agencies. `fully_resolved` counts the events where
+        # EVERY side pins down an agency the name list already knows; the rest name
+        # at least one body that is not on the list yet, and say so rather than
+        # guess an id for it.
+        "agency_event_count": len(events),
+        "fully_resolved_event_count": sum(1 for e in events if e.fully_resolved),
+        "same_agency_event_count": sum(1 for e in events if e.same_agency),
+        "agency_events_by_kind": dict(sorted(events_by_kind.items())),
+        "unresolved_event_count": len(unresolved),
+        "agency_events": [e.as_dict() for e in events],
+        "unresolved_events": [e.as_dict() for e in unresolved],
+        # What the orders do to each other.
+        "order_edge_count": len(order_edges),
+        "order_dangle_count": len(order_dangles),
+        "extensions_skipped": result.extensions_skipped,
+        "order_edges": [e.as_dict() for e in order_edges],
+        "order_dangles": [d.as_dict() for d in order_dangles],
     }
 
 

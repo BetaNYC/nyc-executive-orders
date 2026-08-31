@@ -14,11 +14,22 @@ from pathlib import Path
 
 import pytest
 from lineage import agencies as agencies_mod
+from lineage import citations as citations_mod
 from lineage import discover as discover_mod
 from lineage import namelist as nl
 from lineage import records as records_mod
+from lineage import reorg as reorg_mod
 from lineage import scan as scan_mod
-from lineage.mentions import RunResult, build_payload, dumps
+from lineage.mentions import (
+    ROLE_FROM,
+    ROLE_PARENT,
+    ROLE_TO,
+    WHY_NO_AGENCY_NAMED,
+    WHY_ONE_SIDE_ONLY,
+    RunResult,
+    build_payload,
+    dumps,
+)
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CORPUS = [REPO_ROOT / "corpus" / "eo.json", REPO_ROOT / "corpus" / "eo_pre1974.json"]
@@ -32,14 +43,38 @@ EXPECT_ORDERS = 3269
 EXPECT_WITH_TEXT = 3202
 EXPECT_WITHOUT_TEXT = 67
 EXPECT_REGISTRY_NAMES = 592
-# Of the registry's 317. The corpus names a little over half of what exists today.
-EXPECT_AGENCIES_FOUND = 178
+# 178 of the registry's 317 — the corpus names a little over half of what exists
+# today — plus `doitt`, which only the extra-agencies file holds.
+EXPECT_AGENCIES_FOUND = 179
+EXPECT_FROM_REGISTRY = 178
 # The mayoral stationery, and what is left once it is set aside. Of 2810 finds of
 # "Office of the Mayor", 2560 are the letterhead at the head of the page and 250
 # are the order actually naming the office.
 EXPECT_LETTERHEAD = 2560
 EXPECT_MAYOR_IN_BODY = 250
 MAYOR_ID = "office-of-the-mayor"
+
+# Pass three, measured 2026-08-31. 361 sentences link two bodies; 96 of them pin
+# down a registry agency on every side, and the other 265 name at least one body
+# that is not on the name list yet. 496 more named nothing we could attach and wait
+# in the review list.
+EXPECT_EVENTS = 361
+EXPECT_EVENTS_FULLY_RESOLVED = 96
+EXPECT_UNRESOLVED_EVENTS = 496
+# Sentences where one verb governs a whole list of bodies. Only two in the corpus,
+# and both are real: 2022-EO-003 § 3 moves three offices into OTI, 1976-EO-063
+# abolishes four planning offices at once.
+EXPECT_EVENTS_WITH_A_LIST = 2
+EXPECT_EVENTS_BY_KIND = {
+    "establishes": 269, "continues": 40, "renames": 21, "transfers_to": 21,
+    "abolishes": 8, "merges_into": 1, "succeeds": 1,
+}
+
+# Pass four, measured 2026-08-31, over all 3,202 orders that carry text.
+# `supersede.py` reads only the 2,291 orders of corpus/eo.json and finds 244.
+EXPECT_ORDER_EDGES = 294
+EXPECT_ORDER_DANGLES = 150
+EXPECT_EXTENSIONS_SKIPPED = 1617
 
 needs_corpus = pytest.mark.skipif(
     not all(p.exists() for p in CORPUS), reason="committed corpus not present")
@@ -68,6 +103,18 @@ def registry_only():
     rules, short_name_length, max_hits = nl.load_rules(RULES)
     return nl.build(nl.load_registry(REGISTRY), [], rules, short_name_length,
                     max_hits)
+
+
+@pytest.fixture(scope="module")
+def all_four_passes(corpus, name_list):
+    """Every pass over the whole corpus, run once and shared by the tests below."""
+    orders, skipped, mentions, proposed, discarded = _both_passes(corpus, name_list)
+    events, unresolved = reorg_mod.find_events(orders, mentions, proposed)
+    edges, dangles, extensions = citations_mod.extract(orders)
+    return {"orders": orders, "skipped": skipped, "mentions": mentions,
+            "proposed": proposed, "discarded": discarded, "events": events,
+            "unresolved": unresolved, "order_edges": edges,
+            "order_dangles": dangles, "extensions": extensions}
 
 
 def _both_passes(corpus, name_list):
@@ -131,16 +178,20 @@ def test_the_registry_holds_no_agency_that_was_shut_down(registry_only):
 
 
 @needs_registry
-def test_the_extra_agencies_file_supplies_doitt_that_the_registry_lost(name_list):
-    """MODA's own record NYC_GOID_000382 lists 'Department of Information
-    Technology and Telecommunications' and 'DoITT' under its alternate-or-former
-    fields. Those two values are the ONLY ones out of all 306 MODA records that
-    ../ny-gov-web-registry is missing, because the 'oti' record was never merged
-    with its MODA record. The extra-agencies file stands in until that is fixed
-    upstream. Delete this test along with that entry."""
-    assert name_list.ids_for("doitt") == ("oti",)
+def test_doitt_is_its_own_agency_and_not_an_alias_of_oti(name_list):
+    """DoITT and OTI are one office in law and two in time, and a lineage needs
+    both ends to be separate things. Filing the old name under `oti` turns the
+    2022 rename into an edge whose two ends are the same node, and there is then
+    nothing left to say that anything changed.
+
+    The registry cannot hold this: it marks all 317 agencies active. MODA does know
+    the pair — record NYC_GOID_000382 lists both values under its alternate-or-
+    former fields — and fixing that upstream would give OTI the DoITT names as
+    other_names and undo the split. Those two names must stay off the `oti` row."""
+    assert name_list.ids_for("doitt") == ("doitt",)
     assert name_list.ids_for(
-        "department of information technology and telecommunications") == ("oti",)
+        "department of information technology and telecommunications") == ("doitt",)
+    assert name_list.ids_for("office of technology and innovation") == ("oti",)
 
 
 @needs_registry
@@ -263,15 +314,19 @@ def test_the_it_lineage_can_be_traced(corpus, name_list):
         if m.agency_id:
             orders_by_name.setdefault(m.agency_id, set()).add(m.eo_id)
 
-    # Every spelling of DoITT and of OTI now lands on the one agency, because the
-    # extra-agencies file supplies the former name the registry dropped.
+    # Two agencies, two spans of time, and one order where they meet. Every
+    # spelling of the old name lands on `doitt`, which the extra-agencies file
+    # supplies because the registry cannot hold a body that was renamed away.
+    doitt = orders_by_name["doitt"]
     oti = orders_by_name["oti"]
-    assert len(oti) >= 55
-    assert min(oti) < "2000"          # the chain starts in the 1990s
-    assert "2022-EO-003" in oti       # the order that hands DoITT's work to OTI
+    assert len(doitt) >= 55
+    assert min(doitt) < "2000"          # the old name starts in the 1990s
+    assert min(oti) >= "2022"           # the new one starts in 2022
+    assert "2022-EO-003" in doitt       # the order that renames one to the other
+    assert "2022-EO-003" in oti
 
     # Including the bare acronym, in both spellings the orders actually use.
-    spellings = {m.text for m in mentions if m.agency_id == "oti"}
+    spellings = {m.text for m in mentions if m.agency_id == "doitt"}
     assert "DoITT" in spellings
     assert "DOITT" in spellings
 
@@ -313,7 +368,8 @@ def test_every_agency_id_found_can_be_named(corpus, name_list):
     _, _, mentions, _, _ = _both_passes(corpus, name_list)
     rows = agencies_mod.build(
         agencies_mod.ids_in(mentions), nl.load_registry(REGISTRY),
-        agencies_mod.load_descriptions(DESCRIPTIONS))
+        agencies_mod.load_descriptions(DESCRIPTIONS),
+        nl.load_extra_agencies(EXTRA))
 
     by_id = {r["id"]: r for r in rows}
     assert agencies_mod.ids_in(mentions) == set(by_id)
@@ -332,12 +388,25 @@ def test_only_the_agencies_actually_found_are_carried(corpus, name_list):
     _, _, mentions, _, _ = _both_passes(corpus, name_list)
     rows = agencies_mod.build(
         agencies_mod.ids_in(mentions), nl.load_registry(REGISTRY),
-        agencies_mod.load_descriptions(DESCRIPTIONS))
+        agencies_mod.load_descriptions(DESCRIPTIONS),
+        nl.load_extra_agencies(EXTRA))
 
     assert len(rows) == EXPECT_AGENCIES_FOUND
     assert len(rows) < len(nl.load_registry(REGISTRY))
     # Sorted by id, so a re-run cannot reorder the file.
     assert [r["id"] for r in rows] == sorted(r["id"] for r in rows)
+
+    # Where each row came from. A hand-written body has a row nowhere else, so
+    # without the extra file `doitt` would ship as a bare slug with no name.
+    registry_ids = {a["id"] for a in nl.load_registry(REGISTRY)}
+    from_registry = [r for r in rows if r["id"] in registry_ids]
+    assert len(from_registry) == EXPECT_FROM_REGISTRY
+    doitt = next(r for r in rows if r["id"] == "doitt")
+    assert doitt["name"] == ("Department of Information Technology and "
+                             "Telecommunications")
+    assert doitt["short_name"] == "DoITT"
+    assert doitt["status"] == "renamed"
+    assert doitt["dissolution_date"] == "2022-01-19"
 
 
 @needs_registry
@@ -372,3 +441,221 @@ def test_a_carried_description_is_cut_on_a_word_boundary():
         assert row["description_source_url"], row["id"]
         if text.endswith("…"):
             assert not text[:-1].endswith(" ")
+
+
+# --------------------------------------------------------------------------- #
+# Pass three — what the orders do to agencies                                   #
+# --------------------------------------------------------------------------- #
+
+
+@needs_corpus
+@needs_registry
+def test_the_reorganization_counts_hold(all_four_passes):
+    """A change in any of these is a real change in behaviour, not a flake."""
+    events = all_four_passes["events"]
+    assert len(events) == EXPECT_EVENTS
+    assert sum(1 for e in events if e.fully_resolved) == EXPECT_EVENTS_FULLY_RESOLVED
+    assert len(all_four_passes["unresolved"]) == EXPECT_UNRESOLVED_EVENTS
+    assert reorg_mod.events_by_kind(events) == EXPECT_EVENTS_BY_KIND
+
+
+@needs_corpus
+@needs_registry
+def test_every_event_can_be_read_back_out_of_the_order(corpus, all_four_passes):
+    """The promise, extended to pass three: the sentence AND every role in it."""
+    text = {r["eo_id"]: r["full_text"] for r in all_four_passes["orders"]}
+    bad = []
+    for e in all_four_passes["events"]:
+        if text[e.eo_id][e.start:e.end] != e.text:
+            bad.append(e)
+        bad.extend(r for r in e.roles if text[e.eo_id][r.start:r.end] != r.text)
+    for u in all_four_passes["unresolved"]:
+        if text[u.eo_id][u.start:u.end] != u.text:
+            bad.append(u)
+    assert bad == []
+
+
+@needs_corpus
+@needs_registry
+def test_every_event_fills_the_sides_its_kind_needs(all_four_passes):
+    """An event is only recorded when every required side found an agency."""
+    for e in all_four_passes["events"]:
+        filled = {r.role for r in e.roles}
+        assert set(reorg_mod.REQUIRED_ROLES[e.kind]) <= filled
+
+
+@needs_corpus
+@needs_registry
+def test_no_event_takes_a_role_from_the_letterhead(all_four_passes):
+    """The stationery names the Office of the Mayor 2,560 times and means none
+    of them. A letterhead span taking a role would tie the office to sentences it
+    has nothing to do with."""
+    letterhead = {(m.eo_id, m.start, m.end)
+                  for m in all_four_passes["mentions"] if m.in_letterhead}
+    used = {(e.eo_id, r.start, r.end)
+            for e in all_four_passes["events"] for r in e.roles}
+    assert used & letterhead == set()
+
+
+@needs_corpus
+@needs_registry
+def test_the_doitt_handoff_is_recorded_as_a_rename(all_four_passes):
+    """The acceptance case. 2022-EO-003 does not use the word "renamed" — it says
+    "shall hereafter be designated as" — and it is the most important edge in the
+    corpus. The two ends are two different agencies, which is the whole point: an
+    edge from a node to itself says nothing changed."""
+    events = [e for e in all_four_passes["events"]
+              if e.eo_id == "2022-EO-003" and e.kind == reorg_mod.KIND_RENAMES]
+    assert len(events) == 1
+    by_role = {r.role: r for r in events[0].roles}
+    assert by_role[ROLE_FROM].name == ("Department of Information Technology and "
+                                       "Telecommunications")
+    assert by_role[ROLE_FROM].agency_id == "doitt"
+    assert by_role[ROLE_TO].name == "Office of Technology and Innovation"
+    assert by_role[ROLE_TO].agency_id == "oti"
+    assert events[0].fully_resolved
+    assert not events[0].same_agency
+
+
+@needs_corpus
+@needs_registry
+def test_one_verb_can_move_a_whole_list_of_bodies(all_four_passes):
+    """2022-EO-003 § 3: "The Office of Cyber Command ..., the Office of Data
+    Analytics ... and the Office of Information Privacy ... shall be continued and
+    established within the Office of Technology and Innovation."
+
+    Three offices move, not one. Taking only the nearest name records the Office of
+    Information Privacy and drops two thirds of what the order did."""
+    events = [e for e in all_four_passes["events"]
+              if e.eo_id == "2022-EO-003" and e.kind == reorg_mod.KIND_ESTABLISHES]
+    assert len(events) == 1
+    moved = [r.agency_id for r in events[0].roles if r.role == ROLE_TO]
+    assert moved == ["cyber-command", "office-of-data-analytics",
+                     "office-of-information-privacy"]
+    parent = [r.agency_id for r in events[0].roles if r.role == ROLE_PARENT]
+    assert parent == ["oti"]
+    assert events[0].fully_resolved
+
+
+@needs_corpus
+@needs_registry
+def test_only_real_lists_take_more_than_one_body_on_a_side(all_four_passes):
+    """The rule is narrow on purpose. Two sentences in the whole corpus, and both
+    are lists a person would read the same way."""
+    listed = [e for e in all_four_passes["events"]
+              if sum(1 for r in e.roles if r.role in (ROLE_FROM, ROLE_TO)) > 2]
+    assert len(listed) == EXPECT_EVENTS_WITH_A_LIST
+    assert {e.eo_id for e in listed} == {"2022-EO-003", "1976-EO-063"}
+
+
+@needs_corpus
+@needs_registry
+def test_an_apposition_moves_only_the_body_it_names(all_four_passes):
+    """1955-EO-022: "The Division of Analysis, Bureau of the Budget, together with
+    its functions and staff, is hereby transferred to..." names one body and its
+    parent. A bare comma cannot tell an apposition from a list, so a pair joined by
+    one takes the nearest name alone."""
+    events = [e for e in all_four_passes["events"]
+              if e.eo_id == "1955-EO-022" and e.kind == reorg_mod.KIND_TRANSFERS_TO]
+    for e in events:
+        assert sum(1 for r in e.roles if r.role == ROLE_FROM) == 1
+
+
+@needs_corpus
+@needs_registry
+def test_a_deputy_mayor_roster_produces_no_rename(all_four_passes):
+    """"One shall be designated the First Deputy Mayor, one shall be designated
+    the Deputy Mayor for Operations, ..." is a list of appointments. Without the
+    spoken-for rule it reads as a chain of renames — 84 false edges over the
+    corpus, and it was the single largest wrong class measured."""
+    renames = [e for e in all_four_passes["events"]
+               if e.kind == reorg_mod.KIND_RENAMES]
+    rosters = [e for e in renames if "one shall be designated" in e.text.lower()]
+    assert rosters == []
+
+
+@needs_corpus
+@needs_registry
+def test_a_sentence_that_named_nothing_is_kept_for_review(all_four_passes):
+    """Nothing is quietly dropped. Each one says which body is missing from
+    extra_agencies.json."""
+    whys = {u.why for u in all_four_passes["unresolved"]}
+    assert whys == {WHY_NO_AGENCY_NAMED, WHY_ONE_SIDE_ONLY}
+
+
+# --------------------------------------------------------------------------- #
+# Pass four — what the orders do to each other                                  #
+# --------------------------------------------------------------------------- #
+
+
+@needs_corpus
+@needs_registry
+def test_the_order_to_order_counts_hold(all_four_passes):
+    assert len(all_four_passes["order_edges"]) == EXPECT_ORDER_EDGES
+    assert len(all_four_passes["order_dangles"]) == EXPECT_ORDER_DANGLES
+    assert all_four_passes["extensions"] == EXPECT_EXTENSIONS_SKIPPED
+
+
+@needs_corpus
+@needs_registry
+def test_both_ends_of_every_order_edge_are_orders_we_hold(corpus, all_four_passes):
+    """A dangle is the only way out. An edge always points at two real orders."""
+    ids = {r["eo_id"] for r in corpus}
+    for e in all_four_passes["order_edges"]:
+        assert e.actor in ids
+        assert e.target in ids
+        assert e.actor != e.target
+
+
+@needs_corpus
+@needs_registry
+def test_pass_four_reads_the_pre1974_volumes_that_supersede_py_never_sees(
+        all_four_passes):
+    """`supersede.py` runs over corpus/eo.json alone, so the 978 orders of the
+    bound volumes contribute nothing to corpus/supersession.json. This pass reads
+    them."""
+    touched = {e.actor for e in all_four_passes["order_edges"]}
+    touched |= {e.target for e in all_four_passes["order_edges"]}
+    touched |= {d.actor for d in all_four_passes["order_dangles"]}
+    assert any(t < "1974" for t in touched)
+
+
+# --------------------------------------------------------------------------- #
+# The whole payload                                                             #
+# --------------------------------------------------------------------------- #
+
+
+@needs_corpus
+@needs_registry
+def test_the_new_counts_match_the_lists_they_describe(corpus, name_list,
+                                                      all_four_passes):
+    payload = _full_payload(corpus, name_list, all_four_passes)
+    assert payload["agency_event_count"] == len(payload["agency_events"])
+    assert payload["unresolved_event_count"] == len(payload["unresolved_events"])
+    assert payload["order_edge_count"] == len(payload["order_edges"])
+    assert payload["order_dangle_count"] == len(payload["order_dangles"])
+    assert sum(payload["agency_events_by_kind"].values()) == EXPECT_EVENTS
+    assert payload["fully_resolved_event_count"] <= payload["agency_event_count"]
+
+
+@needs_corpus
+@needs_registry
+def test_running_all_four_passes_twice_writes_identical_bytes(
+        corpus, name_list, all_four_passes):
+    """Same input, same output (engineering-standards §6), new lists included."""
+    first = dumps(_full_payload(corpus, name_list, all_four_passes))
+    second = dumps(_full_payload(corpus, name_list, all_four_passes))
+    assert first == second
+
+
+def _full_payload(corpus, name_list, ran) -> dict:
+    """The whole payload a real run writes, built from one shared set of results."""
+    result = RunResult(
+        mentions=ran["mentions"], proposed=ran["proposed"],
+        discarded=ran["discarded"], agency_events=ran["events"],
+        unresolved_events=ran["unresolved"], order_edges=ran["order_edges"],
+        order_dangles=ran["order_dangles"], extensions_skipped=ran["extensions"],
+        corpus_records=len(corpus), orders_read=len(ran["orders"]),
+        orders_without_text=ran["skipped"], name_list_counts=name_list.counts(),
+        passes_run=("known-names", "new-names"))
+    return build_payload(result, generated_by="test", review_from=3)

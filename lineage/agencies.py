@@ -7,16 +7,22 @@ cannot label it, and a viewer cannot show it. So a run carries the registry's ow
 record for every agency it matched, and the file stands on its own.
 
 Only the agencies that were FOUND are carried. The registry holds 317; a run
-matches about 178 of them. Shipping the other 139 would add weight to the file and
-say something untrue — that the corpus names them.
+matches about 178 of them, plus the bodies the extra file adds. Shipping the other
+139 would add weight to the file and say something untrue — that the corpus names
+them.
 
-Two sources, both read from the sibling `ny-gov-web-registry` checkout:
+Three sources. Two are read from the sibling `ny-gov-web-registry` checkout:
 
 * ``data/registry.json`` — the names, hierarchy, classification and domains.
 * ``data/descriptions.json`` — each agency's own words, captured verbatim from its
   website. Present and ``status: "ok"`` for 207 of the 317. That text is
   CC BY-SA 4.0, so the payload records where it came from and what the licence is;
   anything showing it has to say so too.
+
+The third is ``lineage/data/extra_agencies.json``, written by hand. It is read here
+for the same reason it is read by :mod:`lineage.namelist`: the registry cannot hold
+an agency that no longer exists, so an id like ``doitt`` has a row nowhere else, and
+without it the published file would carry a bare slug a reader cannot label.
 
 Nothing here guesses. A field the registry left empty stays ``None`` in the
 output, and the description is dropped entirely unless its own record says the
@@ -140,16 +146,22 @@ def details_for(agency: dict, described: dict[str, dict]) -> dict:
 
 
 def build(agency_ids: set[str], registry_agencies: list[dict],
-          described: dict[str, dict]) -> list[dict]:
-    """The registry rows for the agencies a run found, sorted by id.
+          described: dict[str, dict],
+          extra_agencies: list[dict] | None = None) -> list[dict]:
+    """The rows for the agencies a run found, sorted by id.
 
-    An id that the run matched but the registry no longer holds still gets a row,
-    carrying its id and nothing else. That cannot happen while both come from the
-    same file, but it can the moment the registry is re-pulled and the mentions are
-    not — and a row that says only ``{"id": ...}`` is a visible gap, where a
-    silently missing row is not.
+    The registry is asked first, then the hand-written extra-agencies file. The
+    order matters: an entry in the extra file is meant to add a body the registry
+    cannot hold, never to overwrite one it does hold.
+
+    An id neither source knows still gets a row, carrying its id and nothing else.
+    That cannot happen while the name list and this call read the same two files,
+    but it can the moment the registry is re-pulled and the mentions are not — and
+    a row that says only ``{"id": ...}`` is a visible gap, where a silently missing
+    row is not.
     """
-    by_id = {a["id"]: a for a in registry_agencies if a.get("id")}
+    by_id = {a["id"]: a for a in extra_agencies or [] if a.get("id")}
+    by_id.update({a["id"]: a for a in registry_agencies if a.get("id")})
     rows = [details_for(by_id[i], described) if i in by_id else {"id": i}
             for i in agency_ids]
     rows.sort(key=lambda r: r["id"])

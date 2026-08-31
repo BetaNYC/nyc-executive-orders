@@ -31,11 +31,19 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from lineage import agencies as agencies_mod
+from lineage import citations as citations_mod
 from lineage import discover as discover_mod
 from lineage import namelist as namelist_mod
 from lineage import records as records_mod
+from lineage import reorg as reorg_mod
 from lineage import scan as scan_mod
-from lineage.mentions import RunResult, build_payload, dumps
+from lineage.mentions import (
+    REASON_SUFFIX_VARIANT,
+    WHY_ONE_SIDE_ONLY,
+    RunResult,
+    build_payload,
+    dumps,
+)
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 LINEAGE_DIR = REPO_ROOT / "lineage"
@@ -176,7 +184,113 @@ def render_report(result: RunResult, payload: dict, *,
             L.append(f"| `{why}` | {n} |")
         L.append("")
 
+    L.extend(_agency_event_section(payload))
+    L.extend(_order_edge_section(payload))
+
     return "\n".join(L) + "\n"
+
+
+def _one_line(text: str, width: int = 150) -> str:
+    """A sentence from an order, fit for a table cell.
+
+    The order text is wrapped across lines by the PDF, and a pipe would break the
+    Markdown table, so both are taken out. For reading only — the exact text stays
+    in `mentions.json`.
+    """
+    flat = " ".join(text.split()).replace("|", "/")
+    return flat if len(flat) <= width else flat[:width - 1] + "…"
+
+
+def _agency_event_section(payload: dict) -> list[str]:
+    """Pass three: what the orders do to agencies."""
+    L = ["## Pass three — what the orders do to agencies", ""]
+    L.append(f"Found: **{payload['agency_event_count']}**  |  "
+             f"Every side a known agency: "
+             f"**{payload['fully_resolved_event_count']}**  |  "
+             f"Both sides the SAME agency: "
+             f"**{payload['same_agency_event_count']}**  |  "
+             f"To review: **{payload['unresolved_event_count']}**")
+    L.append("")
+    L.append("These are the sentences that link two agencies. Every side of a "
+             "sentence must land on a name one of the passes above already found, "
+             "which is what keeps out `is hereby designated Vice-Chairman` (a "
+             "person taking a post) and `transferred to \"UNCLAIMED\" account` "
+             "(money). A sentence that named nothing is kept below rather than "
+             "thrown away: it says which body is missing from "
+             "`lineage/data/extra_agencies.json`.")
+    L.append("")
+    if payload["agency_events_by_kind"]:
+        L.append("| what the order does | events |")
+        L.append("|---|---:|")
+        for kind, n in sorted(payload["agency_events_by_kind"].items(),
+                              key=lambda t: (-t[1], t[0])):
+            L.append(f"| `{kind}` | {n} |")
+        L.append("")
+    if payload["unresolved_events"]:
+        by_why = collections.Counter(e["why"] for e in payload["unresolved_events"])
+        L.append("| why | sentences |")
+        L.append("|---|---:|")
+        for why, n in by_why.most_common():
+            L.append(f"| `{why}` | {n} |")
+        L.append("")
+        L.append("### Sentences to review (top 60)")
+        L.append("")
+        L.append("`one-side-only` comes first, and it is the list worth working "
+                 "through: the sentence DID name a body, and the other side is "
+                 "missing from the name list. `no-agency-named` is mostly prose "
+                 "that happens to share a verb — a target date is established, a "
+                 "leave allowance is established — and it is counted above rather "
+                 "than worked through. Both are in `mentions.json` in full.")
+        L.append("")
+        L.append("| order | verb | why | the sentence |")
+        L.append("|---|---|---|---|")
+        rows = sorted(payload["unresolved_events"],
+                      key=lambda e: (e["why"] != WHY_ONE_SIDE_ONLY, e["eo_id"],
+                                     e["start"]))
+        for e in rows[:60]:
+            L.append(f"| `{e['eo_id']}` | {e['verb']} | `{e['why']}` | "
+                     f"{_one_line(e['text'])} |")
+        L.append("")
+    return L
+
+
+def _order_edge_section(payload: dict) -> list[str]:
+    """Pass four: what the orders do to each other."""
+    L = ["## Pass four — what the orders do to each other", ""]
+    L.append(f"Edges: **{payload['order_edge_count']}**  |  "
+             f"Citations that went nowhere: "
+             f"**{payload['order_dangle_count']}**  |  "
+             f"Extensions skipped: **{payload['extensions_skipped']}**")
+    L.append("")
+    L.append("One order revokes, amends or supersedes another by citing it. The "
+             "cited year scopes the number, because per-mayor numbering resets and "
+             "a number on its own names several orders. An extension is counted "
+             "and skipped: an emergency order expires by operation of law, which is "
+             "not supersession.")
+    L.append("")
+    by_verb = collections.Counter(e["verb"] for e in payload["order_edges"])
+    if by_verb:
+        L.append("| verb | edges |")
+        L.append("|---|---:|")
+        for verb, n in by_verb.most_common():
+            L.append(f"| {verb} | {n} |")
+        L.append("")
+    by_reason = collections.Counter(d["reason"] for d in payload["order_dangles"])
+    if by_reason:
+        L.append("Citations that produced no edge, and why.")
+        if REASON_SUFFIX_VARIANT in by_reason:
+            L.append("")
+            L.append("`suffix-variant` means the number and year match orders we "
+                     "hold, but the pre-1974 volumes filed several under that "
+                     "number (`1966-EO-019` covers 50 of them), and picking one "
+                     "would be a guess.")
+        L.append("")
+        L.append("| why | citations |")
+        L.append("|---|---:|")
+        for reason, n in by_reason.most_common():
+            L.append(f"| `{reason}` | {n} |")
+        L.append("")
+    return L
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
@@ -257,10 +371,14 @@ def main(argv: list[str] | None = None) -> int:
         described = agencies_mod.load_descriptions(
             args.registry.parent / DESCRIPTIONS_NAME)
         result.agencies = agencies_mod.build(
-            agencies_mod.ids_in(result.mentions), registry_agencies, described)
+            agencies_mod.ids_in(result.mentions), registry_agencies, described,
+            namelist_mod.load_extra_agencies(EXTRA_AGENCIES))
         with_words = sum(1 for a in result.agencies if a.get("description"))
-        print(f"Agencies found: {len(result.agencies)} of "
-              f"{len(registry_agencies)} in the registry; "
+        from_registry = sum(1 for a in result.agencies
+                            if a["id"] in {r.get("id") for r in registry_agencies})
+        print(f"Agencies found: {len(result.agencies)} "
+              f"({from_registry} of {len(registry_agencies)} in the registry, "
+              f"{len(result.agencies) - from_registry} from the extra file); "
               f"{with_words} carry a description")
 
     if run_new:
@@ -270,6 +388,22 @@ def main(argv: list[str] | None = None) -> int:
             readable_orders, known, result.mentions)
         print(f"Pass two: {len(result.proposed)} proposed, "
               f"{sum(d.count for d in result.discarded)} thrown out")
+
+    # Pass three — what the orders do to agencies. It reads the spans the two
+    # passes above produced, so it works with whichever of them ran.
+    result.agency_events, result.unresolved_events = reorg_mod.find_events(
+        readable_orders, result.mentions, result.proposed)
+    resolved = sum(1 for e in result.agency_events if e.fully_resolved)
+    print(f"Pass three: {len(result.agency_events)} agency events "
+          f"({resolved} pin down a known agency on every side); "
+          f"{len(result.unresolved_events)} sentences to review")
+
+    # Pass four — what the orders do to each other. Needs no registry.
+    (result.order_edges, result.order_dangles,
+     result.extensions_skipped) = citations_mod.extract(readable_orders)
+    print(f"Pass four: {len(result.order_edges)} order-to-order edges; "
+          f"{len(result.order_dangles)} citations went nowhere; "
+          f"{result.extensions_skipped} extensions skipped")
 
     payload = build_payload(result, generated_by=GENERATED_BY,
                             review_from=args.review_from)
@@ -298,6 +432,10 @@ def main(argv: list[str] | None = None) -> int:
           f"proposed={payload['proposed_count']} "
           f"to_review={payload['to_review_count']} "
           f"rare={payload['rare_count']} "
+          f"events={payload['agency_event_count']} "
+          f"resolved={payload['fully_resolved_event_count']} "
+          f"unresolved={payload['unresolved_event_count']} "
+          f"order_edges={payload['order_edge_count']} "
           f"need_a_rule={len(needing_a_rule)}")
     return 0
 
