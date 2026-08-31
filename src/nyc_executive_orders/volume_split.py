@@ -41,6 +41,12 @@ import re
 from dataclasses import dataclass, field
 
 from . import clean
+from .vlm_pages import (  # noqa: F401 - re-exported, see "Text rendering"
+    MIN_COVERED_FRACTION,
+    element_text,
+    page_flags,
+    page_lines,
+)
 from .identity import (
     SERIES_ADMINISTRATIVE_MEMORANDUM,
     SERIES_EXECUTIVE_MEMORANDUM,
@@ -78,10 +84,6 @@ MIN_LETTERHEAD_ANCHORS = 2
 # tokens leaves room for the whole block folded into a single line ("CITY OF
 # NEW YORK OFFICE OF THE MAYOR NEW YORK 7 N Y"), which the model does emit.
 LETTERHEAD_MAX_LINE_TOKENS = 12
-
-# Ink-coverage below which a page is treated as having lost content, even though
-# its JSON parsed. Matches the viewer's uncovered-ink QA flag.
-MIN_COVERED_FRACTION = 0.98
 
 _LETTERHEAD_ANCHORS: tuple[tuple[str, ...], ...] = (
     ("CITY", "OF", "NEW", "YORK"),
@@ -303,45 +305,10 @@ def _number_sort_key(number: str) -> tuple[int, str]:
 # --------------------------------------------------------------------------- #
 # Text rendering                                                                #
 # --------------------------------------------------------------------------- #
-
-def element_text(element: dict) -> str:
-    """One layout element as corpus body text.
-
-    Deliberately NOT :func:`vlm_ocr.element_to_markdown`, which exists to render
-    a faithful *review* document for the viewer. Two differences matter here:
-
-    * ``Picture`` elements (the city seal, the mayor's signature) render there as
-      ``*[Picture — bbox ...]*`` placeholders. Bbox coordinates are not order
-      text, so they are dropped from the corpus body and counted instead.
-    * The model sometimes emits its own markdown inside ``text``, so the viewer's
-      unconditional ``##`` prefix can yield ``## ## PRINCIPLES``. Existing
-      leading hashes are stripped before one level is applied.
-    """
-    category = element.get("category", "Text")
-    text = (element.get("text") or "").strip()
-    if category == "Picture" or not text:
-        return ""
-    if category in ("Title", "Section-header"):
-        # Collapse the model's own heading marks, then apply exactly one level.
-        lines = [re.sub(r"^#{1,6}\s*", "", ln).strip() for ln in text.split("\n")]
-        lines = [ln for ln in lines if ln]
-        if not lines:
-            return ""
-        prefix = "#" if category == "Title" else "##"
-        # Only the first line is the heading; the rest (the model folds multi-line
-        # letterheads into one element) stay as plain lines beneath it.
-        return "\n".join([f"{prefix} {lines[0]}", *lines[1:]])
-    return text
-
-
-def page_lines(record: dict) -> list[str]:
-    """Every line of a page's elements, in reading order, Pictures dropped."""
-    lines: list[str] = []
-    for element in record.get("elements", []):
-        rendered = element_text(element)
-        if rendered:
-            lines.extend(ln for ln in rendered.split("\n"))
-    return lines
+# element_text / page_lines / page_flags moved to vlm_pages, which the post-1974
+# scans need too and which is not about volumes. Re-exported here (not merely
+# imported) because this module's public surface is what volume_split's own tests
+# and callers reach for, and moving a function must not move its name.
 
 
 # --------------------------------------------------------------------------- #
@@ -477,32 +444,6 @@ def has_referential_instrument_mention(lines: list[str]) -> bool:
         _is_referential_line(line) and any(p.search(line) for _, p in _INSTRUMENT_PATTERNS)
         for line in lines
     )
-
-
-def page_flags(record: dict) -> list[str]:
-    """QA flags for one page — the same four signals the viewer surfaces.
-
-    Any of these on any page of an instrument forces that record to
-    ``needs-review`` downstream: a page that failed loudly must never reach the
-    corpus looking clean.
-    """
-    flags: list[str] = []
-    if record.get("parse_error"):
-        flags.append("parse-error")
-    if record.get("finish_reason") == "length":
-        flags.append("truncated")
-    coverage = record.get("ink_coverage") or {}
-    if coverage.get("uncovered_regions"):
-        flags.append("uncovered-ink")
-    covered = coverage.get("covered_fraction")
-    if covered is not None and covered < MIN_COVERED_FRACTION:
-        flags.append(f"low-ink-coverage:{covered:.3f}")
-    logprobs = ((record.get("logprobs") or {}).get("content") or {})
-    if logprobs.get("n_below_threshold"):
-        flags.append(f"low-confidence:{logprobs['n_below_threshold']}")
-    if record.get("debug_decode_matches_stream") is False:
-        flags.append("decode-mismatch")
-    return flags
 
 
 def classify_page(

@@ -1,0 +1,267 @@
+"""Stage 2 — building post-1974 corpus records from committed VLM page records.
+
+Offline: no model, no OCR binary. The page records are committed fixtures in the
+exact shape vlm_ocr writes; the PDF is the committed scanned fixture, needed only
+so textlayer classifies the record as CLASS_SCANNED.
+"""
+
+from __future__ import annotations
+
+import json
+import shutil
+from pathlib import Path
+
+import pytest
+
+from nyc_executive_orders.build_corpus import (
+    OCR_ENGINE_AUTO,
+    OCR_ENGINE_TESSERACT,
+    OCR_ENGINE_VLM,
+    TEXT_SOURCE_OCR_SKIPPED,
+    parse_record,
+)
+from nyc_executive_orders.vlm_ocr import TEXT_SOURCE_OCR_VLM, TEXT_SOURCE_OCR_VLM_FAILED
+
+FIXTURES = Path(__file__).parent / "fixtures"
+POST1974 = FIXTURES / "post1974"
+
+EO_ID = "1974-EO-001"
+YEAR = 1974
+
+
+@pytest.fixture
+def repo(tmp_path, scanned_pdf):
+    """A miniature repo: one scanned PDF where the record says it is."""
+    pdf_dir = tmp_path / "pdfs" / str(YEAR)
+    pdf_dir.mkdir(parents=True)
+    shutil.copy(scanned_pdf, pdf_dir / f"{EO_ID}.pdf")
+    return tmp_path
+
+
+@pytest.fixture
+def record():
+    return {
+        "eo_id": EO_ID,
+        "year": YEAR,
+        "number": "001",
+        "is_emergency": False,
+        "pdf_path": f"pdfs/{YEAR}/{EO_ID}.pdf",
+        "title": None,
+        "date_signed": None,
+        "source": "live-nycgov",
+        "source_pdf_url": "https://example.invalid/eo1.pdf",
+    }
+
+
+def seed(repo: Path, *pages: str) -> Path:
+    """Put fixture page records where stage 1 would have written them."""
+    ocr_root = repo / "sources" / "ocr"
+    doc_dir = ocr_root / str(YEAR) / EO_ID
+    doc_dir.mkdir(parents=True, exist_ok=True)
+    for i, name in enumerate(pages, start=1):
+        shutil.copy(POST1974 / f"{name}.json", doc_dir / f"page_{i:04d}.json")
+    return ocr_root
+
+
+def parse(record, repo, ocr_root=None, engine=OCR_ENGINE_AUTO, do_ocr=False):
+    return parse_record(
+        record,
+        repo_root=repo,
+        do_ocr=do_ocr,
+        ocr_config=None,
+        ocr_engine=engine,
+        vlm_ocr_root=ocr_root,
+    )
+
+
+# --------------------------------------------------------------------------- #
+# The happy path                                                                #
+# --------------------------------------------------------------------------- #
+
+def test_committed_records_become_an_ocr_vlm_corpus_record(record, repo):
+    ocr_root = seed(repo, "clean")
+    parsed = parse(record, repo, ocr_root)
+
+    assert parsed.frontmatter["text_source"] == TEXT_SOURCE_OCR_VLM
+    assert parsed.frontmatter["page_count"] == 1
+    assert "NOW, THEREFORE" in parsed.body
+
+
+def test_the_letterhead_survives_and_anchors_the_tier(record, repo):
+    """clean._tier returns needs-review when it cannot find its anchor, and the
+    anchors ARE the letterhead — which dots.ocr labels Page-header. Dropping
+    headers as furniture would flip ~1,000 records to needs-review.
+
+    Nothing lands in dropped_header here because the anchor is the very first
+    line, so there is nothing above it to relocate. The committed Tesseract
+    records look the same way (corpus/2023/2023-EEO-302.md: dropped_header "").
+    """
+    ocr_root = seed(repo, "clean")
+    parsed = parse(record, repo, ocr_root)
+
+    assert parsed.body.startswith("THE CITY OF NEW YORK")
+    assert "OFFICE OF THE MAYOR" in parsed.body
+    assert parsed.frontmatter["text_quality"] == "clean"
+
+
+def test_the_signing_date_is_recovered_from_the_body(record, repo):
+    ocr_root = seed(repo, "clean")
+    parsed = parse(record, repo, ocr_root)
+    assert parsed.frontmatter["date_signed"] == "1974-01-02"
+
+
+def test_the_body_carries_no_markdown_or_html(record, repo):
+    """A migrated record publishes beside 1,205 born-digital ones that carry
+    neither."""
+    ocr_root = seed(repo, "clean")
+    parsed = parse(record, repo, ocr_root)
+    assert "#" not in parsed.body
+    assert "<" not in parsed.body
+    assert "<!--" not in parsed.body
+
+
+def test_soft_hyphen_wraps_are_rejoined(record, repo):
+    """So a migrated body is shaped like its born-digital siblings in the same
+    eo.json, which all went through extract.clean_text."""
+    ocr_root = seed(repo, "clean")
+    parsed = parse(record, repo, ocr_root)
+    assert "commission" in parsed.body
+    assert "commis-" not in parsed.body
+
+
+def test_pictures_never_reach_the_body(record, repo):
+    ocr_root = seed(repo, "clean")
+    parsed = parse(record, repo, ocr_root)
+    assert "[Picture" not in parsed.body
+    assert "bbox" not in parsed.body
+
+
+def test_tables_are_flattened_not_published_as_html(record, repo):
+    """Verbatim <table> markup would push the body past clean's junk-ratio and
+    force needs-review on every table-bearing order."""
+    ocr_root = seed(repo, "with_table")
+    parsed = parse(record, repo, ocr_root)
+    assert "<table>" not in parsed.body
+    assert "Agency | Amount" in parsed.body
+    assert "DOT | $1,000" in parsed.body
+
+
+def test_multiple_pages_are_joined_in_order(record, repo):
+    ocr_root = seed(repo, "clean", "clean")
+    parsed = parse(record, repo, ocr_root)
+    assert parsed.frontmatter["page_count"] == 2
+    assert parsed.body.count("NOW, THEREFORE") == 2
+
+
+# --------------------------------------------------------------------------- #
+# QA flags force review                                                         #
+# --------------------------------------------------------------------------- #
+
+def test_a_truncated_page_forces_needs_review(record, repo):
+    """Truncation leaves valid-looking JSON that is simply missing its tail, so
+    the text metrics would happily call it clean."""
+    ocr_root = seed(repo, "truncated")
+    parsed = parse(record, repo, ocr_root)
+    assert parsed.frontmatter["text_source"] == TEXT_SOURCE_OCR_VLM
+    assert parsed.frontmatter["text_quality"] == "needs-review"
+
+
+def test_a_page_that_never_parsed_is_a_recorded_failure(record, repo):
+    ocr_root = seed(repo, "parse_error")
+    parsed = parse(record, repo, ocr_root)
+    assert parsed.frontmatter["text_source"] == TEXT_SOURCE_OCR_VLM_FAILED
+    assert parsed.frontmatter["text_quality"] == "no-text"
+
+
+def test_model_scaffolding_never_reaches_the_body(record, repo):
+    """raw_text is the model's half-written JSON, not a transcription."""
+    ocr_root = seed(repo, "parse_error")
+    parsed = parse(record, repo, ocr_root)
+    assert '"elements"' not in parsed.body
+    assert "bbox" not in parsed.body
+
+
+# --------------------------------------------------------------------------- #
+# Engine precedence, and the mixed state during a long run                      #
+# --------------------------------------------------------------------------- #
+
+def test_vlm_engine_with_no_records_says_so_rather_than_falling_back(record, repo):
+    """--ocr-engine vlm must never silently reach for Tesseract."""
+    parsed = parse(record, repo, repo / "sources" / "ocr", engine=OCR_ENGINE_VLM,
+                   do_ocr=True)
+    assert parsed.frontmatter["text_source"] == TEXT_SOURCE_OCR_SKIPPED
+    assert parsed.body.strip() == "_No text available_"
+
+
+def test_auto_with_no_records_and_no_ocr_is_the_status_quo(record, repo):
+    """A document stage 1 has not reached yet reads exactly as it does today,
+    which is what lets the corpus be rebuilt mid-run."""
+    parsed = parse(record, repo, repo / "sources" / "ocr", engine=OCR_ENGINE_AUTO)
+    assert parsed.frontmatter["text_source"] == TEXT_SOURCE_OCR_SKIPPED
+
+
+def test_tesseract_engine_ignores_the_records_entirely(record, repo, monkeypatch):
+    """The rollback path. Records on disk must not divert it."""
+    ocr_root = seed(repo, "clean")
+    called = []
+
+    def _fake_ocr(pdf_path, *, config=None):
+        called.append(pdf_path)
+        from nyc_executive_orders.extract import ExtractResult
+        return ExtractResult(text="tesseract text", page_count=1, char_count=14,
+                             text_source="ocr")
+
+    monkeypatch.setattr("nyc_executive_orders.build_corpus.ocr_and_extract", _fake_ocr)
+    parsed = parse(record, repo, ocr_root, engine=OCR_ENGINE_TESSERACT, do_ocr=True)
+
+    assert called, "the Tesseract path was not taken"
+    assert parsed.frontmatter["text_source"] == "ocr"
+
+
+def test_auto_prefers_the_records_over_tesseract(record, repo, monkeypatch):
+    ocr_root = seed(repo, "clean")
+
+    def _boom(*a, **kw):
+        raise AssertionError("Tesseract must not run when records exist")
+
+    monkeypatch.setattr("nyc_executive_orders.build_corpus.ocr_and_extract", _boom)
+    parsed = parse(record, repo, ocr_root, engine=OCR_ENGINE_AUTO, do_ocr=True)
+    assert parsed.frontmatter["text_source"] == TEXT_SOURCE_OCR_VLM
+
+
+# --------------------------------------------------------------------------- #
+# Born-digital is untouched by every engine                                     #
+# --------------------------------------------------------------------------- #
+
+@pytest.mark.parametrize("engine", [OCR_ENGINE_AUTO, OCR_ENGINE_VLM, OCR_ENGINE_TESSERACT])
+def test_born_digital_ignores_the_engine_entirely(tmp_path, born_digital_pdf, engine):
+    pdf_dir = tmp_path / "pdfs" / "2003"
+    pdf_dir.mkdir(parents=True)
+    shutil.copy(born_digital_pdf, pdf_dir / "2003-EO-001.pdf")
+    rec = {
+        "eo_id": "2003-EO-001", "year": 2003, "number": "001", "is_emergency": False,
+        "pdf_path": "pdfs/2003/2003-EO-001.pdf", "title": None, "date_signed": None,
+        "source": "live-nycgov", "source_pdf_url": "https://example.invalid/x.pdf",
+    }
+    parsed = parse_record(rec, repo_root=tmp_path, do_ocr=False, ocr_config=None,
+                          ocr_engine=engine, vlm_ocr_root=tmp_path / "sources" / "ocr")
+    assert parsed.frontmatter["text_source"] == "born-digital"
+
+
+# --------------------------------------------------------------------------- #
+# Defaults                                                                      #
+# --------------------------------------------------------------------------- #
+
+def test_default_ocr_root_is_used_when_none_is_given(record, repo):
+    """vlm_ocr_root=None must resolve to repo_root/sources/ocr, not be skipped."""
+    seed(repo, "clean")
+    parsed = parse_record(record, repo_root=repo, do_ocr=False, ocr_config=None)
+    assert parsed.frontmatter["text_source"] == TEXT_SOURCE_OCR_VLM
+
+
+def test_frontmatter_field_set_is_unchanged(record, repo):
+    from nyc_executive_orders.build_corpus import FRONTMATTER_FIELDS
+
+    ocr_root = seed(repo, "clean")
+    parsed = parse(record, repo, ocr_root)
+    assert list(parsed.frontmatter.keys()) == list(FRONTMATTER_FIELDS)

@@ -30,7 +30,7 @@ from typing import Iterable
 
 import yaml
 
-from . import textlayer
+from . import clean, textlayer
 from .clean import clean_record
 from .enrich import enrich_record
 from .extract import TEXT_SOURCE_BORN_DIGITAL, extract_pdf_text
@@ -40,8 +40,47 @@ from .ocr import (
     OcrConfig,
     ocr_and_extract,
 )
+from .vlm_corpus import DEFAULT_VLM_OCR_ROOT, load_vlm_document
+from .vlm_ocr import TEXT_SOURCE_OCR_VLM, TEXT_SOURCE_OCR_VLM_FAILED
 
 logger = logging.getLogger("nyc_executive_orders.build_corpus")
+
+# Which engine transcribes a SCANNED PDF. Born-digital orders are unaffected by
+# every value here: a real text layer goes to extract() regardless.
+#
+#   auto       VLM where records exist, Tesseract where they do not. THE ROLLOUT
+#              SETTING: it lets the corpus be rebuilt at any point during a long
+#              OCR run and still come out complete, with manifest.csv showing
+#              exactly how far the migration has got.
+#   vlm        VLM where records exist, ocr-skipped where they do not. Never
+#              silently falls back. Reproducible, and needs no Tesseract at all.
+#   tesseract  Ignore the VLM records entirely. This is the rollback path.
+#
+# Under `auto` the build is a function of what is on disk, which is exactly why
+# stage 1 commits its page records rather than leaving them in scratch.
+OCR_ENGINE_AUTO = "auto"
+OCR_ENGINE_VLM = "vlm"
+OCR_ENGINE_TESSERACT = "tesseract"
+OCR_ENGINE_CHOICES = (OCR_ENGINE_AUTO, OCR_ENGINE_VLM, OCR_ENGINE_TESSERACT)
+
+# eo_id-keyed record of how the VLM made each body it made, beside the existing
+# gpp_provenance.json / pre1974_provenance.json. It is what lets a later clean
+# sweep re-apply the forced-review rule (see _vlm_provenance).
+VLM_PROVENANCE_FILENAME = "vlm_provenance.json"
+
+# A VLM page flag in this set forces the record to needs-review no matter what the
+# text metrics say. Same rule, same reasoning, as build_pre1974._FORCE_REVIEW_FLAGS:
+# clean tiering measures the text that IS there and would happily call a truncated
+# body clean. Matched by substring, since some flags carry a value.
+_FORCE_REVIEW_FLAGS = (
+    "parse-error",
+    "truncated",
+    "empty-output",
+    "low-ink-coverage",
+    "all-pages-blank",
+    "no-pages-recorded",
+    "no-measurable-ink",
+)
 
 # text_source values that this module adds beyond the extract/ocr ones.
 TEXT_SOURCE_NONE = "none"                # no PDF on disk (the 53 gap EOs)
@@ -128,6 +167,9 @@ class ParsedEO:
     char_count: int
     md_relpath: str
     raw_body: str = ""               # verbatim pre-clean text (-> eo.json full_text_raw)
+    # How the VLM made this body, when it did: pages, QA flags, forced_review.
+    # Collected into corpus/vlm_provenance.json — see _vlm_provenance().
+    vlm_provenance: dict | None = None
 
     @property
     def text_source(self) -> str:
@@ -165,12 +207,24 @@ def parse_record(
     do_ocr: bool,
     ocr_config: OcrConfig | None,
     textlayer_results: list | None = None,
+    ocr_engine: str = OCR_ENGINE_AUTO,
+    vlm_ocr_root: str | Path | None = None,
 ) -> ParsedEO:
-    """Run probe -> extract/ocr -> enrich for one index record; build its output.
+    """Run probe -> extract/ocr/vlm -> enrich for one index record; build its output.
 
     ``textlayer_results`` (if given) accumulates the per-PDF probe results for the
     reproducible report.
+
+    ``ocr_engine`` picks what transcribes a SCANNED PDF (see OCR_ENGINE_CHOICES).
+    ``vlm_ocr_root`` is where stage 1's committed page records live; None means
+    the default, and the VLM branch is skipped entirely under
+    ``ocr_engine="tesseract"``. Born-digital PDFs ignore both.
     """
+    vlm_ocr_root = Path(vlm_ocr_root) if vlm_ocr_root is not None else (
+        repo_root / DEFAULT_VLM_OCR_ROOT
+    )
+    force_review = False
+    vlm_provenance: dict | None = None
     year = int(record["year"])
     eo_id = record["eo_id"]
 
@@ -199,7 +253,29 @@ def parse_record(
                 # Classified text but nothing extractable — flag, don't fabricate.
                 text_source = TEXT_SOURCE_UNREADABLE
         elif classification == textlayer.CLASS_SCANNED:
-            if do_ocr:
+            vlm = None
+            if ocr_engine in (OCR_ENGINE_AUTO, OCR_ENGINE_VLM):
+                vlm = load_vlm_document(vlm_ocr_root, year, eo_id)
+
+            if vlm is not None and vlm.has_text:
+                body = vlm.text
+                char_count = len(body)
+                page_count = vlm.page_count or page_count
+                text_source = TEXT_SOURCE_OCR_VLM
+                force_review = _forced_review(vlm.flags)
+                vlm_provenance = _vlm_provenance(vlm, force_review, repo_root)
+            elif vlm is not None and vlm.records_present:
+                # Records on disk that yielded nothing usable is a REAL, recorded
+                # failure — not the same thing as "stage 1 has not got here yet",
+                # and it must never read as an ordinary empty order.
+                text_source = TEXT_SOURCE_OCR_VLM_FAILED
+                force_review = True
+                vlm_provenance = _vlm_provenance(vlm, force_review, repo_root)
+            elif ocr_engine == OCR_ENGINE_VLM:
+                # Asked for the VLM and it has no records here. Say so; never fall
+                # back to Tesseract behind the operator's back.
+                text_source = TEXT_SOURCE_OCR_SKIPPED
+            elif do_ocr:
                 extracted = ocr_and_extract(pdf_path, config=ocr_config)
                 if extracted.text_source == TEXT_SOURCE_OCR and extracted.has_text:
                     body = extracted.text
@@ -222,7 +298,8 @@ def parse_record(
     # Born-digital docs pass through byte-for-byte (apply_body_edits=False) — only
     # a genuinely-empty title/date is gap-filled. No-text stubs are not cleaned.
     raw_body = body
-    clean = _run_clean_stage(record, body, text_source=text_source, year=year)
+    clean = _run_clean_stage(record, body, text_source=text_source, year=year,
+                             force_review=force_review)
     body = clean["body"]
     raw_body = clean["raw_body"]
     char_count = len(body)
@@ -241,32 +318,82 @@ def parse_record(
         char_count=char_count,
         md_relpath=md_relpath,
         raw_body=raw_body,
+        vlm_provenance=vlm_provenance,
     )
 
 
+def _vlm_provenance(vlm, force_review: bool, repo_root: Path) -> dict:
+    """How this record's text was made, for ``corpus/vlm_provenance.json``.
+
+    Exists because :func:`clean_existing_corpus` re-cleans from ``full_text_raw``
+    and cannot see the page records: without this sidecar a clean sweep would
+    silently promote a truncated or low-coverage record back to ``clean``. Same
+    role, and the same shape of file, as ``corpus/gpp_provenance.json`` and
+    ``corpus/pre1974_provenance.json`` — so no locked frontmatter field moves.
+    """
+    try:
+        ocr_dir = str(vlm.ocr_dir.relative_to(repo_root))
+    except ValueError:
+        # An --vlm-ocr-root outside the repo (a scratch run). Record it as given
+        # rather than inventing a relative path.
+        ocr_dir = str(vlm.ocr_dir)
+    return {
+        "eo_id": vlm.eo_id,
+        "ocr_dir": ocr_dir,
+        "pages": vlm.page_count,
+        "pages_with_text": vlm.doc.pages_with_text,
+        "pages_skipped": vlm.doc.pages_skipped,
+        "flags": list(vlm.flags),
+        "forced_review": force_review,
+        "tables": vlm.doc.tables,
+        "pictures": vlm.doc.pictures,
+        "blank_override": vlm.doc.blank_override,
+        "element_counts": dict(vlm.doc.element_counts),
+    }
+
+
+def _forced_review(flags: Iterable[str]) -> bool:
+    """Did any page of this document fail loudly enough to force needs-review?
+
+    Matched by substring because some flags carry a value
+    (``low-ink-coverage:0.912``). Same rule as :func:`build_pre1974._forced_review`.
+    """
+    return any(any(f in flag for f in _FORCE_REVIEW_FLAGS) for flag in flags)
+
+
 def _run_clean_stage(record: dict, body: str, *, text_source: str,
-                     year: int) -> dict:
+                     year: int, force_review: bool = False) -> dict:
     """Apply the clean stage per ``text_source``; return the fields the corpus needs.
 
-    * OCR -> full clean (body may change; header/marks relocated; title/date gate).
+    * OCR / VLM-OCR -> full clean (body may change; header/marks relocated;
+      title/date gate).
     * born-digital -> pass-through body (byte-identical); title/date gap-fill only.
     * anything else (no-text stub, ocr-skipped/failed, unreadable) -> not cleaned.
+
+    ``force_review`` demotes the computed tier to ``needs-review``. It carries the
+    VLM's page-level QA signals, which the text metrics cannot see: a truncated
+    body is perfectly clean prose right up to where it stops.
     """
-    if text_source in (TEXT_SOURCE_BORN_DIGITAL, TEXT_SOURCE_OCR):
+    if text_source in (TEXT_SOURCE_BORN_DIGITAL, TEXT_SOURCE_OCR, TEXT_SOURCE_OCR_VLM):
         result = clean_record(
             body,
             year=year,
             existing_title=record.get("title"),
             existing_date_signed=record.get("date_signed"),
             text_source=text_source,
-            apply_body_edits=(text_source == TEXT_SOURCE_OCR),
+            # Born-digital text has no OCR header noise and passes through
+            # byte-for-byte; everything else gets the full clean.
+            apply_body_edits=(text_source != TEXT_SOURCE_BORN_DIGITAL),
         )
+        text_quality = result.text_quality
+        if force_review and text_quality != TEXT_QUALITY_NO_TEXT:
+            text_quality = clean.TEXT_QUALITY_REVIEW
         return {
             "body": result.full_text,
             "raw_body": result.full_text_raw,
             "title": result.title,
             "date_signed": result.date_signed,
-            "text_quality": result.text_quality,
+            "text_quality": text_quality,
             "dropped_header": result.dropped_header,
             "dropped_marks": result.dropped_marks,
         }
@@ -344,6 +471,8 @@ def build_corpus(
     index_dir: str | Path,
     do_ocr: bool = True,
     ocr_config: OcrConfig | None = None,
+    ocr_engine: str = OCR_ENGINE_AUTO,
+    vlm_ocr_root: str | Path | None = None,
     year: int | None = None,
     limit: int | None = None,
     allow_shrink: bool = False,
@@ -386,6 +515,7 @@ def build_corpus(
     bulk: list[dict] = []
     manifest_rows: list[dict] = []
 
+    vlm_provenance: dict[str, dict] = {}
     for record in selected:
         parsed = parse_record(
             record,
@@ -393,6 +523,8 @@ def build_corpus(
             do_ocr=do_ocr,
             ocr_config=ocr_config,
             textlayer_results=textlayer_results,
+            ocr_engine=ocr_engine,
+            vlm_ocr_root=vlm_ocr_root,
         )
         result.bump(parsed.text_source)
 
@@ -415,6 +547,8 @@ def build_corpus(
                           else parsed.frontmatter["page_count"],
             "md_path": f"corpus/{parsed.md_relpath}",
         })
+        if parsed.vlm_provenance is not None:
+            vlm_provenance[parsed.frontmatter["eo_id"]] = parsed.vlm_provenance
         logger.info("parsed %s [%s]", parsed.frontmatter["eo_id"], parsed.text_source)
 
     # Bulk JSON.
@@ -441,6 +575,17 @@ def build_corpus(
         "textlayer_report": str(report_path),
         "corpus_dir": str(corpus_dir),
     }
+
+    # VLM provenance sidecar. Only written when this build actually read page
+    # records, so a Tesseract-only or born-digital-only build leaves any existing
+    # file alone rather than truncating it to nothing.
+    if vlm_provenance:
+        sidecar = corpus_dir / VLM_PROVENANCE_FILENAME
+        sidecar.write_text(
+            json.dumps(vlm_provenance, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        result.output_paths["vlm_provenance"] = str(sidecar)
     return result
 
 
@@ -450,6 +595,8 @@ _CLASS_FOR_SOURCE = {
     TEXT_SOURCE_OCR: textlayer.CLASS_SCANNED,
     TEXT_SOURCE_OCR_FAILED: textlayer.CLASS_SCANNED,
     TEXT_SOURCE_OCR_SKIPPED: textlayer.CLASS_SCANNED,
+    TEXT_SOURCE_OCR_VLM: textlayer.CLASS_SCANNED,
+    TEXT_SOURCE_OCR_VLM_FAILED: textlayer.CLASS_SCANNED,
 }
 
 

@@ -1,0 +1,88 @@
+{
+  "page": 1,
+  "source_image": "page_0001.png",
+  "elements": [
+    {
+      "bbox": [
+        300,
+        120,
+        1400,
+        260
+      ],
+      "category": "Page-header",
+      "text": "THE CITY OF NEW YORK\nOFFICE OF THE MAYOR\nNEW YORK, N.Y. 10007"
+    },
+    {
+      "bbox": [
+        300,
+        300,
+        1400,
+        380
+      ],
+      "category": "Title",
+      "text": "EXECUTIVE ORDER NO. 1"
+    },
+    {
+      "bbox": [
+        300,
+        400,
+        1400,
+        470
+      ],
+      "category": "Text",
+      "text": "January 2, 1974"
+    },
+    {
+      "bbox": [
+        300,
+        500,
+        1400,
+        1600
+      ],
+      "category": "Text",
+      "text": "WHEREAS, the Mayor is authorized to establish a commis-\nsion; NOW, THEREFORE, by the power vested in me as Mayor of the City of New York, it is hereby ordered:"
+    },
+    {
+      "bbox": [
+        1000,
+        1700,
+        1400,
+        1900
+      ],
+      "category": "Picture"
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 180,
+    "content": {
+      "n_tokens": 120,
+      "mean": -0.01,
+      "min": -0.6,
+      "p05": 0.0,
+      "p50": 0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": []
+    }
+  },
+  "page_stats": {
+    "mean": 181.2,
+    "std": 61.4,
+    "dark_fraction": 0.0412
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "covered_fraction": 0.997,
+    "total_ink": 240118,
+    "uncovered_regions": []
+  }
+}
