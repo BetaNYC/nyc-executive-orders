@@ -1,0 +1,382 @@
+{
+  "page": 1,
+  "source_image": "page_0001.png",
+  "elements": [
+    {
+      "bbox": [
+        765,
+        719,
+        1042,
+        738
+      ],
+      "category": "Section-header",
+      "text": "EXECUTIVE ORDER NO. 3",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2578,
+          "min": -1.2898
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2327,
+          "min": -0.4654
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0387,
+          "min": -0.2972
+        }
+      },
+      "ink": {
+        "ink_px": 1884,
+        "area_px": 5600,
+        "density": 0.33643,
+        "chars": 21,
+        "chars_per_1k_ink": 11.15
+      }
+    },
+    {
+      "bbox": [
+        545,
+        754,
+        1265,
+        790
+      ],
+      "category": "Text",
+      "text": "PURSUANT TO THE PROVISIONS OF SECTIONS THREE, SEVEN AND eleven hundred-two of the New York City Charter, it is hereby ordered:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2634,
+          "min": -1.2443
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0011,
+          "min": -0.0011
+        },
+        "text": {
+          "n_tokens": 31,
+          "mean": -0.0159,
+          "min": -0.4882
+        }
+      },
+      "ink": {
+        "ink_px": 5390,
+        "area_px": 26825,
+        "density": 0.20093,
+        "chars": 126,
+        "chars_per_1k_ink": 23.38
+      }
+    },
+    {
+      "bbox": [
+        545,
+        790,
+        1265,
+        826
+      ],
+      "category": "Text",
+      "text": "The functions, duties, personnel-positions and facilities of the Office of City Adminis-\ntrator are hereby transferred and assigned to the Bureau of the Budget.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2005,
+          "min": -1.0324
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0121,
+          "min": -0.2026
+        }
+      },
+      "ink": {
+        "ink_px": 5468,
+        "area_px": 26825,
+        "density": 0.20384,
+        "chars": 160,
+        "chars_per_1k_ink": 29.26
+      }
+    },
+    {
+      "bbox": [
+        580,
+        828,
+        621,
+        846
+      ],
+      "category": "Text",
+      "text": "j7-12",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2231,
+          "min": -0.9401
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0681,
+          "min": -0.1772
+        }
+      },
+      "ink": {
+        "ink_px": 176,
+        "area_px": 798,
+        "density": 0.22055,
+        "chars": 5,
+        "chars_per_1k_ink": 28.41
+      }
+    },
+    {
+      "bbox": [
+        952,
+        828,
+        1231,
+        848
+      ],
+      "category": "Text",
+      "text": "ABRAHAM D. BEAME, Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2111,
+          "min": -1.1853
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0319,
+          "min": -0.3063
+        }
+      },
+      "ink": {
+        "ink_px": 1418,
+        "area_px": 5922,
+        "density": 0.23945,
+        "chars": 24,
+        "chars_per_1k_ink": 16.93
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 264,
+    "content": {
+      "n_tokens": 87,
+      "mean": -0.0214,
+      "min": -0.4882,
+      "p05": -0.172,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 95,
+          "token_id": 44214,
+          "logprob": -0.4882,
+          "text": " eleven"
+        },
+        {
+          "index": 261,
+          "token_id": 1189,
+          "logprob": -0.3063,
+          "text": ".\""
+        },
+        {
+          "index": 36,
+          "token_id": 46340,
+          "logprob": -0.2972,
+          "text": "EXEC"
+        },
+        {
+          "index": 164,
+          "token_id": 376,
+          "logprob": -0.2026,
+          "text": "tr"
+        },
+        {
+          "index": 212,
+          "token_id": 73,
+          "logprob": -0.1772,
+          "text": "j"
+        },
+        {
+          "index": 213,
+          "token_id": 22,
+          "logprob": -0.1599,
+          "text": "7"
+        },
+        {
+          "index": 160,
+          "token_id": 7582,
+          "logprob": -0.1566,
+          "text": " Admin"
+        },
+        {
+          "index": 161,
+          "token_id": 285,
+          "logprob": -0.0151,
+          "text": "is"
+        },
+        {
+          "index": 177,
+          "token_id": 1189,
+          "logprob": -0.0102,
+          "text": ".\""
+        },
+        {
+          "index": 162,
+          "token_id": 30529,
+          "logprob": -0.0094,
+          "text": "-\\"
+        },
+        {
+          "index": 40,
+          "token_id": 5664,
+          "logprob": -0.0091,
+          "text": " NO"
+        },
+        {
+          "index": 258,
+          "token_id": 2729,
+          "logprob": -0.0089,
+          "text": "AME"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 100,
+      "mean": -0.2221,
+      "min": -1.2898,
+      "p05": -1.1812,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.2898,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.2622,
+          "text": "2"
+        },
+        {
+          "index": 51,
+          "token_id": 20,
+          "logprob": -1.2443,
+          "text": "5"
+        },
+        {
+          "index": 62,
+          "token_id": 20,
+          "logprob": -1.2145,
+          "text": "5"
+        },
+        {
+          "index": 224,
+          "token_id": 17,
+          "logprob": -1.1853,
+          "text": "2"
+        },
+        {
+          "index": 56,
+          "token_id": 19,
+          "logprob": -1.181,
+          "text": "4"
+        },
+        {
+          "index": 235,
+          "token_id": 16,
+          "logprob": -1.0469,
+          "text": "1"
+        },
+        {
+          "index": 133,
+          "token_id": 21,
+          "logprob": -1.0324,
+          "text": "6"
+        },
+        {
+          "index": 117,
+          "token_id": 20,
+          "logprob": -1.0269,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 23,
+          "logprob": -0.9868,
+          "text": "8"
+        },
+        {
+          "index": 128,
+          "token_id": 20,
+          "logprob": -0.9646,
+          "text": "5"
+        },
+        {
+          "index": 67,
+          "token_id": 15,
+          "logprob": -0.9486,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 264,
+      "mean": -0.092,
+      "min": -1.2898,
+      "p05": -0.9399,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 253.09,
+    "std": 19.98,
+    "dark_fraction": 0.00659
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      628.0,
+      821.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      209,
+      273,
+      1535,
+      2007
+    ],
+    "ink_px": 15145,
+    "covered_px": 14330,
+    "covered_fraction": 0.94619,
+    "uncovered_px": 815,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

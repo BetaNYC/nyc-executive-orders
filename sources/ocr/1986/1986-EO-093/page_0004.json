@@ -1,0 +1,275 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        360,
+        317,
+        1442,
+        377
+      ],
+      "category": "Text",
+      "text": "Section 4. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3181,
+          "min": -1.4862
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0176,
+          "min": -0.0176
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0083,
+          "min": -0.0626
+        }
+      },
+      "ink": {
+        "ink_px": 3659,
+        "area_px": 65880,
+        "density": 0.05554,
+        "chars": 68,
+        "chars_per_1k_ink": 18.58
+      }
+    },
+    {
+      "bbox": [
+        1034,
+        420,
+        1544,
+        592
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3555,
+          "min": -1.6762
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 8085,
+        "area_px": 88566,
+        "density": 0.09129,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 83,
+    "content": {
+      "n_tokens": 14,
+      "mean": -0.0083,
+      "min": -0.0626,
+      "p05": -0.0494,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 46,
+          "token_id": 2456,
+          "logprob": -0.0626,
+          "text": " effect"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0423,
+          "text": "Section"
+        },
+        {
+          "index": 39,
+          "token_id": 46923,
+          "logprob": -0.0047,
+          "text": " Effective"
+        },
+        {
+          "index": 37,
+          "token_id": 19,
+          "logprob": -0.0042,
+          "text": "4"
+        },
+        {
+          "index": 43,
+          "token_id": 7217,
+          "logprob": -0.0009,
+          "text": " Order"
+        },
+        {
+          "index": 48,
+          "token_id": 1189,
+          "logprob": -0.0005,
+          "text": ".\""
+        },
+        {
+          "index": 45,
+          "token_id": 1896,
+          "logprob": -0.0003,
+          "text": " take"
+        },
+        {
+          "index": 40,
+          "token_id": 2631,
+          "logprob": -0.0003,
+          "text": " Date"
+        },
+        {
+          "index": 38,
+          "token_id": 13,
+          "logprob": -0.0002,
+          "text": "."
+        },
+        {
+          "index": 41,
+          "token_id": 13,
+          "logprob": -0.0002,
+          "text": "."
+        },
+        {
+          "index": 36,
+          "token_id": 220,
+          "logprob": -0.0001,
+          "text": " "
+        },
+        {
+          "index": 47,
+          "token_id": 7069,
+          "logprob": -0.0001,
+          "text": " immediately"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 41,
+      "mean": -0.3213,
+      "min": -1.6762,
+      "p05": -1.4862,
+      "p50": -0.0021,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 57,
+          "token_id": 19,
+          "logprob": -1.6762,
+          "text": "4"
+        },
+        {
+          "index": 68,
+          "token_id": 19,
+          "logprob": -1.6412,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.4862,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.4743,
+          "text": "2"
+        },
+        {
+          "index": 73,
+          "token_id": 17,
+          "logprob": -1.2451,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.2226,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 15,
+          "logprob": -1.0072,
+          "text": "0"
+        },
+        {
+          "index": 62,
+          "token_id": 15,
+          "logprob": -0.7981,
+          "text": "0"
+        },
+        {
+          "index": 61,
+          "token_id": 17,
+          "logprob": -0.6369,
+          "text": "2"
+        },
+        {
+          "index": 6,
+          "token_id": 21,
+          "logprob": -0.6341,
+          "text": "6"
+        },
+        {
+          "index": 72,
+          "token_id": 24,
+          "logprob": -0.5153,
+          "text": "9"
+        },
+        {
+          "index": 56,
+          "token_id": 18,
+          "logprob": -0.448,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 83,
+      "mean": -0.1622,
+      "min": -1.6762,
+      "p05": -1.2428,
+      "p50": -0.0001,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 253.59,
+    "std": 17.73,
+    "dark_fraction": 0.00502
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      643.0,
+      828.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      214,
+      276,
+      1572,
+      2024
+    ],
+    "ink_px": 11922,
+    "covered_px": 11744,
+    "covered_fraction": 0.98507,
+    "uncovered_px": 178,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

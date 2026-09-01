@@ -1,0 +1,324 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        259,
+        335,
+        1409,
+        498
+      ],
+      "category": "Text",
+      "text": "§6. Prior Orders Revoked. Executive Orders No. 14(1974) and 42(1980) are hereby revoked, but nothing in this Order shall be deemed to affect the validity of policies, practices or procedures engaged in pursuant to such orders, except as the Chair may hereafter direct.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3119,
+          "min": -1.4674
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.4287,
+          "min": -0.4287
+        },
+        "text": {
+          "n_tokens": 69,
+          "mean": -0.0028,
+          "min": -0.1198
+        }
+      },
+      "ink": {
+        "ink_px": 30938,
+        "area_px": 189420,
+        "density": 0.16333,
+        "chars": 268,
+        "chars_per_1k_ink": 8.66
+      }
+    },
+    {
+      "bbox": [
+        259,
+        533,
+        1411,
+        598
+      ],
+      "category": "Text",
+      "text": "§7. Effective Date. This Executive Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.264,
+          "min": -1.2169
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0072,
+          "min": -0.0809
+        }
+      },
+      "ink": {
+        "ink_px": 9038,
+        "area_px": 75900,
+        "density": 0.11908,
+        "chars": 71,
+        "chars_per_1k_ink": 7.86
+      }
+    },
+    {
+      "bbox": [
+        1036,
+        816,
+        1313,
+        873
+      ],
+      "category": "Text",
+      "text": "Edward I. Koch\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2959,
+          "min": -1.4033
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0051,
+          "min": -0.0051
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0045,
+          "min": -0.0209
+        }
+      },
+      "ink": {
+        "ink_px": 2281,
+        "area_px": 16066,
+        "density": 0.14198,
+        "chars": 20,
+        "chars_per_1k_ink": 8.77
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 200,
+    "content": {
+      "n_tokens": 91,
+      "mean": -0.0037,
+      "min": -0.1198,
+      "p05": -0.0161,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.1198,
+          "text": "§"
+        },
+        {
+          "index": 149,
+          "token_id": 1896,
+          "logprob": -0.0809,
+          "text": " take"
+        },
+        {
+          "index": 46,
+          "token_id": 13,
+          "logprob": -0.038,
+          "text": "."
+        },
+        {
+          "index": 195,
+          "token_id": 3022,
+          "logprob": -0.0209,
+          "text": "AY"
+        },
+        {
+          "index": 50,
+          "token_id": 7,
+          "logprob": -0.0161,
+          "text": "("
+        },
+        {
+          "index": 139,
+          "token_id": 17851,
+          "logprob": -0.0161,
+          "text": "§"
+        },
+        {
+          "index": 189,
+          "token_id": 84501,
+          "logprob": -0.0139,
+          "text": "Edward"
+        },
+        {
+          "index": 38,
+          "token_id": 31399,
+          "logprob": -0.0107,
+          "text": " Prior"
+        },
+        {
+          "index": 48,
+          "token_id": 16,
+          "logprob": -0.0032,
+          "text": "1"
+        },
+        {
+          "index": 60,
+          "token_id": 7,
+          "logprob": -0.0032,
+          "text": "("
+        },
+        {
+          "index": 142,
+          "token_id": 46923,
+          "logprob": -0.0021,
+          "text": " Effective"
+        },
+        {
+          "index": 152,
+          "token_id": 1189,
+          "logprob": -0.0014,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 61,
+      "mean": -0.2835,
+      "min": -1.4674,
+      "p05": -1.2752,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -1.4674,
+          "text": "5"
+        },
+        {
+          "index": 161,
+          "token_id": 21,
+          "logprob": -1.4033,
+          "text": "6"
+        },
+        {
+          "index": 172,
+          "token_id": 18,
+          "logprob": -1.2783,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.2752,
+          "text": "9"
+        },
+        {
+          "index": 127,
+          "token_id": 23,
+          "logprob": -1.2169,
+          "text": "8"
+        },
+        {
+          "index": 116,
+          "token_id": 18,
+          "logprob": -1.2008,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 23,
+          "logprob": -1.1785,
+          "text": "8"
+        },
+        {
+          "index": 122,
+          "token_id": 16,
+          "logprob": -1.1696,
+          "text": "1"
+        },
+        {
+          "index": 166,
+          "token_id": 21,
+          "logprob": -1.1399,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 24,
+          "logprob": -1.0282,
+          "text": "9"
+        },
+        {
+          "index": 177,
+          "token_id": 18,
+          "logprob": -1.019,
+          "text": "3"
+        },
+        {
+          "index": 110,
+          "token_id": 20,
+          "logprob": -0.6327,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 200,
+      "mean": -0.0892,
+      "min": -1.4674,
+      "p05": -1.0195,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 249.25,
+    "std": 35.7,
+    "dark_fraction": 0.02093
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      643.0,
+      818.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      214,
+      272,
+      1572,
+      2000
+    ],
+    "ink_px": 49125,
+    "covered_px": 42257,
+    "covered_fraction": 0.86019,
+    "uncovered_px": 6868,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          886,
+          704,
+          1462,
+          824
+        ],
+        "ink_px": 6618
+      }
+    ],
+    "cell_px": 24
+  }
+}

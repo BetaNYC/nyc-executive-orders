@@ -1,0 +1,353 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        552,
+        302,
+        1329,
+        728
+      ],
+      "category": "Text",
+      "text": "spouse. This annual report shall be filed for each calendar year and shall be submitted to the Department of Investigation no later than [March 15] May 1 of the following year. For calendar year 1985, reports shall be filed no later than 5:00 p.m. on September 19, 1986. Persons leaving city service shall file a report for the previous year, if they have not already done so, and for that portion of the final calendar year in which they served in office. Such reports shall be filed within 60 days of separation [of] from service or by [March 15] May 1 of the following year, whichever is earlier.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3566,
+          "min": -1.6152
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 149,
+          "mean": -0.0031,
+          "min": -0.4229
+        }
+      },
+      "ink": {
+        "ink_px": 71662,
+        "area_px": 331272,
+        "density": 0.21632,
+        "chars": 599,
+        "chars_per_1k_ink": 8.36
+      }
+    },
+    {
+      "bbox": [
+        310,
+        760,
+        1550,
+        854
+      ],
+      "category": "Text",
+      "text": "Section 2. Purpose. The purpose of this amendment is to adjust the filing schedule to coincide with the May 1, 1987 deadline for filing with the City Clerk contained in the City's Financial Disclosure Law.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2892,
+          "min": -1.3251
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0336,
+          "min": -0.0336
+        },
+        "text": {
+          "n_tokens": 46,
+          "mean": -0.0051,
+          "min": -0.1766
+        }
+      },
+      "ink": {
+        "ink_px": 23389,
+        "area_px": 116352,
+        "density": 0.20102,
+        "chars": 205,
+        "chars_per_1k_ink": 8.76
+      }
+    },
+    {
+      "bbox": [
+        475,
+        888,
+        1533,
+        918
+      ],
+      "category": "Text",
+      "text": "Section 3. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2726,
+          "min": -1.4494
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0021,
+          "min": -0.0212
+        }
+      },
+      "ink": {
+        "ink_px": 8112,
+        "area_px": 32488,
+        "density": 0.24969,
+        "chars": 68,
+        "chars_per_1k_ink": 8.38
+      }
+    },
+    {
+      "bbox": [
+        1002,
+        1017,
+        1414,
+        1175
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.3845,
+          "min": -1.7776
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 8861,
+        "area_px": 65760,
+        "density": 0.13475,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 350,
+    "content": {
+      "n_tokens": 209,
+      "mean": -0.0035,
+      "min": -0.4229,
+      "p05": -0.0027,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 46,
+          "token_id": 13168,
+          "logprob": -0.4229,
+          "text": " calendar"
+        },
+        {
+          "index": 223,
+          "token_id": 29045,
+          "logprob": -0.1766,
+          "text": " Purpose"
+        },
+        {
+          "index": 219,
+          "token_id": 9620,
+          "logprob": -0.0591,
+          "text": "Section"
+        },
+        {
+          "index": 304,
+          "token_id": 46923,
+          "logprob": -0.0212,
+          "text": " Effective"
+        },
+        {
+          "index": 154,
+          "token_id": 21,
+          "logprob": -0.0099,
+          "text": "6"
+        },
+        {
+          "index": 300,
+          "token_id": 9620,
+          "logprob": -0.0067,
+          "text": "Section"
+        },
+        {
+          "index": 60,
+          "token_id": 508,
+          "logprob": -0.0059,
+          "text": " ["
+        },
+        {
+          "index": 161,
+          "token_id": 60,
+          "logprob": -0.0049,
+          "text": "]"
+        },
+        {
+          "index": 108,
+          "token_id": 21,
+          "logprob": -0.0047,
+          "text": "6"
+        },
+        {
+          "index": 66,
+          "token_id": 3217,
+          "logprob": -0.0035,
+          "text": " May"
+        },
+        {
+          "index": 35,
+          "token_id": 2154,
+          "logprob": -0.0029,
+          "text": "sp"
+        },
+        {
+          "index": 159,
+          "token_id": 508,
+          "logprob": -0.0023,
+          "text": " ["
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 83,
+      "mean": -0.3126,
+      "min": -1.7776,
+      "p05": -1.4455,
+      "p50": -0.0004,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 334,
+          "token_id": 19,
+          "logprob": -1.7776,
+          "text": "4"
+        },
+        {
+          "index": 328,
+          "token_id": 22,
+          "logprob": -1.7408,
+          "text": "7"
+        },
+        {
+          "index": 322,
+          "token_id": 17,
+          "logprob": -1.733,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 17,
+          "logprob": -1.6152,
+          "text": "2"
+        },
+        {
+          "index": 272,
+          "token_id": 20,
+          "logprob": -1.4494,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 24,
+          "logprob": -1.4104,
+          "text": "9"
+        },
+        {
+          "index": 283,
+          "token_id": 18,
+          "logprob": -1.3665,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.3473,
+          "text": "2"
+        },
+        {
+          "index": 207,
+          "token_id": 19,
+          "logprob": -1.3251,
+          "text": "4"
+        },
+        {
+          "index": 340,
+          "token_id": 20,
+          "logprob": -1.2377,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 23,
+          "logprob": -1.2207,
+          "text": "8"
+        },
+        {
+          "index": 288,
+          "token_id": 23,
+          "logprob": -1.0854,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 350,
+      "mean": -0.0782,
+      "min": -1.7776,
+      "p05": -0.5761,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 241.81,
+    "std": 53.51,
+    "dark_fraction": 0.05046
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      622.0,
+      809.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      207,
+      269,
+      1520,
+      1978
+    ],
+    "ink_px": 113218,
+    "covered_px": 112024,
+    "covered_fraction": 0.98945,
+    "uncovered_px": 1194,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          639,
+          917,
+          879,
+          941
+        ],
+        "ink_px": 625
+      }
+    ],
+    "cell_px": 24
+  }
+}

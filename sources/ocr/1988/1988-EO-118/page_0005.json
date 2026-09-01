@@ -1,0 +1,314 @@
+{
+  "page": 5,
+  "source_image": "page_0005.png",
+  "elements": [
+    {
+      "bbox": [
+        312,
+        223,
+        1509,
+        389
+      ],
+      "category": "Text",
+      "text": "District of the City of New York and the City shall not incur any penalty or damages because of such cancellation or termination.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3193,
+          "min": -1.5626
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 24,
+          "mean": -0.0149,
+          "min": -0.3535
+        }
+      },
+      "ink": {
+        "ink_px": 11961,
+        "area_px": 144474,
+        "density": 0.08279,
+        "chars": 129,
+        "chars_per_1k_ink": 10.79
+      }
+    },
+    {
+      "bbox": [
+        316,
+        425,
+        1509,
+        1054
+      ],
+      "category": "Text",
+      "text": "**Section 4. Cooperation with Investigation.** Pursuant to my power as Mayor and in accordance with the resolution of the Board of Education (a) The Board of Education, the Chancellor, all Community School Boards and Community Superintendents within the School District of the City of New York, and all other heads of department or agencies of the City shall make every reasonable effort to insure the full cooperation of all persons employed or supervised by them with investigations or inquiries conducted by the Commission.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2814,
+          "min": -1.4931
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0161,
+          "min": -0.0161
+        },
+        "text": {
+          "n_tokens": 98,
+          "mean": -0.0063,
+          "min": -0.5837
+        }
+      },
+      "ink": {
+        "ink_px": 87229,
+        "area_px": 753270,
+        "density": 0.1158,
+        "chars": 526,
+        "chars_per_1k_ink": 6.03
+      }
+    },
+    {
+      "bbox": [
+        325,
+        1086,
+        1522,
+        1520
+      ],
+      "category": "List-item",
+      "text": "(b) The Board of Education, the Chancellor, all Community School Boards and Community Superintendents within the School District of the City of New York and all other departments or agencies of the City shall make available to the Commission such facilities, services, personnel and other assistance as may be necessary for the conduct of its investigations.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.282,
+          "min": -1.463
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2371,
+          "min": -0.4741
+        },
+        "text": {
+          "n_tokens": 66,
+          "mean": -0.0,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 61751,
+        "area_px": 516097,
+        "density": 0.11965,
+        "chars": 358,
+        "chars_per_1k_ink": 5.8
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 297,
+    "content": {
+      "n_tokens": 188,
+      "mean": -0.0052,
+      "min": -0.5837,
+      "p05": -0.0008,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 94,
+          "token_id": 67961,
+          "logprob": -0.5837,
+          "text": " \"**"
+        },
+        {
+          "index": 47,
+          "token_id": 61522,
+          "logprob": -0.3535,
+          "text": " incur"
+        },
+        {
+          "index": 99,
+          "token_id": 72708,
+          "logprob": -0.0241,
+          "text": " Cooperation"
+        },
+        {
+          "index": 104,
+          "token_id": 70660,
+          "logprob": -0.0026,
+          "text": " Purs"
+        },
+        {
+          "index": 95,
+          "token_id": 9620,
+          "logprob": -0.0023,
+          "text": "Section"
+        },
+        {
+          "index": 141,
+          "token_id": 408,
+          "logprob": -0.0023,
+          "text": "end"
+        },
+        {
+          "index": 58,
+          "token_id": 1189,
+          "logprob": -0.0019,
+          "text": ".\""
+        },
+        {
+          "index": 35,
+          "token_id": 47840,
+          "logprob": -0.0016,
+          "text": "District"
+        },
+        {
+          "index": 51,
+          "token_id": 25129,
+          "logprob": -0.0011,
+          "text": " damages"
+        },
+        {
+          "index": 107,
+          "token_id": 847,
+          "logprob": -0.0009,
+          "text": " my"
+        },
+        {
+          "index": 241,
+          "token_id": 12062,
+          "logprob": -0.0005,
+          "text": " Community"
+        },
+        {
+          "index": 248,
+          "token_id": 408,
+          "logprob": -0.0005,
+          "text": "end"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 64,
+      "mean": -0.283,
+      "min": -1.5626,
+      "p05": -1.4616,
+      "p50": -0.0005,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 17,
+          "logprob": -1.5626,
+          "text": "2"
+        },
+        {
+          "index": 66,
+          "token_id": 21,
+          "logprob": -1.4931,
+          "text": "6"
+        },
+        {
+          "index": 71,
+          "token_id": 20,
+          "logprob": -1.4859,
+          "text": "5"
+        },
+        {
+          "index": 205,
+          "token_id": 21,
+          "logprob": -1.463,
+          "text": "6"
+        },
+        {
+          "index": 83,
+          "token_id": 19,
+          "logprob": -1.4532,
+          "text": "4"
+        },
+        {
+          "index": 211,
+          "token_id": 17,
+          "logprob": -1.4383,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.4203,
+          "text": "3"
+        },
+        {
+          "index": 199,
+          "token_id": 20,
+          "logprob": -1.3969,
+          "text": "5"
+        },
+        {
+          "index": 217,
+          "token_id": 15,
+          "logprob": -1.1808,
+          "text": "0"
+        },
+        {
+          "index": 18,
+          "token_id": 24,
+          "logprob": -1.0245,
+          "text": "9"
+        },
+        {
+          "index": 23,
+          "token_id": 24,
+          "logprob": -0.8354,
+          "text": "9"
+        },
+        {
+          "index": 76,
+          "token_id": 15,
+          "logprob": -0.6944,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 297,
+      "mean": -0.0643,
+      "min": -1.5626,
+      "p05": -0.4742,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 236.53,
+    "std": 62.93,
+    "dark_fraction": 0.07235
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      616.0,
+      810.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      205,
+      270,
+      1506,
+      1980
+    ],
+    "ink_px": 160948,
+    "covered_px": 160941,
+    "covered_fraction": 0.99996,
+    "uncovered_px": 7,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

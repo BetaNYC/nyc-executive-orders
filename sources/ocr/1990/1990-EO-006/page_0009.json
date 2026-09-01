@@ -1,0 +1,411 @@
+{
+  "page": 9,
+  "source_image": "page_0009.png",
+  "elements": [
+    {
+      "bbox": [
+        498,
+        191,
+        1482,
+        289
+      ],
+      "category": "List-item",
+      "text": "k. Represent the Mayor, when so directed by the Mayor, on any board, committee, commission or corporation of which the Mayor is a member.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3091,
+          "min": -1.4997
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0016,
+          "min": -0.0032
+        },
+        "text": {
+          "n_tokens": 30,
+          "mean": -0.0062,
+          "min": -0.1798
+        }
+      },
+      "ink": {
+        "ink_px": 1812,
+        "area_px": 16830,
+        "density": 0.10766,
+        "chars": 137,
+        "chars_per_1k_ink": 75.61
+      }
+    },
+    {
+      "bbox": [
+        498,
+        323,
+        1482,
+        417
+      ],
+      "category": "List-item",
+      "text": "l. Perform any function, power or duty of the Mayor in relation to the execution of contracts, franchises, revocable consents, deeds and satisfactions.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2574,
+          "min": -1.2204
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0119,
+          "min": -0.3889
+        }
+      },
+      "ink": {
+        "ink_px": 13327,
+        "area_px": 95040,
+        "density": 0.14023,
+        "chars": 151,
+        "chars_per_1k_ink": 11.33
+      }
+    },
+    {
+      "bbox": [
+        498,
+        454,
+        1418,
+        485
+      ],
+      "category": "List-item",
+      "text": "m. Perform such other duties as the Mayor may direct.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.266,
+          "min": -1.2331
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0128,
+          "min": -0.0256
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0001,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 4922,
+        "area_px": 29632,
+        "density": 0.1661,
+        "chars": 53,
+        "chars_per_1k_ink": 10.77
+      }
+    },
+    {
+      "bbox": [
+        334,
+        519,
+        1482,
+        582
+      ],
+      "category": "Text",
+      "text": "Section 8: Executive Order No. 2, dated January 2, 1990, is hereby revoked.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2683,
+          "min": -1.4467
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0058,
+          "min": -0.0058
+        },
+        "text": {
+          "n_tokens": 26,
+          "mean": -0.0019,
+          "min": -0.0388
+        }
+      },
+      "ink": {
+        "ink_px": 7067,
+        "area_px": 73920,
+        "density": 0.0956,
+        "chars": 75,
+        "chars_per_1k_ink": 10.61
+      }
+    },
+    {
+      "bbox": [
+        334,
+        616,
+        1486,
+        678
+      ],
+      "category": "Text",
+      "text": "Section 9: This Order shall take effect immediately and shall be deemed in force and effect as of March 5, 1990.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.274,
+          "min": -1.3422
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 30,
+          "mean": -0.0003,
+          "min": -0.0084
+        }
+      },
+      "ink": {
+        "ink_px": 11009,
+        "area_px": 74176,
+        "density": 0.14842,
+        "chars": 112,
+        "chars_per_1k_ink": 10.17
+      }
+    },
+    {
+      "bbox": [
+        911,
+        729,
+        1486,
+        905
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3346,
+          "min": -1.3515
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0037,
+          "min": -0.0037
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 9542,
+        "area_px": 102483,
+        "density": 0.09311,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 342,
+    "content": {
+      "n_tokens": 131,
+      "mean": -0.0049,
+      "min": -0.3889,
+      "p05": -0.0014,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 102,
+          "token_id": 75,
+          "logprob": -0.3889,
+          "text": "l"
+        },
+        {
+          "index": 48,
+          "token_id": 11,
+          "logprob": -0.1798,
+          "text": ","
+        },
+        {
+          "index": 218,
+          "token_id": 9620,
+          "logprob": -0.0388,
+          "text": "Section"
+        },
+        {
+          "index": 239,
+          "token_id": 11,
+          "logprob": -0.0086,
+          "text": ","
+        },
+        {
+          "index": 291,
+          "token_id": 387,
+          "logprob": -0.0084,
+          "text": " be"
+        },
+        {
+          "index": 38,
+          "token_id": 21950,
+          "logprob": -0.0038,
+          "text": " Represent"
+        },
+        {
+          "index": 49,
+          "token_id": 389,
+          "logprob": -0.0014,
+          "text": " on"
+        },
+        {
+          "index": 132,
+          "token_id": 8625,
+          "logprob": -0.0013,
+          "text": " satisf"
+        },
+        {
+          "index": 279,
+          "token_id": 9620,
+          "logprob": -0.001,
+          "text": "Section"
+        },
+        {
+          "index": 36,
+          "token_id": 74,
+          "logprob": -0.0009,
+          "text": "k"
+        },
+        {
+          "index": 115,
+          "token_id": 12687,
+          "logprob": -0.0008,
+          "text": " relation"
+        },
+        {
+          "index": 65,
+          "token_id": 1189,
+          "logprob": -0.0008,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 123,
+      "mean": -0.2644,
+      "min": -1.4997,
+      "p05": -1.3245,
+      "p50": -0.0004,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.4997,
+          "text": "2"
+        },
+        {
+          "index": 190,
+          "token_id": 19,
+          "logprob": -1.4467,
+          "text": "4"
+        },
+        {
+          "index": 332,
+          "token_id": 20,
+          "logprob": -1.3515,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.3513,
+          "text": "8"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.3471,
+          "text": "1"
+        },
+        {
+          "index": 251,
+          "token_id": 19,
+          "logprob": -1.3422,
+          "text": "4"
+        },
+        {
+          "index": 316,
+          "token_id": 16,
+          "logprob": -1.3287,
+          "text": "1"
+        },
+        {
+          "index": 206,
+          "token_id": 17,
+          "logprob": -1.2865,
+          "text": "2"
+        },
+        {
+          "index": 327,
+          "token_id": 21,
+          "logprob": -1.2728,
+          "text": "6"
+        },
+        {
+          "index": 262,
+          "token_id": 21,
+          "logprob": -1.2611,
+          "text": "6"
+        },
+        {
+          "index": 256,
+          "token_id": 21,
+          "logprob": -1.2417,
+          "text": "6"
+        },
+        {
+          "index": 147,
+          "token_id": 19,
+          "logprob": -1.2331,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 342,
+      "mean": -0.0999,
+      "min": -1.4997,
+      "p05": -1.0761,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 249.32,
+    "std": 35.06,
+    "dark_fraction": 0.0209
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      628.0,
+      819.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      209,
+      273,
+      1535,
+      2002
+    ],
+    "ink_px": 47921,
+    "covered_px": 47679,
+    "covered_fraction": 0.99495,
+    "uncovered_px": 242,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

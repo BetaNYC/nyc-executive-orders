@@ -1,0 +1,280 @@
+{
+  "page": 6,
+  "source_image": "page_0006.png",
+  "elements": [
+    {
+      "bbox": [
+        293,
+        222,
+        1500,
+        1127
+      ],
+      "category": "Text",
+      "text": "(c) The Board of Education, the Chancellor, all Community School Boards and Community Superintendents within the City School District of the City of New York and all other departments or agencies of the City shall provide to the Commission upon request any and all documents, records, reports, files or other information, except such documents as cannot be so disclosed according to law. To insure full availability of such records and documents to the Commission, the Board of Education, the Chancellor, all Community School Boards and Community Superintendents and all other City departments and agencies shall make and retain copies of any documents, records or files provided to state or federal prosecutors, or other investigative bodies, pursuant to subpoena or otherwise.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3485,
+          "min": -1.8186
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1798,
+          "min": -0.1798
+        },
+        "text": {
+          "n_tokens": 142,
+          "mean": -0.0004,
+          "min": -0.0266
+        }
+      },
+      "ink": {
+        "ink_px": 114747,
+        "area_px": 1031772,
+        "density": 0.11121,
+        "chars": 778,
+        "chars_per_1k_ink": 6.78
+      }
+    },
+    {
+      "bbox": [
+        299,
+        1163,
+        1500,
+        1728
+      ],
+      "category": "Text",
+      "text": "(d) Every officer or employee of the City School District of the City of New York, including the members of the Board of Education, the Chancellor, members of all Community School Boards and Community Superintendents, and all other officers and employees of the City shall cooperate fully with the Commission. Interference with or obstruction of the Commission's investigations or other functions shall constitute cause for removal from office or employment, or other appropriate penalty.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2774,
+          "min": -1.3171
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 88,
+          "mean": -0.0,
+          "min": -0.0014
+        }
+      },
+      "ink": {
+        "ink_px": 80764,
+        "area_px": 679620,
+        "density": 0.11884,
+        "chars": 488,
+        "chars_per_1k_ink": 6.04
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 303,
+    "content": {
+      "n_tokens": 230,
+      "mean": -0.0003,
+      "min": -0.0266,
+      "p05": -0.0002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 47,
+          "token_id": 12062,
+          "logprob": -0.0266,
+          "text": " Community"
+        },
+        {
+          "index": 88,
+          "token_id": 7424,
+          "logprob": -0.0161,
+          "text": " records"
+        },
+        {
+          "index": 54,
+          "token_id": 408,
+          "logprob": -0.0044,
+          "text": "end"
+        },
+        {
+          "index": 35,
+          "token_id": 11993,
+          "logprob": -0.0038,
+          "text": " \"("
+        },
+        {
+          "index": 244,
+          "token_id": 3613,
+          "logprob": -0.0014,
+          "text": " members"
+        },
+        {
+          "index": 36,
+          "token_id": 66,
+          "logprob": -0.0012,
+          "text": "c"
+        },
+        {
+          "index": 140,
+          "token_id": 323,
+          "logprob": -0.0007,
+          "text": " and"
+        },
+        {
+          "index": 46,
+          "token_id": 678,
+          "logprob": -0.0006,
+          "text": " all"
+        },
+        {
+          "index": 110,
+          "token_id": 69532,
+          "logprob": -0.0004,
+          "text": " insure"
+        },
+        {
+          "index": 254,
+          "token_id": 408,
+          "logprob": -0.0003,
+          "text": "end"
+        },
+        {
+          "index": 150,
+          "token_id": 14060,
+          "logprob": -0.0002,
+          "text": " retain"
+        },
+        {
+          "index": 176,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 43,
+      "mean": -0.3017,
+      "min": -1.8186,
+      "p05": -1.3668,
+      "p50": -0.0094,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.8186,
+          "text": "3"
+        },
+        {
+          "index": 24,
+          "token_id": 22,
+          "logprob": -1.417,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.3723,
+          "text": "2"
+        },
+        {
+          "index": 190,
+          "token_id": 18,
+          "logprob": -1.3171,
+          "text": "3"
+        },
+        {
+          "index": 202,
+          "token_id": 23,
+          "logprob": -1.1388,
+          "text": "8"
+        },
+        {
+          "index": 184,
+          "token_id": 24,
+          "logprob": -1.1064,
+          "text": "9"
+        },
+        {
+          "index": 196,
+          "token_id": 15,
+          "logprob": -1.0531,
+          "text": "0"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -0.9935,
+          "text": "0"
+        },
+        {
+          "index": 16,
+          "token_id": 20,
+          "logprob": -0.576,
+          "text": "5"
+        },
+        {
+          "index": 182,
+          "token_id": 17,
+          "logprob": -0.5241,
+          "text": "2"
+        },
+        {
+          "index": 201,
+          "token_id": 17,
+          "logprob": -0.3491,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -0.3178,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 303,
+      "mean": -0.0431,
+      "min": -1.8186,
+      "p05": -0.154,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 231.62,
+    "std": 69.93,
+    "dark_fraction": 0.08757
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      616.0,
+      813.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      205,
+      271,
+      1506,
+      1987
+    ],
+    "ink_px": 195511,
+    "covered_px": 195511,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

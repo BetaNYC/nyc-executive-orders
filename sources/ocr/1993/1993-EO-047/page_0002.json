@@ -1,0 +1,324 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        224,
+        205,
+        1526,
+        398
+      ],
+      "category": "Text",
+      "text": "§ 3. Cooperation and Assistance. The heads of all City departments and agencies, including the Police Department, the Department of Parks and Recreation and the Department of Transportation, shall cooperate with and assist the Office of Film, Theatre and Broadcasting in carrying out its responsibilities under this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3157,
+          "min": -1.5735
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5772,
+          "min": -0.5772
+        },
+        "text": {
+          "n_tokens": 56,
+          "mean": -0.004,
+          "min": -0.1233
+        }
+      },
+      "ink": {
+        "ink_px": 27143,
+        "area_px": 167942,
+        "density": 0.16162,
+        "chars": 322,
+        "chars_per_1k_ink": 11.86
+      }
+    },
+    {
+      "bbox": [
+        428,
+        439,
+        1363,
+        471
+      ],
+      "category": "Text",
+      "text": "§ 4. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2714,
+          "min": -1.3627
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0052,
+          "min": -0.0052
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.001,
+          "min": -0.0103
+        }
+      },
+      "ink": {
+        "ink_px": 5980,
+        "area_px": 30954,
+        "density": 0.19319,
+        "chars": 46,
+        "chars_per_1k_ink": 7.69
+      }
+    },
+    {
+      "bbox": [
+        1002,
+        573,
+        1320,
+        630
+      ],
+      "category": "Text",
+      "text": "DAVID N. DINKINS\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2513,
+          "min": -1.2617
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0034,
+          "min": -0.0034
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.005,
+          "min": -0.0476
+        }
+      },
+      "ink": {
+        "ink_px": 3562,
+        "area_px": 18560,
+        "density": 0.19192,
+        "chars": 22,
+        "chars_per_1k_ink": 6.18
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 187,
+    "content": {
+      "n_tokens": 78,
+      "mean": -0.0038,
+      "min": -0.1233,
+      "p05": -0.0124,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 39,
+          "token_id": 72708,
+          "logprob": -0.1233,
+          "text": " Cooperation"
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0748,
+          "text": "§"
+        },
+        {
+          "index": 173,
+          "token_id": 6352,
+          "logprob": -0.0476,
+          "text": "DA"
+        },
+        {
+          "index": 48,
+          "token_id": 25215,
+          "logprob": -0.0246,
+          "text": " departments"
+        },
+        {
+          "index": 126,
+          "token_id": 17851,
+          "logprob": -0.0103,
+          "text": "§"
+        },
+        {
+          "index": 182,
+          "token_id": 3022,
+          "logprob": -0.0055,
+          "text": "AY"
+        },
+        {
+          "index": 43,
+          "token_id": 576,
+          "logprob": -0.0015,
+          "text": " The"
+        },
+        {
+          "index": 180,
+          "token_id": 1699,
+          "logprob": -0.0009,
+          "text": "\\n"
+        },
+        {
+          "index": 136,
+          "token_id": 1189,
+          "logprob": -0.0008,
+          "text": ".\""
+        },
+        {
+          "index": 42,
+          "token_id": 13,
+          "logprob": -0.0007,
+          "text": "."
+        },
+        {
+          "index": 47,
+          "token_id": 4311,
+          "logprob": -0.0005,
+          "text": " City"
+        },
+        {
+          "index": 179,
+          "token_id": 9557,
+          "logprob": -0.0004,
+          "text": "INS"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 61,
+      "mean": -0.2749,
+      "min": -1.5735,
+      "p05": -1.3627,
+      "p50": -0.0005,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.5735,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -1.5126,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -1.405,
+          "text": "6"
+        },
+        {
+          "index": 109,
+          "token_id": 18,
+          "logprob": -1.3627,
+          "text": "3"
+        },
+        {
+          "index": 98,
+          "token_id": 23,
+          "logprob": -1.3474,
+          "text": "8"
+        },
+        {
+          "index": 145,
+          "token_id": 17,
+          "logprob": -1.2617,
+          "text": "2"
+        },
+        {
+          "index": 150,
+          "token_id": 18,
+          "logprob": -1.1814,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 23,
+          "logprob": -1.1016,
+          "text": "8"
+        },
+        {
+          "index": 114,
+          "token_id": 16,
+          "logprob": -1.0267,
+          "text": "1"
+        },
+        {
+          "index": 156,
+          "token_id": 15,
+          "logprob": -0.9083,
+          "text": "0"
+        },
+        {
+          "index": 29,
+          "token_id": 1178,
+          "logprob": -0.5772,
+          "text": "Text"
+        },
+        {
+          "index": 103,
+          "token_id": 24,
+          "logprob": -0.571,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 187,
+      "mean": -0.0916,
+      "min": -1.5735,
+      "p05": -0.809,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.05,
+    "std": 33.14,
+    "dark_fraction": 0.01936
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      616.0,
+      809.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      205,
+      269,
+      1506,
+      1978
+    ],
+    "ink_px": 43049,
+    "covered_px": 36685,
+    "covered_fraction": 0.85217,
+    "uncovered_px": 6364,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          925,
+          461,
+          1429,
+          581
+        ],
+        "ink_px": 6283
+      }
+    ],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "page": 5,
+  "source_image": "page_0005.png",
+  "elements": [
+    {
+      "bbox": [
+        286,
+        352,
+        606,
+        387
+      ],
+      "category": "Section-header",
+      "text": "## Section 5. Reports",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.332,
+          "min": -1.5257
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0063,
+          "min": -0.0126
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.1896,
+          "min": -0.9101
+        }
+      },
+      "ink": {
+        "ink_px": 2324,
+        "area_px": 11628,
+        "density": 0.19986,
+        "chars": 21,
+        "chars_per_1k_ink": 9.04
+      }
+    },
+    {
+      "bbox": [
+        183,
+        429,
+        1486,
+        578
+      ],
+      "category": "Text",
+      "text": "OLR shall report annually to the First Deputy Mayor on the EAPs. Agencies shall submit reports on the operations of their EAPs upon request by OLR and such reports shall form the basis of the annual report. The data to be included in such reports shall be determined by OLR in consultation with the MEAP Consortium Board.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2905,
+          "min": -1.4465
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 68,
+          "mean": -0.0003,
+          "min": -0.0142
+        }
+      },
+      "ink": {
+        "ink_px": 30969,
+        "area_px": 193733,
+        "density": 0.15985,
+        "chars": 321,
+        "chars_per_1k_ink": 10.37
+      }
+    },
+    {
+      "bbox": [
+        286,
+        620,
+        702,
+        652
+      ],
+      "category": "Section-header",
+      "text": "## Section 6. Effective Date",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2816,
+          "min": -1.3448
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0002,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0007,
+          "min": -0.0032
+        }
+      },
+      "ink": {
+        "ink_px": 3068,
+        "area_px": 13860,
+        "density": 0.22136,
+        "chars": 28,
+        "chars_per_1k_ink": 9.13
+      }
+    },
+    {
+      "bbox": [
+        383,
+        698,
+        974,
+        734
+      ],
+      "category": "Text",
+      "text": "This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2764,
+          "min": -1.3385
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0021,
+          "min": -0.0021
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0001,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 4082,
+        "area_px": 22052,
+        "density": 0.18511,
+        "chars": 41,
+        "chars_per_1k_ink": 10.04
+      }
+    },
+    {
+      "bbox": [
+        1025,
+        930,
+        1341,
+        995
+      ],
+      "category": "Text",
+      "text": "DAVID N. DINKINS\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2843,
+          "min": -1.39
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0097,
+          "min": -0.0097
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0019,
+          "min": -0.0128
+        }
+      },
+      "ink": {
+        "ink_px": 3372,
+        "area_px": 21054,
+        "density": 0.16016,
+        "chars": 22,
+        "chars_per_1k_ink": 6.52
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 277,
+    "content": {
+      "n_tokens": 99,
+      "mean": -0.0119,
+      "min": -0.9101,
+      "p05": -0.0064,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 565,
+          "logprob": -0.9101,
+          "text": "##"
+        },
+        {
+          "index": 40,
+          "token_id": 28040,
+          "logprob": -0.1599,
+          "text": " Reports"
+        },
+        {
+          "index": 36,
+          "token_id": 11113,
+          "logprob": -0.0672,
+          "text": " Section"
+        },
+        {
+          "index": 93,
+          "token_id": 4880,
+          "logprob": -0.0142,
+          "text": " shall"
+        },
+        {
+          "index": 272,
+          "token_id": 3022,
+          "logprob": -0.0128,
+          "text": "AY"
+        },
+        {
+          "index": 263,
+          "token_id": 6352,
+          "logprob": -0.0057,
+          "text": "DA"
+        },
+        {
+          "index": 184,
+          "token_id": 46923,
+          "logprob": -0.0032,
+          "text": " Effective"
+        },
+        {
+          "index": 270,
+          "token_id": 1699,
+          "logprob": -0.0015,
+          "text": "\\n"
+        },
+        {
+          "index": 76,
+          "token_id": 1930,
+          "logprob": -0.0013,
+          "text": "OL"
+        },
+        {
+          "index": 179,
+          "token_id": 565,
+          "logprob": -0.001,
+          "text": "##"
+        },
+        {
+          "index": 108,
+          "token_id": 20117,
+          "logprob": -0.0005,
+          "text": "LR"
+        },
+        {
+          "index": 180,
+          "token_id": 11113,
+          "logprob": -0.0004,
+          "text": " Section"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 100,
+      "mean": -0.2725,
+      "min": -1.5257,
+      "p05": -1.3449,
+      "p50": -0.0006,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.5257,
+          "text": "6"
+        },
+        {
+          "index": 48,
+          "token_id": 18,
+          "logprob": -1.4465,
+          "text": "3"
+        },
+        {
+          "index": 17,
+          "token_id": 21,
+          "logprob": -1.4269,
+          "text": "6"
+        },
+        {
+          "index": 235,
+          "token_id": 20,
+          "logprob": -1.39,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.3472,
+          "text": "2"
+        },
+        {
+          "index": 161,
+          "token_id": 17,
+          "logprob": -1.3448,
+          "text": "2"
+        },
+        {
+          "index": 193,
+          "token_id": 18,
+          "logprob": -1.3385,
+          "text": "3"
+        },
+        {
+          "index": 203,
+          "token_id": 19,
+          "logprob": -1.3343,
+          "text": "4"
+        },
+        {
+          "index": 22,
+          "token_id": 22,
+          "logprob": -1.3267,
+          "text": "7"
+        },
+        {
+          "index": 59,
+          "token_id": 21,
+          "logprob": -1.3176,
+          "text": "6"
+        },
+        {
+          "index": 151,
+          "token_id": 21,
+          "logprob": -1.3121,
+          "text": "6"
+        },
+        {
+          "index": 166,
+          "token_id": 17,
+          "logprob": -1.31,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 277,
+      "mean": -0.1037,
+      "min": -1.5257,
+      "p05": -1.1145,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 249.31,
+    "std": 35.14,
+    "dark_fraction": 0.02095
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      639.0,
+      821.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      213,
+      273,
+      1562,
+      2007
+    ],
+    "ink_px": 49008,
+    "covered_px": 43815,
+    "covered_fraction": 0.89404,
+    "uncovered_px": 5193,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          885,
+          801,
+          1485,
+          945
+        ],
+        "ink_px": 4904
+      }
+    ],
+    "cell_px": 24
+  }
+}

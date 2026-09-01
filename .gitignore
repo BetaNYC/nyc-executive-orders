@@ -86,3 +86,8 @@ dist-static/
 .idea/
 .vscode/
 *.log
+
+# Per-run state for execute-post-1974-ocr.sh: the step logs it mirrors off the
+# rented GPU box, the phase ledger, the droplet id it must be able to destroy,
+# and a run-scoped known_hosts. Scratch, not source of truth.
+.post1974-run/

@@ -1,0 +1,396 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        433,
+        421,
+        1375,
+        483
+      ],
+      "category": "List-item",
+      "text": "C. Adding a new Subdivision 3 to Paragraph B of Section 2 of Executive Order No. 55 to read as follows:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3113,
+          "min": -1.4643
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0064,
+          "min": -0.0127
+        },
+        "text": {
+          "n_tokens": 29,
+          "mean": -0.0036,
+          "min": -0.07
+        }
+      },
+      "ink": {
+        "ink_px": 6762,
+        "area_px": 59220,
+        "density": 0.11418,
+        "chars": 103,
+        "chars_per_1k_ink": 15.23
+      }
+    },
+    {
+      "bbox": [
+        453,
+        524,
+        1278,
+        853
+      ],
+      "category": "List-item",
+      "text": "(3) Obligations issued in registered or bearer form shall be authenticated by the manual countersignature of the Fiscal Agent of the City, except that any or all Obligations issued in bearer form may be authenticated in the alternative by the manual signature of the City Clerk or by the person duly authorized to act in his stead in accordance with Section 32, subdivision b, of the City Charter.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2872,
+          "min": -1.4676
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 82,
+          "mean": -0.0002,
+          "min": -0.0126
+        }
+      },
+      "ink": {
+        "ink_px": 27631,
+        "area_px": 272413,
+        "density": 0.10143,
+        "chars": 397,
+        "chars_per_1k_ink": 14.37
+      }
+    },
+    {
+      "bbox": [
+        355,
+        884,
+        1527,
+        918
+      ],
+      "category": "Text",
+      "text": "Section 2. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.312,
+          "min": -1.4376
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1479,
+          "min": -0.1479
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0053,
+          "min": -0.0388
+        }
+      },
+      "ink": {
+        "ink_px": 4724,
+        "area_px": 40915,
+        "density": 0.11546,
+        "chars": 68,
+        "chars_per_1k_ink": 14.39
+      }
+    },
+    {
+      "bbox": [
+        1001,
+        992,
+        1443,
+        1086
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.5396,
+          "min": -2.2198
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0044,
+          "min": -0.0044
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 3059,
+        "area_px": 41990,
+        "density": 0.07285,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1032,
+        1091,
+        1267,
+        1148
+      ],
+      "category": "Caption",
+      "text": "Edward I. Koch\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.2165,
+          "min": -1.3122
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3134,
+          "min": -0.3134
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0097,
+          "min": -0.0521
+        }
+      },
+      "ink": {
+        "ink_px": 1582,
+        "area_px": 13630,
+        "density": 0.11607,
+        "chars": 20,
+        "chars_per_1k_ink": 12.64
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 312,
+    "content": {
+      "n_tokens": 133,
+      "mean": -0.0021,
+      "min": -0.07,
+      "p05": -0.0105,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 50,
+          "token_id": 220,
+          "logprob": -0.07,
+          "text": " "
+        },
+        {
+          "index": 301,
+          "token_id": 84501,
+          "logprob": -0.0521,
+          "text": "Edward"
+        },
+        {
+          "index": 221,
+          "token_id": 46923,
+          "logprob": -0.0388,
+          "text": " Effective"
+        },
+        {
+          "index": 217,
+          "token_id": 9620,
+          "logprob": -0.0325,
+          "text": "Section"
+        },
+        {
+          "index": 307,
+          "token_id": 3022,
+          "logprob": -0.0237,
+          "text": "AY"
+        },
+        {
+          "index": 38,
+          "token_id": 30370,
+          "logprob": -0.0205,
+          "text": " Adding"
+        },
+        {
+          "index": 111,
+          "token_id": 1352,
+          "logprob": -0.0126,
+          "text": " form"
+        },
+        {
+          "index": 36,
+          "token_id": 34,
+          "logprob": -0.009,
+          "text": "C"
+        },
+        {
+          "index": 100,
+          "token_id": 11993,
+          "logprob": -0.0035,
+          "text": " \"("
+        },
+        {
+          "index": 37,
+          "token_id": 13,
+          "logprob": -0.0032,
+          "text": "."
+        },
+        {
+          "index": 220,
+          "token_id": 13,
+          "logprob": -0.0013,
+          "text": "."
+        },
+        {
+          "index": 306,
+          "token_id": 44,
+          "logprob": -0.0011,
+          "text": "M"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 107,
+      "mean": -0.3166,
+      "min": -2.2198,
+      "p05": -1.4609,
+      "p50": -0.0003,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 250,
+          "token_id": 18,
+          "logprob": -2.2198,
+          "text": "3"
+        },
+        {
+          "index": 256,
+          "token_id": 21,
+          "logprob": -1.7643,
+          "text": "6"
+        },
+        {
+          "index": 239,
+          "token_id": 16,
+          "logprob": -1.6317,
+          "text": "1"
+        },
+        {
+          "index": 244,
+          "token_id": 17,
+          "logprob": -1.5801,
+          "text": "2"
+        },
+        {
+          "index": 72,
+          "token_id": 18,
+          "logprob": -1.4676,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.4643,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.4531,
+          "text": "3"
+        },
+        {
+          "index": 189,
+          "token_id": 20,
+          "logprob": -1.4376,
+          "text": "5"
+        },
+        {
+          "index": 200,
+          "token_id": 22,
+          "logprob": -1.389,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.3349,
+          "text": "1"
+        },
+        {
+          "index": 194,
+          "token_id": 19,
+          "logprob": -1.3315,
+          "text": "4"
+        },
+        {
+          "index": 271,
+          "token_id": 17,
+          "logprob": -1.3122,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 312,
+      "mean": -0.1096,
+      "min": -2.2198,
+      "p05": -1.221,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 249.81,
+    "std": 33.43,
+    "dark_fraction": 0.01863
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      653.0,
+      838.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      217,
+      279,
+      1596,
+      2048
+    ],
+    "ink_px": 45436,
+    "covered_px": 43758,
+    "covered_fraction": 0.96307,
+    "uncovered_px": 1678,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          865,
+          1071,
+          1273,
+          1095
+        ],
+        "ink_px": 774
+      },
+      {
+        "bbox": [
+          553,
+          903,
+          817,
+          927
+        ],
+        "ink_px": 636
+      }
+    ],
+    "cell_px": 24
+  }
+}

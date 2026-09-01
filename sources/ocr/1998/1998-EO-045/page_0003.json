@@ -1,0 +1,309 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        230,
+        260,
+        1569,
+        455
+      ],
+      "category": "List-item",
+      "text": "§ 4. **Agency Assistance.** All agencies shall cooperate in providing to the office such personnel, facilities, information and other assistance as is necessary and required by the office to carry out its responsibilities.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3115,
+          "min": -1.372
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1406,
+          "min": -0.2813
+        },
+        "text": {
+          "n_tokens": 41,
+          "mean": -0.0172,
+          "min": -0.6148
+        }
+      },
+      "ink": {
+        "ink_px": 13567,
+        "area_px": 239652,
+        "density": 0.05661,
+        "chars": 222,
+        "chars_per_1k_ink": 16.36
+      }
+    },
+    {
+      "bbox": [
+        435,
+        499,
+        1321,
+        533
+      ],
+      "category": "List-item",
+      "text": "§ 5. **Effective date.** This order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2806,
+          "min": -1.3392
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0031,
+          "min": -0.0062
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -0.0037,
+          "min": -0.036
+        }
+      },
+      "ink": {
+        "ink_px": 4189,
+        "area_px": 30905,
+        "density": 0.13554,
+        "chars": 66,
+        "chars_per_1k_ink": 15.76
+      }
+    },
+    {
+      "bbox": [
+        900,
+        568,
+        1500,
+        865
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3948,
+          "min": -1.5865
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0022,
+          "min": -0.0022
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 8638,
+        "area_px": 177606,
+        "density": 0.04864,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 162,
+    "content": {
+      "n_tokens": 57,
+      "mean": -0.0134,
+      "min": -0.6148,
+      "p05": -0.0365,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 40,
+          "token_id": 3070,
+          "logprob": -0.6148,
+          "text": " **"
+        },
+        {
+          "index": 54,
+          "token_id": 1741,
+          "logprob": -0.0431,
+          "text": " such"
+        },
+        {
+          "index": 41,
+          "token_id": 93720,
+          "logprob": -0.0383,
+          "text": "Agency"
+        },
+        {
+          "index": 117,
+          "token_id": 3070,
+          "logprob": -0.036,
+          "text": " **"
+        },
+        {
+          "index": 118,
+          "token_id": 67539,
+          "logprob": -0.0222,
+          "text": "Effective"
+        },
+        {
+          "index": 36,
+          "token_id": 17851,
+          "logprob": -0.0086,
+          "text": "§"
+        },
+        {
+          "index": 113,
+          "token_id": 17851,
+          "logprob": -0.0008,
+          "text": "§"
+        },
+        {
+          "index": 39,
+          "token_id": 13,
+          "logprob": -0.0002,
+          "text": "."
+        },
+        {
+          "index": 120,
+          "token_id": 13,
+          "logprob": -0.0002,
+          "text": "."
+        },
+        {
+          "index": 43,
+          "token_id": 13,
+          "logprob": -0.0001,
+          "text": "."
+        },
+        {
+          "index": 119,
+          "token_id": 2400,
+          "logprob": -0.0001,
+          "text": " date"
+        },
+        {
+          "index": 122,
+          "token_id": 1096,
+          "logprob": -0.0001,
+          "text": " This"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 62,
+      "mean": -0.3071,
+      "min": -1.5865,
+      "p05": -1.339,
+      "p50": -0.0015,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 152,
+          "token_id": 20,
+          "logprob": -1.5865,
+          "text": "5"
+        },
+        {
+          "index": 136,
+          "token_id": 15,
+          "logprob": -1.4817,
+          "text": "0"
+        },
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.372,
+          "text": "5"
+        },
+        {
+          "index": 100,
+          "token_id": 18,
+          "logprob": -1.3392,
+          "text": "3"
+        },
+        {
+          "index": 84,
+          "token_id": 20,
+          "logprob": -1.3356,
+          "text": "5"
+        },
+        {
+          "index": 95,
+          "token_id": 16,
+          "logprob": -1.3041,
+          "text": "1"
+        },
+        {
+          "index": 141,
+          "token_id": 23,
+          "logprob": -1.2866,
+          "text": "8"
+        },
+        {
+          "index": 7,
+          "token_id": 15,
+          "logprob": -1.0273,
+          "text": "0"
+        },
+        {
+          "index": 18,
+          "token_id": 24,
+          "logprob": -0.9965,
+          "text": "9"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -0.9686,
+          "text": "0"
+        },
+        {
+          "index": 89,
+          "token_id": 24,
+          "logprob": -0.9662,
+          "text": "9"
+        },
+        {
+          "index": 147,
+          "token_id": 15,
+          "logprob": -0.9362,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 162,
+      "mean": -0.1232,
+      "min": -1.5865,
+      "p05": -0.9951,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 251.69,
+    "std": 25.91,
+    "dark_fraction": 0.01223
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 26417,
+    "covered_px": 26394,
+    "covered_fraction": 0.99913,
+    "uncovered_px": 23,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

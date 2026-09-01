@@ -1,0 +1,299 @@
+{
+  "page": 5,
+  "source_image": "page_0005.png",
+  "elements": [
+    {
+      "bbox": [
+        439,
+        207,
+        1290,
+        317
+      ],
+      "category": "Text",
+      "text": "§ 11. This Executive Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3977,
+          "min": -1.9538
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0329,
+          "min": -0.0329
+        },
+        "text": {
+          "n_tokens": 13,
+          "mean": -0.0061,
+          "min": -0.0414
+        }
+      },
+      "ink": {
+        "ink_px": 1404,
+        "area_px": 35742,
+        "density": 0.03928,
+        "chars": 57,
+        "chars_per_1k_ink": 40.6
+      }
+    },
+    {
+      "bbox": [
+        1093,
+        497,
+        1368,
+        555
+      ],
+      "category": "Text",
+      "text": "ABRAHAM D. BEAME\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2906,
+          "min": -1.5418
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0121,
+          "min": -0.0121
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.004,
+          "min": -0.0208
+        }
+      },
+      "ink": {
+        "ink_px": 3847,
+        "area_px": 16225,
+        "density": 0.2371,
+        "chars": 22,
+        "chars_per_1k_ink": 5.72
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 98,
+    "content": {
+      "n_tokens": 24,
+      "mean": -0.0051,
+      "min": -0.0414,
+      "p05": -0.0318,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0414,
+          "text": "§"
+        },
+        {
+          "index": 46,
+          "token_id": 7069,
+          "logprob": -0.0337,
+          "text": " immediately"
+        },
+        {
+          "index": 93,
+          "token_id": 3022,
+          "logprob": -0.0208,
+          "text": "AY"
+        },
+        {
+          "index": 90,
+          "token_id": 2729,
+          "logprob": -0.0098,
+          "text": "AME"
+        },
+        {
+          "index": 91,
+          "token_id": 1699,
+          "logprob": -0.0068,
+          "text": "\\n"
+        },
+        {
+          "index": 84,
+          "token_id": 1867,
+          "logprob": -0.0053,
+          "text": "AB"
+        },
+        {
+          "index": 47,
+          "token_id": 1189,
+          "logprob": -0.0042,
+          "text": ".\""
+        },
+        {
+          "index": 85,
+          "token_id": 5609,
+          "logprob": -0.0007,
+          "text": "RA"
+        },
+        {
+          "index": 86,
+          "token_id": 73493,
+          "logprob": -0.0002,
+          "text": "HAM"
+        },
+        {
+          "index": 92,
+          "token_id": 44,
+          "logprob": -0.0002,
+          "text": "M"
+        },
+        {
+          "index": 40,
+          "token_id": 1096,
+          "logprob": -0.0001,
+          "text": " This"
+        },
+        {
+          "index": 44,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 41,
+      "mean": -0.3272,
+      "min": -1.9538,
+      "p05": -1.5418,
+      "p50": -0.0235,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.9538,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.6225,
+          "text": "7"
+        },
+        {
+          "index": 72,
+          "token_id": 20,
+          "logprob": -1.5418,
+          "text": "5"
+        },
+        {
+          "index": 56,
+          "token_id": 18,
+          "logprob": -1.3421,
+          "text": "3"
+        },
+        {
+          "index": 61,
+          "token_id": 22,
+          "logprob": -1.1099,
+          "text": "7"
+        },
+        {
+          "index": 67,
+          "token_id": 23,
+          "logprob": -1.0487,
+          "text": "8"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.0088,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -0.9501,
+          "text": "9"
+        },
+        {
+          "index": 6,
+          "token_id": 18,
+          "logprob": -0.6946,
+          "text": "3"
+        },
+        {
+          "index": 22,
+          "token_id": 16,
+          "logprob": -0.654,
+          "text": "1"
+        },
+        {
+          "index": 53,
+          "token_id": 16,
+          "logprob": -0.4351,
+          "text": "1"
+        },
+        {
+          "index": 17,
+          "token_id": 24,
+          "logprob": -0.3485,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 98,
+      "mean": -0.1391,
+      "min": -1.9538,
+      "p05": -1.0579,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 252.12,
+    "std": 25.43,
+    "dark_fraction": 0.01097
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      645.0,
+      826.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      215,
+      275,
+      1576,
+      2019
+    ],
+    "ink_px": 26028,
+    "covered_px": 5251,
+    "covered_fraction": 0.20174,
+    "uncovered_px": 20777,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          863,
+          371,
+          1576,
+          1811
+        ],
+        "ink_px": 14517
+      },
+      {
+        "bbox": [
+          215,
+          1763,
+          1487,
+          1835
+        ],
+        "ink_px": 5572
+      }
+    ],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        286,
+        334,
+        1493,
+        409
+      ],
+      "category": "Text",
+      "text": "Section 5. This order shall take effect immediately and shall remain in effect for five days unless extended or sooner revoked.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3465,
+          "min": -1.7642
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 24,
+          "mean": -0.0005,
+          "min": -0.0086
+        }
+      },
+      "ink": {
+        "ink_px": 12621,
+        "area_px": 90225,
+        "density": 0.13988,
+        "chars": 127,
+        "chars_per_1k_ink": 10.06
+      }
+    },
+    {
+      "bbox": [
+        919,
+        503,
+        1336,
+        617
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3974,
+          "min": -1.7427
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2836,
+        "area_px": 47424,
+        "density": 0.0598,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        987,
+        617,
+        1181,
+        687
+      ],
+      "category": "Caption",
+      "text": "Bill de Blasio,\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2663,
+          "min": -1.4032
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1602,
+          "min": -0.1602
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0028,
+          "min": -0.0196
+        }
+      },
+      "ink": {
+        "ink_px": 2295,
+        "area_px": 13774,
+        "density": 0.16662,
+        "chars": 21,
+        "chars_per_1k_ink": 9.15
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 135,
+    "content": {
+      "n_tokens": 32,
+      "mean": -0.0011,
+      "min": -0.0196,
+      "p05": -0.0052,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 127,
+          "token_id": 26266,
+          "logprob": -0.0196,
+          "text": ",\\"
+        },
+        {
+          "index": 53,
+          "token_id": 7241,
+          "logprob": -0.0086,
+          "text": " unless"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0024,
+          "text": "Section"
+        },
+        {
+          "index": 128,
+          "token_id": 77,
+          "logprob": -0.0019,
+          "text": "n"
+        },
+        {
+          "index": 124,
+          "token_id": 27476,
+          "logprob": -0.0006,
+          "text": "Bill"
+        },
+        {
+          "index": 126,
+          "token_id": 92393,
+          "logprob": -0.0005,
+          "text": " Blasio"
+        },
+        {
+          "index": 42,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 57,
+          "token_id": 64346,
+          "logprob": -0.0001,
+          "text": " revoked"
+        },
+        {
+          "index": 130,
+          "token_id": 3022,
+          "logprob": -0.0,
+          "text": "AY"
+        },
+        {
+          "index": 54,
+          "token_id": 11577,
+          "logprob": -0.0,
+          "text": " extended"
+        },
+        {
+          "index": 58,
+          "token_id": 1189,
+          "logprob": -0.0,
+          "text": ".\""
+        },
+        {
+          "index": 129,
+          "token_id": 44,
+          "logprob": -0.0,
+          "text": "M"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.3226,
+      "min": -1.7642,
+      "p05": -1.5791,
+      "p50": -0.0012,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.7642,
+          "text": "6"
+        },
+        {
+          "index": 77,
+          "token_id": 21,
+          "logprob": -1.7427,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.7057,
+          "text": "4"
+        },
+        {
+          "index": 71,
+          "token_id": 18,
+          "logprob": -1.5724,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.5645,
+          "text": "3"
+        },
+        {
+          "index": 66,
+          "token_id": 24,
+          "logprob": -1.5119,
+          "text": "9"
+        },
+        {
+          "index": 82,
+          "token_id": 22,
+          "logprob": -1.4469,
+          "text": "7"
+        },
+        {
+          "index": 96,
+          "token_id": 22,
+          "logprob": -1.4032,
+          "text": "7"
+        },
+        {
+          "index": 107,
+          "token_id": 16,
+          "logprob": -1.3226,
+          "text": "1"
+        },
+        {
+          "index": 112,
+          "token_id": 22,
+          "logprob": -1.2038,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 24,
+          "logprob": -1.0031,
+          "text": "9"
+        },
+        {
+          "index": 101,
+          "token_id": 22,
+          "logprob": -0.8219,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 135,
+      "mean": -0.1437,
+      "min": -1.7642,
+      "p05": -1.4163,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 252.03,
+    "std": 17.79,
+    "dark_fraction": 0.00822
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 17752,
+    "covered_px": 17752,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

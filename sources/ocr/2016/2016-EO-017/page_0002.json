@@ -1,0 +1,343 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        291,
+        195,
+        1471,
+        274
+      ],
+      "category": "List-item",
+      "text": "c. The public hearing shall be held within the Community District in which the subject property is located; and",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.314,
+          "min": -1.3973
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0017,
+          "min": -0.0337
+        }
+      },
+      "ink": {
+        "ink_px": 228,
+        "area_px": 10584,
+        "density": 0.02154,
+        "chars": 111,
+        "chars_per_1k_ink": 486.84
+      }
+    },
+    {
+      "bbox": [
+        291,
+        283,
+        1488,
+        451
+      ],
+      "category": "List-item",
+      "text": "d. A public file containing copies of the calendar document and other public documents shall be made available to the Community Board in which the subject property is located for public review at said Community Board's office no later than twenty days prior to the public hearing.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2587,
+          "min": -1.2053
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 50,
+          "mean": -0.0001,
+          "min": -0.006
+        }
+      },
+      "ink": {
+        "ink_px": 25862,
+        "area_px": 200424,
+        "density": 0.12904,
+        "chars": 280,
+        "chars_per_1k_ink": 10.83
+      }
+    },
+    {
+      "bbox": [
+        293,
+        505,
+        892,
+        540
+      ],
+      "category": "Text",
+      "text": "§2. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2661,
+          "min": -1.2415
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3167,
+          "min": -0.3167
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0102,
+          "min": -0.0989
+        }
+      },
+      "ink": {
+        "ink_px": 4147,
+        "area_px": 21492,
+        "density": 0.19296,
+        "chars": 45,
+        "chars_per_1k_ink": 10.85
+      }
+    },
+    {
+      "bbox": [
+        995,
+        578,
+        1447,
+        760
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3841,
+          "min": -1.5901
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0056,
+          "min": -0.0056
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 8571,
+        "area_px": 82082,
+        "density": 0.10442,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 220,
+    "content": {
+      "n_tokens": 81,
+      "mean": -0.0018,
+      "min": -0.0989,
+      "p05": -0.0012,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 177,
+          "token_id": 17851,
+          "logprob": -0.0989,
+          "text": "§"
+        },
+        {
+          "index": 52,
+          "token_id": 3343,
+          "logprob": -0.0337,
+          "text": " property"
+        },
+        {
+          "index": 108,
+          "token_id": 4880,
+          "logprob": -0.006,
+          "text": " shall"
+        },
+        {
+          "index": 178,
+          "token_id": 17,
+          "logprob": -0.0022,
+          "text": "2"
+        },
+        {
+          "index": 36,
+          "token_id": 66,
+          "logprob": -0.0012,
+          "text": "c"
+        },
+        {
+          "index": 55,
+          "token_id": 26,
+          "logprob": -0.0005,
+          "text": ";"
+        },
+        {
+          "index": 142,
+          "token_id": 1189,
+          "logprob": -0.0005,
+          "text": ".\""
+        },
+        {
+          "index": 130,
+          "token_id": 594,
+          "logprob": -0.0002,
+          "text": "'s"
+        },
+        {
+          "index": 186,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        },
+        {
+          "index": 136,
+          "token_id": 2849,
+          "logprob": -0.0002,
+          "text": " days"
+        },
+        {
+          "index": 180,
+          "token_id": 1096,
+          "logprob": -0.0001,
+          "text": " This"
+        },
+        {
+          "index": 93,
+          "token_id": 67,
+          "logprob": -0.0001,
+          "text": "d"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.2875,
+      "min": -1.5901,
+      "p05": -1.3558,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 194,
+          "token_id": 20,
+          "logprob": -1.5901,
+          "text": "5"
+        },
+        {
+          "index": 199,
+          "token_id": 23,
+          "logprob": -1.4321,
+          "text": "8"
+        },
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -1.3973,
+          "text": "5"
+        },
+        {
+          "index": 205,
+          "token_id": 22,
+          "logprob": -1.3944,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.3558,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.3459,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.2885,
+          "text": "1"
+        },
+        {
+          "index": 160,
+          "token_id": 17,
+          "logprob": -1.2415,
+          "text": "2"
+        },
+        {
+          "index": 64,
+          "token_id": 16,
+          "logprob": -1.2053,
+          "text": "1"
+        },
+        {
+          "index": 150,
+          "token_id": 18,
+          "logprob": -1.2035,
+          "text": "3"
+        },
+        {
+          "index": 80,
+          "token_id": 16,
+          "logprob": -1.1681,
+          "text": "1"
+        },
+        {
+          "index": 69,
+          "token_id": 18,
+          "logprob": -1.1427,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 220,
+      "mean": -0.1066,
+      "min": -1.5901,
+      "p05": -1.144,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 249.89,
+    "std": 27.44,
+    "dark_fraction": 0.01797
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 38813,
+    "covered_px": 38808,
+    "covered_fraction": 0.99987,
+    "uncovered_px": 5,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

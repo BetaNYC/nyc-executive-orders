@@ -1,0 +1,377 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        203,
+        209,
+        1507,
+        291
+      ],
+      "category": "Text",
+      "text": "§ 2. I hereby direct that section 1 of Emergency Executive Order No. 197, dated April 27, 2021, is extended for five (5) days.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3916,
+          "min": -1.8814
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.013,
+          "min": -0.013
+        },
+        "text": {
+          "n_tokens": 43,
+          "mean": -0.0024,
+          "min": -0.0699
+        }
+      },
+      "ink": {
+        "ink_px": 2381,
+        "area_px": 33592,
+        "density": 0.07088,
+        "chars": 126,
+        "chars_per_1k_ink": 52.92
+      }
+    },
+    {
+      "bbox": [
+        203,
+        324,
+        1507,
+        474
+      ],
+      "category": "Text",
+      "text": "§ 3. This Order incorporates any and all relevant provisions of Governor Executive Order No. 202 and subsequent orders issued by the Governor of New York State to address the State of Emergency declared in that Order pursuant to his powers under section 29-a of the Executive Law.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3119,
+          "min": -1.9397
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 58,
+          "mean": -0.0001,
+          "min": -0.0014
+        }
+      },
+      "ink": {
+        "ink_px": 29223,
+        "area_px": 193800,
+        "density": 0.15079,
+        "chars": 280,
+        "chars_per_1k_ink": 9.58
+      }
+    },
+    {
+      "bbox": [
+        197,
+        516,
+        1507,
+        858
+      ],
+      "category": "Text",
+      "text": "§ 4. I hereby direct the Fire Department of the City of New York, the New York City Police Department, the Department of Buildings, the Sheriff, and other agencies as needed to immediately enforce the directives set forth in this Order in accordance with their lawful enforcement authorities, including but not limited to Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the New York City Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under the New York City Health Code, title 24 Rules of the City of New York sections 3.07 and 3.11, and may be enforced as such by the Department of Health and Mental Hygiene or any other agency named in this section.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3058,
+          "min": -1.4779
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 186,
+          "mean": -0.0,
+          "min": -0.0008
+        }
+      },
+      "ink": {
+        "ink_px": 77092,
+        "area_px": 440572,
+        "density": 0.17498,
+        "chars": 750,
+        "chars_per_1k_ink": 9.73
+      }
+    },
+    {
+      "bbox": [
+        194,
+        902,
+        1507,
+        1102
+      ],
+      "category": "Text",
+      "text": "§ 5. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed. The remainder of this Order shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2704,
+          "min": -1.5199
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 94,
+          "mean": -0.0001,
+          "min": -0.0022
+        }
+      },
+      "ink": {
+        "ink_px": 46495,
+        "area_px": 258400,
+        "density": 0.17993,
+        "chars": 463,
+        "chars_per_1k_ink": 9.96
+      }
+    },
+    {
+      "bbox": [
+        974,
+        1111,
+        1295,
+        1290
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3791,
+          "min": -1.8651
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0017,
+          "min": -0.0017
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 7897,
+        "area_px": 57600,
+        "density": 0.1371,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 557,
+    "content": {
+      "n_tokens": 381,
+      "mean": -0.0003,
+      "min": -0.0699,
+      "p05": -0.0002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 69,
+          "token_id": 374,
+          "logprob": -0.0699,
+          "text": " is"
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.031,
+          "text": "§"
+        },
+        {
+          "index": 59,
+          "token_id": 220,
+          "logprob": -0.0032,
+          "text": " "
+        },
+        {
+          "index": 428,
+          "token_id": 17851,
+          "logprob": -0.0022,
+          "text": "§"
+        },
+        {
+          "index": 433,
+          "token_id": 31608,
+          "logprob": -0.0018,
+          "text": " Emergency"
+        },
+        {
+          "index": 113,
+          "token_id": 17851,
+          "logprob": -0.0014,
+          "text": "§"
+        },
+        {
+          "index": 149,
+          "token_id": 3234,
+          "logprob": -0.0009,
+          "text": " State"
+        },
+        {
+          "index": 244,
+          "token_id": 7069,
+          "logprob": -0.0008,
+          "text": " immediately"
+        },
+        {
+          "index": 47,
+          "token_id": 31608,
+          "logprob": -0.0006,
+          "text": " Emergency"
+        },
+        {
+          "index": 262,
+          "token_id": 714,
+          "logprob": -0.0005,
+          "text": " but"
+        },
+        {
+          "index": 206,
+          "token_id": 17851,
+          "logprob": -0.0005,
+          "text": "§"
+        },
+        {
+          "index": 444,
+          "token_id": 31608,
+          "logprob": -0.0004,
+          "text": " Emergency"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 103,
+      "mean": -0.3161,
+      "min": -1.9397,
+      "p05": -1.5499,
+      "p50": -0.0004,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 101,
+          "token_id": 19,
+          "logprob": -1.9397,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -1.8814,
+          "text": "1"
+        },
+        {
+          "index": 529,
+          "token_id": 19,
+          "logprob": -1.8651,
+          "text": "4"
+        },
+        {
+          "index": 541,
+          "token_id": 20,
+          "logprob": -1.7171,
+          "text": "5"
+        },
+        {
+          "index": 90,
+          "token_id": 19,
+          "logprob": -1.5733,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.5533,
+          "text": "3"
+        },
+        {
+          "index": 416,
+          "token_id": 17,
+          "logprob": -1.5199,
+          "text": "2"
+        },
+        {
+          "index": 183,
+          "token_id": 21,
+          "logprob": -1.4779,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.4381,
+          "text": "9"
+        },
+        {
+          "index": 404,
+          "token_id": 17,
+          "logprob": -1.431,
+          "text": "2"
+        },
+        {
+          "index": 399,
+          "token_id": 19,
+          "logprob": -1.3439,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.3308,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 557,
+      "mean": -0.0588,
+      "min": -1.9397,
+      "p05": -0.2511,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 238.14,
+    "std": 51.05,
+    "dark_fraction": 0.07576
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 163653,
+    "covered_px": 163088,
+    "covered_fraction": 0.99655,
+    "uncovered_px": 565,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

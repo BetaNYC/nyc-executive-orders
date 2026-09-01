@@ -1,0 +1,314 @@
+{
+  "page": 5,
+  "source_image": "page_0005.png",
+  "elements": [
+    {
+      "bbox": [
+        267,
+        217,
+        1433,
+        510
+      ],
+      "category": "Text",
+      "text": "(c) The Board of Education, the Chancellor, all Community School Boards and Community Superintendents within the School District of the City of New York shall make available to the Deputy Commissioner such facilities, services, personnel and other assistance as may be necessary for the conduct of his or her investigations.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3174,
+          "min": -1.6746
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1602,
+          "min": -0.1602
+        },
+        "text": {
+          "n_tokens": 60,
+          "mean": -0.0004,
+          "min": -0.0126
+        }
+      },
+      "ink": {
+        "ink_px": 27918,
+        "area_px": 283140,
+        "density": 0.0986,
+        "chars": 324,
+        "chars_per_1k_ink": 11.61
+      }
+    },
+    {
+      "bbox": [
+        270,
+        545,
+        1438,
+        1373
+      ],
+      "category": "Text",
+      "text": "(d) The Board of Education, the Chancellor, all Community School Boards and Community Superintendents within the City School District of the City of New York and all other departments or agencies of the City shall provide to the Deputy Commissioner upon request any and all documents, records, reports, files or other information, except such documents as cannot be so disclosed according to law. To insure full availability of such records and documents to the Deputy Commissioner, the Board of Education, the Chancellor, all Community School Boards and Community Superintendents and all other City departments and agencies shall make and retain copies of any documents, records or files provided to state or federal prosecutors, or other investigative bodies, pursuant to subpoena or otherwise.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2644,
+          "min": -1.2395
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 144,
+          "mean": -0.0001,
+          "min": -0.0036
+        }
+      },
+      "ink": {
+        "ink_px": 84632,
+        "area_px": 971588,
+        "density": 0.08711,
+        "chars": 796,
+        "chars_per_1k_ink": 9.41
+      }
+    },
+    {
+      "bbox": [
+        278,
+        1405,
+        1444,
+        1840
+      ],
+      "category": "Text",
+      "text": "(e) Every officer or employee of the City School District of the City of New York, including the members of the Board of Education, the Chancellor, members of all Community School Boards and Community Superintendents shall cooperate fully with the Deputy Commissioner. Interference with or obstruction of the Deputy Commissioner's investigations or other functions shall constitute cause for removal from office or employment, or other appropriate penalty.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2338,
+          "min": -1.2466
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 80,
+          "mean": -0.0,
+          "min": -0.0003
+        }
+      },
+      "ink": {
+        "ink_px": 50571,
+        "area_px": 510120,
+        "density": 0.09914,
+        "chars": 456,
+        "chars_per_1k_ink": 9.02
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 391,
+    "content": {
+      "n_tokens": 284,
+      "mean": -0.0001,
+      "min": -0.0126,
+      "p05": -0.0002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 47,
+          "token_id": 6022,
+          "logprob": -0.0126,
+          "text": " School"
+        },
+        {
+          "index": 53,
+          "token_id": 408,
+          "logprob": -0.0049,
+          "text": "end"
+        },
+        {
+          "index": 153,
+          "token_id": 6022,
+          "logprob": -0.0036,
+          "text": " School"
+        },
+        {
+          "index": 34,
+          "token_id": 11993,
+          "logprob": -0.0028,
+          "text": " \"("
+        },
+        {
+          "index": 236,
+          "token_id": 323,
+          "logprob": -0.0021,
+          "text": " and"
+        },
+        {
+          "index": 93,
+          "token_id": 1189,
+          "logprob": -0.0014,
+          "text": ".\""
+        },
+        {
+          "index": 170,
+          "token_id": 4880,
+          "logprob": -0.0012,
+          "text": " shall"
+        },
+        {
+          "index": 142,
+          "token_id": 6022,
+          "logprob": -0.0009,
+          "text": " School"
+        },
+        {
+          "index": 205,
+          "token_id": 69532,
+          "logprob": -0.0008,
+          "text": " insure"
+        },
+        {
+          "index": 176,
+          "token_id": 5193,
+          "logprob": -0.0007,
+          "text": " upon"
+        },
+        {
+          "index": 161,
+          "token_id": 323,
+          "logprob": -0.0005,
+          "text": " and"
+        },
+        {
+          "index": 183,
+          "token_id": 7424,
+          "logprob": -0.0004,
+          "text": " records"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 63,
+      "mean": -0.2602,
+      "min": -1.6746,
+      "p05": -1.2459,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.6746,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.483,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.366,
+          "text": "7"
+        },
+        {
+          "index": 292,
+          "token_id": 19,
+          "logprob": -1.2466,
+          "text": "4"
+        },
+        {
+          "index": 286,
+          "token_id": 20,
+          "logprob": -1.2402,
+          "text": "5"
+        },
+        {
+          "index": 118,
+          "token_id": 18,
+          "logprob": -1.2395,
+          "text": "3"
+        },
+        {
+          "index": 112,
+          "token_id": 23,
+          "logprob": -1.164,
+          "text": "8"
+        },
+        {
+          "index": 106,
+          "token_id": 20,
+          "logprob": -1.1251,
+          "text": "5"
+        },
+        {
+          "index": 280,
+          "token_id": 23,
+          "logprob": -1.0986,
+          "text": "8"
+        },
+        {
+          "index": 101,
+          "token_id": 15,
+          "logprob": -1.0961,
+          "text": "0"
+        },
+        {
+          "index": 23,
+          "token_id": 15,
+          "logprob": -0.8187,
+          "text": "0"
+        },
+        {
+          "index": 298,
+          "token_id": 15,
+          "logprob": -0.614,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 391,
+      "mean": -0.0421,
+      "min": -1.6746,
+      "p05": -0.0195,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 235.74,
+    "std": 62.84,
+    "dark_fraction": 0.07367
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      616.0,
+      806.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      205,
+      268,
+      1506,
+      1970
+    ],
+    "ink_px": 163125,
+    "covered_px": 163121,
+    "covered_fraction": 0.99998,
+    "uncovered_px": 4,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

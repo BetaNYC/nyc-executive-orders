@@ -1,0 +1,360 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        259,
+        312,
+        1402,
+        629
+      ],
+      "category": "List-item",
+      "text": "§ 3. The delegation by Robert F. Wagner, the then Mayor, exercising the powers of a Finance Board, to the Comptroller, dated November 21, 1963, is hereby revoked, provided, however, that nothing in this Executive Order shall be construed to affect the validity of any act performed pursuant to such delegation prior to the date hereof.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3048,
+          "min": -1.392
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0635,
+          "min": -0.127
+        },
+        "text": {
+          "n_tokens": 78,
+          "mean": -0.0096,
+          "min": -0.7098
+        }
+      },
+      "ink": {
+        "ink_px": 20857,
+        "area_px": 363599,
+        "density": 0.05736,
+        "chars": 335,
+        "chars_per_1k_ink": 16.06
+      }
+    },
+    {
+      "bbox": [
+        261,
+        665,
+        1402,
+        750
+      ],
+      "category": "List-item",
+      "text": "§ 4. This Executive Order shall take effect immediately and remain in effect until revoked by a subsequent Executive Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2732,
+          "min": -1.256
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0049,
+          "min": -0.0098
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0002,
+          "min": -0.002
+        }
+      },
+      "ink": {
+        "ink_px": 7364,
+        "area_px": 98470,
+        "density": 0.07478,
+        "chars": 123,
+        "chars_per_1k_ink": 16.7
+      }
+    },
+    {
+      "bbox": [
+        1017,
+        1014,
+        1300,
+        1064
+      ],
+      "category": "Text",
+      "text": "ABRAHAM D. BEAME\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.232,
+          "min": -1.3638
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0061,
+          "min": -0.0061
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0212,
+          "min": -0.0874
+        }
+      },
+      "ink": {
+        "ink_px": 1825,
+        "area_px": 14535,
+        "density": 0.12556,
+        "chars": 22,
+        "chars_per_1k_ink": 12.05
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 225,
+    "content": {
+      "n_tokens": 112,
+      "mean": -0.0088,
+      "min": -0.7098,
+      "p05": -0.018,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 17851,
+          "logprob": -0.7098,
+          "text": "§"
+        },
+        {
+          "index": 211,
+          "token_id": 1867,
+          "logprob": -0.0874,
+          "text": "AB"
+        },
+        {
+          "index": 217,
+          "token_id": 2729,
+          "logprob": -0.0634,
+          "text": "AME"
+        },
+        {
+          "index": 220,
+          "token_id": 3022,
+          "logprob": -0.0433,
+          "text": "AY"
+        },
+        {
+          "index": 51,
+          "token_id": 11,
+          "logprob": -0.0337,
+          "text": ","
+        },
+        {
+          "index": 216,
+          "token_id": 7206,
+          "logprob": -0.0184,
+          "text": " BE"
+        },
+        {
+          "index": 212,
+          "token_id": 5609,
+          "logprob": -0.0178,
+          "text": "RA"
+        },
+        {
+          "index": 161,
+          "token_id": 323,
+          "logprob": -0.002,
+          "text": " and"
+        },
+        {
+          "index": 150,
+          "token_id": 17851,
+          "logprob": -0.002,
+          "text": "§"
+        },
+        {
+          "index": 49,
+          "token_id": 1221,
+          "logprob": -0.0019,
+          "text": " then"
+        },
+        {
+          "index": 218,
+          "token_id": 1699,
+          "logprob": -0.0016,
+          "text": "\\n"
+        },
+        {
+          "index": 213,
+          "token_id": 73493,
+          "logprob": -0.001,
+          "text": "HAM"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 65,
+      "mean": -0.2497,
+      "min": -1.392,
+      "p05": -1.256,
+      "p50": -0.0007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.392,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.37,
+          "text": "2"
+        },
+        {
+          "index": 181,
+          "token_id": 22,
+          "logprob": -1.3638,
+          "text": "7"
+        },
+        {
+          "index": 126,
+          "token_id": 20,
+          "logprob": -1.256,
+          "text": "5"
+        },
+        {
+          "index": 121,
+          "token_id": 16,
+          "logprob": -1.256,
+          "text": "1"
+        },
+        {
+          "index": 187,
+          "token_id": 19,
+          "logprob": -1.1783,
+          "text": "4"
+        },
+        {
+          "index": 132,
+          "token_id": 17,
+          "logprob": -1.1722,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.0865,
+          "text": "9"
+        },
+        {
+          "index": 199,
+          "token_id": 19,
+          "logprob": -1.0611,
+          "text": "4"
+        },
+        {
+          "index": 193,
+          "token_id": 15,
+          "logprob": -0.9599,
+          "text": "0"
+        },
+        {
+          "index": 137,
+          "token_id": 15,
+          "logprob": -0.883,
+          "text": "0"
+        },
+        {
+          "index": 23,
+          "token_id": 24,
+          "logprob": -0.7248,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 225,
+      "mean": -0.0768,
+      "min": -1.392,
+      "p05": -0.7218,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.59,
+    "std": 29.78,
+    "dark_fraction": 0.0159
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      616.0,
+      815.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      205,
+      271,
+      1506,
+      1992
+    ],
+    "ink_px": 35610,
+    "covered_px": 30046,
+    "covered_fraction": 0.84375,
+    "uncovered_px": 5564,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          421,
+          1255,
+          637,
+          1399
+        ],
+        "ink_px": 972
+      },
+      {
+        "bbox": [
+          877,
+          943,
+          1021,
+          1039
+        ],
+        "ink_px": 687
+      },
+      {
+        "bbox": [
+          949,
+          1207,
+          1117,
+          1327
+        ],
+        "ink_px": 623
+      },
+      {
+        "bbox": [
+          1237,
+          943,
+          1453,
+          1015
+        ],
+        "ink_px": 572
+      },
+      {
+        "bbox": [
+          1141,
+          1207,
+          1237,
+          1327
+        ],
+        "ink_px": 424
+      }
+    ],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "page": 11,
+  "source_image": "page_0011.png",
+  "elements": [
+    {
+      "bbox": [
+        166,
+        178,
+        1501,
+        262
+      ],
+      "category": "Text",
+      "text": "Corporation Counsel, the Director of Intergovernmental and External Affairs, the Director of Communications, and the Press Secretary shall report directly to the Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3841,
+          "min": -1.7508
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.005,
+          "min": -0.1603
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        268,
+        297,
+        1237,
+        337
+      ],
+      "category": "Text",
+      "text": "§ 14. Executive Order 5, dated February 3, 2022, is hereby REVOKED.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3065,
+          "min": -1.4131
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3008,
+          "min": -0.3008
+        },
+        "text": {
+          "n_tokens": 27,
+          "mean": -0.0001,
+          "min": -0.0026
+        }
+      },
+      "ink": {
+        "ink_px": 3428,
+        "area_px": 39606,
+        "density": 0.08655,
+        "chars": 67,
+        "chars_per_1k_ink": 19.54
+      }
+    },
+    {
+      "bbox": [
+        268,
+        372,
+        892,
+        413
+      ],
+      "category": "Text",
+      "text": "§ 15. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2284,
+          "min": -1.4766
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0,
+          "min": -0.0004
+        }
+      },
+      "ink": {
+        "ink_px": 2336,
+        "area_px": 26124,
+        "density": 0.08942,
+        "chars": 47,
+        "chars_per_1k_ink": 20.12
+      }
+    },
+    {
+      "bbox": [
+        961,
+        480,
+        1302,
+        563
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3556,
+          "min": -1.6672
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0067,
+          "min": -0.0067
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 1957,
+        "area_px": 28220,
+        "density": 0.06935,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        967,
+        568,
+        1129,
+        645
+      ],
+      "category": "Caption",
+      "text": "Eric Adams\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.229,
+          "min": -1.1217
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0233,
+          "min": -0.0233
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0002,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 997,
+        "area_px": 12636,
+        "density": 0.0789,
+        "chars": 16,
+        "chars_per_1k_ink": 16.05
+      }
+    },
+    {
+      "bbox": [
+        813,
+        2024,
+        846,
+        2058
+      ],
+      "category": "Page-footer",
+      "text": "11",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2216,
+          "min": -1.1536
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0002,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0001
+        }
+      },
+      "ink": {
+        "ink_px": 112,
+        "area_px": 1190,
+        "density": 0.09412,
+        "chars": 2,
+        "chars_per_1k_ink": 17.86
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 286,
+    "content": {
+      "n_tokens": 77,
+      "mean": -0.0022,
+      "min": -0.1603,
+      "p05": -0.0006,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 54,
+          "token_id": 25466,
+          "logprob": -0.1603,
+          "text": " Communications"
+        },
+        {
+          "index": 102,
+          "token_id": 17851,
+          "logprob": -0.0026,
+          "text": "§"
+        },
+        {
+          "index": 35,
+          "token_id": 10580,
+          "logprob": -0.0008,
+          "text": "Cor"
+        },
+        {
+          "index": 126,
+          "token_id": 3925,
+          "logprob": -0.0007,
+          "text": "OK"
+        },
+        {
+          "index": 240,
+          "token_id": 49454,
+          "logprob": -0.0005,
+          "text": "Eric"
+        },
+        {
+          "index": 163,
+          "token_id": 17851,
+          "logprob": -0.0004,
+          "text": "§"
+        },
+        {
+          "index": 243,
+          "token_id": 85574,
+          "logprob": -0.0003,
+          "text": "Mayor"
+        },
+        {
+          "index": 36,
+          "token_id": 4308,
+          "logprob": -0.0003,
+          "text": "por"
+        },
+        {
+          "index": 125,
+          "token_id": 65823,
+          "logprob": -0.0002,
+          "text": " REV"
+        },
+        {
+          "index": 281,
+          "token_id": 16,
+          "logprob": -0.0001,
+          "text": "1"
+        },
+        {
+          "index": 171,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 44,
+          "token_id": 2375,
+          "logprob": -0.0001,
+          "text": "erg"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 121,
+      "mean": -0.2736,
+      "min": -1.7508,
+      "p05": -1.4354,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.7508,
+          "text": "6"
+        },
+        {
+          "index": 193,
+          "token_id": 17,
+          "logprob": -1.6672,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.6236,
+          "text": "1"
+        },
+        {
+          "index": 146,
+          "token_id": 17,
+          "logprob": -1.4766,
+          "text": "2"
+        },
+        {
+          "index": 198,
+          "token_id": 18,
+          "logprob": -1.4554,
+          "text": "3"
+        },
+        {
+          "index": 182,
+          "token_id": 16,
+          "logprob": -1.4501,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.4354,
+          "text": "8"
+        },
+        {
+          "index": 79,
+          "token_id": 22,
+          "logprob": -1.4131,
+          "text": "7"
+        },
+        {
+          "index": 85,
+          "token_id": 22,
+          "logprob": -1.4043,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.388,
+          "text": "2"
+        },
+        {
+          "index": 74,
+          "token_id": 23,
+          "logprob": -1.216,
+          "text": "8"
+        },
+        {
+          "index": 141,
+          "token_id": 17,
+          "logprob": -1.175,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 286,
+      "mean": -0.1164,
+      "min": -1.7508,
+      "p05": -1.1324,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 252.8,
+    "std": 14.25,
+    "dark_fraction": 0.00398
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      842.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      280,
+      1496,
+      2058
+    ],
+    "ink_px": 9149,
+    "covered_px": 8830,
+    "covered_fraction": 0.96513,
+    "uncovered_px": 319,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

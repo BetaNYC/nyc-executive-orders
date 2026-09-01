@@ -1,0 +1,386 @@
+{
+  "page": 5,
+  "source_image": "page_0005.png",
+  "elements": [
+    {
+      "bbox": [
+        329,
+        202,
+        718,
+        227
+      ],
+      "category": "Section-header",
+      "text": "## Section 5. Reports.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3155,
+          "min": -1.3755
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0087,
+          "min": -0.0174
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.1546,
+          "min": -0.8875
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        428,
+        265,
+        1394,
+        461
+      ],
+      "category": "Text",
+      "text": "OMLR shall submit an annual report to the First Deputy Mayor on the employee assistance programs. Agencies shall submit such monthly reports on the operations of their EAP as are requested by OMLR and these data shall form the basis of the annual report.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.255,
+          "min": -1.33
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 50,
+          "mean": -0.0004,
+          "min": -0.017
+        }
+      },
+      "ink": {
+        "ink_px": 30688,
+        "area_px": 181818,
+        "density": 0.16878,
+        "chars": 254,
+        "chars_per_1k_ink": 8.28
+      }
+    },
+    {
+      "bbox": [
+        330,
+        499,
+        521,
+        524
+      ],
+      "category": "Section-header",
+      "text": "## Section 6.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2524,
+          "min": -1.2563
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0058,
+          "min": -0.0117
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0052,
+          "min": -0.026
+        }
+      },
+      "ink": {
+        "ink_px": 1125,
+        "area_px": 4966,
+        "density": 0.22654,
+        "chars": 13,
+        "chars_per_1k_ink": 11.56
+      }
+    },
+    {
+      "bbox": [
+        428,
+        565,
+        1230,
+        593
+      ],
+      "category": "Text",
+      "text": "This order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2436,
+          "min": -1.0498
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0001,
+          "min": -0.0006
+        }
+      },
+      "ink": {
+        "ink_px": 4978,
+        "area_px": 22372,
+        "density": 0.22251,
+        "chars": 41,
+        "chars_per_1k_ink": 8.24
+      }
+    },
+    {
+      "bbox": [
+        920,
+        729,
+        1196,
+        785
+      ],
+      "category": "Text",
+      "text": "Edward I. Koch\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2558,
+          "min": -1.1806
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0172,
+          "min": -0.0172
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0307,
+          "min": -0.2235
+        }
+      },
+      "ink": {
+        "ink_px": 2587,
+        "area_px": 15456,
+        "density": 0.16738,
+        "chars": 20,
+        "chars_per_1k_ink": 7.73
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 255,
+    "content": {
+      "n_tokens": 77,
+      "mean": -0.0179,
+      "min": -0.8875,
+      "p05": -0.0307,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 565,
+          "logprob": -0.8875,
+          "text": "##"
+        },
+        {
+          "index": 244,
+          "token_id": 84501,
+          "logprob": -0.2235,
+          "text": "Edward"
+        },
+        {
+          "index": 40,
+          "token_id": 28040,
+          "logprob": -0.1435,
+          "text": " Reports"
+        },
+        {
+          "index": 36,
+          "token_id": 11113,
+          "logprob": -0.0492,
+          "text": " Section"
+        },
+        {
+          "index": 162,
+          "token_id": 565,
+          "logprob": -0.026,
+          "text": "##"
+        },
+        {
+          "index": 250,
+          "token_id": 3022,
+          "logprob": -0.0209,
+          "text": "AY"
+        },
+        {
+          "index": 77,
+          "token_id": 1898,
+          "logprob": -0.017,
+          "text": "OM"
+        },
+        {
+          "index": 87,
+          "token_id": 31624,
+          "logprob": -0.0019,
+          "text": " Deputy"
+        },
+        {
+          "index": 41,
+          "token_id": 1189,
+          "logprob": -0.0016,
+          "text": ".\""
+        },
+        {
+          "index": 249,
+          "token_id": 44,
+          "logprob": -0.0009,
+          "text": "M"
+        },
+        {
+          "index": 94,
+          "token_id": 13,
+          "logprob": -0.0007,
+          "text": "."
+        },
+        {
+          "index": 208,
+          "token_id": 1189,
+          "logprob": -0.0006,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 100,
+      "mean": -0.246,
+      "min": -1.3755,
+      "p05": -1.1825,
+      "p50": -0.0005,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 17,
+          "token_id": 23,
+          "logprob": -1.3755,
+          "text": "8"
+        },
+        {
+          "index": 60,
+          "token_id": 19,
+          "logprob": -1.33,
+          "text": "4"
+        },
+        {
+          "index": 144,
+          "token_id": 16,
+          "logprob": -1.2563,
+          "text": "1"
+        },
+        {
+          "index": 49,
+          "token_id": 23,
+          "logprob": -1.2527,
+          "text": "8"
+        },
+        {
+          "index": 22,
+          "token_id": 22,
+          "logprob": -1.2188,
+          "text": "7"
+        },
+        {
+          "index": 227,
+          "token_id": 21,
+          "logprob": -1.1806,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.128,
+          "text": "9"
+        },
+        {
+          "index": 54,
+          "token_id": 20,
+          "logprob": -1.0669,
+          "text": "5"
+        },
+        {
+          "index": 190,
+          "token_id": 18,
+          "logprob": -1.0498,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.0491,
+          "text": "2"
+        },
+        {
+          "index": 179,
+          "token_id": 20,
+          "logprob": -0.9855,
+          "text": "5"
+        },
+        {
+          "index": 232,
+          "token_id": 20,
+          "logprob": -0.9723,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 255,
+      "mean": -0.1026,
+      "min": -1.3755,
+      "p05": -0.9532,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.21,
+    "std": 32.52,
+    "dark_fraction": 0.01873
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      622.0,
+      812.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      207,
+      270,
+      1520,
+      1985
+    ],
+    "ink_px": 42184,
+    "covered_px": 39378,
+    "covered_fraction": 0.93348,
+    "uncovered_px": 2806,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          807,
+          630,
+          1431,
+          726
+        ],
+        "ink_px": 2661
+      }
+    ],
+    "cell_px": 24
+  }
+}

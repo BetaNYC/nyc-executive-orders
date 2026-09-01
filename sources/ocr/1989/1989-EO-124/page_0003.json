@@ -1,0 +1,314 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        308,
+        215,
+        1530,
+        442
+      ],
+      "category": "Text",
+      "text": "Statement of Basis and Purpose of Executive Order.\nSection 3 of the New York City Charter provides that the\nMayor \"shall be the chief executive officer of the city.\"\nThe New York State Court of Appeals has stated that the\nMayor's authority in that capacity \"does, of course, include\nthe power to enforce and implement legislative enactments.\"\n*Under 21 v. City of New York, 65 N.Y. 2d 344, 356 (1985).*",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3223,
+          "min": -1.4554
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 110,
+          "mean": -0.0103,
+          "min": -0.5675
+        }
+      },
+      "ink": {
+        "ink_px": 38617,
+        "area_px": 212046,
+        "density": 0.18212,
+        "chars": 402,
+        "chars_per_1k_ink": 10.41
+      }
+    },
+    {
+      "bbox": [
+        308,
+        482,
+        1530,
+        1008
+      ],
+      "category": "Text",
+      "text": "Many services provided by New York City, including\neducation and police protection, are available to all City\nresidents regardless of their citizenship or immigration\nstatus. However, many aliens who reside in the City fail to\nmake use of such services, largely from fear that any\ncontact with a government agency will bring them to the\nattention of federal immigration authorities. It is to the\ndisadvantage of all City residents if some who live in the\nCity are uneducated, inadequately protected from crime, or\nuntreated for illness. Regardless of their immigration\nstatus, aliens should not be discouraged from utilizing\nthose City services to which they are entitled. On the\ncontrary, the public welfare requires that they be\nencouraged to do so. Yet many aliens will continue to avoid\nCity agencies as long as they fear that they will be\nreported to federal immigration authorities.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2645,
+          "min": -1.2222
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 183,
+          "mean": -0.0002,
+          "min": -0.0078
+        }
+      },
+      "ink": {
+        "ink_px": 116340,
+        "area_px": 630148,
+        "density": 0.18462,
+        "chars": 888,
+        "chars_per_1k_ink": 7.63
+      }
+    },
+    {
+      "bbox": [
+        308,
+        1044,
+        1530,
+        1472
+      ],
+      "category": "Text",
+      "text": "Federal law places full responsibility for immigration\ncontrol on the federal government. With limited exceptions,\nthe City therefore has no legal obligation to report any\nalien to federal authorities. The executive order, in\nrecognition of this lack of obligation and the importance of\nproviding the services covered herein, requires City\nagencies to preserve the confidentiality of all information\nrespecting law-abiding aliens to the extent permitted by\nlaw. City agencies are also prohibited hereby from\narbitrarily excluding aliens from eligibility for services\nwhich are available to all. In this way, it is hoped,\naliens will be encouraged to make use of City services to\nwhich they are entitled by law.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2142,
+          "min": -1.2455
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 141,
+          "mean": -0.0074,
+          "min": -0.5911
+        }
+      },
+      "ink": {
+        "ink_px": 97496,
+        "area_px": 512744,
+        "density": 0.19015,
+        "chars": 710,
+        "chars_per_1k_ink": 7.28
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 544,
+    "content": {
+      "n_tokens": 434,
+      "mean": -0.0051,
+      "min": -0.5911,
+      "p05": -0.0013,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 523,
+          "token_id": 79363,
+          "logprob": -0.5911,
+          "text": "iens"
+        },
+        {
+          "index": 109,
+          "token_id": 9,
+          "logprob": -0.5675,
+          "text": "*"
+        },
+        {
+          "index": 522,
+          "token_id": 41978,
+          "logprob": -0.365,
+          "text": "nal"
+        },
+        {
+          "index": 43,
+          "token_id": 7110,
+          "logprob": -0.2814,
+          "text": ".\\"
+        },
+        {
+          "index": 120,
+          "token_id": 11,
+          "logprob": -0.1728,
+          "text": ","
+        },
+        {
+          "index": 35,
+          "token_id": 8636,
+          "logprob": -0.0826,
+          "text": "Statement"
+        },
+        {
+          "index": 408,
+          "token_id": 1699,
+          "logprob": -0.0705,
+          "text": "\\n"
+        },
+        {
+          "index": 475,
+          "token_id": 44634,
+          "logprob": -0.0079,
+          "text": "respect"
+        },
+        {
+          "index": 190,
+          "token_id": 1699,
+          "logprob": -0.0078,
+          "text": "\\n"
+        },
+        {
+          "index": 202,
+          "token_id": 416,
+          "logprob": -0.0041,
+          "text": "res"
+        },
+        {
+          "index": 45,
+          "token_id": 9620,
+          "logprob": -0.0037,
+          "text": "Section"
+        },
+        {
+          "index": 57,
+          "token_id": 1699,
+          "logprob": -0.0037,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 63,
+      "mean": -0.2526,
+      "min": -1.4554,
+      "p05": -1.2432,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -1.4554,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.3985,
+          "text": "8"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.3609,
+          "text": "2"
+        },
+        {
+          "index": 377,
+          "token_id": 19,
+          "logprob": -1.2455,
+          "text": "4"
+        },
+        {
+          "index": 157,
+          "token_id": 17,
+          "logprob": -1.2222,
+          "text": "2"
+        },
+        {
+          "index": 389,
+          "token_id": 17,
+          "logprob": -1.1842,
+          "text": "2"
+        },
+        {
+          "index": 163,
+          "token_id": 15,
+          "logprob": -1.106,
+          "text": "0"
+        },
+        {
+          "index": 169,
+          "token_id": 23,
+          "logprob": -1.0927,
+          "text": "8"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.0028,
+          "text": "0"
+        },
+        {
+          "index": 371,
+          "token_id": 23,
+          "logprob": -0.9072,
+          "text": "8"
+        },
+        {
+          "index": 152,
+          "token_id": 23,
+          "logprob": -0.8975,
+          "text": "8"
+        },
+        {
+          "index": 383,
+          "token_id": 15,
+          "logprob": -0.633,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 544,
+      "mean": -0.0334,
+      "min": -1.4554,
+      "p05": -0.0396,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 224.29,
+    "std": 77.94,
+    "dark_fraction": 0.11573
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      616.0,
+      796.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      205,
+      265,
+      1506,
+      1946
+    ],
+    "ink_px": 253096,
+    "covered_px": 252453,
+    "covered_fraction": 0.99746,
+    "uncovered_px": 643,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "page": 5,
+  "source_image": "page_0005.png",
+  "elements": [
+    {
+      "bbox": [
+        485,
+        267,
+        1396,
+        392
+      ],
+      "category": "Text",
+      "text": "217, 219, 329 and 1301(2)(b), and pursuant to Administrative Code section 5-304",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3407,
+          "min": -1.7206
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1476,
+          "min": -0.1476
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.0163,
+          "min": -0.5766
+        }
+      },
+      "ink": {
+        "ink_px": 3516,
+        "area_px": 113500,
+        "density": 0.03098,
+        "chars": 79,
+        "chars_per_1k_ink": 22.47
+      }
+    },
+    {
+      "bbox": [
+        385,
+        423,
+        1373,
+        855
+      ],
+      "category": "List-item",
+      "text": "q Approve and sign applications to secure grant funds, submitted pursuant to provisions of the New York State Environmental Conservation Law or the rules or regulations of the State Department of Environmental Conservation, and to sign any other documents as may be necessary to secure such funds\nr Perform such other duties as the Mayor may direct",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3728,
+          "min": -1.7137
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2622,
+          "min": -0.5244
+        },
+        "text": {
+          "n_tokens": 61,
+          "mean": -0.0122,
+          "min": -0.3628
+        }
+      },
+      "ink": {
+        "ink_px": 15927,
+        "area_px": 424104,
+        "density": 0.03755,
+        "chars": 348,
+        "chars_per_1k_ink": 21.85
+      }
+    },
+    {
+      "bbox": [
+        189,
+        961,
+        1401,
+        1553
+      ],
+      "category": "List-item",
+      "text": "§ 3 The Deputy Mayor for Operations hereby is delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to delegate, in the event that the Mayor is unable to perform such functions, powers or duties for a reason specified in subdivision a of section 10 of the New York City Charter. In the event that both the Mayor and the Deputy Mayor for Operations are unable to perform such functions, powers or duties for a reason specified in subdivision a of section 10 of the Charter, such authority is delegated to the Deputy Mayor for Economic Development and Planning.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3169,
+          "min": -1.6102
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2616,
+          "min": -0.5232
+        },
+        "text": {
+          "n_tokens": 120,
+          "mean": -0.0057,
+          "min": -0.5233
+        }
+      },
+      "ink": {
+        "ink_px": 22375,
+        "area_px": 702690,
+        "density": 0.03184,
+        "chars": 615,
+        "chars_per_1k_ink": 27.49
+      }
+    },
+    {
+      "bbox": [
+        395,
+        1650,
+        1347,
+        1857
+      ],
+      "category": "List-item",
+      "text": "§ 4 The Deputy Mayor for Education and Human Services shall\na Advise and assist the Mayor regarding all policies, planning and programs regarding education and human services",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3231,
+          "min": -1.4606
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0226,
+          "min": -0.5847
+        }
+      },
+      "ink": {
+        "ink_px": 6176,
+        "area_px": 195288,
+        "density": 0.03163,
+        "chars": 174,
+        "chars_per_1k_ink": 28.17
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 398,
+    "content": {
+      "n_tokens": 249,
+      "mean": -0.011,
+      "min": -0.5847,
+      "p05": -0.0165,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 377,
+          "token_id": 12325,
+          "logprob": -0.5847,
+          "text": " Adv"
+        },
+        {
+          "index": 64,
+          "token_id": 3772,
+          "logprob": -0.5766,
+          "text": " section"
+        },
+        {
+          "index": 271,
+          "token_id": 13,
+          "logprob": -0.5233,
+          "text": "."
+        },
+        {
+          "index": 158,
+          "token_id": 81,
+          "logprob": -0.3628,
+          "text": "r"
+        },
+        {
+          "index": 119,
+          "token_id": 32449,
+          "logprob": -0.1649,
+          "text": " pursuant"
+        },
+        {
+          "index": 107,
+          "token_id": 80,
+          "logprob": -0.1114,
+          "text": "q"
+        },
+        {
+          "index": 375,
+          "token_id": 1699,
+          "logprob": -0.1024,
+          "text": "\\n"
+        },
+        {
+          "index": 108,
+          "token_id": 18642,
+          "logprob": -0.0825,
+          "text": " Appro"
+        },
+        {
+          "index": 324,
+          "token_id": 1189,
+          "logprob": -0.0626,
+          "text": ".\""
+        },
+        {
+          "index": 236,
+          "token_id": 11,
+          "logprob": -0.042,
+          "text": ","
+        },
+        {
+          "index": 208,
+          "token_id": 576,
+          "logprob": -0.0355,
+          "text": " The"
+        },
+        {
+          "index": 157,
+          "token_id": 1699,
+          "logprob": -0.0204,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 86,
+      "mean": -0.3241,
+      "min": -1.7206,
+      "p05": -1.5259,
+      "p50": -0.0029,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.7206,
+          "text": "2"
+        },
+        {
+          "index": 94,
+          "token_id": 20,
+          "logprob": -1.7137,
+          "text": "5"
+        },
+        {
+          "index": 89,
+          "token_id": 18,
+          "logprob": -1.6697,
+          "text": "3"
+        },
+        {
+          "index": 192,
+          "token_id": 18,
+          "logprob": -1.6102,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.5477,
+          "text": "5"
+        },
+        {
+          "index": 350,
+          "token_id": 22,
+          "logprob": -1.4606,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.4504,
+          "text": "7"
+        },
+        {
+          "index": 78,
+          "token_id": 20,
+          "logprob": -1.4288,
+          "text": "5"
+        },
+        {
+          "index": 332,
+          "token_id": 20,
+          "logprob": -1.4127,
+          "text": "5"
+        },
+        {
+          "index": 83,
+          "token_id": 18,
+          "logprob": -1.4059,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -1.3583,
+          "text": "6"
+        },
+        {
+          "index": 186,
+          "token_id": 16,
+          "logprob": -1.3567,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 398,
+      "mean": -0.0777,
+      "min": -1.7206,
+      "p05": -0.5288,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 248.79,
+    "std": 34.03,
+    "dark_fraction": 0.02224
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 48043,
+    "covered_px": 47994,
+    "covered_fraction": 0.99898,
+    "uncovered_px": 49,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

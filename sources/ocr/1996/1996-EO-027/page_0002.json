@@ -1,0 +1,393 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        203,
+        100,
+        467,
+        126
+      ],
+      "category": "Page-header",
+      "text": "DEP COUNSEL COLES",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3073,
+          "min": -1.4112
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0011,
+          "min": -0.0023
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0007,
+          "min": -0.0026
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        558,
+        98,
+        809,
+        124
+      ],
+      "category": "Page-header",
+      "text": "Fax:212-788-3269",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 17,
+          "mean": -0.2724,
+          "min": -1.0998
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0171,
+          "min": -0.0338
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0049,
+          "min": -0.0319
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        977,
+        98,
+        1254,
+        124
+      ],
+      "category": "Text",
+      "text": "Feb 26 '96 17:58 P.02/02",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2114,
+          "min": -1.3189
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.4287,
+          "min": -0.4287
+        },
+        "text": {
+          "n_tokens": 20,
+          "mean": -0.0253,
+          "min": -0.3135
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        191,
+        348,
+        1462,
+        462
+      ],
+      "category": "Text",
+      "text": "Section 3. Executive Order No. 96, dated December 7, 1977, Executive Order No. 15, dated July 17, 1978, and Executive Order No. 23, dated October 13, 1978, are hereby repealed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2818,
+          "min": -1.2878
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 68,
+          "mean": -0.0019,
+          "min": -0.07
+        }
+      },
+      "ink": {
+        "ink_px": 9974,
+        "area_px": 142728,
+        "density": 0.06988,
+        "chars": 176,
+        "chars_per_1k_ink": 17.65
+      }
+    },
+    {
+      "bbox": [
+        186,
+        500,
+        1462,
+        652
+      ],
+      "category": "Text",
+      "text": "Section 4. This Order shall take effect immediately, except that Executive Order No. 96, dated December 7, 1977, shall remain in effect until such time as the Fire Department of the City of New York assumes the functions of the Emergency Medical Service from HHC pursuant to Section 1 of this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2715,
+          "min": -1.3492
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 69,
+          "mean": -0.0006,
+          "min": -0.0329
+        }
+      },
+      "ink": {
+        "ink_px": 17781,
+        "area_px": 190304,
+        "density": 0.09343,
+        "chars": 299,
+        "chars_per_1k_ink": 16.82
+      }
+    },
+    {
+      "bbox": [
+        672,
+        665,
+        1197,
+        874
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.401,
+          "min": -1.8076
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0029,
+          "min": -0.0029
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 10533,
+        "area_px": 109516,
+        "density": 0.09618,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 384,
+    "content": {
+      "n_tokens": 178,
+      "mean": -0.0042,
+      "min": -0.3135,
+      "p05": -0.0072,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 137,
+          "token_id": 393,
+          "logprob": -0.3135,
+          "text": " P"
+        },
+        {
+          "index": 139,
+          "token_id": 15,
+          "logprob": -0.1798,
+          "text": "0"
+        },
+        {
+          "index": 201,
+          "token_id": 11,
+          "logprob": -0.07,
+          "text": ","
+        },
+        {
+          "index": 204,
+          "token_id": 2308,
+          "logprob": -0.0487,
+          "text": " No"
+        },
+        {
+          "index": 341,
+          "token_id": 22455,
+          "logprob": -0.0329,
+          "text": "HC"
+        },
+        {
+          "index": 88,
+          "token_id": 21,
+          "logprob": -0.0319,
+          "text": "6"
+        },
+        {
+          "index": 78,
+          "token_id": 17,
+          "logprob": -0.0206,
+          "text": "2"
+        },
+        {
+          "index": 130,
+          "token_id": 21,
+          "logprob": -0.0088,
+          "text": "6"
+        },
+        {
+          "index": 77,
+          "token_id": 25,
+          "logprob": -0.0078,
+          "text": ":"
+        },
+        {
+          "index": 179,
+          "token_id": 9620,
+          "logprob": -0.0071,
+          "text": "Section"
+        },
+        {
+          "index": 37,
+          "token_id": 356,
+          "logprob": -0.0026,
+          "text": " C"
+        },
+        {
+          "index": 76,
+          "token_id": 60309,
+          "logprob": -0.0026,
+          "text": "Fax"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 118,
+      "mean": -0.276,
+      "min": -1.8076,
+      "p05": -1.2977,
+      "p50": -0.0008,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 358,
+          "token_id": 17,
+          "logprob": -1.8076,
+          "text": "2"
+        },
+        {
+          "index": 369,
+          "token_id": 22,
+          "logprob": -1.5283,
+          "text": "7"
+        },
+        {
+          "index": 363,
+          "token_id": 20,
+          "logprob": -1.522,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.4112,
+          "text": "3"
+        },
+        {
+          "index": 270,
+          "token_id": 17,
+          "logprob": -1.3492,
+          "text": "2"
+        },
+        {
+          "index": 107,
+          "token_id": 19,
+          "logprob": -1.3189,
+          "text": "4"
+        },
+        {
+          "index": 254,
+          "token_id": 21,
+          "logprob": -1.2939,
+          "text": "6"
+        },
+        {
+          "index": 167,
+          "token_id": 17,
+          "logprob": -1.2878,
+          "text": "2"
+        },
+        {
+          "index": 374,
+          "token_id": 19,
+          "logprob": -1.2841,
+          "text": "4"
+        },
+        {
+          "index": 17,
+          "token_id": 22,
+          "logprob": -1.2628,
+          "text": "7"
+        },
+        {
+          "index": 162,
+          "token_id": 17,
+          "logprob": -1.2517,
+          "text": "2"
+        },
+        {
+          "index": 156,
+          "token_id": 23,
+          "logprob": -1.1597,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 384,
+      "mean": -0.0869,
+      "min": -1.8076,
+      "p05": -0.7385,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.18,
+    "std": 31.54,
+    "dark_fraction": 0.01773
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 38309,
+    "covered_px": 38288,
+    "covered_fraction": 0.99945,
+    "uncovered_px": 21,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

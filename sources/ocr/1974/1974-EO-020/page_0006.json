@@ -1,0 +1,265 @@
+{
+  "page": 6,
+  "source_image": "page_0006.png",
+  "elements": [
+    {
+      "bbox": [
+        633,
+        484,
+        1030,
+        504
+      ],
+      "category": "Page-header",
+      "text": "OFFICE OF THE MAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3115,
+          "min": -1.5108
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3501,
+          "min": -0.698
+        },
+        "text": {
+          "n_tokens": 6,
+          "mean": -0.0016,
+          "min": -0.0047
+        }
+      },
+      "ink": {
+        "ink_px": 2072,
+        "area_px": 8358,
+        "density": 0.24791,
+        "chars": 19,
+        "chars_per_1k_ink": 9.17
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 45,
+    "content": {
+      "n_tokens": 6,
+      "mean": -0.0016,
+      "min": -0.0047,
+      "p05": -0.0041,
+      "p50": -0.0008,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 36,
+          "token_id": 27068,
+          "logprob": -0.0047,
+          "text": "OFF"
+        },
+        {
+          "index": 38,
+          "token_id": 3008,
+          "logprob": -0.0025,
+          "text": " OF"
+        },
+        {
+          "index": 40,
+          "token_id": 39230,
+          "logprob": -0.001,
+          "text": " MAY"
+        },
+        {
+          "index": 39,
+          "token_id": 3168,
+          "logprob": -0.0006,
+          "text": " THE"
+        },
+        {
+          "index": 37,
+          "token_id": 5487,
+          "logprob": -0.0006,
+          "text": "ICE"
+        },
+        {
+          "index": 41,
+          "token_id": 868,
+          "logprob": -0.0,
+          "text": "OR"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 21,
+      "mean": -0.3152,
+      "min": -1.5108,
+      "p05": -1.3975,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.5108,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.3975,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.2477,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.1941,
+          "text": "0"
+        },
+        {
+          "index": 29,
+          "token_id": 2665,
+          "logprob": -0.698,
+          "text": "Page"
+        },
+        {
+          "index": 17,
+          "token_id": 18,
+          "logprob": -0.2815,
+          "text": "3"
+        },
+        {
+          "index": 5,
+          "token_id": 21,
+          "logprob": -0.2023,
+          "text": "6"
+        },
+        {
+          "index": 6,
+          "token_id": 18,
+          "logprob": -0.08,
+          "text": "3"
+        },
+        {
+          "index": 11,
+          "token_id": 23,
+          "logprob": -0.0039,
+          "text": "8"
+        },
+        {
+          "index": 30,
+          "token_id": 9351,
+          "logprob": -0.0022,
+          "text": "-header"
+        },
+        {
+          "index": 22,
+          "token_id": 15,
+          "logprob": -0.0003,
+          "text": "0"
+        },
+        {
+          "index": 21,
+          "token_id": 20,
+          "logprob": -0.0,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 45,
+      "mean": -0.1532,
+      "min": -1.5108,
+      "p05": -1.237,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 251.65,
+    "std": 27.03,
+    "dark_fraction": 0.01251
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      685.0,
+      861.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      228,
+      287,
+      1674,
+      2104
+    ],
+    "ink_px": 32881,
+    "covered_px": 2072,
+    "covered_fraction": 0.06302,
+    "uncovered_px": 30809,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          276,
+          503,
+          1140,
+          767
+        ],
+        "ink_px": 12979
+      },
+      {
+        "bbox": [
+          372,
+          455,
+          1284,
+          527
+        ],
+        "ink_px": 6193
+      },
+      {
+        "bbox": [
+          1164,
+          503,
+          1674,
+          695
+        ],
+        "ink_px": 6173
+      },
+      {
+        "bbox": [
+          1164,
+          287,
+          1548,
+          359
+        ],
+        "ink_px": 3755
+      },
+      {
+        "bbox": [
+          1548,
+          719,
+          1644,
+          815
+        ],
+        "ink_px": 685
+      },
+      {
+        "bbox": [
+          780,
+          551,
+          900,
+          599
+        ],
+        "ink_px": 479
+      }
+    ],
+    "cell_px": 24
+  }
+}

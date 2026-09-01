@@ -1,0 +1,358 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        201,
+        287,
+        1516,
+        385
+      ],
+      "category": "Text",
+      "text": "Department shall transfer to the New York City Health and Hospitals Corporation the functions of the \"Programs\" and the employees thereof consistent with such terms and conditions.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.333,
+          "min": -1.5095
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 31,
+          "mean": -0.0082,
+          "min": -0.2528
+        }
+      },
+      "ink": {
+        "ink_px": 12392,
+        "area_px": 126616,
+        "density": 0.09787,
+        "chars": 180,
+        "chars_per_1k_ink": 14.53
+      }
+    },
+    {
+      "bbox": [
+        199,
+        420,
+        1516,
+        649
+      ],
+      "category": "Text",
+      "text": "Section 2. The City Personnel Director and Health Commissioner shall take all steps necessary, consistent with applicable law, to implement Section 1 of this Order, including ensuring the transfer from the New York City Department of Health to the New York City Health and Hospitals Corporation of employees substantially engaged in the performance of the functions of the Programs.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2708,
+          "min": -1.1286
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0162,
+          "min": -0.0162
+        },
+        "text": {
+          "n_tokens": 66,
+          "mean": -0.0002,
+          "min": -0.0057
+        }
+      },
+      "ink": {
+        "ink_px": 27949,
+        "area_px": 295868,
+        "density": 0.09446,
+        "chars": 382,
+        "chars_per_1k_ink": 13.67
+      }
+    },
+    {
+      "bbox": [
+        400,
+        680,
+        1465,
+        709
+      ],
+      "category": "Text",
+      "text": "Section 3. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2916,
+          "min": -1.5013
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0007,
+          "min": -0.0007
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0002,
+          "min": -0.0013
+        }
+      },
+      "ink": {
+        "ink_px": 4154,
+        "area_px": 31830,
+        "density": 0.13051,
+        "chars": 52,
+        "chars_per_1k_ink": 12.52
+      }
+    },
+    {
+      "bbox": [
+        973,
+        876,
+        1353,
+        936
+      ],
+      "category": "Text",
+      "text": "Rudolph W. Giuliani\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3251,
+          "min": -1.3422
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0238,
+          "min": -0.0238
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0054,
+          "min": -0.0365
+        }
+      },
+      "ink": {
+        "ink_px": 1964,
+        "area_px": 22740,
+        "density": 0.08637,
+        "chars": 25,
+        "chars_per_1k_ink": 12.73
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 259,
+    "content": {
+      "n_tokens": 116,
+      "mean": -0.0027,
+      "min": -0.2528,
+      "p05": -0.0014,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 46,
+          "token_id": 13034,
+          "logprob": -0.2528,
+          "text": " Corporation"
+        },
+        {
+          "index": 248,
+          "token_id": 49,
+          "logprob": -0.0365,
+          "text": "R"
+        },
+        {
+          "index": 101,
+          "token_id": 9620,
+          "logprob": -0.0057,
+          "text": "Section"
+        },
+        {
+          "index": 111,
+          "token_id": 29354,
+          "logprob": -0.0053,
+          "text": " Commissioner"
+        },
+        {
+          "index": 253,
+          "token_id": 88050,
+          "logprob": -0.0033,
+          "text": " Giuliani"
+        },
+        {
+          "index": 251,
+          "token_id": 467,
+          "logprob": -0.0019,
+          "text": " W"
+        },
+        {
+          "index": 209,
+          "token_id": 1896,
+          "logprob": -0.0013,
+          "text": " take"
+        },
+        {
+          "index": 154,
+          "token_id": 8256,
+          "logprob": -0.0011,
+          "text": " employees"
+        },
+        {
+          "index": 65,
+          "token_id": 1189,
+          "logprob": -0.0007,
+          "text": ".\""
+        },
+        {
+          "index": 132,
+          "token_id": 2670,
+          "logprob": -0.0006,
+          "text": " including"
+        },
+        {
+          "index": 133,
+          "token_id": 22573,
+          "logprob": -0.0006,
+          "text": " ensuring"
+        },
+        {
+          "index": 254,
+          "token_id": 1699,
+          "logprob": -0.0005,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 80,
+      "mean": -0.2904,
+      "min": -1.5095,
+      "p05": -1.3483,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.5095,
+          "text": "5"
+        },
+        {
+          "index": 185,
+          "token_id": 20,
+          "logprob": -1.5013,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -1.4914,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.4629,
+          "text": "7"
+        },
+        {
+          "index": 220,
+          "token_id": 18,
+          "logprob": -1.3422,
+          "text": "3"
+        },
+        {
+          "index": 231,
+          "token_id": 18,
+          "logprob": -1.3386,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.3309,
+          "text": "1"
+        },
+        {
+          "index": 236,
+          "token_id": 21,
+          "logprob": -1.2746,
+          "text": "6"
+        },
+        {
+          "index": 225,
+          "token_id": 21,
+          "logprob": -1.1799,
+          "text": "6"
+        },
+        {
+          "index": 73,
+          "token_id": 24,
+          "logprob": -1.1286,
+          "text": "9"
+        },
+        {
+          "index": 84,
+          "token_id": 21,
+          "logprob": -1.038,
+          "text": "6"
+        },
+        {
+          "index": 179,
+          "token_id": 15,
+          "logprob": -0.9605,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 259,
+      "mean": -0.0921,
+      "min": -1.5095,
+      "p05": -0.8926,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 247.69,
+    "std": 38.69,
+    "dark_fraction": 0.02713
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 58606,
+    "covered_px": 46459,
+    "covered_fraction": 0.79273,
+    "uncovered_px": 12147,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          876,
+          696,
+          1476,
+          960
+        ],
+        "ink_px": 11901
+      }
+    ],
+    "cell_px": 24
+  }
+}

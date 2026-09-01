@@ -1,0 +1,393 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        191,
+        162,
+        480,
+        187
+      ],
+      "category": "Text",
+      "text": "DEC-23-1999 17:43",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2995,
+          "min": -1.2692
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2017,
+          "min": -0.2017
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0074,
+          "min": -0.1031
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        624,
+        165,
+        990,
+        190
+      ],
+      "category": "Page-header",
+      "text": "DEPUTY COUNSEL TO MAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2665,
+          "min": -1.3495
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0123,
+          "min": -0.0246
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0001,
+          "min": -0.0007
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        1258,
+        171,
+        1452,
+        194
+      ],
+      "category": "Page-header",
+      "text": "212 788 7649 P.03/03",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2256,
+          "min": -1.1738
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0049,
+          "min": -0.0098
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0127,
+          "min": -0.2266
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        200,
+        365,
+        1547,
+        721
+      ],
+      "category": "Text",
+      "text": "Education and Human Services. In the event that the Mayor, the Deputy Mayor for Operations, the Deputy Mayor for Economic Development and Planning and the Deputy Mayor for Education and Human Services are unable to perform such functions, powers or duties for a reason specified in subdivision a of section 10 of the Charter, such authority is delegated to the Deputy Mayor for Community Development and Business Services.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2944,
+          "min": -1.3564
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 76,
+          "mean": -0.0012,
+          "min": -0.089
+        }
+      },
+      "ink": {
+        "ink_px": 27772,
+        "area_px": 458660,
+        "density": 0.06055,
+        "chars": 422,
+        "chars_per_1k_ink": 15.2
+      }
+    },
+    {
+      "bbox": [
+        408,
+        764,
+        1055,
+        799
+      ],
+      "category": "Text",
+      "text": "§ 2. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2748,
+          "min": -1.3517
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0572,
+          "min": -0.0572
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0023,
+          "min": -0.0236
+        }
+      },
+      "ink": {
+        "ink_px": 2518,
+        "area_px": 23220,
+        "density": 0.10844,
+        "chars": 46,
+        "chars_per_1k_ink": 18.27
+      }
+    },
+    {
+      "bbox": [
+        961,
+        829,
+        1587,
+        1113
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3456,
+          "min": -1.5876
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0011,
+          "min": -0.0011
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 16287,
+        "area_px": 152820,
+        "density": 0.10658,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 340,
+    "content": {
+      "n_tokens": 130,
+      "mean": -0.0036,
+      "min": -0.2266,
+      "p05": -0.0025,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 142,
+          "token_id": 393,
+          "logprob": -0.2266,
+          "text": " P"
+        },
+        {
+          "index": 37,
+          "token_id": 18,
+          "logprob": -0.1031,
+          "text": "3"
+        },
+        {
+          "index": 201,
+          "token_id": 11,
+          "logprob": -0.089,
+          "text": ","
+        },
+        {
+          "index": 295,
+          "token_id": 17851,
+          "logprob": -0.0236,
+          "text": "§"
+        },
+        {
+          "index": 36,
+          "token_id": 17,
+          "logprob": -0.0071,
+          "text": "2"
+        },
+        {
+          "index": 144,
+          "token_id": 15,
+          "logprob": -0.0039,
+          "text": "0"
+        },
+        {
+          "index": 184,
+          "token_id": 39134,
+          "logprob": -0.0026,
+          "text": "Education"
+        },
+        {
+          "index": 139,
+          "token_id": 21,
+          "logprob": -0.0023,
+          "text": "6"
+        },
+        {
+          "index": 133,
+          "token_id": 220,
+          "logprob": -0.002,
+          "text": " "
+        },
+        {
+          "index": 146,
+          "token_id": 14,
+          "logprob": -0.0015,
+          "text": "/"
+        },
+        {
+          "index": 202,
+          "token_id": 279,
+          "logprob": -0.0012,
+          "text": " the"
+        },
+        {
+          "index": 143,
+          "token_id": 13,
+          "logprob": -0.0012,
+          "text": "."
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 122,
+      "mean": -0.2682,
+      "min": -1.5876,
+      "p05": -1.2907,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 324,
+          "token_id": 22,
+          "logprob": -1.5876,
+          "text": "7"
+        },
+        {
+          "index": 313,
+          "token_id": 16,
+          "logprob": -1.5229,
+          "text": "1"
+        },
+        {
+          "index": 330,
+          "token_id": 18,
+          "logprob": -1.4305,
+          "text": "3"
+        },
+        {
+          "index": 161,
+          "token_id": 20,
+          "logprob": -1.3564,
+          "text": "5"
+        },
+        {
+          "index": 278,
+          "token_id": 20,
+          "logprob": -1.3517,
+          "text": "5"
+        },
+        {
+          "index": 56,
+          "token_id": 19,
+          "logprob": -1.3495,
+          "text": "4"
+        },
+        {
+          "index": 167,
+          "token_id": 22,
+          "logprob": -1.2918,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.2692,
+          "text": "2"
+        },
+        {
+          "index": 172,
+          "token_id": 16,
+          "logprob": -1.2215,
+          "text": "1"
+        },
+        {
+          "index": 272,
+          "token_id": 19,
+          "logprob": -1.2107,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.2081,
+          "text": "1"
+        },
+        {
+          "index": 267,
+          "token_id": 23,
+          "logprob": -1.184,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 340,
+      "mean": -0.0982,
+      "min": -1.5876,
+      "p05": -0.9563,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 249.18,
+    "std": 34.71,
+    "dark_fraction": 0.02158
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 46618,
+    "covered_px": 46577,
+    "covered_fraction": 0.99912,
+    "uncovered_px": 41,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

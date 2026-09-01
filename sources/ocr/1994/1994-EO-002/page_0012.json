@@ -1,0 +1,398 @@
+{
+  "page": 12,
+  "source_image": "page_0012.png",
+  "elements": [
+    {
+      "bbox": [
+        212,
+        161,
+        474,
+        187
+      ],
+      "category": "Page-header",
+      "text": "DEP COUNSEL COLES",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3282,
+          "min": -1.4222
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0023,
+          "min": -0.0047
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0018,
+          "min": -0.0055
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        566,
+        161,
+        814,
+        187
+      ],
+      "category": "Page-header",
+      "text": "Fax:212-788-3269",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2388,
+          "min": -1.4131
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0247,
+          "min": -0.0488
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0013,
+          "min": -0.0063
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        983,
+        161,
+        1258,
+        187
+      ],
+      "category": "Text",
+      "text": "Jun 1 '95 14:17",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2188,
+          "min": -1.3022
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.127,
+          "min": -0.127
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0003,
+          "min": -0.0025
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        454,
+        357,
+        1472,
+        652
+      ],
+      "category": "List-item",
+      "text": "g. Direct and coordinate the activities of all administrations, departments, agencies, boards, offices, committees and commissions with respect to fiscal, telecommunications and energy policies, planning and programs.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3164,
+          "min": -1.4714
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0193,
+          "min": -0.0386
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.0003,
+          "min": -0.0088
+        }
+      },
+      "ink": {
+        "ink_px": 23300,
+        "area_px": 298410,
+        "density": 0.07808,
+        "chars": 217,
+        "chars_per_1k_ink": 9.31
+      }
+    },
+    {
+      "bbox": [
+        450,
+        743,
+        1469,
+        1530
+      ],
+      "category": "List-item",
+      "text": "h. Maintain liaison with the New York State Department of Economic Development, the New York State Urban Development Corporation, the Port Authority of New York and New Jersey, the Power Authority of the State of New York, the New York State Public Service Commission, the New York State Municipal Assistance Corporation for the City of New York, the New York State Financial Control Board, and State and federal agencies and executive offices with respect to matters of city fiscal operations, economic development, and energy and telecommunications policies and programs.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2712,
+          "min": -1.2396
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 100,
+          "mean": -0.003,
+          "min": -0.2016
+        }
+      },
+      "ink": {
+        "ink_px": 69993,
+        "area_px": 796544,
+        "density": 0.08787,
+        "chars": 573,
+        "chars_per_1k_ink": 8.19
+      }
+    },
+    {
+      "bbox": [
+        446,
+        1619,
+        1456,
+        1786
+      ],
+      "category": "List-item",
+      "text": "i. Represent the Mayor, when so directed by the Mayor, on any board, committee, commission or corporation of which the Mayor is a member.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2631,
+          "min": -1.4497
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0007,
+          "min": -0.0014
+        },
+        "text": {
+          "n_tokens": 30,
+          "mean": -0.0088,
+          "min": -0.2562
+        }
+      },
+      "ink": {
+        "ink_px": 17889,
+        "area_px": 168169,
+        "density": 0.10638,
+        "chars": 137,
+        "chars_per_1k_ink": 7.66
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 417,
+    "content": {
+      "n_tokens": 199,
+      "mean": -0.0031,
+      "min": -0.2562,
+      "p05": -0.0026,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 385,
+          "token_id": 72,
+          "logprob": -0.2562,
+          "text": "i"
+        },
+        {
+          "index": 320,
+          "token_id": 3234,
+          "logprob": -0.2016,
+          "text": " State"
+        },
+        {
+          "index": 247,
+          "token_id": 71,
+          "logprob": -0.0895,
+          "text": "h"
+        },
+        {
+          "index": 183,
+          "token_id": 77073,
+          "logprob": -0.0088,
+          "text": " administrations"
+        },
+        {
+          "index": 396,
+          "token_id": 22093,
+          "logprob": -0.0068,
+          "text": " Mayor"
+        },
+        {
+          "index": 77,
+          "token_id": 60309,
+          "logprob": -0.0063,
+          "text": "Fax"
+        },
+        {
+          "index": 79,
+          "token_id": 17,
+          "logprob": -0.006,
+          "text": "2"
+        },
+        {
+          "index": 37,
+          "token_id": 356,
+          "logprob": -0.0055,
+          "text": " C"
+        },
+        {
+          "index": 78,
+          "token_id": 25,
+          "logprob": -0.0039,
+          "text": ":"
+        },
+        {
+          "index": 332,
+          "token_id": 3283,
+          "logprob": -0.0032,
+          "text": " city"
+        },
+        {
+          "index": 129,
+          "token_id": 364,
+          "logprob": -0.0025,
+          "text": " '"
+        },
+        {
+          "index": 35,
+          "token_id": 1150,
+          "logprob": -0.0024,
+          "text": "DE"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 126,
+      "mean": -0.2503,
+      "min": -1.4714,
+      "p05": -1.4004,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 145,
+          "token_id": 19,
+          "logprob": -1.4714,
+          "text": "4"
+        },
+        {
+          "index": 372,
+          "token_id": 21,
+          "logprob": -1.4497,
+          "text": "6"
+        },
+        {
+          "index": 161,
+          "token_id": 17,
+          "logprob": -1.4228,
+          "text": "2"
+        },
+        {
+          "index": 17,
+          "token_id": 19,
+          "logprob": -1.4222,
+          "text": "4"
+        },
+        {
+          "index": 156,
+          "token_id": 17,
+          "logprob": -1.4198,
+          "text": "2"
+        },
+        {
+          "index": 49,
+          "token_id": 21,
+          "logprob": -1.4131,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 17,
+          "logprob": -1.4085,
+          "text": "2"
+        },
+        {
+          "index": 59,
+          "token_id": 19,
+          "logprob": -1.3762,
+          "text": "4"
+        },
+        {
+          "index": 366,
+          "token_id": 21,
+          "logprob": -1.3705,
+          "text": "6"
+        },
+        {
+          "index": 150,
+          "token_id": 22,
+          "logprob": -1.3633,
+          "text": "7"
+        },
+        {
+          "index": 98,
+          "token_id": 18,
+          "logprob": -1.3022,
+          "text": "3"
+        },
+        {
+          "index": 354,
+          "token_id": 21,
+          "logprob": -1.262,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 417,
+      "mean": -0.0785,
+      "min": -1.4714,
+      "p05": -0.6591,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 241.34,
+    "std": 53.83,
+    "dark_fraction": 0.05159
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 111436,
+    "covered_px": 111182,
+    "covered_fraction": 0.99772,
+    "uncovered_px": 254,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

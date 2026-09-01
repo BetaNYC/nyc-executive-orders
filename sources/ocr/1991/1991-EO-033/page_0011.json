@@ -1,0 +1,324 @@
+{
+  "page": 11,
+  "source_image": "page_0011.png",
+  "elements": [
+    {
+      "bbox": [
+        315,
+        224,
+        1477,
+        321
+      ],
+      "category": "Text",
+      "text": "and be directly accountable to the Deputy Mayor for Health and Human Services. The Office shall be headed by a Director who shall be appointed by and serve at the pleasure of the Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.304,
+          "min": -1.6232
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.0047,
+          "min": -0.1654
+        }
+      },
+      "ink": {
+        "ink_px": 6140,
+        "area_px": 53774,
+        "density": 0.11418,
+        "chars": 185,
+        "chars_per_1k_ink": 30.13
+      }
+    },
+    {
+      "bbox": [
+        484,
+        357,
+        1247,
+        387
+      ],
+      "category": "Text",
+      "text": "§11. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2551,
+          "min": -1.362
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.014,
+          "min": -0.014
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.002,
+          "min": -0.0207
+        }
+      },
+      "ink": {
+        "ink_px": 3526,
+        "area_px": 23040,
+        "density": 0.15304,
+        "chars": 46,
+        "chars_per_1k_ink": 13.05
+      }
+    },
+    {
+      "bbox": [
+        1067,
+        557,
+        1345,
+        616
+      ],
+      "category": "Text",
+      "text": "David N. Dinkins\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2789,
+          "min": -1.3121
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0148,
+          "min": -0.0148
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0013,
+          "min": -0.0071
+        }
+      },
+      "ink": {
+        "ink_px": 2517,
+        "area_px": 16520,
+        "density": 0.15236,
+        "chars": 22,
+        "chars_per_1k_ink": 8.74
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 166,
+    "content": {
+      "n_tokens": 57,
+      "mean": -0.0036,
+      "min": -0.1654,
+      "p05": -0.0043,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 46,
+          "token_id": 11097,
+          "logprob": -0.1654,
+          "text": " Human"
+        },
+        {
+          "index": 106,
+          "token_id": 17851,
+          "logprob": -0.0207,
+          "text": "§"
+        },
+        {
+          "index": 157,
+          "token_id": 766,
+          "logprob": -0.0071,
+          "text": "ink"
+        },
+        {
+          "index": 153,
+          "token_id": 22286,
+          "logprob": -0.0035,
+          "text": "David"
+        },
+        {
+          "index": 62,
+          "token_id": 323,
+          "logprob": -0.0021,
+          "text": " and"
+        },
+        {
+          "index": 156,
+          "token_id": 422,
+          "logprob": -0.0014,
+          "text": " D"
+        },
+        {
+          "index": 116,
+          "token_id": 1189,
+          "logprob": -0.0008,
+          "text": ".\""
+        },
+        {
+          "index": 159,
+          "token_id": 1699,
+          "logprob": -0.0007,
+          "text": "\\n"
+        },
+        {
+          "index": 38,
+          "token_id": 35877,
+          "logprob": -0.0004,
+          "text": " accountable"
+        },
+        {
+          "index": 107,
+          "token_id": 16,
+          "logprob": -0.0004,
+          "text": "1"
+        },
+        {
+          "index": 35,
+          "token_id": 437,
+          "logprob": -0.0003,
+          "text": "and"
+        },
+        {
+          "index": 61,
+          "token_id": 553,
+          "logprob": -0.0003,
+          "text": " by"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 61,
+      "mean": -0.2661,
+      "min": -1.6232,
+      "p05": -1.3121,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.6232,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.3713,
+          "text": "4"
+        },
+        {
+          "index": 78,
+          "token_id": 19,
+          "logprob": -1.362,
+          "text": "4"
+        },
+        {
+          "index": 125,
+          "token_id": 22,
+          "logprob": -1.3121,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.2931,
+          "text": "7"
+        },
+        {
+          "index": 136,
+          "token_id": 20,
+          "logprob": -1.2405,
+          "text": "5"
+        },
+        {
+          "index": 89,
+          "token_id": 22,
+          "logprob": -1.2311,
+          "text": "7"
+        },
+        {
+          "index": 83,
+          "token_id": 22,
+          "logprob": -1.1109,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -1.086,
+          "text": "1"
+        },
+        {
+          "index": 130,
+          "token_id": 22,
+          "logprob": -1.0353,
+          "text": "7"
+        },
+        {
+          "index": 141,
+          "token_id": 21,
+          "logprob": -1.025,
+          "text": "6"
+        },
+        {
+          "index": 94,
+          "token_id": 22,
+          "logprob": -1.0237,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 166,
+      "mean": -0.0992,
+      "min": -1.6232,
+      "p05": -1.0733,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 252.88,
+    "std": 21.37,
+    "dark_fraction": 0.00754
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      628.0,
+      822.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      209,
+      274,
+      1535,
+      2009
+    ],
+    "ink_px": 17353,
+    "covered_px": 12183,
+    "covered_fraction": 0.70207,
+    "uncovered_px": 5170,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          905,
+          442,
+          1481,
+          562
+        ],
+        "ink_px": 5109
+      }
+    ],
+    "cell_px": 24
+  }
+}

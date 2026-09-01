@@ -1,0 +1,377 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        189,
+        263,
+        1500,
+        470
+      ],
+      "category": "Text",
+      "text": "§ 3. The Office shall establish an easily navigable system for New Yorkers to identify legal assistance and related support services provided by City agencies. The Office shall liaise with the Office of Civil Justice, the Mayor's Office of Criminal Justice, the Mayor's Office of Immigrant Affairs, the Department for the Aging, and other City agencies that provide legal or other support services.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3344,
+          "min": -1.6051
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.3496,
+          "min": -0.3496
+        },
+        "text": {
+          "n_tokens": 76,
+          "mean": -0.0032,
+          "min": -0.2024
+        }
+      },
+      "ink": {
+        "ink_px": 29412,
+        "area_px": 262956,
+        "density": 0.11185,
+        "chars": 398,
+        "chars_per_1k_ink": 13.53
+      }
+    },
+    {
+      "bbox": [
+        189,
+        531,
+        1498,
+        651
+      ],
+      "category": "Text",
+      "text": "§ 4. The Office shall increase public awareness of available legal assistance services in New York City, including services provided through bar associations, legal aid groups, and law school clinics.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2801,
+          "min": -1.2059
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.0003,
+          "min": -0.0069
+        }
+      },
+      "ink": {
+        "ink_px": 14955,
+        "area_px": 154440,
+        "density": 0.09683,
+        "chars": 200,
+        "chars_per_1k_ink": 13.37
+      }
+    },
+    {
+      "bbox": [
+        189,
+        710,
+        1496,
+        795
+      ],
+      "category": "Text",
+      "text": "§ 5. The Office shall coordinate with the Mayor's Office of Immigrant Affairs and the New York City Department of Social Services on the distribution of funds for immigrant legal services.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2636,
+          "min": -1.2656
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.0002,
+          "min": -0.0022
+        }
+      },
+      "ink": {
+        "ink_px": 14200,
+        "area_px": 109225,
+        "density": 0.13001,
+        "chars": 188,
+        "chars_per_1k_ink": 13.24
+      }
+    },
+    {
+      "bbox": [
+        291,
+        844,
+        895,
+        881
+      ],
+      "category": "Text",
+      "text": "§ 6. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2891,
+          "min": -1.2687
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0002,
+          "min": -0.0021
+        }
+      },
+      "ink": {
+        "ink_px": 3569,
+        "area_px": 22876,
+        "density": 0.15602,
+        "chars": 46,
+        "chars_per_1k_ink": 12.89
+      }
+    },
+    {
+      "bbox": [
+        890,
+        1008,
+        1360,
+        1181
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2885,
+          "min": -1.3341
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0033,
+          "min": -0.0033
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 4146,
+        "area_px": 81137,
+        "density": 0.0511,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 333,
+    "content": {
+      "n_tokens": 159,
+      "mean": -0.0016,
+      "min": -0.2024,
+      "p05": -0.0021,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 54,
+          "token_id": 12994,
+          "logprob": -0.2024,
+          "text": " assistance"
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0323,
+          "text": "§"
+        },
+        {
+          "index": 146,
+          "token_id": 17851,
+          "logprob": -0.0069,
+          "text": "§"
+        },
+        {
+          "index": 78,
+          "token_id": 594,
+          "logprob": -0.0041,
+          "text": "'s"
+        },
+        {
+          "index": 89,
+          "token_id": 15335,
+          "logprob": -0.0025,
+          "text": " Imm"
+        },
+        {
+          "index": 162,
+          "token_id": 1532,
+          "logprob": -0.0022,
+          "text": " New"
+        },
+        {
+          "index": 228,
+          "token_id": 594,
+          "logprob": -0.0022,
+          "text": "'s"
+        },
+        {
+          "index": 217,
+          "token_id": 17851,
+          "logprob": -0.0021,
+          "text": "§"
+        },
+        {
+          "index": 287,
+          "token_id": 17851,
+          "logprob": -0.0021,
+          "text": "§"
+        },
+        {
+          "index": 231,
+          "token_id": 15335,
+          "logprob": -0.0008,
+          "text": " Imm"
+        },
+        {
+          "index": 67,
+          "token_id": 54816,
+          "logprob": -0.0007,
+          "text": " lia"
+        },
+        {
+          "index": 297,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 101,
+      "mean": -0.2802,
+      "min": -1.6051,
+      "p05": -1.2656,
+      "p50": -0.0004,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.6051,
+          "text": "3"
+        },
+        {
+          "index": 305,
+          "token_id": 15,
+          "logprob": -1.3341,
+          "text": "0"
+        },
+        {
+          "index": 23,
+          "token_id": 15,
+          "logprob": -1.334,
+          "text": "0"
+        },
+        {
+          "index": 311,
+          "token_id": 23,
+          "logprob": -1.3325,
+          "text": "8"
+        },
+        {
+          "index": 270,
+          "token_id": 20,
+          "logprob": -1.2687,
+          "text": "5"
+        },
+        {
+          "index": 205,
+          "token_id": 20,
+          "logprob": -1.2656,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.2264,
+          "text": "0"
+        },
+        {
+          "index": 134,
+          "token_id": 16,
+          "logprob": -1.2059,
+          "text": "1"
+        },
+        {
+          "index": 200,
+          "token_id": 21,
+          "logprob": -1.1893,
+          "text": "6"
+        },
+        {
+          "index": 265,
+          "token_id": 19,
+          "logprob": -1.1813,
+          "text": "4"
+        },
+        {
+          "index": 123,
+          "token_id": 16,
+          "logprob": -1.1709,
+          "text": "1"
+        },
+        {
+          "index": 275,
+          "token_id": 16,
+          "logprob": -1.1522,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 333,
+      "mean": -0.086,
+      "min": -1.6051,
+      "p05": -1.0116,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 247.03,
+    "std": 36.9,
+    "dark_fraction": 0.03068
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 66285,
+    "covered_px": 66282,
+    "covered_fraction": 0.99995,
+    "uncovered_px": 3,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

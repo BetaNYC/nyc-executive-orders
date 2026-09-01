@@ -1,0 +1,324 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        534,
+        315,
+        1251,
+        427
+      ],
+      "category": "Text",
+      "text": "Section 7. Staff. The Planning Council may\nrecommend and shall be provided with such paid\nstaff members as are approved by the Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2851,
+          "min": -1.5852
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2256,
+          "min": -0.2256
+        },
+        "text": {
+          "n_tokens": 29,
+          "mean": -0.0305,
+          "min": -0.6342
+        }
+      },
+      "ink": {
+        "ink_px": 16723,
+        "area_px": 80304,
+        "density": 0.20825,
+        "chars": 133,
+        "chars_per_1k_ink": 7.95
+      }
+    },
+    {
+      "bbox": [
+        440,
+        470,
+        1395,
+        504
+      ],
+      "category": "Text",
+      "text": "Section 3. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2637,
+          "min": -1.2684
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0083,
+          "min": -0.1051
+        }
+      },
+      "ink": {
+        "ink_px": 8107,
+        "area_px": 33425,
+        "density": 0.24254,
+        "chars": 68,
+        "chars_per_1k_ink": 8.39
+      }
+    },
+    {
+      "bbox": [
+        942,
+        626,
+        1250,
+        693
+      ],
+      "category": "Text",
+      "text": "DAVID N. DINKINS\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2716,
+          "min": -1.1935
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.008,
+          "min": -0.008
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0006,
+          "min": -0.0035
+        }
+      },
+      "ink": {
+        "ink_px": 4102,
+        "area_px": 20636,
+        "density": 0.19878,
+        "chars": 22,
+        "chars_per_1k_ink": 5.36
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 162,
+    "content": {
+      "n_tokens": 54,
+      "mean": -0.0187,
+      "min": -0.6342,
+      "p05": -0.0425,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 45,
+          "token_id": 1699,
+          "logprob": -0.6342,
+          "text": "\\n"
+        },
+        {
+          "index": 39,
+          "token_id": 16951,
+          "logprob": -0.2384,
+          "text": " Staff"
+        },
+        {
+          "index": 103,
+          "token_id": 46923,
+          "logprob": -0.1051,
+          "text": " Effective"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0088,
+          "text": "Section"
+        },
+        {
+          "index": 99,
+          "token_id": 9620,
+          "logprob": -0.0077,
+          "text": "Section"
+        },
+        {
+          "index": 155,
+          "token_id": 1699,
+          "logprob": -0.0035,
+          "text": "\\n"
+        },
+        {
+          "index": 148,
+          "token_id": 6352,
+          "logprob": -0.0023,
+          "text": "DA"
+        },
+        {
+          "index": 112,
+          "token_id": 1189,
+          "logprob": -0.002,
+          "text": ".\""
+        },
+        {
+          "index": 46,
+          "token_id": 66589,
+          "logprob": -0.0015,
+          "text": "recommend"
+        },
+        {
+          "index": 54,
+          "token_id": 1699,
+          "logprob": -0.0014,
+          "text": "\\n"
+        },
+        {
+          "index": 153,
+          "token_id": 11637,
+          "logprob": -0.0004,
+          "text": "INK"
+        },
+        {
+          "index": 40,
+          "token_id": 13,
+          "logprob": -0.0004,
+          "text": "."
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.2637,
+      "min": -1.5852,
+      "p05": -1.1973,
+      "p50": -0.0013,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.5852,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -1.3122,
+          "text": "5"
+        },
+        {
+          "index": 82,
+          "token_id": 20,
+          "logprob": -1.2684,
+          "text": "5"
+        },
+        {
+          "index": 120,
+          "token_id": 17,
+          "logprob": -1.1935,
+          "text": "2"
+        },
+        {
+          "index": 125,
+          "token_id": 21,
+          "logprob": -1.1922,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.176,
+          "text": "1"
+        },
+        {
+          "index": 87,
+          "token_id": 19,
+          "logprob": -1.1622,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.1324,
+          "text": "7"
+        },
+        {
+          "index": 71,
+          "token_id": 15,
+          "logprob": -1.0347,
+          "text": "0"
+        },
+        {
+          "index": 136,
+          "token_id": 18,
+          "logprob": -0.9506,
+          "text": "3"
+        },
+        {
+          "index": 76,
+          "token_id": 15,
+          "logprob": -0.7196,
+          "text": "0"
+        },
+        {
+          "index": 131,
+          "token_id": 15,
+          "logprob": -0.6661,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 162,
+      "mean": -0.1067,
+      "min": -1.5852,
+      "p05": -1.0305,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 251.1,
+    "std": 29.56,
+    "dark_fraction": 0.01497
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      645.0,
+      824.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      215,
+      274,
+      1576,
+      2014
+    ],
+    "ink_px": 35456,
+    "covered_px": 28932,
+    "covered_fraction": 0.816,
+    "uncovered_px": 6524,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          935,
+          514,
+          1559,
+          634
+        ],
+        "ink_px": 6495
+      }
+    ],
+    "cell_px": 24
+  }
+}

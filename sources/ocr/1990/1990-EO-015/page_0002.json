@@ -1,0 +1,343 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        266,
+        324,
+        1433,
+        427
+      ],
+      "category": "Text",
+      "text": "By the power vested in me as Mayor of the City of New York, it is hereby ordered:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3406,
+          "min": -1.61
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0061,
+          "min": -0.0061
+        },
+        "text": {
+          "n_tokens": 20,
+          "mean": -0.0158,
+          "min": -0.252
+        }
+      },
+      "ink": {
+        "ink_px": 15473,
+        "area_px": 122096,
+        "density": 0.12673,
+        "chars": 81,
+        "chars_per_1k_ink": 5.23
+      }
+    },
+    {
+      "bbox": [
+        266,
+        524,
+        1433,
+        689
+      ],
+      "category": "Text",
+      "text": "Section 1. Prior Order Revoked. Executive Order No. 111 of March 20, 1987 is hereby revoked and the Audit Committee is continued as set forth in Charter 1987.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2672,
+          "min": -1.4643
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0046,
+          "min": -0.0046
+        },
+        "text": {
+          "n_tokens": 48,
+          "mean": -0.0255,
+          "min": -0.5031
+        }
+      },
+      "ink": {
+        "ink_px": 31368,
+        "area_px": 194884,
+        "density": 0.16096,
+        "chars": 158,
+        "chars_per_1k_ink": 5.04
+      }
+    },
+    {
+      "bbox": [
+        264,
+        793,
+        1433,
+        894
+      ],
+      "category": "Text",
+      "text": "Section 2. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2556,
+          "min": -1.3186
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0005,
+          "min": -0.0022
+        }
+      },
+      "ink": {
+        "ink_px": 13915,
+        "area_px": 119952,
+        "density": 0.116,
+        "chars": 68,
+        "chars_per_1k_ink": 4.89
+      }
+    },
+    {
+      "bbox": [
+        853,
+        913,
+        1350,
+        1094
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3793,
+          "min": -1.8396
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0007,
+          "min": -0.0007
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 16743,
+        "area_px": 90500,
+        "density": 0.18501,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 221,
+    "content": {
+      "n_tokens": 82,
+      "mean": -0.0189,
+      "min": -0.5031,
+      "p05": -0.0955,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 133,
+          "token_id": 16,
+          "logprob": -0.5031,
+          "text": "1"
+        },
+        {
+          "index": 134,
+          "token_id": 24,
+          "logprob": -0.3161,
+          "text": "9"
+        },
+        {
+          "index": 48,
+          "token_id": 4261,
+          "logprob": -0.252,
+          "text": " York"
+        },
+        {
+          "index": 116,
+          "token_id": 23,
+          "logprob": -0.2356,
+          "text": "8"
+        },
+        {
+          "index": 132,
+          "token_id": 220,
+          "logprob": -0.0986,
+          "text": " "
+        },
+        {
+          "index": 54,
+          "token_id": 2974,
+          "logprob": -0.0356,
+          "text": ":\""
+        },
+        {
+          "index": 94,
+          "token_id": 31399,
+          "logprob": -0.025,
+          "text": " Prior"
+        },
+        {
+          "index": 40,
+          "token_id": 752,
+          "logprob": -0.0236,
+          "text": " me"
+        },
+        {
+          "index": 90,
+          "token_id": 9620,
+          "logprob": -0.0143,
+          "text": "Section"
+        },
+        {
+          "index": 135,
+          "token_id": 23,
+          "logprob": -0.0137,
+          "text": "8"
+        },
+        {
+          "index": 115,
+          "token_id": 24,
+          "logprob": -0.0067,
+          "text": "9"
+        },
+        {
+          "index": 126,
+          "token_id": 8570,
+          "logprob": -0.0065,
+          "text": " continued"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.2963,
+      "min": -1.8396,
+      "p05": -1.4643,
+      "p50": -0.0012,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 194,
+          "token_id": 18,
+          "logprob": -1.8396,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.61,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.5938,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.5024,
+          "text": "3"
+        },
+        {
+          "index": 67,
+          "token_id": 19,
+          "logprob": -1.4643,
+          "text": "4"
+        },
+        {
+          "index": 199,
+          "token_id": 18,
+          "logprob": -1.4633,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.3421,
+          "text": "7"
+        },
+        {
+          "index": 145,
+          "token_id": 19,
+          "logprob": -1.3186,
+          "text": "4"
+        },
+        {
+          "index": 161,
+          "token_id": 19,
+          "logprob": -1.3028,
+          "text": "4"
+        },
+        {
+          "index": 62,
+          "token_id": 21,
+          "logprob": -1.2769,
+          "text": "6"
+        },
+        {
+          "index": 211,
+          "token_id": 19,
+          "logprob": -1.2752,
+          "text": "4"
+        },
+        {
+          "index": 205,
+          "token_id": 15,
+          "logprob": -1.2633,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 221,
+      "mean": -0.118,
+      "min": -1.8396,
+      "p05": -1.2633,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 245.9,
+    "std": 45.64,
+    "dark_fraction": 0.03414
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      628.0,
+      813.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      209,
+      271,
+      1535,
+      1987
+    ],
+    "ink_px": 77692,
+    "covered_px": 77499,
+    "covered_fraction": 0.99752,
+    "uncovered_px": 193,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

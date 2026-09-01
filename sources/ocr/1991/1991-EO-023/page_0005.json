@@ -1,0 +1,319 @@
+{
+  "page": 5,
+  "source_image": "page_0005.png",
+  "elements": [
+    {
+      "bbox": [
+        291,
+        211,
+        1445,
+        442
+      ],
+      "category": "Text",
+      "text": "Section 6. Rules and Regulations. The Planning Council\nmay adopt such by-laws and rules of procedure for the conduct of its\nmeetings or other activities as it deems necessary to perform its\nfunctions as enumerated in this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3264,
+          "min": -1.5061
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0047,
+          "min": -0.0047
+        },
+        "text": {
+          "n_tokens": 49,
+          "mean": -0.0218,
+          "min": -0.6329
+        }
+      },
+      "ink": {
+        "ink_px": 21376,
+        "area_px": 197370,
+        "density": 0.1083,
+        "chars": 228,
+        "chars_per_1k_ink": 10.67
+      }
+    },
+    {
+      "bbox": [
+        295,
+        479,
+        1448,
+        582
+      ],
+      "category": "Text",
+      "text": "Section 7. Effective Date. This Order shall take effect\nimmediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2837,
+          "min": -1.3616
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -0.0058,
+          "min": -0.0432
+        }
+      },
+      "ink": {
+        "ink_px": 8641,
+        "area_px": 120640,
+        "density": 0.07163,
+        "chars": 68,
+        "chars_per_1k_ink": 7.87
+      }
+    },
+    {
+      "bbox": [
+        1015,
+        665,
+        1452,
+        833
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3728,
+          "min": -1.5498
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0204,
+          "min": -0.0204
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 9164,
+        "area_px": 74360,
+        "density": 0.12324,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 169,
+    "content": {
+      "n_tokens": 65,
+      "mean": -0.0178,
+      "min": -0.6329,
+      "p05": -0.0428,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 46,
+          "token_id": 1699,
+          "logprob": -0.6329,
+          "text": "\\n"
+        },
+        {
+          "index": 39,
+          "token_id": 22847,
+          "logprob": -0.3624,
+          "text": " Rules"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0639,
+          "text": "Section"
+        },
+        {
+          "index": 131,
+          "token_id": 1699,
+          "logprob": -0.0432,
+          "text": "\\n"
+        },
+        {
+          "index": 123,
+          "token_id": 46923,
+          "logprob": -0.0411,
+          "text": " Effective"
+        },
+        {
+          "index": 47,
+          "token_id": 18358,
+          "logprob": -0.0042,
+          "text": "may"
+        },
+        {
+          "index": 119,
+          "token_id": 9620,
+          "logprob": -0.0036,
+          "text": "Section"
+        },
+        {
+          "index": 134,
+          "token_id": 1189,
+          "logprob": -0.0031,
+          "text": ".\""
+        },
+        {
+          "index": 63,
+          "token_id": 63410,
+          "logprob": -0.0012,
+          "text": "meet"
+        },
+        {
+          "index": 51,
+          "token_id": 2852,
+          "logprob": -0.0007,
+          "text": "-l"
+        },
+        {
+          "index": 70,
+          "token_id": 409,
+          "logprob": -0.0005,
+          "text": " de"
+        },
+        {
+          "index": 132,
+          "token_id": 318,
+          "logprob": -0.0004,
+          "text": "im"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 61,
+      "mean": -0.3127,
+      "min": -1.5498,
+      "p05": -1.4139,
+      "p50": -0.0018,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 148,
+          "token_id": 20,
+          "logprob": -1.5498,
+          "text": "5"
+        },
+        {
+          "index": 154,
+          "token_id": 17,
+          "logprob": -1.5199,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.5061,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.4139,
+          "text": "1"
+        },
+        {
+          "index": 91,
+          "token_id": 20,
+          "logprob": -1.3616,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.3428,
+          "text": "2"
+        },
+        {
+          "index": 143,
+          "token_id": 20,
+          "logprob": -1.2917,
+          "text": "5"
+        },
+        {
+          "index": 107,
+          "token_id": 17,
+          "logprob": -1.2266,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.1978,
+          "text": "1"
+        },
+        {
+          "index": 159,
+          "token_id": 18,
+          "logprob": -1.1252,
+          "text": "3"
+        },
+        {
+          "index": 102,
+          "token_id": 23,
+          "logprob": -1.0466,
+          "text": "8"
+        },
+        {
+          "index": 96,
+          "token_id": 24,
+          "logprob": -0.9967,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 169,
+      "mean": -0.1225,
+      "min": -1.5498,
+      "p05": -1.1688,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.11,
+    "std": 33.11,
+    "dark_fraction": 0.01777
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      628.0,
+      816.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      209,
+      272,
+      1535,
+      1994
+    ],
+    "ink_px": 40571,
+    "covered_px": 39181,
+    "covered_fraction": 0.96574,
+    "uncovered_px": 1390,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          881,
+          704,
+          1025,
+          776
+        ],
+        "ink_px": 1264
+      }
+    ],
+    "cell_px": 24
+  }
+}

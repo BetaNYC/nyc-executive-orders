@@ -1,0 +1,377 @@
+{
+  "page": 9,
+  "source_image": "page_0009.png",
+  "elements": [
+    {
+      "bbox": [
+        313,
+        353,
+        1593,
+        518
+      ],
+      "category": "Text",
+      "text": "§ 13. Annual Report. The Bureau shall submit an annual report to the Mayor concerning its responsibilities under this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3527,
+          "min": -1.7628
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5232,
+          "min": -0.5232
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0297,
+          "min": -0.2744
+        }
+      },
+      "ink": {
+        "ink_px": 15415,
+        "area_px": 205508,
+        "density": 0.07501,
+        "chars": 124,
+        "chars_per_1k_ink": 8.04
+      }
+    },
+    {
+      "bbox": [
+        317,
+        559,
+        1610,
+        858
+      ],
+      "category": "Text",
+      "text": "§ 14. Separability. If any provision of this Order or the application thereof is held invalid, the remainder of this Order and the application thereof to other persons or circumstances shall not be affected by such holding and shall remain in full force and effect.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.292,
+          "min": -1.4744
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 52,
+          "mean": -0.0029,
+          "min": -0.1428
+        }
+      },
+      "ink": {
+        "ink_px": 38767,
+        "area_px": 368966,
+        "density": 0.10507,
+        "chars": 265,
+        "chars_per_1k_ink": 6.84
+      }
+    },
+    {
+      "bbox": [
+        317,
+        895,
+        1573,
+        1399
+      ],
+      "category": "Text",
+      "text": "§ 15. Revocation of Prior Orders. Executive Orders No. 71 (1968), No. 20 (1970), No. 23 (1970), No. 27 (1970), No. 31 (1971), No. 74 (1973), No. 7 (1974), and No. 80 (1977) are hereby revoked and the first paragraph of Section 2 of Executive Order No. 4 (1978) is hereby deleted. Nothing in this Order shall be deemed to relieve any person of any obligation not inconsistent with this Order assumed or imposed pursuant to an Order superseded by this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.268,
+          "min": -1.5514
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 161,
+          "mean": -0.0001,
+          "min": -0.0025
+        }
+      },
+      "ink": {
+        "ink_px": 64317,
+        "area_px": 620702,
+        "density": 0.10362,
+        "chars": 456,
+        "chars_per_1k_ink": 7.09
+      }
+    },
+    {
+      "bbox": [
+        326,
+        1435,
+        1578,
+        1539
+      ],
+      "category": "Text",
+      "text": "§ 16. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2688,
+          "min": -1.572
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0224,
+          "min": -0.3241
+        }
+      },
+      "ink": {
+        "ink_px": 10544,
+        "area_px": 128625,
+        "density": 0.08197,
+        "chars": 63,
+        "chars_per_1k_ink": 5.97
+      }
+    },
+    {
+      "bbox": [
+        1053,
+        1605,
+        1687,
+        1790
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.4399,
+          "min": -2.088
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 10136,
+        "area_px": 92315,
+        "density": 0.1098,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 432,
+    "content": {
+      "n_tokens": 253,
+      "mean": -0.0049,
+      "min": -0.3241,
+      "p05": -0.0012,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 395,
+          "token_id": 1189,
+          "logprob": -0.3241,
+          "text": ".\""
+        },
+        {
+          "index": 40,
+          "token_id": 24947,
+          "logprob": -0.2744,
+          "text": " Annual"
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.2577,
+          "text": "§"
+        },
+        {
+          "index": 48,
+          "token_id": 9775,
+          "logprob": -0.2015,
+          "text": " annual"
+        },
+        {
+          "index": 131,
+          "token_id": 4880,
+          "logprob": -0.1428,
+          "text": " shall"
+        },
+        {
+          "index": 381,
+          "token_id": 17851,
+          "logprob": -0.0104,
+          "text": "§"
+        },
+        {
+          "index": 55,
+          "token_id": 27323,
+          "logprob": -0.0046,
+          "text": " responsibilities"
+        },
+        {
+          "index": 95,
+          "token_id": 17851,
+          "logprob": -0.0034,
+          "text": "§"
+        },
+        {
+          "index": 188,
+          "token_id": 10107,
+          "logprob": -0.0025,
+          "text": " Rev"
+        },
+        {
+          "index": 183,
+          "token_id": 17851,
+          "logprob": -0.0022,
+          "text": "§"
+        },
+        {
+          "index": 196,
+          "token_id": 2308,
+          "logprob": -0.0019,
+          "text": " No"
+        },
+        {
+          "index": 100,
+          "token_id": 33099,
+          "logprob": -0.0019,
+          "text": " Separ"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 106,
+      "mean": -0.3156,
+      "min": -2.088,
+      "p05": -1.6236,
+      "p50": -0.0002,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 416,
+          "token_id": 22,
+          "logprob": -2.088,
+          "text": "7"
+        },
+        {
+          "index": 404,
+          "token_id": 18,
+          "logprob": -1.9383,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.7628,
+          "text": "3"
+        },
+        {
+          "index": 410,
+          "token_id": 20,
+          "logprob": -1.6578,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.6439,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.6408,
+          "text": "3"
+        },
+        {
+          "index": 351,
+          "token_id": 21,
+          "logprob": -1.572,
+          "text": "6"
+        },
+        {
+          "index": 165,
+          "token_id": 18,
+          "logprob": -1.5514,
+          "text": "3"
+        },
+        {
+          "index": 67,
+          "token_id": 22,
+          "logprob": -1.4744,
+          "text": "7"
+        },
+        {
+          "index": 159,
+          "token_id": 20,
+          "logprob": -1.2885,
+          "text": "5"
+        },
+        {
+          "index": 357,
+          "token_id": 20,
+          "logprob": -1.2717,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 23,
+          "logprob": -1.1811,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 432,
+      "mean": -0.0814,
+      "min": -2.088,
+      "p05": -0.7238,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 238.64,
+    "std": 59.38,
+    "dark_fraction": 0.0599
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      634.0,
+      824.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      211,
+      274,
+      1550,
+      2014
+    ],
+    "ink_px": 139561,
+    "covered_px": 139179,
+    "covered_fraction": 0.99726,
+    "uncovered_px": 382,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

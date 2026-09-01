@@ -1,0 +1,398 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        206,
+        173,
+        471,
+        204
+      ],
+      "category": "Page-header",
+      "text": "DEP COUNSEL COLES",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3405,
+          "min": -1.5483
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0117,
+          "min": -0.0233
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.0013,
+          "min": -0.0042
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        560,
+        168,
+        811,
+        198
+      ],
+      "category": "Page-header",
+      "text": "Fax:212-788-3269",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3113,
+          "min": -1.3081
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0639,
+          "min": -0.1271
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0016,
+          "min": -0.0126
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        979,
+        162,
+        1255,
+        192
+      ],
+      "category": "Text",
+      "text": "Jun 1 '95 13:55 P.05/14",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2845,
+          "min": -1.3314
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0789,
+          "min": -0.0789
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0428,
+          "min": -0.6934
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        548,
+        337,
+        1479,
+        894
+      ],
+      "category": "Text",
+      "text": "as the same may from time to time be amended,\nArticle 10 of the Public Authorities Law, as the\nsame may from time to time be amended, and the\nNew York City Municipal Water Finance Authority\nAct, as the same may from time to time be\namended, including, but not limited to, full\npower to execute for and on behalf of the Mayor,\nany agreement, amendment to such agreement or\nother document pursuant to such laws.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3291,
+          "min": -1.5726
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 97,
+          "mean": -0.0047,
+          "min": -0.4289
+        }
+      },
+      "ink": {
+        "ink_px": 44723,
+        "area_px": 515040,
+        "density": 0.08683,
+        "chars": 409,
+        "chars_per_1k_ink": 9.15
+      }
+    },
+    {
+      "bbox": [
+        461,
+        965,
+        1484,
+        1585
+      ],
+      "category": "List-item",
+      "text": "j. Execute and deliver, in the name and on behalf of the Mayor, a certificate approving any borrowing of funds or pledge of assets or revenues by the New York City Health and Hospitals Corporation which would require the approval of the Mayor pursuant to the \"Memorandum of Agreement Between New York City Health and Hospitals Corporation and The City of New York Relating to Operating Expenditures by the Corporation\", dated July 1, 1970.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3141,
+          "min": -1.6251
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0395,
+          "min": -0.0789
+        },
+        "text": {
+          "n_tokens": 91,
+          "mean": -0.0009,
+          "min": -0.0495
+        }
+      },
+      "ink": {
+        "ink_px": 52779,
+        "area_px": 630360,
+        "density": 0.08373,
+        "chars": 439,
+        "chars_per_1k_ink": 8.32
+      }
+    },
+    {
+      "bbox": [
+        469,
+        1659,
+        1486,
+        1778
+      ],
+      "category": "List-item",
+      "text": "k. Execute and deliver, in the name and on behalf of the city, official statements of the city",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2669,
+          "min": -1.3579
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0056,
+          "min": -0.0112
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0388,
+          "min": -0.4741
+        }
+      },
+      "ink": {
+        "ink_px": 10814,
+        "area_px": 120666,
+        "density": 0.08962,
+        "chars": 94,
+        "chars_per_1k_ink": 8.69
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 467,
+    "content": {
+      "n_tokens": 249,
+      "mean": -0.0088,
+      "min": -0.6934,
+      "p05": -0.0068,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 138,
+          "token_id": 393,
+          "logprob": -0.6934,
+          "text": " P"
+        },
+        {
+          "index": 459,
+          "token_id": 3946,
+          "logprob": -0.4741,
+          "text": " official"
+        },
+        {
+          "index": 190,
+          "token_id": 26266,
+          "logprob": -0.4289,
+          "text": ",\\"
+        },
+        {
+          "index": 457,
+          "token_id": 3283,
+          "logprob": -0.252,
+          "text": " city"
+        },
+        {
+          "index": 140,
+          "token_id": 15,
+          "logprob": -0.1005,
+          "text": "0"
+        },
+        {
+          "index": 314,
+          "token_id": 73,
+          "logprob": -0.0495,
+          "text": "j"
+        },
+        {
+          "index": 456,
+          "token_id": 279,
+          "logprob": -0.0432,
+          "text": " the"
+        },
+        {
+          "index": 463,
+          "token_id": 3283,
+          "logprob": -0.0337,
+          "text": " city"
+        },
+        {
+          "index": 327,
+          "token_id": 279,
+          "logprob": -0.0263,
+          "text": " the"
+        },
+        {
+          "index": 79,
+          "token_id": 17,
+          "logprob": -0.0126,
+          "text": "2"
+        },
+        {
+          "index": 260,
+          "token_id": 77,
+          "logprob": -0.0109,
+          "text": "n"
+        },
+        {
+          "index": 460,
+          "token_id": 12239,
+          "logprob": -0.0087,
+          "text": " statements"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 125,
+      "mean": -0.2848,
+      "min": -1.6251,
+      "p05": -1.4256,
+      "p50": -0.0006,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 295,
+          "token_id": 19,
+          "logprob": -1.6251,
+          "text": "4"
+        },
+        {
+          "index": 168,
+          "token_id": 19,
+          "logprob": -1.5726,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.5483,
+          "text": "3"
+        },
+        {
+          "index": 301,
+          "token_id": 20,
+          "logprob": -1.539,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.515,
+          "text": "6"
+        },
+        {
+          "index": 157,
+          "token_id": 22,
+          "logprob": -1.4686,
+          "text": "7"
+        },
+        {
+          "index": 289,
+          "token_id": 20,
+          "logprob": -1.4425,
+          "text": "5"
+        },
+        {
+          "index": 424,
+          "token_id": 21,
+          "logprob": -1.3579,
+          "text": "6"
+        },
+        {
+          "index": 22,
+          "token_id": 19,
+          "logprob": -1.3526,
+          "text": "4"
+        },
+        {
+          "index": 109,
+          "token_id": 20,
+          "logprob": -1.3314,
+          "text": "5"
+        },
+        {
+          "index": 103,
+          "token_id": 17,
+          "logprob": -1.323,
+          "text": "2"
+        },
+        {
+          "index": 59,
+          "token_id": 16,
+          "logprob": -1.3081,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 467,
+      "mean": -0.081,
+      "min": -1.6251,
+      "p05": -0.7312,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 241.65,
+    "std": 53.1,
+    "dark_fraction": 0.0502
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 108441,
+    "covered_px": 108316,
+    "covered_fraction": 0.99885,
+    "uncovered_px": 125,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

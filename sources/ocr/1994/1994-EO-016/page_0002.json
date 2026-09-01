@@ -1,0 +1,275 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        183,
+        309,
+        1490,
+        458
+      ],
+      "category": "Text",
+      "text": "§ 2. This Order shall take effect immediately. Any authorizations, approvals and certifications described in subdivision 1 of section 1 of this Order made or given by the Deputy Mayor for Finance and Economic Development on or after June 17, 1994 are hereby ratified.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3198,
+          "min": -1.5557
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0128,
+          "min": -0.0128
+        },
+        "text": {
+          "n_tokens": 59,
+          "mean": -0.0005,
+          "min": -0.0182
+        }
+      },
+      "ink": {
+        "ink_px": 16998,
+        "area_px": 190720,
+        "density": 0.08913,
+        "chars": 267,
+        "chars_per_1k_ink": 15.71
+      }
+    },
+    {
+      "bbox": [
+        871,
+        492,
+        1415,
+        722
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4038,
+          "min": -1.7359
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0024,
+          "min": -0.0024
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 9010,
+        "area_px": 124890,
+        "density": 0.07214,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 127,
+    "content": {
+      "n_tokens": 59,
+      "mean": -0.0005,
+      "min": -0.0182,
+      "p05": -0.0001,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 51,
+          "token_id": 323,
+          "logprob": -0.0182,
+          "text": " and"
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0126,
+          "text": "§"
+        },
+        {
+          "index": 93,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        },
+        {
+          "index": 92,
+          "token_id": 96565,
+          "logprob": -0.0001,
+          "text": " ratified"
+        },
+        {
+          "index": 52,
+          "token_id": 81471,
+          "logprob": -0.0001,
+          "text": " certifications"
+        },
+        {
+          "index": 47,
+          "token_id": 3150,
+          "logprob": -0.0001,
+          "text": " author"
+        },
+        {
+          "index": 65,
+          "token_id": 1865,
+          "logprob": -0.0001,
+          "text": " made"
+        },
+        {
+          "index": 42,
+          "token_id": 1896,
+          "logprob": -0.0,
+          "text": " take"
+        },
+        {
+          "index": 39,
+          "token_id": 1096,
+          "logprob": -0.0,
+          "text": " This"
+        },
+        {
+          "index": 55,
+          "token_id": 59822,
+          "logprob": -0.0,
+          "text": " subdivision"
+        },
+        {
+          "index": 50,
+          "token_id": 82823,
+          "logprob": -0.0,
+          "text": " approvals"
+        },
+        {
+          "index": 36,
+          "token_id": 220,
+          "logprob": -0.0,
+          "text": " "
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 40,
+      "mean": -0.3441,
+      "min": -1.7359,
+      "p05": -1.5596,
+      "p50": -0.0024,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 112,
+          "token_id": 20,
+          "logprob": -1.7359,
+          "text": "5"
+        },
+        {
+          "index": 101,
+          "token_id": 16,
+          "logprob": -1.6338,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.5557,
+          "text": "3"
+        },
+        {
+          "index": 117,
+          "token_id": 17,
+          "logprob": -1.4787,
+          "text": "2"
+        },
+        {
+          "index": 106,
+          "token_id": 17,
+          "logprob": -1.3944,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.2199,
+          "text": "9"
+        },
+        {
+          "index": 23,
+          "token_id": 23,
+          "logprob": -1.1231,
+          "text": "8"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.1227,
+          "text": "0"
+        },
+        {
+          "index": 99,
+          "token_id": 23,
+          "logprob": -0.4757,
+          "text": "8"
+        },
+        {
+          "index": 100,
+          "token_id": 22,
+          "logprob": -0.3882,
+          "text": "7"
+        },
+        {
+          "index": 11,
+          "token_id": 15,
+          "logprob": -0.3869,
+          "text": "0"
+        },
+        {
+          "index": 22,
+          "token_id": 20,
+          "logprob": -0.3136,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 127,
+      "mean": -0.109,
+      "min": -1.7359,
+      "p05": -1.1229,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 251.76,
+    "std": 25.88,
+    "dark_fraction": 0.01204
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 26010,
+    "covered_px": 26008,
+    "covered_fraction": 0.99992,
+    "uncovered_px": 2,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

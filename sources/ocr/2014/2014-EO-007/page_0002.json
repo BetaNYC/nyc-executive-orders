@@ -1,0 +1,348 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        197,
+        161,
+        1487,
+        349
+      ],
+      "category": "Text",
+      "text": "WHEREAS, the City seeks to take clear and decisive action to implement Section 6-134 of the Administrative Code (the \"Fair Wages for New Yorkers Act\") and strives to achieve Living Wage jobs in accordance therewith;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3192,
+          "min": -1.5503
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 48,
+          "mean": -0.0025,
+          "min": -0.1003
+        }
+      },
+      "ink": {
+        "ink_px": 3098,
+        "area_px": 107268,
+        "density": 0.02888,
+        "chars": 215,
+        "chars_per_1k_ink": 69.4
+      }
+    },
+    {
+      "bbox": [
+        197,
+        393,
+        1480,
+        503
+      ],
+      "category": "Text",
+      "text": "NOW, THEREFORE, by the power vested in me as Mayor of The City of New York, it is hereby ordered:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2611,
+          "min": -1.3007
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0051,
+          "min": -0.1271
+        }
+      },
+      "ink": {
+        "ink_px": 5903,
+        "area_px": 140970,
+        "density": 0.04187,
+        "chars": 97,
+        "chars_per_1k_ink": 16.43
+      }
+    },
+    {
+      "bbox": [
+        197,
+        547,
+        1445,
+        658
+      ],
+      "category": "Text",
+      "text": "Section 1. Definitions. Capitalized terms used but not otherwise herein defined shall have the respective meanings set forth in the Fair Wages for New Yorkers Act.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2537,
+          "min": -1.2588
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0057,
+          "min": -0.1764
+        }
+      },
+      "ink": {
+        "ink_px": 9191,
+        "area_px": 137085,
+        "density": 0.06705,
+        "chars": 163,
+        "chars_per_1k_ink": 17.73
+      }
+    },
+    {
+      "bbox": [
+        197,
+        702,
+        1473,
+        1972
+      ],
+      "category": "Text",
+      "text": "\"Additional Covered Employer\" means any of the following entities or persons: (a) a Subsidy Recipient, (b) a tenant, subtenant, leaseholder or subleaseholder of a Subsidy Recipient that occupies property improved or developed with Financial Assistance, (c) a concessionaire that operates on the property improved or developed with Financial Assistance, and (d) a person or entity that contracts or subcontracts with a Subsidy Recipient to perform work for a period of more than ninety days on the premises of the property improved or developed with Financial Assistance, including temporary services or staffing agencies, food service contractors, and other on-site service contractors; provided, however, that the term \"Additional Covered Employer\" shall not include (i) a person or entity of the type described in Section 6-134(d)(2),(3),(4) or (5) of the Administrative Code; (ii) an entity that has annual consolidated gross revenues that are less than the Small Business Cap or the revenues of which are included in the consolidated gross revenues of an entity having annual consolidated gross revenues that are less than the Small Business Cap, in each case calculated for the fiscal year preceding the fiscal year in which the Project Agreement is entered into and determined in accordance with generally accepted accounting principles; or (iii) any otherwise covered entity operating on the premises of a project where residential units comprise more than 75% of the project area and all of the residential units are subject to rent regulation.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2616,
+          "min": -1.4149
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 306,
+          "mean": -0.0022,
+          "min": -0.4744
+        }
+      },
+      "ink": {
+        "ink_px": 78343,
+        "area_px": 1563594,
+        "density": 0.0501,
+        "chars": 1552,
+        "chars_per_1k_ink": 19.81
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 553,
+    "content": {
+      "n_tokens": 411,
+      "mean": -0.0027,
+      "min": -0.4744,
+      "p05": -0.0007,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 418,
+          "token_id": 23547,
+          "logprob": -0.4744,
+          "text": "),("
+        },
+        {
+          "index": 182,
+          "token_id": 46513,
+          "logprob": -0.1764,
+          "text": " Definitions"
+        },
+        {
+          "index": 139,
+          "token_id": 374,
+          "logprob": -0.1271,
+          "text": " is"
+        },
+        {
+          "index": 258,
+          "token_id": 25,
+          "logprob": -0.1129,
+          "text": ":"
+        },
+        {
+          "index": 56,
+          "token_id": 315,
+          "logprob": -0.1003,
+          "text": " of"
+        },
+        {
+          "index": 381,
+          "token_id": 3897,
+          "logprob": -0.0557,
+          "text": " provided"
+        },
+        {
+          "index": 246,
+          "token_id": 29019,
+          "logprob": -0.0107,
+          "text": "Additional"
+        },
+        {
+          "index": 62,
+          "token_id": 7245,
+          "logprob": -0.0061,
+          "text": " \\\""
+        },
+        {
+          "index": 420,
+          "token_id": 23547,
+          "logprob": -0.0053,
+          "text": "),("
+        },
+        {
+          "index": 82,
+          "token_id": 10892,
+          "logprob": -0.0051,
+          "text": ";\""
+        },
+        {
+          "index": 245,
+          "token_id": 15898,
+          "logprob": -0.0035,
+          "text": " \"\\\""
+        },
+        {
+          "index": 194,
+          "token_id": 614,
+          "logprob": -0.0032,
+          "text": " have"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.2602,
+      "min": -1.5503,
+      "p05": -1.2588,
+      "p50": -0.0005,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.5503,
+          "text": "7"
+        },
+        {
+          "index": 228,
+          "token_id": 18,
+          "logprob": -1.4149,
+          "text": "3"
+        },
+        {
+          "index": 106,
+          "token_id": 18,
+          "logprob": -1.3007,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.2717,
+          "text": "7"
+        },
+        {
+          "index": 161,
+          "token_id": 20,
+          "logprob": -1.2588,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.2482,
+          "text": "1"
+        },
+        {
+          "index": 217,
+          "token_id": 22,
+          "logprob": -1.2249,
+          "text": "7"
+        },
+        {
+          "index": 95,
+          "token_id": 18,
+          "logprob": -1.2205,
+          "text": "3"
+        },
+        {
+          "index": 234,
+          "token_id": 17,
+          "logprob": -1.2046,
+          "text": "2"
+        },
+        {
+          "index": 155,
+          "token_id": 22,
+          "logprob": -1.1666,
+          "text": "7"
+        },
+        {
+          "index": 101,
+          "token_id": 15,
+          "logprob": -1.015,
+          "text": "0"
+        },
+        {
+          "index": 222,
+          "token_id": 17,
+          "logprob": -1.0021,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 553,
+      "mean": -0.0402,
+      "min": -1.5503,
+      "p05": -0.1053,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 243.21,
+    "std": 39.69,
+    "dark_fraction": 0.04469
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 96535,
+    "covered_px": 96535,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

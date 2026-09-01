@@ -1,0 +1,309 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        189,
+        391,
+        1503,
+        635
+      ],
+      "category": "Text",
+      "text": "exercise such function and the Director shall resume the exercise of such function. In addition, a full review of the performance of each agency pursuant to this Order will be conducted within six months of the date of this Order. A full report of that review of the first six months of operation under this executive order shall be submitted to the Mayor by the Deputy Mayor for Operations in conjunction with the Corporation Counsel, the Senior Advisor to the Mayor, and the Director.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3292,
+          "min": -1.5486
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 90,
+          "mean": -0.0039,
+          "min": -0.3486
+        }
+      },
+      "ink": {
+        "ink_px": 32678,
+        "area_px": 315248,
+        "density": 0.10366,
+        "chars": 486,
+        "chars_per_1k_ink": 14.87
+      }
+    },
+    {
+      "bbox": [
+        301,
+        667,
+        951,
+        708
+      ],
+      "category": "List-item",
+      "text": "3. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3144,
+          "min": -1.2978
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.108,
+          "min": -0.216
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0004,
+          "min": -0.0027
+        }
+      },
+      "ink": {
+        "ink_px": 3047,
+        "area_px": 27216,
+        "density": 0.11196,
+        "chars": 44,
+        "chars_per_1k_ink": 14.44
+      }
+    },
+    {
+      "bbox": [
+        881,
+        701,
+        1453,
+        926
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.424,
+          "min": -1.8902
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.015,
+          "min": -0.015
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 12125,
+        "area_px": 127904,
+        "density": 0.0948,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 202,
+    "content": {
+      "n_tokens": 99,
+      "mean": -0.0036,
+      "min": -0.3486,
+      "p05": -0.0002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 50,
+          "token_id": 5256,
+          "logprob": -0.3486,
+          "text": " addition"
+        },
+        {
+          "index": 35,
+          "token_id": 63462,
+          "logprob": -0.0028,
+          "text": "exercise"
+        },
+        {
+          "index": 168,
+          "token_id": 1189,
+          "logprob": -0.0027,
+          "text": ".\""
+        },
+        {
+          "index": 48,
+          "token_id": 13,
+          "logprob": -0.001,
+          "text": "."
+        },
+        {
+          "index": 124,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        },
+        {
+          "index": 160,
+          "token_id": 18,
+          "logprob": -0.0002,
+          "text": "3"
+        },
+        {
+          "index": 116,
+          "token_id": 53332,
+          "logprob": -0.0002,
+          "text": " Advisor"
+        },
+        {
+          "index": 162,
+          "token_id": 1096,
+          "logprob": -0.0001,
+          "text": " This"
+        },
+        {
+          "index": 165,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 163,
+          "token_id": 7217,
+          "logprob": -0.0001,
+          "text": " Order"
+        },
+        {
+          "index": 161,
+          "token_id": 13,
+          "logprob": -0.0001,
+          "text": "."
+        },
+        {
+          "index": 100,
+          "token_id": 22093,
+          "logprob": -0.0001,
+          "text": " Mayor"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.3367,
+      "min": -1.8902,
+      "p05": -1.5106,
+      "p50": -0.0027,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 176,
+          "token_id": 16,
+          "logprob": -1.8902,
+          "text": "1"
+        },
+        {
+          "index": 187,
+          "token_id": 18,
+          "logprob": -1.7599,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.5486,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.5086,
+          "text": "5"
+        },
+        {
+          "index": 192,
+          "token_id": 21,
+          "logprob": -1.4175,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.3232,
+          "text": "1"
+        },
+        {
+          "index": 137,
+          "token_id": 22,
+          "logprob": -1.2978,
+          "text": "7"
+        },
+        {
+          "index": 142,
+          "token_id": 16,
+          "logprob": -1.2786,
+          "text": "1"
+        },
+        {
+          "index": 181,
+          "token_id": 16,
+          "logprob": -1.2447,
+          "text": "1"
+        },
+        {
+          "index": 132,
+          "token_id": 16,
+          "logprob": -1.1916,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.132,
+          "text": "9"
+        },
+        {
+          "index": 147,
+          "token_id": 23,
+          "logprob": -1.1048,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 202,
+      "mean": -0.1018,
+      "min": -1.8902,
+      "p05": -1.1306,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 249.04,
+    "std": 35.17,
+    "dark_fraction": 0.02213
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 47804,
+    "covered_px": 47797,
+    "covered_fraction": 0.99985,
+    "uncovered_px": 7,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

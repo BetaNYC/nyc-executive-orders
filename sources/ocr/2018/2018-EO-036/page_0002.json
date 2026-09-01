@@ -1,0 +1,377 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        452,
+        205,
+        1485,
+        323
+      ],
+      "category": "List-item",
+      "text": "ii. Develop policies and provide guidance to City agencies on programming, policies, and best practices relevant to gender-based and domestic violence.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.345,
+          "min": -1.5621
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.003,
+          "min": -0.006
+        },
+        "text": {
+          "n_tokens": 26,
+          "mean": -0.0061,
+          "min": -0.1141
+        }
+      },
+      "ink": {
+        "ink_px": 5761,
+        "area_px": 59740,
+        "density": 0.09643,
+        "chars": 151,
+        "chars_per_1k_ink": 26.21
+      }
+    },
+    {
+      "bbox": [
+        444,
+        338,
+        1485,
+        772
+      ],
+      "category": "List-item",
+      "text": "iii. Establish and chair an advisory committee to review individual case-level data on gender-based and domestic violence fatalities, to the extent that such data is lawfully available to such committee, and provide recommendations to prevent or reduce fatalities. To the extent provided by law, the committee shall protect the privacy of any individuals involved in any such fatality while carrying out the provisions of this paragraph. The functions of such committee shall be distinct from and shall not affect the functions of the Domestic Violence Fatality Review Committee established under section 19 of the City Charter.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2735,
+          "min": -1.4637
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 110,
+          "mean": -0.0004,
+          "min": -0.0215
+        }
+      },
+      "ink": {
+        "ink_px": 56564,
+        "area_px": 448416,
+        "density": 0.12614,
+        "chars": 628,
+        "chars_per_1k_ink": 11.1
+      }
+    },
+    {
+      "bbox": [
+        282,
+        809,
+        1450,
+        889
+      ],
+      "category": "Text",
+      "text": "§3. Agency cooperation. All agencies of the City of New York shall cooperate with the Office in the performance of its duties.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2699,
+          "min": -1.2307
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.338,
+          "min": -0.338
+        },
+        "text": {
+          "n_tokens": 26,
+          "mean": -0.0344,
+          "min": -0.8558
+        }
+      },
+      "ink": {
+        "ink_px": 12605,
+        "area_px": 94284,
+        "density": 0.13369,
+        "chars": 126,
+        "chars_per_1k_ink": 10.0
+      }
+    },
+    {
+      "bbox": [
+        282,
+        926,
+        1093,
+        961
+      ],
+      "category": "Text",
+      "text": "§4. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2502,
+          "min": -1.3498
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 13,
+          "mean": -0.0004,
+          "min": -0.0032
+        }
+      },
+      "ink": {
+        "ink_px": 6272,
+        "area_px": 29088,
+        "density": 0.21562,
+        "chars": 61,
+        "chars_per_1k_ink": 9.73
+      }
+    },
+    {
+      "bbox": [
+        984,
+        1108,
+        1377,
+        1310
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3263,
+          "min": -1.9522
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0063,
+          "min": -0.0063
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 8598,
+        "area_px": 79184,
+        "density": 0.10858,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 352,
+    "content": {
+      "n_tokens": 175,
+      "mean": -0.0063,
+      "min": -0.8558,
+      "p05": -0.0013,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 246,
+          "token_id": 16379,
+          "logprob": -0.8558,
+          "text": " Agency"
+        },
+        {
+          "index": 47,
+          "token_id": 15473,
+          "logprob": -0.1141,
+          "text": " programming"
+        },
+        {
+          "index": 36,
+          "token_id": 3808,
+          "logprob": -0.0423,
+          "text": "ii"
+        },
+        {
+          "index": 110,
+          "token_id": 11591,
+          "logprob": -0.0215,
+          "text": "-level"
+        },
+        {
+          "index": 243,
+          "token_id": 17851,
+          "logprob": -0.0192,
+          "text": "§"
+        },
+        {
+          "index": 109,
+          "token_id": 1142,
+          "logprob": -0.0185,
+          "text": " case"
+        },
+        {
+          "index": 261,
+          "token_id": 8246,
+          "logprob": -0.0184,
+          "text": " Office"
+        },
+        {
+          "index": 307,
+          "token_id": 46923,
+          "logprob": -0.0032,
+          "text": " Effective"
+        },
+        {
+          "index": 304,
+          "token_id": 17851,
+          "logprob": -0.0017,
+          "text": "§"
+        },
+        {
+          "index": 193,
+          "token_id": 25348,
+          "logprob": -0.0011,
+          "text": " Fat"
+        },
+        {
+          "index": 102,
+          "token_id": 10496,
+          "logprob": -0.0008,
+          "text": " chair"
+        },
+        {
+          "index": 61,
+          "token_id": 1189,
+          "logprob": -0.0007,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 104,
+      "mean": -0.2773,
+      "min": -1.9522,
+      "p05": -1.4075,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 324,
+          "token_id": 19,
+          "logprob": -1.9522,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -1.5621,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 17,
+          "logprob": -1.4896,
+          "text": "2"
+        },
+        {
+          "index": 69,
+          "token_id": 19,
+          "logprob": -1.4637,
+          "text": "4"
+        },
+        {
+          "index": 336,
+          "token_id": 22,
+          "logprob": -1.4164,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.4111,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.3877,
+          "text": "3"
+        },
+        {
+          "index": 330,
+          "token_id": 23,
+          "logprob": -1.3632,
+          "text": "8"
+        },
+        {
+          "index": 287,
+          "token_id": 18,
+          "logprob": -1.3498,
+          "text": "3"
+        },
+        {
+          "index": 215,
+          "token_id": 17,
+          "logprob": -1.2307,
+          "text": "2"
+        },
+        {
+          "index": 85,
+          "token_id": 17,
+          "logprob": -1.2255,
+          "text": "2"
+        },
+        {
+          "index": 80,
+          "token_id": 20,
+          "logprob": -1.2154,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 352,
+      "mean": -0.0852,
+      "min": -1.9522,
+      "p05": -0.8702,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 244.81,
+    "std": 38.69,
+    "dark_fraction": 0.04157
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 89806,
+    "covered_px": 89800,
+    "covered_fraction": 0.99993,
+    "uncovered_px": 6,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

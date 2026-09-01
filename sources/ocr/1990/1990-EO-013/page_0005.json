@@ -1,0 +1,342 @@
+{
+  "page": 5,
+  "source_image": "page_0005.png",
+  "elements": [
+    {
+      "bbox": [
+        299,
+        177,
+        1473,
+        275
+      ],
+      "category": "Text",
+      "text": "stoppage, job action, mass resignation or picketing by employees of\nthe department or agency.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3335,
+          "min": -1.6324
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 20,
+          "mean": -0.0244,
+          "min": -0.2955
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        299,
+        309,
+        1479,
+        1142
+      ],
+      "category": "Text",
+      "text": "§8. Change in Nomenclature. All references to (a) the Office of Municipal Labor Relations or (b) to the Director of Municipal Labor Relations, Director of Labor Relations or City Director of Labor Relations contained in prior Executive Orders, including, but not limited to, Executive Order No. 75, dated March 22, 1973, Executive Order No. 83, dated July 26, 1973, Executive Order No. 6, dated January 21, 1974, Executive Orders Nos. 98 and 99, dated October 1 1969 and Executive Order No. 107, dated December 29, 1986; and in all other orders, rules, procedures, regulations or agreements governing the conduct of the City's labor relations which are subject to the jurisdiction of the Mayor, shall be deemed to be references respectively (a) to the Office of Labor Relations and (b) to the Commissioner of Labor Relations.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2753,
+          "min": -1.3371
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1798,
+          "min": -0.1798
+        },
+        "text": {
+          "n_tokens": 217,
+          "mean": -0.0033,
+          "min": -0.3703
+        }
+      },
+      "ink": {
+        "ink_px": 86480,
+        "area_px": 980580,
+        "density": 0.08819,
+        "chars": 825,
+        "chars_per_1k_ink": 9.54
+      }
+    },
+    {
+      "bbox": [
+        301,
+        1182,
+        1481,
+        1540
+      ],
+      "category": "Text",
+      "text": "§9. Existing Signed Documents. All existing labor contracts, agreements, orders, procedures, directives, interpretations or other documents signed by the Director of Municipal Labor Relations, the Director of Labor Relations or the City Director of Labor Relations shall be deemed to have been signed by the Commissioner of Labor Relations.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.253,
+          "min": -1.4111
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 59,
+          "mean": -0.0023,
+          "min": -0.1014
+        }
+      },
+      "ink": {
+        "ink_px": 44121,
+        "area_px": 421260,
+        "density": 0.10474,
+        "chars": 340,
+        "chars_per_1k_ink": 7.71
+      }
+    },
+    {
+      "bbox": [
+        305,
+        1580,
+        1484,
+        1808
+      ],
+      "category": "Text",
+      "text": "§10. Revoked Prior Orders. Executive Order No. 38, dated February 7, 1967, Executive Order No. 74, dated December 15, 1976 and Executive Order No. 81, dated March 7, 1977 are hereby revoked.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2376,
+          "min": -1.3279
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 70,
+          "mean": -0.0005,
+          "min": -0.016
+        }
+      },
+      "ink": {
+        "ink_px": 26803,
+        "area_px": 268812,
+        "density": 0.09971,
+        "chars": 190,
+        "chars_per_1k_ink": 7.09
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 513,
+    "content": {
+      "n_tokens": 366,
+      "mean": -0.0038,
+      "min": -0.3703,
+      "p05": -0.0018,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 94,
+          "token_id": 10388,
+          "logprob": -0.3703,
+          "text": " Change"
+        },
+        {
+          "index": 35,
+          "token_id": 9495,
+          "logprob": -0.2955,
+          "text": "stop"
+        },
+        {
+          "index": 49,
+          "token_id": 1699,
+          "logprob": -0.1802,
+          "text": "\\n"
+        },
+        {
+          "index": 222,
+          "token_id": 220,
+          "logprob": -0.1304,
+          "text": " "
+        },
+        {
+          "index": 107,
+          "token_id": 8246,
+          "logprob": -0.1149,
+          "text": " Office"
+        },
+        {
+          "index": 355,
+          "token_id": 17080,
+          "logprob": -0.1014,
+          "text": " contracts"
+        },
+        {
+          "index": 91,
+          "token_id": 17851,
+          "logprob": -0.0926,
+          "text": "§"
+        },
+        {
+          "index": 345,
+          "token_id": 17851,
+          "logprob": -0.0192,
+          "text": "§"
+        },
+        {
+          "index": 441,
+          "token_id": 17851,
+          "logprob": -0.016,
+          "text": "§"
+        },
+        {
+          "index": 445,
+          "token_id": 10107,
+          "logprob": -0.0102,
+          "text": " Rev"
+        },
+        {
+          "index": 54,
+          "token_id": 1189,
+          "logprob": -0.0102,
+          "text": ".\""
+        },
+        {
+          "index": 348,
+          "token_id": 68471,
+          "logprob": -0.007,
+          "text": " Existing"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 85,
+      "mean": -0.2626,
+      "min": -1.6324,
+      "p05": -1.3353,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.6324,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.4329,
+          "text": "5"
+        },
+        {
+          "index": 327,
+          "token_id": 16,
+          "logprob": -1.4111,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.397,
+          "text": "7"
+        },
+        {
+          "index": 79,
+          "token_id": 17,
+          "logprob": -1.3371,
+          "text": "2"
+        },
+        {
+          "index": 423,
+          "token_id": 19,
+          "logprob": -1.3279,
+          "text": "4"
+        },
+        {
+          "index": 411,
+          "token_id": 20,
+          "logprob": -1.2526,
+          "text": "5"
+        },
+        {
+          "index": 315,
+          "token_id": 16,
+          "logprob": -1.2378,
+          "text": "1"
+        },
+        {
+          "index": 321,
+          "token_id": 17,
+          "logprob": -1.2038,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.083,
+          "text": "9"
+        },
+        {
+          "index": 333,
+          "token_id": 15,
+          "logprob": -1.0751,
+          "text": "0"
+        },
+        {
+          "index": 429,
+          "token_id": 23,
+          "logprob": -1.0568,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 513,
+      "mean": -0.0468,
+      "min": -1.6324,
+      "p05": -0.1681,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 236.42,
+    "std": 62.16,
+    "dark_fraction": 0.06764
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      634.0,
+      823.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      211,
+      274,
+      1550,
+      2012
+    ],
+    "ink_px": 157406,
+    "covered_px": 157404,
+    "covered_fraction": 0.99999,
+    "uncovered_px": 2,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

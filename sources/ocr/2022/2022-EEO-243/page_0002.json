@@ -1,0 +1,319 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        195,
+        179,
+        1514,
+        339
+      ],
+      "category": "Text",
+      "text": "§ 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3671,
+          "min": -1.856
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 68,
+          "mean": -0.0017,
+          "min": -0.1129
+        }
+      },
+      "ink": {
+        "ink_px": 12052,
+        "area_px": 100698,
+        "density": 0.11968,
+        "chars": 338,
+        "chars_per_1k_ink": 28.05
+      }
+    },
+    {
+      "bbox": [
+        1000,
+        365,
+        1427,
+        471
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3781,
+          "min": -2.1205
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 3500,
+        "area_px": 45900,
+        "density": 0.07625,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1002,
+        477,
+        1166,
+        555
+      ],
+      "category": "Caption",
+      "text": "Eric Adams\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2708,
+          "min": -1.4119
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0298,
+          "min": -0.0298
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0002,
+          "min": -0.0006
+        }
+      },
+      "ink": {
+        "ink_px": 1507,
+        "area_px": 12956,
+        "density": 0.11632,
+        "chars": 16,
+        "chars_per_1k_ink": 10.62
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 177,
+    "content": {
+      "n_tokens": 72,
+      "mean": -0.0016,
+      "min": -0.1129,
+      "p05": -0.0002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 51,
+          "token_id": 31608,
+          "logprob": -0.1129,
+          "text": " Emergency"
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0017,
+          "text": "§"
+        },
+        {
+          "index": 170,
+          "token_id": 49454,
+          "logprob": -0.0006,
+          "text": "Eric"
+        },
+        {
+          "index": 173,
+          "token_id": 85574,
+          "logprob": -0.0003,
+          "text": "Mayor"
+        },
+        {
+          "index": 40,
+          "token_id": 31608,
+          "logprob": -0.0001,
+          "text": " Emergency"
+        },
+        {
+          "index": 74,
+          "token_id": 13666,
+          "logprob": -0.0001,
+          "text": " occurs"
+        },
+        {
+          "index": 77,
+          "token_id": 23208,
+          "logprob": -0.0001,
+          "text": " Additional"
+        },
+        {
+          "index": 44,
+          "token_id": 1896,
+          "logprob": -0.0,
+          "text": " take"
+        },
+        {
+          "index": 90,
+          "token_id": 12488,
+          "logprob": -0.0,
+          "text": " exceed"
+        },
+        {
+          "index": 80,
+          "token_id": 13036,
+          "logprob": -0.0,
+          "text": " extend"
+        },
+        {
+          "index": 84,
+          "token_id": 31608,
+          "logprob": -0.0,
+          "text": " Emergency"
+        },
+        {
+          "index": 73,
+          "token_id": 53684,
+          "logprob": -0.0,
+          "text": " whichever"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 62,
+      "mean": -0.3223,
+      "min": -2.1205,
+      "p05": -1.4816,
+      "p50": -0.0002,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 127,
+          "token_id": 16,
+          "logprob": -2.1205,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.856,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 19,
+          "logprob": -1.7107,
+          "text": "4"
+        },
+        {
+          "index": 122,
+          "token_id": 22,
+          "logprob": -1.4827,
+          "text": "7"
+        },
+        {
+          "index": 116,
+          "token_id": 20,
+          "logprob": -1.461,
+          "text": "5"
+        },
+        {
+          "index": 153,
+          "token_id": 21,
+          "logprob": -1.4119,
+          "text": "6"
+        },
+        {
+          "index": 158,
+          "token_id": 20,
+          "logprob": -1.3693,
+          "text": "5"
+        },
+        {
+          "index": 142,
+          "token_id": 17,
+          "logprob": -1.2535,
+          "text": "2"
+        },
+        {
+          "index": 147,
+          "token_id": 22,
+          "logprob": -1.1887,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.0928,
+          "text": "9"
+        },
+        {
+          "index": 111,
+          "token_id": 15,
+          "logprob": -1.0611,
+          "text": "0"
+        },
+        {
+          "index": 23,
+          "token_id": 24,
+          "logprob": -0.9562,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 177,
+      "mean": -0.1136,
+      "min": -2.1205,
+      "p05": -1.112,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 252.33,
+    "std": 21.43,
+    "dark_fraction": 0.00818
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      611.0,
+      790.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      203,
+      263,
+      1494,
+      1931
+    ],
+    "ink_px": 17618,
+    "covered_px": 17059,
+    "covered_fraction": 0.96827,
+    "uncovered_px": 559,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          995,
+          455,
+          1307,
+          479
+        ],
+        "ink_px": 559
+      }
+    ],
+    "cell_px": 24
+  }
+}

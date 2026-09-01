@@ -1,0 +1,343 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        243,
+        171,
+        1557,
+        516
+      ],
+      "category": "Text",
+      "text": "§ 2. The Commissioner of Citywide Administrative Services, the Office of Labor Relations, the Commissioner of DOHMH and the Commissioner of DOC shall take all steps necessary, consistent with applicable law, to implement Section 1 of this Order, including ensuring the transfer of necessary employees substantially engaged in the performance of the functions to be assumed pursuant to this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3679,
+          "min": -1.6686
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0263,
+          "min": -0.0263
+        },
+        "text": {
+          "n_tokens": 72,
+          "mean": -0.0009,
+          "min": -0.0526
+        }
+      },
+      "ink": {
+        "ink_px": 17677,
+        "area_px": 313750,
+        "density": 0.05634,
+        "chars": 396,
+        "chars_per_1k_ink": 22.4
+      }
+    },
+    {
+      "bbox": [
+        246,
+        555,
+        1559,
+        903
+      ],
+      "category": "Text",
+      "text": "§ 3. Employees who are subject to pending disciplinary charges on the date of the functional transfer, or against whom a disciplinary penalty has been assessed but not yet served or paid on or prior to such date, shall be retained in the employment of DOHMH until the resolution of the adjudicative or administrative proceedings and until any outstanding disciplinary penalty has been served or paid.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3019,
+          "min": -1.4977
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 75,
+          "mean": -0.0005,
+          "min": -0.0299
+        }
+      },
+      "ink": {
+        "ink_px": 25005,
+        "area_px": 435696,
+        "density": 0.05739,
+        "chars": 400,
+        "chars_per_1k_ink": 16.0
+      }
+    },
+    {
+      "bbox": [
+        452,
+        941,
+        1072,
+        978
+      ],
+      "category": "Text",
+      "text": "§ 4. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2867,
+          "min": -1.4075
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0001,
+          "min": -0.0008
+        }
+      },
+      "ink": {
+        "ink_px": 3021,
+        "area_px": 23484,
+        "density": 0.12864,
+        "chars": 46,
+        "chars_per_1k_ink": 15.23
+      }
+    },
+    {
+      "bbox": [
+        1060,
+        1046,
+        1395,
+        1236
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.309,
+          "min": -1.7257
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0026,
+          "min": -0.0026
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5170,
+        "area_px": 63460,
+        "density": 0.08147,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 299,
+    "content": {
+      "n_tokens": 158,
+      "mean": -0.0006,
+      "min": -0.0526,
+      "p05": -0.0008,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0526,
+          "text": "§"
+        },
+        {
+          "index": 159,
+          "token_id": 15629,
+          "logprob": -0.0299,
+          "text": " functional"
+        },
+        {
+          "index": 97,
+          "token_id": 279,
+          "logprob": -0.0042,
+          "text": " the"
+        },
+        {
+          "index": 85,
+          "token_id": 22573,
+          "logprob": -0.0022,
+          "text": " ensuring"
+        },
+        {
+          "index": 67,
+          "token_id": 7354,
+          "logprob": -0.0021,
+          "text": " steps"
+        },
+        {
+          "index": 158,
+          "token_id": 279,
+          "logprob": -0.0017,
+          "text": " the"
+        },
+        {
+          "index": 142,
+          "token_id": 17851,
+          "logprob": -0.0009,
+          "text": "§"
+        },
+        {
+          "index": 175,
+          "token_id": 476,
+          "logprob": -0.0008,
+          "text": " or"
+        },
+        {
+          "index": 252,
+          "token_id": 17851,
+          "logprob": -0.0008,
+          "text": "§"
+        },
+        {
+          "index": 51,
+          "token_id": 31367,
+          "logprob": -0.0005,
+          "text": " Relations"
+        },
+        {
+          "index": 174,
+          "token_id": 10223,
+          "logprob": -0.0003,
+          "text": " served"
+        },
+        {
+          "index": 193,
+          "token_id": 48202,
+          "logprob": -0.0002,
+          "text": "MH"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 83,
+      "mean": -0.3012,
+      "min": -1.7257,
+      "p05": -1.4952,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 283,
+          "token_id": 20,
+          "logprob": -1.7257,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.6686,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.524,
+          "text": "7"
+        },
+        {
+          "index": 277,
+          "token_id": 21,
+          "logprob": -1.4997,
+          "text": "6"
+        },
+        {
+          "index": 114,
+          "token_id": 21,
+          "logprob": -1.4977,
+          "text": "6"
+        },
+        {
+          "index": 119,
+          "token_id": 20,
+          "logprob": -1.4722,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -1.4597,
+          "text": "6"
+        },
+        {
+          "index": 224,
+          "token_id": 17,
+          "logprob": -1.4075,
+          "text": "2"
+        },
+        {
+          "index": 235,
+          "token_id": 17,
+          "logprob": -1.3967,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.3664,
+          "text": "1"
+        },
+        {
+          "index": 289,
+          "token_id": 21,
+          "logprob": -1.3511,
+          "text": "6"
+        },
+        {
+          "index": 130,
+          "token_id": 18,
+          "logprob": -1.3355,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 299,
+      "mean": -0.0844,
+      "min": -1.7257,
+      "p05": -0.9675,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 248.82,
+    "std": 30.95,
+    "dark_fraction": 0.02355
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 50873,
+    "covered_px": 50873,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

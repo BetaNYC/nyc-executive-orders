@@ -1,0 +1,324 @@
+{
+  "page": 6,
+  "source_image": "page_0006.png",
+  "elements": [
+    {
+      "bbox": [
+        191,
+        322,
+        1505,
+        434
+      ],
+      "category": "Text",
+      "text": "No. 18, dated September 19, 1990, hereby are repealed, and the Committee on the Judiciary established thereunder hereby is abolished.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3123,
+          "min": -1.4169
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 35,
+          "mean": -0.0042,
+          "min": -0.1443
+        }
+      },
+      "ink": {
+        "ink_px": 10966,
+        "area_px": 144704,
+        "density": 0.07578,
+        "chars": 133,
+        "chars_per_1k_ink": 12.13
+      }
+    },
+    {
+      "bbox": [
+        390,
+        476,
+        1420,
+        511
+      ],
+      "category": "Text",
+      "text": "Section 11. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2697,
+          "min": -1.1802
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0213,
+          "min": -0.0213
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0064,
+          "min": -0.077
+        }
+      },
+      "ink": {
+        "ink_px": 6365,
+        "area_px": 36936,
+        "density": 0.17233,
+        "chars": 69,
+        "chars_per_1k_ink": 10.84
+      }
+    },
+    {
+      "bbox": [
+        1012,
+        668,
+        1325,
+        740
+      ],
+      "category": "Text",
+      "text": "Rudolph W. Giuliani\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2874,
+          "min": -1.5938
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2326,
+          "min": -0.2326
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0086,
+          "min": -0.0437
+        }
+      },
+      "ink": {
+        "ink_px": 2610,
+        "area_px": 22464,
+        "density": 0.11619,
+        "chars": 25,
+        "chars_per_1k_ink": 9.58
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 167,
+    "content": {
+      "n_tokens": 58,
+      "mean": -0.0054,
+      "min": -0.1443,
+      "p05": -0.0273,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 63,
+          "token_id": 9555,
+          "logprob": -0.1443,
+          "text": " established"
+        },
+        {
+          "index": 110,
+          "token_id": 46923,
+          "logprob": -0.077,
+          "text": " Effective"
+        },
+        {
+          "index": 161,
+          "token_id": 88050,
+          "logprob": -0.0437,
+          "text": " Giuliani"
+        },
+        {
+          "index": 156,
+          "token_id": 49,
+          "logprob": -0.0244,
+          "text": "R"
+        },
+        {
+          "index": 105,
+          "token_id": 9620,
+          "logprob": -0.0179,
+          "text": "Section"
+        },
+        {
+          "index": 69,
+          "token_id": 1189,
+          "logprob": -0.001,
+          "text": ".\""
+        },
+        {
+          "index": 119,
+          "token_id": 1189,
+          "logprob": -0.0005,
+          "text": ".\""
+        },
+        {
+          "index": 109,
+          "token_id": 13,
+          "logprob": -0.0005,
+          "text": "."
+        },
+        {
+          "index": 35,
+          "token_id": 2753,
+          "logprob": -0.0003,
+          "text": "No"
+        },
+        {
+          "index": 162,
+          "token_id": 1699,
+          "logprob": -0.0002,
+          "text": "\\n"
+        },
+        {
+          "index": 163,
+          "token_id": 85574,
+          "logprob": -0.0002,
+          "text": "Mayor"
+        },
+        {
+          "index": 59,
+          "token_id": 10341,
+          "logprob": -0.0001,
+          "text": " Committee"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 61,
+      "mean": -0.2796,
+      "min": -1.5938,
+      "p05": -1.3347,
+      "p50": -0.0005,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 128,
+          "token_id": 17,
+          "logprob": -1.5938,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.4169,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.3455,
+          "text": "1"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.3347,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.3224,
+          "text": "2"
+        },
+        {
+          "index": 139,
+          "token_id": 20,
+          "logprob": -1.2752,
+          "text": "5"
+        },
+        {
+          "index": 82,
+          "token_id": 21,
+          "logprob": -1.1802,
+          "text": "6"
+        },
+        {
+          "index": 133,
+          "token_id": 23,
+          "logprob": -1.0856,
+          "text": "8"
+        },
+        {
+          "index": 93,
+          "token_id": 16,
+          "logprob": -1.0771,
+          "text": "1"
+        },
+        {
+          "index": 77,
+          "token_id": 15,
+          "logprob": -0.9155,
+          "text": "0"
+        },
+        {
+          "index": 88,
+          "token_id": 15,
+          "logprob": -0.8537,
+          "text": "0"
+        },
+        {
+          "index": 143,
+          "token_id": 19,
+          "logprob": -0.5865,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 167,
+      "mean": -0.1077,
+      "min": -1.5938,
+      "p05": -1.0286,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 251.54,
+    "std": 27.17,
+    "dark_fraction": 0.01285
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 27767,
+    "covered_px": 19941,
+    "covered_fraction": 0.71815,
+    "uncovered_px": 7826,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          972,
+          504,
+          1496,
+          720
+        ],
+        "ink_px": 7744
+      }
+    ],
+    "cell_px": 24
+  }
+}

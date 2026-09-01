@@ -1,0 +1,382 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        502,
+        291,
+        1382,
+        718
+      ],
+      "category": "Text",
+      "text": "budgets, the Police Department, the Fire Department, the\nDepartment of Investigation, the Law Department, the\nAdministration for Children's Services, the Office of Management\nand Budget, the Criminal Justice Coordinator, the Office of\nEmergency Management and the Office of Communications shall\nreport directly to the Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3761,
+          "min": -1.5858
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0061,
+          "min": -0.0061
+        },
+        "text": {
+          "n_tokens": 61,
+          "mean": -0.0049,
+          "min": -0.2395
+        }
+      },
+      "ink": {
+        "ink_px": 16495,
+        "area_px": 373602,
+        "density": 0.04415,
+        "chars": 324,
+        "chars_per_1k_ink": 19.64
+      }
+    },
+    {
+      "bbox": [
+        400,
+        748,
+        1388,
+        943
+      ],
+      "category": "List-item",
+      "text": "b. Advise and assist the Mayor regarding all policies, planning and programs designed to implement and enhance the fiscal operations and financial and business management practices of the City.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3595,
+          "min": -1.7752
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0011,
+          "min": -0.0022
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.037,
+          "min": -0.4757
+        }
+      },
+      "ink": {
+        "ink_px": 8996,
+        "area_px": 191880,
+        "density": 0.04688,
+        "chars": 193,
+        "chars_per_1k_ink": 21.45
+      }
+    },
+    {
+      "bbox": [
+        402,
+        975,
+        1379,
+        1247
+      ],
+      "category": "List-item",
+      "text": "c. Supervise and coordinate the operations of the Mayor's Office of\nOperations, the Office of City Legislative Affairs, the Office of\nState Legislative Affairs, and the Mayor's Office in Washington,\nD.C.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3227,
+          "min": -1.5839
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0011,
+          "min": -0.0023
+        },
+        "text": {
+          "n_tokens": 44,
+          "mean": -0.0107,
+          "min": -0.2147
+        }
+      },
+      "ink": {
+        "ink_px": 8780,
+        "area_px": 264656,
+        "density": 0.03318,
+        "chars": 203,
+        "chars_per_1k_ink": 23.12
+      }
+    },
+    {
+      "bbox": [
+        404,
+        1282,
+        1385,
+        1558
+      ],
+      "category": "List-item",
+      "text": "d. Serve as the Mayor's representative, either directly or through the Offices of City and State Legislative Affairs, on, and maintain liaison with, regional bodies and intergovernmental agencies operating within the New York metropolitan region.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.286,
+          "min": -1.4106
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 44,
+          "mean": -0.002,
+          "min": -0.0624
+        }
+      },
+      "ink": {
+        "ink_px": 9053,
+        "area_px": 268675,
+        "density": 0.03369,
+        "chars": 246,
+        "chars_per_1k_ink": 27.17
+      }
+    },
+    {
+      "bbox": [
+        406,
+        1589,
+        1379,
+        1870
+      ],
+      "category": "List-item",
+      "text": "e. Maintain liaison, either directly or through the Mayor's Office in Washington, D.C., with the United States Conference of Mayors, the National League of Cities, the New York Conference of Mayors and other similar bodies.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2738,
+          "min": -1.3708
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0011,
+          "min": -0.0022
+        },
+        "text": {
+          "n_tokens": 46,
+          "mean": -0.0107,
+          "min": -0.3872
+        }
+      },
+      "ink": {
+        "ink_px": 8095,
+        "area_px": 271320,
+        "density": 0.02984,
+        "chars": 223,
+        "chars_per_1k_ink": 27.55
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 414,
+    "content": {
+      "n_tokens": 228,
+      "mean": -0.0113,
+      "min": -0.4757,
+      "p05": -0.0399,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 146,
+          "token_id": 7468,
+          "logprob": -0.4757,
+          "text": " programs"
+        },
+        {
+          "index": 380,
+          "token_id": 6515,
+          "logprob": -0.3872,
+          "text": " Washington"
+        },
+        {
+          "index": 133,
+          "token_id": 13,
+          "logprob": -0.291,
+          "text": "."
+        },
+        {
+          "index": 132,
+          "token_id": 65,
+          "logprob": -0.2798,
+          "text": "b"
+        },
+        {
+          "index": 47,
+          "token_id": 1699,
+          "logprob": -0.2395,
+          "text": "\\n"
+        },
+        {
+          "index": 244,
+          "token_id": 727,
+          "logprob": -0.2147,
+          "text": ".C"
+        },
+        {
+          "index": 164,
+          "token_id": 1189,
+          "logprob": -0.1614,
+          "text": ".\""
+        },
+        {
+          "index": 216,
+          "token_id": 1699,
+          "logprob": -0.092,
+          "text": "\\n"
+        },
+        {
+          "index": 383,
+          "token_id": 727,
+          "logprob": -0.0733,
+          "text": ".C"
+        },
+        {
+          "index": 217,
+          "token_id": 35120,
+          "logprob": -0.0694,
+          "text": "Operations"
+        },
+        {
+          "index": 298,
+          "token_id": 86538,
+          "logprob": -0.0624,
+          "text": " Offices"
+        },
+        {
+          "index": 243,
+          "token_id": 35,
+          "logprob": -0.0436,
+          "text": "D"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 109,
+      "mean": -0.2954,
+      "min": -1.7752,
+      "p05": -1.4337,
+      "p50": -0.0008,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 119,
+          "token_id": 18,
+          "logprob": -1.7752,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.5858,
+          "text": "2"
+        },
+        {
+          "index": 177,
+          "token_id": 20,
+          "logprob": -1.5839,
+          "text": "5"
+        },
+        {
+          "index": 189,
+          "token_id": 22,
+          "logprob": -1.4825,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 17,
+          "logprob": -1.4746,
+          "text": "2"
+        },
+        {
+          "index": 172,
+          "token_id": 17,
+          "logprob": -1.449,
+          "text": "2"
+        },
+        {
+          "index": 259,
+          "token_id": 17,
+          "logprob": -1.4106,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 23,
+          "logprob": -1.3865,
+          "text": "8"
+        },
+        {
+          "index": 353,
+          "token_id": 15,
+          "logprob": -1.3708,
+          "text": "0"
+        },
+        {
+          "index": 265,
+          "token_id": 20,
+          "logprob": -1.3604,
+          "text": "5"
+        },
+        {
+          "index": 253,
+          "token_id": 19,
+          "logprob": -1.3248,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.3059,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 414,
+      "mean": -0.0842,
+      "min": -1.7752,
+      "p05": -0.6217,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 248.38,
+    "std": 35.42,
+    "dark_fraction": 0.02383
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 51478,
+    "covered_px": 51419,
+    "covered_fraction": 0.99885,
+    "uncovered_px": 59,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        203,
+        214,
+        1509,
+        644
+      ],
+      "category": "Text",
+      "text": "§ 1. Pursuant to the powers vested in the Mayor of the City of New York by the laws of the State of New York and the City of New York, including but not limited to the New York Executive Law, the Charter and Administrative Code of the City of New York, and the common law authority to protect the public in the event of an emergency, I hereby extend the State of Emergency first declared in Executive Order 163 dated October 28, 2012, and subsequently extended most recently in Emergency Executive Order 75 dated October 18, 2014.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3761,
+          "min": -1.7831
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.055,
+          "min": -0.055
+        },
+        "text": {
+          "n_tokens": 126,
+          "mean": -0.0006,
+          "min": -0.0409
+        }
+      },
+      "ink": {
+        "ink_px": 31225,
+        "area_px": 487084,
+        "density": 0.06411,
+        "chars": 530,
+        "chars_per_1k_ink": 16.97
+      }
+    },
+    {
+      "bbox": [
+        212,
+        678,
+        1513,
+        951
+      ],
+      "category": "Text",
+      "text": "§ 2. This State of Emergency has been extended because the damage from the storm, including widespread structural damage and debris, and the continued disruption of public transportation and other vital services such as heat, hot water and electricity in some areas, creates conditions that imperil the public safety.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3268,
+          "min": -1.4834
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 57,
+          "mean": -0.0002,
+          "min": -0.0045
+        }
+      },
+      "ink": {
+        "ink_px": 22051,
+        "area_px": 349520,
+        "density": 0.06309,
+        "chars": 317,
+        "chars_per_1k_ink": 14.38
+      }
+    },
+    {
+      "bbox": [
+        219,
+        985,
+        1518,
+        1105
+      ],
+      "category": "Text",
+      "text": "§ 3. This Proclamation shall be effective immediately. It shall remain in effect for thirty (30) days unless it is terminated or modified at an earlier date.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.318,
+          "min": -1.5719
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 35,
+          "mean": -0.0001,
+          "min": -0.0018
+        }
+      },
+      "ink": {
+        "ink_px": 10473,
+        "area_px": 154759,
+        "density": 0.06767,
+        "chars": 157,
+        "chars_per_1k_ink": 14.99
+      }
+    },
+    {
+      "bbox": [
+        924,
+        1212,
+        1344,
+        1370
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3391,
+          "min": -1.7042
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0188,
+          "min": -0.0188
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 4866,
+        "area_px": 66202,
+        "density": 0.0735,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 359,
+    "content": {
+      "n_tokens": 218,
+      "mean": -0.0004,
+      "min": -0.0409,
+      "p05": -0.0002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0409,
+          "text": "§"
+        },
+        {
+          "index": 143,
+          "token_id": 31608,
+          "logprob": -0.0182,
+          "text": " Emergency"
+        },
+        {
+          "index": 56,
+          "token_id": 6872,
+          "logprob": -0.0162,
+          "text": " laws"
+        },
+        {
+          "index": 247,
+          "token_id": 16772,
+          "logprob": -0.0045,
+          "text": " imper"
+        },
+        {
+          "index": 196,
+          "token_id": 17851,
+          "logprob": -0.0031,
+          "text": "§"
+        },
+        {
+          "index": 307,
+          "token_id": 26127,
+          "logprob": -0.0018,
+          "text": " thirty"
+        },
+        {
+          "index": 289,
+          "token_id": 17851,
+          "logprob": -0.0013,
+          "text": "§"
+        },
+        {
+          "index": 212,
+          "token_id": 13458,
+          "logprob": -0.0008,
+          "text": " storm"
+        },
+        {
+          "index": 244,
+          "token_id": 11450,
+          "logprob": -0.0004,
+          "text": " creates"
+        },
+        {
+          "index": 160,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        },
+        {
+          "index": 248,
+          "token_id": 321,
+          "logprob": -0.0002,
+          "text": "il"
+        },
+        {
+          "index": 111,
+          "token_id": 13036,
+          "logprob": -0.0002,
+          "text": " extend"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 83,
+      "mean": -0.3242,
+      "min": -1.7831,
+      "p05": -1.5662,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.7831,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.752,
+          "text": "3"
+        },
+        {
+          "index": 343,
+          "token_id": 19,
+          "logprob": -1.7042,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.5981,
+          "text": "4"
+        },
+        {
+          "index": 277,
+          "token_id": 20,
+          "logprob": -1.5719,
+          "text": "5"
+        },
+        {
+          "index": 265,
+          "token_id": 20,
+          "logprob": -1.5143,
+          "text": "5"
+        },
+        {
+          "index": 179,
+          "token_id": 18,
+          "logprob": -1.4834,
+          "text": "3"
+        },
+        {
+          "index": 331,
+          "token_id": 19,
+          "logprob": -1.4464,
+          "text": "4"
+        },
+        {
+          "index": 337,
+          "token_id": 17,
+          "logprob": -1.4398,
+          "text": "2"
+        },
+        {
+          "index": 168,
+          "token_id": 17,
+          "logprob": -1.3985,
+          "text": "2"
+        },
+        {
+          "index": 184,
+          "token_id": 16,
+          "logprob": -1.3522,
+          "text": "1"
+        },
+        {
+          "index": 173,
+          "token_id": 23,
+          "logprob": -1.3221,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 359,
+      "mean": -0.0754,
+      "min": -1.7831,
+      "p05": -0.494,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 246.94,
+    "std": 35.34,
+    "dark_fraction": 0.03183
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 68759,
+    "covered_px": 68615,
+    "covered_fraction": 0.99791,
+    "uncovered_px": 144,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

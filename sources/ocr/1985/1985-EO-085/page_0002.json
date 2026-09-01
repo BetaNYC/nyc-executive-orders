@@ -1,0 +1,324 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        553,
+        393,
+        1278,
+        914
+      ],
+      "category": "Text",
+      "text": "(b) employees of a public corporation or public authority operating in whole within the City of New York other than employees who are included in a unit of employees covered by a collective bargaining agreement, provided the governing body of such public corporation or public authority adopts the plan by appropriate resolution or other legal action and such participation is approved by the Board. Employees of such public corporation or public authority who are included in a unit of employees covered by a collective bargaining agreement may participate in the plan if the collective bargaining agreement covering such employees provides for coverage under the plan.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2926,
+          "min": -1.5455
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.079,
+          "min": -0.079
+        },
+        "text": {
+          "n_tokens": 110,
+          "mean": -0.001,
+          "min": -0.055
+        }
+      },
+      "ink": {
+        "ink_px": 68114,
+        "area_px": 379575,
+        "density": 0.17945,
+        "chars": 670,
+        "chars_per_1k_ink": 9.84
+      }
+    },
+    {
+      "bbox": [
+        307,
+        951,
+        1423,
+        1013
+      ],
+      "category": "Text",
+      "text": "Section 2. Effective Date. This Executive Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2591,
+          "min": -1.4542
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0013,
+          "min": -0.0013
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.008,
+          "min": -0.0614
+        }
+      },
+      "ink": {
+        "ink_px": 8636,
+        "area_px": 70182,
+        "density": 0.12305,
+        "chars": 78,
+        "chars_per_1k_ink": 9.03
+      }
+    },
+    {
+      "bbox": [
+        1109,
+        1215,
+        1339,
+        1271
+      ],
+      "category": "Text",
+      "text": "Edward I. Koch\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 22,
+          "mean": -0.2145,
+          "min": -0.9898
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0066,
+          "min": -0.0066
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0264,
+          "min": -0.1847
+        }
+      },
+      "ink": {
+        "ink_px": 2513,
+        "area_px": 13110,
+        "density": 0.19169,
+        "chars": 20,
+        "chars_per_1k_ink": 7.96
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 244,
+    "content": {
+      "n_tokens": 133,
+      "mean": -0.0033,
+      "min": -0.1847,
+      "p05": -0.0067,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 233,
+          "token_id": 84501,
+          "logprob": -0.1847,
+          "text": "Edward"
+        },
+        {
+          "index": 180,
+          "token_id": 9620,
+          "logprob": -0.0614,
+          "text": "Section"
+        },
+        {
+          "index": 44,
+          "token_id": 11198,
+          "logprob": -0.055,
+          "text": " authority"
+        },
+        {
+          "index": 101,
+          "token_id": 13,
+          "logprob": -0.0486,
+          "text": "."
+        },
+        {
+          "index": 184,
+          "token_id": 46923,
+          "logprob": -0.0408,
+          "text": " Effective"
+        },
+        {
+          "index": 239,
+          "token_id": 3022,
+          "logprob": -0.0238,
+          "text": "AY"
+        },
+        {
+          "index": 193,
+          "token_id": 7069,
+          "logprob": -0.0143,
+          "text": " immediately"
+        },
+        {
+          "index": 34,
+          "token_id": 11993,
+          "logprob": -0.0016,
+          "text": " \"("
+        },
+        {
+          "index": 73,
+          "token_id": 279,
+          "logprob": -0.0015,
+          "text": " the"
+        },
+        {
+          "index": 183,
+          "token_id": 13,
+          "logprob": -0.0013,
+          "text": "."
+        },
+        {
+          "index": 234,
+          "token_id": 358,
+          "logprob": -0.0013,
+          "text": " I"
+        },
+        {
+          "index": 194,
+          "token_id": 1189,
+          "logprob": -0.0012,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 64,
+      "mean": -0.2429,
+      "min": -1.5455,
+      "p05": -1.2561,
+      "p50": -0.0007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.5455,
+          "text": "3"
+        },
+        {
+          "index": 151,
+          "token_id": 22,
+          "logprob": -1.4542,
+          "text": "7"
+        },
+        {
+          "index": 162,
+          "token_id": 18,
+          "logprob": -1.3054,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.267,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.1944,
+          "text": "4"
+        },
+        {
+          "index": 168,
+          "token_id": 18,
+          "logprob": -1.1789,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 23,
+          "logprob": -1.1351,
+          "text": "8"
+        },
+        {
+          "index": 221,
+          "token_id": 16,
+          "logprob": -0.9898,
+          "text": "1"
+        },
+        {
+          "index": 203,
+          "token_id": 24,
+          "logprob": -0.9635,
+          "text": "9"
+        },
+        {
+          "index": 209,
+          "token_id": 20,
+          "logprob": -0.9414,
+          "text": "5"
+        },
+        {
+          "index": 156,
+          "token_id": 16,
+          "logprob": -0.9243,
+          "text": "1"
+        },
+        {
+          "index": 215,
+          "token_id": 24,
+          "logprob": -0.774,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 244,
+      "mean": -0.067,
+      "min": -1.5455,
+      "p05": -0.3545,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 245.44,
+    "std": 45.67,
+    "dark_fraction": 0.03496
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      653.0,
+      820.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      217,
+      273,
+      1596,
+      2004
+    ],
+    "ink_px": 83452,
+    "covered_px": 79263,
+    "covered_fraction": 0.9498,
+    "uncovered_px": 4189,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          961,
+          1113,
+          1513,
+          1233
+        ],
+        "ink_px": 3805
+      }
+    ],
+    "cell_px": 24
+  }
+}

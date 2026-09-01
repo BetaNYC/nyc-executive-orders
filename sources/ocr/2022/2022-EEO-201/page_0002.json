@@ -1,0 +1,309 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        194,
+        200,
+        1498,
+        314
+      ],
+      "category": "Text",
+      "text": "§ 2. Notwithstanding section one of this Order, section 2 of Emergency Executive Order No. 7, dated January 9, 2022, relating to Board of Correction minimum standard § 6-05, concerning de-escalation units, is not extended as of September 12, 2022.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.358,
+          "min": -1.7193
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0143,
+          "min": -0.0143
+        },
+        "text": {
+          "n_tokens": 72,
+          "mean": -0.0003,
+          "min": -0.0098
+        }
+      },
+      "ink": {
+        "ink_px": 7245,
+        "area_px": 63063,
+        "density": 0.11489,
+        "chars": 247,
+        "chars_per_1k_ink": 34.09
+      }
+    },
+    {
+      "bbox": [
+        194,
+        355,
+        1498,
+        428
+      ],
+      "category": "Text",
+      "text": "§ 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2557,
+          "min": -1.4496
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 34,
+          "mean": -0.0001,
+          "min": -0.002
+        }
+      },
+      "ink": {
+        "ink_px": 14498,
+        "area_px": 93951,
+        "density": 0.15431,
+        "chars": 166,
+        "chars_per_1k_ink": 11.45
+      }
+    },
+    {
+      "bbox": [
+        988,
+        485,
+        1323,
+        651
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3242,
+          "min": -1.5273
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0026,
+          "min": -0.0026
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5864,
+        "area_px": 55444,
+        "density": 0.10576,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 209,
+    "content": {
+      "n_tokens": 106,
+      "mean": -0.0002,
+      "min": -0.0098,
+      "p05": -0.0009,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 54,
+          "token_id": 2308,
+          "logprob": -0.0098,
+          "text": " No"
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0048,
+          "text": "§"
+        },
+        {
+          "index": 158,
+          "token_id": 2456,
+          "logprob": -0.002,
+          "text": " effect"
+        },
+        {
+          "index": 86,
+          "token_id": 12,
+          "logprob": -0.0016,
+          "text": "-"
+        },
+        {
+          "index": 51,
+          "token_id": 31608,
+          "logprob": -0.0016,
+          "text": " Emergency"
+        },
+        {
+          "index": 142,
+          "token_id": 17851,
+          "logprob": -0.0011,
+          "text": "§"
+        },
+        {
+          "index": 147,
+          "token_id": 31608,
+          "logprob": -0.0003,
+          "text": " Emergency"
+        },
+        {
+          "index": 76,
+          "token_id": 5297,
+          "logprob": -0.0002,
+          "text": " standard"
+        },
+        {
+          "index": 87,
+          "token_id": 81082,
+          "logprob": -0.0001,
+          "text": "escal"
+        },
+        {
+          "index": 77,
+          "token_id": 16625,
+          "logprob": -0.0001,
+          "text": " §"
+        },
+        {
+          "index": 151,
+          "token_id": 1896,
+          "logprob": -0.0,
+          "text": " take"
+        },
+        {
+          "index": 39,
+          "token_id": 2806,
+          "logprob": -0.0,
+          "text": " Not"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.2973,
+      "min": -1.7193,
+      "p05": -1.4454,
+      "p50": -0.0013,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.7193,
+          "text": "4"
+        },
+        {
+          "index": 194,
+          "token_id": 18,
+          "logprob": -1.5273,
+          "text": "3"
+        },
+        {
+          "index": 119,
+          "token_id": 20,
+          "logprob": -1.4496,
+          "text": "5"
+        },
+        {
+          "index": 183,
+          "token_id": 23,
+          "logprob": -1.4452,
+          "text": "8"
+        },
+        {
+          "index": 188,
+          "token_id": 20,
+          "logprob": -1.4075,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.3993,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 23,
+          "logprob": -1.2541,
+          "text": "8"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.2448,
+          "text": "0"
+        },
+        {
+          "index": 199,
+          "token_id": 16,
+          "logprob": -1.2078,
+          "text": "1"
+        },
+        {
+          "index": 130,
+          "token_id": 23,
+          "logprob": -1.0692,
+          "text": "8"
+        },
+        {
+          "index": 125,
+          "token_id": 23,
+          "logprob": -1.0465,
+          "text": "8"
+        },
+        {
+          "index": 114,
+          "token_id": 19,
+          "logprob": -0.912,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 209,
+      "mean": -0.0856,
+      "min": -1.7193,
+      "p05": -0.9927,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.64,
+    "std": 22.53,
+    "dark_fraction": 0.01278
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 27607,
+    "covered_px": 27607,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

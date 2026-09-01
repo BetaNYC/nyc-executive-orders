@@ -1,0 +1,346 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        85,
+        54,
+        955,
+        80
+      ],
+      "category": "Page-header",
+      "text": "DEC-17 98 12:23 FROM:DEPUTY COUNSELS OFC. 212-788-3269",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 15,
+          "mean": -0.3876,
+          "min": -1.4194
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0004,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 38,
+          "mean": -0.02,
+          "min": -0.3144
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        1099,
+        61,
+        1335,
+        84
+      ],
+      "category": "Page-header",
+      "text": "TO:212 788 1621",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2706,
+          "min": -1.3292
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0035,
+          "min": -0.0067
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0025,
+          "min": -0.0206
+        }
+      },
+      "ink": null
+    },
+    {
+      "bbox": [
+        451,
+        275,
+        1056,
+        327
+      ],
+      "category": "Text",
+      "text": "§ 3. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2855,
+          "min": -1.3737
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0331,
+          "min": -0.0331
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0012,
+          "min": -0.0094
+        }
+      },
+      "ink": {
+        "ink_px": 3303,
+        "area_px": 32012,
+        "density": 0.10318,
+        "chars": 46,
+        "chars_per_1k_ink": 13.93
+      }
+    },
+    {
+      "bbox": [
+        967,
+        512,
+        1252,
+        588
+      ],
+      "category": "Text",
+      "text": "Rudolph W. Giuliani\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3504,
+          "min": -1.5263
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0957,
+          "min": -0.0957
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0012,
+          "min": -0.0051
+        }
+      },
+      "ink": {
+        "ink_px": 2323,
+        "area_px": 21660,
+        "density": 0.10725,
+        "chars": 25,
+        "chars_per_1k_ink": 10.76
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 211,
+    "content": {
+      "n_tokens": 71,
+      "mean": -0.0115,
+      "min": -0.3144,
+      "p05": -0.033,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 47,
+          "token_id": 1150,
+          "logprob": -0.3144,
+          "text": "DE"
+        },
+        {
+          "index": 55,
+          "token_id": 34,
+          "logprob": -0.2253,
+          "text": "C"
+        },
+        {
+          "index": 54,
+          "token_id": 3008,
+          "logprob": -0.1446,
+          "text": " OF"
+        },
+        {
+          "index": 52,
+          "token_id": 925,
+          "logprob": -0.0454,
+          "text": "SE"
+        },
+        {
+          "index": 107,
+          "token_id": 17,
+          "logprob": -0.0206,
+          "text": "2"
+        },
+        {
+          "index": 36,
+          "token_id": 220,
+          "logprob": -0.0165,
+          "text": " "
+        },
+        {
+          "index": 154,
+          "token_id": 17851,
+          "logprob": -0.0094,
+          "text": "§"
+        },
+        {
+          "index": 200,
+          "token_id": 49,
+          "logprob": -0.0051,
+          "text": "R"
+        },
+        {
+          "index": 114,
+          "token_id": 220,
+          "logprob": -0.0031,
+          "text": " "
+        },
+        {
+          "index": 46,
+          "token_id": 25,
+          "logprob": -0.0031,
+          "text": ":"
+        },
+        {
+          "index": 105,
+          "token_id": 5207,
+          "logprob": -0.0028,
+          "text": "TO"
+        },
+        {
+          "index": 164,
+          "token_id": 1189,
+          "logprob": -0.0026,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 77,
+      "mean": -0.2974,
+      "min": -1.5263,
+      "p05": -1.3783,
+      "p50": -0.0042,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 177,
+          "token_id": 17,
+          "logprob": -1.5263,
+          "text": "2"
+        },
+        {
+          "index": 172,
+          "token_id": 22,
+          "logprob": -1.4515,
+          "text": "7"
+        },
+        {
+          "index": 6,
+          "token_id": 20,
+          "logprob": -1.4194,
+          "text": "5"
+        },
+        {
+          "index": 15,
+          "token_id": 20,
+          "logprob": -1.3967,
+          "text": "5"
+        },
+        {
+          "index": 137,
+          "token_id": 21,
+          "logprob": -1.3737,
+          "text": "6"
+        },
+        {
+          "index": 142,
+          "token_id": 22,
+          "logprob": -1.3494,
+          "text": "7"
+        },
+        {
+          "index": 88,
+          "token_id": 20,
+          "logprob": -1.3292,
+          "text": "5"
+        },
+        {
+          "index": 183,
+          "token_id": 17,
+          "logprob": -1.3018,
+          "text": "2"
+        },
+        {
+          "index": 10,
+          "token_id": 19,
+          "logprob": -1.298,
+          "text": "4"
+        },
+        {
+          "index": 126,
+          "token_id": 16,
+          "logprob": -1.2345,
+          "text": "1"
+        },
+        {
+          "index": 131,
+          "token_id": 20,
+          "logprob": -1.2056,
+          "text": "5"
+        },
+        {
+          "index": 188,
+          "token_id": 23,
+          "logprob": -1.1271,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 211,
+      "mean": -0.113,
+      "min": -1.5263,
+      "p05": -1.1663,
+      "p50": -0.0001,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 253.1,
+    "std": 20.39,
+    "dark_fraction": 0.00712
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 15384,
+    "covered_px": 5626,
+    "covered_fraction": 0.3657,
+    "uncovered_px": 9758,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          900,
+          288,
+          1496,
+          552
+        ],
+        "ink_px": 9260
+      }
+    ],
+    "cell_px": 24
+  }
+}

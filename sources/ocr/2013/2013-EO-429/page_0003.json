@@ -1,0 +1,275 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        204,
+        204,
+        1492,
+        316
+      ],
+      "category": "Text",
+      "text": "§ 4. Effective Date. This Order shall take effect immediately, provided that in the case of DOE, this Order shall take effect upon the written concurrence of the Chancellor of DOE or his or her designee.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.305,
+          "min": -1.5468
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0104,
+          "min": -0.0104
+        },
+        "text": {
+          "n_tokens": 44,
+          "mean": -0.0046,
+          "min": -0.1637
+        }
+      },
+      "ink": {
+        "ink_px": 4800,
+        "area_px": 65382,
+        "density": 0.07341,
+        "chars": 203,
+        "chars_per_1k_ink": 42.29
+      }
+    },
+    {
+      "bbox": [
+        912,
+        394,
+        1403,
+        546
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.371,
+          "min": -1.611
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0115,
+          "min": -0.0115
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 8076,
+        "area_px": 74970,
+        "density": 0.10772,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 112,
+    "content": {
+      "n_tokens": 44,
+      "mean": -0.0046,
+      "min": -0.1637,
+      "p05": -0.0037,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 39,
+          "token_id": 46923,
+          "logprob": -0.1637,
+          "text": " Effective"
+        },
+        {
+          "index": 54,
+          "token_id": 315,
+          "logprob": -0.0298,
+          "text": " of"
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0042,
+          "text": "§"
+        },
+        {
+          "index": 51,
+          "token_id": 304,
+          "logprob": -0.001,
+          "text": " in"
+        },
+        {
+          "index": 65,
+          "token_id": 3529,
+          "logprob": -0.0008,
+          "text": " conc"
+        },
+        {
+          "index": 38,
+          "token_id": 13,
+          "logprob": -0.0004,
+          "text": "."
+        },
+        {
+          "index": 55,
+          "token_id": 92057,
+          "logprob": -0.0001,
+          "text": " DOE"
+        },
+        {
+          "index": 60,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 76,
+          "token_id": 2884,
+          "logprob": -0.0001,
+          "text": " design"
+        },
+        {
+          "index": 45,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 36,
+          "token_id": 220,
+          "logprob": -0.0,
+          "text": " "
+        },
+        {
+          "index": 69,
+          "token_id": 46963,
+          "logprob": -0.0,
+          "text": " Chancellor"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 40,
+      "mean": -0.3217,
+      "min": -1.611,
+      "p05": -1.5292,
+      "p50": -0.0122,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 91,
+          "token_id": 19,
+          "logprob": -1.611,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.5468,
+          "text": "4"
+        },
+        {
+          "index": 97,
+          "token_id": 18,
+          "logprob": -1.5283,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.4539,
+          "text": "4"
+        },
+        {
+          "index": 86,
+          "token_id": 17,
+          "logprob": -1.3476,
+          "text": "2"
+        },
+        {
+          "index": 102,
+          "token_id": 21,
+          "logprob": -1.3229,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.3126,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -1.2983,
+          "text": "6"
+        },
+        {
+          "index": 89,
+          "token_id": 18,
+          "logprob": -0.6934,
+          "text": "3"
+        },
+        {
+          "index": 85,
+          "token_id": 16,
+          "logprob": -0.1971,
+          "text": "1"
+        },
+        {
+          "index": 95,
+          "token_id": 19,
+          "logprob": -0.1609,
+          "text": "4"
+        },
+        {
+          "index": 100,
+          "token_id": 20,
+          "logprob": -0.062,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 112,
+      "mean": -0.1177,
+      "min": -1.611,
+      "p05": -1.3172,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 253.35,
+    "std": 19.14,
+    "dark_fraction": 0.00596
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      264,
+      1496,
+      1936
+    ],
+    "ink_px": 12876,
+    "covered_px": 12876,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}
