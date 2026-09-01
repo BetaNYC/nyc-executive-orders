@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Local web UI for reviewing VLM OCR output for the pre-1974 volumes (sources/gpp/volumes/ocr/)",
+  "description": "Local web UI for reviewing VLM OCR output: the post-1974 documents (sources/ocr/) and the pre-1974 volumes (sources/gpp/volumes/ocr/)",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,6 +12,7 @@
   "dependencies": {
     "dompurify": "^3.2.4",
     "marked": "^15.0.7",
+    "pdfjs-dist": "^5.6.205",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
