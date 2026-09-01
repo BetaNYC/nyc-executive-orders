@@ -432,14 +432,43 @@ UNCOVERED_CELL_MIN_INK_FRACTION = 0.025
 DEFAULT_MIN_UNCOVERED_INK = 400
 # Most uncovered regions reported per page, largest first.
 MAX_UNCOVERED_REGIONS = 12
-# How far from a returned bbox a group of leftover ink still counts as that
-# element's own, in cells. Two things produce ink just outside a box that is not
-# dropped content: rules and dot leaders the model correctly declines to
-# transcribe, and a box drawn a shade tighter than the glyphs it holds. Both
-# report as a miss otherwise, and on this corpus that is the common case -- see
-# 1974-EO-001 page 1, where the rule above OFFICE OF THE MAYOR flood-fills into
-# one group whose bounding box straddles the title.
-UNCOVERED_NEAR_ELEMENT_PAD_CELLS = 1
+# A printed rule -- the line under a masthead, a column border, the box around a
+# City Record entry -- is ink the model correctly declines to transcribe, so it
+# reports as dropped content when nothing filters it out. On this corpus that is
+# the single commonest false `uncovered_ink`: measured over every flagged
+# post-1974 page, 30% of all uncovered ink is rules.
+#
+# Rule ink is deleted from the mask BEFORE regions are grouped, not classified
+# afterwards. That matters twice over. These rules are scanned, so they wander:
+# 1974-EO-002's masthead rule dips and waves across the page, and no test for a
+# straight line finds it. And an intact rule BRIDGES otherwise separate ink into
+# one connected group, whose bounding box then spans half the page -- most of it
+# text the model did box. Cutting the rule out first fixes both.
+#
+# Detection is local, which is what tolerates the wander: a window only
+# LINE_WINDOW_PX wide is examined at a time, and within it a rule is straight
+# enough. Two properties separate a rule from a line of type, measured over real
+# pages at 200 DPI:
+#
+#                      inked columns      mean stroke height
+#   printed rule       100%               2-5 px
+#   line of body type  65-94%             5-9 px
+#
+# A rule is continuous along its length and thin across it; type has gaps
+# between words and strokes twice as tall.
+LINE_WINDOW_PX = 144
+# Rows a rule's band may span inside one window. Absorbs the wander: 12px over
+# 144px of run is a slope no printed rule on these scans exceeds.
+LINE_BAND_PX = 12
+# The band must be inked across this share of the window -- continuity, which is
+# what type lacks.
+LINE_MIN_COLUMN_SHARE = 0.9
+# ...and its ink must be this thin per inked column, on average. Set between the
+# two populations above; the gap either side is the safety margin.
+LINE_MAX_STROKE_PX = 5.0
+# Ink the band must hold before it is judged at all, so a few stray pixels in a
+# blank window cannot qualify as a rule.
+LINE_MIN_BAND_INK = 100
 
 # MLX-ready quantizations published by mlx-community, in two families:
 # dots.mocr (newer -- stronger multilingual parsing + structured-graphics
@@ -795,39 +824,93 @@ def is_blank_or_bleedthrough(stats: dict, min_dark_fraction: float, min_contrast
     return stats["dark_fraction"] < min_dark_fraction and stats["std"] < min_contrast_std
 
 
-def boxes_overlap(a: tuple[float, float, float, float], b: tuple[float, float, float, float], pad: float) -> bool:
-    """Do two (x1, y1, x2, y2) rectangles touch, with b grown by pad on each
-    side? Corners are assumed already ordered."""
-    ax1, ay1, ax2, ay2 = a
-    bx1, by1, bx2, by2 = b
-    return ax1 < bx2 + pad and ax2 > bx1 - pad and ay1 < by2 + pad and ay2 > by1 - pad
+def _axis_rule_pixels(
+    mask: np.ndarray, window: int, band: int, column_share: float,
+    max_stroke: float, min_ink: int,
+) -> np.ndarray:
+    """Pixels belonging to near-horizontal rules. Transpose the mask for
+    vertical ones.
+
+    Every candidate band position in every window is tested, not just the
+    densest one: a page carries several rules at different heights, and looking
+    only at the strongest band per column strip finds one and misses the rest.
+    """
+    h, w = mask.shape
+    out = np.zeros_like(mask)
+    if h <= band or w < window:
+        return out
+    need = column_share * window
+    for x0 in range(0, w - window + 1, window // 3):
+        win = mask[:, x0:x0 + window]
+        # Inked rows per column, for the band starting at each row.
+        cumulative = np.concatenate([
+            np.zeros((1, window), np.int32),
+            np.cumsum(win, axis=0, dtype=np.int32),
+        ])
+        strip = cumulative[band:] - cumulative[:-band]
+        inked_columns = (strip > 0).sum(axis=1)
+        band_ink = strip.sum(axis=1)
+        stroke = np.where(
+            inked_columns > 0, band_ink / np.maximum(inked_columns, 1), np.inf
+        )
+        qualifies = (
+            (inked_columns >= need) & (stroke <= max_stroke) & (band_ink >= min_ink)
+        )
+        if not qualifies.any():
+            continue
+        # A row is rule ink if any qualifying band covers it.
+        starts = np.zeros(h + 1, np.int32)
+        starts[:qualifies.size] = qualifies
+        cumulative_starts = np.cumsum(starts)
+        rows = np.arange(h)
+        covered_rows = (
+            cumulative_starts[np.minimum(rows + 1, h)]
+            - cumulative_starts[np.maximum(rows - band + 1, 0)]
+        ) > 0
+        out[:, x0:x0 + window] |= win & covered_rows[:, None]
+    return out
+
+
+def rule_pixels(
+    mask: np.ndarray,
+    window: int = LINE_WINDOW_PX,
+    band: int = LINE_BAND_PX,
+    column_share: float = LINE_MIN_COLUMN_SHARE,
+    max_stroke: float = LINE_MAX_STROKE_PX,
+    min_ink: int = LINE_MIN_BAND_INK,
+) -> np.ndarray:
+    """The subset of `mask` that is printed rules, in either direction. See the
+    LINE_* constants for what counts as one and where the numbers come from."""
+    args = (window, band, column_share, max_stroke, min_ink)
+    horizontal = _axis_rule_pixels(mask, *args)
+    vertical = _axis_rule_pixels(np.ascontiguousarray(mask.T), *args).T
+    return horizontal | vertical
 
 
 def find_uncovered_regions(
-    uncovered: np.ndarray,
-    cell_px: int,
-    min_region_ink: int,
-    offset: tuple[int, int],
-    element_boxes: list[tuple[float, float, float, float]] = (),
-    near_pad_px: float = 0.0,
-) -> tuple[list[dict], int]:
+    uncovered: np.ndarray, cell_px: int, min_region_ink: int, offset: tuple[int, int]
+) -> list[dict]:
     """Group leftover ink pixels into a handful of reportable rectangles.
 
-    Works on a coarse grid rather than the pixel mask: a cell counts as inked
-    once it holds enough ink to be type rather than speckle, adjacent inked
-    cells are merged, and a merged group has to carry min_region_ink pixels
-    before it is worth anyone's attention. The result is "the model missed this
-    paragraph" instead of ten thousand loose pixels. Returned bboxes are in
-    full-page coordinates (offset is the ROI's top-left corner).
+    Grouping works on a coarse grid rather than the pixel mask: a cell counts as
+    inked once it holds enough ink to be type rather than speckle, adjacent
+    inked cells are merged, and a merged group has to carry min_region_ink
+    pixels before it is worth anyone's attention. The result is "the model
+    missed this paragraph" instead of ten thousand loose pixels.
 
-    A group that lands within near_pad_px of any box in element_boxes (also
-    full-page coordinates) is dropped rather than reported: the model did return
-    something there, so the ink is a rule, a leader, or a box drawn a shade
-    tight -- not content it silently skipped. Returns (regions, n_suppressed) so
-    a reviewer can see how much the filter removed."""
+    The REPORTED box is then shrunk back onto the group's own ink, not left as
+    the cell rectangle. A group is a chain of touching cells, so its cell
+    rectangle can be far larger than the ink inside it and swallow a page of
+    text the model did box -- which is exactly what a reviewer opening the flag
+    should not be shown. Callers are expected to have cut rule ink out of the
+    mask first (see rule_pixels), since an intact rule is what chains distant
+    ink into one such group in the first place.
+
+    Returned bboxes are in full-page coordinates; offset is the ROI's top-left
+    corner."""
     h, w = uncovered.shape
     if h == 0 or w == 0:
-        return [], 0
+        return []
     grid_h, grid_w = math.ceil(h / cell_px), math.ceil(w / cell_px)
     padded = np.zeros((grid_h * cell_px, grid_w * cell_px), dtype=np.int32)
     padded[:h, :w] = uncovered
@@ -838,7 +921,6 @@ def find_uncovered_regions(
     off_x, off_y = offset
     seen = np.zeros_like(hot, dtype=bool)
     regions = []
-    suppressed = 0
     for row in range(grid_h):
         for col in range(grid_w):
             if not hot[row, col] or seen[row, col]:
@@ -854,22 +936,45 @@ def find_uncovered_regions(
                     if 0 <= nr < grid_h and 0 <= nc < grid_w and hot[nr, nc] and not seen[nr, nc]:
                         seen[nr, nc] = True
                         stack.append((nr, nc))
-            rows, cols = [p[0] for p in group], [p[1] for p in group]
+            rows = np.array([p[0] for p in group])
+            cols = np.array([p[1] for p in group])
             ink_px = int(cells[rows, cols].sum())
             if ink_px < min_region_ink:
                 continue
-            bbox = [
-                off_x + min(cols) * cell_px,
-                off_y + min(rows) * cell_px,
-                off_x + min((max(cols) + 1) * cell_px, w),
-                off_y + min((max(rows) + 1) * cell_px, h),
-            ]
-            if any(boxes_overlap(bbox, el, near_pad_px) for el in element_boxes):
-                suppressed += 1
+            bbox = _tight_bbox(uncovered, rows, cols, cell_px, offset)
+            if bbox is None:
                 continue
             regions.append({"bbox": bbox, "ink_px": ink_px})
     regions.sort(key=lambda r: r["ink_px"], reverse=True)
-    return regions[:MAX_UNCOVERED_REGIONS], suppressed
+    return regions[:MAX_UNCOVERED_REGIONS]
+
+
+def _tight_bbox(
+    uncovered: np.ndarray, rows: np.ndarray, cols: np.ndarray, cell_px: int,
+    offset: tuple[int, int],
+) -> list[int] | None:
+    """The smallest full-page box holding this group's ink, and nothing else.
+
+    Restricted to the group's OWN cells before the extent is taken, so ink from
+    a neighbouring group that happens to fall inside the same cell rectangle
+    does not stretch the box."""
+    off_x, off_y = offset
+    r0, r1 = int(rows.min()), int(rows.max()) + 1
+    c0, c1 = int(cols.min()), int(cols.max()) + 1
+    owned = np.zeros((r1 - r0, c1 - c0), dtype=bool)
+    owned[rows - r0, cols - c0] = True
+    owned = np.kron(owned, np.ones((cell_px, cell_px), dtype=bool))
+    y0, x0 = r0 * cell_px, c0 * cell_px
+    patch = uncovered[y0:y0 + owned.shape[0], x0:x0 + owned.shape[1]]
+    ys, xs = np.nonzero(patch & owned[:patch.shape[0], :patch.shape[1]])
+    if ys.size == 0:
+        return None
+    return [
+        int(off_x + x0 + xs.min()),
+        int(off_y + y0 + ys.min()),
+        int(off_x + x0 + xs.max() + 1),
+        int(off_y + y0 + ys.max() + 1),
+    ]
 
 
 def ink_coverage(
@@ -907,9 +1012,6 @@ def ink_coverage(
     total_ink = int(roi_ink.sum())
     covered = np.zeros(roi_ink.shape, dtype=bool)
     roi_h, roi_w = roi_ink.shape
-    # Full-page boxes, kept unclamped so an element out in the side margin still
-    # claims the ink beside it even though its own ink is not measurable.
-    element_boxes = []
 
     for el in elements:
         bbox = el.get("bbox")
@@ -918,9 +1020,6 @@ def ink_coverage(
         # Model bboxes are in the resized image's pixel space, and the model
         # sometimes returns them with the corners the other way round.
         bx1, by1, bx2, by2 = rescale_bbox(bbox, w, h, resized_w, resized_h)
-        element_boxes.append(
-            (min(bx1, bx2), min(by1, by2), max(bx1, bx2), max(by1, by2))
-        )
         x1 = int(max(0, min(math.floor(min(bx1, bx2)) - left, roi_w)))
         x2 = int(max(0, min(math.ceil(max(bx1, bx2)) - left, roi_w)))
         y1 = int(max(0, min(math.floor(min(by1, by2)) - top, roi_h)))
@@ -946,26 +1045,31 @@ def ink_coverage(
         }
 
     covered_ink = int((roi_ink & covered).sum())
-    regions, suppressed = find_uncovered_regions(
-        roi_ink & ~covered,
-        cell_px,
-        min_region_ink,
-        (left, top),
-        element_boxes,
-        cell_px * UNCOVERED_NEAR_ELEMENT_PAD_CELLS,
-    )
+    uncovered = roi_ink & ~covered
+    # Rules come out of the mask before anything is grouped -- see rule_pixels.
+    # Only ink OUTSIDE every box is offered up: a rule under a title the model
+    # boxed is already accounted for and is not the metric's business.
+    rules = rule_pixels(uncovered)
+    uncovered &= ~rules
+    rule_ink = int(rules.sum())
+    # Rule ink is page furniture, so it is neither content the model returned
+    # nor content it dropped. Leaving it in the denominator would depress
+    # covered_fraction for a page whose text is in fact complete, so it comes
+    # out of the measurement entirely rather than counting against it.
+    measured_ink = total_ink - rule_ink
     return {
         "roi": [left, top, right, bottom],
         "ink_px": total_ink,
+        # Rule ink, reported so the deduction above is auditable: a page where
+        # this is large and uncovered_regions is empty is one to spot check
+        # rather than trust.
+        "rule_px": rule_ink,
         "covered_px": covered_ink,
-        "covered_fraction": round(covered_ink / total_ink, 5) if total_ink else None,
-        "uncovered_px": total_ink - covered_ink,
-        "uncovered_regions": regions,
-        # Groups dropped for sitting within near_pad_px of a returned box. Not a
-        # defect count -- it is how much noise the filter absorbed, and a page
-        # where it is large and uncovered_regions is empty is a page to spot
-        # check rather than trust.
-        "suppressed_regions": suppressed,
+        "covered_fraction": round(covered_ink / measured_ink, 5) if measured_ink else None,
+        "uncovered_px": measured_ink - covered_ink,
+        "uncovered_regions": find_uncovered_regions(
+            uncovered, cell_px, min_region_ink, (left, top)
+        ),
         "cell_px": cell_px,
     }
 

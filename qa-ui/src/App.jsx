@@ -665,7 +665,7 @@ export default function App() {
 const FLAG_TITLE = {
   truncated: "generation hit --max-tokens, so the tail of this page is missing",
   uncovered_ink:
-    "ink on this page fell outside every box the model returned, and not beside one",
+    "ink on this page fell outside every box the model returned, and is not a printed rule",
   low_confidence: "some tokens scored below the run's confidence threshold",
   decode_mismatch:
     "the streaming decode diverged from the full-sequence decode",

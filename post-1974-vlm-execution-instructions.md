@@ -177,10 +177,17 @@ documents improved on word-ratio and junk-ratio yet still migrated
 `minor-noise` → `needs-review`. Watch the tier-migration table in the report. If
 most documents regress this way, the flag is the problem, not the text.
 
-The printed-rules half of that is now handled: a group of leftover ink within
-one cell of a box the model did return is no longer reported, because a rule or
-a dot leader beside a title is not dropped content. The handwritten annotations
-are not, and they became MORE visible at the same time — coverage now measures
+The printed-rules half of that is now handled: rule ink is cut out of the mask
+before regions are grouped, and out of the coverage fraction. A masthead line or
+a column border is ink the model was right not to transcribe. Detection is
+local, because these rules are scanned and wander — measured on real pages, a
+rule is inked across 100% of a 144px window with a 2-5px stroke, while a line of
+body type covers 65-94% with a 5-9px stroke. Cutting the rule early matters
+twice: it also stops an intact rule chaining distant ink into one group whose
+box spans half the page. Reported boxes now hug their own ink rather than the
+24px cell grid. About 30% of all uncovered ink on the flagged post-1974 pages
+turned out to be rules. The handwritten annotations are not handled, and they
+became MORE visible at the same time — coverage now measures
 the full page height, so a header or footer counts in both the numerator and the
 denominator instead of being cropped out of both. `MIN_COVERED_FRACTION` in
 `vlm_pages.py` was set against the old cropped measurement and may want
