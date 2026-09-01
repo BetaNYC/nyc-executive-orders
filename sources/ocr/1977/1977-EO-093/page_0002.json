@@ -28,7 +28,13 @@
           "min": -0.0903
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5371,
+        "area_px": 32253,
+        "density": 0.16653,
+        "chars": 117,
+        "chars_per_1k_ink": 21.78
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.3153
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 10971,
+        "area_px": 45994,
+        "density": 0.23853,
+        "chars": 214,
+        "chars_per_1k_ink": 19.51
+      }
     },
     {
       "bbox": [
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 1675,
-        "area_px": 10322,
-        "density": 0.16227,
+        "ink_px": 13484,
+        "area_px": 59550,
+        "density": 0.22643,
         "chars": 310,
-        "chars_per_1k_ink": 185.07
+        "chars_per_1k_ink": 22.99
       }
     },
     {
@@ -372,7 +384,7 @@
         534
       ],
       "category": "Section-header",
-      "text": "EXHIBIT \"A\"—INTERFUND AGREEMENT",
+      "text": "EXHIBIT \"A\"\u2014INTERFUND AGREEMENT",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -502,7 +514,7 @@
           "index": 669,
           "token_id": 2293,
           "logprob": -0.2312,
-          "text": "—"
+          "text": "\u2014"
         },
         {
           "index": 765,
@@ -662,34 +674,16 @@
   "ink_coverage": {
     "roi": [
       207,
-      269,
+      0,
       1520,
-      1975
+      2245
     ],
-    "ink_px": 95706,
-    "covered_px": 93800,
-    "covered_fraction": 0.98008,
-    "uncovered_px": 1906,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          615,
-          893,
-          1071,
-          917
-        ],
-        "ink_px": 898
-      },
-      {
-        "bbox": [
-          351,
-          269,
-          375,
-          629
-        ],
-        "ink_px": 798
-      }
-    ],
+    "ink_px": 125999,
+    "covered_px": 121926,
+    "covered_fraction": 0.96767,
+    "uncovered_px": 4073,
+    "uncovered_regions": [],
+    "suppressed_regions": 4,
     "cell_px": 24
   }
 }

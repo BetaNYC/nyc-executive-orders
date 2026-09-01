@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 3513,
-        "area_px": 20000,
-        "density": 0.17565,
+        "ink_px": 19627,
+        "area_px": 97500,
+        "density": 0.2013,
         "chars": 184,
-        "chars_per_1k_ink": 52.38
+        "chars_per_1k_ink": 9.37
       }
     },
     {
@@ -282,7 +282,7 @@
         1825
       ],
       "category": "Text",
-      "text": "§ 2. Any restaurant, bar or other establishment participating in the Open Restaurants program is prohibited from providing service in an outdoor dining seating area while a DSNY Snow Alert is in effect. Notwithstanding sections 16-123 and 16-124 of the Administrative Code, the owner of any such restaurant, bar or establishment shall be responsible for removing snow and ice from their outdoor dining area, as if such area is an area of paved sidewalk abutting a building under the establishment's control, and in accordance with applicable law and rules.",
+      "text": "\u00a7 2. Any restaurant, bar or other establishment participating in the Open Restaurants program is prohibited from providing service in an outdoor dining seating area while a DSNY Snow Alert is in effect. Notwithstanding sections 16-123 and 16-124 of the Administrative Code, the owner of any such restaurant, bar or establishment shall be responsible for removing snow and ice from their outdoor dining area, as if such area is an area of paved sidewalk abutting a building under the establishment's control, and in accordance with applicable law and rules.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -316,7 +316,7 @@
         1979
       ],
       "category": "Text",
-      "text": "§ 3. In order to provide support to food service establishments that offer outdoor dining on private property, and to allow such establishments to continue outdoor dining operations during the colder weather months, I hereby authorize the use of portable heaters fueled by LPG",
+      "text": "\u00a7 3. In order to provide support to food service establishments that offer outdoor dining on private property, and to allow such establishments to continue outdoor dining operations during the colder weather months, I hereby authorize the use of portable heaters fueled by LPG",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -335,11 +335,11 @@
         }
       },
       "ink": {
-        "ink_px": 18620,
-        "area_px": 105825,
-        "density": 0.17595,
+        "ink_px": 28481,
+        "area_px": 147900,
+        "density": 0.19257,
         "chars": 276,
-        "chars_per_1k_ink": 14.82
+        "chars_per_1k_ink": 9.69
       }
     }
   ],
@@ -390,7 +390,7 @@
           "index": 787,
           "token_id": 17851,
           "logprob": -0.0083,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 718,
@@ -538,15 +538,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 275767,
-    "covered_px": 275767,
+    "ink_px": 301742,
+    "covered_px": 301742,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

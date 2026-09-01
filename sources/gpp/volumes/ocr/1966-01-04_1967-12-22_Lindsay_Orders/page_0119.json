@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 11861,
+        "area_px": 44600,
+        "density": 0.26594,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 2932,
-        "area_px": 41850,
-        "density": 0.07006,
+        "ink_px": 4474,
+        "area_px": 58500,
+        "density": 0.07648,
         "chars": 53,
-        "chars_per_1k_ink": 18.08
+        "chars_per_1k_ink": 11.85
       }
     },
     {
@@ -169,7 +175,7 @@
         1554
       ],
       "category": "Text",
-      "text": "§ 2. The City of New York shall provide the funds support of such benefits for those officers and employees who are paid from funds provided by the City of New York.",
+      "text": "\u00a7 2. The City of New York shall provide the funds support of such benefits for those officers and employees who are paid from funds provided by the City of New York.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -522,15 +528,35 @@
   "ink_coverage": {
     "roi": [
       307,
-      443,
+      0,
       2256,
-      3253
+      3697
     ],
-    "ink_px": 60346,
-    "covered_px": 60346,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 433670,
+    "covered_px": 73749,
+    "covered_fraction": 0.17006,
+    "uncovered_px": 359921,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          307,
+          0,
+          2256,
+          120
+        ],
+        "ink_px": 187038
+      },
+      {
+        "bbox": [
+          307,
+          3576,
+          2256,
+          3697
+        ],
+        "ink_px": 172875
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

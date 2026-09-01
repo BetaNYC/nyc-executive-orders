@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 2134,
-        "area_px": 45220,
-        "density": 0.04719,
+        "ink_px": 14742,
+        "area_px": 144704,
+        "density": 0.10188,
         "chars": 112,
-        "chars_per_1k_ink": 52.48
+        "chars_per_1k_ink": 7.6
       }
     },
     {
@@ -214,7 +214,7 @@
         1556
       ],
       "category": "Text",
-      "text": "§ 3. The First Deputy Mayor hereby is delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to delegate in the event that the Mayor is unable to perform such functions, powers or duties for a reason specified in subdivision a of section 10 of the New York City Charter.",
+      "text": "\u00a7 3. The First Deputy Mayor hereby is delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to delegate in the event that the Mayor is unable to perform such functions, powers or duties for a reason specified in subdivision a of section 10 of the New York City Charter.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -248,7 +248,7 @@
         1658
       ],
       "category": "Text",
-      "text": "§ 4. The Deputy Mayor for Housing and Economic Development shall:",
+      "text": "\u00a7 4. The Deputy Mayor for Housing and Economic Development shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -301,11 +301,11 @@
         }
       },
       "ink": {
-        "ink_px": 40453,
-        "area_px": 330245,
-        "density": 0.12249,
+        "ink_px": 44809,
+        "area_px": 353375,
+        "density": 0.1268,
         "chars": 378,
-        "chars_per_1k_ink": 9.34
+        "chars_per_1k_ink": 8.44
       }
     },
     {
@@ -334,7 +334,13 @@
           "min": -0.0002
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 161,
+        "area_px": 504,
+        "density": 0.31944,
+        "chars": 1,
+        "chars_per_1k_ink": 6.21
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -360,7 +366,7 @@
           "index": 468,
           "token_id": 17851,
           "logprob": -0.1382,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 90,
@@ -532,15 +538,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 198630,
-    "covered_px": 198630,
+    "ink_px": 215755,
+    "covered_px": 215755,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 3162,
-        "area_px": 70620,
-        "density": 0.04477,
+        "ink_px": 13355,
+        "area_px": 143808,
+        "density": 0.09287,
         "chars": 123,
-        "chars_per_1k_ink": 38.9
+        "chars_per_1k_ink": 9.21
       }
     },
     {
@@ -248,7 +248,7 @@
         1865
       ],
       "category": "List-item",
-      "text": "§ 9. The Police Commissioner, the Chancellor, the Director of Intergovernmental Affairs, the Chief of Staff, the Corporation Counsel, the Commissioner of Investigation, the Director of the Mayor's Office of Strategic Partnerships, the Counsel to the Mayor, and the Senior Advisor for Strategic Planning shall report directly to the Mayor.",
+      "text": "\u00a7 9. The Police Commissioner, the Chancellor, the Director of Intergovernmental Affairs, the Chief of Staff, the Corporation Counsel, the Commissioner of Investigation, the Director of the Mayor's Office of Strategic Partnerships, the Counsel to the Mayor, and the Senior Advisor for Strategic Planning shall report directly to the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -282,7 +282,7 @@
         1941
       ],
       "category": "List-item",
-      "text": "§ 10. Executive Order No. 35, dated May 25, 2018, is hereby REVOKED.",
+      "text": "\u00a7 10. Executive Order No. 35, dated May 25, 2018, is hereby REVOKED.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -332,7 +332,7 @@
           "index": 546,
           "token_id": 17851,
           "logprob": -0.022,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 220,
@@ -504,15 +504,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 174802,
-    "covered_px": 174801,
+    "ink_px": 184995,
+    "covered_px": 184994,
     "covered_fraction": 0.99999,
     "uncovered_px": 1,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

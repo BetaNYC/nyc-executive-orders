@@ -78,7 +78,7 @@
         798
       ],
       "category": "Text",
-      "text": "§3. The Mayor's Committee on Pensions shall advise the Mayor on city pension policies, proposed pension legislation and on all matters affecting the City's pension systems.",
+      "text": "\u00a73. The Mayor's Committee on Pensions shall advise the Mayor on city pension policies, proposed pension legislation and on all matters affecting the City's pension systems.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 17,
@@ -112,7 +112,7 @@
         843
       ],
       "category": "Text",
-      "text": "§4. This Order shall take effect immediately.",
+      "text": "\u00a74. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -237,13 +237,13 @@
           "index": 144,
           "token_id": 17851,
           "logprob": -0.2624,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 211,
           "token_id": 17851,
           "logprob": -0.2545,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 295,
@@ -397,15 +397,26 @@
   "ink_coverage": {
     "roi": [
       139,
-      180,
+      0,
       1025,
-      1325
+      1506
     ],
-    "ink_px": 5,
+    "ink_px": 33126,
     "covered_px": 5,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.00015,
+    "uncovered_px": 33121,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          139,
+          1416,
+          1025,
+          1506
+        ],
+        "ink_px": 32732
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -10,7 +10,7 @@
         880
       ],
       "category": "List-item",
-      "text": "d. no heat after 1½ hours on violations",
+      "text": "d. no heat after 1\u00bd hours on violations",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         1377
       ],
       "category": "Text",
-      "text": "The Administrative Code §564-20 permits \"Any agency of the City [to be] authorized to act as agent of the [Health] department in executing such order.\" The Chairman of the Emergency Repair Action Committee is authorized pursuant to the Coordinator's Memorandum to require the assistance of any City department or agency he deems necessary.",
+      "text": "The Administrative Code \u00a7564-20 permits \"Any agency of the City [to be] authorized to act as agent of the [Health] department in executing such order.\" The Chairman of the Emergency Repair Action Committee is authorized pursuant to the Coordinator's Memorandum to require the assistance of any City department or agency he deems necessary.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -644,7 +644,7 @@
           "index": 43,
           "token_id": 26062,
           "logprob": -1.1146,
-          "text": "½"
+          "text": "\u00bd"
         },
         {
           "index": 790,
@@ -810,15 +810,35 @@
   "ink_coverage": {
     "roi": [
       266,
-      389,
+      0,
       1951,
-      2852
+      3242
     ],
-    "ink_px": 7124,
+    "ink_px": 299309,
     "covered_px": 7118,
-    "covered_fraction": 0.99916,
-    "uncovered_px": 6,
-    "uncovered_regions": [],
+    "covered_fraction": 0.02378,
+    "uncovered_px": 292191,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          266,
+          0,
+          1951,
+          120
+        ],
+        "ink_px": 159132
+      },
+      {
+        "bbox": [
+          266,
+          3144,
+          1951,
+          3242
+        ],
+        "ink_px": 132933
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

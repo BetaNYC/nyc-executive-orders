@@ -24,11 +24,11 @@
         "text": null
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 29440,
-        "density": 0.0,
+        "ink_px": 1,
+        "area_px": 54970,
+        "density": 2e-05,
         "chars": 0,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 0.0
       }
     },
     {
@@ -345,7 +345,7 @@
         1765
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct the Fire and Police Departments, the Department of Buildings, the Sheriff, and other agencies as needed, to enforce the directives set forth in this Order in accordance with their lawful authorities, including Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under Health Code sections 3.07 and 3.11, and enforced by the Department of Health and Mental Hygiene or any other agency.",
+      "text": "\u00a7 2. I hereby direct the Fire and Police Departments, the Department of Buildings, the Sheriff, and other agencies as needed, to enforce the directives set forth in this Order in accordance with their lawful authorities, including Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under Health Code sections 3.07 and 3.11, and enforced by the Department of Health and Mental Hygiene or any other agency.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -379,7 +379,7 @@
         1880
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -461,11 +461,11 @@
         }
       },
       "ink": {
-        "ink_px": 778,
-        "area_px": 6480,
-        "density": 0.12006,
+        "ink_px": 1256,
+        "area_px": 12636,
+        "density": 0.0994,
         "chars": 16,
-        "chars_per_1k_ink": 20.57
+        "chars_per_1k_ink": 12.74
       }
     }
   ],
@@ -498,7 +498,7 @@
           "index": 744,
           "token_id": 17851,
           "logprob": -0.0095,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 234,
@@ -664,15 +664,16 @@
   "ink_coverage": {
     "roi": [
       198,
-      280,
+      0,
       1457,
-      2058
+      2339
     ],
-    "ink_px": 139464,
-    "covered_px": 139464,
+    "ink_px": 139943,
+    "covered_px": 139943,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

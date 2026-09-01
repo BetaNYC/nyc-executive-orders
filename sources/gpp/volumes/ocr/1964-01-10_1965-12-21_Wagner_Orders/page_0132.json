@@ -146,7 +146,7 @@
         1951
       ],
       "category": "List-item",
-      "text": "1. Investigation of complaints of inadequate heat in buildings when the outside temperature falls to 55°F., or below.",
+      "text": "1. Investigation of complaints of inadequate heat in buildings when the outside temperature falls to 55\u00b0F., or below.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -335,11 +335,11 @@
         }
       },
       "ink": {
-        "ink_px": 1232,
-        "area_px": 136041,
-        "density": 0.00906,
+        "ink_px": 1261,
+        "area_px": 210516,
+        "density": 0.00599,
         "chars": 100,
-        "chars_per_1k_ink": 81.17
+        "chars_per_1k_ink": 79.3
       }
     }
   ],
@@ -538,15 +538,35 @@
   "ink_coverage": {
     "roi": [
       261,
-      385,
+      0,
       1917,
-      2828
+      3214
     ],
-    "ink_px": 23877,
-    "covered_px": 23877,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 255129,
+    "covered_px": 23906,
+    "covered_fraction": 0.0937,
+    "uncovered_px": 231223,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          261,
+          3120,
+          1917,
+          3214
+        ],
+        "ink_px": 115646
+      },
+      {
+        "bbox": [
+          261,
+          0,
+          1917,
+          96
+        ],
+        "ink_px": 115509
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

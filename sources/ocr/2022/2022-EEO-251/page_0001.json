@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1292,
-        "area_px": 12528,
-        "density": 0.10313,
+        "ink_px": 5161,
+        "area_px": 55680,
+        "density": 0.09269,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -311,7 +311,7 @@
         1435
       ],
       "category": "Text",
-      "text": "§ 2. Notwithstanding section one of this Order, section 3 of Emergency Executive Order No. 50, dated March 4, 2022, as amended by section of Emergency Executive Order No. 62, dated March 24, 2022, relating to the Key to NYC private sector vaccine mandate, is not extended as of November 1, 2022.",
+      "text": "\u00a7 2. Notwithstanding section one of this Order, section 3 of Emergency Executive Order No. 50, dated March 4, 2022, as amended by section of Emergency Executive Order No. 62, dated March 24, 2022, relating to the Key to NYC private sector vaccine mandate, is not extended as of November 1, 2022.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -345,7 +345,7 @@
         1702
       ],
       "category": "Text",
-      "text": "§ 3. I hereby direct the Fire and Police Departments, the Department of Buildings, the Sheriff, and other agencies as needed, to enforce the directives set forth in this Order in accordance with their lawful authorities, including Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under Health Code sections 3.07 and 3.11, and enforced by the Department of Health and Mental Hygiene or any other agency.",
+      "text": "\u00a7 3. I hereby direct the Fire and Police Departments, the Department of Buildings, the Sheriff, and other agencies as needed, to enforce the directives set forth in this Order in accordance with their lawful authorities, including Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under Health Code sections 3.07 and 3.11, and enforced by the Department of Health and Mental Hygiene or any other agency.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -379,7 +379,7 @@
         1815
       ],
       "category": "Text",
-      "text": "§ 4. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 4. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -427,9 +427,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1231,
-        "area_px": 18645,
-        "density": 0.06602,
+        "ink_px": 3207,
+        "area_px": 30849,
+        "density": 0.10396,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -460,7 +460,13 @@
           "min": -0.0003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1335,
+        "area_px": 13120,
+        "density": 0.10175,
+        "chars": 16,
+        "chars_per_1k_ink": 11.99
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -498,7 +504,7 @@
           "index": 664,
           "token_id": 17851,
           "logprob": -0.0104,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 704,
@@ -658,15 +664,16 @@
   "ink_coverage": {
     "roi": [
       203,
-      263,
+      0,
       1494,
-      1931
+      2195
     ],
-    "ink_px": 150956,
-    "covered_px": 150956,
+    "ink_px": 158136,
+    "covered_px": 158136,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

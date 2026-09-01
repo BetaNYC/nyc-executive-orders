@@ -363,15 +363,35 @@
   "ink_coverage": {
     "roi": [
       232,
-      350,
+      0,
       1705,
-      2567
+      2918
     ],
-    "ink_px": 0,
+    "ink_px": 269911,
     "covered_px": 0,
-    "covered_fraction": null,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.0,
+    "uncovered_px": 269911,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          232,
+          0,
+          1705,
+          120
+        ],
+        "ink_px": 142329
+      },
+      {
+        "bbox": [
+          232,
+          2808,
+          1705,
+          2918
+        ],
+        "ink_px": 127578
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

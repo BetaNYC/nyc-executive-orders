@@ -28,7 +28,13 @@
           "min": -0.0025
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1,
+        "area_px": 924,
+        "density": 0.00108,
+        "chars": 3,
+        "chars_per_1k_ink": 3000.0
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.1419
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 220,
+        "area_px": 10776,
+        "density": 0.02042,
+        "chars": 34,
+        "chars_per_1k_ink": 154.55
+      }
     },
     {
       "bbox": [
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 137,
-        "area_px": 4920,
-        "density": 0.02785,
+        "ink_px": 661,
+        "area_px": 19270,
+        "density": 0.0343,
         "chars": 79,
-        "chars_per_1k_ink": 576.64
+        "chars_per_1k_ink": 119.52
       }
     },
     {
@@ -1358,7 +1370,7 @@
         1259
       ],
       "category": "Text",
-      "text": "Job Control Index Cards (Title Files) - Ø",
+      "text": "Job Control Index Cards (Title Files) - \u00d8",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -1392,7 +1404,7 @@
         1281
       ],
       "category": "Text",
-      "text": "Position Classification Questionnaires - Ø",
+      "text": "Position Classification Questionnaires - \u00d8",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -1426,7 +1438,7 @@
         1303
       ],
       "category": "Text",
-      "text": "Specifications - Ø",
+      "text": "Specifications - \u00d8",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -1482,7 +1494,7 @@
           "index": 1806,
           "token_id": 88943,
           "logprob": -0.8931,
-          "text": " Ø"
+          "text": " \u00d8"
         },
         {
           "index": 114,
@@ -1506,7 +1518,7 @@
           "index": 1765,
           "token_id": 88943,
           "logprob": -0.5556,
-          "text": " Ø"
+          "text": " \u00d8"
         },
         {
           "index": 224,
@@ -1648,15 +1660,26 @@
   "ink_coverage": {
     "roi": [
       139,
-      178,
+      0,
       1025,
-      1308
+      1487
     ],
-    "ink_px": 3133,
-    "covered_px": 3033,
-    "covered_fraction": 0.96808,
-    "uncovered_px": 100,
-    "uncovered_regions": [],
+    "ink_px": 34314,
+    "covered_px": 3778,
+    "covered_fraction": 0.1101,
+    "uncovered_px": 30536,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          139,
+          1392,
+          1025,
+          1487
+        ],
+        "ink_px": 30171
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

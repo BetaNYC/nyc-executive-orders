@@ -28,7 +28,13 @@
           "min": -0.0023
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3924,
+        "area_px": 26520,
+        "density": 0.14796,
+        "chars": 57,
+        "chars_per_1k_ink": 14.53
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 12023,
-        "area_px": 89148,
-        "density": 0.13487,
+        "ink_px": 12066,
+        "area_px": 95608,
+        "density": 0.1262,
         "chars": 183,
-        "chars_per_1k_ink": 15.22
+        "chars_per_1k_ink": 15.17
       }
     },
     {
@@ -106,7 +112,7 @@
         489
       ],
       "category": "Section-header",
-      "text": "§ 11. The Deputy Mayor for Intergovernmental Affairs shall:",
+      "text": "\u00a7 11. The Deputy Mayor for Intergovernmental Affairs shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -378,7 +384,7 @@
         1492
       ],
       "category": "Section-header",
-      "text": "§ 12. The Chief Counsel to the Mayor and City Hall shall:",
+      "text": "\u00a7 12. The Chief Counsel to the Mayor and City Hall shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -532,7 +538,13 @@
           "min": -0.0001
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 6261,
+        "area_px": 44992,
+        "density": 0.13916,
+        "chars": 92,
+        "chars_per_1k_ink": 14.69
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -552,7 +564,7 @@
           "index": 197,
           "token_id": 17851,
           "logprob": -0.0456,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 83,
@@ -730,15 +742,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 152312,
-    "covered_px": 152312,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 162710,
+    "covered_px": 162540,
+    "covered_fraction": 0.99896,
+    "uncovered_px": 170,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

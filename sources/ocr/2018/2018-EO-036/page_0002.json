@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 5761,
-        "area_px": 59740,
-        "density": 0.09643,
+        "ink_px": 13889,
+        "area_px": 122570,
+        "density": 0.11331,
         "chars": 151,
-        "chars_per_1k_ink": 26.21
+        "chars_per_1k_ink": 10.87
       }
     },
     {
@@ -78,7 +78,7 @@
         889
       ],
       "category": "Text",
-      "text": "§3. Agency cooperation. All agencies of the City of New York shall cooperate with the Office in the performance of its duties.",
+      "text": "\u00a73. Agency cooperation. All agencies of the City of New York shall cooperate with the Office in the performance of its duties.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         961
       ],
       "category": "Text",
-      "text": "§4. Effective Date. This Order shall take effect immediately.",
+      "text": "\u00a74. Effective Date. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -209,7 +209,7 @@
           "index": 243,
           "token_id": 17851,
           "logprob": -0.0192,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 109,
@@ -233,7 +233,7 @@
           "index": 304,
           "token_id": 17851,
           "logprob": -0.0017,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 193,
@@ -363,15 +363,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 89806,
-    "covered_px": 89800,
-    "covered_fraction": 0.99993,
+    "ink_px": 97934,
+    "covered_px": 97928,
+    "covered_fraction": 0.99994,
     "uncovered_px": 6,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

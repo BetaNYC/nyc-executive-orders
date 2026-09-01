@@ -24,11 +24,11 @@
         "text": null
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 8280,
-        "density": 0.0,
+        "ink_px": 2,
+        "area_px": 55200,
+        "density": 4e-05,
         "chars": 0,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 0.0
       }
     },
     {
@@ -447,7 +447,7 @@
         1793
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct the Fire Department of the City of New York, the New York City Police Department, the Department of Buildings, the Sheriff, and other agencies as needed to immediately enforce the directives set forth in this Order in accordance with their lawful enforcement authorities, including but not limited to Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the New York City Fire Code. Violations and directives set forth in this Order may be issued as if there were violations under the New York City Health Code, title 24 Rules of the City of New York sections 3.07 and 3.11, and may be enforced as such by the Department of Health and Mental Hygiene or any other agency named in this section.",
+      "text": "\u00a7 2. I hereby direct the Fire Department of the City of New York, the New York City Police Department, the Department of Buildings, the Sheriff, and other agencies as needed to immediately enforce the directives set forth in this Order in accordance with their lawful enforcement authorities, including but not limited to Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the New York City Fire Code. Violations and directives set forth in this Order may be issued as if there were violations under the New York City Health Code, title 24 Rules of the City of New York sections 3.07 and 3.11, and may be enforced as such by the Department of Health and Mental Hygiene or any other agency named in this section.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -481,7 +481,7 @@
         1898
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -562,7 +562,13 @@
           "min": -0.0005
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 725,
+        "area_px": 10804,
+        "density": 0.0671,
+        "chars": 16,
+        "chars_per_1k_ink": 22.07
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -594,7 +600,7 @@
           "index": 939,
           "token_id": 17851,
           "logprob": -0.019,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 783,
@@ -760,15 +766,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 94647,
-    "covered_px": 94647,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 95375,
+    "covered_px": 95374,
+    "covered_fraction": 0.99999,
+    "uncovered_px": 1,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

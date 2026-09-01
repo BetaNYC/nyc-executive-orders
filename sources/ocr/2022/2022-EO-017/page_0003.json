@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 6588,
-        "area_px": 72790,
-        "density": 0.09051,
+        "ink_px": 9504,
+        "area_px": 96635,
+        "density": 0.09835,
         "chars": 131,
-        "chars_per_1k_ink": 19.88
+        "chars_per_1k_ink": 13.78
       }
     },
     {
@@ -282,7 +282,7 @@
         1403
       ],
       "category": "List-item",
-      "text": "§ 2. Cooperation and Assistance. All affected agencies shall cooperate and provide appropriate assistance to the CIA upon request.",
+      "text": "\u00a7 2. Cooperation and Assistance. All affected agencies shall cooperate and provide appropriate assistance to the CIA upon request.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -316,7 +316,7 @@
         1480
       ],
       "category": "List-item",
-      "text": "§ 3. Executive Order No. 139, dated September 2, 2010, is hereby revoked.",
+      "text": "\u00a7 3. Executive Order No. 139, dated September 2, 2010, is hereby revoked.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -350,7 +350,7 @@
         1558
       ],
       "category": "List-item",
-      "text": "§ 4. Effective Date. This Order shall take effect immediately.",
+      "text": "\u00a7 4. Effective Date. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -475,7 +475,7 @@
           "index": 572,
           "token_id": 17851,
           "logprob": -0.0186,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 175,
@@ -635,25 +635,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 129497,
-    "covered_px": 128825,
-    "covered_fraction": 0.99481,
-    "uncovered_px": 672,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          900,
-          1680,
-          1356,
-          1704
-        ],
-        "ink_px": 658
-      }
-    ],
+    "ink_px": 132481,
+    "covered_px": 131741,
+    "covered_fraction": 0.99441,
+    "uncovered_px": 740,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

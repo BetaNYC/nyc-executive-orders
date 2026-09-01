@@ -25,8 +25,8 @@
       },
       "ink": {
         "ink_px": 1,
-        "area_px": 16790,
-        "density": 6e-05,
+        "area_px": 54970,
+        "density": 2e-05,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -379,7 +379,7 @@
         1773
       ],
       "category": "Text",
-      "text": "§ 2. I hereby order that section 1 of Emergency Executive Order No. 213, dated September 22, 2022, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby order that section 1 of Emergency Executive Order No. 213, dated September 22, 2022, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -413,7 +413,7 @@
         1970
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -432,11 +432,11 @@
         }
       },
       "ink": {
-        "ink_px": 20795,
-        "area_px": 174420,
-        "density": 0.11922,
+        "ink_px": 21913,
+        "area_px": 205428,
+        "density": 0.10667,
         "chars": 338,
-        "chars_per_1k_ink": 16.25
+        "chars_per_1k_ink": 15.42
       }
     },
     {
@@ -461,9 +461,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 81,
-        "area_px": 3033,
-        "density": 0.02671,
+        "ink_px": 3076,
+        "area_px": 27297,
+        "density": 0.11269,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -494,7 +494,13 @@
           "min": -0.0004
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1516,
+        "area_px": 11850,
+        "density": 0.12793,
+        "chars": 16,
+        "chars_per_1k_ink": 10.55
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -550,7 +556,7 @@
           "index": 827,
           "token_id": 17851,
           "logprob": -0.0019,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 130,
@@ -692,15 +698,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 141393,
-    "covered_px": 141393,
+    "ink_px": 146564,
+    "covered_px": 146564,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

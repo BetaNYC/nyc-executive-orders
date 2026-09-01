@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 8094,
-        "area_px": 19000,
-        "density": 0.426,
+        "ink_px": 17419,
+        "area_px": 42600,
+        "density": 0.4089,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -277,7 +277,7 @@
         1637
       ],
       "category": "List-item",
-      "text": "§ 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 is hereby extended for five days.",
+      "text": "\u00a7 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 is hereby extended for five days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1775
       ],
       "category": "List-item",
-      "text": "§ 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -374,7 +374,7 @@
         2227
       ],
       "category": "Page-footer",
-      "text": "© Printed on paper containing 30% post-consumer material.",
+      "text": "\u00a9 Printed on paper containing 30% post-consumer material.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -392,7 +392,13 @@
           "min": -0.1805
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1961,
+        "area_px": 9840,
+        "density": 0.19929,
+        "chars": 57,
+        "chars_per_1k_ink": 29.07
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -430,7 +436,7 @@
           "index": 764,
           "token_id": 20043,
           "logprob": -0.1805,
-          "text": "©"
+          "text": "\u00a9"
         },
         {
           "index": 153,
@@ -590,15 +596,16 @@
   "ink_coverage": {
     "roi": [
       198,
-      280,
+      0,
       1457,
-      2058
+      2339
     ],
-    "ink_px": 131355,
-    "covered_px": 131156,
-    "covered_fraction": 0.99849,
-    "uncovered_px": 199,
+    "ink_px": 142991,
+    "covered_px": 142442,
+    "covered_fraction": 0.99616,
+    "uncovered_px": 549,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -28,7 +28,13 @@
           "min": -0.0103
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 10948,
+        "density": 0.0,
+        "chars": 29,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.1051
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 477,
+        "area_px": 9775,
+        "density": 0.0488,
+        "chars": 29,
+        "chars_per_1k_ink": 60.8
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0016
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 167,
+        "area_px": 2400,
+        "density": 0.06958,
+        "chars": 7,
+        "chars_per_1k_ink": 41.92
+      }
     },
     {
       "bbox": [
@@ -113,11 +131,11 @@
         }
       },
       "ink": {
-        "ink_px": 294,
-        "area_px": 9240,
-        "density": 0.03182,
+        "ink_px": 1530,
+        "area_px": 28644,
+        "density": 0.05341,
         "chars": 71,
-        "chars_per_1k_ink": 241.5
+        "chars_per_1k_ink": 46.41
       }
     },
     {
@@ -929,11 +947,11 @@
         }
       },
       "ink": {
-        "ink_px": 42,
-        "area_px": 142128,
-        "density": 0.0003,
+        "ink_px": 77,
+        "area_px": 172960,
+        "density": 0.00045,
         "chars": 381,
-        "chars_per_1k_ink": 9071.43
+        "chars_per_1k_ink": 4948.05
       }
     }
   ],
@@ -1132,15 +1150,26 @@
   "ink_coverage": {
     "roi": [
       147,
-      225,
+      0,
       1081,
-      1655
+      1881
     ],
-    "ink_px": 21739,
-    "covered_px": 21574,
-    "covered_fraction": 0.99241,
-    "uncovered_px": 165,
-    "uncovered_regions": [],
+    "ink_px": 79311,
+    "covered_px": 23489,
+    "covered_fraction": 0.29616,
+    "uncovered_px": 55822,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          147,
+          1800,
+          1081,
+          1881
+        ],
+        "ink_px": 55640
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

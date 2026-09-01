@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 26751,
-        "area_px": 162792,
-        "density": 0.16433,
+        "ink_px": 41955,
+        "area_px": 239020,
+        "density": 0.17553,
         "chars": 404,
-        "chars_per_1k_ink": 15.1
+        "chars_per_1k_ink": 9.63
       }
     },
     {
@@ -44,7 +44,7 @@
         589
       ],
       "category": "Text",
-      "text": "§ 4. I hereby authorize the use of electric and natural-gas fueled temporary outdoor heaters in courtyards or other outdoor spaces on private property used by food service establishments for outdoor dining, subject to the provisions of this Order and guidance issued pursuant to subdivision c of section 1 of this Order.",
+      "text": "\u00a7 4. I hereby authorize the use of electric and natural-gas fueled temporary outdoor heaters in courtyards or other outdoor spaces on private property used by food service establishments for outdoor dining, subject to the provisions of this Order and guidance issued pursuant to subdivision c of section 1 of this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -78,7 +78,7 @@
         743
       ],
       "category": "Text",
-      "text": "§ 5. For portable heaters fueled by LPG, this Order allows only the use of such heaters using propane. The use of portable heaters fueled by non-propane LPG, such as butane, is prohibited.",
+      "text": "\u00a7 5. For portable heaters fueled by LPG, this Order allows only the use of such heaters using propane. The use of portable heaters fueled by non-propane LPG, such as butane, is prohibited.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         1008
       ],
       "category": "Text",
-      "text": "§ 6. I hereby suspend section 3805.3(12) of the New York City Fire Code to the extent such provision prohibits the use of LPG for space heating in outdoor dining areas operated pursuant to the Open Restaurants program or in courtyards or other outdoor spaces on private property used by food service establishments for outdoor dining, and operated subject to the provisions of this Order and guidance issued by FDNY pursuant to subdivision c of section 1 of this Order.",
+      "text": "\u00a7 6. I hereby suspend section 3805.3(12) of the New York City Fire Code to the extent such provision prohibits the use of LPG for space heating in outdoor dining areas operated pursuant to the Open Restaurants program or in courtyards or other outdoor spaces on private property used by food service establishments for outdoor dining, and operated subject to the provisions of this Order and guidance issued by FDNY pursuant to subdivision c of section 1 of this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -146,7 +146,7 @@
         1164
       ],
       "category": "Text",
-      "text": "§ 7. I hereby suspend section 404-03(b)(5)(C) of Chapter 4 of Title 3 of the Rules of the City of New York, to the extent such provision conflicts with the DOB guidance described in subdivision c of section 1 of this Order.",
+      "text": "\u00a7 7. I hereby suspend section 404-03(b)(5)(C) of Chapter 4 of Title 3 of the Rules of the City of New York, to the extent such provision conflicts with the DOB guidance described in subdivision c of section 1 of this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -180,7 +180,7 @@
         1323
       ],
       "category": "Text",
-      "text": "§ 8. I hereby suspend the following provisions of Appendix A of the New York City Fire Code, to the extent such provisions require the payment of a fee for the storage, handling and use of propane or the handling and use of temporary outdoor heaters as authorized by this Order:",
+      "text": "\u00a7 8. I hereby suspend the following provisions of Appendix A of the New York City Fire Code, to the extent such provisions require the payment of a fee for the storage, handling and use of propane or the handling and use of temporary outdoor heaters as authorized by this Order:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -406,7 +406,7 @@
           "index": 147,
           "token_id": 17851,
           "logprob": -0.0185,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 710,
@@ -572,15 +572,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 248001,
-    "covered_px": 248001,
+    "ink_px": 263205,
+    "covered_px": 263205,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

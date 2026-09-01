@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1830,
-        "area_px": 25740,
-        "density": 0.0711,
+        "ink_px": 7053,
+        "area_px": 99099,
+        "density": 0.07117,
         "chars": 137,
-        "chars_per_1k_ink": 74.86
+        "chars_per_1k_ink": 19.42
       }
     },
     {
@@ -78,7 +78,7 @@
         455
       ],
       "category": "Text",
-      "text": "§ 6. The Deputy Mayor for Health and Human Services shall:",
+      "text": "\u00a7 6. The Deputy Mayor for Health and Human Services shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -462,7 +462,7 @@
           "index": 147,
           "token_id": 17851,
           "logprob": -0.0381,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 53,
@@ -640,15 +640,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 137210,
-    "covered_px": 137210,
+    "ink_px": 142433,
+    "covered_px": 142433,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

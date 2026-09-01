@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 210,
-        "area_px": 9280,
-        "density": 0.02263,
+        "ink_px": 819,
+        "area_px": 55448,
+        "density": 0.01477,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -345,7 +345,7 @@
         1670
       ],
       "category": "Text",
-      "text": "§ 2. I hereby order that section 1 of Emergency Executive Order No. 370, dated March 31, 2023, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby order that section 1 of Emergency Executive Order No. 370, dated March 31, 2023, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -379,7 +379,7 @@
         1872
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -461,11 +461,11 @@
         }
       },
       "ink": {
-        "ink_px": 127,
-        "area_px": 2916,
-        "density": 0.04355,
+        "ink_px": 967,
+        "area_px": 12960,
+        "density": 0.07461,
         "chars": 16,
-        "chars_per_1k_ink": 125.98
+        "chars_per_1k_ink": 16.55
       }
     }
   ],
@@ -522,7 +522,7 @@
           "index": 750,
           "token_id": 17851,
           "logprob": -0.0096,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 516,
@@ -664,15 +664,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 103138,
-    "covered_px": 102960,
-    "covered_fraction": 0.99827,
+    "ink_px": 104587,
+    "covered_px": 104409,
+    "covered_fraction": 0.9983,
     "uncovered_px": 178,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

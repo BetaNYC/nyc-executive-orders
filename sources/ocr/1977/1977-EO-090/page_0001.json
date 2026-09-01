@@ -28,7 +28,13 @@
           "min": -0.5942
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 7702,
+        "area_px": 48150,
+        "density": 0.15996,
+        "chars": 66,
+        "chars_per_1k_ink": 8.57
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 3368,
-        "area_px": 13636,
-        "density": 0.24699,
+        "ink_px": 10869,
+        "area_px": 48700,
+        "density": 0.22318,
         "chars": 166,
-        "chars_per_1k_ink": 49.29
+        "chars_per_1k_ink": 15.27
       }
     },
     {
@@ -616,7 +622,7 @@
         1587
       ],
       "category": "Section-header",
-      "text": "(d) Schedule Modifications—",
+      "text": "(d) Schedule Modifications\u2014",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -941,11 +947,11 @@
         }
       },
       "ink": {
-        "ink_px": 5018,
-        "area_px": 27057,
-        "density": 0.18546,
+        "ink_px": 24110,
+        "area_px": 103563,
+        "density": 0.23281,
         "chars": 423,
-        "chars_per_1k_ink": 84.3
+        "chars_per_1k_ink": 17.54
       }
     }
   ],
@@ -1144,43 +1150,35 @@
   "ink_coverage": {
     "roi": [
       205,
-      268,
+      0,
       1506,
-      1965
+      2234
     ],
-    "ink_px": 314945,
-    "covered_px": 310911,
-    "covered_fraction": 0.98719,
-    "uncovered_px": 4034,
+    "ink_px": 354800,
+    "covered_px": 345206,
+    "covered_fraction": 0.97296,
+    "uncovered_px": 9594,
     "uncovered_regions": [
       {
         "bbox": [
-          757,
-          268,
-          1213,
-          316
+          325,
+          1656,
+          373,
+          2064
         ],
-        "ink_px": 1485
+        "ink_px": 1435
       },
       {
         "bbox": [
-          325,
-          1660,
-          373,
-          1965
+          1381,
+          24,
+          1506,
+          96
         ],
-        "ink_px": 1143
-      },
-      {
-        "bbox": [
-          325,
-          484,
-          373,
-          820
-        ],
-        "ink_px": 935
+        "ink_px": 887
       }
     ],
+    "suppressed_regions": 6,
     "cell_px": 24
   }
 }

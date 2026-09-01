@@ -10,7 +10,7 @@
         140
       ],
       "category": "Text",
-      "text": "§ 7. All agencies shall be subject to the following general terms and conditions in the administration of budget appropriations.",
+      "text": "\u00a7 7. All agencies shall be subject to the following general terms and conditions in the administration of budget appropriations.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -28,7 +28,13 @@
           "min": -0.0524
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 6855,
+        "area_px": 46050,
+        "density": 0.14886,
+        "chars": 128,
+        "chars_per_1k_ink": 18.67
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.5274
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2359,
+        "area_px": 10992,
+        "density": 0.21461,
+        "chars": 33,
+        "chars_per_1k_ink": 13.99
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0086
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 7891,
+        "area_px": 37996,
+        "density": 0.20768,
+        "chars": 154,
+        "chars_per_1k_ink": 19.52
+      }
     },
     {
       "bbox": [
@@ -112,7 +130,13 @@
           "min": -0.0208
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2313,
+        "area_px": 10465,
+        "density": 0.22102,
+        "chars": 34,
+        "chars_per_1k_ink": 14.7
+      }
     },
     {
       "bbox": [
@@ -141,11 +165,11 @@
         }
       },
       "ink": {
-        "ink_px": 3308,
-        "area_px": 14042,
-        "density": 0.23558,
+        "ink_px": 12496,
+        "area_px": 56994,
+        "density": 0.21925,
         "chars": 244,
-        "chars_per_1k_ink": 73.76
+        "chars_per_1k_ink": 19.53
       }
     },
     {
@@ -855,11 +879,11 @@
         }
       },
       "ink": {
-        "ink_px": 37097,
-        "area_px": 205750,
-        "density": 0.1803,
+        "ink_px": 39373,
+        "area_px": 222210,
+        "density": 0.17719,
         "chars": 950,
-        "chars_per_1k_ink": 25.61
+        "chars_per_1k_ink": 24.13
       }
     }
   ],
@@ -946,7 +970,7 @@
           "index": 34,
           "token_id": 17851,
           "logprob": -0.0307,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -1058,34 +1082,26 @@
   "ink_coverage": {
     "roi": [
       224,
-      284,
+      0,
       1648,
-      2082
+      2367
     ],
-    "ink_px": 264955,
-    "covered_px": 260416,
-    "covered_fraction": 0.98287,
-    "uncovered_px": 4539,
+    "ink_px": 297817,
+    "covered_px": 291298,
+    "covered_fraction": 0.97811,
+    "uncovered_px": 6519,
     "uncovered_regions": [
       {
         "bbox": [
-          1448,
-          284,
-          1472,
-          1508
+          224,
+          144,
+          296,
+          192
         ],
-        "ink_px": 3040
-      },
-      {
-        "bbox": [
-          536,
-          1508,
-          968,
-          1676
-        ],
-        "ink_px": 1334
+        "ink_px": 444
       }
     ],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

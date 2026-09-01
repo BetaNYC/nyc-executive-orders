@@ -28,7 +28,13 @@
           "min": -0.0184
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 9516,
+        "area_px": 86358,
+        "density": 0.11019,
+        "chars": 97,
+        "chars_per_1k_ink": 10.19
+      }
     },
     {
       "bbox": [
@@ -140,7 +146,7 @@
         760
       ],
       "category": "Text",
-      "text": "§ 2. Each agency shall designate a Chief Performance Officer, who shall coordinate with the Chief Efficiency Officer and the Mayor's Office of Operations, and who shall be responsible for ensuring the agency utilizes metrics, performance practices and data analytics to improve efficiency, effectiveness, innovation, work process, and employee development.",
+      "text": "\u00a7 2. Each agency shall designate a Chief Performance Officer, who shall coordinate with the Chief Efficiency Officer and the Mayor's Office of Operations, and who shall be responsible for ensuring the agency utilizes metrics, performance practices and data analytics to improve efficiency, effectiveness, innovation, work process, and employee development.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -174,7 +180,7 @@
         987
       ],
       "category": "Text",
-      "text": "§ 3. Each agency shall work with the Chief Efficiency Officer and the Mayor's Office of Operations to annually reassess the performance goals and metrics included in the Preliminary MMR and the MMR in a manner that is responsive to public feedback. The Chief Efficiency Officer shall specify agency timeframes pursuant to this Section to ensure coordination with the preparation of the Preliminary MMR and the MMR.",
+      "text": "\u00a7 3. Each agency shall work with the Chief Efficiency Officer and the Mayor's Office of Operations to annually reassess the performance goals and metrics included in the Preliminary MMR and the MMR in a manner that is responsive to public feedback. The Chief Efficiency Officer shall specify agency timeframes pursuant to this Section to ensure coordination with the preparation of the Preliminary MMR and the MMR.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -310,7 +316,7 @@
         1644
       ],
       "category": "Text",
-      "text": "§ 4. The Mayor shall establish the Mayor's Efficiency Steering Committee, which shall be comprised of the Deputy Mayors or their designees, the Director of the Mayor's Office of Operations or a designee, and representatives from agencies specified by the Chief Efficiency Officer. The schedule for the initial and subsequent meetings of the Steering Committee shall be determined by the Chief Efficiency Officer.",
+      "text": "\u00a7 4. The Mayor shall establish the Mayor's Efficiency Steering Committee, which shall be comprised of the Deputy Mayors or their designees, the Director of the Mayor's Office of Operations or a designee, and representatives from agencies specified by the Chief Efficiency Officer. The schedule for the initial and subsequent meetings of the Steering Committee shall be determined by the Chief Efficiency Officer.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -397,11 +403,11 @@
         }
       },
       "ink": {
-        "ink_px": 20694,
-        "area_px": 125292,
-        "density": 0.16517,
+        "ink_px": 29714,
+        "area_px": 186756,
+        "density": 0.15911,
         "chars": 328,
-        "chars_per_1k_ink": 15.85
+        "chars_per_1k_ink": 11.04
       }
     }
   ],
@@ -434,7 +440,7 @@
           "index": 256,
           "token_id": 17851,
           "logprob": -0.0304,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 49,
@@ -600,15 +606,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 227348,
-    "covered_px": 227348,
+    "ink_px": 245884,
+    "covered_px": 245884,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

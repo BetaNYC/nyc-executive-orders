@@ -28,7 +28,13 @@
           "min": -0.0112
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2,
+        "area_px": 902,
+        "density": 0.00222,
+        "chars": 3,
+        "chars_per_1k_ink": 1500.0
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 4,
-        "area_px": 14544,
-        "density": 0.00028,
+        "ink_px": 9,
+        "area_px": 41208,
+        "density": 0.00022,
         "chars": 90,
-        "chars_per_1k_ink": 22500.0
+        "chars_per_1k_ink": 10000.0
       }
     },
     {
@@ -140,7 +146,7 @@
         637
       ],
       "category": "Text",
-      "text": "§5. All contracts entered into by the Administrator shall be approved by the Mayor.",
+      "text": "\u00a75. All contracts entered into by the Administrator shall be approved by the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -174,7 +180,7 @@
         815
       ],
       "category": "Text",
-      "text": "§6. The Administrator shall coordinate overall planning and implementation of the Model Cities Program, and shall exercise and perform the following responsibilities and duties subject to the provisions of the Mayor's Executive Order No. 107:",
+      "text": "\u00a76. The Administrator shall coordinate overall planning and implementation of the Model Cities Program, and shall exercise and perform the following responsibilities and duties subject to the provisions of the Mayor's Executive Order No. 107:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -295,11 +301,11 @@
         }
       },
       "ink": {
-        "ink_px": 83,
-        "area_px": 102465,
-        "density": 0.00081,
+        "ink_px": 87,
+        "area_px": 115368,
+        "density": 0.00075,
         "chars": 172,
-        "chars_per_1k_ink": 2072.29
+        "chars_per_1k_ink": 1977.01
       }
     }
   ],
@@ -498,15 +504,26 @@
   "ink_coverage": {
     "roi": [
       140,
-      177,
+      0,
       1027,
-      1304
+      1482
     ],
-    "ink_px": 348,
-    "covered_px": 348,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 32191,
+    "covered_px": 359,
+    "covered_fraction": 0.01115,
+    "uncovered_px": 31832,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          140,
+          1392,
+          1027,
+          1482
+        ],
+        "ink_px": 31532
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

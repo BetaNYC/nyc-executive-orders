@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 4475,
-        "area_px": 14381,
-        "density": 0.31117,
+        "ink_px": 13578,
+        "area_px": 41173,
+        "density": 0.32978,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1356
       ],
       "category": "Text",
-      "text": "§ 2. Scope of Duties. The Office of Film, Theatre and Broadcasting shall:",
+      "text": "\u00a7 2. Scope of Duties. The Office of Film, Theatre and Broadcasting shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -435,7 +435,7 @@
           "index": 427,
           "token_id": 17851,
           "logprob": -0.0386,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 322,
@@ -601,25 +601,16 @@
   "ink_coverage": {
     "roi": [
       209,
-      271,
+      0,
       1535,
-      1992
+      2264
     ],
-    "ink_px": 152514,
-    "covered_px": 151619,
-    "covered_fraction": 0.99413,
-    "uncovered_px": 895,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          737,
-          847,
-          1001,
-          871
-        ],
-        "ink_px": 811
-      }
-    ],
+    "ink_px": 162574,
+    "covered_px": 160722,
+    "covered_fraction": 0.98861,
+    "uncovered_px": 1852,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

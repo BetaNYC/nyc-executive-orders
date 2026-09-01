@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1807,
-        "area_px": 4576,
-        "density": 0.39489,
+        "ink_px": 9595,
+        "area_px": 21164,
+        "density": 0.45336,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1718
       ],
       "category": "Text",
-      "text": "\"§5. Committee Membership. (a) The Committee shall consist of twenty-seven members, each residing or having a principal place of business in the City of New York, appointed by the Mayor. The Mayor shall choose thirteen members including the Chairman, and the Presiding Justices of the Appellate Division for the First and Second Judicial Departments shall each choose six members. Two deans of law schools within New York City shall each choose one member, with authority to choose rotating annually among eligible deans. Those members chosen by law school deans shall serve for a term of one year; all other members shall serve for terms of two years commencing January 1, 1984. Vacancies in the Committee shall be filled in the same manner as initial appointments. A member of the Committee may be removed by the Mayor for cause.",
+      "text": "\"\u00a75. Committee Membership. (a) The Committee shall consist of twenty-seven members, each residing or having a principal place of business in the City of New York, appointed by the Mayor. The Mayor shall choose thirteen members including the Chairman, and the Presiding Justices of the Appellate Division for the First and Second Judicial Departments shall each choose six members. Two deans of law schools within New York City shall each choose one member, with authority to choose rotating annually among eligible deans. Those members chosen by law school deans shall serve for a term of one year; all other members shall serve for terms of two years commencing January 1, 1984. Vacancies in the Committee shall be filled in the same manner as initial appointments. A member of the Committee may be removed by the Mayor for cause.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -359,9 +359,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 72,
-        "area_px": 7722,
-        "density": 0.00932,
+        "ink_px": 8208,
+        "area_px": 105732,
+        "density": 0.07763,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -414,7 +414,7 @@
           "index": 393,
           "token_id": 17851,
           "logprob": -0.0551,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 604,
@@ -562,34 +562,16 @@
   "ink_coverage": {
     "roi": [
       217,
-      276,
+      0,
       1596,
-      2024
+      2300
     ],
-    "ink_px": 104095,
-    "covered_px": 102299,
-    "covered_fraction": 0.98275,
-    "uncovered_px": 1796,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          601,
-          708,
-          1177,
-          732
-        ],
-        "ink_px": 1186
-      },
-      {
-        "bbox": [
-          529,
-          1980,
-          793,
-          2004
-        ],
-        "ink_px": 591
-      }
-    ],
+    "ink_px": 120303,
+    "covered_px": 118223,
+    "covered_fraction": 0.98271,
+    "uncovered_px": 2080,
+    "uncovered_regions": [],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

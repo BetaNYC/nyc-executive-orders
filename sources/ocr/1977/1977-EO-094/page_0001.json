@@ -588,7 +588,7 @@
         1101
       ],
       "category": "List-item",
-      "text": "§ 2. This Executive Order shall take effect on December 1, 1977.",
+      "text": "\u00a7 2. This Executive Order shall take effect on December 1, 1977.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -878,34 +878,53 @@
   "ink_coverage": {
     "roi": [
       207,
-      271,
+      0,
       1520,
-      1987
+      2259
     ],
-    "ink_px": 98732,
+    "ink_px": 104471,
     "covered_px": 93366,
-    "covered_fraction": 0.94565,
-    "uncovered_px": 5366,
+    "covered_fraction": 0.8937,
+    "uncovered_px": 11105,
     "uncovered_regions": [
       {
         "bbox": [
-          351,
-          319,
-          1167,
-          343
+          783,
+          2088,
+          999,
+          2256
         ],
-        "ink_px": 2733
+        "ink_px": 2059
       },
       {
         "bbox": [
-          351,
-          1111,
-          1191,
-          1135
+          1215,
+          2064,
+          1431,
+          2136
         ],
-        "ink_px": 2361
+        "ink_px": 2021
+      },
+      {
+        "bbox": [
+          1023,
+          2088,
+          1191,
+          2136
+        ],
+        "ink_px": 864
+      },
+      {
+        "bbox": [
+          1407,
+          0,
+          1520,
+          72
+        ],
+        "ink_px": 615
       }
     ],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

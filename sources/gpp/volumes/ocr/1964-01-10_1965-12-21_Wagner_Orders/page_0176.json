@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 136,
-        "area_px": 13254,
-        "density": 0.01026,
+        "ink_px": 226,
+        "area_px": 28576,
+        "density": 0.00791,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -57,7 +57,13 @@
           "min": -0.0093
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 33,
+        "area_px": 110979,
+        "density": 0.0003,
+        "chars": 31,
+        "chars_per_1k_ink": 939.39
+      }
     },
     {
       "bbox": [
@@ -67,7 +73,7 @@
         420
       ],
       "category": "Text",
-      "text": "370 JAY STREET • BROOKLYN, N.Y. 11201",
+      "text": "370 JAY STREET \u2022 BROOKLYN, N.Y. 11201",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -86,11 +92,11 @@
         }
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 9834,
-        "density": 0.0,
+        "ink_px": 2,
+        "area_px": 67944,
+        "density": 3e-05,
         "chars": 37,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 18500.0
       }
     },
     {
@@ -407,7 +413,7 @@
         1892
       ],
       "category": "Text",
-      "text": "Transmitted herewith for your approval, in accordance with Administrative Code, §B3-36.1, is a certified copy of a resolution adopted this day by this Authority, granting pensions-providing-for-increased-take-home-pay for certain officers and employees of this Authority who are members of the New York City Employees' Retirement System.",
+      "text": "Transmitted herewith for your approval, in accordance with Administrative Code, \u00a7B3-36.1, is a certified copy of a resolution adopted this day by this Authority, granting pensions-providing-for-increased-take-home-pay for certain officers and employees of this Authority who are members of the New York City Employees' Retirement System.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -611,7 +617,7 @@
           "index": 112,
           "token_id": 7288,
           "logprob": -0.1948,
-          "text": " •"
+          "text": " \u2022"
         },
         {
           "index": 284,
@@ -765,15 +771,35 @@
   "ink_coverage": {
     "roi": [
       279,
-      410,
+      0,
       2051,
-      3011
+      3422
     ],
-    "ink_px": 3204,
-    "covered_px": 3016,
-    "covered_fraction": 0.94132,
-    "uncovered_px": 188,
-    "uncovered_regions": [],
+    "ink_px": 299905,
+    "covered_px": 3141,
+    "covered_fraction": 0.01047,
+    "uncovered_px": 296764,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          279,
+          0,
+          2051,
+          144
+        ],
+        "ink_px": 195349
+      },
+      {
+        "bbox": [
+          279,
+          3360,
+          2051,
+          3422
+        ],
+        "ink_px": 101214
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

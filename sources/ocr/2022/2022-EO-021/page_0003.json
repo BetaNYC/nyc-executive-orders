@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1686,
-        "area_px": 24548,
-        "density": 0.06868,
+        "ink_px": 8971,
+        "area_px": 98192,
+        "density": 0.09136,
         "chars": 121,
-        "chars_per_1k_ink": 71.77
+        "chars_per_1k_ink": 13.49
       }
     },
     {
@@ -78,7 +78,7 @@
         708
       ],
       "category": "Text",
-      "text": "§ 8. The Office of Nightlife shall continue to be established under MOME. The Director of the Office of Nightlife shall be appointed by the Mayor and shall report to the Commissioner of MOME. In addition to the power and duties set forth in City Charter section 20-d, the Office of Nightlife will serve as a central point of contact among City agencies, the nightlife industry, and New York City residents, promoting a safe and vibrant nightlife scene beneficial to businesses and residents across the five boroughs.",
+      "text": "\u00a7 8. The Office of Nightlife shall continue to be established under MOME. The Director of the Office of Nightlife shall be appointed by the Mayor and shall report to the Commissioner of MOME. In addition to the power and duties set forth in City Charter section 20-d, the Office of Nightlife will serve as a central point of contact among City agencies, the nightlife industry, and New York City residents, promoting a safe and vibrant nightlife scene beneficial to businesses and residents across the five boroughs.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         857
       ],
       "category": "Text",
-      "text": "§ 9. An office shall be established as a division of MOME to carry out the powers and duties relating to the issuance of press credentials, in accordance with section 3-119.4 of the Administrative Code.",
+      "text": "\u00a7 9. An office shall be established as a division of MOME to carry out the powers and duties relating to the issuance of press credentials, in accordance with section 3-119.4 of the Administrative Code.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         1054
       ],
       "category": "Text",
-      "text": "§ 10. MOME shall contribute to the support and strengthening of New York City's creative economy, including but not limited to the sectors of film, television, theatre, music, digital content production and distribution, advertising, and publishing (the \"creative sectors\"), as well as real estate as it relates to the creative sectors, and in connection with such work:",
+      "text": "\u00a7 10. MOME shall contribute to the support and strengthening of New York City's creative economy, including but not limited to the sectors of film, television, theatre, music, digital content production and distribution, advertising, and publishing (the \"creative sectors\"), as well as real estate as it relates to the creative sectors, and in connection with such work:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -316,7 +316,7 @@
         1677
       ],
       "category": "Text",
-      "text": "§ 11. Executive Order No. 31, dated March 7, 2018, is hereby REVOKED. Unless inconsistent with this Order, any references to MOME or to Executive Order No. 138, dated July 26, 2010, contained in any other laws, regulations, executive orders, or other City documents are hereby deemed to refer to MOME as continued herein and to this Executive Order, respectively.",
+      "text": "\u00a7 11. Executive Order No. 31, dated March 7, 2018, is hereby REVOKED. Unless inconsistent with this Order, any references to MOME or to Executive Order No. 138, dated July 26, 2010, contained in any other laws, regulations, executive orders, or other City documents are hereby deemed to refer to MOME as continued herein and to this Executive Order, respectively.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -350,7 +350,7 @@
         1752
       ],
       "category": "Text",
-      "text": "§ 12. This Order shall take effect immediately.",
+      "text": "\u00a7 12. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -447,7 +447,7 @@
           "index": 163,
           "token_id": 17851,
           "logprob": -0.0178,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 255,
@@ -601,15 +601,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 157504,
-    "covered_px": 157380,
-    "covered_fraction": 0.99921,
-    "uncovered_px": 124,
+    "ink_px": 164849,
+    "covered_px": 164665,
+    "covered_fraction": 0.99888,
+    "uncovered_px": 184,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

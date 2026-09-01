@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 3638,
-        "area_px": 11956,
-        "density": 0.30428,
+        "ink_px": 13986,
+        "area_px": 40964,
+        "density": 0.34142,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1257
       ],
       "category": "Text",
-      "text": "§2. **Signature Authorized.** The Deputy Mayor for Planning and Development, whose office is established pursuant to Executive Order No. 2, dated January 2, 1990, is hereby authorized to sign an application to secure grant funds, submitted pursuant to 6 New York Codes, Rules and Regulations Subpart 360-15, and to sign any other documents as may be necessary to secure such funds.",
+      "text": "\u00a72. **Signature Authorized.** The Deputy Mayor for Planning and Development, whose office is established pursuant to Executive Order No. 2, dated January 2, 1990, is hereby authorized to sign an application to secure grant funds, submitted pursuant to 6 New York Codes, Rules and Regulations Subpart 360-15, and to sign any other documents as may be necessary to secure such funds.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -396,7 +396,7 @@
           "index": 390,
           "token_id": 17851,
           "logprob": -0.2195,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 272,
@@ -562,25 +562,16 @@
   "ink_coverage": {
     "roi": [
       205,
-      270,
+      0,
       1506,
-      1980
+      2250
     ],
-    "ink_px": 134403,
-    "covered_px": 131954,
-    "covered_fraction": 0.98178,
-    "uncovered_px": 2449,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          517,
-          750,
-          1237,
-          774
-        ],
-        "ink_px": 2431
-      }
-    ],
+    "ink_px": 145118,
+    "covered_px": 142302,
+    "covered_fraction": 0.9806,
+    "uncovered_px": 2816,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

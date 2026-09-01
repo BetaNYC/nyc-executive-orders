@@ -44,7 +44,7 @@
         1297
       ],
       "category": "Section-header",
-      "text": "§11. PRIOR EXECUTIVE ORDERS.",
+      "text": "\u00a711. PRIOR EXECUTIVE ORDERS.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -112,7 +112,7 @@
         1757
       ],
       "category": "Section-header",
-      "text": "§12. EFFECTIVE DATE.",
+      "text": "\u00a712. EFFECTIVE DATE.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -355,7 +355,7 @@
           "index": 80,
           "token_id": 17851,
           "logprob": -0.6453,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 429,
@@ -385,7 +385,7 @@
           "index": 268,
           "token_id": 17851,
           "logprob": -0.049,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 37,
@@ -533,15 +533,35 @@
   "ink_coverage": {
     "roi": [
       302,
-      451,
+      0,
       2221,
-      3308
+      3760
     ],
-    "ink_px": 29157,
+    "ink_px": 514064,
     "covered_px": 29144,
-    "covered_fraction": 0.99955,
-    "uncovered_px": 13,
-    "uncovered_regions": [],
+    "covered_fraction": 0.05669,
+    "uncovered_px": 484920,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          302,
+          3600,
+          2221,
+          3760
+        ],
+        "ink_px": 248466
+      },
+      {
+        "bbox": [
+          302,
+          0,
+          2221,
+          168
+        ],
+        "ink_px": 236383
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

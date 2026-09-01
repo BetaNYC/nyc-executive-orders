@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 19091,
-        "area_px": 159885,
-        "density": 0.1194,
+        "ink_px": 32121,
+        "area_px": 265506,
+        "density": 0.12098,
         "chars": 719,
-        "chars_per_1k_ink": 37.66
+        "chars_per_1k_ink": 22.38
       }
     },
     {
@@ -248,7 +248,7 @@
         1059
       ],
       "category": "Section-header",
-      "text": "### § 4. The Deputy Mayor for Policy shall:",
+      "text": "### \u00a7 4. The Deputy Mayor for Policy shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -486,7 +486,7 @@
         2120
       ],
       "category": "List-item",
-      "text": "(f) For the purposes of Article 2, section 9 of the Public Officers Law, notwithstanding the temporary inability of the Mayor to exercise such functions, powers and duties as he may have pursuant to the Act, by reason of sickness or otherwise, or his absence from the City, the delegation established by subdivision (e) of this §4 shall devolve upon the Deputy Mayor for Policy.",
+      "text": "(f) For the purposes of Article 2, section 9 of the Public Officers Law, notwithstanding the temporary inability of the Mayor to exercise such functions, powers and duties as he may have pursuant to the Act, by reason of sickness or otherwise, or his absence from the City, the delegation established by subdivision (e) of this \u00a74 shall devolve upon the Deputy Mayor for Policy.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -505,11 +505,11 @@
         }
       },
       "ink": {
-        "ink_px": 4652,
-        "area_px": 33174,
-        "density": 0.14023,
+        "ink_px": 18704,
+        "area_px": 142299,
+        "density": 0.13144,
         "chars": 378,
-        "chars_per_1k_ink": 81.26
+        "chars_per_1k_ink": 20.21
       }
     }
   ],
@@ -536,7 +536,7 @@
           "index": 1359,
           "token_id": 16625,
           "logprob": -1.0634,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 630,
@@ -708,43 +708,16 @@
   "ink_coverage": {
     "roi": [
       211,
-      272,
+      0,
       1550,
-      2000
+      2273
     ],
-    "ink_px": 215961,
-    "covered_px": 170216,
-    "covered_fraction": 0.78818,
-    "uncovered_px": 45745,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          331,
-          1280,
-          427,
-          2000
-        ],
-        "ink_px": 32431
-      },
-      {
-        "bbox": [
-          1219,
-          1256,
-          1363,
-          1856
-        ],
-        "ink_px": 9552
-      },
-      {
-        "bbox": [
-          379,
-          272,
-          403,
-          1136
-        ],
-        "ink_px": 3317
-      }
-    ],
+    "ink_px": 246854,
+    "covered_px": 197298,
+    "covered_fraction": 0.79925,
+    "uncovered_px": 49556,
+    "uncovered_regions": [],
+    "suppressed_regions": 4,
     "cell_px": 24
   }
 }

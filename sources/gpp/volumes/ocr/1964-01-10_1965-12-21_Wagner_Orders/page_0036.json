@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3537,
+        "area_px": 24462,
+        "density": 0.14459,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -237,7 +243,7 @@
         1706
       ],
       "category": "Text",
-      "text": "Pursuant to the provisions of Administrative Code, § B20-41.1, subdivision i, as amended by Laws 1964, Ch. 623 the Mayor hereby elects by this executive order, adopted, prior to June 1, 1964, that beginning with the payroll period, the first day of which is nearest to July first of the City fiscal year 1964-1965, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30 of such 1964-1965 fiscal year, the provisions of paragraph four of such subdivision i and the provisions of subdivisions e and f of such Section B20-41.1, shall be applicable to and for the benefit of all contributors to the New York City Teachers' Retirement System.",
+      "text": "Pursuant to the provisions of Administrative Code, \u00a7 B20-41.1, subdivision i, as amended by Laws 1964, Ch. 623 the Mayor hereby elects by this executive order, adopted, prior to June 1, 1964, that beginning with the payroll period, the first day of which is nearest to July first of the City fiscal year 1964-1965, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30 of such 1964-1965 fiscal year, the provisions of paragraph four of such subdivision i and the provisions of subdivisions e and f of such Section B20-41.1, shall be applicable to and for the benefit of all contributors to the New York City Teachers' Retirement System.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -522,15 +528,35 @@
   "ink_coverage": {
     "roi": [
       232,
-      338,
+      0,
       1705,
-      2479
+      2818
     ],
-    "ink_px": 2650,
-    "covered_px": 2650,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 207947,
+    "covered_px": 6187,
+    "covered_fraction": 0.02975,
+    "uncovered_px": 201760,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          232,
+          0,
+          1705,
+          120
+        ],
+        "ink_px": 116180
+      },
+      {
+        "bbox": [
+          232,
+          2736,
+          1705,
+          2818
+        ],
+        "ink_px": 85566
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

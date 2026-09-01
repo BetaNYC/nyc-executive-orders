@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16831,
+        "area_px": 52216,
+        "density": 0.32233,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 3804,
-        "area_px": 37291,
-        "density": 0.10201,
+        "ink_px": 6089,
+        "area_px": 51537,
+        "density": 0.11815,
         "chars": 53,
-        "chars_per_1k_ink": 13.93
+        "chars_per_1k_ink": 8.7
       }
     },
     {
@@ -169,7 +175,7 @@
         1278
       ],
       "category": "Text",
-      "text": "§ 5. Examination of Drivers in titles other than Motor Vehicle Operator. Prior to assigning an employee to a job which requires driving a City vehicle, agencies should have employees, permanent or provisional, who drive City vehicles as an important part of their duties examined in accordance with the standards and procedures established for the position of Motor Vehicle Operator. Agencies should arrange to have employees, permanent or provisional, who drive City vehicles as an important part of their duties re-examined on the same basis as Motor Vehicle Operators. Any City agency which does not have its own medical staff will follow instructions in § 4 Paragraph (c) of this executive order.",
+      "text": "\u00a7 5. Examination of Drivers in titles other than Motor Vehicle Operator. Prior to assigning an employee to a job which requires driving a City vehicle, agencies should have employees, permanent or provisional, who drive City vehicles as an important part of their duties examined in accordance with the standards and procedures established for the position of Motor Vehicle Operator. Agencies should arrange to have employees, permanent or provisional, who drive City vehicles as an important part of their duties re-examined on the same basis as Motor Vehicle Operators. Any City agency which does not have its own medical staff will follow instructions in \u00a7 4 Paragraph (c) of this executive order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -237,7 +243,7 @@
         1482
       ],
       "category": "Text",
-      "text": "§ 6. Medically unfit drivers. All Departments and Agencies shall make every effort to continue the employment, in appropriate positions, consonant with the public welfare, of drivers of motor vehicles who are found to be medically unfit to perform the duties of the position on the basis of the medical re-examination. In accordance with this policy, first priority and preferred action shall be as follows:",
+      "text": "\u00a7 6. Medically unfit drivers. All Departments and Agencies shall make every effort to continue the employment, in appropriate positions, consonant with the public welfare, of drivers of motor vehicles who are found to be medically unfit to perform the duties of the position on the basis of the medical re-examination. In accordance with this policy, first priority and preferred action shall be as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -781,7 +787,7 @@
         2703
       ],
       "category": "Text",
-      "text": "§ 7. Effective date. This order shall take effect on the date hereof and shall supersede Executive Order No. 179, dated December 8, 1965.",
+      "text": "\u00a7 7. Effective date. This order shall take effect on the date hereof and shall supersede Executive Order No. 179, dated December 8, 1965.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -899,7 +905,7 @@
           "index": 306,
           "token_id": 17851,
           "logprob": -0.4308,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 307,
@@ -1071,25 +1077,44 @@
   "ink_coverage": {
     "roi": [
       284,
-      413,
+      0,
       2089,
-      3035
+      3449
     ],
-    "ink_px": 35582,
-    "covered_px": 32498,
-    "covered_fraction": 0.91333,
-    "uncovered_px": 3084,
+    "ink_px": 399864,
+    "covered_px": 51614,
+    "covered_fraction": 0.12908,
+    "uncovered_px": 348250,
     "uncovered_regions": [
       {
         "bbox": [
-          1652,
-          1493,
-          1700,
-          1973
+          284,
+          0,
+          2089,
+          120
         ],
-        "ink_px": 703
+        "ink_px": 177372
+      },
+      {
+        "bbox": [
+          284,
+          3336,
+          2089,
+          3449
+        ],
+        "ink_px": 166653
+      },
+      {
+        "bbox": [
+          1340,
+          144,
+          1388,
+          216
+        ],
+        "ink_px": 726
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

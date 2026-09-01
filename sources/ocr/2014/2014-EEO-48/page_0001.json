@@ -24,11 +24,11 @@
         "text": null
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 11648,
-        "density": 0.0,
+        "ink_px": 122,
+        "area_px": 53536,
+        "density": 0.00228,
         "chars": 0,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 0.0
       }
     },
     {
@@ -277,7 +277,7 @@
         1672
       ],
       "category": "Text",
-      "text": "§ 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 is hereby extended for five days.",
+      "text": "\u00a7 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 is hereby extended for five days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1821
       ],
       "category": "Text",
-      "text": "§ 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -359,9 +359,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1309,
-        "area_px": 21413,
-        "density": 0.06113,
+        "ink_px": 3699,
+        "area_px": 35397,
+        "density": 0.1045,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -392,7 +392,13 @@
           "min": -0.0003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1259,
+        "area_px": 13616,
+        "density": 0.09246,
+        "chars": 20,
+        "chars_per_1k_ink": 15.89
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -590,15 +596,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 74805,
-    "covered_px": 74805,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 78892,
+    "covered_px": 78576,
+    "covered_fraction": 0.99599,
+    "uncovered_px": 316,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

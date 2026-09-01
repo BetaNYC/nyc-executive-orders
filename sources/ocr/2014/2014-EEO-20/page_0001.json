@@ -24,11 +24,11 @@
         "text": null
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 15640,
-        "density": 0.0,
+        "ink_px": 1,
+        "area_px": 55200,
+        "density": 2e-05,
         "chars": 0,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 0.0
       }
     },
     {
@@ -311,7 +311,7 @@
         1663
       ],
       "category": "Text",
-      "text": "§ 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 is hereby extended for five days.",
+      "text": "\u00a7 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 is hereby extended for five days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -345,7 +345,7 @@
         1806
       ],
       "category": "Text",
-      "text": "§ 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -393,9 +393,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 4996,
-        "area_px": 30672,
-        "density": 0.16288,
+        "ink_px": 10238,
+        "area_px": 71994,
+        "density": 0.14221,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -596,15 +596,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 150636,
-    "covered_px": 150636,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 155990,
+    "covered_px": 155879,
+    "covered_fraction": 0.99929,
+    "uncovered_px": 111,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -28,7 +28,13 @@
           "min": -0.3912
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 715,
+        "area_px": 3828,
+        "density": 0.18678,
+        "chars": 21,
+        "chars_per_1k_ink": 29.37
+      }
     },
     {
       "bbox": [
@@ -51,7 +57,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1191,
+        "area_px": 2975,
+        "density": 0.40034,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -79,7 +91,13 @@
           "min": -0.0002
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 171,
+        "area_px": 1092,
+        "density": 0.15659,
+        "chars": 3,
+        "chars_per_1k_ink": 17.54
+      }
     },
     {
       "bbox": [
@@ -107,7 +125,13 @@
           "min": -0.0039
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 6542,
+        "area_px": 29588,
+        "density": 0.2211,
+        "chars": 20,
+        "chars_per_1k_ink": 3.06
+      }
     },
     {
       "bbox": [
@@ -117,7 +141,7 @@
         272
       ],
       "category": "Section-header",
-      "text": "REPORT ON STATE LEGISLATION—DISAPPROVED",
+      "text": "REPORT ON STATE LEGISLATION\u2014DISAPPROVED",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -135,7 +159,13 @@
           "min": -0.4573
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 11398,
+        "area_px": 62492,
+        "density": 0.18239,
+        "chars": 39,
+        "chars_per_1k_ink": 3.42
+      }
     },
     {
       "bbox": [
@@ -164,11 +194,11 @@
         }
       },
       "ink": {
-        "ink_px": 569,
-        "area_px": 9171,
-        "density": 0.06204,
+        "ink_px": 6372,
+        "area_px": 88653,
+        "density": 0.07188,
         "chars": 141,
-        "chars_per_1k_ink": 247.8
+        "chars_per_1k_ink": 22.13
       }
     },
     {
@@ -198,11 +228,11 @@
         }
       },
       "ink": {
-        "ink_px": 8405,
-        "area_px": 91425,
-        "density": 0.09193,
+        "ink_px": 9019,
+        "area_px": 98580,
+        "density": 0.09149,
         "chars": 184,
-        "chars_per_1k_ink": 21.89
+        "chars_per_1k_ink": 20.4
       }
     },
     {
@@ -329,9 +359,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 2531,
-        "area_px": 7785,
-        "density": 0.32511,
+        "ink_px": 14094,
+        "area_px": 32870,
+        "density": 0.42878,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -891,7 +921,13 @@
           "min": -0.0031
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2525,
+        "area_px": 12570,
+        "density": 0.20088,
+        "chars": 31,
+        "chars_per_1k_ink": 12.28
+      }
     },
     {
       "bbox": [
@@ -919,7 +955,13 @@
           "min": -0.0
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 508,
+        "area_px": 2100,
+        "density": 0.2419,
+        "chars": 5,
+        "chars_per_1k_ink": 9.84
+      }
     },
     {
       "bbox": [
@@ -947,7 +989,13 @@
           "min": -0.0001
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 454,
+        "area_px": 1925,
+        "density": 0.23584,
+        "chars": 4,
+        "chars_per_1k_ink": 8.81
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -1145,52 +1193,26 @@
   "ink_coverage": {
     "roi": [
       273,
-      346,
+      0,
       2002,
-      2538
+      2885
     ],
-    "ink_px": 81602,
-    "covered_px": 66669,
-    "covered_fraction": 0.817,
-    "uncovered_px": 14933,
+    "ink_px": 487602,
+    "covered_px": 107509,
+    "covered_fraction": 0.22049,
+    "uncovered_px": 380093,
     "uncovered_regions": [
       {
         "bbox": [
-          1257,
-          802,
-          1929,
-          1042
-        ],
-        "ink_px": 4715
-      },
-      {
-        "bbox": [
           273,
-          538,
-          1929,
-          610
+          2760,
+          2002,
+          2885
         ],
-        "ink_px": 4461
-      },
-      {
-        "bbox": [
-          273,
-          1162,
-          1929,
-          1210
-        ],
-        "ink_px": 3816
-      },
-      {
-        "bbox": [
-          273,
-          994,
-          1137,
-          1042
-        ],
-        "ink_px": 1814
+        "ink_px": 180570
       }
     ],
+    "suppressed_regions": 7,
     "cell_px": 24
   }
 }

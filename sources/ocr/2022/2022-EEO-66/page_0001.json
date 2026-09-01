@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 16560,
+        "area_px": 54740,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -379,7 +379,7 @@
         1831
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct that section 1 of Emergency Executive Order No. 63, dated March 24, 2022, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby direct that section 1 of Emergency Executive Order No. 63, dated March 24, 2022, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -413,7 +413,7 @@
         1985
       ],
       "category": "Text",
-      "text": "§ 3. I hereby order that, beginning April 1, 2022, Section 8 of Emergency Executive Order No. 241, dated September 15, 2021, is amended to provide that certain suspensions of Board of Correction minimum standards applicable to housing area 2B of the George R. Vierno Center shall",
+      "text": "\u00a7 3. I hereby order that, beginning April 1, 2022, Section 8 of Emergency Executive Order No. 241, dated September 15, 2021, is amended to provide that certain suspensions of Board of Correction minimum standards applicable to housing area 2B of the George R. Vierno Center shall",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -432,11 +432,11 @@
         }
       },
       "ink": {
-        "ink_px": 12193,
-        "area_px": 98714,
-        "density": 0.12352,
+        "ink_px": 19095,
+        "area_px": 148712,
+        "density": 0.1284,
         "chars": 279,
-        "chars_per_1k_ink": 22.88
+        "chars_per_1k_ink": 14.61
       }
     }
   ],
@@ -517,7 +517,7 @@
           "index": 845,
           "token_id": 17851,
           "logprob": -0.0029,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 610,
@@ -635,15 +635,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 150037,
-    "covered_px": 150037,
+    "ink_px": 156939,
+    "covered_px": 156939,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

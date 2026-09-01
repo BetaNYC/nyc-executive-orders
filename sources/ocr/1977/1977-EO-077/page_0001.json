@@ -28,7 +28,13 @@
           "min": -0.0008
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3186,
+        "area_px": 11004,
+        "density": 0.28953,
+        "chars": 19,
+        "chars_per_1k_ink": 5.96
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0076
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2651,
+        "area_px": 7876,
+        "density": 0.33659,
+        "chars": 22,
+        "chars_per_1k_ink": 8.3
+      }
     },
     {
       "bbox": [
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 232,
-        "area_px": 1380,
-        "density": 0.16812,
+        "ink_px": 1350,
+        "area_px": 5520,
+        "density": 0.24457,
         "chars": 17,
-        "chars_per_1k_ink": 73.28
+        "chars_per_1k_ink": 12.59
       }
     },
     {
@@ -338,7 +350,7 @@
         832
       ],
       "category": "Text",
-      "text": "§ 2. To insure cooperation for the One-Stop-Business-Service with City agencies, the head of each department shall designate a high-ranking representative with authority to implement the objectives of this Executive Order and who shall serve as the business service liaison with the One-Stop-Business-Service. Such designations must be filed in my office and the Office of the Deputy Mayor for Economic Development within one week of the date of this Order.",
+      "text": "\u00a7 2. To insure cooperation for the One-Stop-Business-Service with City agencies, the head of each department shall designate a high-ranking representative with authority to implement the objectives of this Executive Order and who shall serve as the business service liaison with the One-Stop-Business-Service. Such designations must be filed in my office and the Office of the Deputy Mayor for Economic Development within one week of the date of this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -372,7 +384,7 @@
         857
       ],
       "category": "Text",
-      "text": "§ 3. The business service liaison from each agency shall:",
+      "text": "\u00a7 3. The business service liaison from each agency shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -542,7 +554,7 @@
         1143
       ],
       "category": "Text",
-      "text": "§ 4. The Deputy Mayor/Administrator of Economic Development Administration or",
+      "text": "\u00a7 4. The Deputy Mayor/Administrator of Economic Development Administration or",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -610,7 +622,7 @@
         1256
       ],
       "category": "Text",
-      "text": "§ 5. This Order shall take effect immediately.",
+      "text": "\u00a7 5. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -764,7 +776,7 @@
           "index": 652,
           "token_id": 17851,
           "logprob": -0.0326,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 358,
@@ -788,7 +800,7 @@
           "index": 775,
           "token_id": 17851,
           "logprob": -0.0134,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -900,34 +912,26 @@
   "ink_coverage": {
     "roi": [
       207,
-      272,
+      0,
       1520,
-      1994
+      2267
     ],
-    "ink_px": 171313,
-    "covered_px": 168905,
-    "covered_fraction": 0.98594,
-    "uncovered_px": 2408,
+    "ink_px": 181690,
+    "covered_px": 175860,
+    "covered_fraction": 0.96791,
+    "uncovered_px": 5830,
     "uncovered_regions": [
       {
         "bbox": [
-          279,
-          536,
-          303,
-          1040
+          1335,
+          0,
+          1431,
+          96
         ],
-        "ink_px": 1274
-      },
-      {
-        "bbox": [
-          1023,
-          1160,
-          1263,
-          1304
-        ],
-        "ink_px": 760
+        "ink_px": 428
       }
     ],
+    "suppressed_regions": 3,
     "cell_px": 24
   }
 }

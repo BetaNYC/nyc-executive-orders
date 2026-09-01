@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 20548,
-        "area_px": 132870,
-        "density": 0.15465,
+        "ink_px": 29510,
+        "area_px": 196080,
+        "density": 0.1505,
         "chars": 314,
-        "chars_per_1k_ink": 15.28
+        "chars_per_1k_ink": 10.64
       }
     },
     {
@@ -146,7 +146,7 @@
         1521
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct that an operator of any charter bus who knows or reasonably should know that such charter bus will be transporting ten or more passengers who are likely to seek emergency shelter and other immediate services in New York City must comply with the requirements set forth in this section. There shall be a presumption that passengers who have arrived recently in the United States are likely to seek emergency shelter and other immediate services. The determination that an operator knows or reasonably should know that they are providing transportation that makes them subject to this Order will be based on the totality of the circumstances, including but not limited to: whether the passengers' fares were paid for by a third party; the identity of such third party; any conditions that such third party paying for transportation imposed on the operator or bus driver; whether the passengers' travel arrangements included return travel; whether the bus is coming from a state from which a substantial number of charter buses have arrived carrying people seeking emergency shelter and other immediate services in New York City in the last 60 days; and any other indicia that the passengers are likely to seek emergency shelter and other immediate services in New York City.",
+      "text": "\u00a7 2. I hereby direct that an operator of any charter bus who knows or reasonably should know that such charter bus will be transporting ten or more passengers who are likely to seek emergency shelter and other immediate services in New York City must comply with the requirements set forth in this section. There shall be a presumption that passengers who have arrived recently in the United States are likely to seek emergency shelter and other immediate services. The determination that an operator knows or reasonably should know that they are providing transportation that makes them subject to this Order will be based on the totality of the circumstances, including but not limited to: whether the passengers' fares were paid for by a third party; the identity of such third party; any conditions that such third party paying for transportation imposed on the operator or bus driver; whether the passengers' travel arrangements included return travel; whether the bus is coming from a state from which a substantial number of charter buses have arrived carrying people seeking emergency shelter and other immediate services in New York City in the last 60 days; and any other indicia that the passengers are likely to seek emergency shelter and other immediate services in New York City.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -233,11 +233,11 @@
         }
       },
       "ink": {
-        "ink_px": 35182,
-        "area_px": 192508,
-        "density": 0.18276,
+        "ink_px": 41820,
+        "area_px": 244188,
+        "density": 0.17126,
         "chars": 466,
-        "chars_per_1k_ink": 13.25
+        "chars_per_1k_ink": 11.14
       }
     }
   ],
@@ -288,7 +288,7 @@
           "index": 437,
           "token_id": 17851,
           "logprob": -0.0165,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 147,
@@ -436,15 +436,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 305921,
-    "covered_px": 305921,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 321639,
+    "covered_px": 321521,
+    "covered_fraction": 0.99963,
+    "uncovered_px": 118,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

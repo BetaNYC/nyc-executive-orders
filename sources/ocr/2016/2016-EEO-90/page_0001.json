@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 3565,
-        "area_px": 22225,
-        "density": 0.1604,
+        "ink_px": 3722,
+        "area_px": 33250,
+        "density": 0.11194,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1451
       ],
       "category": "Text",
-      "text": "NOW THEREFORE, by the power vested in me as Mayor of the City of New York pursuant to law, including Executive Law § 24, I hereby continue the state of local emergency in the City of New York and order:",
+      "text": "NOW THEREFORE, by the power vested in me as Mayor of the City of New York pursuant to law, including Executive Law \u00a7 24, I hereby continue the state of local emergency in the City of New York and order:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1767
       ],
       "category": "Text",
-      "text": "§ 2. The following vehicles may operate on City streets and highways while the state of emergency remains in effect:",
+      "text": "\u00a7 2. The following vehicles may operate on City streets and highways while the state of emergency remains in effect:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -364,11 +364,11 @@
         }
       },
       "ink": {
-        "ink_px": 19996,
-        "area_px": 161895,
-        "density": 0.12351,
+        "ink_px": 21523,
+        "area_px": 220880,
+        "density": 0.09744,
         "chars": 247,
-        "chars_per_1k_ink": 12.35
+        "chars_per_1k_ink": 11.48
       }
     }
   ],
@@ -437,7 +437,7 @@
           "index": 603,
           "token_id": 17851,
           "logprob": -0.003,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 225,
@@ -567,15 +567,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 118314,
-    "covered_px": 118314,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 120090,
+    "covered_px": 119998,
+    "covered_fraction": 0.99923,
+    "uncovered_px": 92,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

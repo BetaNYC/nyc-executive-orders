@@ -28,7 +28,13 @@
           "min": -0.0114
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1225,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 262,
-        "area_px": 230318,
-        "density": 0.00114,
+        "ink_px": 302,
+        "area_px": 275500,
+        "density": 0.0011,
         "chars": 358,
-        "chars_per_1k_ink": 1366.41
+        "chars_per_1k_ink": 1185.43
       }
     },
     {
@@ -174,7 +180,7 @@
         1180
       ],
       "category": "Text",
-      "text": "§2. There is established in the Executive Office of the Mayor the Office of Downtown Brooklyn Development which shall be headed by the Chairman of the Development Group, who shall be appointed by the Steering Committee for Downtown Brooklyn Development.",
+      "text": "\u00a72. There is established in the Executive Office of the Mayor the Office of Downtown Brooklyn Development which shall be headed by the Chairman of the Development Group, who shall be appointed by the Steering Committee for Downtown Brooklyn Development.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -242,7 +248,7 @@
         1664
       ],
       "category": "Text",
-      "text": "§3. The administration and implementation of the two urban renewal areas within the planning and development strategy area of the Office of Downtown Brooklyn Development shall remain with the agencies charged with those responsibilities and duties under the City Charter and all",
+      "text": "\u00a73. The administration and implementation of the two urban renewal areas within the planning and development strategy area of the Office of Downtown Brooklyn Development shall remain with the agencies charged with those responsibilities and duties under the City Charter and all",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -261,11 +267,11 @@
         }
       },
       "ink": {
-        "ink_px": 944,
-        "area_px": 149872,
-        "density": 0.0063,
+        "ink_px": 1551,
+        "area_px": 219298,
+        "density": 0.00707,
         "chars": 278,
-        "chars_per_1k_ink": 294.49
+        "chars_per_1k_ink": 179.24
       }
     }
   ],
@@ -286,7 +292,7 @@
           "index": 377,
           "token_id": 17851,
           "logprob": -1.0297,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 114,
@@ -322,7 +328,7 @@
           "index": 548,
           "token_id": 17851,
           "logprob": -0.0068,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 498,
@@ -464,15 +470,26 @@
   "ink_coverage": {
     "roi": [
       174,
-      216,
+      0,
       1276,
-      1590
+      1807
     ],
-    "ink_px": 4488,
-    "covered_px": 4488,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 65553,
+    "covered_px": 5135,
+    "covered_fraction": 0.07833,
+    "uncovered_px": 60418,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          174,
+          1728,
+          1276,
+          1807
+        ],
+        "ink_px": 60414
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

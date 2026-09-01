@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 3736,
-        "area_px": 9947,
-        "density": 0.37559,
+        "ink_px": 21043,
+        "area_px": 44051,
+        "density": 0.4777,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1182
       ],
       "category": "Text",
-      "text": "§ 2. The First Deputy Mayor shall:",
+      "text": "\u00a7 2. The First Deputy Mayor shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -398,11 +398,11 @@
         }
       },
       "ink": {
-        "ink_px": 16557,
-        "area_px": 132870,
-        "density": 0.12461,
+        "ink_px": 28198,
+        "area_px": 248970,
+        "density": 0.11326,
         "chars": 259,
-        "chars_per_1k_ink": 15.64
+        "chars_per_1k_ink": 9.19
       }
     },
     {
@@ -413,7 +413,7 @@
         2158
       ],
       "category": "Page-footer",
-      "text": "© Printed on paper containing 30% post-consumer material.",
+      "text": "\u00a9 Printed on paper containing 30% post-consumer material.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -431,7 +431,13 @@
           "min": -0.0166
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2145,
+        "area_px": 10426,
+        "density": 0.20574,
+        "chars": 57,
+        "chars_per_1k_ink": 26.57
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -451,7 +457,7 @@
           "index": 751,
           "token_id": 20043,
           "logprob": -0.0166,
-          "text": "©"
+          "text": "\u00a9"
         },
         {
           "index": 121,
@@ -463,7 +469,7 @@
           "index": 400,
           "token_id": 17851,
           "logprob": -0.0054,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 322,
@@ -629,15 +635,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 152442,
-    "covered_px": 152442,
+    "ink_px": 183535,
+    "covered_px": 183535,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

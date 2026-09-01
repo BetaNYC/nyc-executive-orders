@@ -432,6 +432,14 @@ UNCOVERED_CELL_MIN_INK_FRACTION = 0.025
 DEFAULT_MIN_UNCOVERED_INK = 400
 # Most uncovered regions reported per page, largest first.
 MAX_UNCOVERED_REGIONS = 12
+# How far from a returned bbox a group of leftover ink still counts as that
+# element's own, in cells. Two things produce ink just outside a box that is not
+# dropped content: rules and dot leaders the model correctly declines to
+# transcribe, and a box drawn a shade tighter than the glyphs it holds. Both
+# report as a miss otherwise, and on this corpus that is the common case -- see
+# 1974-EO-001 page 1, where the rule above OFFICE OF THE MAYOR flood-fills into
+# one group whose bounding box straddles the title.
+UNCOVERED_NEAR_ELEMENT_PAD_CELLS = 1
 
 # MLX-ready quantizations published by mlx-community, in two families:
 # dots.mocr (newer -- stronger multilingual parsing + structured-graphics
@@ -742,18 +750,28 @@ def load_gray(image_path: Path) -> np.ndarray:
         return np.asarray(im.convert("L"), dtype=np.uint8)
 
 
-def roi_bounds(shape: tuple[int, int], roi_margin: float) -> tuple[int, int, int, int]:
+def roi_bounds(
+    shape: tuple[int, int], roi_margin: float, *, vertical: bool = True
+) -> tuple[int, int, int, int]:
     """The page's interior as (left, top, right, bottom) pixel bounds, cropping
     the outer roi_margin fraction off each side. Everything that measures ink
     works inside this box: the book's binding and the black scanner-bed
     background around the page are dark on *every* page regardless of content,
-    and would otherwise dominate whatever is being measured."""
+    and would otherwise dominate whatever is being measured.
+
+    vertical=False crops the sides only and keeps the full page height. Coverage
+    uses that, because the binding and the scanner-bed edge that motivate the
+    crop run down the *sides* of a page, while what the vertical crop removed
+    was the header and the footer -- real content, and content the model does
+    return boxes for. The blank/bleed-through statistics keep the full crop:
+    their thresholds were swept against it (see the post-1974 instructions), and
+    a header band is not what decides whether a page is blank."""
     h, w = shape
     return (
         int(w * roi_margin),
-        int(h * roi_margin),
+        int(h * roi_margin) if vertical else 0,
         int(w * (1 - roi_margin)),
-        int(h * (1 - roi_margin)),
+        int(h * (1 - roi_margin)) if vertical else h,
     )
 
 
@@ -777,9 +795,22 @@ def is_blank_or_bleedthrough(stats: dict, min_dark_fraction: float, min_contrast
     return stats["dark_fraction"] < min_dark_fraction and stats["std"] < min_contrast_std
 
 
+def boxes_overlap(a: tuple[float, float, float, float], b: tuple[float, float, float, float], pad: float) -> bool:
+    """Do two (x1, y1, x2, y2) rectangles touch, with b grown by pad on each
+    side? Corners are assumed already ordered."""
+    ax1, ay1, ax2, ay2 = a
+    bx1, by1, bx2, by2 = b
+    return ax1 < bx2 + pad and ax2 > bx1 - pad and ay1 < by2 + pad and ay2 > by1 - pad
+
+
 def find_uncovered_regions(
-    uncovered: np.ndarray, cell_px: int, min_region_ink: int, offset: tuple[int, int]
-) -> list[dict]:
+    uncovered: np.ndarray,
+    cell_px: int,
+    min_region_ink: int,
+    offset: tuple[int, int],
+    element_boxes: list[tuple[float, float, float, float]] = (),
+    near_pad_px: float = 0.0,
+) -> tuple[list[dict], int]:
     """Group leftover ink pixels into a handful of reportable rectangles.
 
     Works on a coarse grid rather than the pixel mask: a cell counts as inked
@@ -787,10 +818,16 @@ def find_uncovered_regions(
     cells are merged, and a merged group has to carry min_region_ink pixels
     before it is worth anyone's attention. The result is "the model missed this
     paragraph" instead of ten thousand loose pixels. Returned bboxes are in
-    full-page coordinates (offset is the ROI's top-left corner)."""
+    full-page coordinates (offset is the ROI's top-left corner).
+
+    A group that lands within near_pad_px of any box in element_boxes (also
+    full-page coordinates) is dropped rather than reported: the model did return
+    something there, so the ink is a rule, a leader, or a box drawn a shade
+    tight -- not content it silently skipped. Returns (regions, n_suppressed) so
+    a reviewer can see how much the filter removed."""
     h, w = uncovered.shape
     if h == 0 or w == 0:
-        return []
+        return [], 0
     grid_h, grid_w = math.ceil(h / cell_px), math.ceil(w / cell_px)
     padded = np.zeros((grid_h * cell_px, grid_w * cell_px), dtype=np.int32)
     padded[:h, :w] = uncovered
@@ -801,6 +838,7 @@ def find_uncovered_regions(
     off_x, off_y = offset
     seen = np.zeros_like(hot, dtype=bool)
     regions = []
+    suppressed = 0
     for row in range(grid_h):
         for col in range(grid_w):
             if not hot[row, col] or seen[row, col]:
@@ -820,19 +858,18 @@ def find_uncovered_regions(
             ink_px = int(cells[rows, cols].sum())
             if ink_px < min_region_ink:
                 continue
-            regions.append(
-                {
-                    "bbox": [
-                        off_x + min(cols) * cell_px,
-                        off_y + min(rows) * cell_px,
-                        off_x + min((max(cols) + 1) * cell_px, w),
-                        off_y + min((max(rows) + 1) * cell_px, h),
-                    ],
-                    "ink_px": ink_px,
-                }
-            )
+            bbox = [
+                off_x + min(cols) * cell_px,
+                off_y + min(rows) * cell_px,
+                off_x + min((max(cols) + 1) * cell_px, w),
+                off_y + min((max(rows) + 1) * cell_px, h),
+            ]
+            if any(boxes_overlap(bbox, el, near_pad_px) for el in element_boxes):
+                suppressed += 1
+                continue
+            regions.append({"bbox": bbox, "ink_px": ink_px})
     regions.sort(key=lambda r: r["ink_px"], reverse=True)
-    return regions[:MAX_UNCOVERED_REGIONS]
+    return regions[:MAX_UNCOVERED_REGIONS], suppressed
 
 
 def ink_coverage(
@@ -861,15 +898,18 @@ def ink_coverage(
                          chars_per_1k_ink) stands out even when page coverage is
                          fine.
 
-    Measured over the page interior only (see roi_bounds), so ink in the outer
-    margin -- and any header or footer sitting out there -- is outside both the
-    numerator and the denominator."""
+    Measured over the full page height but only the sides' interior (see
+    roi_bounds), so a page header or footer counts in both the numerator and the
+    denominator, while the binding and the scanner-bed edge stay out of both."""
     h, w = gray.shape
-    left, top, right, bottom = roi_bounds(gray.shape, roi_margin)
+    left, top, right, bottom = roi_bounds(gray.shape, roi_margin, vertical=False)
     roi_ink = gray[top:bottom, left:right] < dark_pixel_threshold
     total_ink = int(roi_ink.sum())
     covered = np.zeros(roi_ink.shape, dtype=bool)
     roi_h, roi_w = roi_ink.shape
+    # Full-page boxes, kept unclamped so an element out in the side margin still
+    # claims the ink beside it even though its own ink is not measurable.
+    element_boxes = []
 
     for el in elements:
         bbox = el.get("bbox")
@@ -878,13 +918,17 @@ def ink_coverage(
         # Model bboxes are in the resized image's pixel space, and the model
         # sometimes returns them with the corners the other way round.
         bx1, by1, bx2, by2 = rescale_bbox(bbox, w, h, resized_w, resized_h)
+        element_boxes.append(
+            (min(bx1, bx2), min(by1, by2), max(bx1, bx2), max(by1, by2))
+        )
         x1 = int(max(0, min(math.floor(min(bx1, bx2)) - left, roi_w)))
         x2 = int(max(0, min(math.ceil(max(bx1, bx2)) - left, roi_w)))
         y1 = int(max(0, min(math.floor(min(by1, by2)) - top, roi_h)))
         y2 = int(max(0, min(math.ceil(max(by1, by2)) - top, roi_h)))
         if x2 <= x1 or y2 <= y1:
-            # Entirely outside the interior -- typically a page header or footer
-            # sitting in the cropped margin. Not measurable, so say so.
+            # Entirely outside the interior -- now only possible out in the left
+            # or right margin, since the full page height is measured. Not
+            # measurable, so say so.
             el["ink"] = None
             continue
         covered[y1:y2, x1:x2] = True
@@ -902,15 +946,26 @@ def ink_coverage(
         }
 
     covered_ink = int((roi_ink & covered).sum())
+    regions, suppressed = find_uncovered_regions(
+        roi_ink & ~covered,
+        cell_px,
+        min_region_ink,
+        (left, top),
+        element_boxes,
+        cell_px * UNCOVERED_NEAR_ELEMENT_PAD_CELLS,
+    )
     return {
         "roi": [left, top, right, bottom],
         "ink_px": total_ink,
         "covered_px": covered_ink,
         "covered_fraction": round(covered_ink / total_ink, 5) if total_ink else None,
         "uncovered_px": total_ink - covered_ink,
-        "uncovered_regions": find_uncovered_regions(
-            roi_ink & ~covered, cell_px, min_region_ink, (left, top)
-        ),
+        "uncovered_regions": regions,
+        # Groups dropped for sitting within near_pad_px of a returned box. Not a
+        # defect count -- it is how much noise the filter absorbed, and a page
+        # where it is large and uncovered_regions is empty is a page to spot
+        # check rather than trust.
+        "suppressed_regions": suppressed,
         "cell_px": cell_px,
     }
 

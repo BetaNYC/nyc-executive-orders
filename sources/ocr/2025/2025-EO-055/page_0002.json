@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 6666,
-        "area_px": 93586,
-        "density": 0.07123,
+        "ink_px": 11571,
+        "area_px": 147430,
+        "density": 0.07848,
         "chars": 179,
-        "chars_per_1k_ink": 26.85
+        "chars_per_1k_ink": 15.47
       }
     },
     {
@@ -44,7 +44,7 @@
         489
       ],
       "category": "Text",
-      "text": "§ 2. The Office of Talent and Workforce Development shall be headed by an executive director appointed by the Mayor who shall perform all functions of the director delineated in section 3502 of the Charter.",
+      "text": "\u00a7 2. The Office of Talent and Workforce Development shall be headed by an executive director appointed by the Mayor who shall perform all functions of the director delineated in section 3502 of the Charter.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -78,7 +78,7 @@
         606
       ],
       "category": "Text",
-      "text": "§ 3. The Office of Talent and Workforce Development shall perform the following functions:",
+      "text": "\u00a7 3. The Office of Talent and Workforce Development shall perform the following functions:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -369,11 +369,11 @@
         }
       },
       "ink": {
-        "ink_px": 14303,
-        "area_px": 140270,
-        "density": 0.10197,
+        "ink_px": 22527,
+        "area_px": 205010,
+        "density": 0.10988,
         "chars": 373,
-        "chars_per_1k_ink": 26.08
+        "chars_per_1k_ink": 16.56
       }
     }
   ],
@@ -412,7 +412,7 @@
           "index": 104,
           "token_id": 17851,
           "logprob": -0.0253,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 35,
@@ -436,7 +436,7 @@
           "index": 183,
           "token_id": 17851,
           "logprob": -0.0087,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 767,
@@ -572,15 +572,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 137189,
-    "covered_px": 137189,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 150383,
+    "covered_px": 150318,
+    "covered_fraction": 0.99957,
+    "uncovered_px": 65,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

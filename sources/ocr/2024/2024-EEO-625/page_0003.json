@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 15,
-        "area_px": 3288,
-        "density": 0.00456,
+        "ink_px": 10123,
+        "area_px": 82200,
+        "density": 0.12315,
         "chars": 115,
-        "chars_per_1k_ink": 7666.67
+        "chars_per_1k_ink": 11.36
       }
     },
     {
@@ -112,7 +112,7 @@
         931
       ],
       "category": "List-item",
-      "text": "* Local Law 42 would \"drastically alter . . . [and] impact the Department's core strategy for addressing violent misconduct—its restrictive housing program\" [Dkt. No. 758-3 at p. 8]; and that",
+      "text": "* Local Law 42 would \"drastically alter . . . [and] impact the Department's core strategy for addressing violent misconduct\u2014its restrictive housing program\" [Dkt. No. 758-3 at p. 8]; and that",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -214,7 +214,7 @@
         1513
       ],
       "category": "List-item",
-      "text": "* in the expert view of the Monitoring Team—which has \"over 100 years' experience\" in formulating \"reasonable operational practices that ensure adequate protection from harm for incarcerated individuals and staff who work in carceral settings\"—additional time and careful work are needed to evaluate which requirements of Local Law 42 could be implemented without violating the Nunez Court Orders [Dkt. No. 758-3 at p. 2, 10]; and that",
+      "text": "* in the expert view of the Monitoring Team\u2014which has \"over 100 years' experience\" in formulating \"reasonable operational practices that ensure adequate protection from harm for incarcerated individuals and staff who work in carceral settings\"\u2014additional time and careful work are needed to evaluate which requirements of Local Law 42 could be implemented without violating the Nunez Court Orders [Dkt. No. 758-3 at p. 2, 10]; and that",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -538,15 +538,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 222680,
-    "covered_px": 222680,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 232820,
+    "covered_px": 232788,
+    "covered_fraction": 0.99986,
+    "uncovered_px": 32,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

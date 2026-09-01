@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 4808,
-        "area_px": 30548,
-        "density": 0.15739,
+        "ink_px": 23333,
+        "area_px": 214927,
+        "density": 0.10856,
         "chars": 224,
-        "chars_per_1k_ink": 46.59
+        "chars_per_1k_ink": 9.6
       }
     },
     {
@@ -44,7 +44,7 @@
         522
       ],
       "category": "List-item",
-      "text": "§ 8. The Municipal Service Administrator shall develop and implement a long term plan for energy conservation with respect to buildings owned or leased by the City and its agencies. Such plan shall include:",
+      "text": "\u00a7 8. The Municipal Service Administrator shall develop and implement a long term plan for energy conservation with respect to buildings owned or leased by the City and its agencies. Such plan shall include:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -282,7 +282,7 @@
         1422
       ],
       "category": "List-item",
-      "text": "§ 9. For each succeeding fiscal year, each agency shall by November 1st submit a plan to the Municipal Service Administrator specifying the energy conservation policies and practices it will employ for the coming fiscal year. After reviewing and modifying the plan, where necessary, the Administrator shall, at the earliest practicable date, set an energy conservation goal for each agency for the coming fiscal year.",
+      "text": "\u00a7 9. For each succeeding fiscal year, each agency shall by November 1st submit a plan to the Municipal Service Administrator specifying the energy conservation policies and practices it will employ for the coming fiscal year. After reviewing and modifying the plan, where necessary, the Administrator shall, at the earliest practicable date, set an energy conservation goal for each agency for the coming fiscal year.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -316,7 +316,7 @@
         1598
       ],
       "category": "List-item",
-      "text": "§ 10. Executive Order No. 29, dated April 16, 1975, and Executive Order No. 46, dated November 13, 1975, are hereby superseded.",
+      "text": "\u00a7 10. Executive Order No. 29, dated April 16, 1975, and Executive Order No. 46, dated November 13, 1975, are hereby superseded.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -360,7 +360,7 @@
           "index": 108,
           "token_id": 17851,
           "logprob": -1.4196,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 118,
@@ -384,7 +384,7 @@
           "index": 461,
           "token_id": 17851,
           "logprob": -0.3511,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 41,
@@ -402,7 +402,7 @@
           "index": 576,
           "token_id": 17851,
           "logprob": -0.073,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 502,
@@ -538,25 +538,26 @@
   "ink_coverage": {
     "roi": [
       205,
-      268,
+      0,
       1506,
-      1970
+      2239
     ],
-    "ink_px": 138470,
-    "covered_px": 122511,
-    "covered_fraction": 0.88475,
-    "uncovered_px": 15959,
+    "ink_px": 157452,
+    "covered_px": 141036,
+    "covered_fraction": 0.89574,
+    "uncovered_px": 16416,
     "uncovered_regions": [
       {
         "bbox": [
           205,
-          1684,
+          1680,
           1506,
-          1780
+          1776
         ],
-        "ink_px": 15748
+        "ink_px": 15711
       }
     ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -10,7 +10,7 @@
         212
       ],
       "category": "Text",
-      "text": "§ 4. Section 8 of Executive Order No. 21, dated July 21, 2022, is repealed.",
+      "text": "\u00a7 4. Section 8 of Executive Order No. 21, dated July 21, 2022, is repealed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -28,7 +28,13 @@
           "min": -0.0191
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 6830,
+        "area_px": 41580,
+        "density": 0.16426,
+        "chars": 75,
+        "chars_per_1k_ink": 10.98
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         359
       ],
       "category": "Text",
-      "text": "§ 5. Personnel. Affected agencies shall take all necessary and timely steps to ensure that personnel primarily performing duties for ONL are employed by SBS in accordance with this Order.",
+      "text": "\u00a7 5. Personnel. Affected agencies shall take all necessary and timely steps to ensure that personnel primarily performing duties for ONL are employed by SBS in accordance with this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 13820,
-        "area_px": 120602,
-        "density": 0.11459,
+        "ink_px": 19039,
+        "area_px": 151394,
+        "density": 0.12576,
         "chars": 187,
-        "chars_per_1k_ink": 13.53
+        "chars_per_1k_ink": 9.82
       }
     },
     {
@@ -72,7 +78,7 @@
         508
       ],
       "category": "Text",
-      "text": "§ 6. Effective Date. This Order shall take effect on November 26, 2023, or as soon as practicable thereafter as personnel primarily performing duties for ONL are employed by SBS in accordance with this Order.",
+      "text": "\u00a7 6. Effective Date. This Order shall take effect on November 26, 2023, or as soon as practicable thereafter as personnel primarily performing duties for ONL are employed by SBS in accordance with this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -179,19 +185,19 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.0191,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 173,
           "token_id": 17851,
           "logprob": -0.0038,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 101,
           "token_id": 17851,
           "logprob": -0.0038,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 201,
@@ -357,15 +363,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 40914,
-    "covered_px": 40914,
+    "ink_px": 52963,
+    "covered_px": 52963,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

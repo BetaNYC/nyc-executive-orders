@@ -28,7 +28,13 @@
           "min": -0.0758
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 93,
+        "area_px": 10097,
+        "density": 0.00921,
+        "chars": 28,
+        "chars_per_1k_ink": 301.08
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0012
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 5037,
+        "density": 0.0,
+        "chars": 16,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -202,7 +214,7 @@
         767
       ],
       "category": "Section-header",
-      "text": "### § 3. Composition.",
+      "text": "### \u00a7 3. Composition.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -270,7 +282,7 @@
         1012
       ],
       "category": "Section-header",
-      "text": "### § 4. Organization.",
+      "text": "### \u00a7 4. Organization.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -338,7 +350,7 @@
         1164
       ],
       "category": "Section-header",
-      "text": "### § 5. Procedure.",
+      "text": "### \u00a7 5. Procedure.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -510,7 +522,7 @@
           "index": 395,
           "token_id": 16625,
           "logprob": -0.0026,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 595,
@@ -628,15 +640,26 @@
   "ink_coverage": {
     "roi": [
       146,
-      223,
+      0,
       1073,
-      1640
+      1864
     ],
-    "ink_px": 1555,
-    "covered_px": 1543,
-    "covered_fraction": 0.99228,
-    "uncovered_px": 12,
-    "uncovered_regions": [],
+    "ink_px": 57268,
+    "covered_px": 1636,
+    "covered_fraction": 0.02857,
+    "uncovered_px": 55632,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          146,
+          1776,
+          1073,
+          1864
+        ],
+        "ink_px": 55612
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

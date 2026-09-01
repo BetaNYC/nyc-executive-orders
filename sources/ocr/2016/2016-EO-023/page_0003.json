@@ -28,7 +28,13 @@
           "min": -0.0349
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 6033,
+        "area_px": 35607,
+        "density": 0.16943,
+        "chars": 68,
+        "chars_per_1k_ink": 11.27
+      }
     },
     {
       "bbox": [
@@ -255,15 +261,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 2102,
-    "covered_px": 2102,
+    "ink_px": 8135,
+    "covered_px": 8135,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

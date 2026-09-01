@@ -28,7 +28,13 @@
           "min": -0.0009
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2367,
+        "area_px": 8160,
+        "density": 0.29007,
+        "chars": 19,
+        "chars_per_1k_ink": 8.03
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0052
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1752,
+        "area_px": 6040,
+        "density": 0.29007,
+        "chars": 22,
+        "chars_per_1k_ink": 12.56
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0004
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 490,
+        "area_px": 2280,
+        "density": 0.21491,
+        "chars": 11,
+        "chars_per_1k_ink": 22.45
+      }
     },
     {
       "bbox": [
@@ -113,11 +131,11 @@
         }
       },
       "ink": {
-        "ink_px": 1909,
-        "area_px": 6286,
-        "density": 0.30369,
+        "ink_px": 6321,
+        "area_px": 29185,
+        "density": 0.21658,
         "chars": 98,
-        "chars_per_1k_ink": 51.34
+        "chars_per_1k_ink": 15.5
       }
     },
     {
@@ -434,7 +452,7 @@
         754
       ],
       "category": "Text",
-      "text": "§ 2. Medicaid Task Force",
+      "text": "\u00a7 2. Medicaid Task Force",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -502,7 +520,7 @@
         890
       ],
       "category": "Text",
-      "text": "§ 3. Functions and Duties of the Medicaid Coordinator and the Medicaid Task Force",
+      "text": "\u00a7 3. Functions and Duties of the Medicaid Coordinator and the Medicaid Task Force",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -808,7 +826,7 @@
         1250
       ],
       "category": "Text",
-      "text": "§ 4. Additional Functions and Duties of the Members of the Medicaid Task Force",
+      "text": "\u00a7 4. Additional Functions and Duties of the Members of the Medicaid Task Force",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -876,7 +894,7 @@
         1379
       ],
       "category": "Text",
-      "text": "§ 5. Executive Director of the Medicaid Task Force",
+      "text": "\u00a7 5. Executive Director of the Medicaid Task Force",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -944,7 +962,7 @@
         1498
       ],
       "category": "Text",
-      "text": "§ 6. Medicaid Operations",
+      "text": "\u00a7 6. Medicaid Operations",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -1012,7 +1030,7 @@
         1693
       ],
       "category": "Text",
-      "text": "§ 7. Effective Date",
+      "text": "\u00a7 7. Effective Date",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -1182,7 +1200,7 @@
           "index": 837,
           "token_id": 17851,
           "logprob": -0.1538,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 738,
@@ -1336,25 +1354,26 @@
   "ink_coverage": {
     "roi": [
       209,
-      274,
+      0,
       1535,
-      2012
+      2287
     ],
-    "ink_px": 213960,
-    "covered_px": 211562,
-    "covered_fraction": 0.98879,
-    "uncovered_px": 2398,
+    "ink_px": 225755,
+    "covered_px": 220583,
+    "covered_fraction": 0.97709,
+    "uncovered_px": 5172,
     "uncovered_regions": [
       {
         "bbox": [
-          425,
-          274,
-          449,
-          1330
+          1433,
+          120,
+          1529,
+          192
         ],
-        "ink_px": 2149
+        "ink_px": 503
       }
     ],
+    "suppressed_regions": 3,
     "cell_px": 24
   }
 }

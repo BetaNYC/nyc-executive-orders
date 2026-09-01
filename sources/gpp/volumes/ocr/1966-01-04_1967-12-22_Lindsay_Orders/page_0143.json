@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 9401,
+        "area_px": 43758,
+        "density": 0.21484,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 2170,
-        "area_px": 34573,
-        "density": 0.06277,
+        "ink_px": 3541,
+        "area_px": 59268,
+        "density": 0.05975,
         "chars": 53,
-        "chars_per_1k_ink": 24.42
+        "chars_per_1k_ink": 14.97
       }
     },
     {
@@ -135,7 +141,7 @@
         1017
       ],
       "category": "Text",
-      "text": "§ 1. Pursuant to Section B3-36.1 of the Administrative Code, last amended by Laws 1967 Ch. 379, the annexed resolution of the Borough Bridge and Tunnel Authority adopted by such Authority on 17, 1967, is hereby approved.",
+      "text": "\u00a7 1. Pursuant to Section B3-36.1 of the Administrative Code, last amended by Laws 1967 Ch. 379, the annexed resolution of the Borough Bridge and Tunnel Authority adopted by such Authority on 17, 1967, is hereby approved.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -169,7 +175,7 @@
         1117
       ],
       "category": "Text",
-      "text": "§ 2. This order shall take effect June 16, 1967.",
+      "text": "\u00a7 2. This order shall take effect June 16, 1967.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -300,7 +306,7 @@
           "index": 201,
           "token_id": 17851,
           "logprob": -0.0378,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 65,
@@ -454,15 +460,35 @@
   "ink_coverage": {
     "roi": [
       304,
-      448,
+      0,
       2235,
-      3290
+      3739
     ],
-    "ink_px": 25703,
-    "covered_px": 25703,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 489972,
+    "covered_px": 36475,
+    "covered_fraction": 0.07444,
+    "uncovered_px": 453497,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          304,
+          3576,
+          2235,
+          3739
+        ],
+        "ink_px": 273825
+      },
+      {
+        "bbox": [
+          304,
+          0,
+          2235,
+          120
+        ],
+        "ink_px": 179661
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

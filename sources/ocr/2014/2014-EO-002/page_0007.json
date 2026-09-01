@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 22204,
-        "area_px": 161500,
-        "density": 0.13749,
+        "ink_px": 34187,
+        "area_px": 260984,
+        "density": 0.13099,
         "chars": 254,
-        "chars_per_1k_ink": 11.44
+        "chars_per_1k_ink": 7.43
       }
     },
     {
@@ -146,7 +146,7 @@
         1000
       ],
       "category": "Text",
-      "text": "§ 6. The Deputy Mayor for Strategic Policy Initiatives shall:",
+      "text": "\u00a7 6. The Deputy Mayor for Strategic Policy Initiatives shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -316,7 +316,7 @@
         2022
       ],
       "category": "Text",
-      "text": "§ 7. The Director of Intergovernmental Affairs, the Chief of Staff, the Chancellor, the Department of Investigation, the Police Department, the Office of Management and Budget, the Law Department, the Counsel, the Department of City Planning and the Senior Advisor shall report directly to the Mayor.",
+      "text": "\u00a7 7. The Director of Intergovernmental Affairs, the Chief of Staff, the Chancellor, the Department of Investigation, the Police Department, the Office of Management and Budget, the Law Department, the Counsel, the Department of City Planning and the Senior Advisor shall report directly to the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -335,11 +335,11 @@
         }
       },
       "ink": {
-        "ink_px": 33414,
-        "area_px": 240560,
-        "density": 0.1389,
+        "ink_px": 36353,
+        "area_px": 334800,
+        "density": 0.10858,
         "chars": 300,
-        "chars_per_1k_ink": 8.98
+        "chars_per_1k_ink": 8.25
       }
     },
     {
@@ -368,7 +368,13 @@
           "min": -0.0
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 127,
+        "area_px": 660,
+        "density": 0.19242,
+        "chars": 1,
+        "chars_per_1k_ink": 7.87
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -394,7 +400,7 @@
           "index": 336,
           "token_id": 17851,
           "logprob": -0.0594,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 126,
@@ -424,7 +430,7 @@
           "index": 666,
           "token_id": 17851,
           "logprob": -0.0009,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 406,
@@ -566,15 +572,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 212090,
-    "covered_px": 212090,
+    "ink_px": 227139,
+    "covered_px": 227139,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

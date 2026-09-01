@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 8274,
-        "area_px": 59177,
-        "density": 0.13982,
+        "ink_px": 8368,
+        "area_px": 65195,
+        "density": 0.12835,
         "chars": 105,
-        "chars_per_1k_ink": 12.69
+        "chars_per_1k_ink": 12.55
       }
     },
     {
@@ -248,7 +248,7 @@
         1732
       ],
       "category": "Text",
-      "text": "§9. Executive Order No. 6, dated March 12, 1990, and Executive Order No. 28, dated September 17, 1991, are hereby repealed.",
+      "text": "\u00a79. Executive Order No. 6, dated March 12, 1990, and Executive Order No. 28, dated September 17, 1991, are hereby repealed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -282,7 +282,7 @@
         1866
       ],
       "category": "Text",
-      "text": "§10. Section 1 of prior Executive Order No. 17, dated September 7, 1990, as amended by prior Executive Order No. 28, dated September 17, 1991, is amended to read as follows:",
+      "text": "\u00a710. Section 1 of prior Executive Order No. 17, dated September 7, 1990, as amended by prior Executive Order No. 28, dated September 17, 1991, is amended to read as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -335,11 +335,11 @@
         }
       },
       "ink": {
-        "ink_px": 22336,
-        "area_px": 110356,
-        "density": 0.2024,
+        "ink_px": 23368,
+        "area_px": 123270,
+        "density": 0.18957,
         "chars": 198,
-        "chars_per_1k_ink": 8.86
+        "chars_per_1k_ink": 8.47
       }
     }
   ],
@@ -360,7 +360,7 @@
           "index": 653,
           "token_id": 17851,
           "logprob": -0.7137,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 837,
@@ -402,7 +402,7 @@
           "index": 737,
           "token_id": 17851,
           "logprob": -0.0022,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 676,
@@ -538,15 +538,16 @@
   "ink_coverage": {
     "roi": [
       209,
-      271,
+      0,
       1535,
-      1987
+      2259
     ],
-    "ink_px": 218119,
-    "covered_px": 218110,
-    "covered_fraction": 0.99996,
-    "uncovered_px": 9,
+    "ink_px": 220236,
+    "covered_px": 219236,
+    "covered_fraction": 0.99546,
+    "uncovered_px": 1000,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

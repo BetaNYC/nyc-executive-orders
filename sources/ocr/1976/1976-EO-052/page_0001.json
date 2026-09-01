@@ -240,7 +240,7 @@
         971
       ],
       "category": "List-item",
-      "text": "§ 2. This order shall take effect immediately.\n\nABRAHAM D. BEAME, Mayor.",
+      "text": "\u00a7 2. This order shall take effect immediately.\n\nABRAHAM D. BEAME, Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -360,7 +360,7 @@
           "index": 529,
           "token_id": 17851,
           "logprob": -0.5954,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 541,
@@ -496,15 +496,26 @@
   "ink_coverage": {
     "roi": [
       205,
-      271,
+      0,
       1506,
-      1987
+      2259
     ],
-    "ink_px": 58103,
+    "ink_px": 61138,
     "covered_px": 56855,
-    "covered_fraction": 0.97852,
-    "uncovered_px": 1248,
-    "uncovered_regions": [],
+    "covered_fraction": 0.92995,
+    "uncovered_px": 4283,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          949,
+          48,
+          1357,
+          120
+        ],
+        "ink_px": 2250
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

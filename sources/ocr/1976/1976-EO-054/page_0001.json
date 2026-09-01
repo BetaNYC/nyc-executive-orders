@@ -28,7 +28,13 @@
           "min": -0.5487
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5227,
+        "area_px": 22713,
+        "density": 0.23013,
+        "chars": 43,
+        "chars_per_1k_ink": 8.23
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0014
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 965,
+        "area_px": 3140,
+        "density": 0.30732,
+        "chars": 14,
+        "chars_per_1k_ink": 14.51
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0005
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2311,
+        "area_px": 8671,
+        "density": 0.26652,
+        "chars": 28,
+        "chars_per_1k_ink": 12.12
+      }
     },
     {
       "bbox": [
@@ -113,11 +131,11 @@
         }
       },
       "ink": {
-        "ink_px": 3466,
-        "area_px": 18936,
-        "density": 0.18304,
+        "ink_px": 7499,
+        "area_px": 39450,
+        "density": 0.19009,
         "chars": 157,
-        "chars_per_1k_ink": 45.3
+        "chars_per_1k_ink": 20.94
       }
     },
     {
@@ -434,7 +452,7 @@
         924
       ],
       "category": "Section-header",
-      "text": "### § 2. Bureau of Space Management",
+      "text": "### \u00a7 2. Bureau of Space Management",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -808,7 +826,7 @@
         1327
       ],
       "category": "Section-header",
-      "text": "### § 3. Agency Space Utilization Control and Information System",
+      "text": "### \u00a7 3. Agency Space Utilization Control and Information System",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -1012,7 +1030,7 @@
         1642
       ],
       "category": "Section-header",
-      "text": "### § 4. Analysis of Present Usage of Space",
+      "text": "### \u00a7 4. Analysis of Present Usage of Space",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -1201,11 +1219,11 @@
         }
       },
       "ink": {
-        "ink_px": 13747,
-        "area_px": 46053,
-        "density": 0.2985,
+        "ink_px": 14309,
+        "area_px": 51901,
+        "density": 0.2757,
         "chars": 235,
-        "chars_per_1k_ink": 17.09
+        "chars_per_1k_ink": 16.42
       }
     },
     {
@@ -1235,11 +1253,11 @@
         }
       },
       "ink": {
-        "ink_px": 338,
-        "area_px": 1462,
-        "density": 0.23119,
+        "ink_px": 7411,
+        "area_px": 36550,
+        "density": 0.20276,
         "chars": 126,
-        "chars_per_1k_ink": 372.78
+        "chars_per_1k_ink": 17.0
       }
     }
   ],
@@ -1438,34 +1456,26 @@
   "ink_coverage": {
     "roi": [
       205,
-      269,
+      0,
       1506,
-      1978
+      2248
     ],
-    "ink_px": 291343,
-    "covered_px": 286488,
-    "covered_fraction": 0.98334,
-    "uncovered_px": 4855,
+    "ink_px": 318435,
+    "covered_px": 306097,
+    "covered_fraction": 0.96125,
+    "uncovered_px": 12338,
     "uncovered_regions": [
       {
         "bbox": [
-          1285,
-          1013,
-          1333,
-          1978
+          1405,
+          48,
+          1501,
+          144
         ],
-        "ink_px": 2923
-      },
-      {
-        "bbox": [
-          421,
-          269,
-          445,
-          989
-        ],
-        "ink_px": 1917
+        "ink_px": 693
       }
     ],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

@@ -10,7 +10,7 @@
         263
       ],
       "category": "Text",
-      "text": "§ 7. The Deputy Mayor for Strategic Initiatives shall:",
+      "text": "\u00a7 7. The Deputy Mayor for Strategic Initiatives shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -28,7 +28,13 @@
           "min": -0.1083
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2657,
+        "area_px": 29069,
+        "density": 0.0914,
+        "chars": 54,
+        "chars_per_1k_ink": 20.32
+      }
     },
     {
       "bbox": [
@@ -276,7 +282,7 @@
         1263
       ],
       "category": "Text",
-      "text": "§ 8. The Chief Housing Officer shall:",
+      "text": "\u00a7 8. The Chief Housing Officer shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -530,7 +536,7 @@
           "index": 34,
           "token_id": 17851,
           "logprob": -0.1083,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 144,
@@ -702,15 +708,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 119709,
-    "covered_px": 119709,
+    "ink_px": 122366,
+    "covered_px": 122366,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

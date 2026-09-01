@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 17822,
-        "area_px": 145676,
-        "density": 0.12234,
+        "ink_px": 17871,
+        "area_px": 150286,
+        "density": 0.11891,
         "chars": 222,
-        "chars_per_1k_ink": 12.46
+        "chars_per_1k_ink": 12.42
       }
     },
     {
@@ -180,7 +180,7 @@
         960
       ],
       "category": "Text",
-      "text": "§6. The Deputy Mayor for Intergovernmental Affairs",
+      "text": "\u00a76. The Deputy Mayor for Intergovernmental Affairs",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -412,7 +412,7 @@
           "index": 376,
           "token_id": 17851,
           "logprob": -0.0809,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 206,
@@ -572,15 +572,16 @@
   "ink_coverage": {
     "roi": [
       211,
-      273,
+      0,
       1550,
-      2004
+      2278
     ],
-    "ink_px": 172171,
-    "covered_px": 172164,
-    "covered_fraction": 0.99996,
-    "uncovered_px": 7,
+    "ink_px": 172612,
+    "covered_px": 172213,
+    "covered_fraction": 0.99769,
+    "uncovered_px": 399,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -10,7 +10,7 @@
         245
       ],
       "category": "Text",
-      "text": "§ 2. This Order shall take effect immediately. It shall remain in effect for",
+      "text": "\u00a7 2. This Order shall take effect immediately. It shall remain in effect for",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -28,7 +28,13 @@
           "min": -0.006
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 6155,
+        "area_px": 41370,
+        "density": 0.14878,
+        "chars": 76,
+        "chars_per_1k_ink": 12.35
+      }
     },
     {
       "bbox": [
@@ -145,7 +151,7 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.006,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 166,
@@ -323,15 +329,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 9919,
-    "covered_px": 9906,
-    "covered_fraction": 0.99869,
-    "uncovered_px": 13,
+    "ink_px": 16084,
+    "covered_px": 16061,
+    "covered_fraction": 0.99857,
+    "uncovered_px": 23,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

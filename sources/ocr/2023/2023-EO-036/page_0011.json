@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 3244,
-        "area_px": 60677,
-        "density": 0.05346,
+        "ink_px": 16674,
+        "area_px": 149756,
+        "density": 0.11134,
         "chars": 249,
-        "chars_per_1k_ink": 76.76
+        "chars_per_1k_ink": 14.93
       }
     },
     {
@@ -112,7 +112,7 @@
         661
       ],
       "category": "Text",
-      "text": "§ 13. The Chancellor, the Police Commissioner, the Commissioner of Investigation, the Corporation Counsel, and the Director of Intergovernmental and External Affairs shall report directly to the Mayor.",
+      "text": "\u00a7 13. The Chancellor, the Police Commissioner, the Commissioner of Investigation, the Corporation Counsel, and the Director of Intergovernmental and External Affairs shall report directly to the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         736
       ],
       "category": "Text",
-      "text": "§ 14. Executive Order 33, dated July 3, 2023 is hereby REVOKED.",
+      "text": "\u00a7 14. Executive Order 33, dated July 3, 2023 is hereby REVOKED.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -180,7 +180,7 @@
         814
       ],
       "category": "Text",
-      "text": "§ 15. This Order shall take effect immediately.",
+      "text": "\u00a7 15. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -305,7 +305,7 @@
           "index": 229,
           "token_id": 17851,
           "logprob": -0.0036,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 117,
@@ -465,25 +465,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 44457,
-    "covered_px": 43880,
-    "covered_fraction": 0.98702,
-    "uncovered_px": 577,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          972,
-          936,
-          1356,
-          984
-        ],
-        "ink_px": 563
-      }
-    ],
+    "ink_px": 58020,
+    "covered_px": 57310,
+    "covered_fraction": 0.98776,
+    "uncovered_px": 710,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

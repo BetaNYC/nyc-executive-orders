@@ -28,7 +28,13 @@
           "min": -0.0228
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 132,
+        "area_px": 2345,
+        "density": 0.05629,
+        "chars": 3,
+        "chars_per_1k_ink": 22.73
+      }
     },
     {
       "bbox": [
@@ -72,7 +78,7 @@
         915
       ],
       "category": "Text",
-      "text": "§ 3. The aforementioned agencies shall, in the case of a single zoning lot PUD, insure that development plan requirements as specified by the City Planning Commission and the Board of Estimate conform to city standards but refrain from redetermination of such questions as private street widths except as otherwise required by law.",
+      "text": "\u00a7 3. The aforementioned agencies shall, in the case of a single zoning lot PUD, insure that development plan requirements as specified by the City Planning Commission and the Board of Estimate conform to city standards but refrain from redetermination of such questions as private street widths except as otherwise required by law.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -106,7 +112,7 @@
         1280
       ],
       "category": "Text",
-      "text": "§ 4. In order to insure maintenance of private roads, sewers and other common utilities, a developer shall submit proof of a homeowners or management association agreement with the ability to guarantee their operability. The City shall obtain compliance through satisfactory legal provisions at the time of City Planning Commission approval and the appropriate agencies noted above shall have the responsibility for enforcement of the maintenance provisions which relate to violations of health and safety.",
+      "text": "\u00a7 4. In order to insure maintenance of private roads, sewers and other common utilities, a developer shall submit proof of a homeowners or management association agreement with the ability to guarantee their operability. The City shall obtain compliance through satisfactory legal provisions at the time of City Planning Commission approval and the appropriate agencies noted above shall have the responsibility for enforcement of the maintenance provisions which relate to violations of health and safety.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -140,7 +146,7 @@
         1669
       ],
       "category": "Text",
-      "text": "§ 5. To the extent permitted by law, the Department of City Planning may approve minor changes in the building plans from the schematic plans approved by the City Planning Commission and the Board of Estimate, by letter to the Buildings Department and the Council but shall continue to review major changes as part of the zoning special permit procedure and refer them to the Board of Estimate after public hearing and approval by the Planning Commission. The Buildings Department may request the approval of the Council before processing a minor change approved by the City Planning Commission.",
+      "text": "\u00a7 5. To the extent permitted by law, the Department of City Planning may approve minor changes in the building plans from the schematic plans approved by the City Planning Commission and the Board of Estimate, by letter to the Buildings Department and the Council but shall continue to review major changes as part of the zoning special permit procedure and refer them to the Board of Estimate after public hearing and approval by the Planning Commission. The Buildings Department may request the approval of the Council before processing a minor change approved by the City Planning Commission.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -174,7 +180,7 @@
         1984
       ],
       "category": "Text",
-      "text": "§ 6. All city agencies or departments responsible for approving Planned Unit Developments or any improvements or facilities proposed in connection therewith, whether public or private, including the Departments or Bureaus of City Planning, Buildings, Highways, Water Resources, Public Works, Traffic, Health, and Parks shall cooperate with the Chairman in the performance of his functions and duties as hereinabove set forth.",
+      "text": "\u00a7 6. All city agencies or departments responsible for approving Planned Unit Developments or any improvements or facilities proposed in connection therewith, whether public or private, including the Departments or Bureaus of City Planning, Buildings, Highways, Water Resources, Public Works, Traffic, Health, and Parks shall cooperate with the Chairman in the performance of his functions and duties as hereinabove set forth.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -208,7 +214,7 @@
         2069
       ],
       "category": "Text",
-      "text": "§ 7. This order shall take effect immediately.",
+      "text": "\u00a7 7. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -321,7 +327,7 @@
           "index": 156,
           "token_id": 17851,
           "logprob": -0.5641,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 84,
@@ -493,15 +499,35 @@
   "ink_coverage": {
     "roi": [
       264,
-      421,
+      0,
       1941,
-      3087
+      3509
     ],
-    "ink_px": 50167,
-    "covered_px": 50163,
-    "covered_fraction": 0.99992,
-    "uncovered_px": 4,
-    "uncovered_regions": [],
+    "ink_px": 339258,
+    "covered_px": 50295,
+    "covered_fraction": 0.14825,
+    "uncovered_px": 288963,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          264,
+          3384,
+          1941,
+          3509
+        ],
+        "ink_px": 152577
+      },
+      {
+        "bbox": [
+          264,
+          0,
+          1941,
+          96
+        ],
+        "ink_px": 136341
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 4984,
-        "area_px": 16268,
-        "density": 0.30637,
+        "ink_px": 13285,
+        "area_px": 40964,
+        "density": 0.32431,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -209,7 +209,7 @@
         945
       ],
       "category": "Text",
-      "text": "Section 1. Authority. The Director of Management and Budget shall have the same authority to act for, on behalf of and at the direction of the Mayor, as provided by §§ 2(n), 3(m), and 4(g) of Executive Order No. 73 (1984), which state:",
+      "text": "Section 1. Authority. The Director of Management and Budget shall have the same authority to act for, on behalf of and at the direction of the Mayor, as provided by \u00a7\u00a7 2(n), 3(m), and 4(g) of Executive Order No. 73 (1984), which state:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -359,9 +359,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 3853,
-        "area_px": 61610,
-        "density": 0.06254,
+        "ink_px": 7226,
+        "area_px": 103700,
+        "density": 0.06968,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -562,25 +562,35 @@
   "ink_coverage": {
     "roi": [
       211,
-      273,
+      0,
       1550,
-      2004
+      2278
     ],
-    "ink_px": 187578,
-    "covered_px": 186111,
-    "covered_fraction": 0.99218,
-    "uncovered_px": 1467,
+    "ink_px": 200711,
+    "covered_px": 197785,
+    "covered_fraction": 0.98542,
+    "uncovered_px": 2926,
     "uncovered_regions": [
       {
         "bbox": [
-          1315,
-          273,
-          1483,
-          393
+          1291,
+          216,
+          1507,
+          384
         ],
-        "ink_px": 1272
+        "ink_px": 1694
+      },
+      {
+        "bbox": [
+          1507,
+          2136,
+          1550,
+          2208
+        ],
+        "ink_px": 916
       }
     ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

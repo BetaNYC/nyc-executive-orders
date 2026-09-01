@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 26341,
-        "area_px": 228780,
-        "density": 0.11514,
+        "ink_px": 32229,
+        "area_px": 293508,
+        "density": 0.10981,
         "chars": 455,
-        "chars_per_1k_ink": 17.27
+        "chars_per_1k_ink": 14.12
       }
     },
     {
@@ -248,7 +248,7 @@
         1886
       ],
       "category": "Text",
-      "text": "§ 3. Liquidated damages. Every mayoral agency shall include in a contract involving a City-contracted vehicle, and shall further require a contractor to include in any sub-contract involving a City-contracted vehicle, a liquidated damages provision. Such provision shall provide for potential liquidated damages up to $500 for each violation of subdivisions (a), (b), (c), (d), and (f) of section 2 of this Order, and up to $3,000 for each City-contracted truck that is found to be in violation of subdivision (e) of such section.",
+      "text": "\u00a7 3. Liquidated damages. Every mayoral agency shall include in a contract involving a City-contracted vehicle, and shall further require a contractor to include in any sub-contract involving a City-contracted vehicle, a liquidated damages provision. Such provision shall provide for potential liquidated damages up to $500 for each violation of subdivisions (a), (b), (c), (d), and (f) of section 2 of this Order, and up to $3,000 for each City-contracted truck that is found to be in violation of subdivision (e) of such section.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -282,7 +282,7 @@
         2000
       ],
       "category": "Text",
-      "text": "§ 4. Technical Guidance and Exemptions for Contracts Involving City-Contracted Vehicles.",
+      "text": "\u00a7 4. Technical Guidance and Exemptions for Contracts Involving City-Contracted Vehicles.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -301,11 +301,11 @@
         }
       },
       "ink": {
-        "ink_px": 4520,
-        "area_px": 34440,
-        "density": 0.13124,
+        "ink_px": 8233,
+        "area_px": 100860,
+        "density": 0.08163,
         "chars": 88,
-        "chars_per_1k_ink": 19.47
+        "chars_per_1k_ink": 10.69
       }
     },
     {
@@ -334,7 +334,13 @@
           "min": -0.0
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 74,
+        "area_px": 682,
+        "density": 0.1085,
+        "chars": 1,
+        "chars_per_1k_ink": 13.51
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -372,7 +378,7 @@
           "index": 647,
           "token_id": 17851,
           "logprob": -0.0318,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 276,
@@ -532,15 +538,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 168597,
-    "covered_px": 168597,
+    "ink_px": 178272,
+    "covered_px": 178272,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

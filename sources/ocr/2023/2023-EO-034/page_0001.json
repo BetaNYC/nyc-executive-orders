@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1,
-        "area_px": 9087,
-        "density": 0.00011,
+        "ink_px": 4,
+        "area_px": 55687,
+        "density": 7e-05,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -175,7 +175,7 @@
         833
       ],
       "category": "Text",
-      "text": "WHEREAS, there is increasing national awareness that minority and women owned business enterprises (“M/WBEs”) continue to be underrepresented in the successful business community; and",
+      "text": "WHEREAS, there is increasing national awareness that minority and women owned business enterprises (\u201cM/WBEs\u201d) continue to be underrepresented in the successful business community; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -277,7 +277,7 @@
         1219
       ],
       "category": "Text",
-      "text": "WHEREAS Executive Order No. 26, dated February 16, 2023, created, and empowered the position of citywide Chief Business Diversity Officer (“CBDO”); and",
+      "text": "WHEREAS Executive Order No. 26, dated February 16, 2023, created, and empowered the position of citywide Chief Business Diversity Officer (\u201cCBDO\u201d); and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -447,7 +447,7 @@
         1979
       ],
       "category": "Text",
-      "text": "§ 2. Agency Chief Contracting Officers (“ACCOs”) shall consult with the CBDO on matters related to contracting with M/WBEs. Such consultation shall be in a manner to be",
+      "text": "\u00a7 2. Agency Chief Contracting Officers (\u201cACCOs\u201d) shall consult with the CBDO on matters related to contracting with M/WBEs. Such consultation shall be in a manner to be",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -503,7 +503,7 @@
           "index": 274,
           "token_id": 26087,
           "logprob": -0.1005,
-          "text": " (“"
+          "text": " (\u201c"
         },
         {
           "index": 341,
@@ -539,7 +539,7 @@
           "index": 887,
           "token_id": 17851,
           "logprob": -0.0044,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 497,
@@ -669,15 +669,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 95379,
-    "covered_px": 95379,
+    "ink_px": 95382,
+    "covered_px": 95382,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

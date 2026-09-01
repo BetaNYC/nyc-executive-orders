@@ -28,7 +28,13 @@
           "min": -0.7311
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 6700,
+        "area_px": 32636,
+        "density": 0.20529,
+        "chars": 46,
+        "chars_per_1k_ink": 6.87
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 11497,
-        "area_px": 50328,
-        "density": 0.22844,
+        "ink_px": 15048,
+        "area_px": 64308,
+        "density": 0.234,
         "chars": 154,
-        "chars_per_1k_ink": 13.39
+        "chars_per_1k_ink": 10.23
       }
     },
     {
@@ -344,7 +350,7 @@
         921
       ],
       "category": "List-item",
-      "text": "§ 2. Such monetary lump sum payment for annual leave and/or compensatory time shall be payable at the basic salary rate earned by the employee immediately prior to the date of retirement.",
+      "text": "\u00a7 2. Such monetary lump sum payment for annual leave and/or compensatory time shall be payable at the basic salary rate earned by the employee immediately prior to the date of retirement.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -378,7 +384,7 @@
         1149
       ],
       "category": "List-item",
-      "text": "§ 3. The monetary value so payable shall not increase the salary base used to determine a retirement allowance; however, where there is an election (if permitted by a resolution of the board of trustees and the appropriate retirement system) to have the retirement allowance begin after the effective date of retirement and at the time any accrued leave and/or compensatory time and terminal leave would have ordinarily expired under normal circumstances, the salary base used to determine a retirement allowance shall not exceed the amount which such salary base would equal if the employee had taken any accrued annual leave and/or compensatory time and terminal leave under normal circumstances with the payment for annual leave and/or compensatory time limited to the rate of pay in effect immediately prior to the date of retirement.",
+      "text": "\u00a7 3. The monetary value so payable shall not increase the salary base used to determine a retirement allowance; however, where there is an election (if permitted by a resolution of the board of trustees and the appropriate retirement system) to have the retirement allowance begin after the effective date of retirement and at the time any accrued leave and/or compensatory time and terminal leave would have ordinarily expired under normal circumstances, the salary base used to determine a retirement allowance shall not exceed the amount which such salary base would equal if the employee had taken any accrued annual leave and/or compensatory time and terminal leave under normal circumstances with the payment for annual leave and/or compensatory time limited to the rate of pay in effect immediately prior to the date of retirement.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -412,7 +418,7 @@
         1223
       ],
       "category": "List-item",
-      "text": "§ 4. This Order shall not apply to employees and officers covered by the Managerial and/or Executive Pay Plans whose time and leave benefits are governed by Mayor's Personnel Order No. 16/74 of May 10, 1974.",
+      "text": "\u00a7 4. This Order shall not apply to employees and officers covered by the Managerial and/or Executive Pay Plans whose time and leave benefits are governed by Mayor's Personnel Order No. 16/74 of May 10, 1974.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -446,7 +452,7 @@
         1293
       ],
       "category": "List-item",
-      "text": "§ 5. Such lump sum amounts shall be payable upon the request of the agency head subject to written approval of the Director of Management and Budget.",
+      "text": "\u00a7 5. Such lump sum amounts shall be payable upon the request of the agency head subject to written approval of the Director of Management and Budget.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -480,7 +486,7 @@
         1403
       ],
       "category": "List-item",
-      "text": "§ 6. The Director of Management and Budget of The City of New York is hereby designated and empowered to transfer such necessary funds that may be required in accordance with Section 124-a and/or b of the City Charter for the payment to such retired employees of the monetary value of accumulated and unused annual leave or compensatory time standing to the credit of such employees.",
+      "text": "\u00a7 6. The Director of Management and Budget of The City of New York is hereby designated and empowered to transfer such necessary funds that may be required in accordance with Section 124-a and/or b of the City Charter for the payment to such retired employees of the monetary value of accumulated and unused annual leave or compensatory time standing to the credit of such employees.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -514,7 +520,7 @@
         1447
       ],
       "category": "List-item",
-      "text": "§ 7. The Comptroller of The City of New York is hereby requested to make such payments to the affected employees.",
+      "text": "\u00a7 7. The Comptroller of The City of New York is hereby requested to make such payments to the affected employees.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -548,7 +554,7 @@
         1555
       ],
       "category": "List-item",
-      "text": "§ 8. The Comptroller of The City of New York, the Director of Management and Budget, the City Personnel Director and all other officers and agencies of the City having any jurisdiction over the matter provided in this Order are hereby requested, pursuant to the powers vested in them, to take the steps necessary to effectuate the provisions of this Order.",
+      "text": "\u00a7 8. The Comptroller of The City of New York, the Director of Management and Budget, the City Personnel Director and all other officers and agencies of the City having any jurisdiction over the matter provided in this Order are hereby requested, pursuant to the powers vested in them, to take the steps necessary to effectuate the provisions of this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -582,7 +588,7 @@
         1585
       ],
       "category": "List-item",
-      "text": "§ 9. This Order shall take effect immediately.",
+      "text": "\u00a7 9. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -794,7 +800,7 @@
           "index": 746,
           "token_id": 17851,
           "logprob": -0.0181,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -906,25 +912,16 @@
   "ink_coverage": {
     "roi": [
       209,
-      271,
+      0,
       1535,
-      1990
+      2262
     ],
-    "ink_px": 234683,
-    "covered_px": 231794,
-    "covered_fraction": 0.98769,
-    "uncovered_px": 2889,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          305,
-          271,
-          353,
-          1231
-        ],
-        "ink_px": 2461
-      }
-    ],
+    "ink_px": 249484,
+    "covered_px": 242045,
+    "covered_fraction": 0.97018,
+    "uncovered_px": 7439,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 16948,
+        "area_px": 52628,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -345,7 +345,7 @@
         1747
       ],
       "category": "Text",
-      "text": "WHEREAS, the Freedom of Access to Clinic Entrances Act of 1994, 18 U.S. Code § 248, prohibits intentionally injuring, intimidating, or interfering with, or attempting to injure, intimidate, or interfere with, by force, threat of force, or physical obstruction, any person exercising or seeking to exercise the First Amendment right of religious freedom at a place of religious worship; and",
+      "text": "WHEREAS, the Freedom of Access to Clinic Entrances Act of 1994, 18 U.S. Code \u00a7 248, prohibits intentionally injuring, intimidating, or interfering with, or attempting to injure, intimidate, or interfere with, by force, threat of force, or physical obstruction, any person exercising or seeking to exercise the First Amendment right of religious freedom at a place of religious worship; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -431,7 +431,13 @@
           "min": -0.0002
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8630,
+        "area_px": 46332,
+        "density": 0.18626,
+        "chars": 83,
+        "chars_per_1k_ink": 9.62
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -629,15 +635,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 184601,
-    "covered_px": 184597,
+    "ink_px": 193231,
+    "covered_px": 193227,
     "covered_fraction": 0.99998,
     "uncovered_px": 4,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

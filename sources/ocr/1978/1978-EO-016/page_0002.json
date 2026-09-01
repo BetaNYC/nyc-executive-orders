@@ -28,7 +28,13 @@
           "min": -0.5619
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 24303,
+        "area_px": 126725,
+        "density": 0.19178,
+        "chars": 496,
+        "chars_per_1k_ink": 20.41
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         249
       ],
       "category": "Section-header",
-      "text": "### § 6. Informal Disciplinary Proceedings.",
+      "text": "### \u00a7 6. Informal Disciplinary Proceedings.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -56,7 +62,13 @@
           "min": -0.76
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2015,
+        "area_px": 9361,
+        "density": 0.21525,
+        "chars": 43,
+        "chars_per_1k_ink": 21.34
+      }
     },
     {
       "bbox": [
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 18669,
-        "area_px": 87044,
-        "density": 0.21448,
+        "ink_px": 23223,
+        "area_px": 105564,
+        "density": 0.21999,
         "chars": 451,
-        "chars_per_1k_ink": 24.16
+        "chars_per_1k_ink": 19.42
       }
     },
     {
@@ -236,7 +248,7 @@
         633
       ],
       "category": "Section-header",
-      "text": "### § 7. Background Investigations.",
+      "text": "### \u00a7 7. Background Investigations.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -508,7 +520,7 @@
         1258
       ],
       "category": "Section-header",
-      "text": "### § 8. Dissemination of Information.",
+      "text": "### \u00a7 8. Dissemination of Information.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -610,7 +622,7 @@
         1618
       ],
       "category": "List-item",
-      "text": "### § 9. Regulations and Procedures.\nThe Commissioner may establish such regulations, procedures and reporting requirements with respect to Inspectors General or as may be otherwise necessary or proper to fulfill the Commissioner's responsibilities under this Order and other applicable law. The Inspectors General may, with the approval of the Commissioner and the respective agency heads, establish such regulations and procedures as may be necessary or proper to fulfill their responsibilities under this Order and other applicable law.",
+      "text": "### \u00a7 9. Regulations and Procedures.\nThe Commissioner may establish such regulations, procedures and reporting requirements with respect to Inspectors General or as may be otherwise necessary or proper to fulfill the Commissioner's responsibilities under this Order and other applicable law. The Inspectors General may, with the approval of the Commissioner and the respective agency heads, establish such regulations and procedures as may be necessary or proper to fulfill their responsibilities under this Order and other applicable law.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -644,7 +656,7 @@
         1684
       ],
       "category": "List-item",
-      "text": "### § 10. Waiver of Provisions.\nAny agency head may for good cause apply to the Commissioner for the modification of waiver of any provision within the jurisdiction of the Commissioner under this Order.",
+      "text": "### \u00a7 10. Waiver of Provisions.\nAny agency head may for good cause apply to the Commissioner for the modification of waiver of any provision within the jurisdiction of the Commissioner under this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -678,7 +690,7 @@
         1776
       ],
       "category": "List-item",
-      "text": "### § 11. Construction with Other Laws.\nNothing in this Order shall be deemed to limit the powers and duties of the Commissioner, the Department of Investigation, the Department of Personnel, the Office of Municipal Labor Relations or any other agency under the City Charter or as may be otherwise provided by law.",
+      "text": "### \u00a7 11. Construction with Other Laws.\nNothing in this Order shall be deemed to limit the powers and duties of the Commissioner, the Department of Investigation, the Department of Personnel, the Office of Municipal Labor Relations or any other agency under the City Charter or as may be otherwise provided by law.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -712,7 +724,7 @@
         1823
       ],
       "category": "List-item",
-      "text": "### § 12. Preservation of Rights.\nNothing in this Order shall be deemed to limit the rights of any person under law or contract.",
+      "text": "### \u00a7 12. Preservation of Rights.\nNothing in this Order shall be deemed to limit the rights of any person under law or contract.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -746,7 +758,7 @@
         1889
       ],
       "category": "List-item",
-      "text": "### § 13. Revocation of Executive Orders.\nExecutive Order No. 21, dated August 19, 1970, Executive Order No. 21, dated October 17, 1974, and Personnel Policy and Procedure No. 715-77, dated February 15, 1977 are hereby revoked.",
+      "text": "### \u00a7 13. Revocation of Executive Orders.\nExecutive Order No. 21, dated August 19, 1970, Executive Order No. 21, dated October 17, 1974, and Personnel Policy and Procedure No. 715-77, dated February 15, 1977 are hereby revoked.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -780,7 +792,7 @@
         1910
       ],
       "category": "List-item",
-      "text": "### § 14. Effective Date.\nThis Order shall take effect immediately.",
+      "text": "### \u00a7 14. Effective Date.\nThis Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -1070,52 +1082,35 @@
   "ink_coverage": {
     "roi": [
       205,
-      269,
+      0,
       1506,
-      1975
+      2245
     ],
-    "ink_px": 286704,
-    "covered_px": 273509,
-    "covered_fraction": 0.95398,
-    "uncovered_px": 13195,
+    "ink_px": 319328,
+    "covered_px": 304362,
+    "covered_fraction": 0.95313,
+    "uncovered_px": 14966,
     "uncovered_regions": [
       {
         "bbox": [
-          1237,
-          437,
-          1381,
-          1973
+          1333,
+          1872,
+          1501,
+          2040
         ],
-        "ink_px": 6716
+        "ink_px": 2418
       },
       {
         "bbox": [
           1309,
-          1685,
+          1680,
           1506,
-          1853
+          1872
         ],
-        "ink_px": 2236
-      },
-      {
-        "bbox": [
-          1333,
-          1877,
-          1501,
-          1973
-        ],
-        "ink_px": 1717
-      },
-      {
-        "bbox": [
-          517,
-          437,
-          1069,
-          461
-        ],
-        "ink_px": 1520
+        "ink_px": 2211
       }
     ],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

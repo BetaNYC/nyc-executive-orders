@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 16272,
+        "area_px": 53336,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -447,7 +447,7 @@
         2005
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct the Fire Department of the City of New York, the New York City Police Department, the Department of Buildings, the Sheriff, and other agencies as needed to immediately enforce the directives set forth in this Order in accordance with their lawful enforcement",
+      "text": "\u00a7 2. I hereby direct the Fire Department of the City of New York, the New York City Police Department, the Department of Buildings, the Sheriff, and other agencies as needed to immediately enforce the directives set forth in this Order in accordance with their lawful enforcement",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -466,11 +466,11 @@
         }
       },
       "ink": {
-        "ink_px": 16800,
-        "area_px": 104222,
-        "density": 0.16119,
+        "ink_px": 28206,
+        "area_px": 179211,
+        "density": 0.15739,
         "chars": 279,
-        "chars_per_1k_ink": 16.61
+        "chars_per_1k_ink": 9.89
       }
     }
   ],
@@ -515,7 +515,7 @@
           "index": 956,
           "token_id": 17851,
           "logprob": -0.0088,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 216,
@@ -669,15 +669,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 204396,
-    "covered_px": 204396,
+    "ink_px": 215802,
+    "covered_px": 215802,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

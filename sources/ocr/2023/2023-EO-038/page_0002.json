@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 7241,
-        "area_px": 66185,
-        "density": 0.10941,
+        "ink_px": 8855,
+        "area_px": 86800,
+        "density": 0.10202,
         "chars": 126,
-        "chars_per_1k_ink": 17.4
+        "chars_per_1k_ink": 14.23
       }
     },
     {
@@ -44,7 +44,7 @@
         401
       ],
       "category": "Section-header",
-      "text": "## § 2. Duties of the Task Force.",
+      "text": "## \u00a7 2. Duties of the Task Force.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -316,7 +316,7 @@
         1406
       ],
       "category": "Text",
-      "text": "## § 3. The Department of Buildings is directed to conduct the review and approval process for Affordable New York projects at the Department's Development HUB.",
+      "text": "## \u00a7 3. The Department of Buildings is directed to conduct the review and approval process for Affordable New York projects at the Department's Development HUB.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -350,7 +350,7 @@
         1523
       ],
       "category": "Text",
-      "text": "## § 4. This Order shall take effect immediately, provided that the Task Force shall cease to operate on July 15, 2026, upon which date this Executive Order shall be repealed.",
+      "text": "## \u00a7 4. This Order shall take effect immediately, provided that the Task Force shall cease to operate on July 15, 2026, upon which date this Executive Order shall be repealed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -465,7 +465,13 @@
           "min": -0.0
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 68,
+        "area_px": 667,
+        "density": 0.10195,
+        "chars": 1,
+        "chars_per_1k_ink": 14.71
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -663,15 +669,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 109848,
-    "covered_px": 109702,
-    "covered_fraction": 0.99867,
+    "ink_px": 111530,
+    "covered_px": 111384,
+    "covered_fraction": 0.99869,
     "uncovered_px": 146,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

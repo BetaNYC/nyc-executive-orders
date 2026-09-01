@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 912,
-        "area_px": 58095,
-        "density": 0.0157,
+        "ink_px": 6724,
+        "area_px": 142010,
+        "density": 0.04735,
         "chars": 112,
-        "chars_per_1k_ink": 122.81
+        "chars_per_1k_ink": 16.66
       }
     },
     {
@@ -214,7 +214,7 @@
         1574
       ],
       "category": "Text",
-      "text": "§ 3. The First Deputy Mayor hereby is delegated the authority to perform all functions,\npowers or duties of the Mayor which the Mayor is authorized to delegate in the event that the\nMayor is unable to perform such functions, powers or duties for a reason specified in subdivision a\nof section 10 of the New York City Charter.",
+      "text": "\u00a7 3. The First Deputy Mayor hereby is delegated the authority to perform all functions,\npowers or duties of the Mayor which the Mayor is authorized to delegate in the event that the\nMayor is unable to perform such functions, powers or duties for a reason specified in subdivision a\nof section 10 of the New York City Charter.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -248,7 +248,7 @@
         1668
       ],
       "category": "Text",
-      "text": "§ 4. The Deputy Mayor for Housing and Economic Development shall:",
+      "text": "\u00a7 4. The Deputy Mayor for Housing and Economic Development shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -301,11 +301,11 @@
         }
       },
       "ink": {
-        "ink_px": 16887,
-        "area_px": 305967,
-        "density": 0.05519,
+        "ink_px": 22333,
+        "area_px": 345988,
+        "density": 0.06455,
         "chars": 378,
-        "chars_per_1k_ink": 22.38
+        "chars_per_1k_ink": 16.93
       }
     }
   ],
@@ -362,7 +362,7 @@
           "index": 483,
           "token_id": 17851,
           "logprob": -0.097,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 658,
@@ -504,15 +504,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 91181,
-    "covered_px": 91173,
-    "covered_fraction": 0.99991,
-    "uncovered_px": 8,
+    "ink_px": 102514,
+    "covered_px": 102431,
+    "covered_fraction": 0.99919,
+    "uncovered_px": 83,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

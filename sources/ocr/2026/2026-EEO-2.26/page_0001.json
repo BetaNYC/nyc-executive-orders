@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 11993,
+        "area_px": 33831,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -311,7 +311,7 @@
         1621
       ],
       "category": "Text",
-      "text": "§ 2. The Department of Social Services and the Department of Homeless Services, in consultation with the Law Department, shall regularly update the Mayor on the implementation action plan and efforts to phase out the continued use of facilities that have been operated in reliance on the suspensions and modifications of laws and rules.",
+      "text": "\u00a7 2. The Department of Social Services and the Department of Homeless Services, in consultation with the Law Department, shall regularly update the Mayor on the implementation action plan and efforts to phase out the continued use of facilities that have been operated in reliance on the suspensions and modifications of laws and rules.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -345,7 +345,7 @@
         1732
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -427,11 +427,11 @@
         }
       },
       "ink": {
-        "ink_px": 3103,
-        "area_px": 18144,
-        "density": 0.17102,
+        "ink_px": 3634,
+        "area_px": 25200,
+        "density": 0.14421,
         "chars": 26,
-        "chars_per_1k_ink": 8.38
+        "chars_per_1k_ink": 7.15
       }
     }
   ],
@@ -470,7 +470,7 @@
           "index": 662,
           "token_id": 17851,
           "logprob": -0.0116,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 429,
@@ -630,15 +630,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 191368,
-    "covered_px": 191353,
+    "ink_px": 191899,
+    "covered_px": 191884,
     "covered_fraction": 0.99992,
     "uncovered_px": 15,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 14902,
-        "area_px": 36642,
-        "density": 0.40669,
+        "ink_px": 15820,
+        "area_px": 41764,
+        "density": 0.3788,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1434
       ],
       "category": "Text",
-      "text": "§9. Counsel to the Mayor. The Counsel to the Mayor shall maintain liaison with and review the activities of the Committee, and shall advise the Mayor and the Committee regarding measures which may enhance the ability of the Committee to consider the best qualified candidates for judicial nomination.",
+      "text": "\u00a79. Counsel to the Mayor. The Counsel to the Mayor shall maintain liaison with and review the activities of the Committee, and shall advise the Mayor and the Committee regarding measures which may enhance the ability of the Committee to consider the best qualified candidates for judicial nomination.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -390,7 +390,7 @@
           "index": 398,
           "token_id": 17851,
           "logprob": -0.1646,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 276,
@@ -562,25 +562,16 @@
   "ink_coverage": {
     "roi": [
       215,
-      276,
+      0,
       1576,
-      2026
+      2303
     ],
-    "ink_px": 126719,
-    "covered_px": 123899,
-    "covered_fraction": 0.97775,
-    "uncovered_px": 2820,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          479,
-          972,
-          1199,
-          996
-        ],
-        "ink_px": 2682
-      }
-    ],
+    "ink_px": 127975,
+    "covered_px": 124817,
+    "covered_fraction": 0.97532,
+    "uncovered_px": 3158,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

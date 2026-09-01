@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 17854,
-        "area_px": 130728,
-        "density": 0.13657,
+        "ink_px": 33907,
+        "area_px": 232545,
+        "density": 0.14581,
         "chars": 391,
-        "chars_per_1k_ink": 21.9
+        "chars_per_1k_ink": 11.53
       }
     },
     {
@@ -44,7 +44,7 @@
         607
       ],
       "category": "List-item",
-      "text": "§ 8. **Revocation of Prior Order and Continuity.** Executive Order No. 138, dated July 26, 2010, is hereby **REVOKED**. Unless inconsistent with this Order, any references to MOME or to such Executive Order No. 138 contained in any other laws, regulations, Executive Orders or other City documents are hereby deemed to refer to MOME as continued herein and to this Executive Order, respectively.",
+      "text": "\u00a7 8. **Revocation of Prior Order and Continuity.** Executive Order No. 138, dated July 26, 2010, is hereby **REVOKED**. Unless inconsistent with this Order, any references to MOME or to such Executive Order No. 138 contained in any other laws, regulations, Executive Orders or other City documents are hereby deemed to refer to MOME as continued herein and to this Executive Order, respectively.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -78,7 +78,7 @@
         683
       ],
       "category": "List-item",
-      "text": "§ 9. **Effective Date.** This Order shall take effect immediately.",
+      "text": "\u00a7 9. **Effective Date.** This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -199,7 +199,7 @@
           "index": 137,
           "token_id": 17851,
           "logprob": -0.0059,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 279,
@@ -329,15 +329,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 60557,
-    "covered_px": 60557,
+    "ink_px": 76610,
+    "covered_px": 76610,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

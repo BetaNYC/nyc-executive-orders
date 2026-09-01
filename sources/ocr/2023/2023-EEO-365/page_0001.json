@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 16030,
+        "area_px": 54502,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -175,7 +175,7 @@
         979
       ],
       "category": "Text",
-      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which “represents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island”; and",
+      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which \u201crepresents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island\u201d; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -398,11 +398,11 @@
         }
       },
       "ink": {
-        "ink_px": 12655,
-        "area_px": 135574,
-        "density": 0.09334,
+        "ink_px": 12703,
+        "area_px": 147085,
+        "density": 0.08637,
         "chars": 196,
-        "chars_per_1k_ink": 15.49
+        "chars_per_1k_ink": 15.43
       }
     }
   ],
@@ -423,7 +423,7 @@
           "index": 331,
           "token_id": 1036,
           "logprob": -0.6938,
-          "text": " “"
+          "text": " \u201c"
         },
         {
           "index": 327,
@@ -601,15 +601,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 137265,
-    "covered_px": 137265,
+    "ink_px": 137313,
+    "covered_px": 137313,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 6430,
-        "area_px": 140560,
-        "density": 0.04575,
+        "ink_px": 9926,
+        "area_px": 162648,
+        "density": 0.06103,
         "chars": 123,
-        "chars_per_1k_ink": 19.13
+        "chars_per_1k_ink": 12.39
       }
     },
     {
@@ -146,7 +146,7 @@
         1410
       ],
       "category": "Section-header",
-      "text": "### § 3. Membership.",
+      "text": "### \u00a7 3. Membership.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -248,7 +248,7 @@
           "index": 315,
           "token_id": 16625,
           "logprob": -0.0039,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 56,
@@ -402,15 +402,16 @@
   "ink_coverage": {
     "roi": [
       211,
-      272,
+      0,
       1550,
-      2000
+      2273
     ],
-    "ink_px": 119671,
-    "covered_px": 119300,
-    "covered_fraction": 0.9969,
-    "uncovered_px": 371,
+    "ink_px": 123694,
+    "covered_px": 122796,
+    "covered_fraction": 0.99274,
+    "uncovered_px": 898,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

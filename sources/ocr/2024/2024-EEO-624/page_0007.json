@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 11390,
-        "area_px": 74936,
-        "density": 0.152,
+        "ink_px": 21174,
+        "area_px": 144704,
+        "density": 0.14633,
         "chars": 257,
-        "chars_per_1k_ink": 22.56
+        "chars_per_1k_ink": 12.14
       }
     },
     {
@@ -112,7 +112,7 @@
         854
       ],
       "category": "Text",
-      "text": "§ 2. The State of Emergency shall remain in effect for a period not to exceed thirty days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty days will be issued if needed.",
+      "text": "\u00a7 2. The State of Emergency shall remain in effect for a period not to exceed thirty days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty days will be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         930
       ],
       "category": "Text",
-      "text": "§ 3. This Executive Order shall take effect immediately.",
+      "text": "\u00a7 3. This Executive Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -261,7 +261,7 @@
           "index": 323,
           "token_id": 17851,
           "logprob": -0.0077,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 231,
@@ -279,7 +279,7 @@
           "index": 409,
           "token_id": 17851,
           "logprob": -0.0016,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 195,
@@ -397,15 +397,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 94512,
-    "covered_px": 94140,
-    "covered_fraction": 0.99606,
-    "uncovered_px": 372,
+    "ink_px": 104328,
+    "covered_px": 103924,
+    "covered_fraction": 0.99613,
+    "uncovered_px": 404,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

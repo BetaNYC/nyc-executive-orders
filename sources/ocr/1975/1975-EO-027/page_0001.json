@@ -28,7 +28,13 @@
           "min": -0.0006
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3504,
+        "area_px": 11970,
+        "density": 0.29273,
+        "chars": 19,
+        "chars_per_1k_ink": 5.42
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0117
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2817,
+        "area_px": 9000,
+        "density": 0.313,
+        "chars": 22,
+        "chars_per_1k_ink": 7.81
+      }
     },
     {
       "bbox": [
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 887,
-        "area_px": 3298,
-        "density": 0.26895,
+        "ink_px": 1166,
+        "area_px": 4656,
+        "density": 0.25043,
         "chars": 14,
-        "chars_per_1k_ink": 15.78
+        "chars_per_1k_ink": 12.01
       }
     },
     {
@@ -372,7 +384,7 @@
         799
       ],
       "category": "Text",
-      "text": "§ 2. There is hereby established the Commission for Cultural Affairs of The City of New York.",
+      "text": "\u00a7 2. There is hereby established the Commission for Cultural Affairs of The City of New York.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -576,7 +588,7 @@
         1136
       ],
       "category": "Text",
-      "text": "§ 3. The Commission shall advise the Mayor with respect to the cultural activities in the City and in furtherance of this function shall:",
+      "text": "\u00a7 3. The Commission shall advise the Mayor with respect to the cultural activities in the City and in furtherance of this function shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -746,7 +758,7 @@
         1418
       ],
       "category": "Text",
-      "text": "§ 4. All City agencies are directed to cooperate with the Commission, consistent with the law, in order to coordinate and promote cultural activities in this City.",
+      "text": "\u00a7 4. All City agencies are directed to cooperate with the Commission, consistent with the law, in order to coordinate and promote cultural activities in this City.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -780,7 +792,7 @@
         1434
       ],
       "category": "Text",
-      "text": "§ 5. This Order shall take effect immediately.",
+      "text": "\u00a7 5. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -904,7 +916,7 @@
           "index": 695,
           "token_id": 17851,
           "logprob": -0.1971,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 164,
@@ -1070,43 +1082,16 @@
   "ink_coverage": {
     "roi": [
       219,
-      279,
+      0,
       1606,
-      2051
+      2331
     ],
-    "ink_px": 171776,
-    "covered_px": 164535,
-    "covered_fraction": 0.95785,
-    "uncovered_px": 7241,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          363,
-          1263,
-          1323,
-          1311
-        ],
-        "ink_px": 2804
-      },
-      {
-        "bbox": [
-          387,
-          1455,
-          1179,
-          1479
-        ],
-        "ink_px": 2357
-      },
-      {
-        "bbox": [
-          339,
-          495,
-          363,
-          1119
-        ],
-        "ink_px": 1676
-      }
-    ],
+    "ink_px": 182205,
+    "covered_px": 171135,
+    "covered_fraction": 0.93924,
+    "uncovered_px": 11070,
+    "uncovered_regions": [],
+    "suppressed_regions": 5,
     "cell_px": 24
   }
 }

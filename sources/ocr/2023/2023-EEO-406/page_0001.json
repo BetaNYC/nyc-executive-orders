@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 17775,
+        "area_px": 53100,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -345,7 +345,7 @@
         1691
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct that section 4(a) of Emergency Executive Order No. 224, dated October 7, 2022, is amended to read as follows:",
+      "text": "\u00a7 2. I hereby direct that section 4(a) of Emergency Executive Order No. 224, dated October 7, 2022, is amended to read as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -398,11 +398,11 @@
         }
       },
       "ink": {
-        "ink_px": 35766,
-        "area_px": 269658,
-        "density": 0.13263,
+        "ink_px": 47646,
+        "area_px": 347616,
+        "density": 0.13707,
         "chars": 667,
-        "chars_per_1k_ink": 18.65
+        "chars_per_1k_ink": 14.0
       }
     }
   ],
@@ -459,7 +459,7 @@
           "index": 748,
           "token_id": 17851,
           "logprob": -0.0071,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 132,
@@ -601,15 +601,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 154371,
-    "covered_px": 154371,
+    "ink_px": 166251,
+    "covered_px": 166251,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -28,7 +28,13 @@
           "min": -0.143
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1225,
+        "area_px": 11880,
+        "density": 0.10311,
+        "chars": 5,
+        "chars_per_1k_ink": 4.08
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         751
       ],
       "category": "List-item",
-      "text": "(1) who are subject to prevailing rate determinations made within the purview of § 220 of the Labor Law, or",
+      "text": "(1) who are subject to prevailing rate determinations made within the purview of \u00a7 220 of the Labor Law, or",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -326,7 +332,7 @@
           "index": 92,
           "token_id": 16625,
           "logprob": -0.5139,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 368,
@@ -498,25 +504,71 @@
   "ink_coverage": {
     "roi": [
       491,
-      752,
+      0,
       3602,
-      5516
+      6269
     ],
-    "ink_px": 695194,
-    "covered_px": 693083,
-    "covered_fraction": 0.99696,
-    "uncovered_px": 2111,
+    "ink_px": 1353996,
+    "covered_px": 694308,
+    "covered_fraction": 0.51278,
+    "uncovered_px": 659688,
     "uncovered_regions": [
       {
         "bbox": [
-          3179,
-          1640,
-          3299,
-          1688
+          491,
+          6000,
+          3602,
+          6269
         ],
-        "ink_px": 1396
+        "ink_px": 637196
+      },
+      {
+        "bbox": [
+          899,
+          5592,
+          1763,
+          5664
+        ],
+        "ink_px": 10787
+      },
+      {
+        "bbox": [
+          2243,
+          5496,
+          2459,
+          5592
+        ],
+        "ink_px": 3999
+      },
+      {
+        "bbox": [
+          2531,
+          5496,
+          2867,
+          5592
+        ],
+        "ink_px": 2985
+      },
+      {
+        "bbox": [
+          2195,
+          5616,
+          2459,
+          5664
+        ],
+        "ink_px": 2056
+      },
+      {
+        "bbox": [
+          2891,
+          5544,
+          2963,
+          5616
+        ],
+        "ink_px": 656
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

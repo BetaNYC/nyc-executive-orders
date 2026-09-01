@@ -28,7 +28,13 @@
           "min": -0.0026
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8923,
+        "area_px": 43662,
+        "density": 0.20437,
+        "chars": 90,
+        "chars_per_1k_ink": 10.09
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         449
       ],
       "category": "Text",
-      "text": "§ 3. An applicant for employment shall not be required to respond to any inquiry that violates this Order and any refusal to respond to such inquiry shall not disqualify an applicant from the prospective employment.",
+      "text": "\u00a7 3. An applicant for employment shall not be required to respond to any inquiry that violates this Order and any refusal to respond to such inquiry shall not disqualify an applicant from the prospective employment.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 21298,
-        "area_px": 233691,
-        "density": 0.09114,
+        "ink_px": 21346,
+        "area_px": 237522,
+        "density": 0.08987,
         "chars": 215,
-        "chars_per_1k_ink": 10.09
+        "chars_per_1k_ink": 10.07
       }
     },
     {
@@ -72,7 +78,7 @@
         759
       ],
       "category": "Text",
-      "text": "§ 4. An inquiry about pay history may only be made for purposes of verifying an applicant's representations regarding his or her prior employment. Agencies may not rely on an applicant's pay history in calculating the wage or salary to be offered to the applicant upon employment with the City.",
+      "text": "\u00a7 4. An inquiry about pay history may only be made for purposes of verifying an applicant's representations regarding his or her prior employment. Agencies may not rely on an applicant's pay history in calculating the wage or salary to be offered to the applicant upon employment with the City.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -106,7 +112,7 @@
         1068
       ],
       "category": "Text",
-      "text": "§ 5. The Department of Citywide Administrative Services' Human Capital Division shall provide training for Agency Personnel Officers on the appropriate manner in which to ask about the pay history of applicants who have received conditional offers. Such Personnel Officers shall train their Agency Human Resources staff.",
+      "text": "\u00a7 5. The Department of Citywide Administrative Services' Human Capital Division shall provide training for Agency Personnel Officers on the appropriate manner in which to ask about the pay history of applicants who have received conditional offers. Such Personnel Officers shall train their Agency Human Resources staff.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -140,7 +146,7 @@
         1295
       ],
       "category": "Text",
-      "text": "§ 6. The Department of Citywide Administrative Services' Human Capital Division may conduct periodic reviews to ensure that Agency practices comply with this Order and collect relevant data for its reviews.",
+      "text": "\u00a7 6. The Department of Citywide Administrative Services' Human Capital Division may conduct periodic reviews to ensure that Agency practices comply with this Order and collect relevant data for its reviews.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -174,7 +180,7 @@
         1378
       ],
       "category": "Text",
-      "text": "§ 7. This Order shall not be construed to create any substantive rights.",
+      "text": "\u00a7 7. This Order shall not be construed to create any substantive rights.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -208,7 +214,7 @@
         1454
       ],
       "category": "Text",
-      "text": "§ 8. This Order shall take effect in 30 days.",
+      "text": "\u00a7 8. This Order shall take effect in 30 days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -287,7 +293,7 @@
           "index": 86,
           "token_id": 17851,
           "logprob": -0.0185,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 181,
@@ -347,7 +353,7 @@
           "index": 162,
           "token_id": 17851,
           "logprob": -0.0007,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -459,15 +465,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 120608,
-    "covered_px": 120601,
-    "covered_fraction": 0.99994,
-    "uncovered_px": 7,
+    "ink_px": 129617,
+    "covered_px": 129572,
+    "covered_fraction": 0.99965,
+    "uncovered_px": 45,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -28,7 +28,13 @@
           "min": -0.1429
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 9504,
+        "area_px": 57890,
+        "density": 0.16417,
+        "chars": 207,
+        "chars_per_1k_ink": 21.78
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.1604
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 19413,
+        "area_px": 127720,
+        "density": 0.152,
+        "chars": 516,
+        "chars_per_1k_ink": 26.58
+      }
     },
     {
       "bbox": [
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 24300,
-        "area_px": 152440,
-        "density": 0.15941,
+        "ink_px": 26202,
+        "area_px": 164800,
+        "density": 0.15899,
         "chars": 644,
-        "chars_per_1k_ink": 26.5
+        "chars_per_1k_ink": 24.58
       }
     },
     {
@@ -168,7 +180,7 @@
         655
       ],
       "category": "Text",
-      "text": "§ 8. The Comptroller shall not pay any compensation to any person appointed on or after July 1st of this year unless the Mayor or his duly authorized representative shall approve such payment.",
+      "text": "\u00a7 8. The Comptroller shall not pay any compensation to any person appointed on or after July 1st of this year unless the Mayor or his duly authorized representative shall approve such payment.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -202,7 +214,7 @@
         720
       ],
       "category": "Text",
-      "text": "§ 9. The provisions of this Executive Order are subject to any applicable provisions of the New York State Financial Emergency Act for The City of New York, as amended, and any orders or regulations issued in pursuance thereof.",
+      "text": "\u00a7 9. The provisions of this Executive Order are subject to any applicable provisions of the New York State Financial Emergency Act for The City of New York, as amended, and any orders or regulations issued in pursuance thereof.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -236,7 +248,7 @@
         742
       ],
       "category": "Text",
-      "text": "§ 10. This Executive Order shall take effect immediately.",
+      "text": "\u00a7 10. This Executive Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -384,7 +396,7 @@
           "index": 571,
           "token_id": 17851,
           "logprob": -0.0116,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 823,
@@ -526,25 +538,16 @@
   "ink_coverage": {
     "roi": [
       209,
-      273,
+      0,
       1535,
-      2007
+      2281
     ],
-    "ink_px": 65763,
-    "covered_px": 64648,
-    "covered_fraction": 0.98305,
-    "uncovered_px": 1115,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          1289,
-          273,
-          1313,
-          777
-        ],
-        "ink_px": 1029
-      }
-    ],
+    "ink_px": 97559,
+    "covered_px": 95459,
+    "covered_fraction": 0.97847,
+    "uncovered_px": 2100,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

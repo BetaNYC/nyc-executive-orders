@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 29056,
+        "area_px": 53118,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -175,7 +175,7 @@
         995
       ],
       "category": "Text",
-      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which “represents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island”; and",
+      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which \u201crepresents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island\u201d; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -413,7 +413,7 @@
         1995
       ],
       "category": "Text",
-      "text": "§ 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -461,9 +461,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1874,
-        "area_px": 24418,
-        "density": 0.07675,
+        "ink_px": 6267,
+        "area_px": 75780,
+        "density": 0.0827,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -486,7 +486,7 @@
           "index": 332,
           "token_id": 1036,
           "logprob": -0.7067,
-          "text": " “"
+          "text": " \u201c"
         },
         {
           "index": 81,
@@ -664,15 +664,16 @@
   "ink_coverage": {
     "roi": [
       198,
-      280,
+      0,
       1457,
-      2058
+      2339
     ],
-    "ink_px": 150989,
-    "covered_px": 150989,
+    "ink_px": 155382,
+    "covered_px": 155382,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

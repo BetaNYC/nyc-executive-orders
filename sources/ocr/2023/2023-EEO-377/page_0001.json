@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 583,
-        "area_px": 8316,
-        "density": 0.07011,
+        "ink_px": 1929,
+        "area_px": 55440,
+        "density": 0.03479,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -175,7 +175,7 @@
         885
       ],
       "category": "Text",
-      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez* Action Plan, which “represents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island”; and",
+      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez* Action Plan, which \u201crepresents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island\u201d; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -413,7 +413,7 @@
         1932
       ],
       "category": "Text",
-      "text": "§ 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -461,9 +461,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1567,
-        "area_px": 29326,
-        "density": 0.05343,
+        "ink_px": 1865,
+        "area_px": 30349,
+        "density": 0.06145,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -494,7 +494,13 @@
           "min": -0.0007
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 871,
+        "area_px": 12792,
+        "density": 0.06809,
+        "chars": 16,
+        "chars_per_1k_ink": 18.37
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -514,7 +520,7 @@
           "index": 331,
           "token_id": 1036,
           "logprob": -0.3487,
-          "text": " “"
+          "text": " \u201c"
         },
         {
           "index": 80,
@@ -538,7 +544,7 @@
           "index": 942,
           "token_id": 17851,
           "logprob": -0.0177,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 408,
@@ -692,15 +698,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 103917,
-    "covered_px": 103917,
+    "ink_px": 106432,
+    "covered_px": 106432,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

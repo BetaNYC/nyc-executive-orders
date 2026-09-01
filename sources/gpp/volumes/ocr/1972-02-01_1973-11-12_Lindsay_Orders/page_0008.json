@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1386,
-        "area_px": 5575,
-        "density": 0.24861,
+        "ink_px": 16085,
+        "area_px": 55527,
+        "density": 0.28968,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -311,7 +311,7 @@
         2775
       ],
       "category": "Text",
-      "text": "the general City Law, §36 and New York City Charter, §230 shall be required before approval by the Buildings",
+      "text": "the general City Law, \u00a736 and New York City Charter, \u00a7230 shall be required before approval by the Buildings",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -373,7 +373,7 @@
           "index": 616,
           "token_id": 16625,
           "logprob": -0.9575,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 137,
@@ -533,25 +533,35 @@
   "ink_coverage": {
     "roi": [
       264,
-      419,
+      0,
       1941,
-      3078
+      3498
     ],
-    "ink_px": 70906,
-    "covered_px": 70289,
-    "covered_fraction": 0.9913,
-    "uncovered_px": 617,
+    "ink_px": 358854,
+    "covered_px": 84988,
+    "covered_fraction": 0.23683,
+    "uncovered_px": 273866,
     "uncovered_regions": [
       {
         "bbox": [
-          840,
-          1091,
-          1224,
-          1115
+          264,
+          0,
+          1941,
+          96
         ],
-        "ink_px": 603
+        "ink_px": 139107
+      },
+      {
+        "bbox": [
+          264,
+          3384,
+          1941,
+          3498
+        ],
+        "ink_px": 134120
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

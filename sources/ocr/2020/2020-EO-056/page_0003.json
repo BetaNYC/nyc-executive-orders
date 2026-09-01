@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 47867,
-        "area_px": 563676,
-        "density": 0.08492,
+        "ink_px": 55856,
+        "area_px": 638148,
+        "density": 0.08753,
         "chars": 593,
-        "chars_per_1k_ink": 12.39
+        "chars_per_1k_ink": 10.62
       }
     },
     {
@@ -214,7 +214,7 @@
         1939
       ],
       "category": "Text",
-      "text": "§ 3. The First Deputy Mayor hereby is delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to delegate in the event that the Mayor is unable to perform such functions, powers or duties for a reason specified in subdivision a of section 10 of the New York City Charter.",
+      "text": "\u00a7 3. The First Deputy Mayor hereby is delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to delegate in the event that the Mayor is unable to perform such functions, powers or duties for a reason specified in subdivision a of section 10 of the New York City Charter.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -270,7 +270,7 @@
           "index": 577,
           "token_id": 17851,
           "logprob": -0.0506,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 210,
@@ -436,15 +436,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 158904,
-    "covered_px": 158901,
+    "ink_px": 166893,
+    "covered_px": 166890,
     "covered_fraction": 0.99998,
     "uncovered_px": 3,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

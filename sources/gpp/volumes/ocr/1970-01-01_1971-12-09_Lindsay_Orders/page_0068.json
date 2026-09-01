@@ -28,7 +28,13 @@
           "min": -0.0053
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16,
+        "area_px": 903,
+        "density": 0.01772,
+        "chars": 3,
+        "chars_per_1k_ink": 187.5
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         340
       ],
       "category": "Text",
-      "text": "§9. The Executive Order of the Mayor, No. 55, effective November 2, 1967, is hereby rescinded. This Executive Order shall take effect immediately.",
+      "text": "\u00a79. The Executive Order of the Mayor, No. 55, effective November 2, 1967, is hereby rescinded. This Executive Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -151,7 +157,7 @@
           "index": 71,
           "token_id": 17851,
           "logprob": -0.013,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 34,
@@ -323,15 +329,26 @@
   "ink_coverage": {
     "roi": [
       140,
-      179,
+      0,
       1030,
-      1318
+      1498
     ],
-    "ink_px": 673,
-    "covered_px": 673,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 34786,
+    "covered_px": 689,
+    "covered_fraction": 0.01981,
+    "uncovered_px": 34097,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          140,
+          1392,
+          1030,
+          1498
+        ],
+        "ink_px": 33890
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

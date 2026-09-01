@@ -28,7 +28,13 @@
           "min": -0.0044
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 106,
+        "area_px": 7722,
+        "density": 0.01373,
+        "chars": 22,
+        "chars_per_1k_ink": 207.55
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 17,
+        "area_px": 902,
+        "density": 0.01885,
+        "chars": 3,
+        "chars_per_1k_ink": 176.47
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0002
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 97,
+        "area_px": 4278,
+        "density": 0.02267,
+        "chars": 14,
+        "chars_per_1k_ink": 144.33
+      }
     },
     {
       "bbox": [
@@ -114,8 +132,8 @@
       },
       "ink": {
         "ink_px": 403,
-        "area_px": 15678,
-        "density": 0.0257,
+        "area_px": 16281,
+        "density": 0.02475,
         "chars": 46,
         "chars_per_1k_ink": 114.14
       }
@@ -196,7 +214,7 @@
         694
       ],
       "category": "Text",
-      "text": "§ 2. The Finance Administrator shall, in his discretion,\norganize the Administration into departments, divisions, bureaus,\nboards or offices, and make assignments of powers and duties among\nthem and from time to time change such organization or assignments,\nsubject only to the extent to which the organization is prescribed\nby law.",
+      "text": "\u00a7 2. The Finance Administrator shall, in his discretion,\norganize the Administration into departments, divisions, bureaus,\nboards or offices, and make assignments of powers and duties among\nthem and from time to time change such organization or assignments,\nsubject only to the extent to which the organization is prescribed\nby law.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -230,7 +248,7 @@
         909
       ],
       "category": "Text",
-      "text": "§ 3. The President and Commissioners of the Tax Commission\nshall co-operate with the Finance Administration to the maximum\nextent possible in the transfer to the Administration of the\nfunctions, powers and duties relating to real property tax assess-\nment as assigned to the Administrator by Local Law No. 10.",
+      "text": "\u00a7 3. The President and Commissioners of the Tax Commission\nshall co-operate with the Finance Administration to the maximum\nextent possible in the transfer to the Administration of the\nfunctions, powers and duties relating to real property tax assess-\nment as assigned to the Administrator by Local Law No. 10.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -264,7 +282,7 @@
         1039
       ],
       "category": "Text",
-      "text": "§ 4. Executive Order No. 17, dated July 7, 1966, except\ninsofar as it is expressly preserved by any of the provisions of\nthis order, is hereby repealed.",
+      "text": "\u00a7 4. Executive Order No. 17, dated July 7, 1966, except\ninsofar as it is expressly preserved by any of the provisions of\nthis order, is hereby repealed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -383,7 +401,7 @@
           "index": 329,
           "token_id": 17851,
           "logprob": -0.2695,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 217,
@@ -549,15 +567,26 @@
   "ink_coverage": {
     "roi": [
       144,
-      228,
+      0,
       1059,
-      1677
+      1906
     ],
-    "ink_px": 4618,
-    "covered_px": 4618,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 60536,
+    "covered_px": 4838,
+    "covered_fraction": 0.07992,
+    "uncovered_px": 55698,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          144,
+          1824,
+          1059,
+          1906
+        ],
+        "ink_px": 55692
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

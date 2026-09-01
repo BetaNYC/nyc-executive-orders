@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 2,
-        "area_px": 14427,
-        "density": 0.00014,
+        "ink_px": 48,
+        "area_px": 54731,
+        "density": 0.00088,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1206
       ],
       "category": "Text",
-      "text": "§2. This Order shall take effect immediately.",
+      "text": "\u00a72. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -356,7 +356,7 @@
           "index": 390,
           "token_id": 17851,
           "logprob": -0.0048,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 213,
@@ -528,15 +528,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 59379,
-    "covered_px": 59020,
-    "covered_fraction": 0.99395,
+    "ink_px": 59425,
+    "covered_px": 59066,
+    "covered_fraction": 0.99396,
     "uncovered_px": 359,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

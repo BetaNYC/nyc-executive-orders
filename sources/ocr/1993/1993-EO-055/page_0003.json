@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1527,
-        "area_px": 59754,
-        "density": 0.02555,
+        "ink_px": 12242,
+        "area_px": 137694,
+        "density": 0.08891,
         "chars": 98,
-        "chars_per_1k_ink": 64.18
+        "chars_per_1k_ink": 8.01
       }
     },
     {
@@ -44,7 +44,7 @@
         398
       ],
       "category": "Section-header",
-      "text": "§ 4. Vendor Advisory Board",
+      "text": "\u00a7 4. Vendor Advisory Board",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -112,7 +112,7 @@
         782
       ],
       "category": "Text",
-      "text": "§ 5. This Order shall take effect immediately.",
+      "text": "\u00a7 5. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -185,7 +185,7 @@
           "index": 88,
           "token_id": 17851,
           "logprob": -0.7507,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 51,
@@ -209,7 +209,7 @@
           "index": 217,
           "token_id": 17851,
           "logprob": -0.0028,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 220,
@@ -363,15 +363,26 @@
   "ink_coverage": {
     "roi": [
       209,
-      273,
+      0,
       1535,
-      2007
+      2281
     ],
-    "ink_px": 66423,
-    "covered_px": 66216,
-    "covered_fraction": 0.99688,
-    "uncovered_px": 207,
-    "uncovered_regions": [],
+    "ink_px": 78110,
+    "covered_px": 76931,
+    "covered_fraction": 0.98491,
+    "uncovered_px": 1179,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          281,
+          2208,
+          881,
+          2232
+        ],
+        "ink_px": 710
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

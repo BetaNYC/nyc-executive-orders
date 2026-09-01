@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 5089,
-        "area_px": 55556,
-        "density": 0.0916,
+        "ink_px": 11861,
+        "area_px": 98192,
+        "density": 0.12079,
         "chars": 137,
-        "chars_per_1k_ink": 26.92
+        "chars_per_1k_ink": 11.55
       }
     },
     {
@@ -78,7 +78,7 @@
         462
       ],
       "category": "Section-header",
-      "text": "§ 7. The Deputy Mayor for Strategic Initiatives shall:",
+      "text": "\u00a7 7. The Deputy Mayor for Strategic Initiatives shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -384,7 +384,7 @@
         1813
       ],
       "category": "Section-header",
-      "text": "§ 8. The Deputy Mayor for Public Safety shall:",
+      "text": "\u00a7 8. The Deputy Mayor for Public Safety shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -471,11 +471,11 @@
         }
       },
       "ink": {
-        "ink_px": 1282,
-        "area_px": 18375,
-        "density": 0.06977,
+        "ink_px": 8055,
+        "area_px": 51450,
+        "density": 0.15656,
         "chars": 90,
-        "chars_per_1k_ink": 70.2
+        "chars_per_1k_ink": 11.17
       }
     }
   ],
@@ -496,7 +496,7 @@
           "index": 149,
           "token_id": 17851,
           "logprob": -0.0701,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 54,
@@ -674,15 +674,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 194370,
-    "covered_px": 194370,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 207995,
+    "covered_px": 207915,
+    "covered_fraction": 0.99962,
+    "uncovered_px": 80,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

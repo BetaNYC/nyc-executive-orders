@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 15975,
+        "area_px": 52650,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -311,7 +311,7 @@
         1547
       ],
       "category": "Text",
-      "text": "§ 2. Section 4 of Executive Order No. 16 (July 16, 1978), as amended by Executive Order No. 78 of 1984 (October 5, 1984), is amended by adding new subdivisions (h) and (i) to read as follows:",
+      "text": "\u00a7 2. Section 4 of Executive Order No. 16 (July 16, 1978), as amended by Executive Order No. 78 of 1984 (October 5, 1984), is amended by adding new subdivisions (h) and (i) to read as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -432,11 +432,11 @@
         }
       },
       "ink": {
-        "ink_px": 17584,
-        "area_px": 105500,
-        "density": 0.16667,
+        "ink_px": 29525,
+        "area_px": 170910,
+        "density": 0.17275,
         "chars": 281,
-        "chars_per_1k_ink": 15.98
+        "chars_per_1k_ink": 9.52
       }
     }
   ],
@@ -481,7 +481,7 @@
           "index": 630,
           "token_id": 17851,
           "logprob": -0.0135,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 826,
@@ -635,15 +635,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 168420,
-    "covered_px": 168420,
+    "ink_px": 180361,
+    "covered_px": 180361,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

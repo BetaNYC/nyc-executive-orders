@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 6936,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 391,
-        "area_px": 14694,
-        "density": 0.02661,
+        "ink_px": 395,
+        "area_px": 16590,
+        "density": 0.02381,
         "chars": 58,
-        "chars_per_1k_ink": 148.34
+        "chars_per_1k_ink": 146.84
       }
     },
     {
@@ -305,7 +311,7 @@
         1314
       ],
       "category": "Text",
-      "text": "§ 2. Each administration and agency is directed to study its present employee safety program, determine the degree to which its safety needs are being met and develop and strengthen its employee safety program to better meet its needs. This program should include procedures for the following:",
+      "text": "\u00a7 2. Each administration and agency is directed to study its present employee safety program, determine the degree to which its safety needs are being met and develop and strengthen its employee safety program to better meet its needs. This program should include procedures for the following:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -417,7 +423,7 @@
           "index": 514,
           "token_id": 17851,
           "logprob": -1.4722,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 339,
@@ -595,15 +601,26 @@
   "ink_coverage": {
     "roi": [
       154,
-      237,
+      0,
       1129,
-      1739
+      1977
     ],
-    "ink_px": 391,
-    "covered_px": 391,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 66195,
+    "covered_px": 395,
+    "covered_fraction": 0.00597,
+    "uncovered_px": 65800,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          154,
+          1896,
+          1129,
+          1977
+        ],
+        "ink_px": 61978
+      }
+    ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

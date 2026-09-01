@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 27638,
-        "area_px": 246772,
-        "density": 0.112,
+        "ink_px": 37962,
+        "area_px": 346256,
+        "density": 0.10964,
         "chars": 296,
-        "chars_per_1k_ink": 10.71
+        "chars_per_1k_ink": 7.8
       }
     },
     {
@@ -146,7 +146,7 @@
         1080
       ],
       "category": "Text",
-      "text": "§ 5. The Deputy Mayor for Health and Human Services shall:",
+      "text": "\u00a7 5. The Deputy Mayor for Health and Human Services shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -301,11 +301,11 @@
         }
       },
       "ink": {
-        "ink_px": 10855,
-        "area_px": 78507,
-        "density": 0.13827,
+        "ink_px": 22128,
+        "area_px": 153153,
+        "density": 0.14448,
         "chars": 184,
-        "chars_per_1k_ink": 16.95
+        "chars_per_1k_ink": 8.32
       }
     },
     {
@@ -334,7 +334,13 @@
           "min": -0.0004
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 199,
+        "area_px": 609,
+        "density": 0.32677,
+        "chars": 1,
+        "chars_per_1k_ink": 5.03
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -354,7 +360,7 @@
           "index": 333,
           "token_id": 17851,
           "logprob": -0.0307,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 50,
@@ -532,15 +538,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 217363,
-    "covered_px": 217363,
+    "ink_px": 239159,
+    "covered_px": 239159,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

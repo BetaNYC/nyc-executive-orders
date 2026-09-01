@@ -10,7 +10,7 @@
         245
       ],
       "category": "Section-header",
-      "text": "§ 4. The Deputy Mayor for Operations shall:",
+      "text": "\u00a7 4. The Deputy Mayor for Operations shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -28,7 +28,13 @@
           "min": -0.0879
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4852,
+        "area_px": 22422,
+        "density": 0.21639,
+        "chars": 43,
+        "chars_per_1k_ink": 8.86
+      }
     },
     {
       "bbox": [
@@ -252,7 +258,7 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.0879,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 97,
@@ -430,15 +436,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 200551,
-    "covered_px": 200551,
+    "ink_px": 205403,
+    "covered_px": 205403,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -316,7 +316,7 @@
         1155
       ],
       "category": "Section-header",
-      "text": "§ 4. Restrictions on buses.",
+      "text": "\u00a7 4. Restrictions on buses.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -573,11 +573,11 @@
         }
       },
       "ink": {
-        "ink_px": 945,
-        "area_px": 23478,
-        "density": 0.04025,
+        "ink_px": 4680,
+        "area_px": 98384,
+        "density": 0.04757,
         "chars": 117,
-        "chars_per_1k_ink": 123.81
+        "chars_per_1k_ink": 25.0
       }
     }
   ],
@@ -610,7 +610,7 @@
           "index": 573,
           "token_id": 17851,
           "logprob": -0.3075,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 269,
@@ -776,15 +776,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 80754,
-    "covered_px": 80753,
-    "covered_fraction": 0.99999,
-    "uncovered_px": 1,
+    "ink_px": 84499,
+    "covered_px": 84488,
+    "covered_fraction": 0.99987,
+    "uncovered_px": 11,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

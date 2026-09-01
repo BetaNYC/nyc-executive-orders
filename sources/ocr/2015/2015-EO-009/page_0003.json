@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 397,
-        "area_px": 15420,
-        "density": 0.02575,
+        "ink_px": 5405,
+        "area_px": 136210,
+        "density": 0.03968,
         "chars": 112,
-        "chars_per_1k_ink": 282.12
+        "chars_per_1k_ink": 20.72
       }
     },
     {
@@ -214,7 +214,7 @@
         1541
       ],
       "category": "List-item",
-      "text": "§ 3. The First Deputy Mayor hereby is delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to delegate in the event that the Mayor is unable to perform such functions, powers or duties for a reason specified in subdivision a of section 10 of the New York City Charter.",
+      "text": "\u00a7 3. The First Deputy Mayor hereby is delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to delegate in the event that the Mayor is unable to perform such functions, powers or duties for a reason specified in subdivision a of section 10 of the New York City Charter.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -248,7 +248,7 @@
         1635
       ],
       "category": "List-item",
-      "text": "§ 4. The Deputy Mayor for Housing and Economic Development shall:",
+      "text": "\u00a7 4. The Deputy Mayor for Housing and Economic Development shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -338,7 +338,7 @@
           "index": 474,
           "token_id": 17851,
           "logprob": -0.0732,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 491,
@@ -386,7 +386,7 @@
           "index": 578,
           "token_id": 17851,
           "logprob": -0.0034,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 54,
@@ -504,15 +504,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 75568,
-    "covered_px": 75565,
-    "covered_fraction": 0.99996,
-    "uncovered_px": 3,
+    "ink_px": 80632,
+    "covered_px": 80573,
+    "covered_fraction": 0.99927,
+    "uncovered_px": 59,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16673,
+        "area_px": 52216,
+        "density": 0.31931,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 4098,
-        "area_px": 39900,
-        "density": 0.10271,
+        "ink_px": 6055,
+        "area_px": 53340,
+        "density": 0.11352,
         "chars": 53,
-        "chars_per_1k_ink": 12.93
+        "chars_per_1k_ink": 8.75
       }
     },
     {
@@ -407,7 +413,7 @@
         1650
       ],
       "category": "Text",
-      "text": "§ 2. Procedure for requesting new or additional space. Requests for space shall be made in writing to the Commissioner of Real Estate accompanied by the following information:",
+      "text": "\u00a7 2. Procedure for requesting new or additional space. Requests for space shall be made in writing to the Commissioner of Real Estate accompanied by the following information:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -577,7 +583,7 @@
         2337
       ],
       "category": "Text",
-      "text": "§ 3. Procedure for requesting Renewals and Extensions of Expiring Leases on Presently Occupied Space at Annual Rental of $10,000 or less. Requests for renewals or extensions of leases on space with an annual rental of $10,000 or less shall be initiated by letter to the Commissioner of Real Estate stating that:",
+      "text": "\u00a7 3. Procedure for requesting Renewals and Extensions of Expiring Leases on Presently Occupied Space at Annual Rental of $10,000 or less. Requests for renewals or extensions of leases on space with an annual rental of $10,000 or less shall be initiated by letter to the Commissioner of Real Estate stating that:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -781,7 +787,7 @@
         2709
       ],
       "category": "Text",
-      "text": "§ 4. Procedure for requesting renewals and extensions of expiring leases on presently occupied space at annual rentals in excess of $10,000. Such requests shall be processed in the same manner as requisitions for new or additional space as described in Paragraph 2 above.",
+      "text": "\u00a7 4. Procedure for requesting renewals and extensions of expiring leases on presently occupied space at annual rentals in excess of $10,000. Such requests shall be processed in the same manner as requisitions for new or additional space as described in Paragraph 2 above.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -815,7 +821,7 @@
         2767
       ],
       "category": "Text",
-      "text": "§ 5. Inventory. The Commissioner of Real Estate shall maintain a current inventory of space occupied by City agencies in municipally and privately-owned buildings.",
+      "text": "\u00a7 5. Inventory. The Commissioner of Real Estate shall maintain a current inventory of space occupied by City agencies in municipally and privately-owned buildings.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -849,7 +855,7 @@
         2825
       ],
       "category": "Text",
-      "text": "§ 6. Effective Date. This order shall take effect on August 1, 1966, and shall supersede Executive Order No. 24 issued November 27, 1962.",
+      "text": "\u00a7 6. Effective Date. This order shall take effect on August 1, 1966, and shall supersede Executive Order No. 24 issued November 27, 1962.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -985,7 +991,7 @@
           "index": 749,
           "token_id": 17851,
           "logprob": -0.1554,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 517,
@@ -1139,15 +1145,44 @@
   "ink_coverage": {
     "roi": [
       291,
-      416,
+      0,
       2140,
-      3054
+      3471
     ],
-    "ink_px": 85028,
-    "covered_px": 84040,
-    "covered_fraction": 0.98838,
-    "uncovered_px": 988,
-    "uncovered_regions": [],
+    "ink_px": 510730,
+    "covered_px": 102670,
+    "covered_fraction": 0.20103,
+    "uncovered_px": 408060,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          291,
+          3336,
+          2140,
+          3471
+        ],
+        "ink_px": 210047
+      },
+      {
+        "bbox": [
+          291,
+          0,
+          2140,
+          120
+        ],
+        "ink_px": 195937
+      },
+      {
+        "bbox": [
+          1395,
+          144,
+          1443,
+          216
+        ],
+        "ink_px": 660
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

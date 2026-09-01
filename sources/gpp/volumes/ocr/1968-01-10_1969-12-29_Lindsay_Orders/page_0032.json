@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 298,
-        "area_px": 6120,
-        "density": 0.04869,
+        "ink_px": 494,
+        "area_px": 10812,
+        "density": 0.04569,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1210
       ],
       "category": "Text",
-      "text": "§ 3. Implementation of this Executive Order. Each agency, upon receiving approval from the Bureau of the Budget of time and place of surrender, shall surrender the vehicles to the Department of Purchase, Salvage Division, Pier 31, Foot of Pike Slip at South Street, Manhattan, for sale at public auction no later than 30 days from such date of surrender. The Department of Purchase shall check the vehicles relinquished against copies of the approved agency listings as furnished by the Bureau of the Budget. No vehicular substitutions will be allowed. The Department of Purchase will furnish a receipt to the agency surrendering the vehicle(s), and send a copy to the Bureau of the Budget.",
+      "text": "\u00a7 3. Implementation of this Executive Order. Each agency, upon receiving approval from the Bureau of the Budget of time and place of surrender, shall surrender the vehicles to the Department of Purchase, Salvage Division, Pier 31, Foot of Pike Slip at South Street, Manhattan, for sale at public auction no later than 30 days from such date of surrender. The Department of Purchase shall check the vehicles relinquished against copies of the approved agency listings as furnished by the Bureau of the Budget. No vehicular substitutions will be allowed. The Department of Purchase will furnish a receipt to the agency surrendering the vehicle(s), and send a copy to the Bureau of the Budget.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -277,7 +277,7 @@
         1466
       ],
       "category": "Text",
-      "text": "§ 4. Other Municipal Agencies. A copy of this order shall be sent to the chief officer of each agency not within the Mayor's administrative jurisdiction with a request that they cooperate with the intent of this order and that they review the usage of their passenger vehicles so as to reduce their number of the minimum.",
+      "text": "\u00a7 4. Other Municipal Agencies. A copy of this order shall be sent to the chief officer of each agency not within the Mayor's administrative jurisdiction with a request that they cooperate with the intent of this order and that they review the usage of their passenger vehicles so as to reduce their number of the minimum.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1550
       ],
       "category": "Text",
-      "text": "§ 5. Effective Date. This order shall become effective upon the date hereof.",
+      "text": "\u00a7 5. Effective Date. This order shall become effective upon the date hereof.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -360,8 +360,8 @@
       },
       "ink": {
         "ink_px": 6,
-        "area_px": 39168,
-        "density": 0.00015,
+        "area_px": 60288,
+        "density": 0.0001,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -402,7 +402,7 @@
           "index": 327,
           "token_id": 17851,
           "logprob": -0.1391,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 402,
@@ -562,15 +562,26 @@
   "ink_coverage": {
     "roi": [
       147,
-      224,
+      0,
       1078,
-      1649
+      1874
     ],
-    "ink_px": 765,
-    "covered_px": 765,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 57059,
+    "covered_px": 961,
+    "covered_fraction": 0.01684,
+    "uncovered_px": 56098,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          147,
+          1800,
+          1078,
+          1874
+        ],
+        "ink_px": 56098
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

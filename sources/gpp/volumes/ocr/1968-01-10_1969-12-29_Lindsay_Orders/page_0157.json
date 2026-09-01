@@ -10,7 +10,7 @@
         637
       ],
       "category": "Text",
-      "text": "THE 12TH CENTURY\n(14th to 16th Cent.)\nDiputación de la Catedral de Murcia",
+      "text": "THE 12TH CENTURY\n(14th to 16th Cent.)\nDiputaci\u00f3n de la Catedral de Murcia",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -78,7 +78,7 @@
         736
       ],
       "category": "Section-header",
-      "text": "### INTRODUCCIÓN",
+      "text": "### INTRODUCCI\u00d3N",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -112,7 +112,7 @@
         771
       ],
       "category": "Section-header",
-      "text": "#### INTRODUCCIÓN",
+      "text": "#### INTRODUCCI\u00d3N",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -1166,7 +1166,7 @@
         1541
       ],
       "category": "Section-header",
-      "text": "#### INTRODUCCIÓN",
+      "text": "#### INTRODUCCI\u00d3N",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -1456,15 +1456,26 @@
   "ink_coverage": {
     "roi": [
       141,
-      223,
+      0,
       1035,
-      1636
+      1860
     ],
-    "ink_px": 0,
+    "ink_px": 47236,
     "covered_px": 0,
-    "covered_fraction": null,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.0,
+    "uncovered_px": 47236,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          141,
+          0,
+          1035,
+          120
+        ],
+        "ink_px": 47202
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

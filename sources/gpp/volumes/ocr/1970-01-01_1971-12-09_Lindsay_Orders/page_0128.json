@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2907,
+        "area_px": 17835,
+        "density": 0.16299,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 274,
-        "density": 0.0,
+        "ink_px": 87,
+        "area_px": 21098,
+        "density": 0.00412,
         "chars": 53,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 609.2
       }
     },
     {
@@ -203,7 +209,7 @@
         383
       ],
       "category": "Text",
-      "text": "250 BROADWAY • NEW YORK, N. Y. 10007",
+      "text": "250 BROADWAY \u2022 NEW YORK, N. Y. 10007",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -625,9 +631,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 3446,
-        "area_px": 42510,
-        "density": 0.08106,
+        "ink_px": 4755,
+        "area_px": 55917,
+        "density": 0.08504,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -828,15 +834,26 @@
   "ink_coverage": {
     "roi": [
       182,
-      235,
+      0,
       1334,
-      1726
+      1962
     ],
-    "ink_px": 32889,
-    "covered_px": 32852,
-    "covered_fraction": 0.99888,
-    "uncovered_px": 37,
-    "uncovered_regions": [],
+    "ink_px": 92536,
+    "covered_px": 37155,
+    "covered_fraction": 0.40152,
+    "uncovered_px": 55381,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          182,
+          1848,
+          1334,
+          1962
+        ],
+        "ink_px": 55148
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

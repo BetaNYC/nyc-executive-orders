@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 288,
-        "area_px": 8316,
-        "density": 0.03463,
+        "ink_px": 1008,
+        "area_px": 55440,
+        "density": 0.01818,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -175,7 +175,7 @@
         882
       ],
       "category": "Text",
-      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which “represents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island”; and",
+      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which \u201crepresents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island\u201d; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -413,7 +413,7 @@
         1889
       ],
       "category": "Text",
-      "text": "§ 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -495,11 +495,11 @@
         }
       },
       "ink": {
-        "ink_px": 586,
-        "area_px": 6031,
-        "density": 0.09716,
+        "ink_px": 956,
+        "area_px": 13040,
+        "density": 0.07331,
         "chars": 16,
-        "chars_per_1k_ink": 27.3
+        "chars_per_1k_ink": 16.74
       }
     }
   ],
@@ -520,7 +520,7 @@
           "index": 331,
           "token_id": 1036,
           "logprob": -0.3778,
-          "text": " “"
+          "text": " \u201c"
         },
         {
           "index": 327,
@@ -568,7 +568,7 @@
           "index": 942,
           "token_id": 17851,
           "logprob": -0.0104,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 408,
@@ -698,15 +698,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 100776,
-    "covered_px": 100479,
-    "covered_fraction": 0.99705,
+    "ink_px": 101866,
+    "covered_px": 101569,
+    "covered_fraction": 0.99708,
     "uncovered_px": 297,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

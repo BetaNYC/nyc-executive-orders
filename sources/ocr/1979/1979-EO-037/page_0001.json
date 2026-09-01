@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 4519,
-        "area_px": 19822,
-        "density": 0.22798,
+        "ink_px": 7299,
+        "area_px": 39270,
+        "density": 0.18587,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -175,7 +175,7 @@
         1762
       ],
       "category": "Text",
-      "text": "§ 2. Members. The Council shall consist of six\nmembers, three of whom shall be representatives of the\nCity government and three of whom shall be representatives\nof City employee unions. The members representing City\ngovernment shall be the Deputy Mayor for Operations, who\nshall serve as Chairman of the Council, the City Personnel\nDirector, and the Director of the Office of Municipal\nLabor Relations. The members representing the City employee\nunions shall be designated by the Municipal Labor Committee.\nA representative designated by the New York State Financial\nControl Board will serve as an observer of the Council.",
+      "text": "\u00a7 2. Members. The Council shall consist of six\nmembers, three of whom shall be representatives of the\nCity government and three of whom shall be representatives\nof City employee unions. The members representing City\ngovernment shall be the Deputy Mayor for Operations, who\nshall serve as Chairman of the Council, the City Personnel\nDirector, and the Director of the Office of Municipal\nLabor Relations. The members representing the City employee\nunions shall be designated by the Municipal Labor Committee.\nA representative designated by the New York State Financial\nControl Board will serve as an observer of the Council.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -209,7 +209,7 @@
         1970
       ],
       "category": "Text",
-      "text": "§ 3. Purposes. The Council shall develop and seek\nto implement methods for enhancing the productivity of the\nCity's labor force.",
+      "text": "\u00a7 3. Purposes. The Council shall develop and seek\nto implement methods for enhancing the productivity of the\nCity's labor force.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -295,7 +295,7 @@
           "index": 309,
           "token_id": 17851,
           "logprob": -0.0482,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 81,
@@ -431,25 +431,16 @@
   "ink_coverage": {
     "roi": [
       207,
-      270,
+      0,
       1520,
-      1985
+      2256
     ],
-    "ink_px": 87510,
-    "covered_px": 86178,
-    "covered_fraction": 0.98478,
-    "uncovered_px": 1332,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          663,
-          678,
-          1095,
-          702
-        ],
-        "ink_px": 1076
-      }
-    ],
+    "ink_px": 90884,
+    "covered_px": 88958,
+    "covered_fraction": 0.97881,
+    "uncovered_px": 1926,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

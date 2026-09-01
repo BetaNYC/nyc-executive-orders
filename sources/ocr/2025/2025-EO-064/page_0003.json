@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 3416,
-        "area_px": 42636,
-        "density": 0.08012,
+        "ink_px": 9621,
+        "area_px": 103360,
+        "density": 0.09308,
         "chars": 148,
-        "chars_per_1k_ink": 43.33
+        "chars_per_1k_ink": 15.38
       }
     },
     {
@@ -44,7 +44,7 @@
         480
       ],
       "category": "Text",
-      "text": "§ 2. I further direct DOHMH to review the results of the initial phase of the current inspection program and the examinations required pursuant to section 1 of this Order, and to determine any basis for individual removal orders it deems warranted, pursuant to subdivision m of section 17-330 of the Administrative Code.",
+      "text": "\u00a7 2. I further direct DOHMH to review the results of the initial phase of the current inspection program and the examinations required pursuant to section 1 of this Order, and to determine any basis for individual removal orders it deems warranted, pursuant to subdivision m of section 17-330 of the Administrative Code.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -78,7 +78,7 @@
         742
       ],
       "category": "Text",
-      "text": "§ 3. I further direct DOHMH to determine and then take any appropriate actions it deems warranted, including the promulgation of rules pursuant to subdivision a of section 17-330 of the Administrative Code, in order to codify a systematic, industry-wide inspection regime, with appropriate remedies for obstruction of inspections and findings of mistreatment of horses, based on the precedent of the examinations conducted in December 2025 and pursuant to section 1 of this Order.",
+      "text": "\u00a7 3. I further direct DOHMH to determine and then take any appropriate actions it deems warranted, including the promulgation of rules pursuant to subdivision a of section 17-330 of the Administrative Code, in order to codify a systematic, industry-wide inspection regime, with appropriate remedies for obstruction of inspections and findings of mistreatment of horses, based on the precedent of the examinations conducted in December 2025 and pursuant to section 1 of this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         821
       ],
       "category": "Text",
-      "text": "§ 4. This Order shall take effect immediately.",
+      "text": "\u00a7 4. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -227,7 +227,13 @@
           "min": -0.0
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 77,
+        "area_px": 726,
+        "density": 0.10606,
+        "chars": 1,
+        "chars_per_1k_ink": 12.99
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -253,7 +259,7 @@
           "index": 93,
           "token_id": 17851,
           "logprob": -0.0029,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 35,
@@ -425,25 +431,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 62344,
-    "covered_px": 61894,
-    "covered_fraction": 0.99278,
+    "ink_px": 68626,
+    "covered_px": 68176,
+    "covered_fraction": 0.99344,
     "uncovered_px": 450,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          1092,
-          1008,
-          1496,
-          1032
-        ],
-        "ink_px": 434
-      }
-    ],
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

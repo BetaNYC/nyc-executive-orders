@@ -28,7 +28,13 @@
           "min": -0.0545
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 194,
+        "area_px": 1960,
+        "density": 0.09898,
+        "chars": 4,
+        "chars_per_1k_ink": 20.62
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0563
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 894,
+        "area_px": 15190,
+        "density": 0.05885,
+        "chars": 27,
+        "chars_per_1k_ink": 30.2
+      }
     },
     {
       "bbox": [
@@ -80,9 +92,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 12159,
-        "area_px": 26208,
-        "density": 0.46394,
+        "ink_px": 16776,
+        "area_px": 46592,
+        "density": 0.36006,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -333,7 +345,7 @@
         1402
       ],
       "category": "Text",
-      "text": "§2. The Commission shall be headed by one or more Commissioners for the United Nations and for the Consular Corps. The Commissioners shall serve without salary and at the pleasure of the Mayor, and be the Mayor's personal representatives.",
+      "text": "\u00a72. The Commission shall be headed by one or more Commissioners for the United Nations and for the Consular Corps. The Commissioners shall serve without salary and at the pleasure of the Mayor, and be the Mayor's personal representatives.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -483,9 +495,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 17549,
-        "area_px": 101724,
-        "density": 0.17252,
+        "ink_px": 18714,
+        "area_px": 127155,
+        "density": 0.14717,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -686,15 +698,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 130997,
-    "covered_px": 129722,
-    "covered_fraction": 0.99027,
-    "uncovered_px": 1275,
+    "ink_px": 138087,
+    "covered_px": 136592,
+    "covered_fraction": 0.98917,
+    "uncovered_px": 1495,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

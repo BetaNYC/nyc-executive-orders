@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 6456,
-        "area_px": 118701,
-        "density": 0.05439,
+        "ink_px": 11182,
+        "area_px": 179850,
+        "density": 0.06217,
         "chars": 201,
-        "chars_per_1k_ink": 31.13
+        "chars_per_1k_ink": 17.98
       }
     },
     {
@@ -112,7 +112,7 @@
         852
       ],
       "category": "Section-header",
-      "text": "## § 2. Duties of the Commission. The Commission shall:",
+      "text": "## \u00a7 2. Duties of the Commission. The Commission shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -350,7 +350,7 @@
         1718
       ],
       "category": "Section-header",
-      "text": "## § 3. Powers of the Commission.",
+      "text": "## \u00a7 3. Powers of the Commission.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -458,7 +458,7 @@
           "index": 276,
           "token_id": 16625,
           "logprob": -0.0061,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 222,
@@ -606,15 +606,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 94632,
-    "covered_px": 94632,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 99373,
+    "covered_px": 99358,
+    "covered_fraction": 0.99985,
+    "uncovered_px": 15,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

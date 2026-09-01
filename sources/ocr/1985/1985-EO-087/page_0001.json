@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 10675,
-        "area_px": 23364,
-        "density": 0.4569,
+        "ink_px": 16960,
+        "area_px": 41382,
+        "density": 0.40984,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -277,7 +277,7 @@
         1163
       ],
       "category": "Section-header",
-      "text": "\"§5. Committee Membership.",
+      "text": "\"\u00a75. Committee Membership.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -379,7 +379,7 @@
           "index": 449,
           "token_id": 17851,
           "logprob": -0.0784,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 452,
@@ -533,43 +533,26 @@
   "ink_coverage": {
     "roi": [
       217,
-      278,
+      0,
       1596,
-      2038
+      2317
     ],
-    "ink_px": 170372,
-    "covered_px": 163898,
-    "covered_fraction": 0.962,
-    "uncovered_px": 6474,
+    "ink_px": 176696,
+    "covered_px": 170183,
+    "covered_fraction": 0.96314,
+    "uncovered_px": 6513,
     "uncovered_regions": [
       {
         "bbox": [
           1345,
-          278,
+          264,
           1596,
-          350
+          360
         ],
-        "ink_px": 3239
-      },
-      {
-        "bbox": [
-          673,
-          758,
-          1345,
-          782
-        ],
-        "ink_px": 2470
-      },
-      {
-        "bbox": [
-          769,
-          1142,
-          1129,
-          1166
-        ],
-        "ink_px": 684
+        "ink_px": 3266
       }
     ],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 211,
-        "area_px": 20264,
-        "density": 0.01041,
+        "ink_px": 5045,
+        "area_px": 133504,
+        "density": 0.03779,
         "chars": 97,
-        "chars_per_1k_ink": 459.72
+        "chars_per_1k_ink": 19.23
       }
     },
     {
@@ -180,7 +180,7 @@
         1397
       ],
       "category": "Text",
-      "text": "§ 7. The Director of Intergovernmental Affairs, the Chief of Staff, the Chancellor, the Police Commissioner, the Corporation Counsel, the Director of Management and Budget, the Commissioner of Investigation, the Director of the Mayor's Office on Strategic Partnerships, the Senior Advisor for Recovery, Resiliency & Infrastructure, the Counsel to the Mayor, and the Senior Advisor shall report directly to the Mayor.",
+      "text": "\u00a7 7. The Director of Intergovernmental Affairs, the Chief of Staff, the Chancellor, the Police Commissioner, the Corporation Counsel, the Director of Management and Budget, the Commissioner of Investigation, the Director of the Mayor's Office on Strategic Partnerships, the Senior Advisor for Recovery, Resiliency & Infrastructure, the Counsel to the Mayor, and the Senior Advisor shall report directly to the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -214,7 +214,7 @@
         1474
       ],
       "category": "Text",
-      "text": "§ 8. Executive Order No. 2, dated February 12, 2014, is hereby REVOKED.",
+      "text": "\u00a7 8. Executive Order No. 2, dated February 12, 2014, is hereby REVOKED.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -248,7 +248,7 @@
         1566
       ],
       "category": "Text",
-      "text": "§ 9. This Order shall take effect immediately.",
+      "text": "\u00a7 9. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -329,7 +329,13 @@
           "min": -0.002
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 39,
+        "area_px": 600,
+        "density": 0.065,
+        "chars": 1,
+        "chars_per_1k_ink": 25.64
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -361,7 +367,7 @@
           "index": 364,
           "token_id": 17851,
           "logprob": -0.0713,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 43,
@@ -527,15 +533,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 58155,
-    "covered_px": 58155,
+    "ink_px": 63028,
+    "covered_px": 63028,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

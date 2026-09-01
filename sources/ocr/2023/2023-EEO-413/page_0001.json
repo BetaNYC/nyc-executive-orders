@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 158,
-        "area_px": 7854,
-        "density": 0.02012,
+        "ink_px": 367,
+        "area_px": 54978,
+        "density": 0.00668,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -175,7 +175,7 @@
         814
       ],
       "category": "Text",
-      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which “represents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island”; and",
+      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which \u201crepresents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island\u201d; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -413,7 +413,7 @@
         1718
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct that section 1 of Emergency Executive Order No. 409, dated May 15, 2023, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby direct that section 1 of Emergency Executive Order No. 409, dated May 15, 2023, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -447,7 +447,7 @@
         1861
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -530,8 +530,8 @@
       },
       "ink": {
         "ink_px": 806,
-        "area_px": 10437,
-        "density": 0.07723,
+        "area_px": 10584,
+        "density": 0.07615,
         "chars": 16,
         "chars_per_1k_ink": 19.85
       }
@@ -554,7 +554,7 @@
           "index": 331,
           "token_id": 1036,
           "logprob": -0.3629,
-          "text": " “"
+          "text": " \u201c"
         },
         {
           "index": 327,
@@ -620,7 +620,7 @@
           "index": 950,
           "token_id": 17851,
           "logprob": -0.0025,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -732,15 +732,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 101662,
-    "covered_px": 101460,
-    "covered_fraction": 0.99801,
+    "ink_px": 101871,
+    "covered_px": 101669,
+    "covered_fraction": 0.99802,
     "uncovered_px": 202,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

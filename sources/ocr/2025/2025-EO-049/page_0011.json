@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 2133,
-        "area_px": 31008,
-        "density": 0.06879,
+        "ink_px": 15236,
+        "area_px": 142120,
+        "density": 0.10721,
         "chars": 239,
-        "chars_per_1k_ink": 112.05
+        "chars_per_1k_ink": 15.69
       }
     },
     {
@@ -146,7 +146,7 @@
         949
       ],
       "category": "Text",
-      "text": "§ 13. The Chancellor, the Police Commissioner, the Commissioner of Investigation, the Corporation Counsel, the Director of Management and Budget, and the Chief Technology Officer shall report directly to the Mayor.",
+      "text": "\u00a7 13. The Chancellor, the Police Commissioner, the Commissioner of Investigation, the Corporation Counsel, the Director of Management and Budget, and the Chief Technology Officer shall report directly to the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -180,7 +180,7 @@
         1103
       ],
       "category": "Text",
-      "text": "§ 14. Executive Order 46, dated January 13, 2025, is hereby REVOKED, except that sections 13 and 15 of Executive Order 46, which amended section 2 of Executive Order 3 of 2023 in relation to the Chief Technology Officer, remain in effect.",
+      "text": "\u00a7 14. Executive Order 46, dated January 13, 2025, is hereby REVOKED, except that sections 13 and 15 of Executive Order 46, which amended section 2 of Executive Order 3 of 2023 in relation to the Chief Technology Officer, remain in effect.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -214,7 +214,7 @@
         1182
       ],
       "category": "Text",
-      "text": "§ 15. This Order shall take effect immediately.",
+      "text": "\u00a7 15. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -305,7 +305,7 @@
           "index": 390,
           "token_id": 17851,
           "logprob": -0.0056,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 296,
@@ -465,15 +465,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 95033,
-    "covered_px": 95033,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 108256,
+    "covered_px": 108136,
+    "covered_fraction": 0.99889,
+    "uncovered_px": 120,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

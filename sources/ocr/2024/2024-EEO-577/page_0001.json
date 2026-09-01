@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 19090,
+        "area_px": 54280,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -175,7 +175,7 @@
         866
       ],
       "category": "Text",
-      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which “represents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island”; and",
+      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which \u201crepresents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island\u201d; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -413,7 +413,7 @@
         1838
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct that section 1 of Emergency Executive Order No. 575, dated March 30, 2024, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby direct that section 1 of Emergency Executive Order No. 575, dated March 30, 2024, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -447,7 +447,7 @@
         2024
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -466,11 +466,11 @@
         }
       },
       "ink": {
-        "ink_px": 12065,
-        "area_px": 90440,
-        "density": 0.1334,
+        "ink_px": 19629,
+        "area_px": 191216,
+        "density": 0.10265,
         "chars": 338,
-        "chars_per_1k_ink": 28.01
+        "chars_per_1k_ink": 17.22
       }
     },
     {
@@ -494,7 +494,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4711,
+        "area_px": 76433,
+        "density": 0.06164,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -514,7 +520,7 @@
           "index": 329,
           "token_id": 1036,
           "logprob": -0.418,
-          "text": " “"
+          "text": " \u201c"
         },
         {
           "index": 325,
@@ -556,7 +562,7 @@
           "index": 350,
           "token_id": 65445,
           "logprob": -0.0089,
-          "text": "”;"
+          "text": "\u201d;"
         },
         {
           "index": 955,
@@ -692,15 +698,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 146259,
-    "covered_px": 146259,
+    "ink_px": 158339,
+    "covered_px": 158339,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

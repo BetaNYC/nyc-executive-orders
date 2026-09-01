@@ -384,7 +384,7 @@
         993
       ],
       "category": "Text",
-      "text": "Expenditures for the purchase of office furnishings, equipment and special items (items, regardless of amount, deemed sensitive by OMB examiners per 4-26-76 Revised Memorandum for obtaining Approval of Contracts—pg. 3), whether made from the General Purchase Fund, Old System or from Imprest Funds, require approval by the Office of Management and Budget. Also, expenditures for the purchase of motor vehicles must be approved by the Mayor.",
+      "text": "Expenditures for the purchase of office furnishings, equipment and special items (items, regardless of amount, deemed sensitive by OMB examiners per 4-26-76 Revised Memorandum for obtaining Approval of Contracts\u2014pg. 3), whether made from the General Purchase Fund, Old System or from Imprest Funds, require approval by the Office of Management and Budget. Also, expenditures for the purchase of motor vehicles must be approved by the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -947,11 +947,11 @@
         }
       },
       "ink": {
-        "ink_px": 808,
-        "area_px": 4279,
-        "density": 0.18883,
+        "ink_px": 1433,
+        "area_px": 7780,
+        "density": 0.18419,
         "chars": 47,
-        "chars_per_1k_ink": 58.17
+        "chars_per_1k_ink": 32.8
       }
     },
     {
@@ -980,7 +980,13 @@
           "min": -0.2117
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1532,
+        "area_px": 7440,
+        "density": 0.20591,
+        "chars": 45,
+        "chars_per_1k_ink": 29.37
+      }
     },
     {
       "bbox": [
@@ -1008,7 +1014,13 @@
           "min": -0.0628
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2435,
+        "area_px": 12300,
+        "density": 0.19797,
+        "chars": 74,
+        "chars_per_1k_ink": 30.39
+      }
     },
     {
       "bbox": [
@@ -1036,7 +1048,13 @@
           "min": -0.0112
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1096,
+        "area_px": 5890,
+        "density": 0.18608,
+        "chars": 26,
+        "chars_per_1k_ink": 23.72
+      }
     },
     {
       "bbox": [
@@ -1064,7 +1082,13 @@
           "min": -0.5767
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16401,
+        "area_px": 78700,
+        "density": 0.2084,
+        "chars": 436,
+        "chars_per_1k_ink": 26.58
+      }
     },
     {
       "bbox": [
@@ -1092,7 +1116,13 @@
           "min": -0.0231
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2160,
+        "area_px": 11844,
+        "density": 0.18237,
+        "chars": 63,
+        "chars_per_1k_ink": 29.17
+      }
     },
     {
       "bbox": [
@@ -1120,7 +1150,13 @@
           "min": -0.2778
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 244,
+        "area_px": 935,
+        "density": 0.26096,
+        "chars": 6,
+        "chars_per_1k_ink": 24.59
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -1318,43 +1354,16 @@
   "ink_coverage": {
     "roi": [
       215,
-      276,
+      0,
       1576,
-      2024
+      2300
     ],
-    "ink_px": 238311,
-    "covered_px": 232110,
-    "covered_fraction": 0.97398,
-    "uncovered_px": 6201,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          1271,
-          564,
-          1295,
-          1812
-        ],
-        "ink_px": 3070
-      },
-      {
-        "bbox": [
-          479,
-          420,
-          887,
-          444
-        ],
-        "ink_px": 1486
-      },
-      {
-        "bbox": [
-          479,
-          372,
-          887,
-          396
-        ],
-        "ink_px": 1457
-      }
-    ],
+    "ink_px": 263543,
+    "covered_px": 256576,
+    "covered_fraction": 0.97356,
+    "uncovered_px": 6967,
+    "uncovered_regions": [],
+    "suppressed_regions": 3,
     "cell_px": 24
   }
 }

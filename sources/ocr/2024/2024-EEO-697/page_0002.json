@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 3203,
-        "area_px": 52644,
-        "density": 0.06084,
+        "ink_px": 18623,
+        "area_px": 142524,
+        "density": 0.13067,
         "chars": 207,
-        "chars_per_1k_ink": 64.63
+        "chars_per_1k_ink": 11.12
       }
     },
     {
@@ -146,7 +146,7 @@
         868
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct that section 1 of Emergency Executive Order No. 694, dated November 19, 2024 is extended for five (5) days",
+      "text": "\u00a7 2. I hereby direct that section 1 of Emergency Executive Order No. 694, dated November 19, 2024 is extended for five (5) days",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -180,7 +180,7 @@
         978
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -289,7 +289,7 @@
           "index": 389,
           "token_id": 17851,
           "logprob": -0.0036,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 146,
@@ -431,15 +431,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 96350,
-    "covered_px": 95970,
-    "covered_fraction": 0.99606,
-    "uncovered_px": 380,
+    "ink_px": 111796,
+    "covered_px": 111390,
+    "covered_fraction": 0.99637,
+    "uncovered_px": 406,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

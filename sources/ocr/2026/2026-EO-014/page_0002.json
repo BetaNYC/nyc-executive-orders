@@ -10,7 +10,7 @@
         260
       ],
       "category": "Text",
-      "text": "§ 2. The Director of the Office of LGBTQIA+ Affairs shall have the power and duty to:",
+      "text": "\u00a7 2. The Director of the Office of LGBTQIA+ Affairs shall have the power and duty to:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -28,7 +28,13 @@
           "min": -0.2475
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5227,
+        "area_px": 46720,
+        "density": 0.11188,
+        "chars": 85,
+        "chars_per_1k_ink": 16.26
+      }
     },
     {
       "bbox": [
@@ -276,7 +282,7 @@
         1611
       ],
       "category": "Text",
-      "text": "§ 3. Upon request of the Director, mayoral agencies shall cooperate with and provide\nassistance to the Office of LGBTQIA+ Affairs to further the performance of its duties.",
+      "text": "\u00a7 3. Upon request of the Director, mayoral agencies shall cooperate with and provide\nassistance to the Office of LGBTQIA+ Affairs to further the performance of its duties.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -310,7 +316,7 @@
         1688
       ],
       "category": "Text",
-      "text": "§ 4. This Order shall take effect immediately.",
+      "text": "\u00a7 4. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -392,11 +398,11 @@
         }
       },
       "ink": {
-        "ink_px": 2181,
-        "area_px": 21328,
-        "density": 0.10226,
+        "ink_px": 2305,
+        "area_px": 25800,
+        "density": 0.08934,
         "chars": 26,
-        "chars_per_1k_ink": 11.92
+        "chars_per_1k_ink": 11.28
       }
     },
     {
@@ -425,7 +431,13 @@
           "min": -0.0
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 86,
+        "area_px": 651,
+        "density": 0.1321,
+        "chars": 1,
+        "chars_per_1k_ink": 11.63
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -463,7 +475,7 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.2475,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 174,
@@ -487,7 +499,7 @@
           "index": 667,
           "token_id": 17851,
           "logprob": -0.0201,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 350,
@@ -499,7 +511,7 @@
           "index": 740,
           "token_id": 17851,
           "logprob": -0.008,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 305,
@@ -623,15 +635,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 123882,
-    "covered_px": 123882,
+    "ink_px": 129319,
+    "covered_px": 129319,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

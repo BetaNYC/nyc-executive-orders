@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1214,
-        "area_px": 16744,
-        "density": 0.0725,
+        "ink_px": 11800,
+        "area_px": 101752,
+        "density": 0.11597,
         "chars": 158,
-        "chars_per_1k_ink": 130.15
+        "chars_per_1k_ink": 13.39
       }
     },
     {
@@ -452,7 +452,7 @@
         1978
       ],
       "category": "Text",
-      "text": "§ 9. The holder of a license to operate a stoop line stand pursuant to section 20-233 of the Ad. Code shall, while this Order is in effect, be deemed a covered business participating in the Open Storefronts program for the purpose of operating such stoop line stand, so that such holder",
+      "text": "\u00a7 9. The holder of a license to operate a stoop line stand pursuant to section 20-233 of the Ad. Code shall, while this Order is in effect, be deemed a covered business participating in the Open Storefronts program for the purpose of operating such stoop line stand, so that such holder",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -471,11 +471,11 @@
         }
       },
       "ink": {
-        "ink_px": 13808,
-        "area_px": 113344,
-        "density": 0.12182,
+        "ink_px": 21044,
+        "area_px": 154560,
+        "density": 0.13615,
         "chars": 286,
-        "chars_per_1k_ink": 20.71
+        "chars_per_1k_ink": 13.59
       }
     },
     {
@@ -504,7 +504,13 @@
           "min": -0.0003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 127,
+        "area_px": 782,
+        "density": 0.1624,
+        "chars": 1,
+        "chars_per_1k_ink": 7.87
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -560,7 +566,7 @@
           "index": 1294,
           "token_id": 17851,
           "logprob": -0.0136,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 130,
@@ -702,15 +708,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 266401,
-    "covered_px": 266401,
+    "ink_px": 284350,
+    "covered_px": 284350,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

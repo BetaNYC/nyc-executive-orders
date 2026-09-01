@@ -28,7 +28,13 @@
           "min": -0.0003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 593,
+        "area_px": 1716,
+        "density": 0.34557,
+        "chars": 4,
+        "chars_per_1k_ink": 6.75
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0019
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 965,
+        "area_px": 5280,
+        "density": 0.18277,
+        "chars": 8,
+        "chars_per_1k_ink": 8.29
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.6331
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5169,
+        "area_px": 37536,
+        "density": 0.13771,
+        "chars": 107,
+        "chars_per_1k_ink": 20.7
+      }
     },
     {
       "bbox": [
@@ -706,7 +724,7 @@
         2130
       ],
       "category": "List-item",
-      "text": "§ 8. In any case where the provisions of this Executive Order are not complied with, the Comptroller shall not pay any compensation to any person appointed on or after July 1 of this year unless the Mayor or his duly authorized representative shall approve such payment.",
+      "text": "\u00a7 8. In any case where the provisions of this Executive Order are not complied with, the Comptroller shall not pay any compensation to any person appointed on or after July 1 of this year unless the Mayor or his duly authorized representative shall approve such payment.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -725,11 +743,11 @@
         }
       },
       "ink": {
-        "ink_px": 4,
-        "area_px": 2526,
-        "density": 0.00158,
+        "ink_px": 10455,
+        "area_px": 74938,
+        "density": 0.13952,
         "chars": 270,
-        "chars_per_1k_ink": 67500.0
+        "chars_per_1k_ink": 25.82
       }
     },
     {
@@ -740,7 +758,7 @@
         2160
       ],
       "category": "List-item",
-      "text": "§ 9. This Executive Order shall take effect immediately.",
+      "text": "\u00a7 9. This Executive Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -758,7 +776,13 @@
           "min": -0.0255
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3062,
+        "area_px": 15470,
+        "density": 0.19793,
+        "chars": 56,
+        "chars_per_1k_ink": 18.29
+      }
     },
     {
       "bbox": [
@@ -786,7 +810,13 @@
           "min": -1.0812
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 231,
+        "area_px": 1139,
+        "density": 0.20281,
+        "chars": 6,
+        "chars_per_1k_ink": 25.97
+      }
     },
     {
       "bbox": [
@@ -814,7 +844,13 @@
           "min": -0.0045
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1803,
+        "area_px": 8025,
+        "density": 0.22467,
+        "chars": 24,
+        "chars_per_1k_ink": 13.31
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -1012,25 +1048,26 @@
   "ink_coverage": {
     "roi": [
       219,
-      278,
+      0,
       1606,
-      2038
+      2317
     ],
-    "ink_px": 262829,
-    "covered_px": 260812,
-    "covered_fraction": 0.99233,
-    "uncovered_px": 2017,
+    "ink_px": 292852,
+    "covered_px": 283086,
+    "covered_fraction": 0.96665,
+    "uncovered_px": 9766,
     "uncovered_regions": [
       {
         "bbox": [
           603,
-          1622,
-          627,
-          1934
+          1416,
+          651,
+          2160
         ],
-        "ink_px": 600
+        "ink_px": 1700
       }
     ],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

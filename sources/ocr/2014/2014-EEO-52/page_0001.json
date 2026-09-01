@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 12042,
+        "area_px": 52405,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -277,7 +277,7 @@
         1719
       ],
       "category": "List-item",
-      "text": "§ 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 is hereby extended for five days.",
+      "text": "\u00a7 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 is hereby extended for five days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1857
       ],
       "category": "List-item",
-      "text": "§ 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -393,11 +393,11 @@
         }
       },
       "ink": {
-        "ink_px": 263,
-        "area_px": 2040,
-        "density": 0.12892,
+        "ink_px": 1867,
+        "area_px": 11730,
+        "density": 0.15916,
         "chars": 20,
-        "chars_per_1k_ink": 76.05
+        "chars_per_1k_ink": 10.71
       }
     }
   ],
@@ -596,25 +596,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 120995,
-    "covered_px": 120080,
-    "covered_fraction": 0.99244,
+    "ink_px": 122599,
+    "covered_px": 121684,
+    "covered_fraction": 0.99254,
     "uncovered_px": 915,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          804,
-          1896,
-          1260,
-          1936
-        ],
-        "ink_px": 886
-      }
-    ],
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 2783,
-        "area_px": 33592,
-        "density": 0.08285,
+        "ink_px": 15810,
+        "area_px": 142120,
+        "density": 0.11124,
         "chars": 249,
-        "chars_per_1k_ink": 89.47
+        "chars_per_1k_ink": 15.75
       }
     },
     {
@@ -78,7 +78,7 @@
         446
       ],
       "category": "Text",
-      "text": "§ 10. The Deputy Mayor for Administration, also known as the Chief of Staff, shall:",
+      "text": "\u00a7 10. The Deputy Mayor for Administration, also known as the Chief of Staff, shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -368,7 +368,13 @@
           "min": -0.0026
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5415,
+        "area_px": 43812,
+        "density": 0.1236,
+        "chars": 79,
+        "chars_per_1k_ink": 14.59
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -394,7 +400,7 @@
           "index": 164,
           "token_id": 17851,
           "logprob": -0.0342,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 117,
@@ -566,15 +572,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 190926,
-    "covered_px": 190926,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 209465,
+    "covered_px": 209368,
+    "covered_fraction": 0.99954,
+    "uncovered_px": 97,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

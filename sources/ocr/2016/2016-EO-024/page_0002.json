@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 2615,
-        "area_px": 54750,
-        "density": 0.04776,
+        "ink_px": 19215,
+        "area_px": 133590,
+        "density": 0.14384,
         "chars": 164,
-        "chars_per_1k_ink": 62.72
+        "chars_per_1k_ink": 8.53
       }
     },
     {
@@ -78,7 +78,7 @@
         475
       ],
       "category": "Section-header",
-      "text": "### §3. Powers of the Office.",
+      "text": "### \u00a73. Powers of the Office.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -180,7 +180,7 @@
         754
       ],
       "category": "Section-header",
-      "text": "### §4. Effective Date. This Order shall take effect immediately.",
+      "text": "### \u00a74. Effective Date. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -319,7 +319,7 @@
           "index": 164,
           "token_id": 16625,
           "logprob": -0.0009,
-          "text": " §"
+          "text": " \u00a7"
         }
       ]
     },
@@ -431,15 +431,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 54071,
-    "covered_px": 54069,
-    "covered_fraction": 0.99996,
+    "ink_px": 70671,
+    "covered_px": 70669,
+    "covered_fraction": 0.99997,
     "uncovered_px": 2,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

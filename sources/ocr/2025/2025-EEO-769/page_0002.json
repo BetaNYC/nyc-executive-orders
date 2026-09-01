@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 10572,
-        "area_px": 77160,
-        "density": 0.13701,
+        "ink_px": 18632,
+        "area_px": 142746,
+        "density": 0.13053,
         "chars": 207,
-        "chars_per_1k_ink": 19.58
+        "chars_per_1k_ink": 11.11
       }
     },
     {
@@ -146,7 +146,7 @@
         886
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct that section 1 of Emergency Executive Order No. 766, dated March 19, 2025 is extended for five (5) days",
+      "text": "\u00a7 2. I hereby direct that section 1 of Emergency Executive Order No. 766, dated March 19, 2025 is extended for five (5) days",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -180,7 +180,7 @@
         996
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -271,7 +271,7 @@
           "index": 389,
           "token_id": 17851,
           "logprob": -0.0071,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 85,
@@ -431,25 +431,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 103966,
-    "covered_px": 103539,
-    "covered_fraction": 0.99589,
-    "uncovered_px": 427,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          1428,
-          1128,
-          1496,
-          1152
-        ],
-        "ink_px": 400
-      }
-    ],
+    "ink_px": 112042,
+    "covered_px": 111599,
+    "covered_fraction": 0.99605,
+    "uncovered_px": 443,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 7524,
-        "area_px": 22261,
-        "density": 0.33799,
+        "ink_px": 12520,
+        "area_px": 41370,
+        "density": 0.30263,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -209,7 +209,7 @@
         1062
       ],
       "category": "Text",
-      "text": "Section 1: Pursuant to §§363 and 378 of the New York City\nCharter:",
+      "text": "Section 1: Pursuant to \u00a7\u00a7363 and 378 of the New York City\nCharter:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -631,9 +631,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 6155,
-        "area_px": 62790,
-        "density": 0.09803,
+        "ink_px": 8450,
+        "area_px": 92820,
+        "density": 0.09104,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -834,15 +834,16 @@
   "ink_coverage": {
     "roi": [
       213,
-      276,
+      0,
       1562,
-      2024
+      2300
     ],
-    "ink_px": 120699,
-    "covered_px": 120238,
-    "covered_fraction": 0.99618,
-    "uncovered_px": 461,
+    "ink_px": 128502,
+    "covered_px": 127529,
+    "covered_fraction": 0.99243,
+    "uncovered_px": 973,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

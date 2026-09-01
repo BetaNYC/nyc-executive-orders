@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 239,
-        "area_px": 5418,
-        "density": 0.04411,
+        "ink_px": 248,
+        "area_px": 7224,
+        "density": 0.03433,
         "chars": 22,
-        "chars_per_1k_ink": 92.05
+        "chars_per_1k_ink": 88.71
       }
     },
     {
@@ -64,8 +64,8 @@
       },
       "ink": {
         "ink_px": 3,
-        "area_px": 1260,
-        "density": 0.00238,
+        "area_px": 1540,
+        "density": 0.00195,
         "chars": 5,
         "chars_per_1k_ink": 1666.67
       }
@@ -78,7 +78,7 @@
         424
       ],
       "category": "Text",
-      "text": "§ 3. Each agency or department head having such managerial classes of positions shall establish procedures to assure that the designations provided for in Section 2 shall be made on the basis of merit and fitness.",
+      "text": "\u00a7 3. Each agency or department head having such managerial classes of positions shall establish procedures to assure that the designations provided for in Section 2 shall be made on the basis of merit and fitness.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         561
       ],
       "category": "Text",
-      "text": "§ 4. In order to establish effective and uniform procedures for carrying out the purposes of this Order, and to help maintain high standards throughout the City agencies and departments in making assignments, the Personnel Director and the Director of the Budget shall:",
+      "text": "\u00a7 4. In order to establish effective and uniform procedures for carrying out the purposes of this Order, and to help maintain high standards throughout the City agencies and departments in making assignments, the Personnel Director and the Director of the Budget shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -248,7 +248,7 @@
         1050
       ],
       "category": "Text",
-      "text": "§ 5. This order shall take effect immediately and shall apply to all assignments made subsequent to the date hereof.",
+      "text": "\u00a7 5. This order shall take effect immediately and shall apply to all assignments made subsequent to the date hereof.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -330,11 +330,11 @@
         }
       },
       "ink": {
-        "ink_px": 206,
-        "area_px": 186405,
-        "density": 0.00111,
+        "ink_px": 254,
+        "area_px": 227154,
+        "density": 0.00112,
         "chars": 479,
-        "chars_per_1k_ink": 2325.24
+        "chars_per_1k_ink": 1885.83
       }
     }
   ],
@@ -379,7 +379,7 @@
           "index": 115,
           "token_id": 17851,
           "logprob": -0.3897,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 590,
@@ -533,15 +533,26 @@
   "ink_coverage": {
     "roi": [
       148,
-      224,
+      0,
       1085,
-      1644
+      1869
     ],
-    "ink_px": 2267,
-    "covered_px": 2267,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 53119,
+    "covered_px": 2324,
+    "covered_fraction": 0.04375,
+    "uncovered_px": 50795,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          148,
+          1800,
+          1085,
+          1869
+        ],
+        "ink_px": 50793
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

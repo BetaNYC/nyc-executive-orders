@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 4693,
-        "area_px": 31590,
-        "density": 0.14856,
+        "ink_px": 11246,
+        "area_px": 102060,
+        "density": 0.11019,
         "chars": 159,
-        "chars_per_1k_ink": 33.88
+        "chars_per_1k_ink": 14.14
       }
     },
     {
@@ -112,7 +112,7 @@
         814
       ],
       "category": "Text",
-      "text": "## § 2. Safety Requirements for Contractors\nEvery mayoral agency shall include in a contract involving a City-contracted vehicle the requirements identified in this section, and shall further require a Contractor to include such requirements in any sub-contract involving a City-contracted vehicle.",
+      "text": "## \u00a7 2. Safety Requirements for Contractors\nEvery mayoral agency shall include in a contract involving a City-contracted vehicle the requirements identified in this section, and shall further require a Contractor to include such requirements in any sub-contract involving a City-contracted vehicle.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -437,11 +437,11 @@
         }
       },
       "ink": {
-        "ink_px": 11214,
-        "area_px": 112560,
-        "density": 0.09963,
+        "ink_px": 12256,
+        "area_px": 130784,
+        "density": 0.09371,
         "chars": 176,
-        "chars_per_1k_ink": 15.69
+        "chars_per_1k_ink": 14.36
       }
     },
     {
@@ -470,7 +470,13 @@
           "min": -0.0
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 67,
+        "area_px": 551,
+        "density": 0.1216,
+        "chars": 1,
+        "chars_per_1k_ink": 14.93
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -668,15 +674,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 161493,
-    "covered_px": 161493,
+    "ink_px": 169155,
+    "covered_px": 169155,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

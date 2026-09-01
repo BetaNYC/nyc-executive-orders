@@ -10,7 +10,7 @@
         234
       ],
       "category": "Text",
-      "text": "§ 8. Executive Order 157, dated September 11, 2011, is hereby REVOKED.",
+      "text": "\u00a7 8. Executive Order 157, dated September 11, 2011, is hereby REVOKED.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -28,7 +28,13 @@
           "min": -0.005
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 9685,
+        "area_px": 47656,
+        "density": 0.20323,
+        "chars": 70,
+        "chars_per_1k_ink": 7.23
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         324
       ],
       "category": "Text",
-      "text": "§ 9. This Order shall take effect immediately.",
+      "text": "\u00a7 9. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -119,7 +125,13 @@
           "min": -0.0012
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 232,
+        "area_px": 660,
+        "density": 0.35152,
+        "chars": 1,
+        "chars_per_1k_ink": 4.31
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -139,7 +151,7 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.005,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 61,
@@ -175,7 +187,7 @@
           "index": 98,
           "token_id": 17851,
           "logprob": -0.0,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 39,
@@ -317,15 +329,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 19707,
-    "covered_px": 19617,
-    "covered_fraction": 0.99543,
-    "uncovered_px": 90,
+    "ink_px": 29638,
+    "covered_px": 29534,
+    "covered_fraction": 0.99649,
+    "uncovered_px": 104,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

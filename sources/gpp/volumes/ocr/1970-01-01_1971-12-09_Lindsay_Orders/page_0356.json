@@ -24,11 +24,11 @@
         "text": null
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 306,
-        "density": 0.0,
+        "ink_px": 4125,
+        "area_px": 25857,
+        "density": 0.15953,
         "chars": 0,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 0.0
       }
     },
     {
@@ -107,7 +107,7 @@
         894
       ],
       "category": "Text",
-      "text": "WHEREAS, Section 314(b) of the Public Health Service Act (42 U. S. C. A. § 246(b), as amended by Public Laws 89-749, 90-174 and 91-296) (hereinafter referred to as the \"Comprehensive Health Planning Act\" or the \"Act\") calls for promoting and assuring the highest level of health attainable for every person in an environment which contributes positively to healthful individual and family living; and",
+      "text": "WHEREAS, Section 314(b) of the Public Health Service Act (42 U. S. C. A. \u00a7 246(b), as amended by Public Laws 89-749, 90-174 and 91-296) (hereinafter referred to as the \"Comprehensive Health Planning Act\" or the \"Act\") calls for promoting and assuring the highest level of health attainable for every person in an environment which contributes positively to healthful individual and family living; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -307,7 +307,7 @@
           "index": 231,
           "token_id": 16625,
           "logprob": -0.0108,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 220,
@@ -431,15 +431,26 @@
   "ink_coverage": {
     "roi": [
       174,
-      218,
+      0,
       1283,
-      1600
+      1819
     ],
-    "ink_px": 10062,
-    "covered_px": 10060,
-    "covered_fraction": 0.9998,
-    "uncovered_px": 2,
-    "uncovered_regions": [],
+    "ink_px": 89201,
+    "covered_px": 14185,
+    "covered_fraction": 0.15902,
+    "uncovered_px": 75016,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          174,
+          1728,
+          1283,
+          1819
+        ],
+        "ink_px": 75002
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

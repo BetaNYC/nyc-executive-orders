@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 136497,
+        "area_px": 344616,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -175,7 +175,7 @@
         2036
       ],
       "category": "Text",
-      "text": "§ 2. This Order shall take effect at 12:00 a.m. on Tuesday, February 24, 2026.",
+      "text": "\u00a7 2. This Order shall take effect at 12:00 a.m. on Tuesday, February 24, 2026.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -288,7 +288,7 @@
           "index": 397,
           "token_id": 17851,
           "logprob": -0.0392,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 142,
@@ -460,15 +460,16 @@
   "ink_coverage": {
     "roi": [
       562,
-      771,
+      0,
       4126,
-      5661
+      6433
     ],
     "ink_px": 0,
     "covered_px": 0,
     "covered_fraction": null,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

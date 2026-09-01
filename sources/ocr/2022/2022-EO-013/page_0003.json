@@ -28,7 +28,13 @@
           "min": -0.349
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 14376,
+        "area_px": 81541,
+        "density": 0.1763,
+        "chars": 133,
+        "chars_per_1k_ink": 9.25
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         529
       ],
       "category": "Text",
-      "text": "§ 5. On an annual basis, not later than a date specified by the Chief Efficiency Officer to ensure coordination with the preparation of the Preliminary MMR and the MMR, each agency shall provide the Chief Efficiency Officer with recommendations regarding inefficient or ineffective existing reporting requirements and related advisory entity activities that should be eliminated and replaced with the more updated and useful reporting to be provided pursuant to this Order. The Chief Efficiency Officer shall, upon reviewing such recommendations:",
+      "text": "\u00a7 5. On an annual basis, not later than a date specified by the Chief Efficiency Officer to ensure coordination with the preparation of the Preliminary MMR and the MMR, each agency shall provide the Chief Efficiency Officer with recommendations regarding inefficient or ineffective existing reporting requirements and related advisory entity activities that should be eliminated and replaced with the more updated and useful reporting to be provided pursuant to this Order. The Chief Efficiency Officer shall, upon reviewing such recommendations:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -140,7 +146,7 @@
         1143
       ],
       "category": "Text",
-      "text": "§ 6. The Director of the Mayor's Office of Operations shall create a Dynamic MMR, which shall be a regularly-updated online version of the MMR that provides the public with a user-friendly tool for accessing current performance metrics.",
+      "text": "\u00a7 6. The Director of the Mayor's Office of Operations shall create a Dynamic MMR, which shall be a regularly-updated online version of the MMR that provides the public with a user-friendly tool for accessing current performance metrics.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -174,7 +180,7 @@
         1221
       ],
       "category": "Text",
-      "text": "§ 7. This Order shall take effect immediately.",
+      "text": "\u00a7 7. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -253,7 +259,7 @@
           "index": 90,
           "token_id": 17851,
           "logprob": -0.008,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 361,
@@ -301,13 +307,13 @@
           "index": 502,
           "token_id": 17851,
           "logprob": -0.0006,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 418,
           "token_id": 17851,
           "logprob": -0.0004,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 54,
@@ -425,15 +431,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 170308,
-    "covered_px": 170308,
+    "ink_px": 184684,
+    "covered_px": 184684,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

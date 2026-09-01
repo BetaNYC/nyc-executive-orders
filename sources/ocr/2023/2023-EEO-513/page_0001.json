@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 476,
-        "area_px": 7786,
-        "density": 0.06114,
+        "ink_px": 1973,
+        "area_px": 54960,
+        "density": 0.0359,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -175,7 +175,7 @@
         848
       ],
       "category": "Text",
-      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which “represents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island”; and",
+      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which \u201crepresents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island\u201d; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -413,7 +413,7 @@
         1757
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct that section 1 of Emergency Executive Order No. 511, dated October 22, 2023, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby direct that section 1 of Emergency Executive Order No. 511, dated October 22, 2023, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -447,7 +447,7 @@
         1932
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -529,11 +529,11 @@
         }
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 148,
-        "density": 0.0,
+        "ink_px": 948,
+        "area_px": 10656,
+        "density": 0.08896,
         "chars": 16,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 16.88
       }
     }
   ],
@@ -554,7 +554,7 @@
           "index": 331,
           "token_id": 1036,
           "logprob": -0.4004,
-          "text": " “"
+          "text": " \u201c"
         },
         {
           "index": 327,
@@ -614,13 +614,13 @@
           "index": 930,
           "token_id": 17851,
           "logprob": -0.0057,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 352,
           "token_id": 65445,
           "logprob": -0.0021,
-          "text": "”;"
+          "text": "\u201d;"
         }
       ]
     },
@@ -732,15 +732,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 123639,
-    "covered_px": 123580,
-    "covered_fraction": 0.99952,
+    "ink_px": 126084,
+    "covered_px": 126025,
+    "covered_fraction": 0.99953,
     "uncovered_px": 59,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

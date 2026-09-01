@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 9325,
+        "area_px": 39104,
+        "density": 0.23847,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 619,
-        "area_px": 8094,
-        "density": 0.07648,
+        "ink_px": 4298,
+        "area_px": 54102,
+        "density": 0.07944,
         "chars": 53,
-        "chars_per_1k_ink": 85.62
+        "chars_per_1k_ink": 12.33
       }
     },
     {
@@ -237,7 +243,7 @@
         2771
       ],
       "category": "Text",
-      "text": "§2. In the exercise of the functions, powers and duties now exercised by the Board of Assessors, the Director of Finance shall be governed by and shall apply those provisions of law by which the Board of Assessors is now governed and which said Board now applies in the exercise of such functions, powers and duties, and the determinations of the Director of Finance with respect to such matters shall be reviewable in the same manner and to the extent as are the determinations of the Board of Assessors.",
+      "text": "\u00a72. In the exercise of the functions, powers and duties now exercised by the Board of Assessors, the Director of Finance shall be governed by and shall apply those provisions of law by which the Board of Assessors is now governed and which said Board now applies in the exercise of such functions, powers and duties, and the determinations of the Director of Finance with respect to such matters shall be reviewable in the same manner and to the extent as are the determinations of the Board of Assessors.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -271,7 +277,7 @@
         3069
       ],
       "category": "Text",
-      "text": "§3. Officers and employees in the classified municipal civil service who, on July 1, 1966, are engaged in the performance of the functions, powers and duties of",
+      "text": "\u00a73. Officers and employees in the classified municipal civil service who, on July 1, 1966, are engaged in the performance of the functions, powers and duties of",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -290,11 +296,11 @@
         }
       },
       "ink": {
-        "ink_px": 701,
-        "area_px": 392903,
-        "density": 0.00178,
+        "ink_px": 710,
+        "area_px": 415658,
+        "density": 0.00171,
         "chars": 160,
-        "chars_per_1k_ink": 228.25
+        "chars_per_1k_ink": 225.35
       }
     }
   ],
@@ -345,7 +351,7 @@
           "index": 426,
           "token_id": 17851,
           "logprob": -0.0329,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 64,
@@ -493,15 +499,26 @@
   "ink_coverage": {
     "roi": [
       294,
-      417,
+      0,
       2159,
-      3060
+      3478
     ],
-    "ink_px": 8614,
-    "covered_px": 8614,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 388733,
+    "covered_px": 21627,
+    "covered_fraction": 0.05563,
+    "uncovered_px": 367106,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          294,
+          3360,
+          2159,
+          3478
+        ],
+        "ink_px": 199695
+      }
+    ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

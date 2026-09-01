@@ -28,7 +28,13 @@
           "min": -0.0006
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2972,
+        "area_px": 11004,
+        "density": 0.27008,
+        "chars": 19,
+        "chars_per_1k_ink": 6.39
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0094
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2869,
+        "area_px": 7700,
+        "density": 0.3726,
+        "chars": 22,
+        "chars_per_1k_ink": 7.67
+      }
     },
     {
       "bbox": [
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 5,
-        "area_px": 290,
-        "density": 0.01724,
+        "ink_px": 948,
+        "area_px": 3190,
+        "density": 0.29718,
         "chars": 12,
-        "chars_per_1k_ink": 2400.0
+        "chars_per_1k_ink": 12.66
       }
     },
     {
@@ -644,7 +656,7 @@
         1689
       ],
       "category": "List-item",
-      "text": "§ 2. This Executive Order shall take effect immediately.",
+      "text": "\u00a7 2. This Executive Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -804,7 +816,7 @@
           "index": 1627,
           "token_id": 17851,
           "logprob": -0.0119,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 382,
@@ -934,34 +946,16 @@
   "ink_coverage": {
     "roi": [
       207,
-      271,
+      0,
       1520,
-      1987
+      2259
     ],
-    "ink_px": 264481,
-    "covered_px": 260172,
-    "covered_fraction": 0.98371,
-    "uncovered_px": 4309,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          303,
-          727,
-          327,
-          1375
-        ],
-        "ink_px": 1772
-      },
-      {
-        "bbox": [
-          927,
-          1543,
-          1311,
-          1735
-        ],
-        "ink_px": 1348
-      }
-    ],
+    "ink_px": 273412,
+    "covered_px": 266956,
+    "covered_fraction": 0.97639,
+    "uncovered_px": 6456,
+    "uncovered_regions": [],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1,
-        "area_px": 4982,
-        "density": 0.0002,
+        "ink_px": 12,
+        "area_px": 9212,
+        "density": 0.0013,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -272,7 +272,7 @@
         1251
       ],
       "category": "Text",
-      "text": "Transmitted herewith for your approval in\naccordance with Administrative Code, §E3-36.1, is a\ncertified copy of a resolution adopted this day by this\nAuthority, granting pensions-providing-for-increased-\ntake-home-pay for certain officers and employees of this\nAuthority who are members of the New York City\nEmployees' Retirement System.",
+      "text": "Transmitted herewith for your approval in\naccordance with Administrative Code, \u00a7E3-36.1, is a\ncertified copy of a resolution adopted this day by this\nAuthority, granting pensions-providing-for-increased-\ntake-home-pay for certain officers and employees of this\nAuthority who are members of the New York City\nEmployees' Retirement System.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -392,7 +392,13 @@
           "min": -0.0163
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 845,
+        "area_px": 14430,
+        "density": 0.05856,
+        "chars": 39,
+        "chars_per_1k_ink": 46.15
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -590,15 +596,16 @@
   "ink_coverage": {
     "roi": [
       133,
-      190,
+      0,
       976,
-      1395
+      1586
     ],
-    "ink_px": 15481,
-    "covered_px": 15222,
-    "covered_fraction": 0.98327,
-    "uncovered_px": 259,
+    "ink_px": 16355,
+    "covered_px": 16078,
+    "covered_fraction": 0.98306,
+    "uncovered_px": 277,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

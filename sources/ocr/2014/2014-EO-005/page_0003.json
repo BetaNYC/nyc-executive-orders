@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 28067,
-        "area_px": 265853,
-        "density": 0.10557,
+        "ink_px": 33049,
+        "area_px": 304647,
+        "density": 0.10848,
         "chars": 521,
-        "chars_per_1k_ink": 18.56
+        "chars_per_1k_ink": 15.76
       }
     },
     {
@@ -44,7 +44,7 @@
         614
       ],
       "category": "Text",
-      "text": "§4. Agency cooperation. All agency heads are directed to cooperate fully with the Director in implementing and complying with this Executive Order.",
+      "text": "\u00a74. Agency cooperation. All agency heads are directed to cooperate fully with the Director in implementing and complying with this Executive Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -78,7 +78,7 @@
         723
       ],
       "category": "Text",
-      "text": "§ 5. Prior Order revoked. Executive Order No. 242 dated February 11, 2013 hereby is revoked.",
+      "text": "\u00a7 5. Prior Order revoked. Executive Order No. 242 dated February 11, 2013 hereby is revoked.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         805
       ],
       "category": "Text",
-      "text": "§ 6. This Order shall take effect immediately.",
+      "text": "\u00a7 6. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -197,7 +197,7 @@
           "index": 179,
           "token_id": 17851,
           "logprob": -0.0075,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 180,
@@ -215,7 +215,7 @@
           "index": 305,
           "token_id": 17851,
           "logprob": -0.0015,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 38,
@@ -233,7 +233,7 @@
           "index": 240,
           "token_id": 17851,
           "logprob": -0.0007,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 112,
@@ -363,15 +363,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 50311,
-    "covered_px": 50112,
-    "covered_fraction": 0.99604,
+    "ink_px": 55293,
+    "covered_px": 55094,
+    "covered_fraction": 0.9964,
     "uncovered_px": 199,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 6283,
-        "area_px": 69282,
-        "density": 0.09069,
+        "ink_px": 17439,
+        "area_px": 148828,
+        "density": 0.11718,
         "chars": 230,
-        "chars_per_1k_ink": 36.61
+        "chars_per_1k_ink": 13.19
       }
     },
     {
@@ -78,7 +78,7 @@
         589
       ],
       "category": "Text",
-      "text": "§ 2. Cooperation and Assistance. All affected agencies shall cooperate and provide\nappropriate assistance to the CPA upon request.",
+      "text": "\u00a7 2. Cooperation and Assistance. All affected agencies shall cooperate and provide\nappropriate assistance to the CPA upon request.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         667
       ],
       "category": "Text",
-      "text": "§ 3. Executive Order No. 146, dated April 1, 2011, is hereby revoked.",
+      "text": "\u00a7 3. Executive Order No. 146, dated April 1, 2011, is hereby revoked.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         731
       ],
       "category": "Text",
-      "text": "§ 4. Effective Date. This Order shall take effect immediately.",
+      "text": "\u00a7 4. Effective Date. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -243,13 +243,13 @@
           "index": 223,
           "token_id": 17851,
           "logprob": -0.0106,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 164,
           "token_id": 17851,
           "logprob": -0.0088,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 123,
@@ -261,7 +261,7 @@
           "index": 286,
           "token_id": 17851,
           "logprob": -0.0067,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 70,
@@ -397,15 +397,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 39523,
-    "covered_px": 39523,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 50745,
+    "covered_px": 50679,
+    "covered_fraction": 0.9987,
+    "uncovered_px": 66,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

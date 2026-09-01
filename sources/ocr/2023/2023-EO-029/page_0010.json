@@ -28,7 +28,13 @@
           "min": -0.0026
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2587,
+        "area_px": 27261,
+        "density": 0.0949,
+        "chars": 58,
+        "chars_per_1k_ink": 22.42
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 29605,
-        "area_px": 320416,
-        "density": 0.0924,
+        "ink_px": 31549,
+        "area_px": 346256,
+        "density": 0.09111,
         "chars": 651,
-        "chars_per_1k_ink": 21.99
+        "chars_per_1k_ink": 20.63
       }
     },
     {
@@ -140,7 +146,7 @@
         800
       ],
       "category": "Text",
-      "text": "§ 12. The Chief Counsel to the Mayor and City Hall shall:",
+      "text": "\u00a7 12. The Chief Counsel to the Mayor and City Hall shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -412,7 +418,7 @@
         1994
       ],
       "category": "Text",
-      "text": "§ 13. The Chancellor, the Police Commissioner, the Commissioner of Investigation, the",
+      "text": "\u00a7 13. The Chancellor, the Police Commissioner, the Commissioner of Investigation, the",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -490,7 +496,7 @@
           "index": 358,
           "token_id": 17851,
           "logprob": -0.0443,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 104,
@@ -668,15 +674,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 134195,
-    "covered_px": 134194,
+    "ink_px": 138726,
+    "covered_px": 138725,
     "covered_fraction": 0.99999,
     "uncovered_px": 1,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

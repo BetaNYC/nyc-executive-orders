@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 4623,
-        "area_px": 59340,
-        "density": 0.07791,
+        "ink_px": 19099,
+        "area_px": 141900,
+        "density": 0.13459,
         "chars": 207,
-        "chars_per_1k_ink": 44.78
+        "chars_per_1k_ink": 10.84
       }
     },
     {
@@ -146,7 +146,7 @@
         834
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct section 1 of Emergency Executive Order No. 640, dated August 21, 2024 is extended for five (5) days",
+      "text": "\u00a7 2. I hereby direct section 1 of Emergency Executive Order No. 640, dated August 21, 2024 is extended for five (5) days",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -180,7 +180,7 @@
         944
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -271,7 +271,7 @@
           "index": 382,
           "token_id": 17851,
           "logprob": -0.0049,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 85,
@@ -431,15 +431,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 95086,
-    "covered_px": 94710,
-    "covered_fraction": 0.99605,
-    "uncovered_px": 376,
+    "ink_px": 109581,
+    "covered_px": 109186,
+    "covered_fraction": 0.9964,
+    "uncovered_px": 395,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

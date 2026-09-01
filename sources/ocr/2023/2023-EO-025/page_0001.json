@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 33,
-        "area_px": 8244,
-        "density": 0.004,
+        "ink_px": 79,
+        "area_px": 54731,
+        "density": 0.00144,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         979
       ],
       "category": "Text",
-      "text": "§ 2. This Order shall take effect on February 10, 2023.",
+      "text": "\u00a7 2. This Order shall take effect on February 10, 2023.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -362,7 +362,7 @@
           "index": 406,
           "token_id": 17851,
           "logprob": -0.0135,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 350,
@@ -528,15 +528,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 25482,
-    "covered_px": 25482,
+    "ink_px": 25528,
+    "covered_px": 25528,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

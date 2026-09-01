@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 9,
-        "area_px": 8280,
-        "density": 0.00109,
+        "ink_px": 18,
+        "area_px": 54970,
+        "density": 0.00033,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -345,7 +345,7 @@
         1441
       ],
       "category": "Text",
-      "text": "§ 2. I hereby order that section 1 of Emergency Executive Order No. 407, dated May 15, 2023, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby order that section 1 of Emergency Executive Order No. 407, dated May 15, 2023, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -379,7 +379,7 @@
         1689
       ],
       "category": "Text",
-      "text": "§ 3. I hereby direct the Fire and Police Departments, the Department of Buildings, the Sheriff, and other agencies as needed, to enforce the directives set forth in this Order in accordance with their lawful authorities, including Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under Health Code sections 3.07 and 3.11, and enforced by the Department of Health and Mental Hygiene or any other agency.",
+      "text": "\u00a7 3. I hereby direct the Fire and Police Departments, the Department of Buildings, the Sheriff, and other agencies as needed, to enforce the directives set forth in this Order in accordance with their lawful authorities, including Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under Health Code sections 3.07 and 3.11, and enforced by the Department of Health and Mental Hygiene or any other agency.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -413,7 +413,7 @@
         1865
       ],
       "category": "Text",
-      "text": "§ 4. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 4. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -495,11 +495,11 @@
         }
       },
       "ink": {
-        "ink_px": 499,
-        "area_px": 4050,
-        "density": 0.12321,
+        "ink_px": 829,
+        "area_px": 10950,
+        "density": 0.07571,
         "chars": 16,
-        "chars_per_1k_ink": 32.06
+        "chars_per_1k_ink": 19.3
       }
     }
   ],
@@ -556,7 +556,7 @@
           "index": 750,
           "token_id": 17851,
           "logprob": -0.0022,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 124,
@@ -698,15 +698,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 105481,
-    "covered_px": 105351,
+    "ink_px": 105820,
+    "covered_px": 105690,
     "covered_fraction": 0.99877,
     "uncovered_px": 130,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

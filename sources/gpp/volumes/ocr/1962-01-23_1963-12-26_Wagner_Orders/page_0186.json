@@ -175,7 +175,7 @@
         1635
       ],
       "category": "Text",
-      "text": "Pursuant to the provisions of Administrative Code, §B20-41.1, subdivision 1, as added by Laws 1963, Ch. 519, the Mayor hereby elects by this executive order, adopted, prior to June 1, 1963, that the provisions of paragraph four of such subdivision 1 and the provisions of subdivisions e and f of such Section B20-41.1, shall be applicable to and for the benefit of all contributors to the New York City Teachers' Retirement System.",
+      "text": "Pursuant to the provisions of Administrative Code, \u00a7B20-41.1, subdivision 1, as added by Laws 1963, Ch. 519, the Mayor hereby elects by this executive order, adopted, prior to June 1, 1963, that the provisions of paragraph four of such subdivision 1 and the provisions of subdivisions e and f of such Section B20-41.1, shall be applicable to and for the benefit of all contributors to the New York City Teachers' Retirement System.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -300,7 +300,7 @@
           "index": 341,
           "token_id": 16625,
           "logprob": -0.0575,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 350,
@@ -460,15 +460,35 @@
   "ink_coverage": {
     "roi": [
       229,
-      341,
+      0,
       1686,
-      2500
+      2842
     ],
-    "ink_px": 76862,
+    "ink_px": 326600,
     "covered_px": 76742,
-    "covered_fraction": 0.99844,
-    "uncovered_px": 120,
-    "uncovered_regions": [],
+    "covered_fraction": 0.23497,
+    "uncovered_px": 249858,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          229,
+          0,
+          1686,
+          120
+        ],
+        "ink_px": 138038
+      },
+      {
+        "bbox": [
+          229,
+          2760,
+          1686,
+          2842
+        ],
+        "ink_px": 111690
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

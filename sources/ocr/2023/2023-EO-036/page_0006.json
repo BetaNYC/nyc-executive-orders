@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 16756,
-        "area_px": 162036,
-        "density": 0.10341,
+        "ink_px": 30084,
+        "area_px": 248198,
+        "density": 0.12121,
         "chars": 452,
-        "chars_per_1k_ink": 26.98
+        "chars_per_1k_ink": 15.02
       }
     },
     {
@@ -112,7 +112,7 @@
         662
       ],
       "category": "Text",
-      "text": "§ 6. The Deputy Mayor for Health and Human Services shall:",
+      "text": "\u00a7 6. The Deputy Mayor for Health and Human Services shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -301,9 +301,9 @@
         }
       },
       "ink": {
-        "ink_px": 32068,
+        "ink_px": 32069,
         "area_px": 249356,
-        "density": 0.1286,
+        "density": 0.12861,
         "chars": 439,
         "chars_per_1k_ink": 13.69
       }
@@ -369,11 +369,11 @@
         }
       },
       "ink": {
-        "ink_px": 34786,
-        "area_px": 262276,
-        "density": 0.13263,
+        "ink_px": 44249,
+        "area_px": 347548,
+        "density": 0.12732,
         "chars": 651,
-        "chars_per_1k_ink": 18.71
+        "chars_per_1k_ink": 14.71
       }
     },
     {
@@ -402,7 +402,13 @@
           "min": -0.0001
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 104,
+        "area_px": 588,
+        "density": 0.17687,
+        "chars": 1,
+        "chars_per_1k_ink": 9.62
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -428,7 +434,7 @@
           "index": 269,
           "token_id": 17851,
           "logprob": -0.0195,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 569,
@@ -600,15 +606,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 197015,
-    "covered_px": 197015,
+    "ink_px": 219911,
+    "covered_px": 219911,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

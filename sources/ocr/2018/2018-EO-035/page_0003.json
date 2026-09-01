@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 48432,
-        "area_px": 559725,
-        "density": 0.08653,
+        "ink_px": 56568,
+        "area_px": 637500,
+        "density": 0.08873,
         "chars": 593,
-        "chars_per_1k_ink": 12.24
+        "chars_per_1k_ink": 10.48
       }
     },
     {
@@ -214,7 +214,7 @@
         1962
       ],
       "category": "Text",
-      "text": "§ 3. The First Deputy Mayor hereby is delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to delegate in the event that the Mayor is unable to perform such functions, powers or duties for a reason specified in subdivision a of section 10 of the New York City Charter.",
+      "text": "\u00a7 3. The First Deputy Mayor hereby is delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to delegate in the event that the Mayor is unable to perform such functions, powers or duties for a reason specified in subdivision a of section 10 of the New York City Charter.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -233,11 +233,11 @@
         }
       },
       "ink": {
-        "ink_px": 28719,
-        "area_px": 320250,
-        "density": 0.08968,
+        "ink_px": 30386,
+        "area_px": 340746,
+        "density": 0.08917,
         "chars": 325,
-        "chars_per_1k_ink": 11.32
+        "chars_per_1k_ink": 10.7
       }
     }
   ],
@@ -270,7 +270,7 @@
           "index": 577,
           "token_id": 17851,
           "logprob": -0.0553,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 210,
@@ -436,15 +436,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 160982,
-    "covered_px": 160982,
+    "ink_px": 170785,
+    "covered_px": 170785,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

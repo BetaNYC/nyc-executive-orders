@@ -28,7 +28,13 @@
           "min": -0.0006
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5182,
+        "area_px": 22425,
+        "density": 0.23108,
+        "chars": 36,
+        "chars_per_1k_ink": 6.95
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         402
       ],
       "category": "Text",
-      "text": "§ 1. The emergency order regarding nuisance abatement through debris removal set forth in Executive Order 235 is hereby extended for five (5) days.",
+      "text": "\u00a7 1. The emergency order regarding nuisance abatement through debris removal set forth in Executive Order 235 is hereby extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -72,7 +78,7 @@
         550
       ],
       "category": "Text",
-      "text": "§ 2. This order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -151,7 +157,7 @@
           "index": 79,
           "token_id": 17851,
           "logprob": -0.0007,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 35,
@@ -199,7 +205,7 @@
           "index": 147,
           "token_id": 17851,
           "logprob": -0.0,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 86,
@@ -323,15 +329,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 41553,
-    "covered_px": 41547,
-    "covered_fraction": 0.99986,
+    "ink_px": 46735,
+    "covered_px": 46729,
+    "covered_fraction": 0.99987,
     "uncovered_px": 6,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

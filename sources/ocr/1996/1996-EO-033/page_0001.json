@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 3969,
-        "area_px": 44000,
-        "density": 0.0902,
+        "ink_px": 4123,
+        "area_px": 50600,
+        "density": 0.08148,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -379,7 +379,7 @@
         1843
       ],
       "category": "List-item",
-      "text": "§ 2. Prior Order Revoked. Executive Order No. 12, dated June 29, 1990, designating the Office of Management and Budget to carry out these functions, hereby is revoked.",
+      "text": "\u00a7 2. Prior Order Revoked. Executive Order No. 12, dated June 29, 1990, designating the Office of Management and Budget to carry out these functions, hereby is revoked.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -413,7 +413,7 @@
         1962
       ],
       "category": "List-item",
-      "text": "§ 3. This Order shall take effect immediately.",
+      "text": "\u00a7 3. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -432,11 +432,11 @@
         }
       },
       "ink": {
-        "ink_px": 982,
-        "area_px": 16215,
-        "density": 0.06056,
+        "ink_px": 1634,
+        "area_px": 27495,
+        "density": 0.05943,
         "chars": 46,
-        "chars_per_1k_ink": 46.84
+        "chars_per_1k_ink": 28.15
       }
     },
     {
@@ -465,7 +465,13 @@
           "min": -0.6365
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1311,
+        "area_px": 22320,
+        "density": 0.05874,
+        "chars": 25,
+        "chars_per_1k_ink": 19.07
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -509,7 +515,7 @@
           "index": 630,
           "token_id": 17851,
           "logprob": -0.0544,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 338,
@@ -663,15 +669,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 61605,
-    "covered_px": 61075,
-    "covered_fraction": 0.9914,
-    "uncovered_px": 530,
+    "ink_px": 68599,
+    "covered_px": 63192,
+    "covered_fraction": 0.92118,
+    "uncovered_px": 5407,
     "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

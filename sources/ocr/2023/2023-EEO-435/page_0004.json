@@ -28,7 +28,13 @@
           "min": -0.0085
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4845,
+        "area_px": 33022,
+        "density": 0.14672,
+        "chars": 67,
+        "chars_per_1k_ink": 13.83
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 12342,
-        "area_px": 118128,
-        "density": 0.10448,
+        "ink_px": 16374,
+        "area_px": 147660,
+        "density": 0.11089,
         "chars": 216,
-        "chars_per_1k_ink": 17.5
+        "chars_per_1k_ink": 13.19
       }
     },
     {
@@ -276,7 +282,7 @@
         1246
       ],
       "category": "Text",
-      "text": "§ 6. Nothing in this Order concerning the Open Restaurants program shall relieve bars, restaurants and other establishments from their obligation to adhere to all local, state and federal requirements relating to health and safety, except as modified by sections 3, 4, and 5 of this Order. Any restaurant, bar or other establishment participating in the Open Restaurants program shall adhere to all local, state and federal requirements relating to accessibility for people with disabilities, including path of travel, minimum table heights, and clearance requirements. Any restaurant, bar or other establishment participating in the Open Restaurants program shall adhere to all applicable guidance issued by the Department of Transportation, the Department of Health and Mental Hygiene, the New York State Department of Health and the State Liquor Authority.",
+      "text": "\u00a7 6. Nothing in this Order concerning the Open Restaurants program shall relieve bars, restaurants and other establishments from their obligation to adhere to all local, state and federal requirements relating to health and safety, except as modified by sections 3, 4, and 5 of this Order. Any restaurant, bar or other establishment participating in the Open Restaurants program shall adhere to all local, state and federal requirements relating to accessibility for people with disabilities, including path of travel, minimum table heights, and clearance requirements. Any restaurant, bar or other establishment participating in the Open Restaurants program shall adhere to all applicable guidance issued by the Department of Transportation, the Department of Health and Mental Hygiene, the New York State Department of Health and the State Liquor Authority.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -310,7 +316,7 @@
         1515
       ],
       "category": "Text",
-      "text": "§ 7. In order to enable businesses to continue utilizing outdoor space as they recover from the economic effects from COVID-19, I hereby direct the Department of Transportation, in consultation with the Department of Small Business Services, the Department of Sanitation, the Department of Buildings, and the not-for-profit corporation that contracts with the City to provide economic development services on behalf of the City, to continue the administration and operation of the Open Storefronts program.",
+      "text": "\u00a7 7. In order to enable businesses to continue utilizing outdoor space as they recover from the economic effects from COVID-19, I hereby direct the Department of Transportation, in consultation with the Department of Small Business Services, the Department of Sanitation, the Department of Buildings, and the not-for-profit corporation that contracts with the City to provide economic development services on behalf of the City, to continue the administration and operation of the Open Storefronts program.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -428,7 +434,7 @@
           "index": 608,
           "token_id": 17851,
           "logprob": -0.0665,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 539,
@@ -600,15 +606,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 258215,
-    "covered_px": 258185,
-    "covered_fraction": 0.99988,
-    "uncovered_px": 30,
+    "ink_px": 267207,
+    "covered_px": 267062,
+    "covered_fraction": 0.99946,
+    "uncovered_px": 145,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

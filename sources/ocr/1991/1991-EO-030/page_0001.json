@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 5385,
-        "area_px": 25344,
-        "density": 0.21248,
+        "ink_px": 8063,
+        "area_px": 40590,
+        "density": 0.19864,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -311,7 +311,7 @@
         1914
       ],
       "category": "Text",
-      "text": "§ 2. **Functions of Task Force.** The functions and duties of the Task Force shall include:",
+      "text": "\u00a7 2. **Functions of Task Force.** The functions and duties of the Task Force shall include:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -391,7 +391,7 @@
           "index": 549,
           "token_id": 17851,
           "logprob": -0.0144,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 423,
@@ -533,15 +533,16 @@
   "ink_coverage": {
     "roi": [
       213,
-      276,
+      0,
       1562,
-      2026
+      2303
     ],
-    "ink_px": 101954,
-    "covered_px": 101619,
-    "covered_fraction": 0.99671,
-    "uncovered_px": 335,
+    "ink_px": 104994,
+    "covered_px": 104297,
+    "covered_fraction": 0.99336,
+    "uncovered_px": 697,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

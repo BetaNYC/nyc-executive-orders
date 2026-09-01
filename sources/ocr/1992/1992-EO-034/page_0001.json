@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 13432,
-        "area_px": 38415,
-        "density": 0.34966,
+        "ink_px": 13935,
+        "area_px": 41764,
+        "density": 0.33366,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1748
       ],
       "category": "Text",
-      "text": "§2. This executive order shall take effect immediately.",
+      "text": "\u00a72. This executive order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -291,9 +291,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 8426,
-        "area_px": 74444,
-        "density": 0.11319,
+        "ink_px": 9054,
+        "area_px": 82995,
+        "density": 0.10909,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -322,7 +322,7 @@
           "index": 472,
           "token_id": 17851,
           "logprob": -0.0889,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 339,
@@ -494,15 +494,16 @@
   "ink_coverage": {
     "roi": [
       209,
-      272,
+      0,
       1535,
-      1994
+      2267
     ],
-    "ink_px": 100999,
-    "covered_px": 100556,
-    "covered_fraction": 0.99561,
-    "uncovered_px": 443,
+    "ink_px": 102843,
+    "covered_px": 101687,
+    "covered_fraction": 0.98876,
+    "uncovered_px": 1156,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

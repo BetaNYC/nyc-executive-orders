@@ -10,7 +10,7 @@
         317
       ],
       "category": "Text",
-      "text": "§ 11. This Executive Order shall take effect immediately.",
+      "text": "\u00a7 11. This Executive Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1404,
-        "area_px": 35742,
-        "density": 0.03928,
+        "ink_px": 6090,
+        "area_px": 94461,
+        "density": 0.06447,
         "chars": 57,
-        "chars_per_1k_ink": 40.6
+        "chars_per_1k_ink": 9.36
       }
     },
     {
@@ -88,7 +88,7 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.0414,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 46,
@@ -266,34 +266,35 @@
   "ink_coverage": {
     "roi": [
       215,
-      275,
+      0,
       1576,
-      2019
+      2295
     ],
-    "ink_px": 26028,
-    "covered_px": 5251,
-    "covered_fraction": 0.20174,
-    "uncovered_px": 20777,
+    "ink_px": 32330,
+    "covered_px": 9937,
+    "covered_fraction": 0.30736,
+    "uncovered_px": 22393,
     "uncovered_regions": [
       {
         "bbox": [
-          863,
-          371,
-          1576,
-          1811
+          215,
+          1752,
+          1487,
+          1824
         ],
-        "ink_px": 14517
+        "ink_px": 5588
       },
       {
         "bbox": [
-          215,
-          1763,
-          1487,
-          1835
+          1271,
+          24,
+          1415,
+          48
         ],
-        "ink_px": 5572
+        "ink_px": 459
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

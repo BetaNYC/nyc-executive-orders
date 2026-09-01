@@ -350,7 +350,7 @@
         764
       ],
       "category": "List-item",
-      "text": "§ 2. The Division of Management Analysis shall have the following functions and duties:",
+      "text": "\u00a7 2. The Division of Management Analysis shall have the following functions and duties:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -486,7 +486,7 @@
         936
       ],
       "category": "List-item",
-      "text": "§ 3. This order shall take effect immediately.",
+      "text": "\u00a7 3. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -616,7 +616,7 @@
           "index": 583,
           "token_id": 17851,
           "logprob": -0.0175,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 340,
@@ -776,52 +776,80 @@
   "ink_coverage": {
     "roi": [
       211,
-      271,
+      0,
       1550,
-      1992
+      2264
     ],
-    "ink_px": 73123,
+    "ink_px": 79625,
     "covered_px": 66599,
-    "covered_fraction": 0.91078,
-    "uncovered_px": 6524,
+    "covered_fraction": 0.83641,
+    "uncovered_px": 13026,
     "uncovered_regions": [
       {
         "bbox": [
-          427,
-          943,
-          1219,
-          991
+          811,
+          48,
+          1003,
+          240
         ],
-        "ink_px": 2360
+        "ink_px": 1861
       },
       {
         "bbox": [
-          427,
-          487,
-          931,
-          535
+          1171,
+          192,
+          1363,
+          336
         ],
-        "ink_px": 1334
+        "ink_px": 1348
       },
       {
         "bbox": [
-          451,
-          295,
-          643,
-          391
+          571,
+          24,
+          811,
+          120
         ],
-        "ink_px": 628
+        "ink_px": 1324
+      },
+      {
+        "bbox": [
+          691,
+          144,
+          811,
+          264
+        ],
+        "ink_px": 862
+      },
+      {
+        "bbox": [
+          1027,
+          168,
+          1147,
+          264
+        ],
+        "ink_px": 629
       },
       {
         "bbox": [
           1339,
-          271,
+          264,
           1459,
-          319
+          336
         ],
-        "ink_px": 470
+        "ink_px": 473
+      },
+      {
+        "bbox": [
+          595,
+          144,
+          667,
+          216
+        ],
+        "ink_px": 425
       }
     ],
+    "suppressed_regions": 3,
     "cell_px": 24
   }
 }

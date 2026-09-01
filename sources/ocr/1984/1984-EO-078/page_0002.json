@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 777,
-        "area_px": 11106,
-        "density": 0.06996,
+        "ink_px": 10873,
+        "area_px": 78976,
+        "density": 0.13767,
         "chars": 111,
-        "chars_per_1k_ink": 142.86
+        "chars_per_1k_ink": 10.21
       }
     },
     {
@@ -44,7 +44,7 @@
         350
       ],
       "category": "Section-header",
-      "text": "§6. Informal Disciplinary Proceedings.",
+      "text": "\u00a76. Informal Disciplinary Proceedings.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -345,7 +345,7 @@
           "index": 106,
           "token_id": 17851,
           "logprob": -0.1093,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 35,
@@ -499,15 +499,16 @@
   "ink_coverage": {
     "roi": [
       208,
-      271,
+      0,
       1525,
-      1990
+      2262
     ],
-    "ink_px": 209289,
-    "covered_px": 208785,
-    "covered_fraction": 0.99759,
-    "uncovered_px": 504,
+    "ink_px": 219539,
+    "covered_px": 218881,
+    "covered_fraction": 0.997,
+    "uncovered_px": 658,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

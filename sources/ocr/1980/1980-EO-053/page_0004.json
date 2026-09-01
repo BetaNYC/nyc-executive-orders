@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 6619,
-        "area_px": 55580,
-        "density": 0.11909,
+        "ink_px": 16575,
+        "area_px": 131010,
+        "density": 0.12652,
         "chars": 188,
-        "chars_per_1k_ink": 28.4
+        "chars_per_1k_ink": 11.34
       }
     },
     {
@@ -112,7 +112,7 @@
         1031
       ],
       "category": "List-item",
-      "text": "### § 7. Responsibilities of the Office of Economic Development.\nThe Office of Economic Development shall develop, maintain and provide to contracting agencies a list of locally based enterprises.",
+      "text": "### \u00a7 7. Responsibilities of the Office of Economic Development.\nThe Office of Economic Development shall develop, maintain and provide to contracting agencies a list of locally based enterprises.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -146,7 +146,7 @@
         1356
       ],
       "category": "List-item",
-      "text": "### § 8. Subcontractor Waivers.\nA waiver of contractual set-aside requirements established by this Order with respect to subcontractors may be granted by a contracting agency head for reasons of public necessity after filing a certificate stating such reasons with the Bureau.",
+      "text": "### \u00a7 8. Subcontractor Waivers.\nA waiver of contractual set-aside requirements established by this Order with respect to subcontractors may be granted by a contracting agency head for reasons of public necessity after filing a certificate stating such reasons with the Bureau.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -180,7 +180,7 @@
         1759
       ],
       "category": "List-item",
-      "text": "### § 9. Performance Bond Waivers.\nConsistent with the rules and regulations of the Board of Estimate, a full or partial waiver of performance and completion bonds may, with the approval of the Corporation Counsel, be granted by a contracting agency head where such bonds are not deemed in the best interests of the City.",
+      "text": "### \u00a7 9. Performance Bond Waivers.\nConsistent with the rules and regulations of the Board of Estimate, a full or partial waiver of performance and completion bonds may, with the approval of the Corporation Counsel, be granted by a contracting agency head where such bonds are not deemed in the best interests of the City.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -402,15 +402,35 @@
   "ink_coverage": {
     "roi": [
       209,
-      273,
+      0,
       1535,
-      2004
+      2278
     ],
-    "ink_px": 121040,
-    "covered_px": 119871,
-    "covered_fraction": 0.99034,
-    "uncovered_px": 1169,
-    "uncovered_regions": [],
+    "ink_px": 133132,
+    "covered_px": 129827,
+    "covered_fraction": 0.97518,
+    "uncovered_px": 3305,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          401,
+          0,
+          473,
+          72
+        ],
+        "ink_px": 570
+      },
+      {
+        "bbox": [
+          953,
+          0,
+          1049,
+          72
+        ],
+        "ink_px": 402
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

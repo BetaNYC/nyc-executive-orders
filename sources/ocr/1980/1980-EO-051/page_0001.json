@@ -30,8 +30,8 @@
       },
       "ink": {
         "ink_px": 3220,
-        "area_px": 11583,
-        "density": 0.27799,
+        "area_px": 12177,
+        "density": 0.26443,
         "chars": 50,
         "chars_per_1k_ink": 15.53
       }
@@ -112,7 +112,7 @@
         440
       ],
       "category": "Section-header",
-      "text": "## § 2. **Functions.** The Council shall:",
+      "text": "## \u00a7 2. **Functions.** The Council shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -282,7 +282,7 @@
         810
       ],
       "category": "Text",
-      "text": "## § 3. **Members.** The members of the Council shall include: the Deputy Mayor for Policy, the Commissioner of Health, the Commissioner of Mental Health and Mental Retardation Services, the Administrator of the Human Resources Administration and the Assistant to the Mayor for Health. The Health and Hospitals Corporation may designate a representative to participate on the Council. In addition, there shall be three members who are not employees of the City, at least one of whom shall be a physician, who shall be appointed by the Mayor for terms of one year and shall not serve for more than three consecutive terms. The ex-officio members of the Council shall have the power to exercise or delegate any functions, powers and duties vested in them by this Order.",
+      "text": "## \u00a7 3. **Members.** The members of the Council shall include: the Deputy Mayor for Policy, the Commissioner of Health, the Commissioner of Mental Health and Mental Retardation Services, the Administrator of the Human Resources Administration and the Assistant to the Mayor for Health. The Health and Hospitals Corporation may designate a representative to participate on the Council. In addition, there shall be three members who are not employees of the City, at least one of whom shall be a physician, who shall be appointed by the Mayor for terms of one year and shall not serve for more than three consecutive terms. The ex-officio members of the Council shall have the power to exercise or delegate any functions, powers and duties vested in them by this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -316,7 +316,7 @@
         851
       ],
       "category": "Text",
-      "text": "## § 4. **Chairman.** The Deputy Mayor for Policy shall be the Chairman of the Council.",
+      "text": "## \u00a7 4. **Chairman.** The Deputy Mayor for Policy shall be the Chairman of the Council.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -350,7 +350,7 @@
         939
       ],
       "category": "Text",
-      "text": "## § 5. **Committees.** The Council may create such committees as it may deem appropriate. The Chairman shall appoint the members of committees and committee chairmen, who need not be members of the Council, subject to the approval of the Council.",
+      "text": "## \u00a7 5. **Committees.** The Council may create such committees as it may deem appropriate. The Chairman shall appoint the members of committees and committee chairmen, who need not be members of the Council, subject to the approval of the Council.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -384,7 +384,7 @@
         1005
       ],
       "category": "Text",
-      "text": "## § 6. **Staff.** The Chairman may request the agencies represented on the Council to provide such personnel as may be necessary to act as Council and committee staff.",
+      "text": "## \u00a7 6. **Staff.** The Chairman may request the agencies represented on the Council to provide such personnel as may be necessary to act as Council and committee staff.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -418,7 +418,7 @@
         1047
       ],
       "category": "Text",
-      "text": "## § 7. **Revocation of Prior Order.** Executive Order No. 22 (1976) is hereby revoked.",
+      "text": "## \u00a7 7. **Revocation of Prior Order.** Executive Order No. 22 (1976) is hereby revoked.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -452,7 +452,7 @@
         1070
       ],
       "category": "Text",
-      "text": "## § 8. **Effective Date.** This Order shall take effect immediately.",
+      "text": "## \u00a7 8. **Effective Date.** This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -590,7 +590,7 @@
           "index": 222,
           "token_id": 16625,
           "logprob": -0.0571,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 144,
@@ -708,70 +708,53 @@
   "ink_coverage": {
     "roi": [
       207,
-      269,
+      0,
       1520,
-      1978
+      2248
     ],
-    "ink_px": 126834,
+    "ink_px": 131141,
     "covered_px": 111469,
-    "covered_fraction": 0.87886,
-    "uncovered_px": 15365,
+    "covered_fraction": 0.84999,
+    "uncovered_px": 19672,
     "uncovered_regions": [
       {
         "bbox": [
           975,
-          1421,
+          1416,
           1335,
-          1541
+          1536
         ],
-        "ink_px": 3701
-      },
-      {
-        "bbox": [
-          279,
-          269,
-          519,
-          1085
-        ],
-        "ink_px": 3687
+        "ink_px": 3683
       },
       {
         "bbox": [
           399,
-          1493,
+          1488,
           927,
-          1589
+          1584
         ],
-        "ink_px": 3536
+        "ink_px": 3527
       },
       {
         "bbox": [
-          1359,
-          1445,
+          1287,
+          96,
           1520,
-          1517
+          264
         ],
-        "ink_px": 1703
+        "ink_px": 3229
       },
       {
         "bbox": [
-          543,
-          293,
-          855,
-          317
+          1335,
+          1440,
+          1520,
+          1536
         ],
-        "ink_px": 679
-      },
-      {
-        "bbox": [
-          1095,
-          989,
-          1311,
-          1061
-        ],
-        "ink_px": 535
+        "ink_px": 1755
       }
     ],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

@@ -176,3 +176,20 @@ letterhead's own printed rules — ink on the page, but not order text. Both
 documents improved on word-ratio and junk-ratio yet still migrated
 `minor-noise` → `needs-review`. Watch the tier-migration table in the report. If
 most documents regress this way, the flag is the problem, not the text.
+
+The printed-rules half of that is now handled: a group of leftover ink within
+one cell of a box the model did return is no longer reported, because a rule or
+a dot leader beside a title is not dropped content. The handwritten annotations
+are not, and they became MORE visible at the same time — coverage now measures
+the full page height, so a header or footer counts in both the numerator and the
+denominator instead of being cropped out of both. `MIN_COVERED_FRACTION` in
+`vlm_pages.py` was set against the old cropped measurement and may want
+re-tuning against the new one.
+
+Records written before both changes are brought up to date without re-OCR — the
+metric needs only the page raster and the bboxes already in the record:
+
+```bash
+uv run python scripts/recompute_ink_coverage.py --dry-run   # see the effect
+uv run python scripts/recompute_ink_coverage.py             # rewrite the records
+```

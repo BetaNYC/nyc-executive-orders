@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 14058,
+        "area_px": 49203,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -209,7 +209,7 @@
         1095
       ],
       "category": "Text",
-      "text": "WHEREAS, the state of emergency based on the arrival of hundreds of thousands of individuals and families seeking asylum, first declared in Emergency Executive Order No. 224, dated October 7, 2022,¹ and extended by subsequent orders, remains in effect; and",
+      "text": "WHEREAS, the state of emergency based on the arrival of hundreds of thousands of individuals and families seeking asylum, first declared in Emergency Executive Order No. 224, dated October 7, 2022,\u00b9 and extended by subsequent orders, remains in effect; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -379,7 +379,7 @@
         1980
       ],
       "category": "Section-header",
-      "text": "## §2. Humanitarian Emergency Response and Relief Centers.",
+      "text": "## \u00a72. Humanitarian Emergency Response and Relief Centers.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -397,7 +397,13 @@
           "min": -0.7178
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 6935,
+        "area_px": 27166,
+        "density": 0.25528,
+        "chars": 58,
+        "chars_per_1k_ink": 8.36
+      }
     },
     {
       "bbox": [
@@ -407,7 +413,7 @@
         2052
       ],
       "category": "Footnote",
-      "text": "¹ https://www.nyc.gov/mayors-office/news/2022/10/emergency-executive-order-224",
+      "text": "\u00b9 https://www.nyc.gov/mayors-office/news/2022/10/emergency-executive-order-224",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -425,7 +431,13 @@
           "min": -0.0114
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4429,
+        "area_px": 28024,
+        "density": 0.15804,
+        "chars": 78,
+        "chars_per_1k_ink": 17.61
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -469,7 +481,7 @@
           "index": 998,
           "token_id": 59497,
           "logprob": -0.0114,
-          "text": "¹"
+          "text": "\u00b9"
         },
         {
           "index": 716,
@@ -623,15 +635,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 180513,
-    "covered_px": 180513,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 193051,
+    "covered_px": 191877,
+    "covered_fraction": 0.99392,
+    "uncovered_px": 1174,
     "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

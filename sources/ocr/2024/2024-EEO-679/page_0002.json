@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 7136,
-        "area_px": 63308,
-        "density": 0.11272,
+        "ink_px": 22388,
+        "area_px": 142120,
+        "density": 0.15753,
         "chars": 207,
-        "chars_per_1k_ink": 29.01
+        "chars_per_1k_ink": 9.25
       }
     },
     {
@@ -146,7 +146,7 @@
         875
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct that section 1 of Emergency Executive Order No. 676, dated October 20, 2024 is extended for five (5) days",
+      "text": "\u00a7 2. I hereby direct that section 1 of Emergency Executive Order No. 676, dated October 20, 2024 is extended for five (5) days",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -180,7 +180,7 @@
         985
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -271,7 +271,7 @@
           "index": 389,
           "token_id": 17851,
           "logprob": -0.0074,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 85,
@@ -431,15 +431,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 118017,
-    "covered_px": 118000,
-    "covered_fraction": 0.99986,
-    "uncovered_px": 17,
+    "ink_px": 133297,
+    "covered_px": 133252,
+    "covered_fraction": 0.99966,
+    "uncovered_px": 45,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

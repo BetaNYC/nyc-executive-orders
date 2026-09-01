@@ -10,7 +10,7 @@
         287
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct that section 1 of Emergency Executive Order No. 527, dated December 1, 2023, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby direct that section 1 of Emergency Executive Order No. 527, dated December 1, 2023, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1433,
-        "area_px": 28424,
-        "density": 0.05042,
+        "ink_px": 8782,
+        "area_px": 103360,
+        "density": 0.08497,
         "chars": 128,
-        "chars_per_1k_ink": 89.32
+        "chars_per_1k_ink": 14.58
       }
     },
     {
@@ -44,7 +44,7 @@
         480
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -163,7 +163,7 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.0025,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 59,
@@ -193,7 +193,7 @@
           "index": 112,
           "token_id": 17851,
           "logprob": -0.0002,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 117,
@@ -329,25 +329,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 29873,
-    "covered_px": 29187,
-    "covered_fraction": 0.97704,
+    "ink_px": 37222,
+    "covered_px": 36536,
+    "covered_fraction": 0.98157,
     "uncovered_px": 686,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          996,
-          624,
-          1356,
-          648
-        ],
-        "ink_px": 676
-      }
-    ],
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

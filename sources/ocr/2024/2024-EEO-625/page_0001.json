@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 3496,
+        "area_px": 35696,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -141,7 +141,7 @@
         756
       ],
       "category": "Text",
-      "text": "WHEREAS, it is of utmost importance to protect the health and safety of all persons in the custody of the Department of Correction (“DOC”), and of all officers and persons who work in the City of New York jails and who transport persons in custody to court and other facilities, and the public; and",
+      "text": "WHEREAS, it is of utmost importance to protect the health and safety of all persons in the custody of the Department of Correction (\u201cDOC\u201d), and of all officers and persons who work in the City of New York jails and who transport persons in custody to court and other facilities, and the public; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -175,7 +175,7 @@
         1098
       ],
       "category": "Text",
-      "text": "WHEREAS, over 80 provisions in the various Court Orders entered in *Nunez v. City of New York*, 11 CV 5845 (SDNY), require DOC to consult with, and seek the approval of, the *Nunez* Monitor (“Monitor”) prior to implementing or amending policies on issues, including but not limited to, matters relating to security practices, the use of restraints, escorts, emergency lock-ins, de-escalation, confinement management of incarcerated individuals following serious acts of violence and subsequent housing strategies, and DOC may be held in contempt of court and sanctioned if it fails to appropriately consult with and obtain approval from the Monitor regarding policies in these areas; and",
+      "text": "WHEREAS, over 80 provisions in the various Court Orders entered in *Nunez v. City of New York*, 11 CV 5845 (SDNY), require DOC to consult with, and seek the approval of, the *Nunez* Monitor (\u201cMonitor\u201d) prior to implementing or amending policies on issues, including but not limited to, matters relating to security practices, the use of restraints, escorts, emergency lock-ins, de-escalation, confinement management of incarcerated individuals following serious acts of violence and subsequent housing strategies, and DOC may be held in contempt of court and sanctioned if it fails to appropriately consult with and obtain approval from the Monitor regarding policies in these areas; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -209,7 +209,7 @@
         1247
       ],
       "category": "Text",
-      "text": "WHEREAS, the New York City Council (“City Council”) has enacted Local Law 42 of 2024, as codified in the Administrative Code of the City of New York at section 9-167 (“Local Law 42”), which is to take effect on July 28, 2024; and",
+      "text": "WHEREAS, the New York City Council (\u201cCity Council\u201d) has enacted Local Law 42 of 2024, as codified in the Administrative Code of the City of New York at section 9-167 (\u201cLocal Law 42\u201d), which is to take effect on July 28, 2024; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -364,11 +364,11 @@
         }
       },
       "ink": {
-        "ink_px": 21824,
-        "area_px": 126616,
-        "density": 0.17236,
+        "ink_px": 24201,
+        "area_px": 144704,
+        "density": 0.16724,
         "chars": 244,
-        "chars_per_1k_ink": 11.18
+        "chars_per_1k_ink": 10.08
       }
     }
   ],
@@ -395,7 +395,7 @@
           "index": 238,
           "token_id": 26087,
           "logprob": -0.2819,
-          "text": " (“"
+          "text": " (\u201c"
         },
         {
           "index": 621,
@@ -567,15 +567,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 236520,
-    "covered_px": 236520,
+    "ink_px": 238897,
+    "covered_px": 238897,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

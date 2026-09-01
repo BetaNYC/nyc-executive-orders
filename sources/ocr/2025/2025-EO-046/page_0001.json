@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 9540,
+        "area_px": 34560,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -243,7 +243,7 @@
         1227
       ],
       "category": "Section-header",
-      "text": "§ 2. The First Deputy Mayor shall:",
+      "text": "\u00a7 2. The First Deputy Mayor shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -432,11 +432,11 @@
         }
       },
       "ink": {
-        "ink_px": 15842,
-        "area_px": 76228,
-        "density": 0.20782,
+        "ink_px": 50361,
+        "area_px": 242896,
+        "density": 0.20734,
         "chars": 463,
-        "chars_per_1k_ink": 29.23
+        "chars_per_1k_ink": 9.19
       }
     }
   ],
@@ -463,7 +463,7 @@
           "index": 478,
           "token_id": 17851,
           "logprob": -0.0134,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 333,
@@ -635,15 +635,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 208285,
-    "covered_px": 208280,
+    "ink_px": 242804,
+    "covered_px": 242799,
     "covered_fraction": 0.99998,
     "uncovered_px": 5,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

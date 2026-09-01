@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 782,
-        "area_px": 1914,
-        "density": 0.40857,
+        "ink_px": 1917,
+        "area_px": 4872,
+        "density": 0.39347,
         "chars": 8,
-        "chars_per_1k_ink": 10.23
+        "chars_per_1k_ink": 4.17
       }
     },
     {
@@ -78,7 +78,7 @@
         602
       ],
       "category": "List-item",
-      "text": "1. Sections 21-309 and 21-312 of the Administrative Code. (EEO No. 886, dated November 19, 2025, § 3, para. (d) and (g))",
+      "text": "1. Sections 21-309 and 21-312 of the Administrative Code. (EEO No. 886, dated November 19, 2025, \u00a7 3, para. (d) and (g))",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         675
       ],
       "category": "List-item",
-      "text": "2. Sections 21-124. (EEO No. 886, dated November 19, 2025, § 3, para. (h)(i))",
+      "text": "2. Sections 21-124. (EEO No. 886, dated November 19, 2025, \u00a7 3, para. (h)(i))",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -334,15 +334,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 52781,
-    "covered_px": 52781,
+    "ink_px": 53916,
+    "covered_px": 53916,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 14911,
-        "area_px": 130560,
-        "density": 0.11421,
+        "ink_px": 23106,
+        "area_px": 194560,
+        "density": 0.11876,
         "chars": 338,
-        "chars_per_1k_ink": 22.67
+        "chars_per_1k_ink": 14.63
       }
     },
     {
@@ -44,7 +44,7 @@
         522
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date whichever occurs first.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date whichever occurs first.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -78,7 +78,7 @@
         634
       ],
       "category": "Text",
-      "text": "§ 4. The provisions of this Order are subject to applicable State laws and rules, and emergency orders issued by the Governor.",
+      "text": "\u00a7 4. The provisions of this Order are subject to applicable State laws and rules, and emergency orders issued by the Governor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -157,7 +157,7 @@
           "index": 230,
           "token_id": 17851,
           "logprob": -0.0447,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 321,
@@ -193,7 +193,7 @@
           "index": 302,
           "token_id": 17851,
           "logprob": -0.0004,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 133,
@@ -329,15 +329,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 42869,
-    "covered_px": 42869,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 51127,
+    "covered_px": 51064,
+    "covered_fraction": 0.99877,
+    "uncovered_px": 63,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 3200,
-        "area_px": 105655,
-        "density": 0.03029,
+        "ink_px": 7051,
+        "area_px": 161590,
+        "density": 0.04364,
         "chars": 165,
-        "chars_per_1k_ink": 51.56
+        "chars_per_1k_ink": 23.4
       }
     },
     {
@@ -44,7 +44,7 @@
         424
       ],
       "category": "Section-header",
-      "text": "§ 3. Functions.",
+      "text": "\u00a7 3. Functions.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -292,7 +292,7 @@
           "index": 114,
           "token_id": 17851,
           "logprob": -0.9086,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 118,
@@ -470,15 +470,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 57284,
-    "covered_px": 57284,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 61178,
+    "covered_px": 61135,
+    "covered_fraction": 0.9993,
+    "uncovered_px": 43,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

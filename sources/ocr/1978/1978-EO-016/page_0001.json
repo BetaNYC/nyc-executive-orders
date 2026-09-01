@@ -28,7 +28,13 @@
           "min": -0.014
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3273,
+        "area_px": 10024,
+        "density": 0.32652,
+        "chars": 22,
+        "chars_per_1k_ink": 6.72
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0424
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1823,
+        "area_px": 5412,
+        "density": 0.33684,
+        "chars": 13,
+        "chars_per_1k_ink": 7.13
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0636
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 7083,
+        "area_px": 38400,
+        "density": 0.18445,
+        "chars": 81,
+        "chars_per_1k_ink": 11.44
+      }
     },
     {
       "bbox": [
@@ -113,11 +131,11 @@
         }
       },
       "ink": {
-        "ink_px": 1547,
-        "area_px": 28101,
-        "density": 0.05505,
+        "ink_px": 6257,
+        "area_px": 53295,
+        "density": 0.1174,
         "chars": 81,
-        "chars_per_1k_ink": 52.36
+        "chars_per_1k_ink": 12.95
       }
     },
     {
@@ -162,7 +180,7 @@
         728
       ],
       "category": "Text",
-      "text": "§ 2. Responsibility of Agency Heads. All agency heads shall be responsible for establishing, subject to review for completeness and inter-agency consistency by the Commissioner, written standards of conduct for the officials and employees of their respective agencies and fair and efficient disciplinary systems to maintain those standards of conduct.",
+      "text": "\u00a7 2. Responsibility of Agency Heads. All agency heads shall be responsible for establishing, subject to review for completeness and inter-agency consistency by the Commissioner, written standards of conduct for the officials and employees of their respective agencies and fair and efficient disciplinary systems to maintain those standards of conduct.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -196,7 +214,7 @@
         752
       ],
       "category": "Section-header",
-      "text": "§ 3. Responsibilities of Inspectors General.",
+      "text": "\u00a7 3. Responsibilities of Inspectors General.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -298,7 +316,7 @@
         998
       ],
       "category": "Section-header",
-      "text": "§ 4. Investigations.",
+      "text": "\u00a7 4. Investigations.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -536,7 +554,7 @@
         1914
       ],
       "category": "Section-header",
-      "text": "§ 5. Formal Disciplinary Proceedings.",
+      "text": "\u00a7 5. Formal Disciplinary Proceedings.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -589,11 +607,11 @@
         }
       },
       "ink": {
-        "ink_px": 27705,
-        "area_px": 122364,
-        "density": 0.22641,
+        "ink_px": 36275,
+        "area_px": 166860,
+        "density": 0.2174,
         "chars": 680,
-        "chars_per_1k_ink": 24.54
+        "chars_per_1k_ink": 18.75
       }
     },
     {
@@ -622,7 +640,13 @@
           "min": -2.7804
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 6498,
+        "area_px": 44778,
+        "density": 0.14512,
+        "chars": 161,
+        "chars_per_1k_ink": 24.78
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -696,7 +720,7 @@
           "index": 536,
           "token_id": 17851,
           "logprob": -0.276,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 375,
@@ -820,25 +844,26 @@
   "ink_coverage": {
     "roi": [
       220,
-      279,
+      0,
       1618,
-      2051
+      2331
     ],
-    "ink_px": 345510,
-    "covered_px": 339276,
-    "covered_fraction": 0.98196,
-    "uncovered_px": 6234,
+    "ink_px": 380000,
+    "covered_px": 371185,
+    "covered_fraction": 0.9768,
+    "uncovered_px": 8815,
     "uncovered_regions": [
       {
         "bbox": [
-          316,
-          279,
-          388,
-          2051
+          1564,
+          2112,
+          1618,
+          2184
         ],
-        "ink_px": 5677
+        "ink_px": 1027
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

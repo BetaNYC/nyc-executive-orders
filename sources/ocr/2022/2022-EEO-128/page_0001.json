@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 52640,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -373,7 +379,7 @@
         1771
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct that section 1 of Emergency Executive Order No. 124, dated June 20, 2022, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby direct that section 1 of Emergency Executive Order No. 124, dated June 20, 2022, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -407,7 +413,7 @@
         1956
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -528,7 +534,7 @@
           "index": 848,
           "token_id": 17851,
           "logprob": -0.0033,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 419,
@@ -658,15 +664,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      336,
+      0,
       1496,
-      2464
+      2800
     ],
-    "ink_px": 188260,
+    "ink_px": 188261,
     "covered_px": 188226,
-    "covered_fraction": 0.99982,
-    "uncovered_px": 34,
+    "covered_fraction": 0.99981,
+    "uncovered_px": 35,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

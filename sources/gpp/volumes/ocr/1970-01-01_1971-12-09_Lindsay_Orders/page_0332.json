@@ -57,11 +57,11 @@
         }
       },
       "ink": {
-        "ink_px": 721,
-        "area_px": 30688,
-        "density": 0.02349,
+        "ink_px": 724,
+        "area_px": 38360,
+        "density": 0.01887,
         "chars": 60,
-        "chars_per_1k_ink": 83.22
+        "chars_per_1k_ink": 82.87
       }
     },
     {
@@ -208,7 +208,7 @@
         1067
       ],
       "category": "Text",
-      "text": "§ 2. Effective during the period of time from and including the payroll period the first day of which is nearest to July 1, 1971 and to and including the payroll period immediately preceding that, the first day of which is nearest to June 30, 1972 (which total period of time is hereinafter referred to as the \"1971-1972 increased-take-home-pay period\"), the governing provisions of Paragraph 14 of such subdivision j and the provisions of subdivisions g, h and i of such section B3-36.1 shall be applicable to and for the benefit of all other-than-authority-or-public-benefit-corporation members of the New York City Employees' Retirement System; provided, however, that the reduced rate of contribution to be used in computing the reduction of contributions shall be four per cent, except as otherwise provided in section three of this executive order; and provided further that the provisions of this Section 2 shall not apply to members of the Uniformed Correction Force who have elected optional retirement pursuant to § B3-36.3 of the Administrative Code (as added by Chapter 954 of the Laws of 1964).",
+      "text": "\u00a7 2. Effective during the period of time from and including the payroll period the first day of which is nearest to July 1, 1971 and to and including the payroll period immediately preceding that, the first day of which is nearest to June 30, 1972 (which total period of time is hereinafter referred to as the \"1971-1972 increased-take-home-pay period\"), the governing provisions of Paragraph 14 of such subdivision j and the provisions of subdivisions g, h and i of such section B3-36.1 shall be applicable to and for the benefit of all other-than-authority-or-public-benefit-corporation members of the New York City Employees' Retirement System; provided, however, that the reduced rate of contribution to be used in computing the reduction of contributions shall be four per cent, except as otherwise provided in section three of this executive order; and provided further that the provisions of this Section 2 shall not apply to members of the Uniformed Correction Force who have elected optional retirement pursuant to \u00a7 B3-36.3 of the Administrative Code (as added by Chapter 954 of the Laws of 1964).",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -242,7 +242,7 @@
         1167
       ],
       "category": "Text",
-      "text": "§ 3. The reduced rate-of-contribution factor for all sanitation members for the 1971-1972 increased-take-home-pay period shall be five per cent.",
+      "text": "\u00a7 3. The reduced rate-of-contribution factor for all sanitation members for the 1971-1972 increased-take-home-pay period shall be five per cent.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -276,7 +276,7 @@
         1481
       ],
       "category": "Text",
-      "text": "§ 4. Since Section 7 of this Executive Order provides for members of the Police Pension Fund, Article 2, an increased-take-home-pay-plan for the 1971-1972 increased-take-home-pay-period pursuant to Paragraph 7 of Subdivision a of Section B18-22.1 of the Administrative Code, as added by Chapter 615 of the Laws of 1971, members of the Uniformed Correction Force who have elected optional retirement pursuant to such § B3-36.3 of the Administrative Code shall be entitled, with respect to the 1971-1972 increased-take-home-pay period, to the benefits of an increased-take-home-pay plan identical with that provided for the members of the Police Pension Fund, Article 2 for such period.",
+      "text": "\u00a7 4. Since Section 7 of this Executive Order provides for members of the Police Pension Fund, Article 2, an increased-take-home-pay-plan for the 1971-1972 increased-take-home-pay-period pursuant to Paragraph 7 of Subdivision a of Section B18-22.1 of the Administrative Code, as added by Chapter 615 of the Laws of 1971, members of the Uniformed Correction Force who have elected optional retirement pursuant to such \u00a7 B3-36.3 of the Administrative Code shall be entitled, with respect to the 1971-1972 increased-take-home-pay period, to the benefits of an increased-take-home-pay plan identical with that provided for the members of the Police Pension Fund, Article 2 for such period.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -329,11 +329,11 @@
         }
       },
       "ink": {
-        "ink_px": 2153,
-        "area_px": 85358,
-        "density": 0.02522,
+        "ink_px": 3015,
+        "area_px": 107653,
+        "density": 0.02801,
         "chars": 211,
-        "chars_per_1k_ink": 98.0
+        "chars_per_1k_ink": 69.98
       }
     }
   ],
@@ -378,7 +378,7 @@
           "index": 382,
           "token_id": 17851,
           "logprob": -0.1311,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 984,
@@ -532,15 +532,26 @@
   "ink_coverage": {
     "roi": [
       176,
-      221,
+      0,
       1293,
-      1624
+      1846
     ],
-    "ink_px": 26098,
-    "covered_px": 26096,
-    "covered_fraction": 0.99992,
-    "uncovered_px": 2,
-    "uncovered_regions": [],
+    "ink_px": 90567,
+    "covered_px": 26961,
+    "covered_fraction": 0.29769,
+    "uncovered_px": 63606,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          176,
+          1776,
+          1293,
+          1846
+        ],
+        "ink_px": 63602
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

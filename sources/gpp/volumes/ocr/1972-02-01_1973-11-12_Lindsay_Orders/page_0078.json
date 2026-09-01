@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 560,
+        "area_px": 57000,
+        "density": 0.00982,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -188,7 +194,7 @@
         }
       },
       "ink": {
-        "ink_px": 16782,
+        "ink_px": 16783,
         "area_px": 346894,
         "density": 0.04838,
         "chars": 330,
@@ -373,7 +379,7 @@
         2244
       ],
       "category": "Text",
-      "text": "§ 2. The New York City Mayor's Office for the Handicapped shall perform the following:",
+      "text": "\u00a7 2. The New York City Mayor's Office for the Handicapped shall perform the following:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -497,7 +503,7 @@
           "index": 795,
           "token_id": 17851,
           "logprob": -0.1339,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 288,
@@ -663,43 +669,35 @@
   "ink_coverage": {
     "roi": [
       262,
-      420,
+      0,
       1923,
-      3080
+      3500
     ],
-    "ink_px": 103711,
-    "covered_px": 100901,
-    "covered_fraction": 0.97291,
-    "uncovered_px": 2810,
+    "ink_px": 386474,
+    "covered_px": 101462,
+    "covered_fraction": 0.26253,
+    "uncovered_px": 285012,
     "uncovered_regions": [
       {
         "bbox": [
-          670,
-          900,
-          1462,
-          948
+          262,
+          3384,
+          1923,
+          3500
         ],
-        "ink_px": 1343
+        "ink_px": 157304
       },
       {
         "bbox": [
-          814,
-          708,
-          1318,
-          732
+          262,
+          0,
+          1923,
+          96
         ],
-        "ink_px": 836
-      },
-      {
-        "bbox": [
-          886,
-          804,
-          1198,
-          828
-        ],
-        "ink_px": 534
+        "ink_px": 124874
       }
     ],
+    "suppressed_regions": 3,
     "cell_px": 24
   }
 }

@@ -316,7 +316,7 @@
         1079
       ],
       "category": "Text",
-      "text": "§ 2. All agency heads are directed to cooperate with the New York Stabilization Reserve Corporation and to provide such employees and facilities of the City to such Corporation as are necessary for the Corporation to carry on its corporate purposes.",
+      "text": "\u00a7 2. All agency heads are directed to cooperate with the New York Stabilization Reserve Corporation and to provide such employees and facilities of the City to such Corporation as are necessary for the Corporation to carry on its corporate purposes.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -350,7 +350,7 @@
         1095
       ],
       "category": "Text",
-      "text": "§ 3. This Executive Order shall take effect immediately.",
+      "text": "\u00a7 3. This Executive Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -510,7 +510,7 @@
           "index": 612,
           "token_id": 17851,
           "logprob": -0.0312,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 745,
@@ -640,79 +640,62 @@
   "ink_coverage": {
     "roi": [
       217,
-      277,
+      0,
       1591,
-      2031
+      2309
     ],
-    "ink_px": 86162,
+    "ink_px": 108506,
     "covered_px": 59676,
-    "covered_fraction": 0.6926,
-    "uncovered_px": 26486,
+    "covered_fraction": 0.54998,
+    "uncovered_px": 48830,
     "uncovered_regions": [
       {
         "bbox": [
-          553,
-          277,
-          1033,
-          469
+          697,
+          24,
+          1441,
+          480
         ],
-        "ink_px": 9576
+        "ink_px": 31550
       },
       {
         "bbox": [
           1105,
-          277,
+          264,
           1417,
-          445
+          456
         ],
-        "ink_px": 7451
+        "ink_px": 7419
       },
       {
         "bbox": [
           1009,
-          1573,
+          1584,
           1345,
-          1789
+          1800
         ],
-        "ink_px": 3081
+        "ink_px": 3084
       },
       {
         "bbox": [
-          961,
-          373,
-          1081,
-          469
+          553,
+          312,
+          697,
+          432
         ],
-        "ink_px": 2081
-      },
-      {
-        "bbox": [
-          865,
-          637,
-          1201,
-          661
-        ],
-        "ink_px": 1766
+        "ink_px": 2153
       },
       {
         "bbox": [
           1057,
-          277,
-          1129,
-          373
+          264,
+          1153,
+          384
         ],
-        "ink_px": 1347
-      },
-      {
-        "bbox": [
-          649,
-          1117,
-          841,
-          1141
-        ],
-        "ink_px": 410
+        "ink_px": 1376
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

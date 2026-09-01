@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 6325,
-        "area_px": 326136,
-        "density": 0.01939,
+        "ink_px": 6396,
+        "area_px": 333840,
+        "density": 0.01916,
         "chars": 574,
-        "chars_per_1k_ink": 90.75
+        "chars_per_1k_ink": 89.74
       }
     },
     {
@@ -44,7 +44,7 @@
         790
       ],
       "category": "Text",
-      "text": "**§ 2.** *Identifying Further Protections.* DCWP shall consider and take appropriate actions to combat subscription tricks and traps, including the promulgation of rules pursuant to its authority under Chapters 2, 4 and 5 of Title 20 of the Administrative Code of the City of New York, Chapter 64 of the New York City Charter and other applicable law, or issuance of recommendations to City Council about additional protections, resources, or authorities that are needed to fully protect New Yorkers from these underhanded tactics.",
+      "text": "**\u00a7 2.** *Identifying Further Protections.* DCWP shall consider and take appropriate actions to combat subscription tricks and traps, including the promulgation of rules pursuant to its authority under Chapters 2, 4 and 5 of Title 20 of the Administrative Code of the City of New York, Chapter 64 of the New York City Charter and other applicable law, or issuance of recommendations to City Council about additional protections, resources, or authorities that are needed to fully protect New Yorkers from these underhanded tactics.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -78,7 +78,7 @@
         910
       ],
       "category": "Text",
-      "text": "**§ 3.** *Coordination.* DCWP shall coordinate, as appropriate, with the Law Department and the New York State Attorney General to promote combating subscription tricks and traps.",
+      "text": "**\u00a7 3.** *Coordination.* DCWP shall coordinate, as appropriate, with the Law Department and the New York State Attorney General to promote combating subscription tricks and traps.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         986
       ],
       "category": "Text",
-      "text": "**§ 4.** This Order shall take effect immediately.",
+      "text": "**\u00a7 4.** This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -227,7 +227,13 @@
           "min": -0.0
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 13,
+        "area_px": 648,
+        "density": 0.02006,
+        "chars": 1,
+        "chars_per_1k_ink": 76.92
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -313,7 +319,7 @@
           "index": 173,
           "token_id": 17851,
           "logprob": -0.0052,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -425,15 +431,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 26274,
-    "covered_px": 26274,
+    "ink_px": 26358,
+    "covered_px": 26358,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

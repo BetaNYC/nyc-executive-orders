@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1335,
-        "area_px": 36750,
-        "density": 0.03633,
+        "ink_px": 9055,
+        "area_px": 91875,
+        "density": 0.09856,
         "chars": 92,
-        "chars_per_1k_ink": 68.91
+        "chars_per_1k_ink": 10.16
       }
     },
     {
@@ -78,7 +78,7 @@
         795
       ],
       "category": "List-item",
-      "text": "§ 4. Continuation of MOFTB. Nothing in this Order shall affect the jurisdiction of MOFTB as set forth in Executive Order No. 47, dated January 4, 1993, as amended by Executive Order No. 49, dated September 13, 2004. Staffing and other assistance to the Mayor's Office of Film, Theatre and Broadcasting may be provided by DOITT, the Department of Small Business Services (\"DSBS\") or by any other appropriate agency. MOFTB's function of issuing all permits required for film and television production and for still photography shoots in the City shall remain in DSBS. To preserve the regulatory jurisdiction of MOFTB, the commissioner of MOME shall be a DSBS employee and shall manage all appropriate DOITT staff.",
+      "text": "\u00a7 4. Continuation of MOFTB. Nothing in this Order shall affect the jurisdiction of MOFTB as set forth in Executive Order No. 47, dated January 4, 1993, as amended by Executive Order No. 49, dated September 13, 2004. Staffing and other assistance to the Mayor's Office of Film, Theatre and Broadcasting may be provided by DOITT, the Department of Small Business Services (\"DSBS\") or by any other appropriate agency. MOFTB's function of issuing all permits required for film and television production and for still photography shoots in the City shall remain in DSBS. To preserve the regulatory jurisdiction of MOFTB, the commissioner of MOME shall be a DSBS employee and shall manage all appropriate DOITT staff.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         1065
       ],
       "category": "List-item",
-      "text": "§ 5. Office of Nightlife. The Office of Nightlife shall be established under MOME in accordance with Local Law No. 178 of 2017. The Director of the Office of Nightlife shall be appointed by the Mayor, and shall report to the Commissioner of MOME. In addition to the powers and duties set forth in Local Law No. 178 of 2017, the Office of Nightlife will serve as a central point of contact among City agencies, the nightlife industry and city residents, promoting a safe and vibrant nightlife scene beneficial to businesses and residents across the five boroughs.",
+      "text": "\u00a7 5. Office of Nightlife. The Office of Nightlife shall be established under MOME in accordance with Local Law No. 178 of 2017. The Director of the Office of Nightlife shall be appointed by the Mayor, and shall report to the Commissioner of MOME. In addition to the powers and duties set forth in Local Law No. 178 of 2017, the Office of Nightlife will serve as a central point of contact among City agencies, the nightlife industry and city residents, promoting a safe and vibrant nightlife scene beneficial to businesses and residents across the five boroughs.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -146,7 +146,7 @@
         1175
       ],
       "category": "List-item",
-      "text": "§ 6. Additional Functions. MOME shall supervise and/or manage the following functions:",
+      "text": "\u00a7 6. Additional Functions. MOME shall supervise and/or manage the following functions:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -384,7 +384,7 @@
         2030
       ],
       "category": "List-item",
-      "text": "§ 7. Support by DOITT. MOME personnel shall be employees of DOITT, except as",
+      "text": "\u00a7 7. Support by DOITT. MOME personnel shall be employees of DOITT, except as",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -402,7 +402,13 @@
           "min": -0.0047
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8997,
+        "area_px": 44422,
+        "density": 0.20253,
+        "chars": 76,
+        "chars_per_1k_ink": 8.45
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -464,7 +470,7 @@
           "index": 155,
           "token_id": 17851,
           "logprob": -0.016,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 533,
@@ -600,15 +606,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 237134,
-    "covered_px": 237126,
+    "ink_px": 253851,
+    "covered_px": 253843,
     "covered_fraction": 0.99997,
     "uncovered_px": 8,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -180,7 +180,7 @@
         2070
       ],
       "category": "Text",
-      "text": "Members of the various Federal Reserve forces, National Guard, Naval Militia, etc., whether in officer or enlisted status, are guaranteed a leave of absence with pay for 30 days each year. This is true whether or not the assignment to military duty was consented to by the employee, since duty up to 30 days is deemed ordered military duty (Military Law §§ 245 and 170).",
+      "text": "Members of the various Federal Reserve forces, National Guard, Naval Militia, etc., whether in officer or enlisted status, are guaranteed a leave of absence with pay for 30 days each year. This is true whether or not the assignment to military duty was consented to by the employee, since duty up to 30 days is deemed ordered military duty (Military Law \u00a7\u00a7 245 and 170).",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -504,25 +504,35 @@
   "ink_coverage": {
     "roi": [
       304,
-      386,
+      0,
       2229,
-      2833
+      3220
     ],
-    "ink_px": 81346,
+    "ink_px": 491457,
     "covered_px": 80738,
-    "covered_fraction": 0.99253,
-    "uncovered_px": 608,
+    "covered_fraction": 0.16428,
+    "uncovered_px": 410719,
     "uncovered_regions": [
       {
         "bbox": [
-          976,
-          530,
-          1216,
-          554
+          304,
+          3096,
+          2229,
+          3220
         ],
-        "ink_px": 594
+        "ink_px": 221989
+      },
+      {
+        "bbox": [
+          304,
+          0,
+          2229,
+          120
+        ],
+        "ink_px": 188111
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

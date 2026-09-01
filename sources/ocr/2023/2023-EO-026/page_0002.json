@@ -28,7 +28,13 @@
           "min": -0.0487
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 17969,
+        "area_px": 166668,
+        "density": 0.10781,
+        "chars": 190,
+        "chars_per_1k_ink": 10.57
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         546
       ],
       "category": "Text",
-      "text": "§ 2. All mayoral agencies shall, whenever practicable, use their discretion under section 311(i) of the New York City Charter to limit the pool of solicited vendors for goods, services and construction for amounts not exceeding $500,000 to Black American M/WBEs, Hispanic American M/WBEs, Native American M/WBEs and Asian American WBEs. The Mayor's Office of Minority and Women-Owned Business Enterprises (“OM/WBE”) shall issue guidance on the process of prioritizing, where practicable, these most underutilized categories of M/WBEs for such solicitations.",
+      "text": "\u00a7 2. All mayoral agencies shall, whenever practicable, use their discretion under section 311(i) of the New York City Charter to limit the pool of solicited vendors for goods, services and construction for amounts not exceeding $500,000 to Black American M/WBEs, Hispanic American M/WBEs, Native American M/WBEs and Asian American WBEs. The Mayor's Office of Minority and Women-Owned Business Enterprises (\u201cOM/WBE\u201d) shall issue guidance on the process of prioritizing, where practicable, these most underutilized categories of M/WBEs for such solicitations.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -72,7 +78,7 @@
         861
       ],
       "category": "Text",
-      "text": "§ 3. There shall be a Chief Business Diversity Officer who, in consultation with the Mayor's Office of Contract Services (“MOCS”) and the New York City Department of Small Business Services, shall periodically review agency procurement data provided by MOCS and relevant research (a) to determine any changes in the ethnic or gender categories of M/WBEs be prioritized in accordance with the process described in section 2; (b) to identify meaningful progress towards addressing overall disparities in procurement across the City; and (c) to make any necessary adjustments to City policies based on such review.",
+      "text": "\u00a7 3. There shall be a Chief Business Diversity Officer who, in consultation with the Mayor's Office of Contract Services (\u201cMOCS\u201d) and the New York City Department of Small Business Services, shall periodically review agency procurement data provided by MOCS and relevant research (a) to determine any changes in the ethnic or gender categories of M/WBEs be prioritized in accordance with the process described in section 2; (b) to identify meaningful progress towards addressing overall disparities in procurement across the City; and (c) to make any necessary adjustments to City policies based on such review.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -106,7 +112,7 @@
         940
       ],
       "category": "Text",
-      "text": "§ 4. Nothing in this Order is intended to create a private cause of action.",
+      "text": "\u00a7 4. Nothing in this Order is intended to create a private cause of action.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -140,7 +146,7 @@
         1017
       ],
       "category": "Text",
-      "text": "§ 5. Executive Order No. 59, dated July 28, 2020, is hereby REVOKED.",
+      "text": "\u00a7 5. Executive Order No. 59, dated July 28, 2020, is hereby REVOKED.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -174,7 +180,7 @@
         1092
       ],
       "category": "Text",
-      "text": "§ 6. This Executive Order shall take effect immediately.",
+      "text": "\u00a7 6. This Executive Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -247,7 +253,7 @@
           "index": 211,
           "token_id": 26087,
           "logprob": -0.4755,
-          "text": " (“"
+          "text": " (\u201c"
         },
         {
           "index": 300,
@@ -265,7 +271,7 @@
           "index": 115,
           "token_id": 17851,
           "logprob": -0.0419,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 138,
@@ -283,7 +289,7 @@
           "index": 305,
           "token_id": 26087,
           "logprob": -0.0053,
-          "text": " (“"
+          "text": " (\u201c"
         },
         {
           "index": 58,
@@ -301,7 +307,7 @@
           "index": 281,
           "token_id": 17851,
           "logprob": -0.0023,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 202,
@@ -425,15 +431,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 132322,
-    "covered_px": 132322,
+    "ink_px": 150291,
+    "covered_px": 150291,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

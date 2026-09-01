@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 13216,
+        "area_px": 52864,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -141,7 +141,7 @@
         723
       ],
       "category": "Title",
-      "text": "OFFICE OF SPECIAL ENFORCEMENT – UNLAWFUL ADVERTISEMENTS FOR\nCERTAIN OCCUPANCIES",
+      "text": "OFFICE OF SPECIAL ENFORCEMENT \u2013 UNLAWFUL ADVERTISEMENTS FOR\nCERTAIN OCCUPANCIES",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -277,7 +277,7 @@
         1618
       ],
       "category": "Text",
-      "text": "§ 2-a. <u>Unlawful Advertisements.</u> In accordance with Chapter 396 of the laws of 2016 the Office is responsible for enforcing provisions of the Multiple Dwelling Law and the New York City Administrative Code prohibiting the advertisement of certain unlawful occupancies. Accordingly, the Office shall promulgate such rules as may be necessary or appropriate for implementation of such provisions. Such rules may include but shall not be limited to the establishment of recommended penalty schedules for the adjudication of violations of such provisions by the environmental control board. Consistent with section 3 of this Order, agencies shall cooperate with the Office as requested by the Director and shall detail staff to assist the Office in carrying out its responsibilities pursuant to this section. Staff detailed pursuant to this section shall perform all functions relating to the enforcement of such provisions under the express supervision of the Director.",
+      "text": "\u00a7 2-a. <u>Unlawful Advertisements.</u> In accordance with Chapter 396 of the laws of 2016 the Office is responsible for enforcing provisions of the Multiple Dwelling Law and the New York City Administrative Code prohibiting the advertisement of certain unlawful occupancies. Accordingly, the Office shall promulgate such rules as may be necessary or appropriate for implementation of such provisions. Such rules may include but shall not be limited to the establishment of recommended penalty schedules for the adjudication of violations of such provisions by the environmental control board. Consistent with section 3 of this Order, agencies shall cooperate with the Office as requested by the Director and shall detail staff to assist the Office in carrying out its responsibilities pursuant to this section. Staff detailed pursuant to this section shall perform all functions relating to the enforcement of such provisions under the express supervision of the Director.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1691
       ],
       "category": "Text",
-      "text": "§ 2. <u>Effective Date.</u> This Order shall take effect immediately.",
+      "text": "\u00a7 2. <u>Effective Date.</u> This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -426,7 +426,7 @@
           "index": 219,
           "token_id": 1365,
           "logprob": -0.1025,
-          "text": " –"
+          "text": " \u2013"
         },
         {
           "index": 293,
@@ -444,7 +444,7 @@
           "index": 516,
           "token_id": 17851,
           "logprob": -0.0126,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 466,
@@ -562,15 +562,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
     "ink_px": 78659,
     "covered_px": 78659,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

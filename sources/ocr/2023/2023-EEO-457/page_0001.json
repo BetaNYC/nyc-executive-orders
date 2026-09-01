@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 13500,
+        "area_px": 52875,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -175,7 +175,7 @@
         860
       ],
       "category": "Text",
-      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez* Action Plan, which “represents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island”; and",
+      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez* Action Plan, which \u201crepresents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island\u201d; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -413,7 +413,7 @@
         1872
       ],
       "category": "Text",
-      "text": "§ 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -461,9 +461,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1395,
-        "area_px": 20580,
-        "density": 0.06778,
+        "ink_px": 7199,
+        "area_px": 78960,
+        "density": 0.09117,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -486,7 +486,7 @@
           "index": 332,
           "token_id": 1036,
           "logprob": -0.7281,
-          "text": " “"
+          "text": " \u201c"
         },
         {
           "index": 327,
@@ -528,7 +528,7 @@
           "index": 942,
           "token_id": 17851,
           "logprob": -0.0139,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 408,
@@ -546,7 +546,7 @@
           "index": 353,
           "token_id": 65445,
           "logprob": -0.009,
-          "text": "”;"
+          "text": "\u201d;"
         },
         {
           "index": 665,
@@ -664,15 +664,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 202099,
-    "covered_px": 202099,
+    "ink_px": 207903,
+    "covered_px": 207903,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

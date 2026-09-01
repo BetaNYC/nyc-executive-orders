@@ -24,11 +24,11 @@
         "text": null
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 18792,
-        "density": 0.0,
+        "ink_px": 1,
+        "area_px": 55680,
+        "density": 2e-05,
         "chars": 0,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 0.0
       }
     },
     {
@@ -345,7 +345,7 @@
         1548
       ],
       "category": "Text",
-      "text": "§ 2. I hereby order that section 1 of Emergency Executive Order No. 335, dated February 14, 2023, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby order that section 1 of Emergency Executive Order No. 335, dated February 14, 2023, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -379,7 +379,7 @@
         1782
       ],
       "category": "Text",
-      "text": "§ 3. I hereby direct the Fire and Police Departments, the Department of Buildings, the Sheriff, and other agencies as needed, to enforce the directives set forth in this Order in accordance with their lawful authorities, including Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under Health Code sections 3.07 and 3.11, and enforced by the Department of Health and Mental Hygiene or any other agency.",
+      "text": "\u00a7 3. I hereby direct the Fire and Police Departments, the Department of Buildings, the Sheriff, and other agencies as needed, to enforce the directives set forth in this Order in accordance with their lawful authorities, including Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under Health Code sections 3.07 and 3.11, and enforced by the Department of Health and Mental Hygiene or any other agency.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -413,7 +413,7 @@
         1966
       ],
       "category": "Text",
-      "text": "§ 4. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 4. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -432,11 +432,11 @@
         }
       },
       "ink": {
-        "ink_px": 19344,
-        "area_px": 166668,
-        "density": 0.11606,
+        "ink_px": 19701,
+        "area_px": 192508,
+        "density": 0.10234,
         "chars": 338,
-        "chars_per_1k_ink": 17.47
+        "chars_per_1k_ink": 17.16
       }
     },
     {
@@ -461,9 +461,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 98,
-        "area_px": 4300,
-        "density": 0.02279,
+        "ink_px": 3929,
+        "area_px": 46010,
+        "density": 0.08539,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -494,7 +494,13 @@
           "min": -0.0003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1230,
+        "area_px": 12636,
+        "density": 0.09734,
+        "chars": 16,
+        "chars_per_1k_ink": 13.01
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -574,7 +580,7 @@
           "index": 746,
           "token_id": 17851,
           "logprob": -0.0009,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 424,
@@ -692,15 +698,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 152621,
-    "covered_px": 152621,
+    "ink_px": 157703,
+    "covered_px": 157703,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

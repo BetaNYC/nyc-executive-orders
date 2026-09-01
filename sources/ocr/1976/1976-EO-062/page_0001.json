@@ -248,7 +248,7 @@
         811
       ],
       "category": "Text",
-      "text": "\"§ 3. The delegation by Robert F. Wagner, the then Mayor, exercising the powers of a Finance Board, to the Comptroller, dated February 21, 1963 is hereby revoked, provided, however, that nothing in this Executive Order shall be construed to affect the validity of any act performed pursuant to such delegation prior to the date hereof.\"",
+      "text": "\"\u00a7 3. The delegation by Robert F. Wagner, the then Mayor, exercising the powers of a Finance Board, to the Comptroller, dated February 21, 1963 is hereby revoked, provided, however, that nothing in this Executive Order shall be construed to affect the validity of any act performed pursuant to such delegation prior to the date hereof.\"",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -282,7 +282,7 @@
         885
       ],
       "category": "Text",
-      "text": "§ 2. Executive Order No. 55, dated March 29, 1976, shall be construed to read as if section three thereof were identical to such section three as amended by section one hereof. All acts performed pursuant to Executive Order No. 55, dated March 29, 1976, and which would be valid under such construction are hereby affirmed and ratified.",
+      "text": "\u00a7 2. Executive Order No. 55, dated March 29, 1976, shall be construed to read as if section three thereof were identical to such section three as amended by section one hereof. All acts performed pursuant to Executive Order No. 55, dated March 29, 1976, and which would be valid under such construction are hereby affirmed and ratified.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -316,7 +316,7 @@
         923
       ],
       "category": "Text",
-      "text": "§ 3. This Executive Order shall take effect immediately and remain in effect until revoked by a subsequent Executive Order.",
+      "text": "\u00a7 3. This Executive Order shall take effect immediately and remain in effect until revoked by a subsequent Executive Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -458,7 +458,7 @@
           "index": 473,
           "token_id": 17851,
           "logprob": -0.0377,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 764,
@@ -494,7 +494,7 @@
           "index": 707,
           "token_id": 17851,
           "logprob": -0.0097,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -606,34 +606,26 @@
   "ink_coverage": {
     "roi": [
       217,
-      276,
+      0,
       1591,
-      2024
+      2300
     ],
-    "ink_px": 73539,
+    "ink_px": 75436,
     "covered_px": 69772,
-    "covered_fraction": 0.94878,
-    "uncovered_px": 3767,
+    "covered_fraction": 0.92492,
+    "uncovered_px": 5664,
     "uncovered_regions": [
       {
         "bbox": [
-          673,
-          420,
-          1153,
-          444
+          1441,
+          96,
+          1537,
+          192
         ],
-        "ink_px": 1504
-      },
-      {
-        "bbox": [
-          553,
-          948,
-          1081,
-          972
-        ],
-        "ink_px": 1325
+        "ink_px": 1528
       }
     ],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

@@ -282,7 +282,7 @@
         919
       ],
       "category": "Section-header",
-      "text": "## § 2. Functions.",
+      "text": "## \u00a7 2. Functions.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -640,15 +640,26 @@
   "ink_coverage": {
     "roi": [
       147,
-      224,
+      0,
       1084,
-      1642
+      1867
     ],
-    "ink_px": 5329,
+    "ink_px": 67648,
     "covered_px": 5270,
-    "covered_fraction": 0.98893,
-    "uncovered_px": 59,
-    "uncovered_regions": [],
+    "covered_fraction": 0.0779,
+    "uncovered_px": 62378,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          147,
+          1776,
+          1084,
+          1867
+        ],
+        "ink_px": 62301
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

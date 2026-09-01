@@ -28,7 +28,13 @@
           "min": -0.1603
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8460,
+        "area_px": 108360,
+        "density": 0.07807,
+        "chars": 168,
+        "chars_per_1k_ink": 19.86
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         337
       ],
       "category": "Text",
-      "text": "§ 14. Executive Order 5, dated February 3, 2022, is hereby REVOKED.",
+      "text": "\u00a7 14. Executive Order 5, dated February 3, 2022, is hereby REVOKED.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -72,7 +78,7 @@
         413
       ],
       "category": "Text",
-      "text": "§ 15. This Order shall take effect immediately.",
+      "text": "\u00a7 15. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -219,7 +225,7 @@
           "index": 102,
           "token_id": 17851,
           "logprob": -0.0026,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 35,
@@ -243,7 +249,7 @@
           "index": 163,
           "token_id": 17851,
           "logprob": -0.0004,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 243,
@@ -391,15 +397,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 9149,
-    "covered_px": 8830,
-    "covered_fraction": 0.96513,
+    "ink_px": 17609,
+    "covered_px": 17290,
+    "covered_fraction": 0.98188,
     "uncovered_px": 319,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

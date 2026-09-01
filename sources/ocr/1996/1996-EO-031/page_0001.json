@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 4452,
-        "area_px": 29181,
-        "density": 0.15257,
+        "ink_px": 5983,
+        "area_px": 48138,
+        "density": 0.12429,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1689
       ],
       "category": "Section-header",
-      "text": "§ 2 The Deputy Mayor for Operations shall",
+      "text": "\u00a7 2 The Deputy Mayor for Operations shall",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -296,11 +296,11 @@
         }
       },
       "ink": {
-        "ink_px": 6499,
-        "area_px": 213564,
-        "density": 0.03043,
+        "ink_px": 8601,
+        "area_px": 268398,
+        "density": 0.03205,
         "chars": 250,
-        "chars_per_1k_ink": 38.47
+        "chars_per_1k_ink": 29.07
       }
     }
   ],
@@ -381,7 +381,7 @@
           "index": 417,
           "token_id": 17851,
           "logprob": -0.055,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 315,
@@ -499,25 +499,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 38748,
-    "covered_px": 38226,
-    "covered_fraction": 0.98653,
-    "uncovered_px": 522,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          660,
-          864,
-          972,
-          888
-        ],
-        "ink_px": 459
-      }
-    ],
+    "ink_px": 42436,
+    "covered_px": 41859,
+    "covered_fraction": 0.9864,
+    "uncovered_px": 577,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

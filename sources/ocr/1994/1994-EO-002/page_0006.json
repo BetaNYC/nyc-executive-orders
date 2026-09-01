@@ -28,7 +28,13 @@
           "min": -0.0071
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 964,
+        "area_px": 6812,
+        "density": 0.14151,
+        "chars": 17,
+        "chars_per_1k_ink": 17.63
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0081
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 763,
+        "area_px": 6552,
+        "density": 0.11645,
+        "chars": 16,
+        "chars_per_1k_ink": 20.97
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.3487
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 654,
+        "area_px": 7479,
+        "density": 0.08744,
+        "chars": 23,
+        "chars_per_1k_ink": 35.17
+      }
     },
     {
       "bbox": [
@@ -128,7 +146,7 @@
         722
       ],
       "category": "Text",
-      "text": "§ 4. The Deputy Mayor for Education and Human\nServices shall:",
+      "text": "\u00a7 4. The Deputy Mayor for Education and Human\nServices shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -334,7 +352,7 @@
           "index": 255,
           "token_id": 17851,
           "logprob": -0.0166,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 129,
@@ -452,15 +470,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 94974,
-    "covered_px": 94794,
-    "covered_fraction": 0.9981,
-    "uncovered_px": 180,
+    "ink_px": 97699,
+    "covered_px": 97175,
+    "covered_fraction": 0.99464,
+    "uncovered_px": 524,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

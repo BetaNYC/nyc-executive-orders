@@ -28,7 +28,13 @@
           "min": -0.0512
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 783,
+        "area_px": 8364,
+        "density": 0.09362,
+        "chars": 16,
+        "chars_per_1k_ink": 20.43
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0125
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 735,
+        "area_px": 8064,
+        "density": 0.09115,
+        "chars": 16,
+        "chars_per_1k_ink": 21.77
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0016
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 659,
+        "area_px": 8610,
+        "density": 0.07654,
+        "chars": 15,
+        "chars_per_1k_ink": 22.76
+      }
     },
     {
       "bbox": [
@@ -108,9 +126,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1412,
-        "area_px": 32786,
-        "density": 0.04307,
+        "ink_px": 1692,
+        "area_px": 40158,
+        "density": 0.04213,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -380,11 +398,11 @@
         }
       },
       "ink": {
-        "ink_px": 39990,
-        "area_px": 333216,
-        "density": 0.12001,
+        "ink_px": 40983,
+        "area_px": 360672,
+        "density": 0.11363,
         "chars": 564,
-        "chars_per_1k_ink": 14.1
+        "chars_per_1k_ink": 13.76
       }
     },
     {
@@ -413,7 +431,13 @@
           "min": -0.4682
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 11731,
+        "area_px": 176648,
+        "density": 0.06641,
+        "chars": 176,
+        "chars_per_1k_ink": 15.0
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -611,15 +635,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 109934,
-    "covered_px": 109783,
-    "covered_fraction": 0.99863,
-    "uncovered_px": 151,
+    "ink_px": 127419,
+    "covered_px": 124964,
+    "covered_fraction": 0.98073,
+    "uncovered_px": 2455,
     "uncovered_regions": [],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

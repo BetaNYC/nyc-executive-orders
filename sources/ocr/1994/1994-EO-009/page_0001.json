@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 7235,
-        "area_px": 28248,
-        "density": 0.25612,
+        "ink_px": 11184,
+        "area_px": 48792,
+        "density": 0.22922,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -277,7 +277,7 @@
         1681
       ],
       "category": "Text",
-      "text": "§ 2. Paragraph (vi) of subdivision b of section 2 of Executive Order No. 16, dated August 31, 1990, is REPEALED.",
+      "text": "\u00a7 2. Paragraph (vi) of subdivision b of section 2 of Executive Order No. 16, dated August 31, 1990, is REPEALED.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1832
       ],
       "category": "Text",
-      "text": "§ 3. Executive Order No. 2, dated January 1, 1994, is amended to reletter subdivision j of section 6 as subdivision k, and to add a new subdivision j to such section to read as follows:",
+      "text": "\u00a7 3. Executive Order No. 2, dated January 1, 1994, is amended to reletter subdivision j of section 6 as subdivision k, and to add a new subdivision j to such section to read as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -385,7 +385,7 @@
           "index": 556,
           "token_id": 17851,
           "logprob": -0.0124,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 227,
@@ -533,15 +533,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 78069,
-    "covered_px": 78064,
-    "covered_fraction": 0.99994,
-    "uncovered_px": 5,
+    "ink_px": 82022,
+    "covered_px": 82013,
+    "covered_fraction": 0.99989,
+    "uncovered_px": 9,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

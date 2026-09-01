@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 5865,
-        "area_px": 24400,
-        "density": 0.24037,
+        "ink_px": 9170,
+        "area_px": 42800,
+        "density": 0.21425,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1972
       ],
       "category": "Text",
-      "text": "§2. Review and Approval Procedures. Pursuant to section 1142 of the New York City Charter, the rules entitled \"Street Activity Permit Office Procedures For the Submission and Review of Applications for Street Activity Permits and Establishment of a Uniform Scale of Fees and Charges for Street Activities\", made",
+      "text": "\u00a72. Review and Approval Procedures. Pursuant to section 1142 of the New York City Charter, the rules entitled \"Street Activity Permit Office Procedures For the Submission and Review of Applications for Street Activity Permits and Establishment of a Uniform Scale of Fees and Charges for Street Activities\", made",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
           "index": 473,
           "token_id": 17851,
           "logprob": -0.0622,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 342,
@@ -465,25 +465,16 @@
   "ink_coverage": {
     "roi": [
       213,
-      276,
+      0,
       1562,
-      2024
+      2300
     ],
-    "ink_px": 125935,
-    "covered_px": 124261,
-    "covered_fraction": 0.98671,
-    "uncovered_px": 1674,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          693,
-          828,
-          1173,
-          852
-        ],
-        "ink_px": 1363
-      }
-    ],
+    "ink_px": 129852,
+    "covered_px": 127566,
+    "covered_fraction": 0.9824,
+    "uncovered_px": 2286,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

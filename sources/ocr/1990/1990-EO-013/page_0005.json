@@ -28,7 +28,13 @@
           "min": -0.2955
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 7752,
+        "area_px": 115052,
+        "density": 0.06738,
+        "chars": 93,
+        "chars_per_1k_ink": 12.0
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         1142
       ],
       "category": "Text",
-      "text": "§8. Change in Nomenclature. All references to (a) the Office of Municipal Labor Relations or (b) to the Director of Municipal Labor Relations, Director of Labor Relations or City Director of Labor Relations contained in prior Executive Orders, including, but not limited to, Executive Order No. 75, dated March 22, 1973, Executive Order No. 83, dated July 26, 1973, Executive Order No. 6, dated January 21, 1974, Executive Orders Nos. 98 and 99, dated October 1 1969 and Executive Order No. 107, dated December 29, 1986; and in all other orders, rules, procedures, regulations or agreements governing the conduct of the City's labor relations which are subject to the jurisdiction of the Mayor, shall be deemed to be references respectively (a) to the Office of Labor Relations and (b) to the Commissioner of Labor Relations.",
+      "text": "\u00a78. Change in Nomenclature. All references to (a) the Office of Municipal Labor Relations or (b) to the Director of Municipal Labor Relations, Director of Labor Relations or City Director of Labor Relations contained in prior Executive Orders, including, but not limited to, Executive Order No. 75, dated March 22, 1973, Executive Order No. 83, dated July 26, 1973, Executive Order No. 6, dated January 21, 1974, Executive Orders Nos. 98 and 99, dated October 1 1969 and Executive Order No. 107, dated December 29, 1986; and in all other orders, rules, procedures, regulations or agreements governing the conduct of the City's labor relations which are subject to the jurisdiction of the Mayor, shall be deemed to be references respectively (a) to the Office of Labor Relations and (b) to the Commissioner of Labor Relations.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -72,7 +78,7 @@
         1540
       ],
       "category": "Text",
-      "text": "§9. Existing Signed Documents. All existing labor contracts, agreements, orders, procedures, directives, interpretations or other documents signed by the Director of Municipal Labor Relations, the Director of Labor Relations or the City Director of Labor Relations shall be deemed to have been signed by the Commissioner of Labor Relations.",
+      "text": "\u00a79. Existing Signed Documents. All existing labor contracts, agreements, orders, procedures, directives, interpretations or other documents signed by the Director of Municipal Labor Relations, the Director of Labor Relations or the City Director of Labor Relations shall be deemed to have been signed by the Commissioner of Labor Relations.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -106,7 +112,7 @@
         1808
       ],
       "category": "Text",
-      "text": "§10. Revoked Prior Orders. Executive Order No. 38, dated February 7, 1967, Executive Order No. 74, dated December 15, 1976 and Executive Order No. 81, dated March 7, 1977 are hereby revoked.",
+      "text": "\u00a710. Revoked Prior Orders. Executive Order No. 38, dated February 7, 1967, Executive Order No. 74, dated December 15, 1976 and Executive Order No. 81, dated March 7, 1977 are hereby revoked.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -186,19 +192,19 @@
           "index": 91,
           "token_id": 17851,
           "logprob": -0.0926,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 345,
           "token_id": 17851,
           "logprob": -0.0192,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 441,
           "token_id": 17851,
           "logprob": -0.016,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 445,
@@ -328,15 +334,16 @@
   "ink_coverage": {
     "roi": [
       211,
-      274,
+      0,
       1550,
-      2012
+      2287
     ],
-    "ink_px": 157406,
-    "covered_px": 157404,
-    "covered_fraction": 0.99999,
-    "uncovered_px": 2,
+    "ink_px": 165900,
+    "covered_px": 165156,
+    "covered_fraction": 0.99552,
+    "uncovered_px": 744,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

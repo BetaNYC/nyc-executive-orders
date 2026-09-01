@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 916,
-        "area_px": 16718,
-        "density": 0.05479,
+        "ink_px": 10061,
+        "area_px": 99022,
+        "density": 0.1016,
         "chars": 157,
-        "chars_per_1k_ink": 171.4
+        "chars_per_1k_ink": 15.6
       }
     },
     {
@@ -146,7 +146,7 @@
         858
       ],
       "category": "Text",
-      "text": "§ 5. The Deputy Mayor for Housing, Economic Development and Workforce shall:",
+      "text": "\u00a7 5. The Deputy Mayor for Housing, Economic Development and Workforce shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -402,7 +402,13 @@
           "min": -0.0386
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 6211,
+        "area_px": 49400,
+        "density": 0.12573,
+        "chars": 89,
+        "chars_per_1k_ink": 14.33
+      }
     },
     {
       "bbox": [
@@ -430,7 +436,13 @@
           "min": -0.0001
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 104,
+        "area_px": 660,
+        "density": 0.15758,
+        "chars": 1,
+        "chars_per_1k_ink": 9.62
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -628,15 +640,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 190057,
-    "covered_px": 190057,
+    "ink_px": 205517,
+    "covered_px": 205517,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

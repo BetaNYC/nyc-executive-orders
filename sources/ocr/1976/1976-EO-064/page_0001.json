@@ -418,7 +418,7 @@
         1005
       ],
       "category": "Section-header",
-      "text": "§ 2. *Powers and Duties of the Director*",
+      "text": "\u00a7 2. *Powers and Duties of the Director*",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -826,7 +826,7 @@
         1932
       ],
       "category": "List-item",
-      "text": "§ 3. City agencies responsible for providing public improvements and services in Midtown Manhattan, including the Economic Development Administration, the Housing and Development Administration, the Municipal Services Administration, the Parks and Recreation Administration, Cultural Affairs Administration, the Health Services Administration, the Environmental Protection Administration, the Transportation Administration, the Human Resources Administration, the Office of Neighborhood Services, Consumer Affairs Department, Department of Civic Affairs and Public Events, the Fire Department and the Police Department shall cooperate with the Director of the Office of Development in the performance of his functions and duties as set forth herein. Each such agency shall keep the Director advised of their ongoing and planned activities in the designated areas and shall coordinate such activities with those of the Mayor's Midtown Action Office.",
+      "text": "\u00a7 3. City agencies responsible for providing public improvements and services in Midtown Manhattan, including the Economic Development Administration, the Housing and Development Administration, the Municipal Services Administration, the Parks and Recreation Administration, Cultural Affairs Administration, the Health Services Administration, the Environmental Protection Administration, the Transportation Administration, the Human Resources Administration, the Office of Neighborhood Services, Consumer Affairs Department, Department of Civic Affairs and Public Events, the Fire Department and the Police Department shall cooperate with the Director of the Office of Development in the performance of his functions and duties as set forth herein. Each such agency shall keep the Director advised of their ongoing and planned activities in the designated areas and shall coordinate such activities with those of the Mayor's Midtown Action Office.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -879,11 +879,11 @@
         }
       },
       "ink": {
-        "ink_px": 19167,
-        "area_px": 68556,
-        "density": 0.27958,
+        "ink_px": 19785,
+        "area_px": 74860,
+        "density": 0.26429,
         "chars": 383,
-        "chars_per_1k_ink": 19.98
+        "chars_per_1k_ink": 19.36
       }
     },
     {
@@ -894,7 +894,7 @@
         2075
       ],
       "category": "List-item",
-      "text": "§ 4. The Office of Apparel Industry Planning and Development, the Office of Midtown Planning and Development and the Midtown Task Force are hereby abolished.",
+      "text": "\u00a7 4. The Office of Apparel Industry Planning and Development, the Office of Midtown Planning and Development and the Midtown Task Force are hereby abolished.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -912,7 +912,13 @@
           "min": -0.0121
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8709,
+        "area_px": 35370,
+        "density": 0.24623,
+        "chars": 157,
+        "chars_per_1k_ink": 18.03
+      }
     },
     {
       "bbox": [
@@ -922,7 +928,7 @@
         2095
       ],
       "category": "List-item",
-      "text": "§ 5. This Order shall take effect immediately.",
+      "text": "\u00a7 5. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -940,7 +946,13 @@
           "min": -0.0032
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2247,
+        "area_px": 8668,
+        "density": 0.25923,
+        "chars": 46,
+        "chars_per_1k_ink": 20.47
+      }
     },
     {
       "bbox": [
@@ -968,7 +980,13 @@
           "min": -0.0122
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 314,
+        "area_px": 864,
+        "density": 0.36343,
+        "chars": 5,
+        "chars_per_1k_ink": 15.92
+      }
     },
     {
       "bbox": [
@@ -996,7 +1014,13 @@
           "min": -0.0035
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1929,
+        "area_px": 7575,
+        "density": 0.25465,
+        "chars": 24,
+        "chars_per_1k_ink": 12.44
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -1058,7 +1082,7 @@
           "index": 871,
           "token_id": 17851,
           "logprob": -0.1375,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 126,
@@ -1194,34 +1218,26 @@
   "ink_coverage": {
     "roi": [
       213,
-      275,
+      0,
       1562,
-      2019
+      2295
     ],
-    "ink_px": 310030,
-    "covered_px": 307855,
-    "covered_fraction": 0.99298,
-    "uncovered_px": 2175,
+    "ink_px": 325773,
+    "covered_px": 321635,
+    "covered_fraction": 0.9873,
+    "uncovered_px": 4138,
     "uncovered_regions": [
       {
         "bbox": [
-          453,
-          1067,
-          501,
-          1475
+          1509,
+          120,
+          1562,
+          192
         ],
-        "ink_px": 972
-      },
-      {
-        "bbox": [
-          453,
-          1667,
-          501,
-          2019
-        ],
-        "ink_px": 748
+        "ink_px": 897
       }
     ],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

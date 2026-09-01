@@ -214,7 +214,7 @@
         1925
       ],
       "category": "Text",
-      "text": "WHEREAS, the Board of Education is authorized by Section 526 of the City Charter to investigate any subject of which it has cognizance or over which it has legal control, and is required by Education Law §2554 subd. 15a to promote the best interests of the schools; and whereas an investigation into and report on corruption in the school system, and the effect of such conduct on educational programs, will promote the best interests of the students and the school district;",
+      "text": "WHEREAS, the Board of Education is authorized by Section 526 of the City Charter to investigate any subject of which it has cognizance or over which it has legal control, and is required by Education Law \u00a72554 subd. 15a to promote the best interests of the schools; and whereas an investigation into and report on corruption in the school system, and the effect of such conduct on educational programs, will promote the best interests of the students and the school district;",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -248,7 +248,7 @@
         2059
       ],
       "category": "Text",
-      "text": "WHEREAS, the Board is authorized by Education Law §2554 subd. 21 to appoint trial examiners to conduct investigations and hold hearings on its behalf; now, therefore, be it",
+      "text": "WHEREAS, the Board is authorized by Education Law \u00a72554 subd. 21 to appoint trial examiners to conduct investigations and hold hearings on its behalf; now, therefore, be it",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -267,11 +267,11 @@
         }
       },
       "ink": {
-        "ink_px": 9341,
-        "area_px": 54223,
-        "density": 0.17227,
+        "ink_px": 23912,
+        "area_px": 134927,
+        "density": 0.17722,
         "chars": 172,
-        "chars_per_1k_ink": 18.41
+        "chars_per_1k_ink": 7.19
       }
     },
     {
@@ -300,7 +300,13 @@
           "min": -0.0007
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8771,
+        "area_px": 48321,
+        "density": 0.18152,
+        "chars": 62,
+        "chars_per_1k_ink": 7.07
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -498,15 +504,16 @@
   "ink_coverage": {
     "roi": [
       209,
-      272,
+      0,
       1535,
-      1997
+      2270
     ],
-    "ink_px": 329586,
-    "covered_px": 329583,
-    "covered_fraction": 0.99999,
-    "uncovered_px": 3,
+    "ink_px": 353267,
+    "covered_px": 352925,
+    "covered_fraction": 0.99903,
+    "uncovered_px": 342,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

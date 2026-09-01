@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 432,
+        "area_px": 15347,
+        "density": 0.02815,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -51,7 +57,13 @@
           "min": -0.0243
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 30,
+        "area_px": 15544,
+        "density": 0.00193,
+        "chars": 53,
+        "chars_per_1k_ink": 1766.67
+      }
     },
     {
       "bbox": [
@@ -79,7 +91,13 @@
           "min": -0.0084
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 6,
+        "area_px": 408,
+        "density": 0.01471,
+        "chars": 1,
+        "chars_per_1k_ink": 166.67
+      }
     },
     {
       "bbox": [
@@ -157,7 +175,7 @@
         753
       ],
       "category": "Text",
-      "text": "§ 9. The provisions of this executive order shall not imply any obligation, commitment or promise that benefits herein granted or provided for shall be continued beyond the termination date thereof, as herein prescribed.",
+      "text": "\u00a7 9. The provisions of this executive order shall not imply any obligation, commitment or promise that benefits herein granted or provided for shall be continued beyond the termination date thereof, as herein prescribed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -225,7 +243,7 @@
         938
       ],
       "category": "Text",
-      "text": "§ 10. This order shall take effect on\nJune 13, 1969.",
+      "text": "\u00a7 10. This order shall take effect on\nJune 13, 1969.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -380,7 +398,7 @@
           "index": 291,
           "token_id": 17851,
           "logprob": -0.0371,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 242,
@@ -510,15 +528,26 @@
   "ink_coverage": {
     "roi": [
       153,
-      236,
+      0,
       1123,
-      1737
+      1974
     ],
-    "ink_px": 52,
-    "covered_px": 52,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 53236,
+    "covered_px": 520,
+    "covered_fraction": 0.00977,
+    "uncovered_px": 52716,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          153,
+          1896,
+          1123,
+          1974
+        ],
+        "ink_px": 52712
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 17001,
+        "area_px": 52245,
+        "density": 0.32541,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 3854,
-        "area_px": 35448,
-        "density": 0.10872,
+        "ink_px": 6146,
+        "area_px": 53172,
+        "density": 0.11559,
         "chars": 53,
-        "chars_per_1k_ink": 13.75
+        "chars_per_1k_ink": 8.62
       }
     },
     {
@@ -203,7 +209,7 @@
         1721
       ],
       "category": "Text",
-      "text": "§5. Continued Review and Modification of Automobile Ownership, Operation, and Maintenance. The Vehicular Control Board shall continue its study and evaluation of all aspects of motor vehicle ownership, operation, and maintenance by The City of New York, and shall have authority to establish motor pools servicing groups of departments and agencies; to combine, modify and eliminate maintenance facilities; to eliminate and reassign passenger vehicles and motor vehicle operator positions; to review and approve requests for new equipment. All departments and agencies shall cooperate in such study and evaluation, and shall furnish all data requested by the Vehicular Control Board or its designated representatives.",
+      "text": "\u00a75. Continued Review and Modification of Automobile Ownership, Operation, and Maintenance. The Vehicular Control Board shall continue its study and evaluation of all aspects of motor vehicle ownership, operation, and maintenance by The City of New York, and shall have authority to establish motor pools servicing groups of departments and agencies; to combine, modify and eliminate maintenance facilities; to eliminate and reassign passenger vehicles and motor vehicle operator positions; to review and approve requests for new equipment. All departments and agencies shall cooperate in such study and evaluation, and shall furnish all data requested by the Vehicular Control Board or its designated representatives.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -237,7 +243,7 @@
         2147
       ],
       "category": "Text",
-      "text": "§6. Other Municipal Departments and Agencies.\nA copy of this order will be sent to the chief officer of each department and agency not within the Mayor's administrative jurisdiction with the request that they cooperate in achieving the objectives of this order, that they voluntarily apply all applicable sections to the administration of automobiles owned or operated by them, and that they seek to establish a working relationship with the Vehicular Control Board.",
+      "text": "\u00a76. Other Municipal Departments and Agencies.\nA copy of this order will be sent to the chief officer of each department and agency not within the Mayor's administrative jurisdiction with the request that they cooperate in achieving the objectives of this order, that they voluntarily apply all applicable sections to the administration of automobiles owned or operated by them, and that they seek to establish a working relationship with the Vehicular Control Board.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -271,7 +277,7 @@
         2274
       ],
       "category": "Text",
-      "text": "§7. Effective date. This order shall become effective December 21, 1966",
+      "text": "\u00a77. Effective date. This order shall become effective December 21, 1966",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -356,7 +362,7 @@
           "index": 296,
           "token_id": 17851,
           "logprob": -0.2074,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 84,
@@ -522,15 +528,35 @@
   "ink_coverage": {
     "roi": [
       284,
-      415,
+      0,
       2088,
-      3050
+      3466
     ],
-    "ink_px": 40774,
-    "covered_px": 40774,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 420426,
+    "covered_px": 60067,
+    "covered_fraction": 0.14287,
+    "uncovered_px": 360359,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          284,
+          3336,
+          2088,
+          3466
+        ],
+        "ink_px": 190308
+      },
+      {
+        "bbox": [
+          1316,
+          144,
+          1388,
+          216
+        ],
+        "ink_px": 747
+      }
+    ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

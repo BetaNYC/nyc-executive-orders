@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 649,
-        "area_px": 11448,
-        "density": 0.05669,
+        "ink_px": 2965,
+        "area_px": 50760,
+        "density": 0.05841,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -413,7 +413,7 @@
         1716
       ],
       "category": "Text",
-      "text": "§ 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -460,7 +460,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3944,
+        "area_px": 70434,
+        "density": 0.056,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -534,7 +540,7 @@
           "index": 923,
           "token_id": 17851,
           "logprob": -0.0059,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 697,
@@ -658,15 +664,16 @@
   "ink_coverage": {
     "roi": [
       180,
-      240,
+      0,
       1320,
-      1760
+      2000
     ],
-    "ink_px": 114290,
-    "covered_px": 114290,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 120552,
+    "covered_px": 120550,
+    "covered_fraction": 0.99998,
+    "uncovered_px": 2,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

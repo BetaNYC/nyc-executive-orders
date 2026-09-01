@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 21406,
-        "area_px": 130492,
-        "density": 0.16404,
+        "ink_px": 34512,
+        "area_px": 214472,
+        "density": 0.16092,
         "chars": 354,
-        "chars_per_1k_ink": 16.54
+        "chars_per_1k_ink": 10.26
       }
     },
     {
@@ -112,7 +112,7 @@
         710
       ],
       "category": "Text",
-      "text": "§ 13. The Chancellor, the Police Commissioner, the Commissioner of Investigation, the Corporation Counsel, and the Director of Intergovernmental and External Affairs shall report directly to the Mayor.",
+      "text": "\u00a7 13. The Chancellor, the Police Commissioner, the Commissioner of Investigation, the Corporation Counsel, and the Director of Intergovernmental and External Affairs shall report directly to the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         790
       ],
       "category": "Text",
-      "text": "§ 14. Executive Order 36, dated September 22, 2023 is hereby REVOKED.",
+      "text": "\u00a7 14. Executive Order 36, dated September 22, 2023 is hereby REVOKED.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -180,7 +180,7 @@
         863
       ],
       "category": "Text",
-      "text": "§ 15. This Order shall take effect immediately.",
+      "text": "\u00a7 15. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -265,7 +265,7 @@
           "index": 251,
           "token_id": 17851,
           "logprob": -0.0052,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 36,
@@ -431,15 +431,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 78941,
-    "covered_px": 78941,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 92105,
+    "covered_px": 92047,
+    "covered_fraction": 0.99937,
+    "uncovered_px": 58,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

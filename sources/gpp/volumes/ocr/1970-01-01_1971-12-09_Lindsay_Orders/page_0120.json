@@ -25,8 +25,8 @@
       },
       "ink": {
         "ink_px": 24,
-        "area_px": 7296,
-        "density": 0.00329,
+        "area_px": 9696,
+        "density": 0.00248,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -73,7 +73,7 @@
         1012
       ],
       "category": "List-item",
-      "text": "2. Effective during the period of time from and including the payroll period the first day of which is nearest to July 1, 1970 and to and including the payroll period immediately preceding that, the first day of which is nearest to June 30, 1971 (which total period of time is hereinafter referred to as the \"1970-1971 increased-take-home-pay period\"), the governing provisions of paragraph 14 of such subdivision j, as hereby made applicable, and the provisions of subdivisions g, h and i of such §B3-36.1 shall be applicable to and for the benefit of all officers and employees of this Authority who are members of the New York City Employees' Retirement System except for any officer or employee whose minimum period for service retirement pursuant to an election made under §B3-36.6 of the Administrative Code (as added by Chapter 290 of the Laws of 1968), is twenty years, and except for those officers and employees who are members of the Uniformed Transit Police Force and who have elected optional retirement pursuant to §B3-36.3 of the Administrative Code (as added by Chapter 969 of the Laws of 1964).",
+      "text": "2. Effective during the period of time from and including the payroll period the first day of which is nearest to July 1, 1970 and to and including the payroll period immediately preceding that, the first day of which is nearest to June 30, 1971 (which total period of time is hereinafter referred to as the \"1970-1971 increased-take-home-pay period\"), the governing provisions of paragraph 14 of such subdivision j, as hereby made applicable, and the provisions of subdivisions g, h and i of such \u00a7B3-36.1 shall be applicable to and for the benefit of all officers and employees of this Authority who are members of the New York City Employees' Retirement System except for any officer or employee whose minimum period for service retirement pursuant to an election made under \u00a7B3-36.6 of the Administrative Code (as added by Chapter 290 of the Laws of 1968), is twenty years, and except for those officers and employees who are members of the Uniformed Transit Police Force and who have elected optional retirement pursuant to \u00a7B3-36.3 of the Administrative Code (as added by Chapter 969 of the Laws of 1964).",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -193,7 +193,13 @@
           "min": -0.0004
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5,
+        "area_px": 820,
+        "density": 0.0061,
+        "chars": 3,
+        "chars_per_1k_ink": 600.0
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -225,7 +231,7 @@
           "index": 243,
           "token_id": 16625,
           "logprob": -0.3994,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 82,
@@ -391,15 +397,16 @@
   "ink_coverage": {
     "roi": [
       132,
-      190,
+      0,
       975,
-      1400
+      1591
     ],
-    "ink_px": 22226,
-    "covered_px": 21994,
-    "covered_fraction": 0.98956,
-    "uncovered_px": 232,
+    "ink_px": 22528,
+    "covered_px": 21999,
+    "covered_fraction": 0.97652,
+    "uncovered_px": 529,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -28,7 +28,13 @@
           "min": -0.0064
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2504,
+        "area_px": 7678,
+        "density": 0.32613,
+        "chars": 21,
+        "chars_per_1k_ink": 8.39
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0064
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1008,
+        "area_px": 4800,
+        "density": 0.21,
+        "chars": 15,
+        "chars_per_1k_ink": 14.88
+      }
     },
     {
       "bbox": [
@@ -168,7 +180,7 @@
         516
       ],
       "category": "Section-header",
-      "text": "§ 2. The Deputy Mayor for Management shall:",
+      "text": "\u00a7 2. The Deputy Mayor for Management shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -338,7 +350,7 @@
         693
       ],
       "category": "Section-header",
-      "text": "§ 3. The Deputy Mayor for Intergovernmental Relations shall:",
+      "text": "\u00a7 3. The Deputy Mayor for Intergovernmental Relations shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -576,7 +588,7 @@
         1089
       ],
       "category": "Section-header",
-      "text": "§ 4. The Deputy Mayor for Personnel and Labor Relations shall:",
+      "text": "\u00a7 4. The Deputy Mayor for Personnel and Labor Relations shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -712,7 +724,7 @@
         1310
       ],
       "category": "Section-header",
-      "text": "§ 5. The Deputy Mayor for Policy shall:",
+      "text": "\u00a7 5. The Deputy Mayor for Policy shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -882,7 +894,7 @@
         1487
       ],
       "category": "Section-header",
-      "text": "§ 6. The Deputy Mayor for Economic Development shall:",
+      "text": "\u00a7 6. The Deputy Mayor for Economic Development shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -1052,7 +1064,7 @@
         1644
       ],
       "category": "Section-header",
-      "text": "§ 7. The Deputy Mayor for Finance shall:",
+      "text": "\u00a7 7. The Deputy Mayor for Finance shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -1173,11 +1185,11 @@
         }
       },
       "ink": {
-        "ink_px": 36974,
-        "area_px": 166291,
-        "density": 0.22235,
+        "ink_px": 47325,
+        "area_px": 209954,
+        "density": 0.22541,
         "chars": 890,
-        "chars_per_1k_ink": 24.07
+        "chars_per_1k_ink": 18.81
       }
     },
     {
@@ -1206,7 +1218,13 @@
           "min": -0.0071
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 21336,
+        "area_px": 109150,
+        "density": 0.19547,
+        "chars": 386,
+        "chars_per_1k_ink": 18.09
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -1232,7 +1250,7 @@
           "index": 342,
           "token_id": 17851,
           "logprob": -0.3659,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 1677,
@@ -1404,25 +1422,26 @@
   "ink_coverage": {
     "roi": [
       205,
-      269,
+      0,
       1506,
-      1978
+      2248
     ],
-    "ink_px": 289172,
-    "covered_px": 288653,
-    "covered_fraction": 0.99821,
-    "uncovered_px": 519,
+    "ink_px": 324527,
+    "covered_px": 323525,
+    "covered_fraction": 0.99691,
+    "uncovered_px": 1002,
     "uncovered_regions": [
       {
         "bbox": [
           253,
-          1469,
-          301,
-          1685
+          1488,
+          277,
+          1704
         ],
-        "ink_px": 447
+        "ink_px": 433
       }
     ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

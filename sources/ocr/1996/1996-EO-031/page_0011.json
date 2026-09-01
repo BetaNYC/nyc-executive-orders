@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 7436,
-        "area_px": 204102,
-        "density": 0.03643,
+        "ink_px": 7629,
+        "area_px": 214659,
+        "density": 0.03554,
         "chars": 172,
-        "chars_per_1k_ink": 23.13
+        "chars_per_1k_ink": 22.55
       }
     },
     {
@@ -44,7 +44,7 @@
         911
       ],
       "category": "Text",
-      "text": "§ 8 This Order shall take effect immediately upon the resignation of the City's present First Deputy Mayor. Any authorizations or approvals given to the Deputy Mayor for Community Development and Business Services under section 5(d), and the Deputy Mayor for Economic Development and Planning under section 6(h) on or after May 1, 1996 are hereby ratified.",
+      "text": "\u00a7 8 This Order shall take effect immediately upon the resignation of the City's present First Deputy Mayor. Any authorizations or approvals given to the Deputy Mayor for Community Development and Business Services under section 5(d), and the Deputy Mayor for Economic Development and Planning under section 6(h) on or after May 1, 1996 are hereby ratified.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -153,7 +153,7 @@
           "index": 144,
           "token_id": 17851,
           "logprob": -0.0079,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 35,
@@ -295,15 +295,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 33744,
-    "covered_px": 33719,
-    "covered_fraction": 0.99926,
-    "uncovered_px": 25,
+    "ink_px": 33986,
+    "covered_px": 33912,
+    "covered_fraction": 0.99782,
+    "uncovered_px": 74,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

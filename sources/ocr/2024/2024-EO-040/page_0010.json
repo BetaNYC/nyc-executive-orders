@@ -28,7 +28,13 @@
           "min": -0.0008
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5601,
+        "area_px": 33075,
+        "density": 0.16934,
+        "chars": 53,
+        "chars_per_1k_ink": 9.46
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         317
       ],
       "category": "Section-header",
-      "text": "§ 11. The Chief Advisor shall:",
+      "text": "\u00a7 11. The Chief Advisor shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -276,7 +282,7 @@
         1248
       ],
       "category": "Section-header",
-      "text": "§ 12. The Chief Counsel to the Mayor and City Hall shall:",
+      "text": "\u00a7 12. The Chief Counsel to the Mayor and City Hall shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -465,11 +471,11 @@
         }
       },
       "ink": {
-        "ink_px": 9308,
-        "area_px": 59156,
-        "density": 0.15735,
+        "ink_px": 29474,
+        "area_px": 164608,
+        "density": 0.17906,
         "chars": 296,
-        "chars_per_1k_ink": 31.8
+        "chars_per_1k_ink": 10.04
       }
     }
   ],
@@ -490,7 +496,7 @@
           "index": 82,
           "token_id": 17851,
           "logprob": -0.0743,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 173,
@@ -556,7 +562,7 @@
           "index": 589,
           "token_id": 17851,
           "logprob": -0.0012,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -668,15 +674,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 233428,
-    "covered_px": 233427,
-    "covered_fraction": 1.0,
-    "uncovered_px": 1,
+    "ink_px": 259465,
+    "covered_px": 259194,
+    "covered_fraction": 0.99896,
+    "uncovered_px": 271,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

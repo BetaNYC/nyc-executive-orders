@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 824,
-        "area_px": 32856,
-        "density": 0.02508,
+        "ink_px": 1277,
+        "area_px": 52392,
+        "density": 0.02437,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -447,7 +447,7 @@
         1842
       ],
       "category": "List-item",
-      "text": "§ 2. Prior Order Revoked. Executive Order No. 33, dated October 11, 1996 hereby is revoked.",
+      "text": "\u00a7 2. Prior Order Revoked. Executive Order No. 33, dated October 11, 1996 hereby is revoked.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -481,7 +481,7 @@
         1913
       ],
       "category": "List-item",
-      "text": "§ 3. This Order shall take effect immediately.",
+      "text": "\u00a7 3. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -529,9 +529,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1123,
-        "area_px": 45198,
-        "density": 0.02485,
+        "ink_px": 7419,
+        "area_px": 136152,
+        "density": 0.05449,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -572,7 +572,7 @@
           "index": 779,
           "token_id": 17851,
           "logprob": -0.0348,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 337,
@@ -732,25 +732,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 76561,
-    "covered_px": 75507,
-    "covered_fraction": 0.98623,
-    "uncovered_px": 1054,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          516,
-          768,
-          996,
-          816
-        ],
-        "ink_px": 1022
-      }
-    ],
+    "ink_px": 83311,
+    "covered_px": 82256,
+    "covered_fraction": 0.98734,
+    "uncovered_px": 1055,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

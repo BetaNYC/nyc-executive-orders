@@ -28,7 +28,13 @@
           "min": -0.0006
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4125,
+        "area_px": 21315,
+        "density": 0.19353,
+        "chars": 51,
+        "chars_per_1k_ink": 12.36
+      }
     },
     {
       "bbox": [
@@ -140,7 +146,7 @@
         863
       ],
       "category": "Text",
-      "text": "§ 12. The Chancellor, the Police Commissioner, the Commissioner of Investigation, the Corporation Counsel, and the Chief Technology Officer shall report directly to the Mayor.",
+      "text": "\u00a7 12. The Chancellor, the Police Commissioner, the Commissioner of Investigation, the Corporation Counsel, and the Chief Technology Officer shall report directly to the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -174,7 +180,7 @@
         1093
       ],
       "category": "Text",
-      "text": "§ 13. Section 2 of Executive Order 3, dated January 19, 2022, is hereby amended to read as follows: § 2. The head of the Office of Technology and Innovation shall be the Chief Technology Officer of the City of New York, who shall also be known as the Commissioner of Information Technology and Telecommunications and Chief Information Officer where such titles are legally required. The Chief Technology Officer shall be appointed by and shall report to the Mayor.",
+      "text": "\u00a7 13. Section 2 of Executive Order 3, dated January 19, 2022, is hereby amended to read as follows: \u00a7 2. The head of the Office of Technology and Innovation shall be the Chief Technology Officer of the City of New York, who shall also be known as the Commissioner of Information Technology and Telecommunications and Chief Information Officer where such titles are legally required. The Chief Technology Officer shall be appointed by and shall report to the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -208,7 +214,7 @@
         1169
       ],
       "category": "Text",
-      "text": "§ 14. Executive Order 45, dated September 26, 2024 is hereby REVOKED.",
+      "text": "\u00a7 14. Executive Order 45, dated September 26, 2024 is hereby REVOKED.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -242,7 +248,7 @@
         1246
       ],
       "category": "Text",
-      "text": "§ 15. This Order shall take effect immediately.",
+      "text": "\u00a7 15. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -339,7 +345,7 @@
           "index": 356,
           "token_id": 17851,
           "logprob": -0.0045,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 518,
@@ -493,15 +499,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 150327,
-    "covered_px": 150322,
-    "covered_fraction": 0.99997,
-    "uncovered_px": 5,
+    "ink_px": 154589,
+    "covered_px": 154447,
+    "covered_fraction": 0.99908,
+    "uncovered_px": 142,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 17633,
+        "area_px": 53815,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -141,7 +141,7 @@
         802
       ],
       "category": "Text",
-      "text": "WHEREAS, it is of utmost importance to protect the health and safety of all persons in the custody of the Department of Correction (“DOC”), and of all officers and persons who work in the City of New York jails and who transport persons in custody to court and other facilities, and the public; and",
+      "text": "WHEREAS, it is of utmost importance to protect the health and safety of all persons in the custody of the Department of Correction (\u201cDOC\u201d), and of all officers and persons who work in the City of New York jails and who transport persons in custody to court and other facilities, and the public; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -175,7 +175,7 @@
         1145
       ],
       "category": "Text",
-      "text": "WHEREAS, over 80 provisions in the various Court Orders entered in *Nunez v. City of New York*, 11 CV 5845 (SDNY), require DOC to consult with, and seek the approval of, the *Nunez* Monitor (“Monitor”) prior to implementing or amending policies on issues, including but not limited to, matters relating to security practices, the use of restraints, escorts, emergency lock-ins, de-escalation, confinement management of incarcerated individuals following serious acts of violence and subsequent housing strategies, and DOC may be held in contempt of court and sanctioned if it fails to appropriately consult with and obtain approval from the Monitor regarding policies in these areas; and",
+      "text": "WHEREAS, over 80 provisions in the various Court Orders entered in *Nunez v. City of New York*, 11 CV 5845 (SDNY), require DOC to consult with, and seek the approval of, the *Nunez* Monitor (\u201cMonitor\u201d) prior to implementing or amending policies on issues, including but not limited to, matters relating to security practices, the use of restraints, escorts, emergency lock-ins, de-escalation, confinement management of incarcerated individuals following serious acts of violence and subsequent housing strategies, and DOC may be held in contempt of court and sanctioned if it fails to appropriately consult with and obtain approval from the Monitor regarding policies in these areas; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -277,7 +277,7 @@
         1903
       ],
       "category": "Text",
-      "text": "WHEREAS, even if DOC had such additional staffing and resources, that still would not obviate the direct threat to public safety posed by certain provisions of Local Law 42, nor would it obviate the fact that the Monitor has yet to approve implementation of those provisions as required by the *Nunez* Orders, nor would it obviate the fact that additional time would be needed to safely implement those provisions of Local Law 42 eventually approved by the Monitor, because, as the Monitor has expressly cautioned, the safe implementation of any new requirement or reform in DOC facilities requires planning time to “evaluat[e] the operational impact, update[e] policies and procedures, updat[e] the physical plant, determin[e] the necessary staffing complement, develop[] training materials, and provid[e] training to thousands of staff, all of which must occur before the changes in practice actually go into effect” [11 CV 5845 (SDNY) Dkt No. 758-3 at p. 61]; and",
+      "text": "WHEREAS, even if DOC had such additional staffing and resources, that still would not obviate the direct threat to public safety posed by certain provisions of Local Law 42, nor would it obviate the fact that the Monitor has yet to approve implementation of those provisions as required by the *Nunez* Orders, nor would it obviate the fact that additional time would be needed to safely implement those provisions of Local Law 42 eventually approved by the Monitor, because, as the Monitor has expressly cautioned, the safe implementation of any new requirement or reform in DOC facilities requires planning time to \u201cevaluat[e] the operational impact, update[e] policies and procedures, updat[e] the physical plant, determin[e] the necessary staffing complement, develop[] training materials, and provid[e] training to thousands of staff, all of which must occur before the changes in practice actually go into effect\u201d [11 CV 5845 (SDNY) Dkt No. 758-3 at p. 61]; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -321,7 +321,7 @@
           "index": 241,
           "token_id": 26087,
           "logprob": -0.3888,
-          "text": " (“"
+          "text": " (\u201c"
         },
         {
           "index": 81,
@@ -499,15 +499,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
     "ink_px": 194824,
     "covered_px": 194824,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

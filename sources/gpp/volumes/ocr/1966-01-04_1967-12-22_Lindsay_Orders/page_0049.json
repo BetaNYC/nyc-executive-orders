@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 9379,
+        "area_px": 39501,
+        "density": 0.23744,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 828,
-        "area_px": 10675,
-        "density": 0.07756,
+        "ink_px": 4243,
+        "area_px": 56364,
+        "density": 0.07528,
         "chars": 54,
-        "chars_per_1k_ink": 65.22
+        "chars_per_1k_ink": 12.73
       }
     },
     {
@@ -237,7 +243,7 @@
         2202
       ],
       "category": "Text",
-      "text": "§2. Deputy Administrator and Personnel. The Mayor, or upon delegation by the Mayor, the Administrator, may appoint a Deputy Administrator, one or more assistant administrators and such other professional and clerical personnel as may be necessary for the performance of the duties of the Administration. The agencies specified in §3 hereof are hereby directed to make available to the Administrator such staff assistance as he may request.",
+      "text": "\u00a72. Deputy Administrator and Personnel. The Mayor, or upon delegation by the Mayor, the Administrator, may appoint a Deputy Administrator, one or more assistant administrators and such other professional and clerical personnel as may be necessary for the performance of the duties of the Administration. The agencies specified in \u00a73 hereof are hereby directed to make available to the Administrator such staff assistance as he may request.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -271,7 +277,7 @@
         2792
       ],
       "category": "Text",
-      "text": "§3. Powers and Duties of the Administrator. The Administrator shall have with respect to the Department of Finance, Real Property Assessment Department and, subject to the provisions of Section 1149(b) of the Charter, as amended, and any executive orders made pursuant thereto, the Board of Assessors, the power and duty:",
+      "text": "\u00a73. Powers and Duties of the Administrator. The Administrator shall have with respect to the Department of Finance, Real Property Assessment Department and, subject to the provisions of Section 1149(b) of the Charter, as amended, and any executive orders made pursuant thereto, the Board of Assessors, the power and duty:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -324,11 +330,11 @@
         }
       },
       "ink": {
-        "ink_px": 10843,
-        "area_px": 346542,
-        "density": 0.03129,
+        "ink_px": 14717,
+        "area_px": 397824,
+        "density": 0.03699,
         "chars": 143,
-        "chars_per_1k_ink": 13.19
+        "chars_per_1k_ink": 9.72
       }
     },
     {
@@ -357,7 +363,13 @@
           "min": -0.5382
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 10610,
+        "area_px": 247086,
+        "density": 0.04294,
+        "chars": 108,
+        "chars_per_1k_ink": 10.18
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -407,7 +419,7 @@
           "index": 372,
           "token_id": 17851,
           "logprob": -0.0423,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 253,
@@ -555,15 +567,26 @@
   "ink_coverage": {
     "roi": [
       288,
-      417,
+      0,
       2112,
-      3058
+      3475
     ],
-    "ink_px": 130956,
-    "covered_px": 130956,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 508204,
+    "covered_px": 158234,
+    "covered_fraction": 0.31136,
+    "uncovered_px": 349970,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          288,
+          3360,
+          2112,
+          3475
+        ],
+        "ink_px": 178759
+      }
+    ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

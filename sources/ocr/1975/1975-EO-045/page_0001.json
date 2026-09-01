@@ -28,7 +28,13 @@
           "min": -0.003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2585,
+        "area_px": 8118,
+        "density": 0.31843,
+        "chars": 22,
+        "chars_per_1k_ink": 8.51
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.2254
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1306,
+        "area_px": 5148,
+        "density": 0.25369,
+        "chars": 16,
+        "chars_per_1k_ink": 12.25
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.005
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3386,
+        "area_px": 13608,
+        "density": 0.24882,
+        "chars": 39,
+        "chars_per_1k_ink": 11.52
+      }
     },
     {
       "bbox": [
@@ -112,7 +130,13 @@
           "min": -0.2065
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8945,
+        "area_px": 41625,
+        "density": 0.21489,
+        "chars": 160,
+        "chars_per_1k_ink": 17.89
+      }
     },
     {
       "bbox": [
@@ -141,11 +165,11 @@
         }
       },
       "ink": {
-        "ink_px": 8356,
-        "area_px": 36075,
-        "density": 0.23163,
+        "ink_px": 18413,
+        "area_px": 82325,
+        "density": 0.22366,
         "chars": 335,
-        "chars_per_1k_ink": 40.09
+        "chars_per_1k_ink": 18.19
       }
     },
     {
@@ -224,7 +248,7 @@
         487
       ],
       "category": "Text",
-      "text": "§ 2. The term \"Agency\" as used in this Executive Order means any office,\nadministration, department, division, board, bureau, commission, corporation, institution or\nother unit of government, the expenses of which are paid in whole or in part from the City\nTreasury.",
+      "text": "\u00a7 2. The term \"Agency\" as used in this Executive Order means any office,\nadministration, department, division, board, bureau, commission, corporation, institution or\nother unit of government, the expenses of which are paid in whole or in part from the City\nTreasury.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -258,7 +282,7 @@
         574
       ],
       "category": "Text",
-      "text": "§ 3. Schedules of the appropriations contained in the Mayor's Message which\naccompanied the Executive Budget, or of such appropriations as amended by the City\nCouncil and Board of Estimate in adopting the Expense Budget for the 1975-1976 fiscal\nyear are hereby approved.",
+      "text": "\u00a7 3. Schedules of the appropriations contained in the Mayor's Message which\naccompanied the Executive Budget, or of such appropriations as amended by the City\nCouncil and Board of Estimate in adopting the Expense Budget for the 1975-1976 fiscal\nyear are hereby approved.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -292,7 +316,7 @@
         661
       ],
       "category": "Text",
-      "text": "§ 4. (a) All actions taken in accordance with the New York City Charter, subsequent to February 14, 1975, approving modifications of the supporting schedules as contained in the Mayor's 1975-1976 Budget Message are hereby carried over, effective July 1, 1975.",
+      "text": "\u00a7 4. (a) All actions taken in accordance with the New York City Charter, subsequent to February 14, 1975, approving modifications of the supporting schedules as contained in the Mayor's 1975-1976 Budget Message are hereby carried over, effective July 1, 1975.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -360,7 +384,7 @@
         926
       ],
       "category": "Text",
-      "text": "§ 5. All of the powers of budget modification, as granted in Section 124(a) of the New York City Charter are hereby withdrawn from all agencies except for the following: the Boards of Education and Higher Education, the Community Colleges, the Offices of the Borough Presidents, the Comptroller, the District Attorneys, the President of the City Council and the City Council; provided that the Mayor may, as a condition of making these exceptions, require these agencies to cooperate with the Office of Management and Budget in realizing savings required to meet potential budget deficits that may arise during the fiscal year, and to conform to the terms of certificates governing the apportionment of Personal Service budget appropriations during the fiscal year.",
+      "text": "\u00a7 5. All of the powers of budget modification, as granted in Section 124(a) of the New York City Charter are hereby withdrawn from all agencies except for the following: the Boards of Education and Higher Education, the Community Colleges, the Offices of the Borough Presidents, the Comptroller, the District Attorneys, the President of the City Council and the City Council; provided that the Mayor may, as a condition of making these exceptions, require these agencies to cooperate with the Office of Management and Budget in realizing savings required to meet potential budget deficits that may arise during the fiscal year, and to conform to the terms of certificates governing the apportionment of Personal Service budget appropriations during the fiscal year.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -394,7 +418,7 @@
         976
       ],
       "category": "Text",
-      "text": "§ 6. All agencies shall be governed by the following special terms and conditions in the administration of budget appropriations:",
+      "text": "\u00a7 6. All agencies shall be governed by the following special terms and conditions in the administration of budget appropriations:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -956,43 +980,16 @@
   "ink_coverage": {
     "roi": [
       209,
-      273,
+      0,
       1535,
-      2002
+      2275
     ],
-    "ink_px": 219542,
-    "covered_px": 215029,
-    "covered_fraction": 0.97944,
-    "uncovered_px": 4513,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          377,
-          273,
-          401,
-          1137
-        ],
-        "ink_px": 2017
-      },
-      {
-        "bbox": [
-          1337,
-          1233,
-          1361,
-          1641
-        ],
-        "ink_px": 1059
-      },
-      {
-        "bbox": [
-          617,
-          1233,
-          1049,
-          1257
-        ],
-        "ink_px": 1033
-      }
-    ],
+    "ink_px": 246747,
+    "covered_px": 241284,
+    "covered_fraction": 0.97786,
+    "uncovered_px": 5463,
+    "uncovered_regions": [],
+    "suppressed_regions": 3,
     "cell_px": 24
   }
 }

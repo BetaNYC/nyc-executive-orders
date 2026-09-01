@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 3850,
-        "area_px": 20882,
-        "density": 0.18437,
+        "ink_px": 7472,
+        "area_px": 40779,
+        "density": 0.18323,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1186
       ],
       "category": "Text",
-      "text": "§2. Director of the Office. The Director shall have the following powers and duties:",
+      "text": "\u00a72. Director of the Office. The Director shall have the following powers and duties:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -345,7 +345,7 @@
         1783
       ],
       "category": "List-item",
-      "text": "(i) perform all reviews, make all determinations and give all approvals and certifications to be performed, made or given by the Mayor pursuant to Chapter 13 of the Charter, except for any approvals to be performed pursuant to §317(b) thereof;",
+      "text": "(i) perform all reviews, make all determinations and give all approvals and certifications to be performed, made or given by the Mayor pursuant to Chapter 13 of the Charter, except for any approvals to be performed pursuant to \u00a7317(b) thereof;",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -453,7 +453,7 @@
           "index": 406,
           "token_id": 17851,
           "logprob": -0.0742,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 652,
@@ -601,25 +601,16 @@
   "ink_coverage": {
     "roi": [
       209,
-      270,
+      0,
       1535,
-      1985
+      2256
     ],
-    "ink_px": 159276,
-    "covered_px": 158161,
-    "covered_fraction": 0.993,
-    "uncovered_px": 1115,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          665,
-          774,
-          1073,
-          798
-        ],
-        "ink_px": 1089
-      }
-    ],
+    "ink_px": 163399,
+    "covered_px": 161783,
+    "covered_fraction": 0.99011,
+    "uncovered_px": 1616,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

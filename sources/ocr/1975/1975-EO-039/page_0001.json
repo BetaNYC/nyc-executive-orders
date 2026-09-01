@@ -78,7 +78,7 @@
         1154
       ],
       "category": "Text",
-      "text": "Note—Entire amendment is new.",
+      "text": "Note\u2014Entire amendment is new.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -606,61 +606,53 @@
   "ink_coverage": {
     "roi": [
       220,
-      281,
+      0,
       1618,
-      2063
+      2345
     ],
-    "ink_px": 111472,
+    "ink_px": 112293,
     "covered_px": 91891,
-    "covered_fraction": 0.82434,
-    "uncovered_px": 19581,
+    "covered_fraction": 0.81831,
+    "uncovered_px": 20402,
     "uncovered_regions": [
       {
         "bbox": [
-          436,
-          1697,
+          412,
+          1680,
           964,
-          1865
+          1872
         ],
-        "ink_px": 9302
+        "ink_px": 9348
       },
       {
         "bbox": [
           1084,
-          1697,
+          1704,
           1324,
-          1841
+          1848
         ],
-        "ink_px": 3855
-      },
-      {
-        "bbox": [
-          1420,
-          905,
-          1492,
-          1553
-        ],
-        "ink_px": 2844
+        "ink_px": 3813
       },
       {
         "bbox": [
           988,
-          1697,
+          1704,
           1084,
-          1793
+          1800
         ],
-        "ink_px": 1614
+        "ink_px": 1609
       },
       {
         "bbox": [
-          916,
-          1529,
-          1228,
-          1577
+          1468,
+          72,
+          1588,
+          168
         ],
-        "ink_px": 1061
+        "ink_px": 564
       }
     ],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

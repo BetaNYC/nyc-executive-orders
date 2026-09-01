@@ -345,7 +345,7 @@
         2998
       ],
       "category": "Text",
-      "text": "§ 2. Executive Order No. 123 of September 21, 1964 is hereby rescinded insofar as it provides for the administration and operation of the Municipal Archives and Records Center by the New York Public Library.",
+      "text": "\u00a7 2. Executive Order No. 123 of September 21, 1964 is hereby rescinded insofar as it provides for the administration and operation of the Municipal Archives and Records Center by the New York Public Library.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -393,9 +393,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 725,
-        "area_px": 444440,
-        "density": 0.00163,
+        "ink_px": 797,
+        "area_px": 631430,
+        "density": 0.00126,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -427,11 +427,11 @@
         }
       },
       "ink": {
-        "ink_px": 222,
-        "area_px": 12093,
-        "density": 0.01836,
+        "ink_px": 281,
+        "area_px": 39615,
+        "density": 0.00709,
         "chars": 21,
-        "chars_per_1k_ink": 94.59
+        "chars_per_1k_ink": 74.73
       }
     }
   ],
@@ -464,7 +464,7 @@
           "index": 672,
           "token_id": 17851,
           "logprob": -0.0751,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 240,
@@ -630,15 +630,35 @@
   "ink_coverage": {
     "roi": [
       300,
-      453,
+      0,
       2201,
-      3322
+      3776
     ],
-    "ink_px": 52895,
-    "covered_px": 52282,
-    "covered_fraction": 0.98841,
-    "uncovered_px": 613,
-    "uncovered_regions": [],
+    "ink_px": 560956,
+    "covered_px": 52354,
+    "covered_fraction": 0.09333,
+    "uncovered_px": 508602,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          300,
+          0,
+          2201,
+          168
+        ],
+        "ink_px": 254063
+      },
+      {
+        "bbox": [
+          300,
+          3624,
+          2201,
+          3776
+        ],
+        "ink_px": 253895
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

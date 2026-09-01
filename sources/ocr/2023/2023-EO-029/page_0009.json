@@ -28,7 +28,13 @@
           "min": -0.0007
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2773,
+        "area_px": 28626,
+        "density": 0.09687,
+        "chars": 53,
+        "chars_per_1k_ink": 19.11
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         333
       ],
       "category": "Text",
-      "text": "§ 10. The Chief of Staff shall:",
+      "text": "\u00a7 10. The Chief of Staff shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -344,7 +350,7 @@
         1679
       ],
       "category": "Text",
-      "text": "§ 11. The Chief Advisor shall:",
+      "text": "\u00a7 11. The Chief Advisor shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -524,7 +530,7 @@
           "index": 81,
           "token_id": 17851,
           "logprob": -0.0733,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 485,
@@ -590,7 +596,7 @@
           "index": 803,
           "token_id": 17851,
           "logprob": -0.0005,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -702,15 +708,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 117434,
-    "covered_px": 117434,
+    "ink_px": 120207,
+    "covered_px": 120207,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

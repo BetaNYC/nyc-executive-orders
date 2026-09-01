@@ -28,7 +28,13 @@
           "min": -0.0003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3233,
+        "area_px": 11455,
+        "density": 0.28223,
+        "chars": 19,
+        "chars_per_1k_ink": 5.88
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0972
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2756,
+        "area_px": 7876,
+        "density": 0.34992,
+        "chars": 22,
+        "chars_per_1k_ink": 7.98
+      }
     },
     {
       "bbox": [
@@ -440,7 +452,7 @@
         1090
       ],
       "category": "List-item",
-      "text": "§ 2. The Municipal Service Administrator is hereby charged with the duty and responsibility of immediately developing plans, procedures, priorities and policies for achieving the proper, efficient and most economical use of the telephone systems in all agencies of The City of New York whose telephone expenditures are chargeable to the Municipal Services Administration budget and shall promulgate rules, regulations and orders for the implementation thereof. The Administrator is further vested with the authority and charged with the duty of enforcing and implementing any such rules, regulations and orders.",
+      "text": "\u00a7 2. The Municipal Service Administrator is hereby charged with the duty and responsibility of immediately developing plans, procedures, priorities and policies for achieving the proper, efficient and most economical use of the telephone systems in all agencies of The City of New York whose telephone expenditures are chargeable to the Municipal Services Administration budget and shall promulgate rules, regulations and orders for the implementation thereof. The Administrator is further vested with the authority and charged with the duty of enforcing and implementing any such rules, regulations and orders.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -474,7 +486,7 @@
         1162
       ],
       "category": "List-item",
-      "text": "§ 3. All affected departments and agencies are directed to fully cooperate, assist and immediately implement all policies and orders of the Municipal Services Administrator or his designated representatives, pursuant to this Executive Order.",
+      "text": "\u00a7 3. All affected departments and agencies are directed to fully cooperate, assist and immediately implement all policies and orders of the Municipal Services Administrator or his designated representatives, pursuant to this Executive Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -508,7 +520,7 @@
         1234
       ],
       "category": "List-item",
-      "text": "§ 4. The Municipal Services Administrator shall render periodic reports to the Mayor indicating the policies, implementation, effectiveness and savings achieved as a result of this program.",
+      "text": "\u00a7 4. The Municipal Services Administrator shall render periodic reports to the Mayor indicating the policies, implementation, effectiveness and savings achieved as a result of this program.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -542,7 +554,7 @@
         1299
       ],
       "category": "List-item",
-      "text": "§ 5. All non-mayoral governmental agencies are urged to implement comparable cost reductions and are invited to participate in any plans, procedures, priorities and policies developed as a result of this Executive Order.",
+      "text": "\u00a7 5. All non-mayoral governmental agencies are urged to implement comparable cost reductions and are invited to participate in any plans, procedures, priorities and policies developed as a result of this Executive Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -576,7 +588,7 @@
         1432
       ],
       "category": "List-item",
-      "text": "§ 6. The New York Telephone Company has agreed to cooperate in the imple-\nmentation of equipment expenditure reductions and shall coordinate their efforts with\nthe Municipal Services Administrator and the Office of Management and Budget.\nUpon completion of the equipment reduction program, the New York Telephone\nCompany has consented to continue examining the communication network and shall\nmake further recommendations regarding increasing efficiency and economies.",
+      "text": "\u00a7 6. The New York Telephone Company has agreed to cooperate in the imple-\nmentation of equipment expenditure reductions and shall coordinate their efforts with\nthe Municipal Services Administrator and the Office of Management and Budget.\nUpon completion of the equipment reduction program, the New York Telephone\nCompany has consented to continue examining the communication network and shall\nmake further recommendations regarding increasing efficiency and economies.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -610,7 +622,7 @@
         1459
       ],
       "category": "List-item",
-      "text": "§ 7. This Executive Order shall take effect immediately.",
+      "text": "\u00a7 7. This Executive Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -770,7 +782,7 @@
           "index": 1296,
           "token_id": 17851,
           "logprob": -0.0778,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 357,
@@ -900,88 +912,89 @@
   "ink_coverage": {
     "roi": [
       211,
-      272,
+      0,
       1550,
-      1997
+      2270
     ],
-    "ink_px": 198729,
-    "covered_px": 176931,
-    "covered_fraction": 0.89031,
-    "uncovered_px": 21798,
+    "ink_px": 206420,
+    "covered_px": 182920,
+    "covered_fraction": 0.88615,
+    "uncovered_px": 23500,
     "uncovered_regions": [
       {
         "bbox": [
           355,
-          608,
-          1291,
-          656
+          1632,
+          787,
+          1776
         ],
-        "ink_px": 6170
+        "ink_px": 2818
       },
       {
         "bbox": [
-          355,
-          1640,
+          499,
+          1752,
           811,
-          1880
+          1896
         ],
-        "ink_px": 4595
+        "ink_px": 1776
       },
       {
         "bbox": [
-          811,
-          1592,
+          1099,
+          1608,
           1435,
-          1760
+          1680
         ],
-        "ink_px": 3434
+        "ink_px": 1714
       },
       {
         "bbox": [
-          331,
-          1280,
+          811,
+          1608,
+          1099,
+          1752
+        ],
+        "ink_px": 1708
+      },
+      {
+        "bbox": [
+          1051,
+          1752,
           1219,
-          1520
+          1824
         ],
-        "ink_px": 2635
+        "ink_px": 596
       },
       {
         "bbox": [
-          331,
-          848,
-          403,
-          1256
+          835,
+          1776,
+          1027,
+          1824
         ],
-        "ink_px": 1331
+        "ink_px": 552
       },
       {
         "bbox": [
-          1291,
-          272,
-          1339,
-          584
+          1507,
+          48,
+          1550,
+          144
         ],
-        "ink_px": 703
-      },
-      {
-        "bbox": [
-          1075,
-          1736,
-          1219,
-          1832
-        ],
-        "ink_px": 548
+        "ink_px": 524
       },
       {
         "bbox": [
           1339,
-          920,
+          936,
           1363,
-          1040
+          1032
         ],
-        "ink_px": 462
+        "ink_px": 450
       }
     ],
+    "suppressed_regions": 4,
     "cell_px": 24
   }
 }

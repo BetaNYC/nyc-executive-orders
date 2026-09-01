@@ -24,11 +24,11 @@
         "text": null
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 14260,
-        "density": 0.0,
+        "ink_px": 2,
+        "area_px": 55200,
+        "density": 4e-05,
         "chars": 0,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 0.0
       }
     },
     {
@@ -345,7 +345,7 @@
         1695
       ],
       "category": "Text",
-      "text": "§ 2. I hereby order that section 1 of Emergency Executive Order No. 359, dated March 16, 2023, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby order that section 1 of Emergency Executive Order No. 359, dated March 16, 2023, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -379,7 +379,7 @@
         1965
       ],
       "category": "Text",
-      "text": "§ 3. I hereby direct the Fire and Police Departments, the Department of Buildings, the Sheriff, and other agencies as needed, to enforce the directives set forth in this Order in accordance with their lawful authorities, including Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under Health Code sections 3.07 and 3.11, and enforced by the Department of Health and Mental Hygiene or any other agency.",
+      "text": "\u00a7 3. I hereby direct the Fire and Police Departments, the Department of Buildings, the Sheriff, and other agencies as needed, to enforce the directives set forth in this Order in accordance with their lawful authorities, including Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under Health Code sections 3.07 and 3.11, and enforced by the Department of Health and Mental Hygiene or any other agency.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -398,11 +398,11 @@
         }
       },
       "ink": {
-        "ink_px": 32612,
-        "area_px": 273492,
-        "density": 0.11924,
+        "ink_px": 34815,
+        "area_px": 297888,
+        "density": 0.11687,
         "chars": 550,
-        "chars_per_1k_ink": 16.86
+        "chars_per_1k_ink": 15.8
       }
     }
   ],
@@ -459,7 +459,7 @@
           "index": 757,
           "token_id": 17851,
           "logprob": -0.0054,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 523,
@@ -601,15 +601,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 138408,
-    "covered_px": 138408,
+    "ink_px": 140613,
+    "covered_px": 140613,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

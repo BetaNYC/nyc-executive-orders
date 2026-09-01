@@ -28,7 +28,13 @@
           "min": -0.0298
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4,
+        "area_px": 1058,
+        "density": 0.00378,
+        "chars": 3,
+        "chars_per_1k_ink": 750.0
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         273
       ],
       "category": "Text",
-      "text": "§4. (a) All actions taken in accordance with the New York City Charter, subsequent to March 15th, 1971, approving modifications of the supporting schedules as contained in the Mayor's 1971-72 Budget Message are hereby carried over effective July 1, 1971.",
+      "text": "\u00a74. (a) All actions taken in accordance with the New York City Charter, subsequent to March 15th, 1971, approving modifications of the supporting schedules as contained in the Mayor's 1971-72 Budget Message are hereby carried over effective July 1, 1971.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 2186,
-        "area_px": 57611,
-        "density": 0.03794,
+        "ink_px": 5142,
+        "area_px": 118483,
+        "density": 0.0434,
         "chars": 254,
-        "chars_per_1k_ink": 116.19
+        "chars_per_1k_ink": 49.4
       }
     },
     {
@@ -106,7 +112,7 @@
         674
       ],
       "category": "Text",
-      "text": "§5. All of the powers of budget modification, as granted in Section 124 (a) of the New York City Charter are hereby withdrawn from all agencies except for the following: The Boards of Education and Higher Education, the Community Colleges, the Offices of the Borough Presidents, The Comptroller, the Board of Elections, the District Attorneys, the President of the Council and the City Council; provided that the Mayor may, as a condition of making these exceptions, require these agencies to cooperate with the Vacancy Control Board in realizing savings required to meet potential budget deficits that may arise during the fiscal year.",
+      "text": "\u00a75. All of the powers of budget modification, as granted in Section 124 (a) of the New York City Charter are hereby withdrawn from all agencies except for the following: The Boards of Education and Higher Education, the Community Colleges, the Offices of the Borough Presidents, The Comptroller, the Board of Elections, the District Attorneys, the President of the Council and the City Council; provided that the Mayor may, as a condition of making these exceptions, require these agencies to cooperate with the Vacancy Control Board in realizing savings required to meet potential budget deficits that may arise during the fiscal year.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -140,7 +146,7 @@
         807
       ],
       "category": "Text",
-      "text": "§6. Those agencies not specifically excepted from the provisions of Section 5 herein providing for the withdrawal of the power of budget modifications shall be governed by the following special terms and conditions in the administration of budget appropriations:",
+      "text": "\u00a76. Those agencies not specifically excepted from the provisions of Section 5 herein providing for the withdrawal of the power of budget modifications shall be governed by the following special terms and conditions in the administration of budget appropriations:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -328,7 +334,13 @@
           "min": -0.955
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1671,
+        "area_px": 26753,
+        "density": 0.06246,
+        "chars": 54,
+        "chars_per_1k_ink": 32.32
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -354,7 +366,7 @@
           "index": 71,
           "token_id": 17851,
           "logprob": -0.1394,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 512,
@@ -378,7 +390,7 @@
           "index": 274,
           "token_id": 17851,
           "logprob": -0.0156,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 33,
@@ -526,15 +538,26 @@
   "ink_coverage": {
     "roi": [
       175,
-      222,
+      0,
       1285,
-      1633
+      1856
     ],
-    "ink_px": 42353,
-    "covered_px": 42353,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 102427,
+    "covered_px": 46984,
+    "covered_fraction": 0.45871,
+    "uncovered_px": 55443,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          175,
+          1752,
+          1285,
+          1856
+        ],
+        "ink_px": 55434
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

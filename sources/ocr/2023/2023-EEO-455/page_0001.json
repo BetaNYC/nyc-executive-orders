@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 17025,
+        "area_px": 53572,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -447,7 +447,7 @@
         1997
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct the Fire Department of the City of New York, the New York City Police Department, the Department of Buildings, the Sheriff, and other agencies as needed to immediately enforce the directives set forth in this Order in accordance with their lawful enforcement authorities, including but not limited to Administrative Code sections 15-227(a), 28-105.10.1, and",
+      "text": "\u00a7 2. I hereby direct the Fire Department of the City of New York, the New York City Police Department, the Department of Buildings, the Sheriff, and other agencies as needed to immediately enforce the directives set forth in this Order in accordance with their lawful enforcement authorities, including but not limited to Administrative Code sections 15-227(a), 28-105.10.1, and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -466,11 +466,11 @@
         }
       },
       "ink": {
-        "ink_px": 26862,
-        "area_px": 133744,
-        "density": 0.20085,
+        "ink_px": 38337,
+        "area_px": 199330,
+        "density": 0.19233,
         "chars": 378,
-        "chars_per_1k_ink": 14.07
+        "chars_per_1k_ink": 9.86
       }
     }
   ],
@@ -509,7 +509,7 @@
           "index": 949,
           "token_id": 17851,
           "logprob": -0.0116,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 384,
@@ -669,15 +669,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 211960,
-    "covered_px": 211959,
+    "ink_px": 223435,
+    "covered_px": 223434,
     "covered_fraction": 1.0,
     "uncovered_px": 1,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

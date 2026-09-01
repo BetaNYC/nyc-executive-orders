@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 2829,
-        "area_px": 38760,
-        "density": 0.07299,
+        "ink_px": 14869,
+        "area_px": 122740,
+        "density": 0.12114,
         "chars": 157,
-        "chars_per_1k_ink": 55.5
+        "chars_per_1k_ink": 10.56
       }
     },
     {
@@ -112,7 +112,7 @@
         740
       ],
       "category": "Section-header",
-      "text": "§ 10. The Chief of Staff shall:",
+      "text": "\u00a7 10. The Chief of Staff shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -369,11 +369,11 @@
         }
       },
       "ink": {
-        "ink_px": 17586,
-        "area_px": 109055,
-        "density": 0.16126,
+        "ink_px": 17979,
+        "area_px": 144979,
+        "density": 0.12401,
         "chars": 183,
-        "chars_per_1k_ink": 10.41
+        "chars_per_1k_ink": 10.18
       }
     }
   ],
@@ -394,7 +394,7 @@
           "index": 312,
           "token_id": 17851,
           "logprob": -0.1377,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 54,
@@ -572,15 +572,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 279528,
-    "covered_px": 279527,
-    "covered_fraction": 1.0,
-    "uncovered_px": 1,
+    "ink_px": 292119,
+    "covered_px": 291960,
+    "covered_fraction": 0.99946,
+    "uncovered_px": 159,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

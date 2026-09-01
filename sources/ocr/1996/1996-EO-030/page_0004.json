@@ -28,7 +28,13 @@
           "min": -0.118
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4124,
+        "area_px": 74603,
+        "density": 0.05528,
+        "chars": 81,
+        "chars_per_1k_ink": 19.64
+      }
     },
     {
       "bbox": [
@@ -208,7 +214,7 @@
         1815
       ],
       "category": "List-item",
-      "text": "§ 4. Agency cooperation. All agencies shall cooperate with the OEM in all respects in the implementation of this Order and the transfer to OEM of emergency management functions by April 1, 1996, and further shall provide OEM promptly with all information relevant to the performance of the emergency management functions set forth in this Order, and to collect and make available any data or other information requested by OEM for use in emergency planning. All agencies further shall provide OEM with all appropriate material and equipment currently used for the emergency management functions that are being assumed by OEM pursuant to this Order.",
+      "text": "\u00a7 4. Agency cooperation. All agencies shall cooperate with the OEM in all respects in the implementation of this Order and the transfer to OEM of emergency management functions by April 1, 1996, and further shall provide OEM promptly with all information relevant to the performance of the emergency management functions set forth in this Order, and to collect and make available any data or other information requested by OEM for use in emergency planning. All agencies further shall provide OEM with all appropriate material and equipment currently used for the emergency management functions that are being assumed by OEM pursuant to this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -288,7 +294,7 @@
           "index": 442,
           "token_id": 17851,
           "logprob": -0.0386,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 298,
@@ -430,15 +436,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 69189,
-    "covered_px": 69189,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 73369,
+    "covered_px": 73313,
+    "covered_fraction": 0.99924,
+    "uncovered_px": 56,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

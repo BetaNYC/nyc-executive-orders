@@ -28,7 +28,13 @@
           "min": -0.0003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2,
+        "area_px": 6024,
+        "density": 0.00033,
+        "chars": 22,
+        "chars_per_1k_ink": 11000.0
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.062
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1428,
+        "density": 0.0,
+        "chars": 5,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0076
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3,
+        "area_px": 5325,
+        "density": 0.00056,
+        "chars": 16,
+        "chars_per_1k_ink": 5333.33
+      }
     },
     {
       "bbox": [
@@ -114,8 +132,8 @@
       },
       "ink": {
         "ink_px": 2,
-        "area_px": 37146,
-        "density": 5e-05,
+        "area_px": 86070,
+        "density": 2e-05,
         "chars": 235,
         "chars_per_1k_ink": 117500.0
       }
@@ -366,7 +384,7 @@
         828
       ],
       "category": "Text",
-      "text": "§ 4. The Air Pollution Alert Warning Manual, when issued by the Administrator, and as amended from time to time, shall, in addition to prescribing the criteria for determining the respective stages of the air pollution episode, prescribe the specific measures to be taken by the City departments and agencies and by the private sector in order to carry out the purpose of this order. The Manual and any amendments shall be published in the City Record.",
+      "text": "\u00a7 4. The Air Pollution Alert Warning Manual, when issued by the Administrator, and as amended from time to time, shall, in addition to prescribing the criteria for determining the respective stages of the air pollution episode, prescribe the specific measures to be taken by the City departments and agencies and by the private sector in order to carry out the purpose of this order. The Manual and any amendments shall be published in the City Record.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -400,7 +418,7 @@
         872
       ],
       "category": "Text",
-      "text": "§ 5. Executive Order No. 69 of March 1968 is hereby repealed.",
+      "text": "\u00a7 5. Executive Order No. 69 of March 1968 is hereby repealed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -434,7 +452,7 @@
         921
       ],
       "category": "Text",
-      "text": "§ 6. This order shall take effect immediately.",
+      "text": "\u00a7 6. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -571,7 +589,7 @@
           "index": 583,
           "token_id": 17851,
           "logprob": -0.0195,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 76,
@@ -719,15 +737,26 @@
   "ink_coverage": {
     "roi": [
       142,
-      222,
+      0,
       1048,
-      1633
+      1856
     ],
-    "ink_px": 846,
-    "covered_px": 615,
-    "covered_fraction": 0.72695,
-    "uncovered_px": 231,
-    "uncovered_regions": [],
+    "ink_px": 42150,
+    "covered_px": 620,
+    "covered_fraction": 0.01471,
+    "uncovered_px": 41530,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          142,
+          1776,
+          1048,
+          1856
+        ],
+        "ink_px": 41217
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

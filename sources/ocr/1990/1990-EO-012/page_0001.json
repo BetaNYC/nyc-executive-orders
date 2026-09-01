@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 5383,
-        "area_px": 15957,
-        "density": 0.33734,
+        "ink_px": 14954,
+        "area_px": 41567,
+        "density": 0.35976,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -379,7 +379,7 @@
         1732
       ],
       "category": "Text",
-      "text": "§2. Prior Order Revoked. Executive Order No. 102, dated\nDecember 15, 1986, establishing the Office of the Auditor General, is\nhereby revoked.",
+      "text": "\u00a72. Prior Order Revoked. Executive Order No. 102, dated\nDecember 15, 1986, establishing the Office of the Auditor General, is\nhereby revoked.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -413,7 +413,7 @@
         1797
       ],
       "category": "Text",
-      "text": "§3. This Order shall take effect immediately.",
+      "text": "\u00a73. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -546,7 +546,7 @@
           "index": 651,
           "token_id": 17851,
           "logprob": -0.0401,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 80,
@@ -664,15 +664,16 @@
   "ink_coverage": {
     "roi": [
       209,
-      272,
+      0,
       1535,
-      2000
+      2273
     ],
-    "ink_px": 158429,
-    "covered_px": 158084,
-    "covered_fraction": 0.99782,
-    "uncovered_px": 345,
+    "ink_px": 168506,
+    "covered_px": 167655,
+    "covered_fraction": 0.99495,
+    "uncovered_px": 851,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

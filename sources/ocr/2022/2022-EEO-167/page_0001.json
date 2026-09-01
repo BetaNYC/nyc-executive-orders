@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 30,
-        "area_px": 12992,
-        "density": 0.00231,
+        "ink_px": 63,
+        "area_px": 54984,
+        "density": 0.00115,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -209,7 +209,7 @@
         1065
       ],
       "category": "Text",
-      "text": "NOW THEREFORE, by the power vested in me as Mayor of the City of New York pursuant to law, including Executive Law § 24:",
+      "text": "NOW THEREFORE, by the power vested in me as Mayor of the City of New York pursuant to law, including Executive Law \u00a7 24:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -277,7 +277,7 @@
         1292
       ],
       "category": "Text",
-      "text": "§ 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -426,7 +426,7 @@
           "index": 561,
           "token_id": 17851,
           "logprob": -0.002,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 222,
@@ -444,7 +444,7 @@
           "index": 440,
           "token_id": 16625,
           "logprob": -0.0008,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 240,
@@ -562,15 +562,16 @@
   "ink_coverage": {
     "roi": [
       203,
-      263,
+      0,
       1494,
-      1931
+      2195
     ],
-    "ink_px": 63306,
-    "covered_px": 62950,
+    "ink_px": 63339,
+    "covered_px": 62983,
     "covered_fraction": 0.99438,
     "uncovered_px": 356,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

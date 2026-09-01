@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 17784,
+        "area_px": 54720,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -311,7 +311,7 @@
         1657
       ],
       "category": "Text",
-      "text": "§ 2. DOC, in consultation with the Law Department, shall regularly update the Mayor regarding additional suspensions that can be lapsed to comply with the implementation action plan developed pursuant to Section 2 of Emergency Executive Order 1, dated January 5, 2026, and with applicable laws and regulations that presently do not apply pursuant to Emergency Executive Orders.",
+      "text": "\u00a7 2. DOC, in consultation with the Law Department, shall regularly update the Mayor regarding additional suspensions that can be lapsed to comply with the implementation action plan developed pursuant to Section 2 of Emergency Executive Order 1, dated January 5, 2026, and with applicable laws and regulations that presently do not apply pursuant to Emergency Executive Orders.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -345,7 +345,7 @@
         1771
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -427,11 +427,11 @@
         }
       },
       "ink": {
-        "ink_px": 65,
-        "area_px": 5250,
-        "density": 0.01238,
+        "ink_px": 836,
+        "area_px": 28700,
+        "density": 0.02913,
         "chars": 26,
-        "chars_per_1k_ink": 400.0
+        "chars_per_1k_ink": 31.1
       }
     }
   ],
@@ -464,7 +464,7 @@
           "index": 672,
           "token_id": 17851,
           "logprob": -0.0129,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 425,
@@ -630,15 +630,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 33837,
-    "covered_px": 33837,
+    "ink_px": 34608,
+    "covered_px": 34608,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

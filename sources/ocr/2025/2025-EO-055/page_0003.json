@@ -28,7 +28,13 @@
           "min": -0.0003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2379,
+        "area_px": 18648,
+        "density": 0.12757,
+        "chars": 37,
+        "chars_per_1k_ink": 15.55
+      }
     },
     {
       "bbox": [
@@ -140,7 +146,7 @@
         739
       ],
       "category": "Section-header",
-      "text": "§ 4. Workforce Data.",
+      "text": "\u00a7 4. Workforce Data.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -242,7 +248,7 @@
         1285
       ],
       "category": "Text",
-      "text": "§ 5. Mayoral agencies shall cooperate with and provide assistance to the Office of Talent and Workforce Development, which shall include the sharing of requested information and agency data in a timely manner pursuant to sections 3(f) and 4(a) of this order, and the leveraging of City procurements to further advance citywide community hiring goals as appropriate.",
+      "text": "\u00a7 5. Mayoral agencies shall cooperate with and provide assistance to the Office of Talent and Workforce Development, which shall include the sharing of requested information and agency data in a timely manner pursuant to sections 3(f) and 4(a) of this order, and the leveraging of City procurements to further advance citywide community hiring goals as appropriate.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -276,7 +282,7 @@
         1401
       ],
       "category": "Text",
-      "text": "§ 6. Executive Order 70, dated June 21, 2021, Executive Order 22, dated August 15, 2022, and Executive Order 42, dated July 10, 2024, are hereby REVOKED.",
+      "text": "\u00a7 6. Executive Order 70, dated June 21, 2021, Executive Order 22, dated August 15, 2022, and Executive Order 42, dated July 10, 2024, are hereby REVOKED.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -310,7 +316,7 @@
         1480
       ],
       "category": "Text",
-      "text": "§ 7. This order shall take effect immediately.",
+      "text": "\u00a7 7. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -383,7 +389,7 @@
           "index": 268,
           "token_id": 17851,
           "logprob": -0.8937,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 193,
@@ -443,7 +449,7 @@
           "index": 466,
           "token_id": 17851,
           "logprob": -0.0006,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 91,
@@ -561,15 +567,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 117679,
-    "covered_px": 117679,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 120129,
+    "covered_px": 120058,
+    "covered_fraction": 0.99941,
+    "uncovered_px": 71,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1333,
-        "area_px": 34540,
-        "density": 0.03859,
+        "ink_px": 1862,
+        "area_px": 51920,
+        "density": 0.03586,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -311,7 +311,7 @@
         1850
       ],
       "category": "Text",
-      "text": "Whereas, Executive Law §24 authorizes the Mayor to promulgate local emergency orders upon a finding that the public safety is imperiled by the event of a public emergency or in the event of reasonable apprehension of immediate danger thereof, to protect life and property and to bring an emergency situation under control;",
+      "text": "Whereas, Executive Law \u00a724 authorizes the Mayor to promulgate local emergency orders upon a finding that the public safety is imperiled by the event of a public emergency or in the event of reasonable apprehension of immediate danger thereof, to protect life and property and to bring an emergency situation under control;",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -364,11 +364,11 @@
         }
       },
       "ink": {
-        "ink_px": 2977,
-        "area_px": 106053,
-        "density": 0.02807,
+        "ink_px": 3162,
+        "area_px": 124338,
+        "density": 0.02543,
         "chars": 97,
-        "chars_per_1k_ink": 32.58
+        "chars_per_1k_ink": 30.68
       }
     },
     {
@@ -397,7 +397,13 @@
           "min": -0.0031
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3464,
+        "area_px": 122100,
+        "density": 0.02837,
+        "chars": 108,
+        "chars_per_1k_ink": 31.18
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -465,7 +471,7 @@
           "index": 672,
           "token_id": 16625,
           "logprob": -0.0044,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 843,
@@ -595,15 +601,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 71574,
-    "covered_px": 71572,
-    "covered_fraction": 0.99997,
-    "uncovered_px": 2,
+    "ink_px": 75757,
+    "covered_px": 75750,
+    "covered_fraction": 0.99991,
+    "uncovered_px": 7,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

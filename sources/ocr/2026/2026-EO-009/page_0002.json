@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1403,
-        "area_px": 32490,
-        "density": 0.04318,
+        "ink_px": 3456,
+        "area_px": 77976,
+        "density": 0.04432,
         "chars": 142,
-        "chars_per_1k_ink": 101.21
+        "chars_per_1k_ink": 41.09
       }
     },
     {
@@ -112,7 +112,7 @@
         992
       ],
       "category": "Text",
-      "text": "§ 2. **Combatting Hidden Junk Fees.** DCWP is directed to consider and take any appropriate actions it deems warranted to combat hidden junk fees, including the promulgation of rules, pursuant to its authority under subchapters 1 and 2 of Chapter 5 of Title 20 of the Administrative Code of the City of New York, Chapter 64 of the New York City Charter, and other applicable law, and make recommendations to the Task Force regarding new legislation that may be proposed relating to hidden junk fees.",
+      "text": "\u00a7 2. **Combatting Hidden Junk Fees.** DCWP is directed to consider and take any appropriate actions it deems warranted to combat hidden junk fees, including the promulgation of rules, pursuant to its authority under subchapters 1 and 2 of Chapter 5 of Title 20 of the Administrative Code of the City of New York, Chapter 64 of the New York City Charter, and other applicable law, and make recommendations to the Task Force regarding new legislation that may be proposed relating to hidden junk fees.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         1186
       ],
       "category": "Text",
-      "text": "§ 3. **Hidden Junk Fees Compliance and Enforcement.** As soon as practicable, DCWP shall monitor for compliance, investigate potential violations, and take such compliance and enforcement actions as are authorized by applicable law and any applicable rules and any rules promulgated to combat hidden junk fees.",
+      "text": "\u00a7 3. **Hidden Junk Fees Compliance and Enforcement.** As soon as practicable, DCWP shall monitor for compliance, investigate potential violations, and take such compliance and enforcement actions as are authorized by applicable law and any applicable rules and any rules promulgated to combat hidden junk fees.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -180,7 +180,7 @@
         1264
       ],
       "category": "Text",
-      "text": "§ 4. Effective Date. This Order shall take effect immediately.",
+      "text": "\u00a7 4. Effective Date. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -261,7 +261,13 @@
           "min": -0.0
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 13,
+        "area_px": 648,
+        "density": 0.02006,
+        "chars": 1,
+        "chars_per_1k_ink": 76.92
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -287,7 +293,7 @@
           "index": 283,
           "token_id": 17851,
           "logprob": -0.4838,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 288,
@@ -459,15 +465,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 38908,
-    "covered_px": 38908,
+    "ink_px": 40974,
+    "covered_px": 40974,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

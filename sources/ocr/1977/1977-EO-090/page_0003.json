@@ -28,7 +28,13 @@
           "min": -0.4301
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1307,
+        "area_px": 6360,
+        "density": 0.2055,
+        "chars": 25,
+        "chars_per_1k_ink": 19.13
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 15920,
-        "area_px": 73548,
-        "density": 0.21646,
+        "ink_px": 38242,
+        "area_px": 181600,
+        "density": 0.21058,
         "chars": 764,
-        "chars_per_1k_ink": 47.99
+        "chars_per_1k_ink": 19.98
       }
     },
     {
@@ -684,7 +690,7 @@
         1782
       ],
       "category": "Text",
-      "text": "Section 7. Financial Plan—The provision of this Executive Order are subject to any",
+      "text": "Section 7. Financial Plan\u2014The provision of this Executive Order are subject to any",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -839,11 +845,11 @@
         }
       },
       "ink": {
-        "ink_px": 42,
-        "area_px": 258,
-        "density": 0.16279,
+        "ink_px": 176,
+        "area_px": 860,
+        "density": 0.20465,
         "chars": 4,
-        "chars_per_1k_ink": 95.24
+        "chars_per_1k_ink": 22.73
       }
     },
     {
@@ -873,11 +879,11 @@
         }
       },
       "ink": {
-        "ink_px": 434,
-        "area_px": 2776,
-        "density": 0.15634,
+        "ink_px": 1771,
+        "area_px": 8328,
+        "density": 0.21266,
         "chars": 24,
-        "chars_per_1k_ink": 55.3
+        "chars_per_1k_ink": 13.55
       }
     }
   ],
@@ -910,7 +916,7 @@
           "index": 1868,
           "token_id": 2293,
           "logprob": -0.1712,
-          "text": "—"
+          "text": "\u2014"
         },
         {
           "index": 1268,
@@ -1076,34 +1082,16 @@
   "ink_coverage": {
     "roi": [
       213,
-      275,
+      0,
       1562,
-      2016
+      2292
     ],
-    "ink_px": 265691,
-    "covered_px": 263405,
-    "covered_fraction": 0.9914,
-    "uncovered_px": 2286,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          405,
-          1715,
-          597,
-          1835
-        ],
-        "ink_px": 825
-      },
-      {
-        "bbox": [
-          1365,
-          1235,
-          1389,
-          1763
-        ],
-        "ink_px": 821
-      }
-    ],
+    "ink_px": 295496,
+    "covered_px": 288468,
+    "covered_fraction": 0.97622,
+    "uncovered_px": 7028,
+    "uncovered_regions": [],
+    "suppressed_regions": 3,
     "cell_px": 24
   }
 }

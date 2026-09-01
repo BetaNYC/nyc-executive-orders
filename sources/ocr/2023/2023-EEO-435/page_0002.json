@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 491,
-        "area_px": 18004,
-        "density": 0.02727,
+        "ink_px": 8776,
+        "area_px": 102880,
+        "density": 0.0853,
         "chars": 120,
-        "chars_per_1k_ink": 244.4
+        "chars_per_1k_ink": 13.67
       }
     },
     {
@@ -248,7 +248,7 @@
         1708
       ],
       "category": "Text",
-      "text": "§ 2. In order to provide continued assistance to restaurants and bars recovering from the employment, financial and economic effects of COVID-19, I hereby direct the Department of Transportation to continue the Open Restaurants program.",
+      "text": "\u00a7 2. In order to provide continued assistance to restaurants and bars recovering from the employment, financial and economic effects of COVID-19, I hereby direct the Department of Transportation to continue the Open Restaurants program.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -282,7 +282,7 @@
         1940
       ],
       "category": "Text",
-      "text": "§ 3. I hereby suspend the following provisions of the New York City Administrative Code (\"Ad. Code\") to the extent necessary to provide for the continued administration and operation of the Open Restaurants program, subject to applicable guidance issued by the Department of Transportation, the Department of Health and Mental Hygiene, the New York State Department of Health, and the State Liquor Authority:",
+      "text": "\u00a7 3. I hereby suspend the following provisions of the New York City Administrative Code (\"Ad. Code\") to the extent necessary to provide for the continued administration and operation of the Open Restaurants program, subject to applicable guidance issued by the Department of Transportation, the Department of Health and Mental Hygiene, the New York State Department of Health, and the State Liquor Authority:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -332,7 +332,7 @@
           "index": 757,
           "token_id": 17851,
           "logprob": -0.027,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 542,
@@ -504,15 +504,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 232142,
-    "covered_px": 232136,
-    "covered_fraction": 0.99997,
-    "uncovered_px": 6,
+    "ink_px": 240507,
+    "covered_px": 240421,
+    "covered_fraction": 0.99964,
+    "uncovered_px": 86,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

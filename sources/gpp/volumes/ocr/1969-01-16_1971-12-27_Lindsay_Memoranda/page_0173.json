@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 6127,
-        "area_px": 74529,
-        "density": 0.08221,
+        "ink_px": 7427,
+        "area_px": 94731,
+        "density": 0.0784,
         "chars": 20,
-        "chars_per_1k_ink": 3.26
+        "chars_per_1k_ink": 2.69
       }
     },
     {
@@ -59,9 +59,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 2772,
-        "area_px": 35378,
-        "density": 0.07835,
+        "ink_px": 6095,
+        "area_px": 74746,
+        "density": 0.08154,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -93,11 +93,11 @@
         }
       },
       "ink": {
-        "ink_px": 16,
-        "area_px": 2995,
-        "density": 0.00534,
+        "ink_px": 3639,
+        "area_px": 32346,
+        "density": 0.1125,
         "chars": 19,
-        "chars_per_1k_ink": 1187.5
+        "chars_per_1k_ink": 5.22
       }
     },
     {
@@ -448,7 +448,7 @@
         2740
       ],
       "category": "Table",
-      "text": "<table><tr><td>KTO Realty Corp.</td><td>Voleur Realty Corp.</td></tr><tr><td>LRC Realty Corp.</td><td>Gerbil Realty Corp.</td></tr><tr><td>Trauma Third Realty Corp.</td><td>Fresno Realty Corp.</td></tr><tr><td>Bar Sel Realty Corp.</td><td>Delmar Associates, Inc.</td></tr><tr><td>Fox Sel Realty Corp.</td><td>168 Lenox Corp.</td></tr><tr><td>Vixen Realty Corp.</td><td>976 Fox Street Corp.</td></tr><tr><td>Possum Realty Corp.</td><td>440 West 164 St. Corp.</td></tr><tr><td>Fox Second Realty Corp.</td><td>1835 - 7th Avenue Corp.</td></tr><tr><td>Shark Realty Corp.</td><td>Dromedary Realty Corp.</td></tr><tr><td>1445 Boston Road Corp.</td><td>G.R.A.W. Associates, Inc.</td></tr><tr><td>120 St. & 7th Ave. Realty Corp.</td><td>My Owne Properties, Inc.</td></tr><tr><td>1084 Home St. Corp.</td><td>991 Amsterdam Ave. Corp.</td></tr><tr><td>Bumble Bee Realty Corp.</td><td>1451 Boston Road Corp.</td></tr><tr><td>Morelite Construction Corp.</td><td>Tortoise Realty Corp.</td></tr><tr><td>A & M Realty Corp.</td><td>4141 DeKalb Corp.</td></tr><tr><td>371 Beekman Realty</td><td>153 Lenox Corp.</td></tr><tr><td>Bo Brådhurst Realty Corp.</td><td></td></tr><tr><td>60 West 119th Street Corp.</td><td></td></tr><tr><td>Berlac Realty Corp.</td><td></td></tr></table>",
+      "text": "<table><tr><td>KTO Realty Corp.</td><td>Voleur Realty Corp.</td></tr><tr><td>LRC Realty Corp.</td><td>Gerbil Realty Corp.</td></tr><tr><td>Trauma Third Realty Corp.</td><td>Fresno Realty Corp.</td></tr><tr><td>Bar Sel Realty Corp.</td><td>Delmar Associates, Inc.</td></tr><tr><td>Fox Sel Realty Corp.</td><td>168 Lenox Corp.</td></tr><tr><td>Vixen Realty Corp.</td><td>976 Fox Street Corp.</td></tr><tr><td>Possum Realty Corp.</td><td>440 West 164 St. Corp.</td></tr><tr><td>Fox Second Realty Corp.</td><td>1835 - 7th Avenue Corp.</td></tr><tr><td>Shark Realty Corp.</td><td>Dromedary Realty Corp.</td></tr><tr><td>1445 Boston Road Corp.</td><td>G.R.A.W. Associates, Inc.</td></tr><tr><td>120 St. & 7th Ave. Realty Corp.</td><td>My Owne Properties, Inc.</td></tr><tr><td>1084 Home St. Corp.</td><td>991 Amsterdam Ave. Corp.</td></tr><tr><td>Bumble Bee Realty Corp.</td><td>1451 Boston Road Corp.</td></tr><tr><td>Morelite Construction Corp.</td><td>Tortoise Realty Corp.</td></tr><tr><td>A & M Realty Corp.</td><td>4141 DeKalb Corp.</td></tr><tr><td>371 Beekman Realty</td><td>153 Lenox Corp.</td></tr><tr><td>Bo Br\u00e5dhurst Realty Corp.</td><td></td></tr><tr><td>60 West 119th Street Corp.</td><td></td></tr><tr><td>Berlac Realty Corp.</td><td></td></tr></table>",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -504,7 +504,7 @@
           "index": 1130,
           "token_id": 3785,
           "logprob": -0.5192,
-          "text": "å"
+          "text": "\u00e5"
         },
         {
           "index": 569,
@@ -670,25 +670,35 @@
   "ink_coverage": {
     "roi": [
       294,
-      384,
+      0,
       2158,
-      2819
+      3204
     ],
-    "ink_px": 88227,
-    "covered_px": 86456,
-    "covered_fraction": 0.97993,
-    "uncovered_px": 1771,
+    "ink_px": 475271,
+    "covered_px": 93402,
+    "covered_fraction": 0.19652,
+    "uncovered_px": 381869,
     "uncovered_regions": [
       {
         "bbox": [
-          822,
-          792,
-          1518,
-          816
+          294,
+          3072,
+          2158,
+          3204
         ],
-        "ink_px": 1771
+        "ink_px": 211205
+      },
+      {
+        "bbox": [
+          294,
+          0,
+          2158,
+          120
+        ],
+        "ink_px": 168885
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

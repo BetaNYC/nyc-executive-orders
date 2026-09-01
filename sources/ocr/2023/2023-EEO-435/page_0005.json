@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 8482,
-        "area_px": 66872,
-        "density": 0.12684,
+        "ink_px": 20461,
+        "area_px": 151748,
+        "density": 0.13484,
         "chars": 261,
-        "chars_per_1k_ink": 30.77
+        "chars_per_1k_ink": 12.76
       }
     },
     {
@@ -316,7 +316,7 @@
         1595
       ],
       "category": "Text",
-      "text": "§ 8. I hereby suspend the following provisions of the Ad. Code, the RCNY, and the ZR, to the extent necessary for the continued administration and operation of the Open Storefronts Program as described in the DOT Guidelines:",
+      "text": "\u00a7 8. I hereby suspend the following provisions of the Ad. Code, the RCNY, and the ZR, to the extent necessary for the continued administration and operation of the Open Storefronts Program as described in the DOT Guidelines:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -437,11 +437,11 @@
         }
       },
       "ink": {
-        "ink_px": 12615,
-        "area_px": 87448,
-        "density": 0.14426,
+        "ink_px": 13491,
+        "area_px": 102880,
+        "density": 0.13113,
         "chars": 191,
-        "chars_per_1k_ink": 15.14
+        "chars_per_1k_ink": 14.16
       }
     },
     {
@@ -470,7 +470,13 @@
           "min": -0.0001
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 85,
+        "area_px": 748,
+        "density": 0.11364,
+        "chars": 1,
+        "chars_per_1k_ink": 11.76
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -496,7 +502,7 @@
           "index": 873,
           "token_id": 17851,
           "logprob": -0.0469,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 52,
@@ -668,15 +674,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 257535,
-    "covered_px": 257535,
+    "ink_px": 270475,
+    "covered_px": 270475,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

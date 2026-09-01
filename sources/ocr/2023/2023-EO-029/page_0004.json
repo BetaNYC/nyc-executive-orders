@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 4898,
-        "area_px": 72296,
-        "density": 0.06775,
+        "ink_px": 16022,
+        "area_px": 201396,
+        "density": 0.07955,
         "chars": 332,
-        "chars_per_1k_ink": 67.78
+        "chars_per_1k_ink": 20.72
       }
     },
     {
@@ -146,7 +146,7 @@
         916
       ],
       "category": "Text",
-      "text": "§ 5. The Deputy Mayor for Economic and Workforce Development shall:",
+      "text": "\u00a7 5. The Deputy Mayor for Economic and Workforce Development shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -462,7 +462,7 @@
           "index": 407,
           "token_id": 17851,
           "logprob": -0.0288,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 360,
@@ -640,15 +640,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 137285,
-    "covered_px": 137285,
+    "ink_px": 148409,
+    "covered_px": 148409,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

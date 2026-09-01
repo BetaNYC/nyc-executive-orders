@@ -28,7 +28,13 @@
           "min": -0.0101
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1151,
+        "area_px": 7155,
+        "density": 0.16087,
+        "chars": 17,
+        "chars_per_1k_ink": 14.77
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0053
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 871,
+        "area_px": 6723,
+        "density": 0.12956,
+        "chars": 16,
+        "chars_per_1k_ink": 18.37
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0024
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 631,
+        "area_px": 7425,
+        "density": 0.08498,
+        "chars": 15,
+        "chars_per_1k_ink": 23.77
+      }
     },
     {
       "bbox": [
@@ -128,7 +146,7 @@
         657
       ],
       "category": "List-item",
-      "text": "§ 7. Executive Order No. 53, dated January 29, 1993, is hereby repealed.",
+      "text": "\u00a7 7. Executive Order No. 53, dated January 29, 1993, is hereby repealed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -162,7 +180,7 @@
         782
       ],
       "category": "List-item",
-      "text": "§ 8. This Order shall take effect immediately.",
+      "text": "\u00a7 8. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -300,7 +318,7 @@
           "index": 221,
           "token_id": 17851,
           "logprob": -0.0028,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 78,
@@ -418,25 +436,26 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 29593,
-    "covered_px": 21716,
-    "covered_fraction": 0.73382,
-    "uncovered_px": 7877,
+    "ink_px": 32711,
+    "covered_px": 24369,
+    "covered_fraction": 0.74498,
+    "uncovered_px": 8342,
     "uncovered_regions": [
       {
         "bbox": [
-          924,
-          792,
-          1476,
-          1032
+          1332,
+          168,
+          1452,
+          192
         ],
-        "ink_px": 7575
+        "ink_px": 417
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

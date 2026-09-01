@@ -28,7 +28,13 @@
           "min": -1.6624
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 622,
+        "area_px": 13823,
+        "density": 0.045,
+        "chars": 33,
+        "chars_per_1k_ink": 53.05
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.2255
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 357,
+        "area_px": 7263,
+        "density": 0.04915,
+        "chars": 23,
+        "chars_per_1k_ink": 64.43
+      }
     },
     {
       "bbox": [
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 11219,
-        "area_px": 125235,
-        "density": 0.08958,
+        "ink_px": 11269,
+        "area_px": 134090,
+        "density": 0.08404,
         "chars": 143,
-        "chars_per_1k_ink": 12.75
+        "chars_per_1k_ink": 12.69
       }
     },
     {
@@ -100,7 +112,7 @@
         488
       ],
       "category": "Text",
-      "text": "§4. Paragraph c of section 4 of Executive Order No. 2, dated January 1, 1994, as amended, is amended to read as follows:",
+      "text": "\u00a74. Paragraph c of section 4 of Executive Order No. 2, dated January 1, 1994, as amended, is amended to read as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -168,7 +180,7 @@
         806
       ],
       "category": "Text",
-      "text": "§5. All references to the Deputy Mayor for Operations in any other executive order or directive shall hereafter be deemed to refer to the First Deputy Mayor designated pursuant to this Order.",
+      "text": "\u00a75. All references to the Deputy Mayor for Operations in any other executive order or directive shall hereafter be deemed to refer to the First Deputy Mayor designated pursuant to this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -202,7 +214,7 @@
         867
       ],
       "category": "Text",
-      "text": "§6. This Order shall take effect immediately.",
+      "text": "\u00a76. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -305,7 +317,7 @@
           "index": 211,
           "token_id": 17851,
           "logprob": -0.354,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 40,
@@ -453,15 +465,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 73757,
-    "covered_px": 73645,
-    "covered_fraction": 0.99848,
-    "uncovered_px": 112,
+    "ink_px": 75132,
+    "covered_px": 74674,
+    "covered_fraction": 0.9939,
+    "uncovered_px": 458,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

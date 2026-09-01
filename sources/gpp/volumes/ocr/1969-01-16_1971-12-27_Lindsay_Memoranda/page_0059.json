@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 2734,
-        "area_px": 11544,
-        "density": 0.23683,
+        "ink_px": 2865,
+        "area_px": 12358,
+        "density": 0.23183,
         "chars": 20,
-        "chars_per_1k_ink": 7.32
+        "chars_per_1k_ink": 6.98
       }
     },
     {
@@ -58,9 +58,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 18749,
-        "area_px": 48392,
-        "density": 0.38744,
+        "ink_px": 25954,
+        "area_px": 73640,
+        "density": 0.35244,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -93,8 +93,8 @@
       },
       "ink": {
         "ink_px": 5836,
-        "area_px": 29253,
-        "density": 0.1995,
+        "area_px": 30447,
+        "density": 0.19168,
         "chars": 19,
         "chars_per_1k_ink": 3.26
       }
@@ -669,7 +669,13 @@
           "min": -0.0008
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 544,
+        "area_px": 5217,
+        "density": 0.10427,
+        "chars": 4,
+        "chars_per_1k_ink": 7.35
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -867,34 +873,44 @@
   "ink_coverage": {
     "roi": [
       305,
-      383,
+      0,
       2243,
-      2810
+      3194
     ],
-    "ink_px": 155971,
-    "covered_px": 149120,
-    "covered_fraction": 0.95608,
-    "uncovered_px": 6851,
+    "ink_px": 526392,
+    "covered_px": 156869,
+    "covered_fraction": 0.29801,
+    "uncovered_px": 369523,
     "uncovered_regions": [
       {
         "bbox": [
-          329,
-          551,
-          545,
-          719
+          305,
+          3048,
+          2243,
+          3194
         ],
-        "ink_px": 5752
+        "ink_px": 189384
+      },
+      {
+        "bbox": [
+          305,
+          0,
+          2243,
+          120
+        ],
+        "ink_px": 173230
       },
       {
         "bbox": [
           1913,
-          479,
+          480,
           2057,
-          599
+          600
         ],
-        "ink_px": 860
+        "ink_px": 817
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

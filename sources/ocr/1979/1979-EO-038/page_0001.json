@@ -146,7 +146,7 @@
         931
       ],
       "category": "Text",
-      "text": "§ 2. Executive Order No. 34, dated September 7, 1979 is hereby revoked.",
+      "text": "\u00a7 2. Executive Order No. 34, dated September 7, 1979 is hereby revoked.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -180,7 +180,7 @@
         953
       ],
       "category": "Text",
-      "text": "§ 3. This Order shall take effect immediately.",
+      "text": "\u00a7 3. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -316,7 +316,7 @@
           "index": 290,
           "token_id": 17851,
           "logprob": -0.0469,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 444,
@@ -340,7 +340,7 @@
           "index": 350,
           "token_id": 17851,
           "logprob": -0.0187,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 291,
@@ -470,61 +470,80 @@
   "ink_coverage": {
     "roi": [
       207,
-      269,
+      0,
       1520,
-      1972
+      2242
     ],
-    "ink_px": 53636,
+    "ink_px": 54685,
     "covered_px": 34251,
-    "covered_fraction": 0.63858,
-    "uncovered_px": 19385,
+    "covered_fraction": 0.62633,
+    "uncovered_px": 20434,
     "uncovered_regions": [
       {
         "bbox": [
-          327,
-          653,
-          1407,
-          1013
-        ],
-        "ink_px": 9413
-      },
-      {
-        "bbox": [
-          807,
-          1205,
+          951,
+          1200,
           1335,
-          1469
+          1464
         ],
-        "ink_px": 6152
+        "ink_px": 3679
       },
       {
         "bbox": [
           1191,
-          1157,
+          1152,
           1431,
-          1253
+          1248
         ],
-        "ink_px": 1623
+        "ink_px": 1647
+      },
+      {
+        "bbox": [
+          807,
+          1200,
+          1047,
+          1272
+        ],
+        "ink_px": 1547
       },
       {
         "bbox": [
           1311,
-          1277,
+          1272,
           1479,
-          1349
+          1344
         ],
-        "ink_px": 1108
+        "ink_px": 1126
+      },
+      {
+        "bbox": [
+          903,
+          1272,
+          1095,
+          1344
+        ],
+        "ink_px": 889
       },
       {
         "bbox": [
           1455,
-          1157,
+          1152,
           1520,
-          1229
+          1224
         ],
-        "ink_px": 664
+        "ink_px": 668
+      },
+      {
+        "bbox": [
+          1479,
+          72,
+          1520,
+          144
+        ],
+        "ink_px": 659
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 3092,
-        "area_px": 9000,
-        "density": 0.34356,
+        "ink_px": 17374,
+        "area_px": 42600,
+        "density": 0.40784,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -277,7 +277,7 @@
         1639
       ],
       "category": "List-item",
-      "text": "§ 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 and subsequently extended most recently in Emergency Executive Order 65 dated September 3, 2014, is hereby extended for five days.",
+      "text": "\u00a7 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 and subsequently extended most recently in Emergency Executive Order 65 dated September 3, 2014, is hereby extended for five days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1777
       ],
       "category": "List-item",
-      "text": "§ 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -374,7 +374,7 @@
         2157
       ],
       "category": "Page-footer",
-      "text": "© Printed on paper containing 30% post-consumer material.",
+      "text": "\u00a9 Printed on paper containing 30% post-consumer material.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -392,7 +392,13 @@
           "min": -0.6001
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1831,
+        "area_px": 9269,
+        "density": 0.19754,
+        "chars": 57,
+        "chars_per_1k_ink": 31.13
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -418,7 +424,7 @@
           "index": 770,
           "token_id": 20043,
           "logprob": -0.6001,
-          "text": "©"
+          "text": "\u00a9"
         },
         {
           "index": 528,
@@ -590,15 +596,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 136400,
-    "covered_px": 136398,
+    "ink_px": 152513,
+    "covered_px": 152511,
     "covered_fraction": 0.99999,
     "uncovered_px": 2,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

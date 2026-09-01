@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 55776,
-        "area_px": 268128,
-        "density": 0.20802,
+        "ink_px": 71007,
+        "area_px": 345420,
+        "density": 0.20557,
         "chars": 998,
-        "chars_per_1k_ink": 17.89
+        "chars_per_1k_ink": 14.05
       }
     },
     {
@@ -78,7 +78,7 @@
         840
       ],
       "category": "Text",
-      "text": "§ 2. This Executive Order shall take effect immediately and expire on March 31, 1980.",
+      "text": "\u00a7 2. This Executive Order shall take effect immediately and expire on March 31, 1980.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -162,7 +162,7 @@
           "index": 331,
           "token_id": 17851,
           "logprob": -0.0936,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 44,
@@ -334,34 +334,16 @@
   "ink_coverage": {
     "roi": [
       209,
-      272,
+      0,
       1535,
-      1994
+      2267
     ],
-    "ink_px": 83654,
-    "covered_px": 71977,
-    "covered_fraction": 0.86041,
-    "uncovered_px": 11677,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          425,
-          704,
-          1457,
-          1040
-        ],
-        "ink_px": 7419
-      },
-      {
-        "bbox": [
-          857,
-          872,
-          1289,
-          992
-        ],
-        "ink_px": 3724
-      }
-    ],
+    "ink_px": 99680,
+    "covered_px": 87208,
+    "covered_fraction": 0.87488,
+    "uncovered_px": 12472,
+    "uncovered_regions": [],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

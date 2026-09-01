@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 887,
-        "area_px": 12012,
-        "density": 0.07384,
+        "ink_px": 2546,
+        "area_px": 55440,
+        "density": 0.04592,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -209,7 +209,7 @@
         1061
       ],
       "category": "Text",
-      "text": "NOW THEREFORE, by the power vested in me as Mayor of the City of New York pursuant to law, including Executive Law § 24:",
+      "text": "NOW THEREFORE, by the power vested in me as Mayor of the City of New York pursuant to law, including Executive Law \u00a7 24:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -277,7 +277,7 @@
         1289
       ],
       "category": "Text",
-      "text": "§ 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -426,13 +426,13 @@
           "index": 440,
           "token_id": 16625,
           "logprob": -0.0019,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 562,
           "token_id": 17851,
           "logprob": -0.0017,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 505,
@@ -562,25 +562,16 @@
   "ink_coverage": {
     "roi": [
       203,
-      263,
+      0,
       1494,
-      1931
+      2195
     ],
-    "ink_px": 85763,
-    "covered_px": 85246,
-    "covered_fraction": 0.99397,
+    "ink_px": 87422,
+    "covered_px": 86905,
+    "covered_fraction": 0.99409,
     "uncovered_px": 517,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          899,
-          1439,
-          1211,
-          1463
-        ],
-        "ink_px": 516
-      }
-    ],
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

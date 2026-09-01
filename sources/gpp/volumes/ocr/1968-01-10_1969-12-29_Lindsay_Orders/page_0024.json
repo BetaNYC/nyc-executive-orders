@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3266,
+        "area_px": 28034,
+        "density": 0.1165,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -53,8 +59,8 @@
       },
       "ink": {
         "ink_px": 748,
-        "area_px": 14820,
-        "density": 0.05047,
+        "area_px": 15048,
+        "density": 0.04971,
         "chars": 58,
         "chars_per_1k_ink": 77.54
       }
@@ -373,7 +379,7 @@
         1312
       ],
       "category": "Text",
-      "text": "§ 2. All designations by agency or department heads to assignments in such managerial classes of positions in which there are different rates of pay for specific work, as provided for in Section 1, shall be made on the basis of merit and fitness; provided that such designations to higher or lower levels of managerial responsibility and consequent adjustment of salary shall not be deemed to constitute either a promotion or demotion.",
+      "text": "\u00a7 2. All designations by agency or department heads to assignments in such managerial classes of positions in which there are different rates of pay for specific work, as provided for in Section 1, shall be made on the basis of merit and fitness; provided that such designations to higher or lower levels of managerial responsibility and consequent adjustment of salary shall not be deemed to constitute either a promotion or demotion.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -426,11 +432,11 @@
         }
       },
       "ink": {
-        "ink_px": 183,
-        "area_px": 204750,
-        "density": 0.00089,
+        "ink_px": 229,
+        "area_px": 230125,
+        "density": 0.001,
         "chars": 477,
-        "chars_per_1k_ink": 2606.56
+        "chars_per_1k_ink": 2082.97
       }
     }
   ],
@@ -511,7 +517,7 @@
           "index": 703,
           "token_id": 17851,
           "logprob": -0.221,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 252,
@@ -629,15 +635,26 @@
   "ink_coverage": {
     "roi": [
       153,
-      229,
+      0,
       1122,
-      1686
+      1916
     ],
-    "ink_px": 1201,
-    "covered_px": 1199,
-    "covered_fraction": 0.99833,
-    "uncovered_px": 2,
-    "uncovered_regions": [],
+    "ink_px": 79495,
+    "covered_px": 4511,
+    "covered_fraction": 0.05675,
+    "uncovered_px": 74984,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          153,
+          1824,
+          1122,
+          1916
+        ],
+        "ink_px": 74982
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

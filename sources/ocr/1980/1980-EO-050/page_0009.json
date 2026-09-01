@@ -10,7 +10,7 @@
         518
       ],
       "category": "Text",
-      "text": "§ 13. Annual Report. The Bureau shall submit an annual report to the Mayor concerning its responsibilities under this Order.",
+      "text": "\u00a7 13. Annual Report. The Bureau shall submit an annual report to the Mayor concerning its responsibilities under this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -44,7 +44,7 @@
         858
       ],
       "category": "Text",
-      "text": "§ 14. Separability. If any provision of this Order or the application thereof is held invalid, the remainder of this Order and the application thereof to other persons or circumstances shall not be affected by such holding and shall remain in full force and effect.",
+      "text": "\u00a7 14. Separability. If any provision of this Order or the application thereof is held invalid, the remainder of this Order and the application thereof to other persons or circumstances shall not be affected by such holding and shall remain in full force and effect.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -78,7 +78,7 @@
         1399
       ],
       "category": "Text",
-      "text": "§ 15. Revocation of Prior Orders. Executive Orders No. 71 (1968), No. 20 (1970), No. 23 (1970), No. 27 (1970), No. 31 (1971), No. 74 (1973), No. 7 (1974), and No. 80 (1977) are hereby revoked and the first paragraph of Section 2 of Executive Order No. 4 (1978) is hereby deleted. Nothing in this Order shall be deemed to relieve any person of any obligation not inconsistent with this Order assumed or imposed pursuant to an Order superseded by this Order.",
+      "text": "\u00a7 15. Revocation of Prior Orders. Executive Orders No. 71 (1968), No. 20 (1970), No. 23 (1970), No. 27 (1970), No. 31 (1971), No. 74 (1973), No. 7 (1974), and No. 80 (1977) are hereby revoked and the first paragraph of Section 2 of Executive Order No. 4 (1978) is hereby deleted. Nothing in this Order shall be deemed to relieve any person of any obligation not inconsistent with this Order assumed or imposed pursuant to an Order superseded by this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -112,7 +112,7 @@
         1539
       ],
       "category": "Text",
-      "text": "§ 16. Effective Date. This Order shall take effect immediately.",
+      "text": "\u00a7 16. Effective Date. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -197,7 +197,7 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.2577,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 48,
@@ -215,7 +215,7 @@
           "index": 381,
           "token_id": 17851,
           "logprob": -0.0104,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 55,
@@ -227,7 +227,7 @@
           "index": 95,
           "token_id": 17851,
           "logprob": -0.0034,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 188,
@@ -239,7 +239,7 @@
           "index": 183,
           "token_id": 17851,
           "logprob": -0.0022,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 196,
@@ -363,15 +363,35 @@
   "ink_coverage": {
     "roi": [
       211,
-      274,
+      0,
       1550,
-      2014
+      2289
     ],
-    "ink_px": 139561,
+    "ink_px": 150935,
     "covered_px": 139179,
-    "covered_fraction": 0.99726,
-    "uncovered_px": 382,
-    "uncovered_regions": [],
+    "covered_fraction": 0.92211,
+    "uncovered_px": 11756,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          211,
+          48,
+          1550,
+          96
+        ],
+        "ink_px": 7484
+      },
+      {
+        "bbox": [
+          1339,
+          1968,
+          1550,
+          2136
+        ],
+        "ink_px": 2963
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

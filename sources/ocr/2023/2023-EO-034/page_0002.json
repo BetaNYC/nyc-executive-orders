@@ -28,7 +28,13 @@
           "min": -0.4966
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4025,
+        "area_px": 101436,
+        "density": 0.03968,
+        "chars": 105,
+        "chars_per_1k_ink": 26.09
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         655
       ],
       "category": "Text",
-      "text": "§ 3. Each mayoral agency shall assess and reevaluate the M/WBE participation goals included in each existing contract approaching renewal in light of the factors set forth in paragraph 1 of subdivision i of section 6-129 of the Administrative Code of the City of New York. Based on such assessment, each agency shall consider whether to attempt to negotiate the incorporation of new or adjusted M/WBE participation goals into the terms of such contract. Where the agency elects not to engage in such negotiations or determines that such negotiations were unsuccessful, the agency shall transmit documentation of its determination to the Mayor's Office of Contract Services (\"MOCS\") and the CBDO in a manner to be determined and communicated by joint directive from the CCPO and CBDO.",
+      "text": "\u00a7 3. Each mayoral agency shall assess and reevaluate the M/WBE participation goals included in each existing contract approaching renewal in light of the factors set forth in paragraph 1 of subdivision i of section 6-129 of the Administrative Code of the City of New York. Based on such assessment, each agency shall consider whether to attempt to negotiate the incorporation of new or adjusted M/WBE participation goals into the terms of such contract. Where the agency elects not to engage in such negotiations or determines that such negotiations were unsuccessful, the agency shall transmit documentation of its determination to the Mayor's Office of Contract Services (\"MOCS\") and the CBDO in a manner to be determined and communicated by joint directive from the CCPO and CBDO.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -72,7 +78,7 @@
         967
       ],
       "category": "Text",
-      "text": "§ 4. For capital projects, as such term is defined in section 210 of the New York City Charter, valued at over 25 million dollars, a mayoral agency developing such project shall consider whether it is practicable to de-bundle the project to result in more than one contract specification package for the purpose of creating more equitable procurement opportunities. If the agency decides not to de-bundle such project into smaller contract packages, the agency shall transmit documentation of its determination to MOCS and the CBDO in a manner to be determined and communicated by joint directive from the CCPO and CBDO.",
+      "text": "\u00a7 4. For capital projects, as such term is defined in section 210 of the New York City Charter, valued at over 25 million dollars, a mayoral agency developing such project shall consider whether it is practicable to de-bundle the project to result in more than one contract specification package for the purpose of creating more equitable procurement opportunities. If the agency decides not to de-bundle such project into smaller contract packages, the agency shall transmit documentation of its determination to MOCS and the CBDO in a manner to be determined and communicated by joint directive from the CCPO and CBDO.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -106,7 +112,7 @@
         1194
       ],
       "category": "Text",
-      "text": "§ 5. Any mayoral agency conducting an emergency purchase pursuant to section 315 of the New York City Charter shall use best efforts to consider at least one quote, bid, or proposal, as applicable, from a business certified as an M/WBE prior to contract award, unless otherwise directed by the CCPO, in a manner to be determined and communicated by joint directive from the CCPO and CBDO.",
+      "text": "\u00a7 5. Any mayoral agency conducting an emergency purchase pursuant to section 315 of the New York City Charter shall use best efforts to consider at least one quote, bid, or proposal, as applicable, from a business certified as an M/WBE prior to contract award, unless otherwise directed by the CCPO, in a manner to be determined and communicated by joint directive from the CCPO and CBDO.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -140,7 +146,7 @@
         1468
       ],
       "category": "Text",
-      "text": "§ 6. The CCPO and CBDO shall coordinate with New York City Housing Authority, New York City Health and Hospitals Corporation, New York City Economic Development Corporation, New York City School Construction Authority, City School District for the City of New York, Campaign Finance Board, Financial Information Services Agency, Office of Payroll Administration, Office of Collective Bargaining, Office of the Actuary and Office of Food Policy to collect standard M/WBE procurement metrics and data for reporting of OneNYC indicators.",
+      "text": "\u00a7 6. The CCPO and CBDO shall coordinate with New York City Housing Authority, New York City Health and Hospitals Corporation, New York City Economic Development Corporation, New York City School Construction Authority, City School District for the City of New York, Campaign Finance Board, Financial Information Services Agency, Office of Payroll Administration, Office of Collective Bargaining, Office of the Actuary and Office of Food Policy to collect standard M/WBE procurement metrics and data for reporting of OneNYC indicators.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -174,7 +180,7 @@
         1540
       ],
       "category": "Text",
-      "text": "§ 7. Nothing in this Order is intended to create a private cause of action.",
+      "text": "\u00a7 7. Nothing in this Order is intended to create a private cause of action.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -208,7 +214,7 @@
         1616
       ],
       "category": "Text",
-      "text": "§ 8. This Executive Order shall take effect immediately.",
+      "text": "\u00a7 8. This Executive Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -321,7 +327,7 @@
           "index": 93,
           "token_id": 17851,
           "logprob": -0.0103,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 219,
@@ -333,7 +339,7 @@
           "index": 443,
           "token_id": 17851,
           "logprob": -0.0011,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 333,
@@ -345,7 +351,7 @@
           "index": 282,
           "token_id": 17851,
           "logprob": -0.0007,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 840,
@@ -493,15 +499,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      280,
+      0,
       1496,
-      2058
+      2339
     ],
-    "ink_px": 99582,
-    "covered_px": 99511,
-    "covered_fraction": 0.99929,
+    "ink_px": 103607,
+    "covered_px": 103536,
+    "covered_fraction": 0.99931,
     "uncovered_px": 71,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

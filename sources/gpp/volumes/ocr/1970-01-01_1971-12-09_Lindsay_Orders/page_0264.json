@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 268,
-        "area_px": 2464,
-        "density": 0.10877,
+        "ink_px": 2850,
+        "area_px": 25872,
+        "density": 0.11016,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -345,7 +345,7 @@
         1361
       ],
       "category": "List-item",
-      "text": "§ 2. Executive Order No. 38, dated May 16, 1963, relating to capital budget amendment requests, is hereby REPEALED.",
+      "text": "\u00a7 2. Executive Order No. 38, dated May 16, 1963, relating to capital budget amendment requests, is hereby REPEALED.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -379,7 +379,7 @@
         1413
       ],
       "category": "List-item",
-      "text": "§ . This order shall take effect on April 2, 1971.",
+      "text": "\u00a7 . This order shall take effect on April 2, 1971.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -428,8 +428,8 @@
       },
       "ink": {
         "ink_px": 111,
-        "area_px": 75328,
-        "density": 0.00147,
+        "area_px": 89024,
+        "density": 0.00125,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -486,7 +486,7 @@
           "index": 705,
           "token_id": 17851,
           "logprob": -0.4948,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 782,
@@ -498,7 +498,7 @@
           "index": 781,
           "token_id": 17851,
           "logprob": -0.211,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 79,
@@ -664,15 +664,26 @@
   "ink_coverage": {
     "roi": [
       173,
-      222,
+      0,
       1272,
-      1633
+      1856
     ],
-    "ink_px": 932,
-    "covered_px": 932,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 52477,
+    "covered_px": 3514,
+    "covered_fraction": 0.06696,
+    "uncovered_px": 48963,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          173,
+          1776,
+          1272,
+          1856
+        ],
+        "ink_px": 48938
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

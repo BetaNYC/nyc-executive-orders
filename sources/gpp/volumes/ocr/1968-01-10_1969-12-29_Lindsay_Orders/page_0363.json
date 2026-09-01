@@ -112,7 +112,7 @@
         768
       ],
       "category": "Text",
-      "text": "The first part of the book covers the early years of the war, from the start of the war in 1917, through the first year of the war in 1918, and includes descriptions of daily life, school, work, and home. This part also includes a look at the social生活 of the time, including descriptions of popular culture, events, and politics.",
+      "text": "The first part of the book covers the early years of the war, from the start of the war in 1917, through the first year of the war in 1918, and includes descriptions of daily life, school, work, and home. This part also includes a look at the social\u751f\u6d3b of the time, including descriptions of popular culture, events, and politics.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -506,7 +506,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 24024,
+        "area_px": 54054,
         "density": 0.0,
         "chars": 151,
         "chars_per_1k_ink": null
@@ -708,15 +708,26 @@
   "ink_coverage": {
     "roi": [
       141,
-      218,
+      0,
       1040,
-      1605
+      1824
     ],
-    "ink_px": 101,
+    "ink_px": 46692,
     "covered_px": 0,
     "covered_fraction": 0.0,
-    "uncovered_px": 101,
-    "uncovered_regions": [],
+    "uncovered_px": 46692,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          141,
+          0,
+          1040,
+          120
+        ],
+        "ink_px": 46539
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

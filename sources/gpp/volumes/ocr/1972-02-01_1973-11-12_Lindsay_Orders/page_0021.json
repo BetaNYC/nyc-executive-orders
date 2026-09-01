@@ -44,7 +44,7 @@
         1399
       ],
       "category": "Text",
-      "text": "§ 5(a) Beginning with the payroll period the first day of which is September first, nineteen hundred seventy-two and ending with the payroll period the last day of which is August thirty-first, nineteen hundred seventy-three, the contribution of each contributor who is an employee of the board of education or board of higher education of the city, exclusive of any increase in such contribution pursuant to section B20-24.0 or subdivision two of section B20-44.0 of the code or any reduction thereof pursuant to subdivision one of section one hundred thirty-eight of the retirement and social security law, shall be reduced by five percent of the salary of such contributor. The provisions of subdivisions e and f of section B20-41.1 shall be applicable to such contributor.",
+      "text": "\u00a7 5(a) Beginning with the payroll period the first day of which is September first, nineteen hundred seventy-two and ending with the payroll period the last day of which is August thirty-first, nineteen hundred seventy-three, the contribution of each contributor who is an employee of the board of education or board of higher education of the city, exclusive of any increase in such contribution pursuant to section B20-24.0 or subdivision two of section B20-44.0 of the code or any reduction thereof pursuant to subdivision one of section one hundred thirty-eight of the retirement and social security law, shall be reduced by five percent of the salary of such contributor. The provisions of subdivisions e and f of section B20-41.1 shall be applicable to such contributor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -146,7 +146,7 @@
         2630
       ],
       "category": "Text",
-      "text": "§ 6. Pursuant to the provisions of Administrative Code Section B18-3.2, Subdivision g, as added by L. 1972, ch. 921, beginning with the payroll period, the first day of which is nearest to June 30, 1972, and ending with the payroll period immediately prior to that, the first day of which is nearest to June 30, 1973, the deductions from the pay, salary or compensation of each member of the Police Pension Fund, Article 1, made pursuant to the provisions of Article 1 of Title B of Chapter 18 of the Administrative Code, shall be reduced by five per cent of such pay, salary or compensation.",
+      "text": "\u00a7 6. Pursuant to the provisions of Administrative Code Section B18-3.2, Subdivision g, as added by L. 1972, ch. 921, beginning with the payroll period, the first day of which is nearest to June 30, 1972, and ending with the payroll period immediately prior to that, the first day of which is nearest to June 30, 1973, the deductions from the pay, salary or compensation of each member of the Police Pension Fund, Article 1, made pursuant to the provisions of Article 1 of Title B of Chapter 18 of the Administrative Code, shall be reduced by five per cent of such pay, salary or compensation.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -202,7 +202,7 @@
           "index": 114,
           "token_id": 17851,
           "logprob": -0.1921,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 520,
@@ -368,15 +368,35 @@
   "ink_coverage": {
     "roi": [
       268,
-      420,
+      0,
       1969,
-      3080
+      3500
     ],
-    "ink_px": 27,
+    "ink_px": 298994,
     "covered_px": 27,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 9e-05,
+    "uncovered_px": 298967,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          268,
+          3360,
+          1969,
+          3500
+        ],
+        "ink_px": 166219
+      },
+      {
+        "bbox": [
+          268,
+          0,
+          1969,
+          96
+        ],
+        "ink_px": 132707
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

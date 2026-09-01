@@ -28,7 +28,13 @@
           "min": -0.0927
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3415,
+        "area_px": 8496,
+        "density": 0.40195,
+        "chars": 22,
+        "chars_per_1k_ink": 6.44
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0128
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1349,
+        "area_px": 4212,
+        "density": 0.32028,
+        "chars": 13,
+        "chars_per_1k_ink": 9.64
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0045
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3489,
+        "area_px": 13002,
+        "density": 0.26834,
+        "chars": 36,
+        "chars_per_1k_ink": 10.32
+      }
     },
     {
       "bbox": [
@@ -113,11 +131,11 @@
         }
       },
       "ink": {
-        "ink_px": 993,
-        "area_px": 25376,
-        "density": 0.03913,
+        "ink_px": 6484,
+        "area_px": 45872,
+        "density": 0.14135,
         "chars": 81,
-        "chars_per_1k_ink": 81.57
+        "chars_per_1k_ink": 12.49
       }
     },
     {
@@ -162,7 +180,7 @@
         400
       ],
       "category": "List-item",
-      "text": "§ 4-a. This Order shall not apply to any construction contract in the amount of $250,000 or less.",
+      "text": "\u00a7 4-a. This Order shall not apply to any construction contract in the amount of $250,000 or less.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -196,7 +214,7 @@
         431
       ],
       "category": "List-item",
-      "text": "§ 2. Effective Date. This Order shall take effect immediately",
+      "text": "\u00a7 2. Effective Date. This Order shall take effect immediately",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -638,7 +656,7 @@
         1173
       ],
       "category": "List-item",
-      "text": "§ 2. If the low bidder indicates that he was a non-participant in an approved apprentice-ship program and either used apprentices on prior New York City contracts or intends to use apprentices on this contract, the agency head shall convene a Board of Responsibility to determine whether the contract should be awarded to that low bidder.",
+      "text": "\u00a7 2. If the low bidder indicates that he was a non-participant in an approved apprentice-ship program and either used apprentices on prior New York City contracts or intends to use apprentices on this contract, the agency head shall convene a Board of Responsibility to determine whether the contract should be awarded to that low bidder.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -672,7 +690,7 @@
         1284
       ],
       "category": "List-item",
-      "text": "§ 3. If the low bidder indicates that he does not provide a participating health and welfare program or a registered pension plan, the agency head may not award the contract to that low bidder. However, if the low bidder indicates that he is a self-insured provider of such a program or plan, the agency head shall convene a Board of Responsibility to determine whether the contract should be awarded to that low bidder.",
+      "text": "\u00a7 3. If the low bidder indicates that he does not provide a participating health and welfare program or a registered pension plan, the agency head may not award the contract to that low bidder. However, if the low bidder indicates that he is a self-insured provider of such a program or plan, the agency head shall convene a Board of Responsibility to determine whether the contract should be awarded to that low bidder.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -706,7 +724,7 @@
         1329
       ],
       "category": "List-item",
-      "text": "§ 4. The Board of Responsibility is to consist of the agency head, Comptroller and Corporation Counsel or their duly designated representatives.",
+      "text": "\u00a7 4. The Board of Responsibility is to consist of the agency head, Comptroller and Corporation Counsel or their duly designated representatives.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -740,7 +758,7 @@
         1351
       ],
       "category": "List-item",
-      "text": "§ 5. This Executive Order shall take effect immediately.",
+      "text": "\u00a7 5. This Executive Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -1030,52 +1048,35 @@
   "ink_coverage": {
     "roi": [
       211,
-      274,
+      0,
       1550,
-      2014
+      2289
     ],
-    "ink_px": 176090,
-    "covered_px": 168359,
-    "covered_fraction": 0.9561,
-    "uncovered_px": 7731,
+    "ink_px": 193717,
+    "covered_px": 182103,
+    "covered_fraction": 0.94005,
+    "uncovered_px": 11614,
     "uncovered_regions": [
       {
         "bbox": [
-          1291,
-          274,
-          1339,
-          970
+          1483,
+          2064,
+          1550,
+          2160
         ],
-        "ink_px": 1748
+        "ink_px": 1048
       },
       {
         "bbox": [
-          811,
-          1378,
-          1315,
-          1402
+          355,
+          120,
+          571,
+          192
         ],
-        "ink_px": 1604
-      },
-      {
-        "bbox": [
-          331,
-          1378,
-          739,
-          1402
-        ],
-        "ink_px": 1393
-      },
-      {
-        "bbox": [
-          715,
-          970,
-          1075,
-          994
-        ],
-        "ink_px": 997
+        "ink_px": 527
       }
     ],
+    "suppressed_regions": 5,
     "cell_px": 24
   }
 }

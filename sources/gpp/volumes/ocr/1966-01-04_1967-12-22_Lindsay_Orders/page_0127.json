@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 36897,
-        "area_px": 324940,
-        "density": 0.11355,
+        "ink_px": 71502,
+        "area_px": 585200,
+        "density": 0.12218,
         "chars": 367,
-        "chars_per_1k_ink": 9.95
+        "chars_per_1k_ink": 5.13
       }
     },
     {
@@ -112,7 +112,7 @@
         1452
       ],
       "category": "List-item",
-      "text": "1. For the purposes of this resolution, the provisions of subdivision j of §B3-36.1 of the Administrative Code shall apply, subject to the terms and conditions specified in this resolution, in the same manner, to the same extent and with the same force and effect as set:",
+      "text": "1. For the purposes of this resolution, the provisions of subdivision j of \u00a7B3-36.1 of the Administrative Code shall apply, subject to the terms and conditions specified in this resolution, in the same manner, to the same extent and with the same force and effect as set:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -504,15 +504,35 @@
   "ink_coverage": {
     "roi": [
       306,
-      446,
+      0,
       2244,
-      3272
+      3719
     ],
-    "ink_px": 240651,
-    "covered_px": 240451,
-    "covered_fraction": 0.99917,
-    "uncovered_px": 200,
-    "uncovered_regions": [],
+    "ink_px": 680815,
+    "covered_px": 275056,
+    "covered_fraction": 0.40401,
+    "uncovered_px": 405759,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          306,
+          3576,
+          2244,
+          3719
+        ],
+        "ink_px": 228086
+      },
+      {
+        "bbox": [
+          306,
+          0,
+          2244,
+          120
+        ],
+        "ink_px": 177193
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

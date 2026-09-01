@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 9006,
+        "area_px": 39520,
+        "density": 0.22788,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 502,
-        "area_px": 8075,
-        "density": 0.06217,
+        "ink_px": 4350,
+        "area_px": 56100,
+        "density": 0.07754,
         "chars": 54,
-        "chars_per_1k_ink": 107.57
+        "chars_per_1k_ink": 12.41
       }
     },
     {
@@ -373,7 +379,7 @@
         2903
       ],
       "category": "Text",
-      "text": "§2. All executive orders which were in effect on December 31, 1965 designating by name officials of the government of the City of New York to perform functions specified in such orders are hereby modified to the extent that such functions shall be performed by the officials of the City government holding such offices pursuant to my direction.",
+      "text": "\u00a72. All executive orders which were in effect on December 31, 1965 designating by name officials of the government of the City of New York to perform functions specified in such orders are hereby modified to the extent that such functions shall be performed by the officials of the City government holding such offices pursuant to my direction.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -421,9 +427,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 688,
-        "area_px": 112200,
-        "density": 0.00613,
+        "ink_px": 727,
+        "area_px": 141933,
+        "density": 0.00512,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -455,11 +461,11 @@
         }
       },
       "ink": {
-        "ink_px": 16,
-        "area_px": 12183,
-        "density": 0.00131,
+        "ink_px": 55,
+        "area_px": 20043,
+        "density": 0.00274,
         "chars": 15,
-        "chars_per_1k_ink": 937.5
+        "chars_per_1k_ink": 272.73
       }
     }
   ],
@@ -492,7 +498,7 @@
           "index": 625,
           "token_id": 17851,
           "logprob": -0.1405,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 563,
@@ -658,15 +664,26 @@
   "ink_coverage": {
     "roi": [
       276,
-      416,
+      0,
       2027,
-      3054
+      3471
     ],
-    "ink_px": 20073,
-    "covered_px": 19723,
-    "covered_fraction": 0.98256,
-    "uncovered_px": 350,
-    "uncovered_regions": [],
+    "ink_px": 301485,
+    "covered_px": 32616,
+    "covered_fraction": 0.10818,
+    "uncovered_px": 268869,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          276,
+          3384,
+          2027,
+          3471
+        ],
+        "ink_px": 123047
+      }
+    ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

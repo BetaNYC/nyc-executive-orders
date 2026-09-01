@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 10400,
-        "area_px": 43050,
-        "density": 0.24158,
+        "ink_px": 10894,
+        "area_px": 48090,
+        "density": 0.22653,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -528,25 +528,35 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 80853,
-    "covered_px": 79066,
-    "covered_fraction": 0.9779,
-    "uncovered_px": 1787,
+    "ink_px": 82030,
+    "covered_px": 79560,
+    "covered_fraction": 0.96989,
+    "uncovered_px": 2470,
     "uncovered_regions": [
       {
         "bbox": [
           204,
-          264,
+          240,
           252,
           312
         ],
-        "ink_px": 1549
+        "ink_px": 1690
+      },
+      {
+        "bbox": [
+          1380,
+          96,
+          1496,
+          120
+        ],
+        "ink_px": 475
       }
     ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

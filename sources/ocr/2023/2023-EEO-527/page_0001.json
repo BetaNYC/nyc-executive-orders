@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 16188,
+        "area_px": 54036,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -175,7 +175,7 @@
         857
       ],
       "category": "Text",
-      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which “represents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island”; and",
+      "text": "WHEREAS, on June 14, 2022, the federal court in *Nunez* approved the *Nunez Action Plan*, which \u201crepresents a way to move forward with concrete measures now to address the ongoing crisis at Rikers Island\u201d; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -413,7 +413,7 @@
         1864
       ],
       "category": "Text",
-      "text": "§ 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -461,9 +461,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 701,
-        "area_px": 16758,
-        "density": 0.04183,
+        "ink_px": 6823,
+        "area_px": 83790,
+        "density": 0.08143,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -486,7 +486,7 @@
           "index": 330,
           "token_id": 1036,
           "logprob": -0.6,
-          "text": " “"
+          "text": " \u201c"
         },
         {
           "index": 326,
@@ -516,7 +516,7 @@
           "index": 351,
           "token_id": 65445,
           "logprob": -0.1464,
-          "text": "”;"
+          "text": "\u201d;"
         },
         {
           "index": 80,
@@ -664,15 +664,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 205057,
-    "covered_px": 205057,
+    "ink_px": 211179,
+    "covered_px": 211179,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

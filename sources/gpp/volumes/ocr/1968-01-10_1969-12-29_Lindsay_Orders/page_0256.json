@@ -28,7 +28,13 @@
           "min": -0.1131
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 15436,
+        "density": 0.0,
+        "chars": 5,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0037
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 92,
+        "area_px": 75738,
+        "density": 0.00121,
+        "chars": 22,
+        "chars_per_1k_ink": 239.13
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0002
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 42,
+        "area_px": 59677,
+        "density": 0.0007,
+        "chars": 16,
+        "chars_per_1k_ink": 380.95
+      }
     },
     {
       "bbox": [
@@ -196,7 +214,7 @@
         1793
       ],
       "category": "Text",
-      "text": "§ 2. The Municipal Service Administrator shall, in his discretion, organize the administration in departments, bureaus, boards, divisions or offices, and make assignments of powers and duties among them and from time to time change such organization or assignments, subject only to the extent to which the organization is prescribed by law.",
+      "text": "\u00a7 2. The Municipal Service Administrator shall, in his discretion, organize the administration in departments, bureaus, boards, divisions or offices, and make assignments of powers and duties among them and from time to time change such organization or assignments, subject only to the extent to which the organization is prescribed by law.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -230,7 +248,7 @@
         2277
       ],
       "category": "Text",
-      "text": "§ 3. The Municipal Service Administrator is designated to act as the representative of the City of New York in relation to municipal services program of state and federal agencies as are more fully defined in Local Law No. 69 of 1968.",
+      "text": "\u00a7 3. The Municipal Service Administrator is designated to act as the representative of the City of New York in relation to municipal services program of state and federal agencies as are more fully defined in Local Law No. 69 of 1968.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -303,13 +321,13 @@
           "index": 467,
           "token_id": 17851,
           "logprob": -1.3945,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 367,
           "token_id": 17851,
           "logprob": -0.5252,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 37,
@@ -481,52 +499,71 @@
   "ink_coverage": {
     "roi": [
       490,
-      750,
+      0,
       3597,
-      5502
+      6253
     ],
-    "ink_px": 13795,
-    "covered_px": 5379,
-    "covered_fraction": 0.38992,
-    "uncovered_px": 8416,
+    "ink_px": 792270,
+    "covered_px": 5513,
+    "covered_fraction": 0.00696,
+    "uncovered_px": 786757,
     "uncovered_regions": [
       {
         "bbox": [
-          2674,
-          5046,
+          490,
+          5928,
           3597,
-          5070
+          6253
         ],
-        "ink_px": 4040
+        "ink_px": 776602
+      },
+      {
+        "bbox": [
+          2674,
+          5040,
+          3597,
+          5088
+        ],
+        "ink_px": 3978
       },
       {
         "bbox": [
           2242,
-          5046,
+          5040,
           2650,
-          5070
+          5064
         ],
         "ink_px": 1422
       },
       {
         "bbox": [
           490,
-          5094,
+          5112,
           706,
-          5142
+          5136
         ],
-        "ink_px": 897
+        "ink_px": 890
       },
       {
         "bbox": [
-          2938,
-          5454,
-          3010,
-          5502
+          2242,
+          5544,
+          2410,
+          5592
         ],
-        "ink_px": 410
+        "ink_px": 752
+      },
+      {
+        "bbox": [
+          2914,
+          5472,
+          3010,
+          5520
+        ],
+        "ink_px": 611
       }
     ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

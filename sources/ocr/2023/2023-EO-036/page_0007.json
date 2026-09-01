@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 4226,
-        "area_px": 63014,
-        "density": 0.06706,
+        "ink_px": 9952,
+        "area_px": 101594,
+        "density": 0.09796,
         "chars": 137,
-        "chars_per_1k_ink": 32.42
+        "chars_per_1k_ink": 13.77
       }
     },
     {
@@ -78,7 +78,7 @@
         467
       ],
       "category": "Text",
-      "text": "§ 7. The Deputy Mayor for Strategic Initiatives shall:",
+      "text": "\u00a7 7. The Deputy Mayor for Strategic Initiatives shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -384,7 +384,7 @@
         1818
       ],
       "category": "Text",
-      "text": "§ 8. The Deputy Mayor for Public Safety shall:",
+      "text": "\u00a7 8. The Deputy Mayor for Public Safety shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -471,11 +471,11 @@
         }
       },
       "ink": {
-        "ink_px": 324,
-        "area_px": 13552,
-        "density": 0.02391,
+        "ink_px": 6295,
+        "area_px": 48048,
+        "density": 0.13101,
         "chars": 90,
-        "chars_per_1k_ink": 277.78
+        "chars_per_1k_ink": 14.3
       }
     },
     {
@@ -504,7 +504,13 @@
           "min": -0.0
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 59,
+        "area_px": 651,
+        "density": 0.09063,
+        "chars": 1,
+        "chars_per_1k_ink": 16.95
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -524,7 +530,7 @@
           "index": 146,
           "token_id": 17851,
           "logprob": -0.137,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 53,
@@ -702,15 +708,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 161576,
-    "covered_px": 161576,
+    "ink_px": 173332,
+    "covered_px": 173332,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

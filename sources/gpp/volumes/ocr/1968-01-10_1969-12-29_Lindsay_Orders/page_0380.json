@@ -28,7 +28,13 @@
           "min": -0.01
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 989,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -276,7 +282,7 @@
         938
       ],
       "category": "List-item",
-      "text": "### § 3. The Task Force shall have the following functions, power and duties:",
+      "text": "### \u00a7 3. The Task Force shall have the following functions, power and duties:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -428,7 +434,7 @@
           "index": 462,
           "token_id": 16625,
           "logprob": -0.391,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 193,
@@ -600,15 +606,26 @@
   "ink_coverage": {
     "roi": [
       152,
-      238,
+      0,
       1117,
-      1745
+      1984
     ],
-    "ink_px": 0,
+    "ink_px": 59718,
     "covered_px": 0,
-    "covered_fraction": null,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.0,
+    "uncovered_px": 59718,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          152,
+          1896,
+          1117,
+          1984
+        ],
+        "ink_px": 59678
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

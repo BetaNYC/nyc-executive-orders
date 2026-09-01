@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8211,
+        "area_px": 39710,
+        "density": 0.20677,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -339,7 +345,7 @@
         2544
       ],
       "category": "Text",
-      "text": "§ 2. This order shall take effect June 17, 1966.",
+      "text": "\u00a7 2. This order shall take effect June 17, 1966.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -452,7 +458,7 @@
           "index": 895,
           "token_id": 17851,
           "logprob": -0.2834,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 125,
@@ -624,25 +630,44 @@
   "ink_coverage": {
     "roi": [
       294,
-      415,
+      0,
       2162,
-      3050
+      3466
     ],
-    "ink_px": 81333,
-    "covered_px": 76954,
-    "covered_fraction": 0.94616,
-    "uncovered_px": 4379,
+    "ink_px": 493038,
+    "covered_px": 85165,
+    "covered_fraction": 0.17274,
+    "uncovered_px": 407873,
     "uncovered_regions": [
       {
         "bbox": [
-          462,
-          415,
-          606,
-          607
+          294,
+          0,
+          2162,
+          168
         ],
-        "ink_px": 4284
+        "ink_px": 206374
+      },
+      {
+        "bbox": [
+          294,
+          3336,
+          2162,
+          3466
+        ],
+        "ink_px": 192386
+      },
+      {
+        "bbox": [
+          462,
+          168,
+          726,
+          600
+        ],
+        "ink_px": 8625
       }
     ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

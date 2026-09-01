@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 18018,
+        "area_px": 54978,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -311,7 +311,7 @@
         1357
       ],
       "category": "Text",
-      "text": "WHEREAS, the City has implemented a comprehensive Safe Fleet Transition Plan to improve the safety of City-owned and operated fleet vehicles and trucks, which includes NY State License Event Notification System (“LENS”), safety training, crash tracking, truck side-guards, high vision trucks and surround cameras, and telematics; and",
+      "text": "WHEREAS, the City has implemented a comprehensive Safe Fleet Transition Plan to improve the safety of City-owned and operated fleet vehicles and trucks, which includes NY State License Event Notification System (\u201cLENS\u201d), safety training, crash tracking, truck side-guards, high vision trucks and surround cameras, and telematics; and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -413,7 +413,7 @@
         1969
       ],
       "category": "Text",
-      "text": "WHEREAS, the Department of Citywide Administrative Services (“DCAS”) is working to make City streets safer by managing central crash tracking for City agencies through its Fleet Management System; establishing a Fleet of the Future Network to promote fleet safety and sustainability in accordance with Executive Order 53 of 2020; implementing surround cameras and high vision trucks to address visual restrictions faced by truck operators; and, in accordance with Executive Order 41 of 2019, implementing live tracking of City fleet vehicles to improve safety;",
+      "text": "WHEREAS, the Department of Citywide Administrative Services (\u201cDCAS\u201d) is working to make City streets safer by managing central crash tracking for City agencies through its Fleet Management System; establishing a Fleet of the Future Network to promote fleet safety and sustainability in accordance with Executive Order 53 of 2020; implementing surround cameras and high vision trucks to address visual restrictions faced by truck operators; and, in accordance with Executive Order 41 of 2019, implementing live tracking of City fleet vehicles to improve safety;",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -432,11 +432,11 @@
         }
       },
       "ink": {
-        "ink_px": 41132,
-        "area_px": 362523,
-        "density": 0.11346,
+        "ink_px": 41401,
+        "area_px": 391986,
+        "density": 0.10562,
         "chars": 560,
-        "chars_per_1k_ink": 13.61
+        "chars_per_1k_ink": 13.53
       }
     },
     {
@@ -465,7 +465,13 @@
           "min": -0.0
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 51,
+        "area_px": 496,
+        "density": 0.10282,
+        "chars": 1,
+        "chars_per_1k_ink": 19.61
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -485,7 +491,7 @@
           "index": 552,
           "token_id": 26087,
           "logprob": -0.576,
-          "text": " (“"
+          "text": " (\u201c"
         },
         {
           "index": 797,
@@ -663,15 +669,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 143727,
-    "covered_px": 143727,
+    "ink_px": 144047,
+    "covered_px": 144047,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

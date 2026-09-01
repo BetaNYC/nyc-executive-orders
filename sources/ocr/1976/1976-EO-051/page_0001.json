@@ -28,7 +28,13 @@
           "min": -0.5963
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4933,
+        "area_px": 21905,
+        "density": 0.2252,
+        "chars": 43,
+        "chars_per_1k_ink": 8.72
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 306,
-        "area_px": 1316,
-        "density": 0.23252,
+        "ink_px": 1085,
+        "area_px": 3948,
+        "density": 0.27482,
         "chars": 16,
-        "chars_per_1k_ink": 52.29
+        "chars_per_1k_ink": 14.75
       }
     },
     {
@@ -310,7 +316,7 @@
         634
       ],
       "category": "Section-header",
-      "text": "§ 2. Title X Committee.",
+      "text": "\u00a7 2. Title X Committee.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -378,7 +384,7 @@
         733
       ],
       "category": "Section-header",
-      "text": "§ 3. Functions and Duties of the Title X Coordinator.",
+      "text": "\u00a7 3. Functions and Duties of the Title X Coordinator.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -548,7 +554,7 @@
         909
       ],
       "category": "Section-header",
-      "text": "§ 4. Additional Functions and Duties of the Members of the Title X Committee.",
+      "text": "\u00a7 4. Additional Functions and Duties of the Members of the Title X Committee.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -616,7 +622,7 @@
         990
       ],
       "category": "Section-header",
-      "text": "§ 5. Employment Under Title X Programs.",
+      "text": "\u00a7 5. Employment Under Title X Programs.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -854,7 +860,7 @@
         1221
       ],
       "category": "Section-header",
-      "text": "§ 6. Agency Title X Operations.",
+      "text": "\u00a7 6. Agency Title X Operations.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -922,7 +928,7 @@
         1370
       ],
       "category": "Section-header",
-      "text": "§ 7. Title X Grant Applications and Subcontracts.",
+      "text": "\u00a7 7. Title X Grant Applications and Subcontracts.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -1228,7 +1234,7 @@
         1647
       ],
       "category": "Section-header",
-      "text": "§ 8. Other Public Agencies.",
+      "text": "\u00a7 8. Other Public Agencies.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -1296,7 +1302,7 @@
         1735
       ],
       "category": "Section-header",
-      "text": "§ 9. Effective Date.",
+      "text": "\u00a7 9. Effective Date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -1508,7 +1514,7 @@
           "index": 558,
           "token_id": 17851,
           "logprob": -0.053,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -1620,34 +1626,26 @@
   "ink_coverage": {
     "roi": [
       211,
-      274,
+      0,
       1550,
-      2012
+      2287
     ],
-    "ink_px": 222056,
-    "covered_px": 215869,
-    "covered_fraction": 0.97214,
-    "uncovered_px": 6187,
+    "ink_px": 230927,
+    "covered_px": 221581,
+    "covered_fraction": 0.95953,
+    "uncovered_px": 9346,
     "uncovered_regions": [
       {
         "bbox": [
-          619,
-          1234,
-          1291,
-          1810
+          1435,
+          144,
+          1531,
+          216
         ],
-        "ink_px": 3403
-      },
-      {
-        "bbox": [
-          403,
-          274,
-          427,
-          1210
-        ],
-        "ink_px": 2442
+        "ink_px": 442
       }
     ],
+    "suppressed_regions": 3,
     "cell_px": 24
   }
 }

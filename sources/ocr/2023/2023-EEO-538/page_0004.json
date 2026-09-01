@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 57170,
-        "area_px": 279930,
-        "density": 0.20423,
+        "ink_px": 69195,
+        "area_px": 352170,
+        "density": 0.19648,
         "chars": 670,
-        "chars_per_1k_ink": 11.72
+        "chars_per_1k_ink": 9.68
       }
     },
     {
@@ -78,7 +78,7 @@
         903
       ],
       "category": "Text",
-      "text": "§ 3. For purposes of this Order, \"operator\" means each owner, lessee or person in control of a vehicle, who contracts or otherwise accepts payment to transport passengers to the City of New York, and any agent acting at their direction. In addition, \"operator\" shall be deemed to include any intermediary or federally authorized motor carrier facilitating the transportation of passengers to the City.",
+      "text": "\u00a7 3. For purposes of this Order, \"operator\" means each owner, lessee or person in control of a vehicle, who contracts or otherwise accepts payment to transport passengers to the City of New York, and any agent acting at their direction. In addition, \"operator\" shall be deemed to include any intermediary or federally authorized motor carrier facilitating the transportation of passengers to the City.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         1018
       ],
       "category": "Text",
-      "text": "§ 4. Pursuant to New York Executive Law § 24(5), any person who knowingly violates this order is guilty of a class B misdemeanor.",
+      "text": "\u00a7 4. Pursuant to New York Executive Law \u00a7 24(5), any person who knowingly violates this order is guilty of a class B misdemeanor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -146,7 +146,7 @@
         1168
       ],
       "category": "Text",
-      "text": "§ 5. This Executive Emergency Order shall take effect immediately. It shall remain in effect for 5 days and may be renewed for additional periods of 5 days while the State of Emergency is in effect.",
+      "text": "\u00a7 5. This Executive Emergency Order shall take effect immediately. It shall remain in effect for 5 days and may be renewed for additional periods of 5 days while the State of Emergency is in effect.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -231,7 +231,7 @@
           "index": 285,
           "token_id": 17851,
           "logprob": -0.0152,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 190,
@@ -273,7 +273,7 @@
           "index": 399,
           "token_id": 17851,
           "logprob": -0.0012,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 423,
@@ -397,15 +397,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 170204,
-    "covered_px": 170204,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 182290,
+    "covered_px": 182229,
+    "covered_fraction": 0.99967,
+    "uncovered_px": 61,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

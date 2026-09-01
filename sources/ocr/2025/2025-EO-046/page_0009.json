@@ -28,7 +28,13 @@
           "min": -0.0037
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 680,
+        "area_px": 2924,
+        "density": 0.23256,
+        "chars": 6,
+        "chars_per_1k_ink": 8.82
+      }
     },
     {
       "bbox": [
@@ -72,7 +78,7 @@
         400
       ],
       "category": "Section-header",
-      "text": "§ 10. The Deputy Mayor for Intergovernmental Affairs shall:",
+      "text": "\u00a7 10. The Deputy Mayor for Intergovernmental Affairs shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -344,7 +350,7 @@
         1438
       ],
       "category": "Section-header",
-      "text": "§ 11. The Chief Counsel to the Mayor and City Hall shall:",
+      "text": "\u00a7 11. The Chief Counsel to the Mayor and City Hall shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -499,11 +505,11 @@
         }
       },
       "ink": {
-        "ink_px": 8408,
-        "area_px": 52972,
-        "density": 0.15873,
+        "ink_px": 28099,
+        "area_px": 147288,
+        "density": 0.19078,
         "chars": 280,
-        "chars_per_1k_ink": 33.3
+        "chars_per_1k_ink": 9.96
       }
     }
   ],
@@ -524,7 +530,7 @@
           "index": 119,
           "token_id": 17851,
           "logprob": -0.0308,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 272,
@@ -590,7 +596,7 @@
           "index": 696,
           "token_id": 17851,
           "logprob": -0.0012,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -702,15 +708,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 224355,
-    "covered_px": 224355,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 244881,
+    "covered_px": 244726,
+    "covered_fraction": 0.99937,
+    "uncovered_px": 155,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

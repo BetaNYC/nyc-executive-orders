@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1024,
-        "area_px": 3952,
-        "density": 0.25911,
+        "ink_px": 1896,
+        "area_px": 8398,
+        "density": 0.22577,
         "chars": 21,
-        "chars_per_1k_ink": 20.51
+        "chars_per_1k_ink": 11.08
       }
     },
     {
@@ -214,7 +214,7 @@
         1207
       ],
       "category": "Text",
-      "text": "§ 2. City agencies are encouraged to use these materials as appropriate to facilitate constructive discourse, further understanding, and enable a more thoughtful response to harmful antisemitic behavior.",
+      "text": "\u00a7 2. City agencies are encouraged to use these materials as appropriate to facilitate constructive discourse, further understanding, and enable a more thoughtful response to harmful antisemitic behavior.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -248,7 +248,7 @@
         1360
       ],
       "category": "Text",
-      "text": "§ 3. This order is not intended to restrict speech or conduct that is protected under the First Amendment. Antisemitic acts are criminal only when they are so defined by law, and this order does not establish civil or criminal liability for any acts.",
+      "text": "\u00a7 3. This order is not intended to restrict speech or conduct that is protected under the First Amendment. Antisemitic acts are criminal only when they are so defined by law, and this order does not establish civil or criminal liability for any acts.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -282,7 +282,7 @@
         1434
       ],
       "category": "Text",
-      "text": "§ 4. This Order is not intended to create any private right of action.",
+      "text": "\u00a7 4. This Order is not intended to create any private right of action.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -316,7 +316,7 @@
         1507
       ],
       "category": "Text",
-      "text": "§ 5. This Order shall take effect immediately.",
+      "text": "\u00a7 5. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -454,7 +454,7 @@
           "index": 522,
           "token_id": 17851,
           "logprob": -0.0024,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 207,
@@ -572,25 +572,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 172817,
-    "covered_px": 166282,
-    "covered_fraction": 0.96219,
-    "uncovered_px": 6535,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          900,
-          1608,
-          1356,
-          1848
-        ],
-        "ink_px": 6465
-      }
-    ],
+    "ink_px": 173738,
+    "covered_px": 167154,
+    "covered_fraction": 0.9621,
+    "uncovered_px": 6584,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 9990,
+        "area_px": 52836,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -311,7 +311,7 @@
         2014
       ],
       "category": "Text",
-      "text": "§ 2. Agencies may only inquire into the pay history of an applicant for employment after",
+      "text": "\u00a7 2. Agencies may only inquire into the pay history of an applicant for employment after",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -329,7 +329,13 @@
           "min": -0.0022
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 9367,
+        "area_px": 43812,
+        "density": 0.2138,
+        "chars": 88,
+        "chars_per_1k_ink": 9.39
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -527,15 +533,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 139870,
-    "covered_px": 139867,
+    "ink_px": 149237,
+    "covered_px": 149234,
     "covered_fraction": 0.99998,
     "uncovered_px": 3,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 11074,
+        "area_px": 54014,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -243,7 +243,7 @@
         1214
       ],
       "category": "Text",
-      "text": "NOW THEREFORE, by the power vested in me as Mayor of the City of New York pursuant to law, including Executive Law § 24, I hereby proclaim a state of local emergency in the City of New York and order:",
+      "text": "NOW THEREFORE, by the power vested in me as Mayor of the City of New York pursuant to law, including Executive Law \u00a7 24, I hereby proclaim a state of local emergency in the City of New York and order:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1464
       ],
       "category": "Text",
-      "text": "§ 2. The following vehicles may operate on City streets and highways while the state of emergency remains in effect:",
+      "text": "\u00a7 2. The following vehicles may operate on City streets and highways while the state of emergency remains in effect:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -500,11 +500,11 @@
         }
       },
       "ink": {
-        "ink_px": 8674,
-        "area_px": 76296,
-        "density": 0.11369,
+        "ink_px": 10843,
+        "area_px": 131784,
+        "density": 0.08228,
         "chars": 190,
-        "chars_per_1k_ink": 21.9
+        "chars_per_1k_ink": 17.52
       }
     }
   ],
@@ -549,7 +549,7 @@
           "index": 599,
           "token_id": 17851,
           "logprob": -0.0072,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 988,
@@ -703,15 +703,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 138332,
-    "covered_px": 138332,
+    "ink_px": 140501,
+    "covered_px": 140501,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

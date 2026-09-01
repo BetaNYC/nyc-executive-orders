@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 16790,
+        "area_px": 54740,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -209,7 +209,7 @@
         1023
       ],
       "category": "Text",
-      "text": "NOW THEREFORE, by the power vested in me as Mayor of the City of New York pursuant to law, including Executive Law § 24:",
+      "text": "NOW THEREFORE, by the power vested in me as Mayor of the City of New York pursuant to law, including Executive Law \u00a7 24:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -277,7 +277,7 @@
         1448
       ],
       "category": "Text",
-      "text": "§ 2. I hereby direct, in accordance with section 25 of the Executive Law, section 61(2) of the New York Civil Service Law, and subdivision 5.1.1 of section 1 of rule 5 of the Department of Citywide Administrative Services' Personnel Rules and Regulations of the City of New York, that the City Cleanup Corps and staff from any agency, as designated by their Agency Head, shall assist the Commissioner of Emergency Management to carry out the directives set forth in this Order. The Commissioner of Emergency Management is further directed to take all necessary steps required to carry out the directives set forth in this Order.",
+      "text": "\u00a7 2. I hereby direct, in accordance with section 25 of the Executive Law, section 61(2) of the New York Civil Service Law, and subdivision 5.1.1 of section 1 of rule 5 of the Department of Citywide Administrative Services' Personnel Rules and Regulations of the City of New York, that the City Cleanup Corps and staff from any agency, as designated by their Agency Head, shall assist the Commissioner of Emergency Management to carry out the directives set forth in this Order. The Commissioner of Emergency Management is further directed to take all necessary steps required to carry out the directives set forth in this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1564
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -460,7 +460,7 @@
           "index": 561,
           "token_id": 17851,
           "logprob": -0.0024,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 223,
@@ -484,7 +484,7 @@
           "index": 442,
           "token_id": 16625,
           "logprob": -0.0013,
-          "text": " §"
+          "text": " \u00a7"
         }
       ]
     },
@@ -596,25 +596,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
     "ink_px": 129622,
     "covered_px": 129213,
     "covered_fraction": 0.99684,
     "uncovered_px": 409,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          900,
-          1656,
-          1212,
-          1680
-        ],
-        "ink_px": 409
-      }
-    ],
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

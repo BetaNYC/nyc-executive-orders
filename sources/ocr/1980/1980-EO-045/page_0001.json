@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 8768,
-        "area_px": 18786,
-        "density": 0.46673,
+        "ink_px": 16673,
+        "area_px": 38130,
+        "density": 0.43727,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -277,7 +277,7 @@
         1918
       ],
       "category": "Text",
-      "text": "§ 2. Effective Date. This Order shall take effect immediately.",
+      "text": "\u00a7 2. Effective Date. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -329,7 +329,13 @@
           "min": -0.0887
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2077,
+        "area_px": 14787,
+        "density": 0.14046,
+        "chars": 20,
+        "chars_per_1k_ink": 9.63
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -361,7 +367,7 @@
           "index": 754,
           "token_id": 17851,
           "logprob": -0.4061,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 806,
@@ -527,70 +533,107 @@
   "ink_coverage": {
     "roi": [
       219,
-      277,
+      0,
       1606,
-      2036
+      2314
     ],
-    "ink_px": 172065,
-    "covered_px": 161016,
-    "covered_fraction": 0.93579,
-    "uncovered_px": 11049,
+    "ink_px": 191880,
+    "covered_px": 170998,
+    "covered_fraction": 0.89117,
+    "uncovered_px": 20882,
     "uncovered_regions": [
       {
         "bbox": [
-          1083,
-          1957,
-          1371,
-          2036
+          1395,
+          528,
+          1606,
+          600
         ],
-        "ink_px": 2700
+        "ink_px": 2607
       },
       {
         "bbox": [
-          1395,
-          517,
-          1606,
-          613
+          219,
+          2064,
+          507,
+          2208
         ],
-        "ink_px": 2624
-      },
-      {
-        "bbox": [
-          1395,
-          1933,
-          1606,
-          2036
-        ],
-        "ink_px": 2227
+        "ink_px": 2278
       },
       {
         "bbox": [
           1491,
-          637,
+          624,
           1606,
-          709
+          696
         ],
-        "ink_px": 1388
+        "ink_px": 1381
       },
       {
         "bbox": [
+          627,
+          2064,
           771,
-          685,
-          1035,
-          709
+          2136
         ],
-        "ink_px": 696
+        "ink_px": 1177
+      },
+      {
+        "bbox": [
+          1371,
+          144,
+          1491,
+          240
+        ],
+        "ink_px": 1039
+      },
+      {
+        "bbox": [
+          939,
+          2064,
+          1059,
+          2136
+        ],
+        "ink_px": 772
+      },
+      {
+        "bbox": [
+          795,
+          2064,
+          915,
+          2136
+        ],
+        "ink_px": 585
       },
       {
         "bbox": [
           1347,
-          493,
+          480,
           1419,
-          565
+          552
         ],
-        "ink_px": 572
+        "ink_px": 575
+      },
+      {
+        "bbox": [
+          531,
+          2040,
+          603,
+          2136
+        ],
+        "ink_px": 561
+      },
+      {
+        "bbox": [
+          1515,
+          144,
+          1563,
+          216
+        ],
+        "ink_px": 438
       }
     ],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

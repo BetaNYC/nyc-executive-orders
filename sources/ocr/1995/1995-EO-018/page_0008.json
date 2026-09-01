@@ -28,7 +28,13 @@
           "min": -0.7077
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2810,
+        "area_px": 19807,
+        "density": 0.14187,
+        "chars": 50,
+        "chars_per_1k_ink": 17.79
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         159
       ],
       "category": "Page-header",
-      "text": "2127883286→",
+      "text": "2127883286\u2192",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -56,7 +62,13 @@
           "min": -0.2841
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 801,
+        "area_px": 4347,
+        "density": 0.18427,
+        "chars": 11,
+        "chars_per_1k_ink": 13.73
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.2442
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 253,
+        "area_px": 2726,
+        "density": 0.09281,
+        "chars": 11,
+        "chars_per_1k_ink": 43.48
+      }
     },
     {
       "bbox": [
@@ -224,7 +242,7 @@
           "index": 109,
           "token_id": 51018,
           "logprob": -0.2841,
-          "text": "→"
+          "text": "\u2192"
         },
         {
           "index": 156,
@@ -384,25 +402,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 95642,
-    "covered_px": 81829,
-    "covered_fraction": 0.85558,
-    "uncovered_px": 13813,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          756,
-          1176,
-          1380,
-          1344
-        ],
-        "ink_px": 13237
-      }
-    ],
+    "ink_px": 100031,
+    "covered_px": 85693,
+    "covered_fraction": 0.85666,
+    "uncovered_px": 14338,
+    "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

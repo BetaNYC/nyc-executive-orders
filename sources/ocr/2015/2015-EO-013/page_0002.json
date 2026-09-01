@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 6228,
-        "area_px": 70020,
-        "density": 0.08895,
+        "ink_px": 18821,
+        "area_px": 144708,
+        "density": 0.13006,
         "chars": 195,
-        "chars_per_1k_ink": 31.31
+        "chars_per_1k_ink": 10.36
       }
     },
     {
@@ -78,7 +78,7 @@
         501
       ],
       "category": "Section-header",
-      "text": "### § 2. Duties of the Committee. The Committee shall:",
+      "text": "### \u00a7 2. Duties of the Committee. The Committee shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -214,7 +214,7 @@
         946
       ],
       "category": "Section-header",
-      "text": "### § 3. Powers of the Committee.",
+      "text": "### \u00a7 3. Powers of the Committee.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -282,7 +282,7 @@
         1213
       ],
       "category": "Section-header",
-      "text": "### § 4. Effective Date. This Order shall take effect immediately.",
+      "text": "### \u00a7 4. Effective Date. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -391,7 +391,7 @@
           "index": 176,
           "token_id": 16625,
           "logprob": -0.0038,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 67,
@@ -533,15 +533,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 115657,
-    "covered_px": 115652,
+    "ink_px": 128250,
+    "covered_px": 128245,
     "covered_fraction": 0.99996,
     "uncovered_px": 5,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

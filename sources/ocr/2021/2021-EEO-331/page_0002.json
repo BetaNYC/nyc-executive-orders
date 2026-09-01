@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 3589,
-        "area_px": 21828,
-        "density": 0.16442,
+        "ink_px": 17841,
+        "area_px": 100152,
+        "density": 0.17814,
         "chars": 167,
-        "chars_per_1k_ink": 46.53
+        "chars_per_1k_ink": 9.36
       }
     },
     {
@@ -44,7 +44,7 @@
         472
       ],
       "category": "Text",
-      "text": "§ 5. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 5. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -135,7 +135,7 @@
           "index": 113,
           "token_id": 17851,
           "logprob": -0.0019,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 71,
@@ -295,15 +295,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 48121,
-    "covered_px": 48121,
+    "ink_px": 62373,
+    "covered_px": 62373,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -28,7 +28,13 @@
           "min": -0.0012
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3506,
+        "area_px": 25800,
+        "density": 0.13589,
+        "chars": 53,
+        "chars_per_1k_ink": 15.12
+      }
     },
     {
       "bbox": [
@@ -242,7 +248,7 @@
         1319
       ],
       "category": "Text",
-      "text": "§ 9. The Deputy Mayor for Communications shall:",
+      "text": "\u00a7 9. The Deputy Mayor for Communications shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -431,11 +437,11 @@
         }
       },
       "ink": {
-        "ink_px": 6085,
-        "area_px": 64500,
-        "density": 0.09434,
+        "ink_px": 12223,
+        "area_px": 101910,
+        "density": 0.11994,
         "chars": 174,
-        "chars_per_1k_ink": 28.59
+        "chars_per_1k_ink": 14.24
       }
     },
     {
@@ -464,7 +470,13 @@
           "min": -0.0001
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 146,
+        "area_px": 759,
+        "density": 0.19236,
+        "chars": 1,
+        "chars_per_1k_ink": 6.85
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -484,7 +496,7 @@
           "index": 623,
           "token_id": 17851,
           "logprob": -0.125,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 80,
@@ -662,15 +674,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 180014,
-    "covered_px": 180008,
+    "ink_px": 189804,
+    "covered_px": 189798,
     "covered_fraction": 0.99997,
     "uncovered_px": 6,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

@@ -28,7 +28,13 @@
           "min": -0.0039
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4360,
+        "area_px": 14196,
+        "density": 0.30713,
+        "chars": 19,
+        "chars_per_1k_ink": 4.36
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0238
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2504,
+        "area_px": 10329,
+        "density": 0.24242,
+        "chars": 22,
+        "chars_per_1k_ink": 8.79
+      }
     },
     {
       "bbox": [
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 4203,
-        "area_px": 23880,
-        "density": 0.17601,
+        "ink_px": 6222,
+        "area_px": 42387,
+        "density": 0.14679,
         "chars": 72,
-        "chars_per_1k_ink": 17.13
+        "chars_per_1k_ink": 11.57
       }
     },
     {
@@ -304,7 +316,7 @@
         880
       ],
       "category": "Section-header",
-      "text": "## § 2. Establishment of Quarterly Allocations and Personnel Ceilings.",
+      "text": "## \u00a7 2. Establishment of Quarterly Allocations and Personnel Ceilings.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -474,7 +486,7 @@
         1269
       ],
       "category": "Section-header",
-      "text": "## § 3. Establishment of a Monthly Expenditure and Personnel Plan",
+      "text": "## \u00a7 3. Establishment of a Monthly Expenditure and Personnel Plan",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -610,7 +622,7 @@
         1486
       ],
       "category": "Section-header",
-      "text": "## § 4. Establishment of the Monthly Expenditure and Personnel Forecasts",
+      "text": "## \u00a7 4. Establishment of the Monthly Expenditure and Personnel Forecasts",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -678,7 +690,7 @@
         1664
       ],
       "category": "Section-header",
-      "text": "## § 5. Monthly Reports to the Office of Management and Budget",
+      "text": "## \u00a7 5. Monthly Reports to the Office of Management and Budget",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -1036,43 +1048,35 @@
   "ink_coverage": {
     "roi": [
       205,
-      270,
+      0,
       1506,
-      1982
+      2253
     ],
-    "ink_px": 297906,
-    "covered_px": 291366,
-    "covered_fraction": 0.97805,
-    "uncovered_px": 6540,
+    "ink_px": 319789,
+    "covered_px": 300249,
+    "covered_fraction": 0.9389,
+    "uncovered_px": 19540,
     "uncovered_regions": [
       {
         "bbox": [
-          1069,
-          846,
-          1261,
-          1926
+          1213,
+          0,
+          1405,
+          144
         ],
-        "ink_px": 4266
+        "ink_px": 3131
       },
       {
         "bbox": [
-          421,
-          822,
-          805,
-          870
+          1429,
+          48,
+          1501,
+          120
         ],
-        "ink_px": 1216
-      },
-      {
-        "bbox": [
-          325,
-          582,
-          349,
-          822
-        ],
-        "ink_px": 625
+        "ink_px": 460
       }
     ],
+    "suppressed_regions": 6,
     "cell_px": 24
   }
 }

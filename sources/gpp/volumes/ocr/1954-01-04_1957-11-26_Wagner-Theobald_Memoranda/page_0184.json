@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 2986,
-        "area_px": 13286,
-        "density": 0.22475,
+        "ink_px": 9076,
+        "area_px": 35854,
+        "density": 0.25314,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -91,7 +91,13 @@
           "min": -0.0024
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4006,
+        "area_px": 35640,
+        "density": 0.1124,
+        "chars": 36,
+        "chars_per_1k_ink": 8.99
+      }
     },
     {
       "bbox": [
@@ -119,7 +125,13 @@
           "min": -0.3869
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1550,
+        "area_px": 12144,
+        "density": 0.12764,
+        "chars": 11,
+        "chars_per_1k_ink": 7.1
+      }
     },
     {
       "bbox": [
@@ -148,11 +160,11 @@
         }
       },
       "ink": {
-        "ink_px": 2668,
-        "area_px": 19932,
-        "density": 0.13386,
+        "ink_px": 3126,
+        "area_px": 24160,
+        "density": 0.12939,
         "chars": 32,
-        "chars_per_1k_ink": 11.99
+        "chars_per_1k_ink": 10.24
       }
     },
     {
@@ -386,11 +398,11 @@
         }
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 1640,
-        "density": 0.0,
+        "ink_px": 1977,
+        "area_px": 36490,
+        "density": 0.05418,
         "chars": 22,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 11.13
       }
     }
   ],
@@ -589,15 +601,26 @@
   "ink_coverage": {
     "roi": [
       273,
-      351,
+      0,
       2002,
-      2580
+      2932
     ],
-    "ink_px": 74664,
-    "covered_px": 73590,
-    "covered_fraction": 0.98562,
-    "uncovered_px": 1074,
-    "uncovered_regions": [],
+    "ink_px": 483614,
+    "covered_px": 87671,
+    "covered_fraction": 0.18128,
+    "uncovered_px": 395943,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          273,
+          2784,
+          2002,
+          2932
+        ],
+        "ink_px": 222146
+      }
+    ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

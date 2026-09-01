@@ -30,7 +30,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 12992,
+        "area_px": 14336,
         "density": 0.0,
         "chars": 65,
         "chars_per_1k_ink": null
@@ -57,7 +57,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 16492,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -67,7 +73,7 @@
         1856
       ],
       "category": "Page-footer",
-      "text": "Copyright by the author is subject to a license agreement. This work may be used by permission of the author. Copyright © 1988 by the author. All rights reserved. No part of this work may be reproduced without prior written permission from the author. This work may be used by permission of the author. Copyright © 1988 by the author. All rights reserved. No part of this work may be reproduced without permission of the author.",
+      "text": "Copyright by the author is subject to a license agreement. This work may be used by permission of the author. Copyright \u00a9 1988 by the author. All rights reserved. No part of this work may be reproduced without prior written permission from the author. This work may be used by permission of the author. Copyright \u00a9 1988 by the author. All rights reserved. No part of this work may be reproduced without permission of the author.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -85,7 +91,13 @@
           "min": -2.9373
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 23250,
+        "density": 0.0,
+        "chars": 428,
+        "chars_per_1k_ink": null
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -283,15 +295,26 @@
   "ink_coverage": {
     "roi": [
       143,
-      220,
+      0,
       1054,
-      1613
+      1834
     ],
-    "ink_px": 118,
+    "ink_px": 52934,
     "covered_px": 0,
     "covered_fraction": 0.0,
-    "uncovered_px": 118,
-    "uncovered_regions": [],
+    "uncovered_px": 52934,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          143,
+          0,
+          1054,
+          120
+        ],
+        "ink_px": 52792
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

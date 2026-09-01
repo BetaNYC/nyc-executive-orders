@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 12768,
+        "area_px": 52864,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -379,7 +379,7 @@
         1810
       ],
       "category": "Text",
-      "text": "§1. Establishment of the M/WBE Advisory Committee. There is hereby established in the Office of the Mayor an M/WBE Advisory Committee (hereinafter the \"Committee\").",
+      "text": "\u00a71. Establishment of the M/WBE Advisory Committee. There is hereby established in the Office of the Mayor an M/WBE Advisory Committee (hereinafter the \"Committee\").",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -487,7 +487,7 @@
           "index": 709,
           "token_id": 17851,
           "logprob": -0.0223,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 351,
@@ -635,15 +635,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
     "ink_px": 182832,
     "covered_px": 182823,
     "covered_fraction": 0.99995,
     "uncovered_px": 9,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

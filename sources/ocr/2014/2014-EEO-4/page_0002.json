@@ -10,7 +10,7 @@
         321
       ],
       "category": "Text",
-      "text": "§ 1. The emergency order regarding nuisance abatement through debris removal set forth in Executive Order 235 is hereby extended for five days.",
+      "text": "\u00a7 1. The emergency order regarding nuisance abatement through debris removal set forth in Executive Order 235 is hereby extended for five days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 4692,
-        "area_px": 67088,
-        "density": 0.06994,
+        "ink_px": 12412,
+        "area_px": 141364,
+        "density": 0.0878,
         "chars": 143,
-        "chars_per_1k_ink": 30.48
+        "chars_per_1k_ink": 11.52
       }
     },
     {
@@ -44,7 +44,7 @@
         471
       ],
       "category": "Text",
-      "text": "§ 2. This order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -157,7 +157,7 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.0016,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 197,
@@ -187,7 +187,7 @@
           "index": 100,
           "token_id": 17851,
           "logprob": -0.0004,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 201,
@@ -329,15 +329,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 21111,
-    "covered_px": 20910,
-    "covered_fraction": 0.99048,
+    "ink_px": 28831,
+    "covered_px": 28630,
+    "covered_fraction": 0.99303,
     "uncovered_px": 201,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

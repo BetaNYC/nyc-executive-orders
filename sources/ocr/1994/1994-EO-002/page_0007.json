@@ -28,7 +28,13 @@
           "min": -0.0016
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1085,
+        "area_px": 7020,
+        "density": 0.15456,
+        "chars": 17,
+        "chars_per_1k_ink": 15.67
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0869
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 784,
+        "area_px": 5952,
+        "density": 0.13172,
+        "chars": 16,
+        "chars_per_1k_ink": 20.41
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.3871
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 630,
+        "area_px": 7756,
+        "density": 0.08123,
+        "chars": 23,
+        "chars_per_1k_ink": 36.51
+      }
     },
     {
       "bbox": [
@@ -230,7 +248,7 @@
         1724
       ],
       "category": "List-item",
-      "text": "§ 5. The Deputy Mayor for Planning and Community Relations shall:",
+      "text": "\u00a7 5. The Deputy Mayor for Planning and Community Relations shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -304,7 +322,7 @@
           "index": 463,
           "token_id": 17851,
           "logprob": -0.0651,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 191,
@@ -452,15 +470,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 80713,
-    "covered_px": 80602,
-    "covered_fraction": 0.99862,
-    "uncovered_px": 111,
+    "ink_px": 83642,
+    "covered_px": 83101,
+    "covered_fraction": 0.99353,
+    "uncovered_px": 541,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

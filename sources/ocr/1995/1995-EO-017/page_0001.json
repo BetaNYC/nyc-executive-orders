@@ -28,7 +28,13 @@
           "min": -0.1853
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 567,
+        "area_px": 8712,
+        "density": 0.06508,
+        "chars": 18,
+        "chars_per_1k_ink": 31.75
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0337
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 542,
+        "area_px": 7657,
+        "density": 0.07078,
+        "chars": 16,
+        "chars_per_1k_ink": 29.52
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.6935
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 437,
+        "area_px": 7946,
+        "density": 0.055,
+        "chars": 24,
+        "chars_per_1k_ink": 54.92
+      }
     },
     {
       "bbox": [
@@ -108,9 +126,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 2305,
-        "area_px": 26980,
-        "density": 0.08543,
+        "ink_px": 2888,
+        "area_px": 38570,
+        "density": 0.07488,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -361,7 +379,7 @@
         1581
       ],
       "category": "Text",
-      "text": "§2. The introductory paragraph of section 2 of Executive Order No. 2, dated January 1, 1994, as amended, is amended to read as follows:",
+      "text": "\u00a72. The introductory paragraph of section 2 of Executive Order No. 2, dated January 1, 1994, as amended, is amended to read as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -395,7 +413,7 @@
         1643
       ],
       "category": "Text",
-      "text": "§2. The First Deputy Mayor shall:",
+      "text": "\u00a72. The First Deputy Mayor shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -429,7 +447,7 @@
         1774
       ],
       "category": "Text",
-      "text": "§3. Section 3 of Executive Order No. 2, dated January 1, 1994, as amended, is amended to read as follows:",
+      "text": "\u00a73. Section 3 of Executive Order No. 2, dated January 1, 1994, as amended, is amended to read as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -463,7 +481,7 @@
         1901
       ],
       "category": "Text",
-      "text": "§3. The First Deputy Mayor is hereby delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to delegate, in the event that the",
+      "text": "\u00a73. The First Deputy Mayor is hereby delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to delegate, in the event that the",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -567,7 +585,7 @@
           "index": 778,
           "token_id": 17851,
           "logprob": -0.0154,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 39,
@@ -685,15 +703,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 97182,
-    "covered_px": 97168,
-    "covered_fraction": 0.99986,
-    "uncovered_px": 14,
+    "ink_px": 99629,
+    "covered_px": 99297,
+    "covered_fraction": 0.99667,
+    "uncovered_px": 332,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

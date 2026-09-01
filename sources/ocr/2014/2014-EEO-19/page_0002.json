@@ -10,7 +10,7 @@
         620
       ],
       "category": "Text",
-      "text": "§ 1. Pursuant to the powers vested in me by the laws of the State of New York and the City of New York, including but not limited to the New York Executive Law, the Charter and Administrative Code of the City of New York, and the common law authority to protect the public in the event of an emergency, I hereby extend the State of Emergency first declared in Executive Order 163 and extended in Executive Orders 186, 205, 225, 251, 282, 312, 336, 355, 375, 394, 413, 433, and 446.",
+      "text": "\u00a7 1. Pursuant to the powers vested in me by the laws of the State of New York and the City of New York, including but not limited to the New York Executive Law, the Charter and Administrative Code of the City of New York, and the common law authority to protect the public in the event of an emergency, I hereby extend the State of Emergency first declared in Executive Order 163 and extended in Executive Orders 186, 205, 225, 251, 282, 312, 336, 355, 375, 394, 413, 433, and 446.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 46089,
-        "area_px": 455017,
-        "density": 0.10129,
+        "ink_px": 54833,
+        "area_px": 540091,
+        "density": 0.10153,
         "chars": 481,
-        "chars_per_1k_ink": 10.44
+        "chars_per_1k_ink": 8.77
       }
     },
     {
@@ -44,7 +44,7 @@
         929
       ],
       "category": "Text",
-      "text": "§ 2. This State of Emergency has been extended because the damage from the storm, including widespread structural damage and debris, and the continued disruption of public transportation and other vital services such as heat, hot water and electricity in some areas, creates conditions that imperil the public safety.",
+      "text": "\u00a7 2. This State of Emergency has been extended because the damage from the storm, including widespread structural damage and debris, and the continued disruption of public transportation and other vital services such as heat, hot water and electricity in some areas, creates conditions that imperil the public safety.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -78,7 +78,7 @@
         1080
       ],
       "category": "Text",
-      "text": "§ 3. This Proclamation shall be effective immediately. It shall remain in effect for thirty (30) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 3. This Proclamation shall be effective immediately. It shall remain in effect for thirty (30) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -159,7 +159,13 @@
           "min": -0.0001
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 139,
+        "area_px": 744,
+        "density": 0.18683,
+        "chars": 1,
+        "chars_per_1k_ink": 7.19
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -179,7 +185,7 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.0261,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 275,
@@ -203,13 +209,13 @@
           "index": 224,
           "token_id": 17851,
           "logprob": -0.0005,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 317,
           "token_id": 17851,
           "logprob": -0.0004,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 272,
@@ -357,15 +363,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 114054,
-    "covered_px": 114054,
+    "ink_px": 122937,
+    "covered_px": 122937,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

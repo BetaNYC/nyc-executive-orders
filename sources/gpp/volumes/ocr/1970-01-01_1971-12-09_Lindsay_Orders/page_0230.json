@@ -28,7 +28,13 @@
           "min": -0.5852
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 27348,
+        "density": 0.0,
+        "chars": 89,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 11820,
-        "density": 0.0,
+        "ink_px": 3,
+        "area_px": 18912,
+        "density": 0.00016,
         "chars": 35,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 11666.67
       }
     },
     {
@@ -1149,11 +1155,11 @@
         }
       },
       "ink": {
-        "ink_px": 6,
-        "area_px": 5490,
-        "density": 0.00109,
+        "ink_px": 11,
+        "area_px": 9516,
+        "density": 0.00116,
         "chars": 23,
-        "chars_per_1k_ink": 3833.33
+        "chars_per_1k_ink": 2090.91
       }
     },
     {
@@ -1182,7 +1188,13 @@
           "min": -0.0012
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 46,
+        "area_px": 13770,
+        "density": 0.00334,
+        "chars": 32,
+        "chars_per_1k_ink": 695.65
+      }
     },
     {
       "bbox": [
@@ -1210,7 +1222,13 @@
           "min": -0.003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 42,
+        "area_px": 14229,
+        "density": 0.00295,
+        "chars": 33,
+        "chars_per_1k_ink": 785.71
+      }
     },
     {
       "bbox": [
@@ -1238,7 +1256,13 @@
           "min": -0.0141
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 49,
+        "area_px": 8127,
+        "density": 0.00603,
+        "chars": 19,
+        "chars_per_1k_ink": 387.76
+      }
     },
     {
       "bbox": [
@@ -1266,7 +1290,13 @@
           "min": -0.2658
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 157,
+        "area_px": 7876,
+        "density": 0.01993,
+        "chars": 32,
+        "chars_per_1k_ink": 203.82
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -1464,15 +1494,16 @@
   "ink_coverage": {
     "roi": [
       172,
-      224,
+      0,
       1267,
-      1643
+      1868
     ],
-    "ink_px": 19,
-    "covered_px": 19,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 55932,
+    "covered_px": 320,
+    "covered_fraction": 0.00572,
+    "uncovered_px": 55612,
     "uncovered_regions": [],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

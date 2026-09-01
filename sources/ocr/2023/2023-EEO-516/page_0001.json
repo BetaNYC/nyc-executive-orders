@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 26220,
+        "area_px": 54740,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -345,7 +345,7 @@
         1669
       ],
       "category": "Text",
-      "text": "§ 2. I hereby order that section 1 of Emergency Executive Order No. 514, dated November 1, 2023, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby order that section 1 of Emergency Executive Order No. 514, dated November 1, 2023, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -379,7 +379,7 @@
         1870
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -427,9 +427,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 2990,
-        "area_px": 67893,
-        "density": 0.04404,
+        "ink_px": 3379,
+        "area_px": 78141,
+        "density": 0.04324,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -476,7 +476,7 @@
           "index": 732,
           "token_id": 17851,
           "logprob": -0.0024,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 405,
@@ -630,15 +630,16 @@
   "ink_coverage": {
     "roi": [
       198,
-      280,
+      0,
       1457,
-      2058
+      2339
     ],
-    "ink_px": 136655,
-    "covered_px": 136655,
+    "ink_px": 137044,
+    "covered_px": 137044,
     "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

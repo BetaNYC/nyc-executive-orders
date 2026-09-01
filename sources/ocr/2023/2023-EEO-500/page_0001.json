@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 18320,
+        "area_px": 54502,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -413,7 +413,7 @@
         1949
       ],
       "category": "Text",
-      "text": "§ 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -433,8 +433,8 @@
       },
       "ink": {
         "ink_px": 10983,
-        "area_px": 95608,
-        "density": 0.11488,
+        "area_px": 99484,
+        "density": 0.1104,
         "chars": 166,
         "chars_per_1k_ink": 15.11
       }
@@ -460,7 +460,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3220,
+        "area_px": 46116,
+        "density": 0.06982,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -488,7 +494,13 @@
           "min": -0.0007
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1421,
+        "area_px": 12397,
+        "density": 0.11462,
+        "chars": 16,
+        "chars_per_1k_ink": 11.26
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -562,7 +574,7 @@
           "index": 945,
           "token_id": 17851,
           "logprob": -0.0053,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 677,
@@ -686,15 +698,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 146408,
-    "covered_px": 146408,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 151227,
+    "covered_px": 151049,
+    "covered_fraction": 0.99882,
+    "uncovered_px": 178,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

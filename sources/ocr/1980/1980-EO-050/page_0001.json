@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 8321,
-        "area_px": 17100,
-        "density": 0.48661,
+        "ink_px": 18892,
+        "area_px": 39900,
+        "density": 0.47348,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1346
       ],
       "category": "Text",
-      "text": "§ 2. Bureau Continued. The Bureau of Labor Services shall continue to serve such purposes and to have such responsibilities as restated by this Order.",
+      "text": "\u00a7 2. Bureau Continued. The Bureau of Labor Services shall continue to serve such purposes and to have such responsibilities as restated by this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -277,7 +277,7 @@
         1481
       ],
       "category": "Text",
-      "text": "§ 3. Definitions. Whenever used in this Executive Order, the following terms shall have the following meanings:",
+      "text": "\u00a7 3. Definitions. Whenever used in this Executive Order, the following terms shall have the following meanings:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -453,7 +453,7 @@
           "index": 384,
           "token_id": 17851,
           "logprob": -0.0823,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 314,
@@ -601,25 +601,35 @@
   "ink_coverage": {
     "roi": [
       209,
-      272,
+      0,
       1535,
-      1994
+      2267
     ],
-    "ink_px": 132910,
-    "covered_px": 131005,
-    "covered_fraction": 0.98567,
-    "uncovered_px": 1905,
+    "ink_px": 150656,
+    "covered_px": 141576,
+    "covered_fraction": 0.93973,
+    "uncovered_px": 9080,
     "uncovered_regions": [
       {
         "bbox": [
-          665,
-          776,
-          1097,
-          800
+          1289,
+          1968,
+          1535,
+          2208
         ],
-        "ink_px": 1405
+        "ink_px": 5767
+      },
+      {
+        "bbox": [
+          1457,
+          96,
+          1529,
+          168
+        ],
+        "ink_px": 433
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

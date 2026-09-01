@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 7467,
-        "area_px": 80570,
-        "density": 0.09268,
+        "ink_px": 13934,
+        "area_px": 146177,
+        "density": 0.09532,
         "chars": 193,
-        "chars_per_1k_ink": 25.85
+        "chars_per_1k_ink": 13.85
       }
     },
     {
@@ -112,7 +112,7 @@
         997
       ],
       "category": "List-item",
-      "text": "§ 6. *Agency Cooperation*. All agency heads are directed to cooperate with DCAS and the Chief Fleet Officer in implementing and complying with this Order.",
+      "text": "\u00a7 6. *Agency Cooperation*. All agency heads are directed to cooperate with DCAS and the Chief Fleet Officer in implementing and complying with this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         1068
       ],
       "category": "List-item",
-      "text": "§ 7. *Effective Date*. This Order shall take effect immediately.",
+      "text": "\u00a7 7. *Effective Date*. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -237,7 +237,7 @@
           "index": 328,
           "token_id": 17851,
           "logprob": -0.0432,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 232,
@@ -397,15 +397,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 78071,
-    "covered_px": 78070,
-    "covered_fraction": 0.99999,
-    "uncovered_px": 1,
+    "ink_px": 84615,
+    "covered_px": 84537,
+    "covered_fraction": 0.99908,
+    "uncovered_px": 78,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

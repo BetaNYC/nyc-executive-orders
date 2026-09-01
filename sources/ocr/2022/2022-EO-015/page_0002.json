@@ -28,7 +28,13 @@
           "min": -0.0205
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5660,
+        "area_px": 32214,
+        "density": 0.1757,
+        "chars": 61,
+        "chars_per_1k_ink": 10.78
+      }
     },
     {
       "bbox": [
@@ -208,7 +214,7 @@
         903
       ],
       "category": "Section-header",
-      "text": "§ 3. Powers of the Commission.",
+      "text": "\u00a7 3. Powers of the Commission.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -344,7 +350,7 @@
         1387
       ],
       "category": "Section-header",
-      "text": "§ 4. Effective Date. This Order shall take effect immediately.",
+      "text": "\u00a7 4. Effective Date. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -417,7 +423,7 @@
           "index": 387,
           "token_id": 17851,
           "logprob": -0.3199,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 42,
@@ -459,7 +465,7 @@
           "index": 646,
           "token_id": 17851,
           "logprob": -0.0019,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 102,
@@ -595,15 +601,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 121678,
-    "covered_px": 121671,
-    "covered_fraction": 0.99994,
+    "ink_px": 127338,
+    "covered_px": 127331,
+    "covered_fraction": 0.99995,
     "uncovered_px": 7,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

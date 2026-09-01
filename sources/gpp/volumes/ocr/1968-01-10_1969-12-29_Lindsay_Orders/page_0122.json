@@ -28,7 +28,13 @@
           "min": -0.0111
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 6601,
+        "density": 0.0,
+        "chars": 22,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0016
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3,
+        "area_px": 3816,
+        "density": 0.00079,
+        "chars": 12,
+        "chars_per_1k_ink": 4000.0
+      }
     },
     {
       "bbox": [
@@ -66,7 +78,7 @@
         234
       ],
       "category": "Text",
-      "text": "§ 3. The Parks, Recreation and Cultural Affairs Administrator is designated to act as the representative of the City of New York in relation to conservation, recreation, and cultural programs of state and federal agencies.",
+      "text": "\u00a7 3. The Parks, Recreation and Cultural Affairs Administrator is designated to act as the representative of the City of New York in relation to conservation, recreation, and cultural programs of state and federal agencies.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 1,
-        "area_px": 9210,
-        "density": 0.00011,
+        "ink_px": 46,
+        "area_px": 84732,
+        "density": 0.00054,
         "chars": 222,
-        "chars_per_1k_ink": 222000.0
+        "chars_per_1k_ink": 4826.09
       }
     },
     {
@@ -100,7 +112,7 @@
         297
       ],
       "category": "Text",
-      "text": "§ 4. Executive Order No. 33 dated November 21, 1966, is hereby repealed.",
+      "text": "\u00a7 4. Executive Order No. 33 dated November 21, 1966, is hereby repealed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -178,7 +190,7 @@
           "index": 118,
           "token_id": 17851,
           "logprob": -0.0436,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 255,
@@ -208,7 +220,7 @@
           "index": 194,
           "token_id": 17851,
           "logprob": -0.0039,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 33,
@@ -356,15 +368,26 @@
   "ink_coverage": {
     "roi": [
       145,
-      224,
+      0,
       1066,
-      1649
+      1874
     ],
-    "ink_px": 183,
-    "covered_px": 51,
-    "covered_fraction": 0.27869,
-    "uncovered_px": 132,
-    "uncovered_regions": [],
+    "ink_px": 51645,
+    "covered_px": 99,
+    "covered_fraction": 0.00192,
+    "uncovered_px": 51546,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          145,
+          1800,
+          1066,
+          1874
+        ],
+        "ink_px": 50918
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

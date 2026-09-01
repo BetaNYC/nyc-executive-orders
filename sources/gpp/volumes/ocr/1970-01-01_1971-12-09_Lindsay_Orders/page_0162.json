@@ -112,7 +112,7 @@
         1355
       ],
       "category": "Text",
-      "text": "§2. (a) Each agency head shall notify the Dept. of Investigation immediately of any activity by any employee or official of any private concern doing business with any City agency which indicates or suggests an attempt to involve a city officer or employee in a situation involving possible corruption or misconduct, including a conflict of interest. Each agency head shall instruct all personnel within his agency that they are to advise him immediately upon the receipt of any allegation or indication of corruption or questionable action by any person or company doing business with or seeking to do business with any City agency.",
+      "text": "\u00a72. (a) Each agency head shall notify the Dept. of Investigation immediately of any activity by any employee or official of any private concern doing business with any City agency which indicates or suggests an attempt to involve a city officer or employee in a situation involving possible corruption or misconduct, including a conflict of interest. Each agency head shall instruct all personnel within his agency that they are to advise him immediately upon the receipt of any allegation or indication of corruption or questionable action by any person or company doing business with or seeking to do business with any City agency.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -190,7 +190,7 @@
           "index": 250,
           "token_id": 17851,
           "logprob": -0.2114,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 83,
@@ -368,15 +368,35 @@
   "ink_coverage": {
     "roi": [
       171,
-      219,
+      0,
       1258,
-      1610
+      1830
     ],
-    "ink_px": 13,
+    "ink_px": 56462,
     "covered_px": 13,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.00023,
+    "uncovered_px": 56449,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          171,
+          1728,
+          1258,
+          1830
+        ],
+        "ink_px": 55470
+      },
+      {
+        "bbox": [
+          1179,
+          1704,
+          1258,
+          1728
+        ],
+        "ink_px": 532
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

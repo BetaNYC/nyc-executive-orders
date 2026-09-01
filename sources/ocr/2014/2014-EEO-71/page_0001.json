@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 536,
-        "area_px": 3468,
-        "density": 0.15456,
+        "ink_px": 11390,
+        "area_px": 43860,
+        "density": 0.25969,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -277,7 +277,7 @@
         1655
       ],
       "category": "List-item",
-      "text": "§ 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 and subsequently extended most recently in Emergency Executive Order 70 dated September 23, 2014, is hereby extended for five days.",
+      "text": "\u00a7 1. The emergency order regarding waiver of certain local laws related to demolition set forth in Executive Order 234 and subsequently extended most recently in Emergency Executive Order 70 dated September 23, 2014, is hereby extended for five days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1793
       ],
       "category": "List-item",
-      "text": "§ 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
+      "text": "\u00a7 2. This Order shall take effect immediately. It shall remain in effect for (5) days unless it is terminated or modified at an earlier date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -392,7 +392,13 @@
           "min": -0.3281
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 10608,
+        "density": 0.0,
+        "chars": 55,
+        "chars_per_1k_ink": null
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -590,15 +596,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 81054,
-    "covered_px": 81049,
-    "covered_fraction": 0.99994,
+    "ink_px": 91908,
+    "covered_px": 91903,
+    "covered_fraction": 0.99995,
     "uncovered_px": 5,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

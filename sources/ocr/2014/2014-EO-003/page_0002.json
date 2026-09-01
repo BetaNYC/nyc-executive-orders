@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 3661,
-        "area_px": 57960,
-        "density": 0.06316,
+        "ink_px": 22071,
+        "area_px": 136080,
+        "density": 0.16219,
         "chars": 184,
-        "chars_per_1k_ink": 50.26
+        "chars_per_1k_ink": 8.34
       }
     },
     {
@@ -44,7 +44,7 @@
         428
       ],
       "category": "Text",
-      "text": "§ 2. OEM shall continue to be the agency responsible for monitoring, evaluating and updating the Hazard Mitigation Plan in accordance with the Disaster Mitigation Act.",
+      "text": "\u00a7 2. OEM shall continue to be the agency responsible for monitoring, evaluating and updating the Hazard Mitigation Plan in accordance with the Disaster Mitigation Act.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -78,7 +78,7 @@
         574
       ],
       "category": "Text",
-      "text": "§ 3. All agencies shall provide such assistance and cooperation as may be necessary or appropriate to implement the provisions of the Hazard Mitigation Plan and carry out the City's responsibilities under the Disaster Mitigation Act.",
+      "text": "\u00a7 3. All agencies shall provide such assistance and cooperation as may be necessary or appropriate to implement the provisions of the Hazard Mitigation Plan and carry out the City's responsibilities under the Disaster Mitigation Act.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         646
       ],
       "category": "Text",
-      "text": "§ 4. This Order shall take effect immediately.",
+      "text": "\u00a7 4. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -243,7 +243,7 @@
           "index": 110,
           "token_id": 17851,
           "logprob": -0.0012,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 63,
@@ -397,15 +397,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 58586,
-    "covered_px": 58185,
-    "covered_fraction": 0.99316,
+    "ink_px": 76996,
+    "covered_px": 76595,
+    "covered_fraction": 0.99479,
     "uncovered_px": 401,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

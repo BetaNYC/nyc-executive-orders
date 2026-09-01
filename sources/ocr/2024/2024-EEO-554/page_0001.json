@@ -25,7 +25,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 18778,
+        "area_px": 54044,
         "density": 0.0,
         "chars": 0,
         "chars_per_1k_ink": null
@@ -345,7 +345,7 @@
         1654
       ],
       "category": "Text",
-      "text": "§ 2. I hereby order that section 1 of Emergency Executive Order No. 552, dated January 30, 2024, is extended for five (5) days.",
+      "text": "\u00a7 2. I hereby order that section 1 of Emergency Executive Order No. 552, dated January 30, 2024, is extended for five (5) days.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -379,7 +379,7 @@
         1856
       ],
       "category": "Text",
-      "text": "§ 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -427,9 +427,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 187,
-        "area_px": 20776,
-        "density": 0.009,
+        "ink_px": 640,
+        "area_px": 40704,
+        "density": 0.01572,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -460,7 +460,13 @@
           "min": -0.0003
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1250,
+        "area_px": 11607,
+        "density": 0.10769,
+        "chars": 16,
+        "chars_per_1k_ink": 12.8
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -516,7 +522,7 @@
           "index": 754,
           "token_id": 17851,
           "logprob": -0.0031,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 233,
@@ -658,15 +664,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 135660,
-    "covered_px": 135660,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 137366,
+    "covered_px": 137363,
+    "covered_fraction": 0.99998,
+    "uncovered_px": 3,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

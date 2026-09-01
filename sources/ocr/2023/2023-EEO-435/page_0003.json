@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 151,
-        "area_px": 15432,
-        "density": 0.00978,
+        "ink_px": 7043,
+        "area_px": 97736,
+        "density": 0.07206,
         "chars": 98,
-        "chars_per_1k_ink": 649.01
+        "chars_per_1k_ink": 13.91
       }
     },
     {
@@ -214,7 +214,7 @@
         1052
       ],
       "category": "Text",
-      "text": "§ 4. I hereby suspend the following provisions of the Rules of the City of New York (\"RCNY\") to the extent necessary to provide for the continued administration and operation of the Open Restaurants program, subject to applicable guidance issued by the Department of Transportation, the Department of Health and Mental Hygiene, the New York State Department of Health, and the State Liquor Authority:",
+      "text": "\u00a7 4. I hereby suspend the following provisions of the Rules of the City of New York (\"RCNY\") to the extent necessary to provide for the continued administration and operation of the Open Restaurants program, subject to applicable guidance issued by the Department of Transportation, the Department of Health and Mental Hygiene, the New York State Department of Health, and the State Liquor Authority:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -452,7 +452,7 @@
         1939
       ],
       "category": "Text",
-      "text": "§ 5. I hereby suspend the following provisions of the New York City Zoning Resolution (\"ZR\") to the extent necessary to provide for the continued administration and operation of the Open Restaurants program, or to otherwise allow a restaurant to provide outside dining service in any outdoor space that such restaurant controls pursuant to a deed or lease, including a parking lot, subject to applicable guidance issued by the Department of Transportation, the Department of Health and Mental Hygiene, the New York State Department of Health, and the State Liquor Authority:",
+      "text": "\u00a7 5. I hereby suspend the following provisions of the New York City Zoning Resolution (\"ZR\") to the extent necessary to provide for the continued administration and operation of the Open Restaurants program, or to otherwise allow a restaurant to provide outside dining service in any outdoor space that such restaurant controls pursuant to a deed or lease, including a parking lot, subject to applicable guidance issued by the Department of Transportation, the Department of Health and Mental Hygiene, the New York State Department of Health, and the State Liquor Authority:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -514,7 +514,7 @@
           "index": 559,
           "token_id": 17851,
           "logprob": -0.0174,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 213,
@@ -674,15 +674,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 234869,
-    "covered_px": 234869,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 241836,
+    "covered_px": 241761,
+    "covered_fraction": 0.99969,
+    "uncovered_px": 75,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

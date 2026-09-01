@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 9084,
+        "area_px": 38540,
+        "density": 0.2357,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 1,
-        "area_px": 2538,
-        "density": 0.00039,
+        "ink_px": 4370,
+        "area_px": 53721,
+        "density": 0.08135,
         "chars": 53,
-        "chars_per_1k_ink": 53000.0
+        "chars_per_1k_ink": 12.13
       }
     },
     {
@@ -509,7 +515,7 @@
         3141
       ],
       "category": "Text",
-      "text": "§ 2. This order shall take effect June 17, 1966.",
+      "text": "\u00a7 2. This order shall take effect June 17, 1966.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -527,7 +533,13 @@
           "min": -0.1822
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3543,
+        "area_px": 97040,
+        "density": 0.03651,
+        "chars": 48,
+        "chars_per_1k_ink": 13.55
+      }
     },
     {
       "bbox": [
@@ -551,9 +563,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 37,
-        "area_px": 19896,
-        "density": 0.00186,
+        "ink_px": 9697,
+        "area_px": 276057,
+        "density": 0.03513,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -584,7 +596,13 @@
           "min": -0.0013
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2090,
+        "area_px": 35490,
+        "density": 0.05889,
+        "chars": 21,
+        "chars_per_1k_ink": 10.05
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -652,7 +670,7 @@
           "index": 1128,
           "token_id": 17851,
           "logprob": -0.1822,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 317,
@@ -782,15 +800,16 @@
   "ink_coverage": {
     "roi": [
       290,
-      415,
+      0,
       2130,
-      3050
+      3466
     ],
-    "ink_px": 188023,
-    "covered_px": 188023,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 543936,
+    "covered_px": 213012,
+    "covered_fraction": 0.39161,
+    "uncovered_px": 330924,
     "uncovered_regions": [],
+    "suppressed_regions": 2,
     "cell_px": 24
   }
 }

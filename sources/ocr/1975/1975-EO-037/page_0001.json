@@ -28,7 +28,13 @@
           "min": -0.0095
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2593,
+        "area_px": 7644,
+        "density": 0.33922,
+        "chars": 22,
+        "chars_per_1k_ink": 8.48
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0163
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1191,
+        "area_px": 4692,
+        "density": 0.25384,
+        "chars": 15,
+        "chars_per_1k_ink": 12.59
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0371
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3791,
+        "area_px": 13020,
+        "density": 0.29117,
+        "chars": 38,
+        "chars_per_1k_ink": 10.02
+      }
     },
     {
       "bbox": [
@@ -113,11 +131,11 @@
         }
       },
       "ink": {
-        "ink_px": 12690,
-        "area_px": 71225,
-        "density": 0.17817,
+        "ink_px": 15125,
+        "area_px": 84175,
+        "density": 0.17969,
         "chars": 279,
-        "chars_per_1k_ink": 21.99
+        "chars_per_1k_ink": 18.45
       }
     },
     {
@@ -230,7 +248,7 @@
         926
       ],
       "category": "Text",
-      "text": "§ 2. All officers and agencies of the City are directed to take all steps necessary to implement this Executive Order immediately.",
+      "text": "\u00a7 2. All officers and agencies of the City are directed to take all steps necessary to implement this Executive Order immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -264,7 +282,7 @@
         1040
       ],
       "category": "Text",
-      "text": "§ 3. The term \"agencies of the City,\" as used in Section 2 hereof, shall mean The City of New York, every county and borough within it and offices thereof, and every administration, department, division, bureau, board or commission of The City of New York; and every corporation, institution or agency of government, the expenses of which are paid in whole or in part by or from the treasury of The City of New York.",
+      "text": "\u00a7 3. The term \"agencies of the City,\" as used in Section 2 hereof, shall mean The City of New York, every county and borough within it and offices thereof, and every administration, department, division, bureau, board or commission of The City of New York; and every corporation, institution or agency of government, the expenses of which are paid in whole or in part by or from the treasury of The City of New York.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -298,7 +316,7 @@
         1187
       ],
       "category": "Text",
-      "text": "§ 4. Notwithstanding the all inclusive language of Section 1 of this Executive Order, Section 1 shall not apply to any group of public employees covered by a collective bargaining agreement who have voluntarily (through appropriate action by their collective bargaining representative) or to any public employee who is not covered by a collective bargaining agreement who has voluntarily, by an instrument in writing agreed to a deferment of salary or wage increases, which has been certified by me as acceptable and appropriate for alleviating the City's fiscal crisis.",
+      "text": "\u00a7 4. Notwithstanding the all inclusive language of Section 1 of this Executive Order, Section 1 shall not apply to any group of public employees covered by a collective bargaining agreement who have voluntarily (through appropriate action by their collective bargaining representative) or to any public employee who is not covered by a collective bargaining agreement who has voluntarily, by an instrument in writing agreed to a deferment of salary or wage increases, which has been certified by me as acceptable and appropriate for alleviating the City's fiscal crisis.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -332,7 +350,7 @@
         1227
       ],
       "category": "Text",
-      "text": "§ 5. This Executive Order shall take effect on September 1, 1975 and shall continue in effect until one year thereafter.",
+      "text": "\u00a7 5. This Executive Order shall take effect on September 1, 1975 and shall continue in effect until one year thereafter.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -474,7 +492,7 @@
           "index": 774,
           "token_id": 17851,
           "logprob": -0.0311,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 894,
@@ -504,13 +522,13 @@
           "index": 965,
           "token_id": 17851,
           "logprob": -0.0143,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 835,
           "token_id": 17851,
           "logprob": -0.0123,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -622,25 +640,26 @@
   "ink_coverage": {
     "roi": [
       222,
-      282,
+      0,
       1633,
-      2068
+      2350
     ],
-    "ink_px": 182488,
-    "covered_px": 181661,
-    "covered_fraction": 0.99547,
-    "uncovered_px": 827,
+    "ink_px": 193842,
+    "covered_px": 191671,
+    "covered_fraction": 0.9888,
+    "uncovered_px": 2171,
     "uncovered_regions": [
       {
         "bbox": [
-          1302,
-          282,
-          1326,
-          642
+          1518,
+          72,
+          1614,
+          168
         ],
-        "ink_px": 681
+        "ink_px": 738
       }
     ],
+    "suppressed_regions": 1,
     "cell_px": 24
   }
 }

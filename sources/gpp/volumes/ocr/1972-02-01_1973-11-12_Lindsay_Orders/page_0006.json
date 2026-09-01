@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1709,
-        "area_px": 7650,
-        "density": 0.2234,
+        "ink_px": 14558,
+        "area_px": 56250,
+        "density": 0.25881,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -277,7 +277,7 @@
         1995
       ],
       "category": "Text",
-      "text": "\"§3. Composition. The Urban Design Council shall consist of not less than nine nor more than sixteen individuals. They shall be appointed by the Mayor, with due consideration for their understanding of the problems of urban design and their capacity for giving clear, effective advice. They shall serve at the pleasure of the Mayor and without compensation.\"",
+      "text": "\"\u00a73. Composition. The Urban Design Council shall consist of not less than nine nor more than sixteen individuals. They shall be appointed by the Mayor, with due consideration for their understanding of the problems of urban design and their capacity for giving clear, effective advice. They shall serve at the pleasure of the Mayor and without compensation.\"",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         2260
       ],
       "category": "Text",
-      "text": "\"§5. Procedure. All actions of the Urban Design Council shall be by a majority of those present, with a quorum of five required. In other respects the Council shall establish its own rules of",
+      "text": "\"\u00a75. Procedure. All actions of the Urban Design Council shall be by a majority of those present, with a quorum of five required. In other respects the Council shall establish its own rules of",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -345,7 +345,7 @@
         2780
       ],
       "category": "Text",
-      "text": "the City, as required by General City Law, §36 and New York City Charter, §230 shall be required before approval by the Buildings",
+      "text": "the City, as required by General City Law, \u00a736 and New York City Charter, \u00a7230 shall be required before approval by the Buildings",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -425,7 +425,7 @@
           "index": 471,
           "token_id": 17851,
           "logprob": -0.5101,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 423,
@@ -567,15 +567,35 @@
   "ink_coverage": {
     "roi": [
       263,
-      420,
+      0,
       1930,
-      3082
+      3503
     ],
-    "ink_px": 48995,
-    "covered_px": 48661,
-    "covered_fraction": 0.99318,
-    "uncovered_px": 334,
-    "uncovered_regions": [],
+    "ink_px": 330630,
+    "covered_px": 61510,
+    "covered_fraction": 0.18604,
+    "uncovered_px": 269120,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          263,
+          3384,
+          1930,
+          3503
+        ],
+        "ink_px": 136715
+      },
+      {
+        "bbox": [
+          263,
+          0,
+          1930,
+          120
+        ],
+        "ink_px": 132020
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

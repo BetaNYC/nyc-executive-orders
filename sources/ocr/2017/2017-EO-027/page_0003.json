@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 74425,
-        "area_px": 359268,
-        "density": 0.20716,
+        "ink_px": 84174,
+        "area_px": 414960,
+        "density": 0.20285,
         "chars": 778,
-        "chars_per_1k_ink": 10.45
+        "chars_per_1k_ink": 9.24
       }
     },
     {
@@ -146,7 +146,7 @@
         1425
       ],
       "category": "Section-header",
-      "text": "### §3. Task Force and Oversight Functions.",
+      "text": "### \u00a73. Task Force and Oversight Functions.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -248,7 +248,7 @@
         2066
       ],
       "category": "Text",
-      "text": "### § 4. Functional Transfer.\nIn furtherance of the functional transfer necessitated by the location of HHS Accelerator within MOCS, employees substantially engaged in (i) procurement oversight and support, consisting of reviews related to contracting and procurement for Client",
+      "text": "### \u00a7 4. Functional Transfer.\nIn furtherance of the functional transfer necessitated by the location of HHS Accelerator within MOCS, employees substantially engaged in (i) procurement oversight and support, consisting of reviews related to contracting and procurement for Client",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -266,7 +266,13 @@
           "min": -0.1702
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 29625,
+        "area_px": 145318,
+        "density": 0.20386,
+        "chars": 278,
+        "chars_per_1k_ink": 9.38
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -340,7 +346,7 @@
           "index": 523,
           "token_id": 16625,
           "logprob": -0.0054,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 167,
@@ -464,15 +470,16 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 300739,
-    "covered_px": 300739,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 340264,
+    "covered_px": 340113,
+    "covered_fraction": 0.99956,
+    "uncovered_px": 151,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

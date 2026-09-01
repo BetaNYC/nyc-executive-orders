@@ -28,7 +28,13 @@
           "min": -0.0182
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4809,
+        "area_px": 55327,
+        "density": 0.08692,
+        "chars": 55,
+        "chars_per_1k_ink": 11.44
+      }
     },
     {
       "bbox": [
@@ -72,7 +78,7 @@
         555
       ],
       "category": "List-item",
-      "text": "§4. **Functions of the Office: Franchises and Revocable Consents.** The Office of Contracts shall perform the following functions relating to franchises, concessions and revocable consents:",
+      "text": "\u00a74. **Functions of the Office: Franchises and Revocable Consents.** The Office of Contracts shall perform the following functions relating to franchises, concessions and revocable consents:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -140,7 +146,7 @@
         818
       ],
       "category": "List-item",
-      "text": "b. Pursuant to §373(b) of the Charter, the Director shall designate a member of the Office to serve as clerk of the Franchise and Concession Review Committee.",
+      "text": "b. Pursuant to \u00a7373(b) of the Charter, the Director shall designate a member of the Office to serve as clerk of the Franchise and Concession Review Committee.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -174,7 +180,7 @@
         984
       ],
       "category": "List-item",
-      "text": "§5. **Rules, Guidelines and Procedures.** The Director is authorized to promulgate such rules, guidelines and procedures as may be necessary and appropriate to effectuate the purposes of this Order.",
+      "text": "\u00a75. **Rules, Guidelines and Procedures.** The Director is authorized to promulgate such rules, guidelines and procedures as may be necessary and appropriate to effectuate the purposes of this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -208,7 +214,7 @@
         1086
       ],
       "category": "List-item",
-      "text": "§6. **Prior Order Revoked.** Executive Order No. 114, dated, April 13, 1988 is hereby revoked.",
+      "text": "\u00a76. **Prior Order Revoked.** Executive Order No. 114, dated, April 13, 1988 is hereby revoked.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -242,7 +248,7 @@
         1149
       ],
       "category": "List-item",
-      "text": "§7. This Order shall take effect immediately.",
+      "text": "\u00a77. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -321,7 +327,7 @@
           "index": 149,
           "token_id": 17851,
           "logprob": -0.1504,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 370,
@@ -493,15 +499,16 @@
   "ink_coverage": {
     "roi": [
       209,
-      271,
+      0,
       1535,
-      1990
+      2262
     ],
-    "ink_px": 118796,
-    "covered_px": 118769,
-    "covered_fraction": 0.99977,
-    "uncovered_px": 27,
+    "ink_px": 123929,
+    "covered_px": 123578,
+    "covered_fraction": 0.99717,
+    "uncovered_px": 351,
     "uncovered_regions": [],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

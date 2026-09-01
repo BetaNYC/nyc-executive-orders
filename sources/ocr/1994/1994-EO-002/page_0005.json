@@ -28,7 +28,13 @@
           "min": -0.0092
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 973,
+        "area_px": 7336,
+        "density": 0.13263,
+        "chars": 17,
+        "chars_per_1k_ink": 17.47
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0056
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 749,
+        "area_px": 6804,
+        "density": 0.11008,
+        "chars": 16,
+        "chars_per_1k_ink": 21.36
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.2814
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 562,
+        "area_px": 7812,
+        "density": 0.07194,
+        "chars": 23,
+        "chars_per_1k_ink": 40.93
+      }
     },
     {
       "bbox": [
@@ -264,7 +282,7 @@
         1860
       ],
       "category": "Text",
-      "text": "§3. The Deputy Mayor for Operations is hereby delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to",
+      "text": "\u00a73. The Deputy Mayor for Operations is hereby delegated the authority to perform all functions, powers or duties of the Mayor which the Mayor is authorized to",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -338,7 +356,7 @@
           "index": 519,
           "token_id": 17851,
           "logprob": -0.0735,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 470,
@@ -486,15 +504,26 @@
   "ink_coverage": {
     "roi": [
       204,
-      264,
+      0,
       1496,
-      1936
+      2200
     ],
-    "ink_px": 91893,
-    "covered_px": 91745,
-    "covered_fraction": 0.99839,
-    "uncovered_px": 148,
-    "uncovered_regions": [],
+    "ink_px": 95194,
+    "covered_px": 94029,
+    "covered_fraction": 0.98776,
+    "uncovered_px": 1165,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1452,
+          2064,
+          1496,
+          2136
+        ],
+        "ink_px": 634
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }

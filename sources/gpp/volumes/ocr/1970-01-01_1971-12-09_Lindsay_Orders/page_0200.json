@@ -28,7 +28,13 @@
           "min": -0.0101
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1200,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -72,7 +78,7 @@
         923
       ],
       "category": "Text",
-      "text": "### §2.\nTo assist in carrying out the objectives in Section 1, the Administrator of the Economic Development Administration may, by virtue of the powers granted under Section 1303 (p) and (q) of chapter fifty-six of the New York City Charter, hold hearings on the recommendation of the Mayor's Committee on the Exploitation of Workers on any substandard conditions of labor in the City of New York. In relation to said hearings, the Mayor's Committee on Exploitation of Workers will assist the Economic Development Administration by:",
+      "text": "### \u00a72.\nTo assist in carrying out the objectives in Section 1, the Administrator of the Economic Development Administration may, by virtue of the powers granted under Section 1303 (p) and (q) of chapter fifty-six of the New York City Charter, hold hearings on the recommendation of the Mayor's Committee on the Exploitation of Workers on any substandard conditions of labor in the City of New York. In relation to said hearings, the Mayor's Committee on Exploitation of Workers will assist the Economic Development Administration by:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -276,7 +282,7 @@
         1656
       ],
       "category": "Text",
-      "text": "### §3.\nThe Mayor's Committee on Exploitation of Workers may recommend guidelines for the handling of individual labor complaints. Said",
+      "text": "### \u00a73.\nThe Mayor's Committee on Exploitation of Workers may recommend guidelines for the handling of individual labor complaints. Said",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -296,7 +302,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 81450,
+        "area_px": 87966,
         "density": 0.0,
         "chars": 135,
         "chars_per_1k_ink": null
@@ -344,7 +350,7 @@
           "index": 166,
           "token_id": 16625,
           "logprob": -0.0344,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 620,
@@ -498,15 +504,26 @@
   "ink_coverage": {
     "roi": [
       171,
-      225,
+      0,
       1257,
-      1654
+      1880
     ],
-    "ink_px": 39,
+    "ink_px": 57446,
     "covered_px": 39,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.00068,
+    "uncovered_px": 57407,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          171,
+          1752,
+          1257,
+          1880
+        ],
+        "ink_px": 57216
+      }
+    ],
+    "suppressed_regions": 0,
     "cell_px": 24
   }
 }
