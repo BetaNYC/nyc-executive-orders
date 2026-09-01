@@ -282,11 +282,14 @@ def test_one_verb_can_move_a_whole_list_of_bodies():
                     known("T-1", text, "Office of Data Analytics", "oda"),
                     known("T-1", text, "Office of Information Privacy", "oip"),
                     known("T-1", text, "Office of Technology and Innovation", "oti"))
-    assert len(events) == 1
-    moved = [r.agency_id for r in events[0].roles if r.role == ROLE_TO]
-    assert moved == ["cyber-command", "oda", "oip"]
-    parent = [r.agency_id for r in events[0].roles if r.role == ROLE_PARENT]
-    assert parent == ["oti"]
+    # One event per body: each office moving is its own fact.
+    assert len(events) == 3
+    assert [roles_of(e)[ROLE_TO] for e in events] == [
+        "Cyber Command", "Office of Data Analytics", "Office of Information Privacy"]
+    # All three share the parent they moved into, and the sentence that says so.
+    assert all(roles_of(e)[ROLE_PARENT] == "Office of Technology and Innovation"
+               for e in events)
+    assert len({(e.start, e.end) for e in events}) == 1
 
 
 def test_a_list_of_bodies_can_be_abolished_together():
@@ -298,8 +301,11 @@ def test_a_list_of_bodies_can_be_abolished_together():
                     guessed("T-1", text, "Office of Lower Manhattan Development"),
                     guessed("T-1", text, "Office of Jamaica Planning and Development"),
                     guessed("T-1", text, "Office of Downtown Brooklyn Development"))
-    assert len(events[0].roles) == 3
-    assert all(r.role == ROLE_FROM for r in events[0].roles)
+    assert len(events) == 3
+    assert [roles_of(e)[ROLE_FROM] for e in events] == [
+        "Office of Lower Manhattan Development",
+        "Office of Jamaica Planning and Development",
+        "Office of Downtown Brooklyn Development"]
 
 
 def test_a_pair_joined_by_a_bare_comma_is_an_apposition_not_a_list():
@@ -325,7 +331,7 @@ def test_three_names_on_commas_alone_still_count_as_a_list():
                     guessed("T-1", text, "Board of Alpha"),
                     guessed("T-1", text, "Board of Beta"),
                     guessed("T-1", text, "Board of Gamma"))
-    assert len(events[0].roles) == 3
+    assert len(events) == 3
 
 
 def test_a_finite_verb_between_two_names_ends_the_list():
@@ -348,7 +354,7 @@ def test_a_sentence_break_between_two_names_ends_the_list():
                     guessed("T-1", text, "Board of Alpha"),
                     guessed("T-1", text, "Board of Beta"),
                     guessed("T-1", text, "Board of Gamma"))
-    gone = [r.name for r in events[0].roles]
+    gone = [r.name for e in events for r in e.roles]
     assert "Board of Alpha" not in gone
 
 
@@ -379,3 +385,44 @@ def test_a_rename_never_takes_a_list():
                     guessed("T-1", text, "Office of Beta"),
                     guessed("T-1", text, "Office of Gamma"))
     assert [r.name for r in events[0].roles] == ["Office of Beta", "Office of Gamma"]
+
+
+def test_no_event_ever_fills_the_same_role_twice():
+    """The shape everything downstream reads: one event, one body per role.
+
+    A list sentence becomes several events rather than one event with a list in it,
+    so a reader can flatten an event to a row without losing a body.
+    """
+    text = ("The Office of Cyber Command, the Office of Data Analytics and the "
+            "Office of Information Privacy shall be continued and established "
+            "within the Office of Technology and Innovation.")
+    events, _ = run(text,
+                    known("T-1", text, "Office of Cyber Command", "cyber-command"),
+                    known("T-1", text, "Office of Data Analytics", "oda"),
+                    known("T-1", text, "Office of Information Privacy", "oip"),
+                    known("T-1", text, "Office of Technology and Innovation", "oti"))
+    for e in events:
+        names = [r.role for r in e.roles]
+        assert len(names) == len(set(names))
+
+
+def test_a_body_is_never_established_inside_itself():
+    """2021-EO-063 restates the parent as a parenthetical acronym.
+
+    "The Center for Creative Conflict Resolution ("the Center") is hereby continued
+    and formally established within the Office of Administrative Trials and
+    Hearings ("OATH")". Taking that trailing "OATH" as the new body records OATH as
+    established inside OATH and loses the Center entirely.
+    """
+    text = ('The Center for Creative Conflict Resolution is hereby continued and '
+            'formally established within the Office of Administrative Trials and '
+            'Hearings ("OATH"), which shall provide support.')
+    events, _ = run(
+        text,
+        guessed("T-1", text, "Center for Creative Conflict Resolution"),
+        known("T-1", text, "Office of Administrative Trials and Hearings", "oath"),
+        known("T-1", text, "OATH", "oath"))
+    assert len(events) == 1
+    assert roles_of(events[0]) == {
+        ROLE_TO: "Center for Creative Conflict Resolution",
+        ROLE_PARENT: "Office of Administrative Trials and Hearings"}

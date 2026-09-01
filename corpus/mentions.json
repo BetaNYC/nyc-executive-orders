@@ -258480,13 +258480,13 @@
       "count": 1
     }
   ],
-  "agency_event_count": 361,
-  "fully_resolved_event_count": 96,
+  "agency_event_count": 367,
+  "fully_resolved_event_count": 97,
   "same_agency_event_count": 4,
   "agency_events_by_kind": {
-    "abolishes": 8,
+    "abolishes": 11,
     "continues": 40,
-    "establishes": 269,
+    "establishes": 272,
     "merges_into": 1,
     "renames": 21,
     "succeeds": 1,
@@ -259241,7 +259241,18 @@
           "end": 1747,
           "text": "Housing Policy Board",
           "found_by": "new-name"
-        },
+        }
+      ]
+    },
+    {
+      "eo_id": "1965-EO-181o",
+      "kind": "establishes",
+      "verb": "established",
+      "start": 1608,
+      "end": 1798,
+      "text": "\nTo provide coordination in the planning and execution of the program carried out by the various agencies concerned, a Housing Policy Board and a Housing Executive Committee were established",
+      "fully_resolved": false,
+      "roles": [
         {
           "role": "to",
           "agency_id": null,
@@ -259617,7 +259628,18 @@
           "end": 1469,
           "text": "Anti-Poverty Operations Board",
           "found_by": "new-name"
-        },
+        }
+      ]
+    },
+    {
+      "eo_id": "1966-EO-028c",
+      "kind": "abolishes",
+      "verb": "abolished",
+      "start": 1398,
+      "end": 1546,
+      "text": " 160 of June 30, 1965, are withdrawn, the Anti-Poverty Operations Board and the Economic Opportunity Committee are abolished, and Executive Order No",
+      "fully_resolved": false,
+      "roles": [
         {
           "role": "from",
           "agency_id": null,
@@ -261990,7 +262012,18 @@
           "end": 7838,
           "text": "The Office of Lower Manhattan Development",
           "found_by": "new-name"
-        },
+        }
+      ]
+    },
+    {
+      "eo_id": "1976-EO-063",
+      "kind": "abolishes",
+      "verb": "abolished",
+      "start": 7796,
+      "end": 8051,
+      "text": "\nThe Office of Lower Manhattan Development, the Office of Jamaica Planning and\nDevelopment, the Office of Downtown Brooklyn Development and the Upper Manhattan\nPlanning and Development Office are hereby abolished and succeeded by the Office of\nDevelopment",
+      "fully_resolved": false,
+      "roles": [
         {
           "role": "from",
           "agency_id": null,
@@ -261999,7 +262032,18 @@
           "end": 7886,
           "text": "Office of Jamaica Planning and\nDevelopment",
           "found_by": "new-name"
-        },
+        }
+      ]
+    },
+    {
+      "eo_id": "1976-EO-063",
+      "kind": "abolishes",
+      "verb": "abolished",
+      "start": 7796,
+      "end": 8051,
+      "text": "\nThe Office of Lower Manhattan Development, the Office of Jamaica Planning and\nDevelopment, the Office of Downtown Brooklyn Development and the Upper Manhattan\nPlanning and Development Office are hereby abolished and succeeded by the Office of\nDevelopment",
+      "fully_resolved": false,
+      "roles": [
         {
           "role": "from",
           "agency_id": null,
@@ -265787,16 +265831,16 @@
       "start": 2158,
       "end": 2495,
       "text": " The Center for Creative Conflict Resolution (\"the Center\") is hereby continued\nand formally established within the Office of Administrative Trials and Hearings (\"OATH\"), to\nserve as the City's central resource for Alternative Dispute Resolution (\"ADR\") processes and\nconflict resolution services, including restorative justice practices",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
-          "agency_id": "office-of-administrative-trials-and-hearings",
-          "name": "OATH",
-          "start": 2321,
-          "end": 2325,
-          "text": "OATH",
-          "found_by": "known-name"
+          "agency_id": null,
+          "name": "The Center for Creative Conflict Resolution",
+          "start": 2159,
+          "end": 2202,
+          "text": "The Center for Creative Conflict Resolution",
+          "found_by": "new-name"
         },
         {
           "role": "parent",
@@ -266066,6 +266110,26 @@
           "found_by": "known-name"
         },
         {
+          "role": "parent",
+          "agency_id": "oti",
+          "name": "Office of Technology and Innovation",
+          "start": 2743,
+          "end": 2778,
+          "text": "Office of Technology and Innovation",
+          "found_by": "known-name"
+        }
+      ]
+    },
+    {
+      "eo_id": "2022-EO-003",
+      "kind": "establishes",
+      "verb": "established",
+      "start": 2445,
+      "end": 2778,
+      "text": " The Office of Cyber Command established pursuant to section 20-j of the Charter,\nthe Office of Data Analytics established pursuant to section 20-f of the Charter and the Office\nof Information Privacy established pursuant to section 8-h of the Charter shall be continued\nand established within the Office of Technology and Innovation",
+      "fully_resolved": true,
+      "roles": [
+        {
           "role": "to",
           "agency_id": "office-of-data-analytics",
           "name": "Office of Data Analytics",
@@ -266074,6 +266138,26 @@
           "text": "Office of Data Analytics",
           "found_by": "known-name"
         },
+        {
+          "role": "parent",
+          "agency_id": "oti",
+          "name": "Office of Technology and Innovation",
+          "start": 2743,
+          "end": 2778,
+          "text": "Office of Technology and Innovation",
+          "found_by": "known-name"
+        }
+      ]
+    },
+    {
+      "eo_id": "2022-EO-003",
+      "kind": "establishes",
+      "verb": "established",
+      "start": 2445,
+      "end": 2778,
+      "text": " The Office of Cyber Command established pursuant to section 20-j of the Charter,\nthe Office of Data Analytics established pursuant to section 20-f of the Charter and the Office\nof Information Privacy established pursuant to section 8-h of the Charter shall be continued\nand established within the Office of Technology and Innovation",
+      "fully_resolved": true,
+      "roles": [
         {
           "role": "to",
           "agency_id": "office-of-information-privacy",

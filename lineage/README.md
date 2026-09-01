@@ -103,16 +103,16 @@ aside.
 ## The reorganization sentences
 
 Pass three reads the sentences that link two bodies. Measured over the 3,202 orders
-that carry text: **361 events**, of which **96** pin down a registry agency on every
+that carry text: **367 events**, of which **97** pin down a registry agency on every
 side, plus **496** sentences kept for review.
 
 | what the order does | events |
 |---|---:|
-| `establishes` | 269 |
+| `establishes` | 272 |
 | `continues` | 40 |
 | `renames` | 21 |
 | `transfers_to` | 21 |
-| `abolishes` | 8 |
+| `abolishes` | 11 |
 | `merges_into` | 1 |
 | `succeeds` | 1 |
 
@@ -191,8 +191,25 @@ Asked only of names **before** the verb, which is where the evidence is. After i
 *"established a Committee ... and the Council"* is likelier the body being advised
 than a second body being created.
 
-Narrow on purpose: **two** sentences in the whole corpus take more than one body on
-a side, and both are lists a person would read the same way.
+Narrow on purpose: **four** sentences in the whole corpus name a list, and every one
+is a list a person would read the same way — `2022-EO-003` (three offices into OTI),
+`1976-EO-063` (three planning offices abolished), `1965-EO-181o` (*"a Housing Policy
+Board and a Housing Executive Committee"*) and `1966-EO-028c` (*"the Anti-Poverty
+Operations Board and the Economic Opportunity Committee are abolished"*).
+
+### One event, one body
+
+A list sentence becomes **one event per body**, each carrying the roles they all
+share — the parent they moved into, the place they were transferred to. All of them
+keep the same span and the same text, so the sentence is still readable whole from
+any one of them.
+
+This is a shape promise, not a convenience: **no event ever fills the same role
+twice.** Everything downstream flattens an event to a row, and a repeated role drops
+silently when it does. `../nyc-eo-explorer` builds its `agency_events` table with
+`new Map(roles.map(r => [r.role, r]))`, which keeps the last of a repeated key — so
+an event carrying three `to` roles would have shown one office and lost two without
+a word. A test asserts the promise over the whole corpus.
 
 **Both ends can be the same agency, and that is recorded.** It happens when the
 name list has already merged two names — the old spelling filed under the new
@@ -267,14 +284,14 @@ Results land in `lineage/out/`:
 | `report.md` | The summary to read, including both safety checks and both review lists. |
 
 What it currently finds: **15,331** known names and **8,262** proposed new ones
-across 3,202 orders; **361** reorganization events with **496** sentences for a
+across 3,202 orders; **367** reorganization events with **496** sentences for a
 person to review; and **294** order-to-order edges.
 
 The keys `mentions.json` carries, beyond the name finds:
 
 | key | what it holds |
 |---|---|
-| `agency_events` | The 361 events. Each carries the sentence, its span, and one `roles` entry per side (`from`, `to`, `parent`) with that side's own span and `agency_id`. |
+| `agency_events` | The 367 events. Each carries the sentence, its span, and one `roles` entry per side (`from`, `to`, `parent`) with that side's own span and `agency_id`. A role never appears twice in one event. |
 | `unresolved_events` | The 496 sentences that named nothing we could attach, each saying why. |
 | `order_edges` | The 294 order-to-order edges: `actor`, `target`, `verb`, `source`, `partial`. |
 | `order_dangles` | The 150 citations that resolved to no order we hold, each saying why. |
@@ -316,7 +333,7 @@ That text is **CC BY-SA 4.0**. The payload states the credit in
 uv run --no-project --with pytest python -m pytest lineage/tests -q
 ```
 
-208 tests, none of which touch the network — `conftest.py` makes any attempt raise.
+212 tests, none of which touch the network — `conftest.py` makes any attempt raise.
 `test_real_corpus.py` pins the numbers against the committed corpus and skips
 cleanly when the corpus or the registry is missing.
 
@@ -431,7 +448,7 @@ running again on unchanged input writes an identical `mentions.json`.
 - **A list needs its items found separately.** `1976-EO-063` records three bodies
   where the order names four, because pass two returned *"Office of Downtown
   Brooklyn Development and the Upper Manhattan Planning and Development Office"* as
-  one span. The list rule can only join what the earlier passes split.
+  one span. The list rule can only split what the earlier passes found separately.
 - **`renames` and `succeeds` never take a list.** One body becomes one other; a
   list on either side is likelier a mis-read than a real multi-way rename.
 - **A sentence stops at a full stop**, so `Dept. of Health` cuts a window short and

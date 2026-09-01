@@ -39,6 +39,13 @@ pass two found. Preferring pass one there would record the Office of the Mayor a
 the thing established. So the nearest span to the verb takes the role, and pass one
 only breaks a tie at the same spot.
 
+**One event, one body.** A sentence can name several bodies at once —
+``2022-EO-003`` § 3 moves three offices into OTI — and it becomes one event per
+body, each carrying the roles they all share. Each body is its own fact, and an
+event that had to be read as a list would be a different shape from every other
+event. The three keep the same span and the same text, so the sentence is still
+readable whole from any of them.
+
 **The read-back promise holds.** ``full_text[start:end] == text`` for the sentence
 and for every role in it, so each claim can be checked against the order it came
 from.
@@ -62,7 +69,7 @@ from .mentions import (
     Role,
     UnresolvedEvent,
 )
-from .normalize import collapse_spaces, strip_possessive
+from .normalize import collapse_spaces, normalize_name, strip_possessive
 
 # --------------------------------------------------------------------------- #
 # What an order can do to an agency                                             #
@@ -328,6 +335,17 @@ def _in_window(spans: list[_Span], lo: int, hi: int) -> list[_Span]:
     return [s for s in spans if s.start >= lo and s.end <= hi]
 
 
+def _same_body(a: _Span, b: _Span) -> bool:
+    """True when two spans name the same body.
+
+    By agency id when both have one, by tidied name when they do not. Used to stop
+    a body being recorded as established inside ITSELF.
+    """
+    if a.agency_id and b.agency_id:
+        return a.agency_id == b.agency_id
+    return normalize_name(a.name) == normalize_name(b.name)
+
+
 def _is_parent(text: str, span: _Span, window_start: int) -> bool:
     """True when "in"/"within" sits immediately in front of this name.
 
@@ -369,8 +387,16 @@ def _roles_for(kind: str, text: str, spans: list[_Span],
             if _is_parent(text, s, verb_end):
                 parent = s
                 break
-    # A name claimed as the parent can never also be the thing established.
-    after_body = [s for s in after if s is not parent]
+    # A name claimed as the parent can never also be the thing established, and
+    # neither can a RESTATEMENT of it. 2021-EO-063 reads "The Center for Creative
+    # Conflict Resolution ("the Center") is hereby continued and formally
+    # established within the Office of Administrative Trials and Hearings
+    # ("OATH")", and the parenthetical acronym is a second span naming the parent
+    # again. Taking it as the new body records OATH as established inside OATH and
+    # loses the Center entirely.
+    after_body = [s for s in after
+                  if s is not parent
+                  and not (parent is not None and _same_body(s, parent))]
 
     free = [s for s in before if (s.start, s.end) not in spoken_for]
 
@@ -411,6 +437,31 @@ def _roles_for(kind: str, text: str, spans: list[_Span],
     return roles
 
 
+def _split_by_repeated_role(roles: list[Role]) -> list[tuple[Role, ...]]:
+    """Fan a list sentence out into one role-set per body it names.
+
+    One verb can govern several bodies — 2022-EO-003 § 3 moves three offices into
+    OTI — but each body is its own fact, and everything downstream reads an event
+    as one thing happening to one body. So the sentence becomes three events, each
+    carrying one of the bodies plus the roles they all share (the parent they moved
+    into, the place they were transferred to). All three keep the same span and the
+    same text, so the sentence is still readable whole from any of them.
+
+    Only one role name can ever repeat, because only the patient side takes a list.
+    A sentence with no list comes back unchanged, as a single role-set.
+    """
+    counts: dict[str, int] = {}
+    for r in roles:
+        counts[r.role] = counts.get(r.role, 0) + 1
+    repeated = [name for name, n in counts.items() if n > 1]
+    if not repeated:
+        return [tuple(roles)]
+    listed = repeated[0]
+    shared = [r for r in roles if r.role != listed]
+    return [tuple(sorted((one, *shared), key=lambda r: (r.start, r.end)))
+            for one in roles if one.role == listed]
+
+
 def find_in_record(eo_id: str, text: str, spans: list[_Span]
                    ) -> tuple[list[AgencyEvent], list[UnresolvedEvent]]:
     """Every reorganization sentence in one order, sorted into kept and to-review."""
@@ -437,10 +488,11 @@ def find_in_record(eo_id: str, text: str, spans: list[_Span]
         by_role = {r.role for r in roles}
         missing = [r for r in REQUIRED_ROLES[kind] if r not in by_role]
         if not missing:
-            events.append(AgencyEvent(
-                eo_id=eo_id, kind=kind, verb=verb,
-                start=floor, end=ceiling, text=text[floor:ceiling],
-                roles=tuple(roles)))
+            events.extend(
+                AgencyEvent(eo_id=eo_id, kind=kind, verb=verb,
+                            start=floor, end=ceiling, text=text[floor:ceiling],
+                            roles=one)
+                for one in _split_by_repeated_role(roles))
             continue
         unresolved.append(UnresolvedEvent(
             eo_id=eo_id, verb=verb, start=floor, end=ceiling,

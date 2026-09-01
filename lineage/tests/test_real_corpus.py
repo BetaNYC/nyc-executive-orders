@@ -58,16 +58,12 @@ MAYOR_ID = "office-of-the-mayor"
 # down a registry agency on every side, and the other 265 name at least one body
 # that is not on the name list yet. 496 more named nothing we could attach and wait
 # in the review list.
-EXPECT_EVENTS = 361
-EXPECT_EVENTS_FULLY_RESOLVED = 96
+EXPECT_EVENTS = 367
+EXPECT_EVENTS_FULLY_RESOLVED = 97
 EXPECT_UNRESOLVED_EVENTS = 496
-# Sentences where one verb governs a whole list of bodies. Only two in the corpus,
-# and both are real: 2022-EO-003 § 3 moves three offices into OTI, 1976-EO-063
-# abolishes four planning offices at once.
-EXPECT_EVENTS_WITH_A_LIST = 2
 EXPECT_EVENTS_BY_KIND = {
-    "establishes": 269, "continues": 40, "renames": 21, "transfers_to": 21,
-    "abolishes": 8, "merges_into": 1, "succeeds": 1,
+    "establishes": 272, "continues": 40, "renames": 21, "transfers_to": 21,
+    "abolishes": 11, "merges_into": 1, "succeeds": 1,
 }
 
 # Pass four, measured 2026-08-31, over all 3,202 orders that carry text.
@@ -525,27 +521,71 @@ def test_one_verb_can_move_a_whole_list_of_bodies(all_four_passes):
     established within the Office of Technology and Innovation."
 
     Three offices move, not one. Taking only the nearest name records the Office of
-    Information Privacy and drops two thirds of what the order did."""
+    Information Privacy and drops two thirds of what the order did. Each office is
+    its own event, and all three share the parent and the sentence."""
     events = [e for e in all_four_passes["events"]
               if e.eo_id == "2022-EO-003" and e.kind == reorg_mod.KIND_ESTABLISHES]
-    assert len(events) == 1
-    moved = [r.agency_id for r in events[0].roles if r.role == ROLE_TO]
+    assert len(events) == 3
+    moved = [r.agency_id for e in events for r in e.roles if r.role == ROLE_TO]
     assert moved == ["cyber-command", "office-of-data-analytics",
                      "office-of-information-privacy"]
-    parent = [r.agency_id for r in events[0].roles if r.role == ROLE_PARENT]
-    assert parent == ["oti"]
-    assert events[0].fully_resolved
+    for e in events:
+        parent = [r.agency_id for r in e.roles if r.role == ROLE_PARENT]
+        assert parent == ["oti"]
+        assert e.fully_resolved
+    assert len({(e.start, e.end) for e in events}) == 1
 
 
 @needs_corpus
 @needs_registry
-def test_only_real_lists_take_more_than_one_body_on_a_side(all_four_passes):
-    """The rule is narrow on purpose. Two sentences in the whole corpus, and both
-    are lists a person would read the same way."""
-    listed = [e for e in all_four_passes["events"]
-              if sum(1 for r in e.roles if r.role in (ROLE_FROM, ROLE_TO)) > 2]
-    assert len(listed) == EXPECT_EVENTS_WITH_A_LIST
-    assert {e.eo_id for e in listed} == {"2022-EO-003", "1976-EO-063"}
+def test_no_body_is_ever_established_inside_itself(all_four_passes):
+    """A parenthetical acronym restating the parent must not become the new body.
+
+    2021-EO-063: "The Center for Creative Conflict Resolution ("the Center") is
+    hereby continued and formally established within the Office of Administrative
+    Trials and Hearings ("OATH")". The trailing "OATH" is a second span naming the
+    parent again, and taking it records OATH inside OATH and loses the Center."""
+    for e in all_four_passes["events"]:
+        parent = next((r for r in e.roles if r.role == ROLE_PARENT), None)
+        if parent is None:
+            continue
+        for r in e.roles:
+            if r.role in (ROLE_FROM, ROLE_TO) and r.agency_id and parent.agency_id:
+                assert r.agency_id != parent.agency_id, e.eo_id
+
+
+@needs_corpus
+@needs_registry
+def test_no_event_ever_fills_the_same_role_twice(all_four_passes):
+    """The shape everything downstream reads: one event, one body per role.
+
+    A list sentence becomes several events rather than one event with a list in
+    it, so a reader can flatten an event to a row without losing a body. The
+    explorer does exactly that, and a repeated role would drop silently."""
+    for e in all_four_passes["events"]:
+        names = [r.role for r in e.roles]
+        assert len(names) == len(set(names)), e.eo_id
+
+
+@needs_corpus
+@needs_registry
+def test_a_list_sentence_becomes_one_event_per_body(all_four_passes):
+    """Narrow on purpose. Four sentences in the corpus name a list, and every one
+    is a list a person would read the same way:
+
+    * 2022-EO-003  three offices continued and established within OTI
+    * 1976-EO-063  three planning offices abolished together
+    * 1965-EO-181o "a Housing Policy Board and a Housing Executive Committee"
+    * 1966-EO-028c "the Anti-Poverty Operations Board and the Economic
+      Opportunity Committee are abolished" — the case the README used to cite as
+      a known miss.
+    """
+    by_span: dict[tuple, list] = {}
+    for e in all_four_passes["events"]:
+        by_span.setdefault((e.eo_id, e.start, e.end, e.verb), []).append(e)
+    listed = {k[0]: len(v) for k, v in by_span.items() if len(v) > 1}
+    assert listed == {"2022-EO-003": 3, "1976-EO-063": 3,
+                      "1965-EO-181o": 2, "1966-EO-028c": 2}
 
 
 @needs_corpus
