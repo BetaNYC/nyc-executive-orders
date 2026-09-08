@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 17190,
+        "area_px": 52920,
+        "density": 0.32483,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 4793,
-        "area_px": 42300,
-        "density": 0.11331,
+        "ink_px": 6238,
+        "area_px": 52875,
+        "density": 0.11798,
         "chars": 53,
-        "chars_per_1k_ink": 11.06
+        "chars_per_1k_ink": 8.5
       }
     },
     {
@@ -101,7 +107,7 @@
         1080
       ],
       "category": "Text",
-      "text": "§4. The Council shall have the following functions, powers and duties:",
+      "text": "\u00a74. The Council shall have the following functions, powers and duties:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -407,7 +413,7 @@
         2670
       ],
       "category": "Text",
-      "text": "§5. The Council may require such reports, analyses and statements from the agencies of the City as it may deem to be necessary for the proper performance of its duties hereunder.",
+      "text": "\u00a75. The Council may require such reports, analyses and statements from the agencies of the City as it may deem to be necessary for the proper performance of its duties hereunder.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -514,7 +520,7 @@
           "index": 166,
           "token_id": 17851,
           "logprob": -0.7501,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 84,
@@ -692,15 +698,35 @@
   "ink_coverage": {
     "roi": [
       284,
-      417,
+      113,
       2088,
-      3064
+      3378
     ],
-    "ink_px": 40177,
-    "covered_px": 40177,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 62853,
+    "rule_px": 2073,
+    "covered_px": 58812,
+    "covered_fraction": 0.96762,
+    "uncovered_px": 1968,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1292,
+          163,
+          1338,
+          230
+        ],
+        "ink_px": 989
+      },
+      {
+        "bbox": [
+          1604,
+          3371,
+          2088,
+          3378
+        ],
+        "ink_px": 672
+      }
+    ],
     "cell_px": 24
   }
 }

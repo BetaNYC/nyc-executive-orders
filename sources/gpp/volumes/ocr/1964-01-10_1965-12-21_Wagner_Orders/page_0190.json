@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 431,
-        "area_px": 17496,
-        "density": 0.02463,
+        "ink_px": 4154,
+        "area_px": 71604,
+        "density": 0.05801,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -58,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 4,
-        "area_px": 2612,
-        "density": 0.00153,
+        "ink_px": 8922,
+        "area_px": 120152,
+        "density": 0.07426,
         "chars": 29,
-        "chars_per_1k_ink": 7250.0
+        "chars_per_1k_ink": 3.25
       }
     },
     {
@@ -73,7 +73,7 @@
         494
       ],
       "category": "Text",
-      "text": "89-14 PARSONS BOULEVARD • JAMAICA 32 NEW YORK",
+      "text": "89-14 PARSONS BOULEVARD \u2022 JAMAICA 32 NEW YORK",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -107,7 +107,7 @@
         549
       ],
       "category": "Text",
-      "text": "HAROLD W. TUCKER • CHIEF LIBRARIAN",
+      "text": "HAROLD W. TUCKER \u2022 CHIEF LIBRARIAN",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -527,7 +527,7 @@
           "index": 119,
           "token_id": 7288,
           "logprob": -0.1596,
-          "text": " •"
+          "text": " \u2022"
         },
         {
           "index": 772,
@@ -539,7 +539,7 @@
           "index": 171,
           "token_id": 7288,
           "logprob": -0.1316,
-          "text": " •"
+          "text": " \u2022"
         },
         {
           "index": 213,
@@ -693,25 +693,16 @@
   "ink_coverage": {
     "roi": [
       277,
-      410,
+      109,
       2038,
-      3010
+      3342
     ],
-    "ink_px": 5978,
-    "covered_px": 5415,
-    "covered_fraction": 0.90582,
-    "uncovered_px": 563,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          1693,
-          2834,
-          2029,
-          2858
-        ],
-        "ink_px": 465
-      }
-    ],
+    "ink_px": 19504,
+    "rule_px": 1043,
+    "covered_px": 17537,
+    "covered_fraction": 0.94995,
+    "uncovered_px": 924,
+    "uncovered_regions": [],
     "cell_px": 24
   }
 }

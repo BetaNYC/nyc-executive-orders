@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16914,
+        "area_px": 52030,
+        "density": 0.32508,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 3830,
-        "area_px": 36540,
-        "density": 0.10482,
+        "ink_px": 6116,
+        "area_px": 51660,
+        "density": 0.11839,
         "chars": 53,
-        "chars_per_1k_ink": 13.84
+        "chars_per_1k_ink": 8.67
       }
     },
     {
@@ -237,7 +243,7 @@
         1255
       ],
       "category": "Text",
-      "text": "Section 1. Office of Staten Island Development—There is established in the Executive Office of the Mayor the Office of Staten Island Development which shall be headed by a Director of Staten Island Development who shall be appointed by and serve at the pleasure of the Mayor.",
+      "text": "Section 1. Office of Staten Island Development\u2014There is established in the Executive Office of the Mayor the Office of Staten Island Development which shall be headed by a Director of Staten Island Development who shall be appointed by and serve at the pleasure of the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -271,7 +277,7 @@
         1340
       ],
       "category": "Text",
-      "text": "§2. Powers and Duties of the Director—The Director shall report to the Mayor and have the following powers and duties with respect to planning and development on Staten Island:",
+      "text": "\u00a72. Powers and Duties of the Director\u2014The Director shall report to the Mayor and have the following powers and duties with respect to planning and development on Staten Island:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -577,7 +583,7 @@
         1973
       ],
       "category": "Text",
-      "text": "§3. Cooperating agencies—City agencies responsible for providing public improvements and services on Staten Island including the Departments of City Planning, Highways, Public Works, Parks, Health, Traffic, Water Supply, Gas and Electricity and Marine and Aviation shall cooperate with the Director of Staten Island Development in the performance of his functions and duties as hereinabove set forth.",
+      "text": "\u00a73. Cooperating agencies\u2014City agencies responsible for providing public improvements and services on Staten Island including the Departments of City Planning, Highways, Public Works, Parks, Health, Traffic, Water Supply, Gas and Electricity and Marine and Aviation shall cooperate with the Director of Staten Island Development in the performance of his functions and duties as hereinabove set forth.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -611,7 +617,7 @@
         2031
       ],
       "category": "Text",
-      "text": "§4. Effective Date—This order shall take effect on August 4, 1966.\na6,12",
+      "text": "\u00a74. Effective Date\u2014This order shall take effect on August 4, 1966.\na6,12",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -713,7 +719,7 @@
           "index": 477,
           "token_id": 17851,
           "logprob": -0.2423,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 84,
@@ -743,7 +749,7 @@
           "index": 398,
           "token_id": 2293,
           "logprob": -0.0151,
-          "text": "—"
+          "text": "\u2014"
         },
         {
           "index": 127,
@@ -867,15 +873,35 @@
   "ink_coverage": {
     "roi": [
       287,
-      412,
+      99,
       2108,
-      3025
+      3340
     ],
-    "ink_px": 52141,
-    "covered_px": 51959,
-    "covered_fraction": 0.99651,
-    "uncovered_px": 182,
-    "uncovered_regions": [],
+    "ink_px": 74080,
+    "rule_px": 734,
+    "covered_px": 71159,
+    "covered_fraction": 0.97018,
+    "uncovered_px": 2187,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1359,
+          147,
+          1400,
+          207
+        ],
+        "ink_px": 750
+      },
+      {
+        "bbox": [
+          1732,
+          3337,
+          2108,
+          3340
+        ],
+        "ink_px": 420
+      }
+    ],
     "cell_px": 24
   }
 }

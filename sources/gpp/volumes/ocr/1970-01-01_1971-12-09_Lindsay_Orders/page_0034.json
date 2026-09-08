@@ -28,7 +28,13 @@
           "min": -0.0018
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 33,
+        "area_px": 989,
+        "density": 0.03337,
+        "chars": 3,
+        "chars_per_1k_ink": 90.91
+      }
     },
     {
       "bbox": [
@@ -72,7 +78,7 @@
         271
       ],
       "category": "Text",
-      "text": "§ 2. The Deputy Mayor for Intergovernmental Relations shall:",
+      "text": "\u00a7 2. The Deputy Mayor for Intergovernmental Relations shall:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -329,11 +335,11 @@
         }
       },
       "ink": {
-        "ink_px": 1285,
-        "area_px": 159485,
-        "density": 0.00806,
+        "ink_px": 1413,
+        "area_px": 170340,
+        "density": 0.0083,
         "chars": 308,
-        "chars_per_1k_ink": 239.69
+        "chars_per_1k_ink": 217.98
       }
     }
   ],
@@ -360,7 +366,7 @@
           "index": 120,
           "token_id": 17851,
           "logprob": -0.4181,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 249,
@@ -532,15 +538,26 @@
   "ink_coverage": {
     "roi": [
       139,
-      180,
+      0,
       1022,
-      1322
+      1467
     ],
-    "ink_px": 6148,
-    "covered_px": 6148,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 10395,
+    "rule_px": 2771,
+    "covered_px": 6309,
+    "covered_fraction": 0.82752,
+    "uncovered_px": 1315,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          403,
+          1444,
+          559,
+          1467
+        ],
+        "ink_px": 704
+      }
+    ],
     "cell_px": 24
   }
 }

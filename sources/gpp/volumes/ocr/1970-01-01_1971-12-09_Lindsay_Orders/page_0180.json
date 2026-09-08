@@ -28,7 +28,13 @@
           "min": -0.0048
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1421,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -174,7 +180,7 @@
         1460
       ],
       "category": "Text",
-      "text": "§2. Paragraphs (1) and (2) of subdivision (a) of section 2 of such order are hereby amended to read as follows:",
+      "text": "\u00a72. Paragraphs (1) and (2) of subdivision (a) of section 2 of such order are hereby amended to read as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -224,7 +230,7 @@
           "index": 378,
           "token_id": 17851,
           "logprob": -0.0816,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 204,
@@ -396,15 +402,35 @@
   "ink_coverage": {
     "roi": [
       171,
-      225,
+      0,
       1260,
-      1650
+      1820
     ],
-    "ink_px": 125,
+    "ink_px": 2085,
+    "rule_px": 195,
     "covered_px": 125,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.06614,
+    "uncovered_px": 1765,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          608,
+          1787,
+          686,
+          1805
+        ],
+        "ink_px": 657
+      },
+      {
+        "bbox": [
+          1186,
+          1763,
+          1260,
+          1775
+        ],
+        "ink_px": 531
+      }
+    ],
     "cell_px": 24
   }
 }

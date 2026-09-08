@@ -10,7 +10,7 @@
         413
       ],
       "category": "Section-header",
-      "text": "§4. Regulatory provisions.",
+      "text": "\u00a74. Regulatory provisions.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -28,7 +28,13 @@
           "min": -0.1623
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1068,
+        "area_px": 29563,
+        "density": 0.03613,
+        "chars": 26,
+        "chars_per_1k_ink": 24.34
+      }
     },
     {
       "bbox": [
@@ -524,7 +530,7 @@
           "index": 36,
           "token_id": 17851,
           "logprob": -0.1623,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 87,
@@ -702,15 +708,26 @@
   "ink_coverage": {
     "roi": [
       263,
-      418,
+      76,
       1928,
-      3068
+      3383
     ],
-    "ink_px": 39474,
-    "covered_px": 39175,
-    "covered_fraction": 0.99243,
-    "uncovered_px": 299,
-    "uncovered_regions": [],
+    "ink_px": 43609,
+    "rule_px": 1905,
+    "covered_px": 40243,
+    "covered_fraction": 0.96497,
+    "uncovered_px": 1461,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1463,
+          3372,
+          1928,
+          3383
+        ],
+        "ink_px": 1050
+      }
+    ],
     "cell_px": 24
   }
 }

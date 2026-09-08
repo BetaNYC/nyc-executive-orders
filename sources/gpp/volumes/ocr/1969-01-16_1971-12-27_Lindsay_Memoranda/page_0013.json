@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 8629,
-        "area_px": 857879,
-        "density": 0.01006,
+        "ink_px": 17431,
+        "area_px": 1370402,
+        "density": 0.01272,
         "chars": 968,
-        "chars_per_1k_ink": 112.18
+        "chars_per_1k_ink": 55.53
       }
     },
     {
@@ -146,7 +146,7 @@
         1689
       ],
       "category": "Section-header",
-      "text": "## § 75. REMOVAL AND OTHER DISCIPLINARY ACTION",
+      "text": "## \u00a7 75. REMOVAL AND OTHER DISCIPLINARY ACTION",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -301,11 +301,11 @@
         }
       },
       "ink": {
-        "ink_px": 258,
-        "area_px": 133200,
-        "density": 0.00194,
+        "ink_px": 1934,
+        "area_px": 613800,
+        "density": 0.00315,
         "chars": 495,
-        "chars_per_1k_ink": 1918.6
+        "chars_per_1k_ink": 255.95
       }
     }
   ],
@@ -504,15 +504,26 @@
   "ink_coverage": {
     "roi": [
       312,
-      384,
+      105,
       2293,
-      2821
+      3097
     ],
-    "ink_px": 17093,
-    "covered_px": 17053,
-    "covered_fraction": 0.99766,
-    "uncovered_px": 40,
-    "uncovered_regions": [],
+    "ink_px": 29740,
+    "rule_px": 814,
+    "covered_px": 27531,
+    "covered_fraction": 0.95177,
+    "uncovered_px": 1395,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          2149,
+          105,
+          2293,
+          117
+        ],
+        "ink_px": 802
+      }
+    ],
     "cell_px": 24
   }
 }

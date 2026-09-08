@@ -44,7 +44,7 @@
         1218
       ],
       "category": "Text",
-      "text": "§ 7. (a) Pursuant to the provisions of Paragraph 8 of Subdivision a of Administrative Code Section B18-22.1, as added by L. 1972, ch. 921, beginning with the payroll period the first day of which is nearest to June 30, 1972, and ending with the payroll period immediately prior to that, the first day of which is nearest to June 30, 1973, the contribution of each member of the Police Pension Fund, Article 2, made pursuant to subdivision b or e of Section B18-22.0 of the Administrative Code, exclusive of any increase thereof pursuant to subdivision c or d of such Section B18-22.0 or any reduction thereof pursuant to subdivision one of Section 138-b of the Retirement and Social Security Law, shall be reduced by five per cent of the compensation of such member.",
+      "text": "\u00a7 7. (a) Pursuant to the provisions of Paragraph 8 of Subdivision a of Administrative Code Section B18-22.1, as added by L. 1972, ch. 921, beginning with the payroll period the first day of which is nearest to June 30, 1972, and ending with the payroll period immediately prior to that, the first day of which is nearest to June 30, 1973, the contribution of each member of the Police Pension Fund, Article 2, made pursuant to subdivision b or e of Section B18-22.0 of the Administrative Code, exclusive of any increase thereof pursuant to subdivision c or d of such Section B18-22.0 or any reduction thereof pursuant to subdivision one of Section 138-b of the Retirement and Social Security Law, shall be reduced by five per cent of the compensation of such member.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -146,7 +146,7 @@
         1982
       ],
       "category": "Text",
-      "text": "§ 8. Pursuant to the provisions of Subdivision g of Section B19-4.2 of the Administrative Code, as added by L. 1972, ch. 921, beginning with the payroll period, the first day of which is nearest to June 30, 1972, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30, 1973, the deduction from the pay, salary or compensation of each member of the Fire Department Pension Fund, Article 1, made pursuant to the provisions of Article 1 of Title B of Chapter 19 of the Administrative Code, shall be reduced by five per centum of such pay, salary or compensation.",
+      "text": "\u00a7 8. Pursuant to the provisions of Subdivision g of Section B19-4.2 of the Administrative Code, as added by L. 1972, ch. 921, beginning with the payroll period, the first day of which is nearest to June 30, 1972, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30, 1973, the deduction from the pay, salary or compensation of each member of the Fire Department Pension Fund, Article 1, made pursuant to the provisions of Article 1 of Title B of Chapter 19 of the Administrative Code, shall be reduced by five per centum of such pay, salary or compensation.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -214,7 +214,7 @@
         2529
       ],
       "category": "Text",
-      "text": "§ 9. Pursuant to the provisions of Paragraph 8 of Subdivision a of Section B19-7.651 of the Administrative Code, as added by L. 1972, ch. 921, beginning with the payroll period, the first day of which is nearest to June 30, 1972, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30, 1973, the contribution of each member of the Fire Department Pension Fund, Article 1-B made pursuant to Section B19-7.651 of the Administrative Code shall be reduced by five per centum of the Compensation of such member.",
+      "text": "\u00a7 9. Pursuant to the provisions of Paragraph 8 of Subdivision a of Section B19-7.651 of the Administrative Code, as added by L. 1972, ch. 921, beginning with the payroll period, the first day of which is nearest to June 30, 1972, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30, 1973, the contribution of each member of the Fire Department Pension Fund, Article 1-B made pursuant to Section B19-7.651 of the Administrative Code shall be reduced by five per centum of the Compensation of such member.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -264,7 +264,7 @@
           "index": 88,
           "token_id": 17851,
           "logprob": -0.1576,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 653,
@@ -436,15 +436,44 @@
   "ink_coverage": {
     "roi": [
       265,
-      421,
+      99,
       1949,
-      3088
+      3402
     ],
-    "ink_px": 11760,
+    "ink_px": 21256,
+    "rule_px": 1470,
     "covered_px": 11756,
-    "covered_fraction": 0.99966,
-    "uncovered_px": 4,
-    "uncovered_regions": [],
+    "covered_fraction": 0.59416,
+    "uncovered_px": 8030,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1855,
+          3113,
+          1949,
+          3291
+        ],
+        "ink_px": 5130
+      },
+      {
+        "bbox": [
+          1490,
+          3360,
+          1949,
+          3402
+        ],
+        "ink_px": 1145
+      },
+      {
+        "bbox": [
+          1275,
+          3126,
+          1345,
+          3191
+        ],
+        "ink_px": 964
+      }
+    ],
     "cell_px": 24
   }
 }

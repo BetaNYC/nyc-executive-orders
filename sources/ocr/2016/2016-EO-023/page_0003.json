@@ -1,0 +1,276 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        286,
+        192,
+        1202,
+        230
+      ],
+      "category": "Text",
+      "text": "Section 2. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3015,
+          "min": -1.5273
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0347,
+          "min": -0.0347
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0026,
+          "min": -0.0349
+        }
+      },
+      "ink": {
+        "ink_px": 6033,
+        "area_px": 35607,
+        "density": 0.16943,
+        "chars": 68,
+        "chars_per_1k_ink": 11.27
+      }
+    },
+    {
+      "bbox": [
+        487,
+        305,
+        917,
+        515
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3586,
+          "min": -1.6021
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0008,
+          "min": -0.0008
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2102,
+        "area_px": 90090,
+        "density": 0.02333,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 81,
+    "content": {
+      "n_tokens": 14,
+      "mean": -0.0026,
+      "min": -0.0349,
+      "p05": -0.0126,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0349,
+          "text": "Section"
+        },
+        {
+          "index": 48,
+          "token_id": 1189,
+          "logprob": -0.0005,
+          "text": ".\""
+        },
+        {
+          "index": 44,
+          "token_id": 4880,
+          "logprob": -0.0003,
+          "text": " shall"
+        },
+        {
+          "index": 39,
+          "token_id": 46923,
+          "logprob": -0.0001,
+          "text": " Effective"
+        },
+        {
+          "index": 45,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 47,
+          "token_id": 7069,
+          "logprob": -0.0,
+          "text": " immediately"
+        },
+        {
+          "index": 42,
+          "token_id": 1096,
+          "logprob": -0.0,
+          "text": " This"
+        },
+        {
+          "index": 38,
+          "token_id": 13,
+          "logprob": -0.0,
+          "text": "."
+        },
+        {
+          "index": 43,
+          "token_id": 7217,
+          "logprob": -0.0,
+          "text": " Order"
+        },
+        {
+          "index": 41,
+          "token_id": 13,
+          "logprob": -0.0,
+          "text": "."
+        },
+        {
+          "index": 40,
+          "token_id": 2631,
+          "logprob": -0.0,
+          "text": " Date"
+        },
+        {
+          "index": 37,
+          "token_id": 17,
+          "logprob": -0.0,
+          "text": "2"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 39,
+      "mean": -0.3133,
+      "min": -1.6021,
+      "p05": -1.529,
+      "p50": -0.0178,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 61,
+          "token_id": 20,
+          "logprob": -1.6021,
+          "text": "5"
+        },
+        {
+          "index": 66,
+          "token_id": 22,
+          "logprob": -1.5443,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.5273,
+          "text": "6"
+        },
+        {
+          "index": 56,
+          "token_id": 22,
+          "logprob": -1.4264,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.3491,
+          "text": "2"
+        },
+        {
+          "index": 71,
+          "token_id": 20,
+          "logprob": -1.3409,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.2813,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 15,
+          "logprob": -1.14,
+          "text": "0"
+        },
+        {
+          "index": 65,
+          "token_id": 16,
+          "logprob": -0.2087,
+          "text": "1"
+        },
+        {
+          "index": 22,
+          "token_id": 18,
+          "logprob": -0.2016,
+          "text": "3"
+        },
+        {
+          "index": 11,
+          "token_id": 24,
+          "logprob": -0.1428,
+          "text": "9"
+        },
+        {
+          "index": 54,
+          "token_id": 19,
+          "logprob": -0.1004,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 81,
+      "mean": -0.152,
+      "min": -1.6021,
+      "p05": -1.3491,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 253.34,
+    "std": 10.36,
+    "dark_fraction": 0.00097
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 8135,
+    "rule_px": 0,
+    "covered_px": 8135,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

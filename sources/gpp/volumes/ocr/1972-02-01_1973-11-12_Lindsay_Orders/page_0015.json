@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 1887,
-        "area_px": 6467,
-        "density": 0.29179,
+        "ink_px": 22036,
+        "area_px": 55750,
+        "density": 0.39526,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1523
       ],
       "category": "Text",
-      "text": "Section 1. Executive Order No. 49, dated October 1, 1971, entitled \"CONDUCT OF CENSUS CONCERNING THE COMPOSITION OF THE WORK FORCE OF CITY AGENCIES\" is hereby amended by renumbering § 8 to § 9 (and by inserting therein a new § 8 to read as follows:",
+      "text": "Section 1. Executive Order No. 49, dated October 1, 1971, entitled \"CONDUCT OF CENSUS CONCERNING THE COMPOSITION OF THE WORK FORCE OF CITY AGENCIES\" is hereby amended by renumbering \u00a7 8 to \u00a7 9 (and by inserting therein a new \u00a7 8 to read as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -277,7 +277,7 @@
         1724
       ],
       "category": "List-item",
-      "text": "\"§ 8. Nothing in this order shall be construed to require or allow the imposition of quotas in recruitment, assignment, hiring, or promotion in contravention of the requirements of law.\"",
+      "text": "\"\u00a7 8. Nothing in this order shall be construed to require or allow the imposition of quotas in recruitment, assignment, hiring, or promotion in contravention of the requirements of law.\"",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -311,7 +311,7 @@
         1804
       ],
       "category": "List-item",
-      "text": "§ 2. This order shall take effect immediately.",
+      "text": "\u00a7 2. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -448,7 +448,7 @@
           "index": 454,
           "token_id": 16625,
           "logprob": -0.0866,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 682,
@@ -596,41 +596,33 @@
   "ink_coverage": {
     "roi": [
       266,
-      421,
+      103,
       1950,
-      3093
+      3416
     ],
-    "ink_px": 58873,
-    "covered_px": 57127,
-    "covered_fraction": 0.97034,
-    "uncovered_px": 1746,
+    "ink_px": 82479,
+    "rule_px": 3120,
+    "covered_px": 77276,
+    "covered_fraction": 0.97375,
+    "uncovered_px": 2083,
     "uncovered_regions": [
       {
         "bbox": [
-          1034,
-          997,
-          1442,
-          1021
+          1490,
+          3405,
+          1950,
+          3416
         ],
-        "ink_px": 792
+        "ink_px": 1216
       },
       {
         "bbox": [
-          986,
-          877,
-          1202,
-          901
+          1538,
+          103,
+          1946,
+          106
         ],
-        "ink_px": 412
-      },
-      {
-        "bbox": [
-          1082,
-          805,
-          1298,
-          829
-        ],
-        "ink_px": 402
+        "ink_px": 551
       }
     ],
     "cell_px": 24

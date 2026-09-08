@@ -1,0 +1,378 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        189,
+        208,
+        1505,
+        403
+      ],
+      "category": "Text",
+      "text": "deemed suspended with respect to the alteration or use of such building as a HERRC. FDNY shall\nrequire that adequate mitigating fire safety measures to ensure public safety, health and welfare be\nimplemented at any such building. Any waivers and mitigating measures pursuant to this order\nshall be adopted by written FDNY guidance or documented in a written determination issued by\nFDNY. Such documentation shall be maintained at the premises of the HERRC and at the FDNY.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3348,
+          "min": -1.5931
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 97,
+          "mean": -0.005,
+          "min": -0.4288
+        }
+      },
+      "ink": {
+        "ink_px": 35730,
+        "area_px": 251940,
+        "density": 0.14182,
+        "chars": 472,
+        "chars_per_1k_ink": 13.21
+      }
+    },
+    {
+      "bbox": [
+        189,
+        439,
+        1468,
+        594
+      ],
+      "category": "Text",
+      "text": "\u00a7 4. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2274,
+          "min": -1.2487
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 68,
+          "mean": -0.0014,
+          "min": -0.0891
+        }
+      },
+      "ink": {
+        "ink_px": 24472,
+        "area_px": 194990,
+        "density": 0.1255,
+        "chars": 338,
+        "chars_per_1k_ink": 13.81
+      }
+    },
+    {
+      "bbox": [
+        989,
+        647,
+        1420,
+        748
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3234,
+          "min": -1.3295
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 2733,
+        "area_px": 43430,
+        "density": 0.06293,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        994,
+        752,
+        1158,
+        828
+      ],
+      "category": "Caption",
+      "text": "Eric Adams\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2436,
+          "min": -1.1292
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0067,
+          "min": -0.0067
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0002,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 1498,
+        "area_px": 12628,
+        "density": 0.11863,
+        "chars": 16,
+        "chars_per_1k_ink": 10.68
+      }
+    },
+    {
+      "bbox": [
+        833,
+        2064,
+        852,
+        2091
+      ],
+      "category": "Page-footer",
+      "text": "2",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2187,
+          "min": -1.1561
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        }
+      },
+      "ink": {
+        "ink_px": 61,
+        "area_px": 560,
+        "density": 0.10893,
+        "chars": 1,
+        "chars_per_1k_ink": 16.39
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 345,
+    "content": {
+      "n_tokens": 170,
+      "mean": -0.0034,
+      "min": -0.4288,
+      "p05": -0.0004,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 57,
+          "token_id": 1699,
+          "logprob": -0.4288,
+          "text": "\\n"
+        },
+        {
+          "index": 183,
+          "token_id": 31608,
+          "logprob": -0.0891,
+          "text": " Emergency"
+        },
+        {
+          "index": 50,
+          "token_id": 472,
+          "logprob": -0.0571,
+          "text": " H"
+        },
+        {
+          "index": 167,
+          "token_id": 17851,
+          "logprob": -0.0054,
+          "text": "\u00a7"
+        },
+        {
+          "index": 76,
+          "token_id": 54071,
+          "logprob": -0.0012,
+          "text": "implemented"
+        },
+        {
+          "index": 54,
+          "token_id": 35318,
+          "logprob": -0.0007,
+          "text": " FD"
+        },
+        {
+          "index": 172,
+          "token_id": 31608,
+          "logprob": -0.0005,
+          "text": " Emergency"
+        },
+        {
+          "index": 300,
+          "token_id": 49454,
+          "logprob": -0.0005,
+          "text": "Eric"
+        },
+        {
+          "index": 58,
+          "token_id": 4310,
+          "logprob": -0.0004,
+          "text": "require"
+        },
+        {
+          "index": 93,
+          "token_id": 19012,
+          "logprob": -0.0003,
+          "text": "shall"
+        },
+        {
+          "index": 303,
+          "token_id": 85574,
+          "logprob": -0.0003,
+          "text": "Mayor"
+        },
+        {
+          "index": 51,
+          "token_id": 2650,
+          "logprob": -0.0002,
+          "text": "ERR"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 102,
+      "mean": -0.2533,
+      "min": -1.5931,
+      "p05": -1.216,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.5931,
+          "text": "9"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.5515,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.4536,
+          "text": "8"
+        },
+        {
+          "index": 258,
+          "token_id": 23,
+          "logprob": -1.3295,
+          "text": "8"
+        },
+        {
+          "index": 155,
+          "token_id": 19,
+          "logprob": -1.2487,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.217,
+          "text": "3"
+        },
+        {
+          "index": 253,
+          "token_id": 15,
+          "logprob": -1.1982,
+          "text": "0"
+        },
+        {
+          "index": 328,
+          "token_id": 16,
+          "logprob": -1.1561,
+          "text": "1"
+        },
+        {
+          "index": 150,
+          "token_id": 23,
+          "logprob": -1.1318,
+          "text": "8"
+        },
+        {
+          "index": 283,
+          "token_id": 23,
+          "logprob": -1.1292,
+          "text": "8"
+        },
+        {
+          "index": 272,
+          "token_id": 19,
+          "logprob": -1.118,
+          "text": "4"
+        },
+        {
+          "index": 317,
+          "token_id": 19,
+          "logprob": -1.0669,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 345,
+      "mean": -0.0766,
+      "min": -1.5931,
+      "p05": -0.829,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 248.31,
+    "std": 33.62,
+    "dark_fraction": 0.02557
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 64731,
+    "rule_px": 209,
+    "covered_px": 64494,
+    "covered_fraction": 0.99957,
+    "uncovered_px": 28,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

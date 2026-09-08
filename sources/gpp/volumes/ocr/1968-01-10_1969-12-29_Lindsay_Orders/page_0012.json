@@ -112,7 +112,7 @@
         437
       ],
       "category": "Text",
-      "text": "§ 2. All other provisions of Executive Order No. 49 are to remain in full force and effect.",
+      "text": "\u00a7 2. All other provisions of Executive Order No. 49 are to remain in full force and effect.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         486
       ],
       "category": "Text",
-      "text": "§ 3. This order shall take effect immediately.",
+      "text": "\u00a7 3. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -228,11 +228,11 @@
         }
       },
       "ink": {
-        "ink_px": 234,
-        "area_px": 195901,
-        "density": 0.00119,
+        "ink_px": 270,
+        "area_px": 231284,
+        "density": 0.00117,
         "chars": 479,
-        "chars_per_1k_ink": 2047.01
+        "chars_per_1k_ink": 1774.07
       }
     }
   ],
@@ -307,7 +307,7 @@
           "index": 156,
           "token_id": 17851,
           "logprob": -0.063,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 167,
@@ -431,15 +431,26 @@
   "ink_coverage": {
     "roi": [
       147,
-      223,
+      0,
       1078,
-      1640
+      1801
     ],
-    "ink_px": 869,
-    "covered_px": 869,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 4491,
+    "rule_px": 1642,
+    "covered_px": 905,
+    "covered_fraction": 0.31766,
+    "uncovered_px": 1944,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          147,
+          1791,
+          627,
+          1801
+        ],
+        "ink_px": 1898
+      }
+    ],
     "cell_px": 24
   }
 }

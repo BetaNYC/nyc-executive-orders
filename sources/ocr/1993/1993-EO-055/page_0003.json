@@ -1,0 +1,378 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        218,
+        212,
+        1510,
+        317
+      ],
+      "category": "Text",
+      "text": "to cooperate with the Operating Committee in carrying out its work, as requested by the Committee.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2989,
+          "min": -1.4848
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 18,
+          "mean": -0.0353,
+          "min": -0.6334
+        }
+      },
+      "ink": {
+        "ink_px": 12242,
+        "area_px": 137694,
+        "density": 0.08891,
+        "chars": 98,
+        "chars_per_1k_ink": 8.01
+      }
+    },
+    {
+      "bbox": [
+        317,
+        366,
+        761,
+        398
+      ],
+      "category": "Section-header",
+      "text": "\u00a7 4. Vendor Advisory Board",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2789,
+          "min": -1.3958
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.001,
+          "min": -0.0019
+        },
+        "text": {
+          "n_tokens": 7,
+          "mean": -0.1302,
+          "min": -0.7507
+        }
+      },
+      "ink": {
+        "ink_px": 4882,
+        "area_px": 14751,
+        "density": 0.33096,
+        "chars": 26,
+        "chars_per_1k_ink": 5.33
+      }
+    },
+    {
+      "bbox": [
+        216,
+        442,
+        1514,
+        706
+      ],
+      "category": "Text",
+      "text": "There is hereby established a Vendor Advisory Board which shall consist of no more than fifteen persons and shall include licensed street vendors and retail business owners who shall advise and make recommendations to the Commissioner of Business Services regarding the needs of street vendors and problems related to street vending.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2669,
+          "min": -1.3642
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 52,
+          "mean": -0.0122,
+          "min": -0.6328
+        }
+      },
+      "ink": {
+        "ink_px": 42799,
+        "area_px": 348435,
+        "density": 0.12283,
+        "chars": 333,
+        "chars_per_1k_ink": 7.78
+      }
+    },
+    {
+      "bbox": [
+        417,
+        747,
+        1100,
+        782
+      ],
+      "category": "Text",
+      "text": "\u00a7 5. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2546,
+          "min": -1.3253
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2259,
+          "min": -0.2259
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0006,
+          "min": -0.0028
+        }
+      },
+      "ink": {
+        "ink_px": 5837,
+        "area_px": 24732,
+        "density": 0.23601,
+        "chars": 46,
+        "chars_per_1k_ink": 7.88
+      }
+    },
+    {
+      "bbox": [
+        916,
+        923,
+        1514,
+        1118
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3282,
+          "min": -1.5091
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0038,
+          "min": -0.0038
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 11171,
+        "area_px": 118594,
+        "density": 0.0942,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 262,
+    "content": {
+      "n_tokens": 88,
+      "mean": -0.0249,
+      "min": -0.7507,
+      "p05": -0.0027,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 88,
+          "token_id": 17851,
+          "logprob": -0.7507,
+          "text": "\u00a7"
+        },
+        {
+          "index": 51,
+          "token_id": 10341,
+          "logprob": -0.6334,
+          "text": " Committee"
+        },
+        {
+          "index": 144,
+          "token_id": 1091,
+          "logprob": -0.6328,
+          "text": " than"
+        },
+        {
+          "index": 92,
+          "token_id": 45136,
+          "logprob": -0.1593,
+          "text": " Vendor"
+        },
+        {
+          "index": 217,
+          "token_id": 17851,
+          "logprob": -0.0028,
+          "text": "\u00a7"
+        },
+        {
+          "index": 220,
+          "token_id": 13,
+          "logprob": -0.0026,
+          "text": "."
+        },
+        {
+          "index": 181,
+          "token_id": 1189,
+          "logprob": -0.0014,
+          "text": ".\""
+        },
+        {
+          "index": 89,
+          "token_id": 220,
+          "logprob": -0.0007,
+          "text": " "
+        },
+        {
+          "index": 52,
+          "token_id": 1189,
+          "logprob": -0.0006,
+          "text": ".\""
+        },
+        {
+          "index": 227,
+          "token_id": 1189,
+          "logprob": -0.0005,
+          "text": ".\""
+        },
+        {
+          "index": 35,
+          "token_id": 983,
+          "logprob": -0.0004,
+          "text": "to"
+        },
+        {
+          "index": 93,
+          "token_id": 43913,
+          "logprob": -0.0003,
+          "text": " Advisory"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 101,
+      "mean": -0.2713,
+      "min": -1.5091,
+      "p05": -1.3642,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 235,
+          "token_id": 21,
+          "logprob": -1.5091,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.4848,
+          "text": "8"
+        },
+        {
+          "index": 246,
+          "token_id": 19,
+          "logprob": -1.4312,
+          "text": "4"
+        },
+        {
+          "index": 240,
+          "token_id": 18,
+          "logprob": -1.4291,
+          "text": "3"
+        },
+        {
+          "index": 60,
+          "token_id": 22,
+          "logprob": -1.3958,
+          "text": "7"
+        },
+        {
+          "index": 113,
+          "token_id": 19,
+          "logprob": -1.3642,
+          "text": "4"
+        },
+        {
+          "index": 102,
+          "token_id": 21,
+          "logprob": -1.3541,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.3255,
+          "text": "2"
+        },
+        {
+          "index": 189,
+          "token_id": 22,
+          "logprob": -1.3253,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.1783,
+          "text": "7"
+        },
+        {
+          "index": 118,
+          "token_id": 21,
+          "logprob": -1.1679,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.145,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 262,
+      "mean": -0.1136,
+      "min": -1.5091,
+      "p05": -1.1003,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 247.07,
+    "std": 41.87,
+    "dark_fraction": 0.02889
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      628.0,
+      821.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      209,
+      0,
+      1535,
+      2281
+    ],
+    "ink_px": 78110,
+    "rule_px": 263,
+    "covered_px": 76931,
+    "covered_fraction": 0.98823,
+    "uncovered_px": 916,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

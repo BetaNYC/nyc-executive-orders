@@ -28,7 +28,13 @@
           "min": -0.0185
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 20,
+        "area_px": 924,
+        "density": 0.02165,
+        "chars": 3,
+        "chars_per_1k_ink": 150.0
+      }
     },
     {
       "bbox": [
@@ -72,7 +78,7 @@
         393
       ],
       "category": "Text",
-      "text": "§2. The Mayor shall serve as Chairman of the Council. He shall designate such other officers as he deems appropriate.",
+      "text": "\u00a72. The Mayor shall serve as Chairman of the Council. He shall designate such other officers as he deems appropriate.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 17,
@@ -106,7 +112,7 @@
         477
       ],
       "category": "Text",
-      "text": "§3. The Mayor shall appoint a Director of the Council, who shall serve at the pleasure of the Mayor.",
+      "text": "\u00a73. The Mayor shall appoint a Director of the Council, who shall serve at the pleasure of the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -140,7 +146,7 @@
         567
       ],
       "category": "Text",
-      "text": "§4. The duties of the Director shall include but not be limited to the following:",
+      "text": "\u00a74. The duties of the Director shall include but not be limited to the following:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 17,
@@ -320,7 +326,7 @@
           "index": 142,
           "token_id": 17851,
           "logprob": -0.0644,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 405,
@@ -380,7 +386,7 @@
           "index": 257,
           "token_id": 17851,
           "logprob": -0.0015,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 543,
@@ -498,15 +504,26 @@
   "ink_coverage": {
     "roi": [
       140,
-      181,
+      0,
       1027,
-      1327
+      1469
     ],
-    "ink_px": 2081,
-    "covered_px": 2081,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 5802,
+    "rule_px": 2305,
+    "covered_px": 2101,
+    "covered_fraction": 0.6008,
+    "uncovered_px": 1396,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          490,
+          1447,
+          563,
+          1464
+        ],
+        "ink_px": 496
+      }
+    ],
     "cell_px": 24
   }
 }

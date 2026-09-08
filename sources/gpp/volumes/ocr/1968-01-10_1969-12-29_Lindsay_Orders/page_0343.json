@@ -404,7 +404,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 3024,
+        "area_px": 13176,
         "density": 0.0,
         "chars": 50,
         "chars_per_1k_ink": null
@@ -431,7 +431,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 9207,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -454,7 +460,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 2574,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -482,7 +494,13 @@
           "min": -2.1403
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 4578,
+        "density": 0.0,
+        "chars": 25,
+        "chars_per_1k_ink": null
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -680,15 +698,26 @@
   "ink_coverage": {
     "roi": [
       140,
-      218,
+      47,
       1027,
-      1601
+      1820
     ],
-    "ink_px": 86,
+    "ink_px": 2057,
+    "rule_px": 566,
     "covered_px": 0,
     "covered_fraction": 0.0,
-    "uncovered_px": 86,
-    "uncovered_regions": [],
+    "uncovered_px": 1491,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          548,
+          55,
+          716,
+          96
+        ],
+        "ink_px": 1039
+      }
+    ],
     "cell_px": 24
   }
 }

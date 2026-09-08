@@ -1,0 +1,343 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        177,
+        379,
+        1444,
+        471
+      ],
+      "category": "Text",
+      "text": "Financial Disclosure Report, already submitted to the Conflicts of Interest Board, along\nwith the answers to supplemental questions.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.302,
+          "min": -1.4985
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0089,
+          "min": -0.2017
+        }
+      },
+      "ink": {
+        "ink_px": 12093,
+        "area_px": 115714,
+        "density": 0.10451,
+        "chars": 132,
+        "chars_per_1k_ink": 10.92
+      }
+    },
+    {
+      "bbox": [
+        329,
+        527,
+        1347,
+        560
+      ],
+      "category": "Text",
+      "text": "Section 7. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2765,
+          "min": -1.198
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.015,
+          "min": -0.2018
+        }
+      },
+      "ink": {
+        "ink_px": 7110,
+        "area_px": 34476,
+        "density": 0.20623,
+        "chars": 68,
+        "chars_per_1k_ink": 9.56
+      }
+    },
+    {
+      "bbox": [
+        944,
+        786,
+        1259,
+        851
+      ],
+      "category": "Text",
+      "text": "DAVID N. DINKINS\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3015,
+          "min": -1.3467
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0217,
+          "min": -0.0217
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0074,
+          "min": -0.0703
+        }
+      },
+      "ink": {
+        "ink_px": 3436,
+        "area_px": 20790,
+        "density": 0.16527,
+        "chars": 22,
+        "chars_per_1k_ink": 6.4
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 156,
+    "content": {
+      "n_tokens": 48,
+      "mean": -0.0103,
+      "min": -0.2018,
+      "p05": -0.0488,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 97,
+          "token_id": 46923,
+          "logprob": -0.2018,
+          "text": " Effective"
+        },
+        {
+          "index": 50,
+          "token_id": 1699,
+          "logprob": -0.2017,
+          "text": "\\n"
+        },
+        {
+          "index": 151,
+          "token_id": 3022,
+          "logprob": -0.0703,
+          "text": "AY"
+        },
+        {
+          "index": 142,
+          "token_id": 6352,
+          "logprob": -0.0087,
+          "text": "DA"
+        },
+        {
+          "index": 93,
+          "token_id": 9620,
+          "logprob": -0.0043,
+          "text": "Section"
+        },
+        {
+          "index": 106,
+          "token_id": 1189,
+          "logprob": -0.0016,
+          "text": ".\""
+        },
+        {
+          "index": 35,
+          "token_id": 56230,
+          "logprob": -0.0015,
+          "text": "Financial"
+        },
+        {
+          "index": 149,
+          "token_id": 1699,
+          "logprob": -0.0012,
+          "text": "\\n"
+        },
+        {
+          "index": 96,
+          "token_id": 13,
+          "logprob": -0.0012,
+          "text": "."
+        },
+        {
+          "index": 57,
+          "token_id": 1189,
+          "logprob": -0.0007,
+          "text": ".\""
+        },
+        {
+          "index": 150,
+          "token_id": 44,
+          "logprob": -0.0005,
+          "text": "M"
+        },
+        {
+          "index": 43,
+          "token_id": 14974,
+          "logprob": -0.0002,
+          "text": " Conf"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.2791,
+      "min": -1.4985,
+      "p05": -1.2736,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.4985,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 19,
+          "logprob": -1.4335,
+          "text": "4"
+        },
+        {
+          "index": 114,
+          "token_id": 19,
+          "logprob": -1.3467,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -1.2698,
+          "text": "1"
+        },
+        {
+          "index": 76,
+          "token_id": 22,
+          "logprob": -1.198,
+          "text": "7"
+        },
+        {
+          "index": 70,
+          "token_id": 22,
+          "logprob": -1.1807,
+          "text": "7"
+        },
+        {
+          "index": 119,
+          "token_id": 21,
+          "logprob": -1.1448,
+          "text": "6"
+        },
+        {
+          "index": 130,
+          "token_id": 16,
+          "logprob": -1.0455,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -0.9185,
+          "text": "9"
+        },
+        {
+          "index": 65,
+          "token_id": 24,
+          "logprob": -0.9035,
+          "text": "9"
+        },
+        {
+          "index": 124,
+          "token_id": 20,
+          "logprob": -0.6934,
+          "text": "5"
+        },
+        {
+          "index": 64,
+          "token_id": 17,
+          "logprob": -0.6932,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 156,
+      "mean": -0.1115,
+      "min": -1.4985,
+      "p05": -0.9502,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 251.62,
+    "std": 27.29,
+    "dark_fraction": 0.0129
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      622.0,
+      808.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      207,
+      0,
+      1520,
+      2245
+    ],
+    "ink_px": 29867,
+    "rule_px": 3580,
+    "covered_px": 22639,
+    "covered_fraction": 0.86122,
+    "uncovered_px": 3648,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1023,
+          663,
+          1333,
+          770
+        ],
+        "ink_px": 1669
+      },
+      {
+        "bbox": [
+          966,
+          713,
+          1059,
+          768
+        ],
+        "ink_px": 499
+      },
+      {
+        "bbox": [
+          804,
+          696,
+          861,
+          768
+        ],
+        "ink_px": 454
+      }
+    ],
+    "cell_px": 24
+  }
+}

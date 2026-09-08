@@ -1,0 +1,310 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        191,
+        211,
+        1501,
+        285
+      ],
+      "category": "Text",
+      "text": "\u00a7 2. I hereby direct that section 1 of Emergency Executive Order No. 599, dated May 29, 2024 is extended for five (5) days.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3215,
+          "min": -1.3979
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0101,
+          "min": -0.0101
+        },
+        "text": {
+          "n_tokens": 42,
+          "mean": -0.0003,
+          "min": -0.0052
+        }
+      },
+      "ink": {
+        "ink_px": 8827,
+        "area_px": 96750,
+        "density": 0.09124,
+        "chars": 123,
+        "chars_per_1k_ink": 13.93
+      }
+    },
+    {
+      "bbox": [
+        191,
+        328,
+        1505,
+        477
+      ],
+      "category": "Text",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2731,
+          "min": -1.3215
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 68,
+          "mean": -0.0002,
+          "min": -0.0087
+        }
+      },
+      "ink": {
+        "ink_px": 24346,
+        "area_px": 192508,
+        "density": 0.12647,
+        "chars": 338,
+        "chars_per_1k_ink": 13.88
+      }
+    },
+    {
+      "bbox": [
+        993,
+        531,
+        1417,
+        710
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3124,
+          "min": -1.4742
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.003,
+          "min": -0.003
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5080,
+        "area_px": 75717,
+        "density": 0.06709,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 213,
+    "content": {
+      "n_tokens": 110,
+      "mean": -0.0002,
+      "min": -0.0087,
+      "p05": -0.0002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 128,
+          "token_id": 31608,
+          "logprob": -0.0087,
+          "text": " Emergency"
+        },
+        {
+          "index": 62,
+          "token_id": 11,
+          "logprob": -0.0052,
+          "text": ","
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0052,
+          "text": "\u00a7"
+        },
+        {
+          "index": 112,
+          "token_id": 17851,
+          "logprob": -0.0011,
+          "text": "\u00a7"
+        },
+        {
+          "index": 47,
+          "token_id": 31608,
+          "logprob": -0.0003,
+          "text": " Emergency"
+        },
+        {
+          "index": 63,
+          "token_id": 220,
+          "logprob": -0.0002,
+          "text": " "
+        },
+        {
+          "index": 117,
+          "token_id": 31608,
+          "logprob": -0.0002,
+          "text": " Emergency"
+        },
+        {
+          "index": 67,
+          "token_id": 19,
+          "logprob": -0.0001,
+          "text": "4"
+        },
+        {
+          "index": 64,
+          "token_id": 17,
+          "logprob": -0.0001,
+          "text": "2"
+        },
+        {
+          "index": 179,
+          "token_id": 1189,
+          "logprob": -0.0001,
+          "text": ".\""
+        },
+        {
+          "index": 76,
+          "token_id": 1189,
+          "logprob": -0.0001,
+          "text": ".\""
+        },
+        {
+          "index": 39,
+          "token_id": 358,
+          "logprob": -0.0001,
+          "text": " I"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.2874,
+      "min": -1.4742,
+      "p05": -1.323,
+      "p50": -0.0016,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 187,
+          "token_id": 18,
+          "logprob": -1.4742,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.3979,
+          "text": "5"
+        },
+        {
+          "index": 198,
+          "token_id": 22,
+          "logprob": -1.3516,
+          "text": "7"
+        },
+        {
+          "index": 95,
+          "token_id": 20,
+          "logprob": -1.3215,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.3029,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.2899,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.2839,
+          "text": "1"
+        },
+        {
+          "index": 89,
+          "token_id": 23,
+          "logprob": -1.264,
+          "text": "8"
+        },
+        {
+          "index": 100,
+          "token_id": 22,
+          "logprob": -1.2108,
+          "text": "7"
+        },
+        {
+          "index": 192,
+          "token_id": 16,
+          "logprob": -1.1368,
+          "text": "1"
+        },
+        {
+          "index": 203,
+          "token_id": 15,
+          "logprob": -1.1174,
+          "text": "0"
+        },
+        {
+          "index": 84,
+          "token_id": 16,
+          "logprob": -0.8611,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 213,
+      "mean": -0.0812,
+      "min": -1.4742,
+      "p05": -0.9636,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 251.32,
+    "std": 25.19,
+    "dark_fraction": 0.01433
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 38253,
+    "rule_px": 0,
+    "covered_px": 38253,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

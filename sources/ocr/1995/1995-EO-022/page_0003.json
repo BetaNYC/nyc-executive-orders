@@ -1,0 +1,310 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        103,
+        237,
+        1417,
+        514
+      ],
+      "category": "Text",
+      "text": "the corner and the corner quadrant are cleared of structures and objects, and such arrangements shall provide for such entities to (1) refrain from placing new structures and objects in the corner and the corner quadrant; and (2) replace structures and objects in the corner and the corner quadrant with structures and objects outside of the corner and the corner quadrant to the extent that such relocation would not jeopardize the health and safety of the public.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3422,
+          "min": -1.6807
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 85,
+          "mean": -0.0008,
+          "min": -0.0552
+        }
+      },
+      "ink": {
+        "ink_px": 30794,
+        "area_px": 334339,
+        "density": 0.0921,
+        "chars": 465,
+        "chars_per_1k_ink": 15.1
+      }
+    },
+    {
+      "bbox": [
+        304,
+        534,
+        1365,
+        571
+      ],
+      "category": "Text",
+      "text": "Section 5. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3003,
+          "min": -1.3988
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0209,
+          "min": -0.0209
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0013,
+          "min": -0.0126
+        }
+      },
+      "ink": {
+        "ink_px": 4347,
+        "area_px": 39109,
+        "density": 0.11115,
+        "chars": 52,
+        "chars_per_1k_ink": 11.96
+      }
+    },
+    {
+      "bbox": [
+        743,
+        553,
+        1410,
+        763
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.5549,
+          "min": -2.14
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0094,
+          "min": -0.0094
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 10080,
+        "area_px": 138985,
+        "density": 0.07253,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 199,
+    "content": {
+      "n_tokens": 96,
+      "mean": -0.0008,
+      "min": -0.0552,
+      "p05": -0.0006,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 46,
+          "token_id": 6171,
+          "logprob": -0.0552,
+          "text": " objects"
+        },
+        {
+          "index": 155,
+          "token_id": 9620,
+          "logprob": -0.0126,
+          "text": "Section"
+        },
+        {
+          "index": 57,
+          "token_id": 320,
+          "logprob": -0.0041,
+          "text": " ("
+        },
+        {
+          "index": 40,
+          "token_id": 93286,
+          "logprob": -0.0033,
+          "text": " quadrant"
+        },
+        {
+          "index": 159,
+          "token_id": 1096,
+          "logprob": -0.0006,
+          "text": " This"
+        },
+        {
+          "index": 60,
+          "token_id": 57508,
+          "logprob": -0.0006,
+          "text": " refrain"
+        },
+        {
+          "index": 56,
+          "token_id": 311,
+          "logprob": -0.0005,
+          "text": " to"
+        },
+        {
+          "index": 35,
+          "token_id": 1782,
+          "logprob": -0.0003,
+          "text": "the"
+        },
+        {
+          "index": 95,
+          "token_id": 315,
+          "logprob": -0.0003,
+          "text": " of"
+        },
+        {
+          "index": 119,
+          "token_id": 1189,
+          "logprob": -0.0003,
+          "text": ".\""
+        },
+        {
+          "index": 74,
+          "token_id": 26,
+          "logprob": -0.0003,
+          "text": ";"
+        },
+        {
+          "index": 165,
+          "token_id": 1189,
+          "logprob": -0.0003,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.3797,
+      "min": -2.14,
+      "p05": -1.5423,
+      "p50": -0.0102,
+      "n_below_threshold": 2,
+      "worst_tokens": [
+        {
+          "index": 173,
+          "token_id": 18,
+          "logprob": -2.14,
+          "text": "3"
+        },
+        {
+          "index": 178,
+          "token_id": 18,
+          "logprob": -2.1109,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.6807,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.535,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.5317,
+          "text": "7"
+        },
+        {
+          "index": 189,
+          "token_id": 18,
+          "logprob": -1.4319,
+          "text": "3"
+        },
+        {
+          "index": 127,
+          "token_id": 19,
+          "logprob": -1.3988,
+          "text": "4"
+        },
+        {
+          "index": 138,
+          "token_id": 20,
+          "logprob": -1.3791,
+          "text": "5"
+        },
+        {
+          "index": 143,
+          "token_id": 16,
+          "logprob": -1.3771,
+          "text": "1"
+        },
+        {
+          "index": 132,
+          "token_id": 19,
+          "logprob": -1.3447,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.334,
+          "text": "7"
+        },
+        {
+          "index": 172,
+          "token_id": 19,
+          "logprob": -1.2161,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 199,
+      "mean": -0.115,
+      "min": -2.14,
+      "p05": -1.3351,
+      "p50": -0.0,
+      "n_below_threshold": 2
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 249.91,
+    "std": 32.23,
+    "dark_fraction": 0.01876
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 43996,
+    "rule_px": 0,
+    "covered_px": 43848,
+    "covered_fraction": 0.99664,
+    "uncovered_px": 148,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

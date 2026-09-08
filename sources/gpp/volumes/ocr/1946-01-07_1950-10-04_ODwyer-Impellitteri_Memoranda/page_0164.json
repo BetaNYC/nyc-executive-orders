@@ -452,7 +452,7 @@
         2644
       ],
       "category": "Text",
-      "text": "And, you really get the full benefit of a day's pay. No need to spend fancy prices for your meal on meeting nights. You can eat your meal right here at the Port - excellent food, the cost for a full-course dinner is only 35¢ per person.",
+      "text": "And, you really get the full benefit of a day's pay. No need to spend fancy prices for your meal on meeting nights. You can eat your meal right here at the Port - excellent food, the cost for a full-course dinner is only 35\u00a2 per person.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -505,11 +505,11 @@
         }
       },
       "ink": {
-        "ink_px": 17858,
-        "area_px": 242268,
-        "density": 0.07371,
+        "ink_px": 29858,
+        "area_px": 380485,
+        "density": 0.07847,
         "chars": 354,
-        "chars_per_1k_ink": 19.82
+        "chars_per_1k_ink": 11.86
       }
     }
   ],
@@ -708,23 +708,33 @@
   "ink_coverage": {
     "roi": [
       304,
-      386,
+      112,
       2229,
-      2833
+      3095
     ],
-    "ink_px": 193216,
-    "covered_px": 192079,
-    "covered_fraction": 0.99412,
-    "uncovered_px": 1137,
+    "ink_px": 207664,
+    "rule_px": 2299,
+    "covered_px": 204079,
+    "covered_fraction": 0.99374,
+    "uncovered_px": 1286,
     "uncovered_regions": [
       {
         "bbox": [
-          856,
-          698,
-          1264,
-          722
+          863,
+          712,
+          1118,
+          719
         ],
-        "ink_px": 1137
+        "ink_px": 584
+      },
+      {
+        "bbox": [
+          1720,
+          3091,
+          2229,
+          3095
+        ],
+        "ink_px": 518
       }
     ],
     "cell_px": 24

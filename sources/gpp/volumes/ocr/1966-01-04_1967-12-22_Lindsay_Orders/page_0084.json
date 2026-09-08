@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16838,
+        "area_px": 52675,
+        "density": 0.31966,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 5149,
-        "area_px": 44096,
-        "density": 0.11677,
+        "ink_px": 6094,
+        "area_px": 53000,
+        "density": 0.11498,
         "chars": 53,
-        "chars_per_1k_ink": 10.29
+        "chars_per_1k_ink": 8.7
       }
     },
     {
@@ -301,7 +307,7 @@
         2177
       ],
       "category": "Text",
-      "text": "§2. Deputy Administrator and Personnel. The Mayor, or upon delegation by the Mayor, the Administrator, may appoint Deputy Administrators, assistant administrators and such other professional and clerical personnel as may be necessary for the performance of the duties of the Administration. The agencies specified in §3 hereof are hereby directed to make available to the Administrator such staff assistance as he may request.",
+      "text": "\u00a72. Deputy Administrator and Personnel. The Mayor, or upon delegation by the Mayor, the Administrator, may appoint Deputy Administrators, assistant administrators and such other professional and clerical personnel as may be necessary for the performance of the duties of the Administration. The agencies specified in \u00a73 hereof are hereby directed to make available to the Administrator such staff assistance as he may request.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -335,7 +341,7 @@
         2390
       ],
       "category": "Text",
-      "text": "§3. Powers and Duties of the Administrator. The Administrator shall have with respect to the Department of Parks, the Office of Cultural Affairs and the Landmarks Preservation Commission, the power and duty:",
+      "text": "\u00a73. Powers and Duties of the Administrator. The Administrator shall have with respect to the Department of Parks, the Office of Cultural Affairs and the Landmarks Preservation Commission, the power and duty:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -490,11 +496,11 @@
         }
       },
       "ink": {
-        "ink_px": 19,
-        "area_px": 26282,
-        "density": 0.00072,
+        "ink_px": 400,
+        "area_px": 159238,
+        "density": 0.00251,
         "chars": 77,
-        "chars_per_1k_ink": 4052.63
+        "chars_per_1k_ink": 192.5
       }
     }
   ],
@@ -533,7 +539,7 @@
           "index": 517,
           "token_id": 17851,
           "logprob": -0.635,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 291,
@@ -693,15 +699,26 @@
   "ink_coverage": {
     "roi": [
       289,
-      419,
+      125,
       2120,
-      3073
+      3376
     ],
-    "ink_px": 28336,
-    "covered_px": 28336,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 48886,
+    "rule_px": 600,
+    "covered_px": 46500,
+    "covered_fraction": 0.96301,
+    "uncovered_px": 1786,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1349,
+          173,
+          1389,
+          231
+        ],
+        "ink_px": 714
+      }
+    ],
     "cell_px": 24
   }
 }

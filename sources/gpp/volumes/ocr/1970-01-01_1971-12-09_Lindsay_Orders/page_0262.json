@@ -28,7 +28,13 @@
           "min": -0.0054
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1323,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         641
       ],
       "category": "Text",
-      "text": "§3. Effective October 13, 1970 the beneficiary or estate of a full time per annum City employee for whom leave regulations were established by Personnel Order No. 78/70 who dies while in the City's employ shall receive cash payments as provided in subdivisions a. and b. of Section 1 above. This section shall not be construed to exclude such payment as provided in such subdivisions a. and b. for annual leave or compensatory time accrued or earned prior to October 13, 1970 which is verifiable by official agency records.",
+      "text": "\u00a73. Effective October 13, 1970 the beneficiary or estate of a full time per annum City employee for whom leave regulations were established by Personnel Order No. 78/70 who dies while in the City's employ shall receive cash payments as provided in subdivisions a. and b. of Section 1 above. This section shall not be construed to exclude such payment as provided in such subdivisions a. and b. for annual leave or compensatory time accrued or earned prior to October 13, 1970 which is verifiable by official agency records.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -72,7 +78,7 @@
         855
       ],
       "category": "Text",
-      "text": "§4. Payments in accordance with Sections 1, 2, and 3 above shall be based on the annual regular salary rate of the employee at the time of death. The hourly rate of pay for compensatory time shall be determined by the fractional part of such salary rate as follows:",
+      "text": "\u00a74. Payments in accordance with Sections 1, 2, and 3 above shall be based on the annual regular salary rate of the employee at the time of death. The hourly rate of pay for compensatory time shall be determined by the fractional part of such salary rate as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -395,7 +401,7 @@
           "index": 72,
           "token_id": 17851,
           "logprob": -0.1789,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 370,
@@ -437,7 +443,7 @@
           "index": 228,
           "token_id": 17851,
           "logprob": -0.0085,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 384,
@@ -561,15 +567,26 @@
   "ink_coverage": {
     "roi": [
       173,
-      224,
+      0,
       1275,
-      1642
+      1806
     ],
-    "ink_px": 880,
+    "ink_px": 1752,
+    "rule_px": 0,
     "covered_px": 879,
-    "covered_fraction": 0.99886,
-    "uncovered_px": 1,
-    "uncovered_regions": [],
+    "covered_fraction": 0.50171,
+    "uncovered_px": 873,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          605,
+          1769,
+          677,
+          1787
+        ],
+        "ink_px": 625
+      }
+    ],
     "cell_px": 24
   }
 }

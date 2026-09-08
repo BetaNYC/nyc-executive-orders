@@ -1,0 +1,349 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        328,
+        252,
+        1485,
+        553
+      ],
+      "category": "Text",
+      "text": "Section 3. Membership. (a) The Planning Council shall be appointed by the Mayor and shall consist of not less than 35 and not more than 42 members. The members of the Planning Council shall serve at the pleasure of the Mayor and from among them, the Mayor shall designate a Chairperson.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3268,
+          "min": -1.5767
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0025,
+          "min": -0.0025
+        },
+        "text": {
+          "n_tokens": 64,
+          "mean": -0.0062,
+          "min": -0.2603
+        }
+      },
+      "ink": {
+        "ink_px": 39654,
+        "area_px": 351830,
+        "density": 0.11271,
+        "chars": 286,
+        "chars_per_1k_ink": 7.21
+      }
+    },
+    {
+      "bbox": [
+        328,
+        587,
+        1490,
+        1348
+      ],
+      "category": "List-item",
+      "text": "(b) The membership of the Planning Council shall include representatives of health care providers, community-based and AIDS service organizations, social service providers, mental health care providers, local public health agencies, hospital planning agencies or health care planning agencies, affected communities (including individuals with HIV disease), non-elected community leaders, State government, grantees of categorical grants for early intervention services under subpart II of part C of the Ryan White Act and the lead agency of any Health Resources and Services Administration adult and pediatric HIV-related care demonstration project operating in the area to be served. At least one member of the Planning Council shall represent separately each of these specified categories.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2812,
+          "min": -1.3422
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2144,
+          "min": -0.4287
+        },
+        "text": {
+          "n_tokens": 130,
+          "mean": -0.0004,
+          "min": -0.0392
+        }
+      },
+      "ink": {
+        "ink_px": 106463,
+        "area_px": 892710,
+        "density": 0.11926,
+        "chars": 791,
+        "chars_per_1k_ink": 7.43
+      }
+    },
+    {
+      "bbox": [
+        331,
+        1382,
+        1492,
+        1681
+      ],
+      "category": "List-item",
+      "text": "(c) The Mayor also shall appoint one member that is mutually acceptable to the Mayor and the County Executives of Westchester, Rockland and Putnam Counties to represent these political subdivisions or Health Resources and Services Administration grant recipients therein on the Planning Council.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2558,
+          "min": -1.3624
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0002,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 52,
+          "mean": -0.0,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 43964,
+        "area_px": 350700,
+        "density": 0.12536,
+        "chars": 295,
+        "chars_per_1k_ink": 6.71
+      }
+    },
+    {
+      "bbox": [
+        334,
+        1714,
+        1494,
+        1944
+      ],
+      "category": "List-item",
+      "text": "(d) The Planning Council shall also include as members the Commissioner of Mental Health, Mental Retardation, and Alcoholism Services of the City of New York, the Commissioner of Health of the City of New York, the Administrator of the New York City Human",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2342,
+          "min": -1.3068
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0001,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 52,
+          "mean": -0.0,
+          "min": -0.0008
+        }
+      },
+      "ink": {
+        "ink_px": 40596,
+        "area_px": 269808,
+        "density": 0.15046,
+        "chars": 255,
+        "chars_per_1k_ink": 6.28
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 446,
+    "content": {
+      "n_tokens": 298,
+      "mean": -0.0015,
+      "min": -0.2603,
+      "p05": -0.0003,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 39,
+          "token_id": 42552,
+          "logprob": -0.2603,
+          "text": " Membership"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0826,
+          "text": "Section"
+        },
+        {
+          "index": 48,
+          "token_id": 387,
+          "logprob": -0.0487,
+          "text": " be"
+        },
+        {
+          "index": 192,
+          "token_id": 95705,
+          "logprob": -0.0392,
+          "text": "-elected"
+        },
+        {
+          "index": 40,
+          "token_id": 13,
+          "logprob": -0.0029,
+          "text": "."
+        },
+        {
+          "index": 176,
+          "token_id": 476,
+          "logprob": -0.0023,
+          "text": " or"
+        },
+        {
+          "index": 403,
+          "token_id": 29354,
+          "logprob": -0.0008,
+          "text": " Commissioner"
+        },
+        {
+          "index": 146,
+          "token_id": 23130,
+          "logprob": -0.0008,
+          "text": " representatives"
+        },
+        {
+          "index": 38,
+          "token_id": 13,
+          "logprob": -0.0008,
+          "text": "."
+        },
+        {
+          "index": 41,
+          "token_id": 320,
+          "logprob": -0.0006,
+          "text": " ("
+        },
+        {
+          "index": 340,
+          "token_id": 476,
+          "logprob": -0.0005,
+          "text": " or"
+        },
+        {
+          "index": 98,
+          "token_id": 1189,
+          "logprob": -0.0005,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 88,
+      "mean": -0.2563,
+      "min": -1.5767,
+      "p05": -1.3386,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.5767,
+          "text": "5"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.4981,
+          "text": "8"
+        },
+        {
+          "index": 284,
+          "token_id": 17,
+          "logprob": -1.3624,
+          "text": "2"
+        },
+        {
+          "index": 272,
+          "token_id": 16,
+          "logprob": -1.355,
+          "text": "1"
+        },
+        {
+          "index": 111,
+          "token_id": 22,
+          "logprob": -1.3422,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.332,
+          "text": "3"
+        },
+        {
+          "index": 379,
+          "token_id": 19,
+          "logprob": -1.3068,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.2945,
+          "text": "2"
+        },
+        {
+          "index": 361,
+          "token_id": 19,
+          "logprob": -1.2457,
+          "text": "4"
+        },
+        {
+          "index": 367,
+          "token_id": 19,
+          "logprob": -1.2065,
+          "text": "4"
+        },
+        {
+          "index": 290,
+          "token_id": 16,
+          "logprob": -1.1526,
+          "text": "1"
+        },
+        {
+          "index": 278,
+          "token_id": 17,
+          "logprob": -1.1513,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 446,
+      "mean": -0.0526,
+      "min": -1.5767,
+      "p05": -0.1961,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 229.14,
+    "std": 72.89,
+    "dark_fraction": 0.09553
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      639.0,
+      827.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      213,
+      0,
+      1562,
+      2298
+    ],
+    "ink_px": 231540,
+    "rule_px": 0,
+    "covered_px": 230677,
+    "covered_fraction": 0.99627,
+    "uncovered_px": 863,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

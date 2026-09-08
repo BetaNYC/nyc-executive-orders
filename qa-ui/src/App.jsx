@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { pageMarkdown, renderMarkdown } from "./markdown.js";
 import { FLAG_LABEL, FLAG_SEVERITY, QaPanel, worstSeverity } from "./qa.jsx";
+import { PdfPage } from "./pdfPage.jsx";
+import { CorpusPanel } from "./corpus.jsx";
 
 const STATUS_LABEL = {
   ocr: "OCR",
@@ -12,13 +14,36 @@ const STATUS_LABEL = {
   classified_keep: "classified: pending OCR",
 };
 
-const VOLUME_STATUS_LABEL = {
+const UNIT_STATUS_LABEL = {
   "not-started": "not started",
   classified: "classified only",
+  incomplete: "incomplete",
   ocr: "OCR'd",
 };
 
-const pad = (n) => String(n).padStart(4, "0");
+// A unit a human still has to look at: it carries page-level QA flags, it never
+// ran, or it has fewer page records than the PDF has pages.
+const needsReview = (u) =>
+  u.flaggedPageCount > 0 ||
+  u.status === "not-started" ||
+  u.status === "incomplete";
+
+// One line in the unit dropdown. A grouped collection (post-1974) names the
+// document, an ungrouped one (the bound volumes) names its year span, because
+// the volume stem is far too long to read in a select.
+function unitOptionLabel(u) {
+  const parts = [
+    u.group ? u.id : `${u.minYear}–${u.maxYear}`,
+    UNIT_STATUS_LABEL[u.status] ?? u.status,
+  ];
+  if (u.ocrPageCount) parts.push(`${u.ocrPageCount} pages`);
+  else if (u.classifiedPageCount)
+    parts.push(`${u.classifiedPageCount} classified`);
+  if (u.flaggedPageCount) parts.push(`${u.flaggedPageCount} flagged`);
+  // The page image is the source PDF, so a unit without one shows no page.
+  if (!u.hasPdf) parts.push("no PDF");
+  return parts.join(" · ");
+}
 
 const MIN_SCALE = 1;
 const MAX_SCALE = 8;
@@ -55,29 +80,37 @@ function zoomAt({
 function readHash() {
   const params = new URLSearchParams(window.location.hash.slice(1));
   const page = Number(params.get("page"));
+  // `volume=` is the old single-collection link shape -- it still resolves.
+  const legacy = params.get("volume");
   return {
-    volume: params.get("volume") || null,
+    collection: params.get("collection") || (legacy ? "pre1974" : null),
+    unit: params.get("unit") || legacy || null,
     page: Number.isInteger(page) && page > 0 ? page : null,
   };
 }
 
-function writeHash(volume, page) {
-  // Nothing selected yet -- leave the incoming hash alone, the volume's page
+function writeHash(collection, unit, page) {
+  // Nothing selected yet -- leave the incoming hash alone, the unit's page
   // index is still loading and will land on the page it names.
-  if (!volume || !page) return;
-  const next = `#volume=${encodeURIComponent(volume)}&page=${page}`;
+  if (!collection || !unit || !page) return;
+  const next =
+    `#collection=${encodeURIComponent(collection)}` +
+    `&unit=${encodeURIComponent(unit)}&page=${page}`;
   if (next !== window.location.hash)
     window.history.replaceState(null, "", next);
 }
 
 const BASE = import.meta.env.BASE_URL;
-const volumesUrl = () => `${BASE}api/volumes`;
-const volumeUrl = (volume) =>
-  `${BASE}api/volumes/${encodeURIComponent(volume)}`;
-const pageUrl = (volume, page) =>
-  `${BASE}api/volumes/${encodeURIComponent(volume)}/pages/${page}`;
-const imgUrl = (volume, kind, page) =>
-  `${BASE}files/${encodeURIComponent(volume)}/${kind}/page_${pad(page)}.png`;
+const enc = encodeURIComponent;
+const collectionsUrl = () => `${BASE}api/collections`;
+const unitsUrl = (col) => `${BASE}api/collections/${enc(col)}/units`;
+const unitUrl = (col, unit) =>
+  `${BASE}api/collections/${enc(col)}/units/${enc(unit)}`;
+const pageUrl = (col, unit, page) =>
+  `${BASE}api/collections/${enc(col)}/units/${enc(unit)}/pages/${page}`;
+const textUrl = (col, unit) =>
+  `${BASE}api/collections/${enc(col)}/units/${enc(unit)}/text`;
+const pdfUrlFor = (col, unit) => `${BASE}files/${enc(col)}/${enc(unit)}/pdf`;
 
 async function getJson(url) {
   const res = await fetch(url);
@@ -87,12 +120,20 @@ async function getJson(url) {
 }
 
 export default function App() {
-  const [volumes, setVolumes] = useState([]);
-  const [volume, setVolume] = useState(() => readHash().volume);
-  const [index, setIndex] = useState(null); // { stem, pages: [...] }
+  const [collections, setCollections] = useState([]);
+  const [collection, setCollection] = useState(() => readHash().collection);
+  const [units, setUnits] = useState([]);
+  // Which collection `units` belongs to -- null while a list is in flight, so
+  // the page index never gets fetched with a unit from the previous set.
+  const [unitsFor, setUnitsFor] = useState(null);
+  const [unit, setUnit] = useState(() => readHash().unit);
+  const [group, setGroup] = useState("all"); // year filter, grouped collections
+  const [reviewOnly, setReviewOnly] = useState(false);
+  const [index, setIndex] = useState(null); // { unit, pages: [...] }
   const [page, setPage] = useState(null);
   const [record, setRecord] = useState(null);
-  const [imageKind, setImageKind] = useState("overlays");
+  const [corpus, setCorpus] = useState(null);
+  const [showBoxes, setShowBoxes] = useState(true);
   const [tab, setTab] = useState("markdown");
   const [scale, setScale] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
@@ -108,29 +149,61 @@ export default function App() {
   const dragRef = useRef(null);
 
   useEffect(() => {
-    getJson(volumesUrl())
-      .then(({ volumes }) => {
-        setVolumes(volumes);
-        setVolume((current) =>
-          current && volumes.some((v) => v.stem === current)
+    getJson(collectionsUrl())
+      .then(({ collections }) => {
+        setCollections(collections);
+        setCollection((current) =>
+          current && collections.some((c) => c.id === current)
             ? current
-            : (volumes[0]?.stem ?? null),
+            : (collections[0]?.id ?? null),
         );
       })
       .catch((err) => setError(String(err.message)));
   }, []);
 
-  // Volume changed -> load its page index, and land on the hash's page if it exists.
+  // Collection changed -> load its unit list, then land on the hash's unit.
   useEffect(() => {
-    if (!volume) return;
+    if (!collection) return;
+    let cancelled = false;
+    setUnits([]);
+    setUnitsFor(null);
+    setGroup("all");
+    getJson(unitsUrl(collection))
+      .then(({ units }) => {
+        if (cancelled) return;
+        setUnits(units);
+        setUnitsFor(collection);
+        const hash = readHash();
+        const wanted = hash.collection === collection ? hash.unit : null;
+        setUnit((current) => {
+          for (const id of [wanted, current])
+            if (id && units.some((u) => u.id === id)) return id;
+          return units[0]?.id ?? null;
+        });
+        setError(null);
+      })
+      .catch((err) => {
+        if (cancelled) return;
+        setError(String(err.message));
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [collection]);
+
+  // Unit changed -> load its page index, and land on the hash's page if it exists.
+  useEffect(() => {
+    if (!collection || !unit) return;
+    if (unitsFor !== collection || !units.some((u) => u.id === unit)) return;
     let cancelled = false;
     setIndex(null);
     setRecord(null);
-    getJson(volumeUrl(volume))
+    getJson(unitUrl(collection, unit))
       .then((idx) => {
         if (cancelled) return;
         setIndex(idx);
-        const wanted = readHash().volume === volume ? readHash().page : null;
+        const hash = readHash();
+        const wanted = hash.unit === unit ? hash.page : null;
         const exists = idx.pages.some((p) => p.page === wanted);
         setPage(exists ? wanted : (idx.pages[0]?.page ?? null));
         setError(null);
@@ -139,7 +212,7 @@ export default function App() {
     return () => {
       cancelled = true;
     };
-  }, [volume]);
+  }, [collection, unit, unitsFor, units]);
 
   const pages = index?.pages ?? [];
   const entry = useMemo(
@@ -147,15 +220,28 @@ export default function App() {
     [pages, page],
   );
 
+  const collectionMeta = collections.find((c) => c.id === collection) ?? null;
+  const unitMeta = units.find((u) => u.id === unit) ?? null;
+  // 366 of the post-1974 records carry no title, so fall back to the date the
+  // order was signed rather than repeating the id already in the dropdown.
+  const unitCaption = unitMeta
+    ? [
+        unitMeta.title === unitMeta.id ? null : unitMeta.title,
+        unitMeta.subtitle,
+      ]
+        .filter(Boolean)
+        .join(" · ")
+    : null;
+
   // Page changed -> load its JSON record (pages with no real OCR output have none).
   useEffect(() => {
-    if (!volume || !page || !entry) return;
+    if (!collection || !unit || !page || !entry) return;
     if (!entry.hasJson) {
       setRecord(null);
       return;
     }
     let cancelled = false;
-    getJson(pageUrl(volume, page))
+    getJson(pageUrl(collection, unit, page))
       .then((rec) => !cancelled && setRecord(rec))
       .catch(
         (err) => !cancelled && setRecord({ _readError: String(err.message) }),
@@ -163,9 +249,34 @@ export default function App() {
     return () => {
       cancelled = true;
     };
-  }, [volume, page, entry]);
+  }, [collection, unit, page, entry]);
 
-  useEffect(() => writeHash(volume, page), [volume, page]);
+  // Unit changed -> load its corpus text. A median document is 2 kB of it, so
+  // this is not worth deferring until the tab is opened.
+  useEffect(() => {
+    setCorpus(null);
+    if (!collection || !unit || !collectionMeta?.hasCorpusText) return;
+    let cancelled = false;
+    getJson(textUrl(collection, unit))
+      .then((body) => !cancelled && setCorpus(body))
+      .catch(
+        (err) => !cancelled && setCorpus({ error: String(err.message) }),
+      );
+    return () => {
+      cancelled = true;
+    };
+  }, [collection, unit, collectionMeta?.hasCorpusText]);
+
+  // The Corpus tab only exists for a collection that has corpus text.
+  useEffect(() => {
+    if (tab === "corpus" && collectionMeta && !collectionMeta.hasCorpusText)
+      setTab("markdown");
+  }, [tab, collectionMeta]);
+
+  useEffect(
+    () => writeHash(collection, unit, page),
+    [collection, unit, page],
+  );
 
   const step = useCallback(
     (delta) => {
@@ -193,28 +304,25 @@ export default function App() {
       ?.scrollIntoView({ block: "nearest" });
   }, [page]);
 
-  const hasImage =
-    entry && (imageKind === "overlays" ? entry.hasOverlay : entry.hasRaw);
-  // Overlays are only written for OCR'd pages; fall back so there's always a page to look at.
-  const shownKind = hasImage
-    ? imageKind
-    : entry?.hasRaw
-      ? "raw"
-      : entry?.hasOverlay
-        ? "overlays"
-        : null;
-  const imageUrl =
-    volume && page && shownKind ? imgUrl(volume, shownKind, page) : null;
+  // The record for the page on screen, and only that page: `record` still
+  // holds the last page's until the new fetch lands, and one page's boxes drawn
+  // over another page is exactly the lie this viewer must not tell.
+  const pageRecord = record?.page === page ? record : null;
+
+  // The page image is the source PDF, rendered in the browser -- see
+  // src/pdfPage.jsx. Nothing here depends on a page PNG existing on disk.
+  const pdfUrl =
+    collection && unit && index?.pdfRel ? pdfUrlFor(collection, unit) : null;
   const position = pages.findIndex((p) => p.page === page);
 
-  // New image -> forget any zoom/pan left over from the last one.
+  // New page -> forget any zoom/pan left over from the last one.
   useEffect(() => {
     setScale(1);
     setPan({ x: 0, y: 0 });
     pointersRef.current.clear();
     pinchRef.current = null;
     dragRef.current = null;
-  }, [imageUrl]);
+  }, [pdfUrl, page]);
 
   // Trackpad pinch (and ctrl+wheel) arrive as wheel events with ctrlKey set.
   // preventDefault has to run on a non-passive listener, which React's
@@ -223,7 +331,7 @@ export default function App() {
     const el = paneRef.current;
     if (!el) return;
     const onWheelNative = (e) => {
-      if (!imageUrl) return;
+      if (!pdfUrl) return;
       if (e.ctrlKey) {
         e.preventDefault();
         const origin = centerOf(el);
@@ -246,7 +354,7 @@ export default function App() {
     };
     el.addEventListener("wheel", onWheelNative, { passive: false });
     return () => el.removeEventListener("wheel", onWheelNative);
-  }, [imageUrl]);
+  }, [pdfUrl]);
 
   const zoomButton = useCallback((dir) => {
     if (dir === "fit") {
@@ -269,7 +377,7 @@ export default function App() {
   const onPointerDown = useCallback(
     (e) => {
       const el = paneRef.current;
-      if (!el || !imageUrl) return;
+      if (!el || !pdfUrl) return;
       el.setPointerCapture(e.pointerId);
       pointersRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
       if (pointersRef.current.size === 2) {
@@ -288,7 +396,7 @@ export default function App() {
         };
       }
     },
-    [imageUrl],
+    [pdfUrl],
   );
 
   const onPointerMove = useCallback((e) => {
@@ -335,30 +443,86 @@ export default function App() {
     }
   }, []);
 
+  const groups = useMemo(
+    () => [...new Set(units.map((u) => u.group).filter(Boolean))].sort(),
+    [units],
+  );
+  const reviewCount = useMemo(() => units.filter(needsReview).length, [units]);
+  const visibleUnits = useMemo(() => {
+    const kept = units.filter(
+      (u) =>
+        (group === "all" || u.group === group) && (!reviewOnly || needsReview(u)),
+    );
+    // Whatever the filters say, the selected unit stays in its own list.
+    return unitMeta && !kept.some((u) => u.id === unitMeta.id)
+      ? [unitMeta, ...kept]
+      : kept;
+  }, [units, group, reviewOnly, unitMeta]);
+
   return (
     <div className="app">
       <header className="topbar">
         <div className="brand">qa-ui</div>
 
         <label className="field">
-          <span>Volume</span>
+          <span>Set</span>
           <select
-            value={volume ?? ""}
-            onChange={(e) => setVolume(e.target.value)}
+            value={collection ?? ""}
+            onChange={(e) => setCollection(e.target.value)}
           >
-            {volumes.length === 0 && <option value="">no volumes found</option>}
-            {volumes.map((v) => (
-              <option key={v.stem} value={v.stem}>
-                {v.minYear}–{v.maxYear} ·{" "}
-                {VOLUME_STATUS_LABEL[v.status] ?? v.status} · {v.ocrPageCount}{" "}
-                ocr'd
-                {v.classifiedPageCount
-                  ? `, ${v.classifiedPageCount} classified`
-                  : ""}
+            {collections.length === 0 && <option value="">loading…</option>}
+            {collections.map((c) => (
+              <option key={c.id} value={c.id}>
+                {c.label}
               </option>
             ))}
           </select>
         </label>
+
+        {groups.length > 1 && (
+          <label className="field">
+            <span>{collectionMeta?.groupNoun ?? "Group"}</span>
+            <select value={group} onChange={(e) => setGroup(e.target.value)}>
+              <option value="all">all ({units.length})</option>
+              {groups.map((g) => (
+                <option key={g} value={g}>
+                  {g}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
+
+        <label className="field">
+          <span>{collectionMeta?.unitNoun ?? "Unit"}</span>
+          <select value={unit ?? ""} onChange={(e) => setUnit(e.target.value)}>
+            {visibleUnits.length === 0 && (
+              <option value="">
+                {unitsFor === collection ? "none match the filters" : "loading…"}
+              </option>
+            )}
+            {visibleUnits.map((u) => (
+              <option key={u.id} value={u.id}>
+                {unitOptionLabel(u)}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className="field check" title="Flagged pages, or not fully OCR'd">
+          <input
+            type="checkbox"
+            checked={reviewOnly}
+            onChange={(e) => setReviewOnly(e.target.checked)}
+          />
+          <span>needs review ({reviewCount})</span>
+        </label>
+
+        {unitCaption && (
+          <div className="unit-title muted" title={unitCaption}>
+            {unitCaption}
+          </div>
+        )}
 
         <div className="nav">
           <button
@@ -383,20 +547,20 @@ export default function App() {
 
         <div className="spacer" />
 
-        <div className="toggle" role="group" aria-label="page image">
+        <div className="toggle" role="group" aria-label="bbox overlay">
           <button
-            className={shownKind === "overlays" ? "on" : ""}
-            onClick={() => setImageKind("overlays")}
-            disabled={!entry?.hasOverlay}
+            className={showBoxes ? "on" : ""}
+            onClick={() => setShowBoxes(true)}
+            title="Draw the model's boxes over the page"
           >
-            Overlay
+            Boxes
           </button>
           <button
-            className={shownKind === "raw" ? "on" : ""}
-            onClick={() => setImageKind("raw")}
-            disabled={!entry?.hasRaw}
+            className={showBoxes ? "" : "on"}
+            onClick={() => setShowBoxes(false)}
+            title="The page on its own"
           >
-            Raw
+            Plain
           </button>
         </div>
 
@@ -453,35 +617,44 @@ export default function App() {
           onPointerUp={endPointer}
           onPointerCancel={endPointer}
         >
-          {imageUrl ? (
-            <img
-              key={imageUrl}
-              src={imageUrl}
-              alt={`page ${page} (${shownKind})`}
-              className="fit"
-              draggable={false}
-              style={{
-                transform: `translate(${pan.x}px, ${pan.y}px) scale(${scale})`,
-              }}
+          {pdfUrl && page ? (
+            <PdfPage
+              url={pdfUrl}
+              page={page}
+              dpi={collectionMeta?.dpi ?? 200}
+              rotationCw={pageRecord?.rotation?.applied_cw ?? 0}
+              elements={pageRecord?.elements ?? []}
+              uncovered={pageRecord?.ink_coverage?.uncovered_regions ?? []}
+              showBoxes={showBoxes}
+              transform={`translate(${pan.x}px, ${pan.y}px) scale(${scale})`}
             />
           ) : (
             <div className="empty">
-              no page image — run <code>scripts/run_volume_ocr.py</code> locally
-              to render pages
-            </div>
-          )}
-          {entry && shownKind !== imageKind && (
-            <div className="floating-note">
-              no {imageKind === "overlays" ? "overlay" : "raw"} image for this
-              page — showing {shownKind}
+              {index && !index.pdfRel
+                ? "no source PDF is recorded for this unit"
+                : "no page selected"}
             </div>
           )}
         </main>
 
         <section className="pane text-pane">
-          <PageHeader entry={entry} record={record} tab={tab} setTab={setTab} />
+          <PageHeader
+            entry={entry}
+            record={record}
+            tab={tab}
+            setTab={setTab}
+            hasCorpus={Boolean(collectionMeta?.hasCorpusText)}
+          />
           <div className="text-scroll">
-            <PageContent entry={entry} record={record} tab={tab} />
+            <PageContent
+              entry={entry}
+              record={record}
+              tab={tab}
+              page={page}
+              corpus={corpus}
+              collectionMeta={collectionMeta}
+              unitMeta={unitMeta}
+            />
           </div>
         </section>
       </div>
@@ -491,13 +664,14 @@ export default function App() {
 
 const FLAG_TITLE = {
   truncated: "generation hit --max-tokens, so the tail of this page is missing",
-  uncovered_ink: "ink on this page fell outside every box the model returned",
+  uncovered_ink:
+    "ink on this page fell outside every box the model returned, and is not a printed rule",
   low_confidence: "some tokens scored below the run's confidence threshold",
   decode_mismatch:
     "the streaming decode diverged from the full-sequence decode",
 };
 
-function PageHeader({ entry, record, tab, setTab }) {
+function PageHeader({ entry, record, tab, setTab, hasCorpus }) {
   if (!entry) return <div className="text-head" />;
   const flags = entry.flags ?? [];
   return (
@@ -532,6 +706,15 @@ function PageHeader({ entry, record, tab, setTab }) {
         >
           QA
         </button>
+        {hasCorpus && (
+          <button
+            className={tab === "corpus" ? "on" : ""}
+            onClick={() => setTab("corpus")}
+            title="The text the corpus publishes today (Tesseract's), whole document"
+          >
+            Corpus
+          </button>
+        )}
         <button
           className={tab === "json" ? "on" : ""}
           onClick={() => setTab("json")}
@@ -543,8 +726,40 @@ function PageHeader({ entry, record, tab, setTab }) {
   );
 }
 
-function PageContent({ entry, record, tab }) {
-  if (!entry) return <div className="empty">pick a volume</div>;
+function PageContent({
+  entry,
+  record,
+  tab,
+  page,
+  corpus,
+  collectionMeta,
+  unitMeta,
+}) {
+  // The corpus text is per document, so it is worth reading even on a page the
+  // OCR never reached -- it does not depend on `entry` the way the others do.
+  if (tab === "corpus") return <CorpusPanel corpus={corpus} page={page} />;
+
+  if (!entry) {
+    // A unit that lists no pages at all: no page records, and no page count
+    // to fall back on either.
+    if (unitMeta && unitMeta.ocrPageCount === 0)
+      return (
+        <Notice kind="pending" title="No page records">
+          Nothing under <code>{collectionMeta?.ocrRoot}</code> for{" "}
+          <strong>{unitMeta.id}</strong>
+          {unitMeta.expectedPages
+            ? ` (${unitMeta.expectedPages} page(s) expected)`
+            : ""}
+          . The OCR never ran on it, or the run failed. See{" "}
+          <code>post1974-run-summary.md</code>.
+        </Notice>
+      );
+    return (
+      <div className="empty">
+        pick a {(collectionMeta?.unitNoun ?? "unit").toLowerCase()}
+      </div>
+    );
+  }
 
   if (tab === "qa") return <QaPanel entry={entry} record={record} />;
 
@@ -583,9 +798,18 @@ function PageContent({ entry, record, tab }) {
   if (entry.status === "pending") {
     return (
       <Notice kind="pending" title="Not processed">
-        This page was rendered but has no output under{" "}
-        <code>sources/gpp/volumes/ocr/</code> — OCR hasn't run on this volume
-        yet.
+        <p>
+          The page on the left is this page of the source PDF. It has no page
+          record under <code>{collectionMeta?.ocrRoot}</code>, so the OCR never
+          reached it or it failed.
+        </p>
+        {unitMeta?.ocrPageCount === 0 && (
+          <p>
+            No page of <strong>{unitMeta.id}</strong> was recorded. See{" "}
+            <code>post1974-run-summary.md</code> for the documents the run lost
+            and the command that re-runs them.
+          </p>
+        )}
       </Notice>
     );
   }

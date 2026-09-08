@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4159,
+        "area_px": 25283,
+        "density": 0.1645,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 894,
-        "area_px": 9812,
-        "density": 0.09111,
+        "ink_px": 1264,
+        "area_px": 14718,
+        "density": 0.08588,
         "chars": 58,
-        "chars_per_1k_ink": 64.88
+        "chars_per_1k_ink": 45.89
       }
     },
     {
@@ -305,7 +311,7 @@
         1283
       ],
       "category": "Text",
-      "text": "§ 2. The Department of Air Pollution Control shall determine by appropriate physical measurements and by consultation with the Weather Bureau and the New York - New Jersey Cooperative Committee on Air Pollution when each stage of the Air Pollution Control-Alert Warning System, as provided for in Section 1 has been reached. The Administrator of the Environmental Protection Administration shall advise the Mayor and recommend to him that he declare the existence of such condition.",
+      "text": "\u00a7 2. The Department of Air Pollution Control shall determine by appropriate physical measurements and by consultation with the Weather Bureau and the New York - New Jersey Cooperative Committee on Air Pollution when each stage of the Air Pollution Control-Alert Warning System, as provided for in Section 1 has been reached. The Administrator of the Environmental Protection Administration shall advise the Mayor and recommend to him that he declare the existence of such condition.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -339,7 +345,7 @@
         1410
       ],
       "category": "Text",
-      "text": "§ 3. Upon the declaration by the Mayor that any of the enumerated stages in Section 1 exist, the following actions shall be taken for each stage:",
+      "text": "\u00a7 3. Upon the declaration by the Mayor that any of the enumerated stages in Section 1 exist, the following actions shall be taken for each stage:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -417,7 +423,7 @@
           "index": 550,
           "token_id": 17851,
           "logprob": -0.1339,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 211,
@@ -595,15 +601,26 @@
   "ink_coverage": {
     "roi": [
       146,
-      229,
+      0,
       1071,
-      1679
+      1851
     ],
-    "ink_px": 2106,
-    "covered_px": 2105,
-    "covered_fraction": 0.99953,
-    "uncovered_px": 1,
-    "uncovered_regions": [],
+    "ink_px": 9299,
+    "rule_px": 1510,
+    "covered_px": 6634,
+    "covered_fraction": 0.85171,
+    "uncovered_px": 1155,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          338,
+          1838,
+          482,
+          1848
+        ],
+        "ink_px": 769
+      }
+    ],
     "cell_px": 24
   }
 }

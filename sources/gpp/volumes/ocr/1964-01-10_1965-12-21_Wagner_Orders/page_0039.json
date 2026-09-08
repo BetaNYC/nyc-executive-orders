@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3441,
+        "area_px": 24776,
+        "density": 0.13888,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -237,7 +243,7 @@
         1624
       ],
       "category": "Text",
-      "text": "Pursuant to the provisions of Administrative Code, § G51-53.4, as added by L. 1964, c. 638, the Mayor hereby elects to provide that the deduction from the pay, salary, or compensation of each member of the Health Department Pension Fund made pursuant to Article 3 of Title G of chapter 51 of the Administrative Code need not be made and that no contribution in lieu thereof need be made by any such member during the one-year period commencing with July first, nineteen hundred sixty-four.",
+      "text": "Pursuant to the provisions of Administrative Code, \u00a7 G51-53.4, as added by L. 1964, c. 638, the Mayor hereby elects to provide that the deduction from the pay, salary, or compensation of each member of the Health Department Pension Fund made pursuant to Article 3 of Title G of chapter 51 of the Administrative Code need not be made and that no contribution in lieu thereof need be made by any such member during the one-year period commencing with July first, nineteen hundred sixty-four.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -522,15 +528,26 @@
   "ink_coverage": {
     "roi": [
       233,
-      341,
+      89,
       1710,
-      2504
+      2760
     ],
-    "ink_px": 2799,
-    "covered_px": 2799,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 8793,
+    "rule_px": 1660,
+    "covered_px": 6240,
+    "covered_fraction": 0.87481,
+    "uncovered_px": 893,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1289,
+          2754,
+          1710,
+          2760
+        ],
+        "ink_px": 604
+      }
+    ],
     "cell_px": 24
   }
 }

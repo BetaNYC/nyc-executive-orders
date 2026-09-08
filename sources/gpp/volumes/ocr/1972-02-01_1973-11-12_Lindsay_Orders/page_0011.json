@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 684,
+        "area_px": 55328,
+        "density": 0.01236,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -305,7 +311,7 @@
         2760
       ],
       "category": "Text",
-      "text": "§ 2. The Department of Water Resources, Department of Health, the Department of Highways, the Department of Buildings, and the Fire Department shall be the agencies responsible for review of Planned Unit Development, both in developments where the facilities (roads, sewers, etc.) are public, and in developments utilizing a single zoning lot where such facilities fall within private property. The Building Department will review all building plans, but shall be relieved of review of plans for, or inspection of installation of roads, sewers, and other site utilities, which shall be the responsibility of the other designated departments. Approvals by the other designated departments of plans for the roads, sewers and other site utilities, including but not limited to the plan approvals required by General City Law, §36 and New York City Charter, §230 shall be required before approval by the Buildings",
+      "text": "\u00a7 2. The Department of Water Resources, Department of Health, the Department of Highways, the Department of Buildings, and the Fire Department shall be the agencies responsible for review of Planned Unit Development, both in developments where the facilities (roads, sewers, etc.) are public, and in developments utilizing a single zoning lot where such facilities fall within private property. The Building Department will review all building plans, but shall be relieved of review of plans for, or inspection of installation of roads, sewers, and other site utilities, which shall be the responsibility of the other designated departments. Approvals by the other designated departments of plans for the roads, sewers and other site utilities, including but not limited to the plan approvals required by General City Law, \u00a736 and New York City Charter, \u00a7230 shall be required before approval by the Buildings",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -349,7 +355,7 @@
           "index": 691,
           "token_id": 17851,
           "logprob": -0.5242,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 428,
@@ -361,7 +367,7 @@
           "index": 844,
           "token_id": 16625,
           "logprob": -0.145,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 228,
@@ -527,23 +533,33 @@
   "ink_coverage": {
     "roi": [
       264,
-      419,
+      70,
       1941,
-      3072
+      3386
     ],
-    "ink_px": 113229,
-    "covered_px": 112363,
-    "covered_fraction": 0.99235,
-    "uncovered_px": 866,
+    "ink_px": 118937,
+    "rule_px": 2274,
+    "covered_px": 113047,
+    "covered_fraction": 0.969,
+    "uncovered_px": 3616,
     "uncovered_regions": [
       {
         "bbox": [
-          1272,
-          947,
-          1488,
-          995
+          1450,
+          3368,
+          1941,
+          3386
         ],
-        "ink_px": 411
+        "ink_px": 2697
+      },
+      {
+        "bbox": [
+          1272,
+          70,
+          1598,
+          72
+        ],
+        "ink_px": 435
       }
     ],
     "cell_px": 24

@@ -248,7 +248,7 @@
         2645
       ],
       "category": "Text",
-      "text": "### §6. Decisions of the Committee (pursuant to Sections 5 (c) and (d) of this Order) must include the affirmative votes of all the members. In the event of a dissenting vote or abstention, the matter should be referred to the Mayor, or his authorized delegate, for his decision.",
+      "text": "### \u00a76. Decisions of the Committee (pursuant to Sections 5 (c) and (d) of this Order) must include the affirmative votes of all the members. In the event of a dissenting vote or abstention, the matter should be referred to the Mayor, or his authorized delegate, for his decision.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -282,7 +282,7 @@
         2967
       ],
       "category": "Text",
-      "text": "### §7. Upon the request of the Model Cities Policy Committee every agency is directed to designate a staff member at policy level to be its liaison for the Model Cities program and to cooperate in furnishing such available staff resources for service within the Model Cities areas as may be requested by the Policy Committee.",
+      "text": "### \u00a77. Upon the request of the Model Cities Policy Committee every agency is directed to designate a staff member at policy level to be its liaison for the Model Cities program and to cooperate in furnishing such available staff resources for service within the Model Cities areas as may be requested by the Policy Committee.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -316,7 +316,7 @@
         3153
       ],
       "category": "Text",
-      "text": "### §8. The Committee may require such reports, analyses, and statements from the agencies of the City as it may deem necessary for the proper performance of its duties hereunder.",
+      "text": "### \u00a78. The Committee may require such reports, analyses, and statements from the agencies of the City as it may deem necessary for the proper performance of its duties hereunder.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -364,9 +364,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 88,
-        "area_px": 134848,
-        "density": 0.00065,
+        "ink_px": 694,
+        "area_px": 257936,
+        "density": 0.00269,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -397,7 +397,13 @@
           "min": -0.0128
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 165,
+        "area_px": 41184,
+        "density": 0.00401,
+        "chars": 21,
+        "chars_per_1k_ink": 127.27
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -477,7 +483,7 @@
           "index": 454,
           "token_id": 16625,
           "logprob": -0.0052,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 467,
@@ -595,14 +601,15 @@
   "ink_coverage": {
     "roi": [
       299,
-      449,
+      127,
       2198,
-      3296
+      3633
     ],
-    "ink_px": 13640,
-    "covered_px": 13630,
-    "covered_fraction": 0.99927,
-    "uncovered_px": 10,
+    "ink_px": 15632,
+    "rule_px": 677,
+    "covered_px": 14236,
+    "covered_fraction": 0.95192,
+    "uncovered_px": 719,
     "uncovered_regions": [],
     "cell_px": 24
   }

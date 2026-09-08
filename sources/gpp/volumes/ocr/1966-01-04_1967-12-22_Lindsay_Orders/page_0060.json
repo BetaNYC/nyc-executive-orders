@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 7385,
+        "area_px": 36288,
+        "density": 0.20351,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 484,
-        "area_px": 8500,
-        "density": 0.05694,
+        "ink_px": 3384,
+        "area_px": 53975,
+        "density": 0.0627,
         "chars": 53,
-        "chars_per_1k_ink": 109.5
+        "chars_per_1k_ink": 15.66
       }
     },
     {
@@ -441,7 +447,7 @@
         2887
       ],
       "category": "Text",
-      "text": "§ 2. This order shall take effect June 17, 1966.",
+      "text": "\u00a7 2. This order shall take effect June 17, 1966.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -489,9 +495,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 2323,
-        "area_px": 187275,
-        "density": 0.0124,
+        "ink_px": 2334,
+        "area_px": 192723,
+        "density": 0.01211,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -532,7 +538,7 @@
           "index": 1101,
           "token_id": 17851,
           "logprob": -0.4361,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 1006,
@@ -692,15 +698,53 @@
   "ink_coverage": {
     "roi": [
       289,
-      420,
+      103,
       2126,
-      3082
+      3378
     ],
-    "ink_px": 117327,
-    "covered_px": 117327,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 132197,
+    "rule_px": 715,
+    "covered_px": 127623,
+    "covered_fraction": 0.97065,
+    "uncovered_px": 3859,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          559,
+          103,
+          721,
+          115
+        ],
+        "ink_px": 1337
+      },
+      {
+        "bbox": [
+          2017,
+          103,
+          2126,
+          123
+        ],
+        "ink_px": 1075
+      },
+      {
+        "bbox": [
+          346,
+          103,
+          523,
+          113
+        ],
+        "ink_px": 911
+      },
+      {
+        "bbox": [
+          1201,
+          3377,
+          1705,
+          3378
+        ],
+        "ink_px": 504
+      }
+    ],
     "cell_px": 24
   }
 }

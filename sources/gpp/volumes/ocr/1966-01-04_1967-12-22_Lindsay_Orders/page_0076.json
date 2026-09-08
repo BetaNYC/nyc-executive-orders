@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16890,
+        "area_px": 51574,
+        "density": 0.32749,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 4096,
-        "area_px": 39574,
-        "density": 0.1035,
+        "ink_px": 6167,
+        "area_px": 53046,
+        "density": 0.11626,
         "chars": 53,
-        "chars_per_1k_ink": 12.94
+        "chars_per_1k_ink": 8.59
       }
     },
     {
@@ -339,7 +345,7 @@
         1639
       ],
       "category": "Text",
-      "text": "§ 2. Powers and Duties of the Administrator. In addition to such other powers as have heretofore been conferred upon him, the Administrator shall have with respect to the Department of Highways and the Department of Traffic (which departments are hereafter referred to as \"the Agencies\"), the bridge and tunnel activities of the Department of Public Works, the ferry, ferry house, airport and heliport activities of the Department of Marine and Aviation, and the arterial parkway activities of the Department of Parks (all of which are hereafter referred to as \"the Transportation Activities\"), the power and duty:",
+      "text": "\u00a7 2. Powers and Duties of the Administrator. In addition to such other powers as have heretofore been conferred upon him, the Administrator shall have with respect to the Department of Highways and the Department of Traffic (which departments are hereafter referred to as \"the Agencies\"), the bridge and tunnel activities of the Department of Public Works, the ferry, ferry house, airport and heliport activities of the Department of Marine and Aviation, and the arterial parkway activities of the Department of Parks (all of which are hereafter referred to as \"the Transportation Activities\"), the power and duty:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -577,7 +583,7 @@
         2349
       ],
       "category": "Text",
-      "text": "§ 3. Executive Order No. 4 to the extent not inconsistent with this Order is continued in full force and effect and to the extent said Order is inconsistent herewith the same is hereby amended.",
+      "text": "\u00a7 3. Executive Order No. 4 to the extent not inconsistent with this Order is continued in full force and effect and to the extent said Order is inconsistent herewith the same is hereby amended.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -611,7 +617,7 @@
         2377
       ],
       "category": "Text",
-      "text": "§ 4. Effective Date. This order shall take effect on September 19, 1966.",
+      "text": "\u00a7 4. Effective Date. This order shall take effect on September 19, 1966.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -723,7 +729,7 @@
           "index": 658,
           "token_id": 17851,
           "logprob": -0.3172,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 253,
@@ -901,32 +907,33 @@
   "ink_coverage": {
     "roi": [
       288,
-      415,
+      106,
       2113,
-      3050
+      3353
     ],
-    "ink_px": 44088,
-    "covered_px": 39554,
-    "covered_fraction": 0.89716,
-    "uncovered_px": 4534,
+    "ink_px": 66085,
+    "rule_px": 5388,
+    "covered_px": 58515,
+    "covered_fraction": 0.96405,
+    "uncovered_px": 2182,
     "uncovered_regions": [
       {
         "bbox": [
-          1608,
-          775,
-          1656,
-          1783
+          1359,
+          155,
+          1401,
+          214
         ],
-        "ink_px": 2336
+        "ink_px": 760
       },
       {
         "bbox": [
-          768,
-          751,
-          1488,
-          775
+          1707,
+          3352,
+          2112,
+          3353
         ],
-        "ink_px": 1943
+        "ink_px": 405
       }
     ],
     "cell_px": 24

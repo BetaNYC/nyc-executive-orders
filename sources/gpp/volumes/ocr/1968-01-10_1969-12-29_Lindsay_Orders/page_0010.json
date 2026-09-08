@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5627,
+        "area_px": 17408,
+        "density": 0.32324,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 1362,
-        "area_px": 11925,
-        "density": 0.11421,
+        "ink_px": 1537,
+        "area_px": 14400,
+        "density": 0.10674,
         "chars": 58,
-        "chars_per_1k_ink": 42.58
+        "chars_per_1k_ink": 37.74
       }
     },
     {
@@ -271,7 +277,7 @@
         929
       ],
       "category": "Text",
-      "text": "Section 1. § 7 (m)(1) Approval of Contracts of Executive Order No. 49, dated August 3, 1967 is hereby amended to read as follows:",
+      "text": "Section 1. \u00a7 7 (m)(1) Approval of Contracts of Executive Order No. 49, dated August 3, 1967 is hereby amended to read as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -358,11 +364,11 @@
         }
       },
       "ink": {
-        "ink_px": 55,
-        "area_px": 137982,
-        "density": 0.0004,
+        "ink_px": 96,
+        "area_px": 171158,
+        "density": 0.00056,
         "chars": 215,
-        "chars_per_1k_ink": 3909.09
+        "chars_per_1k_ink": 2239.58
       }
     }
   ],
@@ -561,15 +567,26 @@
   "ink_coverage": {
     "roi": [
       146,
-      223,
+      0,
       1077,
-      1638
+      1810
     ],
-    "ink_px": 2603,
-    "covered_px": 2490,
-    "covered_fraction": 0.95659,
-    "uncovered_px": 113,
-    "uncovered_regions": [],
+    "ink_px": 12055,
+    "rule_px": 1381,
+    "covered_px": 8333,
+    "covered_fraction": 0.78068,
+    "uncovered_px": 2341,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          146,
+          1794,
+          644,
+          1810
+        ],
+        "ink_px": 2129
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -1,0 +1,378 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        116,
+        235,
+        1430,
+        539
+      ],
+      "category": "Text",
+      "text": "the confidentiality of domestic partnership registrations.\nNothing herein shall be construed to prohibit the publication of\nstatistics pertaining to domestic partnerships which have been\nregistered by the City Clerk, provided that appropriate measures\nare taken to prevent identification of persons registered.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3384,
+          "min": -1.7578
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 48,
+          "mean": -0.0052,
+          "min": -0.2289
+        }
+      },
+      "ink": {
+        "ink_px": 43640,
+        "area_px": 374845,
+        "density": 0.11642,
+        "chars": 310,
+        "chars_per_1k_ink": 7.1
+      }
+    },
+    {
+      "bbox": [
+        116,
+        573,
+        1428,
+        741
+      ],
+      "category": "Text",
+      "text": "Section 6. Nothing in this Executive Order shall be deemed to supersede, alter, affect or conflict with any applicable City, State or Federal laws or rules.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2938,
+          "min": -1.6305
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0031,
+          "min": -0.0898
+        }
+      },
+      "ink": {
+        "ink_px": 22020,
+        "area_px": 207363,
+        "density": 0.10619,
+        "chars": 156,
+        "chars_per_1k_ink": 7.08
+      }
+    },
+    {
+      "bbox": [
+        118,
+        775,
+        1428,
+        1400
+      ],
+      "category": "Text",
+      "text": "Section 7. Executive Order No. 123, dated August 7, 1989, is hereby superseded, provided, however, that \"Affidavits of Domestic Partnership for Bereavement Leave\" which were previously filed in accordance with prior Executive Order No. 123 shall remain in force and effect unless terminated in accordance with procedures established by the Department of Personnel pursuant to that Executive Order. Registration pursuant to Executive Order No. 123 shall not preclude persons from registering as domestic partners pursuant to this Executive Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2731,
+          "min": -1.3551
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 115,
+          "mean": -0.0001,
+          "min": -0.0125
+        }
+      },
+      "ink": {
+        "ink_px": 73703,
+        "area_px": 768102,
+        "density": 0.09595,
+        "chars": 545,
+        "chars_per_1k_ink": 7.39
+      }
+    },
+    {
+      "bbox": [
+        124,
+        1438,
+        1424,
+        1535
+      ],
+      "category": "Text",
+      "text": "Section 8. Effective Date. This Order shall take effect March 1, 1993.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.261,
+          "min": -1.5106
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 22,
+          "mean": -0.0009,
+          "min": -0.0109
+        }
+      },
+      "ink": {
+        "ink_px": 10672,
+        "area_px": 119854,
+        "density": 0.08904,
+        "chars": 70,
+        "chars_per_1k_ink": 6.56
+      }
+    },
+    {
+      "bbox": [
+        716,
+        1499,
+        1285,
+        1696
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.352,
+          "min": -1.7209
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0023,
+          "min": -0.0023
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 13354,
+        "area_px": 113256,
+        "density": 0.11791,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 396,
+    "content": {
+      "n_tokens": 218,
+      "mean": -0.0018,
+      "min": -0.2289,
+      "p05": -0.0018,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 43,
+          "token_id": 23780,
+          "logprob": -0.2289,
+          "text": "Nothing"
+        },
+        {
+          "index": 129,
+          "token_id": 24636,
+          "logprob": -0.0898,
+          "text": " deemed"
+        },
+        {
+          "index": 204,
+          "token_id": 11,
+          "logprob": -0.0125,
+          "text": ","
+        },
+        {
+          "index": 350,
+          "token_id": 2456,
+          "logprob": -0.0109,
+          "text": " effect"
+        },
+        {
+          "index": 41,
+          "token_id": 7110,
+          "logprob": -0.0099,
+          "text": ".\\"
+        },
+        {
+          "index": 339,
+          "token_id": 9620,
+          "logprob": -0.0056,
+          "text": "Section"
+        },
+        {
+          "index": 35,
+          "token_id": 1782,
+          "logprob": -0.0052,
+          "text": "the"
+        },
+        {
+          "index": 54,
+          "token_id": 54120,
+          "logprob": -0.0047,
+          "text": "statistics"
+        },
+        {
+          "index": 118,
+          "token_id": 9620,
+          "logprob": -0.004,
+          "text": "Section"
+        },
+        {
+          "index": 148,
+          "token_id": 476,
+          "logprob": -0.0025,
+          "text": " or"
+        },
+        {
+          "index": 360,
+          "token_id": 1189,
+          "logprob": -0.0021,
+          "text": ".\""
+        },
+        {
+          "index": 131,
+          "token_id": 51690,
+          "logprob": -0.0017,
+          "text": " supers"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 105,
+      "mean": -0.289,
+      "min": -1.7578,
+      "p05": -1.4954,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.7578,
+          "text": "6"
+        },
+        {
+          "index": 380,
+          "token_id": 20,
+          "logprob": -1.7209,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -1.6782,
+          "text": "5"
+        },
+        {
+          "index": 368,
+          "token_id": 21,
+          "logprob": -1.6518,
+          "text": "6"
+        },
+        {
+          "index": 95,
+          "token_id": 18,
+          "logprob": -1.6305,
+          "text": "3"
+        },
+        {
+          "index": 309,
+          "token_id": 19,
+          "logprob": -1.5106,
+          "text": "4"
+        },
+        {
+          "index": 321,
+          "token_id": 19,
+          "logprob": -1.4348,
+          "text": "4"
+        },
+        {
+          "index": 386,
+          "token_id": 21,
+          "logprob": -1.3819,
+          "text": "6"
+        },
+        {
+          "index": 163,
+          "token_id": 20,
+          "logprob": -1.3551,
+          "text": "5"
+        },
+        {
+          "index": 327,
+          "token_id": 20,
+          "logprob": -1.2685,
+          "text": "5"
+        },
+        {
+          "index": 374,
+          "token_id": 24,
+          "logprob": -1.2239,
+          "text": "9"
+        },
+        {
+          "index": 158,
+          "token_id": 23,
+          "logprob": -1.2189,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 396,
+      "mean": -0.0778,
+      "min": -1.7578,
+      "p05": -0.6294,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 236.71,
+    "std": 62.52,
+    "dark_fraction": 0.06947
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      616.0,
+      806.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      205,
+      0,
+      1506,
+      2239
+    ],
+    "ink_px": 163318,
+    "rule_px": 304,
+    "covered_px": 162312,
+    "covered_fraction": 0.99569,
+    "uncovered_px": 702,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

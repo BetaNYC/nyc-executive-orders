@@ -38,6 +38,12 @@ __pycache__/
 # output, regenerated per run, not source of truth. The per-page JSON that
 # Phase E actually consumes is published separately, and committed, under
 # sources/gpp/volumes/ocr/ (see scripts/run_volume_ocr.py).
+#
+# vlm-ocr-runs/post1974/ is the scratch half of the same split for the post-1974
+# scans: scripts/run_post1974_ocr.py renders there and commits its page records
+# to sources/ocr/<year>/<eo_id>/ instead. It also PRUNES this directory as it
+# goes (--keep-renders, default `flagged`), because 1,799 pages of renders plus
+# overlays is 2-5 GB and only the flagged documents are worth opening.
 vlm-ocr-runs/
 
 # Picture-element crops from scripts/run_picture_clips.py -- city seals, mayoral
@@ -55,7 +61,8 @@ vlm-ocr-runs/
 # spend no LFS bandwidth on images.
 vlm-pics/
 
-# Per-volume run transcripts from run_full_vlm_pipeline.sh. Console output of a
+# Per-volume run transcripts from run_full_vlm_pre_1974.sh, and per-worker ones
+# from scripts/run_post1974_ocr.py under vlm-logs/post1974/. Console output of a
 # reproducible local job -- keep them to debug a run, not to share one.
 vlm-logs/
 
@@ -79,3 +86,11 @@ dist-static/
 .idea/
 .vscode/
 *.log
+
+# Per-run state for run_full_vlm_post_1974.sh: the step logs it mirrors off the
+# rented GPU box, the phase ledger, the droplet id it must be able to destroy,
+# and a run-scoped known_hosts. Scratch, not source of truth.
+.post1974-run/
+
+# for viewing md
+.obsidian/

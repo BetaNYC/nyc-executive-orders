@@ -1,0 +1,276 @@
+{
+  "page": 5,
+  "source_image": "page_0005.png",
+  "elements": [
+    {
+      "bbox": [
+        188,
+        166,
+        1353,
+        276
+      ],
+      "category": "Text",
+      "text": "interfere with contracts or agreements entered into by any Housing Agency or any City\n\nEconomic Development Entity prior to the effective date of this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2912,
+          "min": -1.368
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0014,
+          "min": -0.0014
+        },
+        "text": {
+          "n_tokens": 31,
+          "mean": -0.0416,
+          "min": -0.7046
+        }
+      },
+      "ink": {
+        "ink_px": 13727,
+        "area_px": 125730,
+        "density": 0.10918,
+        "chars": 157,
+        "chars_per_1k_ink": 11.44
+      }
+    },
+    {
+      "bbox": [
+        693,
+        431,
+        1145,
+        624
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4114,
+          "min": -1.7516
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.004,
+          "min": -0.004
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 4390,
+        "area_px": 87043,
+        "density": 0.05043,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 99,
+    "content": {
+      "n_tokens": 31,
+      "mean": -0.0416,
+      "min": -0.7046,
+      "p05": -0.2902,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 51,
+          "token_id": 1699,
+          "logprob": -0.7046,
+          "text": "\\n"
+        },
+        {
+          "index": 52,
+          "token_id": 1699,
+          "logprob": -0.5773,
+          "text": "\\n"
+        },
+        {
+          "index": 53,
+          "token_id": 36,
+          "logprob": -0.0032,
+          "text": "E"
+        },
+        {
+          "index": 65,
+          "token_id": 1189,
+          "logprob": -0.0012,
+          "text": ".\""
+        },
+        {
+          "index": 35,
+          "token_id": 2245,
+          "logprob": -0.0008,
+          "text": "inter"
+        },
+        {
+          "index": 36,
+          "token_id": 69,
+          "logprob": -0.0002,
+          "text": "f"
+        },
+        {
+          "index": 50,
+          "token_id": 4311,
+          "logprob": -0.0002,
+          "text": " City"
+        },
+        {
+          "index": 37,
+          "token_id": 485,
+          "logprob": -0.0001,
+          "text": "ere"
+        },
+        {
+          "index": 44,
+          "token_id": 553,
+          "logprob": -0.0001,
+          "text": " by"
+        },
+        {
+          "index": 46,
+          "token_id": 30333,
+          "logprob": -0.0001,
+          "text": " Housing"
+        },
+        {
+          "index": 39,
+          "token_id": 17080,
+          "logprob": -0.0001,
+          "text": " contracts"
+        },
+        {
+          "index": 38,
+          "token_id": 448,
+          "logprob": -0.0001,
+          "text": " with"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 40,
+      "mean": -0.3339,
+      "min": -1.7516,
+      "p05": -1.2761,
+      "p50": -0.0139,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 84,
+          "token_id": 20,
+          "logprob": -1.7516,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -1.368,
+          "text": "6"
+        },
+        {
+          "index": 89,
+          "token_id": 19,
+          "logprob": -1.2713,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.2269,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.2123,
+          "text": "6"
+        },
+        {
+          "index": 78,
+          "token_id": 16,
+          "logprob": -1.1583,
+          "text": "1"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.1212,
+          "text": "8"
+        },
+        {
+          "index": 73,
+          "token_id": 18,
+          "logprob": -1.0346,
+          "text": "3"
+        },
+        {
+          "index": 76,
+          "token_id": 19,
+          "logprob": -0.5239,
+          "text": "4"
+        },
+        {
+          "index": 71,
+          "token_id": 21,
+          "logprob": -0.4843,
+          "text": "6"
+        },
+        {
+          "index": 77,
+          "token_id": 18,
+          "logprob": -0.4809,
+          "text": "3"
+        },
+        {
+          "index": 22,
+          "token_id": 22,
+          "logprob": -0.4482,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 99,
+      "mean": -0.1489,
+      "min": -1.7516,
+      "p05": -1.1637,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 252.99,
+    "std": 12.04,
+    "dark_fraction": 0.00279
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 18195,
+    "rule_px": 0,
+    "covered_px": 18117,
+    "covered_fraction": 0.99571,
+    "uncovered_px": 78,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

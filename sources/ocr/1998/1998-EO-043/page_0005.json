@@ -1,0 +1,378 @@
+{
+  "page": 5,
+  "source_image": "page_0005.png",
+  "elements": [
+    {
+      "bbox": [
+        376,
+        258,
+        842,
+        293
+      ],
+      "category": "Section-header",
+      "text": "Section 3. <u>Agency Assistance.</u>",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3502,
+          "min": -1.5717
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0195,
+          "min": -0.039
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.1289,
+          "min": -0.7049
+        }
+      },
+      "ink": {
+        "ink_px": 2136,
+        "area_px": 16740,
+        "density": 0.1276,
+        "chars": 36,
+        "chars_per_1k_ink": 16.85
+      }
+    },
+    {
+      "bbox": [
+        476,
+        338,
+        1504,
+        933
+      ],
+      "category": "List-item",
+      "text": "a. Agencies shall provide all necessary cooperation and assistance to the Committee. Agency Management Information Systems (MIS) Directors or persons of equivalent rank shall maintain liaison with the Committee and shall be responsible for full implementation of its policies, standards and directives. The annual technology plans of all mayoral agencies shall be submitted by each agency to the Committee on such date as the Committee shall determine, and in accordance with guidelines prescribed by the Committee.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3381,
+          "min": -1.6288
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.003,
+          "min": -0.006
+        },
+        "text": {
+          "n_tokens": 86,
+          "mean": -0.0003,
+          "min": -0.0121
+        }
+      },
+      "ink": {
+        "ink_px": 32608,
+        "area_px": 605616,
+        "density": 0.05384,
+        "chars": 515,
+        "chars_per_1k_ink": 15.79
+      }
+    },
+    {
+      "bbox": [
+        454,
+        972,
+        1486,
+        1484
+      ],
+      "category": "List-item",
+      "text": "b. An Office of Technology shall be created within DoITT to provide the Committee with all assistance necessary to its operations. The Office of Technology shall seek to identify best practices in the area of information technology and shall serve as a clearinghouse for information to agencies in regard thereto. The Office will also identify opportunities for benchmarking and replicating successful solutions among city agencies.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3098,
+          "min": -1.5761
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0008,
+          "min": -0.0015
+        },
+        "text": {
+          "n_tokens": 74,
+          "mean": -0.0019,
+          "min": -0.1272
+        }
+      },
+      "ink": {
+        "ink_px": 26272,
+        "area_px": 524790,
+        "density": 0.05006,
+        "chars": 432,
+        "chars_per_1k_ink": 16.44
+      }
+    },
+    {
+      "bbox": [
+        336,
+        1525,
+        1308,
+        1567
+      ],
+      "category": "Text",
+      "text": "Section 4. <u>Effective Date</u>. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2634,
+          "min": -1.3682
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.9792,
+          "min": -0.9792
+        },
+        "text": {
+          "n_tokens": 19,
+          "mean": -0.0526,
+          "min": -0.5299
+        }
+      },
+      "ink": {
+        "ink_px": 4161,
+        "area_px": 41624,
+        "density": 0.09997,
+        "chars": 75,
+        "chars_per_1k_ink": 18.02
+      }
+    },
+    {
+      "bbox": [
+        804,
+        1605,
+        1456,
+        1880
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3844,
+          "min": -1.9874
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0022,
+          "min": -0.0022
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 11935,
+        "area_px": 178100,
+        "density": 0.06701,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 371,
+    "content": {
+      "n_tokens": 191,
+      "mean": -0.0142,
+      "min": -0.7049,
+      "p05": -0.0121,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.7049,
+          "text": "Section"
+        },
+        {
+          "index": 39,
+          "token_id": 366,
+          "logprob": -0.628,
+          "text": " <"
+        },
+        {
+          "index": 321,
+          "token_id": 366,
+          "logprob": -0.5299,
+          "text": " <"
+        },
+        {
+          "index": 326,
+          "token_id": 522,
+          "logprob": -0.4287,
+          "text": "</"
+        },
+        {
+          "index": 44,
+          "token_id": 3918,
+          "logprob": -0.18,
+          "text": ".</"
+        },
+        {
+          "index": 220,
+          "token_id": 279,
+          "logprob": -0.1272,
+          "text": " the"
+        },
+        {
+          "index": 317,
+          "token_id": 9620,
+          "logprob": -0.0156,
+          "text": "Section"
+        },
+        {
+          "index": 322,
+          "token_id": 84,
+          "logprob": -0.0143,
+          "text": "u"
+        },
+        {
+          "index": 38,
+          "token_id": 13,
+          "logprob": -0.0123,
+          "text": "."
+        },
+        {
+          "index": 42,
+          "token_id": 93720,
+          "logprob": -0.0122,
+          "text": "Agency"
+        },
+        {
+          "index": 83,
+          "token_id": 64,
+          "logprob": -0.0121,
+          "text": "a"
+        },
+        {
+          "index": 216,
+          "token_id": 3155,
+          "logprob": -0.0084,
+          "text": " Do"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 107,
+      "mean": -0.3136,
+      "min": -1.9874,
+      "p05": -1.5725,
+      "p50": -0.001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 343,
+          "token_id": 19,
+          "logprob": -1.9874,
+          "text": "4"
+        },
+        {
+          "index": 349,
+          "token_id": 20,
+          "logprob": -1.6298,
+          "text": "5"
+        },
+        {
+          "index": 70,
+          "token_id": 18,
+          "logprob": -1.6288,
+          "text": "3"
+        },
+        {
+          "index": 54,
+          "token_id": 21,
+          "logprob": -1.5989,
+          "text": "6"
+        },
+        {
+          "index": 176,
+          "token_id": 19,
+          "logprob": -1.5761,
+          "text": "4"
+        },
+        {
+          "index": 65,
+          "token_id": 19,
+          "logprob": -1.5728,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.5717,
+          "text": "6"
+        },
+        {
+          "index": 193,
+          "token_id": 19,
+          "logprob": -1.5706,
+          "text": "4"
+        },
+        {
+          "index": 355,
+          "token_id": 21,
+          "logprob": -1.5552,
+          "text": "6"
+        },
+        {
+          "index": 22,
+          "token_id": 18,
+          "logprob": -1.5366,
+          "text": "3"
+        },
+        {
+          "index": 17,
+          "token_id": 17,
+          "logprob": -1.5215,
+          "text": "2"
+        },
+        {
+          "index": 187,
+          "token_id": 21,
+          "logprob": -1.4793,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 371,
+      "mean": -0.0985,
+      "min": -1.9874,
+      "p05": -1.2386,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 245.29,
+    "std": 43.72,
+    "dark_fraction": 0.03568
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 77248,
+    "rule_px": 0,
+    "covered_px": 77112,
+    "covered_fraction": 0.99824,
+    "uncovered_px": 136,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

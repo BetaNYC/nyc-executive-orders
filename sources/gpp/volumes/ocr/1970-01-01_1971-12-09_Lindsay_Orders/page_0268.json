@@ -28,7 +28,13 @@
           "min": -0.0038
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2,
+        "area_px": 1250,
+        "density": 0.0016,
+        "chars": 3,
+        "chars_per_1k_ink": 1500.0
+      }
     },
     {
       "bbox": [
@@ -72,7 +78,7 @@
         525
       ],
       "category": "Text",
-      "text": "§ 2. The Director of the Budget of the City of New York is hereby designated and empowered to transfer such necessary funds that may be required in accordance with Section 124a and/or b of the City Charter for the periodic payment to such terminated employees of the monetary value of accumulated and unused vacation time or time allowed granted in lieu of overtime compensation so standing to the credit of such employees.",
+      "text": "\u00a7 2. The Director of the Budget of the City of New York is hereby designated and empowered to transfer such necessary funds that may be required in accordance with Section 124a and/or b of the City Charter for the periodic payment to such terminated employees of the monetary value of accumulated and unused vacation time or time allowed granted in lieu of overtime compensation so standing to the credit of such employees.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -106,7 +112,7 @@
         632
       ],
       "category": "Text",
-      "text": "§ 3. The Comptroller of the City of New York is hereby requested to make periodic payments in installments of the funds due the affected former employees.",
+      "text": "\u00a7 3. The Comptroller of the City of New York is hereby requested to make periodic payments in installments of the funds due the affected former employees.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -140,7 +146,7 @@
         711
       ],
       "category": "Text",
-      "text": "§ 4. The payments provided herein may be made in multiple installments and may extend into the next fiscal year.",
+      "text": "\u00a7 4. The payments provided herein may be made in multiple installments and may extend into the next fiscal year.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -174,7 +180,7 @@
         897
       ],
       "category": "Text",
-      "text": "§ 5. The Comptroller of the City of New York, the Director of the Budget, the City Personnel Director and all other officers or agencies of the City having any jurisdiction over the matters provided in this Order are hereby requested, pursuant to the powers vested in them, to take the steps necessary to effectuate the provisions of this Order.",
+      "text": "\u00a7 5. The Comptroller of the City of New York, the Director of the Budget, the City Personnel Director and all other officers or agencies of the City having any jurisdiction over the matters provided in this Order are hereby requested, pursuant to the powers vested in them, to take the steps necessary to effectuate the provisions of this Order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -208,7 +214,7 @@
         950
       ],
       "category": "Text",
-      "text": "§ 6. This Order shall take effect immediately.",
+      "text": "\u00a7 6. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -321,7 +327,7 @@
           "index": 123,
           "token_id": 17851,
           "logprob": -0.1371,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 174,
@@ -363,7 +369,7 @@
           "index": 307,
           "token_id": 17851,
           "logprob": -0.0021,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 189,
@@ -375,7 +381,7 @@
           "index": 239,
           "token_id": 17851,
           "logprob": -0.0011,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 163,
@@ -493,15 +499,26 @@
   "ink_coverage": {
     "roi": [
       173,
-      222,
+      0,
       1268,
-      1633
+      1813
     ],
-    "ink_px": 537,
-    "covered_px": 537,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 1285,
+    "rule_px": 0,
+    "covered_px": 539,
+    "covered_fraction": 0.41946,
+    "uncovered_px": 746,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          605,
+          1777,
+          680,
+          1793
+        ],
+        "ink_px": 634
+      }
+    ],
     "cell_px": 24
   }
 }

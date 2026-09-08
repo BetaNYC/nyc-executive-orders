@@ -28,7 +28,13 @@
           "min": -0.0009
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 18,
+        "area_px": 7224,
+        "density": 0.00249,
+        "chars": 22,
+        "chars_per_1k_ink": 1222.22
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0016
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 17,
+        "area_px": 5325,
+        "density": 0.00319,
+        "chars": 16,
+        "chars_per_1k_ink": 941.18
+      }
     },
     {
       "bbox": [
@@ -168,7 +180,7 @@
         916
       ],
       "category": "Text",
-      "text": "§2. The Commissioners of the respective Departments shall, with the approval of the Mayor or any member of the Mayor's office designated by him for such purpose, designate the employees who are transferred hereunder and each such Commissioner shall promptly file a list of the names and titles of such employees in his Department, in the office of the Mayor and in the office of the Department of Personnel.",
+      "text": "\u00a72. The Commissioners of the respective Departments shall, with the approval of the Mayor or any member of the Mayor's office designated by him for such purpose, designate the employees who are transferred hereunder and each such Commissioner shall promptly file a list of the names and titles of such employees in his Department, in the office of the Mayor and in the office of the Department of Personnel.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -202,7 +214,7 @@
         1005
       ],
       "category": "Text",
-      "text": "§3. Such transfer shall not affect the Civil Service standing, continuity of service or right to pension, grade or compensation of any employee so transferred.",
+      "text": "\u00a73. Such transfer shall not affect the Civil Service standing, continuity of service or right to pension, grade or compensation of any employee so transferred.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -236,7 +248,7 @@
         1045
       ],
       "category": "Text",
-      "text": "§4. This order shall take effect immediately.",
+      "text": "\u00a74. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -367,7 +379,7 @@
           "index": 491,
           "token_id": 17851,
           "logprob": -0.037,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 778,
@@ -521,14 +533,15 @@
   "ink_coverage": {
     "roi": [
       147,
-      223,
+      0,
       1084,
-      1636
+      1795
     ],
-    "ink_px": 2777,
-    "covered_px": 2777,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 3404,
+    "rule_px": 322,
+    "covered_px": 2812,
+    "covered_fraction": 0.91239,
+    "uncovered_px": 270,
     "uncovered_regions": [],
     "cell_px": 24
   }

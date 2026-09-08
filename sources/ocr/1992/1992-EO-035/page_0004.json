@@ -1,0 +1,412 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        506,
+        326,
+        1410,
+        421
+      ],
+      "category": "Text",
+      "text": "City agencies of information technology goods and services;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3168,
+          "min": -1.5634
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0089,
+          "min": -0.0089
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0712,
+          "min": -0.6334
+        }
+      },
+      "ink": {
+        "ink_px": 8785,
+        "area_px": 87072,
+        "density": 0.10089,
+        "chars": 59,
+        "chars_per_1k_ink": 6.72
+      }
+    },
+    {
+      "bbox": [
+        425,
+        455,
+        1410,
+        554
+      ],
+      "category": "List-item",
+      "text": "(14) To coordinate the establishment of uniform information technology guidelines among City agencies; and",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.266,
+          "min": -1.4967
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0006,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 18,
+          "mean": -0.0012,
+          "min": -0.0194
+        }
+      },
+      "ink": {
+        "ink_px": 16185,
+        "area_px": 98900,
+        "density": 0.16365,
+        "chars": 106,
+        "chars_per_1k_ink": 6.55
+      }
+    },
+    {
+      "bbox": [
+        425,
+        587,
+        1412,
+        751
+      ],
+      "category": "List-item",
+      "text": "(15) To develop policies regarding the strategic deployment of information technology hardware, software and communication resources for use by City agencies.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2489,
+          "min": -1.2894
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 26,
+          "mean": -0.0002,
+          "min": -0.0028
+        }
+      },
+      "ink": {
+        "ink_px": 23794,
+        "area_px": 163515,
+        "density": 0.14552,
+        "chars": 158,
+        "chars_per_1k_ink": 6.64
+      }
+    },
+    {
+      "bbox": [
+        260,
+        783,
+        1412,
+        878
+      ],
+      "category": "Text",
+      "text": "Section 2. Prior Order Repealed. Executive Order No. 100, dated September 5, 1986, is hereby repealed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2618,
+          "min": -1.1924
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0549,
+          "min": -0.0549
+        },
+        "text": {
+          "n_tokens": 34,
+          "mean": -0.0058,
+          "min": -0.1655
+        }
+      },
+      "ink": {
+        "ink_px": 15775,
+        "area_px": 110976,
+        "density": 0.14215,
+        "chars": 102,
+        "chars_per_1k_ink": 6.47
+      }
+    },
+    {
+      "bbox": [
+        260,
+        912,
+        1387,
+        943
+      ],
+      "category": "Text",
+      "text": "Section 3. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2445,
+          "min": -1.2975
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0056,
+          "min": -0.0056
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0005,
+          "min": -0.0066
+        }
+      },
+      "ink": {
+        "ink_px": 10995,
+        "area_px": 36192,
+        "density": 0.3038,
+        "chars": 68,
+        "chars_per_1k_ink": 6.18
+      }
+    },
+    {
+      "bbox": [
+        836,
+        1029,
+        1366,
+        1201
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3047,
+          "min": -1.4844
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0024,
+          "min": -0.0024
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 11562,
+        "area_px": 92742,
+        "density": 0.12467,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 311,
+    "content": {
+      "n_tokens": 101,
+      "mean": -0.0086,
+      "min": -0.6334,
+      "p05": -0.0076,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 42,
+          "token_id": 3516,
+          "logprob": -0.6334,
+          "text": " services"
+        },
+        {
+          "index": 197,
+          "token_id": 31399,
+          "logprob": -0.1655,
+          "text": " Prior"
+        },
+        {
+          "index": 79,
+          "token_id": 11993,
+          "logprob": -0.0194,
+          "text": " \"("
+        },
+        {
+          "index": 193,
+          "token_id": 9620,
+          "logprob": -0.0124,
+          "text": "Section"
+        },
+        {
+          "index": 221,
+          "token_id": 21,
+          "logprob": -0.0087,
+          "text": "6"
+        },
+        {
+          "index": 213,
+          "token_id": 6122,
+          "logprob": -0.0076,
+          "text": " September"
+        },
+        {
+          "index": 266,
+          "token_id": 46923,
+          "logprob": -0.0066,
+          "text": " Effective"
+        },
+        {
+          "index": 43,
+          "token_id": 10892,
+          "logprob": -0.0062,
+          "text": ";\""
+        },
+        {
+          "index": 143,
+          "token_id": 315,
+          "logprob": -0.0028,
+          "text": " of"
+        },
+        {
+          "index": 90,
+          "token_id": 5440,
+          "logprob": -0.0013,
+          "text": " technology"
+        },
+        {
+          "index": 157,
+          "token_id": 1189,
+          "logprob": -0.0012,
+          "text": ".\""
+        },
+        {
+          "index": 132,
+          "token_id": 11993,
+          "logprob": -0.0011,
+          "text": " \"("
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 124,
+      "mean": -0.2572,
+      "min": -1.5634,
+      "p05": -1.3662,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.5634,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.5238,
+          "text": "6"
+        },
+        {
+          "index": 51,
+          "token_id": 20,
+          "logprob": -1.4967,
+          "text": "5"
+        },
+        {
+          "index": 283,
+          "token_id": 21,
+          "logprob": -1.4844,
+          "text": "6"
+        },
+        {
+          "index": 295,
+          "token_id": 21,
+          "logprob": -1.4375,
+          "text": "6"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -1.4116,
+          "text": "1"
+        },
+        {
+          "index": 67,
+          "token_id": 19,
+          "logprob": -1.3784,
+          "text": "4"
+        },
+        {
+          "index": 250,
+          "token_id": 18,
+          "logprob": -1.2975,
+          "text": "3"
+        },
+        {
+          "index": 115,
+          "token_id": 17,
+          "logprob": -1.2894,
+          "text": "2"
+        },
+        {
+          "index": 245,
+          "token_id": 22,
+          "logprob": -1.2601,
+          "text": "7"
+        },
+        {
+          "index": 56,
+          "token_id": 20,
+          "logprob": -1.2493,
+          "text": "5"
+        },
+        {
+          "index": 120,
+          "token_id": 16,
+          "logprob": -1.2217,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 311,
+      "mean": -0.1061,
+      "min": -1.5634,
+      "p05": -1.0883,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 244.81,
+    "std": 47.68,
+    "dark_fraction": 0.03933
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      616.0,
+      807.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      205,
+      0,
+      1506,
+      2242
+    ],
+    "ink_px": 88360,
+    "rule_px": 246,
+    "covered_px": 87096,
+    "covered_fraction": 0.98845,
+    "uncovered_px": 1018,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

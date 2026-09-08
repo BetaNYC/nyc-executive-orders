@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16880,
+        "area_px": 52460,
+        "density": 0.32177,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 4999,
-        "area_px": 42319,
-        "density": 0.11813,
+        "ink_px": 6155,
+        "area_px": 51537,
+        "density": 0.11943,
         "chars": 53,
-        "chars_per_1k_ink": 10.6
+        "chars_per_1k_ink": 8.61
       }
     },
     {
@@ -305,7 +311,7 @@
         2707
       ],
       "category": "Section-header",
-      "text": "§2. <u>Functions, Power and Duties of Administrator.</u>",
+      "text": "\u00a72. <u>Functions, Power and Duties of Administrator.</u>",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -392,11 +398,11 @@
         }
       },
       "ink": {
-        "ink_px": 13523,
-        "area_px": 297375,
-        "density": 0.04547,
+        "ink_px": 18967,
+        "area_px": 463125,
+        "density": 0.04095,
         "chars": 266,
-        "chars_per_1k_ink": 19.67
+        "chars_per_1k_ink": 14.02
       }
     }
   ],
@@ -423,7 +429,7 @@
           "index": 693,
           "token_id": 17851,
           "logprob": -0.4842,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 815,
@@ -595,15 +601,26 @@
   "ink_coverage": {
     "roi": [
       288,
-      417,
+      118,
       2113,
-      3064
+      3360
     ],
-    "ink_px": 221079,
-    "covered_px": 221079,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 247130,
+    "rule_px": 669,
+    "covered_px": 244559,
+    "covered_fraction": 0.99228,
+    "uncovered_px": 1902,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1366,
+          166,
+          1407,
+          226
+        ],
+        "ink_px": 784
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -1,0 +1,383 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        218,
+        253,
+        1559,
+        383
+      ],
+      "category": "Text",
+      "text": "Section 1. Establishment of the Office for the Millennium. (1) There is hereby established within the Office of the Mayor, the Office for the Millennium.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3682,
+          "min": -1.8608
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0143,
+          "min": -0.0143
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.0111,
+          "min": -0.1718
+        }
+      },
+      "ink": {
+        "ink_px": 10726,
+        "area_px": 166400,
+        "density": 0.06446,
+        "chars": 153,
+        "chars_per_1k_ink": 14.26
+      }
+    },
+    {
+      "bbox": [
+        216,
+        413,
+        1559,
+        619
+      ],
+      "category": "List-item",
+      "text": "(2) The Mayor shall appoint a City employee to be the executive director of the Office for the Millennium and such other staff as in his judgment shall be necessary to carry out the functions of such office.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3142,
+          "min": -1.5733
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2144,
+          "min": -0.4288
+        },
+        "text": {
+          "n_tokens": 41,
+          "mean": -0.0003,
+          "min": -0.0087
+        }
+      },
+      "ink": {
+        "ink_px": 12317,
+        "area_px": 264092,
+        "density": 0.04664,
+        "chars": 207,
+        "chars_per_1k_ink": 16.81
+      }
+    },
+    {
+      "bbox": [
+        208,
+        651,
+        1555,
+        1485
+      ],
+      "category": "List-item",
+      "text": "\u00a7 2. Establishment of Committee for NYC 2000. There shall be a committee consisting of not less than twenty persons, which shall be led by one or more chairpersons, to be appointed by the Mayor from among persons in the public and private sectors. The committee shall be responsible for promoting and implementing a public/private partnership effort to be known as \"NYC 2000\" for the public celebration of the millennium in New York City. The committee shall include an executive sub-committee consisting of not less than three members of the committee, to be designated by the Mayor, at least one of whom shall be a city employee. The executive sub-committee shall be responsible for overseeing and directing the operations of the Office for the Millennium and the committee. The committee may form such other sub-committees as it may deem necessary to carry out its functions and responsibilities. The members of the committee shall serve without compensation.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3218,
+          "min": -1.6243
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.2144,
+          "min": -0.4287
+        },
+        "text": {
+          "n_tokens": 188,
+          "mean": -0.0006,
+          "min": -0.089
+        }
+      },
+      "ink": {
+        "ink_px": 52542,
+        "area_px": 1069870,
+        "density": 0.04911,
+        "chars": 962,
+        "chars_per_1k_ink": 18.31
+      }
+    },
+    {
+      "bbox": [
+        203,
+        1512,
+        1540,
+        1806
+      ],
+      "category": "List-item",
+      "text": "\u00a7 3. Purpose and functions of the Office for the Millennium. (1) The office shall, in cooperation with city agencies, other government agencies, not-for-profit corporations and persons and businesses in the private sector, encourage, plan and promote cultural activities and public events to celebrate the millennium.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2956,
+          "min": -1.5457
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.019,
+          "min": -0.0381
+        },
+        "text": {
+          "n_tokens": 59,
+          "mean": -0.0003,
+          "min": -0.0126
+        }
+      },
+      "ink": {
+        "ink_px": 13005,
+        "area_px": 379848,
+        "density": 0.03424,
+        "chars": 317,
+        "chars_per_1k_ink": 24.38
+      }
+    },
+    {
+      "bbox": [
+        203,
+        1830,
+        1538,
+        1969
+      ],
+      "category": "List-item",
+      "text": "(2) In carrying out its responsibilities the office shall work jointly with New York City Public/Private Initiatives Inc. on fund-raising activities.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2551,
+          "min": -1.0882
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0023,
+          "min": -0.0047
+        },
+        "text": {
+          "n_tokens": 29,
+          "mean": -0.0003,
+          "min": -0.0076
+        }
+      },
+      "ink": {
+        "ink_px": 4361,
+        "area_px": 179588,
+        "density": 0.02428,
+        "chars": 149,
+        "chars_per_1k_ink": 34.17
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 533,
+    "content": {
+      "n_tokens": 349,
+      "mean": -0.0014,
+      "min": -0.1718,
+      "p05": -0.0005,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 39,
+          "token_id": 86765,
+          "logprob": -0.1718,
+          "text": " Establishment"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0998,
+          "text": "Section"
+        },
+        {
+          "index": 357,
+          "token_id": 13,
+          "logprob": -0.089,
+          "text": "."
+        },
+        {
+          "index": 53,
+          "token_id": 9555,
+          "logprob": -0.0792,
+          "text": " established"
+        },
+        {
+          "index": 425,
+          "token_id": 4880,
+          "logprob": -0.0126,
+          "text": " shall"
+        },
+        {
+          "index": 119,
+          "token_id": 8246,
+          "logprob": -0.0087,
+          "text": " Office"
+        },
+        {
+          "index": 520,
+          "token_id": 74777,
+          "logprob": -0.0076,
+          "text": "/Private"
+        },
+        {
+          "index": 253,
+          "token_id": 7245,
+          "logprob": -0.0068,
+          "text": " \\\""
+        },
+        {
+          "index": 184,
+          "token_id": 86765,
+          "logprob": -0.0052,
+          "text": " Establishment"
+        },
+        {
+          "index": 180,
+          "token_id": 17851,
+          "logprob": -0.0048,
+          "text": "\u00a7"
+        },
+        {
+          "index": 66,
+          "token_id": 1189,
+          "logprob": -0.0018,
+          "text": ".\""
+        },
+        {
+          "index": 410,
+          "token_id": 29045,
+          "logprob": -0.0012,
+          "text": " Purpose"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 109,
+      "mean": -0.2925,
+      "min": -1.8608,
+      "p05": -1.538,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.8608,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.675,
+          "text": "3"
+        },
+        {
+          "index": 167,
+          "token_id": 20,
+          "logprob": -1.6243,
+          "text": "5"
+        },
+        {
+          "index": 74,
+          "token_id": 21,
+          "logprob": -1.5733,
+          "text": "6"
+        },
+        {
+          "index": 393,
+          "token_id": 21,
+          "logprob": -1.5457,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.5433,
+          "text": "8"
+        },
+        {
+          "index": 161,
+          "token_id": 20,
+          "logprob": -1.5302,
+          "text": "5"
+        },
+        {
+          "index": 381,
+          "token_id": 17,
+          "logprob": -1.5099,
+          "text": "2"
+        },
+        {
+          "index": 150,
+          "token_id": 23,
+          "logprob": -1.4932,
+          "text": "8"
+        },
+        {
+          "index": 79,
+          "token_id": 18,
+          "logprob": -1.4894,
+          "text": "3"
+        },
+        {
+          "index": 375,
+          "token_id": 18,
+          "logprob": -1.4035,
+          "text": "3"
+        },
+        {
+          "index": 155,
+          "token_id": 16,
+          "logprob": -1.3691,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 533,
+      "mean": -0.0616,
+      "min": -1.8608,
+      "p05": -0.3281,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 243.09,
+    "std": 46.69,
+    "dark_fraction": 0.04268
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 92968,
+    "rule_px": 0,
+    "covered_px": 92951,
+    "covered_fraction": 0.99982,
+    "uncovered_px": 17,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

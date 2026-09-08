@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16810,
+        "area_px": 52460,
+        "density": 0.32043,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 5643,
-        "area_px": 45360,
-        "density": 0.1244,
+        "ink_px": 6116,
+        "area_px": 52080,
+        "density": 0.11743,
         "chars": 53,
-        "chars_per_1k_ink": 9.39
+        "chars_per_1k_ink": 8.67
       }
     },
     {
@@ -237,7 +243,7 @@
         1682
       ],
       "category": "Text",
-      "text": "§2. Inventory of Positions and Personnel. To reach the goals enumerated in Section 1, the following steps shall be taken:",
+      "text": "\u00a72. Inventory of Positions and Personnel. To reach the goals enumerated in Section 1, the following steps shall be taken:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -373,7 +379,7 @@
         2510
       ],
       "category": "Text",
-      "text": "§3 Assignment of Agency Responsibilities. Each agency\nunder the jurisdiction of the Mayor shall undertake the following\naction:",
+      "text": "\u00a73 Assignment of Agency Responsibilities. Each agency\nunder the jurisdiction of the Mayor shall undertake the following\naction:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -494,11 +500,11 @@
         }
       },
       "ink": {
-        "ink_px": 42559,
-        "area_px": 367220,
-        "density": 0.1159,
+        "ink_px": 77870,
+        "area_px": 637084,
+        "density": 0.12223,
         "chars": 496,
-        "chars_per_1k_ink": 11.65
+        "chars_per_1k_ink": 6.37
       }
     }
   ],
@@ -579,7 +585,7 @@
           "index": 351,
           "token_id": 17851,
           "logprob": -0.1084,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 642,
@@ -697,23 +703,33 @@
   "ink_coverage": {
     "roi": [
       286,
-      415,
+      123,
       2102,
-      3050
+      3373
     ],
-    "ink_px": 236814,
-    "covered_px": 236088,
-    "covered_fraction": 0.99693,
-    "uncovered_px": 726,
+    "ink_px": 291753,
+    "rule_px": 722,
+    "covered_px": 288682,
+    "covered_fraction": 0.99193,
+    "uncovered_px": 2349,
     "uncovered_regions": [
       {
         "bbox": [
-          838,
-          607,
-          1174,
-          655
+          1355,
+          171,
+          1397,
+          231
         ],
-        "ink_px": 519
+        "ink_px": 762
+      },
+      {
+        "bbox": [
+          838,
+          625,
+          1213,
+          635
+        ],
+        "ink_px": 545
       }
     ],
     "cell_px": 24

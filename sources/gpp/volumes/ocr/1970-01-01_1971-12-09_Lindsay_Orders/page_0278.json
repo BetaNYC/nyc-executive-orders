@@ -30,7 +30,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 306,
+        "area_px": 374,
         "density": 0.0,
         "chars": 1,
         "chars_per_1k_ink": null
@@ -44,7 +44,7 @@
         355
       ],
       "category": "Section-header",
-      "text": "## § 2. Functions, Powers and Duties of Commissioner",
+      "text": "## \u00a7 2. Functions, Powers and Duties of Commissioner",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         1157
       ],
       "category": "List-item",
-      "text": "(i) day care and other related child-care services, now administered by the Bureau of Child Welfare, Department of Social Services, Human Resources Administration, pursuant to Title IV of the Social Security Act (42 U.S.C. § 601 et seq), section 410 of the Social Services Law, section 603 of the New York City Charter and Section 604.2.0 of the Administrative Code of the City of New York.",
+      "text": "(i) day care and other related child-care services, now administered by the Bureau of Child Welfare, Department of Social Services, Human Resources Administration, pursuant to Title IV of the Social Security Act (42 U.S.C. \u00a7 601 et seq), section 410 of the Social Services Law, section 603 of the New York City Charter and Section 604.2.0 of the Administrative Code of the City of New York.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -180,7 +180,7 @@
         1393
       ],
       "category": "List-item",
-      "text": "(ii) day care for children as authorized by sections 123 (a) (6), 162 (b) 312 (b) (1) and Part B of Title V of the Economic Opportunity Act of 1964, as amended (42 U.S.C. §§ 2740, 2769.a, 2862, 2931-33) and now administered by the Community Development Agency, Human Resources Administration.",
+      "text": "(ii) day care for children as authorized by sections 123 (a) (6), 162 (b) 312 (b) (1) and Part B of Title V of the Economic Opportunity Act of 1964, as amended (42 U.S.C. \u00a7\u00a7 2740, 2769.a, 2862, 2931-33) and now administered by the Community Development Agency, Human Resources Administration.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -214,7 +214,7 @@
         1578
       ],
       "category": "List-item",
-      "text": "(iii) \"Project Headstart\" authorized by § 222: (a) (1) of the Economic Opportunity Act of 1964, as amended (42 U.S.C. § 2809), and now administered by the Community Development Agency, Human Resources Administration.",
+      "text": "(iii) \"Project Headstart\" authorized by \u00a7 222: (a) (1) of the Economic Opportunity Act of 1964, as amended (42 U.S.C. \u00a7 2809), and now administered by the Community Development Agency, Human Resources Administration.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -276,7 +276,7 @@
           "index": 386,
           "token_id": 16625,
           "logprob": -0.0574,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 393,
@@ -312,7 +312,7 @@
           "index": 539,
           "token_id": 64331,
           "logprob": -0.0059,
-          "text": " §§"
+          "text": " \u00a7\u00a7"
         },
         {
           "index": 508,
@@ -436,15 +436,26 @@
   "ink_coverage": {
     "roi": [
       174,
-      224,
+      0,
       1278,
-      1642
+      1816
     ],
-    "ink_px": 1734,
+    "ink_px": 2577,
+    "rule_px": 0,
     "covered_px": 1681,
-    "covered_fraction": 0.96943,
-    "uncovered_px": 53,
-    "uncovered_regions": [],
+    "covered_fraction": 0.65231,
+    "uncovered_px": 896,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          606,
+          1779,
+          678,
+          1796
+        ],
+        "ink_px": 576
+      }
+    ],
     "cell_px": 24
   }
 }

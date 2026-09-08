@@ -1,0 +1,378 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        284,
+        170,
+        1277,
+        212
+      ],
+      "category": "Text",
+      "text": "\u00a7 4. Section 8 of Executive Order No. 21, dated July 21, 2022, is repealed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.347,
+          "min": -1.7509
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0763,
+          "min": -0.0763
+        },
+        "text": {
+          "n_tokens": 31,
+          "mean": -0.0006,
+          "min": -0.0191
+        }
+      },
+      "ink": {
+        "ink_px": 6830,
+        "area_px": 41580,
+        "density": 0.16426,
+        "chars": 75,
+        "chars_per_1k_ink": 10.98
+      }
+    },
+    {
+      "bbox": [
+        185,
+        242,
+        1493,
+        359
+      ],
+      "category": "Text",
+      "text": "\u00a7 5. Personnel. Affected agencies shall take all necessary and timely steps to ensure that personnel primarily performing duties for ONL are employed by SBS in accordance with this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2927,
+          "min": -1.4865
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 37,
+          "mean": -0.0001,
+          "min": -0.0038
+        }
+      },
+      "ink": {
+        "ink_px": 19039,
+        "area_px": 151394,
+        "density": 0.12576,
+        "chars": 187,
+        "chars_per_1k_ink": 9.82
+      }
+    },
+    {
+      "bbox": [
+        185,
+        392,
+        1498,
+        508
+      ],
+      "category": "Text",
+      "text": "\u00a7 6. Effective Date. This Order shall take effect on November 26, 2023, or as soon as practicable thereafter as personnel primarily performing duties for ONL are employed by SBS in accordance with this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2945,
+          "min": -1.3743
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0007,
+          "min": -0.0007
+        },
+        "text": {
+          "n_tokens": 50,
+          "mean": -0.0001,
+          "min": -0.0038
+        }
+      },
+      "ink": {
+        "ink_px": 20462,
+        "area_px": 150579,
+        "density": 0.13589,
+        "chars": 208,
+        "chars_per_1k_ink": 10.17
+      }
+    },
+    {
+      "bbox": [
+        1065,
+        511,
+        1470,
+        658
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3289,
+          "min": -1.6498
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 4682,
+        "area_px": 59388,
+        "density": 0.07884,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        1091,
+        697,
+        1250,
+        773
+      ],
+      "category": "Caption",
+      "text": "Eric Adams\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2414,
+          "min": -1.194
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5231,
+          "min": -0.5231
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0002,
+          "min": -0.0004
+        }
+      },
+      "ink": {
+        "ink_px": 1950,
+        "area_px": 12160,
+        "density": 0.16036,
+        "chars": 16,
+        "chars_per_1k_ink": 8.21
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 297,
+    "content": {
+      "n_tokens": 122,
+      "mean": -0.0002,
+      "min": -0.0191,
+      "p05": -0.0004,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0191,
+          "text": "\u00a7"
+        },
+        {
+          "index": 173,
+          "token_id": 17851,
+          "logprob": -0.0038,
+          "text": "\u00a7"
+        },
+        {
+          "index": 101,
+          "token_id": 17851,
+          "logprob": -0.0038,
+          "text": "\u00a7"
+        },
+        {
+          "index": 201,
+          "token_id": 3771,
+          "logprob": -0.0008,
+          "text": " pract"
+        },
+        {
+          "index": 39,
+          "token_id": 11113,
+          "logprob": -0.0005,
+          "text": " Section"
+        },
+        {
+          "index": 290,
+          "token_id": 49454,
+          "logprob": -0.0004,
+          "text": "Eric"
+        },
+        {
+          "index": 120,
+          "token_id": 16849,
+          "logprob": -0.0004,
+          "text": " personnel"
+        },
+        {
+          "index": 293,
+          "token_id": 85574,
+          "logprob": -0.0003,
+          "text": "Mayor"
+        },
+        {
+          "index": 292,
+          "token_id": 1699,
+          "logprob": -0.0001,
+          "text": "\\n"
+        },
+        {
+          "index": 61,
+          "token_id": 17,
+          "logprob": -0.0001,
+          "text": "2"
+        },
+        {
+          "index": 64,
+          "token_id": 85914,
+          "logprob": -0.0001,
+          "text": " repealed"
+        },
+        {
+          "index": 177,
+          "token_id": 46923,
+          "logprob": -0.0001,
+          "text": " Effective"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 102,
+      "mean": -0.2917,
+      "min": -1.7509,
+      "p05": -1.3791,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.7509,
+          "text": "4"
+        },
+        {
+          "index": 231,
+          "token_id": 20,
+          "logprob": -1.6498,
+          "text": "5"
+        },
+        {
+          "index": 84,
+          "token_id": 18,
+          "logprob": -1.4865,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.4569,
+          "text": "7"
+        },
+        {
+          "index": 73,
+          "token_id": 20,
+          "logprob": -1.4063,
+          "text": "5"
+        },
+        {
+          "index": 247,
+          "token_id": 23,
+          "logprob": -1.3794,
+          "text": "8"
+        },
+        {
+          "index": 150,
+          "token_id": 17,
+          "logprob": -1.3743,
+          "text": "2"
+        },
+        {
+          "index": 145,
+          "token_id": 20,
+          "logprob": -1.3483,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.3344,
+          "text": "2"
+        },
+        {
+          "index": 78,
+          "token_id": 17,
+          "logprob": -1.2486,
+          "text": "2"
+        },
+        {
+          "index": 236,
+          "token_id": 16,
+          "logprob": -1.2039,
+          "text": "1"
+        },
+        {
+          "index": 267,
+          "token_id": 22,
+          "logprob": -1.194,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 297,
+      "mean": -0.1005,
+      "min": -1.7509,
+      "p05": -1.0584,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.6,
+    "std": 24.27,
+    "dark_fraction": 0.01894
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 52963,
+    "rule_px": 0,
+    "covered_px": 52963,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

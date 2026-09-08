@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16984,
+        "area_px": 52460,
+        "density": 0.32375,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 3792,
-        "area_px": 35364,
-        "density": 0.10723,
+        "ink_px": 6109,
+        "area_px": 53046,
+        "density": 0.11516,
         "chars": 53,
-        "chars_per_1k_ink": 13.98
+        "chars_per_1k_ink": 8.68
       }
     },
     {
@@ -169,7 +175,7 @@
         1741
       ],
       "category": "Text",
-      "text": "§ 3. In connection with the exercise of the functions, duties and powers delegated to the Administrator by § 2 of this Order, there are delegated to the Administrator with respect to the Department of Buildings, the Housing and Redevelopment Board, the Department of Real Estate, the Department of Relocation, the Rent and Rehabilitation Administration and to the extent, subject to the jurisdiction of the Mayor, the New York City Housing Authority the following powers and duties:",
+      "text": "\u00a7 3. In connection with the exercise of the functions, duties and powers delegated to the Administrator by \u00a7 2 of this Order, there are delegated to the Administrator with respect to the Department of Buildings, the Housing and Redevelopment Board, the Department of Real Estate, the Department of Relocation, the Rent and Rehabilitation Administration and to the extent, subject to the jurisdiction of the Mayor, the New York City Housing Authority the following powers and duties:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -358,11 +364,11 @@
         }
       },
       "ink": {
-        "ink_px": 3221,
-        "area_px": 81315,
-        "density": 0.03961,
+        "ink_px": 5359,
+        "area_px": 118845,
+        "density": 0.04509,
         "chars": 88,
-        "chars_per_1k_ink": 27.32
+        "chars_per_1k_ink": 16.42
       }
     },
     {
@@ -391,7 +397,13 @@
           "min": -0.0307
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 5652,
+        "density": 0.0,
+        "chars": 8,
+        "chars_per_1k_ink": null
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -411,7 +423,7 @@
           "index": 289,
           "token_id": 17851,
           "logprob": -0.4287,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 84,
@@ -589,15 +601,26 @@
   "ink_coverage": {
     "roi": [
       285,
-      414,
+      100,
       2096,
-      3039
+      3352
     ],
-    "ink_px": 136690,
-    "covered_px": 135772,
-    "covered_fraction": 0.99328,
-    "uncovered_px": 918,
-    "uncovered_regions": [],
+    "ink_px": 160338,
+    "rule_px": 407,
+    "covered_px": 157211,
+    "covered_fraction": 0.98299,
+    "uncovered_px": 2720,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1341,
+          148,
+          1385,
+          207
+        ],
+        "ink_px": 814
+      }
+    ],
     "cell_px": 24
   }
 }

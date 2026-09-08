@@ -10,7 +10,7 @@
         364
       ],
       "category": "Section-header",
-      "text": "§ 3. Effective Date",
+      "text": "\u00a7 3. Effective Date",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -151,7 +151,7 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.0711,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 39,
@@ -329,15 +329,26 @@
   "ink_coverage": {
     "roi": [
       173,
-      220,
+      0,
       1272,
-      1619
+      1799
     ],
-    "ink_px": 556,
+    "ink_px": 1205,
+    "rule_px": 0,
     "covered_px": 556,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.46141,
+    "uncovered_px": 649,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          608,
+          1763,
+          684,
+          1776
+        ],
+        "ink_px": 486
+      }
+    ],
     "cell_px": 24
   }
 }

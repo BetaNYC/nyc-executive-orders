@@ -1,0 +1,383 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        500,
+        263,
+        1394,
+        844
+      ],
+      "category": "Text",
+      "text": "revenues by the New York City Health and Hospitals Corporation\nwhich would require the approval of the Mayor pursuant to the\n\"Memorandum of Agreement Between New York City Health and\nHospitals Corporation and The City of New York Relating to\nOperating Expenditures by the Corporation\", dated July 1, 1970\nExecute and deliver, in the name and on behalf of the City, official\nstatements of the City relating to the issuance of the City's\nobligations",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.419,
+          "min": -1.6429
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0082,
+          "min": -0.0082
+        },
+        "text": {
+          "n_tokens": 102,
+          "mean": -0.0122,
+          "min": -0.5298
+        }
+      },
+      "ink": {
+        "ink_px": 22560,
+        "area_px": 515889,
+        "density": 0.04373,
+        "chars": 447,
+        "chars_per_1k_ink": 19.81
+      }
+    },
+    {
+      "bbox": [
+        399,
+        881,
+        1384,
+        1064
+      ],
+      "category": "List-item",
+      "text": "m Represent the Mayor, when so directed by the Mayor, on any\nboard, committee, commission or corporation of which the Mayor\nis a member.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3304,
+          "min": -1.6546
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1743,
+          "min": -0.3487
+        },
+        "text": {
+          "n_tokens": 31,
+          "mean": -0.0297,
+          "min": -0.7323
+        }
+      },
+      "ink": {
+        "ink_px": 6428,
+        "area_px": 179523,
+        "density": 0.03581,
+        "chars": 136,
+        "chars_per_1k_ink": 21.16
+      }
+    },
+    {
+      "bbox": [
+        399,
+        1104,
+        1406,
+        1295
+      ],
+      "category": "List-item",
+      "text": "n Perform any function, power or duty of the Mayor in relation to the\nexecution or authorization of contracts, franchises, revocable\nconsents, and other agreements",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2656,
+          "min": -1.5634
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0004,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 34,
+          "mean": -0.0018,
+          "min": -0.024
+        }
+      },
+      "ink": {
+        "ink_px": 6832,
+        "area_px": 190570,
+        "density": 0.03585,
+        "chars": 163,
+        "chars_per_1k_ink": 23.86
+      }
+    },
+    {
+      "bbox": [
+        399,
+        1333,
+        1394,
+        1757
+      ],
+      "category": "List-item",
+      "text": "o Perform any function, power or duty of the Mayor, including\nauthorizations and approvals to be made or given by the Mayor\npursuant to sections 384, 1602 and 1802 of the Charter, in relation\nto the authorization or execution of deeds and satisfactions, leases,\neasements, mortgages, and any other grants or estates or interests\nin real property",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2744,
+          "min": -1.5429
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0009,
+          "min": -0.0017
+        },
+        "text": {
+          "n_tokens": 87,
+          "mean": -0.0017,
+          "min": -0.1
+        }
+      },
+      "ink": {
+        "ink_px": 12933,
+        "area_px": 419193,
+        "density": 0.03085,
+        "chars": 345,
+        "chars_per_1k_ink": 26.68
+      }
+    },
+    {
+      "bbox": [
+        399,
+        1793,
+        1401,
+        1909
+      ],
+      "category": "List-item",
+      "text": "p Perform any function, power or duty which the Mayor has and is\nauthorized to delegate pursuant to New York City Charter sections",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2579,
+          "min": -1.4023
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0045,
+          "min": -0.0089
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0393,
+          "min": -0.9511
+        }
+      },
+      "ink": {
+        "ink_px": 5295,
+        "area_px": 115768,
+        "density": 0.04574,
+        "chars": 130,
+        "chars_per_1k_ink": 24.55
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 468,
+    "content": {
+      "n_tokens": 279,
+      "mean": -0.012,
+      "min": -0.9511,
+      "p05": -0.0183,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 440,
+          "token_id": 79,
+          "logprob": -0.9511,
+          "text": "p"
+        },
+        {
+          "index": 204,
+          "token_id": 1189,
+          "logprob": -0.7323,
+          "text": ".\""
+        },
+        {
+          "index": 46,
+          "token_id": 1699,
+          "logprob": -0.5298,
+          "text": "\\n"
+        },
+        {
+          "index": 105,
+          "token_id": 17174,
+          "logprob": -0.5136,
+          "text": "Execute"
+        },
+        {
+          "index": 329,
+          "token_id": 3094,
+          "logprob": -0.1,
+          "text": "author"
+        },
+        {
+          "index": 72,
+          "token_id": 39,
+          "logprob": -0.0814,
+          "text": "H"
+        },
+        {
+          "index": 189,
+          "token_id": 2482,
+          "logprob": -0.0616,
+          "text": "board"
+        },
+        {
+          "index": 175,
+          "token_id": 21950,
+          "logprob": -0.0543,
+          "text": " Represent"
+        },
+        {
+          "index": 174,
+          "token_id": 76,
+          "logprob": -0.0459,
+          "text": "m"
+        },
+        {
+          "index": 47,
+          "token_id": 8206,
+          "logprob": -0.0446,
+          "text": "which"
+        },
+        {
+          "index": 45,
+          "token_id": 13034,
+          "logprob": -0.0314,
+          "text": " Corporation"
+        },
+        {
+          "index": 188,
+          "token_id": 1699,
+          "logprob": -0.0254,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 111,
+      "mean": -0.2855,
+      "min": -1.6546,
+      "p05": -1.5209,
+      "p50": -0.001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 161,
+          "token_id": 19,
+          "logprob": -1.6546,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.6429,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.6262,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 19,
+          "logprob": -1.584,
+          "text": "4"
+        },
+        {
+          "index": 218,
+          "token_id": 19,
+          "logprob": -1.5634,
+          "text": "4"
+        },
+        {
+          "index": 290,
+          "token_id": 18,
+          "logprob": -1.5429,
+          "text": "3"
+        },
+        {
+          "index": 230,
+          "token_id": 20,
+          "logprob": -1.4988,
+          "text": "5"
+        },
+        {
+          "index": 155,
+          "token_id": 19,
+          "logprob": -1.4811,
+          "text": "4"
+        },
+        {
+          "index": 302,
+          "token_id": 22,
+          "logprob": -1.4805,
+          "text": "7"
+        },
+        {
+          "index": 415,
+          "token_id": 18,
+          "logprob": -1.4023,
+          "text": "3"
+        },
+        {
+          "index": 224,
+          "token_id": 21,
+          "logprob": -1.3519,
+          "text": "6"
+        },
+        {
+          "index": 149,
+          "token_id": 16,
+          "logprob": -1.3238,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 468,
+      "mean": -0.0773,
+      "min": -1.6546,
+      "p05": -0.5639,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 248.07,
+    "std": 36.3,
+    "dark_fraction": 0.02505
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 54212,
+    "rule_px": 0,
+    "covered_px": 54048,
+    "covered_fraction": 0.99697,
+    "uncovered_px": 164,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

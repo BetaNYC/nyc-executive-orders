@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 56952,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -509,7 +515,7 @@
         2338
       ],
       "category": "Section-header",
-      "text": "## § 2. Designation of Neighboringoods",
+      "text": "## \u00a7 2. Designation of Neighboringoods",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -765,15 +771,26 @@
   "ink_coverage": {
     "roi": [
       258,
-      417,
+      75,
       1893,
-      3060
+      3387
     ],
-    "ink_px": 1929,
+    "ink_px": 3915,
+    "rule_px": 1286,
     "covered_px": 1929,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.73374,
+    "uncovered_px": 700,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1410,
+          3386,
+          1890,
+          3387
+        ],
+        "ink_px": 480
+      }
+    ],
     "cell_px": 24
   }
 }

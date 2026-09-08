@@ -28,7 +28,13 @@
           "min": -0.0564
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1,
+        "area_px": 2964,
+        "density": 0.00034,
+        "chars": 3,
+        "chars_per_1k_ink": 3000.0
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 15100,
-        "area_px": 845295,
-        "density": 0.01786,
+        "ink_px": 16551,
+        "area_px": 1131420,
+        "density": 0.01463,
         "chars": 622,
-        "chars_per_1k_ink": 41.19
+        "chars_per_1k_ink": 37.58
       }
     },
     {
@@ -106,7 +112,7 @@
         1167
       ],
       "category": "Section-header",
-      "text": "## § 4. AUTHORITY OF BARGAINING REPRESENTATIVE.",
+      "text": "## \u00a7 4. AUTHORITY OF BARGAINING REPRESENTATIVE.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -174,7 +180,7 @@
         1796
       ],
       "category": "Section-header",
-      "text": "## § 5. GRIEVANCE PROCEDURES.",
+      "text": "## \u00a7 5. GRIEVANCE PROCEDURES.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -344,7 +350,7 @@
           "index": 317,
           "token_id": 16625,
           "logprob": -0.6897,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 143,
@@ -498,15 +504,35 @@
   "ink_coverage": {
     "roi": [
       260,
-      420,
+      100,
       1913,
-      3084
+      3402
     ],
-    "ink_px": 70800,
-    "covered_px": 70800,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 74664,
+    "rule_px": 1087,
+    "covered_px": 72252,
+    "covered_fraction": 0.98199,
+    "uncovered_px": 1325,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1484,
+          3393,
+          1913,
+          3402
+        ],
+        "ink_px": 721
+      },
+      {
+        "bbox": [
+          1365,
+          100,
+          1820,
+          102
+        ],
+        "ink_px": 573
+      }
+    ],
     "cell_px": 24
   }
 }

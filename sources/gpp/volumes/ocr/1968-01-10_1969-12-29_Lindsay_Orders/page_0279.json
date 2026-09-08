@@ -10,7 +10,7 @@
         1839
       ],
       "category": "Page-header",
-      "text": "中國書法大賽",
+      "text": "\u4e2d\u570b\u66f8\u6cd5\u5927\u8cfd",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -28,7 +28,13 @@
           "min": -3.1178
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 10076,
+        "density": 0.0,
+        "chars": 6,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         1819
       ],
       "category": "Page-header",
-      "text": "中華書法大賽",
+      "text": "\u4e2d\u83ef\u66f8\u6cd5\u5927\u8cfd",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -56,7 +62,13 @@
           "min": -1.6812
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 2952,
+        "density": 0.0,
+        "chars": 6,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -80,11 +92,11 @@
         "text": null
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 1259499,
-        "density": 0.0,
+        "ink_px": 2140,
+        "area_px": 1561563,
+        "density": 0.00137,
         "chars": 0,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 0.0
       }
     }
   ],
@@ -105,67 +117,67 @@
           "index": 37,
           "token_id": 104900,
           "logprob": -3.1178,
-          "text": "中國"
+          "text": "\u4e2d\u570b"
         },
         {
           "index": 79,
           "token_id": 15946,
           "logprob": -1.6812,
-          "text": "中"
+          "text": "\u4e2d"
         },
         {
           "index": 38,
           "token_id": 102171,
           "logprob": -1.0987,
-          "text": "書"
+          "text": "\u66f8"
         },
         {
           "index": 40,
           "token_id": 26288,
           "logprob": -1.0352,
-          "text": "大"
+          "text": "\u5927"
         },
         {
           "index": 39,
           "token_id": 24339,
           "logprob": -0.9838,
-          "text": "法"
+          "text": "\u6cd5"
         },
         {
           "index": 83,
           "token_id": 26288,
           "logprob": -0.6747,
-          "text": "大"
+          "text": "\u5927"
         },
         {
           "index": 41,
           "token_id": 102976,
           "logprob": -0.1325,
-          "text": "賽"
+          "text": "\u8cfd"
         },
         {
           "index": 81,
           "token_id": 102171,
           "logprob": -0.0592,
-          "text": "書"
+          "text": "\u66f8"
         },
         {
           "index": 80,
           "token_id": 104967,
           "logprob": -0.0391,
-          "text": "華"
+          "text": "\u83ef"
         },
         {
           "index": 82,
           "token_id": 24339,
           "logprob": -0.0011,
-          "text": "法"
+          "text": "\u6cd5"
         },
         {
           "index": 84,
           "token_id": 102976,
           "logprob": -0.0005,
-          "text": "賽"
+          "text": "\u8cfd"
         }
       ]
     },
@@ -277,13 +289,14 @@
   "ink_coverage": {
     "roi": [
       141,
-      221,
+      61,
       1040,
-      1622
+      1844
     ],
-    "ink_px": 0,
-    "covered_px": 0,
-    "covered_fraction": null,
+    "ink_px": 2140,
+    "rule_px": 0,
+    "covered_px": 2140,
+    "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
     "cell_px": 24

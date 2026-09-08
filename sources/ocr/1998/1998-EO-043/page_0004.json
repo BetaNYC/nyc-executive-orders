@@ -1,0 +1,383 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        498,
+        281,
+        1530,
+        396
+      ],
+      "category": "List-item",
+      "text": "h. Oversight of the New York City Year 2000 Project Office, including agency compliance with City mandates;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3586,
+          "min": -1.5467
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0005,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 24,
+          "mean": -0.0155,
+          "min": -0.3496
+        }
+      },
+      "ink": {
+        "ink_px": 7192,
+        "area_px": 115115,
+        "density": 0.06248,
+        "chars": 107,
+        "chars_per_1k_ink": 14.88
+      }
+    },
+    {
+      "bbox": [
+        494,
+        440,
+        1528,
+        555
+      ],
+      "category": "List-item",
+      "text": "i. Coordinating the conduct of external audits which address any aspect of agency data processing or technology;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3097,
+          "min": -1.6078
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 21,
+          "mean": -0.0005,
+          "min": -0.0062
+        }
+      },
+      "ink": {
+        "ink_px": 6488,
+        "area_px": 115575,
+        "density": 0.05614,
+        "chars": 112,
+        "chars_per_1k_ink": 17.26
+      }
+    },
+    {
+      "bbox": [
+        488,
+        600,
+        1530,
+        1031
+      ],
+      "category": "List-item",
+      "text": "j. Developing a coordinated citywide approach to risk management of city technology resources, including promulgation and monitoring of guidelines governing agency internal control environments, working in conjunction with the Department of Investigation, the Mayor's Office of Emergency Management and other relevant agencies;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2845,
+          "min": -1.3488
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 51,
+          "mean": -0.0001,
+          "min": -0.0031
+        }
+      },
+      "ink": {
+        "ink_px": 20766,
+        "area_px": 434730,
+        "density": 0.04777,
+        "chars": 327,
+        "chars_per_1k_ink": 15.75
+      }
+    },
+    {
+      "bbox": [
+        483,
+        1074,
+        1514,
+        1824
+      ],
+      "category": "List-item",
+      "text": "k. Establishing sub-committees to address specific technology projects and issues that have strategic and citywide implications. Such sub-committees may be charged with developing proposals on topics including but not be limited to: security, internal controls, contingency planning and disaster recovery issues, technology standards, the implementation of integrated voice/data technology, acquisition strategies, and staff recruitment, retention and training. Each sub-committee shall be chaired by a designee of the Committee and may also include representatives of City agencies with relevant expertise;",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2999,
+          "min": -1.5957
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0018,
+          "min": -0.0036
+        },
+        "text": {
+          "n_tokens": 101,
+          "mean": -0.0024,
+          "min": -0.2015
+        }
+      },
+      "ink": {
+        "ink_px": 35199,
+        "area_px": 758952,
+        "density": 0.04638,
+        "chars": 607,
+        "chars_per_1k_ink": 17.24
+      }
+    },
+    {
+      "bbox": [
+        470,
+        1866,
+        1502,
+        2146
+      ],
+      "category": "List-item",
+      "text": "l. Developing a citywide program to recognize innovation and outstanding contributions by agency personnel who have developed technology solutions that enhance service delivery, customer satisfaction, and agency productivity.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2725,
+          "min": -1.4481
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0018,
+          "min": -0.0036
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0097,
+          "min": -0.3166
+        }
+      },
+      "ink": {
+        "ink_px": 13320,
+        "area_px": 287840,
+        "density": 0.04628,
+        "chars": 225,
+        "chars_per_1k_ink": 16.89
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 417,
+    "content": {
+      "n_tokens": 230,
+      "mean": -0.0041,
+      "min": -0.3496,
+      "p05": -0.0026,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 52,
+          "token_id": 11,
+          "logprob": -0.3496,
+          "text": ","
+        },
+        {
+          "index": 382,
+          "token_id": 75,
+          "logprob": -0.3166,
+          "text": "l"
+        },
+        {
+          "index": 317,
+          "token_id": 13,
+          "logprob": -0.2015,
+          "text": "."
+        },
+        {
+          "index": 59,
+          "token_id": 10892,
+          "logprob": -0.018,
+          "text": ";\""
+        },
+        {
+          "index": 283,
+          "token_id": 25,
+          "logprob": -0.0155,
+          "text": ":"
+        },
+        {
+          "index": 343,
+          "token_id": 10892,
+          "logprob": -0.0127,
+          "text": ";\""
+        },
+        {
+          "index": 116,
+          "token_id": 10892,
+          "logprob": -0.0062,
+          "text": ";\""
+        },
+        {
+          "index": 109,
+          "token_id": 12893,
+          "logprob": -0.0036,
+          "text": " aspect"
+        },
+        {
+          "index": 53,
+          "token_id": 2670,
+          "logprob": -0.0034,
+          "text": " including"
+        },
+        {
+          "index": 204,
+          "token_id": 10892,
+          "logprob": -0.0031,
+          "text": ";\""
+        },
+        {
+          "index": 414,
+          "token_id": 1189,
+          "logprob": -0.0029,
+          "text": ".\""
+        },
+        {
+          "index": 304,
+          "token_id": 13167,
+          "logprob": -0.0028,
+          "text": "/data"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 110,
+      "mean": -0.2765,
+      "min": -1.6078,
+      "p05": -1.4878,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 67,
+          "token_id": 19,
+          "logprob": -1.6078,
+          "text": "4"
+        },
+        {
+          "index": 224,
+          "token_id": 19,
+          "logprob": -1.5957,
+          "text": "4"
+        },
+        {
+          "index": 212,
+          "token_id": 18,
+          "logprob": -1.5832,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -1.5467,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 16,
+          "logprob": -1.543,
+          "text": "1"
+        },
+        {
+          "index": 230,
+          "token_id": 19,
+          "logprob": -1.5009,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.4718,
+          "text": "8"
+        },
+        {
+          "index": 218,
+          "token_id": 19,
+          "logprob": -1.4511,
+          "text": "4"
+        },
+        {
+          "index": 357,
+          "token_id": 21,
+          "logprob": -1.4481,
+          "text": "6"
+        },
+        {
+          "index": 369,
+          "token_id": 21,
+          "logprob": -1.4232,
+          "text": "6"
+        },
+        {
+          "index": 83,
+          "token_id": 20,
+          "logprob": -1.4083,
+          "text": "5"
+        },
+        {
+          "index": 363,
+          "token_id": 17,
+          "logprob": -1.3979,
+          "text": "2"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 417,
+      "mean": -0.0752,
+      "min": -1.6078,
+      "p05": -0.5843,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 245.72,
+    "std": 42.46,
+    "dark_fraction": 0.03393
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 83197,
+    "rule_px": 0,
+    "covered_px": 82965,
+    "covered_fraction": 0.99721,
+    "uncovered_px": 232,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

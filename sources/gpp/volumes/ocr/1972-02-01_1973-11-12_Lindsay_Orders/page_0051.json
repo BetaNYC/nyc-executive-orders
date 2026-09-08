@@ -180,7 +180,7 @@
         1281
       ],
       "category": "Section-header",
-      "text": "## § 2. Applicability",
+      "text": "## \u00a7 2. Applicability",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -248,7 +248,7 @@
         1523
       ],
       "category": "Section-header",
-      "text": "## § 3. Employee Alcoholism Program",
+      "text": "## \u00a7 3. Employee Alcoholism Program",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -440,7 +440,7 @@
           "index": 357,
           "token_id": 16625,
           "logprob": -0.1365,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 36,
@@ -606,15 +606,26 @@
   "ink_coverage": {
     "roi": [
       263,
-      417,
+      81,
       1933,
-      3064
+      3385
     ],
-    "ink_px": 21015,
+    "ink_px": 22808,
+    "rule_px": 950,
     "covered_px": 20321,
-    "covered_fraction": 0.96698,
-    "uncovered_px": 694,
-    "uncovered_regions": [],
+    "covered_fraction": 0.92968,
+    "uncovered_px": 1537,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1463,
+          3379,
+          1933,
+          3385
+        ],
+        "ink_px": 641
+      }
+    ],
     "cell_px": 24
   }
 }

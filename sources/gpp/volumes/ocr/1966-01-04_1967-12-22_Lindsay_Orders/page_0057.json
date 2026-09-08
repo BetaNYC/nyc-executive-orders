@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 11341,
+        "area_px": 38760,
+        "density": 0.2926,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 34,
-        "area_px": 3816,
-        "density": 0.00891,
+        "ink_px": 4885,
+        "area_px": 53848,
+        "density": 0.09072,
         "chars": 53,
-        "chars_per_1k_ink": 1558.82
+        "chars_per_1k_ink": 10.85
       }
     },
     {
@@ -135,7 +141,7 @@
         1270
       ],
       "category": "Text",
-      "text": "(b) The exclusions from applicability set forth in subparagraphs (a) and (b) of paragraph (1) of subdivision a of this section 5 shall remain in effect with respect to each member so excluded, unless a prevailing state determination or wage accord determination made or entered into after the date of this Executive Order specifically grants to such member the benefits provided by sections 2 and 3 of this Order, for all or a part of the 1966-1967 increased-take-home-pay period, by reducing his contributions by a reduced-rate-of-contribution factor of 5%. In the event that such a prevailing rate determination or wage accord determination shall be made or entered into as to any such members, the Mayor shall, pursuant to administrative Code § B3-36.1, certify by executive order that the conditions precedent to applicability as to such members have been satisfied, and such benefits shall be applicable to such members at the rate of 5%, effective as of the date specified in such order, or if no such date is therein specified, then as of and beginning with the first day of the 1966-1967 increased-take-home-pay period and extending to and including the last day thereof.",
+      "text": "(b) The exclusions from applicability set forth in subparagraphs (a) and (b) of paragraph (1) of subdivision a of this section 5 shall remain in effect with respect to each member so excluded, unless a prevailing state determination or wage accord determination made or entered into after the date of this Executive Order specifically grants to such member the benefits provided by sections 2 and 3 of this Order, for all or a part of the 1966-1967 increased-take-home-pay period, by reducing his contributions by a reduced-rate-of-contribution factor of 5%. In the event that such a prevailing rate determination or wage accord determination shall be made or entered into as to any such members, the Mayor shall, pursuant to administrative Code \u00a7 B3-36.1, certify by executive order that the conditions precedent to applicability as to such members have been satisfied, and such benefits shall be applicable to such members at the rate of 5%, effective as of the date specified in such order, or if no such date is therein specified, then as of and beginning with the first day of the 1966-1967 increased-take-home-pay period and extending to and including the last day thereof.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -169,7 +175,7 @@
         2054
       ],
       "category": "Text",
-      "text": "(c) The exclusion from applicability set forth in subparagraph (c) of paragraph (1) of subdivision a of this section 5 shall remain in effect with respect to each member so excluded, unless a wage agreement entered into after the date of this Executive Order specifically grants to such member, for all or a portion of the 1966-1967 increased-take-home-pay period, the benefits provided by sections 2 and 3 of this Order, by reducing his contributions by a reduced-rate-of-contribution-factor of 5%. In the event that such wage agreement specifically grants such benefits to any such members for all or a portion of such period of time, the Mayor shall, pursuant to Administrative Code, § B3-36.1, certify by executive order that the conditions precedent to applicability with respect to the benefits so granted have been satisfied as to such members included within such agreement, and such benefits shall be applicable to such members at the rate of 5%, effective as of the date and for the term specified in such order, or if no such date and term are therein specified, then as of and beginning with the first day of the 1966-1967 increased-take-home-pay period and extending to and including the last day thereof.",
+      "text": "(c) The exclusion from applicability set forth in subparagraph (c) of paragraph (1) of subdivision a of this section 5 shall remain in effect with respect to each member so excluded, unless a wage agreement entered into after the date of this Executive Order specifically grants to such member, for all or a portion of the 1966-1967 increased-take-home-pay period, the benefits provided by sections 2 and 3 of this Order, by reducing his contributions by a reduced-rate-of-contribution-factor of 5%. In the event that such wage agreement specifically grants such benefits to any such members for all or a portion of such period of time, the Mayor shall, pursuant to Administrative Code, \u00a7 B3-36.1, certify by executive order that the conditions precedent to applicability with respect to the benefits so granted have been satisfied as to such members included within such agreement, and such benefits shall be applicable to such members at the rate of 5%, effective as of the date and for the term specified in such order, or if no such date and term are therein specified, then as of and beginning with the first day of the 1966-1967 increased-take-home-pay period and extending to and including the last day thereof.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -425,15 +431,35 @@
   "ink_coverage": {
     "roi": [
       291,
-      417,
+      78,
       2140,
-      3060
+      3350
     ],
-    "ink_px": 355511,
-    "covered_px": 355241,
-    "covered_fraction": 0.99924,
-    "uncovered_px": 270,
-    "uncovered_regions": [],
+    "ink_px": 374830,
+    "rule_px": 1409,
+    "covered_px": 371433,
+    "covered_fraction": 0.99468,
+    "uncovered_px": 1988,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1755,
+          3343,
+          2139,
+          3350
+        ],
+        "ink_px": 672
+      },
+      {
+        "bbox": [
+          2048,
+          78,
+          2140,
+          104
+        ],
+        "ink_px": 454
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5709,
+        "area_px": 16065,
+        "density": 0.35537,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -51,7 +57,13 @@
           "min": -0.0116
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2021,
+        "area_px": 15378,
+        "density": 0.13142,
+        "chars": 53,
+        "chars_per_1k_ink": 26.22
+      }
     },
     {
       "bbox": [
@@ -95,7 +107,7 @@
         1507
       ],
       "category": "Text",
-      "text": "§ 3. Pursuant to Chapter 870 of the Laws of 1969 and subdivision 1 of section B3-36.3 of the Administrative Code (L.1964, ch 954), the reduced-rate-of contribution factor shall be five percent in the case of all members of the Uniformed Correction Force, as defined by Laws 1964, Chapter 954, who elected the optional plan of retirement provided for by such Chapter pursuant to its terms and who were members of the New York City Employees' Retirement System under such plan immediately prior to the commencement date of the 1969-1970 increased-take-home pay period. The reduced rate of contribution factor in the case of all members of the Uniformed Correction Force, as defined in Laws of 1964, Chapter 954, who on or after the commencement date of the 1969-1970 increased-take-home pay period, have the privilege, under such Chapter, of electing the optional plan of retirement provided for by such Chapter, and who elect, within the time limited therefor, by such Chapter 954, an optional plan of retirement pursuant to such chapter shall be five percent, and such benefit shall be effective from the date of commencement of membership in the New York City Employees' Retirement System, or from the date of commencement of service in the Uniformed Correction Force, whichever is later, provided however that such benefits shall not be effective from any",
+      "text": "\u00a7 3. Pursuant to Chapter 870 of the Laws of 1969 and subdivision 1 of section B3-36.3 of the Administrative Code (L.1964, ch 954), the reduced-rate-of contribution factor shall be five percent in the case of all members of the Uniformed Correction Force, as defined by Laws 1964, Chapter 954, who elected the optional plan of retirement provided for by such Chapter pursuant to its terms and who were members of the New York City Employees' Retirement System under such plan immediately prior to the commencement date of the 1969-1970 increased-take-home pay period. The reduced rate of contribution factor in the case of all members of the Uniformed Correction Force, as defined in Laws of 1964, Chapter 954, who on or after the commencement date of the 1969-1970 increased-take-home pay period, have the privilege, under such Chapter, of electing the optional plan of retirement provided for by such Chapter, and who elect, within the time limited therefor, by such Chapter 954, an optional plan of retirement pursuant to such chapter shall be five percent, and such benefit shall be effective from the date of commencement of membership in the New York City Employees' Retirement System, or from the date of commencement of service in the Uniformed Correction Force, whichever is later, provided however that such benefits shall not be effective from any",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -151,7 +163,7 @@
           "index": 155,
           "token_id": 17851,
           "logprob": -0.061,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 374,
@@ -317,15 +329,26 @@
   "ink_coverage": {
     "roi": [
       153,
-      238,
+      0,
       1126,
-      1752
+      1927
     ],
-    "ink_px": 10023,
-    "covered_px": 9995,
-    "covered_fraction": 0.99721,
-    "uncovered_px": 28,
-    "uncovered_regions": [],
+    "ink_px": 19502,
+    "rule_px": 866,
+    "covered_px": 17725,
+    "covered_fraction": 0.95112,
+    "uncovered_px": 911,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          537,
+          1917,
+          681,
+          1923
+        ],
+        "ink_px": 413
+      }
+    ],
     "cell_px": 24
   }
 }

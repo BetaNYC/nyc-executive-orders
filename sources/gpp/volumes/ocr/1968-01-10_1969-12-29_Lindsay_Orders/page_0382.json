@@ -28,7 +28,13 @@
           "min": -0.0212
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1056,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -58,7 +64,7 @@
       },
       "ink": {
         "ink_px": 0,
-        "area_px": 51558,
+        "area_px": 52219,
         "density": 0.0,
         "chars": 126,
         "chars_per_1k_ink": null
@@ -208,7 +214,7 @@
         870
       ],
       "category": "Text",
-      "text": "§ 4. The Task Force may require such reports, analyses and statements from the agencies of the City as it may deem necessary for the proper performance of its duties hereunder.",
+      "text": "\u00a7 4. The Task Force may require such reports, analyses and statements from the agencies of the City as it may deem necessary for the proper performance of its duties hereunder.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -242,7 +248,7 @@
         967
       ],
       "category": "Text",
-      "text": "§ 5. The Task Force may employ such professional, technical and clerical staff within budgetary appropriation as may be necessary to conduct its business.",
+      "text": "\u00a7 5. The Task Force may employ such professional, technical and clerical staff within budgetary appropriation as may be necessary to conduct its business.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -355,7 +361,7 @@
           "index": 394,
           "token_id": 17851,
           "logprob": -0.1749,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 135,
@@ -527,15 +533,26 @@
   "ink_coverage": {
     "roi": [
       153,
-      237,
+      0,
       1123,
-      1743
+      1915
     ],
-    "ink_px": 0,
+    "ink_px": 1290,
+    "rule_px": 341,
     "covered_px": 0,
-    "covered_fraction": null,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.0,
+    "uncovered_px": 949,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          399,
+          1907,
+          512,
+          1915
+        ],
+        "ink_px": 432
+      }
+    ],
     "cell_px": 24
   }
 }

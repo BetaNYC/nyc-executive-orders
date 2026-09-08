@@ -28,7 +28,13 @@
           "min": -0.0092
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 203,
+        "area_px": 2520,
+        "density": 0.08056,
+        "chars": 3,
+        "chars_per_1k_ink": 14.78
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.5009
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2470,
+        "area_px": 24816,
+        "density": 0.09953,
+        "chars": 23,
+        "chars_per_1k_ink": 9.31
+      }
     },
     {
       "bbox": [
@@ -202,7 +214,7 @@
         1520
       ],
       "category": "Text",
-      "text": "§7. All agencies shall be subject to the following general terms and conditions in the administration of budget appropriations.",
+      "text": "\u00a77. All agencies shall be subject to the following general terms and conditions in the administration of budget appropriations.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -382,7 +394,7 @@
           "index": 382,
           "token_id": 17851,
           "logprob": -1.0628,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 73,
@@ -560,15 +572,26 @@
   "ink_coverage": {
     "roi": [
       263,
-      421,
+      94,
       1934,
-      3094
+      3405
     ],
-    "ink_px": 75496,
-    "covered_px": 75477,
-    "covered_fraction": 0.99975,
-    "uncovered_px": 19,
-    "uncovered_regions": [],
+    "ink_px": 80690,
+    "rule_px": 1292,
+    "covered_px": 78150,
+    "covered_fraction": 0.98428,
+    "uncovered_px": 1248,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1439,
+          3396,
+          1934,
+          3405
+        ],
+        "ink_px": 980
+      }
+    ],
     "cell_px": 24
   }
 }

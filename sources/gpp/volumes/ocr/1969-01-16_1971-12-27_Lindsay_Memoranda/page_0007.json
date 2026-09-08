@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 12,
-        "area_px": 80100,
+        "ink_px": 14,
+        "area_px": 93717,
         "density": 0.00015,
         "chars": 20,
-        "chars_per_1k_ink": 1666.67
+        "chars_per_1k_ink": 1428.57
       }
     },
     {
@@ -58,8 +58,8 @@
         "text": null
       },
       "ink": {
-        "ink_px": 7,
-        "area_px": 43460,
+        "ink_px": 12,
+        "area_px": 74995,
         "density": 0.00016,
         "chars": 0,
         "chars_per_1k_ink": 0.0
@@ -93,8 +93,8 @@
       },
       "ink": {
         "ink_px": 150,
-        "area_px": 40176,
-        "density": 0.00373,
+        "area_px": 42408,
+        "density": 0.00354,
         "chars": 22,
         "chars_per_1k_ink": 146.67
       }
@@ -227,7 +227,13 @@
           "min": -1.8978
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 20286,
+        "density": 0.0,
+        "chars": 22,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -659,9 +665,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 5052,
-        "area_px": 186186,
-        "density": 0.02713,
+        "ink_px": 5106,
+        "area_px": 261144,
+        "density": 0.01955,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -862,15 +868,35 @@
   "ink_coverage": {
     "roi": [
       300,
-      388,
+      125,
       2201,
-      2849
+      3133
     ],
-    "ink_px": 68029,
-    "covered_px": 67745,
-    "covered_fraction": 0.99583,
-    "uncovered_px": 284,
-    "uncovered_regions": [],
+    "ink_px": 72003,
+    "rule_px": 2608,
+    "covered_px": 67804,
+    "covered_fraction": 0.97707,
+    "uncovered_px": 1591,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1932,
+          125,
+          2201,
+          134
+        ],
+        "ink_px": 693
+      },
+      {
+        "bbox": [
+          1766,
+          3130,
+          2196,
+          3133
+        ],
+        "ink_px": 451
+      }
+    ],
     "cell_px": 24
   }
 }

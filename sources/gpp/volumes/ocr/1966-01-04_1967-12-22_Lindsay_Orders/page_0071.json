@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16815,
+        "area_px": 52002,
+        "density": 0.32335,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 3879,
-        "area_px": 37291,
-        "density": 0.10402,
+        "ink_px": 6182,
+        "area_px": 52375,
+        "density": 0.11803,
         "chars": 53,
-        "chars_per_1k_ink": 13.66
+        "chars_per_1k_ink": 8.57
       }
     },
     {
@@ -203,7 +209,7 @@
         1615
       ],
       "category": "Section-header",
-      "text": "§3. New York City Council Against Poverty.",
+      "text": "\u00a73. New York City Council Against Poverty.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -426,11 +432,11 @@
         }
       },
       "ink": {
-        "ink_px": 588,
-        "area_px": 57456,
-        "density": 0.01023,
+        "ink_px": 956,
+        "area_px": 82080,
+        "density": 0.01165,
         "chars": 39,
-        "chars_per_1k_ink": 66.33
+        "chars_per_1k_ink": 40.79
       }
     }
   ],
@@ -481,7 +487,7 @@
           "index": 378,
           "token_id": 17851,
           "logprob": -0.0861,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 125,
@@ -629,15 +635,26 @@
   "ink_coverage": {
     "roi": [
       289,
-      417,
+      108,
       2121,
-      3058
+      3352
     ],
-    "ink_px": 87883,
-    "covered_px": 87883,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 110044,
+    "rule_px": 660,
+    "covered_px": 107369,
+    "covered_fraction": 0.98158,
+    "uncovered_px": 2015,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1377,
+          156,
+          1417,
+          216
+        ],
+        "ink_px": 767
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -78,7 +78,7 @@
         1761
       ],
       "category": "List-item",
-      "text": "(f) to take note of the recommendations with respect to the matters and agencies subject to the jurisdiction of the Mayor's Task Force on Reorganization and, in consultation with and subject to the supervision of the City Administrator, pursuant to the terms of § 3 (j) of Executive Order No. 9, dated March 4, 1966, to initiate plans and to make such preparations as may be appropriate for the effective and economical implementation of such recommendations, as they are enacted into law.",
+      "text": "(f) to take note of the recommendations with respect to the matters and agencies subject to the jurisdiction of the Mayor's Task Force on Reorganization and, in consultation with and subject to the supervision of the City Administrator, pursuant to the terms of \u00a7 3 (j) of Executive Order No. 9, dated March 4, 1966, to initiate plans and to make such preparations as may be appropriate for the effective and economical implementation of such recommendations, as they are enacted into law.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -112,7 +112,7 @@
         1957
       ],
       "category": "Text",
-      "text": "### § 4. Repeal of Previous Executive Orders.\nThe following Executive Orders are superseded by this Order, and are hereby repealed:",
+      "text": "### \u00a7 4. Repeal of Previous Executive Orders.\nThe following Executive Orders are superseded by this Order, and are hereby repealed:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -282,7 +282,7 @@
         3073
       ],
       "category": "Text",
-      "text": "### § 5. Effective Date.\nThis Order shall be effective immediately.",
+      "text": "### \u00a7 5. Effective Date.\nThis Order shall be effective immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -334,7 +334,13 @@
           "min": -0.0067
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 545,
+        "area_px": 9071,
+        "density": 0.06008,
+        "chars": 5,
+        "chars_per_1k_ink": 9.17
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -532,23 +538,60 @@
   "ink_coverage": {
     "roi": [
       285,
-      418,
+      119,
       2090,
-      3069
+      3367
     ],
-    "ink_px": 167869,
-    "covered_px": 167163,
-    "covered_fraction": 0.99579,
-    "uncovered_px": 706,
+    "ink_px": 177460,
+    "rule_px": 2272,
+    "covered_px": 167708,
+    "covered_fraction": 0.9573,
+    "uncovered_px": 7480,
     "uncovered_regions": [
       {
         "bbox": [
-          1749,
-          418,
-          1821,
-          538
+          1621,
+          203,
+          1814,
+          525
         ],
-        "ink_px": 682
+        "ink_px": 3470
+      },
+      {
+        "bbox": [
+          717,
+          119,
+          807,
+          200
+        ],
+        "ink_px": 903
+      },
+      {
+        "bbox": [
+          1198,
+          119,
+          1348,
+          155
+        ],
+        "ink_px": 793
+      },
+      {
+        "bbox": [
+          285,
+          3365,
+          807,
+          3367
+        ],
+        "ink_px": 618
+      },
+      {
+        "bbox": [
+          1094,
+          126,
+          1197,
+          191
+        ],
+        "ink_px": 607
       }
     ],
     "cell_px": 24

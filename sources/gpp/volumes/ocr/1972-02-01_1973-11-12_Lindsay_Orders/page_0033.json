@@ -10,7 +10,7 @@
         821
       ],
       "category": "Text",
-      "text": "§6. Those agencies not specifically excepted from the provisions of Section 5 herein providing for the withdrawal of the power of budget modifications shall be governed by the following special terms and conditions in the administration of budget appropriations:",
+      "text": "\u00a76. Those agencies not specifically excepted from the provisions of Section 5 herein providing for the withdrawal of the power of budget modifications shall be governed by the following special terms and conditions in the administration of budget appropriations:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -196,7 +196,7 @@
           "index": 35,
           "token_id": 17851,
           "logprob": -0.0944,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 116,
@@ -368,15 +368,26 @@
   "ink_coverage": {
     "roi": [
       263,
-      416,
+      83,
       1928,
-      3053
+      3383
     ],
-    "ink_px": 98294,
+    "ink_px": 99579,
+    "rule_px": 426,
     "covered_px": 98141,
-    "covered_fraction": 0.99844,
-    "uncovered_px": 153,
-    "uncovered_regions": [],
+    "covered_fraction": 0.98979,
+    "uncovered_px": 1012,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1465,
+          3381,
+          1928,
+          3383
+        ],
+        "ink_px": 494
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4563,
+        "area_px": 17907,
+        "density": 0.25482,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 1050,
-        "area_px": 10575,
-        "density": 0.09929,
+        "ink_px": 1484,
+        "area_px": 14850,
+        "density": 0.09993,
         "chars": 58,
-        "chars_per_1k_ink": 55.24
+        "chars_per_1k_ink": 39.08
       }
     },
     {
@@ -305,7 +311,7 @@
         1251
       ],
       "category": "Text",
-      "text": "## §2. The membership of the Mayor's Committee on Pensions shall consist of the following or their designees: a member of the Mayor's staff, who shall be the Chairman, The Comptroller of the City of New York, the President of the City Council, the Deputy Mayor-City Administrator, the Corporation Counsel, the Director of the Bureau of the Budget, the Director of Office of Labor Relations,",
+      "text": "## \u00a72. The membership of the Mayor's Committee on Pensions shall consist of the following or their designees: a member of the Mayor's staff, who shall be the Chairman, The Comptroller of the City of New York, the President of the City Council, the Deputy Mayor-City Administrator, the Corporation Counsel, the Director of the Bureau of the Budget, the Director of Office of Labor Relations,",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -355,7 +361,7 @@
           "index": 523,
           "token_id": 16625,
           "logprob": -0.4822,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 525,
@@ -527,15 +533,26 @@
   "ink_coverage": {
     "roi": [
       141,
-      174,
+      0,
       1034,
-      1281
+      1418
     ],
-    "ink_px": 1050,
-    "covered_px": 1050,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 9931,
+    "rule_px": 2726,
+    "covered_px": 6047,
+    "covered_fraction": 0.83928,
+    "uncovered_px": 1158,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          501,
+          1396,
+          569,
+          1413
+        ],
+        "ink_px": 487
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16848,
+        "area_px": 52216,
+        "density": 0.32266,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 3859,
-        "area_px": 35870,
-        "density": 0.10758,
+        "ink_px": 6172,
+        "area_px": 53594,
+        "density": 0.11516,
         "chars": 53,
-        "chars_per_1k_ink": 13.73
+        "chars_per_1k_ink": 8.59
       }
     },
     {
@@ -339,7 +345,7 @@
         1290
       ],
       "category": "Section-header",
-      "text": "§ 2. Procedures and standards for Medical Examination.",
+      "text": "\u00a7 2. Procedures and standards for Medical Examination.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -679,7 +685,7 @@
         2153
       ],
       "category": "Text",
-      "text": "§ 3. Medical Re-examination. Employees in the title of Motor Vehicle Operator, and other employees who drive City vehicles as an important part of their duties, shall be subject to periodic medical re-examination.",
+      "text": "\u00a7 3. Medical Re-examination. Employees in the title of Motor Vehicle Operator, and other employees who drive City vehicles as an important part of their duties, shall be subject to periodic medical re-examination.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -713,7 +719,7 @@
         2181
       ],
       "category": "Section-header",
-      "text": "§ 4. Procedures and Standards for Medical Re-examination.",
+      "text": "\u00a7 4. Procedures and Standards for Medical Re-examination.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -1029,7 +1035,7 @@
           "index": 582,
           "token_id": 17851,
           "logprob": -0.6503,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 84,
@@ -1207,41 +1213,33 @@
   "ink_coverage": {
     "roi": [
       283,
-      413,
+      101,
       2079,
-      3030
+      3349
     ],
-    "ink_px": 88804,
-    "covered_px": 84698,
-    "covered_fraction": 0.95376,
-    "uncovered_px": 4106,
+    "ink_px": 110540,
+    "rule_px": 3679,
+    "covered_px": 103859,
+    "covered_fraction": 0.97191,
+    "uncovered_px": 3002,
     "uncovered_regions": [
       {
         "bbox": [
-          499,
-          773,
-          1219,
-          797
+          1350,
+          149,
+          1391,
+          209
         ],
-        "ink_px": 2234
+        "ink_px": 749
       },
       {
         "bbox": [
-          1051,
-          1973,
-          1411,
-          1997
+          1346,
+          3348,
+          1771,
+          3349
         ],
-        "ink_px": 737
-      },
-      {
-        "bbox": [
-          1699,
-          797,
-          1723,
-          1109
-        ],
-        "ink_px": 688
+        "ink_px": 422
       }
     ],
     "cell_px": 24

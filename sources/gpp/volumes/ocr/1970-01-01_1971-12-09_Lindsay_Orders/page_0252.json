@@ -28,7 +28,13 @@
           "min": -0.002
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1350,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -72,7 +78,7 @@
         425
       ],
       "category": "Text",
-      "text": "§2. The Personnel Director of the City of New York is hereby designated to occupy such position and he shall serve without any additional compensation as such Special Assistant.",
+      "text": "\u00a72. The Personnel Director of the City of New York is hereby designated to occupy such position and he shall serve without any additional compensation as such Special Assistant.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -106,7 +112,7 @@
         587
       ],
       "category": "Text",
-      "text": "§3. The functions, powers and duties vested in the Mayor as Chief Executive Officer pursuant to Section 210 of the Civil Service Law are hereby delegated to the said Special Assistant to the Mayor.",
+      "text": "\u00a73. The functions, powers and duties vested in the Mayor as Chief Executive Officer pursuant to Section 210 of the Civil Service Law are hereby delegated to the said Special Assistant to the Mayor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -140,7 +146,7 @@
         644
       ],
       "category": "Text",
-      "text": "§4. This Order shall take effect immediately.",
+      "text": "\u00a74. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -259,7 +265,7 @@
           "index": 123,
           "token_id": 17851,
           "logprob": -0.013,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 203,
@@ -425,15 +431,35 @@
   "ink_coverage": {
     "roi": [
       172,
-      223,
+      0,
       1265,
-      1640
+      1813
     ],
-    "ink_px": 13,
+    "ink_px": 1471,
+    "rule_px": 381,
     "covered_px": 13,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.01193,
+    "uncovered_px": 1077,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          604,
+          1778,
+          685,
+          1795
+        ],
+        "ink_px": 621
+      },
+      {
+        "bbox": [
+          942,
+          1808,
+          1265,
+          1813
+        ],
+        "ink_px": 456
+      }
+    ],
     "cell_px": 24
   }
 }

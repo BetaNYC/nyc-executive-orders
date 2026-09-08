@@ -1,0 +1,310 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        205,
+        329,
+        1511,
+        441
+      ],
+      "category": "Text",
+      "text": "State legislative committees; and maintain liaison with the Office of the President and all Federal departments and agencies, the Office of the Governor and all State departments and agencies, and the City Council.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2938,
+          "min": -1.6045
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 37,
+          "mean": -0.0028,
+          "min": -0.101
+        }
+      },
+      "ink": {
+        "ink_px": 20622,
+        "area_px": 147013,
+        "density": 0.14027,
+        "chars": 214,
+        "chars_per_1k_ink": 10.38
+      }
+    },
+    {
+      "bbox": [
+        511,
+        482,
+        1321,
+        517
+      ],
+      "category": "Text",
+      "text": "Section 3. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2648,
+          "min": -1.1807
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0162,
+          "min": -0.0162
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.001,
+          "min": -0.0099
+        }
+      },
+      "ink": {
+        "ink_px": 5231,
+        "area_px": 29268,
+        "density": 0.17873,
+        "chars": 52,
+        "chars_per_1k_ink": 9.94
+      }
+    },
+    {
+      "bbox": [
+        965,
+        583,
+        1444,
+        779
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3892,
+          "min": -1.5343
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0009,
+          "min": -0.0009
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 11033,
+        "area_px": 94757,
+        "density": 0.11643,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 151,
+    "content": {
+      "n_tokens": 48,
+      "mean": -0.0024,
+      "min": -0.101,
+      "p05": -0.002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 50,
+          "token_id": 12137,
+          "logprob": -0.101,
+          "text": " Federal"
+        },
+        {
+          "index": 107,
+          "token_id": 9620,
+          "logprob": -0.0099,
+          "text": "Section"
+        },
+        {
+          "index": 71,
+          "token_id": 1189,
+          "logprob": -0.0027,
+          "text": ".\""
+        },
+        {
+          "index": 117,
+          "token_id": 1189,
+          "logprob": -0.0008,
+          "text": ".\""
+        },
+        {
+          "index": 38,
+          "token_id": 26,
+          "logprob": -0.0003,
+          "text": ";"
+        },
+        {
+          "index": 111,
+          "token_id": 1096,
+          "logprob": -0.0003,
+          "text": " This"
+        },
+        {
+          "index": 114,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 35,
+          "token_id": 1397,
+          "logprob": -0.0001,
+          "text": "State"
+        },
+        {
+          "index": 41,
+          "token_id": 82099,
+          "logprob": -0.0001,
+          "text": " liaison"
+        },
+        {
+          "index": 62,
+          "token_id": 3234,
+          "logprob": -0.0001,
+          "text": " State"
+        },
+        {
+          "index": 47,
+          "token_id": 4795,
+          "logprob": -0.0,
+          "text": " President"
+        },
+        {
+          "index": 51,
+          "token_id": 25215,
+          "logprob": -0.0,
+          "text": " departments"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.3004,
+      "min": -1.6045,
+      "p05": -1.448,
+      "p50": -0.0009,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.6045,
+          "text": "5"
+        },
+        {
+          "index": 125,
+          "token_id": 20,
+          "logprob": -1.5343,
+          "text": "5"
+        },
+        {
+          "index": 136,
+          "token_id": 19,
+          "logprob": -1.5242,
+          "text": "4"
+        },
+        {
+          "index": 130,
+          "token_id": 18,
+          "logprob": -1.4439,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.2879,
+          "text": "1"
+        },
+        {
+          "index": 79,
+          "token_id": 16,
+          "logprob": -1.1807,
+          "text": "1"
+        },
+        {
+          "index": 84,
+          "token_id": 17,
+          "logprob": -1.175,
+          "text": "2"
+        },
+        {
+          "index": 90,
+          "token_id": 16,
+          "logprob": -1.1447,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.1221,
+          "text": "9"
+        },
+        {
+          "index": 95,
+          "token_id": 22,
+          "logprob": -1.08,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -1.0785,
+          "text": "1"
+        },
+        {
+          "index": 141,
+          "token_id": 24,
+          "logprob": -0.75,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 151,
+      "mean": -0.1207,
+      "min": -1.6045,
+      "p05": -1.1334,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.64,
+    "std": 30.99,
+    "dark_fraction": 0.01682
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      616.0,
+      806.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      205,
+      0,
+      1506,
+      2239
+    ],
+    "ink_px": 37779,
+    "rule_px": 0,
+    "covered_px": 36886,
+    "covered_fraction": 0.97636,
+    "uncovered_px": 893,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

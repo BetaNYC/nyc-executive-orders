@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 7905,
+        "area_px": 38352,
+        "density": 0.20612,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 810,
-        "area_px": 13600,
-        "density": 0.05956,
+        "ink_px": 3232,
+        "area_px": 52700,
+        "density": 0.06133,
         "chars": 53,
-        "chars_per_1k_ink": 65.43
+        "chars_per_1k_ink": 16.4
       }
     },
     {
@@ -135,7 +141,7 @@
         1117
       ],
       "category": "Text",
-      "text": "§ 2. Effective during the period of time from and including the payroll period the first day of which is nearest to July 1, 1966 (which first day is hereinafter referred to as the commencement date of the 1966-1967 increased-take-home-pay period) and to and including the payroll period immediately preceding that, the first day of which is nearest to June 30, 1967 (which total period of time is hereinafter referred to as the \"1966-1967 increased take-home-pay period\"), the governing provisions of subdivision 14 of such subdivision j, as hereby made applicable, and the provisions of subdivision g, h and i of such section B3-36.1 shall be applicable to and for the benefit of all other-than-authority members of the New York City Employees' Retirement System, except as otherwise provided in Section 5 of this executive order.",
+      "text": "\u00a7 2. Effective during the period of time from and including the payroll period the first day of which is nearest to July 1, 1966 (which first day is hereinafter referred to as the commencement date of the 1966-1967 increased-take-home-pay period) and to and including the payroll period immediately preceding that, the first day of which is nearest to June 30, 1967 (which total period of time is hereinafter referred to as the \"1966-1967 increased take-home-pay period\"), the governing provisions of subdivision 14 of such subdivision j, as hereby made applicable, and the provisions of subdivision g, h and i of such section B3-36.1 shall be applicable to and for the benefit of all other-than-authority members of the New York City Employees' Retirement System, except as otherwise provided in Section 5 of this executive order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -169,7 +175,7 @@
         1372
       ],
       "category": "Text",
-      "text": "§ 3. Except as otherwise provided in Section 4 and subdivision f of Section five of this order, The Mayor hereby designates five percent as the reduced-rate-of-contribution factor to be used in computing the reduction of contributions of members entitled to benefits under the provisions of section 2 of this executive order.",
+      "text": "\u00a7 3. Except as otherwise provided in Section 4 and subdivision f of Section five of this order, The Mayor hereby designates five percent as the reduced-rate-of-contribution factor to be used in computing the reduction of contributions of members entitled to benefits under the provisions of section 2 of this executive order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -203,7 +209,7 @@
         1682
       ],
       "category": "Text",
-      "text": "§ 4. The reduced-rate-of-contribution factor shall be two and one-half per cent in the case of all members of the Uniformed Correction Force, as defined by Laws 1964, Chapter 954, who elected the optional plan of retirement provided for by such Chapter pursuant to its terms and who were members of the New York City Employees' Retirement System under such plan immediately prior to the commencement date of the 1966-1967 increased-take-home-pay period.",
+      "text": "\u00a7 4. The reduced-rate-of-contribution factor shall be two and one-half per cent in the case of all members of the Uniformed Correction Force, as defined by Laws 1964, Chapter 954, who elected the optional plan of retirement provided for by such Chapter pursuant to its terms and who were members of the New York City Employees' Retirement System under such plan immediately prior to the commencement date of the 1966-1967 increased-take-home-pay period.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -237,7 +243,7 @@
         1859
       ],
       "category": "Text",
-      "text": "§ 5. (a) Except as otherwise provided in subdivision e of this section 5, the Mayor hereby designates for conditional exclusion from the benefits provided by sections 2 and 3 of this executive order:",
+      "text": "\u00a7 5. (a) Except as otherwise provided in subdivision e of this section 5, the Mayor hereby designates for conditional exclusion from the benefits provided by sections 2 and 3 of this executive order:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -533,7 +539,7 @@
           "index": 202,
           "token_id": 17851,
           "logprob": -0.0687,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 359,
@@ -663,21 +669,31 @@
   "ink_coverage": {
     "roi": [
       292,
-      423,
+      107,
       2145,
-      3108
+      3379
     ],
-    "ink_px": 160852,
-    "covered_px": 160357,
-    "covered_fraction": 0.99692,
-    "uncovered_px": 495,
+    "ink_px": 175302,
+    "rule_px": 2463,
+    "covered_px": 170684,
+    "covered_fraction": 0.98753,
+    "uncovered_px": 2155,
     "uncovered_regions": [
       {
         "bbox": [
-          2116,
-          423,
+          1636,
+          3371,
           2145,
-          519
+          3379
+        ],
+        "ink_px": 1135
+      },
+      {
+        "bbox": [
+          2137,
+          431,
+          2145,
+          506
         ],
         "ink_px": 495
       }

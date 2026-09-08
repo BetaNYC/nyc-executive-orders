@@ -1,0 +1,55 @@
+{
+  "_comment": "Agencies the registry cannot hold, written in by hand. The registry (../ny-gov-web-registry) lists 317 agencies and marks EVERY one status:'active'; its relations/mandates/founding_date/dissolution_date fields are filled in for ZERO of them (measured 2026-08-26). So a body that was shut down - DoITT, the 1998 City of New York Technology Steering Committee, a task force wound up after its report - can only live here. This file is what makes lineage tracing possible, and it is filled in by hand from the review list that the new-name pass produces, never automatically.",
+  "_schema": "Same shape as a registry agency: id, name, short_name, other_names[]. Plus 'provenance', which MUST name at least one eo_id whose text shows the name in use - a name with no source order does not belong here (README: 'a guess is a bug').",
+  "_example": {
+    "id": "doitt",
+    "name": "Department of Information Technology and Telecommunications",
+    "short_name": "DoITT",
+    "other_names": [],
+    "status": "dissolved",
+    "provenance": {
+      "eo_ids": [
+        "1998-EO-043",
+        "2022-EO-003"
+      ],
+      "note": "..."
+    }
+  },
+  "entities": [
+    {
+      "id": "doitt",
+      "name": "Department of Information Technology and Telecommunications",
+      "short_name": "DoITT",
+      "other_names": [],
+      "status": "renamed",
+      "dissolution_date": "2022-01-19",
+      "provenance": {
+        "sources": [
+          "moda",
+          "corpus"
+        ],
+        "moda_record_id": "NYC_GOID_000382",
+        "note": "A NODE OF ITS OWN, not an alias of 'oti'. DoITT and the Office of Technology and Innovation are one office in law and two in time, and a lineage needs both ends of that to be separate things: filing the old name under the new id turns the 2022 rename into an edge whose two ends are the same node, and there is then nothing left to say that anything changed. 2022-EO-003 dates the change — 'The Department of Information Technology and Telecommunications shall hereafter be designated as the Office of Technology and Innovation' — so 'dissolution_date' is that order's date and the rename edge runs doitt -> oti. The registry cannot hold this entry itself: it lists 317 agencies and marks EVERY one status:'active'. MODA does know the pair — record NYC_GOID_000382 (Office of Technology and Innovation) lists 'Department of Information Technology and Telecommunications' under alternate_or_former_names and 'DoITT' under alternate_or_former_acronyms, and those two values are the ONLY ones out of all 306 MODA records that ../ny-gov-web-registry is missing (diffed by nyc_goid, 2026-08-26). The cause is upstream: the 'oti' record has provenance.sources ['manual','greenbook'] with no 'moda', so build_registry.py never merged it. Fixing that upstream would give OTI the DoITT names as other_names, which would put every DoITT mention back on 'oti' and undo this split. Keep this entry, and keep the two names off the 'oti' record.",
+        "eo_ids": [
+          "1995-EO-025",
+          "2006-EO-098",
+          "2008-EO-115",
+          "2014-EO-008",
+          "2022-EO-003"
+        ],
+        "eo_evidence": [
+          "1995-EO-025: earliest use of the long name in the corpus",
+          "2006-EO-098: \"the Commissioner of the Department of Information Technology and Telecommunications (DoITT)\"",
+          "2008-EO-115: \"the Department of Information Technology and Telecommunications (“DOITT”)\" — the all-capitals spelling is how the order is set, not OCR damage",
+          "2014-EO-008: \"The Commissioner of the Department of Information Technology and Telecommunications (DoITT)\"",
+          "2022-EO-003: the order that renames DoITT to OTI, and the source of dissolution_date"
+        ],
+        "counts_measured_2026-08-26": {
+          "orders_using_the_long_name": 55,
+          "orders_using_DoITT": 7,
+          "orders_using_DOITT": 8
+        }
+      }
+    }
+  ]
+}

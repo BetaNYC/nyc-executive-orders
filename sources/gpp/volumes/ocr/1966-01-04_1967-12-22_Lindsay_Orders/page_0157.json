@@ -413,7 +413,7 @@
         3104
       ],
       "category": "Section-header",
-      "text": "§ 2.",
+      "text": "\u00a7 2.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -500,11 +500,11 @@
         }
       },
       "ink": {
-        "ink_px": 16424,
-        "area_px": 478962,
-        "density": 0.03429,
+        "ink_px": 16435,
+        "area_px": 486750,
+        "density": 0.03376,
         "chars": 235,
-        "chars_per_1k_ink": 14.31
+        "chars_per_1k_ink": 14.3
       }
     }
   ],
@@ -543,7 +543,7 @@
           "index": 745,
           "token_id": 17851,
           "logprob": -0.116,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 664,
@@ -703,21 +703,31 @@
   "ink_coverage": {
     "roi": [
       309,
-      451,
+      155,
       2272,
-      3310
+      3626
     ],
-    "ink_px": 187275,
-    "covered_px": 186445,
-    "covered_fraction": 0.99557,
-    "uncovered_px": 830,
+    "ink_px": 190603,
+    "rule_px": 2427,
+    "covered_px": 186456,
+    "covered_fraction": 0.99086,
+    "uncovered_px": 1720,
     "uncovered_regions": [
       {
         "bbox": [
+          1749,
+          3619,
+          2272,
+          3626
+        ],
+        "ink_px": 728
+      },
+      {
+        "bbox": [
           885,
-          1795,
-          1245,
-          1819
+          1799,
+          1243,
+          1807
         ],
         "ink_px": 697
       }

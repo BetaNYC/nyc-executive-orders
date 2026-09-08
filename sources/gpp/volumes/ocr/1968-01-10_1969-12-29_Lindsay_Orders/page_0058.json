@@ -28,7 +28,13 @@
           "min": -0.8274
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1273,
+        "area_px": 4956,
+        "density": 0.25686,
+        "chars": 22,
+        "chars_per_1k_ink": 17.28
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0832
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 141,
+        "area_px": 2223,
+        "density": 0.06343,
+        "chars": 14,
+        "chars_per_1k_ink": 99.29
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.2028
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 30,
+        "area_px": 15920,
+        "density": 0.00188,
+        "chars": 60,
+        "chars_per_1k_ink": 2000.0
+      }
     },
     {
       "bbox": [
@@ -113,11 +131,11 @@
         }
       },
       "ink": {
-        "ink_px": 4,
-        "area_px": 16929,
-        "density": 0.00024,
+        "ink_px": 156,
+        "area_px": 78375,
+        "density": 0.00199,
         "chars": 574,
-        "chars_per_1k_ink": 143500.0
+        "chars_per_1k_ink": 3679.49
       }
     },
     {
@@ -332,7 +350,7 @@
         629
       ],
       "category": "Text",
-      "text": "§2 The Environmental Protection Administrator shall, in his discretion, organize the administration into departments, bureaus, boards, divisions or offices, and make assignments of powers and duties among them and from time to time change such organization or assignments subject only to the extent to which the organization is prescribed by law.",
+      "text": "\u00a72 The Environmental Protection Administrator shall, in his discretion, organize the administration into departments, bureaus, boards, divisions or offices, and make assignments of powers and duties among them and from time to time change such organization or assignments subject only to the extent to which the organization is prescribed by law.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -366,7 +384,7 @@
         674
       ],
       "category": "Text",
-      "text": "§3 The Environmental Protection Administration is designated to act as the representative of the City of New York in relation to environmental protection administration programs of state and federal agencies.",
+      "text": "\u00a73 The Environmental Protection Administration is designated to act as the representative of the City of New York in relation to environmental protection administration programs of state and federal agencies.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -552,7 +570,7 @@
           "index": 698,
           "token_id": 17851,
           "logprob": -0.6511,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 748,
@@ -724,23 +742,24 @@
   "ink_coverage": {
     "roi": [
       145,
-      226,
+      0,
       1068,
-      1662
+      1835
     ],
-    "ink_px": 2424,
-    "covered_px": 1470,
-    "covered_fraction": 0.60644,
-    "uncovered_px": 954,
+    "ink_px": 6543,
+    "rule_px": 1838,
+    "covered_px": 3044,
+    "covered_fraction": 0.64697,
+    "uncovered_px": 1661,
     "uncovered_regions": [
       {
         "bbox": [
-          457,
-          346,
-          961,
-          370
+          337,
+          1825,
+          481,
+          1833
         ],
-        "ink_px": 927
+        "ink_px": 643
       }
     ],
     "cell_px": 24

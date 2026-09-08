@@ -10,7 +10,7 @@
         441
       ],
       "category": "Section-header",
-      "text": "### §3. Union Activities.",
+      "text": "### \u00a73. Union Activities.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 161,
-        "area_px": 12775,
-        "density": 0.0126,
+        "ink_px": 383,
+        "area_px": 29638,
+        "density": 0.01292,
         "chars": 25,
-        "chars_per_1k_ink": 155.28
+        "chars_per_1k_ink": 65.27
       }
     },
     {
@@ -502,7 +502,7 @@
           "index": 36,
           "token_id": 16625,
           "logprob": -0.9768,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 742,
@@ -674,15 +674,35 @@
   "ink_coverage": {
     "roi": [
       262,
-      418,
+      88,
       1923,
-      3067
+      3391
     ],
-    "ink_px": 17982,
-    "covered_px": 17982,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 20091,
+    "rule_px": 685,
+    "covered_px": 18204,
+    "covered_fraction": 0.93806,
+    "uncovered_px": 1202,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1442,
+          3385,
+          1923,
+          3391
+        ],
+        "ink_px": 593
+      },
+      {
+        "bbox": [
+          1587,
+          88,
+          1918,
+          91
+        ],
+        "ink_px": 431
+      }
+    ],
     "cell_px": 24
   }
 }

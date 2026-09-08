@@ -40,7 +40,7 @@ ground truth -- and re-check the thresholds on a volume whose scans look differe
 the same caution the blank-page thresholds in `vlm_ocr` carry.
 
 NO AUTHORIZATION GATE, and no GPU: this is PyMuPDF reading files already on disk,
-so it is safe to run while a `run_full_vlm_pipeline.sh` job is grinding.
+so it is safe to run while a `run_full_vlm_pre_1974.sh` job is grinding.
 
     python scripts/run_picture_clips.py --dry-run
     python scripts/run_picture_clips.py --volume ODwyer

@@ -28,7 +28,13 @@
           "min": -0.0443
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 22,
+        "area_px": 1809,
+        "density": 0.01216,
+        "chars": 4,
+        "chars_per_1k_ink": 181.82
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 1910,
-        "area_px": 64815,
-        "density": 0.02947,
+        "ink_px": 2782,
+        "area_px": 83440,
+        "density": 0.03334,
         "chars": 168,
-        "chars_per_1k_ink": 87.96
+        "chars_per_1k_ink": 60.39
       }
     },
     {
@@ -140,7 +146,7 @@
         657
       ],
       "category": "List-item",
-      "text": "⑈8. The Comptroller shall not authorize the payment of any compensation to any person appointed on or after July 1, of this year which is not in conformity with the provisions of this directive unless specifically authorized by the Mayor or his duly authorized representative.",
+      "text": "\u24488. The Comptroller shall not authorize the payment of any compensation to any person appointed on or after July 1, of this year which is not in conformity with the provisions of this directive unless specifically authorized by the Mayor or his duly authorized representative.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -174,7 +180,7 @@
         713
       ],
       "category": "List-item",
-      "text": "⑈9. This executive order shall take effect on July 1, 1971.",
+      "text": "\u24489. This executive order shall take effect on July 1, 1971.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -281,13 +287,13 @@
           "index": 267,
           "token_id": 48312,
           "logprob": -0.842,
-          "text": "�"
+          "text": "\ufffd"
         },
         {
           "index": 268,
           "token_id": 230,
           "logprob": -0.5157,
-          "text": "�"
+          "text": "\ufffd"
         },
         {
           "index": 269,
@@ -459,14 +465,15 @@
   "ink_coverage": {
     "roi": [
       175,
-      222,
+      0,
       1285,
-      1633
+      1805
     ],
-    "ink_px": 17849,
-    "covered_px": 17849,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 19242,
+    "rule_px": 0,
+    "covered_px": 18743,
+    "covered_fraction": 0.97407,
+    "uncovered_px": 499,
     "uncovered_regions": [],
     "cell_px": 24
   }

@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 34,
-        "area_px": 188870,
-        "density": 0.00018,
+        "ink_px": 44,
+        "area_px": 276639,
+        "density": 0.00016,
         "chars": 342,
-        "chars_per_1k_ink": 10058.82
+        "chars_per_1k_ink": 7772.73
       }
     },
     {
@@ -44,7 +44,7 @@
         812
       ],
       "category": "Text",
-      "text": "§6. Agencies not represented on the Development Group who are responsible for providing public improvements in Downtown Brooklyn area including the Municipal Services Administration, the Parks, Recreational Cultural Affairs Administration, the Health Services Administration, the Human Resources Administration, the Fire Department and the Police Department shall cooperate with the Chairman and members of the Development Group and assist their functions with the Office of Downtown Brooklyn Development as set forth herein.",
+      "text": "\u00a76. Agencies not represented on the Development Group who are responsible for providing public improvements in Downtown Brooklyn area including the Municipal Services Administration, the Parks, Recreational Cultural Affairs Administration, the Health Services Administration, the Human Resources Administration, the Fire Department and the Police Department shall cooperate with the Chairman and members of the Development Group and assist their functions with the Office of Downtown Brooklyn Development as set forth herein.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         1085
       ],
       "category": "Text",
-      "text": "§ 7. This order shall take effect immediately.",
+      "text": "\u00a7 7. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -219,7 +219,7 @@
           "index": 337,
           "token_id": 17851,
           "logprob": -0.6863,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 47,
@@ -231,7 +231,7 @@
           "index": 128,
           "token_id": 17851,
           "logprob": -0.302,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 90,
@@ -397,14 +397,15 @@
   "ink_coverage": {
     "roi": [
       175,
-      219,
+      0,
       1286,
-      1611
+      1764
     ],
-    "ink_px": 1387,
-    "covered_px": 1387,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 1583,
+    "rule_px": 0,
+    "covered_px": 1397,
+    "covered_fraction": 0.8825,
+    "uncovered_px": 186,
     "uncovered_regions": [],
     "cell_px": 24
   }

@@ -28,7 +28,13 @@
           "min": -0.0005
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 682,
+        "area_px": 10752,
+        "density": 0.06343,
+        "chars": 12,
+        "chars_per_1k_ink": 17.6
+      }
     },
     {
       "bbox": [
@@ -52,9 +58,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 3464,
-        "area_px": 14688,
-        "density": 0.23584,
+        "ink_px": 5954,
+        "area_px": 25092,
+        "density": 0.23729,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -135,7 +141,7 @@
         1114
       ],
       "category": "Text",
-      "text": "as to policy and program with the Mayor's Executive Assistant, and as to public relations with the Mayor's Executive Secretary, and subject to the overall approval of the Deputy Mayor and the Mayor, will be responsible for the full implementation of and compliance with the policies and practices set forth in Executive Memorandum #87.†",
+      "text": "as to policy and program with the Mayor's Executive Assistant, and as to public relations with the Mayor's Executive Secretary, and subject to the overall approval of the Deputy Mayor and the Mayor, will be responsible for the full implementation of and compliance with the policies and practices set forth in Executive Memorandum #87.\u2020",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -324,11 +330,11 @@
         }
       },
       "ink": {
-        "ink_px": 11237,
-        "area_px": 300095,
-        "density": 0.03744,
+        "ink_px": 12638,
+        "area_px": 324358,
+        "density": 0.03896,
         "chars": 240,
-        "chars_per_1k_ink": 21.36
+        "chars_per_1k_ink": 18.99
       }
     }
   ],
@@ -367,7 +373,7 @@
           "index": 250,
           "token_id": 83262,
           "logprob": -0.0654,
-          "text": "†"
+          "text": "\u2020"
         },
         {
           "index": 111,
@@ -527,14 +533,15 @@
   "ink_coverage": {
     "roi": [
       218,
-      338,
+      66,
       1605,
-      2485
+      2747
     ],
-    "ink_px": 78163,
-    "covered_px": 78063,
-    "covered_fraction": 0.99872,
-    "uncovered_px": 100,
+    "ink_px": 84077,
+    "rule_px": 609,
+    "covered_px": 82636,
+    "covered_fraction": 0.99003,
+    "uncovered_px": 832,
     "uncovered_regions": [],
     "cell_px": 24
   }

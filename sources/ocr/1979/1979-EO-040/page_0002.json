@@ -1,0 +1,377 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        531,
+        160,
+        1210,
+        664
+      ],
+      "category": "Text",
+      "text": "5. The awarding of contracts involving an expenditure of not more than $2,000 in a manner set forth in the plan shall require the written approval of the Director of the Bureau of Maintenance Operations of the Division of In-Rem Property Management; the awarding of contracts involving an expenditure in excess of $2,000 but not more than $4,000 in a manner set forth in the plan shall require the written approval of the Assistant Commissioner of the Division of In-Rem Property Management; the awarding of contracts involving an expenditure in excess of $4,000 but not more than $5,000 in a manner set forth in the plan shall require the written approval of the Deputy Commissioner of the Office of Property Management; provided that, in the event any person with the power of approval under this paragraph shall be absent or otherwise unavailable, approval may be given by any person named above on a higher level or by the Commissioner of the Department of Housing Preservation and Development.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2881,
+          "min": -1.2985
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.4742,
+          "min": -0.4742
+        },
+        "text": {
+          "n_tokens": 206,
+          "mean": -0.0004,
+          "min": -0.0791
+        }
+      },
+      "ink": {
+        "ink_px": 71007,
+        "area_px": 345420,
+        "density": 0.20557,
+        "chars": 998,
+        "chars_per_1k_ink": 14.05
+      }
+    },
+    {
+      "bbox": [
+        539,
+        671,
+        1200,
+        716
+      ],
+      "category": "Text",
+      "text": "Contracts involving an expenditure of not more than $5,000 may be awarded between the dates",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2914,
+          "min": -1.3682
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0038,
+          "min": -0.0038
+        },
+        "text": {
+          "n_tokens": 20,
+          "mean": -0.0085,
+          "min": -0.1011
+        }
+      },
+      "ink": {
+        "ink_px": 7019,
+        "area_px": 30636,
+        "density": 0.22911,
+        "chars": 91,
+        "chars_per_1k_ink": 12.96
+      }
+    },
+    {
+      "bbox": [
+        450,
+        750,
+        1190,
+        840
+      ],
+      "category": "Text",
+      "text": "\u00a7 2. This Executive Order shall take effect immediately and expire on March 31, 1980.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2847,
+          "min": -1.0538
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1015,
+          "min": -0.1015
+        },
+        "text": {
+          "n_tokens": 25,
+          "mean": -0.0045,
+          "min": -0.0936
+        }
+      },
+      "ink": {
+        "ink_px": 7002,
+        "area_px": 67795,
+        "density": 0.10328,
+        "chars": 85,
+        "chars_per_1k_ink": 12.14
+      }
+    },
+    {
+      "bbox": [
+        937,
+        972,
+        1130,
+        1017
+      ],
+      "category": "Text",
+      "text": "EDWARD I. KOCH\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2341,
+          "min": -1.0988
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0011,
+          "min": -0.0011
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0015,
+          "min": -0.0048
+        }
+      },
+      "ink": {
+        "ink_px": 2180,
+        "area_px": 8970,
+        "density": 0.24303,
+        "chars": 20,
+        "chars_per_1k_ink": 9.17
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 405,
+    "content": {
+      "n_tokens": 261,
+      "mean": -0.0015,
+      "min": -0.1011,
+      "p05": -0.0009,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 295,
+          "token_id": 12713,
+          "logprob": -0.1011,
+          "text": " dates"
+        },
+        {
+          "index": 331,
+          "token_id": 17851,
+          "logprob": -0.0936,
+          "text": "\u00a7"
+        },
+        {
+          "index": 44,
+          "token_id": 44326,
+          "logprob": -0.0791,
+          "text": " expenditure"
+        },
+        {
+          "index": 282,
+          "token_id": 803,
+          "logprob": -0.0494,
+          "text": " more"
+        },
+        {
+          "index": 294,
+          "token_id": 279,
+          "logprob": -0.0167,
+          "text": " the"
+        },
+        {
+          "index": 334,
+          "token_id": 13,
+          "logprob": -0.0125,
+          "text": "."
+        },
+        {
+          "index": 335,
+          "token_id": 1096,
+          "logprob": -0.005,
+          "text": " This"
+        },
+        {
+          "index": 400,
+          "token_id": 3022,
+          "logprob": -0.0048,
+          "text": "AY"
+        },
+        {
+          "index": 398,
+          "token_id": 1699,
+          "logprob": -0.0045,
+          "text": "\\n"
+        },
+        {
+          "index": 392,
+          "token_id": 1479,
+          "logprob": -0.0039,
+          "text": "ED"
+        },
+        {
+          "index": 35,
+          "token_id": 20,
+          "logprob": -0.0019,
+          "text": "5"
+        },
+        {
+          "index": 276,
+          "token_id": 36352,
+          "logprob": -0.0014,
+          "text": "Contracts"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.2677,
+      "min": -1.3682,
+      "p05": -1.0988,
+      "p50": -0.0022,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 264,
+          "token_id": 21,
+          "logprob": -1.3682,
+          "text": "6"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.2985,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.2549,
+          "text": "1"
+        },
+        {
+          "index": 259,
+          "token_id": 15,
+          "logprob": -1.2011,
+          "text": "0"
+        },
+        {
+          "index": 368,
+          "token_id": 17,
+          "logprob": -1.0988,
+          "text": "2"
+        },
+        {
+          "index": 363,
+          "token_id": 22,
+          "logprob": -1.0836,
+          "text": "7"
+        },
+        {
+          "index": 253,
+          "token_id": 16,
+          "logprob": -1.0706,
+          "text": "1"
+        },
+        {
+          "index": 308,
+          "token_id": 15,
+          "logprob": -1.0538,
+          "text": "0"
+        },
+        {
+          "index": 248,
+          "token_id": 24,
+          "logprob": -1.0337,
+          "text": "9"
+        },
+        {
+          "index": 380,
+          "token_id": 22,
+          "logprob": -1.0019,
+          "text": "7"
+        },
+        {
+          "index": 303,
+          "token_id": 15,
+          "logprob": -0.9808,
+          "text": "0"
+        },
+        {
+          "index": 314,
+          "token_id": 15,
+          "logprob": -0.9804,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 405,
+      "mean": -0.0574,
+      "min": -1.3682,
+      "p05": -0.5004,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 245.04,
+    "std": 46.07,
+    "dark_fraction": 0.03664
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      628.0,
+      816.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      209,
+      0,
+      1535,
+      2267
+    ],
+    "ink_px": 99680,
+    "rule_px": 7622,
+    "covered_px": 87208,
+    "covered_fraction": 0.94732,
+    "uncovered_px": 4850,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1032,
+          891,
+          1243,
+          971
+        ],
+        "ink_px": 1874
+      },
+      {
+        "bbox": [
+          874,
+          912,
+          950,
+          980
+        ],
+        "ink_px": 646
+      },
+      {
+        "bbox": [
+          1224,
+          736,
+          1257,
+          776
+        ],
+        "ink_px": 458
+      }
+    ],
+    "cell_px": 24
+  }
+}

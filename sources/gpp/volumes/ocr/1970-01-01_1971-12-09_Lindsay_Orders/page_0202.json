@@ -28,7 +28,13 @@
           "min": -0.0095
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 22,
+        "area_px": 1300,
+        "density": 0.01692,
+        "chars": 3,
+        "chars_per_1k_ink": 136.36
+      }
     },
     {
       "bbox": [
@@ -72,7 +78,7 @@
         858
       ],
       "category": "Text",
-      "text": "§4. The Mayor's Committee on Exploitation of Workers may request of other City administrations, departments and agencies such information as it deems necessary to carry out its stated purposes.",
+      "text": "\u00a74. The Mayor's Committee on Exploitation of Workers may request of other City administrations, departments and agencies such information as it deems necessary to carry out its stated purposes.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -106,7 +112,7 @@
         919
       ],
       "category": "Text",
-      "text": "§5. This order shall take effect immediately.",
+      "text": "\u00a75. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -231,7 +237,7 @@
           "index": 210,
           "token_id": 17851,
           "logprob": -0.0217,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 72,
@@ -261,7 +267,7 @@
           "index": 282,
           "token_id": 17851,
           "logprob": -0.0046,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 165,
@@ -391,15 +397,35 @@
   "ink_coverage": {
     "roi": [
       171,
-      225,
+      0,
       1254,
-      1650
+      1821
     ],
-    "ink_px": 907,
-    "covered_px": 907,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 3004,
+    "rule_px": 95,
+    "covered_px": 929,
+    "covered_fraction": 0.31935,
+    "uncovered_px": 1980,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1059,
+          1766,
+          1254,
+          1821
+        ],
+        "ink_px": 773
+      },
+      {
+        "bbox": [
+          603,
+          1787,
+          681,
+          1805
+        ],
+        "ink_px": 713
+      }
+    ],
     "cell_px": 24
   }
 }

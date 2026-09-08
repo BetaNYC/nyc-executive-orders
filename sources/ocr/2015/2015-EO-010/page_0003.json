@@ -1,0 +1,344 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        297,
+        216,
+        1430,
+        308
+      ],
+      "category": "Text",
+      "text": "(b) The Chair may establish such committees of the Commission as may be deemed necessary for the performance and carrying out of its duties and functions.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2895,
+          "min": -1.5214
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1801,
+          "min": -0.1801
+        },
+        "text": {
+          "n_tokens": 29,
+          "mean": -0.0042,
+          "min": -0.1129
+        }
+      },
+      "ink": {
+        "ink_px": 9332,
+        "area_px": 104997,
+        "density": 0.08888,
+        "chars": 154,
+        "chars_per_1k_ink": 16.5
+      }
+    },
+    {
+      "bbox": [
+        197,
+        444,
+        1474,
+        478
+      ],
+      "category": "List-item",
+      "text": "\u00a7 4. Prior Order Revoked. Executive Order No. 29, dated October 25, 2002, is hereby revoked.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2709,
+          "min": -1.2846
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.3169,
+          "min": -0.6338
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0013,
+          "min": -0.0199
+        }
+      },
+      "ink": {
+        "ink_px": 5323,
+        "area_px": 44240,
+        "density": 0.12032,
+        "chars": 92,
+        "chars_per_1k_ink": 17.28
+      }
+    },
+    {
+      "bbox": [
+        197,
+        529,
+        1024,
+        564
+      ],
+      "category": "List-item",
+      "text": "\u00a7 5. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2243,
+          "min": -1.2385
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0023,
+          "min": -0.0047
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0005,
+          "min": -0.0052
+        }
+      },
+      "ink": {
+        "ink_px": 3806,
+        "area_px": 28560,
+        "density": 0.13326,
+        "chars": 62,
+        "chars_per_1k_ink": 16.29
+      }
+    },
+    {
+      "bbox": [
+        898,
+        641,
+        1401,
+        799
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.31,
+          "min": -1.2642
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0034,
+          "min": -0.0034
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 5150,
+        "area_px": 79316,
+        "density": 0.06493,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 215,
+    "content": {
+      "n_tokens": 76,
+      "mean": -0.0022,
+      "min": -0.1129,
+      "p05": -0.0059,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 50,
+          "token_id": 5871,
+          "logprob": -0.1129,
+          "text": " necessary"
+        },
+        {
+          "index": 103,
+          "token_id": 31399,
+          "logprob": -0.0199,
+          "text": " Prior"
+        },
+        {
+          "index": 99,
+          "token_id": 17851,
+          "logprob": -0.0194,
+          "text": "\u00a7"
+        },
+        {
+          "index": 34,
+          "token_id": 11993,
+          "logprob": -0.0077,
+          "text": " \"("
+        },
+        {
+          "index": 172,
+          "token_id": 46923,
+          "logprob": -0.0052,
+          "text": " Effective"
+        },
+        {
+          "index": 168,
+          "token_id": 17851,
+          "logprob": -0.0018,
+          "text": "\u00a7"
+        },
+        {
+          "index": 102,
+          "token_id": 13,
+          "logprob": -0.0014,
+          "text": "."
+        },
+        {
+          "index": 106,
+          "token_id": 10823,
+          "logprob": -0.0004,
+          "text": "oked"
+        },
+        {
+          "index": 107,
+          "token_id": 13,
+          "logprob": -0.0003,
+          "text": "."
+        },
+        {
+          "index": 104,
+          "token_id": 7217,
+          "logprob": -0.0002,
+          "text": " Order"
+        },
+        {
+          "index": 105,
+          "token_id": 10107,
+          "logprob": -0.0002,
+          "text": " Rev"
+        },
+        {
+          "index": 62,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 82,
+      "mean": -0.2637,
+      "min": -1.5214,
+      "p05": -1.2629,
+      "p50": -0.0021,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.5214,
+          "text": "7"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.3747,
+          "text": "6"
+        },
+        {
+          "index": 70,
+          "token_id": 22,
+          "logprob": -1.2846,
+          "text": "7"
+        },
+        {
+          "index": 81,
+          "token_id": 19,
+          "logprob": -1.2656,
+          "text": "4"
+        },
+        {
+          "index": 200,
+          "token_id": 16,
+          "logprob": -1.2642,
+          "text": "1"
+        },
+        {
+          "index": 150,
+          "token_id": 19,
+          "logprob": -1.2385,
+          "text": "4"
+        },
+        {
+          "index": 75,
+          "token_id": 19,
+          "logprob": -1.2048,
+          "text": "4"
+        },
+        {
+          "index": 189,
+          "token_id": 23,
+          "logprob": -1.1832,
+          "text": "8"
+        },
+        {
+          "index": 155,
+          "token_id": 19,
+          "logprob": -1.1279,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.0428,
+          "text": "0"
+        },
+        {
+          "index": 194,
+          "token_id": 16,
+          "logprob": -1.0199,
+          "text": "1"
+        },
+        {
+          "index": 86,
+          "token_id": 23,
+          "logprob": -1.0085,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 215,
+      "mean": -0.1018,
+      "min": -1.5214,
+      "p05": -1.0119,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 252.83,
+    "std": 17.61,
+    "dark_fraction": 0.00861
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 23639,
+    "rule_px": 0,
+    "covered_px": 23611,
+    "covered_fraction": 0.99882,
+    "uncovered_px": 28,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

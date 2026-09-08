@@ -112,7 +112,7 @@
         974
       ],
       "category": "Text",
-      "text": "§2. The total paid for all other employees, upon termination of services or upon retirement, for accrued annual leave, accrued overtime, and terminal leave granted in accordance with the existing leave regulations governing such employees shall not exceed payment for 12 months of service.",
+      "text": "\u00a72. The total paid for all other employees, upon termination of services or upon retirement, for accrued annual leave, accrued overtime, and terminal leave granted in accordance with the existing leave regulations governing such employees shall not exceed payment for 12 months of service.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         1083
       ],
       "category": "Text",
-      "text": "§3. This order supersedes Executive Order No. 37, dated February 2, 1967.",
+      "text": "\u00a73. This order supersedes Executive Order No. 37, dated February 2, 1967.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -180,7 +180,7 @@
         1137
       ],
       "category": "Text",
-      "text": "§4. This order shall take effect immediately.",
+      "text": "\u00a74. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -287,7 +287,7 @@
           "index": 240,
           "token_id": 17851,
           "logprob": -1.0648,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 86,
@@ -335,7 +335,7 @@
           "index": 329,
           "token_id": 17851,
           "logprob": -0.006,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 475,
@@ -465,15 +465,35 @@
   "ink_coverage": {
     "roi": [
       171,
-      224,
+      0,
       1256,
-      1642
+      1810
     ],
-    "ink_px": 327,
+    "ink_px": 2201,
+    "rule_px": 138,
     "covered_px": 327,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.15851,
+    "uncovered_px": 1736,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          603,
+          1778,
+          680,
+          1796
+        ],
+        "ink_px": 684
+      },
+      {
+        "bbox": [
+          1180,
+          1753,
+          1256,
+          1766
+        ],
+        "ink_px": 525
+      }
+    ],
     "cell_px": 24
   }
 }

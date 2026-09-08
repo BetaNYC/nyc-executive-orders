@@ -28,7 +28,13 @@
           "min": -0.0134
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 97,
+        "area_px": 8154,
+        "density": 0.0119,
+        "chars": 22,
+        "chars_per_1k_ink": 226.8
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0233
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 14,
+        "area_px": 1944,
+        "density": 0.0072,
+        "chars": 6,
+        "chars_per_1k_ink": 428.57
+      }
     },
     {
       "bbox": [
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 1595,
-        "area_px": 96558,
-        "density": 0.01652,
+        "ink_px": 1937,
+        "area_px": 124146,
+        "density": 0.0156,
         "chars": 334,
-        "chars_per_1k_ink": 209.4
+        "chars_per_1k_ink": 172.43
       }
     },
     {
@@ -134,7 +146,7 @@
         604
       ],
       "category": "Section-header",
-      "text": "### § 12. Miscellaneous.",
+      "text": "### \u00a7 12. Miscellaneous.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -270,7 +282,7 @@
         1151
       ],
       "category": "Section-header",
-      "text": "### § 13. Effective Date.",
+      "text": "### \u00a7 13. Effective Date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -589,15 +601,26 @@
   "ink_coverage": {
     "roi": [
       144,
-      225,
+      0,
       1059,
-      1654
+      1831
     ],
-    "ink_px": 5532,
-    "covered_px": 5532,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 7291,
+    "rule_px": 293,
+    "covered_px": 5985,
+    "covered_fraction": 0.85524,
+    "uncovered_px": 1013,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          360,
+          1818,
+          478,
+          1826
+        ],
+        "ink_px": 468
+      }
+    ],
     "cell_px": 24
   }
 }

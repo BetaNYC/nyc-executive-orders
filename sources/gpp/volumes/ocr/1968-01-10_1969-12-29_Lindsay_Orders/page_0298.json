@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2964,
+        "area_px": 16120,
+        "density": 0.18387,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -51,7 +57,13 @@
           "min": -0.013
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 696,
+        "area_px": 16146,
+        "density": 0.04311,
+        "chars": 53,
+        "chars_per_1k_ink": 76.15
+      }
     },
     {
       "bbox": [
@@ -129,7 +141,7 @@
         1404
       ],
       "category": "Text",
-      "text": "§ 2. Effective during the period of time from and including the payroll period the first day of which is nearest to July 1, 1969 (which first day is hereinafter referred to as the commencement date of the 1969-1970 increased-take-home-pay period) and to and including the payroll period immediately preceding that, the first day of which is nearest to June 30, 1970 (which total period of time is hereinafter referred to as the \"1969-1970 increased take-home-pay period\"), the governing provisions of subdivision 14 of such subdivision j, is hereby made applicable, and the provisions of subdivisions g, h and i of such section B3-36.1 shall be applicable to and for the benefit of all other-than-authority members of the New York City Employees' Retirement System, provided, however, that the reduced rate of contribution to be used in computing the reduction of contributions shall be four per cent, except as otherwise provided in sections three and four of this executive order.",
+      "text": "\u00a7 2. Effective during the period of time from and including the payroll period the first day of which is nearest to July 1, 1969 (which first day is hereinafter referred to as the commencement date of the 1969-1970 increased-take-home-pay period) and to and including the payroll period immediately preceding that, the first day of which is nearest to June 30, 1970 (which total period of time is hereinafter referred to as the \"1969-1970 increased take-home-pay period\"), the governing provisions of subdivision 14 of such subdivision j, is hereby made applicable, and the provisions of subdivisions g, h and i of such section B3-36.1 shall be applicable to and for the benefit of all other-than-authority members of the New York City Employees' Retirement System, provided, however, that the reduced rate of contribution to be used in computing the reduction of contributions shall be four per cent, except as otherwise provided in sections three and four of this executive order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -239,7 +251,7 @@
           "index": 221,
           "token_id": 17851,
           "logprob": -0.0115,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -351,15 +363,26 @@
   "ink_coverage": {
     "roi": [
       155,
-      238,
+      0,
       1142,
-      1752
+      1926
     ],
-    "ink_px": 1195,
-    "covered_px": 1192,
-    "covered_fraction": 0.99749,
-    "uncovered_px": 3,
-    "uncovered_regions": [],
+    "ink_px": 6147,
+    "rule_px": 239,
+    "covered_px": 4852,
+    "covered_fraction": 0.82126,
+    "uncovered_px": 1056,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          395,
+          1918,
+          515,
+          1926
+        ],
+        "ink_px": 497
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8418,
+        "area_px": 38556,
+        "density": 0.21833,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 875,
-        "area_px": 10200,
-        "density": 0.08578,
+        "ink_px": 4315,
+        "area_px": 54825,
+        "density": 0.0787,
         "chars": 54,
-        "chars_per_1k_ink": 61.71
+        "chars_per_1k_ink": 12.51
       }
     },
     {
@@ -237,7 +243,7 @@
         2038
       ],
       "category": "List-item",
-      "text": "§3. The City Renewal Commissioner, on behalf of the Mayor, shall review all urban renewal policies, programs and operations and shall advise the Mayor concerning changes or modifications of them, after consultation with the Housing Executive Committee on matters of total housing policy.",
+      "text": "\u00a73. The City Renewal Commissioner, on behalf of the Mayor, shall review all urban renewal policies, programs and operations and shall advise the Mayor concerning changes or modifications of them, after consultation with the Housing Executive Committee on matters of total housing policy.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -271,7 +277,7 @@
         2331
       ],
       "category": "List-item",
-      "text": "§4. The City Renewal Commissioner shall be responsible as the Mayor's principal representative for Federal and State liason for all urban renewal programs.",
+      "text": "\u00a74. The City Renewal Commissioner shall be responsible as the Mayor's principal representative for Federal and State liason for all urban renewal programs.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -305,7 +311,7 @@
         2620
       ],
       "category": "List-item",
-      "text": "§5. This order shall take effect on July 5, 1966 and replaces and rescinds Executive Order No. 28, numbered in error and issued this date.",
+      "text": "\u00a75. This order shall take effect on July 5, 1966 and replaces and rescinds Executive Order No. 28, numbered in error and issued this date.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -414,7 +420,7 @@
           "index": 368,
           "token_id": 17851,
           "logprob": -0.005,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 379,
@@ -556,15 +562,26 @@
   "ink_coverage": {
     "roi": [
       275,
-      421,
+      94,
       2018,
-      3090
+      3410
     ],
-    "ink_px": 14161,
-    "covered_px": 14161,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 29731,
+    "rule_px": 2408,
+    "covered_px": 26019,
+    "covered_fraction": 0.95227,
+    "uncovered_px": 1304,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1501,
+          3404,
+          2018,
+          3410
+        ],
+        "ink_px": 640
+      }
+    ],
     "cell_px": 24
   }
 }

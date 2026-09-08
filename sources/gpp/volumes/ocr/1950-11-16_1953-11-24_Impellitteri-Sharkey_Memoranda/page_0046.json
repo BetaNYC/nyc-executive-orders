@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 6087,
-        "area_px": 25944,
-        "density": 0.23462,
+        "ink_px": 7251,
+        "area_px": 38164,
+        "density": 0.19,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -243,7 +243,7 @@
         1743
       ],
       "category": "Text",
-      "text": "I have designated Dr. Marcus D. Kogel, Commissioner of Hospitals and Director of the Medical Emergency Division of Civil Defense, to organize and direct a program for full cooperation by municipal departments and agencies in the current appeal for accelerated contributions by City employees to the Joint Red Cross — Armed Forces Blood Program.",
+      "text": "I have designated Dr. Marcus D. Kogel, Commissioner of Hospitals and Director of the Medical Emergency Division of Civil Defense, to organize and direct a program for full cooperation by municipal departments and agencies in the current appeal for accelerated contributions by City employees to the Joint Red Cross \u2014 Armed Forces Blood Program.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -388,11 +388,11 @@
         "text": null
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 159210,
-        "density": 0.0,
+        "ink_px": 5,
+        "area_px": 253170,
+        "density": 2e-05,
         "chars": 0,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 0.0
       }
     }
   ],
@@ -413,7 +413,7 @@
           "index": 406,
           "token_id": 1959,
           "logprob": -0.4253,
-          "text": " —"
+          "text": " \u2014"
         },
         {
           "index": 112,
@@ -591,15 +591,26 @@
   "ink_coverage": {
     "roi": [
       262,
-      349,
+      98,
       1925,
-      2562
+      2796
     ],
-    "ink_px": 118204,
-    "covered_px": 118204,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 121677,
+    "rule_px": 1466,
+    "covered_px": 119373,
+    "covered_fraction": 0.99303,
+    "uncovered_px": 838,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1464,
+          2794,
+          1925,
+          2796
+        ],
+        "ink_px": 486
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -112,7 +112,7 @@
         1464
       ],
       "category": "Text",
-      "text": "§ 5. All the powers of budget modification, as granted in Section 124 (a) of the New York City Charter are hereby withdrawn from all agencies except as to the following: The Boards of Education and Higher Education, the Community Colleges, the Offices of the Borough Presidents, the Comptroller, the Board of Elections, the District Attorneys and the City Council; provided that the Mayor may, as a condition of making these exceptions, require these agencies to cooperate with the Vacancy Control Board in realizing savings required to meet potential budget deficits that may arise during the fiscal year.",
+      "text": "\u00a7 5. All the powers of budget modification, as granted in Section 124 (a) of the New York City Charter are hereby withdrawn from all agencies except as to the following: The Boards of Education and Higher Education, the Community Colleges, the Offices of the Borough Presidents, the Comptroller, the Board of Elections, the District Attorneys and the City Council; provided that the Mayor may, as a condition of making these exceptions, require these agencies to cooperate with the Vacancy Control Board in realizing savings required to meet potential budget deficits that may arise during the fiscal year.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -146,7 +146,7 @@
         1722
       ],
       "category": "Text",
-      "text": "§ 6. Those agencies not specifically excepted from the provisions of § 5 herein providing for the withdrawal of the power of budget modifications shall be governed by the following special terms and conditions in the administration of budget appropriations:",
+      "text": "\u00a7 6. Those agencies not specifically excepted from the provisions of \u00a7 5 herein providing for the withdrawal of the power of budget modifications shall be governed by the following special terms and conditions in the administration of budget appropriations:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -369,11 +369,11 @@
         }
       },
       "ink": {
-        "ink_px": 171,
-        "area_px": 185850,
+        "ink_px": 282,
+        "area_px": 305856,
         "density": 0.00092,
         "chars": 258,
-        "chars_per_1k_ink": 1508.77
+        "chars_per_1k_ink": 914.89
       }
     },
     {
@@ -402,7 +402,13 @@
           "min": -0.0041
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 222,
+        "area_px": 123420,
+        "density": 0.0018,
+        "chars": 86,
+        "chars_per_1k_ink": 387.39
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -434,7 +440,7 @@
           "index": 335,
           "token_id": 16625,
           "logprob": -0.477,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 40,
@@ -464,7 +470,7 @@
           "index": 164,
           "token_id": 17851,
           "logprob": -0.0468,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 790,
@@ -600,15 +606,26 @@
   "ink_coverage": {
     "roi": [
       305,
-      450,
+      130,
       2242,
-      3300
+      3613
     ],
-    "ink_px": 15342,
-    "covered_px": 15329,
-    "covered_fraction": 0.99915,
-    "uncovered_px": 13,
-    "uncovered_regions": [],
+    "ink_px": 17330,
+    "rule_px": 829,
+    "covered_px": 15654,
+    "covered_fraction": 0.94867,
+    "uncovered_px": 847,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1505,
+          3612,
+          1937,
+          3613
+        ],
+        "ink_px": 432
+      }
+    ],
     "cell_px": 24
   }
 }

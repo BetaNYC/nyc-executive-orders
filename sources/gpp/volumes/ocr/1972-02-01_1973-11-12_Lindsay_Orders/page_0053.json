@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 524,
-        "area_px": 11679,
-        "density": 0.04487,
+        "ink_px": 1827,
+        "area_px": 57479,
+        "density": 0.03179,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -379,7 +379,7 @@
         2447
       ],
       "category": "Text",
-      "text": "§2. There is hereby created in the office of the Mayor the position of Special Assistant for Drug Addiction Problems who shall be responsible for coordinating the activities of Addiction Services Agency with the drug",
+      "text": "\u00a72. There is hereby created in the office of the Mayor the position of Special Assistant for Drug Addiction Problems who shall be responsible for coordinating the activities of Addiction Services Agency with the drug",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -423,7 +423,7 @@
           "index": 744,
           "token_id": 17851,
           "logprob": -0.5772,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 220,
@@ -601,15 +601,26 @@
   "ink_coverage": {
     "roi": [
       263,
-      416,
+      80,
       1934,
-      3057
+      3384
     ],
-    "ink_px": 17794,
-    "covered_px": 17250,
-    "covered_fraction": 0.96943,
-    "uncovered_px": 544,
-    "uncovered_regions": [],
+    "ink_px": 20445,
+    "rule_px": 391,
+    "covered_px": 18553,
+    "covered_fraction": 0.92515,
+    "uncovered_px": 1501,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1491,
+          3379,
+          1934,
+          3384
+        ],
+        "ink_px": 556
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -1,0 +1,344 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        439,
+        314,
+        1239,
+        389
+      ],
+      "category": "List-item",
+      "text": "(iii) to perform such other related functions as the Mayor may direct.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3038,
+          "min": -1.3982
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0091,
+          "min": -0.0182
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0442,
+          "min": -0.6457
+        }
+      },
+      "ink": {
+        "ink_px": 7535,
+        "area_px": 60952,
+        "density": 0.12362,
+        "chars": 70,
+        "chars_per_1k_ink": 9.29
+      }
+    },
+    {
+      "bbox": [
+        240,
+        431,
+        1538,
+        505
+      ],
+      "category": "Text",
+      "text": "Section 3. Cooperation of City Agencies. All City Agencies are directed to cooperate with the Commission and Task Force in carrying out their activities.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2785,
+          "min": -1.3716
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0699,
+          "min": -0.0699
+        },
+        "text": {
+          "n_tokens": 28,
+          "mean": -0.0137,
+          "min": -0.3007
+        }
+      },
+      "ink": {
+        "ink_px": 16958,
+        "area_px": 94950,
+        "density": 0.1786,
+        "chars": 153,
+        "chars_per_1k_ink": 9.02
+      }
+    },
+    {
+      "bbox": [
+        340,
+        546,
+        1375,
+        580
+      ],
+      "category": "Text",
+      "text": "Section 4. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2696,
+          "min": -1.2677
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0038,
+          "min": -0.0038
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0015,
+          "min": -0.0197
+        }
+      },
+      "ink": {
+        "ink_px": 7978,
+        "area_px": 36365,
+        "density": 0.21939,
+        "chars": 68,
+        "chars_per_1k_ink": 8.52
+      }
+    },
+    {
+      "bbox": [
+        939,
+        611,
+        1538,
+        806
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3389,
+          "min": -1.2555
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0028,
+          "min": -0.0028
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 9784,
+        "area_px": 110740,
+        "density": 0.08835,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 195,
+    "content": {
+      "n_tokens": 57,
+      "mean": -0.0188,
+      "min": -0.6457,
+      "p05": -0.0318,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 46,
+          "token_id": 22093,
+          "logprob": -0.6457,
+          "text": " Mayor"
+        },
+        {
+          "index": 89,
+          "token_id": 72708,
+          "logprob": -0.3007,
+          "text": " Cooperation"
+        },
+        {
+          "index": 100,
+          "token_id": 46803,
+          "logprob": -0.0803,
+          "text": " cooperate"
+        },
+        {
+          "index": 152,
+          "token_id": 46923,
+          "logprob": -0.0197,
+          "text": " Effective"
+        },
+        {
+          "index": 35,
+          "token_id": 11993,
+          "logprob": -0.0165,
+          "text": " \"("
+        },
+        {
+          "index": 85,
+          "token_id": 9620,
+          "logprob": -0.002,
+          "text": "Section"
+        },
+        {
+          "index": 49,
+          "token_id": 1189,
+          "logprob": -0.0009,
+          "text": ".\""
+        },
+        {
+          "index": 94,
+          "token_id": 2009,
+          "logprob": -0.0007,
+          "text": " All"
+        },
+        {
+          "index": 154,
+          "token_id": 13,
+          "logprob": -0.0005,
+          "text": "."
+        },
+        {
+          "index": 93,
+          "token_id": 13,
+          "logprob": -0.0004,
+          "text": "."
+        },
+        {
+          "index": 161,
+          "token_id": 1189,
+          "logprob": -0.0003,
+          "text": ".\""
+        },
+        {
+          "index": 148,
+          "token_id": 9620,
+          "logprob": -0.0003,
+          "text": "Section"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.2805,
+      "min": -1.3982,
+      "p05": -1.2446,
+      "p50": -0.0013,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.3982,
+          "text": "4"
+        },
+        {
+          "index": 73,
+          "token_id": 20,
+          "logprob": -1.3716,
+          "text": "5"
+        },
+        {
+          "index": 131,
+          "token_id": 20,
+          "logprob": -1.2677,
+          "text": "5"
+        },
+        {
+          "index": 174,
+          "token_id": 16,
+          "logprob": -1.2555,
+          "text": "1"
+        },
+        {
+          "index": 185,
+          "token_id": 21,
+          "logprob": -1.2446,
+          "text": "6"
+        },
+        {
+          "index": 125,
+          "token_id": 21,
+          "logprob": -1.1445,
+          "text": "6"
+        },
+        {
+          "index": 62,
+          "token_id": 16,
+          "logprob": -1.1065,
+          "text": "1"
+        },
+        {
+          "index": 169,
+          "token_id": 24,
+          "logprob": -1.0937,
+          "text": "9"
+        },
+        {
+          "index": 68,
+          "token_id": 23,
+          "logprob": -1.0763,
+          "text": "8"
+        },
+        {
+          "index": 136,
+          "token_id": 15,
+          "logprob": -1.0664,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.0196,
+          "text": "9"
+        },
+        {
+          "index": 57,
+          "token_id": 15,
+          "logprob": -0.9838,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 195,
+      "mean": -0.1235,
+      "min": -1.3982,
+      "p05": -1.0336,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.0,
+    "std": 33.18,
+    "dark_fraction": 0.01908
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      616.0,
+      807.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      205,
+      0,
+      1506,
+      2242
+    ],
+    "ink_px": 42677,
+    "rule_px": 0,
+    "covered_px": 42255,
+    "covered_fraction": 0.99011,
+    "uncovered_px": 422,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

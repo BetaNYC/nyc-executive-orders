@@ -1,0 +1,309 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        288,
+        232,
+        1446,
+        296
+      ],
+      "category": "Text",
+      "text": "Section 10. Effective Date. This order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3012,
+          "min": -1.4182
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0119,
+          "min": -0.0119
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0198,
+          "min": -0.2466
+        }
+      },
+      "ink": {
+        "ink_px": 10144,
+        "area_px": 75530,
+        "density": 0.1343,
+        "chars": 69,
+        "chars_per_1k_ink": 6.8
+      }
+    },
+    {
+      "bbox": [
+        982,
+        523,
+        1260,
+        581
+      ],
+      "category": "Text",
+      "text": "David N. Dinkins\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3016,
+          "min": -1.2519
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0263,
+          "min": -0.0263
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0054,
+          "min": -0.0434
+        }
+      },
+      "ink": {
+        "ink_px": 3708,
+        "area_px": 16461,
+        "density": 0.22526,
+        "chars": 22,
+        "chars_per_1k_ink": 5.93
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 98,
+    "content": {
+      "n_tokens": 25,
+      "mean": -0.014,
+      "min": -0.2466,
+      "p05": -0.0415,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 40,
+          "token_id": 46923,
+          "logprob": -0.2466,
+          "text": " Effective"
+        },
+        {
+          "index": 93,
+          "token_id": 3022,
+          "logprob": -0.0434,
+          "text": "AY"
+        },
+        {
+          "index": 48,
+          "token_id": 7069,
+          "logprob": -0.0339,
+          "text": " immediately"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0144,
+          "text": "Section"
+        },
+        {
+          "index": 89,
+          "token_id": 766,
+          "logprob": -0.0071,
+          "text": "ink"
+        },
+        {
+          "index": 85,
+          "token_id": 22286,
+          "logprob": -0.0019,
+          "text": "David"
+        },
+        {
+          "index": 39,
+          "token_id": 13,
+          "logprob": -0.0008,
+          "text": "."
+        },
+        {
+          "index": 91,
+          "token_id": 1699,
+          "logprob": -0.0008,
+          "text": "\\n"
+        },
+        {
+          "index": 49,
+          "token_id": 1189,
+          "logprob": -0.0007,
+          "text": ".\""
+        },
+        {
+          "index": 88,
+          "token_id": 422,
+          "logprob": -0.0007,
+          "text": " D"
+        },
+        {
+          "index": 92,
+          "token_id": 44,
+          "logprob": -0.0004,
+          "text": "M"
+        },
+        {
+          "index": 46,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 40,
+      "mean": -0.2873,
+      "min": -1.4182,
+      "p05": -1.2592,
+      "p50": -0.0081,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -1.4182,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.3984,
+          "text": "8"
+        },
+        {
+          "index": 57,
+          "token_id": 17,
+          "logprob": -1.2519,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -1.244,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.2346,
+          "text": "2"
+        },
+        {
+          "index": 62,
+          "token_id": 18,
+          "logprob": -1.111,
+          "text": "3"
+        },
+        {
+          "index": 68,
+          "token_id": 15,
+          "logprob": -1.0052,
+          "text": "0"
+        },
+        {
+          "index": 73,
+          "token_id": 16,
+          "logprob": -0.9003,
+          "text": "1"
+        },
+        {
+          "index": 55,
+          "token_id": 24,
+          "logprob": -0.8861,
+          "text": "9"
+        },
+        {
+          "index": 60,
+          "token_id": 20,
+          "logprob": -0.2606,
+          "text": "5"
+        },
+        {
+          "index": 67,
+          "token_id": 21,
+          "logprob": -0.1802,
+          "text": "6"
+        },
+        {
+          "index": 6,
+          "token_id": 23,
+          "logprob": -0.1442,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 98,
+      "mean": -0.124,
+      "min": -1.4182,
+      "p05": -1.1296,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 253.39,
+    "std": 19.22,
+    "dark_fraction": 0.00617
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      616.0,
+      811.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      205,
+      0,
+      1506,
+      2253
+    ],
+    "ink_px": 22462,
+    "rule_px": 5127,
+    "covered_px": 13852,
+    "covered_fraction": 0.79908,
+    "uncovered_px": 3483,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1192,
+          400,
+          1357,
+          507
+        ],
+        "ink_px": 1369
+      },
+      {
+        "bbox": [
+          1006,
+          432,
+          1069,
+          507
+        ],
+        "ink_px": 708
+      },
+      {
+        "bbox": [
+          805,
+          451,
+          900,
+          511
+        ],
+        "ink_px": 530
+      }
+    ],
+    "cell_px": 24
+  }
+}

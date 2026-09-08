@@ -1,0 +1,359 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        289,
+        248,
+        1467,
+        502
+      ],
+      "category": "Text",
+      "text": "Section 5. **Noncompliance.** Failure to file, late filing or intentional misstatements on the part of a covered employee shall constitute grounds for imposition of disciplinary penalties, including removal from office. The Inspector General of each agency shall be responsible for assuring that each covered employee timely files the report required by this Order and the report required by New York City Administrative Code Section 1106-5.0.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3314,
+          "min": -1.4298
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0012,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 86,
+          "mean": -0.0102,
+          "min": -0.6425
+        }
+      },
+      "ink": {
+        "ink_px": 41006,
+        "area_px": 299212,
+        "density": 0.13705,
+        "chars": 443,
+        "chars_per_1k_ink": 10.8
+      }
+    },
+    {
+      "bbox": [
+        291,
+        539,
+        1448,
+        635
+      ],
+      "category": "Text",
+      "text": "Section 6. **Public Disclosure.** The reports filed pursuant to this Order with the Department of Investigation shall not be subject to public disclosure.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.283,
+          "min": -1.2714
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 29,
+          "mean": -0.0004,
+          "min": -0.0042
+        }
+      },
+      "ink": {
+        "ink_px": 14678,
+        "area_px": 111072,
+        "density": 0.13215,
+        "chars": 154,
+        "chars_per_1k_ink": 10.49
+      }
+    },
+    {
+      "bbox": [
+        291,
+        672,
+        1371,
+        735
+      ],
+      "category": "Text",
+      "text": "Section 7. **Effective Date.** This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2381,
+          "min": -1.2332
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -0.0024,
+          "min": -0.035
+        }
+      },
+      "ink": {
+        "ink_px": 7150,
+        "area_px": 69120,
+        "density": 0.10344,
+        "chars": 72,
+        "chars_per_1k_ink": 10.07
+      }
+    },
+    {
+      "bbox": [
+        1019,
+        937,
+        1293,
+        993
+      ],
+      "category": "Text",
+      "text": "Edward I. Koch\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.271,
+          "min": -1.2466
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0112,
+          "min": -0.0112
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0097,
+          "min": -0.0601
+        }
+      },
+      "ink": {
+        "ink_px": 2077,
+        "area_px": 15400,
+        "density": 0.13487,
+        "chars": 20,
+        "chars_per_1k_ink": 9.63
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 283,
+    "content": {
+      "n_tokens": 139,
+      "mean": -0.0072,
+      "min": -0.6425,
+      "p05": -0.0106,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 39,
+          "token_id": 3070,
+          "logprob": -0.6425,
+          "text": " **"
+        },
+        {
+          "index": 43,
+          "token_id": 13,
+          "logprob": -0.1428,
+          "text": "."
+        },
+        {
+          "index": 272,
+          "token_id": 84501,
+          "logprob": -0.0601,
+          "text": "Edward"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.059,
+          "text": "Section"
+        },
+        {
+          "index": 225,
+          "token_id": 67539,
+          "logprob": -0.035,
+          "text": "Effective"
+        },
+        {
+          "index": 40,
+          "token_id": 8121,
+          "logprob": -0.0223,
+          "text": "Non"
+        },
+        {
+          "index": 278,
+          "token_id": 3022,
+          "logprob": -0.0164,
+          "text": "AY"
+        },
+        {
+          "index": 50,
+          "token_id": 25480,
+          "logprob": -0.01,
+          "text": " filing"
+        },
+        {
+          "index": 161,
+          "token_id": 12676,
+          "logprob": -0.0042,
+          "text": "Public"
+        },
+        {
+          "index": 160,
+          "token_id": 3070,
+          "logprob": -0.0033,
+          "text": " **"
+        },
+        {
+          "index": 171,
+          "token_id": 7217,
+          "logprob": -0.0017,
+          "text": " Order"
+        },
+        {
+          "index": 224,
+          "token_id": 3070,
+          "logprob": -0.0016,
+          "text": " **"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.267,
+      "min": -1.4298,
+      "p05": -1.2714,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.4298,
+          "text": "8"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.3464,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.2892,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.2773,
+          "text": "9"
+        },
+        {
+          "index": 144,
+          "token_id": 20,
+          "logprob": -1.2714,
+          "text": "5"
+        },
+        {
+          "index": 255,
+          "token_id": 18,
+          "logprob": -1.2466,
+          "text": "3"
+        },
+        {
+          "index": 208,
+          "token_id": 20,
+          "logprob": -1.2332,
+          "text": "5"
+        },
+        {
+          "index": 203,
+          "token_id": 16,
+          "logprob": -1.1693,
+          "text": "1"
+        },
+        {
+          "index": 139,
+          "token_id": 23,
+          "logprob": -1.1519,
+          "text": "8"
+        },
+        {
+          "index": 244,
+          "token_id": 24,
+          "logprob": -1.0967,
+          "text": "9"
+        },
+        {
+          "index": 249,
+          "token_id": 22,
+          "logprob": -1.0771,
+          "text": "7"
+        },
+        {
+          "index": 260,
+          "token_id": 18,
+          "logprob": -0.9849,
+          "text": "3"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 283,
+      "mean": -0.0816,
+      "min": -1.4298,
+      "p05": -0.8169,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 246.56,
+    "std": 42.73,
+    "dark_fraction": 0.03067
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      624.0,
+      812.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      208,
+      0,
+      1525,
+      2256
+    ],
+    "ink_px": 73295,
+    "rule_px": 2634,
+    "covered_px": 64911,
+    "covered_fraction": 0.91863,
+    "uncovered_px": 5750,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          976,
+          816,
+          1410,
+          917
+        ],
+        "ink_px": 5473
+      }
+    ],
+    "cell_px": 24
+  }
+}

@@ -28,7 +28,13 @@
           "min": -0.0043
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3,
+        "area_px": 1075,
+        "density": 0.00279,
+        "chars": 3,
+        "chars_per_1k_ink": 1000.0
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 676,
-        "area_px": 70147,
-        "density": 0.00964,
+        "ink_px": 727,
+        "area_px": 88367,
+        "density": 0.00823,
         "chars": 208,
-        "chars_per_1k_ink": 307.69
+        "chars_per_1k_ink": 286.11
       }
     },
     {
@@ -72,7 +78,7 @@
         420
       ],
       "category": "Section-header",
-      "text": "### § 4. Procedure for requesting renewals and extensions of expiring leases on presently occupied space at annual rentals in excess of $10,000",
+      "text": "### \u00a7 4. Procedure for requesting renewals and extensions of expiring leases on presently occupied space at annual rentals in excess of $10,000",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -140,7 +146,7 @@
         567
       ],
       "category": "Section-header",
-      "text": "### § 5. Inventory",
+      "text": "### \u00a7 5. Inventory",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -242,7 +248,7 @@
         827
       ],
       "category": "Section-header",
-      "text": "### § 6. Effective Date",
+      "text": "### \u00a7 6. Effective Date",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -561,15 +567,26 @@
   "ink_coverage": {
     "roi": [
       153,
-      237,
+      0,
       1126,
-      1739
+      1916
     ],
-    "ink_px": 4296,
-    "covered_px": 4260,
-    "covered_fraction": 0.99162,
-    "uncovered_px": 36,
-    "uncovered_regions": [],
+    "ink_px": 5642,
+    "rule_px": 225,
+    "covered_px": 4314,
+    "covered_fraction": 0.79638,
+    "uncovered_px": 1103,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          374,
+          1908,
+          505,
+          1916
+        ],
+        "ink_px": 487
+      }
+    ],
     "cell_px": 24
   }
 }

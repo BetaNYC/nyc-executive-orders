@@ -28,7 +28,13 @@
           "min": -0.5343
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4255,
+        "area_px": 24486,
+        "density": 0.17377,
+        "chars": 26,
+        "chars_per_1k_ink": 6.11
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0214
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 92,
+        "area_px": 22420,
+        "density": 0.0041,
+        "chars": 42,
+        "chars_per_1k_ink": 456.52
+      }
     },
     {
       "bbox": [
@@ -168,7 +180,7 @@
         922
       ],
       "category": "Table",
-      "text": "<table><tr><td>Use District Maps, 35 Sheets with Index Map, Book Form</td><td>$4.50</td></tr><tr><td>Height District Maps, 35 Sheets with Index Map, Book Form</td><td>4.50</td></tr><tr><td>Area District Maps, 35 Sheets with Index Map, Book Form</td><td>4.50</td></tr><tr><td>Individual Zoning Sheets, each</td><td>.25</td></tr><tr><td>Subscription to Zoning Amendments for One Year</td><td>5.00</td></tr><tr><td>Forms—Notice of Filing Zoning Petition, Poster Giving Notice of Filing Zoning Petition, Proof of Service, each</td><td>.03</td></tr><tr><td>Zoning Resolution (as amended to February 25, 1946)</td><td>.25</td></tr></table>",
+      "text": "<table><tr><td>Use District Maps, 35 Sheets with Index Map, Book Form</td><td>$4.50</td></tr><tr><td>Height District Maps, 35 Sheets with Index Map, Book Form</td><td>4.50</td></tr><tr><td>Area District Maps, 35 Sheets with Index Map, Book Form</td><td>4.50</td></tr><tr><td>Individual Zoning Sheets, each</td><td>.25</td></tr><tr><td>Subscription to Zoning Amendments for One Year</td><td>5.00</td></tr><tr><td>Forms\u2014Notice of Filing Zoning Petition, Poster Giving Notice of Filing Zoning Petition, Proof of Service, each</td><td>.03</td></tr><tr><td>Zoning Resolution (as amended to February 25, 1946)</td><td>.25</td></tr></table>",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -236,7 +248,7 @@
         1236
       ],
       "category": "Table",
-      "text": "<table><tr><td>Wall Map—Dated July 1, 1940, Scale 2,000 feet=1 inch (Approx. 8x8 feet) Mounted on Muslin, Equipped for Hanging</td><td>$13.00</td></tr><tr><td>Unmounted, in Six Sections</td><td>3.00</td></tr><tr><td>Sectional Map—Dated December 31, 1945 (35 Sections with an Index Map) Book Form, Scale 1,000 feet=1 inch</td><td>5.00</td></tr><tr><td>Individual Sectional Map, Sheets, Scale 1,000 feet=1 inch, each</td><td>.35</td></tr><tr><td>Blue Print—Scale 600 feet=1 inch, each section</td><td>1.50</td></tr><tr><td>White Print—Scale 600 feet=1 inch, each section</td><td>2.00</td></tr><tr><td>Population Distribution Map Book Form, Scale 1,000 feet=1 inch</td><td>10.00</td></tr><tr><td>Individual Sectional Map, Sheets, Scale 1,000 feet=1 inch, each</td><td>.50</td></tr></table>",
+      "text": "<table><tr><td>Wall Map\u2014Dated July 1, 1940, Scale 2,000 feet=1 inch (Approx. 8x8 feet) Mounted on Muslin, Equipped for Hanging</td><td>$13.00</td></tr><tr><td>Unmounted, in Six Sections</td><td>3.00</td></tr><tr><td>Sectional Map\u2014Dated December 31, 1945 (35 Sections with an Index Map) Book Form, Scale 1,000 feet=1 inch</td><td>5.00</td></tr><tr><td>Individual Sectional Map, Sheets, Scale 1,000 feet=1 inch, each</td><td>.35</td></tr><tr><td>Blue Print\u2014Scale 600 feet=1 inch, each section</td><td>1.50</td></tr><tr><td>White Print\u2014Scale 600 feet=1 inch, each section</td><td>2.00</td></tr><tr><td>Population Distribution Map Book Form, Scale 1,000 feet=1 inch</td><td>10.00</td></tr><tr><td>Individual Sectional Map, Sheets, Scale 1,000 feet=1 inch, each</td><td>.50</td></tr></table>",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -662,14 +674,15 @@
   "ink_coverage": {
     "roi": [
       263,
-      340,
+      81,
       1934,
-      2494
+      2747
     ],
-    "ink_px": 28050,
-    "covered_px": 28038,
-    "covered_fraction": 0.99957,
-    "uncovered_px": 12,
+    "ink_px": 33018,
+    "rule_px": 13,
+    "covered_px": 32385,
+    "covered_fraction": 0.98121,
+    "uncovered_px": 620,
     "uncovered_regions": [],
     "cell_px": 24
   }

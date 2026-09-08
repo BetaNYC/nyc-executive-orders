@@ -28,7 +28,13 @@
           "min": -0.0005
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 50,
+        "area_px": 6624,
+        "density": 0.00755,
+        "chars": 22,
+        "chars_per_1k_ink": 440.0
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.2986
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1564,
+        "density": 0.0,
+        "chars": 5,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -100,7 +112,7 @@
         685
       ],
       "category": "Section-header",
-      "text": "§ 5. Duties of Contracting Agencies.",
+      "text": "\u00a7 5. Duties of Contracting Agencies.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -212,7 +224,7 @@
           "index": 319,
           "token_id": 17851,
           "logprob": -0.641,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 235,
@@ -390,15 +402,26 @@
   "ink_coverage": {
     "roi": [
       145,
-      227,
+      0,
       1064,
-      1664
+      1836
     ],
-    "ink_px": 464,
-    "covered_px": 464,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 2599,
+    "rule_px": 1135,
+    "covered_px": 514,
+    "covered_fraction": 0.35109,
+    "uncovered_px": 950,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          361,
+          1824,
+          673,
+          1836
+        ],
+        "ink_px": 489
+      }
+    ],
     "cell_px": 24
   }
 }

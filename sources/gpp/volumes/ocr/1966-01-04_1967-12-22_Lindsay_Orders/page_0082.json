@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16801,
+        "area_px": 52216,
+        "density": 0.32176,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 4152,
-        "area_px": 39574,
-        "density": 0.10492,
+        "ink_px": 6134,
+        "area_px": 52625,
+        "density": 0.11656,
         "chars": 53,
-        "chars_per_1k_ink": 12.76
+        "chars_per_1k_ink": 8.64
       }
     },
     {
@@ -203,7 +209,7 @@
         1552
       ],
       "category": "Text",
-      "text": "§4. Department of Personnel. The Department of Personnel shall undertake the following action:",
+      "text": "\u00a74. Department of Personnel. The Department of Personnel shall undertake the following action:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -441,7 +447,7 @@
         2636
       ],
       "category": "Text",
-      "text": "§5. Effective date. All agencies of city government not under the jurisdiction of the Mayor are requested to cooperate in the establishment and maintenance of this program, which shall become effective on the date hereof.",
+      "text": "\u00a75. Effective date. All agencies of city government not under the jurisdiction of the Mayor are requested to cooperate in the establishment and maintenance of this program, which shall become effective on the date hereof.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -526,7 +532,7 @@
           "index": 337,
           "token_id": 17851,
           "logprob": -0.0704,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 509,
@@ -692,23 +698,33 @@
   "ink_coverage": {
     "roi": [
       285,
-      416,
+      111,
       2092,
-      3054
+      3361
     ],
-    "ink_px": 215945,
-    "covered_px": 215102,
-    "covered_fraction": 0.9961,
-    "uncovered_px": 843,
+    "ink_px": 237182,
+    "rule_px": 672,
+    "covered_px": 233885,
+    "covered_fraction": 0.9889,
+    "uncovered_px": 2625,
     "uncovered_regions": [
       {
         "bbox": [
-          813,
-          608,
-          1053,
-          632
+          1351,
+          160,
+          1393,
+          225
         ],
-        "ink_px": 459
+        "ink_px": 765
+      },
+      {
+        "bbox": [
+          832,
+          612,
+          1053,
+          620
+        ],
+        "ink_px": 433
       }
     ],
     "cell_px": 24

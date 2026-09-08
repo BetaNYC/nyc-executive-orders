@@ -1,0 +1,354 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        388,
+        213,
+        1515,
+        406
+      ],
+      "category": "Text",
+      "text": "shared responsibilities, who have lived together for a\nperiod of one year or more on a continuous basis at the\ntime of registration, and who have registered as domestic\npartners and have not terminated the registration in\naccordance with procedures to be established by the\nDepartment of Personnel of the City of New York.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3144,
+          "min": -1.4762
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 65,
+          "mean": -0.0067,
+          "min": -0.4316
+        }
+      },
+      "ink": {
+        "ink_px": 38989,
+        "area_px": 220935,
+        "density": 0.17647,
+        "chars": 322,
+        "chars_per_1k_ink": 8.26
+      }
+    },
+    {
+      "bbox": [
+        388,
+        440,
+        1538,
+        736
+      ],
+      "category": "Text",
+      "text": "Section 3. Registration. The Department of Personnel of the City of New York is directed to establish procedures and develop forms for the registration and termination of domestic partnerships. The Department of Personnel shall not register a domestic partnership if either member is currently a member of another domestic partnership or was previously a member of another domestic partnership and less than one year has expired since the termination of that domestic partnership.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.276,
+          "min": -1.2571
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0069,
+          "min": -0.0069
+        },
+        "text": {
+          "n_tokens": 78,
+          "mean": -0.0054,
+          "min": -0.2522
+        }
+      },
+      "ink": {
+        "ink_px": 61579,
+        "area_px": 342355,
+        "density": 0.17987,
+        "chars": 480,
+        "chars_per_1k_ink": 7.79
+      }
+    },
+    {
+      "bbox": [
+        390,
+        771,
+        1479,
+        835
+      ],
+      "category": "Text",
+      "text": "Section 4. Effective Date. This Order shall\ntake effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2922,
+          "min": -1.2726
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -0.0074,
+          "min": -0.0521
+        }
+      },
+      "ink": {
+        "ink_px": 9313,
+        "area_px": 71175,
+        "density": 0.13085,
+        "chars": 68,
+        "chars_per_1k_ink": 7.3
+      }
+    },
+    {
+      "bbox": [
+        1025,
+        940,
+        1362,
+        1093
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3469,
+          "min": -1.7793
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0066,
+          "min": -0.0066
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 8027,
+        "area_px": 52360,
+        "density": 0.1533,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 299,
+    "content": {
+      "n_tokens": 159,
+      "mean": -0.0061,
+      "min": -0.4316,
+      "p05": -0.0071,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 44,
+          "token_id": 1699,
+          "logprob": -0.4316,
+          "text": "\\n"
+        },
+        {
+          "index": 139,
+          "token_id": 24516,
+          "logprob": -0.2522,
+          "text": " Registration"
+        },
+        {
+          "index": 135,
+          "token_id": 9620,
+          "logprob": -0.1028,
+          "text": "Section"
+        },
+        {
+          "index": 144,
+          "token_id": 69977,
+          "logprob": -0.0554,
+          "text": " Personnel"
+        },
+        {
+          "index": 258,
+          "token_id": 59,
+          "logprob": -0.0521,
+          "text": "\\"
+        },
+        {
+          "index": 248,
+          "token_id": 9620,
+          "logprob": -0.0306,
+          "text": "Section"
+        },
+        {
+          "index": 252,
+          "token_id": 46923,
+          "logprob": -0.028,
+          "text": " Effective"
+        },
+        {
+          "index": 140,
+          "token_id": 13,
+          "logprob": -0.0087,
+          "text": "."
+        },
+        {
+          "index": 263,
+          "token_id": 1189,
+          "logprob": -0.007,
+          "text": ".\""
+        },
+        {
+          "index": 79,
+          "token_id": 4475,
+          "logprob": -0.0016,
+          "text": "acc"
+        },
+        {
+          "index": 58,
+          "token_id": 406,
+          "logprob": -0.0012,
+          "text": "nt"
+        },
+        {
+          "index": 212,
+          "token_id": 1189,
+          "logprob": -0.0011,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 82,
+      "mean": -0.2935,
+      "min": -1.7793,
+      "p05": -1.3433,
+      "p50": -0.0004,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 283,
+          "token_id": 17,
+          "logprob": -1.7793,
+          "text": "2"
+        },
+        {
+          "index": 272,
+          "token_id": 20,
+          "logprob": -1.7288,
+          "text": "5"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.4762,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.469,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.3451,
+          "text": "8"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -1.3075,
+          "text": "6"
+        },
+        {
+          "index": 236,
+          "token_id": 20,
+          "logprob": -1.2726,
+          "text": "5"
+        },
+        {
+          "index": 123,
+          "token_id": 21,
+          "logprob": -1.2571,
+          "text": "6"
+        },
+        {
+          "index": 220,
+          "token_id": 15,
+          "logprob": -1.2504,
+          "text": "0"
+        },
+        {
+          "index": 118,
+          "token_id": 23,
+          "logprob": -1.2163,
+          "text": "8"
+        },
+        {
+          "index": 289,
+          "token_id": 18,
+          "logprob": -1.1858,
+          "text": "3"
+        },
+        {
+          "index": 277,
+          "token_id": 15,
+          "logprob": -1.1563,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 299,
+      "mean": -0.0865,
+      "min": -1.7793,
+      "p05": -0.8421,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 242.79,
+    "std": 51.21,
+    "dark_fraction": 0.04627
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      628.0,
+      820.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      209,
+      0,
+      1535,
+      2278
+    ],
+    "ink_px": 119650,
+    "rule_px": 506,
+    "covered_px": 117908,
+    "covered_fraction": 0.98963,
+    "uncovered_px": 1236,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1370,
+          1047,
+          1429,
+          1063
+        ],
+        "ink_px": 423
+      }
+    ],
+    "cell_px": 24
+  }
+}

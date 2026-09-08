@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 13553,
+        "area_px": 39083,
+        "density": 0.34677,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 5290,
-        "area_px": 45261,
-        "density": 0.11688,
+        "ink_px": 5517,
+        "area_px": 50760,
+        "density": 0.10869,
         "chars": 53,
-        "chars_per_1k_ink": 10.02
+        "chars_per_1k_ink": 9.61
       }
     },
     {
@@ -135,7 +141,7 @@
         1287
       ],
       "category": "Text",
-      "text": "### § 9. (a) Pursuant to the provisions of Administrative Code, section B18-22.1, subdivision a, paragraph 5, as added by L. 1967, c. 379, beginning with the payroll period the first day of which is nearest to July 1, 1967 and ending with the payroll period immediately prior to that, the first day of which is nearest to June 30, 1968, the contribution of each member of the Police Pension Fund, Article 2, made pursuant to subdivision b or e of section B18-22.0 of the Administrative Code, exclusive of any increase thereof pursuant to subdivisions c and d of such section B18-22.0 or any reduction thereof pursuant to subdivision one of section 138-b of the Retirement and Social Security Law, shall be reduced by 2 1/2 per centum of the compensation of such member.",
+      "text": "### \u00a7 9. (a) Pursuant to the provisions of Administrative Code, section B18-22.1, subdivision a, paragraph 5, as added by L. 1967, c. 379, beginning with the payroll period the first day of which is nearest to July 1, 1967 and ending with the payroll period immediately prior to that, the first day of which is nearest to June 30, 1968, the contribution of each member of the Police Pension Fund, Article 2, made pursuant to subdivision b or e of section B18-22.0 of the Administrative Code, exclusive of any increase thereof pursuant to subdivisions c and d of such section B18-22.0 or any reduction thereof pursuant to subdivision one of section 138-b of the Retirement and Social Security Law, shall be reduced by 2 1/2 per centum of the compensation of such member.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -237,7 +243,7 @@
         1978
       ],
       "category": "Text",
-      "text": "### § 10. Pursuant to the provisions of Administrative Code, section B20-41.1, subdivision i, as amended by Laws 1967, Ch. 379, beginning with the payroll period, the first day of which is nearest to July 1, 1967, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30, 1968, the provisions of paragraph four of such subdivision i and the provisions of subdivisions e and f of such Section B20-41.1, shall be applicable to and for the benefit of all contributors to the New York City Teachers' Retirement System.",
+      "text": "### \u00a7 10. Pursuant to the provisions of Administrative Code, section B20-41.1, subdivision i, as amended by Laws 1967, Ch. 379, beginning with the payroll period, the first day of which is nearest to July 1, 1967, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30, 1968, the provisions of paragraph four of such subdivision i and the provisions of subdivisions e and f of such Section B20-41.1, shall be applicable to and for the benefit of all contributors to the New York City Teachers' Retirement System.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -305,7 +311,7 @@
         2410
       ],
       "category": "Text",
-      "text": "### § 11. Pursuant to the provisions of subdivision 11 of Section 108 of the Judiciary Law, as added by L. 1967, c. 379, the deduction from the salary or compensation of any employee or officer made pursuant to Section 108 of the Judiciary Law, need not be made and no contribution in lieu thereof need be made during the one-year period commencing with July 1, 1967.",
+      "text": "### \u00a7 11. Pursuant to the provisions of subdivision 11 of Section 108 of the Judiciary Law, as added by L. 1967, c. 379, the deduction from the salary or compensation of any employee or officer made pursuant to Section 108 of the Judiciary Law, need not be made and no contribution in lieu thereof need be made during the one-year period commencing with July 1, 1967.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -373,7 +379,7 @@
         2884
       ],
       "category": "Text",
-      "text": "### § 12. Pursuant to the provisions of Section G51-3.4 of the Administrative Code, as amended by L. 1967, c. 379, the deduction from the pay, salary or compensation of any member of the Relief and Pension Fund of the Department of Street Cleaning, made pursuant to the provisions of Section G51-3.0, par. 2 of the Administrative Code, shall be reduced to zero per centum during the one-year period commencing with July 1, 1967.",
+      "text": "### \u00a7 12. Pursuant to the provisions of Section G51-3.4 of the Administrative Code, as amended by L. 1967, c. 379, the deduction from the pay, salary or compensation of any member of the Relief and Pension Fund of the Department of Street Cleaning, made pursuant to the provisions of Section G51-3.0, par. 2 of the Administrative Code, shall be reduced to zero per centum during the one-year period commencing with July 1, 1967.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -595,15 +601,26 @@
   "ink_coverage": {
     "roi": [
       288,
-      419,
+      117,
       2118,
-      3073
+      3374
     ],
-    "ink_px": 206585,
-    "covered_px": 206585,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 224686,
+    "rule_px": 1989,
+    "covered_px": 220365,
+    "covered_fraction": 0.98953,
+    "uncovered_px": 2332,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1584,
+          3360,
+          2118,
+          3374
+        ],
+        "ink_px": 2052
+      }
+    ],
     "cell_px": 24
   }
 }

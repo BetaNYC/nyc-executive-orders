@@ -28,7 +28,13 @@
           "min": -0.0013
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 212,
+        "area_px": 3872,
+        "density": 0.05475,
+        "chars": 3,
+        "chars_per_1k_ink": 14.15
+      }
     },
     {
       "bbox": [
@@ -357,15 +363,44 @@
   "ink_coverage": {
     "roi": [
       316,
-      414,
+      96,
       2319,
-      3039
+      3318
     ],
-    "ink_px": 23052,
-    "covered_px": 23052,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 29227,
+    "rule_px": 2216,
+    "covered_px": 23264,
+    "covered_fraction": 0.86128,
+    "uncovered_px": 3747,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1756,
+          3311,
+          2319,
+          3318
+        ],
+        "ink_px": 1050
+      },
+      {
+        "bbox": [
+          1926,
+          105,
+          2284,
+          120
+        ],
+        "ink_px": 649
+      },
+      {
+        "bbox": [
+          318,
+          123,
+          502,
+          131
+        ],
+        "ink_px": 437
+      }
+    ],
     "cell_px": 24
   }
 }

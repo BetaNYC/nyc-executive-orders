@@ -28,7 +28,13 @@
           "min": -0.4396
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 12498,
+        "area_px": 145431,
+        "density": 0.08594,
+        "chars": 31,
+        "chars_per_1k_ink": 2.48
+      }
     },
     {
       "bbox": [
@@ -339,7 +345,7 @@
         1809
       ],
       "category": "Caption",
-      "text": "THE HONORABLE JOHN V. LINDSAY, MAYOR—NEW YORK CITY",
+      "text": "THE HONORABLE JOHN V. LINDSAY, MAYOR\u2014NEW YORK CITY",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -391,7 +397,13 @@
           "min": -0.0008
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3363,
+        "area_px": 15133,
+        "density": 0.22223,
+        "chars": 17,
+        "chars_per_1k_ink": 5.06
+      }
     },
     {
       "bbox": [
@@ -420,11 +432,11 @@
         }
       },
       "ink": {
-        "ink_px": 13,
-        "area_px": 11766,
-        "density": 0.0011,
+        "ink_px": 169,
+        "area_px": 21942,
+        "density": 0.0077,
         "chars": 13,
-        "chars_per_1k_ink": 1000.0
+        "chars_per_1k_ink": 76.92
       }
     }
   ],
@@ -451,7 +463,7 @@
           "index": 947,
           "token_id": 2293,
           "logprob": -0.485,
-          "text": "—"
+          "text": "\u2014"
         },
         {
           "index": 628,
@@ -623,25 +635,16 @@
   "ink_coverage": {
     "roi": [
       304,
-      385,
+      133,
       2231,
-      2828
+      3102
     ],
-    "ink_px": 537838,
-    "covered_px": 536465,
-    "covered_fraction": 0.99745,
-    "uncovered_px": 1373,
-    "uncovered_regions": [
-      {
-        "bbox": [
-          304,
-          1249,
-          544,
-          1273
-        ],
-        "ink_px": 852
-      }
-    ],
+    "ink_px": 558269,
+    "rule_px": 4442,
+    "covered_px": 552482,
+    "covered_fraction": 0.99757,
+    "uncovered_px": 1345,
+    "uncovered_regions": [],
     "cell_px": 24
   }
 }

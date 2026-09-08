@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 45,
-        "area_px": 45056,
-        "density": 0.001,
+        "ink_px": 55,
+        "area_px": 95744,
+        "density": 0.00057,
         "chars": 59,
-        "chars_per_1k_ink": 1311.11
+        "chars_per_1k_ink": 1072.73
       }
     },
     {
@@ -248,7 +248,7 @@
         2347
       ],
       "category": "Text",
-      "text": "§ 3. All the functions, powers and duties heretofore delegated to or exercised by the New York City Division of Veterans Affairs or its director shall be performed within the Mayor's Office for Veteran Action and the Director of the Mayor's Office for Veteran Action is hereby delegated the power to exercise or delegate any of such functions, powers and duties. The Director shall exercise such functions, powers and duties in continuation of their exercise by the New York City Division of Veterans Affairs and its director. The functions, powers and duties heretofore delegated to or exercised by the New York City Division of Veterans Affairs or its director are hereby withdrawn.",
+      "text": "\u00a7 3. All the functions, powers and duties heretofore delegated to or exercised by the New York City Division of Veterans Affairs or its director shall be performed within the Mayor's Office for Veteran Action and the Director of the Mayor's Office for Veteran Action is hereby delegated the power to exercise or delegate any of such functions, powers and duties. The Director shall exercise such functions, powers and duties in continuation of their exercise by the New York City Division of Veterans Affairs and its director. The functions, powers and duties heretofore delegated to or exercised by the New York City Division of Veterans Affairs or its director are hereby withdrawn.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -282,7 +282,7 @@
         2503
       ],
       "category": "Text",
-      "text": "§ 4. Except to the extent that they may be inconsistent with this Order, ALL determinations, authorizations, regulations, writings, certificates,",
+      "text": "\u00a7 4. Except to the extent that they may be inconsistent with this Order, ALL determinations, authorizations, regulations, writings, certificates,",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -344,7 +344,7 @@
           "index": 459,
           "token_id": 17851,
           "logprob": -0.119,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 470,
@@ -362,7 +362,7 @@
           "index": 625,
           "token_id": 17851,
           "logprob": -0.0238,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 234,
@@ -504,15 +504,26 @@
   "ink_coverage": {
     "roi": [
       255,
-      421,
+      104,
       1872,
-      3094
+      3421
     ],
-    "ink_px": 7738,
-    "covered_px": 7738,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 9197,
+    "rule_px": 559,
+    "covered_px": 7748,
+    "covered_fraction": 0.89697,
+    "uncovered_px": 890,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1411,
+          3416,
+          1872,
+          3421
+        ],
+        "ink_px": 583
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -28,7 +28,13 @@
           "min": -0.0005
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 151,
+        "area_px": 7300,
+        "density": 0.02068,
+        "chars": 22,
+        "chars_per_1k_ink": 145.7
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0053
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 26,
+        "area_px": 902,
+        "density": 0.02882,
+        "chars": 3,
+        "chars_per_1k_ink": 115.38
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.001
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16,
+        "area_px": 5525,
+        "density": 0.0029,
+        "chars": 16,
+        "chars_per_1k_ink": 1000.0
+      }
     },
     {
       "bbox": [
@@ -128,7 +146,7 @@
         386
       ],
       "category": "Section-header",
-      "text": "## § 6. Contracts for Purchase Without Public Letting",
+      "text": "## \u00a7 6. Contracts for Purchase Without Public Letting",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -264,7 +282,7 @@
         769
       ],
       "category": "Section-header",
-      "text": "## § 7. Contract Changes",
+      "text": "## \u00a7 7. Contract Changes",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -487,11 +505,11 @@
         }
       },
       "ink": {
-        "ink_px": 193,
-        "area_px": 195852,
-        "density": 0.00099,
+        "ink_px": 237,
+        "area_px": 228494,
+        "density": 0.00104,
         "chars": 483,
-        "chars_per_1k_ink": 2502.59
+        "chars_per_1k_ink": 2037.97
       }
     }
   ],
@@ -690,15 +708,26 @@
   "ink_coverage": {
     "roi": [
       147,
-      225,
+      0,
       1082,
-      1653
+      1816
     ],
-    "ink_px": 6845,
-    "covered_px": 6567,
-    "covered_fraction": 0.95939,
-    "uncovered_px": 278,
-    "uncovered_regions": [],
+    "ink_px": 10861,
+    "rule_px": 2170,
+    "covered_px": 6804,
+    "covered_fraction": 0.78288,
+    "uncovered_px": 1887,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          387,
+          1808,
+          651,
+          1815
+        ],
+        "ink_px": 1258
+      }
+    ],
     "cell_px": 24
   }
 }

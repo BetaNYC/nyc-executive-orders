@@ -38,7 +38,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from nyc_executive_orders import config  # noqa: E402
-from nyc_executive_orders.build_corpus import CorpusShrinkError, build_corpus  # noqa: E402
+from nyc_executive_orders.build_corpus import (  # noqa: E402
+    OCR_ENGINE_AUTO,
+    OCR_ENGINE_CHOICES,
+    OCR_ENGINE_VLM,
+    CorpusShrinkError,
+    build_corpus,
+)
 from nyc_executive_orders.ocr import OcrConfig  # noqa: E402
 
 logger = logging.getLogger("nyc_executive_orders.run_parse")
@@ -75,6 +81,23 @@ def build_arg_parser() -> argparse.ArgumentParser:
     )
     p.add_argument("--language", default="eng", help="Tesseract language (OCR path).")
     p.add_argument(
+        "--ocr-engine",
+        choices=list(OCR_ENGINE_CHOICES),
+        default=OCR_ENGINE_AUTO,
+        help="What transcribes a SCANNED PDF. 'auto' (default) uses the committed VLM "
+        "page records under --vlm-ocr-root where they exist and Tesseract where they "
+        "do not, so the corpus rebuilds complete at any point during a long OCR run. "
+        "'vlm' uses the records only and emits ocr-skipped where there are none — "
+        "reproducible, and needs no Tesseract. 'tesseract' ignores the records "
+        "entirely (the rollback path). Born-digital orders are unaffected by all three.",
+    )
+    p.add_argument(
+        "--vlm-ocr-root",
+        default=None,
+        help="Where scripts/run_post1974_ocr.py wrote its committed page records "
+        "(default: sources/ocr).",
+    )
+    p.add_argument(
         "--i-am-a-human-running-this-supervised",
         action="store_true",
         help="Human authorization for the (long) local OCR run.",
@@ -97,8 +120,12 @@ def main(argv=None) -> int:
 
     do_ocr = not args.no_ocr
 
-    # Gate ONLY the OCR path. --no-ocr needs no authorization (born-digital, fast).
-    if do_ocr:
+    # Gate ONLY the path that can actually run Tesseract across the scanned corpus.
+    # --no-ocr needs no authorization (born-digital, fast), and neither does
+    # --ocr-engine vlm: that reads committed page records off disk and takes
+    # seconds, exactly like scripts/run_pre1974_build.py, which has no gate either.
+    may_run_tesseract = do_ocr and args.ocr_engine != OCR_ENGINE_VLM
+    if may_run_tesseract:
         human = args.i_am_a_human_running_this_supervised
         operator = args.operator_authorized
         if not (human or operator):
@@ -121,8 +148,12 @@ def main(argv=None) -> int:
     records = load_records(Path(args.index))
     ocr_config = OcrConfig(language=args.language)
 
+    engine_note = (
+        "(no-ocr, born-digital only)" if args.no_ocr
+        else f"(scanned -> {args.ocr_engine}, local)"
+    )
     print(
-        f"PARSE {'(no-ocr, born-digital only)' if args.no_ocr else '(OCR on, local)'}: "
+        f"PARSE {engine_note}: "
         f"records={len(records)} year={args.year} limit={args.limit}\n"
     )
 
@@ -134,6 +165,8 @@ def main(argv=None) -> int:
             index_dir=Path(args.index_dir),
             do_ocr=do_ocr,
             ocr_config=ocr_config,
+            ocr_engine=args.ocr_engine,
+            vlm_ocr_root=args.vlm_ocr_root,
             year=args.year,
             limit=args.limit,
             allow_shrink=args.allow_shrink,

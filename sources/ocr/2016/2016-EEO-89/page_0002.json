@@ -1,0 +1,276 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        305,
+        348,
+        1507,
+        419
+      ],
+      "category": "Text",
+      "text": "Section 5. This order shall take effect immediately and shall remain in effect for five days unless extended or sooner revoked.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3195,
+          "min": -1.6108
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 24,
+          "mean": -0.0008,
+          "min": -0.0161
+        }
+      },
+      "ink": {
+        "ink_px": 7326,
+        "area_px": 84703,
+        "density": 0.08649,
+        "chars": 127,
+        "chars_per_1k_ink": 17.34
+      }
+    },
+    {
+      "bbox": [
+        903,
+        486,
+        1410,
+        694
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3499,
+          "min": -1.7144
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 6448,
+        "area_px": 105248,
+        "density": 0.06126,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 92,
+    "content": {
+      "n_tokens": 24,
+      "mean": -0.0008,
+      "min": -0.0161,
+      "p05": -0.0021,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 53,
+          "token_id": 7241,
+          "logprob": -0.0161,
+          "text": " unless"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0024,
+          "text": "Section"
+        },
+        {
+          "index": 42,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 58,
+          "token_id": 1189,
+          "logprob": -0.0001,
+          "text": ".\""
+        },
+        {
+          "index": 57,
+          "token_id": 64346,
+          "logprob": -0.0001,
+          "text": " revoked"
+        },
+        {
+          "index": 54,
+          "token_id": 11577,
+          "logprob": -0.0,
+          "text": " extended"
+        },
+        {
+          "index": 44,
+          "token_id": 7069,
+          "logprob": -0.0,
+          "text": " immediately"
+        },
+        {
+          "index": 47,
+          "token_id": 7146,
+          "logprob": -0.0,
+          "text": " remain"
+        },
+        {
+          "index": 51,
+          "token_id": 4236,
+          "logprob": -0.0,
+          "text": " five"
+        },
+        {
+          "index": 37,
+          "token_id": 20,
+          "logprob": -0.0,
+          "text": "5"
+        },
+        {
+          "index": 39,
+          "token_id": 1096,
+          "logprob": -0.0,
+          "text": " This"
+        },
+        {
+          "index": 40,
+          "token_id": 1973,
+          "logprob": -0.0,
+          "text": " order"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 40,
+      "mean": -0.318,
+      "min": -1.7144,
+      "p05": -1.4857,
+      "p50": -0.003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 66,
+          "token_id": 18,
+          "logprob": -1.7144,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.6108,
+          "text": "5"
+        },
+        {
+          "index": 71,
+          "token_id": 21,
+          "logprob": -1.4791,
+          "text": "6"
+        },
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.3885,
+          "text": "8"
+        },
+        {
+          "index": 82,
+          "token_id": 19,
+          "logprob": -1.3141,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.2749,
+          "text": "7"
+        },
+        {
+          "index": 77,
+          "token_id": 15,
+          "logprob": -1.0485,
+          "text": "0"
+        },
+        {
+          "index": 23,
+          "token_id": 24,
+          "logprob": -0.818,
+          "text": "9"
+        },
+        {
+          "index": 76,
+          "token_id": 16,
+          "logprob": -0.5245,
+          "text": "1"
+        },
+        {
+          "index": 22,
+          "token_id": 16,
+          "logprob": -0.5233,
+          "text": "1"
+        },
+        {
+          "index": 11,
+          "token_id": 19,
+          "logprob": -0.202,
+          "text": "4"
+        },
+        {
+          "index": 75,
+          "token_id": 19,
+          "logprob": -0.2019,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 92,
+      "mean": -0.1386,
+      "min": -1.7144,
+      "p05": -1.2925,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 253.38,
+    "std": 15.78,
+    "dark_fraction": 0.00638
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 13774,
+    "rule_px": 0,
+    "covered_px": 13774,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

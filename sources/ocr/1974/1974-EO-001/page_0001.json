@@ -1,0 +1,445 @@
+{
+  "page": 1,
+  "source_image": "page_0001.png",
+  "elements": [
+    {
+      "bbox": [
+        714,
+        874,
+        1051,
+        940
+      ],
+      "category": "Title",
+      "text": "OFFICE OF THE MAYOR\nEXECUTIVE ORDER NO. 1",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2237,
+          "min": -1.25
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0583,
+          "min": -0.875
+        }
+      },
+      "ink": {
+        "ink_px": 4593,
+        "area_px": 22579,
+        "density": 0.20342,
+        "chars": 41,
+        "chars_per_1k_ink": 8.93
+      }
+    },
+    {
+      "bbox": [
+        490,
+        963,
+        1277,
+        1003
+      ],
+      "category": "Text",
+      "text": "PURSUANT TO THE PROVISIONS OF SECTION THREE OF THE NEW YORK CITY CHARTER AND EXCEPT AS HERE AFTER PROVIDED:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.1875,
+          "min": -0.875
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "text": {
+          "n_tokens": 27,
+          "mean": -0.0694,
+          "min": -1.0
+        }
+      },
+      "ink": {
+        "ink_px": 5521,
+        "area_px": 32267,
+        "density": 0.1711,
+        "chars": 107,
+        "chars_per_1k_ink": 19.38
+      }
+    },
+    {
+      "bbox": [
+        526,
+        1002,
+        1212,
+        1022
+      ],
+      "category": "List-item",
+      "text": "1. All Executive Orders in effect on December 31, 1973, are hereby continued.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.1369,
+          "min": -0.75
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.125,
+          "min": -0.25
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": 0.0,
+          "min": 0.0
+        }
+      },
+      "ink": {
+        "ink_px": 2987,
+        "area_px": 14406,
+        "density": 0.20734,
+        "chars": 77,
+        "chars_per_1k_ink": 25.78
+      }
+    },
+    {
+      "bbox": [
+        490,
+        1021,
+        1278,
+        1098
+      ],
+      "category": "List-item",
+      "text": "2. All Executive Orders in effect on December 31, 1973, designating by name officials holding office in the government of the City to perform functions set forth in such Executive Orders are hereby modified to the extent that such functions shall be performed by the persons holding such offices pursuant to my direction.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.1429,
+          "min": -0.75
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "text": {
+          "n_tokens": 64,
+          "mean": 0.0,
+          "min": 0.0
+        }
+      },
+      "ink": {
+        "ink_px": 12077,
+        "area_px": 61464,
+        "density": 0.19649,
+        "chars": 321,
+        "chars_per_1k_ink": 26.58
+      }
+    },
+    {
+      "bbox": [
+        526,
+        1098,
+        571,
+        1116
+      ],
+      "category": "Text",
+      "text": "j7-12",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.0875,
+          "min": -0.625
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": 0.0,
+          "min": 0.0
+        }
+      },
+      "ink": {
+        "ink_px": 214,
+        "area_px": 874,
+        "density": 0.24485,
+        "chars": 5,
+        "chars_per_1k_ink": 23.36
+      }
+    },
+    {
+      "bbox": [
+        939,
+        1098,
+        1241,
+        1116
+      ],
+      "category": "Text",
+      "text": "ABRAHAM D. BEAME, Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.0774,
+          "min": -0.375
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0375,
+          "min": -0.375
+        }
+      },
+      "ink": {
+        "ink_px": 1471,
+        "area_px": 5757,
+        "density": 0.25552,
+        "chars": 24,
+        "chars_per_1k_ink": 16.32
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 366,
+    "content": {
+      "n_tokens": 144,
+      "mean": -0.0217,
+      "min": -1.0,
+      "p05": 0.0,
+      "p50": 0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 110,
+          "token_id": 48264,
+          "logprob": -1.0,
+          "text": " AFTER"
+        },
+        {
+          "index": 42,
+          "token_id": 46340,
+          "logprob": -0.875,
+          "text": "EXEC"
+        },
+        {
+          "index": 100,
+          "token_id": 46304,
+          "logprob": -0.5,
+          "text": " YORK"
+        },
+        {
+          "index": 362,
+          "token_id": 22093,
+          "logprob": -0.375,
+          "text": " Mayor"
+        },
+        {
+          "index": 102,
+          "token_id": 6826,
+          "logprob": -0.25,
+          "text": " CH"
+        },
+        {
+          "index": 111,
+          "token_id": 16525,
+          "logprob": -0.125,
+          "text": " PROVIDED"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 130,
+      "mean": -0.1346,
+      "min": -1.25,
+      "p05": -0.75,
+      "p50": 0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.25,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.0,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -0.875,
+          "text": "1"
+        },
+        {
+          "index": 68,
+          "token_id": 22,
+          "logprob": -0.875,
+          "text": "7"
+        },
+        {
+          "index": 74,
+          "token_id": 18,
+          "logprob": -0.875,
+          "text": "3"
+        },
+        {
+          "index": 57,
+          "token_id": 15,
+          "logprob": -0.75,
+          "text": "0"
+        },
+        {
+          "index": 62,
+          "token_id": 18,
+          "logprob": -0.75,
+          "text": "3"
+        },
+        {
+          "index": 120,
+          "token_id": 21,
+          "logprob": -0.75,
+          "text": "6"
+        },
+        {
+          "index": 126,
+          "token_id": 17,
+          "logprob": -0.75,
+          "text": "2"
+        },
+        {
+          "index": 138,
+          "token_id": 17,
+          "logprob": -0.75,
+          "text": "2"
+        },
+        {
+          "index": 199,
+          "token_id": 23,
+          "logprob": -0.75,
+          "text": "8"
+        },
+        {
+          "index": 22,
+          "token_id": 19,
+          "logprob": -0.625,
+          "text": "4"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 366,
+      "mean": -0.0564,
+      "min": -1.25,
+      "p05": -0.5938,
+      "p50": 0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.75,
+    "std": 29.84,
+    "dark_fraction": 0.01479
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      634.0,
+      825.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      211,
+      0,
+      1550,
+      2292
+    ],
+    "ink_px": 48539,
+    "rule_px": 5200,
+    "covered_px": 26837,
+    "covered_fraction": 0.61923,
+    "uncovered_px": 16502,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1134,
+          216,
+          1459,
+          365
+        ],
+        "ink_px": 5152
+      },
+      {
+        "bbox": [
+          995,
+          40,
+          1184,
+          120
+        ],
+        "ink_px": 2379
+      },
+      {
+        "bbox": [
+          1093,
+          138,
+          1287,
+          214
+        ],
+        "ink_px": 1991
+      },
+      {
+        "bbox": [
+          964,
+          158,
+          1096,
+          271
+        ],
+        "ink_px": 1829
+      },
+      {
+        "bbox": [
+          844,
+          41,
+          964,
+          142
+        ],
+        "ink_px": 1669
+      },
+      {
+        "bbox": [
+          302,
+          27,
+          543,
+          96
+        ],
+        "ink_px": 1660
+      },
+      {
+        "bbox": [
+          706,
+          48,
+          806,
+          95
+        ],
+        "ink_px": 689
+      }
+    ],
+    "cell_px": 24
+  }
+}

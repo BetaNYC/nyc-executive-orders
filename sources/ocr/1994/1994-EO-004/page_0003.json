@@ -1,0 +1,383 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        514,
+        149,
+        1381,
+        195
+      ],
+      "category": "Title",
+      "text": "EXECUTIVE ORDERS OF THE MAYOR OF NEW YORK",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2912,
+          "min": -1.461
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0432,
+          "min": -0.0432
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0014,
+          "min": -0.0166
+        }
+      },
+      "ink": {
+        "ink_px": 5016,
+        "area_px": 39744,
+        "density": 0.12621,
+        "chars": 41,
+        "chars_per_1k_ink": 8.17
+      }
+    },
+    {
+      "bbox": [
+        379,
+        246,
+        1523,
+        337
+      ],
+      "category": "Text",
+      "text": "sider the best qualified candidates for appointment to commissions, boards and other\npublic bodies.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2889,
+          "min": -1.3681
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 18,
+          "mean": -0.0297,
+          "min": -0.4396
+        }
+      },
+      "ink": {
+        "ink_px": 6981,
+        "area_px": 102948,
+        "density": 0.06781,
+        "chars": 99,
+        "chars_per_1k_ink": 14.18
+      }
+    },
+    {
+      "bbox": [
+        381,
+        319,
+        1523,
+        409
+      ],
+      "category": "Text",
+      "text": "Section 9. Prior Orders Revoked. Executive Order No. 5, dated January 23, 1990, and Executive Order No. 19, dated September 19, 1990, hereby are repealed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2416,
+          "min": -1.0244
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0012,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 53,
+          "mean": -0.0061,
+          "min": -0.2158
+        }
+      },
+      "ink": {
+        "ink_px": 9942,
+        "area_px": 100530,
+        "density": 0.0989,
+        "chars": 154,
+        "chars_per_1k_ink": 15.49
+      }
+    },
+    {
+      "bbox": [
+        458,
+        395,
+        1330,
+        442
+      ],
+      "category": "Text",
+      "text": "Section 10. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.266,
+          "min": -1.2728
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0009,
+          "min": -0.0115
+        }
+      },
+      "ink": {
+        "ink_px": 4495,
+        "area_px": 41712,
+        "density": 0.10776,
+        "chars": 69,
+        "chars_per_1k_ink": 15.35
+      }
+    },
+    {
+      "bbox": [
+        1254,
+        467,
+        1525,
+        532
+      ],
+      "category": "Text",
+      "text": "Rudolph W. Giuliani\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2434,
+          "min": -1.3034
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0068,
+          "min": -0.0068
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0002,
+          "min": -0.0011
+        }
+      },
+      "ink": {
+        "ink_px": 1823,
+        "area_px": 16368,
+        "density": 0.11138,
+        "chars": 25,
+        "chars_per_1k_ink": 13.71
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 287,
+    "content": {
+      "n_tokens": 108,
+      "mean": -0.0082,
+      "min": -0.4396,
+      "p05": -0.0166,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 96,
+          "token_id": 1699,
+          "logprob": -0.4396,
+          "text": "\\n"
+        },
+        {
+          "index": 135,
+          "token_id": 9620,
+          "logprob": -0.2158,
+          "text": "Section"
+        },
+        {
+          "index": 162,
+          "token_id": 11,
+          "logprob": -0.089,
+          "text": ","
+        },
+        {
+          "index": 99,
+          "token_id": 1189,
+          "logprob": -0.0704,
+          "text": ".\""
+        },
+        {
+          "index": 82,
+          "token_id": 82,
+          "logprob": -0.0231,
+          "text": "s"
+        },
+        {
+          "index": 35,
+          "token_id": 46340,
+          "logprob": -0.0166,
+          "text": "EXEC"
+        },
+        {
+          "index": 187,
+          "token_id": 1189,
+          "logprob": -0.0166,
+          "text": ".\""
+        },
+        {
+          "index": 223,
+          "token_id": 9620,
+          "logprob": -0.0115,
+          "text": "Section"
+        },
+        {
+          "index": 281,
+          "token_id": 44,
+          "logprob": -0.0011,
+          "text": "M"
+        },
+        {
+          "index": 141,
+          "token_id": 10107,
+          "logprob": -0.0007,
+          "text": " Rev"
+        },
+        {
+          "index": 279,
+          "token_id": 88050,
+          "logprob": -0.0007,
+          "text": " Giuliani"
+        },
+        {
+          "index": 142,
+          "token_id": 10823,
+          "logprob": -0.0005,
+          "text": "oked"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 101,
+      "mean": -0.2533,
+      "min": -1.461,
+      "p05": -1.3034,
+      "p50": -0.0004,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.461,
+          "text": "4"
+        },
+        {
+          "index": 59,
+          "token_id": 21,
+          "logprob": -1.3681,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.3675,
+          "text": "1"
+        },
+        {
+          "index": 65,
+          "token_id": 18,
+          "logprob": -1.3562,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 20,
+          "logprob": -1.3047,
+          "text": "5"
+        },
+        {
+          "index": 246,
+          "token_id": 19,
+          "logprob": -1.3034,
+          "text": "4"
+        },
+        {
+          "index": 70,
+          "token_id": 22,
+          "logprob": -1.2895,
+          "text": "7"
+        },
+        {
+          "index": 211,
+          "token_id": 17,
+          "logprob": -1.2728,
+          "text": "2"
+        },
+        {
+          "index": 251,
+          "token_id": 22,
+          "logprob": -1.2077,
+          "text": "7"
+        },
+        {
+          "index": 257,
+          "token_id": 20,
+          "logprob": -1.1702,
+          "text": "5"
+        },
+        {
+          "index": 200,
+          "token_id": 20,
+          "logprob": -1.1678,
+          "text": "5"
+        },
+        {
+          "index": 206,
+          "token_id": 15,
+          "logprob": -1.1172,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 287,
+      "mean": -0.0934,
+      "min": -1.461,
+      "p05": -1.0147,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 252.29,
+    "std": 22.98,
+    "dark_fraction": 0.00939
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 27089,
+    "rule_px": 506,
+    "covered_px": 26307,
+    "covered_fraction": 0.98962,
+    "uncovered_px": 276,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -10,7 +10,7 @@
         764
       ],
       "category": "Text",
-      "text": "## An Old Problem\nIn Manhattan, the nation's most crowded and productive central business district, some 2,000,000 people come to work every day from New York City's five boroughs and the hundreds of communities in the surrounding Metropolitan area of three States — New York, New Jersey, and Connecticut.",
+      "text": "## An Old Problem\nIn Manhattan, the nation's most crowded and productive central business district, some 2,000,000 people come to work every day from New York City's five boroughs and the hundreds of communities in the surrounding Metropolitan area of three States \u2014 New York, New Jersey, and Connecticut.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 9914,
-        "area_px": 522639,
-        "density": 0.01897,
+        "ink_px": 11691,
+        "area_px": 625380,
+        "density": 0.01869,
         "chars": 305,
-        "chars_per_1k_ink": 30.76
+        "chars_per_1k_ink": 26.09
       }
     },
     {
@@ -185,7 +185,7 @@
           "index": 92,
           "token_id": 1959,
           "logprob": -0.7691,
-          "text": " —"
+          "text": " \u2014"
         },
         {
           "index": 35,
@@ -363,15 +363,26 @@
   "ink_coverage": {
     "roi": [
       317,
-      412,
+      99,
       2325,
-      3025
+      3312
     ],
-    "ink_px": 34019,
-    "covered_px": 32926,
-    "covered_fraction": 0.96787,
-    "uncovered_px": 1093,
-    "uncovered_regions": [],
+    "ink_px": 38641,
+    "rule_px": 1480,
+    "covered_px": 34703,
+    "covered_fraction": 0.93386,
+    "uncovered_px": 2458,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1781,
+          3305,
+          2325,
+          3312
+        ],
+        "ink_px": 976
+      }
+    ],
     "cell_px": 24
   }
 }

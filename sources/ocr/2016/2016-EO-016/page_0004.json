@@ -1,0 +1,344 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        185,
+        272,
+        975,
+        309
+      ],
+      "category": "Text",
+      "text": "complying with existing state or federal law or regulations.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.3339,
+          "min": -1.6014
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0002,
+          "min": -0.0002
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0001,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 4959,
+        "area_px": 29146,
+        "density": 0.17014,
+        "chars": 60,
+        "chars_per_1k_ink": 12.1
+      }
+    },
+    {
+      "bbox": [
+        288,
+        349,
+        1205,
+        387
+      ],
+      "category": "Text",
+      "text": "Section 8. Effective Date. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.283,
+          "min": -1.318
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0021,
+          "min": -0.0021
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0131,
+          "min": -0.1752
+        }
+      },
+      "ink": {
+        "ink_px": 6594,
+        "area_px": 34732,
+        "density": 0.18985,
+        "chars": 68,
+        "chars_per_1k_ink": 10.31
+      }
+    },
+    {
+      "bbox": [
+        886,
+        520,
+        1356,
+        644
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4394,
+          "min": -1.6961
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0013,
+          "min": -0.0013
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 6655,
+        "area_px": 58156,
+        "density": 0.11443,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        890,
+        624,
+        1073,
+        696
+      ],
+      "category": "Caption",
+      "text": "Bill de Blasio\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2573,
+          "min": -1.3048
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0264,
+          "min": -0.0264
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0038,
+          "min": -0.0162
+        }
+      },
+      "ink": {
+        "ink_px": 2242,
+        "area_px": 13359,
+        "density": 0.16783,
+        "chars": 20,
+        "chars_per_1k_ink": 8.92
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 168,
+    "content": {
+      "n_tokens": 31,
+      "mean": -0.0066,
+      "min": -0.1752,
+      "p05": -0.0119,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 85,
+          "token_id": 46923,
+          "logprob": -0.1752,
+          "text": " Effective"
+        },
+        {
+          "index": 162,
+          "token_id": 92393,
+          "logprob": -0.0162,
+          "text": " Blasio"
+        },
+        {
+          "index": 81,
+          "token_id": 9620,
+          "logprob": -0.0076,
+          "text": "Section"
+        },
+        {
+          "index": 160,
+          "token_id": 27476,
+          "logprob": -0.002,
+          "text": "Bill"
+        },
+        {
+          "index": 35,
+          "token_id": 2541,
+          "logprob": -0.0005,
+          "text": "ply"
+        },
+        {
+          "index": 84,
+          "token_id": 13,
+          "logprob": -0.0005,
+          "text": "."
+        },
+        {
+          "index": 163,
+          "token_id": 1699,
+          "logprob": -0.0005,
+          "text": "\\n"
+        },
+        {
+          "index": 45,
+          "token_id": 1189,
+          "logprob": -0.0003,
+          "text": ".\""
+        },
+        {
+          "index": 164,
+          "token_id": 85574,
+          "logprob": -0.0002,
+          "text": "Mayor"
+        },
+        {
+          "index": 94,
+          "token_id": 1189,
+          "logprob": -0.0001,
+          "text": ".\""
+        },
+        {
+          "index": 44,
+          "token_id": 14305,
+          "logprob": -0.0001,
+          "text": " regulations"
+        },
+        {
+          "index": 34,
+          "token_id": 874,
+          "logprob": -0.0001,
+          "text": "com"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 79,
+      "mean": -0.3121,
+      "min": -1.6961,
+      "p05": -1.5232,
+      "p50": -0.0013,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 102,
+          "token_id": 21,
+          "logprob": -1.6961,
+          "text": "6"
+        },
+        {
+          "index": 113,
+          "token_id": 21,
+          "logprob": -1.6941,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.6014,
+          "text": "5"
+        },
+        {
+          "index": 118,
+          "token_id": 19,
+          "logprob": -1.6011,
+          "text": "4"
+        },
+        {
+          "index": 17,
+          "token_id": 20,
+          "logprob": -1.5145,
+          "text": "5"
+        },
+        {
+          "index": 64,
+          "token_id": 20,
+          "logprob": -1.318,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.308,
+          "text": "2"
+        },
+        {
+          "index": 137,
+          "token_id": 19,
+          "logprob": -1.3048,
+          "text": "4"
+        },
+        {
+          "index": 107,
+          "token_id": 15,
+          "logprob": -1.2523,
+          "text": "0"
+        },
+        {
+          "index": 53,
+          "token_id": 23,
+          "logprob": -1.2221,
+          "text": "8"
+        },
+        {
+          "index": 69,
+          "token_id": 22,
+          "logprob": -1.2205,
+          "text": "7"
+        },
+        {
+          "index": 148,
+          "token_id": 21,
+          "logprob": -1.1752,
+          "text": "6"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 168,
+      "mean": -0.1494,
+      "min": -1.6961,
+      "p05": -1.2417,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 251.78,
+    "std": 19.26,
+    "dark_fraction": 0.00893
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 19282,
+    "rule_px": 0,
+    "covered_px": 19279,
+    "covered_fraction": 0.99984,
+    "uncovered_px": 3,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

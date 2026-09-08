@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 12837,
-        "area_px": 861840,
-        "density": 0.01489,
+        "ink_px": 14466,
+        "area_px": 928720,
+        "density": 0.01558,
         "chars": 520,
-        "chars_per_1k_ink": 40.51
+        "chars_per_1k_ink": 35.95
       }
     },
     {
@@ -146,7 +146,7 @@
         1860
       ],
       "category": "Text",
-      "text": "§2. Labor-Management Joint Activities:",
+      "text": "\u00a72. Labor-Management Joint Activities:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -224,7 +224,7 @@
           "index": 383,
           "token_id": 17851,
           "logprob": -1.1305,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 175,
@@ -402,15 +402,26 @@
   "ink_coverage": {
     "roi": [
       260,
-      419,
+      83,
       1907,
-      3079
+      3387
     ],
-    "ink_px": 31552,
-    "covered_px": 31552,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 35545,
+    "rule_px": 1156,
+    "covered_px": 33181,
+    "covered_fraction": 0.96487,
+    "uncovered_px": 1208,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1460,
+          3379,
+          1907,
+          3387
+        ],
+        "ink_px": 696
+      }
+    ],
     "cell_px": 24
   }
 }

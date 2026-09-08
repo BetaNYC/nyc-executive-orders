@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16834,
+        "area_px": 52430,
+        "density": 0.32108,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 3844,
-        "area_px": 35196,
-        "density": 0.10922,
+        "ink_px": 6160,
+        "area_px": 51956,
+        "density": 0.11856,
         "chars": 54,
-        "chars_per_1k_ink": 14.05
+        "chars_per_1k_ink": 8.77
       }
     },
     {
@@ -271,7 +277,7 @@
         3133
       ],
       "category": "Text",
-      "text": "§4. **Saving Provision.** Except to the extent that they may be inconsistent with this order, all determinations, authorizations, regulations, writings, certificates, orders, directives, contracts, agreements, and other actions made,",
+      "text": "\u00a74. **Saving Provision.** Except to the extent that they may be inconsistent with this order, all determinations, authorizations, regulations, writings, certificates, orders, directives, contracts, agreements, and other actions made,",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -290,11 +296,11 @@
         }
       },
       "ink": {
-        "ink_px": 18781,
-        "area_px": 158772,
-        "density": 0.11829,
+        "ink_px": 36891,
+        "area_px": 322260,
+        "density": 0.11448,
         "chars": 233,
-        "chars_per_1k_ink": 12.41
+        "chars_per_1k_ink": 6.32
       }
     }
   ],
@@ -333,7 +339,7 @@
           "index": 700,
           "token_id": 17851,
           "logprob": -0.191,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 264,
@@ -493,15 +499,35 @@
   "ink_coverage": {
     "roi": [
       288,
-      414,
+      100,
       2117,
-      3040
+      3346
     ],
-    "ink_px": 346295,
-    "covered_px": 346295,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 386551,
+    "rule_px": 767,
+    "covered_px": 383555,
+    "covered_fraction": 0.99422,
+    "uncovered_px": 2229,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1375,
+          148,
+          1416,
+          206
+        ],
+        "ink_px": 751
+      },
+      {
+        "bbox": [
+          1418,
+          3345,
+          1872,
+          3346
+        ],
+        "ink_px": 447
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -78,7 +78,7 @@
         891
       ],
       "category": "Text",
-      "text": "§ 3. This order shall take effect immediately.",
+      "text": "\u00a7 3. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -157,7 +157,7 @@
           "index": 185,
           "token_id": 17851,
           "logprob": -0.3166,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 140,
@@ -329,15 +329,44 @@
   "ink_coverage": {
     "roi": [
       171,
-      225,
+      0,
       1256,
-      1650
+      1819
     ],
-    "ink_px": 91,
+    "ink_px": 2596,
+    "rule_px": 353,
     "covered_px": 91,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.04057,
+    "uncovered_px": 2152,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          605,
+          1787,
+          683,
+          1804
+        ],
+        "ink_px": 649
+      },
+      {
+        "bbox": [
+          1181,
+          1762,
+          1256,
+          1774
+        ],
+        "ink_px": 508
+      },
+      {
+        "bbox": [
+          939,
+          1814,
+          1256,
+          1819
+        ],
+        "ink_px": 421
+      }
+    ],
     "cell_px": 24
   }
 }

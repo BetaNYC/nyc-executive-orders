@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8815,
+        "area_px": 37400,
+        "density": 0.2357,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 631,
-        "area_px": 8520,
-        "density": 0.07406,
+        "ink_px": 4380,
+        "area_px": 54954,
+        "density": 0.0797,
         "chars": 53,
-        "chars_per_1k_ink": 83.99
+        "chars_per_1k_ink": 12.1
       }
     },
     {
@@ -441,7 +447,7 @@
         3107
       ],
       "category": "Text",
-      "text": "§ 2. This order shall take effect June 17, 1966.",
+      "text": "\u00a7 2. This order shall take effect June 17, 1966.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -460,11 +466,11 @@
         }
       },
       "ink": {
-        "ink_px": 353,
-        "area_px": 32136,
-        "density": 0.01098,
+        "ink_px": 870,
+        "area_px": 66744,
+        "density": 0.01303,
         "chars": 48,
-        "chars_per_1k_ink": 135.98
+        "chars_per_1k_ink": 55.17
       }
     },
     {
@@ -489,9 +495,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 300,
-        "area_px": 45012,
-        "density": 0.00666,
+        "ink_px": 1774,
+        "area_px": 167090,
+        "density": 0.01062,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -514,7 +520,7 @@
           "index": 1054,
           "token_id": 17851,
           "logprob": -0.6554,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 521,
@@ -692,15 +698,26 @@
   "ink_coverage": {
     "roi": [
       287,
-      419,
+      93,
       2108,
-      3073
+      3366
     ],
-    "ink_px": 42608,
-    "covered_px": 42602,
-    "covered_fraction": 0.99986,
-    "uncovered_px": 6,
-    "uncovered_regions": [],
+    "ink_px": 59880,
+    "rule_px": 1512,
+    "covered_px": 56938,
+    "covered_fraction": 0.9755,
+    "uncovered_px": 1430,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1751,
+          3360,
+          2108,
+          3366
+        ],
+        "ink_px": 547
+      }
+    ],
     "cell_px": 24
   }
 }

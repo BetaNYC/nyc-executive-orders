@@ -1,0 +1,383 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        301,
+        268,
+        1456,
+        359
+      ],
+      "category": "Text",
+      "text": "Commissioner of Investigation, Chancellor, and the Board of Education.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3101,
+          "min": -1.4225
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0004,
+          "min": -0.0004
+        },
+        "text": {
+          "n_tokens": 13,
+          "mean": -0.0999,
+          "min": -0.9508
+        }
+      },
+      "ink": {
+        "ink_px": 7124,
+        "area_px": 107088,
+        "density": 0.06652,
+        "chars": 70,
+        "chars_per_1k_ink": 9.83
+      }
+    },
+    {
+      "bbox": [
+        298,
+        399,
+        1460,
+        826
+      ],
+      "category": "List-item",
+      "text": "(f) The Deputy Commissioner shall make an annual report of his or her findings and recommendations to the Commissioner of Investigation, the Board of Education and the Chancellor. The annual report shall include a summary of the steps taken by the Board of Education, Chancellor, Community School Boards, and Community Superintendents to implement prior Deputy Commissioner recommendations.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2916,
+          "min": -1.185
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.008,
+          "min": -0.0161
+        },
+        "text": {
+          "n_tokens": 68,
+          "mean": -0.0002,
+          "min": -0.0076
+        }
+      },
+      "ink": {
+        "ink_px": 41042,
+        "area_px": 500017,
+        "density": 0.08208,
+        "chars": 390,
+        "chars_per_1k_ink": 9.5
+      }
+    },
+    {
+      "bbox": [
+        301,
+        867,
+        1458,
+        1087
+      ],
+      "category": "List-item",
+      "text": "(g) The Deputy Commissioner shall make available to appropriate law enforcement officials information and evidence which relate to criminal acts that he or she may obtain in carrying out his or her duties.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2154,
+          "min": -1.1111
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0005,
+          "min": -0.0009
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.0002,
+          "min": -0.0059
+        }
+      },
+      "ink": {
+        "ink_px": 20543,
+        "area_px": 257686,
+        "density": 0.07972,
+        "chars": 205,
+        "chars_per_1k_ink": 9.98
+      }
+    },
+    {
+      "bbox": [
+        303,
+        1127,
+        1458,
+        1422
+      ],
+      "category": "Text",
+      "text": "**Section 4. Cooperation with the Deputy Commissioner of Investigation for the City School District.** (a) The Department of Investigation shall provide whatever assistance the Commissioner of Investigation deems necessary and appropriate to enable the Deputy Commissioner to carry out his or her responsibilities.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2423,
+          "min": -1.2513
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1003,
+          "min": -0.1003
+        },
+        "text": {
+          "n_tokens": 52,
+          "mean": -0.0189,
+          "min": -0.5873
+        }
+      },
+      "ink": {
+        "ink_px": 36845,
+        "area_px": 343380,
+        "density": 0.1073,
+        "chars": 314,
+        "chars_per_1k_ink": 8.52
+      }
+    },
+    {
+      "bbox": [
+        305,
+        1457,
+        1460,
+        1822
+      ],
+      "category": "List-item",
+      "text": "(b) The Board of Education, the Chancellor, all Community School Boards and Community Superintendents within the School District of the City of New York, and all other heads of department or agencies of the City shall insure the full cooperation of all persons employed or supervised by them with investigations or inquiries conducted by the Deputy Commissioner.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2239,
+          "min": -1.2155
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.019,
+          "min": -0.038
+        },
+        "text": {
+          "n_tokens": 66,
+          "mean": -0.0006,
+          "min": -0.0162
+        }
+      },
+      "ink": {
+        "ink_px": 38563,
+        "area_px": 424860,
+        "density": 0.09077,
+        "chars": 362,
+        "chars_per_1k_ink": 9.39
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 416,
+    "content": {
+      "n_tokens": 235,
+      "mean": -0.01,
+      "min": -0.9508,
+      "p05": -0.0064,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 40,
+          "token_id": 46963,
+          "logprob": -0.9508,
+          "text": " Chancellor"
+        },
+        {
+          "index": 259,
+          "token_id": 67961,
+          "logprob": -0.5873,
+          "text": " \"**"
+        },
+        {
+          "index": 46,
+          "token_id": 11668,
+          "logprob": -0.3136,
+          "text": " Education"
+        },
+        {
+          "index": 264,
+          "token_id": 72708,
+          "logprob": -0.1378,
+          "text": " Cooperation"
+        },
+        {
+          "index": 270,
+          "token_id": 46897,
+          "logprob": -0.1319,
+          "text": " Investigation"
+        },
+        {
+          "index": 278,
+          "token_id": 320,
+          "logprob": -0.1147,
+          "text": " ("
+        },
+        {
+          "index": 39,
+          "token_id": 11,
+          "logprob": -0.0188,
+          "text": ","
+        },
+        {
+          "index": 386,
+          "token_id": 476,
+          "logprob": -0.0162,
+          "text": " or"
+        },
+        {
+          "index": 47,
+          "token_id": 1189,
+          "logprob": -0.0144,
+          "text": ".\""
+        },
+        {
+          "index": 385,
+          "token_id": 9292,
+          "logprob": -0.0127,
+          "text": " department"
+        },
+        {
+          "index": 277,
+          "token_id": 334,
+          "logprob": -0.0087,
+          "text": "**"
+        },
+        {
+          "index": 94,
+          "token_id": 315,
+          "logprob": -0.0076,
+          "text": " of"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 108,
+      "mean": -0.2378,
+      "min": -1.4225,
+      "p05": -1.186,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -1.4225,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.3137,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.2575,
+          "text": "8"
+        },
+        {
+          "index": 230,
+          "token_id": 18,
+          "logprob": -1.2513,
+          "text": "3"
+        },
+        {
+          "index": 336,
+          "token_id": 17,
+          "logprob": -1.2155,
+          "text": "2"
+        },
+        {
+          "index": 248,
+          "token_id": 17,
+          "logprob": -1.1865,
+          "text": "2"
+        },
+        {
+          "index": 71,
+          "token_id": 21,
+          "logprob": -1.185,
+          "text": "6"
+        },
+        {
+          "index": 318,
+          "token_id": 20,
+          "logprob": -1.1721,
+          "text": "5"
+        },
+        {
+          "index": 236,
+          "token_id": 22,
+          "logprob": -1.1617,
+          "text": "7"
+        },
+        {
+          "index": 55,
+          "token_id": 23,
+          "logprob": -1.1599,
+          "text": "8"
+        },
+        {
+          "index": 163,
+          "token_id": 22,
+          "logprob": -1.1111,
+          "text": "7"
+        },
+        {
+          "index": 324,
+          "token_id": 22,
+          "logprob": -1.0995,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 416,
+      "mean": -0.0674,
+      "min": -1.4225,
+      "p05": -0.6443,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 238.57,
+    "std": 58.22,
+    "dark_fraction": 0.06123
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      639.0,
+      825.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      213,
+      0,
+      1562,
+      2292
+    ],
+    "ink_px": 144649,
+    "rule_px": 0,
+    "covered_px": 144117,
+    "covered_fraction": 0.99632,
+    "uncovered_px": 532,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

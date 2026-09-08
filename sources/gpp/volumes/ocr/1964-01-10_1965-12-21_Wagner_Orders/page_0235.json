@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2963,
+        "area_px": 35460,
+        "density": 0.08356,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 176,
-        "area_px": 43956,
-        "density": 0.004,
+        "ink_px": 184,
+        "area_px": 52503,
+        "density": 0.0035,
         "chars": 54,
-        "chars_per_1k_ink": 306.82
+        "chars_per_1k_ink": 293.48
       }
     },
     {
@@ -334,7 +340,7 @@
         2911
       ],
       "category": "Text",
-      "text": "The Tax Law, §1101(b)(8)(E), provides that every political subdivision of the State is liable for the collection of the sales tax \"when such entity sells services or property of a kind ordinarily sold by private persons.\" Thus, the City of New York is liable for the collection of the sales tax on such items as beach locker rentals, sale of surplus equipment, meals over $1, etc.",
+      "text": "The Tax Law, \u00a71101(b)(8)(E), provides that every political subdivision of the State is liable for the collection of the sales tax \"when such entity sells services or property of a kind ordinarily sold by private persons.\" Thus, the City of New York is liable for the collection of the sales tax on such items as beach locker rentals, sale of surplus equipment, meals over $1, etc.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -387,11 +393,11 @@
         }
       },
       "ink": {
-        "ink_px": 34,
-        "area_px": 41054,
-        "density": 0.00083,
+        "ink_px": 315,
+        "area_px": 391592,
+        "density": 0.0008,
         "chars": 146,
-        "chars_per_1k_ink": 4294.12
+        "chars_per_1k_ink": 463.49
       }
     }
   ],
@@ -590,14 +596,15 @@
   "ink_coverage": {
     "roi": [
       272,
-      406,
+      98,
       1999,
-      2982
+      3324
     ],
-    "ink_px": 2433,
-    "covered_px": 2433,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 6695,
+    "rule_px": 390,
+    "covered_px": 5685,
+    "covered_fraction": 0.90167,
+    "uncovered_px": 620,
     "uncovered_regions": [],
     "cell_px": 24
   }

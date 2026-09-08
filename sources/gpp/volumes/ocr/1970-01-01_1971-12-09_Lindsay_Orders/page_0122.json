@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 5,
-        "area_px": 3783,
-        "density": 0.00132,
+        "ink_px": 18,
+        "area_px": 9506,
+        "density": 0.00189,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -73,7 +73,7 @@
         485
       ],
       "category": "List-item",
-      "text": "(1) who are subject to prevailing rate determinations made within the purview of §220 of the Labor Law, or",
+      "text": "(1) who are subject to prevailing rate determinations made within the purview of \u00a7220 of the Labor Law, or",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -379,7 +379,7 @@
           "index": 134,
           "token_id": 16625,
           "logprob": -0.0314,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 78,
@@ -533,14 +533,15 @@
   "ink_coverage": {
     "roi": [
       133,
-      189,
+      0,
       976,
-      1389
+      1578
     ],
-    "ink_px": 11660,
-    "covered_px": 11557,
-    "covered_fraction": 0.99117,
-    "uncovered_px": 103,
+    "ink_px": 12739,
+    "rule_px": 737,
+    "covered_px": 11570,
+    "covered_fraction": 0.96401,
+    "uncovered_px": 432,
     "uncovered_regions": [],
     "cell_px": 24
   }

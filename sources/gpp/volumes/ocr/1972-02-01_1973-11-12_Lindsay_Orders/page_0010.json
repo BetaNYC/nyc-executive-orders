@@ -28,7 +28,13 @@
           "min": -0.0062
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 163,
+        "area_px": 2993,
+        "density": 0.05446,
+        "chars": 3,
+        "chars_per_1k_ink": 18.4
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 5699,
-        "area_px": 124331,
-        "density": 0.04584,
+        "ink_px": 14713,
+        "area_px": 313905,
+        "density": 0.04687,
         "chars": 260,
-        "chars_per_1k_ink": 45.62
+        "chars_per_1k_ink": 17.67
       }
     },
     {
@@ -373,7 +379,7 @@
         2771
       ],
       "category": "Text",
-      "text": "As required by General City Law, §36 and New York City Charter, §230 shall be required before approval by the Buildings",
+      "text": "As required by General City Law, \u00a736 and New York City Charter, \u00a7230 shall be required before approval by the Buildings",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -429,7 +435,7 @@
           "index": 718,
           "token_id": 16625,
           "logprob": -0.1622,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 90,
@@ -595,15 +601,26 @@
   "ink_coverage": {
     "roi": [
       263,
-      421,
+      98,
       1930,
-      3088
+      3412
     ],
-    "ink_px": 83233,
-    "covered_px": 83077,
-    "covered_fraction": 0.99813,
-    "uncovered_px": 156,
-    "uncovered_regions": [],
+    "ink_px": 95838,
+    "rule_px": 1635,
+    "covered_px": 92254,
+    "covered_fraction": 0.97931,
+    "uncovered_px": 1949,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1463,
+          3399,
+          1930,
+          3412
+        ],
+        "ink_px": 1694
+      }
+    ],
     "cell_px": 24
   }
 }

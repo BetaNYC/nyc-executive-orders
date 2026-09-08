@@ -28,7 +28,13 @@
           "min": -0.006
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 9,
+        "area_px": 1012,
+        "density": 0.00889,
+        "chars": 3,
+        "chars_per_1k_ink": 333.33
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         355
       ],
       "category": "Text",
-      "text": "§6. The Mayor shall appoint an Executive Committee of not more than sixteen members which shall act on behalf of the Council. The Mayor shall serve as Chairman of the Executive Committee.",
+      "text": "\u00a76. The Mayor shall appoint an Executive Committee of not more than sixteen members which shall act on behalf of the Council. The Mayor shall serve as Chairman of the Executive Committee.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -72,7 +78,7 @@
         572
       ],
       "category": "Text",
-      "text": "§7. The Executive Committee: (a) is hereby designated to act as the planning agency for the City under the provisions of the Omnibus Crime Control and Safe Streets Act, and (b) shall have the power to review and approve applications on behalf of the City for Federal and State crime control and criminal justice funds.",
+      "text": "\u00a77. The Executive Committee: (a) is hereby designated to act as the planning agency for the City under the provisions of the Omnibus Crime Control and Safe Streets Act, and (b) shall have the power to review and approve applications on behalf of the City for Federal and State crime control and criminal justice funds.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -106,7 +112,7 @@
         698
       ],
       "category": "Text",
-      "text": "§8. All City agencies shall furnish the Director with such reports and information as he may deem necessary to carry out the functions and purposes of his office.",
+      "text": "\u00a78. All City agencies shall furnish the Director with such reports and information as he may deem necessary to carry out the functions and purposes of his office.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 17,
@@ -140,7 +146,7 @@
         784
       ],
       "category": "Text",
-      "text": "§9. The Director shall submit an annual report to the Mayor and the members of the Council.",
+      "text": "\u00a79. The Director shall submit an annual report to the Mayor and the members of the Council.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 17,
@@ -174,7 +180,7 @@
         835
       ],
       "category": "Text",
-      "text": "§10. This order shall be effective immediately.",
+      "text": "\u00a710. This order shall be effective immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -287,7 +293,7 @@
           "index": 71,
           "token_id": 17851,
           "logprob": -0.0153,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 444,
@@ -335,7 +341,7 @@
           "index": 357,
           "token_id": 17851,
           "logprob": -0.0005,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 257,
@@ -459,15 +465,26 @@
   "ink_coverage": {
     "roi": [
       139,
-      179,
+      0,
       1026,
-      1316
+      1464
     ],
-    "ink_px": 591,
-    "covered_px": 591,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 4246,
+    "rule_px": 2276,
+    "covered_px": 600,
+    "covered_fraction": 0.30457,
+    "uncovered_px": 1370,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          384,
+          1440,
+          560,
+          1464
+        ],
+        "ink_px": 808
+      }
+    ],
     "cell_px": 24
   }
 }

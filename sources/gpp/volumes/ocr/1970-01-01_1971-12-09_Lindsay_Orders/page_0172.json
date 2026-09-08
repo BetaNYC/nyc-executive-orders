@@ -44,7 +44,7 @@
         946
       ],
       "category": "Text",
-      "text": "§ 2. The City Commission on Human Rights shall reactive and investigate complaints of violations of this order and shall take such action thereon as it deems necessary and proper in accordance with the provisions of Chapter one, title B of the Administrative Code of the City of New York.",
+      "text": "\u00a7 2. The City Commission on Human Rights shall reactive and investigate complaints of violations of this order and shall take such action thereon as it deems necessary and proper in accordance with the provisions of Chapter one, title B of the Administrative Code of the City of New York.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -78,7 +78,7 @@
         1432
       ],
       "category": "Text",
-      "text": "§ 3. Pursuant to the powers granted to it under §B1-5.0 of the Administrative Code, the Commission on Human Rights shall initiate an investigation of all qualifications as to sex and age which are presently required for application for appointment to a class of positions in any City department or agency. The Personnel Director of the City of New York shall cooperate and consult with the Commission on Human Rights in this investigation and",
+      "text": "\u00a7 3. Pursuant to the powers granted to it under \u00a7B1-5.0 of the Administrative Code, the Commission on Human Rights shall initiate an investigation of all qualifications as to sex and age which are presently required for application for appointment to a class of positions in any City department or agency. The Personnel Director of the City of New York shall cooperate and consult with the Commission on Human Rights in this investigation and",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -134,13 +134,13 @@
           "index": 128,
           "token_id": 17851,
           "logprob": -0.2535,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 233,
           "token_id": 16625,
           "logprob": -0.1369,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 234,
@@ -300,15 +300,44 @@
   "ink_coverage": {
     "roi": [
       172,
-      225,
+      0,
       1267,
-      1650
+      1813
     ],
-    "ink_px": 9,
+    "ink_px": 2136,
+    "rule_px": 180,
     "covered_px": 9,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.0046,
+    "uncovered_px": 1947,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          606,
+          1780,
+          687,
+          1798
+        ],
+        "ink_px": 658
+      },
+      {
+        "bbox": [
+          1185,
+          1756,
+          1267,
+          1768
+        ],
+        "ink_px": 567
+      },
+      {
+        "bbox": [
+          940,
+          1808,
+          1267,
+          1813
+        ],
+        "ink_px": 437
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -111,19 +111,57 @@ def test_mint_pre1974_id_unnumbered_is_date_derived():
 
 
 def test_mint_pre1974_id_disambiguates_same_date_collisions():
-    first = mint_pre1974_id(1967, None, "EM", month_day="0104", occurrence=0)
-    second = mint_pre1974_id(1967, None, "EM", month_day="0104", occurrence=1)
-    third = mint_pre1974_id(1967, None, "EM", month_day="0104", occurrence=2)
+    first = mint_pre1974_id(1967, None, "EM", month_day="0104", page=10, occurrence=0)
+    second = mint_pre1974_id(1967, None, "EM", month_day="0104", page=12, occurrence=1)
+    third = mint_pre1974_id(1967, None, "EM", month_day="0104", page=14, occurrence=2)
     assert (first, second, third) == (
-        "1967-EM-D0104", "1967-EM-D0104b", "1967-EM-D0104c")
+        "1967-EM-D0104", "1967-EM-D0104-p012", "1967-EM-D0104-p014")
     assert len({first, second, third}) == 3
 
 
-def test_mint_pre1974_id_numbered_collision_is_also_suffixed():
+def test_mint_pre1974_id_numbered_collision_is_page_anchored():
     """Two documents claiming one number must never overwrite each other."""
-    a = mint_pre1974_id(1951, 14, "EO", occurrence=0)
-    b = mint_pre1974_id(1951, 14, "EO", occurrence=1)
-    assert (a, b) == ("1951-EO-014", "1951-EO-014b")
+    a = mint_pre1974_id(1951, 14, "EO", page=40, occurrence=0)
+    b = mint_pre1974_id(1951, 14, "EO", page=42, occurrence=1)
+    assert (a, b) == ("1951-EO-014", "1951-EO-014-p042")
+
+
+def test_a_minted_suffix_can_never_case_collide_with_a_printed_label():
+    """The defect this scheme replaces.
+
+    The old minter appended a LOWERCASE letter, so the second claim on "27" became
+    1955-EO-027b, while the label PRINTED on another page, "27B", minted
+    1955-EO-027B. On a case-insensitive filesystem those two are one file: one of
+    the records could never be written, and git reported a phantom modification on
+    it forever. A hyphen cannot appear in a printed label, so it separates the two
+    namespaces for good.
+    """
+    printed = mint_pre1974_id(1955, "27B", "EO")
+    minted = mint_pre1974_id(1955, 27, "EO", page=88, occurrence=1)
+    assert printed == "1955-EO-027B"
+    assert minted == "1955-EO-027-p088"
+    assert printed.lower() != minted.lower()
+
+
+def test_both_printed_copies_of_1955_eo_27_page_two_get_an_id():
+    """The 1954-1957 Wagner volume prints page 2 of EO #27 twice, on 88 and 90."""
+    ids = [
+        mint_pre1974_id(1955, 27, "EO", page=86, occurrence=0),
+        mint_pre1974_id(1955, 27, "EO", page=88, occurrence=1),
+        mint_pre1974_id(1955, 27, "EO", page=90, occurrence=2),
+    ]
+    assert ids == ["1955-EO-027", "1955-EO-027-p088", "1955-EO-027-p090"]
+    # The real constraint: distinct after case folding, i.e. distinct on macOS.
+    assert len({i.lower() for i in ids}) == 3
+
+
+def test_mint_pre1974_id_without_a_page_still_disambiguates():
+    """No page known: the anchor falls back to the occurrence index, and keeps
+    the hyphen, so it still cannot collide with a printed label."""
+    a = mint_pre1974_id(1951, 14, "EO", occurrence=1)
+    b = mint_pre1974_id(1951, 14, "EO", occurrence=2)
+    assert (a, b) == ("1951-EO-014-2", "1951-EO-014-3")
+    assert a.lower() != mint_pre1974_id(1951, "14B", "EO").lower()
 
 
 def test_mint_pre1974_id_with_neither_number_nor_date():

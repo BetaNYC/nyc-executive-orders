@@ -282,7 +282,7 @@
         2682
       ],
       "category": "List-item",
-      "text": "§ 8. The Comptroller shall not authorize the payment of any compensation to any person appointed on or after July 1, of this year which is not in conformity with the provisions of this directive.",
+      "text": "\u00a7 8. The Comptroller shall not authorize the payment of any compensation to any person appointed on or after July 1, of this year which is not in conformity with the provisions of this directive.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -316,7 +316,7 @@
         2830
       ],
       "category": "List-item",
-      "text": "§ 9. This executive order shall take effect immediately.",
+      "text": "\u00a7 9. This executive order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -457,7 +457,7 @@
           "index": 676,
           "token_id": 17851,
           "logprob": -0.7103,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 309,
@@ -635,15 +635,26 @@
   "ink_coverage": {
     "roi": [
       306,
-      453,
+      160,
       2250,
-      3327
+      3629
     ],
-    "ink_px": 17649,
+    "ink_px": 22220,
+    "rule_px": 3440,
     "covered_px": 17246,
-    "covered_fraction": 0.97717,
-    "uncovered_px": 403,
-    "uncovered_regions": [],
+    "covered_fraction": 0.91832,
+    "uncovered_px": 1534,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1674,
+          3621,
+          2250,
+          3629
+        ],
+        "ink_px": 884
+      }
+    ],
     "cell_px": 24
   }
 }

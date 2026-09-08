@@ -28,7 +28,13 @@
           "min": -0.0054
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 24,
+        "area_px": 1012,
+        "density": 0.02372,
+        "chars": 3,
+        "chars_per_1k_ink": 125.0
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         313
       ],
       "category": "Text",
-      "text": "§2. The Commission shall be headed by the Commissioner for the United Nations and for the Consular Corps. The Commissioner shall serve without salary and at the pleasure of the Mayor, and be the Mayor's personal representative.",
+      "text": "\u00a72. The Commission shall be headed by the Commissioner for the United Nations and for the Consular Corps. The Commissioner shall serve without salary and at the pleasure of the Mayor, and be the Mayor's personal representative.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 883,
-        "area_px": 117480,
-        "density": 0.00752,
+        "ink_px": 1358,
+        "area_px": 141510,
+        "density": 0.0096,
         "chars": 227,
-        "chars_per_1k_ink": 257.08
+        "chars_per_1k_ink": 167.16
       }
     },
     {
@@ -72,7 +78,7 @@
         363
       ],
       "category": "Text",
-      "text": "§3. The commission shall have the following duties:",
+      "text": "\u00a73. The commission shall have the following duties:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -264,7 +270,7 @@
           "index": 72,
           "token_id": 17851,
           "logprob": -0.1293,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 154,
@@ -294,7 +300,7 @@
           "index": 150,
           "token_id": 17851,
           "logprob": -0.0022,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 342,
@@ -430,15 +436,26 @@
   "ink_coverage": {
     "roi": [
       140,
-      180,
+      0,
       1030,
-      1323
+      1469
     ],
-    "ink_px": 4393,
-    "covered_px": 4393,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 8395,
+    "rule_px": 2202,
+    "covered_px": 4892,
+    "covered_fraction": 0.78992,
+    "uncovered_px": 1301,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          389,
+          1446,
+          557,
+          1469
+        ],
+        "ink_px": 772
+      }
+    ],
     "cell_px": 24
   }
 }

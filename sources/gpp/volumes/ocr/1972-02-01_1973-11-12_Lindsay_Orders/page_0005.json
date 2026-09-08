@@ -243,7 +243,7 @@
         2802
       ],
       "category": "Text",
-      "text": "Charter, §230 shall be required before approval by the Buildings",
+      "text": "Charter, \u00a7230 shall be required before approval by the Buildings",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -317,7 +317,7 @@
           "index": 462,
           "token_id": 16625,
           "logprob": -0.0281,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 104,
@@ -465,15 +465,26 @@
   "ink_coverage": {
     "roi": [
       261,
-      421,
+      83,
       1915,
-      3093
+      3426
     ],
-    "ink_px": 47683,
+    "ink_px": 50304,
+    "rule_px": 1352,
     "covered_px": 47297,
-    "covered_fraction": 0.9919,
-    "uncovered_px": 386,
-    "uncovered_regions": [],
+    "covered_fraction": 0.96619,
+    "uncovered_px": 1655,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1437,
+          3417,
+          1915,
+          3426
+        ],
+        "ink_px": 934
+      }
+    ],
     "cell_px": 24
   }
 }

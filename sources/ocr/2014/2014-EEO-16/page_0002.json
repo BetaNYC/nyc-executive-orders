@@ -1,0 +1,276 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        249,
+        190,
+        1445,
+        307
+      ],
+      "category": "Text",
+      "text": "\u00a7 2. This Order shall take effect immediately. It shall remain in effect for\n(5) days unless it is terminated or modified at an earlier date.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4198,
+          "min": -1.7167
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0049,
+          "min": -0.1547
+        }
+      },
+      "ink": {
+        "ink_px": 15075,
+        "area_px": 140656,
+        "density": 0.10718,
+        "chars": 141,
+        "chars_per_1k_ink": 9.35
+      }
+    },
+    {
+      "bbox": [
+        854,
+        304,
+        1365,
+        462
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4617,
+          "min": -2.0447
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0145,
+          "min": -0.0145
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 13955,
+        "area_px": 80422,
+        "density": 0.17352,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 101,
+    "content": {
+      "n_tokens": 33,
+      "mean": -0.0049,
+      "min": -0.1547,
+      "p05": -0.003,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 52,
+          "token_id": 1699,
+          "logprob": -0.1547,
+          "text": "\\n"
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0058,
+          "text": "\u00a7"
+        },
+        {
+          "index": 53,
+          "token_id": 7,
+          "logprob": -0.0011,
+          "text": "("
+        },
+        {
+          "index": 67,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        },
+        {
+          "index": 42,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 39,
+          "token_id": 1096,
+          "logprob": -0.0,
+          "text": " This"
+        },
+        {
+          "index": 60,
+          "token_id": 31272,
+          "logprob": -0.0,
+          "text": " terminated"
+        },
+        {
+          "index": 44,
+          "token_id": 7069,
+          "logprob": -0.0,
+          "text": " immediately"
+        },
+        {
+          "index": 57,
+          "token_id": 7241,
+          "logprob": -0.0,
+          "text": " unless"
+        },
+        {
+          "index": 62,
+          "token_id": 10807,
+          "logprob": -0.0,
+          "text": " modified"
+        },
+        {
+          "index": 40,
+          "token_id": 7217,
+          "logprob": -0.0,
+          "text": " Order"
+        },
+        {
+          "index": 48,
+          "token_id": 7146,
+          "logprob": -0.0,
+          "text": " remain"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 40,
+      "mean": -0.4191,
+      "min": -2.0447,
+      "p05": -1.7264,
+      "p50": -0.0091,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 86,
+          "token_id": 20,
+          "logprob": -2.0447,
+          "text": "5"
+        },
+        {
+          "index": 75,
+          "token_id": 19,
+          "logprob": -1.9095,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.7167,
+          "text": "5"
+        },
+        {
+          "index": 91,
+          "token_id": 17,
+          "logprob": -1.5991,
+          "text": "2"
+        },
+        {
+          "index": 80,
+          "token_id": 19,
+          "logprob": -1.5697,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.4728,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.4666,
+          "text": "9"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.4008,
+          "text": "7"
+        },
+        {
+          "index": 85,
+          "token_id": 21,
+          "logprob": -0.6777,
+          "text": "6"
+        },
+        {
+          "index": 11,
+          "token_id": 24,
+          "logprob": -0.5794,
+          "text": "9"
+        },
+        {
+          "index": 6,
+          "token_id": 19,
+          "logprob": -0.5574,
+          "text": "4"
+        },
+        {
+          "index": 74,
+          "token_id": 20,
+          "logprob": -0.3985,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 101,
+      "mean": -0.1677,
+      "min": -2.0447,
+      "p05": -1.4728,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 237.4,
+    "std": 20.44,
+    "dark_fraction": 0.00964
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 29023,
+    "rule_px": 0,
+    "covered_px": 29019,
+    "covered_fraction": 0.99986,
+    "uncovered_px": 4,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -10,7 +10,7 @@
         1860
       ],
       "category": "Text",
-      "text": "This image does not contain any text. It is a logo with the word \"SCHÜTZ\" in red and the word \"SCHUTZ\" in black.",
+      "text": "This image does not contain any text. It is a logo with the word \"SCH\u00dcTZ\" in red and the word \"SCHUTZ\" in black.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 1316928,
-        "density": 0.0,
+        "ink_px": 1535,
+        "area_px": 1628832,
+        "density": 0.00094,
         "chars": 112,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 72.96
       }
     }
   ],
@@ -78,7 +78,7 @@
           "index": 52,
           "token_id": 52491,
           "logprob": -1.5587,
-          "text": "Ü"
+          "text": "\u00dc"
         },
         {
           "index": 61,
@@ -232,13 +232,14 @@
   "ink_coverage": {
     "roi": [
       143,
-      228,
+      71,
       1055,
-      1672
+      1900
     ],
-    "ink_px": 0,
-    "covered_px": 0,
-    "covered_fraction": null,
+    "ink_px": 1535,
+    "rule_px": 0,
+    "covered_px": 1535,
+    "covered_fraction": 1.0,
     "uncovered_px": 0,
     "uncovered_regions": [],
     "cell_px": 24

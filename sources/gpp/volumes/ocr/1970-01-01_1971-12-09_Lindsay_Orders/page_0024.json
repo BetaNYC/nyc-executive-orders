@@ -28,7 +28,13 @@
           "min": -0.0406
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 10,
+        "area_px": 966,
+        "density": 0.01035,
+        "chars": 3,
+        "chars_per_1k_ink": 300.0
+      }
     },
     {
       "bbox": [
@@ -106,7 +112,7 @@
         482
       ],
       "category": "Section-header",
-      "text": "## § 2. Contracts for Purchases Without Public Letting.",
+      "text": "## \u00a7 2. Contracts for Purchases Without Public Letting.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -140,7 +146,7 @@
         700
       ],
       "category": "Text",
-      "text": "(a) Except as to medical and surgical specialties, as defined by §12(g) of the Resolution adopted by the Board of Estimate on June 30, 1949 (Cal. No. 318-A) as amended, required in connection with existing facilities, purchases of equipment without public letting are subject to approval by the Board of Estimate, and shall be done only under the following conditions:",
+      "text": "(a) Except as to medical and surgical specialties, as defined by \u00a712(g) of the Resolution adopted by the Board of Estimate on June 30, 1949 (Cal. No. 318-A) as amended, required in connection with existing facilities, purchases of equipment without public letting are subject to approval by the Board of Estimate, and shall be done only under the following conditions:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -276,7 +282,7 @@
         1216
       ],
       "category": "Section-header",
-      "text": "## § 3. Contract Changes.",
+      "text": "## \u00a7 3. Contract Changes.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -363,11 +369,11 @@
         }
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 9559,
-        "density": 0.0,
+        "ink_px": 5,
+        "area_px": 22594,
+        "density": 0.00022,
         "chars": 66,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 13200.0
       }
     }
   ],
@@ -400,7 +406,7 @@
           "index": 211,
           "token_id": 16625,
           "logprob": -0.1289,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 171,
@@ -418,7 +424,7 @@
           "index": 271,
           "token_id": 16625,
           "logprob": -0.0631,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 34,
@@ -566,15 +572,26 @@
   "ink_coverage": {
     "roi": [
       139,
-      180,
+      0,
       1020,
-      1320
+      1471
     ],
-    "ink_px": 205,
-    "covered_px": 205,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 4504,
+    "rule_px": 2885,
+    "covered_px": 220,
+    "covered_fraction": 0.13589,
+    "uncovered_px": 1399,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          384,
+          1447,
+          555,
+          1471
+        ],
+        "ink_px": 814
+      }
+    ],
     "cell_px": 24
   }
 }

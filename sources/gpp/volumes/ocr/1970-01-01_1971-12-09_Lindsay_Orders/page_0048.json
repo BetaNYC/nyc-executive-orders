@@ -28,7 +28,13 @@
           "min": -0.01
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1,
+        "area_px": 924,
+        "density": 0.00108,
+        "chars": 3,
+        "chars_per_1k_ink": 3000.0
+      }
     },
     {
       "bbox": [
@@ -174,7 +180,7 @@
         944
       ],
       "category": "List-item",
-      "text": "§ 5. (a) The Mayor shall appoint the members of the Council to serve for four year terms. The terms of the members first appointed shall expire four years from January 1, 1970.",
+      "text": "\u00a7 5. (a) The Mayor shall appoint the members of the Council to serve for four year terms. The terms of the members first appointed shall expire four years from January 1, 1970.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -329,11 +335,11 @@
         }
       },
       "ink": {
-        "ink_px": 6,
-        "area_px": 29700,
-        "density": 0.0002,
+        "ink_px": 7,
+        "area_px": 44880,
+        "density": 0.00016,
         "chars": 64,
-        "chars_per_1k_ink": 10666.67
+        "chars_per_1k_ink": 9142.86
       }
     }
   ],
@@ -366,7 +372,7 @@
           "index": 329,
           "token_id": 17851,
           "logprob": -0.071,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 34,
@@ -532,15 +538,26 @@
   "ink_coverage": {
     "roi": [
       139,
-      179,
+      0,
       1026,
-      1312
+      1456
     ],
-    "ink_px": 138,
-    "covered_px": 138,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 3638,
+    "rule_px": 2234,
+    "covered_px": 140,
+    "covered_fraction": 0.09972,
+    "uncovered_px": 1264,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          499,
+          1435,
+          566,
+          1452
+        ],
+        "ink_px": 474
+      }
+    ],
     "cell_px": 24
   }
 }

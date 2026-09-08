@@ -10,7 +10,7 @@
         1303
       ],
       "category": "Text",
-      "text": "第二章",
+      "text": "\u7b2c\u4e8c\u7ae0",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -44,7 +44,7 @@
         1367
       ],
       "category": "Text",
-      "text": "第一节",
+      "text": "\u7b2c\u4e00\u8282",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -91,7 +91,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 3654,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -101,7 +107,7 @@
         1844
       ],
       "category": "Text",
-      "text": "中国药典1985年版",
+      "text": "\u4e2d\u56fd\u836f\u51781985\u5e74\u7248",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -119,7 +125,13 @@
           "min": -2.6767
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 5568,
+        "density": 0.0,
+        "chars": 10,
+        "chars_per_1k_ink": null
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -139,31 +151,31 @@
           "index": 36,
           "token_id": 99802,
           "logprob": -3.7857,
-          "text": "第二"
+          "text": "\u7b2c\u4e8c"
         },
         {
           "index": 143,
           "token_id": 99471,
           "logprob": -2.6767,
-          "text": "药"
+          "text": "\u836f"
         },
         {
           "index": 37,
           "token_id": 44928,
           "logprob": -1.0536,
-          "text": "章"
+          "text": "\u7ae0"
         },
         {
           "index": 144,
           "token_id": 99548,
           "logprob": -0.8882,
-          "text": "典"
+          "text": "\u5178"
         },
         {
           "index": 142,
           "token_id": 58695,
           "logprob": -0.5718,
-          "text": "中国"
+          "text": "\u4e2d\u56fd"
         },
         {
           "index": 145,
@@ -175,7 +187,7 @@
           "index": 74,
           "token_id": 117209,
           "logprob": -0.451,
-          "text": "第一节"
+          "text": "\u7b2c\u4e00\u8282"
         },
         {
           "index": 147,
@@ -193,13 +205,13 @@
           "index": 150,
           "token_id": 40301,
           "logprob": -0.0105,
-          "text": "版"
+          "text": "\u7248"
         },
         {
           "index": 149,
           "token_id": 7948,
           "logprob": -0.0012,
-          "text": "年"
+          "text": "\u5e74"
         },
         {
           "index": 146,
@@ -317,15 +329,26 @@
   "ink_coverage": {
     "roi": [
       142,
-      222,
+      49,
       1041,
-      1631
+      1854
     ],
-    "ink_px": 0,
+    "ink_px": 1357,
+    "rule_px": 544,
     "covered_px": 0,
-    "covered_fraction": null,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.0,
+    "uncovered_px": 813,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          538,
+          98,
+          646,
+          104
+        ],
+        "ink_px": 505
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -1,0 +1,344 @@
+{
+  "page": 12,
+  "source_image": "page_0012.png",
+  "elements": [
+    {
+      "bbox": [
+        293,
+        210,
+        921,
+        246
+      ],
+      "category": "Text",
+      "text": "\u00a7 11. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.4204,
+          "min": -1.9197
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.038,
+          "min": -0.038
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0011,
+          "min": -0.0121
+        }
+      },
+      "ink": {
+        "ink_px": 4310,
+        "area_px": 23162,
+        "density": 0.18608,
+        "chars": 47,
+        "chars_per_1k_ink": 10.9
+      }
+    },
+    {
+      "bbox": [
+        918,
+        287,
+        1484,
+        423
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.396,
+          "min": -1.7946
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0012,
+          "min": -0.0012
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 10418,
+        "area_px": 76840,
+        "density": 0.13558,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        988,
+        442,
+        1172,
+        471
+      ],
+      "category": "Caption",
+      "text": "Bill de Blasio",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2905,
+          "min": -1.293
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0336,
+          "min": -0.0336
+        },
+        "text": {
+          "n_tokens": 3,
+          "mean": -0.0006,
+          "min": -0.0012
+        }
+      },
+      "ink": {
+        "ink_px": 1504,
+        "area_px": 5520,
+        "density": 0.27246,
+        "chars": 14,
+        "chars_per_1k_ink": 9.31
+      }
+    },
+    {
+      "bbox": [
+        1013,
+        521,
+        1105,
+        554
+      ],
+      "category": "Text",
+      "text": "Mayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2098,
+          "min": -1.1544
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0109,
+          "min": -0.0109
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        }
+      },
+      "ink": {
+        "ink_px": 641,
+        "area_px": 3036,
+        "density": 0.21113,
+        "chars": 5,
+        "chars_per_1k_ink": 7.8
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 154,
+    "content": {
+      "n_tokens": 16,
+      "mean": -0.0009,
+      "min": -0.0121,
+      "p05": -0.0039,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 34,
+          "token_id": 17851,
+          "logprob": -0.0121,
+          "text": "\u00a7"
+        },
+        {
+          "index": 111,
+          "token_id": 27476,
+          "logprob": -0.0012,
+          "text": "Bill"
+        },
+        {
+          "index": 113,
+          "token_id": 92393,
+          "logprob": -0.0005,
+          "text": " Blasio"
+        },
+        {
+          "index": 41,
+          "token_id": 4880,
+          "logprob": -0.0002,
+          "text": " shall"
+        },
+        {
+          "index": 45,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        },
+        {
+          "index": 42,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 39,
+          "token_id": 1096,
+          "logprob": -0.0001,
+          "text": " This"
+        },
+        {
+          "index": 150,
+          "token_id": 85574,
+          "logprob": -0.0001,
+          "text": "Mayor"
+        },
+        {
+          "index": 40,
+          "token_id": 7217,
+          "logprob": -0.0,
+          "text": " Order"
+        },
+        {
+          "index": 38,
+          "token_id": 13,
+          "logprob": -0.0,
+          "text": "."
+        },
+        {
+          "index": 44,
+          "token_id": 7069,
+          "logprob": -0.0,
+          "text": " immediately"
+        },
+        {
+          "index": 35,
+          "token_id": 220,
+          "logprob": -0.0,
+          "text": " "
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 80,
+      "mean": -0.3111,
+      "min": -1.9197,
+      "p05": -1.5416,
+      "p50": -0.0022,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 17,
+          "token_id": 16,
+          "logprob": -1.9197,
+          "text": "1"
+        },
+        {
+          "index": 64,
+          "token_id": 19,
+          "logprob": -1.7946,
+          "text": "4"
+        },
+        {
+          "index": 53,
+          "token_id": 23,
+          "logprob": -1.669,
+          "text": "8"
+        },
+        {
+          "index": 69,
+          "token_id": 18,
+          "logprob": -1.5753,
+          "text": "3"
+        },
+        {
+          "index": 58,
+          "token_id": 22,
+          "logprob": -1.5398,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.5253,
+          "text": "3"
+        },
+        {
+          "index": 22,
+          "token_id": 21,
+          "logprob": -1.4432,
+          "text": "6"
+        },
+        {
+          "index": 94,
+          "token_id": 17,
+          "logprob": -1.293,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.2558,
+          "text": "0"
+        },
+        {
+          "index": 83,
+          "token_id": 23,
+          "logprob": -1.1741,
+          "text": "8"
+        },
+        {
+          "index": 133,
+          "token_id": 20,
+          "logprob": -1.1544,
+          "text": "5"
+        },
+        {
+          "index": 99,
+          "token_id": 16,
+          "logprob": -1.1496,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 154,
+      "mean": -0.162,
+      "min": -1.9197,
+      "p05": -1.2688,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 251.67,
+    "std": 15.22,
+    "dark_fraction": 0.00582
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 16880,
+    "rule_px": 0,
+    "covered_px": 16873,
+    "covered_fraction": 0.99959,
+    "uncovered_px": 7,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

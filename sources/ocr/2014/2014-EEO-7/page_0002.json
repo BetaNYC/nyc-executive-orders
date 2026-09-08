@@ -1,0 +1,310 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        462,
+        208,
+        1450,
+        247
+      ],
+      "category": "Text",
+      "text": "\u00a7 2. This Order shall take effect immediately. It shall remain in effect for",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3551,
+          "min": -1.4413
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0027,
+          "min": -0.0027
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.0004,
+          "min": -0.006
+        }
+      },
+      "ink": {
+        "ink_px": 6064,
+        "area_px": 39400,
+        "density": 0.15391,
+        "chars": 76,
+        "chars_per_1k_ink": 12.53
+      }
+    },
+    {
+      "bbox": [
+        257,
+        284,
+        1080,
+        321
+      ],
+      "category": "Text",
+      "text": "(5) days unless it is terminated or modified at an earlier date.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3114,
+          "min": -1.4981
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0,
+          "min": -0.0
+        }
+      },
+      "ink": {
+        "ink_px": 4889,
+        "area_px": 31160,
+        "density": 0.1569,
+        "chars": 64,
+        "chars_per_1k_ink": 13.09
+      }
+    },
+    {
+      "bbox": [
+        862,
+        321,
+        1374,
+        476
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3717,
+          "min": -1.6496
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0341,
+          "min": -0.0341
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 7045,
+        "area_px": 79205,
+        "density": 0.08895,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 134,
+    "content": {
+      "n_tokens": 32,
+      "mean": -0.0002,
+      "min": -0.006,
+      "p05": -0.0,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.006,
+          "text": "\u00a7"
+        },
+        {
+          "index": 42,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 39,
+          "token_id": 1096,
+          "logprob": -0.0,
+          "text": " This"
+        },
+        {
+          "index": 93,
+          "token_id": 31272,
+          "logprob": -0.0,
+          "text": " terminated"
+        },
+        {
+          "index": 100,
+          "token_id": 1189,
+          "logprob": -0.0,
+          "text": ".\""
+        },
+        {
+          "index": 86,
+          "token_id": 11993,
+          "logprob": -0.0,
+          "text": " \"("
+        },
+        {
+          "index": 95,
+          "token_id": 10807,
+          "logprob": -0.0,
+          "text": " modified"
+        },
+        {
+          "index": 44,
+          "token_id": 7069,
+          "logprob": -0.0,
+          "text": " immediately"
+        },
+        {
+          "index": 90,
+          "token_id": 7241,
+          "logprob": -0.0,
+          "text": " unless"
+        },
+        {
+          "index": 87,
+          "token_id": 20,
+          "logprob": -0.0,
+          "text": "5"
+        },
+        {
+          "index": 48,
+          "token_id": 7146,
+          "logprob": -0.0,
+          "text": " remain"
+        },
+        {
+          "index": 89,
+          "token_id": 2849,
+          "logprob": -0.0,
+          "text": " days"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.3294,
+      "min": -1.6496,
+      "p05": -1.443,
+      "p50": -0.0027,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 119,
+          "token_id": 19,
+          "logprob": -1.6496,
+          "text": "4"
+        },
+        {
+          "index": 59,
+          "token_id": 22,
+          "logprob": -1.4981,
+          "text": "7"
+        },
+        {
+          "index": 70,
+          "token_id": 15,
+          "logprob": -1.4744,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 17,
+          "logprob": -1.4413,
+          "text": "2"
+        },
+        {
+          "index": 124,
+          "token_id": 21,
+          "logprob": -1.3689,
+          "text": "6"
+        },
+        {
+          "index": 64,
+          "token_id": 19,
+          "logprob": -1.3036,
+          "text": "4"
+        },
+        {
+          "index": 108,
+          "token_id": 17,
+          "logprob": -1.302,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.2988,
+          "text": "8"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.2713,
+          "text": "7"
+        },
+        {
+          "index": 75,
+          "token_id": 16,
+          "logprob": -1.2057,
+          "text": "1"
+        },
+        {
+          "index": 113,
+          "token_id": 16,
+          "logprob": -1.184,
+          "text": "1"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.1388,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 134,
+      "mean": -0.1476,
+      "min": -1.6496,
+      "p05": -1.2999,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 246.33,
+    "std": 17.1,
+    "dark_fraction": 0.00553
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 18006,
+    "rule_px": 0,
+    "covered_px": 17998,
+    "covered_fraction": 0.99956,
+    "uncovered_px": 8,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

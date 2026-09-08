@@ -28,7 +28,13 @@
           "min": -0.0891
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 24,
+        "area_px": 1428,
+        "density": 0.01681,
+        "chars": 5,
+        "chars_per_1k_ink": 208.33
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         381
       ],
       "category": "Text",
-      "text": "§3. The Commission is empowered to prescribe its own procedures and to employ such assistants as it deems necessary, within the amounts appropriated therefor.",
+      "text": "\u00a73. The Commission is empowered to prescribe its own procedures and to employ such assistants as it deems necessary, within the amounts appropriated therefor.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -72,7 +78,7 @@
         519
       ],
       "category": "Text",
-      "text": "§4. All departments and agencies of the City are directed to furnish the Commission with such facilities, services and cooperation as it may request from time to time.",
+      "text": "\u00a74. All departments and agencies of the City are directed to furnish the Commission with such facilities, services and cooperation as it may request from time to time.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -106,7 +112,7 @@
         568
       ],
       "category": "Text",
-      "text": "§5. This order shall take effect immediately.",
+      "text": "\u00a75. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -185,7 +191,7 @@
           "index": 72,
           "token_id": 17851,
           "logprob": -0.0266,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 34,
@@ -357,15 +363,26 @@
   "ink_coverage": {
     "roi": [
       140,
-      177,
+      0,
       1027,
-      1298
+      1450
     ],
-    "ink_px": 2138,
-    "covered_px": 2138,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 4969,
+    "rule_px": 0,
+    "covered_px": 2162,
+    "covered_fraction": 0.4351,
+    "uncovered_px": 2807,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          363,
+          1403,
+          920,
+          1450
+        ],
+        "ink_px": 2460
+      }
+    ],
     "cell_px": 24
   }
 }

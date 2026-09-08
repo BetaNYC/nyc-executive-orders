@@ -214,7 +214,7 @@
         2453
       ],
       "category": "Text",
-      "text": "§2. Functions, Powers and Duties of the Administrator.\nThe Administrator, except as otherwise provided by law, shall have the following powers and duties:",
+      "text": "\u00a72. Functions, Powers and Duties of the Administrator.\nThe Administrator, except as otherwise provided by law, shall have the following powers and duties:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -301,11 +301,11 @@
         }
       },
       "ink": {
-        "ink_px": 6051,
-        "area_px": 145730,
-        "density": 0.04152,
+        "ink_px": 16930,
+        "area_px": 401908,
+        "density": 0.04212,
         "chars": 305,
-        "chars_per_1k_ink": 50.4
+        "chars_per_1k_ink": 18.02
       }
     }
   ],
@@ -326,7 +326,7 @@
           "index": 515,
           "token_id": 17851,
           "logprob": -0.616,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 383,
@@ -504,23 +504,69 @@
   "ink_coverage": {
     "roi": [
       284,
-      417,
+      111,
       2089,
-      3058
+      3357
     ],
-    "ink_px": 115043,
-    "covered_px": 114421,
-    "covered_fraction": 0.99459,
-    "uncovered_px": 622,
+    "ink_px": 134851,
+    "rule_px": 2022,
+    "covered_px": 125300,
+    "covered_fraction": 0.94332,
+    "uncovered_px": 7529,
     "uncovered_regions": [
       {
         "bbox": [
-          1748,
-          417,
+          1584,
+          147,
           1820,
-          513
+          519
         ],
-        "ink_px": 610
+        "ink_px": 3604
+      },
+      {
+        "bbox": [
+          716,
+          111,
+          804,
+          191
+        ],
+        "ink_px": 916
+      },
+      {
+        "bbox": [
+          1198,
+          111,
+          1347,
+          144
+        ],
+        "ink_px": 784
+      },
+      {
+        "bbox": [
+          1094,
+          117,
+          1196,
+          183
+        ],
+        "ink_px": 621
+      },
+      {
+        "bbox": [
+          1688,
+          135,
+          1748,
+          205
+        ],
+        "ink_px": 559
+      },
+      {
+        "bbox": [
+          284,
+          3356,
+          812,
+          3357
+        ],
+        "ink_px": 528
       }
     ],
     "cell_px": 24

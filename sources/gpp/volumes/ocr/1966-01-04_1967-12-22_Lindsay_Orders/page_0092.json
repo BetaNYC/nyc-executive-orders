@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16963,
+        "area_px": 51759,
+        "density": 0.32773,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 3847,
-        "area_px": 31996,
-        "density": 0.12023,
+        "ink_px": 6182,
+        "area_px": 53467,
+        "density": 0.11562,
         "chars": 53,
-        "chars_per_1k_ink": 13.78
+        "chars_per_1k_ink": 8.57
       }
     },
     {
@@ -169,7 +175,7 @@
         1347
       ],
       "category": "Text",
-      "text": "§3. Withdrawal of Passenger Vehicles. Within 30 days of the effective date of this order, the departments and agencies listed below shall deliver the indicated number of passenger vehicles, identified by the Vehicular Control Board as assigned or used contrary to Section 2(a), to the Department of Sanitation Central Repair Shop, 52-35 58th Street, Woodside, New York, for salvage or reassignment, as determined by the Board.",
+      "text": "\u00a73. Withdrawal of Passenger Vehicles. Within 30 days of the effective date of this order, the departments and agencies listed below shall deliver the indicated number of passenger vehicles, identified by the Vehicular Control Board as assigned or used contrary to Section 2(a), to the Department of Sanitation Central Repair Shop, 52-35 58th Street, Woodside, New York, for salvage or reassignment, as determined by the Board.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -237,7 +243,7 @@
         3305
       ],
       "category": "Text",
-      "text": "§4. Transfer, Reassignment or Elimination of Motor Vehicle Operator and Other Positions. The chief officer of each department or agency shall, in cooperation with the Vehicular Control Board and the Director of Personnel, submit to the Vehicular Control Board a plan for the elimination, reassignment, or interagency transfer of drivers currently used or assigned contrary to standards established in section 2(b), including, but not limited to, motor vehicle operator and other positions designated below.",
+      "text": "\u00a74. Transfer, Reassignment or Elimination of Motor Vehicle Operator and Other Positions. The chief officer of each department or agency shall, in cooperation with the Vehicular Control Board and the Director of Personnel, submit to the Vehicular Control Board a plan for the elimination, reassignment, or interagency transfer of drivers currently used or assigned contrary to standards established in section 2(b), including, but not limited to, motor vehicle operator and other positions designated below.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -256,11 +262,11 @@
         }
       },
       "ink": {
-        "ink_px": 5361,
-        "area_px": 236856,
-        "density": 0.02263,
+        "ink_px": 11991,
+        "area_px": 653856,
+        "density": 0.01834,
         "chars": 506,
-        "chars_per_1k_ink": 94.39
+        "chars_per_1k_ink": 42.2
       }
     }
   ],
@@ -287,13 +293,13 @@
           "index": 772,
           "token_id": 17851,
           "logprob": -0.2461,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 250,
           "token_id": 17851,
           "logprob": -0.1944,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 403,
@@ -459,23 +465,33 @@
   "ink_coverage": {
     "roi": [
       284,
-      415,
+      95,
       2088,
-      3044
+      3351
     ],
-    "ink_px": 38164,
-    "covered_px": 37248,
-    "covered_fraction": 0.976,
-    "uncovered_px": 916,
+    "ink_px": 66389,
+    "rule_px": 565,
+    "covered_px": 63176,
+    "covered_fraction": 0.95977,
+    "uncovered_px": 2648,
     "uncovered_regions": [
       {
         "bbox": [
-          812,
-          583,
-          1196,
-          607
+          1336,
+          143,
+          1378,
+          209
         ],
-        "ink_px": 686
+        "ink_px": 785
+      },
+      {
+        "bbox": [
+          815,
+          594,
+          1040,
+          603
+        ],
+        "ink_px": 440
       }
     ],
     "cell_px": 24

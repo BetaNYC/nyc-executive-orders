@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5826,
+        "area_px": 15015,
+        "density": 0.38801,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -51,7 +57,13 @@
           "min": -0.0246
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1508,
+        "area_px": 16008,
+        "density": 0.0942,
+        "chars": 53,
+        "chars_per_1k_ink": 35.15
+      }
     },
     {
       "bbox": [
@@ -79,7 +91,13 @@
           "min": -0.0156
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 12,
+        "area_px": 540,
+        "density": 0.02222,
+        "chars": 1,
+        "chars_per_1k_ink": 83.33
+      }
     },
     {
       "bbox": [
@@ -109,8 +127,8 @@
       },
       "ink": {
         "ink_px": 204,
-        "area_px": 69316,
-        "density": 0.00294,
+        "area_px": 70928,
+        "density": 0.00288,
         "chars": 78,
         "chars_per_1k_ink": 382.35
       }
@@ -123,7 +141,7 @@
         587
       ],
       "category": "Text",
-      "text": "§-4(a). The reduced rate-of-contribution factor\nshall be two and one-half per cent in the case of all\nmembers of the uniformed force of the department of sani-\ntation as defined in subdivision a of section B3-36.2 of\nthe-code, except members in the title of sanitationman.",
+      "text": "\u00a7-4(a). The reduced rate-of-contribution factor\nshall be two and one-half per cent in the case of all\nmembers of the uniformed force of the department of sani-\ntation as defined in subdivision a of section B3-36.2 of\nthe-code, except members in the title of sanitationman.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -225,7 +243,7 @@
         1379
       ],
       "category": "Text",
-      "text": "§ 5. (a) Beginning with the payroll period, the first day of which is nearest to September 1, 1968, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30, 1969, the provisions of paragraph four of subdivision 1, the provisions of subparagraph (a) of paragraph one of subdivision 1 of Section B20-41.1 and the provisions of subdivisions e and f of such section shall be applicable to and for the benefit of all contributors to the New York City Teachers'",
+      "text": "\u00a7 5. (a) Beginning with the payroll period, the first day of which is nearest to September 1, 1968, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30, 1969, the provisions of paragraph four of subdivision 1, the provisions of subparagraph (a) of paragraph one of subdivision 1 of Section B20-41.1 and the provisions of subdivisions e and f of such section shall be applicable to and for the benefit of all contributors to the New York City Teachers'",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -287,7 +305,7 @@
           "index": 214,
           "token_id": 17851,
           "logprob": -0.62,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 218,
@@ -447,15 +465,26 @@
   "ink_coverage": {
     "roi": [
       151,
-      237,
+      0,
       1111,
-      1743
+      1911
     ],
-    "ink_px": 1143,
-    "covered_px": 1143,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 9881,
+    "rule_px": 295,
+    "covered_px": 8489,
+    "covered_fraction": 0.88556,
+    "uncovered_px": 1097,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          391,
+          1904,
+          511,
+          1911
+        ],
+        "ink_px": 514
+      }
+    ],
     "cell_px": 24
   }
 }

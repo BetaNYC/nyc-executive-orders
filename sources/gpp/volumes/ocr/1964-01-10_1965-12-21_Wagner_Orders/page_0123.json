@@ -10,7 +10,7 @@
         712
       ],
       "category": "Page-header",
-      "text": "Page 3—",
+      "text": "Page 3\u2014",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -806,11 +806,11 @@
         }
       },
       "ink": {
-        "ink_px": 1991,
-        "area_px": 16074,
-        "density": 0.12386,
+        "ink_px": 2138,
+        "area_px": 18189,
+        "density": 0.11754,
         "chars": 21,
-        "chars_per_1k_ink": 10.55
+        "chars_per_1k_ink": 9.82
       }
     },
     {
@@ -839,7 +839,13 @@
           "min": -0.0006
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2133,
+        "area_px": 16920,
+        "density": 0.12606,
+        "chars": 21,
+        "chars_per_1k_ink": 9.85
+      }
     },
     {
       "bbox": [
@@ -867,7 +873,13 @@
           "min": -0.0021
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2476,
+        "area_px": 17766,
+        "density": 0.13937,
+        "chars": 21,
+        "chars_per_1k_ink": 8.48
+      }
     },
     {
       "bbox": [
@@ -895,7 +907,13 @@
           "min": -0.0308
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3600,
+        "area_px": 21042,
+        "density": 0.17109,
+        "chars": 25,
+        "chars_per_1k_ink": 6.94
+      }
     },
     {
       "bbox": [
@@ -923,7 +941,13 @@
           "min": -0.3883
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3698,
+        "area_px": 25914,
+        "density": 0.1427,
+        "chars": 31,
+        "chars_per_1k_ink": 8.38
+      }
     },
     {
       "bbox": [
@@ -951,7 +975,13 @@
           "min": -0.0347
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 3325,
+        "area_px": 14490,
+        "density": 0.22947,
+        "chars": 17,
+        "chars_per_1k_ink": 5.11
+      }
     },
     {
       "bbox": [
@@ -1051,7 +1081,7 @@
           "index": 38,
           "token_id": 2293,
           "logprob": -0.4691,
-          "text": "—"
+          "text": "\u2014"
         },
         {
           "index": 1046,
@@ -1217,14 +1247,15 @@
   "ink_coverage": {
     "roi": [
       267,
-      389,
+      92,
       1962,
-      2859
+      3153
     ],
-    "ink_px": 117156,
-    "covered_px": 117141,
-    "covered_fraction": 0.99987,
-    "uncovered_px": 15,
+    "ink_px": 132959,
+    "rule_px": 0,
+    "covered_px": 132338,
+    "covered_fraction": 0.99533,
+    "uncovered_px": 621,
     "uncovered_regions": [],
     "cell_px": 24
   }

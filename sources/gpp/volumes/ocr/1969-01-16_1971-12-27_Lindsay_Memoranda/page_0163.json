@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 7090,
-        "area_px": 26520,
-        "density": 0.26735,
+        "ink_px": 22798,
+        "area_px": 75140,
+        "density": 0.30341,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -87,9 +87,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 4183,
-        "area_px": 122360,
-        "density": 0.03419,
+        "ink_px": 4563,
+        "area_px": 179860,
+        "density": 0.02537,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -272,7 +272,7 @@
         2387
       ],
       "category": "Text",
-      "text": "§ 2. In order to effectively carry out the policy set forth in Section 1, any person holding positions enumerated therein, shall remove, or cause to be removed, his name from any iden tification with a private firm, or company listing, directory, circular, card or stationery.",
+      "text": "\u00a7 2. In order to effectively carry out the policy set forth in Section 1, any person holding positions enumerated therein, shall remove, or cause to be removed, his name from any iden tification with a private firm, or company listing, directory, circular, card or stationery.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -306,7 +306,7 @@
         2480
       ],
       "category": "Text",
-      "text": "§ 3. This directive shall take effect immediately.",
+      "text": "\u00a7 3. This directive shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -354,9 +354,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 8255,
-        "area_px": 328300,
-        "density": 0.02514,
+        "ink_px": 9098,
+        "area_px": 370510,
+        "density": 0.02456,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -388,11 +388,11 @@
         }
       },
       "ink": {
-        "ink_px": 1471,
-        "area_px": 27456,
-        "density": 0.05358,
+        "ink_px": 1764,
+        "area_px": 37024,
+        "density": 0.04764,
         "chars": 21,
-        "chars_per_1k_ink": 14.28
+        "chars_per_1k_ink": 11.9
       }
     }
   ],
@@ -431,13 +431,13 @@
           "index": 651,
           "token_id": 17851,
           "logprob": -0.0417,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 553,
           "token_id": 17851,
           "logprob": -0.0412,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 743,
@@ -591,41 +591,33 @@
   "ink_coverage": {
     "roi": [
       291,
-      383,
+      105,
       2140,
-      2815
+      3081
     ],
-    "ink_px": 125879,
-    "covered_px": 119952,
-    "covered_fraction": 0.95292,
-    "uncovered_px": 5927,
+    "ink_px": 143227,
+    "rule_px": 765,
+    "covered_px": 136883,
+    "covered_fraction": 0.96084,
+    "uncovered_px": 5579,
     "uncovered_regions": [
       {
         "bbox": [
-          291,
-          1487,
+          294,
+          1494,
           2139,
-          1511
+          1501
         ],
-        "ink_px": 3207
+        "ink_px": 3125
       },
       {
         "bbox": [
-          2043,
-          623,
+          2046,
+          634,
           2139,
-          719
+          717
         ],
         "ink_px": 1574
-      },
-      {
-        "bbox": [
-          891,
-          911,
-          1395,
-          959
-        ],
-        "ink_px": 934
       }
     ],
     "cell_px": 24

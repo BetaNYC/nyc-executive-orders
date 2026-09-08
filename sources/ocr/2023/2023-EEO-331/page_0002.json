@@ -1,0 +1,378 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        199,
+        204,
+        1505,
+        281
+      ],
+      "category": "Text",
+      "text": "Section 1. I hereby order that section 1 of Emergency Executive Order No. 327, dated February 4, 2023, is extended for five (5) days.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.362,
+          "min": -1.7296
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0009,
+          "min": -0.0009
+        },
+        "text": {
+          "n_tokens": 42,
+          "mean": -0.0022,
+          "min": -0.0891
+        }
+      },
+      "ink": {
+        "ink_px": 13188,
+        "area_px": 100776,
+        "density": 0.13086,
+        "chars": 133,
+        "chars_per_1k_ink": 10.08
+      }
+    },
+    {
+      "bbox": [
+        197,
+        320,
+        1505,
+        548
+      ],
+      "category": "Text",
+      "text": "\u00a7 2. I hereby suspend paragraph 6.2.6(b)(1) of the PRR, to the extent necessary to allow a person who was dismissed on or after February 11, 2022, but prior to March 10, 2022, from a permanent competitive or labor class position in an agency under the jurisdiction of the Commissioner of Citywide Administrative Services for failure to provide proof of vaccination against COVID-19, to submit a written application for reinstatement, which shall be otherwise in accordance with Rule 6.2.6, on or before March 10, 2023.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3004,
+          "min": -1.3504
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0008,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 135,
+          "mean": -0.0005,
+          "min": -0.0337
+        }
+      },
+      "ink": {
+        "ink_px": 54812,
+        "area_px": 294576,
+        "density": 0.18607,
+        "chars": 518,
+        "chars_per_1k_ink": 9.45
+      }
+    },
+    {
+      "bbox": [
+        195,
+        591,
+        1503,
+        823
+      ],
+      "category": "Text",
+      "text": "\u00a7 3. I hereby direct the Fire and Police Departments, the Department of Buildings, the Sheriff, and other agencies as needed, to enforce the directives set forth in this Order in accordance with their lawful authorities, including Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and section 107.6 of the Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under Health Code sections 3.07 and 3.11, and enforced by the Department of Health and Mental Hygiene or any other agency.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2759,
+          "min": -1.3768
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 143,
+          "mean": -0.0,
+          "min": -0.0016
+        }
+      },
+      "ink": {
+        "ink_px": 55167,
+        "area_px": 299744,
+        "density": 0.18405,
+        "chars": 550,
+        "chars_per_1k_ink": 9.97
+      }
+    },
+    {
+      "bbox": [
+        193,
+        861,
+        1501,
+        936
+      ],
+      "category": "Text",
+      "text": "\u00a7 4. This Emergency Executive Order shall take effect immediately and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2615,
+          "min": -1.3482
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 34,
+          "mean": -0.0,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 16482,
+        "area_px": 96750,
+        "density": 0.17036,
+        "chars": 166,
+        "chars_per_1k_ink": 10.07
+      }
+    },
+    {
+      "bbox": [
+        891,
+        984,
+        1308,
+        1163
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.3173,
+          "min": -1.5268
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 6025,
+        "area_px": 74464,
+        "density": 0.08091,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 528,
+    "content": {
+      "n_tokens": 354,
+      "mean": -0.0005,
+      "min": -0.0891,
+      "p05": -0.0002,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 58,
+          "token_id": 7400,
+          "logprob": -0.0891,
+          "text": " February"
+        },
+        {
+          "index": 158,
+          "token_id": 17,
+          "logprob": -0.0337,
+          "text": "2"
+        },
+        {
+          "index": 142,
+          "token_id": 1697,
+          "logprob": -0.0182,
+          "text": " person"
+        },
+        {
+          "index": 172,
+          "token_id": 17,
+          "logprob": -0.0142,
+          "text": "2"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0025,
+          "text": "Section"
+        },
+        {
+          "index": 301,
+          "token_id": 28683,
+          "logprob": -0.0016,
+          "text": " Sheriff"
+        },
+        {
+          "index": 112,
+          "token_id": 17851,
+          "logprob": -0.0012,
+          "text": "\u00a7"
+        },
+        {
+          "index": 418,
+          "token_id": 10112,
+          "logprob": -0.0009,
+          "text": " Hy"
+        },
+        {
+          "index": 47,
+          "token_id": 31608,
+          "logprob": -0.0007,
+          "text": " Emergency"
+        },
+        {
+          "index": 215,
+          "token_id": 68667,
+          "logprob": -0.0005,
+          "text": " reinst"
+        },
+        {
+          "index": 476,
+          "token_id": 2456,
+          "logprob": -0.0005,
+          "text": " effect"
+        },
+        {
+          "index": 221,
+          "token_id": 5937,
+          "logprob": -0.0003,
+          "text": " otherwise"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 101,
+      "mean": -0.2886,
+      "min": -1.7296,
+      "p05": -1.3768,
+      "p50": -0.0007,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -1.7296,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.6193,
+          "text": "4"
+        },
+        {
+          "index": 501,
+          "token_id": 16,
+          "logprob": -1.5268,
+          "text": "1"
+        },
+        {
+          "index": 506,
+          "token_id": 19,
+          "logprob": -1.513,
+          "text": "4"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.4948,
+          "text": "5"
+        },
+        {
+          "index": 270,
+          "token_id": 18,
+          "logprob": -1.3768,
+          "text": "3"
+        },
+        {
+          "index": 84,
+          "token_id": 22,
+          "logprob": -1.3504,
+          "text": "7"
+        },
+        {
+          "index": 448,
+          "token_id": 21,
+          "logprob": -1.3482,
+          "text": "6"
+        },
+        {
+          "index": 518,
+          "token_id": 18,
+          "logprob": -1.3478,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.2915,
+          "text": "9"
+        },
+        {
+          "index": 254,
+          "token_id": 20,
+          "logprob": -1.2705,
+          "text": "5"
+        },
+        {
+          "index": 259,
+          "token_id": 16,
+          "logprob": -1.2632,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 528,
+      "mean": -0.0556,
+      "min": -1.7296,
+      "p05": -0.1668,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 242.12,
+    "std": 45.7,
+    "dark_fraction": 0.06208
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 145709,
+    "rule_px": 0,
+    "covered_px": 145674,
+    "covered_fraction": 0.99976,
+    "uncovered_px": 35,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

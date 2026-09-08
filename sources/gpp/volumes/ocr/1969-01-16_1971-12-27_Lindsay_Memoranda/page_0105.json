@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1869,
-        "area_px": 10656,
-        "density": 0.17539,
+        "ink_px": 3104,
+        "area_px": 15840,
+        "density": 0.19596,
         "chars": 20,
-        "chars_per_1k_ink": 10.7
+        "chars_per_1k_ink": 6.44
       }
     },
     {
@@ -58,9 +58,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 8130,
-        "area_px": 26826,
-        "density": 0.30306,
+        "ink_px": 22750,
+        "area_px": 73903,
+        "density": 0.30784,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -91,7 +91,13 @@
           "min": -0.0014
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4528,
+        "area_px": 28896,
+        "density": 0.1567,
+        "chars": 19,
+        "chars_per_1k_ink": 4.2
+      }
     },
     {
       "bbox": [
@@ -901,50 +907,51 @@
   "ink_coverage": {
     "roi": [
       296,
-      381,
+      88,
       2171,
-      2801
+      3048
     ],
-    "ink_px": 174761,
-    "covered_px": 162314,
-    "covered_fraction": 0.92878,
-    "uncovered_px": 12447,
+    "ink_px": 197472,
+    "rule_px": 7009,
+    "covered_px": 181882,
+    "covered_fraction": 0.95495,
+    "uncovered_px": 8581,
     "uncovered_regions": [
       {
         "bbox": [
           344,
-          477,
-          560,
-          621
+          485,
+          552,
+          616
         ],
-        "ink_px": 5767
+        "ink_px": 5784
       },
       {
         "bbox": [
-          296,
-          1317,
-          1832,
-          1365
+          1664,
+          3040,
+          2171,
+          3048
         ],
-        "ink_px": 4998
+        "ink_px": 816
       },
       {
         "bbox": [
-          1952,
-          429,
+          1976,
+          427,
           2072,
-          525
+          506
         ],
-        "ink_px": 649
+        "ink_px": 569
       },
       {
         "bbox": [
-          896,
-          957,
-          1136,
-          981
+          314,
+          1340,
+          536,
+          1347
         ],
-        "ink_px": 638
+        "ink_px": 507
       }
     ],
     "cell_px": 24

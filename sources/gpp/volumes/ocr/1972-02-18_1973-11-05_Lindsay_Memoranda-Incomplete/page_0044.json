@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 214,
-        "area_px": 14955,
-        "density": 0.01431,
+        "ink_px": 1446,
+        "area_px": 86739,
+        "density": 0.01667,
         "chars": 28,
-        "chars_per_1k_ink": 130.84
+        "chars_per_1k_ink": 19.36
       }
     },
     {
@@ -63,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 255,
-        "area_px": 11136,
-        "density": 0.0229,
+        "ink_px": 990,
+        "area_px": 30624,
+        "density": 0.03233,
         "chars": 14,
-        "chars_per_1k_ink": 54.9
+        "chars_per_1k_ink": 14.14
       }
     },
     {
@@ -78,7 +78,7 @@
         1111
       ],
       "category": "Text",
-      "text": "Hours is a program that is catching on in all the business districts of Manhattan. The 1972 goal of the Staggered Work Hours Program in lower Manhattan is enlarged participation — a total of 120,000 people on new working hours in the business and governmental community. After the success in lower Manhattan, a similar project has started in Midtown Manhattan under the auspices of the Midtown Task Force on Staggered Work Hours. As more and more employers and employees learn of the benefits of Staggered Work Hours, the results in greater personal comfort, better use of our transportation systems, and improved business will become increasingly evident.",
+      "text": "Hours is a program that is catching on in all the business districts of Manhattan. The 1972 goal of the Staggered Work Hours Program in lower Manhattan is enlarged participation \u2014 a total of 120,000 people on new working hours in the business and governmental community. After the success in lower Manhattan, a similar project has started in Midtown Manhattan under the auspices of the Midtown Task Force on Staggered Work Hours. As more and more employers and employees learn of the benefits of Staggered Work Hours, the results in greater personal comfort, better use of our transportation systems, and improved business will become increasingly evident.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -486,7 +486,7 @@
         2709
       ],
       "category": "Text",
-      "text": "**Civic and Trade Organizations**\n\nAssociation For A Better New York ☐ Avenue of the Americas Association Inc. ☐ New York Board of Trade ☐ Broadway Association ☐ Clean Air Week Committee Association ☐ Commerce and Industry Association of New York Inc. ☐ East Side Association ☐ Fifth Avenue Association ☐ 14th Street Association ☐ Midtown Development Council ☐ Midtown Realty Owners Association ☐ New York Chamber of Commerce ☐ New York Convention and Visitors Bureau Inc. ☐ Association ☐ New York Chamber of Commerce Inc. ☐ Rockefeller Center Inc. ☐ Thirty Fourth Street - Midtown Real Estate Board of New York Inc. ☐ Public Agencies Metropolitan Association Inc. ☐ West Side Association of Commerce Inc. ☐ Public Agencies Metropolitan Transportation Authority ☐ New York City Community Planning Board #4 ☐ New York City Community Planning Board #5 ☐ New York City Community Planning Board #6 ☐ New York City Office of the Mayor ☐ New York City Office of Midtown Planning and Development ☐ New York City Planning Commission ☐ New York City Transportation Administration ☐ Port of New York Authority.",
+      "text": "**Civic and Trade Organizations**\n\nAssociation For A Better New York \u2610 Avenue of the Americas Association Inc. \u2610 New York Board of Trade \u2610 Broadway Association \u2610 Clean Air Week Committee Association \u2610 Commerce and Industry Association of New York Inc. \u2610 East Side Association \u2610 Fifth Avenue Association \u2610 14th Street Association \u2610 Midtown Development Council \u2610 Midtown Realty Owners Association \u2610 New York Chamber of Commerce \u2610 New York Convention and Visitors Bureau Inc. \u2610 Association \u2610 New York Chamber of Commerce Inc. \u2610 Rockefeller Center Inc. \u2610 Thirty Fourth Street - Midtown Real Estate Board of New York Inc. \u2610 Public Agencies Metropolitan Association Inc. \u2610 West Side Association of Commerce Inc. \u2610 Public Agencies Metropolitan Transportation Authority \u2610 New York City Community Planning Board #4 \u2610 New York City Community Planning Board #5 \u2610 New York City Community Planning Board #6 \u2610 New York City Office of the Mayor \u2610 New York City Office of Midtown Planning and Development \u2610 New York City Planning Commission \u2610 New York City Transportation Administration \u2610 Port of New York Authority.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -630,7 +630,13 @@
           "min": -1.1385
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1768,
+        "density": 0.0,
+        "chars": 4,
+        "chars_per_1k_ink": null
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -662,7 +668,7 @@
           "index": 157,
           "token_id": 1959,
           "logprob": -0.8179,
-          "text": " —"
+          "text": " \u2014"
         },
         {
           "index": 968,
@@ -704,7 +710,7 @@
           "index": 984,
           "token_id": 25125,
           "logprob": -0.529,
-          "text": " �"
+          "text": " \ufffd"
         },
         {
           "index": 1010,
@@ -828,15 +834,26 @@
   "ink_coverage": {
     "roi": [
       313,
-      413,
+      112,
       2301,
-      3030
+      3325
     ],
-    "ink_px": 31614,
-    "covered_px": 31614,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 36461,
+    "rule_px": 1609,
+    "covered_px": 33581,
+    "covered_fraction": 0.96353,
+    "uncovered_px": 1271,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1710,
+          3320,
+          2301,
+          3325
+        ],
+        "ink_px": 671
+      }
+    ],
     "cell_px": 24
   }
 }

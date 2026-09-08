@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 17310,
+        "area_px": 53410,
+        "density": 0.3241,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 3870,
-        "area_px": 32994,
-        "density": 0.11729,
+        "ink_px": 6199,
+        "area_px": 52029,
+        "density": 0.11915,
         "chars": 53,
-        "chars_per_1k_ink": 13.7
+        "chars_per_1k_ink": 8.55
       }
     },
     {
@@ -470,7 +476,7 @@
         2927
       ],
       "category": "Text",
-      "text": "§2. The President of the Board of Education and the Chairman of the Housing Authority shall also be invited to be members.",
+      "text": "\u00a72. The President of the Board of Education and the Chairman of the Housing Authority shall also be invited to be members.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -504,7 +510,7 @@
         3106
       ],
       "category": "Text",
-      "text": "§3. The Secretary to the Council on Consumer Affairs shall serve as the staff to the Council. Subject to applicable provisions of law, the Council may retain consultants.",
+      "text": "\u00a73. The Secretary to the Council on Consumer Affairs shall serve as the staff to the Council. Subject to applicable provisions of law, the Council may retain consultants.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -523,11 +529,11 @@
         }
       },
       "ink": {
-        "ink_px": 367,
-        "area_px": 171490,
-        "density": 0.00214,
+        "ink_px": 591,
+        "area_px": 250999,
+        "density": 0.00235,
         "chars": 170,
-        "chars_per_1k_ink": 463.22
+        "chars_per_1k_ink": 287.65
       }
     }
   ],
@@ -566,7 +572,7 @@
           "index": 839,
           "token_id": 17851,
           "logprob": -0.1647,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 840,
@@ -726,23 +732,33 @@
   "ink_coverage": {
     "roi": [
       289,
-      415,
+      86,
       2119,
-      3050
+      3347
     ],
-    "ink_px": 59162,
-    "covered_px": 58465,
-    "covered_fraction": 0.98822,
-    "uncovered_px": 697,
+    "ink_px": 83829,
+    "rule_px": 2858,
+    "covered_px": 78328,
+    "covered_fraction": 0.96736,
+    "uncovered_px": 2643,
     "uncovered_regions": [
       {
         "bbox": [
-          361,
-          1447,
-          745,
-          1471
+          1609,
+          3336,
+          2119,
+          3347
         ],
-        "ink_px": 647
+        "ink_px": 1044
+      },
+      {
+        "bbox": [
+          1297,
+          135,
+          1340,
+          203
+        ],
+        "ink_px": 925
       }
     ],
     "cell_px": 24

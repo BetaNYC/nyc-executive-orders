@@ -28,7 +28,13 @@
           "min": -0.0309
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 902,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         471
       ],
       "category": "List-item",
-      "text": "§3. The Administrator, subject to approval by the Mayor, shall employ an Assistant Model Cities Administrator for each area, to be selected from a list of five candidates nominated by the Local Policy Committee of such area. Each such Assistant Model Cities Administrator shall act as Area Director for the Model Cities Local area for which he is appointed. Each Area Director shall be responsible to the Administrator for:",
+      "text": "\u00a73. The Administrator, subject to approval by the Mayor, shall employ an Assistant Model Cities Administrator for each area, to be selected from a list of five candidates nominated by the Local Policy Committee of such area. Each such Assistant Model Cities Administrator shall act as Area Director for the Model Cities Local area for which he is appointed. Each Area Director shall be responsible to the Administrator for:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -208,7 +214,7 @@
         1037
       ],
       "category": "List-item",
-      "text": "§4. The Mayor's Model Cities Board shall meet at least once each month. It shall be:",
+      "text": "\u00a74. The Mayor's Model Cities Board shall meet at least once each month. It shall be:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -329,11 +335,11 @@
         }
       },
       "ink": {
-        "ink_px": 7,
-        "area_px": 11248,
-        "density": 0.00062,
+        "ink_px": 27,
+        "area_px": 46398,
+        "density": 0.00058,
         "chars": 99,
-        "chars_per_1k_ink": 14142.86
+        "chars_per_1k_ink": 3666.67
       }
     }
   ],
@@ -354,7 +360,7 @@
           "index": 73,
           "token_id": 17851,
           "logprob": -0.4981,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 603,
@@ -532,15 +538,35 @@
   "ink_coverage": {
     "roi": [
       139,
-      180,
+      0,
       1026,
-      1320
+      1462
     ],
-    "ink_px": 165,
-    "covered_px": 165,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 3371,
+    "rule_px": 1522,
+    "covered_px": 185,
+    "covered_fraction": 0.10005,
+    "uncovered_px": 1664,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          794,
+          1417,
+          923,
+          1455
+        ],
+        "ink_px": 631
+      },
+      {
+        "bbox": [
+          416,
+          1440,
+          562,
+          1462
+        ],
+        "ink_px": 543
+      }
+    ],
     "cell_px": 24
   }
 }

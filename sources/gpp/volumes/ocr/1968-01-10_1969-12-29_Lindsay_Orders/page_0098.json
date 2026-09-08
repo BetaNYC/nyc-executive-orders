@@ -28,7 +28,13 @@
           "min": -0.0023
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 261,
+        "area_px": 3600,
+        "density": 0.0725,
+        "chars": 11,
+        "chars_per_1k_ink": 42.15
+      }
     },
     {
       "bbox": [
@@ -140,7 +146,7 @@
         531
       ],
       "category": "Text",
-      "text": "§ 1.",
+      "text": "\u00a7 1.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -372,7 +378,7 @@
           "index": 250,
           "token_id": 17851,
           "logprob": -0.2116,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 402,
@@ -532,14 +538,15 @@
   "ink_coverage": {
     "roi": [
       143,
-      226,
+      0,
       1055,
-      1658
+      1835
     ],
-    "ink_px": 32243,
-    "covered_px": 31976,
-    "covered_fraction": 0.99172,
-    "uncovered_px": 267,
+    "ink_px": 34170,
+    "rule_px": 273,
+    "covered_px": 32237,
+    "covered_fraction": 0.95103,
+    "uncovered_px": 1660,
     "uncovered_regions": [],
     "cell_px": 24
   }

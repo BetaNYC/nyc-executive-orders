@@ -1,0 +1,383 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        435,
+        214,
+        1488,
+        647
+      ],
+      "category": "List-item",
+      "text": "2. Each Long-Term and each Interim Long-Term Obligation shall be executed in the name of the City by the Mayor and the Comptroller with their respective manual or facsimile signatures; each Obligation other than a Long-Term or Interim Long-Term Obligation shall be executed by the Comptroller or by such Deputy Comptroller as is duly authorized by the Comptroller to execute such Obligation with his manual or facsimile signature.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3204,
+          "min": -1.5483
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0021,
+          "min": -0.0041
+        },
+        "text": {
+          "n_tokens": 97,
+          "mean": -0.0005,
+          "min": -0.0382
+        }
+      },
+      "ink": {
+        "ink_px": 26335,
+        "area_px": 459108,
+        "density": 0.05736,
+        "chars": 430,
+        "chars_per_1k_ink": 16.33
+      }
+    },
+    {
+      "bbox": [
+        332,
+        678,
+        1439,
+        757
+      ],
+      "category": "Section-header",
+      "text": "C. Obligations shall be issued in the following denominations:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2974,
+          "min": -1.3723
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.1761,
+          "min": -0.3521
+        },
+        "text": {
+          "n_tokens": 14,
+          "mean": -0.0079,
+          "min": -0.0991
+        }
+      },
+      "ink": {
+        "ink_px": 3751,
+        "area_px": 89667,
+        "density": 0.04183,
+        "chars": 62,
+        "chars_per_1k_ink": 16.53
+      }
+    },
+    {
+      "bbox": [
+        438,
+        793,
+        1460,
+        935
+      ],
+      "category": "List-item",
+      "text": "1. Obligations other than Long-Term and Interim Long-Term Obligations shall be issued in denominations to be determined by the Comptroller.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2675,
+          "min": -1.2433
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 34,
+          "mean": -0.0003,
+          "min": -0.0062
+        }
+      },
+      "ink": {
+        "ink_px": 8643,
+        "area_px": 147168,
+        "density": 0.05873,
+        "chars": 139,
+        "chars_per_1k_ink": 16.08
+      }
+    },
+    {
+      "bbox": [
+        438,
+        967,
+        1479,
+        1277
+      ],
+      "category": "List-item",
+      "text": "2. Long-Term Obligations issued in coupon form shall be issued in the denomination of one thousand ($1,000) or five thousand ($5,000) dollars; Long-Term Obligations issued in registered form shall be issued in any denomination which is an integral multiple of one thousand ($1,000) dollars.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2232,
+          "min": -1.098
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0004,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 73,
+          "mean": -0.0,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 17786,
+        "area_px": 324792,
+        "density": 0.05476,
+        "chars": 290,
+        "chars_per_1k_ink": 16.3
+      }
+    },
+    {
+      "bbox": [
+        442,
+        1311,
+        1498,
+        1571
+      ],
+      "category": "List-item",
+      "text": "3. One Interim Long-Term Obligation may correspond to several corresponding Long-Term Obligations and in such case, the denomination of such Interim Long-Term Obligation shall not be in excess of the aggregate denominations of such corresponding Long-Term Obligations.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2406,
+          "min": -1.3477
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0015,
+          "min": -0.003
+        },
+        "text": {
+          "n_tokens": 57,
+          "mean": -0.0,
+          "min": -0.0006
+        }
+      },
+      "ink": {
+        "ink_px": 16838,
+        "area_px": 276672,
+        "density": 0.06086,
+        "chars": 268,
+        "chars_per_1k_ink": 15.92
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 460,
+    "content": {
+      "n_tokens": 275,
+      "mean": -0.0006,
+      "min": -0.0991,
+      "p05": -0.0005,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 169,
+          "token_id": 34,
+          "logprob": -0.0991,
+          "text": "C"
+        },
+        {
+          "index": 51,
+          "token_id": 4880,
+          "logprob": -0.0382,
+          "text": " shall"
+        },
+        {
+          "index": 180,
+          "token_id": 61165,
+          "logprob": -0.0082,
+          "text": " denomin"
+        },
+        {
+          "index": 246,
+          "token_id": 10838,
+          "logprob": -0.0062,
+          "text": " determined"
+        },
+        {
+          "index": 109,
+          "token_id": 1468,
+          "logprob": -0.0031,
+          "text": "roller"
+        },
+        {
+          "index": 132,
+          "token_id": 1189,
+          "logprob": -0.0018,
+          "text": ".\""
+        },
+        {
+          "index": 182,
+          "token_id": 2974,
+          "logprob": -0.0012,
+          "text": ":\""
+        },
+        {
+          "index": 221,
+          "token_id": 55775,
+          "logprob": -0.001,
+          "text": " Obl"
+        },
+        {
+          "index": 81,
+          "token_id": 1008,
+          "logprob": -0.001,
+          "text": " other"
+        },
+        {
+          "index": 171,
+          "token_id": 55775,
+          "logprob": -0.0009,
+          "text": " Obl"
+        },
+        {
+          "index": 59,
+          "token_id": 4311,
+          "logprob": -0.0006,
+          "text": " City"
+        },
+        {
+          "index": 423,
+          "token_id": 304,
+          "logprob": -0.0006,
+          "text": " in"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 108,
+      "mean": -0.2472,
+      "min": -1.5483,
+      "p05": -1.2554,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.5483,
+          "text": "5"
+        },
+        {
+          "index": 140,
+          "token_id": 17,
+          "logprob": -1.3723,
+          "text": "2"
+        },
+        {
+          "index": 382,
+          "token_id": 23,
+          "logprob": -1.3477,
+          "text": "8"
+        },
+        {
+          "index": 12,
+          "token_id": 19,
+          "logprob": -1.3276,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.2715,
+          "text": "7"
+        },
+        {
+          "index": 18,
+          "token_id": 23,
+          "logprob": -1.2589,
+          "text": "8"
+        },
+        {
+          "index": 370,
+          "token_id": 17,
+          "logprob": -1.2488,
+          "text": "2"
+        },
+        {
+          "index": 190,
+          "token_id": 23,
+          "logprob": -1.2433,
+          "text": "8"
+        },
+        {
+          "index": 206,
+          "token_id": 20,
+          "logprob": -1.1815,
+          "text": "5"
+        },
+        {
+          "index": 145,
+          "token_id": 23,
+          "logprob": -1.123,
+          "text": "8"
+        },
+        {
+          "index": 156,
+          "token_id": 22,
+          "logprob": -1.1163,
+          "text": "7"
+        },
+        {
+          "index": 277,
+          "token_id": 22,
+          "logprob": -1.098,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 460,
+      "mean": -0.0584,
+      "min": -1.5483,
+      "p05": -0.394,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 246.68,
+    "std": 40.8,
+    "dark_fraction": 0.03025
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      634.0,
+      820.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      211,
+      0,
+      1550,
+      2278
+    ],
+    "ink_px": 73863,
+    "rule_px": 0,
+    "covered_px": 73353,
+    "covered_fraction": 0.9931,
+    "uncovered_px": 510,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16758,
+        "area_px": 51728,
+        "density": 0.32396,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 4649,
-        "area_px": 40866,
-        "density": 0.11376,
+        "ink_px": 6099,
+        "area_px": 50874,
+        "density": 0.11988,
         "chars": 53,
-        "chars_per_1k_ink": 11.4
+        "chars_per_1k_ink": 8.69
       }
     },
     {
@@ -305,7 +311,7 @@
         1414
       ],
       "category": "Text",
-      "text": "§ 2. The Council shall designate such personnel of the agencies under the direction of its respective members as it may deem necessary to serve as its staff, and the Mayor shall designate an executive director who shall be in charge and control of the matters assigned to said staff and shall report to the Mayor and to the Council with respect thereto. Subject to applicable provisions of law, the Council may retain consultants.",
+      "text": "\u00a7 2. The Council shall designate such personnel of the agencies under the direction of its respective members as it may deem necessary to serve as its staff, and the Mayor shall designate an executive director who shall be in charge and control of the matters assigned to said staff and shall report to the Mayor and to the Council with respect thereto. Subject to applicable provisions of law, the Council may retain consultants.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -339,7 +345,7 @@
         1445
       ],
       "category": "Text",
-      "text": "§ 3. The Council shall have the following functions, powers and duties:",
+      "text": "\u00a7 3. The Council shall have the following functions, powers and duties:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -713,7 +719,7 @@
         2207
       ],
       "category": "Text",
-      "text": "§ 4. The Council may require such reports, analyses and statements from the agencies of the City as it may deem to be necessary for the proper performance of its duties hereunder and may issue instructions and directives to such agencies for the purpose of facilitating the development of program planning within them.",
+      "text": "\u00a7 4. The Council may require such reports, analyses and statements from the agencies of the City as it may deem to be necessary for the proper performance of its duties hereunder and may issue instructions and directives to such agencies for the purpose of facilitating the development of program planning within them.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -837,7 +843,7 @@
           "index": 549,
           "token_id": 17851,
           "logprob": -0.1677,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 1099,
@@ -1003,15 +1009,26 @@
   "ink_coverage": {
     "roi": [
       294,
-      418,
+      118,
       2156,
-      3065
+      3358
     ],
-    "ink_px": 50039,
-    "covered_px": 49441,
-    "covered_fraction": 0.98805,
-    "uncovered_px": 598,
-    "uncovered_regions": [],
+    "ink_px": 70781,
+    "rule_px": 1178,
+    "covered_px": 67649,
+    "covered_fraction": 0.97193,
+    "uncovered_px": 1954,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1392,
+          166,
+          1433,
+          226
+        ],
+        "ink_px": 729
+      }
+    ],
     "cell_px": 24
   }
 }

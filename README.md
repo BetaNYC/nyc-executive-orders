@@ -4,7 +4,7 @@
 
 An open, complete, machine-readable archive of **New York City mayoral executive orders** — the public compilation the City is _legally required_ to maintain.
 
-> **Status: the archive is live.** The full 1974–present corpus — **2,291 orders** as per-EO Markdown + bulk JSON, backed by 2,291 source PDFs plus 2,435 second-source scans from DORIS's Government Publications Portal — is published in [`corpus/`](corpus/). The 2014–2021 (de Blasio) cohort, previously an eight-year hole, was backfilled from the Internet Archive in July 2026 ([Phase B.4](#phase-b4--de-blasio-era-backfill-20142021)) and is now complete (91/91). The GPP integration ([Phase D](#phase-d--doris-gpp-integration)) closed all but 2 known-missing numbered orders. The supersession graph is populated deterministically from the corpus text ([Phase C](#phase-c--supersession-graph)). **All 14 pre-1974 bound volumes are now OCR'd** — 2,936 pages of image scan, 1946–1973 — and split into **978 additional per-order records** published separately as `corpus/eo_pre1974.json` ([Phase E](#phase-e--pre-1974-volume-split)). Coverage and text are still being refined (OCR cleanup, metadata backfill, pre-1974 segmentation review), and known gaps and limits are documented, not hidden. See [Status](#status).
+> **Status: the archive is live.** The full 1974–present corpus — **2,291 orders** as per-EO Markdown + bulk JSON, backed by 2,291 source PDFs plus 2,435 second-source scans from DORIS's Government Publications Portal — is published in [`corpus/`](corpus/). The 2014–2021 (de Blasio) cohort, previously an eight-year hole, was backfilled from the Internet Archive in July 2026 ([Phase B.4](#phase-b4--de-blasio-era-backfill-20142021)) and is now complete (91/91). The GPP integration ([Phase D](#phase-d--doris-gpp-integration)) closed all but 2 known-missing numbered orders. The supersession graph is populated deterministically from the corpus text ([Phase C](#phase-c--supersession-graph)). **All 14 pre-1974 bound volumes are now OCR'd** — 2,936 pages of image scan, 1946–1973 — and split into **978 additional per-order records** published separately as `corpus/eo_pre1974.json` ([Phase E](#phase-e--pre-1974-volume-split)). **The post-1974 scans have now been re-read by that same local vision-language model** — all **1,086 image-only PDFs, 1,799 pages**, migrated off Tesseract ([Phase F](#phase-f--vlm-ocr-migration-post-1974)): no document lost text, and the invented letterhead garbage is gone (see [`sample_vlm_diff/`](sample_vlm_diff/)). The born-digital half is the next target — an [audit](docs/born-digital-audit.md) found **665 of the 1,205 "born-digital" records are actually scans carrying somebody else's OCR layer**, and 55 inked pages missing from published bodies. Coverage and text are still being refined (the born-digital audit, metadata backfill, pre-1974 segmentation review), and known gaps and limits are documented, not hidden. See [Status](#status).
 
 Vibe coded with [Claude](https://claude.ai) by [BetaNYC](https://beta.nyc).
 
@@ -55,14 +55,18 @@ Out of scope: state (gubernatorial) executive orders; agency rules and the Admin
 
 | Path                                                                         | What it is                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`corpus/`](corpus/)                                                         | **The published dataset** — 2,291 orders. One Markdown file per order (`corpus/YYYY/<eo_id>.md`: YAML frontmatter + full text) plus the bulk `corpus/eo.json`. `corpus/supersession.json` is the edge list from [Phase C](#phase-c--supersession-graph) (244 edges); `corpus/gpp_provenance.json` is the [Phase D](#phase-d--doris-gpp-integration) sidecar mapping each order to its GPP source item(s) — kept out of `eo.json` so the locked record schema holds. [Phase E](#phase-e--pre-1974-volume-split) adds the pre-1974 set alongside — **978 records, all 14 volumes**: `corpus/eo_pre1974.json` + `corpus/pre1974_provenance.json`, with the Markdown in `corpus/1946/`…`corpus/1973/`.                                                                                                                                                           |
+| [`corpus/`](corpus/)                                                         | **The published dataset** — 2,291 orders. One Markdown file per order (`corpus/YYYY/<eo_id>.md`: YAML frontmatter + full text) plus the bulk `corpus/eo.json`. `corpus/supersession.json` is the edge list from [Phase C](#phase-c--supersession-graph) (244 edges); `corpus/gpp_provenance.json` is the [Phase D](#phase-d--doris-gpp-integration) sidecar mapping each order to its GPP source item(s) — kept out of `eo.json` so the locked record schema holds. [Phase E](#phase-e--pre-1974-volume-split) adds the pre-1974 set alongside — **978 records, all 14 volumes**: `corpus/eo_pre1974.json` + `corpus/pre1974_provenance.json`, with the Markdown in `corpus/1946/`…`corpus/1973/`. `corpus/mentions.json` is the agency-lineage scan from [`lineage/`](lineage/) ([Phase G](#phase-g--agency-lineage)) — **15,331** registry-confirmed mentions, **8,262** proposed ones, **367** agency events and **294** order-to-order citation edges, each with exact character offsets into `full_text`, plus the registry record for all **179** agencies matched. It is what `nyc-eo-explorer` builds its agency pages from.                                                                                                                                                           |
 | [`pdfs/`](pdfs/)                                                             | **Primary source PDFs**, one per order (`pdfs/YYYY/<eo_id>.pdf`, git-LFS) — what every corpus record's text was extracted or OCR'd from.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | [`sources/gpp/`](sources/gpp/)                                               | **Second-source lineage from DORIS's Government Publications Portal.** `sources/gpp/YYYY/<eo_id>--<fileset_id>.pdf` (2,435 files) holds a GPP-scanned copy for orders that already have a primary PDF elsewhere — kept for provenance diversity, not as the record of truth (some orders have 2–3 GPP scans on file). [`sources/gpp/volumes/`](sources/gpp/volumes/) holds the 14 bound pre-1974 compilation scans (1946–1973, image-only) — human-readably named and indexed in [its own README](sources/gpp/volumes/README.md) — plus `volumes/ocr/`, the committed per-page OCR output [Phase E](#phase-e--pre-1974-volume-split) splits into records (now complete: all 14 volumes, 2,936 pages). `sources/gpp/inputs/` is the committed GPP inventory + overlap-analysis snapshot the integration re-derives from, so the merge is reproducible and CI-checkable. |
 | [`src/nyc_executive_orders/`](src/nyc_executive_orders/)                     | The Python package: harvesters (`fetch.py`, `enumerate.py`, `download.py`), the parse pipeline (`textlayer.py`, `extract.py`, `ocr.py`, `enrich.py`, `clean.py`, `build_corpus.py`), the supersession engine (`supersede.py`), the GPP integration (`gpp.py`), and the pre-1974 volume split (`vlm_ocr.py`, `volume_split.py`, `build_pre1974.py`).                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [`scripts/`](scripts/)                                                       | Supervised entry points for each live harvest phase, plus the offline `run_parse.py`, `run_supersede.py`, and the Phase E pair (`run_volume_ocr.py`, `run_pre1974_build.py`) plus its `run_picture_clips.py` / `build_web_crops.py` side-cars. `run_full_vlm_pipeline.sh` (repo root) drives the Phase E stages end-to-end, one volume at a time. All live-network scripts are gated — see each Phase section below before running one. Phase E is not: it is local compute, not a harvest.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [`lineage/`](lineage/)                                                       | **The agency-lineage scan** ([Phase G](#phase-g--agency-lineage)) — a standalone package that reads `corpus/*.json` as data, never imports `nyc_executive_orders`, and writes `corpus/mentions.json`. Four passes: known agency names (`scan.py`), proposed unknown ones (`discover.py`), what an order does to an agency (`reorg.py`), and what an order does to another order (`citations.py`). `run_scan.py` is the command; `data/` holds the 2 hand-edited files (`name_rules.json`, `extra_agencies.json`); `lineage/out/` is gitignored scratch. It carries its own offline tests (`lineage/tests/`) and its own [README](lineage/README.md). |
+| [`scripts/`](scripts/)                                                       | Supervised entry points for each live harvest phase, plus the offline `run_parse.py`, `run_supersede.py`, and the Phase E pair (`run_volume_ocr.py`, `run_pre1974_build.py`) plus its `run_picture_clips.py` / `build_web_crops.py` side-cars. `run_full_vlm_pre_1974.sh` (repo root) drives the Phase E stages end-to-end, one volume at a time. All live-network scripts are gated — see each Phase section below before running one. Phase E is not: it is local compute, not a harvest.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [`sources/ocr/`](sources/ocr/)                                               | **The post-1974 VLM OCR output** — one directory per scanned order (`sources/ocr/YYYY/<eo_id>/page_XXXX.json`), **1,086 documents, 1,799 pages**, committed as plain JSON rather than LFS. These page records are the switch for [Phase F](#phase-f--vlm-ocr-migration-post-1974): a document that has them publishes the VLM text, and deleting them rolls that document back to Tesseract. |
+| [`sample_vlm_diff/`](sample_vlm_diff/)                                       | **Before-and-after evidence for [Phase F](#phase-f--vlm-ocr-migration-post-1974)** — Tesseract text, VLM text and a unified diff for the 20 largest changes, written by `scripts/report_post1974_ocr.py --stage diff`. Read [`1974-EO-001.md`](sample_vlm_diff/1974-EO-001.md) first. |
 | [`tests/`](tests/)                                                           | 496 offline tests (no live network calls); a real-data cross-check runs against the committed corpus + GPP inventory as a regression guard.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | [`qa-ui/`](qa-ui/)                                                           | A local React+Vite app for reviewing [Phase E](#phase-e--pre-1974-volume-split) VLM OCR output — page image with bboxes, rendered Markdown, and the QA signals (ink coverage, token confidence, finish reason) side by side. Reads the committed `sources/gpp/volumes/ocr/` directly, so it works from a fresh clone; see [its own README](qa-ui/README.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| `gpp_integration_report.md`, `supersession_report.md`, `pre1974_report.md`   | Generated summaries from the latest merge/supersede runs — regenerated on every run, not hand-edited.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [`docs/`](docs/)                                                              | **The hand-written notes on the machine-reading work** — [`vlm-overview.md`](docs/vlm-overview.md) (a plain-English tour of the VLM pipeline), [`born-digital-audit.md`](docs/born-digital-audit.md) (the measured audit of the born-digital path), [`metrics-walkthrough.md`](docs/metrics-walkthrough.md) (what each quality metric does), [`post-1974-vlm-execution-instructions.md`](docs/post-1974-vlm-execution-instructions.md) and [`post1974-run-summary.md`](docs/post1974-run-summary.md) (the operator runbook and the run's own failures), and [`ner_lineage_proposal.md`](docs/ner_lineage_proposal.md) (the design proposal behind [Phase G](#phase-g--agency-lineage)). |
+| `gpp_integration_report.md`, `supersession_report.md`, `pre1974_report.md`, `post1974_ocr_report.md` | Generated summaries from the latest merge / supersede / OCR-migration runs, written to the repo root by their run — regenerated every run, not hand-edited. |
 | [`sample_clean_report/review_queue.md`](sample_clean_report/review_queue.md) | **A live worklist** — orders whose title the automated cleaner couldn't confidently extract and needs a human to set by hand from the source PDF. See [Want to help?](#want-to-help) below.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 ---
@@ -90,6 +94,9 @@ Everything before ~2002 is scanned images requiring OCR; later orders are a mix 
 - [x] **Annotate supersession** (`supersedes` / `superseded_by` / `in_effect` / `establishes_entity`) — deterministic, rule-based extraction from the corpus text ([Phase C](#phase-c--supersession-graph)); metadata backfill continues.
 - [x] **Cross-verify against the City's own deposits** — DORIS Government Publications Portal integration ([Phase D](#phase-d--doris-gpp-integration)): 79 net-new orders recovered, 73 of 74 previously-unrecoverable gaps closed, dual-provenance scans added for 2,129 orders.
 - [x] **Split the pre-1974 volumes** (14 bound compilations, 1946–1973) into per-order records — **all 14 volumes OCR'd** (2,936 pages) and split into **978 records** ([Phase E](#phase-e--pre-1974-volume-split)); segmentation review and index reconciliation continue.
+- [x] **Re-read the post-1974 scans with a vision-language model** — all **1,086** scanned post-1974 PDFs (**1,799 pages**) migrated from Tesseract to local `dots.ocr` ([Phase F](#phase-f--vlm-ocr-migration-post-1974)): **0** documents lost text, 22 recovered a `§` Tesseract never saw, 51 gained a real printed title.
+- [x] **Trace the agencies through the orders** — [Phase G](#phase-g--agency-lineage): **15,331** agency mentions located to the character, **367** reorganization events (established / renamed / abolished / transferred) and **294** order-to-order citation edges, published as `corpus/mentions.json`. The edges exist; the graph and the review lists are open work.
+- [ ] **Repair the born-digital path** — the audit in [`docs/born-digital-audit.md`](docs/born-digital-audit.md) is the open worklist: **665 of 1,205** records tagged `born-digital` are scans with a second-hand OCR layer, **55 inked pages** never reached a published body, and the quality metrics cannot see either fault. In progress.
 - [ ] **Maintain** it forward as new orders are signed.
 - [ ] _(Explore)_ an MCP server, and whether this folds into [`nyc-charter-laws-rules`](https://github.com/BetaNYC/nyc-charter-laws-rules).
 
@@ -380,14 +387,17 @@ bulk `corpus/eo.json`.
 
 1. **Text-layer probe** (`textlayer.py`) — classify each PDF as born-digital vs scanned (decides what needs OCR).
 2. **Extract** (`extract.py`) — PyMuPDF full text for born-digital PDFs.
-3. **OCR** (`ocr.py`) — local `ocrmypdf`/Tesseract for scanned PDFs. **Hard cloud gate: local only, no network, no cloud fallback ever** — unreadable pages are flagged for review, never auto-escalated.
+3. **OCR** (`vlm_ocr.py`, `ocr.py`) — scanned PDFs are read by local `dots.ocr`, a vision-language model ([Phase F](#phase-f--vlm-ocr-migration-post-1974)). `ocr.py` (`ocrmypdf`/Tesseract) is the original engine and stays in the tree as the rollback path. **Hard cloud gate: local only, no network, no cloud fallback ever** — unreadable pages are flagged for review, never auto-escalated.
 4. **Enrich** (`enrich.py`) — derive `mayor` / `administration` from the signing year.
 5. **Clean** (`clean.py`) — deterministic, non-destructive cleanup of OCR'd docs: relocate scan-stamp and letterhead noise out of the body (into `dropped_header` / `dropped_marks`, never deleted), and backfill `title` / `date_signed` from the body **only** when a frozen-dictionary gate confirms every word — otherwise the field is left empty and flagged for human review. **No stage ever rewrites the order text**; the verbatim OCR is preserved in `full_text_raw`.
 6. **Emit** (`build_corpus.py`) — write the per-EO Markdown, bulk JSON, and manifest.
 
-Every record carries a `text_source` (`born-digital` / `ocr` / none) and a `text_quality`
-tier (`clean` / `minor-noise` / `needs-review`) so consumers know exactly what they are
-getting. Supersession annotations are populated by [Phase C](#phase-c--supersession-graph).
+Every record carries a `text_source` (`born-digital` / `ocr-vlm` / `ocr` / none) and a
+`text_quality` tier (`clean` / `minor-noise` / `needs-review`) so consumers know exactly what
+they are getting. Today 1,086 records read `ocr-vlm` and 1,205 read `born-digital`. **Treat the
+`born-digital` tag with care until the audit lands:** 665 of those 1,205 PDFs are scans that
+somebody already ran through an OCR engine, so their text is second-hand OCR, not the byte-exact
+output of a word processor — see [`docs/born-digital-audit.md`](docs/born-digital-audit.md). Supersession annotations are populated by [Phase C](#phase-c--supersession-graph).
 
 ## Phase C — supersession graph
 
@@ -466,9 +476,9 @@ image scan with no text layer. Phase E reads them locally and splits them into p
 **The OCR is a local vision-language model**, [dots.ocr](https://github.com/rednote-hilab/dots.ocr)
 run at temperature 0 (`src/nyc_executive_orders/vlm_ocr.py`) through either of two interchangeable
 local backends — `mlx-vlm` on Apple Silicon (the `vlm` extra) or `torch`/`transformers` on an
-NVIDIA GPU (the `vlm-cuda` extra, `--device cuda`; setup, quantization and VRAM notes in
-[`run-on-cuda.md`](run-on-cuda.md)). The full 14-volume run was driven on an NVIDIA card by
-`run_full_vlm_pipeline.sh` at that script's 4-bit default. No cloud OCR, no API, no per-page cost — the same §7 rule the Tesseract path follows. Records it produces are
+NVIDIA GPU (the `vlm-cuda` extra, `--device cuda`). The full 14-volume run was driven on an
+NVIDIA card by
+`run_full_vlm_pre_1974.sh` at that script's 4-bit default. No cloud OCR, no API, no per-page cost — the same §7 rule the Tesseract path follows. Records it produces are
 stamped `text_source: ocr-vlm`, distinct from the `ocr` (ocrmypdf) lineage.
 
 **The model's job ends at pixels → text.** Every downstream decision — where one instrument ends
@@ -485,7 +495,7 @@ itself:
 
 ```bash
 uv pip install -e '.[vlm]'        # Apple Silicon (mlx-vlm)
-uv pip install -e '.[vlm-cuda]'   # NVIDIA GPU (torch/transformers) — see run-on-cuda.md
+uv pip install -e '.[vlm-cuda]'   # NVIDIA GPU (torch/transformers)
 ```
 
 The two extras are **mutually exclusive** (declared as conflicting in `pyproject.toml`): they run
@@ -533,15 +543,15 @@ uv run python scripts/run_pre1974_build.py --dry-run
 uv run python scripts/run_pre1974_build.py
 ```
 
-`./run_full_vlm_pipeline.sh` chains all of it for one volume — optional blank-page calibration,
+`./run_full_vlm_pre_1974.sh` chains all of it for one volume — optional blank-page calibration,
 then the CUDA OCR pass, then the (always full-corpus) stage-2 build — logging per volume under
 `vlm-logs/` and resuming at the first missing page, so the way to grind through 14 volumes is to
 keep re-running it:
 
 ```bash
-./run_full_vlm_pipeline.sh --volume Wagner_Orders
-./run_full_vlm_pipeline.sh --volume 1962-01-23 --start-page 88   # resume
-./run_full_vlm_pipeline.sh --dry-run                            # print the commands
+./run_full_vlm_pre_1974.sh --volume Wagner_Orders
+./run_full_vlm_pre_1974.sh --volume 1962-01-23 --start-page 88   # resume
+./run_full_vlm_pre_1974.sh --dry-run                            # print the commands
 ```
 
 Stage 1 writes each volume's per-page JSON straight into `sources/gpp/volumes/ocr/` — committed,
@@ -562,7 +572,7 @@ uv run python scripts/render_volume_document.py --volume 1962-01-23 | less
 
 A volume whose OCR is wrong rather than merely incomplete — as the two sideways-scanned Lindsay
 Orders volumes (1968–1969, 1970–1971) were before `--rotate` existed — is redone by clearing it
-first: `./run_full_vlm_pipeline.sh --clean --volume 1968-01-10`, which removes its page records,
+first: `./run_full_vlm_pre_1974.sh --clean --volume 1968-01-10`, which removes its page records,
 run scratch, crops, log and corpus records, then exits. Both were re-OCR'd that way; page
 orientation now defaults to `--rotate auto`.
 
@@ -660,6 +670,207 @@ for all of them. What remains is review, not capture: the 285 `needs-review` rec
 unreadable pages in the 1968–1969 Lindsay Orders volume, and the 11 volumes whose subject index
 did not parse into a reconcilable list.
 
+---
+
+## Phase F — VLM OCR migration (post-1974)
+
+Phase E proved the vision-language model on the oldest, hardest paper. Phase F points the same
+model at the modern scans. **Every post-1974 PDF that is image-only — 1,086 documents, 1,799
+pages — has been re-read by local `dots.ocr`, and the corpus now publishes that text.** The
+records are stamped `text_source: ocr-vlm`. Born-digital PDFs were not touched by this run.
+
+The driver is `scripts/run_post1974_ocr.py`, wrapped by `run_full_vlm_post_1974.sh`
+(repo root), which rents the GPU box and drives the run; the operator runbook is
+[`docs/post-1974-vlm-execution-instructions.md`](docs/post-1974-vlm-execution-instructions.md), and
+[`docs/vlm-overview.md`](docs/vlm-overview.md) explains the whole pipeline in plain English. As in Phase E,
+the model's job stops at pixels → text. Every downstream decision stays deterministic rule code.
+
+### What improved
+
+`scripts/report_post1974_ocr.py --stage diff` measures the change against the last committed
+Tesseract corpus and writes [`post1974_ocr_report.md`](post1974_ocr_report.md) plus 20
+side-by-side diffs into [`sample_vlm_diff/`](sample_vlm_diff/). Nothing below is estimated.
+
+The clearest way to see it is [`sample_vlm_diff/1974-EO-001.md`](sample_vlm_diff/1974-EO-001.md).
+Tesseract read the archival scan stamps, the staple shadow and the letterhead as words:
+
+```
+E OF-/
+Jk Cty Keay :
+yAu L, 1974
+vee. cn/Vve. 30 sos
+[ps 7-&
+SG ee ee a er ers iene banemeneeers
+OFFICE OF THE MAYOR”
+```
+
+The VLM returns the page:
+
+```
+OFFICE OF THE MAYOR
+EXECUTIVE ORDER NO. 1
+PURSUANT TO THE PROVISIONS OF SECTION THREE OF THE NEW YORK CITY CHARTER AND EXCEPT AS HERE AFTER PROVIDED:
+1. All Executive Orders in effect on December 31, 1973, are hereby continued.
+```
+
+Four kinds of win repeat across the set:
+
+- **Invented text is gone.** Tesseract emitted a line per smudge. The body shrank by 13,000
+  characters over the 1,019 comparable documents while it got *more* complete — the loss is junk,
+  not order text. `1974-EO-001` drops from 707 characters to 580 and gains its whole numbered
+  list.
+- **Real text is recovered.** `1995-EO-021` went from 269 characters to 751: Tesseract stopped
+  after the caption and published an order with **no operative section at all**. The VLM returns
+  Section 1 and Section 2. It is the single largest length change in the run.
+- **The section sign survives.** `§` count rises from 1,869 to 2,092 across the same documents,
+  and **22 documents** gained a `§` that Tesseract never saw — it used to read `§2.` as `82.`
+  (`1979-EO-039`) or drop it.
+- **Lines rejoin into sentences.** Tesseract broke `Section 1. Prior Order Revoked.` away from
+  the clause it introduces. Titles improved with it: **912 of 1,019** documents now carry a
+  printed title, against 861 before.
+
+Aggregate, from the report:
+
+| Measure | Result |
+|---|---:|
+| Documents compared (both engines) | 1,019 |
+| Improved or held on **both** word-ratio and junk-ratio | 481 |
+| Lost their text entirely (hard failure) | **0** |
+| Changed length by more than 50% | 1 (`1995-EO-021`, recovered) |
+| Documents gaining a `§` | 22 |
+| Documents gaining a printed title | 51 |
+
+### What got worse, honestly
+
+The `clean` tier count fell: 923 of 1,019 before, 802 after. **140 documents moved
+`clean` → `needs-review`, and 129 of those 140 carry a `low-ink-coverage` page flag.** That flag
+fires when ink on the page falls outside every box the model returned — and on loose post-1974
+letterhead that ink is usually a handwritten archival annotation or a printed rule, not order
+text. The suspicion is therefore that **the flag is wrong, not the text**: the same documents
+improved on word-ratio and junk-ratio at the same time. `MIN_COVERED_FRACTION` in `vlm_pages.py`
+needs re-tuning against the current full-page measurement. Until that is settled, the tier is
+pessimistic, and the diffs are the better evidence.
+
+Two other results are also on the record: 11 documents raised `no-measurable-ink` and 9 raised
+`low-confidence`. `docs/post1974-run-summary.md` lists the run's own failures — 3 documents that hit
+CUDA OOM and were re-run afterwards.
+
+### Running it
+
+```bash
+uv run python scripts/run_post1974_ocr.py --status              # per-year ledger, imports no backend
+
+uv run --extra vlm-cuda python scripts/run_post1974_ocr.py \
+  --device cuda --quantization none --workers 4                 # NVIDIA
+uv run --extra vlm python scripts/run_post1974_ocr.py --device mlx   # Apple Silicon
+
+uv run python scripts/run_parse.py --ocr-engine vlm             # rebuild the corpus, seconds
+uv run python scripts/report_post1974_ocr.py --stage diff --samples 20
+```
+
+Interrupting is safe: re-run the same command and it resumes at the first missing page. There is
+no authorization gate — this is local compute over files already on disk, and the only network
+call is the one-time weight download.
+
+**Rollback is the page records.** Delete `sources/ocr/<year>/<eo_id>/` and rebuild with
+`--ocr-engine auto` to put one document back on Tesseract; `git revert` the build commit to undo
+the whole migration byte-exact. This is why `ocr.py`, the `ocr` extra and `tests/test_ocr.py`
+stay in the tree.
+
+### Next: the born-digital half
+
+The scanned half is now read as well as we can read it. The **born-digital** half is not, and
+[`docs/born-digital-audit.md`](docs/born-digital-audit.md) measures why — every number in it was probed
+from the committed PDFs:
+
+- **665 of the 1,205** records tagged `born-digital` are scans whose text layer is somebody
+  else's OCR, stamped invisible over a page image. 228 of them read `§` as `$`. The gate
+  (`textlayer.py`) decides from one number — mean characters per page — which cannot tell a word
+  processor from a scan that was already OCR'd.
+- **55 inked pages** never reached a published body, because the gate averages over pages.
+  `2025-EO-057` publishes a body that starts mid-order, and is tiered `clean`.
+- The quality metrics **cannot see either fault**: word-ratio and junk-ratio return the same
+  medians for clean text, second-hand OCR and Tesseract output.
+
+The fix list is in that file, worst first. Item 4 on it is to send those 665 scans through this
+same Phase F machinery, which already handles exactly that case.
+
+## Phase G — agency lineage
+
+Phase C asks which orders replace which. Phase G asks the other question: **which agencies do the
+orders name, and what do the orders do to them** — establish, continue, rename, abolish, transfer.
+The output is `corpus/mentions.json`, and `nyc-eo-explorer` builds its agency pages from that file
+and nothing else.
+
+**Why it is separate from `supersede.py`.** That module already looks like it does this, and the
+measurement in [`lineage/README.md`](lineage/README.md) says it does not: 83 orders contain "there
+is hereby establish", the existing pattern catches the name in 31 of them, and `establishes_entity`
+is filled in for **2** of 2,291 records. 39 orders mention DoITT and not one was recorded. The
+cause is the direction of the question. There, one pattern pulls a name out of a sentence and the
+registry is asked whether that name is known. Here, **the registry does the searching**: every
+known agency name is looked for in every order.
+
+`lineage/` is standalone by design. It reads `corpus/*.json` as data, writes only into
+`lineage/out/`, and never imports `nyc_executive_orders`. Where it reuses logic from that package —
+`normalize.py` from `supersede._norm_entity`, `textquality.py` from `clean.py`, `citations.py` from
+`supersede.py` — the source is named in a comment so the two stay comparable.
+
+### The four passes
+
+1. **Names we know** (`scan.py`) — all 586 searchable registry names, in one compiled pattern,
+   longest first. **15,331** finds, of which 2,560 are mayoral letterhead rather than a real
+   reference (`letterhead.py` tells them apart).
+2. **Names we do not know** (`discover.py`) — phrases shaped like agency names that pass one did
+   not match: **8,262** proposed, **616** at 3 or more sightings for a person to read. This pass is
+   not a backstop. The registry marks all 317 of its agencies `status: "active"` and fills in
+   `founding_date` / `dissolution_date` for none, so a body that was shut down can only appear
+   here. DoITT, the Board of Estimate and the Bureau of the Budget all come from this pass, and the
+   history is made of exactly those.
+3. **What an order does to an agency** (`reorg.py`) — **367** events: 272 `establishes`, 40
+   `continues`, 21 `renames`, 21 `transfers_to`, 11 `abolishes`, 1 `merges_into`, 1 `succeeds`.
+   **496** more sentences named something the passes could not attach, and each says why.
+4. **What an order does to another order** (`citations.py`) — **294** edges (`actor`, `target`,
+   `verb`, `source`, `partial`), plus **150** citations that resolve to no order we hold.
+
+**The promise the tests hold to:** `full_text[start:end] == text`, character for character, for
+every find in every pass and for every role inside every event. `lineage/tests/test_real_corpus.py`
+checks it against the committed corpus. Rules only — no LLM, no network (§7) — and every list is
+sorted on a key that cannot tie, so a re-run on unchanged input writes an identical file (§6).
+
+### Running it
+
+Pass one needs BetaNYC's agency registry, `../ny-gov-web-registry/data/registry.json`. It is not
+checked out here; clone it first, or pass `--registry`. Pass two needs no registry at all.
+
+```bash
+python lineage/run_scan.py --dry-run           # print the report, write nothing
+python lineage/run_scan.py --pass new-names    # pass two alone, no registry needed
+python lineage/run_scan.py                     # both passes, into lineage/out/
+
+# Publish the committed artifact — re-run whenever the corpus or the registry moves.
+python lineage/run_scan.py --mentions-out corpus/mentions.json
+
+uv run --no-project --with pytest python -m pytest lineage/tests -q
+```
+
+`corpus/mentions.json` is a **derived artifact, exactly like `corpus/supersession.json`**:
+regenerate and commit it whenever the corpus or the registry moves, or the explorer shows last
+month's answer. `lineage/out/` stays gitignored scratch. The file also carries the registry's own
+record for each of the 179 agencies a run matched, because a reader handed
+`"office-of-the-mayor"` and nothing else cannot label it. 121 of those rows include the agency's
+own description of itself, which is **CC BY-SA 4.0** — the file states that credit in
+`agency_description_credit`, and anything that displays the text has to state it too.
+
+### What it does not do yet
+
+**The edges exist; the graph does not.** No agency has a lifespan, and the review lists are the
+work that closes that gap. Pass one matches names **exactly**, so OCR damage causes quiet misses —
+approximate matching is left out on purpose until somebody measures how much is missed. 265 of the
+367 events name at least one body that has no `agency_id` yet, which gives an unresolved sentence
+rather than a silent link. `renames` is review-grade: 21 events, and a hand check of 5 found 2
+wrong ("designated as the administering agency" is a job, not a rename). Every limit is enumerated
+in [`lineage/README.md`](lineage/README.md) under "What it does not do".
+
 ## Status
 
 The archive is **live and published**. Phase A (current-era harvester), Phase B (historical
@@ -672,15 +883,41 @@ corpus, and the result — **2,291 orders** — is published in [`corpus/`](corp
 local compute, not a harvest — adding **978 more records** for a repository total of **3,269
 documents**.
 
+**The OCR engine has changed.** [Phase F](#phase-f--vlm-ocr-migration-post-1974) has re-read
+every scanned post-1974 order with the same local vision-language model Phase E uses — **1,086
+documents, 1,799 pages, complete** — and the corpus publishes that text under
+`text_source: ocr-vlm`. The measured result is in
+[`post1974_ocr_report.md`](post1974_ocr_report.md): **0 documents lost their text**, 22 recovered
+a `§`, 51 gained a printed title, and `1995-EO-021` recovered both of its operative sections from
+a body that Tesseract had cut off after the caption. Read
+[`sample_vlm_diff/`](sample_vlm_diff/) for the before-and-after. One caution belongs with it: 140
+documents moved `clean` → `needs-review` in the same pass, and 129 of them carry a
+`low-ink-coverage` flag that we believe is mis-tuned rather than right — those documents improved
+on every text metric at the same time. That threshold is open work.
+
 It is the most complete open compilation of NYC mayoral executive orders we know of, but it is
 **not yet authoritative**: OCR text of the oldest scans is imperfect (faithful to the source,
-not perfected), and while the supersession graph is populated (Phase C: 244 edges, 140 regular
+not perfected), the born-digital path has a measured and unfixed fault (below), and while the
+supersession graph is populated (Phase C: 244 edges, 140 regular
 orders computed out of force), metadata backfill continues. The Phase D merge closed all but
 **2 known-missing numbered orders** — Bloomberg EO 59 and Adams EEO 471 — confirmed absent from
 every source we've checked, including GPP's own deposits; both are now accountability findings
 (the City's own records system doesn't have them either) rather than harvest gaps. The de Blasio
 regular series is complete (91 of 91 signed orders recovered, including EO 31/2018 and EO
 56/2020, which later orders cite as revoked).
+
+**The born-digital half is the current work.** An audit of all 1,205 born-digital records
+([`docs/born-digital-audit.md`](docs/born-digital-audit.md), every number probed from the committed PDFs)
+found that **665 of them are not born-digital at all** — they are scans carrying an invisible
+OCR layer that somebody else produced, of unknown vintage and unknown quality, and 228 of them
+read `§` as `$`. It also found **55 inked pages missing from published bodies**, because the
+born-digital gate averages characters over pages and a text-empty page then emits nothing;
+`2025-EO-057` publishes a body that begins in the middle of the order and is still tiered
+`clean`. The quality metrics cannot see either fault. Fixes are listed worst-first in that file,
+and the largest of them is to send those 665 scans through the
+[Phase F](#phase-f--vlm-ocr-migration-post-1974) machinery, which already handles that exact
+case. This is stated here rather than hidden: **do not treat `text_source: born-digital` as
+proof of byte-faithful text today.**
 
 **The pre-1974 record now exists too.** All 14 bound volumes (1946–1973) are harvested, and
 [Phase E](#phase-e--pre-1974-volume-split) has now OCR'd **every one of them** — 2,936 pages of
@@ -693,6 +930,14 @@ volume), and only 3 of 14 volumes' subject indexes parsed well enough to reconci
 against. All of that is enumerated per volume in `pre1974_report.md`. Gaps are listed, not
 hidden. See [Want to help?](#want-to-help) below.
 
+**The agencies are now traced through the text.** [Phase G](#phase-g--agency-lineage) locates
+**15,331** agency mentions to the character, proposes **8,262** names the registry does not
+carry, and reads **367** reorganization events and **294** order-to-order citation edges out of
+the sentences — published as `corpus/mentions.json`, which is what `nyc-eo-explorer` builds its
+agency pages from. Read it as **review-grade, not finished**: 265 of the 367 events name a body
+with no `agency_id` yet, 496 sentences resolved to nothing, and no agency has a lifespan, so
+there is a set of edges here and not yet a graph.
+
 ## Want to help?
 
 This is early-stage, openly built infrastructure — there's concrete work ready to pick up, not just "look around and see."
@@ -701,6 +946,18 @@ This is early-stage, openly built infrastructure — there's concrete work ready
 
 - **[`sample_clean_report/review_queue.md`](sample_clean_report/review_queue.md)** — 69 orders whose title the automated cleaner couldn't confidently extract from a scanned PDF. The fix is reading the source PDF and hand-setting the title; no code changes needed. Bodies are already correct and untouched (`full_text_raw` preserves the verbatim OCR) — this is purely a title-review pass.
 - **Open issues:** [#1](https://github.com/BetaNYC/nyc-executive-orders/issues/1) (a scanned order misclassified as born-digital) and [#6](https://github.com/BetaNYC/nyc-executive-orders/issues/6) (28 orders with a bad title pulled from a caps-line header) — both root-cause bugs in `src/nyc_executive_orders/`, not one-off data fixes.
+- **The born-digital audit ([`docs/born-digital-audit.md`](docs/born-digital-audit.md))** — six named
+  fixes in `src/nyc_executive_orders/`, worst first, each with the measurement that justifies it:
+  split the `textlayer.py` gate so a scan with an OCR layer is labelled as one, make the gate
+  per-page so the 55 lost pages come back, remove the `born_digital` exemption at
+  `clean.py:759`, strip U+00AD, and restore paragraph breaks. The audit also names the three
+  failure modes the 11 existing tests do not cover.
+- **The lineage review lists ([Phase G](#phase-g--agency-lineage))** — **616** proposed agency
+  names seen 3 or more times, and **496** reorganization sentences that named a body the scan
+  could not attach. The `one-side-only` half of the second list is the part that pays: each row
+  names a body that belongs in `lineage/data/extra_agencies.json`, and every name moved across
+  turns unresolved sentences into edges on the next run. No GPU, no registry needed for the
+  proposed-name pass — see [`lineage/README.md`](lineage/README.md).
 - **Pre-1974 review ([Phase E](#phase-e--pre-1974-volume-split))** — the 14 bound volumes are all OCR'd, and the 978 records they produced now need eyes: 285 are flagged `needs-review`, and 11 of 14 volumes' subject indexes never parsed into a list the split could be reconciled against. `pre1974_report.md` is the worklist; [`qa-ui/`](qa-ui/) shows the page image next to what the model read off it, straight from the committed OCR — no GPU, no re-run.
 
 **The one hard rule:** never invent or guess at content. Every title, date, and body must trace to the source PDF or an official record — an empty or flagged field is correct; a guess is a bug. This corpus is only as trustworthy as its provenance discipline (see [AI use in this project](#ai-use-in-this-project) below).

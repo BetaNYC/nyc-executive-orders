@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1,
-        "area_px": 210,
-        "density": 0.00476,
+        "ink_px": 152,
+        "area_px": 1435,
+        "density": 0.10592,
         "chars": 1,
-        "chars_per_1k_ink": 1000.0
+        "chars_per_1k_ink": 6.58
       }
     },
     {
@@ -78,7 +78,7 @@
         2755
       ],
       "category": "Text",
-      "text": "In this connection, it should be noted that for periods of ordered military duty in excess of 30 days, Mil. Law § 245, which section applies to public employees who acquired a guard, militia or reserve status on or before April 1, 1942, provides that a city employee shall be paid the excess, if any, of his city over his military pay. Military Law § 43 which applies to public employees who acquired a guard, militia or reserve status after April 1, 1942, has no such provision for military differential - it merely provides for a continued leave of absence while the",
+      "text": "In this connection, it should be noted that for periods of ordered military duty in excess of 30 days, Mil. Law \u00a7 245, which section applies to public employees who acquired a guard, militia or reserve status on or before April 1, 1942, provides that a city employee shall be paid the excess, if any, of his city over his military pay. Military Law \u00a7 43 which applies to public employees who acquired a guard, militia or reserve status after April 1, 1942, has no such provision for military differential - it merely provides for a continued leave of absence while the",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -300,15 +300,26 @@
   "ink_coverage": {
     "roi": [
       297,
-      384,
+      114,
       2178,
-      2823
+      3077
     ],
-    "ink_px": 94603,
-    "covered_px": 94603,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 96717,
+    "rule_px": 986,
+    "covered_px": 94754,
+    "covered_fraction": 0.98979,
+    "uncovered_px": 977,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1669,
+          3074,
+          2178,
+          3077
+        ],
+        "ink_px": 527
+      }
+    ],
     "cell_px": 24
   }
 }

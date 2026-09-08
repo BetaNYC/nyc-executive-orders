@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4424,
+        "area_px": 21500,
+        "density": 0.20577,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -237,7 +243,7 @@
         1000
       ],
       "category": "List-item",
-      "text": "§2. The membership of the Mayor's Committee on Pensions shall consist of the following or their designees: a member of the Mayor's staff, who shall be the Chairman, The Comptroller of the City of New York, the President of the City Council, the Deputy Mayor-City Administrator, the Corporation Counsel, the Director of the Bureau of the Budget, the Director of Office of Labor Relations, the Mayor's State Legislative representative, the Director of Personnel, the City Actuary, a member of the City Council selected by the City Council and the Secretary of the New York City Retirement System, who shall serve as Secretary.",
+      "text": "\u00a72. The membership of the Mayor's Committee on Pensions shall consist of the following or their designees: a member of the Mayor's staff, who shall be the Chairman, The Comptroller of the City of New York, the President of the City Council, the Deputy Mayor-City Administrator, the Corporation Counsel, the Director of the Bureau of the Budget, the Director of Office of Labor Relations, the Mayor's State Legislative representative, the Director of Personnel, the City Actuary, a member of the City Council selected by the City Council and the Secretary of the New York City Retirement System, who shall serve as Secretary.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -271,7 +277,7 @@
         1051
       ],
       "category": "List-item",
-      "text": "§3. This Order shall take effect immediately.",
+      "text": "\u00a73. This Order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -378,7 +384,7 @@
           "index": 353,
           "token_id": 17851,
           "logprob": -0.1012,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 313,
@@ -556,15 +562,35 @@
   "ink_coverage": {
     "roi": [
       140,
-      178,
+      0,
       1033,
-      1311
+      1451
     ],
-    "ink_px": 13165,
-    "covered_px": 12876,
-    "covered_fraction": 0.97805,
-    "uncovered_px": 289,
-    "uncovered_regions": [],
+    "ink_px": 20949,
+    "rule_px": 1592,
+    "covered_px": 17300,
+    "covered_fraction": 0.89373,
+    "uncovered_px": 2057,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          362,
+          1427,
+          548,
+          1451
+        ],
+        "ink_px": 858
+      },
+      {
+        "bbox": [
+          812,
+          1403,
+          932,
+          1421
+        ],
+        "ink_px": 597
+      }
+    ],
     "cell_px": 24
   }
 }

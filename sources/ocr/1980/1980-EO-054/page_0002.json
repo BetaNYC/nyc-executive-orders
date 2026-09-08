@@ -1,0 +1,343 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        345,
+        333,
+        1132,
+        521
+      ],
+      "category": "Text",
+      "text": " contracts each in-\nvolving an expenditure of not more than\n$5,000 in specific emergency situations\nwhere a dangerous condition exists which\nrequires immediate correction, in a manner\nnot forth in the plan, to contractors whose\nactions appear on the List of Approved Contractors.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4095,
+          "min": -2.0067
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0008,
+          "min": -0.0008
+        },
+        "text": {
+          "n_tokens": 59,
+          "mean": -0.0935,
+          "min": -1.9054
+        }
+      },
+      "ink": {
+        "ink_px": 45983,
+        "area_px": 147956,
+        "density": 0.31079,
+        "chars": 279,
+        "chars_per_1k_ink": 6.07
+      }
+    },
+    {
+      "bbox": [
+        349,
+        549,
+        1138,
+        845
+      ],
+      "category": "Text",
+      "text": "Contracts may be awarded pursuant to the\nplan and the provisions of subsections (b) (c)\nand (d) of this section shall not apply to such\ncontracts, except any contracts awarded in-\nvolving an expenditure in excess of $5,000 shall\nbe subject to the provisions of subsections (b)\n(c) and (d) of this section. Amendments to such\nplan shall be consistent with this subsection and\nshall be approved by the Department of Housing\nPreservation and Development or any successor\nagency and the Corporation Counsel.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2755,
+          "min": -1.2431
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 117,
+          "mean": -0.0033,
+          "min": -0.3487
+        }
+      },
+      "ink": {
+        "ink_px": 58230,
+        "area_px": 232755,
+        "density": 0.25018,
+        "chars": 503,
+        "chars_per_1k_ink": 8.64
+      }
+    },
+    {
+      "bbox": [
+        354,
+        871,
+        1087,
+        896
+      ],
+      "category": "Text",
+      "text": "$2. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2652,
+          "min": -1.3648
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0041,
+          "min": -0.0041
+        },
+        "text": {
+          "n_tokens": 10,
+          "mean": -0.0101,
+          "min": -0.0938
+        }
+      },
+      "ink": {
+        "ink_px": 5111,
+        "area_px": 19058,
+        "density": 0.26818,
+        "chars": 45,
+        "chars_per_1k_ink": 8.8
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 292,
+    "content": {
+      "n_tokens": 186,
+      "mean": -0.0323,
+      "min": -1.9054,
+      "p05": -0.0722,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 17080,
+          "logprob": -1.9054,
+          "text": " contracts"
+        },
+        {
+          "index": 85,
+          "token_id": 4020,
+          "logprob": -1.255,
+          "text": "actions"
+        },
+        {
+          "index": 50,
+          "token_id": 20,
+          "logprob": -0.8052,
+          "text": "5"
+        },
+        {
+          "index": 75,
+          "token_id": 1921,
+          "logprob": -0.4454,
+          "text": "not"
+        },
+        {
+          "index": 49,
+          "token_id": 3,
+          "logprob": -0.438,
+          "text": "$"
+        },
+        {
+          "index": 136,
+          "token_id": 1699,
+          "logprob": -0.3487,
+          "text": "\\n"
+        },
+        {
+          "index": 51,
+          "token_id": 11,
+          "logprob": -0.1439,
+          "text": ","
+        },
+        {
+          "index": 280,
+          "token_id": 5201,
+          "logprob": -0.0938,
+          "text": " \"$"
+        },
+        {
+          "index": 40,
+          "token_id": 12536,
+          "logprob": -0.0887,
+          "text": "vol"
+        },
+        {
+          "index": 76,
+          "token_id": 13241,
+          "logprob": -0.0739,
+          "text": " forth"
+        },
+        {
+          "index": 67,
+          "token_id": 41375,
+          "logprob": -0.0668,
+          "text": "requires"
+        },
+        {
+          "index": 48,
+          "token_id": 1699,
+          "logprob": -0.0603,
+          "text": "\\n"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.301,
+      "min": -2.0067,
+      "p05": -1.4216,
+      "p50": -0.0007,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -2.0067,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 18,
+          "logprob": -1.6183,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.4958,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 16,
+          "logprob": -1.4177,
+          "text": "1"
+        },
+        {
+          "index": 253,
+          "token_id": 19,
+          "logprob": -1.3648,
+          "text": "4"
+        },
+        {
+          "index": 117,
+          "token_id": 20,
+          "logprob": -1.2431,
+          "text": "5"
+        },
+        {
+          "index": 264,
+          "token_id": 22,
+          "logprob": -1.2183,
+          "text": "7"
+        },
+        {
+          "index": 112,
+          "token_id": 23,
+          "logprob": -1.2048,
+          "text": "8"
+        },
+        {
+          "index": 269,
+          "token_id": 21,
+          "logprob": -1.1222,
+          "text": "6"
+        },
+        {
+          "index": 258,
+          "token_id": 16,
+          "logprob": -1.0957,
+          "text": "1"
+        },
+        {
+          "index": 106,
+          "token_id": 24,
+          "logprob": -1.0601,
+          "text": "9"
+        },
+        {
+          "index": 101,
+          "token_id": 24,
+          "logprob": -0.8556,
+          "text": "9"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 292,
+      "mean": -0.0826,
+      "min": -2.0067,
+      "p05": -0.6397,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 238.75,
+    "std": 59.11,
+    "dark_fraction": 0.06177
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      645.0,
+      832.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      215,
+      0,
+      1576,
+      2312
+    ],
+    "ink_px": 148067,
+    "rule_px": 7217,
+    "covered_px": 109324,
+    "covered_fraction": 0.77617,
+    "uncovered_px": 31526,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          227,
+          336,
+          354,
+          984
+        ],
+        "ink_px": 21525
+      },
+      {
+        "bbox": [
+          787,
+          905,
+          1180,
+          984
+        ],
+        "ink_px": 4666
+      },
+      {
+        "bbox": [
+          1132,
+          301,
+          1323,
+          623
+        ],
+        "ink_px": 4073
+      }
+    ],
+    "cell_px": 24
+  }
+}

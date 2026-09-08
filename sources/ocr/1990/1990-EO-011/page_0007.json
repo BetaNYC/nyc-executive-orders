@@ -1,0 +1,344 @@
+{
+  "page": 7,
+  "source_image": "page_0007.png",
+  "elements": [
+    {
+      "bbox": [
+        263,
+        219,
+        1420,
+        316
+      ],
+      "category": "Text",
+      "text": "the effective and independent performance of the duties and\nresponsibilities of the Deputy Commissioner.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3006,
+          "min": -1.5019
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.0153,
+          "min": -0.2529
+        }
+      },
+      "ink": {
+        "ink_px": 9975,
+        "area_px": 114072,
+        "density": 0.08744,
+        "chars": 104,
+        "chars_per_1k_ink": 10.43
+      }
+    },
+    {
+      "bbox": [
+        263,
+        351,
+        1425,
+        509
+      ],
+      "category": "Text",
+      "text": "Section 6. **Construction with Other Laws.** Nothing in this\nOrder shall be construed to limit the power and duties of any agency\nunder the City Charter or as otherwise provided by law.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2641,
+          "min": -1.3022
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0036,
+          "min": -0.0036
+        },
+        "text": {
+          "n_tokens": 40,
+          "mean": -0.0287,
+          "min": -0.818
+        }
+      },
+      "ink": {
+        "ink_px": 18522,
+        "area_px": 187040,
+        "density": 0.09903,
+        "chars": 185,
+        "chars_per_1k_ink": 9.99
+      }
+    },
+    {
+      "bbox": [
+        263,
+        544,
+        1427,
+        643
+      ],
+      "category": "Text",
+      "text": "Section 7. **Effective Date.** This order shall take effect\nimmediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2306,
+          "min": -1.1305
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 18,
+          "mean": -0.0272,
+          "min": -0.4482
+        }
+      },
+      "ink": {
+        "ink_px": 7071,
+        "area_px": 117100,
+        "density": 0.06038,
+        "chars": 72,
+        "chars_per_1k_ink": 10.18
+      }
+    },
+    {
+      "bbox": [
+        810,
+        787,
+        1427,
+        940
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3295,
+          "min": -1.3157
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0229,
+          "min": -0.0229
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 10019,
+        "area_px": 96255,
+        "density": 0.10409,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 213,
+    "content": {
+      "n_tokens": 75,
+      "mean": -0.0253,
+      "min": -0.818,
+      "p05": -0.0995,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 91,
+          "token_id": 3070,
+          "logprob": -0.818,
+          "text": " **"
+        },
+        {
+          "index": 166,
+          "token_id": 3070,
+          "logprob": -0.4482,
+          "text": " **"
+        },
+        {
+          "index": 101,
+          "token_id": 1699,
+          "logprob": -0.2812,
+          "text": "\\n"
+        },
+        {
+          "index": 44,
+          "token_id": 1699,
+          "logprob": -0.2529,
+          "text": "\\n"
+        },
+        {
+          "index": 167,
+          "token_id": 67539,
+          "logprob": -0.0338,
+          "text": "Effective"
+        },
+        {
+          "index": 92,
+          "token_id": 50818,
+          "logprob": -0.0322,
+          "text": "Construction"
+        },
+        {
+          "index": 87,
+          "token_id": 9620,
+          "logprob": -0.0134,
+          "text": "Section"
+        },
+        {
+          "index": 176,
+          "token_id": 1699,
+          "logprob": -0.0047,
+          "text": "\\n"
+        },
+        {
+          "index": 51,
+          "token_id": 1189,
+          "logprob": -0.0038,
+          "text": ".\""
+        },
+        {
+          "index": 162,
+          "token_id": 9620,
+          "logprob": -0.002,
+          "text": "Section"
+        },
+        {
+          "index": 39,
+          "token_id": 5068,
+          "logprob": -0.0016,
+          "text": " performance"
+        },
+        {
+          "index": 126,
+          "token_id": 1189,
+          "logprob": -0.0011,
+          "text": ".\""
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 80,
+      "mean": -0.2674,
+      "min": -1.5019,
+      "p05": -1.2123,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.5019,
+          "text": "3"
+        },
+        {
+          "index": 192,
+          "token_id": 22,
+          "logprob": -1.3157,
+          "text": "7"
+        },
+        {
+          "index": 59,
+          "token_id": 18,
+          "logprob": -1.3022,
+          "text": "3"
+        },
+        {
+          "index": 70,
+          "token_id": 20,
+          "logprob": -1.2455,
+          "text": "5"
+        },
+        {
+          "index": 23,
+          "token_id": 21,
+          "logprob": -1.2106,
+          "text": "6"
+        },
+        {
+          "index": 198,
+          "token_id": 22,
+          "logprob": -1.2025,
+          "text": "7"
+        },
+        {
+          "index": 203,
+          "token_id": 15,
+          "logprob": -1.1757,
+          "text": "0"
+        },
+        {
+          "index": 186,
+          "token_id": 16,
+          "logprob": -1.1722,
+          "text": "1"
+        },
+        {
+          "index": 145,
+          "token_id": 22,
+          "logprob": -1.1305,
+          "text": "7"
+        },
+        {
+          "index": 150,
+          "token_id": 18,
+          "logprob": -1.0755,
+          "text": "3"
+        },
+        {
+          "index": 139,
+          "token_id": 19,
+          "logprob": -1.0717,
+          "text": "4"
+        },
+        {
+          "index": 64,
+          "token_id": 16,
+          "logprob": -1.0464,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 213,
+      "mean": -0.1108,
+      "min": -1.5019,
+      "p05": -1.0565,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.14,
+    "std": 32.52,
+    "dark_fraction": 0.01743
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      628.0,
+      818.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      209,
+      0,
+      1535,
+      2273
+    ],
+    "ink_px": 46367,
+    "rule_px": 200,
+    "covered_px": 45587,
+    "covered_fraction": 0.98744,
+    "uncovered_px": 580,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

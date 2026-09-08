@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4041,
+        "area_px": 19418,
+        "density": 0.20811,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -407,7 +413,7 @@
         1246
       ],
       "category": "Section-header",
-      "text": "§ 2. Procedure for requesting new or additional space",
+      "text": "\u00a7 2. Procedure for requesting new or additional space",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -497,7 +503,7 @@
           "index": 701,
           "token_id": 17851,
           "logprob": -0.1517,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 217,
@@ -663,15 +669,26 @@
   "ink_coverage": {
     "roi": [
       154,
-      238,
+      0,
       1129,
-      1752
+      1914
     ],
-    "ink_px": 1014,
-    "covered_px": 1014,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 6385,
+    "rule_px": 390,
+    "covered_px": 5055,
+    "covered_fraction": 0.8432,
+    "uncovered_px": 940,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          569,
+          1907,
+          700,
+          1913
+        ],
+        "ink_px": 410
+      }
+    ],
     "cell_px": 24
   }
 }

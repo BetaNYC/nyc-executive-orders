@@ -28,7 +28,13 @@
           "min": -1.1172
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 16815,
+        "area_px": 214900,
+        "density": 0.07825,
+        "chars": 113,
+        "chars_per_1k_ink": 6.72
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         430
       ],
       "category": "Section-header",
-      "text": "## § 1. DECLARATION OF POLICY.",
+      "text": "## \u00a7 1. DECLARATION OF POLICY.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 292,
-        "area_px": 7216,
-        "density": 0.04047,
+        "ink_px": 3020,
+        "area_px": 32144,
+        "density": 0.09395,
         "chars": 30,
-        "chars_per_1k_ink": 102.74
+        "chars_per_1k_ink": 9.93
       }
     },
     {
@@ -174,7 +180,7 @@
         1450
       ],
       "category": "Section-header",
-      "text": "## § 2. DEFINITIONS.",
+      "text": "## \u00a7 2. DEFINITIONS.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -242,7 +248,7 @@
         1769
       ],
       "category": "Text",
-      "text": "a. The meaning of all terms of this Executive Order shall be as defined in § 1173-3.0 of Chapter 54 of the Administrative Code of the City of New York unless otherwise indicated in this order.",
+      "text": "a. The meaning of all terms of this Executive Order shall be as defined in \u00a7 1173-3.0 of Chapter 54 of the Administrative Code of the City of New York unless otherwise indicated in this order.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -344,7 +350,7 @@
         2307
       ],
       "category": "Section-header",
-      "text": "## § 3. MATTERS WITHIN THE SCOPE OF COLLECTIVE BARGAINING.",
+      "text": "## \u00a7 3. MATTERS WITHIN THE SCOPE OF COLLECTIVE BARGAINING.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -600,15 +606,35 @@
   "ink_coverage": {
     "roi": [
       260,
-      420,
+      97,
       1908,
-      3084
+      3407
     ],
-    "ink_px": 172171,
-    "covered_px": 172171,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 194441,
+    "rule_px": 1283,
+    "covered_px": 191714,
+    "covered_fraction": 0.99252,
+    "uncovered_px": 1444,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1418,
+          3398,
+          1908,
+          3407
+        ],
+        "ink_px": 803
+      },
+      {
+        "bbox": [
+          1340,
+          97,
+          1796,
+          99
+        ],
+        "ink_px": 488
+      }
+    ],
     "cell_px": 24
   }
 }

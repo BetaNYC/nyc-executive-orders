@@ -1,0 +1,344 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        201,
+        208,
+        1491,
+        398
+      ],
+      "category": "Text",
+      "text": "\u00a7 9. Any temporary outdoor heater authorized by this Order must be removed upon a determination by DOB or FDNY that such temporary outdoor heater is a safety hazard. Any temporary outdoor heater in an outdoor dining area operated pursuant to the Open Restaurants program as authorized by this Order must also be removed upon termination of such program or revocation of the establishment's certification to participate in such program.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3319,
+          "min": -1.3907
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0095,
+          "min": -0.0095
+        },
+        "text": {
+          "n_tokens": 78,
+          "mean": -0.0049,
+          "min": -0.3558
+        }
+      },
+      "ink": {
+        "ink_px": 40999,
+        "area_px": 243390,
+        "density": 0.16845,
+        "chars": 435,
+        "chars_per_1k_ink": 10.61
+      }
+    },
+    {
+      "bbox": [
+        203,
+        439,
+        1508,
+        783
+      ],
+      "category": "Text",
+      "text": "\u00a7 10. I hereby direct the Fire Department of the City of New York, the New York City Police Department, the Department of Buildings, the Sheriff, and other agencies as needed to immediately enforce the directives set forth in this Order in accordance with their lawful enforcement authorities, including but not limited to Administrative Code sections 15-227(a), 28-105.10.1, and 28-201.1, and sections 104.5.1, 107.6, and 313.4 of the New York City Fire Code. Violations of the directives set forth in this Order may be issued as if they were violations under the New York City Health Code, title 24 Rules of the City of New York sections 3.07 and 3.11, and may be enforced as such by the Department of Health and Mental Hygiene or any other agency named in this section.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2824,
+          "min": -1.4253
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 204,
+          "mean": -0.0,
+          "min": -0.0033
+        }
+      },
+      "ink": {
+        "ink_px": 70071,
+        "area_px": 443156,
+        "density": 0.15812,
+        "chars": 772,
+        "chars_per_1k_ink": 11.02
+      }
+    },
+    {
+      "bbox": [
+        206,
+        824,
+        1497,
+        898
+      ],
+      "category": "Text",
+      "text": "\u00a7 11. This Emergency Executive Order shall take effect immediately, and shall remain in effect for five (5) days unless it is terminated or modified at an earlier date.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2691,
+          "min": -1.3127
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 36,
+          "mean": -0.0002,
+          "min": -0.004
+        }
+      },
+      "ink": {
+        "ink_px": 14580,
+        "area_px": 96375,
+        "density": 0.15128,
+        "chars": 168,
+        "chars_per_1k_ink": 11.52
+      }
+    },
+    {
+      "bbox": [
+        1090,
+        900,
+        1408,
+        1085
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3296,
+          "min": -1.4283
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0129,
+          "min": -0.0129
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 6491,
+        "area_px": 58830,
+        "density": 0.11033,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 458,
+    "content": {
+      "n_tokens": 318,
+      "mean": -0.0013,
+      "min": -0.3558,
+      "p05": -0.0001,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 52,
+          "token_id": 25248,
+          "logprob": -0.3558,
+          "text": " determination"
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0233,
+          "text": "\u00a7"
+        },
+        {
+          "index": 387,
+          "token_id": 17851,
+          "logprob": -0.004,
+          "text": "\u00a7"
+        },
+        {
+          "index": 170,
+          "token_id": 10082,
+          "logprob": -0.0033,
+          "text": " Police"
+        },
+        {
+          "index": 393,
+          "token_id": 31608,
+          "logprob": -0.0031,
+          "text": " Emergency"
+        },
+        {
+          "index": 105,
+          "token_id": 594,
+          "logprob": -0.0017,
+          "text": "'s"
+        },
+        {
+          "index": 54,
+          "token_id": 9319,
+          "logprob": -0.0016,
+          "text": " DO"
+        },
+        {
+          "index": 187,
+          "token_id": 7069,
+          "logprob": -0.0009,
+          "text": " immediately"
+        },
+        {
+          "index": 148,
+          "token_id": 17851,
+          "logprob": -0.0008,
+          "text": "\u00a7"
+        },
+        {
+          "index": 341,
+          "token_id": 10112,
+          "logprob": -0.0006,
+          "text": " Hy"
+        },
+        {
+          "index": 228,
+          "token_id": 13,
+          "logprob": -0.0004,
+          "text": "."
+        },
+        {
+          "index": 205,
+          "token_id": 714,
+          "logprob": -0.0003,
+          "text": " but"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 82,
+      "mean": -0.2894,
+      "min": -1.4283,
+      "p05": -1.3106,
+      "p50": -0.001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 448,
+          "token_id": 20,
+          "logprob": -1.4283,
+          "text": "5"
+        },
+        {
+          "index": 120,
+          "token_id": 18,
+          "logprob": -1.4253,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 23,
+          "logprob": -1.3907,
+          "text": "8"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.3624,
+          "text": "1"
+        },
+        {
+          "index": 359,
+          "token_id": 21,
+          "logprob": -1.3127,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.2691,
+          "text": "1"
+        },
+        {
+          "index": 364,
+          "token_id": 19,
+          "logprob": -1.2639,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 23,
+          "logprob": -1.2179,
+          "text": "8"
+        },
+        {
+          "index": 442,
+          "token_id": 23,
+          "logprob": -1.1988,
+          "text": "8"
+        },
+        {
+          "index": 136,
+          "token_id": 18,
+          "logprob": -1.1929,
+          "text": "3"
+        },
+        {
+          "index": 370,
+          "token_id": 22,
+          "logprob": -1.1845,
+          "text": "7"
+        },
+        {
+          "index": 431,
+          "token_id": 15,
+          "logprob": -1.1765,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 458,
+      "mean": -0.0528,
+      "min": -1.4283,
+      "p05": -0.2676,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 241.04,
+    "std": 46.39,
+    "dark_fraction": 0.05552
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 132141,
+    "rule_px": 0,
+    "covered_px": 132141,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

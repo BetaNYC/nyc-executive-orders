@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 24316,
-        "area_px": 78705,
-        "density": 0.30895,
+        "ink_px": 31544,
+        "area_px": 98010,
+        "density": 0.32184,
         "chars": 20,
-        "chars_per_1k_ink": 0.82
+        "chars_per_1k_ink": 0.63
       }
     },
     {
@@ -58,9 +58,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 13411,
-        "area_px": 34020,
-        "density": 0.39421,
+        "ink_px": 26236,
+        "area_px": 68040,
+        "density": 0.3856,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -92,11 +92,11 @@
         }
       },
       "ink": {
-        "ink_px": 0,
-        "area_px": 1154,
-        "density": 0.0,
+        "ink_px": 5222,
+        "area_px": 27119,
+        "density": 0.19256,
         "chars": 19,
-        "chars_per_1k_ink": null
+        "chars_per_1k_ink": 3.64
       }
     },
     {
@@ -257,9 +257,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 5517,
-        "area_px": 95472,
-        "density": 0.05779,
+        "ink_px": 5964,
+        "area_px": 155520,
+        "density": 0.03835,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -664,23 +664,42 @@
   "ink_coverage": {
     "roi": [
       289,
-      374,
+      122,
       2125,
-      2747
+      2993
     ],
-    "ink_px": 167363,
-    "covered_px": 165282,
-    "covered_fraction": 0.98757,
-    "uncovered_px": 2081,
+    "ink_px": 187874,
+    "rule_px": 749,
+    "covered_px": 184541,
+    "covered_fraction": 0.98619,
+    "uncovered_px": 2584,
     "uncovered_regions": [
       {
         "bbox": [
-          1825,
-          590,
-          2125,
-          710
+          1844,
+          602,
+          2001,
+          706
         ],
-        "ink_px": 1653
+        "ink_px": 792
+      },
+      {
+        "bbox": [
+          1638,
+          122,
+          1963,
+          124
+        ],
+        "ink_px": 492
+      },
+      {
+        "bbox": [
+          1355,
+          2992,
+          1825,
+          2993
+        ],
+        "ink_px": 470
       }
     ],
     "cell_px": 24

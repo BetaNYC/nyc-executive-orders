@@ -1,0 +1,310 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        183,
+        255,
+        1510,
+        373
+      ],
+      "category": "Text",
+      "text": "described in Chapter 24-A of the Charter and Chapter 3 of Title 21 of the Administrative Code\nshall apply to the Department of Homeless Services within the Department of Social Services.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3472,
+          "min": -1.6716
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 41,
+          "mean": -0.0052,
+          "min": -0.1459
+        }
+      },
+      "ink": {
+        "ink_px": 14777,
+        "area_px": 152456,
+        "density": 0.09693,
+        "chars": 186,
+        "chars_per_1k_ink": 12.59
+      }
+    },
+    {
+      "bbox": [
+        178,
+        412,
+        1505,
+        526
+      ],
+      "category": "Text",
+      "text": "Section 4. This order shall take effect immediately and shall be deemed to have\nbeen in full force and effect as of July 1, 1998.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.304,
+          "min": -1.4155
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 35,
+          "mean": -0.0011,
+          "min": -0.0185
+        }
+      },
+      "ink": {
+        "ink_px": 9640,
+        "area_px": 148580,
+        "density": 0.06488,
+        "chars": 129,
+        "chars_per_1k_ink": 13.38
+      }
+    },
+    {
+      "bbox": [
+        899,
+        651,
+        1464,
+        991
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3986,
+          "min": -1.7393
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0008,
+          "min": -0.0008
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 13598,
+        "area_px": 191196,
+        "density": 0.07112,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 179,
+    "content": {
+      "n_tokens": 76,
+      "mean": -0.0033,
+      "min": -0.1459,
+      "p05": -0.0075,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 59,
+          "token_id": 1699,
+          "logprob": -0.1459,
+          "text": "\\n"
+        },
+        {
+          "index": 60,
+          "token_id": 19012,
+          "logprob": -0.0644,
+          "text": "shall"
+        },
+        {
+          "index": 128,
+          "token_id": 81750,
+          "logprob": -0.0185,
+          "text": "been"
+        },
+        {
+          "index": 111,
+          "token_id": 9620,
+          "logprob": -0.013,
+          "text": "Section"
+        },
+        {
+          "index": 127,
+          "token_id": 1699,
+          "logprob": -0.0057,
+          "text": "\\n"
+        },
+        {
+          "index": 35,
+          "token_id": 5799,
+          "logprob": -0.0017,
+          "text": "des"
+        },
+        {
+          "index": 75,
+          "token_id": 1189,
+          "logprob": -0.0005,
+          "text": ".\""
+        },
+        {
+          "index": 66,
+          "token_id": 5379,
+          "logprob": -0.0004,
+          "text": " Home"
+        },
+        {
+          "index": 38,
+          "token_id": 15585,
+          "logprob": -0.0003,
+          "text": " Chapter"
+        },
+        {
+          "index": 145,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        },
+        {
+          "index": 118,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        },
+        {
+          "index": 130,
+          "token_id": 2480,
+          "logprob": -0.0,
+          "text": " full"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.3325,
+      "min": -1.7393,
+      "p05": -1.5683,
+      "p50": -0.0006,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 164,
+          "token_id": 19,
+          "logprob": -1.7393,
+          "text": "4"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.6716,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.6431,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -1.5644,
+          "text": "5"
+        },
+        {
+          "index": 99,
+          "token_id": 21,
+          "logprob": -1.4155,
+          "text": "6"
+        },
+        {
+          "index": 88,
+          "token_id": 17,
+          "logprob": -1.4071,
+          "text": "2"
+        },
+        {
+          "index": 158,
+          "token_id": 16,
+          "logprob": -1.3824,
+          "text": "1"
+        },
+        {
+          "index": 169,
+          "token_id": 16,
+          "logprob": -1.3768,
+          "text": "1"
+        },
+        {
+          "index": 94,
+          "token_id": 20,
+          "logprob": -1.3124,
+          "text": "5"
+        },
+        {
+          "index": 153,
+          "token_id": 24,
+          "logprob": -1.1527,
+          "text": "9"
+        },
+        {
+          "index": 83,
+          "token_id": 23,
+          "logprob": -1.121,
+          "text": "8"
+        },
+        {
+          "index": 18,
+          "token_id": 15,
+          "logprob": -1.0471,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 179,
+      "mean": -0.1129,
+      "min": -1.7393,
+      "p05": -1.1687,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.34,
+    "std": 31.59,
+    "dark_fraction": 0.0174
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 38167,
+    "rule_px": 0,
+    "covered_px": 38015,
+    "covered_fraction": 0.99602,
+    "uncovered_px": 152,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 17155,
+        "area_px": 52030,
+        "density": 0.32971,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 3860,
-        "area_px": 36714,
-        "density": 0.10514,
+        "ink_px": 6224,
+        "area_px": 52328,
+        "density": 0.11894,
         "chars": 53,
-        "chars_per_1k_ink": 13.73
+        "chars_per_1k_ink": 8.52
       }
     },
     {
@@ -271,7 +277,7 @@
         1633
       ],
       "category": "Text",
-      "text": "§2. Powers and Duties of the Director. The Director shall have the following powers and duties with respect to planning and development:",
+      "text": "\u00a72. Powers and Duties of the Director. The Director shall have the following powers and duties with respect to planning and development:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -543,7 +549,7 @@
         3208
       ],
       "category": "Text",
-      "text": "§3. Cooperating agencies. City agencies responsible for providing public improvements and services in Lower Manhattan, including the Housing and Development Administration, the Transportation Administration, the Public Development Corporation, and the Departments of City Planning, Highways, Public Works, Parks, Traffic, Water Supply, Gas and Electricity and Marine and Aviation, shall cooperate with the Director of Lower Manhattan Development in the performance of his functions and duties as hereinabove set forth.",
+      "text": "\u00a73. Cooperating agencies. City agencies responsible for providing public improvements and services in Lower Manhattan, including the Housing and Development Administration, the Transportation Administration, the Public Development Corporation, and the Departments of City Planning, Highways, Public Works, Parks, Traffic, Water Supply, Gas and Electricity and Marine and Aviation, shall cooperate with the Director of Lower Manhattan Development in the performance of his functions and duties as hereinabove set forth.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -562,11 +568,11 @@
         }
       },
       "ink": {
-        "ink_px": 7513,
-        "area_px": 411348,
-        "density": 0.01826,
+        "ink_px": 10478,
+        "area_px": 665756,
+        "density": 0.01574,
         "chars": 518,
-        "chars_per_1k_ink": 68.95
+        "chars_per_1k_ink": 49.44
       }
     }
   ],
@@ -587,7 +593,7 @@
           "index": 438,
           "token_id": 17851,
           "logprob": -0.6057,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 298,
@@ -765,15 +771,35 @@
   "ink_coverage": {
     "roi": [
       284,
-      418,
+      102,
       2085,
-      3067
+      3363
     ],
-    "ink_px": 63033,
-    "covered_px": 63033,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 88957,
+    "rule_px": 1608,
+    "covered_px": 85517,
+    "covered_fraction": 0.97903,
+    "uncovered_px": 1832,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1305,
+          151,
+          1347,
+          219
+        ],
+        "ink_px": 881
+      },
+      {
+        "bbox": [
+          1607,
+          3358,
+          2084,
+          3363
+        ],
+        "ink_px": 573
+      }
+    ],
     "cell_px": 24
   }
 }

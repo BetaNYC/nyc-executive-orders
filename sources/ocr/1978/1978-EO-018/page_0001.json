@@ -1,0 +1,436 @@
+{
+  "page": 1,
+  "source_image": "page_0001.png",
+  "elements": [
+    {
+      "bbox": [
+        634,
+        739,
+        1027,
+        812
+      ],
+      "category": "Title",
+      "text": "OFFICE OF THE MAYOR\n\nEXECUTIVE ORDER NO. 18",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3019,
+          "min": -1.4146
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0147,
+          "min": -0.0147
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.0471,
+          "min": -0.6032
+        }
+      },
+      "ink": {
+        "ink_px": 5666,
+        "area_px": 28908,
+        "density": 0.196,
+        "chars": 43,
+        "chars_per_1k_ink": 7.59
+      }
+    },
+    {
+      "bbox": [
+        730,
+        819,
+        932,
+        841
+      ],
+      "category": "Text",
+      "text": "AUGUST 29, 1978",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.237,
+          "min": -1.1421
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0001,
+          "min": -0.0008
+        }
+      },
+      "ink": {
+        "ink_px": 951,
+        "area_px": 4692,
+        "density": 0.20269,
+        "chars": 15,
+        "chars_per_1k_ink": 15.77
+      }
+    },
+    {
+      "bbox": [
+        347,
+        867,
+        1313,
+        910
+      ],
+      "category": "Text",
+      "text": "PURSUANT TO THE POWER VESTED IN ME AS MAYOR IT IS HEREBY\nordered that:",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2507,
+          "min": -1.2952
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0019,
+          "min": -0.0019
+        },
+        "text": {
+          "n_tokens": 23,
+          "mean": -0.0066,
+          "min": -0.1244
+        }
+      },
+      "ink": {
+        "ink_px": 5388,
+        "area_px": 42768,
+        "density": 0.12598,
+        "chars": 70,
+        "chars_per_1k_ink": 12.99
+      }
+    },
+    {
+      "bbox": [
+        347,
+        912,
+        1315,
+        1001
+      ],
+      "category": "Text",
+      "text": "Section 1. To conform with Section 8-0117 of the New York State Environmental Conservation Law as amended by Chapter 460 of the laws of 1978, references to \"September 1, 1978\" in the sixth paragraph of the Preamble to and in Section 4(c) of Executive Order No. 91, dated August 24, 1977, are hereby amended to read \"November 1, 1978.\"",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.212,
+          "min": -1.2591
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 107,
+          "mean": -0.0031,
+          "min": -0.3249
+        }
+      },
+      "ink": {
+        "ink_px": 17473,
+        "area_px": 86686,
+        "density": 0.20157,
+        "chars": 334,
+        "chars_per_1k_ink": 19.12
+      }
+    },
+    {
+      "bbox": [
+        391,
+        1001,
+        454,
+        1020
+      ],
+      "category": "Text",
+      "text": "a31-s7",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.218,
+          "min": -1.1889
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 5,
+          "mean": -0.0032,
+          "min": -0.0057
+        }
+      },
+      "ink": {
+        "ink_px": 361,
+        "area_px": 1280,
+        "density": 0.28203,
+        "chars": 6,
+        "chars_per_1k_ink": 16.62
+      }
+    },
+    {
+      "bbox": [
+        961,
+        1001,
+        1274,
+        1024
+      ],
+      "category": "Text",
+      "text": "EDWARD I. KOCH, Mayor.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.1891,
+          "min": -1.1289
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 9,
+          "mean": -0.0007,
+          "min": -0.0034
+        }
+      },
+      "ink": {
+        "ink_px": 1697,
+        "area_px": 7584,
+        "density": 0.22376,
+        "chars": 22,
+        "chars_per_1k_ink": 12.96
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 388,
+    "content": {
+      "n_tokens": 173,
+      "mean": -0.0076,
+      "min": -0.6032,
+      "p05": -0.0037,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 42,
+          "token_id": 1699,
+          "logprob": -0.6032,
+          "text": "\\n"
+        },
+        {
+          "index": 213,
+          "token_id": 44335,
+          "logprob": -0.3249,
+          "text": " Conservation"
+        },
+        {
+          "index": 43,
+          "token_id": 46340,
+          "logprob": -0.1872,
+          "text": "EXEC"
+        },
+        {
+          "index": 152,
+          "token_id": 1699,
+          "logprob": -0.1244,
+          "text": "\\n"
+        },
+        {
+          "index": 155,
+          "token_id": 2974,
+          "logprob": -0.0199,
+          "text": ":\""
+        },
+        {
+          "index": 35,
+          "token_id": 27068,
+          "logprob": -0.0086,
+          "text": "OFF"
+        },
+        {
+          "index": 335,
+          "token_id": 64,
+          "logprob": -0.0057,
+          "text": "a"
+        },
+        {
+          "index": 225,
+          "token_id": 6872,
+          "logprob": -0.0046,
+          "text": " laws"
+        },
+        {
+          "index": 336,
+          "token_id": 18,
+          "logprob": -0.004,
+          "text": "3"
+        },
+        {
+          "index": 339,
+          "token_id": 22,
+          "logprob": -0.0035,
+          "text": "7"
+        },
+        {
+          "index": 385,
+          "token_id": 1189,
+          "logprob": -0.0034,
+          "text": ".\""
+        },
+        {
+          "index": 149,
+          "token_id": 15645,
+          "logprob": -0.0023,
+          "text": " HER"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 123,
+      "mean": -0.2224,
+      "min": -1.4146,
+      "p05": -1.1601,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 19,
+          "logprob": -1.4146,
+          "text": "4"
+        },
+        {
+          "index": 116,
+          "token_id": 18,
+          "logprob": -1.2952,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.2628,
+          "text": "7"
+        },
+        {
+          "index": 174,
+          "token_id": 20,
+          "logprob": -1.2591,
+          "text": "5"
+        },
+        {
+          "index": 105,
+          "token_id": 22,
+          "logprob": -1.2399,
+          "text": "7"
+        },
+        {
+          "index": 317,
+          "token_id": 19,
+          "logprob": -1.1889,
+          "text": "4"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.1621,
+          "text": "2"
+        },
+        {
+          "index": 69,
+          "token_id": 17,
+          "logprob": -1.1421,
+          "text": "2"
+        },
+        {
+          "index": 359,
+          "token_id": 19,
+          "logprob": -1.1289,
+          "text": "4"
+        },
+        {
+          "index": 180,
+          "token_id": 16,
+          "logprob": -1.081,
+          "text": "1"
+        },
+        {
+          "index": 312,
+          "token_id": 16,
+          "logprob": -1.0551,
+          "text": "1"
+        },
+        {
+          "index": 306,
+          "token_id": 16,
+          "logprob": -1.0538,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 388,
+      "mean": -0.0744,
+      "min": -1.4146,
+      "p05": -0.7463,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.52,
+    "std": 30.88,
+    "dark_fraction": 0.01558
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      628.0,
+      822.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      209,
+      0,
+      1535,
+      2284
+    ],
+    "ink_px": 39896,
+    "rule_px": 3721,
+    "covered_px": 31527,
+    "covered_fraction": 0.87151,
+    "uncovered_px": 4648,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1361,
+          149,
+          1535,
+          249
+        ],
+        "ink_px": 3339
+      },
+      {
+        "bbox": [
+          1488,
+          2112,
+          1535,
+          2157
+        ],
+        "ink_px": 507
+      }
+    ],
+    "cell_px": 24
+  }
+}

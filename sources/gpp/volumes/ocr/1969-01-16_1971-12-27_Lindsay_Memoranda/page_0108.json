@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 89,
-        "area_px": 1080,
-        "density": 0.08241,
+        "ink_px": 219,
+        "area_px": 2736,
+        "density": 0.08004,
         "chars": 3,
-        "chars_per_1k_ink": 33.71
+        "chars_per_1k_ink": 13.7
       }
     },
     {
@@ -214,7 +214,7 @@
         1592
       ],
       "category": "List-item",
-      "text": "4. If possible, charts should be submitted on 8 1½x11\" pages, sample charts attached for your information.",
+      "text": "4. If possible, charts should be submitted on 8 1\u00bdx11\" pages, sample charts attached for your information.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -361,7 +361,7 @@
           "index": 431,
           "token_id": 26062,
           "logprob": -0.6446,
-          "text": "½"
+          "text": "\u00bd"
         },
         {
           "index": 429,
@@ -533,15 +533,35 @@
   "ink_coverage": {
     "roi": [
       296,
-      380,
+      87,
       2172,
-      2787
+      3047
     ],
-    "ink_px": 106223,
-    "covered_px": 106223,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 108046,
+    "rule_px": 449,
+    "covered_px": 106353,
+    "covered_fraction": 0.98844,
+    "uncovered_px": 1244,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1472,
+          87,
+          2015,
+          89
+        ],
+        "ink_px": 773
+      },
+      {
+        "bbox": [
+          1712,
+          3046,
+          2168,
+          3047
+        ],
+        "ink_px": 441
+      }
+    ],
     "cell_px": 24
   }
 }

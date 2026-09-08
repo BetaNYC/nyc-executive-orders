@@ -28,7 +28,13 @@
           "min": -0.0026
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 1200,
+        "density": 0.0,
+        "chars": 3,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -72,7 +78,7 @@
         372
       ],
       "category": "Text",
-      "text": "§2. This order shall take effect July 1, 1971.",
+      "text": "\u00a72. This order shall take effect July 1, 1971.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -247,7 +253,7 @@
           "index": 141,
           "token_id": 17851,
           "logprob": -0.1837,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 240,
@@ -425,14 +431,15 @@
   "ink_coverage": {
     "roi": [
       174,
-      223,
+      0,
       1278,
-      1636
+      1798
     ],
-    "ink_px": 6175,
+    "ink_px": 6608,
+    "rule_px": 0,
     "covered_px": 6160,
-    "covered_fraction": 0.99757,
-    "uncovered_px": 15,
+    "covered_fraction": 0.9322,
+    "uncovered_px": 448,
     "uncovered_regions": [],
     "cell_px": 24
   }

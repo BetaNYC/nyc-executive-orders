@@ -117,6 +117,11 @@ export function QaPanel({ entry, record }) {
   const flags = entry?.flags ?? [];
   const truncated = record.finish_reason === "length";
   const uncovered = cov?.uncovered_regions ?? [];
+  // Ink cut out as printed rules -- a masthead line, a column border -- before
+  // anything was grouped or measured. Shown because a page where this is large
+  // and `uncovered` is empty is one to spot check rather than trust. Absent on
+  // records written before the filter existed.
+  const rulePx = cov?.rule_px ?? null;
 
   // A run made before these fields existed has nothing to say -- "no flags"
   // would read as a clean bill of health it hasn't earned.
@@ -128,10 +133,10 @@ export function QaPanel({ entry, record }) {
         <div className="notice ok">
           <h3>No flags on this page</h3>
           <div>
-            Generation ended on its own, every region of ink landed inside a
-            box, and no token scored below the confidence threshold. That is not
-            proof it is correct — only that the three cheap checks found
-            nothing.
+            Generation ended on its own, every region of ink landed inside a box
+            or beside one, and no token scored below the confidence threshold.
+            That is not proof it is correct — only that the three cheap checks
+            found nothing.
           </div>
         </div>
       )}
@@ -153,7 +158,9 @@ export function QaPanel({ entry, record }) {
           sub={
             uncovered.length
               ? "drawn in red on the overlay"
-              : "none above the size floor"
+              : rulePx
+                ? `none; ${num(rulePx)} px cut as printed rules`
+                : "none above the size floor"
           }
           severity={uncovered.length ? "critical" : "ok"}
         />
@@ -215,13 +222,25 @@ export function QaPanel({ entry, record }) {
             severity={uncovered.length ? "critical" : "ok"}
           />
           <p className="muted small">
-            Share of the page's ink that falls inside some returned box.
-            Measured over the page interior only, so a header or footer out in
-            the margin is in neither the numerator nor the denominator —{" "}
+            Share of the page's ink that falls inside some returned box, with
+            printed rules left out of both sides of the fraction. Measured over
+            the full page height and the sides' interior, so a header or footer
+            counts in both the numerator and the denominator, while the binding
+            and the scanner-bed edge stay out of both —{" "}
             {cov.roi &&
-              `interior is ${cov.roi[0]},${cov.roi[1]}–${cov.roi[2]},${cov.roi[3]}`}
+              `measured over ${cov.roi[0]},${cov.roi[1]}–${cov.roi[2]},${cov.roi[3]}`}
             .
           </p>
+          {rulePx > 0 && (
+            <p className="muted small">
+              {num(rulePx)} px of ink was cut out as printed rules before this
+              was measured — ink running continuously across a window with a
+              stroke too thin to be type, which is a masthead line or a column
+              border the model was right not to transcribe. It counts neither as
+              returned nor as dropped. If this is large and no region is listed
+              above, spot check the page rather than trust it.
+            </p>
+          )}
           {uncovered.length > 0 && (
             <table className="qa-table">
               <thead>

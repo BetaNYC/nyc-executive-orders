@@ -28,7 +28,13 @@
           "min": -0.007
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 244,
+        "area_px": 3150,
+        "density": 0.07746,
+        "chars": 4,
+        "chars_per_1k_ink": 16.39
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 15498,
-        "area_px": 267104,
-        "density": 0.05802,
+        "ink_px": 18990,
+        "area_px": 303438,
+        "density": 0.06258,
         "chars": 236,
-        "chars_per_1k_ink": 15.23
+        "chars_per_1k_ink": 12.43
       }
     },
     {
@@ -106,7 +112,7 @@
         1318
       ],
       "category": "Text",
-      "text": "§8. In any case where the provisions of this executive order are not complied with, the Comptroller shall not authorize the payment of any compensation to any person appointed on or after July 1 of this year unless the Mayor or his duly authorized representative has specifically authorized such exception.",
+      "text": "\u00a78. In any case where the provisions of this executive order are not complied with, the Comptroller shall not authorize the payment of any compensation to any person appointed on or after July 1 of this year unless the Mayor or his duly authorized representative has specifically authorized such exception.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -140,7 +146,7 @@
         1497
       ],
       "category": "Text",
-      "text": "§9. This executive order shall take effect on July 1, 1973.",
+      "text": "\u00a79. This executive order shall take effect on July 1, 1973.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -247,7 +253,7 @@
           "index": 221,
           "token_id": 17851,
           "logprob": -0.1393,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 325,
@@ -425,15 +431,35 @@
   "ink_coverage": {
     "roi": [
       260,
-      421,
+      100,
       1908,
-      3094
+      3410
     ],
-    "ink_px": 86058,
-    "covered_px": 85959,
-    "covered_fraction": 0.99885,
-    "uncovered_px": 99,
-    "uncovered_regions": [],
+    "ink_px": 92147,
+    "rule_px": 1071,
+    "covered_px": 89695,
+    "covered_fraction": 0.98484,
+    "uncovered_px": 1381,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1460,
+          3402,
+          1908,
+          3410
+        ],
+        "ink_px": 697
+      },
+      {
+        "bbox": [
+          1388,
+          100,
+          1820,
+          102
+        ],
+        "ink_px": 529
+      }
+    ],
     "cell_px": 24
   }
 }

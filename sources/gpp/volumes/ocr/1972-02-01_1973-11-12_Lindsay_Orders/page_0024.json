@@ -44,7 +44,7 @@
         947
       ],
       "category": "Text",
-      "text": "§ 10. The deduction from the pay, salary or compensation of any member of the Relief and Pension Fund of the Department of Street Cleaning, made pursuant to the provisions of Section G51-3.0, par. 2 of the Administrative Code, shall be reduced to zero percentum during the one-year period commencing July 1, 1972.",
+      "text": "\u00a7 10. The deduction from the pay, salary or compensation of any member of the Relief and Pension Fund of the Department of Street Cleaning, made pursuant to the provisions of Section G51-3.0, par. 2 of the Administrative Code, shall be reduced to zero percentum during the one-year period commencing July 1, 1972.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -112,7 +112,7 @@
         1351
       ],
       "category": "Text",
-      "text": "§ 11. The deduction from the pay, salary or compensation of each member of the Health Department Pension Fund made pursuant to Section G-51-53.0 of the Administrative Code need not be made and no contribution in lieu thereof need be made by any such member during the one-year period commencing July 1, 1972.",
+      "text": "\u00a7 11. The deduction from the pay, salary or compensation of each member of the Health Department Pension Fund made pursuant to Section G-51-53.0 of the Administrative Code need not be made and no contribution in lieu thereof need be made by any such member during the one-year period commencing July 1, 1972.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -180,7 +180,7 @@
         1662
       ],
       "category": "Text",
-      "text": "§ 12. The provisions of this executive order shall not imply any obligation, commitment or promise that benefits herein granted or provided for shall be continued beyond the termination date thereof, as herein prescribed.",
+      "text": "\u00a7 12. The provisions of this executive order shall not imply any obligation, commitment or promise that benefits herein granted or provided for shall be continued beyond the termination date thereof, as herein prescribed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -283,7 +283,7 @@
           "index": 92,
           "token_id": 17851,
           "logprob": -0.0603,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 130,
@@ -431,15 +431,26 @@
   "ink_coverage": {
     "roi": [
       266,
-      420,
+      104,
       1955,
-      3084
+      3406
     ],
-    "ink_px": 7823,
+    "ink_px": 9178,
+    "rule_px": 48,
     "covered_px": 7823,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.85685,
+    "uncovered_px": 1307,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1490,
+          3404,
+          1955,
+          3406
+        ],
+        "ink_px": 469
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -28,7 +28,13 @@
           "min": -0.0065
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4370,
+        "area_px": 21645,
+        "density": 0.20189,
+        "chars": 23,
+        "chars_per_1k_ink": 5.26
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.0017
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 13,
+        "area_px": 26013,
+        "density": 0.0005,
+        "chars": 7,
+        "chars_per_1k_ink": 538.46
+      }
     },
     {
       "bbox": [
@@ -84,7 +96,13 @@
           "min": -0.0645
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 7551,
+        "area_px": 59313,
+        "density": 0.12731,
+        "chars": 46,
+        "chars_per_1k_ink": 6.09
+      }
     },
     {
       "bbox": [
@@ -851,9 +869,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 3580,
-        "area_px": 53703,
-        "density": 0.06666,
+        "ink_px": 4564,
+        "area_px": 70941,
+        "density": 0.06434,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -884,7 +902,13 @@
           "min": -0.002
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 4457,
+        "area_px": 40542,
+        "density": 0.10994,
+        "chars": 22,
+        "chars_per_1k_ink": 4.94
+      }
     }
   ],
   "debug_decode_matches_stream": true,
@@ -1082,23 +1106,24 @@
   "ink_coverage": {
     "roi": [
       268,
-      391,
+      95,
       1967,
-      2867
+      3162
     ],
-    "ink_px": 165309,
-    "covered_px": 163465,
-    "covered_fraction": 0.98885,
-    "uncovered_px": 1844,
+    "ink_px": 183623,
+    "rule_px": 84,
+    "covered_px": 180832,
+    "covered_fraction": 0.98525,
+    "uncovered_px": 2707,
     "uncovered_regions": [
       {
         "bbox": [
           1060,
-          535,
-          1612,
-          559
+          541,
+          1592,
+          557
         ],
-        "ink_px": 1622
+        "ink_px": 1581
       }
     ],
     "cell_px": 24

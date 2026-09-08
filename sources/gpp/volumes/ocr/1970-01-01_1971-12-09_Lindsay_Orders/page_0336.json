@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 1191,
-        "area_px": 70976,
-        "density": 0.01678,
+        "ink_px": 1801,
+        "area_px": 98701,
+        "density": 0.01825,
         "chars": 181,
-        "chars_per_1k_ink": 151.97
+        "chars_per_1k_ink": 100.5
       }
     },
     {
@@ -78,7 +78,7 @@
         615
       ],
       "category": "Text",
-      "text": "§ 9. Pursuant to the provisions of Paragraph 7 of Subdivision a of Section B19-7.651 of the Administrative Code, as added by L. 1971, ch. 615, beginning with the payroll period, the first day of which is nearest to June 30, 1971, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30, 1972, the contribution of each member of the Fire Department Pension Fund, Article 1-B made pursuant to Section B19-7.65 of the Administrative Code shall be reduced by five per centum of the compensation of such member.",
+      "text": "\u00a7 9. Pursuant to the provisions of Paragraph 7 of Subdivision a of Section B19-7.651 of the Administrative Code, as added by L. 1971, ch. 615, beginning with the payroll period, the first day of which is nearest to June 30, 1971, and ending with the payroll period immediately prior to that the first day of which is nearest to June 30, 1972, the contribution of each member of the Fire Department Pension Fund, Article 1-B made pursuant to Section B19-7.65 of the Administrative Code shall be reduced by five per centum of the compensation of such member.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -146,7 +146,7 @@
         872
       ],
       "category": "Text",
-      "text": "§ 10. The deduction from the pay, salary or compensation of any member of the Relief and Pension Fund of the Department of Street Cleaning, made pursuant to the provisions of Section G51-3.0, par. 2 of the Administrative Code, shall be reduced to zero percentum during the one-year period commencing July 1, 1971",
+      "text": "\u00a7 10. The deduction from the pay, salary or compensation of any member of the Relief and Pension Fund of the Department of Street Cleaning, made pursuant to the provisions of Section G51-3.0, par. 2 of the Administrative Code, shall be reduced to zero percentum during the one-year period commencing July 1, 1971",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -214,7 +214,7 @@
         1134
       ],
       "category": "Text",
-      "text": "§ 11. The deduction from the pay, salary or compensation of each member of the Health Department Pension Fund made pursuant to Section G51-53.0 of the Administrative Code need not be made and no contribution in lieu thereof need be made by any such member during the one-year period commencing July 1, 1971.",
+      "text": "\u00a7 11. The deduction from the pay, salary or compensation of each member of the Health Department Pension Fund made pursuant to Section G51-53.0 of the Administrative Code need not be made and no contribution in lieu thereof need be made by any such member during the one-year period commencing July 1, 1971.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -282,7 +282,7 @@
         1375
       ],
       "category": "Text",
-      "text": "§ 12. The provisions of this executive order shall not imply any obligation, commitment or promise that benefits herein granted or provided for shall be continued beyond the termination date thereof, as herein prescribed.",
+      "text": "\u00a7 12. The provisions of this executive order shall not imply any obligation, commitment or promise that benefits herein granted or provided for shall be continued beyond the termination date thereof, as herein prescribed.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -332,7 +332,7 @@
           "index": 406,
           "token_id": 17851,
           "logprob": -0.3596,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 362,
@@ -362,7 +362,7 @@
           "index": 163,
           "token_id": 17851,
           "logprob": -0.0637,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 743,
@@ -504,14 +504,15 @@
   "ink_coverage": {
     "roi": [
       174,
-      220,
+      0,
       1283,
-      1615
+      1788
     ],
-    "ink_px": 14564,
-    "covered_px": 14564,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 15193,
+    "rule_px": 0,
+    "covered_px": 15174,
+    "covered_fraction": 0.99875,
+    "uncovered_px": 19,
     "uncovered_regions": [],
     "cell_px": 24
   }

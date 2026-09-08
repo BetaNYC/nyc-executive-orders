@@ -1,0 +1,310 @@
+{
+  "page": 5,
+  "source_image": "page_0005.png",
+  "elements": [
+    {
+      "bbox": [
+        328,
+        352,
+        1502,
+        388
+      ],
+      "category": "Text",
+      "text": "Section 9. Executive Order No. 25, dated July 19, 1991, is hereby repealed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3187,
+          "min": -1.5122
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.2254,
+          "min": -0.2254
+        },
+        "text": {
+          "n_tokens": 28,
+          "mean": -0.0002,
+          "min": -0.0051
+        }
+      },
+      "ink": {
+        "ink_px": 8234,
+        "area_px": 42264,
+        "density": 0.19482,
+        "chars": 75,
+        "chars_per_1k_ink": 9.11
+      }
+    },
+    {
+      "bbox": [
+        328,
+        429,
+        1160,
+        463
+      ],
+      "category": "Text",
+      "text": "Section 10. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2797,
+          "min": -1.2909
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": {
+          "n_tokens": 12,
+          "mean": -0.0005,
+          "min": -0.0044
+        }
+      },
+      "ink": {
+        "ink_px": 6012,
+        "area_px": 29120,
+        "density": 0.20646,
+        "chars": 53,
+        "chars_per_1k_ink": 8.82
+      }
+    },
+    {
+      "bbox": [
+        852,
+        453,
+        1362,
+        650
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4363,
+          "min": -1.8745
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 9634,
+        "area_px": 100470,
+        "density": 0.09589,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 143,
+    "content": {
+      "n_tokens": 40,
+      "mean": -0.0003,
+      "min": -0.0051,
+      "p05": -0.0013,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0051,
+          "text": "Section"
+        },
+        {
+          "index": 109,
+          "token_id": 1189,
+          "logprob": -0.0044,
+          "text": ".\""
+        },
+        {
+          "index": 98,
+          "token_id": 9620,
+          "logprob": -0.0011,
+          "text": "Section"
+        },
+        {
+          "index": 38,
+          "token_id": 13,
+          "logprob": -0.0008,
+          "text": "."
+        },
+        {
+          "index": 104,
+          "token_id": 7217,
+          "logprob": -0.0003,
+          "text": " Order"
+        },
+        {
+          "index": 103,
+          "token_id": 1096,
+          "logprob": -0.0002,
+          "text": " This"
+        },
+        {
+          "index": 62,
+          "token_id": 1189,
+          "logprob": -0.0002,
+          "text": ".\""
+        },
+        {
+          "index": 106,
+          "token_id": 1896,
+          "logprob": -0.0002,
+          "text": " take"
+        },
+        {
+          "index": 39,
+          "token_id": 17880,
+          "logprob": -0.0001,
+          "text": " Executive"
+        },
+        {
+          "index": 48,
+          "token_id": 5768,
+          "logprob": -0.0001,
+          "text": " July"
+        },
+        {
+          "index": 56,
+          "token_id": 24,
+          "logprob": -0.0001,
+          "text": "9"
+        },
+        {
+          "index": 57,
+          "token_id": 16,
+          "logprob": -0.0001,
+          "text": "1"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.3315,
+      "min": -1.8745,
+      "p05": -1.5135,
+      "p50": -0.0078,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 128,
+          "token_id": 17,
+          "logprob": -1.8745,
+          "text": "2"
+        },
+        {
+          "index": 122,
+          "token_id": 18,
+          "logprob": -1.5841,
+          "text": "3"
+        },
+        {
+          "index": 117,
+          "token_id": 17,
+          "logprob": -1.5384,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.5122,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.4439,
+          "text": "2"
+        },
+        {
+          "index": 7,
+          "token_id": 23,
+          "logprob": -1.3626,
+          "text": "8"
+        },
+        {
+          "index": 86,
+          "token_id": 18,
+          "logprob": -1.2909,
+          "text": "3"
+        },
+        {
+          "index": 81,
+          "token_id": 15,
+          "logprob": -1.265,
+          "text": "0"
+        },
+        {
+          "index": 133,
+          "token_id": 15,
+          "logprob": -1.1418,
+          "text": "0"
+        },
+        {
+          "index": 23,
+          "token_id": 23,
+          "logprob": -1.0896,
+          "text": "8"
+        },
+        {
+          "index": 75,
+          "token_id": 24,
+          "logprob": -0.852,
+          "text": "9"
+        },
+        {
+          "index": 70,
+          "token_id": 23,
+          "logprob": -0.7656,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 143,
+      "mean": -0.1395,
+      "min": -1.8745,
+      "p05": -1.2526,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 252.32,
+    "std": 24.41,
+    "dark_fraction": 0.00989
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      645.0,
+      832.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      215,
+      0,
+      1576,
+      2312
+    ],
+    "ink_px": 23753,
+    "rule_px": 0,
+    "covered_px": 23291,
+    "covered_fraction": 0.98055,
+    "uncovered_px": 462,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

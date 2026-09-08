@@ -1,0 +1,310 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        181,
+        200,
+        1487,
+        280
+      ],
+      "category": "Text",
+      "text": "Section 2. **Agency Cooperation.** Affected agencies shall take all steps necessary, consistent with applicable law, to implement Section 1 of this Order.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3237,
+          "min": -1.3876
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 32,
+          "mean": -0.01,
+          "min": -0.2376
+        }
+      },
+      "ink": {
+        "ink_px": 16119,
+        "area_px": 103437,
+        "density": 0.15583,
+        "chars": 154,
+        "chars_per_1k_ink": 9.55
+      }
+    },
+    {
+      "bbox": [
+        284,
+        317,
+        1191,
+        351
+      ],
+      "category": "Text",
+      "text": "Section 3. **Effective Date.** This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2763,
+          "min": -1.3271
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -0.0059,
+          "min": -0.0822
+        }
+      },
+      "ink": {
+        "ink_px": 7633,
+        "area_px": 31640,
+        "density": 0.24125,
+        "chars": 72,
+        "chars_per_1k_ink": 9.43
+      }
+    },
+    {
+      "bbox": [
+        886,
+        359,
+        1300,
+        602
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4602,
+          "min": -1.9202
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.001,
+          "min": -0.001
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 10056,
+        "area_px": 99946,
+        "density": 0.10061,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 151,
+    "content": {
+      "n_tokens": 48,
+      "mean": -0.0086,
+      "min": -0.2376,
+      "p05": -0.0518,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 39,
+          "token_id": 3070,
+          "logprob": -0.2376,
+          "text": " **"
+        },
+        {
+          "index": 106,
+          "token_id": 3070,
+          "logprob": -0.0822,
+          "text": " **"
+        },
+        {
+          "index": 40,
+          "token_id": 93720,
+          "logprob": -0.0741,
+          "text": "Agency"
+        },
+        {
+          "index": 107,
+          "token_id": 67539,
+          "logprob": -0.0106,
+          "text": "Effective"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0056,
+          "text": "Section"
+        },
+        {
+          "index": 52,
+          "token_id": 11,
+          "logprob": -0.0019,
+          "text": ","
+        },
+        {
+          "index": 42,
+          "token_id": 13,
+          "logprob": -0.0008,
+          "text": "."
+        },
+        {
+          "index": 109,
+          "token_id": 13,
+          "logprob": -0.0003,
+          "text": "."
+        },
+        {
+          "index": 102,
+          "token_id": 9620,
+          "logprob": -0.0003,
+          "text": "Section"
+        },
+        {
+          "index": 44,
+          "token_id": 9748,
+          "logprob": -0.0002,
+          "text": " Aff"
+        },
+        {
+          "index": 38,
+          "token_id": 13,
+          "logprob": -0.0001,
+          "text": "."
+        },
+        {
+          "index": 105,
+          "token_id": 13,
+          "logprob": -0.0001,
+          "text": "."
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.3358,
+      "min": -1.9202,
+      "p05": -1.3301,
+      "p50": -0.001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 136,
+          "token_id": 15,
+          "logprob": -1.9202,
+          "text": "0"
+        },
+        {
+          "index": 125,
+          "token_id": 21,
+          "logprob": -1.6381,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 22,
+          "logprob": -1.3876,
+          "text": "7"
+        },
+        {
+          "index": 74,
+          "token_id": 19,
+          "logprob": -1.3271,
+          "text": "4"
+        },
+        {
+          "index": 141,
+          "token_id": 17,
+          "logprob": -1.2628,
+          "text": "2"
+        },
+        {
+          "index": 23,
+          "token_id": 15,
+          "logprob": -1.2471,
+          "text": "0"
+        },
+        {
+          "index": 85,
+          "token_id": 16,
+          "logprob": -1.1955,
+          "text": "1"
+        },
+        {
+          "index": 79,
+          "token_id": 22,
+          "logprob": -1.1907,
+          "text": "7"
+        },
+        {
+          "index": 90,
+          "token_id": 16,
+          "logprob": -1.1766,
+          "text": "1"
+        },
+        {
+          "index": 12,
+          "token_id": 15,
+          "logprob": -1.1595,
+          "text": "0"
+        },
+        {
+          "index": 7,
+          "token_id": 16,
+          "logprob": -1.1505,
+          "text": "1"
+        },
+        {
+          "index": 135,
+          "token_id": 15,
+          "logprob": -1.114,
+          "text": "0"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 151,
+      "mean": -0.1408,
+      "min": -1.9202,
+      "p05": -1.1837,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 252.15,
+    "std": 18.8,
+    "dark_fraction": 0.00945
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 33835,
+    "rule_px": 0,
+    "covered_px": 33808,
+    "covered_fraction": 0.9992,
+    "uncovered_px": 27,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        283,
+        352,
+        1463,
+        414
+      ],
+      "category": "Text",
+      "text": "Section 2. Effective Date. This Executive Order shall\ntake effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3211,
+          "min": -1.6751
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0003,
+          "min": -0.0003
+        },
+        "text": {
+          "n_tokens": 17,
+          "mean": -0.0101,
+          "min": -0.1315
+        }
+      },
+      "ink": {
+        "ink_px": 6934,
+        "area_px": 72912,
+        "density": 0.0951,
+        "chars": 78,
+        "chars_per_1k_ink": 11.25
+      }
+    },
+    {
+      "bbox": [
+        1033,
+        551,
+        1307,
+        610
+      ],
+      "category": "Text",
+      "text": "Edward I. Koch\nMAYOR",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2939,
+          "min": -1.482
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0478,
+          "min": -0.0478
+        },
+        "text": {
+          "n_tokens": 8,
+          "mean": -0.0135,
+          "min": -0.0795
+        }
+      },
+      "ink": {
+        "ink_px": 1862,
+        "area_px": 16380,
+        "density": 0.11368,
+        "chars": 20,
+        "chars_per_1k_ink": 10.74
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 99,
+    "content": {
+      "n_tokens": 25,
+      "mean": -0.0112,
+      "min": -0.1315,
+      "p05": -0.0687,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 46,
+          "token_id": 59,
+          "logprob": -0.1315,
+          "text": "\\"
+        },
+        {
+          "index": 94,
+          "token_id": 3022,
+          "logprob": -0.0795,
+          "text": "AY"
+        },
+        {
+          "index": 88,
+          "token_id": 84501,
+          "logprob": -0.0253,
+          "text": "Edward"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.0251,
+          "text": "Section"
+        },
+        {
+          "index": 39,
+          "token_id": 46923,
+          "logprob": -0.012,
+          "text": " Effective"
+        },
+        {
+          "index": 93,
+          "token_id": 44,
+          "logprob": -0.0027,
+          "text": "M"
+        },
+        {
+          "index": 51,
+          "token_id": 1189,
+          "logprob": -0.0015,
+          "text": ".\""
+        },
+        {
+          "index": 38,
+          "token_id": 13,
+          "logprob": -0.0005,
+          "text": "."
+        },
+        {
+          "index": 92,
+          "token_id": 1699,
+          "logprob": -0.0004,
+          "text": "\\n"
+        },
+        {
+          "index": 47,
+          "token_id": 406,
+          "logprob": -0.0001,
+          "text": "nt"
+        },
+        {
+          "index": 89,
+          "token_id": 358,
+          "logprob": -0.0001,
+          "text": " I"
+        },
+        {
+          "index": 43,
+          "token_id": 17880,
+          "logprob": -0.0001,
+          "text": " Executive"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 41,
+      "mean": -0.2934,
+      "min": -1.6751,
+      "p05": -1.482,
+      "p50": -0.0085,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.6751,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 18,
+          "logprob": -1.5552,
+          "text": "3"
+        },
+        {
+          "index": 60,
+          "token_id": 18,
+          "logprob": -1.482,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.2929,
+          "text": "4"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.2923,
+          "text": "2"
+        },
+        {
+          "index": 71,
+          "token_id": 22,
+          "logprob": -1.2282,
+          "text": "7"
+        },
+        {
+          "index": 65,
+          "token_id": 16,
+          "logprob": -1.112,
+          "text": "1"
+        },
+        {
+          "index": 75,
+          "token_id": 16,
+          "logprob": -0.6326,
+          "text": "1"
+        },
+        {
+          "index": 63,
+          "token_id": 20,
+          "logprob": -0.4287,
+          "text": "5"
+        },
+        {
+          "index": 76,
+          "token_id": 15,
+          "logprob": -0.4073,
+          "text": "0"
+        },
+        {
+          "index": 57,
+          "token_id": 16,
+          "logprob": -0.3521,
+          "text": "1"
+        },
+        {
+          "index": 11,
+          "token_id": 20,
+          "logprob": -0.1604,
+          "text": "5"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 99,
+      "mean": -0.1248,
+      "min": -1.6751,
+      "p05": -1.2346,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 253.35,
+    "std": 19.2,
+    "dark_fraction": 0.00599
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      682.0,
+      852.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      227,
+      0,
+      1667,
+      2367
+    ],
+    "ink_px": 15766,
+    "rule_px": 1939,
+    "covered_px": 8796,
+    "covered_fraction": 0.63615,
+    "uncovered_px": 5031,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          957,
+          449,
+          1177,
+          532
+        ],
+        "ink_px": 2565
+      },
+      {
+        "bbox": [
+          1223,
+          441,
+          1375,
+          533
+        ],
+        "ink_px": 1942
+      }
+    ],
+    "cell_px": 24
+  }
+}

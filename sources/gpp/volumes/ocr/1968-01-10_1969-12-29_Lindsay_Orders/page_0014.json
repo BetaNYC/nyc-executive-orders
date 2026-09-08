@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2913,
+        "area_px": 23711,
+        "density": 0.12285,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 458,
-        "area_px": 9120,
-        "density": 0.05022,
+        "ink_px": 647,
+        "area_px": 15048,
+        "density": 0.043,
         "chars": 58,
-        "chars_per_1k_ink": 126.64
+        "chars_per_1k_ink": 89.64
       }
     },
     {
@@ -373,7 +379,7 @@
         1252
       ],
       "category": "Section-header",
-      "text": "§ 2. Initial Action by Agency",
+      "text": "\u00a7 2. Initial Action by Agency",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -494,11 +500,11 @@
         }
       },
       "ink": {
-        "ink_px": 197,
-        "area_px": 189366,
-        "density": 0.00104,
+        "ink_px": 242,
+        "area_px": 226898,
+        "density": 0.00107,
         "chars": 479,
-        "chars_per_1k_ink": 2431.47
+        "chars_per_1k_ink": 1979.34
       }
     }
   ],
@@ -579,7 +585,7 @@
           "index": 700,
           "token_id": 17851,
           "logprob": -0.1251,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 795,
@@ -697,15 +703,26 @@
   "ink_coverage": {
     "roi": [
       147,
-      222,
+      0,
       1085,
-      1633
+      1801
     ],
-    "ink_px": 660,
-    "covered_px": 660,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 7504,
+    "rule_px": 1512,
+    "covered_px": 3807,
+    "covered_fraction": 0.63535,
+    "uncovered_px": 2185,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          147,
+          1789,
+          651,
+          1801
+        ],
+        "ink_px": 1942
+      }
+    ],
     "cell_px": 24
   }
 }

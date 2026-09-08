@@ -24,9 +24,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 941,
-        "area_px": 2921,
-        "density": 0.32215,
+        "ink_px": 6352,
+        "area_px": 17653,
+        "density": 0.35983,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -141,7 +141,7 @@
         585
       ],
       "category": "Text",
-      "text": "Section 1\n§ 3 titled \"New York City Council Against Poverty\" of Executive Order 28, August 15, 1966, is hereby amended to read as follows:",
+      "text": "Section 1\n\u00a7 3 titled \"New York City Council Against Poverty\" of Executive Order 28, August 15, 1966, is hereby amended to read as follows:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -475,7 +475,7 @@
           "index": 221,
           "token_id": 17851,
           "logprob": -0.3696,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 234,
@@ -635,15 +635,26 @@
   "ink_coverage": {
     "roi": [
       144,
-      224,
+      0,
       1057,
-      1649
+      1829
     ],
-    "ink_px": 3153,
-    "covered_px": 2944,
-    "covered_fraction": 0.93371,
-    "uncovered_px": 209,
-    "uncovered_regions": [],
+    "ink_px": 9759,
+    "rule_px": 0,
+    "covered_px": 8355,
+    "covered_fraction": 0.85613,
+    "uncovered_px": 1404,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          364,
+          1818,
+          502,
+          1826
+        ],
+        "ink_px": 441
+      }
+    ],
     "cell_px": 24
   }
 }

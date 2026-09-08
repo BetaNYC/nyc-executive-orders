@@ -52,6 +52,10 @@ body {
 .topbar {
   display: flex;
   align-items: center;
+  /* Two collections means two more filters up here; wrap rather than
+     squeeze the page nav off the right edge on a narrow window. */
+  flex-wrap: wrap;
+  row-gap: 8px;
   gap: 16px;
   padding: 8px 14px;
   background: var(--panel);
@@ -76,6 +80,24 @@ body {
 
 .field span {
   color: var(--muted);
+}
+
+.field.check {
+  gap: 4px;
+  cursor: pointer;
+}
+
+.field.check input {
+  margin: 0;
+}
+
+/* The document title beside the picker: post-1974 units carry one, and it is
+   the only human-readable name an EO id has. */
+.unit-title {
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 select {
@@ -236,20 +258,64 @@ button:disabled {
   cursor: grab;
 }
 
-.image-pane img {
-  display: block;
+/* The page: a pdf.js canvas with the bbox overlay stretched over it. Both are
+   sized by the stage, so the SVG's viewBox (the run's raster pixels) lines the
+   boxes up whatever the display size is. */
+/* The stage shrink-wraps the canvas, so the canvas's own intrinsic size (the
+   run's raster, e.g. 1700x2200 at 200 DPI) drives the layout exactly as the
+   page <img> used to, and the overlay at inset:0 covers precisely the page. */
+.page-stage {
+  position: relative;
+  display: flex;
+  margin: auto;
+  min-height: 0;
   max-width: 100%;
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+  max-height: 100%;
   background: #fff;
-  -webkit-user-drag: none;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
   will-change: transform;
 }
 
-.image-pane img.fit {
+.page-stage.busy {
+  opacity: 0.55;
+}
+
+.page-stage canvas {
+  display: block;
+  margin: auto;
+  max-width: 100%;
   max-height: 100%;
   width: auto;
-  object-fit: contain;
-  margin: auto;
+  height: auto;
+  -webkit-user-drag: none;
+}
+
+.page-stage svg {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.page-stage svg {
+  pointer-events: none;
+}
+
+.page-state {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.page-state.error {
+  background: var(--error);
 }
 
 .floating-note {
@@ -319,6 +385,22 @@ button:disabled {
   color: var(--error);
 }
 
+/* The Corpus tab's quality badge: the corpus's own text_quality rating. */
+.badge.quality-ok {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+
+.badge.quality-warn {
+  background: var(--skip-soft);
+  color: var(--skip);
+}
+
+.badge.quality-critical {
+  background: var(--error-soft);
+  color: var(--error);
+}
+
 /* ---------- content ---------- */
 
 .markdown {
@@ -364,6 +446,59 @@ button:disabled {
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 12px;
+}
+
+/* ---------- corpus tab ---------- */
+
+.corpus {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.corpus-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.corpus-head .toggle button,
+.corpus-head > button {
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+.corpus-head > button.on {
+  background: #e8eef5;
+  border-color: #b8cbe0;
+  color: var(--accent);
+}
+
+.corpus-note {
+  margin: 0;
+  font-size: 12px;
+}
+
+.corpus-text {
+  margin: 0;
+  font:
+    12px/1.55 ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+  white-space: pre;
+  overflow-x: auto;
+  background: #f4f4f0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.corpus-text.wrap {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: visible;
 }
 
 .sub {

@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8394,
+        "area_px": 38380,
+        "density": 0.21871,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 396,
-        "area_px": 7668,
-        "density": 0.05164,
+        "ink_px": 4386,
+        "area_px": 56232,
+        "density": 0.078,
         "chars": 54,
-        "chars_per_1k_ink": 136.36
+        "chars_per_1k_ink": 12.31
       }
     },
     {
@@ -237,7 +243,7 @@
         1962
       ],
       "category": "Text",
-      "text": "§2. The City Renewal Commissioner shall be directly responsible to the Mayor and on his behalf shall directly coordinate and expedite the operations of the following departments and agencies insofar as they relate to urban renewal areas.",
+      "text": "\u00a72. The City Renewal Commissioner shall be directly responsible to the Mayor and on his behalf shall directly coordinate and expedite the operations of the following departments and agencies insofar as they relate to urban renewal areas.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -395,7 +401,7 @@
           "index": 361,
           "token_id": 17851,
           "logprob": -0.0796,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 298,
@@ -561,15 +567,26 @@
   "ink_coverage": {
     "roi": [
       274,
-      422,
+      89,
       2012,
-      3097
+      3406
     ],
-    "ink_px": 23510,
-    "covered_px": 23510,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 39519,
+    "rule_px": 2504,
+    "covered_px": 35894,
+    "covered_fraction": 0.96971,
+    "uncovered_px": 1121,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1526,
+          3401,
+          2012,
+          3406
+        ],
+        "ink_px": 574
+      }
+    ],
     "cell_px": 24
   }
 }

@@ -10,7 +10,7 @@
         1010
       ],
       "category": "Text",
-      "text": "to the full protection of the Military Law given employees who served in World War II. They must get leaves of absence for the duration of military duty and their civil service status, including rights to promotion, seniority and pension credit are fully protected by Military Law § 246.",
+      "text": "to the full protection of the Military Law given employees who served in World War II. They must get leaves of absence for the duration of military duty and their civil service status, including rights to promotion, seniority and pension credit are fully protected by Military Law \u00a7 246.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -44,7 +44,7 @@
         1917
       ],
       "category": "Text",
-      "text": "Although there is no statutory requirement that public employees, Reservists, Guardsmen or otherwise be given leaves of absence to perform voluntary military duty, such leaves may be granted in the discretion of the appointing officers pursuant to Administrative Code §B40-8.0 and similar statutes. Such leaves of absence give these employees job protection but no other rights such as salary, pension credit, etc. Special legislation by the State would be necessary to give these employees who volunteer for active military duty the full protection now afforded to public employees ordered to military duty.",
+      "text": "Although there is no statutory requirement that public employees, Reservists, Guardsmen or otherwise be given leaves of absence to perform voluntary military duty, such leaves may be granted in the discretion of the appointing officers pursuant to Administrative Code \u00a7B40-8.0 and similar statutes. Such leaves of absence give these employees job protection but no other rights such as salary, pension credit, etc. Special legislation by the State would be necessary to give these employees who volunteer for active military duty the full protection now afforded to public employees ordered to military duty.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -78,7 +78,7 @@
         2290
       ],
       "category": "Text",
-      "text": "Differentials between civil and military pay are payable only to Reservists, Guardsmen or militiamen ordered to military duty and who were members of such organizations prior to April 1, 1942 (Military Law §§ 245 and 170).",
+      "text": "Differentials between civil and military pay are payable only to Reservists, Guardsmen or militiamen ordered to military duty and who were members of such organizations prior to April 1, 1942 (Military Law \u00a7\u00a7 245 and 170).",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -156,7 +156,7 @@
           "index": 176,
           "token_id": 16625,
           "logprob": -0.558,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 171,
@@ -192,13 +192,13 @@
           "index": 87,
           "token_id": 16625,
           "logprob": -0.0283,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 325,
           "token_id": 64331,
           "logprob": -0.0236,
-          "text": " §§"
+          "text": " \u00a7\u00a7"
         },
         {
           "index": 137,
@@ -334,15 +334,26 @@
   "ink_coverage": {
     "roi": [
       304,
-      386,
+      101,
       2229,
-      2833
+      3095
     ],
-    "ink_px": 80142,
+    "ink_px": 82801,
+    "rule_px": 1201,
     "covered_px": 80139,
-    "covered_fraction": 0.99996,
-    "uncovered_px": 3,
-    "uncovered_regions": [],
+    "covered_fraction": 0.9821,
+    "uncovered_px": 1461,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1672,
+          3090,
+          2229,
+          3095
+        ],
+        "ink_px": 576
+      }
+    ],
     "cell_px": 24
   }
 }

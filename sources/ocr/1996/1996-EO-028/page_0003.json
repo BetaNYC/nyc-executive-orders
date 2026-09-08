@@ -1,0 +1,397 @@
+{
+  "page": 3,
+  "source_image": "page_0003.png",
+  "elements": [
+    {
+      "bbox": [
+        177,
+        219,
+        1501,
+        707
+      ],
+      "category": "Text",
+      "text": "c. Advise and assist the Mayor in coordinating available resources of the federal, state and City governments and the private sector, including for-profit and not-for-profit entities, to provide funding, staffing, facilities and information to support the implementation of programs developed by the Commission. The Commission also may draw upon staff, in-kind contributions and support functions made available to the Commission by private sector entities, including for-profit and not-for-profit entities, as well as public sector entities.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3415,
+          "min": -1.6621
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1625,
+          "min": -0.1625
+        },
+        "text": {
+          "n_tokens": 94,
+          "mean": -0.0004,
+          "min": -0.025
+        }
+      },
+      "ink": {
+        "ink_px": 39409,
+        "area_px": 628230,
+        "density": 0.06273,
+        "chars": 542,
+        "chars_per_1k_ink": 13.75
+      }
+    },
+    {
+      "bbox": [
+        173,
+        759,
+        1490,
+        860
+      ],
+      "category": "Text",
+      "text": "d. Report to the Mayor regularly on the goals and achievements of the Commission.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2926,
+          "min": -1.4601
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0789,
+          "min": -0.0789
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -0.0013,
+          "min": -0.0206
+        }
+      },
+      "ink": {
+        "ink_px": 5499,
+        "area_px": 130560,
+        "density": 0.04212,
+        "chars": 81,
+        "chars_per_1k_ink": 14.73
+      }
+    },
+    {
+      "bbox": [
+        166,
+        911,
+        1486,
+        1172
+      ],
+      "category": "Text",
+      "text": "Section 3. **Agency Assistance and Cooperation.** All City agencies shall cooperate in providing to the Commission personnel, facilities, information and other assistance as may be necessary and appropriate to assist the Commission in carrying out its responsibilities.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2707,
+          "min": -1.4508
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.143,
+          "min": -0.143
+        },
+        "text": {
+          "n_tokens": 45,
+          "mean": -0.008,
+          "min": -0.3225
+        }
+      },
+      "ink": {
+        "ink_px": 17829,
+        "area_px": 331760,
+        "density": 0.05374,
+        "chars": 269,
+        "chars_per_1k_ink": 15.09
+      }
+    },
+    {
+      "bbox": [
+        366,
+        1220,
+        1358,
+        1253
+      ],
+      "category": "Text",
+      "text": "Section 4. **Effective Date.** This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.2603,
+          "min": -1.4088
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0006,
+          "min": -0.0006
+        },
+        "text": {
+          "n_tokens": 16,
+          "mean": -0.0264,
+          "min": -0.3869
+        }
+      },
+      "ink": {
+        "ink_px": 4708,
+        "area_px": 33592,
+        "density": 0.14015,
+        "chars": 72,
+        "chars_per_1k_ink": 15.29
+      }
+    },
+    {
+      "bbox": [
+        911,
+        1247,
+        1433,
+        1485
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.4552,
+          "min": -2.1423
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0055,
+          "min": -0.0055
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 9421,
+        "area_px": 123477,
+        "density": 0.0763,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 349,
+    "content": {
+      "n_tokens": 171,
+      "mean": -0.0049,
+      "min": -0.3869,
+      "p05": -0.0027,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 304,
+          "token_id": 2631,
+          "logprob": -0.3869,
+          "text": " Date"
+        },
+        {
+          "index": 220,
+          "token_id": 3070,
+          "logprob": -0.3225,
+          "text": " **"
+        },
+        {
+          "index": 303,
+          "token_id": 67539,
+          "logprob": -0.0291,
+          "text": "Effective"
+        },
+        {
+          "index": 37,
+          "token_id": 12325,
+          "logprob": -0.025,
+          "text": " Adv"
+        },
+        {
+          "index": 221,
+          "token_id": 93720,
+          "logprob": -0.0244,
+          "text": "Agency"
+        },
+        {
+          "index": 178,
+          "token_id": 9652,
+          "logprob": -0.0206,
+          "text": " Commission"
+        },
+        {
+          "index": 216,
+          "token_id": 9620,
+          "logprob": -0.0098,
+          "text": "Section"
+        },
+        {
+          "index": 35,
+          "token_id": 66,
+          "logprob": -0.0046,
+          "text": "c"
+        },
+        {
+          "index": 302,
+          "token_id": 3070,
+          "logprob": -0.0027,
+          "text": " **"
+        },
+        {
+          "index": 49,
+          "token_id": 6775,
+          "logprob": -0.0027,
+          "text": " federal"
+        },
+        {
+          "index": 305,
+          "token_id": 13,
+          "logprob": -0.0024,
+          "text": "."
+        },
+        {
+          "index": 65,
+          "token_id": 15193,
+          "logprob": -0.0023,
+          "text": "-for"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 105,
+      "mean": -0.3131,
+      "min": -2.1423,
+      "p05": -1.4582,
+      "p50": -0.0006,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 321,
+          "token_id": 16,
+          "logprob": -2.1423,
+          "text": "1"
+        },
+        {
+          "index": 333,
+          "token_id": 18,
+          "logprob": -1.7908,
+          "text": "3"
+        },
+        {
+          "index": 327,
+          "token_id": 22,
+          "logprob": -1.7331,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 22,
+          "logprob": -1.6621,
+          "text": "7"
+        },
+        {
+          "index": 339,
+          "token_id": 20,
+          "logprob": -1.4794,
+          "text": "5"
+        },
+        {
+          "index": 136,
+          "token_id": 18,
+          "logprob": -1.4601,
+          "text": "3"
+        },
+        {
+          "index": 187,
+          "token_id": 21,
+          "logprob": -1.4508,
+          "text": "6"
+        },
+        {
+          "index": 286,
+          "token_id": 18,
+          "logprob": -1.4088,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 16,
+          "logprob": -1.4019,
+          "text": "1"
+        },
+        {
+          "index": 268,
+          "token_id": 21,
+          "logprob": -1.3232,
+          "text": "6"
+        },
+        {
+          "index": 198,
+          "token_id": 21,
+          "logprob": -1.3075,
+          "text": "6"
+        },
+        {
+          "index": 23,
+          "token_id": 22,
+          "logprob": -1.291,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 349,
+      "mean": -0.0982,
+      "min": -2.1423,
+      "p05": -0.9353,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 246.04,
+    "std": 42.42,
+    "dark_fraction": 0.03308
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 81140,
+    "rule_px": 347,
+    "covered_px": 76597,
+    "covered_fraction": 0.94806,
+    "uncovered_px": 4196,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          708,
+          2072,
+          1496,
+          2159
+        ],
+        "ink_px": 2827
+      },
+      {
+        "bbox": [
+          204,
+          2112,
+          444,
+          2155
+        ],
+        "ink_px": 652
+      }
+    ],
+    "cell_px": 24
+  }
+}

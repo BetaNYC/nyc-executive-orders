@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 5867,
+        "area_px": 25610,
+        "density": 0.22909,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 1366,
-        "area_px": 11819,
-        "density": 0.11558,
+        "ink_px": 1620,
+        "area_px": 14718,
+        "density": 0.11007,
         "chars": 58,
-        "chars_per_1k_ink": 42.46
+        "chars_per_1k_ink": 35.8
       }
     },
     {
@@ -305,7 +311,7 @@
         946
       ],
       "category": "Text",
-      "text": "§ 2. The Director shall be appointed by the Deputy Mayor-City Administrator.",
+      "text": "\u00a7 2. The Director shall be appointed by the Deputy Mayor-City Administrator.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -339,7 +345,7 @@
         1014
       ],
       "category": "Text",
-      "text": "§ 3. The duties of the Director shall include but not be limited to the following:",
+      "text": "\u00a7 3. The duties of the Director shall include but not be limited to the following:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -491,7 +497,7 @@
           "index": 515,
           "token_id": 17851,
           "logprob": -0.1882,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 328,
@@ -663,14 +669,15 @@
   "ink_coverage": {
     "roi": [
       144,
-      224,
+      0,
       1060,
-      1645
+      1820
     ],
-    "ink_px": 1636,
-    "covered_px": 1405,
-    "covered_fraction": 0.8588,
-    "uncovered_px": 231,
+    "ink_px": 8910,
+    "rule_px": 263,
+    "covered_px": 7526,
+    "covered_fraction": 0.87036,
+    "uncovered_px": 1121,
     "uncovered_regions": [],
     "cell_px": 24
   }

@@ -141,6 +141,10 @@ import fitz  # PyMuPDF
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
+# The same coverage floor the corpus reader flags on, so a run's own counters and
+# the record built from them later agree about what "low coverage" means.
+from .vlm_pages import MIN_COVERED_FRACTION
+
 
 class VlmBackendUnavailable(RuntimeError):
     """Raised when the ``vlm`` extra (mlx + mlx-vlm) is not installed.
@@ -428,6 +432,43 @@ UNCOVERED_CELL_MIN_INK_FRACTION = 0.025
 DEFAULT_MIN_UNCOVERED_INK = 400
 # Most uncovered regions reported per page, largest first.
 MAX_UNCOVERED_REGIONS = 12
+# A printed rule -- the line under a masthead, a column border, the box around a
+# City Record entry -- is ink the model correctly declines to transcribe, so it
+# reports as dropped content when nothing filters it out. On this corpus that is
+# the single commonest false `uncovered_ink`: measured over every flagged
+# post-1974 page, 30% of all uncovered ink is rules.
+#
+# Rule ink is deleted from the mask BEFORE regions are grouped, not classified
+# afterwards. That matters twice over. These rules are scanned, so they wander:
+# 1974-EO-002's masthead rule dips and waves across the page, and no test for a
+# straight line finds it. And an intact rule BRIDGES otherwise separate ink into
+# one connected group, whose bounding box then spans half the page -- most of it
+# text the model did box. Cutting the rule out first fixes both.
+#
+# Detection is local, which is what tolerates the wander: a window only
+# LINE_WINDOW_PX wide is examined at a time, and within it a rule is straight
+# enough. Two properties separate a rule from a line of type, measured over real
+# pages at 200 DPI:
+#
+#                      inked columns      mean stroke height
+#   printed rule       100%               2-5 px
+#   line of body type  65-94%             5-9 px
+#
+# A rule is continuous along its length and thin across it; type has gaps
+# between words and strokes twice as tall.
+LINE_WINDOW_PX = 144
+# Rows a rule's band may span inside one window. Absorbs the wander: 12px over
+# 144px of run is a slope no printed rule on these scans exceeds.
+LINE_BAND_PX = 12
+# The band must be inked across this share of the window -- continuity, which is
+# what type lacks.
+LINE_MIN_COLUMN_SHARE = 0.9
+# ...and its ink must be this thin per inked column, on average. Set between the
+# two populations above; the gap either side is the safety margin.
+LINE_MAX_STROKE_PX = 5.0
+# Ink the band must hold before it is judged at all, so a few stray pixels in a
+# blank window cannot qualify as a rule.
+LINE_MIN_BAND_INK = 100
 
 # MLX-ready quantizations published by mlx-community, in two families:
 # dots.mocr (newer -- stronger multilingual parsing + structured-graphics
@@ -738,18 +779,30 @@ def load_gray(image_path: Path) -> np.ndarray:
         return np.asarray(im.convert("L"), dtype=np.uint8)
 
 
-def roi_bounds(shape: tuple[int, int], roi_margin: float) -> tuple[int, int, int, int]:
+def roi_bounds(
+    shape: tuple[int, int], roi_margin: float, *, vertical: bool = True
+) -> tuple[int, int, int, int]:
     """The page's interior as (left, top, right, bottom) pixel bounds, cropping
     the outer roi_margin fraction off each side. Everything that measures ink
     works inside this box: the book's binding and the black scanner-bed
     background around the page are dark on *every* page regardless of content,
-    and would otherwise dominate whatever is being measured."""
+    and would otherwise dominate whatever is being measured.
+
+    vertical=False crops the sides only and keeps the full page height. Coverage
+    uses that, because what the vertical crop removed was the header and the
+    footer -- real content, and content the model does return boxes for. On the
+    bound volumes the scanner bed ALSO shows across the top and the bottom, so
+    coverage cuts that band separately and by measurement rather than by a fixed
+    fraction: see :func:`bed_border_rows`. The blank/bleed-through statistics
+    keep the full crop:
+    their thresholds were swept against it (see the post-1974 instructions), and
+    a header band is not what decides whether a page is blank."""
     h, w = shape
     return (
         int(w * roi_margin),
-        int(h * roi_margin),
+        int(h * roi_margin) if vertical else 0,
         int(w * (1 - roi_margin)),
-        int(h * (1 - roi_margin)),
+        int(h * (1 - roi_margin)) if vertical else h,
     )
 
 
@@ -773,17 +826,90 @@ def is_blank_or_bleedthrough(stats: dict, min_dark_fraction: float, min_contrast
     return stats["dark_fraction"] < min_dark_fraction and stats["std"] < min_contrast_std
 
 
+def _axis_rule_pixels(
+    mask: np.ndarray, window: int, band: int, column_share: float,
+    max_stroke: float, min_ink: int,
+) -> np.ndarray:
+    """Pixels belonging to near-horizontal rules. Transpose the mask for
+    vertical ones.
+
+    Every candidate band position in every window is tested, not just the
+    densest one: a page carries several rules at different heights, and looking
+    only at the strongest band per column strip finds one and misses the rest.
+    """
+    h, w = mask.shape
+    out = np.zeros_like(mask)
+    if h <= band or w < window:
+        return out
+    need = column_share * window
+    for x0 in range(0, w - window + 1, window // 3):
+        win = mask[:, x0:x0 + window]
+        # Inked rows per column, for the band starting at each row.
+        cumulative = np.concatenate([
+            np.zeros((1, window), np.int32),
+            np.cumsum(win, axis=0, dtype=np.int32),
+        ])
+        strip = cumulative[band:] - cumulative[:-band]
+        inked_columns = (strip > 0).sum(axis=1)
+        band_ink = strip.sum(axis=1)
+        stroke = np.where(
+            inked_columns > 0, band_ink / np.maximum(inked_columns, 1), np.inf
+        )
+        qualifies = (
+            (inked_columns >= need) & (stroke <= max_stroke) & (band_ink >= min_ink)
+        )
+        if not qualifies.any():
+            continue
+        # A row is rule ink if any qualifying band covers it.
+        starts = np.zeros(h + 1, np.int32)
+        starts[:qualifies.size] = qualifies
+        cumulative_starts = np.cumsum(starts)
+        rows = np.arange(h)
+        covered_rows = (
+            cumulative_starts[np.minimum(rows + 1, h)]
+            - cumulative_starts[np.maximum(rows - band + 1, 0)]
+        ) > 0
+        out[:, x0:x0 + window] |= win & covered_rows[:, None]
+    return out
+
+
+def rule_pixels(
+    mask: np.ndarray,
+    window: int = LINE_WINDOW_PX,
+    band: int = LINE_BAND_PX,
+    column_share: float = LINE_MIN_COLUMN_SHARE,
+    max_stroke: float = LINE_MAX_STROKE_PX,
+    min_ink: int = LINE_MIN_BAND_INK,
+) -> np.ndarray:
+    """The subset of `mask` that is printed rules, in either direction. See the
+    LINE_* constants for what counts as one and where the numbers come from."""
+    args = (window, band, column_share, max_stroke, min_ink)
+    horizontal = _axis_rule_pixels(mask, *args)
+    vertical = _axis_rule_pixels(np.ascontiguousarray(mask.T), *args).T
+    return horizontal | vertical
+
+
 def find_uncovered_regions(
     uncovered: np.ndarray, cell_px: int, min_region_ink: int, offset: tuple[int, int]
 ) -> list[dict]:
     """Group leftover ink pixels into a handful of reportable rectangles.
 
-    Works on a coarse grid rather than the pixel mask: a cell counts as inked
-    once it holds enough ink to be type rather than speckle, adjacent inked
-    cells are merged, and a merged group has to carry min_region_ink pixels
-    before it is worth anyone's attention. The result is "the model missed this
-    paragraph" instead of ten thousand loose pixels. Returned bboxes are in
-    full-page coordinates (offset is the ROI's top-left corner)."""
+    Grouping works on a coarse grid rather than the pixel mask: a cell counts as
+    inked once it holds enough ink to be type rather than speckle, adjacent
+    inked cells are merged, and a merged group has to carry min_region_ink
+    pixels before it is worth anyone's attention. The result is "the model
+    missed this paragraph" instead of ten thousand loose pixels.
+
+    The REPORTED box is then shrunk back onto the group's own ink, not left as
+    the cell rectangle. A group is a chain of touching cells, so its cell
+    rectangle can be far larger than the ink inside it and swallow a page of
+    text the model did box -- which is exactly what a reviewer opening the flag
+    should not be shown. Callers are expected to have cut rule ink out of the
+    mask first (see rule_pixels), since an intact rule is what chains distant
+    ink into one such group in the first place.
+
+    Returned bboxes are in full-page coordinates; offset is the ROI's top-left
+    corner."""
     h, w = uncovered.shape
     if h == 0 or w == 0:
         return []
@@ -812,23 +938,88 @@ def find_uncovered_regions(
                     if 0 <= nr < grid_h and 0 <= nc < grid_w and hot[nr, nc] and not seen[nr, nc]:
                         seen[nr, nc] = True
                         stack.append((nr, nc))
-            rows, cols = [p[0] for p in group], [p[1] for p in group]
+            rows = np.array([p[0] for p in group])
+            cols = np.array([p[1] for p in group])
             ink_px = int(cells[rows, cols].sum())
             if ink_px < min_region_ink:
                 continue
-            regions.append(
-                {
-                    "bbox": [
-                        off_x + min(cols) * cell_px,
-                        off_y + min(rows) * cell_px,
-                        off_x + min((max(cols) + 1) * cell_px, w),
-                        off_y + min((max(rows) + 1) * cell_px, h),
-                    ],
-                    "ink_px": ink_px,
-                }
-            )
+            bbox = _tight_bbox(uncovered, rows, cols, cell_px, offset)
+            if bbox is None:
+                continue
+            regions.append({"bbox": bbox, "ink_px": ink_px})
     regions.sort(key=lambda r: r["ink_px"], reverse=True)
     return regions[:MAX_UNCOVERED_REGIONS]
+
+
+def _tight_bbox(
+    uncovered: np.ndarray, rows: np.ndarray, cols: np.ndarray, cell_px: int,
+    offset: tuple[int, int],
+) -> list[int] | None:
+    """The smallest full-page box holding this group's ink, and nothing else.
+
+    Restricted to the group's OWN cells before the extent is taken, so ink from
+    a neighbouring group that happens to fall inside the same cell rectangle
+    does not stretch the box."""
+    off_x, off_y = offset
+    r0, r1 = int(rows.min()), int(rows.max()) + 1
+    c0, c1 = int(cols.min()), int(cols.max()) + 1
+    owned = np.zeros((r1 - r0, c1 - c0), dtype=bool)
+    owned[rows - r0, cols - c0] = True
+    owned = np.kron(owned, np.ones((cell_px, cell_px), dtype=bool))
+    y0, x0 = r0 * cell_px, c0 * cell_px
+    patch = uncovered[y0:y0 + owned.shape[0], x0:x0 + owned.shape[1]]
+    ys, xs = np.nonzero(patch & owned[:patch.shape[0], :patch.shape[1]])
+    if ys.size == 0:
+        return None
+    return [
+        int(off_x + x0 + xs.min()),
+        int(off_y + y0 + ys.min()),
+        int(off_x + x0 + xs.max() + 1),
+        int(off_y + y0 + ys.max() + 1),
+    ]
+
+
+# The scanner bed shows as a SOLID black band across the top and the bottom of a
+# bound-volume scan, and it is not content. On the Wagner memoranda it runs about
+# 80 rows deep at the head and 110 at the foot, and it is the difference between a
+# page measuring covered_fraction 1.00 and the same page measuring 0.33: it more
+# than tripled `ink_px` on page 12 (111,240 -> 391,326) while `covered_px` barely
+# moved, because none of that ink is inside any model bbox.
+#
+# It is cut by measurement, not by a fixed fraction, because the band's depth
+# varies from page to page while its shape does not. The band is solid -- row
+# darkness reads 1.00 through it and drops straight to ~0.00 at the page edge,
+# with no gradient between -- so any threshold in the wide middle picks the same
+# boundary. Type never comes close: a dense line of body text darkens well under
+# a fifth of its row.
+BED_ROW_DARK_FRACTION = 0.30
+
+# A hard stop on the trim, as a fraction of page height from each edge. A page
+# that really is mostly black (a photographic plate, a heavy negative) must fail
+# the coverage check loudly rather than have its content quietly cropped away.
+BED_MAX_TRIM_FRACTION = 0.20
+
+
+def bed_border_rows(mask: np.ndarray) -> tuple[int, int]:
+    """Rows of solid scanner-bed black to cut off the top and the bottom of
+    `mask`, as (top, bottom). See BED_ROW_DARK_FRACTION for why this is measured.
+
+    Scans inward from each edge and stops at the first row that is not saturated,
+    so a dark band inside the page -- a photograph, a heavy rule -- is never
+    reached. Returns (0, 0) for a page with no such band, which is every
+    born-digital page and most loose-sheet scans."""
+    height, width = mask.shape
+    if not height or not width:
+        return 0, 0
+    rows = mask.sum(axis=1) / width
+    limit = int(height * BED_MAX_TRIM_FRACTION)
+    top = 0
+    while top < limit and rows[top] >= BED_ROW_DARK_FRACTION:
+        top += 1
+    bottom = 0
+    while bottom < limit and rows[height - 1 - bottom] >= BED_ROW_DARK_FRACTION:
+        bottom += 1
+    return top, bottom
 
 
 def ink_coverage(
@@ -857,12 +1048,22 @@ def ink_coverage(
                          chars_per_1k_ink) stands out even when page coverage is
                          fine.
 
-    Measured over the page interior only (see roi_bounds), so ink in the outer
-    margin -- and any header or footer sitting out there -- is outside both the
-    numerator and the denominator."""
+    Measured over the full page height but only the sides' interior (see
+    roi_bounds), so a page header or footer counts in both the numerator and the
+    denominator, while the binding and the scanner-bed edge stay out of both."""
     h, w = gray.shape
-    left, top, right, bottom = roi_bounds(gray.shape, roi_margin)
+    left, top, right, bottom = roi_bounds(gray.shape, roi_margin, vertical=False)
     roi_ink = gray[top:bottom, left:right] < dark_pixel_threshold
+    # Keeping the full page height keeps the header and the footer in, which is
+    # the point -- but on a bound volume it also lets the scanner bed in, and the
+    # bed is not content. Cut the band before anything is measured, and move the
+    # ROI's own top/bottom with it so every bbox and region offset below stays
+    # in the same coordinate space.
+    bed_top, bed_bottom = bed_border_rows(roi_ink)
+    if bed_top or bed_bottom:
+        roi_ink = roi_ink[bed_top:roi_ink.shape[0] - bed_bottom]
+        top += bed_top
+        bottom -= bed_bottom
     total_ink = int(roi_ink.sum())
     covered = np.zeros(roi_ink.shape, dtype=bool)
     roi_h, roi_w = roi_ink.shape
@@ -879,8 +1080,9 @@ def ink_coverage(
         y1 = int(max(0, min(math.floor(min(by1, by2)) - top, roi_h)))
         y2 = int(max(0, min(math.ceil(max(by1, by2)) - top, roi_h)))
         if x2 <= x1 or y2 <= y1:
-            # Entirely outside the interior -- typically a page header or footer
-            # sitting in the cropped margin. Not measurable, so say so.
+            # Entirely outside the interior -- now only possible out in the left
+            # or right margin, since the full page height is measured. Not
+            # measurable, so say so.
             el["ink"] = None
             continue
         covered[y1:y2, x1:x2] = True
@@ -898,14 +1100,30 @@ def ink_coverage(
         }
 
     covered_ink = int((roi_ink & covered).sum())
+    uncovered = roi_ink & ~covered
+    # Rules come out of the mask before anything is grouped -- see rule_pixels.
+    # Only ink OUTSIDE every box is offered up: a rule under a title the model
+    # boxed is already accounted for and is not the metric's business.
+    rules = rule_pixels(uncovered)
+    uncovered &= ~rules
+    rule_ink = int(rules.sum())
+    # Rule ink is page furniture, so it is neither content the model returned
+    # nor content it dropped. Leaving it in the denominator would depress
+    # covered_fraction for a page whose text is in fact complete, so it comes
+    # out of the measurement entirely rather than counting against it.
+    measured_ink = total_ink - rule_ink
     return {
         "roi": [left, top, right, bottom],
         "ink_px": total_ink,
+        # Rule ink, reported so the deduction above is auditable: a page where
+        # this is large and uncovered_regions is empty is one to spot check
+        # rather than trust.
+        "rule_px": rule_ink,
         "covered_px": covered_ink,
-        "covered_fraction": round(covered_ink / total_ink, 5) if total_ink else None,
-        "uncovered_px": total_ink - covered_ink,
+        "covered_fraction": round(covered_ink / measured_ink, 5) if measured_ink else None,
+        "uncovered_px": measured_ink - covered_ink,
         "uncovered_regions": find_uncovered_regions(
-            roi_ink & ~covered, cell_px, min_region_ink, (left, top)
+            uncovered, cell_px, min_region_ink, (left, top)
         ),
         "cell_px": cell_px,
     }
@@ -1710,7 +1928,543 @@ def _qwen_vl_processor_video_shim():
         Qwen2_5_VLProcessor.__init__ = original_init
 
 
-def main() -> None:
+# --------------------------------------------------------------------------- #
+# Reusable OCR API — one model load, any number of PDFs                         #
+# --------------------------------------------------------------------------- #
+# main() below is a thin shell over these. They exist because the pre-1974 driver
+# (scripts/run_volume_ocr.py) shells out once per volume -- fine for 14 volumes,
+# catastrophic for the 1,086 post-1974 scans, where 1,086 weight loads would cost
+# 9-18 hours before a single page is read. scripts/run_post1974_ocr.py calls
+# load_model() once and ocr_pdf() per document instead.
+#
+# Everything here was MOVED OUT OF main() verbatim, not rewritten. In particular
+# ocr_pdf builds each page_record with the same key insertion order it always
+# had: json.dumps(indent=2) preserves dict order, so a reshuffle would rewrite
+# all 2,936 committed pre-1974 records as a spurious diff.
+
+# Stamped beside blank_override on every page of a document whose blank skips
+# were cleared -- see OcrOptions.never_skip_every_page.
+BLANK_OVERRIDE_REASON = "every page of this document classified blank"
+
+
+@dataclass(frozen=True)
+class OcrOptions:
+    """Every per-run knob main() used to read straight off `args`.
+
+    Defaults are main()'s defaults, so OcrOptions(prompt_text=...) reproduces a
+    default CLI run exactly. The two additions are off by default for the same
+    reason: a pre-1974 run must not change.
+    """
+
+    prompt_text: str
+    dpi: int = DEFAULT_DPI
+    rotate: str = DEFAULT_ROTATE
+    max_tokens: int = DEFAULT_MAX_TOKENS
+    temperature: float = 0.0
+    skip_blank_pages: bool = True
+    dark_pixel_threshold: int = DEFAULT_DARK_PIXEL_THRESHOLD
+    min_dark_fraction: float = DEFAULT_MIN_DARK_FRACTION
+    min_contrast_std: float = DEFAULT_MIN_CONTRAST_STD
+    ink_roi_margin: float = DEFAULT_INK_ROI_MARGIN
+    token_logprobs: bool = True
+    low_logprob_threshold: float = DEFAULT_LOW_LOGPROB
+    ink_coverage: bool = True
+    min_uncovered_ink: int = DEFAULT_MIN_UNCOVERED_INK
+    uncovered_cell_px: int = DEFAULT_UNCOVERED_CELL_PX
+
+    # --- additions, both default-off so pre-1974 output is untouched --------- #
+
+    # Overlay PNGs are the viewer's input and ~1-2 MB a page. A 1,799-page bulk
+    # run writes 2-5 GB of them, and N parallel workers contend for that I/O, so
+    # the post-1974 driver turns them off and keeps renders only where a page
+    # raised a QA flag.
+    write_overlays: bool = True
+
+    # A false blank in a 400-page volume loses one page. A false blank on a
+    # one-page executive order loses THE ENTIRE ORDER, and the record then reads
+    # "_No text available_" -- indistinguishable from a genuine no-PDF gap. 764
+    # of the 1,086 post-1974 targets are one page. So: if EVERY page of a
+    # document classifies blank, that is evidence against the threshold, not
+    # against the document. Clear the skips, OCR it anyway, and say so on every
+    # record. Costs at most a few wasted inferences.
+    never_skip_every_page: bool = False
+
+
+@dataclass
+class LoadedModel:
+    """One resident model, reusable across any number of PDFs.
+
+    `max_tokens` is carried because the cuda backend's GreedyLogprobRecorder is
+    SIZED BY IT at load time: a later ocr_pdf asking for more tokens than the
+    recorder was built for would silently truncate its logprobs, so ocr_pdf
+    checks rather than trusts.
+    """
+
+    be: "_Backend | _CudaBackend"
+    model: object
+    processor: object
+    config: object | None
+    recorder: "GreedyLogprobRecorder | None"
+    model_id: str
+    device: str
+    quantization: str
+    max_tokens: int
+    baseline_gb: float
+
+
+@dataclass
+class PdfOcrResult:
+    """What one document's OCR pass produced. Counters, not text."""
+
+    pdf_path: Path
+    json_dir: Path
+    pages_rendered: int = 0
+    pages_ocred: int = 0
+    pages_skipped_blank: int = 0
+    pages_resumed: int = 0
+    parse_errors: int = 0
+    truncated: int = 0
+    low_coverage: int = 0
+    no_measurable_ink: int = 0
+    blank_override: bool = False
+    seconds: float = 0.0
+
+    @property
+    def flagged(self) -> bool:
+        """Did any page fail loudly? This is what --keep-renders flagged keeps."""
+        return bool(
+            self.parse_errors or self.truncated or self.low_coverage
+            or self.no_measurable_ink or self.blank_override
+        )
+
+    def observe(self, page_record: dict) -> None:
+        """Tally one finished page record."""
+        if page_record.get("skipped"):
+            self.pages_skipped_blank += 1
+            return
+        self.pages_ocred += 1
+        if page_record.get("parse_error"):
+            self.parse_errors += 1
+        if page_record.get("finish_reason") == "length":
+            self.truncated += 1
+        coverage = page_record.get("ink_coverage") or {}
+        covered = coverage.get("covered_fraction")
+        if covered is not None and covered < MIN_COVERED_FRACTION:
+            self.low_coverage += 1
+        if (page_record.get("page_stats") or {}).get("dark_fraction") == 0:
+            self.no_measurable_ink += 1
+
+
+def load_model(
+    device: str,
+    model_id: str,
+    quantization: str,
+    attn_implementation: str | None,
+    max_tokens: int,
+    profiler: "MemoryProfiler | None" = None,
+    *,
+    log=print,
+) -> LoadedModel:
+    """Load the weights once. Lifted from main()'s [2/3] stage verbatim.
+
+    The caller is expected to have resolved `device` through resolve_device() and
+    checked backend availability first: a missing extra should fail in a second,
+    not after half an hour of rendering.
+    """
+    profiler = profiler or MemoryProfiler(False, mem=None)
+    device_note = f" ({quantization})" if device == "cuda" else ""
+    log(f"[2/3] loading {model_id}{device_note} on {device} (first run downloads weights, be patient) ...")
+    t0 = time.time()
+    be = backend(device)
+    recorder = None
+    with profiler.stage("model-load"):
+        if be.kind == "mlx":
+            model, processor = be.load(model_id)
+            config = be.load_config(model_id)
+            # Weights load lazily; force evaluation so the stage's peak reflects
+            # the real resident cost of the model rather than unmaterialized arrays.
+            be.mx.eval(model.parameters())
+        else:
+            model, processor = _load_cuda_model(be, model_id, quantization, attn_implementation)
+            config = None
+            be.torch.cuda.synchronize()
+            # Allocated once here and reused by every page, so the steady-state
+            # baseline below covers it (see GreedyLogprobRecorder).
+            recorder = GreedyLogprobRecorder(be.torch, max_tokens, model.device)
+    log(f"      model loaded in {time.time() - t0:.1f}s")
+
+    # Everything the run needs on the GPU is now resident, and each page should
+    # return to exactly this figure. Anything that does not is a leak, and the
+    # point of checking per page is to see it on page 3 rather than infer it
+    # from an OOM on page 122 (which is how the retained score rows were found).
+    mem = mem_sampler_for(be) if be.kind == "cuda" else None
+    baseline_gb = mem.active_gb() if mem else 0.0
+
+    return LoadedModel(
+        be=be,
+        model=model,
+        processor=processor,
+        config=config,
+        recorder=recorder,
+        model_id=model_id,
+        device=device,
+        quantization=quantization,
+        max_tokens=max_tokens,
+        baseline_gb=baseline_gb,
+    )
+
+
+def classify_pages(
+    rendered: list,
+    opts: OcrOptions,
+    json_dir: Path,
+    start_page: int = 1,
+    *,
+    log=print,
+) -> dict:
+    """Score every rendered page blank/keep and write classify_report.json.
+
+    No model is loaded. This is the calibration path: run it on a body of scans
+    you have not OCR'd before, because a false skip silently drops real content.
+    Merges into an existing report rather than overwriting it, mirroring how the
+    real-OCR path extends an output directory in place.
+    """
+    page_paths = [path for path, _ in rendered]
+    log(f"\n[classify-blank-only] scoring {len(rendered)} page(s) -- no model will be loaded")
+    n_skip = 0
+    pages_by_number = {}
+    # Beside the page records, not in the scratch dir: it is a durable finding
+    # about the volume (which pages were judged blank, under which thresholds)
+    # and readers of the page JSON expect it in the same directory.
+    report_path = json_dir / "classify_report.json"
+    if report_path.exists():
+        # A prior classify-only pass (e.g. before a --start-page resume) already
+        # scored some pages -- merge rather than overwrite, same spirit as how
+        # the real-OCR path extends an --output-dir in place.
+        try:
+            existing = json.loads(report_path.read_text())
+            for p in existing.get("pages", []):
+                pages_by_number[p["page"]] = p
+        except (json.JSONDecodeError, KeyError):
+            pass
+    for n, (page_path, rotation) in enumerate(rendered, start=1):
+        i = start_page + n - 1
+        stats = page_ink_stats(load_gray(page_path), opts.dark_pixel_threshold, opts.ink_roi_margin)
+        blank = is_blank_or_bleedthrough(stats, opts.min_dark_fraction, opts.min_contrast_std)
+        n_skip += blank
+        verdict = "SKIP (blank/bleed-through)" if blank else "KEEP"
+        log(
+            f"  page {i:04d}: {verdict:24s} "
+            f"dark_fraction={stats['dark_fraction']:.5f} std={stats['std']:6.2f} mean={stats['mean']:6.2f}"
+        )
+        pages_by_number[i] = {
+            "page": i,
+            "blank": blank,
+            "page_stats": stats,
+            "rotation": rotation,
+        }
+    log(f"\n{n_skip}/{len(rendered)} page(s) would be skipped as blank/bleed-through.")
+
+    report = {
+        "model_classifier": "ink-stats",
+        "params": {
+            "dark_pixel_threshold": opts.dark_pixel_threshold,
+            "ink_roi_margin": opts.ink_roi_margin,
+            "min_dark_fraction": opts.min_dark_fraction,
+            "min_contrast_std": opts.min_contrast_std,
+        },
+        "pages": [pages_by_number[n] for n in sorted(pages_by_number)],
+    }
+    report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False))
+    log(f"      wrote {report_path}")
+    return report
+
+
+def render_for_run(
+    pdf_path: Path,
+    raw_dir: Path,
+    opts: "OcrOptions",
+    pages: int | None,
+    start_page: int,
+    profiler: "MemoryProfiler | None" = None,
+    *,
+    log=print,
+) -> list:
+    """Render a PDF's pages upright and announce what happened. main()'s [1/3].
+
+    Shared by the OCR path and the classify-only path so both report rendering
+    and rotation identically -- rotation in particular silently changes what
+    every bbox in the run is relative to, and on --rotate auto nothing else
+    announces it.
+    """
+    profiler = profiler or MemoryProfiler(False, mem=None)
+    # The public API owns its output directories: main() makes them too, so this
+    # is a no-op there, but a library caller must not have to know.
+    Path(raw_dir).mkdir(parents=True, exist_ok=True)
+    log(
+        f"[1/3] rendering pages from {Path(pdf_path).name} at {opts.dpi} DPI, "
+        f"starting at page {start_page} ..."
+    )
+    with profiler.stage("render"):
+        rendered = render_pdf_pages(pdf_path, raw_dir, opts.dpi, pages, start_page, opts.rotate)
+    if not rendered:
+        return rendered
+    page_paths = [path for path, _ in rendered]
+    rotations = [rot for _, rot in rendered]
+    log(f"      {len(page_paths)} page(s) rendered -> {raw_dir}")
+    n_rotated = sum(1 for rot in rotations if rot["applied_cw"])
+    if n_rotated:
+        # Worth stating plainly: it silently changes what every bbox in this run
+        # is relative to, and on --rotate auto nothing else announces it.
+        angles = sorted({rot["applied_cw"] for rot in rotations if rot["applied_cw"]})
+        log(
+            f"      rotated {n_rotated}/{len(page_paths)} page(s) by "
+            f"{'/'.join(f'{a}' for a in angles)} degrees clockwise ({rotations[0]['source']}) "
+            f"so their text is upright"
+        )
+    return rendered
+
+
+def ocr_pdf(
+    pdf_path: Path,
+    *,
+    loaded: LoadedModel,
+    opts: OcrOptions,
+    raw_dir: Path,
+    json_dir: Path,
+    overlay_dir: Path | None = None,
+    start_page: int = 1,
+    pages: int | None = None,
+    skip_existing: bool = False,
+    profiler: "MemoryProfiler | None" = None,
+    log=print,
+) -> PdfOcrResult:
+    """Render one PDF and run layout+OCR over its pages, reusing a loaded model.
+
+    This is main()'s [1/3] + [3/3] stages. Page numbering is ABSOLUTE, so a run
+    that starts partway through extends an existing json_dir rather than
+    renumbering it.
+
+    `skip_existing` is the resume knob the post-1974 driver uses: a page whose
+    page_XXXX.json is already on disk is left alone and counted as resumed. It is
+    per PAGE, not per document, so a document killed on page 3 of 8 resumes at 3.
+    The pre-1974 driver keeps using --start-page instead, which is why this
+    defaults False.
+
+    `overlay_dir` may be None (with opts.write_overlays False) for a bulk run.
+    """
+    profiler = profiler or MemoryProfiler(False, mem=None)
+    Path(json_dir).mkdir(parents=True, exist_ok=True)
+    if overlay_dir is not None and opts.write_overlays:
+        Path(overlay_dir).mkdir(parents=True, exist_ok=True)
+    counts = PdfOcrResult(pdf_path=Path(pdf_path), json_dir=json_dir)
+    t_doc = time.time()
+
+    rendered = render_for_run(pdf_path, raw_dir, opts, pages, start_page, profiler, log=log)
+    if not rendered:
+        return counts
+    counts.pages_rendered = len(rendered)
+    n_total = len(rendered)
+
+    # The recorder is sized at load time; asking for more now would truncate
+    # logprobs without saying so.
+    if loaded.recorder is not None and opts.max_tokens > loaded.max_tokens:
+        raise ValueError(
+            f"opts.max_tokens={opts.max_tokens} exceeds the {loaded.max_tokens} the "
+            f"logprob recorder was built for; reload the model with the larger value"
+        )
+
+    # --- the whole-document blank guard ------------------------------------- #
+    skip_blank_pages = opts.skip_blank_pages
+    blank_override = False
+    if skip_blank_pages and opts.never_skip_every_page:
+        all_blank = all(
+            is_blank_or_bleedthrough(
+                page_ink_stats(load_gray(path), opts.dark_pixel_threshold, opts.ink_roi_margin),
+                opts.min_dark_fraction,
+                opts.min_contrast_std,
+            )
+            for path, _ in rendered
+        )
+        if all_blank:
+            skip_blank_pages = False
+            blank_override = True
+            counts.blank_override = True
+            log(
+                f"      WARNING every page of {Path(pdf_path).name} classified blank; "
+                f"OCR'ing anyway ({BLANK_OVERRIDE_REASON})"
+            )
+
+    mem = mem_sampler_for(loaded.be) if loaded.be.kind == "cuda" else None
+
+    for n, (page_path, rotation) in enumerate(rendered, start=1):
+        if skip_existing and (json_dir / f"page_{start_page + n - 1:04d}.json").exists():
+            counts.pages_resumed += 1
+            continue
+        i = start_page + n - 1  # absolute page number in the PDF
+        t0 = time.time()
+        with profiler.stage(f"page {i:04d}"):
+            gray = load_gray(page_path)
+            orig_h, orig_w = gray.shape
+            resized_h, resized_w = smart_resize(orig_h, orig_w)
+
+            stats = page_ink_stats(gray, opts.dark_pixel_threshold, opts.ink_roi_margin)
+            skip_page = skip_blank_pages and is_blank_or_bleedthrough(
+                stats, opts.min_dark_fraction, opts.min_contrast_std
+            )
+            coverage = None
+
+            if skip_page:
+                log(
+                    f"      page {i}: SKIPPED (looks blank/bleed-through -- "
+                    f"dark_fraction={stats['dark_fraction']:.5f}, std={stats['std']:.1f})"
+                )
+                elements = []
+                page_record = {
+                    "page": i,
+                    "source_image": page_path.name,
+                    "elements": [],
+                    "skipped": "blank_or_bleedthrough",
+                    "page_stats": stats,
+                }
+            else:
+                gen = run_page(
+                    loaded.be,
+                    loaded.model,
+                    loaded.processor,
+                    loaded.config,
+                    opts.prompt_text,
+                    page_path,
+                    opts.max_tokens,
+                    opts.temperature,
+                    want_logprobs=opts.token_logprobs,
+                    recorder=loaded.recorder,
+                )
+
+                try:
+                    elements = normalize_elements(extract_json(gen.text))
+                    page_record = {"page": i, "source_image": page_path.name, "elements": elements}
+                except ValueError as exc:
+                    log(f"      page {i}: WARNING could not parse JSON ({exc}); saving raw text instead")
+                    elements = []
+                    page_record = {
+                        "page": i,
+                        "source_image": page_path.name,
+                        "elements": [],
+                        "parse_error": str(exc),
+                        "raw_text": gen.text,
+                    }
+
+                # Cross-check the streaming decode against a from-scratch decode
+                # of the full token sequence; only store the debug text (instead
+                # of just a bool) when they actually disagree, to keep normal
+                # pages' JSON small.
+                debug_matches = gen.debug_text == gen.text
+                page_record["debug_decode_matches_stream"] = debug_matches
+                if not debug_matches:
+                    page_record["debug_decode"] = gen.debug_text
+                    log(f"      page {i}: WARNING streaming decode diverged from full debug decode")
+
+                # Truncation is worth shouting about: unlike a parse failure it
+                # can leave JSON that loads cleanly and is simply missing the
+                # tail of the page.
+                page_record["finish_reason"] = gen.finish_reason
+                if gen.finish_reason == "length":
+                    log(
+                        f"      page {i}: WARNING hit --max-tokens ({opts.max_tokens}); "
+                        f"this page's output is truncated"
+                    )
+
+                if opts.token_logprobs:
+                    tokenizer = (
+                        loaded.processor.tokenizer
+                        if hasattr(loaded.processor, "tokenizer")
+                        else loaded.processor
+                    )
+                    exact = exact_token_segments(tokenizer, gen.token_ids, len(gen.text))
+                    if exact is None:
+                        log(
+                            f"      page {i}: WARNING per-token offsets did not reconstruct the "
+                            f"streamed text; falling back to coarser chunk attribution"
+                        )
+                    # Attribution first: it identifies which tokens carry text
+                    # and which carry layout, which is what scopes the summary.
+                    scopes = attribute_element_logprobs(
+                        elements, gen.text, exact or gen.segments, gen.token_logprobs
+                    )
+                    page_record["logprobs"] = summarize_logprobs(
+                        gen.token_logprobs,
+                        gen.token_ids,
+                        tokenizer,
+                        opts.low_logprob_threshold,
+                        scopes,
+                    )
+                    if page_record["logprobs"]:
+                        page_record["logprobs"]["attribution"] = "exact" if exact else "chunk"
+
+                page_record["page_stats"] = stats
+
+            # Set once here rather than in each of the three page_record
+            # constructions above, so a skipped or unparseable page carries it
+            # too -- those are exactly the pages a rotation bug shows up on.
+            page_record["rotation"] = rotation
+
+            if opts.ink_coverage and not skip_page:
+                coverage = ink_coverage(
+                    gray,
+                    elements,
+                    resized_w,
+                    resized_h,
+                    opts.dark_pixel_threshold,
+                    opts.ink_roi_margin,
+                    opts.uncovered_cell_px,
+                    opts.min_uncovered_ink,
+                )
+                page_record["ink_coverage"] = coverage
+                if coverage["uncovered_regions"]:
+                    log(
+                        f"      page {i}: WARNING {len(coverage['uncovered_regions'])} region(s) of ink "
+                        f"outside every bbox ({coverage['covered_fraction']:.1%} of ink covered)"
+                    )
+
+            # Appended last so a run without the guard writes byte-identical
+            # records: the pre-1974 volumes must not gain a key.
+            if blank_override:
+                page_record["blank_override"] = True
+                page_record["blank_override_reason"] = BLANK_OVERRIDE_REASON
+
+            counts.observe(page_record)
+            (json_dir / f"page_{i:04d}.json").write_text(json.dumps(page_record, indent=2, ensure_ascii=False))
+
+            if opts.write_overlays and overlay_dir is not None:
+                draw_overlay(
+                    page_path,
+                    elements,
+                    resized_w,
+                    resized_h,
+                    overlay_dir / f"page_{i:04d}.png",
+                    coverage["uncovered_regions"] if coverage else (),
+                )
+
+            status = " [skipped]" if page_record.get("skipped") else ""
+            log(
+                f"      page {i} ({n}/{n_total}): {len(elements)} elements,"
+                f" {time.time() - t0:.1f}s{status}"
+            )
+        # WARNING so it clears run_full_vlm_pre_1974.sh's digest filter and
+        # reaches the terminal, not just the volume log. The threshold is well
+        # above allocator noise -- steady state should be flat to the megabyte.
+        if mem is not None and mem.active_gb() > loaded.baseline_gb + MEMORY_DRIFT_WARN_GB:
+            log(
+                f"      page {i}: WARNING {mem.active_gb() - loaded.baseline_gb:.2f} GB still allocated "
+                f"after this page above the {loaded.baseline_gb:.2f} GB post-load baseline "
+                f"(expected ~0.00 -- something is being retained across pages)"
+            )
+    counts.seconds = time.time() - t_doc
+    return counts
+
+
+def build_arg_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
@@ -1869,7 +2623,11 @@ def main() -> None:
         "run. Use this to calibrate --dark-pixel-threshold / --min-dark-fraction / "
         "--min-contrast-std / --ink-roi-margin against a new volume before committing to a full run.",
     )
-    args = parser.parse_args()
+    return parser
+
+
+def main() -> None:
+    args = build_arg_parser().parse_args()
 
     if not args.pdf_path.exists():
         sys.exit(f"error: no such file: {args.pdf_path}")
@@ -1891,6 +2649,7 @@ def main() -> None:
         sys.exit("error: --quantization only applies to --device cuda (mlx models are "
                   "already pre-quantized via --model)")
 
+    prompt_text = ""
     if not args.classify_blank_only:
         prompt_text = args.prompt_file.read_text().strip()
         if not prompt_text:
@@ -1901,6 +2660,24 @@ def main() -> None:
             backend(device)
         except VlmBackendUnavailable as exc:
             sys.exit(f"error: {exc}")
+
+    opts = OcrOptions(
+        prompt_text=prompt_text,
+        dpi=args.dpi,
+        rotate=args.rotate,
+        max_tokens=args.max_tokens,
+        temperature=args.temperature,
+        skip_blank_pages=args.skip_blank_pages,
+        dark_pixel_threshold=args.dark_pixel_threshold,
+        min_dark_fraction=args.min_dark_fraction,
+        min_contrast_std=args.min_contrast_std,
+        ink_roi_margin=args.ink_roi_margin,
+        token_logprobs=args.token_logprobs,
+        low_logprob_threshold=args.low_logprob_threshold,
+        ink_coverage=args.ink_coverage,
+        min_uncovered_ink=args.min_uncovered_ink,
+        uncovered_cell_px=args.uncovered_cell_px,
+    )
 
     # Relative to the CWD, not the package — runs are scratch output (rendered
     # PNGs, ~600MB a volume) and must never land inside site-packages.
@@ -1919,259 +2696,38 @@ def main() -> None:
         mem=None if args.classify_blank_only else mem_sampler_for(backend(device)),
     )
 
-    print(
-        f"[1/3] rendering pages from {args.pdf_path.name} at {args.dpi} DPI, "
-        f"starting at page {args.start_page} ..."
-    )
-    with profiler.stage("render"):
-        rendered = render_pdf_pages(
-            args.pdf_path, raw_dir, args.dpi, args.pages, args.start_page, args.rotate
-        )
-    if not rendered:
-        sys.exit(f"error: no pages to process (is --start-page {args.start_page} past the end of the PDF?)")
-    page_paths = [path for path, _ in rendered]
-    rotations = [rot for _, rot in rendered]
-    print(f"      {len(page_paths)} page(s) rendered -> {raw_dir}")
-    n_rotated = sum(1 for rot in rotations if rot["applied_cw"])
-    if n_rotated:
-        # Worth stating plainly: it silently changes what every bbox in this run
-        # is relative to, and on --rotate auto nothing else announces it.
-        angles = sorted({rot["applied_cw"] for rot in rotations if rot["applied_cw"]})
-        print(
-            f"      rotated {n_rotated}/{len(page_paths)} page(s) by "
-            f"{'/'.join(f'{a}' for a in angles)} degrees clockwise ({rotations[0]['source']}) "
-            f"so their text is upright"
-        )
-
     if args.classify_blank_only:
-        print(f"\n[classify-blank-only] scoring {len(page_paths)} page(s) -- no model will be loaded")
-        n_skip = 0
-        pages_by_number = {}
-        # Beside the page records, not in the scratch dir: it is a durable finding
-        # about the volume (which pages were judged blank, under which thresholds)
-        # and readers of the page JSON expect it in the same directory.
-        report_path = json_dir / "classify_report.json"
-        if report_path.exists():
-            # A prior classify-only pass (e.g. before a --start-page resume) already
-            # scored some pages -- merge rather than overwrite, same spirit as how
-            # the real-OCR path extends an --output-dir in place.
-            try:
-                existing = json.loads(report_path.read_text())
-                for p in existing.get("pages", []):
-                    pages_by_number[p["page"]] = p
-            except (json.JSONDecodeError, KeyError):
-                pass
-        for n, (page_path, rotation) in enumerate(rendered, start=1):
-            i = args.start_page + n - 1
-            stats = page_ink_stats(load_gray(page_path), args.dark_pixel_threshold, args.ink_roi_margin)
-            blank = is_blank_or_bleedthrough(stats, args.min_dark_fraction, args.min_contrast_std)
-            n_skip += blank
-            verdict = "SKIP (blank/bleed-through)" if blank else "KEEP"
-            print(
-                f"  page {i:04d}: {verdict:24s} "
-                f"dark_fraction={stats['dark_fraction']:.5f} std={stats['std']:6.2f} mean={stats['mean']:6.2f}"
+        rendered = render_for_run(
+            args.pdf_path, raw_dir, opts, args.pages, args.start_page, profiler
+        )
+        if not rendered:
+            sys.exit(
+                f"error: no pages to process (is --start-page {args.start_page} past "
+                f"the end of the PDF?)"
             )
-            pages_by_number[i] = {
-                "page": i,
-                "blank": blank,
-                "page_stats": stats,
-                "rotation": rotation,
-            }
-        print(f"\n{n_skip}/{len(page_paths)} page(s) would be skipped as blank/bleed-through.")
-
-        report = {
-            "model_classifier": "ink-stats",
-            "params": {
-                "dark_pixel_threshold": args.dark_pixel_threshold,
-                "ink_roi_margin": args.ink_roi_margin,
-                "min_dark_fraction": args.min_dark_fraction,
-                "min_contrast_std": args.min_contrast_std,
-            },
-            "pages": [pages_by_number[n] for n in sorted(pages_by_number)],
-        }
-        report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False))
-        print(f"      wrote {report_path}")
+        classify_pages(rendered, opts, json_dir, args.start_page)
+        profiler.report(out_dir / "memory_profile.json")
         return
 
-    device_note = f" ({quantization})" if device == "cuda" else ""
-    print(f"[2/3] loading {model_id}{device_note} on {device} (first run downloads weights, be patient) ...")
-    t0 = time.time()
-    be = backend(device)
-    recorder = None
-    with profiler.stage("model-load"):
-        if be.kind == "mlx":
-            model, processor = be.load(model_id)
-            config = be.load_config(model_id)
-            # Weights load lazily; force evaluation so the stage's peak reflects
-            # the real resident cost of the model rather than unmaterialized arrays.
-            be.mx.eval(model.parameters())
-        else:
-            model, processor = _load_cuda_model(be, model_id, quantization, args.attn_implementation)
-            config = None
-            be.torch.cuda.synchronize()
-            # Allocated once here and reused by every page, so the steady-state
-            # baseline below covers it (see GreedyLogprobRecorder).
-            recorder = GreedyLogprobRecorder(be.torch, args.max_tokens, model.device)
-    print(f"      model loaded in {time.time() - t0:.1f}s")
-
-    # Everything the run needs on the GPU is now resident, and each page should
-    # return to exactly this figure. Anything that does not is a leak, and the
-    # point of checking per page is to see it on page 3 rather than infer it
-    # from an OOM on page 122 (which is how the retained score rows were found).
-    mem = mem_sampler_for(be) if be.kind == "cuda" else None
-    baseline_gb = mem.active_gb() if mem else 0.0
-
-    last_page = args.start_page + len(page_paths) - 1
-    print(f"[3/3] running layout+OCR over pages {args.start_page}-{last_page} ...")
-    for n, (page_path, rotation) in enumerate(rendered, start=1):
-        i = args.start_page + n - 1  # absolute page number in the PDF
-        t0 = time.time()
-        with profiler.stage(f"page {i:04d}"):
-            gray = load_gray(page_path)
-            orig_h, orig_w = gray.shape
-            resized_h, resized_w = smart_resize(orig_h, orig_w)
-
-            stats = page_ink_stats(gray, args.dark_pixel_threshold, args.ink_roi_margin)
-            skip_page = args.skip_blank_pages and is_blank_or_bleedthrough(
-                stats, args.min_dark_fraction, args.min_contrast_std
-            )
-            coverage = None
-
-            if skip_page:
-                print(
-                    f"      page {i}: SKIPPED (looks blank/bleed-through -- "
-                    f"dark_fraction={stats['dark_fraction']:.5f}, std={stats['std']:.1f})"
-                )
-                elements = []
-                page_record = {
-                    "page": i,
-                    "source_image": page_path.name,
-                    "elements": [],
-                    "skipped": "blank_or_bleedthrough",
-                    "page_stats": stats,
-                }
-            else:
-                gen = run_page(
-                    be,
-                    model,
-                    processor,
-                    config,
-                    prompt_text,
-                    page_path,
-                    args.max_tokens,
-                    args.temperature,
-                    want_logprobs=args.token_logprobs,
-                    recorder=recorder,
-                )
-
-                try:
-                    elements = normalize_elements(extract_json(gen.text))
-                    page_record = {"page": i, "source_image": page_path.name, "elements": elements}
-                except ValueError as exc:
-                    print(f"      page {i}: WARNING could not parse JSON ({exc}); saving raw text instead")
-                    elements = []
-                    page_record = {
-                        "page": i,
-                        "source_image": page_path.name,
-                        "elements": [],
-                        "parse_error": str(exc),
-                        "raw_text": gen.text,
-                    }
-
-                # Cross-check the streaming decode against a from-scratch decode
-                # of the full token sequence; only store the debug text (instead
-                # of just a bool) when they actually disagree, to keep normal
-                # pages' JSON small.
-                debug_matches = gen.debug_text == gen.text
-                page_record["debug_decode_matches_stream"] = debug_matches
-                if not debug_matches:
-                    page_record["debug_decode"] = gen.debug_text
-                    print(f"      page {i}: WARNING streaming decode diverged from full debug decode")
-
-                # Truncation is worth shouting about: unlike a parse failure it
-                # can leave JSON that loads cleanly and is simply missing the
-                # tail of the page.
-                page_record["finish_reason"] = gen.finish_reason
-                if gen.finish_reason == "length":
-                    print(
-                        f"      page {i}: WARNING hit --max-tokens ({args.max_tokens}); "
-                        f"this page's output is truncated"
-                    )
-
-                if args.token_logprobs:
-                    tokenizer = processor.tokenizer if hasattr(processor, "tokenizer") else processor
-                    exact = exact_token_segments(tokenizer, gen.token_ids, len(gen.text))
-                    if exact is None:
-                        print(
-                            f"      page {i}: WARNING per-token offsets did not reconstruct the "
-                            f"streamed text; falling back to coarser chunk attribution"
-                        )
-                    # Attribution first: it identifies which tokens carry text
-                    # and which carry layout, which is what scopes the summary.
-                    scopes = attribute_element_logprobs(
-                        elements, gen.text, exact or gen.segments, gen.token_logprobs
-                    )
-                    page_record["logprobs"] = summarize_logprobs(
-                        gen.token_logprobs,
-                        gen.token_ids,
-                        tokenizer,
-                        args.low_logprob_threshold,
-                        scopes,
-                    )
-                    if page_record["logprobs"]:
-                        page_record["logprobs"]["attribution"] = "exact" if exact else "chunk"
-
-                page_record["page_stats"] = stats
-
-            # Set once here rather than in each of the three page_record
-            # constructions above, so a skipped or unparseable page carries it
-            # too -- those are exactly the pages a rotation bug shows up on.
-            page_record["rotation"] = rotation
-
-            if args.ink_coverage and not skip_page:
-                coverage = ink_coverage(
-                    gray,
-                    elements,
-                    resized_w,
-                    resized_h,
-                    args.dark_pixel_threshold,
-                    args.ink_roi_margin,
-                    args.uncovered_cell_px,
-                    args.min_uncovered_ink,
-                )
-                page_record["ink_coverage"] = coverage
-                if coverage["uncovered_regions"]:
-                    print(
-                        f"      page {i}: WARNING {len(coverage['uncovered_regions'])} region(s) of ink "
-                        f"outside every bbox ({coverage['covered_fraction']:.1%} of ink covered)"
-                    )
-
-            (json_dir / f"page_{i:04d}.json").write_text(json.dumps(page_record, indent=2, ensure_ascii=False))
-
-            draw_overlay(
-                page_path,
-                elements,
-                resized_w,
-                resized_h,
-                overlay_dir / f"page_{i:04d}.png",
-                coverage["uncovered_regions"] if coverage else (),
-            )
-
-            status = " [skipped]" if page_record.get("skipped") else ""
-            print(
-                f"      page {i} ({n}/{len(page_paths)}): {len(elements)} elements,"
-                f" {time.time() - t0:.1f}s{status}"
-            )
-
-        # WARNING so it clears run_full_vlm_pipeline.sh's digest filter and
-        # reaches the terminal, not just the volume log. The threshold is well
-        # above allocator noise -- steady state should be flat to the megabyte.
-        if mem is not None and mem.active_gb() > baseline_gb + MEMORY_DRIFT_WARN_GB:
-            print(
-                f"      page {i}: WARNING {mem.active_gb() - baseline_gb:.2f} GB still allocated "
-                f"after this page above the {baseline_gb:.2f} GB post-load baseline "
-                f"(expected ~0.00 -- something is being retained across pages)"
-            )
+    result = ocr_pdf(
+        args.pdf_path,
+        loaded=load_model(
+            device, model_id, quantization, args.attn_implementation,
+            opts.max_tokens, profiler,
+        ),
+        opts=opts,
+        raw_dir=raw_dir,
+        json_dir=json_dir,
+        overlay_dir=overlay_dir,
+        start_page=args.start_page,
+        pages=args.pages,
+        profiler=profiler,
+    )
+    if not result.pages_rendered:
+        sys.exit(
+            f"error: no pages to process (is --start-page {args.start_page} past "
+            f"the end of the PDF?)"
+        )
 
     # No combined raw_output.json / document.md: both were pure functions of the
     # page records beside them, rebuilt from disk on every run, and a stored copy

@@ -1,33 +1,44 @@
-// Connect-style middleware exposing the pre-1974 volumes to the browser.
+// Connect-style middleware exposing the OCR output to the browser.
 // Mounted into the Vite dev server (see vite.config.js) so the whole app is
-// one process with no proxy and no build step -- ported from an early
-// prototype, pointed at the 14 canonical volumes and their committed output
-// instead of arbitrary experiment run directories.
+// one process with no proxy and no build step.
 //
-//   GET /api/volumes                        the 14 volumes from volumes.json, with status
-//   GET /api/volumes/:volume                 that volume's page index (one entry per page)
-//   GET /api/volumes/:volume/pages/:page     the page's JSON record (real OCR only)
-//   GET /files/:volume/:kind/page_NNNN.png   raw or overlay page image (local render only)
+// Two collections, because the project OCR'd its scans in two runs with two
+// different directory layouts:
 //
-// Two roots, deliberately kept apart:
-//   ocrRoot     sources/gpp/volumes/ocr/<stem>/  committed page_XXXX.json +
-//               classify_report.json -- durable, works from a fresh clone.
-//   rendersRoot vlm-ocr-runs/<stem>/raw|overlays/  local scratch PNGs --
-//               not committed, only present if you've run the render/OCR
-//               step locally.
+//   pre1974    the 14 bound volumes  sources/gpp/volumes/ocr/<stem>/page_XXXX.json
+//   post1974   the 1,083 documents   sources/ocr/<year>/<eo-id>/page_XXXX.json
+//
+// A "unit" is one volume or one document. Everything below the unit -- the page
+// index, the page record, the QA flags, the page image -- is identical for both,
+// so only unit discovery is per collection.
+//
+//   GET /api/collections                                   both collections, with counts
+//   GET /api/collections/:c/units                          that collection's units, with status
+//   GET /api/collections/:c/units/:u                       that unit's page index
+//   GET /api/collections/:c/units/:u/pages/:page           the page's JSON record
+//   GET /api/collections/:c/units/:u/text                  the unit's CURRENT corpus text
+//   GET /files/:c/:u/pdf                                   the unit's source PDF (Range-capable)
+//
+// The page image is the SOURCE PDF, rendered in the browser by pdf.js, not a
+// PNG on disk. The runs write page PNGs to a scratch directory and prune most
+// of them, so a PNG was there for some pages, in some clones, some of the time;
+// the PDF is committed (git-LFS) and always there. Both are pixels off the same
+// page, and the browser reproduces the run's own geometry -- `dpi` and the
+// per-page `rotation.applied_cw` in the record -- so a bbox still lands where
+// the model put it. See src/pdfPage.jsx.
 //
 // ocrRoot is the ONLY place page records live: vlm_ocr writes them there per
-// page, via --json-dir, as the OCR proceeds. There used to be a second copy
-// under rendersRoot/<stem>/json/ that ocrRoot only caught up with when a volume
-// finished, so this file read both and flagged run-dir-only pages as `live`.
-// That copy is gone -- a page is either recorded or it isn't.
+// page, via --json-dir, as the OCR proceeds. A page is either recorded or it
+// isn't.
 
 import fs from "node:fs";
 import fsp from "node:fs/promises";
 import path from "node:path";
 
 const PAGE_FILE = /^page_(\d{1,6})\.(png|json)$/;
-const IMAGE_KINDS = new Set(["overlays", "raw"]);
+const YEAR_DIR = /^\d{4}$/;
+// Every scanned document's text_source; born-digital ones are not reviewed here.
+const OCR_TEXT_SOURCE = /^ocr(-|$)/;
 
 // The QA flags a page can carry, worst first -- this order is what the rail and
 // the header badges sort by. Computed here rather than in the browser so the
@@ -60,6 +71,10 @@ async function listDir(dir) {
   }
 }
 
+async function subdirs(dir) {
+  return (await listDir(dir)).filter((e) => e.isDirectory()).map((e) => e.name);
+}
+
 // Page numbers present directly in `dir` (no subfolder), as a Set of ints.
 async function pageNumbers(dir, ext) {
   const entries = await listDir(dir);
@@ -83,8 +98,29 @@ async function readJson(file) {
   }
 }
 
-// A volume stem must be a plain directory name -- no separators, no traversal.
-function safeStem(name) {
+// corpus/eo.json is 15 MB and static while the UI is open, but every page image
+// is one request -- so parse it once and re-parse only when the file changes.
+const recordCache = new Map();
+
+async function readRecords(file) {
+  let stat;
+  try {
+    stat = await fsp.stat(file);
+  } catch (err) {
+    if (err.code === "ENOENT") return [];
+    throw err;
+  }
+  const key = `${stat.mtimeMs}:${stat.size}`;
+  const hit = recordCache.get(file);
+  if (hit?.key === key) return hit.records;
+  const parsed = await readJson(file);
+  const records = Array.isArray(parsed) ? parsed : (parsed?.records ?? []);
+  recordCache.set(file, { key, records });
+  return records;
+}
+
+// A path segment must be a plain name -- no separators, no traversal.
+function safeSegment(name) {
   if (
     !name ||
     name.includes("/") ||
@@ -99,6 +135,10 @@ function safeStem(name) {
 function pageName(page, ext) {
   return `page_${String(page).padStart(4, "0")}.${ext}`;
 }
+
+// --------------------------------------------------------------------------- //
+// Unit discovery -- the only part that differs between the two collections      //
+// --------------------------------------------------------------------------- //
 
 // volumes.json's own filename scheme is `<start>_<end>_<Mayor(s)>_<kind>.pdf`
 // (see sources/gpp/volumes/README.md) -- the stem is the directory
@@ -116,9 +156,137 @@ function yearsFromStem(stem) {
   };
 }
 
-export function createApi({ ocrRoot, rendersRoot, volumesJson }) {
-  async function readPage(stem, page) {
-    const record = await readJson(path.join(ocrRoot, stem, pageName(page, "json")));
+// The 14 bound volumes, in volumes.json order. One flat directory per volume.
+async function volumeUnits(col) {
+  const raw = await readJson(col.volumesJson);
+  return (raw?.volumes ?? [])
+    .map((entry) => {
+      const stem = volumeStem(entry);
+      if (!stem) return null;
+      const { minYear, maxYear } = yearsFromStem(stem);
+      return {
+        id: stem,
+        rel: stem,
+        pdfRel: entry.local_paths?.[0] ?? null,
+        group: null,
+        title: entry.description ?? path.basename(entry.local_paths[0]),
+        subtitle: `${minYear}–${maxYear}`,
+        minYear,
+        maxYear,
+        expectedPages: null,
+      };
+    })
+    .filter(Boolean);
+}
+
+// The post-1974 documents: one directory per EO, under its year. The worklist
+// is corpus/eo.json -- the same file run_post1974_ocr.py takes its candidates
+// from -- so a scanned document that never got a page record is still listed
+// (it reads as `not started`) rather than being silently absent. Any directory
+// on disk with no matching record is listed too: a directory is never invisible.
+async function documentUnits(col, repoRoot) {
+  const records = await readRecords(col.recordsJson);
+  const byId = new Map();
+
+  for (const r of records) {
+    if (!r?.eo_id || !r?.year) continue;
+    // Born-digital documents have a PDF text layer and were never OCR'd, so
+    // they are not part of this review surface. Everything scanned carries an
+    // `ocr`-prefixed text_source -- `ocr`, `ocr-skipped`, `ocr-failed`,
+    // `ocr-vlm`, `ocr-vlm-failed` -- and each new run adds another one, so
+    // match the prefix rather than a list that goes stale the next run.
+    if (!OCR_TEXT_SOURCE.test(r.text_source ?? "")) continue;
+    byId.set(r.eo_id, {
+      id: r.eo_id,
+      rel: path.posix.join(String(r.year), r.eo_id),
+      pdfRel: r.pdf_path ?? null,
+      group: String(r.year),
+      title: r.title ?? r.eo_id,
+      subtitle: r.date_signed ?? String(r.year),
+      minYear: String(r.year),
+      maxYear: String(r.year),
+      expectedPages: r.page_count ?? null,
+    });
+  }
+
+  for (const year of await subdirs(col.ocrRoot)) {
+    if (!YEAR_DIR.test(year)) continue;
+    for (const id of await subdirs(path.join(col.ocrRoot, year))) {
+      if (byId.has(id)) continue;
+      // No record names this directory's PDF, so fall back to the layout every
+      // `pdf_path` in corpus/eo.json uses -- the scan is still viewable.
+      const guess = path.posix.join("pdfs", year, `${id}.pdf`);
+      byId.set(id, {
+        id,
+        rel: path.posix.join(year, id),
+        pdfRel: fs.existsSync(path.resolve(repoRoot, guess)) ? guess : null,
+        group: year,
+        title: id,
+        subtitle: year,
+        minYear: year,
+        maxYear: year,
+        expectedPages: null,
+      });
+    }
+  }
+
+  return [...byId.values()].sort((a, b) =>
+    a.rel.localeCompare(b.rel, "en", { numeric: true }),
+  );
+}
+
+export function createApi({ collections, repoRoot }) {
+  const byId = new Map(collections.map((c) => [c.id, c]));
+
+  const unitsOf = (col) =>
+    col.kind === "volumes" ? volumeUnits(col) : documentUnits(col, repoRoot);
+
+  async function findUnit(col, id) {
+    if (!safeSegment(id)) return null;
+    return (await unitsOf(col)).find((u) => u.id === id) ?? null;
+  }
+
+  const ocrDir = (col, unit) => path.join(col.ocrRoot, unit.rel);
+
+  // volumes.json and corpus/eo.json are committed data, not user input, but
+  // they still name the file this server hands out -- so keep the result inside
+  // the repo rather than trusting the path.
+  function pdfFile(unit) {
+    if (!unit.pdfRel) return null;
+    const file = path.resolve(repoRoot, unit.pdfRel);
+    return file.startsWith(repoRoot + path.sep) ? file : null;
+  }
+
+  // The text the published corpus carries for this unit today -- Tesseract's,
+  // for everything the VLM run has not replaced. Whole-document: corpus/eo.json
+  // stores one string per EO with no page boundaries in it, so this cannot be
+  // narrowed to the page on screen, and the UI says so rather than implying a
+  // page-for-page comparison it cannot make.
+  async function corpusText(col, unit) {
+    if (!col.recordsJson) return null;
+    const records = await readRecords(col.recordsJson);
+    const record = records.find((r) => r?.eo_id === unit.id);
+    if (!record) return null;
+    const text = record.full_text ?? "";
+    const raw = record.full_text_raw ?? "";
+    return {
+      unit: unit.id,
+      textSource: record.text_source ?? null,
+      textQuality: record.text_quality ?? null,
+      pageCount: record.page_count ?? null,
+      droppedHeader: Boolean(record.dropped_header),
+      droppedMarks: record.dropped_marks ?? [],
+      text,
+      // Only when the cleanup actually changed something: otherwise the raw
+      // toggle offers a second copy of the same string.
+      textRaw: raw && raw !== text ? raw : null,
+    };
+  }
+
+  async function readPage(col, unit, page) {
+    const record = await readJson(
+      path.join(ocrDir(col, unit), pageName(page, "json")),
+    );
     return record ? { record } : null;
   }
 
@@ -129,85 +297,95 @@ export function createApi({ ocrRoot, rendersRoot, volumesJson }) {
     res.end(JSON.stringify(body));
   };
 
-  async function loadVolumes() {
-    const raw = await readJson(volumesJson);
-    return (raw?.volumes ?? [])
-      .map((entry) => {
-        const stem = volumeStem(entry);
-        if (!stem) return null;
-        return {
-          stem,
-          filename: path.basename(entry.local_paths[0]),
-          description: entry.description,
-          ...yearsFromStem(stem),
-        };
-      })
-      .filter(Boolean);
+  // One unit's QA roll-up. Reads every page record it has: 1,794 records is
+  // ~0.3 s for the whole post-1974 collection, so this is computed live rather
+  // than cached -- a run writing records right now stays visible on reload.
+  async function unitSummary(col, unit) {
+    const dir = ocrDir(col, unit);
+    const [recorded, classifyReport] = await Promise.all([
+      pageNumbers(dir, "json"),
+      readJson(path.join(dir, "classify_report.json")),
+    ]);
+    const flagCounts = {};
+    let flaggedPageCount = 0;
+    let worstCoverage = null;
+    for (const page of recorded) {
+      const record = (await readPage(col, unit, page))?.record;
+      const flags = pageFlags(record);
+      if (flags.length) flaggedPageCount += 1;
+      for (const flag of flags) flagCounts[flag] = (flagCounts[flag] ?? 0) + 1;
+      const coverage = record?.ink_coverage?.covered_fraction;
+      if (typeof coverage === "number")
+        worstCoverage =
+          worstCoverage === null ? coverage : Math.min(worstCoverage, coverage);
+    }
+    const ocrPageCount = recorded.size;
+    const classifiedPageCount = classifyReport?.pages?.length ?? 0;
+    const file = pdfFile(unit);
+    const status =
+      ocrPageCount === 0
+        ? classifiedPageCount > 0
+          ? "classified"
+          : "not-started"
+        : unit.expectedPages && ocrPageCount < unit.expectedPages
+          ? "incomplete"
+          : "ocr";
+    return {
+      ...unit,
+      status,
+      ocrPageCount,
+      classifiedPageCount,
+      flaggedPageCount,
+      flagCounts,
+      worstCoverage,
+      hasPdf: Boolean(file) && fs.existsSync(file),
+    };
   }
 
-  async function listVolumes() {
-    const volumes = await loadVolumes();
+  // 1,086 units, each a handful of stat/read calls: run them in batches so the
+  // list is one short wait rather than a thousand sequential round trips.
+  async function listUnits(col) {
+    const units = await unitsOf(col);
     const out = [];
-    for (const v of volumes) {
-      const ocrDir = path.join(ocrRoot, v.stem);
-      const [recorded, classifyReport] = await Promise.all([
-        pageNumbers(ocrDir, "json"),
-        readJson(path.join(ocrDir, "classify_report.json")),
-      ]);
-      const ocrPageCount = recorded.size;
-      const classifiedPageCount = classifyReport?.pages?.length ?? 0;
-      const status =
-        ocrPageCount > 0
-          ? "ocr"
-          : classifiedPageCount > 0
-            ? "classified"
-            : "not-started";
-      out.push({
-        ...v,
-        ocrPageCount,
-        classifiedPageCount,
-        status,
-      });
+    const batch = 32;
+    for (let i = 0; i < units.length; i += batch) {
+      out.push(
+        ...(await Promise.all(
+          units.slice(i, i + batch).map((u) => unitSummary(col, u)),
+        )),
+      );
     }
     return out;
   }
 
-  async function volumeIndex(stem) {
-    const ocrDir = path.join(ocrRoot, stem);
-    const renderDir = path.join(rendersRoot, stem);
-    const [jsons, raws, overlays, classifyReport] = await Promise.all([
-      pageNumbers(ocrDir, "json"),
-      pageNumbers(path.join(renderDir, "raw"), "png"),
-      pageNumbers(path.join(renderDir, "overlays"), "png"),
-      readJson(path.join(ocrDir, "classify_report.json")),
+  async function unitIndex(col, unit) {
+    const dir = ocrDir(col, unit);
+    const [jsons, classifyReport] = await Promise.all([
+      pageNumbers(dir, "json"),
+      readJson(path.join(dir, "classify_report.json")),
     ]);
-    if (
-      jsons.size === 0 &&
-      raws.size === 0 &&
-      overlays.size === 0 &&
-      !classifyReport?.pages?.length
-    ) {
-      return null;
-    }
     const classifyByPage = new Map(
       (classifyReport?.pages ?? []).map((p) => [p.page, p]),
     );
+    // A page the OCR never reached is still a page of the PDF, and the PDF is
+    // what the viewer draws -- so a document that failed mid-run still lists
+    // its pages, and you can look at the scan that beat it.
+    const expected = [];
+    for (let p = 1; p <= (unit.expectedPages ?? 0); p += 1) expected.push(p);
     const numbers = [
-      ...new Set([...raws, ...overlays, ...jsons, ...classifyByPage.keys()]),
+      ...new Set([...jsons, ...classifyByPage.keys(), ...expected]),
     ].sort((a, b) => a - b);
 
     const pages = [];
     for (const page of numbers) {
       const entry = {
         page,
-        hasOverlay: overlays.has(page),
-        hasRaw: raws.has(page),
         hasJson: jsons.has(page),
         status: "pending",
         elementCount: 0,
       };
       if (entry.hasJson) {
-        const found = await readPage(stem, page);
+        const found = await readPage(col, unit, page);
         const record = found?.record ?? null;
         entry.status = "ocr";
         if (record?._readError) {
@@ -220,7 +398,7 @@ export function createApi({ ocrRoot, rendersRoot, volumesJson }) {
           entry.status = "parse_error";
         }
         entry.elementCount = record?.elements?.length ?? 0;
-        // Enough QA summary to rank the whole volume without fetching every page.
+        // Enough QA summary to rank the whole unit without fetching every page.
         entry.flags = pageFlags(record);
         entry.coverage = record?.ink_coverage?.covered_fraction ?? null;
         entry.uncoveredRegions =
@@ -238,7 +416,48 @@ export function createApi({ ocrRoot, rendersRoot, volumesJson }) {
       }
       pages.push(entry);
     }
-    return { stem, pages };
+    return {
+      collection: col.id,
+      unit: unit.id,
+      title: unit.title,
+      expectedPages: unit.expectedPages,
+      pdfRel: unit.pdfRel,
+      pages,
+    };
+  }
+
+  // Byte-range support, because pdf.js asks for the pieces of a PDF it needs
+  // and a bound volume is 63 MB. Without it the browser downloads the whole
+  // file to draw page 1.
+  function servePdf(req, res, file) {
+    const stat = fs.statSync(file);
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader("Accept-Ranges", "bytes");
+    res.setHeader("Cache-Control", "no-cache");
+    const range = /^bytes=(\d*)-(\d*)$/.exec(req.headers.range ?? "");
+    if (!range) {
+      res.setHeader("Content-Length", stat.size);
+      return fs.createReadStream(file).pipe(res);
+    }
+    let [, startText, endText] = range;
+    let start = startText === "" ? null : Number(startText);
+    let end = endText === "" ? null : Number(endText);
+    if (start === null) {
+      // A suffix range ("bytes=-500"): the last `end` bytes.
+      start = Math.max(0, stat.size - (end ?? 0));
+      end = stat.size - 1;
+    } else if (end === null || end >= stat.size) {
+      end = stat.size - 1;
+    }
+    if (start > end || start >= stat.size) {
+      res.statusCode = 416;
+      res.setHeader("Content-Range", `bytes */${stat.size}`);
+      return res.end();
+    }
+    res.statusCode = 206;
+    res.setHeader("Content-Range", `bytes ${start}-${end}/${stat.size}`);
+    res.setHeader("Content-Length", end - start + 1);
+    return fs.createReadStream(file, { start, end }).pipe(res);
   }
 
   return async function apiMiddleware(req, res, next) {
@@ -250,36 +469,72 @@ export function createApi({ ocrRoot, rendersRoot, volumesJson }) {
     if (parts[0] !== "api" && parts[0] !== "files") return next();
 
     try {
-      // GET /api/volumes
-      if (parts[0] === "api" && parts[1] === "volumes" && parts.length === 2) {
+      // GET /api/collections
+      if (
+        parts[0] === "api" &&
+        parts[1] === "collections" &&
+        parts.length === 2
+      ) {
         return json(res, 200, {
-          volumes: await listVolumes(),
-          ocrRoot,
-          rendersRoot,
+          collections: collections.map((c) => ({
+            id: c.id,
+            label: c.label,
+            unitNoun: c.unitNoun,
+            grouped: c.kind === "documents",
+            groupNoun: c.groupNoun ?? null,
+            // The DPI the run rendered at. Every bbox in every page record of
+            // this collection is relative to a raster of that resolution, so
+            // the viewer draws the PDF at the same one.
+            dpi: c.dpi,
+            // Whether /text has anything to serve for this collection.
+            hasCorpusText: Boolean(c.recordsJson),
+            ocrRoot: c.ocrRoot,
+          })),
         });
       }
 
-      // GET /api/volumes/:volume
-      if (parts[0] === "api" && parts[1] === "volumes" && parts.length === 3) {
-        const stem = safeStem(parts[2]);
-        const index = stem && (await volumeIndex(stem));
-        if (!index) return json(res, 404, { error: "no such volume" });
-        return json(res, 200, index);
-      }
+      const col = parts[0] === "api" ? byId.get(parts[2]) : byId.get(parts[1]);
+      if (!col) return json(res, 404, { error: "no such collection" });
 
-      // GET /api/volumes/:volume/pages/:page
+      // GET /api/collections/:collection/units
       if (
         parts[0] === "api" &&
-        parts[1] === "volumes" &&
-        parts[3] === "pages" &&
+        parts[1] === "collections" &&
+        parts[3] === "units" &&
+        parts.length === 4
+      ) {
+        return json(res, 200, {
+          collection: col.id,
+          units: await listUnits(col),
+        });
+      }
+
+      // GET /api/collections/:collection/units/:unit
+      if (
+        parts[0] === "api" &&
+        parts[1] === "collections" &&
+        parts[3] === "units" &&
         parts.length === 5
       ) {
-        const stem = safeStem(parts[2]);
-        const page = Number(parts[4]);
-        if (!stem || !Number.isInteger(page) || page < 1) {
+        const unit = await findUnit(col, parts[4]);
+        if (!unit) return json(res, 404, { error: "no such unit" });
+        return json(res, 200, await unitIndex(col, unit));
+      }
+
+      // GET /api/collections/:collection/units/:unit/pages/:page
+      if (
+        parts[0] === "api" &&
+        parts[1] === "collections" &&
+        parts[3] === "units" &&
+        parts[5] === "pages" &&
+        parts.length === 7
+      ) {
+        const page = Number(parts[6]);
+        if (!Number.isInteger(page) || page < 1)
           return json(res, 400, { error: "bad request" });
-        }
-        const found = await readPage(stem, page);
+        const unit = await findUnit(col, parts[4]);
+        if (!unit) return json(res, 404, { error: "no such unit" });
+        const found = await readPage(col, unit, page);
         if (!found)
           return json(res, 404, { error: "no OCR output for this page" });
         // The record itself is returned verbatim -- the JSON tab is meant to be
@@ -287,19 +542,30 @@ export function createApi({ ocrRoot, rendersRoot, volumesJson }) {
         return json(res, 200, found.record);
       }
 
-      // GET /files/:volume/:kind/page_NNNN.png
-      if (parts[0] === "files" && parts.length === 4) {
-        const stem = safeStem(parts[1]);
-        const kind = parts[2];
-        if (!stem || !IMAGE_KINDS.has(kind) || !PAGE_FILE.test(parts[3])) {
-          return json(res, 400, { error: "bad request" });
-        }
-        const file = path.join(rendersRoot, stem, kind, parts[3]);
-        if (!fs.existsSync(file))
-          return json(res, 404, { error: "no such image" });
-        res.setHeader("Content-Type", "image/png");
-        res.setHeader("Cache-Control", "no-cache");
-        return fs.createReadStream(file).pipe(res);
+      // GET /api/collections/:collection/units/:unit/text
+      if (
+        parts[0] === "api" &&
+        parts[1] === "collections" &&
+        parts[3] === "units" &&
+        parts[5] === "text" &&
+        parts.length === 6
+      ) {
+        const unit = await findUnit(col, parts[4]);
+        if (!unit) return json(res, 404, { error: "no such unit" });
+        const text = await corpusText(col, unit);
+        if (!text)
+          return json(res, 404, { error: "no corpus text for this unit" });
+        return json(res, 200, text);
+      }
+
+      // GET /files/:collection/:unit/pdf
+      if (parts[0] === "files" && parts[3] === "pdf" && parts.length === 4) {
+        const unit = await findUnit(col, parts[2]);
+        if (!unit) return json(res, 404, { error: "no such unit" });
+        const file = pdfFile(unit);
+        if (!file || !fs.existsSync(file))
+          return json(res, 404, { error: "no PDF for this unit" });
+        return servePdf(req, res, file);
       }
 
       return json(res, 404, { error: "not found" });

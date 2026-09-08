@@ -1,0 +1,344 @@
+{
+  "page": 8,
+  "source_image": "page_0008.png",
+  "elements": [
+    {
+      "bbox": [
+        276,
+        189,
+        1316,
+        234
+      ],
+      "category": "Text",
+      "text": "\u00a7 8. Executive Order 157, dated September 11, 2011, is hereby REVOKED.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3737,
+          "min": -1.8187
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 29,
+          "mean": -0.0002,
+          "min": -0.005
+        }
+      },
+      "ink": {
+        "ink_px": 9685,
+        "area_px": 47656,
+        "density": 0.20323,
+        "chars": 70,
+        "chars_per_1k_ink": 7.23
+      }
+    },
+    {
+      "bbox": [
+        276,
+        281,
+        893,
+        324
+      ],
+      "category": "Text",
+      "text": "\u00a7 9. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2138,
+          "min": -1.6279
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0,
+          "min": -0.0
+        }
+      },
+      "ink": {
+        "ink_px": 5853,
+        "area_px": 27060,
+        "density": 0.2163,
+        "chars": 46,
+        "chars_per_1k_ink": 7.86
+      }
+    },
+    {
+      "bbox": [
+        926,
+        396,
+        1307,
+        572
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3582,
+          "min": -1.6981
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.002,
+          "min": -0.002
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 13764,
+        "area_px": 66880,
+        "density": 0.2058,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        816,
+        2025,
+        837,
+        2055
+      ],
+      "category": "Page-footer",
+      "text": "8",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.1557,
+          "min": -1.1562
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 1,
+          "mean": -0.0012,
+          "min": -0.0012
+        }
+      },
+      "ink": {
+        "ink_px": 232,
+        "area_px": 660,
+        "density": 0.35152,
+        "chars": 1,
+        "chars_per_1k_ink": 4.31
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 180,
+    "content": {
+      "n_tokens": 41,
+      "mean": -0.0002,
+      "min": -0.005,
+      "p05": -0.0012,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.005,
+          "text": "\u00a7"
+        },
+        {
+          "index": 61,
+          "token_id": 3925,
+          "logprob": -0.0017,
+          "text": "OK"
+        },
+        {
+          "index": 176,
+          "token_id": 23,
+          "logprob": -0.0012,
+          "text": "8"
+        },
+        {
+          "index": 40,
+          "token_id": 7217,
+          "logprob": -0.0001,
+          "text": " Order"
+        },
+        {
+          "index": 60,
+          "token_id": 65823,
+          "logprob": -0.0001,
+          "text": " REV"
+        },
+        {
+          "index": 105,
+          "token_id": 1896,
+          "logprob": -0.0,
+          "text": " take"
+        },
+        {
+          "index": 98,
+          "token_id": 17851,
+          "logprob": -0.0,
+          "text": "\u00a7"
+        },
+        {
+          "index": 39,
+          "token_id": 17880,
+          "logprob": -0.0,
+          "text": " Executive"
+        },
+        {
+          "index": 108,
+          "token_id": 1189,
+          "logprob": -0.0,
+          "text": ".\""
+        },
+        {
+          "index": 36,
+          "token_id": 220,
+          "logprob": -0.0,
+          "text": " "
+        },
+        {
+          "index": 103,
+          "token_id": 7217,
+          "logprob": -0.0,
+          "text": " Order"
+        },
+        {
+          "index": 46,
+          "token_id": 29005,
+          "logprob": -0.0,
+          "text": " dated"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 81,
+      "mean": -0.2577,
+      "min": -1.8187,
+      "p05": -1.3586,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 21,
+          "logprob": -1.8187,
+          "text": "6"
+        },
+        {
+          "index": 116,
+          "token_id": 21,
+          "logprob": -1.6981,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 21,
+          "logprob": -1.6484,
+          "text": "6"
+        },
+        {
+          "index": 81,
+          "token_id": 18,
+          "logprob": -1.6279,
+          "text": "3"
+        },
+        {
+          "index": 23,
+          "token_id": 19,
+          "logprob": -1.3586,
+          "text": "4"
+        },
+        {
+          "index": 127,
+          "token_id": 22,
+          "logprob": -1.3172,
+          "text": "7"
+        },
+        {
+          "index": 132,
+          "token_id": 17,
+          "logprob": -1.273,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 24,
+          "logprob": -1.2488,
+          "text": "9"
+        },
+        {
+          "index": 146,
+          "token_id": 21,
+          "logprob": -1.1562,
+          "text": "6"
+        },
+        {
+          "index": 86,
+          "token_id": 19,
+          "logprob": -0.9742,
+          "text": "4"
+        },
+        {
+          "index": 131,
+          "token_id": 22,
+          "logprob": -0.9669,
+          "text": "7"
+        },
+        {
+          "index": 157,
+          "token_id": 22,
+          "logprob": -0.8528,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 180,
+      "mean": -0.1162,
+      "min": -1.8187,
+      "p05": -0.9833,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 233.86,
+    "std": 19.6,
+    "dark_fraction": 0.00912
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 29638,
+    "rule_px": 0,
+    "covered_px": 29534,
+    "covered_fraction": 0.99649,
+    "uncovered_px": 104,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

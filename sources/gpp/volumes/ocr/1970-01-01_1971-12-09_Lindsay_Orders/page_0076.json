@@ -28,7 +28,13 @@
           "min": -0.0443
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 2,
+        "area_px": 820,
+        "density": 0.00244,
+        "chars": 3,
+        "chars_per_1k_ink": 1500.0
+      }
     },
     {
       "bbox": [
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 429,
-        "area_px": 227814,
-        "density": 0.00188,
+        "ink_px": 650,
+        "area_px": 291390,
+        "density": 0.00223,
         "chars": 531,
-        "chars_per_1k_ink": 1237.76
+        "chars_per_1k_ink": 816.92
       }
     },
     {
@@ -72,7 +78,7 @@
         482
       ],
       "category": "Section-header",
-      "text": "## §6. City-Wide Housekeeping Records Retention Schedule",
+      "text": "## \u00a76. City-Wide Housekeeping Records Retention Schedule",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -344,7 +350,7 @@
         917
       ],
       "category": "Section-header",
-      "text": "## §7. City-Wide Housekeeping Records Retention Schedule",
+      "text": "## \u00a77. City-Wide Housekeeping Records Retention Schedule",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -906,15 +912,35 @@
   "ink_coverage": {
     "roi": [
       139,
-      177,
+      0,
       1022,
-      1304
+      1453
     ],
-    "ink_px": 1383,
-    "covered_px": 1324,
-    "covered_fraction": 0.95734,
-    "uncovered_px": 59,
-    "uncovered_regions": [],
+    "ink_px": 4646,
+    "rule_px": 1162,
+    "covered_px": 1547,
+    "covered_fraction": 0.44403,
+    "uncovered_px": 1937,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          771,
+          1405,
+          930,
+          1446
+        ],
+        "ink_px": 814
+      },
+      {
+        "bbox": [
+          389,
+          1429,
+          551,
+          1453
+        ],
+        "ink_px": 782
+      }
+    ],
     "cell_px": 24
   }
 }

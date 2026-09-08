@@ -28,7 +28,13 @@
           "min": -0.0191
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 1435,
+        "area_px": 30750,
+        "density": 0.04667,
+        "chars": 48,
+        "chars_per_1k_ink": 33.45
+      }
     },
     {
       "bbox": [
@@ -106,7 +112,7 @@
         2793
       ],
       "category": "Text",
-      "text": "Charter, §230 shall be required before approval by the Buildings",
+      "text": "Charter, \u00a7230 shall be required before approval by the Buildings",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -328,15 +334,26 @@
   "ink_coverage": {
     "roi": [
       261,
-      419,
+      88,
       1921,
-      3072
+      3422
     ],
-    "ink_px": 76858,
-    "covered_px": 76791,
-    "covered_fraction": 0.99913,
-    "uncovered_px": 67,
-    "uncovered_regions": [],
+    "ink_px": 80531,
+    "rule_px": 1176,
+    "covered_px": 78226,
+    "covered_fraction": 0.98577,
+    "uncovered_px": 1129,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1437,
+          3415,
+          1921,
+          3422
+        ],
+        "ink_px": 796
+      }
+    ],
     "cell_px": 24
   }
 }

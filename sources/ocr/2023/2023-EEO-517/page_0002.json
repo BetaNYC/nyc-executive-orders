@@ -1,0 +1,344 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        189,
+        262,
+        1495,
+        342
+      ],
+      "category": "Text",
+      "text": "\u00a7 2. I hereby direct that section 1 of Emergency Executive Order No. 515, dated November 1, 2023, is extended for five (5) days.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3854,
+          "min": -1.7434
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0005,
+          "min": -0.0005
+        },
+        "text": {
+          "n_tokens": 42,
+          "mean": -0.001,
+          "min": -0.038
+        }
+      },
+      "ink": {
+        "ink_px": 8453,
+        "area_px": 101979,
+        "density": 0.08289,
+        "chars": 128,
+        "chars_per_1k_ink": 15.14
+      }
+    },
+    {
+      "bbox": [
+        186,
+        378,
+        1497,
+        536
+      ],
+      "category": "Text",
+      "text": "\u00a7 3. This Emergency Executive Order shall take effect immediately. The State of Emergency shall remain in effect for a period not to exceed thirty (30) days or until rescinded, whichever occurs first. Additional declarations to extend the State of Emergency for additional periods not to exceed thirty (30) days shall be issued if needed.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3256,
+          "min": -1.5729
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0,
+          "min": -0.0
+        },
+        "text": {
+          "n_tokens": 68,
+          "mean": -0.0003,
+          "min": -0.0182
+        }
+      },
+      "ink": {
+        "ink_px": 23627,
+        "area_px": 200181,
+        "density": 0.11803,
+        "chars": 338,
+        "chars_per_1k_ink": 14.31
+      }
+    },
+    {
+      "bbox": [
+        975,
+        584,
+        1403,
+        686
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.4471,
+          "min": -2.029
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0182,
+          "min": -0.0182
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 3279,
+        "area_px": 44290,
+        "density": 0.07403,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    },
+    {
+      "bbox": [
+        986,
+        691,
+        1148,
+        769
+      ],
+      "category": "Caption",
+      "text": "Eric Adams\nMayor",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3082,
+          "min": -1.4554
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.5231,
+          "min": -0.5231
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.0002,
+          "min": -0.0005
+        }
+      },
+      "ink": {
+        "ink_px": 1381,
+        "area_px": 12714,
+        "density": 0.10862,
+        "chars": 16,
+        "chars_per_1k_ink": 11.59
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 252,
+    "content": {
+      "n_tokens": 114,
+      "mean": -0.0005,
+      "min": -0.038,
+      "p05": -0.0003,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 68,
+          "token_id": 374,
+          "logprob": -0.038,
+          "text": " is"
+        },
+        {
+          "index": 128,
+          "token_id": 31608,
+          "logprob": -0.0182,
+          "text": " Emergency"
+        },
+        {
+          "index": 35,
+          "token_id": 17851,
+          "logprob": -0.0018,
+          "text": "\u00a7"
+        },
+        {
+          "index": 59,
+          "token_id": 220,
+          "logprob": -0.001,
+          "text": " "
+        },
+        {
+          "index": 245,
+          "token_id": 49454,
+          "logprob": -0.0005,
+          "text": "Eric"
+        },
+        {
+          "index": 47,
+          "token_id": 31608,
+          "logprob": -0.0003,
+          "text": " Emergency"
+        },
+        {
+          "index": 248,
+          "token_id": 85574,
+          "logprob": -0.0003,
+          "text": "Mayor"
+        },
+        {
+          "index": 112,
+          "token_id": 17851,
+          "logprob": -0.0003,
+          "text": "\u00a7"
+        },
+        {
+          "index": 117,
+          "token_id": 31608,
+          "logprob": -0.0001,
+          "text": " Emergency"
+        },
+        {
+          "index": 154,
+          "token_id": 23208,
+          "logprob": -0.0,
+          "text": " Additional"
+        },
+        {
+          "index": 167,
+          "token_id": 12488,
+          "logprob": -0.0,
+          "text": " exceed"
+        },
+        {
+          "index": 151,
+          "token_id": 13666,
+          "logprob": -0.0,
+          "text": " occurs"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 80,
+      "mean": -0.355,
+      "min": -2.029,
+      "p05": -1.6867,
+      "p50": -0.0003,
+      "n_below_threshold": 1,
+      "worst_tokens": [
+        {
+          "index": 203,
+          "token_id": 21,
+          "logprob": -2.029,
+          "text": "6"
+        },
+        {
+          "index": 18,
+          "token_id": 20,
+          "logprob": -1.7434,
+          "text": "5"
+        },
+        {
+          "index": 187,
+          "token_id": 20,
+          "logprob": -1.7273,
+          "text": "5"
+        },
+        {
+          "index": 198,
+          "token_id": 18,
+          "logprob": -1.7159,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 17,
+          "logprob": -1.6852,
+          "text": "2"
+        },
+        {
+          "index": 192,
+          "token_id": 19,
+          "logprob": -1.6796,
+          "text": "4"
+        },
+        {
+          "index": 84,
+          "token_id": 21,
+          "logprob": -1.5729,
+          "text": "6"
+        },
+        {
+          "index": 23,
+          "token_id": 17,
+          "logprob": -1.496,
+          "text": "2"
+        },
+        {
+          "index": 217,
+          "token_id": 21,
+          "logprob": -1.4554,
+          "text": "6"
+        },
+        {
+          "index": 7,
+          "token_id": 24,
+          "logprob": -1.3725,
+          "text": "9"
+        },
+        {
+          "index": 100,
+          "token_id": 21,
+          "logprob": -1.3724,
+          "text": "6"
+        },
+        {
+          "index": 95,
+          "token_id": 22,
+          "logprob": -1.3394,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 252,
+      "mean": -0.113,
+      "min": -2.029,
+      "p05": -1.1975,
+      "p50": -0.0,
+      "n_below_threshold": 1
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.97,
+    "std": 25.87,
+    "dark_fraction": 0.01567
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      596.0,
+      842.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      198,
+      0,
+      1457,
+      2339
+    ],
+    "ink_px": 36914,
+    "rule_px": 0,
+    "covered_px": 36740,
+    "covered_fraction": 0.99529,
+    "uncovered_px": 174,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

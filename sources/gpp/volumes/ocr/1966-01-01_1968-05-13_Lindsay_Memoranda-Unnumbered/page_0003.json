@@ -28,7 +28,13 @@
           "min": -0.148
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 18438,
+        "density": 0.0,
+        "chars": 19,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -276,7 +282,7 @@
         1791
       ],
       "category": "Text",
-      "text": "Announcing the appointment of Dr. Efren Ramírez as Narcotics Coordinator for the City of New York in the City Administrator's Office (Press Release R 71-66)",
+      "text": "Announcing the appointment of Dr. Efren Ram\u00edrez as Narcotics Coordinator for the City of New York in the City Administrator's Office (Press Release R 71-66)",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -738,7 +744,7 @@
       },
       "ink": {
         "ink_px": 3,
-        "area_px": 153408,
+        "area_px": 169388,
         "density": 2e-05,
         "chars": 125,
         "chars_per_1k_ink": 41666.67
@@ -940,15 +946,26 @@
   "ink_coverage": {
     "roi": [
       304,
-      493,
+      160,
       2233,
-      3622
+      3999
     ],
-    "ink_px": 15,
+    "ink_px": 3201,
+    "rule_px": 2417,
     "covered_px": 15,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "covered_fraction": 0.01913,
+    "uncovered_px": 769,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          304,
+          3998,
+          832,
+          3999
+        ],
+        "ink_px": 517
+      }
+    ],
     "cell_px": 24
   }
 }

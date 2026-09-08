@@ -1,0 +1,310 @@
+{
+  "page": 4,
+  "source_image": "page_0004.png",
+  "elements": [
+    {
+      "bbox": [
+        265,
+        296,
+        1578,
+        373
+      ],
+      "category": "Text",
+      "text": "Section 5. All City agencies are directed to cooperate with and to provide all necessary assistance to the Office for the Increase the Peace Corps.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.313,
+          "min": -1.6536
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0142,
+          "min": -0.0142
+        },
+        "text": {
+          "n_tokens": 28,
+          "mean": -0.0012,
+          "min": -0.0264
+        }
+      },
+      "ink": {
+        "ink_px": 13225,
+        "area_px": 100308,
+        "density": 0.13184,
+        "chars": 147,
+        "chars_per_1k_ink": 11.12
+      }
+    },
+    {
+      "bbox": [
+        362,
+        418,
+        1187,
+        453
+      ],
+      "category": "Text",
+      "text": "Section 6. This Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2581,
+          "min": -1.2288
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0012,
+          "min": -0.0012
+        },
+        "text": {
+          "n_tokens": 11,
+          "mean": -0.0005,
+          "min": -0.0033
+        }
+      },
+      "ink": {
+        "ink_px": 4932,
+        "area_px": 29700,
+        "density": 0.16606,
+        "chars": 52,
+        "chars_per_1k_ink": 10.54
+      }
+    },
+    {
+      "bbox": [
+        965,
+        531,
+        1557,
+        723
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3443,
+          "min": -1.6348
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0016,
+          "min": -0.0016
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 10433,
+        "area_px": 113291,
+        "density": 0.09209,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 142,
+    "content": {
+      "n_tokens": 39,
+      "mean": -0.001,
+      "min": -0.0264,
+      "p05": -0.0026,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 51,
+          "token_id": 5871,
+          "logprob": -0.0264,
+          "text": " necessary"
+        },
+        {
+          "index": 98,
+          "token_id": 9620,
+          "logprob": -0.0033,
+          "text": "Section"
+        },
+        {
+          "index": 59,
+          "token_id": 279,
+          "logprob": -0.0025,
+          "text": " the"
+        },
+        {
+          "index": 35,
+          "token_id": 9620,
+          "logprob": -0.002,
+          "text": "Section"
+        },
+        {
+          "index": 58,
+          "token_id": 39633,
+          "logprob": -0.0019,
+          "text": " Increase"
+        },
+        {
+          "index": 108,
+          "token_id": 1189,
+          "logprob": -0.0015,
+          "text": ".\""
+        },
+        {
+          "index": 62,
+          "token_id": 1189,
+          "logprob": -0.0008,
+          "text": ".\""
+        },
+        {
+          "index": 56,
+          "token_id": 369,
+          "logprob": -0.0004,
+          "text": " for"
+        },
+        {
+          "index": 40,
+          "token_id": 4311,
+          "logprob": -0.0003,
+          "text": " City"
+        },
+        {
+          "index": 102,
+          "token_id": 1096,
+          "logprob": -0.0003,
+          "text": " This"
+        },
+        {
+          "index": 103,
+          "token_id": 7217,
+          "logprob": -0.0001,
+          "text": " Order"
+        },
+        {
+          "index": 105,
+          "token_id": 1896,
+          "logprob": -0.0001,
+          "text": " take"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 60,
+      "mean": -0.2902,
+      "min": -1.6536,
+      "p05": -1.4511,
+      "p50": -0.0023,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -1.6536,
+          "text": "5"
+        },
+        {
+          "index": 116,
+          "token_id": 20,
+          "logprob": -1.6348,
+          "text": "5"
+        },
+        {
+          "index": 127,
+          "token_id": 22,
+          "logprob": -1.472,
+          "text": "7"
+        },
+        {
+          "index": 23,
+          "token_id": 18,
+          "logprob": -1.45,
+          "text": "3"
+        },
+        {
+          "index": 12,
+          "token_id": 21,
+          "logprob": -1.4194,
+          "text": "6"
+        },
+        {
+          "index": 70,
+          "token_id": 17,
+          "logprob": -1.2288,
+          "text": "2"
+        },
+        {
+          "index": 81,
+          "token_id": 22,
+          "logprob": -1.2141,
+          "text": "7"
+        },
+        {
+          "index": 132,
+          "token_id": 18,
+          "logprob": -1.2048,
+          "text": "3"
+        },
+        {
+          "index": 121,
+          "token_id": 16,
+          "logprob": -1.121,
+          "text": "1"
+        },
+        {
+          "index": 86,
+          "token_id": 18,
+          "logprob": -1.1177,
+          "text": "3"
+        },
+        {
+          "index": 18,
+          "token_id": 23,
+          "logprob": -1.099,
+          "text": "8"
+        },
+        {
+          "index": 75,
+          "token_id": 23,
+          "logprob": -0.9901,
+          "text": "8"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 142,
+      "mean": -0.1233,
+      "min": -1.6536,
+      "p05": -1.2006,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 251.53,
+    "std": 27.62,
+    "dark_fraction": 0.01242
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      634.0,
+      816.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      211,
+      0,
+      1550,
+      2267
+    ],
+    "ink_px": 29751,
+    "rule_px": 212,
+    "covered_px": 28590,
+    "covered_fraction": 0.96787,
+    "uncovered_px": 949,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

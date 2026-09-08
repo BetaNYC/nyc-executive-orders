@@ -78,7 +78,7 @@
         440
       ],
       "category": "Text",
-      "text": "Designation of officer pursuant to\nAdministrative Code § B3-36.6(1)(1)\nto promulgate and maintain the official\nlist of \"physically taxing positions\".",
+      "text": "Designation of officer pursuant to\nAdministrative Code \u00a7 B3-36.6(1)(1)\nto promulgate and maintain the official\nlist of \"physically taxing positions\".",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -242,7 +242,7 @@
           "index": 130,
           "token_id": 16625,
           "logprob": -0.0311,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 34,
@@ -402,15 +402,26 @@
   "ink_coverage": {
     "roi": [
       144,
-      223,
+      0,
       1056,
-      1638
+      1817
     ],
-    "ink_px": 468,
+    "ink_px": 1545,
+    "rule_px": 0,
     "covered_px": 259,
-    "covered_fraction": 0.55342,
-    "uncovered_px": 209,
-    "uncovered_regions": [],
+    "covered_fraction": 0.16764,
+    "uncovered_px": 1286,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          389,
+          1806,
+          502,
+          1813
+        ],
+        "ink_px": 410
+      }
+    ],
     "cell_px": 24
   }
 }

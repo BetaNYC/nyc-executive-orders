@@ -44,7 +44,7 @@
         636
       ],
       "category": "Text",
-      "text": "GRAND ARMY PLAZA • BROOKLYN, N. Y. 11238 • STERLING 9-1212",
+      "text": "GRAND ARMY PLAZA \u2022 BROOKLYN, N. Y. 11238 \u2022 STERLING 9-1212",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -533,15 +533,26 @@
   "ink_coverage": {
     "roi": [
       276,
-      411,
+      98,
       2029,
-      3015
+      3332
     ],
-    "ink_px": 780,
+    "ink_px": 2394,
+    "rule_px": 769,
     "covered_px": 768,
-    "covered_fraction": 0.98462,
-    "uncovered_px": 12,
-    "uncovered_regions": [],
+    "covered_fraction": 0.47262,
+    "uncovered_px": 857,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1482,
+          3331,
+          1956,
+          3332
+        ],
+        "ink_px": 474
+      }
+    ],
     "cell_px": 24
   }
 }

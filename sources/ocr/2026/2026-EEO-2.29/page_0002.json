@@ -1,0 +1,349 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        775,
+        227,
+        949,
+        255
+      ],
+      "category": "Section-header",
+      "text": "APPENDIX ",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 18,
+          "mean": -0.2815,
+          "min": -1.3758
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0236,
+          "min": -0.0471
+        },
+        "text": {
+          "n_tokens": 4,
+          "mean": -0.1915,
+          "min": -0.5771
+        }
+      },
+      "ink": {
+        "ink_px": 836,
+        "area_px": 5046,
+        "density": 0.16568,
+        "chars": 9,
+        "chars_per_1k_ink": 10.77
+      }
+    },
+    {
+      "bbox": [
+        186,
+        366,
+        1538,
+        468
+      ],
+      "category": "Text",
+      "text": "List of laws and regulations for which suspension continues for any facility subject to this order, including any operated by or on behalf of DSS or DHS, and any other facility existing on the effective date of this order: ",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2263,
+          "min": -1.1174
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.1805,
+          "min": -0.1805
+        },
+        "text": {
+          "n_tokens": 44,
+          "mean": -0.0026,
+          "min": -0.0813
+        }
+      },
+      "ink": {
+        "ink_px": 11969,
+        "area_px": 131784,
+        "density": 0.09082,
+        "chars": 223,
+        "chars_per_1k_ink": 18.63
+      }
+    },
+    {
+      "bbox": [
+        237,
+        511,
+        1487,
+        578
+      ],
+      "category": "List-item",
+      "text": "1. Sections 21-309 and 21-312 of the Administrative Code. (EEO No. 886, dated November 19, 2025, \u00a7 3, para. (d) and (g)) ",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.1987,
+          "min": -1.0038
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0007,
+          "min": -0.0014
+        },
+        "text": {
+          "n_tokens": 59,
+          "mean": -0.0013,
+          "min": -0.0339
+        }
+      },
+      "ink": {
+        "ink_px": 2332,
+        "area_px": 83482,
+        "density": 0.02793,
+        "chars": 121,
+        "chars_per_1k_ink": 51.89
+      }
+    },
+    {
+      "bbox": [
+        235,
+        619,
+        1267,
+        650
+      ],
+      "category": "List-item",
+      "text": "2. Sections 21-124. (EEO No. 886, dated November 19, 2025, \u00a7 3, para. (h)(i)) ",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.1746,
+          "min": -0.8626
+        },
+        "category": {
+          "n_tokens": 2,
+          "mean": -0.0018,
+          "min": -0.0036
+        },
+        "text": {
+          "n_tokens": 45,
+          "mean": -0.0015,
+          "min": -0.0323
+        }
+      },
+      "ink": {
+        "ink_px": 1513,
+        "area_px": 32928,
+        "density": 0.04595,
+        "chars": 78,
+        "chars_per_1k_ink": 51.55
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 296,
+    "content": {
+      "n_tokens": 152,
+      "mean": -0.0067,
+      "min": -0.5771,
+      "p05": -0.0062,
+      "p50": -0.0002,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 38,
+          "token_id": 330,
+          "logprob": -0.5771,
+          "text": " \""
+        },
+        {
+          "index": 35,
+          "token_id": 14707,
+          "logprob": -0.1886,
+          "text": "APP"
+        },
+        {
+          "index": 74,
+          "token_id": 852,
+          "logprob": -0.0813,
+          "text": "List"
+        },
+        {
+          "index": 206,
+          "token_id": 67,
+          "logprob": -0.0339,
+          "text": "d"
+        },
+        {
+          "index": 282,
+          "token_id": 16625,
+          "logprob": -0.0323,
+          "text": " \u00a7"
+        },
+        {
+          "index": 210,
+          "token_id": 70,
+          "logprob": -0.0079,
+          "text": "g"
+        },
+        {
+          "index": 251,
+          "token_id": 59037,
+          "logprob": -0.0079,
+          "text": " Sections"
+        },
+        {
+          "index": 250,
+          "token_id": 13,
+          "logprob": -0.0078,
+          "text": "."
+        },
+        {
+          "index": 111,
+          "token_id": 7373,
+          "logprob": -0.005,
+          "text": " effective"
+        },
+        {
+          "index": 290,
+          "token_id": 2376,
+          "logprob": -0.0048,
+          "text": ")("
+        },
+        {
+          "index": 192,
+          "token_id": 11,
+          "logprob": -0.0048,
+          "text": ","
+        },
+        {
+          "index": 154,
+          "token_id": 16,
+          "logprob": -0.0046,
+          "text": "1"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 82,
+      "mean": -0.2036,
+      "min": -1.3758,
+      "p05": -0.9585,
+      "p50": -0.0003,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 22,
+          "token_id": 20,
+          "logprob": -1.3758,
+          "text": "5"
+        },
+        {
+          "index": 12,
+          "token_id": 22,
+          "logprob": -1.1405,
+          "text": "7"
+        },
+        {
+          "index": 57,
+          "token_id": 23,
+          "logprob": -1.1174,
+          "text": "8"
+        },
+        {
+          "index": 136,
+          "token_id": 22,
+          "logprob": -1.0038,
+          "text": "7"
+        },
+        {
+          "index": 7,
+          "token_id": 20,
+          "logprob": -0.9591,
+          "text": "5"
+        },
+        {
+          "index": 51,
+          "token_id": 21,
+          "logprob": -0.9476,
+          "text": "6"
+        },
+        {
+          "index": 46,
+          "token_id": 21,
+          "logprob": -0.9095,
+          "text": "6"
+        },
+        {
+          "index": 17,
+          "token_id": 24,
+          "logprob": -0.9012,
+          "text": "9"
+        },
+        {
+          "index": 62,
+          "token_id": 23,
+          "logprob": -0.8742,
+          "text": "8"
+        },
+        {
+          "index": 231,
+          "token_id": 22,
+          "logprob": -0.8626,
+          "text": "7"
+        },
+        {
+          "index": 141,
+          "token_id": 23,
+          "logprob": -0.8491,
+          "text": "8"
+        },
+        {
+          "index": 130,
+          "token_id": 16,
+          "logprob": -0.8463,
+          "text": "1"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 296,
+      "mean": -0.0619,
+      "min": -1.3758,
+      "p05": -0.5878,
+      "p50": -0.0001,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 250.14,
+    "std": 21.03,
+    "dark_fraction": 0.00732
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      612.0,
+      792.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1496,
+      2200
+    ],
+    "ink_px": 16650,
+    "rule_px": 0,
+    "covered_px": 16650,
+    "covered_fraction": 1.0,
+    "uncovered_px": 0,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

@@ -28,7 +28,13 @@
           "min": -0.0186
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 9,
+        "area_px": 861,
+        "density": 0.01045,
+        "chars": 3,
+        "chars_per_1k_ink": 333.33
+      }
     },
     {
       "bbox": [
@@ -38,7 +44,7 @@
         267
       ],
       "category": "List-item",
-      "text": "§2. All processing backlogs in all agencies be eliminated and workloads reduced to current status by July 30, 1970;",
+      "text": "\u00a72. All processing backlogs in all agencies be eliminated and workloads reduced to current status by July 30, 1970;",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -57,11 +63,11 @@
         }
       },
       "ink": {
-        "ink_px": 253,
-        "area_px": 63090,
-        "density": 0.00401,
+        "ink_px": 403,
+        "area_px": 79914,
+        "density": 0.00504,
         "chars": 115,
-        "chars_per_1k_ink": 454.55
+        "chars_per_1k_ink": 285.36
       }
     },
     {
@@ -72,7 +78,7 @@
         441
       ],
       "category": "List-item",
-      "text": "§3. The Director of the Bureau of the Budget is authorized to approve overtime requests in conformity with existing City policy as required to accomplish this end;",
+      "text": "\u00a73. The Director of the Bureau of the Budget is authorized to approve overtime requests in conformity with existing City policy as required to accomplish this end;",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -106,7 +112,7 @@
         575
       ],
       "category": "List-item",
-      "text": "§4. All City agencies cooperate with and comply with the directives issued by the joint Mayor-Comptroller task force.",
+      "text": "\u00a74. All City agencies cooperate with and comply with the directives issued by the joint Mayor-Comptroller task force.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -140,7 +146,7 @@
         623
       ],
       "category": "List-item",
-      "text": "§5. This order shall take effect immediately.",
+      "text": "\u00a75. This order shall take effect immediately.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -259,7 +265,7 @@
           "index": 70,
           "token_id": 17851,
           "logprob": -0.0127,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 75,
@@ -425,15 +431,26 @@
   "ink_coverage": {
     "roi": [
       140,
-      178,
+      0,
       1033,
-      1306
+      1449
     ],
-    "ink_px": 1155,
-    "covered_px": 1155,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 3587,
+    "rule_px": 0,
+    "covered_px": 1314,
+    "covered_fraction": 0.36632,
+    "uncovered_px": 2273,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          387,
+          1404,
+          920,
+          1449
+        ],
+        "ink_px": 1993
+      }
+    ],
     "cell_px": 24
   }
 }

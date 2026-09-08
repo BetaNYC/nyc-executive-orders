@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 17256,
+        "area_px": 52030,
+        "density": 0.33165,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
     },
     {
       "bbox": [
@@ -52,11 +58,11 @@
         }
       },
       "ink": {
-        "ink_px": 3893,
-        "area_px": 37048,
-        "density": 0.10508,
+        "ink_px": 6248,
+        "area_px": 52204,
+        "density": 0.11968,
         "chars": 53,
-        "chars_per_1k_ink": 13.61
+        "chars_per_1k_ink": 8.48
       }
     },
     {
@@ -203,7 +209,7 @@
         1127
       ],
       "category": "Text",
-      "text": "§4. Effective Date. This order shall take effect forthwith.",
+      "text": "\u00a74. Effective Date. This order shall take effect forthwith.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -288,7 +294,7 @@
           "index": 284,
           "token_id": 17851,
           "logprob": -0.0349,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 65,
@@ -454,15 +460,35 @@
   "ink_coverage": {
     "roi": [
       284,
-      415,
+      100,
       2084,
-      3044
+      3362
     ],
-    "ink_px": 9787,
-    "covered_px": 9787,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 32748,
+    "rule_px": 1340,
+    "covered_px": 29398,
+    "covered_fraction": 0.936,
+    "uncovered_px": 2010,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1304,
+          149,
+          1349,
+          218
+        ],
+        "ink_px": 941
+      },
+      {
+        "bbox": [
+          1652,
+          3359,
+          2084,
+          3362
+        ],
+        "ink_px": 480
+      }
+    ],
     "cell_px": 24
   }
 }

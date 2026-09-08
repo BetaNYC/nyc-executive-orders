@@ -10,7 +10,7 @@
         346
       ],
       "category": "Section-header",
-      "text": "## § 2. Implementation",
+      "text": "## \u00a7 2. Implementation",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 18,
@@ -28,7 +28,13 @@
           "min": -0.4853
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 274,
+        "area_px": 21825,
+        "density": 0.01255,
+        "chars": 22,
+        "chars_per_1k_ink": 80.29
+      }
     },
     {
       "bbox": [
@@ -106,7 +112,7 @@
         1856
       ],
       "category": "Section-header",
-      "text": "## § 3. Compilation and Analysis of Productivity Data",
+      "text": "## \u00a7 3. Compilation and Analysis of Productivity Data",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -220,7 +226,7 @@
           "index": 36,
           "token_id": 16625,
           "logprob": -0.0058,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 386,
@@ -362,15 +368,26 @@
   "ink_coverage": {
     "roi": [
       260,
-      423,
+      101,
       1913,
-      3104
+      3430
     ],
-    "ink_px": 17751,
-    "covered_px": 17452,
-    "covered_fraction": 0.98316,
-    "uncovered_px": 299,
-    "uncovered_regions": [],
+    "ink_px": 19415,
+    "rule_px": 290,
+    "covered_px": 17726,
+    "covered_fraction": 0.92685,
+    "uncovered_px": 1399,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1556,
+          3426,
+          1913,
+          3430
+        ],
+        "ink_px": 413
+      }
+    ],
     "cell_px": 24
   }
 }

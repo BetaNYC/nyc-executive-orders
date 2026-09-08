@@ -28,7 +28,13 @@
           "min": -0.0128
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 8,
+        "area_px": 1300,
+        "density": 0.00615,
+        "chars": 3,
+        "chars_per_1k_ink": 375.0
+      }
     },
     {
       "bbox": [
@@ -56,7 +62,13 @@
           "min": -0.5326
         }
       },
-      "ink": null
+      "ink": {
+        "ink_px": 17,
+        "area_px": 19050,
+        "density": 0.00089,
+        "chars": 42,
+        "chars_per_1k_ink": 2470.59
+      }
     },
     {
       "bbox": [
@@ -66,7 +78,7 @@
         431
       ],
       "category": "Text",
-      "text": "§4. The Development Group shall co-ordinate the planning and\ndevelopment strategies of the area bounded by Dean Street, Classon Avenue,\nFlushing Street, Navy Street, East River, Fulton Street and to Court\nStreet, including the Atlantic Terminal Urban Renewal Project and the\nBrooklyn Center Urban Renewal Project.",
+      "text": "\u00a74. The Development Group shall co-ordinate the planning and\ndevelopment strategies of the area bounded by Dean Street, Classon Avenue,\nFlushing Street, Navy Street, East River, Fulton Street and to Court\nStreet, including the Atlantic Terminal Urban Renewal Project and the\nBrooklyn Center Urban Renewal Project.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -85,11 +97,11 @@
         }
       },
       "ink": {
-        "ink_px": 475,
-        "area_px": 236168,
-        "density": 0.00201,
+        "ink_px": 549,
+        "area_px": 271816,
+        "density": 0.00202,
         "chars": 313,
-        "chars_per_1k_ink": 658.95
+        "chars_per_1k_ink": 570.13
       }
     },
     {
@@ -270,7 +282,7 @@
         1663
       ],
       "category": "Text",
-      "text": "§5. Coordination - All actions taken by any City agency with respect to the redevelopment of Downtown Brooklyn or the Plan or to any matters which may materially affect the development of the area or the implementation of the plan, including: the exercise of any agency's liaison responsibilities with Metropolitan Transportation Authority, the Urban Development Corporation and other State, Multi-State and Federal agencies, the submission of applications to Federal and State agreements, and the undertaking of joint studies involving the City and State, Multi-State and Federal agencies, shall",
+      "text": "\u00a75. Coordination - All actions taken by any City agency with respect to the redevelopment of Downtown Brooklyn or the Plan or to any matters which may materially affect the development of the area or the implementation of the plan, including: the exercise of any agency's liaison responsibilities with Metropolitan Transportation Authority, the Urban Development Corporation and other State, Multi-State and Federal agencies, the submission of applications to Federal and State agreements, and the undertaking of joint studies involving the City and State, Multi-State and Federal agencies, shall",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 21,
@@ -289,11 +301,11 @@
         }
       },
       "ink": {
-        "ink_px": 1702,
-        "area_px": 384330,
-        "density": 0.00443,
+        "ink_px": 2108,
+        "area_px": 453398,
+        "density": 0.00465,
         "chars": 596,
-        "chars_per_1k_ink": 350.18
+        "chars_per_1k_ink": 282.73
       }
     }
   ],
@@ -314,7 +326,7 @@
           "index": 111,
           "token_id": 17851,
           "logprob": -0.9333,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 72,
@@ -380,7 +392,7 @@
           "index": 550,
           "token_id": 17851,
           "logprob": -0.0056,
-          "text": "§"
+          "text": "\u00a7"
         }
       ]
     },
@@ -492,14 +504,15 @@
   "ink_coverage": {
     "roi": [
       175,
-      217,
+      0,
       1289,
-      1592
+      1755
     ],
-    "ink_px": 4415,
-    "covered_px": 4415,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
+    "ink_px": 5035,
+    "rule_px": 0,
+    "covered_px": 4920,
+    "covered_fraction": 0.97716,
+    "uncovered_px": 115,
     "uncovered_regions": [],
     "cell_px": 24
   }

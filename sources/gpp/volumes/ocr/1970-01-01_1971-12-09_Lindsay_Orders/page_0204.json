@@ -23,7 +23,13 @@
         },
         "text": null
       },
-      "ink": null
+      "ink": {
+        "ink_px": 0,
+        "area_px": 8906,
+        "density": 0.0,
+        "chars": 0,
+        "chars_per_1k_ink": null
+      }
     },
     {
       "bbox": [
@@ -47,9 +53,9 @@
         "text": null
       },
       "ink": {
-        "ink_px": 386,
-        "area_px": 2016,
-        "density": 0.19147,
+        "ink_px": 5175,
+        "area_px": 22320,
+        "density": 0.23185,
         "chars": 0,
         "chars_per_1k_ink": 0.0
       }
@@ -232,7 +238,7 @@
         1054
       ],
       "category": "Text",
-      "text": "WHEREAS, §228 (c) of the New York City Charter reserves to the Mayor the power to \"adopt rules and regulations in regard to the execution of capital projects which....shall be binding upon all agencies\";",
+      "text": "WHEREAS, \u00a7228 (c) of the New York City Charter reserves to the Mayor the power to \"adopt rules and regulations in regard to the execution of capital projects which....shall be binding upon all agencies\";",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -420,7 +426,7 @@
           "index": 373,
           "token_id": 16625,
           "logprob": -0.0053,
-          "text": " §"
+          "text": " \u00a7"
         },
         {
           "index": 387,
@@ -556,15 +562,35 @@
   "ink_coverage": {
     "roi": [
       158,
-      208,
+      0,
       1161,
-      1530
+      1682
     ],
-    "ink_px": 1381,
-    "covered_px": 1381,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 8240,
+    "rule_px": 660,
+    "covered_px": 6170,
+    "covered_fraction": 0.81398,
+    "uncovered_px": 1410,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          926,
+          1647,
+          1161,
+          1682
+        ],
+        "ink_px": 507
+      },
+      {
+        "bbox": [
+          567,
+          1658,
+          635,
+          1675
+        ],
+        "ink_px": 449
+      }
+    ],
     "cell_px": 24
   }
 }

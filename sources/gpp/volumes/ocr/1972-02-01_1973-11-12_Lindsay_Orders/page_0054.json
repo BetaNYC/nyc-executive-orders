@@ -29,11 +29,11 @@
         }
       },
       "ink": {
-        "ink_px": 77,
-        "area_px": 68675,
-        "density": 0.00112,
+        "ink_px": 1300,
+        "area_px": 234500,
+        "density": 0.00554,
         "chars": 147,
-        "chars_per_1k_ink": 1909.09
+        "chars_per_1k_ink": 113.08
       }
     },
     {
@@ -44,7 +44,7 @@
         615
       ],
       "category": "Text",
-      "text": "§3. The Commissioner of Addiction Services shall have the following functions, powers and duties to enable him to deal effectively with addiction resulting from narcotics and dangerous drugs of any type:",
+      "text": "\u00a73. The Commissioner of Addiction Services shall have the following functions, powers and duties to enable him to deal effectively with addiction resulting from narcotics and dangerous drugs of any type:",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 19,
@@ -384,7 +384,7 @@
         2411
       ],
       "category": "Text",
-      "text": "§4. This order rescinds and supersedes Executive Order No. 57 dated December 22, 1967.",
+      "text": "\u00a74. This order rescinds and supersedes Executive Order No. 57 dated December 22, 1967.",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -434,7 +434,7 @@
           "index": 96,
           "token_id": 17851,
           "logprob": -0.5369,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 47,
@@ -464,7 +464,7 @@
           "index": 790,
           "token_id": 17851,
           "logprob": -0.0326,
-          "text": "§"
+          "text": "\u00a7"
         },
         {
           "index": 108,
@@ -606,15 +606,26 @@
   "ink_coverage": {
     "roi": [
       264,
-      418,
+      94,
       1939,
-      3069
+      3397
     ],
-    "ink_px": 6426,
-    "covered_px": 6426,
-    "covered_fraction": 1.0,
-    "uncovered_px": 0,
-    "uncovered_regions": [],
+    "ink_px": 9116,
+    "rule_px": 623,
+    "covered_px": 7649,
+    "covered_fraction": 0.90062,
+    "uncovered_px": 844,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          1442,
+          3392,
+          1939,
+          3397
+        ],
+        "ink_px": 657
+      }
+    ],
     "cell_px": 24
   }
 }

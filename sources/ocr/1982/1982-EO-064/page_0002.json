@@ -1,0 +1,378 @@
+{
+  "page": 2,
+  "source_image": "page_0002.png",
+  "elements": [
+    {
+      "bbox": [
+        233,
+        365,
+        1402,
+        592
+      ],
+      "category": "Text",
+      "text": "active in the preservation and enhancement of a livable\ncity, such as, The Municipal Art Society, The Landmarks\nConservancy, The Public Art Fund, The Parks Council,\nThe Architectural League, The New York Chapter of the\nAmerican Institute of Architects, The Fine Arts Federation,\nThe New York Commission on Cultural Affairs and the New\nYork City Art Commission, and other interested groups.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.3071,
+          "min": -1.6013
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 82,
+          "mean": -0.0011,
+          "min": -0.0764
+        }
+      },
+      "ink": {
+        "ink_px": 35013,
+        "area_px": 267701,
+        "density": 0.13079,
+        "chars": 389,
+        "chars_per_1k_ink": 11.11
+      }
+    },
+    {
+      "bbox": [
+        233,
+        627,
+        1367,
+        752
+      ],
+      "category": "Text",
+      "text": "The Mayor will select the final recipient, in consultation with the Chairman of the Landmarks Preservation Commission, the Commissioner of Cultural Affairs and the Commissioner of Parks and Recreation.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2881,
+          "min": -1.4635
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 33,
+          "mean": -0.0185,
+          "min": -0.6029
+        }
+      },
+      "ink": {
+        "ink_px": 18574,
+        "area_px": 142884,
+        "density": 0.12999,
+        "chars": 201,
+        "chars_per_1k_ink": 10.82
+      }
+    },
+    {
+      "bbox": [
+        233,
+        790,
+        1447,
+        954
+      ],
+      "category": "Text",
+      "text": "Section 5. Award Presentation Date. The 1982 Award shall be presented within six months of the effective date of this order. Thereafter, the Award shall be presented on April 25 each year in commemoration of Doris C. Freedman's birthday.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 19,
+          "mean": -0.2542,
+          "min": -1.2669
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0069,
+          "min": -0.0069
+        },
+        "text": {
+          "n_tokens": 57,
+          "mean": -0.0083,
+          "min": -0.2828
+        }
+      },
+      "ink": {
+        "ink_px": 22623,
+        "area_px": 201524,
+        "density": 0.11226,
+        "chars": 237,
+        "chars_per_1k_ink": 10.48
+      }
+    },
+    {
+      "bbox": [
+        235,
+        989,
+        1427,
+        1053
+      ],
+      "category": "Text",
+      "text": "Section 6. Effective Date. This Executive Order shall take effect immediately.",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 20,
+          "mean": -0.2565,
+          "min": -1.3546
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0001,
+          "min": -0.0001
+        },
+        "text": {
+          "n_tokens": 15,
+          "mean": -0.0379,
+          "min": -0.5457
+        }
+      },
+      "ink": {
+        "ink_px": 7805,
+        "area_px": 77480,
+        "density": 0.10074,
+        "chars": 78,
+        "chars_per_1k_ink": 9.99
+      }
+    },
+    {
+      "bbox": [
+        913,
+        1072,
+        1520,
+        1243
+      ],
+      "category": "Picture",
+      "logprob_stats": {
+        "bbox": {
+          "n_tokens": 21,
+          "mean": -0.3315,
+          "min": -1.6703
+        },
+        "category": {
+          "n_tokens": 1,
+          "mean": -0.0307,
+          "min": -0.0307
+        },
+        "text": null
+      },
+      "ink": {
+        "ink_px": 8512,
+        "area_px": 101480,
+        "density": 0.08388,
+        "chars": 0,
+        "chars_per_1k_ink": 0.0
+      }
+    }
+  ],
+  "debug_decode_matches_stream": true,
+  "finish_reason": "stop",
+  "logprobs": {
+    "threshold": -2.0,
+    "n_generated_tokens": 363,
+    "content": {
+      "n_tokens": 187,
+      "mean": -0.0093,
+      "min": -0.6029,
+      "p05": -0.003,
+      "p50": -0.0,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 161,
+          "token_id": 28073,
+          "logprob": -0.6029,
+          "text": " consultation"
+        },
+        {
+          "index": 324,
+          "token_id": 1896,
+          "logprob": -0.5457,
+          "text": " take"
+        },
+        {
+          "index": 235,
+          "token_id": 4880,
+          "logprob": -0.2828,
+          "text": " shall"
+        },
+        {
+          "index": 224,
+          "token_id": 17318,
+          "logprob": -0.1875,
+          "text": " Award"
+        },
+        {
+          "index": 45,
+          "token_id": 59,
+          "logprob": -0.0764,
+          "text": "\\"
+        },
+        {
+          "index": 313,
+          "token_id": 9620,
+          "logprob": -0.0135,
+          "text": "Section"
+        },
+        {
+          "index": 317,
+          "token_id": 46923,
+          "logprob": -0.0063,
+          "text": " Effective"
+        },
+        {
+          "index": 184,
+          "token_id": 1189,
+          "logprob": -0.0053,
+          "text": ".\""
+        },
+        {
+          "index": 35,
+          "token_id": 3028,
+          "logprob": -0.0034,
+          "text": "active"
+        },
+        {
+          "index": 96,
+          "token_id": 88230,
+          "logprob": -0.0032,
+          "text": "nThe"
+        },
+        {
+          "index": 74,
+          "token_id": 88230,
+          "logprob": -0.0025,
+          "text": "nThe"
+        },
+        {
+          "index": 220,
+          "token_id": 9620,
+          "logprob": -0.0022,
+          "text": "Section"
+        }
+      ]
+    },
+    "layout": {
+      "n_tokens": 103,
+      "mean": -0.2745,
+      "min": -1.6703,
+      "p05": -1.4016,
+      "p50": -0.0001,
+      "n_below_threshold": 0,
+      "worst_tokens": [
+        {
+          "index": 335,
+          "token_id": 18,
+          "logprob": -1.6703,
+          "text": "3"
+        },
+        {
+          "index": 7,
+          "token_id": 18,
+          "logprob": -1.6013,
+          "text": "3"
+        },
+        {
+          "index": 140,
+          "token_id": 17,
+          "logprob": -1.4635,
+          "text": "2"
+        },
+        {
+          "index": 341,
+          "token_id": 17,
+          "logprob": -1.414,
+          "text": "2"
+        },
+        {
+          "index": 18,
+          "token_id": 17,
+          "logprob": -1.4104,
+          "text": "2"
+        },
+        {
+          "index": 12,
+          "token_id": 20,
+          "logprob": -1.4068,
+          "text": "5"
+        },
+        {
+          "index": 284,
+          "token_id": 20,
+          "logprob": -1.3546,
+          "text": "5"
+        },
+        {
+          "index": 347,
+          "token_id": 15,
+          "logprob": -1.3444,
+          "text": "0"
+        },
+        {
+          "index": 135,
+          "token_id": 22,
+          "logprob": -1.3013,
+          "text": "7"
+        },
+        {
+          "index": 295,
+          "token_id": 22,
+          "logprob": -1.2911,
+          "text": "7"
+        },
+        {
+          "index": 301,
+          "token_id": 18,
+          "logprob": -1.276,
+          "text": "3"
+        },
+        {
+          "index": 203,
+          "token_id": 22,
+          "logprob": -1.2669,
+          "text": "7"
+        }
+      ]
+    },
+    "all": {
+      "n_tokens": 363,
+      "mean": -0.0832,
+      "min": -1.6703,
+      "p05": -0.6791,
+      "p50": -0.0,
+      "n_below_threshold": 0
+    },
+    "attribution": "exact"
+  },
+  "page_stats": {
+    "mean": 243.4,
+    "std": 49.38,
+    "dark_fraction": 0.04185
+  },
+  "rotation": {
+    "applied_cw": 0,
+    "source": "auto-aspect",
+    "pdf_page_size": [
+      614.0,
+      808.0
+    ]
+  },
+  "ink_coverage": {
+    "roi": [
+      204,
+      0,
+      1501,
+      2245
+    ],
+    "ink_px": 92967,
+    "rule_px": 0,
+    "covered_px": 92527,
+    "covered_fraction": 0.99527,
+    "uncovered_px": 440,
+    "uncovered_regions": [],
+    "cell_px": 24
+  }
+}

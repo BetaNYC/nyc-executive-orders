@@ -10,7 +10,7 @@
         1306
       ],
       "category": "Text",
-      "text": "ماد یا یا یا",
+      "text": "\u0645\u0627\u062f \u06cc\u0627 \u06cc\u0627 \u06cc\u0627",
       "logprob_stats": {
         "bbox": {
           "n_tokens": 20,
@@ -54,7 +54,7 @@
           "index": 36,
           "token_id": 10176,
           "logprob": -2.4872,
-          "text": "م"
+          "text": "\u0645"
         },
         {
           "index": 41,
@@ -72,13 +72,13 @@
           "index": 37,
           "token_id": 65398,
           "logprob": -1.4043,
-          "text": "اد"
+          "text": "\u0627\u062f"
         },
         {
           "index": 43,
           "token_id": 5703,
           "logprob": -1.2885,
-          "text": "ا"
+          "text": "\u0627"
         },
         {
           "index": 44,
@@ -90,31 +90,31 @@
           "index": 39,
           "token_id": 14391,
           "logprob": -0.8348,
-          "text": "ی"
+          "text": "\u06cc"
         },
         {
           "index": 42,
           "token_id": 14391,
           "logprob": -0.7469,
-          "text": "ی"
+          "text": "\u06cc"
         },
         {
           "index": 40,
           "token_id": 5703,
           "logprob": -0.4442,
-          "text": "ا"
+          "text": "\u0627"
         },
         {
           "index": 46,
           "token_id": 5703,
           "logprob": -0.3061,
-          "text": "ا"
+          "text": "\u0627"
         },
         {
           "index": 45,
           "token_id": 14391,
           "logprob": -0.1275,
-          "text": "ی"
+          "text": "\u06cc"
         }
       ]
     },
@@ -226,15 +226,26 @@
   "ink_coverage": {
     "roi": [
       139,
-      218,
+      54,
       1021,
-      1601
+      1820
     ],
-    "ink_px": 14,
+    "ink_px": 2290,
+    "rule_px": 514,
     "covered_px": 0,
     "covered_fraction": 0.0,
-    "uncovered_px": 14,
-    "uncovered_regions": [],
+    "uncovered_px": 1776,
+    "uncovered_regions": [
+      {
+        "bbox": [
+          523,
+          63,
+          715,
+          102
+        ],
+        "ink_px": 1147
+      }
+    ],
     "cell_px": 24
   }
 }

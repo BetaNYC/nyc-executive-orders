@@ -1,0 +1,56 @@
+{
+  "source_image": "header-crop.png",
+  "source_page_render": "vlm-ocr-runs/post1974/1974/1974-EO-001/raw/page_0001.png",
+  "crop_box": [
+    0,
+    0,
+    1762,
+    460
+  ],
+  "model": "mlx-community/dots.mocr-4bit",
+  "finish_reason": "stop",
+  "n_generated_tokens": 175,
+  "elements": [
+    {
+      "bbox": [
+        296,
+        23,
+        546,
+        100
+      ],
+      "category": "Text",
+      "text": "EO#1"
+    },
+    {
+      "bbox": [
+        701,
+        35,
+        1186,
+        141
+      ],
+      "category": "Text",
+      "text": "The City Record"
+    },
+    {
+      "bbox": [
+        959,
+        131,
+        1292,
+        211
+      ],
+      "category": "Text",
+      "text": "JAN 4, 1974"
+    },
+    {
+      "bbox": [
+        990,
+        203,
+        1462,
+        358
+      ],
+      "category": "Text",
+      "text": "(vol. cm/No. 30505 mp 57-8)"
+    }
+  ],
+  "raw_text": "[{\"bbox\": [296, 23, 546, 100], \"category\": \"Text\", \"text\": \"EO#1\"}, {\"bbox\": [701, 35, 1186, 141], \"category\": \"Text\", \"text\": \"The City Record\"}, {\"bbox\": [959, 131, 1292, 211], \"category\": \"Text\", \"text\": \"JAN 4, 1974\"}, {\"bbox\": [990, 203, 1462, 358], \"category\": \"Text\", \"text\": \"(vol. cm/No. 30505 mp 57-8)\"}]"
+}
