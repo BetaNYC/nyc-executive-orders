@@ -3,8 +3,11 @@
 
 The comparison is exact and costs nothing, because `corpus/eo.json` is committed
 and already holds `full_text_raw` — the verbatim Tesseract transcription — for the
-1,019 orders that have one. Snapshot the metrics BEFORE the first rebuild
-overwrites that file, then diff every document against its own past.
+1,019 orders that have one. A rebuild overwrites that file, but git keeps every
+version of it, so the baseline is a REVISION, not a file you must remember to
+write first. This script reads the newest revision that predates the rebuild —
+the newest one in which no record yet says `ocr-vlm` — and diffs every document
+against its own past. Name a revision yourself with `--baseline-rev`.
 
 Three stages:
 
@@ -20,9 +23,11 @@ Hard failures (non-zero exit) are things no threshold should excuse: a document
 that lost text it used to have, a selected document with no records, a document
 whose every page came back blank. Everything else is listed for a human.
 
-    python scripts/report_post1974_ocr.py --snapshot          # do this FIRST
     python scripts/report_post1974_ocr.py --stage classify
     python scripts/report_post1974_ocr.py --stage diff --samples 10
+
+Run this at home, not on the OCR box: it needs the git history the box does not
+have. The box only produces page records under sources/ocr/.
 
 No network. No model. Reads committed files and writes a report.
 """
@@ -32,6 +37,7 @@ from __future__ import annotations
 import argparse
 import difflib
 import json
+import subprocess
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -49,7 +55,6 @@ from nyc_executive_orders.vlm_corpus import (  # noqa: E402
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RECORDS = REPO_ROOT / "corpus" / "eo.json"
 DEFAULT_OCR_ROOT = REPO_ROOT / "sources" / "ocr"
-DEFAULT_BASELINE = REPO_ROOT / "sources" / "ocr" / "_tesseract_baseline.json"
 DEFAULT_REPORT = REPO_ROOT / "post1974_ocr_report.md"
 
 # A document below this share of its old character count lost something. Listed
@@ -71,6 +76,11 @@ def _quiet_mupdf() -> None:
         pass
 
 
+def record_text(record: dict) -> str:
+    """The raw transcription of a record, whichever field holds it."""
+    return record.get("full_text_raw") or record.get("full_text") or ""
+
+
 def metrics(text: str) -> dict:
     """The same three numbers clean._tier decides a record's quality on."""
     return {
@@ -81,29 +91,84 @@ def metrics(text: str) -> dict:
 
 
 # --------------------------------------------------------------------------- #
-# Baseline snapshot                                                             #
+# Baseline — the pre-rebuild corpus, read out of git                            #
 # --------------------------------------------------------------------------- #
 
-def snapshot(records: list[dict], out_path: Path) -> dict:
-    """Freeze the Tesseract metrics before a rebuild overwrites corpus/eo.json.
+def baseline_from_records(records: list[dict]) -> dict:
+    """Metrics AND text for every record Tesseract transcribed, keyed by eo_id.
 
-    Metrics only, never a second copy of the text: ~200 KB rather than megabytes,
-    and the text itself stays exactly where it already is, in git history.
+    The text rides along because the stage 2 sample diffs need the old side
+    verbatim. Nothing is written to disk: this is one revision of a committed
+    file, so the only copy that matters is already in git.
     """
     payload = {}
     for r in records:
         if r.get("text_source") != "ocr":
             continue
-        text = r.get("full_text_raw") or r.get("full_text") or ""
+        text = record_text(r)
         payload[r["eo_id"]] = {
             **metrics(text),
+            "text": text,
             "text_quality": r.get("text_quality"),
             "page_count": r.get("page_count"),
         }
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n",
-                        encoding="utf-8")
     return payload
+
+
+def _rel_to_repo(path: Path) -> str:
+    try:
+        return str(path.resolve().relative_to(REPO_ROOT))
+    except ValueError:
+        return str(path)
+
+
+def _git_show(rev: str, rel_path: str) -> str | None:
+    """One revision of one file, or None if git cannot produce it."""
+    try:
+        done = subprocess.run(["git", "show", f"{rev}:{rel_path}"],
+                              cwd=REPO_ROOT, capture_output=True, text=True)
+    except OSError:
+        return None
+    return done.stdout if done.returncode == 0 else None
+
+
+def _git_revisions(rel_path: str, limit: int) -> list[str]:
+    """The commits that touched one file, newest first."""
+    try:
+        done = subprocess.run(["git", "log", f"-{limit}", "--format=%H", "--", rel_path],
+                              cwd=REPO_ROOT, capture_output=True, text=True)
+    except OSError:
+        return []
+    if done.returncode != 0:
+        return []
+    return [line for line in done.stdout.split() if line]
+
+
+def load_baseline(records_path: Path, rev: str | None = None,
+                  max_revs: int = 20) -> tuple[dict, str]:
+    """The Tesseract baseline, measured from git. Returns (baseline, label).
+
+    Without `rev`, walk the history of the records file newest first and take
+    the first revision that predates the VLM rebuild — the first one in which no
+    record says `ocr-vlm`. The working tree is never a candidate: after a rebuild
+    it holds the NEW text, which would put the same text on both sides of every
+    sample diff and produce an empty diff for every document.
+    """
+    rel_path = _rel_to_repo(records_path)
+    for candidate in ([rev] if rev else _git_revisions(rel_path, max_revs)):
+        raw = _git_show(candidate, rel_path)
+        if raw is None:
+            continue
+        try:
+            records = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+        if rev is None and any(r.get("text_source") == "ocr-vlm" for r in records):
+            continue                      # already rebuilt at this commit; go back
+        payload = baseline_from_records(records)
+        if payload:
+            return payload, f"{candidate[:8]}:{rel_path}"
+    return {}, ""
 
 
 # --------------------------------------------------------------------------- #
@@ -238,12 +303,14 @@ def stage_ocr(candidates, ocr_root: Path) -> tuple[list[str], list[str]]:
 
 
 def stage_diff(candidates, ocr_root: Path, baseline: dict, records: list[dict],
-               samples: int, sample_dir: Path) -> tuple[list[str], list[str]]:
+               samples: int, sample_dir: Path,
+               baseline_label: str = "") -> tuple[list[str], list[str]]:
     """Old Tesseract text vs new VLM text, per document. The cutover gate."""
     lines = ["## Stage 2 — Tesseract vs VLM", ""]
     failures = []
     if not baseline:
-        lines.append("_No baseline. Run `--snapshot` BEFORE the first rebuild._")
+        lines.append("_No baseline. No revision of the records file in git predates "
+                     "the VLM rebuild. Name one with `--baseline-rev`._")
         return lines, failures
 
     by_id = {r["eo_id"]: r for r in records}
@@ -283,6 +350,8 @@ def stage_diff(candidates, ocr_root: Path, baseline: dict, records: list[dict],
     lines += [
         f"Compared **{len(rows)}** document(s) that have both.",
         "",
+        *([f"Tesseract side measured from `{baseline_label}`.", ""]
+          if baseline_label else []),
         f"- **{better}/{len(rows)}** improved or held on BOTH word-ratio and junk-ratio.",
         f"- **{len(lost)}** lost their text entirely (hard failure).",
         f"- **{len(regressions)}** changed length by more than "
@@ -326,7 +395,7 @@ def stage_diff(candidates, ocr_root: Path, baseline: dict, records: list[dict],
         lines.append("")
 
     if samples:
-        written = _write_samples(rows, ocr_root, baseline, records, samples, sample_dir)
+        written = _write_samples(rows, ocr_root, samples, sample_dir)
         if written:
             lines += [f"Side-by-side diffs for the {written} largest changes: "
                       f"`{sample_dir}/`", ""]
@@ -348,15 +417,19 @@ def _expected_tier(vlm, record: dict, year: int) -> str:
     return ("needs-review" if _forced_review(vlm.flags) else result.text_quality)
 
 
-def _write_samples(rows, ocr_root, baseline, records, samples, sample_dir) -> int:
-    by_id = {r["eo_id"]: r for r in records}
+def _write_samples(rows, ocr_root, samples, sample_dir) -> int:
+    """Side-by-side old/new text for the N documents that changed length most.
+
+    The old side comes off the baseline entry, which was read from git. Taking it
+    from the working tree instead would hand back the rebuilt VLM text and make
+    every diff empty.
+    """
     worst = sorted(rows, key=lambda r: abs(1 - r[3]), reverse=True)[:samples]
     if not worst:
         return 0
     sample_dir.mkdir(parents=True, exist_ok=True)
     for eo, old, new, ratio, _, _ in worst:
-        rec = by_id.get(eo, {})
-        old_text = (rec.get("full_text_raw") or rec.get("full_text") or "").splitlines()
+        old_text = old.get("text", "").splitlines()
         vlm = load_vlm_document(ocr_root, int(eo[:4]), eo)
         new_text = vlm.text.splitlines() if vlm else []
         diff = "\n".join(difflib.unified_diff(old_text, new_text,
@@ -380,15 +453,14 @@ def build_arg_parser() -> argparse.ArgumentParser:
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
     p.add_argument("--stage", choices=["classify", "ocr", "diff", "all"], default="all")
-    p.add_argument("--snapshot", action="store_true",
-                   help="Freeze the Tesseract metrics baseline and exit. Do this BEFORE "
-                        "the first rebuild overwrites corpus/eo.json.")
     p.add_argument("--samples", type=int, default=0,
                    help="Write side-by-side diffs for the N largest changes.")
     p.add_argument("--sample-dir", default=str(REPO_ROOT / "sample_vlm_diff"))
+    p.add_argument("--baseline-rev", default=None,
+                   help="Git revision holding the pre-rebuild corpus/eo.json. Default: "
+                        "the newest revision in which no record says `ocr-vlm`.")
     p.add_argument("--records", default=str(DEFAULT_RECORDS))
     p.add_argument("--ocr-root", default=str(DEFAULT_OCR_ROOT))
-    p.add_argument("--baseline", default=str(DEFAULT_BASELINE))
     p.add_argument("--report-path", default=str(DEFAULT_REPORT))
     p.add_argument("--year", type=int, action="append", default=None)
     return p
@@ -399,15 +471,12 @@ def main(argv=None) -> int:
     _quiet_mupdf()
 
     records = json.loads(Path(args.records).read_text(encoding="utf-8"))
-    baseline_path = Path(args.baseline)
-
-    if args.snapshot:
-        payload = snapshot(records, baseline_path)
-        print(f"snapshot: {len(payload)} Tesseract record(s) -> {baseline_path}")
-        return 0
-
-    baseline = (json.loads(baseline_path.read_text(encoding="utf-8"))
-                if baseline_path.is_file() else {})
+    baseline, baseline_label = load_baseline(Path(args.records), args.baseline_rev)
+    if baseline:
+        print(f"baseline: {len(baseline)} Tesseract record(s) from {baseline_label}")
+    else:
+        print("baseline: none — no revision of the records file in git predates the "
+              "VLM rebuild. Name one with --baseline-rev.", file=sys.stderr)
     ocr_root = Path(args.ocr_root)
     candidates = select_candidates(
         records, repo_root=REPO_ROOT,
@@ -429,7 +498,7 @@ def main(argv=None) -> int:
         failures += f
     if args.stage in ("diff", "all"):
         lines, f = stage_diff(candidates, ocr_root, baseline, records,
-                              args.samples, Path(args.sample_dir))
+                              args.samples, Path(args.sample_dir), baseline_label)
         body += lines + [""]
         failures += f
 

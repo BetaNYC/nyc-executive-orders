@@ -1,19 +1,24 @@
 #!/usr/bin/env bash
 # Run the post-1974 VLM OCR on a rented DigitalOcean GPU droplet.
 #
-# Executes post-1974-vlm-execution-instructions.md end to end on a remote NVIDIA
-# card, then brings the outputs home and destroys the box:
+# The box does ONE job: the GPU step. It runs run_post1974_ocr.py and sends the
+# page records home. Everything after that is a local step, because it is cheap,
+# it needs no GPU, and the report needs the git history that the box (an rsync'd
+# file subset, not a clone) does not have.
 #
-#   [1/10] preflight   doctl auth, local tools, the files the run needs
-#   [2/10] provision   create the droplet, wait for it, wait for sshd + nvidia-smi
-#   [3/10] upload      rsync the repo subset + the sibling path dependency
-#   [4/10] install     uv, the vlm-cuda extra, one weight prefetch
-#   [5/10] snapshot    step 1 - freeze the Tesseract metrics
-#   [6/10] ocr         step 2 - run_post1974_ocr.py (the long one)
-#   [7/10] build       step 3 - run_parse.py --ocr-engine vlm
-#   [8/10] report      step 4 - report_post1974_ocr.py --stage diff
-#   [9/10] download    rsync sources/ocr, the logs and the report back
-#  [10/10] teardown    destroy the droplet
+#   [1/7] preflight   doctl auth, local tools, the files the run needs
+#   [2/7] provision   create the droplet, wait for it, wait for sshd + nvidia-smi
+#   [3/7] upload      rsync the repo subset + the sibling path dependency
+#   [4/7] install     uv, the vlm-cuda extra, one weight prefetch
+#   [5/7] ocr         run_post1974_ocr.py (the long one)
+#   [6/7] download    rsync sources/ocr and the logs back
+#   [7/7] teardown    destroy the droplet
+#
+# Then, at home:
+#
+#   uv run python scripts/rebuild_index_from_corpus.py
+#   uv run python scripts/run_parse.py --ocr-engine vlm
+#   uv run python scripts/report_post1974_ocr.py --stage diff --samples 20
 #
 # WARNING: this script rents a GPU by the hour. It destroys the droplet on every
 # exit path, including a failure and a Ctrl-C, unless you pass --keep-box. If the
@@ -26,10 +31,9 @@
 #   ./execute-post-1974-ocr.sh                # the full 1,086-document run
 #   ./execute-post-1974-ocr.sh --destroy-only # kill an orphan from a past run
 #
-# The full run writes to corpus/ and sources/ocr/ in this checkout. The smoke run
-# never touches corpus/: it builds into a scratch directory on the box, because a
-# 1-document build with --ocr-engine vlm marks the other 1,085 documents
-# `ocr-skipped`, which is exactly what the corpus shrink guard exists to stop.
+# The run writes to sources/ocr/ in this checkout and nothing else. corpus/ stays
+# untouched until you run run_parse.py at home, so a part-finished run can never
+# mark the documents it did not reach `ocr-skipped`.
 #
 # Resuming. Page records are the switch, and they come home in sources/ocr/. A
 # second run uploads them again and run_post1974_ocr.py skips every document it
@@ -79,7 +83,6 @@ DESTROY_ONLY=false
 SWEEP=false
 REUSE=""
 FETCH_RENDERS=true
-SKIP_BUILD=false
 
 STATE_DIR="${REPO_ROOT}/.post1974-run"
 DROPLET_ID=""
@@ -118,7 +121,7 @@ hms() {
 # reprints the whole ledger, so a run that fails at phase 6 still says what
 # phases 1-5 cost.
 
-PHASE_NAMES=(preflight provision upload install snapshot ocr build report download teardown)
+PHASE_NAMES=(preflight provision upload install ocr download teardown)
 PHASE_TOTAL=${#PHASE_NAMES[@]}
 PHASE_INDEX=0
 PHASE_CURRENT=""
@@ -267,7 +270,6 @@ Options:
   --max-hours H           Wall-clock cap on the OCR step (default 10). The box
                           stops the run at the cap; page records already written
                           still come home.
-  --skip-build            Stop after the OCR step. Do steps 3 and 4 at home.
   --no-fetch-renders      Do not bring back the flagged page PNGs.
   --keep-box              Do NOT destroy the droplet. It keeps billing.
   --reuse ID_OR_NAME      Attach to an existing droplet instead of creating one.
@@ -293,7 +295,6 @@ while [[ $# -gt 0 ]]; do
         --image)            DROPLET_IMAGE="$2"; shift 2 ;;
         --ssh-key)          SSH_KEY_FILE="$2"; shift 2 ;;
         --max-hours)        MAX_HOURS="$2"; shift 2 ;;
-        --skip-build)       SKIP_BUILD=true; shift ;;
         --no-fetch-renders) FETCH_RENDERS=false; shift ;;
         --keep-box)         KEEP_BOX=true; shift ;;
         --reuse)            REUSE="$2"; shift 2 ;;
@@ -788,18 +789,6 @@ follow_remote_log() {  # remote-log, remote-pidfile, local-mirror
     done
 }
 
-phase_snapshot() {
-    phase_begin snapshot
-    if remote_sh "test -f '${REMOTE_REPO}/sources/ocr/_tesseract_baseline.json'" 2>/dev/null; then
-        phase_skip "baseline already recorded (an earlier run made it)"
-        return 0
-    fi
-    run_remote_step snapshot \
-        "uv run --extra vlm-cuda python scripts/report_post1974_ocr.py --snapshot" \
-        || die "the snapshot step failed -- see ${STATE_DIR}/snapshot.log"
-    phase_end "sources/ocr/_tesseract_baseline.json"
-}
-
 phase_ocr() {
     phase_begin ocr
     local args=(--device cuda --quantization "$QUANTIZATION" --workers "$WORKERS"
@@ -826,52 +815,8 @@ phase_ocr() {
     phase_end "${done_pages} page record(s) on the box"
 }
 
-phase_build() {
-    phase_begin build
-    if $SKIP_BUILD; then
-        phase_skip "--skip-build: do run_parse.py at home"
-        return 0
-    fi
-    # run_parse.py reads index/eo_index.json, which is a gitignored artifact and
-    # is not in the upload. It is a deterministic projection of corpus/eo.json.
-    local corpus_dir="corpus"
-    local note="corpus/ rebuilt from the page records"
-    if $SMOKE; then
-        # A partial --ocr-engine vlm build marks every un-OCR'd document
-        # ocr-skipped. Never point that at the real corpus/.
-        corpus_dir="/root/smoke-corpus"
-        note="built into ${corpus_dir} on the box (smoke run never touches corpus/)"
-    fi
-    run_remote_step build \
-        "uv run --extra vlm-cuda python scripts/rebuild_index_from_corpus.py && uv run --extra vlm-cuda python scripts/run_parse.py --ocr-engine vlm --corpus-dir '${corpus_dir}'" \
-        || die "the build step failed -- see ${STATE_DIR}/build.log"
-    phase_end "$note"
-}
-
-phase_report() {
-    phase_begin report
-    if $SKIP_BUILD; then
-        phase_skip "--skip-build: do report_post1974_ocr.py at home"
-        return 0
-    fi
-    if $SMOKE; then
-        # --stage diff exits non-zero by design here: 1,085 documents have no
-        # records, so it reports them as lost text. Run --stage ocr instead,
-        # which scores only what was actually OCR'd.
-        run_remote_step report \
-            "uv run --extra vlm-cuda python scripts/report_post1974_ocr.py --stage ocr" \
-            || warn "the smoke report exited non-zero -- see ${STATE_DIR}/report.log"
-        phase_end "--stage ocr (smoke; the diff cutover gate needs a full run)"
-        return 0
-    fi
-    run_remote_step report \
-        "uv run --extra vlm-cuda python scripts/report_post1974_ocr.py --stage diff --samples 20" \
-        || warn "THE CUTOVER GATE FAILED: at least one document lost text it used to have. The report is coming home -- read post1974_ocr_report.md before you commit anything."
-    phase_end "post1974_ocr_report.md"
-}
-
 # --------------------------------------------------------------------------- #
-# Phase 9 -- download                                                           #
+# Phase 6 -- download                                                           #
 # --------------------------------------------------------------------------- #
 
 download_outputs() {
@@ -894,15 +839,6 @@ download_outputs() {
         rsync "${pull[@]}" "${REMOTE_USER}@${DROPLET_IP}:${REMOTE_REPO}/vlm-ocr-runs/" \
             "${REPO_ROOT}/vlm-ocr-runs/" 2>/dev/null || true
     fi
-
-    if ! $SMOKE && ! $SKIP_BUILD; then
-        rsync "${pull[@]}" "${REMOTE_USER}@${DROPLET_IP}:${REMOTE_REPO}/corpus/" \
-            "${REPO_ROOT}/corpus/" || ok=1
-        rsync "${pull[@]}" "${REMOTE_USER}@${DROPLET_IP}:${REMOTE_REPO}/sample_vlm_diff/" \
-            "${REPO_ROOT}/sample_vlm_diff/" 2>/dev/null || true
-    fi
-    rsync "${pull[@]}" "${REMOTE_USER}@${DROPLET_IP}:${REMOTE_REPO}/post1974_ocr_report.md" \
-        "${REPO_ROOT}/" 2>/dev/null || true
 
     [[ "$ok" == 0 ]] && DOWNLOAD_DONE=true
     return "$ok"
@@ -945,12 +881,11 @@ if $DRY_RUN; then
     log "${B}dry run: nothing was created.${R} The run would then:"
     log "  upload   ${REPO_ROOT} (code, corpus, pdfs) + ${SIBLING_DIR}"
     log "  install  uv, the vlm-cuda extra, rednote-hilab/dots.ocr weights"
-    log "  step 1   report_post1974_ocr.py --snapshot"
-    log "  step 2   run_post1974_ocr.py --device cuda --quantization ${QUANTIZATION} --workers ${WORKERS} $( [[ -n $LIMIT ]] && echo "--limit ${LIMIT}")"
-    log "  step 3   run_parse.py --ocr-engine vlm$($SMOKE && echo ' --corpus-dir /root/smoke-corpus')"
-    log "  step 4   report_post1974_ocr.py --stage $($SMOKE && echo ocr || echo 'diff --samples 20')"
-    log "  download sources/ocr, vlm-logs, the report$($SMOKE || echo ', corpus')"
+    log "  ocr      run_post1974_ocr.py --device cuda --quantization ${QUANTIZATION} --workers ${WORKERS} $( [[ -n $LIMIT ]] && echo "--limit ${LIMIT}")"
+    log "  download sources/ocr, vlm-logs"
     log "  teardown doctl compute droplet delete <id> --force"
+    log ""
+    log "  then at home: run_parse.py --ocr-engine vlm, then report_post1974_ocr.py"
     exit 0
 fi
 
@@ -960,16 +895,21 @@ phase_preflight
 phase_provision
 phase_upload
 phase_install
-phase_snapshot
 phase_ocr
-phase_build
-phase_report
 phase_download
 
 log ""
-log "${GRN}${B}pipeline finished.${R} Outputs are in this checkout:"
+log "${GRN}${B}the GPU step finished.${R} Outputs are in this checkout:"
 log "  sources/ocr/              page records (the switch: their presence is the cutover)"
 log "  vlm-logs/post1974/        per-worker logs"
-$SMOKE || log "  corpus/                   rebuilt from the page records"
-$SMOKE || log "  post1974_ocr_report.md    the cutover gate's report"
 log "  ${STATE_DIR}/     this run's step logs and ledger"
+if ! $SMOKE; then
+    log ""
+    log "${B}Now do the rest at home.${R} These need no GPU, and the report needs the"
+    log "git history the box does not have:"
+    log "  uv run python scripts/rebuild_index_from_corpus.py"
+    log "  uv run python scripts/run_parse.py --ocr-engine vlm"
+    log "  uv run python scripts/report_post1974_ocr.py --stage diff --samples 20"
+    log ""
+    log "The last one is the cutover gate. Read post1974_ocr_report.md before you commit."
+fi

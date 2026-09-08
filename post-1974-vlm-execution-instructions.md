@@ -15,22 +15,7 @@ uv run python scripts/run_post1974_ocr.py --status
 
 ---
 
-## 1. Snapshot the old text FIRST
-
-This freezes the Tesseract quality metrics so step 4 can compare against them.
-Step 3 overwrites `corpus/eo.json`, which is where that text lives, so this only
-works if you do it before the first rebuild.
-
-```bash
-uv run python scripts/report_post1974_ocr.py --snapshot
-```
-
-Writes `sources/ocr/_tesseract_baseline.json` (metrics only, ~200 KB — not a
-second copy of the text).
-
----
-
-## 2. Run the OCR
+## 1. Run the OCR
 
 On an NVIDIA card:
 
@@ -59,7 +44,7 @@ does once before the workers start.
 
 ---
 
-## 3. Build the corpus
+## 2. Build the corpus
 
 ```bash
 uv run python scripts/run_parse.py --ocr-engine vlm
@@ -80,7 +65,7 @@ got.
 
 ---
 
-## 4. Check it before you keep it
+## 3. Check it before you keep it
 
 ```bash
 uv run python scripts/report_post1974_ocr.py --stage diff --samples 20
@@ -89,6 +74,23 @@ uv run python scripts/report_post1974_ocr.py --stage diff --samples 20
 Writes `post1974_ocr_report.md`, and side-by-side diffs for the 20 largest changes
 into `sample_vlm_diff/`. It **exits non-zero** if any document lost text it used
 to have.
+
+There is nothing to prepare in advance. Step 2 overwrites the Tesseract text in
+`corpus/eo.json`, but that file is committed, so git still holds every earlier
+version of it. The report reads the newest revision in which no record yet says
+`ocr-vlm`, measures the old metrics from it, and takes the Tesseract side of each
+sample diff from it.
+
+Two things follow. Run the report **at home**, in the checkout, not on a rented
+box that holds an rsync'd file subset with no `.git`. And commit the Tesseract
+corpus before you rebuild over it, which it already is.
+
+Name the baseline yourself if the search picks the wrong commit:
+
+```bash
+uv run python scripts/report_post1974_ocr.py --stage diff --samples 20 \
+  --baseline-rev 29207696
+```
 
 ---
 

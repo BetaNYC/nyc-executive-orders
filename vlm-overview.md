@@ -161,20 +161,14 @@ loads cost nothing. One thousand and eighty-six of them would burn 9 to 18 hours
 before reading a single page. So this driver loads the model **once per worker**
 and then loops over documents.
 
-**Step 1 — snapshot the old numbers.**
-`scripts/report_post1974_ocr.py --snapshot` freezes the quality measurements of
-the *existing* Tesseract text into `sources/ocr/_tesseract_baseline.json`. This
-must happen first. The rebuild in step 3 overwrites the file that holds the old
-text, so after that there is nothing left to compare against.
-
-**Step 2 — OCR.** The driver splits the worklist across N parallel workers on
+**Step 1 — OCR.** The driver splits the worklist across N parallel workers on
 the same GPU card, then runs. Page records land in
 `sources/ocr/<year>/<eo_id>/page_XXXX.json`, committed to git. Rendered page
 images go to `vlm-ocr-runs/post1974/` and are deleted as the run proceeds unless
 the document raised a flag, because 1,799 pages of renders is several gigabytes
 of scratch. Logs go to `vlm-logs/post1974/worker-N.log`.
 
-**Step 3 — rebuild the corpus.** `scripts/run_parse.py --ocr-engine vlm` reads
+**Step 2 — rebuild the corpus.** `scripts/run_parse.py --ocr-engine vlm` reads
 the committed page records and rewrites `corpus/eo.json`. It loads no model and
 takes seconds. The `--ocr-engine` flag has three settings:
 
@@ -187,13 +181,17 @@ takes seconds. The `--ocr-engine` flag has three settings:
 `auto` is what you use while the OCR is still grinding, so the published corpus
 stays complete the whole time.
 
-**Step 4 — check it.** `scripts/report_post1974_ocr.py --stage diff`, described
-in section 8.
+**Step 3 — check it.** `scripts/report_post1974_ocr.py --stage diff`, described
+in section 9. Step 2 overwrote the Tesseract text, but `corpus/eo.json` is
+committed, so git still holds it. The report reads the newest revision in which
+no record yet says `ocr-vlm` and compares against that. Nothing has to be frozen
+in advance, and there is no ordering hazard.
 
-**Renting a GPU.** `execute-post-1974-ocr.sh` automates the whole thing on a
-rented DigitalOcean GPU box in ten steps: preflight, provision, upload, install,
-snapshot, OCR, build, report, download, and destroy the box. It destroys the box
-on every exit path, including a crash or a Ctrl-C.
+**Renting a GPU.** `execute-post-1974-ocr.sh` rents a DigitalOcean GPU box for
+step 1 only: preflight, provision, upload, install, OCR, download, and destroy
+the box. It destroys the box on every exit path, including a crash or a Ctrl-C.
+Steps 2 and 3 stay at home. They need no GPU, and step 3 needs the git history
+that the box — an rsync'd file subset, not a clone — does not have.
 
 ---
 
@@ -373,8 +371,10 @@ All in `scripts/report_post1974_ocr.py`. This set has something the older set
 does not: **an existing Tesseract transcription to compare against.** Every check
 below exploits that.
 
-- **`--snapshot`** freezes the old quality numbers before the rebuild destroys
-  them.
+- **The baseline is a git revision, not a file.** `corpus/eo.json` is committed,
+  so the Tesseract text survives its own overwrite. The report reads the newest
+  revision in which no record says `ocr-vlm`; `--baseline-rev` names one instead.
+  This is also why the report runs at home and not on the rented box.
 - **`--stage classify` — the calibration oracle.** A page called blank inside a
   document that Tesseract already got text out of is a **proven** false blank,
   because a blank page cannot produce text. The gate is zero of those, and it is

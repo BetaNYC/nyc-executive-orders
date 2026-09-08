@@ -37,6 +37,8 @@ import path from "node:path";
 
 const PAGE_FILE = /^page_(\d{1,6})\.(png|json)$/;
 const YEAR_DIR = /^\d{4}$/;
+// Every scanned document's text_source; born-digital ones are not reviewed here.
+const OCR_TEXT_SOURCE = /^ocr(-|$)/;
 
 // The QA flags a page can carry, worst first -- this order is what the rail and
 // the header badges sort by. Computed here rather than in the browser so the
@@ -182,15 +184,18 @@ async function volumeUnits(col) {
 // from -- so a scanned document that never got a page record is still listed
 // (it reads as `not started`) rather than being silently absent. Any directory
 // on disk with no matching record is listed too: a directory is never invisible.
-async function documentUnits(col) {
+async function documentUnits(col, repoRoot) {
   const records = await readRecords(col.recordsJson);
   const byId = new Map();
 
   for (const r of records) {
     if (!r?.eo_id || !r?.year) continue;
     // Born-digital documents have a PDF text layer and were never OCR'd, so
-    // they are not part of this review surface.
-    if (r.text_source !== "ocr" && r.text_source !== "ocr-skipped") continue;
+    // they are not part of this review surface. Everything scanned carries an
+    // `ocr`-prefixed text_source -- `ocr`, `ocr-skipped`, `ocr-failed`,
+    // `ocr-vlm`, `ocr-vlm-failed` -- and each new run adds another one, so
+    // match the prefix rather than a list that goes stale the next run.
+    if (!OCR_TEXT_SOURCE.test(r.text_source ?? "")) continue;
     byId.set(r.eo_id, {
       id: r.eo_id,
       rel: path.posix.join(String(r.year), r.eo_id),
@@ -208,10 +213,13 @@ async function documentUnits(col) {
     if (!YEAR_DIR.test(year)) continue;
     for (const id of await subdirs(path.join(col.ocrRoot, year))) {
       if (byId.has(id)) continue;
+      // No record names this directory's PDF, so fall back to the layout every
+      // `pdf_path` in corpus/eo.json uses -- the scan is still viewable.
+      const guess = path.posix.join("pdfs", year, `${id}.pdf`);
       byId.set(id, {
         id,
         rel: path.posix.join(year, id),
-        pdfRel: null,
+        pdfRel: fs.existsSync(path.resolve(repoRoot, guess)) ? guess : null,
         group: year,
         title: id,
         subtitle: year,
@@ -231,7 +239,7 @@ export function createApi({ collections, repoRoot }) {
   const byId = new Map(collections.map((c) => [c.id, c]));
 
   const unitsOf = (col) =>
-    col.kind === "volumes" ? volumeUnits(col) : documentUnits(col);
+    col.kind === "volumes" ? volumeUnits(col) : documentUnits(col, repoRoot);
 
   async function findUnit(col, id) {
     if (!safeSegment(id)) return null;

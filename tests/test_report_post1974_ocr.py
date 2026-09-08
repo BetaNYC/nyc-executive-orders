@@ -1,12 +1,14 @@
-"""The post-1974 QA report: the baseline snapshot and the cutover gates.
+"""The post-1974 QA report: the git-read baseline and the cutover gates.
 
-Offline. Every input is a dict or a committed fixture record.
+Offline. Every input is a dict, a committed fixture record, or a throwaway git
+repository built in tmp_path.
 """
 
 from __future__ import annotations
 
 import json
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -33,37 +35,85 @@ def cand(eo_id="1974-EO-001", year=1974, pages=1):
 
 
 # --------------------------------------------------------------------------- #
-# Baseline snapshot                                                             #
+# Baseline — read out of git, never from the working tree                       #
 # --------------------------------------------------------------------------- #
 
-def test_snapshot_captures_only_tesseract_records(tmp_path):
+def test_baseline_captures_only_tesseract_records():
     records = [
         {"eo_id": "a", "text_source": "ocr", "full_text_raw": "hello world " * 20,
          "text_quality": "clean", "page_count": 1},
         {"eo_id": "b", "text_source": "born-digital", "full_text_raw": "x" * 100},
         {"eo_id": "c", "text_source": "ocr-skipped", "full_text_raw": ""},
     ]
-    out = tmp_path / "baseline.json"
-    payload = report.snapshot(records, out)
+    payload = report.baseline_from_records(records)
 
     assert set(payload) == {"a"}
     assert payload["a"]["chars"] == len("hello world " * 20)
     assert payload["a"]["text_quality"] == "clean"
-    assert json.loads(out.read_text()) == payload
 
 
-def test_snapshot_stores_metrics_not_a_second_copy_of_the_text(tmp_path):
-    """~200 KB rather than megabytes: the text itself stays in git history."""
+def test_baseline_keeps_the_text_because_the_sample_diffs_need_it():
     records = [{"eo_id": "a", "text_source": "ocr", "full_text_raw": "secret " * 500}]
-    payload = report.snapshot(records, tmp_path / "b.json")
-    assert "secret" not in json.dumps(payload)
-    assert set(payload["a"]) == {"chars", "word_ratio", "junk_ratio",
-                                 "text_quality", "page_count"}
+    payload = report.baseline_from_records(records)
+    assert payload["a"]["text"] == "secret " * 500
 
 
-def test_snapshot_falls_back_to_full_text_when_raw_is_absent(tmp_path):
+def test_baseline_falls_back_to_full_text_when_raw_is_absent():
     records = [{"eo_id": "a", "text_source": "ocr", "full_text": "abc"}]
-    assert report.snapshot(records, tmp_path / "b.json")["a"]["chars"] == 3
+    assert report.baseline_from_records(records)["a"]["chars"] == 3
+
+
+def git_repo(tmp_path, monkeypatch, *commits) -> Path:
+    """A throwaway repo whose eo.json is committed once per `commits` entry."""
+    run = lambda *a: subprocess.run(a, cwd=tmp_path, check=True,
+                                    capture_output=True, text=True)
+    run("git", "init", "-q")
+    run("git", "config", "user.email", "t@t")
+    run("git", "config", "user.name", "t")
+    path = tmp_path / "eo.json"
+    for i, records in enumerate(commits):
+        path.write_text(json.dumps(records))
+        run("git", "add", "eo.json")
+        run("git", "commit", "-qm", f"c{i}")
+    monkeypatch.setattr(report, "REPO_ROOT", tmp_path)
+    return path
+
+
+def test_the_baseline_is_the_newest_commit_that_predates_the_rebuild(tmp_path,
+                                                                    monkeypatch):
+    """THE BUG: after a rebuild the working tree holds the VLM text, so reading
+    the old side from it puts the same text on both sides of every sample diff."""
+    tesseract = [{"eo_id": "a", "text_source": "ocr", "full_text_raw": "old text here"}]
+    rebuilt = [{"eo_id": "a", "text_source": "ocr-vlm", "full_text_raw": "new text"}]
+    path = git_repo(tmp_path, monkeypatch, tesseract, rebuilt)
+
+    baseline, label = report.load_baseline(path)
+
+    assert baseline["a"]["text"] == "old text here"
+    assert label.endswith(":eo.json")
+
+
+def test_an_explicit_revision_wins_over_the_search(tmp_path, monkeypatch):
+    tesseract = [{"eo_id": "a", "text_source": "ocr", "full_text_raw": "first"}]
+    later = [{"eo_id": "a", "text_source": "ocr", "full_text_raw": "second"}]
+    path = git_repo(tmp_path, monkeypatch, tesseract, later)
+    first = subprocess.run(["git", "log", "--format=%H", "--reverse"], cwd=tmp_path,
+                           capture_output=True, text=True).stdout.split()[0]
+
+    baseline, _label = report.load_baseline(path, rev=first)
+
+    assert baseline["a"]["text"] == "first"
+
+
+def test_no_pre_rebuild_revision_yields_no_baseline(tmp_path, monkeypatch):
+    rebuilt = [{"eo_id": "a", "text_source": "ocr-vlm", "full_text_raw": "new"}]
+    path = git_repo(tmp_path, monkeypatch, rebuilt)
+    assert report.load_baseline(path) == ({}, "")
+
+
+def test_outside_a_git_repository_the_baseline_is_simply_empty(tmp_path, monkeypatch):
+    monkeypatch.setattr(report, "REPO_ROOT", tmp_path)
+    assert report.load_baseline(tmp_path / "eo.json") == ({}, "")
 
 
 # --------------------------------------------------------------------------- #
@@ -167,10 +217,26 @@ def test_the_67_orders_with_no_baseline_are_not_compared(tmp_path):
     assert "No document has both" in "\n".join(lines)
 
 
-def test_a_missing_baseline_tells_you_to_snapshot_first(tmp_path):
+def test_a_missing_baseline_tells_you_to_name_a_revision(tmp_path):
     lines, failures = report.stage_diff([cand()], tmp_path, {}, [], 0, tmp_path)
-    assert "--snapshot" in "\n".join(lines)
+    assert "--baseline-rev" in "\n".join(lines)
     assert failures == []
+
+
+def test_a_sample_diff_shows_the_old_text_not_the_new_text_twice(tmp_path):
+    """THE BUG, at the point it was visible: both blocks held the VLM text."""
+    seed(tmp_path / "ocr", "1974-EO-001", 1974, "clean")
+    baseline = {"1974-EO-001": {"chars": 260, "word_ratio": 0.80, "junk_ratio": 0.05,
+                                "text_quality": "minor-noise",
+                                "text": "TESSERACT ONLY LINE"}}
+    samples = tmp_path / "samples"
+
+    report.stage_diff([cand()], tmp_path / "ocr", baseline,
+                      [{"eo_id": "1974-EO-001"}], 1, samples)
+
+    written = (samples / "1974-EO-001.md").read_text()
+    assert "TESSERACT ONLY LINE" in written
+    assert "-TESSERACT ONLY LINE" in written      # it really reached the diff
 
 
 # --------------------------------------------------------------------------- #
