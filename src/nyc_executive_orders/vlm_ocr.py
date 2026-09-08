@@ -2396,7 +2396,7 @@ def ocr_pdf(
                 f"      page {i} ({n}/{n_total}): {len(elements)} elements,"
                 f" {time.time() - t0:.1f}s{status}"
             )
-        # WARNING so it clears run_full_vlm_pipeline.sh's digest filter and
+        # WARNING so it clears run_full_vlm_pre_1974.sh's digest filter and
         # reaches the terminal, not just the volume log. The threshold is well
         # above allocator noise -- steady state should be flat to the megabyte.
         if mem is not None and mem.active_gb() > loaded.baseline_gb + MEMORY_DRIFT_WARN_GB:

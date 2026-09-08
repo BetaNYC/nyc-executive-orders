@@ -45,7 +45,7 @@ the one place page records live.
 
 Idempotent and offline: a record that already has `rotation` is left exactly as
 it is, so re-running after a volume is re-OCR'd is a no-op on the new pages. No
-GPU and no model — safe to run while a `run_full_vlm_pipeline.sh` job is going,
+GPU and no model — safe to run while a `run_full_vlm_pre_1974.sh` job is going,
 though a volume it is actively writing is better done after it finishes.
 
     python scripts/backfill_page_rotation.py --dry-run
@@ -195,7 +195,7 @@ def backfill_volume(volume, args) -> dict:
         print(f"SKIP {volume.stem}: {n_rotated}/{len(needed)} page(s) need "
               f"{angles}° clockwise -- scanned sideways, so its OCR predates the "
               f"fix AND ran on the wrong orientation. Re-OCR it "
-              f"(run_full_vlm_pipeline.sh --volume {volume.stem} --force); "
+              f"(run_full_vlm_pre_1974.sh --volume {volume.stem} --force); "
               f"the run writes the key itself.", file=sys.stderr)
         stats["needs_rotation"] = n_rotated
         return stats

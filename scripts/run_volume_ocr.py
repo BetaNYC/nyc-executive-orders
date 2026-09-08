@@ -17,7 +17,7 @@ outlive the run that made it, and be re-published over a good re-run), and the
 viewer needed a banner to explain which copy you were looking at. One location
 removes all three. The trade is that a killed run leaves partial output in a
 committed directory instead of a hidden one — which git shows you as an unstaged
-diff, and `run_full_vlm_pipeline.sh --clean --volume X` removes.
+diff, and `run_full_vlm_pre_1974.sh --clean --volume X` removes.
 
 NO AUTHORIZATION GATE. The human/operator flags on the other runners exist
 because those scripts make live, rate-limited calls to nyc.gov, the Internet

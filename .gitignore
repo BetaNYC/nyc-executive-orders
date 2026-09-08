@@ -61,7 +61,7 @@ vlm-ocr-runs/
 # spend no LFS bandwidth on images.
 vlm-pics/
 
-# Per-volume run transcripts from run_full_vlm_pipeline.sh, and per-worker ones
+# Per-volume run transcripts from run_full_vlm_pre_1974.sh, and per-worker ones
 # from scripts/run_post1974_ocr.py under vlm-logs/post1974/. Console output of a
 # reproducible local job -- keep them to debug a run, not to share one.
 vlm-logs/
@@ -87,7 +87,7 @@ dist-static/
 .vscode/
 *.log
 
-# Per-run state for execute-post-1974-ocr.sh: the step logs it mirrors off the
+# Per-run state for run_full_vlm_post_1974.sh: the step logs it mirrors off the
 # rented GPU box, the phase ledger, the droplet id it must be able to destroy,
 # and a run-scoped known_hosts. Scratch, not source of truth.
 .post1974-run/

@@ -8,13 +8,13 @@
 #
 # 4bit is the right setting on a small card and not just a fallback: measured
 # ~3x faster than the 8bit CLI default for equivalent text, at ~4.3 GB peak.
-# See run-on-cuda.md. Stage 1 is the slow one -- budget ~2 hours per volume,
+# Stage 1 is the slow one -- budget ~2 hours per volume,
 # ~45-50 hours for all 14 -- so default to one volume at a time via --volume.
 #
-#   ./run_full_vlm_pipeline.sh --volume Wagner_Orders
-#   ./run_full_vlm_pipeline.sh --volume 1962-01-23 --start-page 88   # resume
-#   ./run_full_vlm_pipeline.sh --clean --volume 1968-01-10           # redo one
-#   ./run_full_vlm_pipeline.sh --dry-run                             # print cmds
+#   ./run_full_vlm_pre_1974.sh --volume Wagner_Orders
+#   ./run_full_vlm_pre_1974.sh --volume 1962-01-23 --start-page 88   # resume
+#   ./run_full_vlm_pre_1974.sh --clean --volume 1968-01-10           # redo one
+#   ./run_full_vlm_pre_1974.sh --dry-run                             # print cmds
 #
 # Stage 2 ALWAYS builds every volume, even under --volume. corpus/eo_pre1974.json,
 # manifest_pre1974.csv and pre1974_provenance.json are each written whole from the

@@ -26,10 +26,10 @@
 # command and exits non-zero. Read that line. An RTX 6000 Ada left running is
 # about USD 1.57 every hour.
 #
-#   ./execute-post-1974-ocr.sh --smoke        # 1 document, cheapest GPU card
-#   ./execute-post-1974-ocr.sh --dry-run      # print the plan, rent nothing
-#   ./execute-post-1974-ocr.sh                # the full 1,086-document run
-#   ./execute-post-1974-ocr.sh --destroy-only # kill an orphan from a past run
+#   ./run_full_vlm_post_1974.sh --smoke        # 1 document, cheapest GPU card
+#   ./run_full_vlm_post_1974.sh --dry-run      # print the plan, rent nothing
+#   ./run_full_vlm_post_1974.sh                # the full 1,086-document run
+#   ./run_full_vlm_post_1974.sh --destroy-only # kill an orphan from a past run
 #
 # The run writes to sources/ocr/ in this checkout and nothing else. corpus/ stays
 # untouched until you run run_parse.py at home, so a part-finished run can never
@@ -474,7 +474,7 @@ phase_preflight() {
     if [[ -n "$orphans" ]]; then
         err "a droplet tagged ${TAG} is already running and billing:"
         printf '%s\n' "$orphans" | sed 's/^/      /' >&2
-        die "destroy it first:  ./execute-post-1974-ocr.sh --destroy-only --sweep"
+        die "destroy it first:  ./run_full_vlm_post_1974.sh --destroy-only --sweep"
     fi
     info "no stale ${TAG} droplets"
 

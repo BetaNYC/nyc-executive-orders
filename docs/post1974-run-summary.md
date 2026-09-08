@@ -40,7 +40,7 @@ page records.
 Use fewer workers, or the pages will fail again for the same reason:
 
 ```
-./execute-post-1974-ocr.sh --workers 2 \
+./run_full_vlm_post_1974.sh --workers 2 \
   --eo-id 2026-EEO-1 --eo-id 2026-EEO-1.4 --eo-id 2026-EEO-2
 ```
 

@@ -108,7 +108,7 @@ the pages, and collects the quality flags.
 
 ## 5. The pre-1974 path, step by step
 
-**Driver:** `scripts/run_volume_ocr.py`, wrapped by `run_full_vlm_pipeline.sh`.
+**Driver:** `scripts/run_volume_ocr.py`, wrapped by `run_full_vlm_pre_1974.sh`.
 
 **Stage 0 — calibrate (optional but advised).**
 `run_volume_ocr.py --volume X --classify-blank-only` renders and scores every
@@ -187,7 +187,7 @@ committed, so git still holds it. The report reads the newest revision in which
 no record yet says `ocr-vlm` and compares against that. Nothing has to be frozen
 in advance, and there is no ordering hazard.
 
-**Renting a GPU.** `execute-post-1974-ocr.sh` rents a DigitalOcean GPU box for
+**Renting a GPU.** `run_full_vlm_post_1974.sh` rents a DigitalOcean GPU box for
 step 1 only: preflight, provision, upload, install, OCR, download, and destroy
 the box. It destroys the box on every exit path, including a crash or a Ctrl-C.
 Steps 2 and 3 stay at home. They need no GPU, and step 3 needs the git history
@@ -265,7 +265,7 @@ locking and no communication with each other at all.
 
 | Concern | Pre-1974 | Post-1974 |
 |---|---|---|
-| Driver script | `run_volume_ocr.py` (+ `run_full_vlm_pipeline.sh`) | `run_post1974_ocr.py` (+ `execute-post-1974-ocr.sh`) |
+| Driver script | `run_volume_ocr.py` (+ `run_full_vlm_pre_1974.sh`) | `run_post1974_ocr.py` (+ `run_full_vlm_post_1974.sh`) |
 | Model loading | Once per book, in a new process | Once per worker, then looped |
 | Parallelism | None. One book at a time. | N workers on one GPU, work split by page count |
 | Records written to | `sources/gpp/volumes/ocr/<book>/` | `sources/ocr/<year>/<eo_id>/` |
