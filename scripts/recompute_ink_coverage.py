@@ -14,8 +14,13 @@ What changed, and why a backfill was needed:
     The old central ROI cropped 12% off the top and bottom, which is exactly
     where a page header and footer live -- so their ink was in neither the
     numerator nor the denominator, and an element out there recorded no ink at
-    all. The side crop stays: the binding and the scanner-bed edge that motivate
-    it run down the sides.
+    all. The side crop stays, for the binding and the scanner-bed edge.
+
+  * The SCANNER-BED BAND across the top and the bottom is cut by measurement
+    (vlm_ocr.bed_border_rows). Keeping the full height let that band into the
+    denominator on the bound volumes: it tripled ink_px on Wagner page 12 while
+    covered_px barely moved, and covered_fraction read 0.33 for a page whose
+    text was complete. Every pre-1974 record then built as needs-review.
 
   * RULE INK is cut out of the mask before regions are grouped, and out of the
     coverage measurement. A masthead line or a column border is ink the model
@@ -42,10 +47,13 @@ from __future__ import annotations
 
 import argparse
 import json
+import multiprocessing
 import os
+import queue as queue_mod
 import sys
 import tempfile
-from concurrent.futures import ProcessPoolExecutor, as_completed
+import time
+from concurrent.futures import ProcessPoolExecutor, wait
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -131,13 +139,111 @@ def recompute_page(gray, record: dict, opts) -> dict:
     )
 
 
-def process_unit(unit: Unit, opts) -> dict:
+# --------------------------------------------------------------------------- #
+# Progress                                                                      #
+# --------------------------------------------------------------------------- #
+
+# Progress is counted in PAGES, not units. A pre-1974 unit is a whole bound
+# volume -- 100 to 400 pages and several minutes of rendering -- so a unit
+# counter sits still for minutes at a time, and the 14 volumes never reached the
+# every-50-units print at all. Pages are also where the time actually goes, and
+# they are comparable across collections: a post-1974 unit is one order.
+#
+# Workers are separate processes, so they report each finished page on a managed
+# queue and the parent renders the line. The queue is drained on a short timeout
+# rather than at unit boundaries, which is what makes the bar move continuously.
+PROGRESS_BAR_WIDTH = 28
+
+# A terminal gets one line rewritten in place. Anything else -- a pipe, a log,
+# nohup -- gets a fresh line only this often, so the file stays readable.
+PROGRESS_LOG_EVERY_PAGES = 100
+
+# Per-unit completion lines are printed only when there are few enough to read.
+# pre1974 has 14 units; post1974 has one per order, and 2,000 lines is not a
+# report.
+PROGRESS_MAX_UNIT_LINES = 40
+
+
+def format_duration(seconds: float) -> str:
+    """H:MM:SS, or M:SS under an hour."""
+    seconds = int(max(0.0, seconds))
+    hours, rest = divmod(seconds, 3600)
+    minutes, secs = divmod(rest, 60)
+    return f"{hours}:{minutes:02d}:{secs:02d}" if hours else f"{minutes}:{secs:02d}"
+
+
+class Progress:
+    """A single status line: pages done, units done, rate, and time remaining."""
+
+    def __init__(self, total_pages: int, total_units: int, stream=None):
+        self.total_pages = total_pages
+        self.total_units = total_units
+        self.stream = stream if stream is not None else sys.stdout
+        self.tty = hasattr(self.stream, "isatty") and self.stream.isatty()
+        self.pages = 0
+        self.units = 0
+        self.started = time.monotonic()
+        self._logged_at = 0
+
+    def line(self) -> str:
+        fraction = self.pages / self.total_pages if self.total_pages else 1.0
+        filled = int(PROGRESS_BAR_WIDTH * min(fraction, 1.0))
+        bar = "#" * filled + "." * (PROGRESS_BAR_WIDTH - filled)
+        elapsed = time.monotonic() - self.started
+        rate = self.pages / elapsed if elapsed > 0 else 0.0
+        # Held at zero until a rate exists, rather than shown as an estimate the
+        # first page happens to imply.
+        eta = (self.total_pages - self.pages) / rate if rate > 0 else 0.0
+        return (
+            f"  [{bar}] {self.pages:>5}/{self.total_pages} pages"
+            f" · {self.units}/{self.total_units} units"
+            f" · {rate:4.1f} pg/s · eta {format_duration(eta)}"
+        )
+
+    def advance(self, *, pages: int = 0, units: int = 0) -> None:
+        self.pages += pages
+        self.units += units
+        if self.tty:
+            self._draw()
+        elif self.pages - self._logged_at >= PROGRESS_LOG_EVERY_PAGES:
+            self._logged_at = self.pages
+            self.stream.write(self.line() + "\n")
+            self.stream.flush()
+
+    def note(self, text: str) -> None:
+        """Write a line above the status line, and put the status line back."""
+        if self.tty:
+            self.stream.write("\r\x1b[2K")
+        self.stream.write(text + "\n")
+        if self.tty:
+            self.stream.write(self.line())
+        self.stream.flush()
+
+    def close(self) -> None:
+        if self.tty:
+            self.stream.write("\r\x1b[2K" + self.line() + "\n")
+            self.stream.flush()
+
+    def _draw(self) -> None:
+        self.stream.write("\r\x1b[2K" + self.line())
+        self.stream.flush()
+
+
+def process_unit(unit: Unit, opts, reported=None) -> dict:
     """Re-render every recorded page of one unit and rewrite its ink metrics.
 
     Pages are rendered one at a time into a scratch directory that is removed
     when the unit is done: a 200 DPI page is ~7 megapixels, and there is no
     reason to hold a whole volume of them.
+
+    ``reported`` is the parent's progress queue, or None when nobody is watching.
+    Every page this returns over -- rewritten, skipped, or failed -- puts exactly
+    one item on it, so the parent's count reaches the total it was given.
     """
+    def report(pages: int = 1) -> None:
+        if reported is not None:
+            reported.put(pages)
+
     out = {
         "unit": unit.name,
         "collection": unit.collection,
@@ -154,6 +260,7 @@ def process_unit(unit: Unit, opts) -> dict:
     if not unit.pdf.exists():
         out["errors"].append(f"{unit.name}: no PDF at {unit.pdf}")
         out["skipped"] += len(pages)
+        report(len(pages))
         return out
 
     with tempfile.TemporaryDirectory(prefix="ink-recompute-") as tmp:
@@ -164,6 +271,7 @@ def process_unit(unit: Unit, opts) -> dict:
             except json.JSONDecodeError as exc:
                 out["errors"].append(f"{unit.name} p{page_no}: unreadable record ({exc})")
                 out["skipped"] += 1
+                report()
                 continue
             if record.get("skipped") or (
                 not record.get("elements") and not record.get("ink_coverage")
@@ -172,6 +280,7 @@ def process_unit(unit: Unit, opts) -> dict:
                 # model ran, or the run measured no ink on it. Either way there
                 # is no ink_coverage block to bring up to date.
                 out["skipped"] += 1
+                report()
                 continue
 
             # Force the rotation the run recorded rather than re-detecting it.
@@ -185,6 +294,7 @@ def process_unit(unit: Unit, opts) -> dict:
             if not rendered:
                 out["errors"].append(f"{unit.name} p{page_no}: page not in PDF")
                 out["skipped"] += 1
+                report()
                 continue
             image_path = rendered[0][0]
             try:
@@ -200,6 +310,7 @@ def process_unit(unit: Unit, opts) -> dict:
             if not opts.dry_run:
                 json_path.write_text(json.dumps(record, indent=2) + "\n")
             out["updated"] += 1
+            report()
     return out
 
 
@@ -267,18 +378,44 @@ def main() -> None:
     totals = {"updated": 0, "skipped": 0, "regions_before": 0, "regions_after": 0,
               "rules": 0}
     errors: list[str] = []
-    done = 0
-    with ProcessPoolExecutor(max_workers=args.jobs) as pool:
-        futures = {pool.submit(process_unit, u, args): u for u in units}
-        for future in as_completed(futures):
-            result = future.result()
-            for key in totals:
-                totals[key] += result[key]
-            errors += result["errors"]
-            done += 1
-            if done % 50 == 0 or done == len(units):
-                print(f"  {done}/{len(units)} units · {totals['updated']} pages rewritten",
-                      flush=True)
+    progress = Progress(total_pages, len(units))
+    per_unit_lines = len(units) <= PROGRESS_MAX_UNIT_LINES
+
+    with multiprocessing.Manager() as manager:
+        reported = manager.Queue()
+
+        def drain() -> None:
+            """Move everything the workers have posted onto the status line."""
+            pages = 0
+            while True:
+                try:
+                    pages += reported.get_nowait()
+                except queue_mod.Empty:
+                    break
+            if pages:
+                progress.advance(pages=pages)
+
+        with ProcessPoolExecutor(max_workers=args.jobs) as pool:
+            futures = {pool.submit(process_unit, u, args, reported): u for u in units}
+            pending = set(futures)
+            while pending:
+                # Wait on the futures, not on the queue: a short timeout is what
+                # keeps the line moving while every worker is mid-volume.
+                finished, pending = wait(pending, timeout=0.25)
+                drain()
+                for future in finished:
+                    result = future.result()
+                    for key in totals:
+                        totals[key] += result[key]
+                    errors += result["errors"]
+                    progress.advance(units=1)
+                    if per_unit_lines:
+                        progress.note(
+                            f"  {result['unit']}: {result['updated']} rewritten,"
+                            f" {result['skipped']} skipped"
+                        )
+            drain()   # anything posted after the last worker returned
+    progress.close()
 
     print("\ndone.")
     print(f"  pages rewritten:      {totals['updated']}")

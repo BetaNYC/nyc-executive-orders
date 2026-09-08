@@ -193,8 +193,8 @@ than a second body being created.
 
 Narrow on purpose: **four** sentences in the whole corpus name a list, and every one
 is a list a person would read the same way — `2022-EO-003` (three offices into OTI),
-`1976-EO-063` (three planning offices abolished), `1965-EO-181o` (*"a Housing Policy
-Board and a Housing Executive Committee"*) and `1966-EO-028c` (*"the Anti-Poverty
+`1976-EO-063` (three planning offices abolished), `1965-EO-181-p261` (*"a Housing Policy
+Board and a Housing Executive Committee"*) and `1966-EO-028-p068` (*"the Anti-Poverty
 Operations Board and the Economic Opportunity Committee are abolished"*).
 
 ### One event, one body
@@ -235,7 +235,8 @@ Two things here are on purpose, and both differ from `supersede.py`:
   978 orders of the bound volumes contribute nothing to `corpus/supersession.json`.
   This reads them, which is most of the difference between 294 edges and 244.
 * **An id must match exactly.** Only 526 of the 978 pre-1974 orders carry the plain
-  `YYYY-EO-NNN` shape; the rest carry a letter suffix (`1966-EO-019g`) or a
+  `YYYY-EO-NNN` shape; the rest carry a suffix — a printed label
+  (`1966-EO-019B`) or a page anchor (`1966-EO-019-p007`) — or a
   different series (`EM`, `AM`) that the minter cannot produce, and 86 id stems are
   shared by more than one order — `1966-EO-019` alone covers 50. A citation whose
   minted id is absent, but whose stem does match orders we hold, is recorded as a

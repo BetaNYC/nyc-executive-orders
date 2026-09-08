@@ -18,7 +18,8 @@ Two things here are NOT what ``supersede.py`` does, and both are deliberate:
 * **Every order is read, not just 1974 onward.** ``supersede.py`` runs over
   ``corpus/eo.json`` alone; this runs over the pre-1974 volumes as well.
 * **An id must match exactly.** Only 526 of the 978 pre-1974 orders carry the plain
-  ``YYYY-EO-NNN`` shape. The rest carry a letter suffix (``1966-EO-019g``) or a
+  ``YYYY-EO-NNN`` shape. The rest carry a suffix -- a printed label
+  (``1966-EO-019B``) or a page anchor (``1966-EO-019-p007``) -- or a
   different series (``EM``, ``AM``) that :func:`mint_eo_id` cannot produce, and 86
   id stems are shared by more than one order — ``1966-EO-019`` alone covers 50.
   So a citation whose minted id is absent, but whose stem does match orders in the

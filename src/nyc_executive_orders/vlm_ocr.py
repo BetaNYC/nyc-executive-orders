@@ -789,10 +789,12 @@ def roi_bounds(
     and would otherwise dominate whatever is being measured.
 
     vertical=False crops the sides only and keeps the full page height. Coverage
-    uses that, because the binding and the scanner-bed edge that motivate the
-    crop run down the *sides* of a page, while what the vertical crop removed
-    was the header and the footer -- real content, and content the model does
-    return boxes for. The blank/bleed-through statistics keep the full crop:
+    uses that, because what the vertical crop removed was the header and the
+    footer -- real content, and content the model does return boxes for. On the
+    bound volumes the scanner bed ALSO shows across the top and the bottom, so
+    coverage cuts that band separately and by measurement rather than by a fixed
+    fraction: see :func:`bed_border_rows`. The blank/bleed-through statistics
+    keep the full crop:
     their thresholds were swept against it (see the post-1974 instructions), and
     a header band is not what decides whether a page is blank."""
     h, w = shape
@@ -977,6 +979,49 @@ def _tight_bbox(
     ]
 
 
+# The scanner bed shows as a SOLID black band across the top and the bottom of a
+# bound-volume scan, and it is not content. On the Wagner memoranda it runs about
+# 80 rows deep at the head and 110 at the foot, and it is the difference between a
+# page measuring covered_fraction 1.00 and the same page measuring 0.33: it more
+# than tripled `ink_px` on page 12 (111,240 -> 391,326) while `covered_px` barely
+# moved, because none of that ink is inside any model bbox.
+#
+# It is cut by measurement, not by a fixed fraction, because the band's depth
+# varies from page to page while its shape does not. The band is solid -- row
+# darkness reads 1.00 through it and drops straight to ~0.00 at the page edge,
+# with no gradient between -- so any threshold in the wide middle picks the same
+# boundary. Type never comes close: a dense line of body text darkens well under
+# a fifth of its row.
+BED_ROW_DARK_FRACTION = 0.30
+
+# A hard stop on the trim, as a fraction of page height from each edge. A page
+# that really is mostly black (a photographic plate, a heavy negative) must fail
+# the coverage check loudly rather than have its content quietly cropped away.
+BED_MAX_TRIM_FRACTION = 0.20
+
+
+def bed_border_rows(mask: np.ndarray) -> tuple[int, int]:
+    """Rows of solid scanner-bed black to cut off the top and the bottom of
+    `mask`, as (top, bottom). See BED_ROW_DARK_FRACTION for why this is measured.
+
+    Scans inward from each edge and stops at the first row that is not saturated,
+    so a dark band inside the page -- a photograph, a heavy rule -- is never
+    reached. Returns (0, 0) for a page with no such band, which is every
+    born-digital page and most loose-sheet scans."""
+    height, width = mask.shape
+    if not height or not width:
+        return 0, 0
+    rows = mask.sum(axis=1) / width
+    limit = int(height * BED_MAX_TRIM_FRACTION)
+    top = 0
+    while top < limit and rows[top] >= BED_ROW_DARK_FRACTION:
+        top += 1
+    bottom = 0
+    while bottom < limit and rows[height - 1 - bottom] >= BED_ROW_DARK_FRACTION:
+        bottom += 1
+    return top, bottom
+
+
 def ink_coverage(
     gray: np.ndarray,
     elements: list[dict],
@@ -1009,6 +1054,16 @@ def ink_coverage(
     h, w = gray.shape
     left, top, right, bottom = roi_bounds(gray.shape, roi_margin, vertical=False)
     roi_ink = gray[top:bottom, left:right] < dark_pixel_threshold
+    # Keeping the full page height keeps the header and the footer in, which is
+    # the point -- but on a bound volume it also lets the scanner bed in, and the
+    # bed is not content. Cut the band before anything is measured, and move the
+    # ROI's own top/bottom with it so every bbox and region offset below stays
+    # in the same coordinate space.
+    bed_top, bed_bottom = bed_border_rows(roi_ink)
+    if bed_top or bed_bottom:
+        roi_ink = roi_ink[bed_top:roi_ink.shape[0] - bed_bottom]
+        top += bed_top
+        bottom -= bed_bottom
     total_ink = int(roi_ink.sum())
     covered = np.zeros(roi_ink.shape, dtype=bool)
     roi_h, roi_w = roi_ink.shape

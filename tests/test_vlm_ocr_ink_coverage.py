@@ -51,8 +51,9 @@ def test_roi_bounds_crops_all_four_sides_by_default():
 
 
 def test_roi_bounds_vertical_false_keeps_the_full_height():
-    """The binding and the scanner-bed edge run down the SIDES. Cropping the top
-    and bottom only ever removed the header and the footer."""
+    """Cropping the top and bottom by a fixed fraction removed the header and the
+    footer, which are content. The scanner bed shows at the top and bottom too,
+    but it is cut by measurement instead -- see bed_border_rows below."""
     assert vlm_ocr.roi_bounds((1000, 500), 0.1, vertical=False) == (50, 0, 450, 1000)
 
 
@@ -221,3 +222,64 @@ def test_rule_thresholds_sit_between_the_two_populations():
     assert vlm_ocr.LINE_MAX_STROKE_PX == 5.0
     assert vlm_ocr.LINE_WINDOW_PX == 144
     assert vlm_ocr.LINE_BAND_PX == 12
+
+
+# --------------------------------------------------------------------------- #
+# The scanner-bed band                                                          #
+# --------------------------------------------------------------------------- #
+
+def test_bed_border_rows_reads_zero_on_a_page_with_no_bed():
+    """Every born-digital page, and most loose-sheet scans."""
+    mask = np.zeros((1000, 500), dtype=bool)
+    mask[400:500, 100:400] = True
+    assert vlm_ocr.bed_border_rows(mask) == (0, 0)
+
+
+def test_bed_border_rows_measures_each_edge_independently():
+    """The band's depth differs head to foot -- on the Wagner memoranda it runs
+    about 80 rows at the head and 110 at the foot -- so each edge is measured."""
+    mask = np.zeros((1000, 500), dtype=bool)
+    mask[:40] = True
+    mask[-110:] = True
+    assert vlm_ocr.bed_border_rows(mask) == (40, 110)
+
+
+def test_the_bed_trim_is_capped_so_a_black_page_fails_loudly():
+    """A page that really is mostly black must fail the coverage check, not have
+    its content cropped away one row at a time until it passes."""
+    mask = np.ones((1000, 500), dtype=bool)
+    cap = int(1000 * vlm_ocr.BED_MAX_TRIM_FRACTION)
+    assert vlm_ocr.bed_border_rows(mask) == (cap, cap)
+
+
+def test_the_scanner_bed_band_leaves_the_coverage_measurement():
+    """The regression this guards.
+
+    Keeping the full page height let the bed into the denominator: on page 12 of
+    the Wagner memoranda it tripled ink_px (111,240 -> 391,326) while covered_px
+    barely moved, and covered_fraction fell from 1.00 to 0.33. Every pre-1974
+    record then built as needs-review.
+    """
+    gray = blank_page(h=1000, w=500)
+    ink(gray, 0, 0, 500, 60)          # scanner bed, head
+    ink(gray, 0, 940, 500, 1000)      # scanner bed, foot
+    ink(gray, 100, 400, 400, 500)     # the body, which the model boxed
+    result = coverage(gray, [
+        {"bbox": [90, 395, 410, 505], "category": "Text", "text": "WHEREAS, a thing happened;"},
+    ])
+    assert result["roi"][1] == 60      # the ROI moved in past the band
+    assert result["roi"][3] == 940
+    assert result["covered_fraction"] == 1.0
+    assert result["uncovered_regions"] == []
+
+
+def test_a_dark_band_inside_the_page_is_not_trimmed():
+    """The trim scans inward from each edge and stops at the first row that is
+    not saturated, so a plate in the middle of a page stays in the measurement
+    and reports as uncovered ink rather than disappearing."""
+    gray = blank_page(h=1000, w=500)
+    ink(gray, 0, 400, 500, 500)
+    result = coverage(gray, [])
+    assert result["roi"][1] == 0
+    assert result["roi"][3] == 1000
+    assert result["covered_fraction"] == 0.0

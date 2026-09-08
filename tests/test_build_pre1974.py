@@ -142,6 +142,18 @@ def test_ids_are_unique(built):
     assert len(ids) == len(set(ids))
 
 
+def test_ids_are_unique_after_case_folding(built):
+    """Unique is not enough: the corpus has to fit on a case-insensitive disk.
+
+    1955-EO-027b and 1955-EO-027B were two distinct ids and one macOS file, so
+    one record was unwriteable and git reported a permanent phantom modification.
+    """
+    _, corpus_dir = built
+    bulk = json.loads((corpus_dir / "eo_pre1974.json").read_text(encoding="utf-8"))
+    folded = [r["eo_id"].lower() for r in bulk]
+    assert len(folded) == len(set(folded))
+
+
 # --------------------------------------------------------------------------- #
 # Failure handling                                                              #
 # --------------------------------------------------------------------------- #

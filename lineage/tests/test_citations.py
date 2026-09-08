@@ -51,7 +51,10 @@ def test_a_missing_number_still_mints_an_identifiable_id():
 
 
 def test_the_stem_of_an_id_drops_the_pre1974_suffix():
-    assert citations.id_stem("1966-EO-019g") == "1966-EO-019"
+    # Both suffix namespaces reduce to the same stem: the label PRINTED on the
+    # page, and the page anchor the build mints when two records claim one id.
+    assert citations.id_stem("1966-EO-019B") == "1966-EO-019"
+    assert citations.id_stem("1966-EO-019-p007") == "1966-EO-019"
     assert citations.id_stem("1966-EO-019-39") == "1966-EO-019"
     assert citations.id_stem("2024-EO-042") == "2024-EO-042"
     assert citations.id_stem("1969-EM-D0101") is None
@@ -114,7 +117,7 @@ def test_a_pre1974_number_filed_under_a_suffix_says_so_rather_than_guessing():
     _, dangles, _ = citations.extract([
         order("1970-EO-010",
               "Executive Order No. 19, dated June 30, 1966, is hereby revoked."),
-        order("1966-EO-019g"),
+        order("1966-EO-019-p007"),
         order("1966-EO-019-39"),
     ])
     assert dangles[0].target == "1966-EO-019"

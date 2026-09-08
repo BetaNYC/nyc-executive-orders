@@ -575,8 +575,8 @@ def test_a_list_sentence_becomes_one_event_per_body(all_four_passes):
 
     * 2022-EO-003  three offices continued and established within OTI
     * 1976-EO-063  three planning offices abolished together
-    * 1965-EO-181o "a Housing Policy Board and a Housing Executive Committee"
-    * 1966-EO-028c "the Anti-Poverty Operations Board and the Economic
+    * 1965-EO-181-p261 "a Housing Policy Board and a Housing Executive Committee"
+    * 1966-EO-028-p068 "the Anti-Poverty Operations Board and the Economic
       Opportunity Committee are abolished" — the case the README used to cite as
       a known miss.
     """
@@ -585,7 +585,7 @@ def test_a_list_sentence_becomes_one_event_per_body(all_four_passes):
         by_span.setdefault((e.eo_id, e.start, e.end, e.verb), []).append(e)
     listed = {k[0]: len(v) for k, v in by_span.items() if len(v) > 1}
     assert listed == {"2022-EO-003": 3, "1976-EO-063": 3,
-                      "1965-EO-181o": 2, "1966-EO-028c": 2}
+                      "1965-EO-181-p261": 2, "1966-EO-028-p068": 2}
 
 
 @needs_corpus

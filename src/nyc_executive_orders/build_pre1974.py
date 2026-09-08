@@ -205,8 +205,13 @@ def _mint_ids(documents: list, volume: Volume, used: dict[str, int] | None = Non
 
     Two documents can still collide after index reconciliation — an unrecovered
     duplicate number, or two unnumbered instruments sharing a date — so the
-    occurrence suffix is applied at mint time rather than trusted not to be
+    disambiguating suffix is applied at mint time rather than trusted not to be
     needed. An overwritten record is silent data loss; a suffixed id is visible.
+
+    The suffix names the volume page the copy opens on (``1955-EO-027-p088``), so
+    the id says which copy it is rather than merely that it is not the first. The
+    1954-1957 Wagner volume prints page 2 of Executive Order #27 twice, on pages
+    88 and 90, and both copies keep a record of their own.
 
     ``used`` is the caller's counter, shared across volumes. It has to be: an
     unnumbered record's id is minted from its date alone, and two volumes DO
@@ -227,15 +232,30 @@ def _mint_ids(documents: list, volume: Volume, used: dict[str, int] | None = Non
         base = mint_pre1974_id(year, doc.number, doc.series, month_day=month_day)
         occurrence = used.get(base, 0)
         used[base] = occurrence + 1
+        if not occurrence:
+            ids.append(base)
+            continue
+
+        page = doc.pages[0] if doc.pages else None
         eo_id = mint_pre1974_id(
-            year, doc.number, doc.series, month_day=month_day, occurrence=occurrence
+            year, doc.number, doc.series, month_day=month_day,
+            page=page, occurrence=occurrence,
         )
-        if occurrence:
-            doc.flags.append(
-                f"id-collision: {base} was already minted in this build; this "
-                f"record is {eo_id}. Two documents claim the same identity — "
-                "check the segmentation before publishing."
-            )
+        # The page anchor is unique inside one volume — a page opens at most one
+        # document — but `used` spans the whole build, and two volumes can carry
+        # the same base id on the same page number, exactly as they can carry the
+        # same date. Confirm it rather than assume it.
+        anchored, bump = eo_id, 2
+        while eo_id in used:
+            eo_id = f"{anchored}-{bump}"
+            bump += 1
+        used[eo_id] = 1
+        where = f" (volume page {page})" if page is not None else ""
+        doc.flags.append(
+            f"id-collision: {base} was already minted in this build; this "
+            f"record is {eo_id}{where}. Two documents claim the same identity — "
+            "check the segmentation before publishing."
+        )
         ids.append(eo_id)
     return ids
 

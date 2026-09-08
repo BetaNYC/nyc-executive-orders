@@ -89,9 +89,25 @@ PRE1974_SERIES = (
 # There is no emergency series before 1974 — `is_emergency` is False on every
 # pre-1974 record, so "EEO" never appears here.
 
-# Suffixes appended when two unnumbered instruments share a signing date. 'a' is
-# implicit (the first gets no suffix), so index 1 -> 'b', 2 -> 'c', ...
-_COLLISION_SUFFIXES = "abcdefghijklmnopqrstuvwxyz"
+# The suffix that separates two records claiming one identity. It is anchored to
+# the PDF page the copy starts on, and it is introduced by a hyphen. Both halves
+# are load-bearing:
+#
+#   * The HYPHEN, because the OTHER suffix an id can carry is the number label
+#     PRINTED on the page ("27B" -> 1955-EO-027B). `volume_split.normalize_number`
+#     reduces a printed label to digits plus letters and strips the hyphen out of
+#     it ("NO. 7-A" -> "7A"), so a hyphen can never occur inside one. The two
+#     suffix namespaces therefore cannot overlap. The scheme this replaces minted
+#     a LOWERCASE letter ('b', 'c', ...) alongside the printed label's uppercase
+#     one, and 1955-EO-027b vs 1955-EO-027B is a single file on a
+#     case-insensitive filesystem: one of the two records was unwriteable, and
+#     git reported a permanent phantom modification on it.
+#   * The PAGE, because it says WHICH copy this is. The 1954-1957 Wagner volume
+#     prints page 2 of Executive Order #27 twice, on pages 88 and 90. A bare
+#     counter calls them "the second" and "the third"; the page anchor names
+#     them, and it does not shift when re-segmentation changes how many copies
+#     come before.
+_PAGE_ANCHOR = "-p{page:03d}"
 
 
 def mint_pre1974_id(
@@ -100,11 +116,12 @@ def mint_pre1974_id(
     series: str,
     *,
     month_day: str | None = None,
+    page: int | None = None,
     occurrence: int = 0,
 ) -> str:
     """Build the id for one pre-1974 instrument.
 
-    Numbered instruments (the overwhelming majority — both the Executive Order
+    Numbered instruments (the overwhelming majority -- both the Executive Order
     volumes and most memoranda are numbered on the page) mint the same shape as
     the modern scheme, with the series swapped in::
 
@@ -116,18 +133,22 @@ def mint_pre1974_id(
     `1966-01-01_1968-05-13_Lindsay_Memoranda-Unnumbered.pdf` volume) have no
     number to carry, so the id is derived from the signing date instead::
 
-        1967-EM-D0104   the memorandum signed January 4, 1967
-        1967-EM-D0104b  a second one signed the same day
+        1967-EM-D0104        the memorandum signed January 4, 1967
+        1967-EM-D0104-p012   a second one signed the same day, opening on page 12
 
     Date-derived rather than sequence-derived on purpose: a sequence number would
     shift every id in the volume whenever segmentation changed by one document,
     silently breaking cross-links. The date is a property of the instrument, so
     the id is stable as long as the date reads the same.
 
-    ``occurrence`` is the 0-based index among instruments sharing that date;
+    ``occurrence`` is the 0-based count of records that already claimed this
+    identity in the build: 0 mints the bare id, and anything higher adds the page
+    anchor described above. ``page`` is the PDF page the copy opens on; without
+    one the anchor falls back to the 1-based occurrence index, which still leads
+    with the hyphen and so still cannot collide with a printed label.
     ``month_day`` is "MMDD". With neither a number nor a date, the id falls back
-    to "UNK" (the same marker :func:`mint_eo_id` uses), still disambiguated by
-    ``occurrence`` so two unknowns cannot collide.
+    to "UNK" (the same marker :func:`mint_eo_id` uses), still disambiguated so
+    two unknowns cannot collide.
     """
     if series not in PRE1974_SERIES:
         raise ValueError(
@@ -141,20 +162,20 @@ def mint_pre1974_id(
         # keeps the letter, so 7 -> 007, 7A -> 007A, and the two sort adjacent.
         m = re.match(r"^(\d+)([A-Za-z]*)$", label)
         num = f"{int(m.group(1)):03d}{m.group(2).upper()}" if m else label
-        return f"{year}-{series}-{num}{_suffix(occurrence)}"
+        return f"{year}-{series}-{num}{_suffix(occurrence, page)}"
 
     stem = f"D{month_day}" if month_day else "UNK"
-    return f"{year}-{series}-{stem}{_suffix(occurrence)}"
+    return f"{year}-{series}-{stem}{_suffix(occurrence, page)}"
 
 
-def _suffix(occurrence: int) -> str:
-    """'' for the first instrument on a date, then 'b', 'c', ... for the rest.
+def _suffix(occurrence: int, page: int | None) -> str:
+    """'' for the first claim on an identity, a page anchor for every one after.
 
-    Past 'z' the raw index is appended ("-27") rather than wrapping, so ids stay
-    unique no matter how implausible the input.
+    Falls back to the 1-based occurrence index when the page is not known, so the
+    id stays unique and stays hyphen-introduced.
     """
     if occurrence <= 0:
         return ""
-    if occurrence < len(_COLLISION_SUFFIXES):
-        return _COLLISION_SUFFIXES[occurrence]
-    return f"-{occurrence}"
+    if page is None:
+        return f"-{occurrence + 1}"
+    return _PAGE_ANCHOR.format(page=page)

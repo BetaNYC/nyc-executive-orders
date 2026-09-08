@@ -5,9 +5,9 @@ Records emitted: **978**
 
 ## Text quality
 
-- clean: **653**
-- minor-noise: **40**
-- needs-review: **285**
+- clean: **296**
+- minor-noise: **19**
+- needs-review: **663**
 - no-text: **0**
 
 ## Per volume
