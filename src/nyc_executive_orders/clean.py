@@ -49,6 +49,7 @@ No network, no external binary, no LLM. Pure local string work.
 
 from __future__ import annotations
 
+import functools
 import logging
 import re
 from dataclasses import dataclass, field
@@ -89,6 +90,32 @@ CLEAN_MIN_WORD_RATIO = 0.90       # english-likeness floor for "clean"
 CLEAN_MAX_JUNK_RATIO = 0.05       # junk-char ceiling for "clean"
 REVIEW_MIN_WORD_RATIO = 0.70      # below this => needs-review
 REVIEW_MAX_JUNK_RATIO = 0.15      # above this => needs-review
+
+# Recognized-word floor: the share of body tokens that are real words per
+# :func:`lexicon.recognize`. This is the metric that separates a broken body from
+# a merely imperfect one, and _word_ratio is not: measured across the corpus on
+# 2026-09-08, the out-of-vocabulary share is 0.0129 (median) for genuinely
+# born-digital text, 0.0262 for a second-hand OCR layer and 0.0115 for the VLM,
+# while _word_ratio reads 0.987 / 0.989 / 0.988 for the same three populations.
+#
+# _word_ratio saturates because _english_like is dict-free by design: it accepts
+# any token with a vowel and no five-consonant run, so "Intergovemmental",
+# "em1ss1ons" and "Di.Pease" all pass. The two broken-font-map records
+# (2025-EEO-853/854), whose bodies are 2,354 characters of "Jo,(uIi{ / slu€pv
+# cug", score 0.848 and 0.851 -- above the 0.70 review floor. They measure 0.873
+# and 0.826 OOV here, and they are the ONLY two documents of 2,288 above the
+# review threshold below. Nothing else in the corpus is near it.
+# CALIBRATED AGAINST THE FROZEN WORDLIST, not against English. The list has real
+# gaps -- "committed", "coordinating", "earlier" and "coordinate" are all absent,
+# because _in_dict's stem rules do not cover doubled-consonant inflections or
+# comparatives -- so every population's OOV is inflated by roughly the same
+# amount. The SEPARATION is what these thresholds ride on, and it survives; the
+# absolute values do not transfer. Widening data/wordlist.txt therefore requires
+# recalibrating both numbers here, and note that the same lexicon also gates
+# titles (see _title_is_recognized and the regression guard
+# test_lexicon_growth_does_not_widen_title_gate_for_mangles).
+CLEAN_MIN_RECOGNIZED_RATIO = 0.94   # >= this to stay "clean" (OOV <= 0.06)
+REVIEW_MIN_RECOGNIZED_RATIO = 0.85  # below this => needs-review (OOV > 0.15)
 
 # Title gate: a candidate title is auto-accepted ONLY if it has at least this many
 # meaningful (>=2-char alpha) tokens AND EVERY one of them is a recognized word
@@ -320,7 +347,14 @@ def _title_is_recognized(title: str) -> bool:
 
 
 def _english_like(token: str) -> bool:
-    """Cheap, dict-free english-likeness test for one lowercased alpha token."""
+    """Cheap, dict-free english-likeness test for one lowercased alpha token.
+
+    NOT a quality discriminator, and :func:`_word_ratio` must not be read as one.
+    Anything with a vowel and no five-consonant run passes, so the OCR mangles
+    "Intergovemmental", "em1ss1ons" and "Di.Pease" all score as English. It is
+    kept because it is free of the dictionary and catches gross character soup;
+    :func:`_recognized_ratio` is what actually separates a broken body.
+    """
     t = token.lower()
     if not t.isalpha():
         return False
@@ -348,6 +382,25 @@ def _word_ratio(text: str) -> float:
     if not toks:
         return 1.0
     return sum(_english_like(w) for w in toks) / len(toks)
+
+
+@functools.lru_cache(maxsize=200_000)
+def _recognized(token: str) -> bool:
+    """Cached :func:`lexicon.recognize`. A full corpus sweep asks ~7M times."""
+    return lexicon.recognize(token)
+
+
+def _recognized_ratio(text: str) -> float:
+    """Fraction of >=2-char alpha tokens that are real words. 1.0 if none present.
+
+    Deliberately the same token set as :func:`_word_ratio`, so the two are
+    directly comparable: this one asks the dictionary, that one asks a shape
+    heuristic. See the threshold comments above for why the difference matters.
+    """
+    toks = [w for w in re.findall(r"[A-Za-z]+", text) if len(w) >= 2]
+    if not toks:
+        return 1.0
+    return sum(_recognized(w) for w in toks) / len(toks)
 
 
 def _junk_ratio(text: str) -> float:
@@ -552,8 +605,13 @@ def clean_record(
     ``body`` is the extracted/OCR'd full text. ``year`` is the record's known
     signing year (from ``eo_id``) — used to cross-check any extracted date.
     ``existing_title`` / ``existing_date_signed`` are the current frontmatter
-    values; a non-empty existing value is NEVER overwritten. ``text_source`` (e.g.
-    ``born-digital`` / ``ocr``) only informs tiering.
+    values; a non-empty existing value is NEVER overwritten.
+
+    ``text_source`` (e.g. ``born-digital`` / ``ocr``) is accepted and recorded by
+    callers but NO LONGER AFFECTS THE RESULT. It used to exempt ``born-digital``
+    bodies from the anchor test in :func:`_tier`; that exemption was removed once
+    665 of the 1,205 records carrying the tag turned out to be scans. The tier is
+    now decided on the body alone. See :func:`_tier`.
 
     ``apply_body_edits`` — when ``True`` (OCR docs), the header trim + file-mark
     stripping + whitespace normalization run and can change the body. When
@@ -593,7 +651,7 @@ def clean_record(
             raw=raw, cleaned=raw, dropped_header="", dropped_marks=[],
             anchor_label=anchor_label, flags=flags, year=year,
             existing_title=existing_title, existing_date_signed=existing_date_signed,
-            text_source=text_source, extract_title=extract_title,
+            extract_title=extract_title,
         )
     # First line that opens the order body ("WHEREAS", "BY VIRTUE", "BY THE POWER",
     # "NOW THEREFORE", ...). If real body begins ABOVE the earliest anchor, that
@@ -642,8 +700,7 @@ def clean_record(
         raw=raw, cleaned=cleaned, dropped_header=dropped_header,
         dropped_marks=dropped_marks, anchor_label=anchor_label, flags=flags,
         year=year, existing_title=existing_title,
-        existing_date_signed=existing_date_signed, text_source=text_source,
-        extract_title=extract_title,
+        existing_date_signed=existing_date_signed, extract_title=extract_title,
     )
 
 
@@ -658,7 +715,6 @@ def _finish(
     year: int,
     existing_title: str | None,
     existing_date_signed: str | None,
-    text_source: str | None,
     extract_title: bool = True,
 ) -> CleanResult:
     """Shared tail: title/date gap-fill + quality tiering + assemble result."""
@@ -689,12 +745,14 @@ def _finish(
     # --- Pass 4: quality tiering -------------------------------------------- #
     word_ratio = _word_ratio(cleaned)
     junk_ratio = _junk_ratio(cleaned)
+    recognized_ratio = _recognized_ratio(cleaned)
     leading_noise = len(dropped_header)
     anchor_found = anchor_label is not None
 
     metrics = {
         "leading_noise_chars": leading_noise,
         "english_word_ratio": round(word_ratio, 4),
+        "recognized_word_ratio": round(recognized_ratio, 4),
         "junk_char_ratio": round(junk_ratio, 4),
         "anchor_found": anchor_found,
         "title_resolved": title is not None,
@@ -711,11 +769,11 @@ def _finish(
         for f in flags
     )
     text_quality = _tier(
-        text_source=text_source,
         anchor_found=anchor_found,
         leading_noise=leading_noise,
         word_ratio=word_ratio,
         junk_ratio=junk_ratio,
+        recognized_ratio=recognized_ratio,
         review_flag=review_flag,
     )
 
@@ -745,27 +803,44 @@ def _normalize_ws(text: str) -> str:
 
 def _tier(
     *,
-    text_source: str | None,
     anchor_found: bool,
     leading_noise: int,
     word_ratio: float,
     junk_ratio: float,
+    recognized_ratio: float,
     review_flag: bool,
 ) -> str:
-    born_digital = text_source == "born-digital"
+    """The quality tier for one cleaned body. Provenance-blind, by design.
+
+    This used to take ``text_source`` and exempt ``born-digital`` from the anchor
+    test, on the reasoning that a word processor's output needs no structural
+    check. That reasoning was sound and the premise was false: 665 of the 1,205
+    records carrying that tag are scans with a second-hand OCR layer, so the one
+    structural check in the whole tier was switched off for exactly the
+    population that needed it. Three bodies had no anchor at all and all three
+    were broken; none was tiered needs-review.
+
+    Removing the exemption moved exactly 3 records corpus-wide (2025-EO-057,
+    2025-EEO-853, 2025-EEO-854) --- every other body already has its anchor.
+    """
     # needs-review: strongest signals of trouble.
     if review_flag:
         return TEXT_QUALITY_REVIEW
-    if not anchor_found and not born_digital:
+    # The anchor is the letterhead, and the letterhead is the only STRUCTURAL
+    # evidence that a body is the order it claims to be. 2025-EO-057 lost its
+    # entire first page and still read as clean prose on every text metric.
+    if not anchor_found:
         return TEXT_QUALITY_REVIEW
     if word_ratio < REVIEW_MIN_WORD_RATIO or junk_ratio > REVIEW_MAX_JUNK_RATIO:
         return TEXT_QUALITY_REVIEW
-    # clean: born-digital, or a well-anchored low-noise high-word-ratio doc.
+    if recognized_ratio < REVIEW_MIN_RECOGNIZED_RATIO:
+        return TEXT_QUALITY_REVIEW
+    # clean: a well-anchored, low-noise body that reads as English AND as words.
     if (
-        (born_digital or anchor_found)
-        and leading_noise <= CLEAN_MAX_LEADING_NOISE
+        leading_noise <= CLEAN_MAX_LEADING_NOISE
         and word_ratio >= CLEAN_MIN_WORD_RATIO
         and junk_ratio <= CLEAN_MAX_JUNK_RATIO
+        and recognized_ratio >= CLEAN_MIN_RECOGNIZED_RATIO
     ):
         return TEXT_QUALITY_CLEAN
     return TEXT_QUALITY_MINOR
