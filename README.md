@@ -4,7 +4,7 @@
 
 An open, complete, machine-readable archive of **New York City mayoral executive orders** — the public compilation the City is _legally required_ to maintain.
 
-> **Status: the archive is live.** The full 1974–present corpus — **2,291 orders** as per-EO Markdown + bulk JSON, backed by 2,291 source PDFs plus 2,435 second-source scans from DORIS's Government Publications Portal — is published in [`corpus/`](corpus/). The 2014–2021 (de Blasio) cohort, previously an eight-year hole, was backfilled from the Internet Archive in July 2026 ([Phase B.4](#phase-b4--de-blasio-era-backfill-20142021)) and is now complete (91/91). The GPP integration ([Phase D](#phase-d--doris-gpp-integration)) closed all but 2 known-missing numbered orders. The supersession graph is populated deterministically from the corpus text ([Phase C](#phase-c--supersession-graph)). **All 14 pre-1974 bound volumes are now OCR'd** — 2,936 pages of image scan, 1946–1973 — and split into **978 additional per-order records** published separately as `corpus/eo_pre1974.json` ([Phase E](#phase-e--pre-1974-volume-split)). **The post-1974 scans have now been re-read by that same local vision-language model** — all **1,086 image-only PDFs, 1,799 pages**, migrated off Tesseract ([Phase F](#phase-f--vlm-ocr-migration-post-1974)): no document lost text, and the invented letterhead garbage is gone (see [`sample_vlm_diff/`](sample_vlm_diff/)). The born-digital half is the next target — an [audit](docs/born-digital-audit.md) found **665 of the 1,205 "born-digital" records are actually scans carrying somebody else's OCR layer**, and 55 inked pages missing from published bodies. Coverage and text are still being refined (the born-digital audit, metadata backfill, pre-1974 segmentation review), and known gaps and limits are documented, not hidden. See [Status](#status).
+> **Status: the archive is live.** The full 1974–present corpus — **2,291 orders** as per-EO Markdown + bulk JSON, backed by 2,291 source PDFs plus 2,435 second-source scans from DORIS's Government Publications Portal — is published in [`corpus/`](corpus/). The 2014–2021 (de Blasio) cohort, previously an eight-year hole, was backfilled from the Internet Archive in July 2026 ([Phase B.4](#phase-b4--de-blasio-era-backfill-20142021)) and is now complete (91/91). The GPP integration ([Phase D](#phase-d--doris-gpp-integration)) closed all but 2 known-missing numbered orders. The supersession graph is populated deterministically from the corpus text ([Phase C](#phase-c--supersession-graph)). **All 14 pre-1974 bound volumes are now OCR'd** — 2,936 pages of image scan, 1946–1973 — and split into **978 additional per-order records** published separately as `corpus/eo_pre1974.json` ([Phase E](#phase-e--pre-1974-volume-split)). **The post-1974 scans have now been re-read by that same local vision-language model** — all **1,086 image-only PDFs, 1,799 pages**, migrated off Tesseract ([Phase F](#phase-f--vlm-ocr-migration-post-1974)): no document lost text, and the invented letterhead garbage is gone (see [`sample_vlm_diff/`](sample_vlm_diff/)). **The born-digital gate has now been repaired** — an [audit](docs/born-digital-audit.md) found **665 of the 1,205 "born-digital" records were actually scans carrying somebody else's OCR layer**, and 59 pages missing from published bodies. The gate now reads the PDF text render mode as well as the character count, so those records carry an honest `ocr-layer` provenance and are queued for the same VLM machinery ([runbook](docs/ocr-layer-cutover-instructions.md)); the lost pages are flagged rather than silent. Coverage and text are still being refined (the born-digital audit, metadata backfill, pre-1974 segmentation review), and known gaps and limits are documented, not hidden. See [Status](#status).
 
 Vibe coded with [Claude](https://claude.ai) by [BetaNYC](https://beta.nyc).
 
@@ -96,7 +96,7 @@ Everything before ~2002 is scanned images requiring OCR; later orders are a mix 
 - [x] **Split the pre-1974 volumes** (14 bound compilations, 1946–1973) into per-order records — **all 14 volumes OCR'd** (2,936 pages) and split into **978 records** ([Phase E](#phase-e--pre-1974-volume-split)); segmentation review and index reconciliation continue.
 - [x] **Re-read the post-1974 scans with a vision-language model** — all **1,086** scanned post-1974 PDFs (**1,799 pages**) migrated from Tesseract to local `dots.ocr` ([Phase F](#phase-f--vlm-ocr-migration-post-1974)): **0** documents lost text, 22 recovered a `§` Tesseract never saw, 51 gained a real printed title.
 - [x] **Trace the agencies through the orders** — [Phase G](#phase-g--agency-lineage): **15,331** agency mentions located to the character, **367** reorganization events (established / renamed / abolished / transferred) and **294** order-to-order citation edges, published as `corpus/mentions.json`. The edges exist; the graph and the review lists are open work.
-- [ ] **Repair the born-digital path** — the audit in [`docs/born-digital-audit.md`](docs/born-digital-audit.md) is the open worklist: **665 of 1,205** records tagged `born-digital` are scans with a second-hand OCR layer, **55 inked pages** never reached a published body, and the quality metrics cannot see either fault. In progress.
+- [x] **Repair the born-digital path** — the audit in [`docs/born-digital-audit.md`](docs/born-digital-audit.md) was the worklist. The gate now reads the PDF text render mode, so the **666** scans carrying a second-hand OCR layer are labelled `ocr-layer` instead of `born-digital`; the **59 pages** that never reached a published body are flagged `needs-review`; the tier tests every body against the dictionary instead of a shape heuristic. Re-OCR of those 666 is prepared but not run ([runbook](docs/ocr-layer-cutover-instructions.md)).
 - [ ] **Maintain** it forward as new orders are signed.
 - [ ] _(Explore)_ an MCP server, and whether this folds into [`nyc-charter-laws-rules`](https://github.com/BetaNYC/nyc-charter-laws-rules).
 
@@ -392,12 +392,15 @@ bulk `corpus/eo.json`.
 5. **Clean** (`clean.py`) — deterministic, non-destructive cleanup of OCR'd docs: relocate scan-stamp and letterhead noise out of the body (into `dropped_header` / `dropped_marks`, never deleted), and backfill `title` / `date_signed` from the body **only** when a frozen-dictionary gate confirms every word — otherwise the field is left empty and flagged for human review. **No stage ever rewrites the order text**; the verbatim OCR is preserved in `full_text_raw`.
 6. **Emit** (`build_corpus.py`) — write the per-EO Markdown, bulk JSON, and manifest.
 
-Every record carries a `text_source` (`born-digital` / `ocr-vlm` / `ocr` / none) and a
+Every record carries a `text_source` (`born-digital` / `ocr-layer` / `ocr-vlm` / `ocr` / none) and a
 `text_quality` tier (`clean` / `minor-noise` / `needs-review`) so consumers know exactly what
-they are getting. Today 1,086 records read `ocr-vlm` and 1,205 read `born-digital`. **Treat the
-`born-digital` tag with care until the audit lands:** 665 of those 1,205 PDFs are scans that
-somebody already ran through an OCR engine, so their text is second-hand OCR, not the byte-exact
-output of a word processor — see [`docs/born-digital-audit.md`](docs/born-digital-audit.md). Supersession annotations are populated by [Phase C](#phase-c--supersession-graph).
+they are getting. Today 1,086 records read `ocr-vlm`, 666 read `ocr-layer` and 539 read
+`born-digital`. `ocr-layer` means the PDF has a text layer and that layer is somebody else's OCR
+stamped invisibly over a page image — real, readable, and not the document. Those records were
+tagged `born-digital` until the gate learned to read the PDF text render mode; see
+[`docs/born-digital-audit.md`](docs/born-digital-audit.md) and
+[`docs/ocr-layer-cutover-instructions.md`](docs/ocr-layer-cutover-instructions.md). `born-digital`
+now means what it says. Supersession annotations are populated by [Phase C](#phase-c--supersession-graph).
 
 ## Phase C — supersession graph
 
@@ -779,21 +782,29 @@ stay in the tree.
 
 ### Next: the born-digital half
 
-The scanned half is now read as well as we can read it. The **born-digital** half is not, and
-[`docs/born-digital-audit.md`](docs/born-digital-audit.md) measures why — every number in it was probed
-from the committed PDFs:
+[`docs/born-digital-audit.md`](docs/born-digital-audit.md) measured this path in September 2026 —
+every number in it probed from the committed PDFs — and found three faults. The code is fixed;
+the re-OCR the fix makes possible has not been run.
 
-- **665 of the 1,205** records tagged `born-digital` are scans whose text layer is somebody
+- **665 of the 1,205** records tagged `born-digital` were scans whose text layer is somebody
   else's OCR, stamped invisible over a page image. 228 of them read `§` as `$`. The gate
-  (`textlayer.py`) decides from one number — mean characters per page — which cannot tell a word
-  processor from a scan that was already OCR'd.
-- **55 inked pages** never reached a published body, because the gate averages over pages.
-  `2025-EO-057` publishes a body that starts mid-order, and is tiered `clean`.
-- The quality metrics **cannot see either fault**: word-ratio and junk-ratio return the same
-  medians for clean text, second-hand OCR and Tesseract output.
+  (`textlayer.py`) decided from one number — mean characters per page — which cannot tell a word
+  processor from a scan that was already OCR'd. It now also reads the PDF text render mode:
+  mode 3 is invisible, the share is bimodal at 0 and 1, and the whole corpus probes in 8 seconds.
+  Those 666 records now carry `text_source: ocr-layer`.
+- **59 pages** never reached a published body, because the gate averaged over pages. The probe
+  now keeps the per-page counts, and a document holding a page with no extractable text is
+  flagged `needs-review` instead of published as complete. `2025-EO-057` still opens mid-order at
+  `$ 2.` — only OCR can restore its first page — but it no longer claims to be `clean`.
+- The quality metrics **could not see either fault**: word-ratio returns 0.987 / 0.989 / 0.988 for
+  clean text, second-hand OCR and Tesseract output alike, because its english-likeness test is
+  dict-free by design. The tier now also measures the share of tokens that are real words against
+  the frozen lexicon, which separates the same populations 0.0129 / 0.0262 / 0.0115 and catches
+  the two broken-font-map records that word-ratio rates 0.848.
 
-The fix list is in that file, worst first. Item 4 on it is to send those 665 scans through this
-same Phase F machinery, which already handles exactly that case.
+**What is left is the OCR run itself** — 680 documents, 1,049 pages, through the same Phase F
+machinery. It is prepared, pre-flighted and not executed:
+[`docs/ocr-layer-cutover-instructions.md`](docs/ocr-layer-cutover-instructions.md).
 
 ## Phase G — agency lineage
 
@@ -906,18 +917,22 @@ every source we've checked, including GPP's own deposits; both are now accountab
 regular series is complete (91 of 91 signed orders recovered, including EO 31/2018 and EO
 56/2020, which later orders cite as revoked).
 
-**The born-digital half is the current work.** An audit of all 1,205 born-digital records
+**666 records hold second-hand OCR, and now say so.** An audit of all 1,205 born-digital records
 ([`docs/born-digital-audit.md`](docs/born-digital-audit.md), every number probed from the committed PDFs)
-found that **665 of them are not born-digital at all** — they are scans carrying an invisible
+found that **665 of them were not born-digital at all** — they are scans carrying an invisible
 OCR layer that somebody else produced, of unknown vintage and unknown quality, and 228 of them
-read `§` as `$`. It also found **55 inked pages missing from published bodies**, because the
-born-digital gate averages characters over pages and a text-empty page then emits nothing;
-`2025-EO-057` publishes a body that begins in the middle of the order and is still tiered
-`clean`. The quality metrics cannot see either fault. Fixes are listed worst-first in that file,
-and the largest of them is to send those 665 scans through the
-[Phase F](#phase-f--vlm-ocr-migration-post-1974) machinery, which already handles that exact
-case. This is stated here rather than hidden: **do not treat `text_source: born-digital` as
-proof of byte-faithful text today.**
+read `§` as `$`. The gate now reads the PDF text render mode and labels them `ocr-layer`, so
+`text_source: born-digital` means what it says again. **The text of those 666 records has not
+changed** — it is the same second-hand OCR, correctly labelled — and re-reading them with the
+[Phase F](#phase-f--vlm-ocr-migration-post-1974) model is prepared but not run
+([runbook](docs/ocr-layer-cutover-instructions.md)). Until it is, treat `ocr-layer` text as
+machine-read, not authoritative.
+
+**59 pages are still missing from published bodies**, because the born-digital gate averaged
+characters over pages and a text-empty page emitted nothing. 55 of them carry ink. The pages are
+not recovered — only OCR can do that — but they are no longer silent: the 47 affected documents
+are tiered `needs-review`, and `2025-EO-057`, which publishes a body beginning in the middle of
+the order, is one of them.
 
 **The pre-1974 record now exists too.** All 14 bound volumes (1946–1973) are harvested, and
 [Phase E](#phase-e--pre-1974-volume-split) has now OCR'd **every one of them** — 2,936 pages of
