@@ -480,3 +480,92 @@ def test_idempotent_recleaning_cleaned_body_is_stable():
     assert second.dropped_header == ""
     assert second.dropped_marks == []
     assert second.full_text == first.full_text
+
+
+# --------------------------------------------------------------------------- #
+# The tier is provenance-blind                                                  #
+# --------------------------------------------------------------------------- #
+
+def test_a_body_with_no_anchor_is_reviewed_whatever_its_provenance():
+    """The anchor test used to be switched off for `born-digital`, on the
+    reasoning that a word processor's output needs no structural check. The
+    reasoning was sound; the premise was false. 665 of the 1,205 records carrying
+    that tag are scans with a second-hand OCR layer, so the only structural check
+    in the tier was off for exactly the population that needed it.
+
+    2025-EO-057 is the case: its entire first page is missing, so the body opens
+    mid-order with no letterhead above it, and it was tiered clean.
+    """
+    body = (
+        "$ 2.\n"
+        "The Office shall support the growth of the digital asset industry\n"
+        "by developing strategies and advising on opportunities for policy change.\n"
+    )
+    for source in ("born-digital", "ocr", "ocr-vlm", None):
+        r = clean_record(body, year=2025, text_source=source)
+        assert r.anchor_found is False
+        assert r.text_quality == clean.TEXT_QUALITY_REVIEW, source
+
+
+def test_the_same_body_tiers_the_same_whatever_the_text_source():
+    """text_source is still accepted, and must no longer change the answer."""
+    body = (
+        "THE CITY OF NEW YORK\n"
+        "OFFICE OF THE MAYOR\n"
+        "EXECUTIVE ORDER NO. 23\n"
+        "WHEREAS, the City of New York has committed to reduce pollution; and\n"
+    )
+    tiers = {clean_record(body, year=2022, text_source=s).text_quality
+             for s in ("born-digital", "ocr", "ocr-vlm", None)}
+    assert len(tiers) == 1
+
+
+# --------------------------------------------------------------------------- #
+# The recognized-word ratio sees what the shape heuristic cannot                #
+# --------------------------------------------------------------------------- #
+
+def test_a_broken_font_map_is_reviewed():
+    """2025-EEO-853/854: 2,354 characters of "Jo,(uIi{ / slu€pv cug / *wY:1?".
+    The tokens are pronounceable and vowel-bearing, so _english_like accepts
+    almost all of them and _word_ratio scores the real records 0.848 and 0.851 --
+    above the 0.70 review floor. Only the dictionary sees it.
+    """
+    body = ("OFFICE OF THE MAYOR\n"
+            + "Jo culi slucpv cug wY entare mo bilate sero mi tuca de lorane\n" * 6)
+    r = clean_record(body, year=2025, text_source="born-digital")
+    assert r.metrics["english_word_ratio"] > clean.REVIEW_MIN_WORD_RATIO
+    assert r.metrics["recognized_word_ratio"] < clean.REVIEW_MIN_RECOGNIZED_RATIO
+    assert r.text_quality == clean.TEXT_QUALITY_REVIEW
+
+
+def test_ocr_mangled_letterhead_is_demoted_not_failed():
+    """The commonest second-hand-OCR damage: "Crry" for CITY, "MnYoR" for MAYOR,
+    "Orrrce" for OFFICE, "Yonx" for YORK. Real content, badly read. 27 corpus
+    records move from clean to minor-noise on this signal alone.
+    """
+    body = (
+        "EXECUTIVE ORDER NO. 82\n"
+        "Tne Crry or Nrw Yonx Orrrce or tne MnyoR roooz\n"
+        "WHEREAS, the Mayor has determined that a state of emergency exists in\n"
+        "the City and that the health and safety of its residents requires the\n"
+        "immediate suspension of the provisions set forth in the section below;\n"
+        "NOW, THEREFORE, by the power vested in me as Mayor of the City of New\n"
+        "York, it is hereby ordered that the agency shall take all steps that\n"
+        "are reasonable and necessary to protect the public during the period.\n"
+    )
+    r = clean_record(body, year=2021, text_source="born-digital")
+    assert r.metrics["recognized_word_ratio"] < clean.CLEAN_MIN_RECOGNIZED_RATIO
+    assert r.text_quality == clean.TEXT_QUALITY_MINOR
+
+
+def test_ordinary_english_passes_the_recognized_floor():
+    body = (
+        "THE CITY OF NEW YORK\n"
+        "OFFICE OF THE MAYOR\n"
+        "EXECUTIVE ORDER NO. 23\n"
+        "WHEREAS, the City of New York has a moral and economic imperative to\n"
+        "act to protect our planet and the health and safety of its residents;\n"
+    )
+    r = clean_record(body, year=2022, text_source="born-digital")
+    assert r.metrics["recognized_word_ratio"] >= clean.CLEAN_MIN_RECOGNIZED_RATIO
+    assert r.text_quality == clean.TEXT_QUALITY_CLEAN
