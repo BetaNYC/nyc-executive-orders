@@ -79,6 +79,7 @@ _DEHYPHEN_RE = re.compile(r"(\w+)[-\u00ad]\n([a-z]\w*)")
 # records carried one, and a search for "person-to-person" could not match them.
 # Zero-width space and a stray byte-order mark ride along for the same reason.
 _INVISIBLE_MARKS_RE = re.compile(r"[\u00ad\u200b\ufeff]")
+_SOFT_HYPHEN = "\u00ad"
 
 # A line gap this many times the page's median line gap is a paragraph break.
 # Measured on the real corpus: within a paragraph the leading is 13.8pt and
@@ -186,8 +187,13 @@ def _page_paragraphs(page) -> str:
 
     threshold = median * PARAGRAPH_GAP_RATIO
     out = [lines[0][1]]
-    for (prev_top, _), (top, text) in zip(lines, lines[1:]):
-        out.append("\n" + text if top - prev_top > threshold else text)
+    for (prev_top, prev_text), (top, text) in zip(lines, lines[1:]):
+        # A word broken across the line break is never a paragraph boundary,
+        # whatever the leading says. Inserting one here would also hide the wrap
+        # from clean_text, whose rule needs the hyphen and the newline adjacent.
+        wrapped = prev_text.rstrip().endswith(("-", _SOFT_HYPHEN))
+        gapped = top - prev_top > threshold
+        out.append("\n" + text if gapped and not wrapped else text)
     return "\n".join(out) + "\n"
 
 

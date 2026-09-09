@@ -140,3 +140,32 @@ def test_an_image_only_page_contributes_nothing_and_does_not_crash(mixed_pages_p
     assert result.page_count == 2
     assert result.has_text
     assert "OVERSIGHT" in result.text
+
+
+def test_a_wrapped_word_is_never_a_paragraph_boundary(tmp_path):
+    """Leading can jump at a hyphenated wrap — a heading, a page break, a stray
+    block. Breaking there would both split a word across a blank line and hide
+    the wrap from clean_text, whose rule needs the hyphen and the newline
+    adjacent. Caught on corpus/2020/2020-EEO-138.md.
+    """
+    import fitz
+
+    from nyc_executive_orders.extract import _page_paragraphs
+
+    doc = fitz.open()
+    page = doc.new_page(width=612, height=792)
+    y = 72.0
+    for text, step in [("the office of data adminis-", 40.0),   # wide gap AFTER
+                       ("tration shall commence work", 14.0),
+                       ("and the second clause here", 14.0),
+                       ("runs on to a third line now", 14.0),
+                       ("and a fourth line as well", 14.0),
+                       ("and a fifth line to close", 14.0),
+                       ("and a sixth line at last", 14.0)]:
+        page.insert_text((72, y), text, fontsize=11, fontname="helv")
+        y += step
+    out = _page_paragraphs(page)
+    doc.close()
+
+    assert "adminis-\n\ntration" not in out
+    assert clean_text(out).startswith("the office of data administration")
