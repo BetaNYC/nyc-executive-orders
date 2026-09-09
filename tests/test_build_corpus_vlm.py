@@ -265,3 +265,41 @@ def test_frontmatter_field_set_is_unchanged(record, repo):
     ocr_root = seed(repo, "clean")
     parsed = parse(record, repo, ocr_root)
     assert list(parsed.frontmatter.keys()) == list(FRONTMATTER_FIELDS)
+
+
+# --------------------------------------------------------------------------- #
+# The forced-review verdict must survive a clean sweep                          #
+# --------------------------------------------------------------------------- #
+
+def test_clean_sweep_keeps_the_forced_review_verdict(record, repo, tmp_path):
+    """A sweep re-cleans from full_text_raw and cannot see the page records, so
+    the VLM's page-level QA verdict reaches it ONLY through the provenance
+    sidecar. Without it, truncated text — which is clean prose right up to where
+    it stops — scores clean on every text metric and is silently promoted.
+
+    Measured on the 2026-09 corpus before this was wired up: 184 records
+    (178 -> clean, 6 -> minor-noise).
+    """
+    from nyc_executive_orders.build_corpus import clean_existing_corpus
+
+    ocr_root = seed(repo, "truncated")
+    parsed = parse(record, repo, ocr_root)
+    assert parsed.frontmatter["text_quality"] == "needs-review"
+    assert parsed.vlm_provenance["forced_review"] is True
+
+    swept = {**parsed.frontmatter,
+             "full_text": parsed.body,
+             "full_text_raw": parsed.raw_body}
+    provenance = {EO_ID: parsed.vlm_provenance}
+
+    result = clean_existing_corpus([swept], corpus_dir=tmp_path / "no-sidecar")
+    without = json.loads(
+        Path(result.output_paths["eo_json"]).read_text(encoding="utf-8"))
+    assert without[0]["text_quality"] == "clean", (
+        "the text metrics cannot see truncation — this is what the sidecar is for")
+
+    result = clean_existing_corpus([swept], corpus_dir=tmp_path / "sidecar",
+                                   vlm_provenance=provenance)
+    with_sidecar = json.loads(
+        Path(result.output_paths["eo_json"]).read_text(encoding="utf-8"))
+    assert with_sidecar[0]["text_quality"] == "needs-review"
