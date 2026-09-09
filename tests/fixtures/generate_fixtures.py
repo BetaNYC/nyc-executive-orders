@@ -81,6 +81,10 @@ PARAGRAPH_BLOCKS = [
      "must therefore stay a single paragraph in the emitted body; and"],
     ["WHEREAS, the second clause is a separate paragraph and must be",
      "separated from the first by a blank line in the emitted body; and"],
+    ["WHEREAS, the third clause also runs to two printed lines so the",
+     "page has enough gaps for a median to mean something; and"],
+    ["WHEREAS, the fourth clause is here for the same reason and to",
+     "keep the within-paragraph gap the commonest gap on the page; and"],
     ["NOW, THEREFORE, it is hereby ordered as set forth below."],
 ]
 

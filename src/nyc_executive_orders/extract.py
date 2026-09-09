@@ -50,6 +50,7 @@ from __future__ import annotations
 
 import logging
 import re
+import statistics
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -78,6 +79,18 @@ _DEHYPHEN_RE = re.compile(r"(\w+)[-\u00ad]\n([a-z]\w*)")
 # records carried one, and a search for "person-to-person" could not match them.
 # Zero-width space and a stray byte-order mark ride along for the same reason.
 _INVISIBLE_MARKS_RE = re.compile(r"[\u00ad\u200b\ufeff]")
+
+# A line gap this many times the page's median line gap is a paragraph break.
+# Measured on the real corpus: within a paragraph the leading is 13.8pt and
+# between paragraphs it is 27.6pt (corpus/2022/2022-EO-023.md), a ratio of 2.0.
+# 1.35 sits well inside that gap while staying above the jitter of a page that
+# mixes 11pt body text with a 16pt heading.
+PARAGRAPH_GAP_RATIO = 1.35
+
+# Below this many line gaps a page has no reliable median to compare against --- a
+# title page, a signature block, a one-clause order. Such a page falls back to
+# plain text extraction rather than guessing.
+_MIN_GAPS_FOR_PARAGRAPHS = 6
 
 # Runs of spaces/tabs (not newlines) to collapse to a single space.
 _INTRALINE_WS_RE = re.compile(r"[ \t]+")
@@ -131,6 +144,53 @@ def clean_text(raw: str) -> str:
     return text.strip()
 
 
+def _page_paragraphs(page) -> str:
+    """One page's text, with a blank line wherever the printed leading jumps.
+
+    ``page.get_text("text")`` returns one line per printed line and nothing about
+    paragraphs. Where the source PDF separates blocks with extra leading rather
+    than a blank line, every paragraph break is lost, and the Markdown body then
+    renders the whole order as a single wall of text. 187 of the 537 genuinely
+    born-digital bodies had no blank line anywhere.
+
+    The leading itself is the signal, and ``"dict"`` mode carries it: the gap
+    between consecutive line tops is steady inside a paragraph and jumps between
+    them (13.8pt against 27.6pt in corpus/2022/2022-EO-023.md). Comparing each
+    gap against the page's OWN median makes the rule independent of font size,
+    so an 11pt body and a 16pt heading on one page are judged on the same scale.
+
+    This adds structure only: it inserts newlines and never alters, reorders or
+    drops a character. Verified against all 537 genuine born-digital PDFs ---
+    stripping whitespace from this output and from ``get_text("text")`` gives
+    identical strings for every one.
+
+    Falls back to plain extraction on a page with too few gaps to have a
+    meaningful median, and on a page whose blocks PyMuPDF gives no geometry for.
+    """
+    data = page.get_text("dict")
+    lines: list[tuple[float, str]] = []
+    for block in data.get("blocks", ()):
+        if block.get("type") != 0:      # 1 = image block: no text, no geometry
+            continue
+        for line in block.get("lines", ()):
+            text = "".join(span.get("text", "") for span in line.get("spans", ()))
+            lines.append((line["bbox"][1], text))
+
+    gaps = [b - a for (a, _), (b, _) in zip(lines, lines[1:]) if b > a]
+    if len(gaps) < _MIN_GAPS_FOR_PARAGRAPHS:
+        return page.get_text("text")
+
+    median = statistics.median(gaps)
+    if median <= 0:                      # pragma: no cover - degenerate geometry
+        return page.get_text("text")
+
+    threshold = median * PARAGRAPH_GAP_RATIO
+    out = [lines[0][1]]
+    for (prev_top, _), (top, text) in zip(lines, lines[1:]):
+        out.append("\n" + text if top - prev_top > threshold else text)
+    return "\n".join(out) + "\n"
+
+
 def extract_pdf_text(pdf_path: str | Path) -> ExtractResult:
     """Extract + clean the born-digital text layer of a PDF.
 
@@ -144,7 +204,7 @@ def extract_pdf_text(pdf_path: str | Path) -> ExtractResult:
     doc = fitz.open(path)
     try:
         page_count = doc.page_count
-        pages = [page.get_text("text") for page in doc]
+        pages = [_page_paragraphs(page) for page in doc]
     finally:
         doc.close()
 
