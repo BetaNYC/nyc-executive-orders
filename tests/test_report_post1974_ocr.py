@@ -93,6 +93,47 @@ def test_the_baseline_is_the_newest_commit_that_predates_the_rebuild(tmp_path,
     assert label.endswith(":eo.json")
 
 
+def test_the_second_cutover_finds_its_own_baseline(tmp_path, monkeypatch):
+    """The rule used to be "the newest revision in which NO record says ocr-vlm",
+    which only ever worked once. Here `b` is the second cutover's population: it
+    was born-digital before the gate could see it was a scan, became ocr-layer
+    when it could, and is now being replaced by the VLM. The old rule walked past
+    the ocr-layer commit --- because `a` already said ocr-vlm there --- landed on
+    a revision where `b` said born-digital, found nothing tagged ocr-layer, and
+    returned an EMPTY baseline. stage_diff then compared nothing and exited 0.
+    """
+    pre = [{"eo_id": "a", "text_source": "ocr", "full_text_raw": "tesseract text"},
+           {"eo_id": "b", "text_source": "born-digital", "full_text_raw": "mislabelled"}]
+    first_cutover = [
+        {"eo_id": "a", "text_source": "ocr-vlm", "full_text_raw": "vlm text"},
+        {"eo_id": "b", "text_source": "ocr-layer", "full_text_raw": "the overlay text"}]
+    path = git_repo(tmp_path, monkeypatch, pre, first_cutover)
+
+    baseline, _label = report.load_baseline(path, sources=frozenset({"ocr-layer"}))
+
+    assert baseline["b"]["text"] == "the overlay text"
+    assert "a" not in baseline, "only the population under test is the old side"
+
+
+def test_each_cutover_reads_its_own_source_tag(tmp_path, monkeypatch):
+    """The same history, asked about the FIRST cutover, still answers correctly."""
+    pre = [{"eo_id": "a", "text_source": "ocr", "full_text_raw": "tesseract text"}]
+    after = [{"eo_id": "a", "text_source": "ocr-vlm", "full_text_raw": "vlm text"}]
+    path = git_repo(tmp_path, monkeypatch, pre, after)
+
+    baseline, _label = report.load_baseline(path)
+
+    assert baseline["a"]["text"] == "tesseract text"
+
+
+def test_baseline_sources_selects_which_records_are_the_old_side():
+    records = [{"eo_id": "a", "text_source": "ocr", "full_text_raw": "x" * 40},
+               {"eo_id": "b", "text_source": "ocr-layer", "full_text_raw": "y" * 40}]
+    assert set(report.baseline_from_records(records)) == {"a"}
+    assert set(report.baseline_from_records(
+        records, frozenset({"ocr-layer"}))) == {"b"}
+
+
 def test_an_explicit_revision_wins_over_the_search(tmp_path, monkeypatch):
     tesseract = [{"eo_id": "a", "text_source": "ocr", "full_text_raw": "first"}]
     later = [{"eo_id": "a", "text_source": "ocr", "full_text_raw": "second"}]
@@ -105,7 +146,9 @@ def test_an_explicit_revision_wins_over_the_search(tmp_path, monkeypatch):
     assert baseline["a"]["text"] == "first"
 
 
-def test_no_pre_rebuild_revision_yields_no_baseline(tmp_path, monkeypatch):
+def test_no_revision_holding_the_old_text_yields_no_baseline(tmp_path, monkeypatch):
+    """Nothing in this history was ever tagged `ocr`, so there is no old side.
+    stage_diff turns that into a hard failure rather than a quiet skip."""
     rebuilt = [{"eo_id": "a", "text_source": "ocr-vlm", "full_text_raw": "new"}]
     path = git_repo(tmp_path, monkeypatch, rebuilt)
     assert report.load_baseline(path) == ({}, "")
@@ -208,19 +251,37 @@ def test_an_improved_document_passes(tmp_path):
     assert "1/1" in "\n".join(lines)
 
 
-def test_the_67_orders_with_no_baseline_are_not_compared(tmp_path):
-    """They never had Tesseract text; there is nothing to regress against."""
+def test_an_order_with_no_baseline_is_skipped_not_failed(tmp_path):
+    """The 67 orders that never had Tesseract text have nothing to regress
+    against, so they drop out of the comparison — while the documents that DO
+    have a baseline are still compared and still gate the cutover."""
+    seed(tmp_path, "1974-EO-001", 1974, "clean")
+    seed(tmp_path, "1974-EO-002", 1974, "clean")
+    baseline = {"1974-EO-001": {"chars": 260, "word_ratio": 0.80, "junk_ratio": 0.05,
+                                "text_quality": "minor-noise", "text": "OLD TEXT"}}
+    lines, failures = report.stage_diff(
+        [cand(), cand(eo_id="1974-EO-002")], tmp_path, baseline,
+        [{"eo_id": "1974-EO-001"}, {"eo_id": "1974-EO-002"}], 0, tmp_path)
+    assert failures == []
+    assert "1/1" in "\n".join(lines)          # one compared, the other skipped
+
+
+def test_comparing_nothing_is_a_failure_not_a_pass(tmp_path):
+    """A gate that compared no document must not report success. It used to
+    return prose and no failure, so main() exited 0 --- and after the first
+    cutover load_baseline could no longer find the second cutover's population
+    in its old form, so this was the state a real run would have landed in."""
     seed(tmp_path, "1974-EO-001", 1974, "clean")
     lines, failures = report.stage_diff([cand()], tmp_path, {"other": {"chars": 1}},
                                         [], 0, tmp_path)
-    assert failures == []
-    assert "No document has both" in "\n".join(lines)
+    assert failures, "an empty comparison must block the cutover"
+    assert "compared nothing" in "\n".join(lines)
 
 
-def test_a_missing_baseline_tells_you_to_name_a_revision(tmp_path):
+def test_a_missing_baseline_tells_you_to_name_a_revision_and_fails(tmp_path):
     lines, failures = report.stage_diff([cand()], tmp_path, {}, [], 0, tmp_path)
     assert "--baseline-rev" in "\n".join(lines)
-    assert failures == []
+    assert failures, "no baseline means the gate compared nothing"
 
 
 def test_a_sample_diff_shows_the_old_text_not_the_new_text_twice(tmp_path):

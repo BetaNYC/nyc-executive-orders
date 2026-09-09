@@ -94,8 +94,16 @@ def metrics(text: str) -> dict:
 # Baseline — the pre-rebuild corpus, read out of git                            #
 # --------------------------------------------------------------------------- #
 
-def baseline_from_records(records: list[dict]) -> dict:
-    """Metrics AND text for every record Tesseract transcribed, keyed by eo_id.
+# What the OLD side of a diff is tagged, per cutover. The first cutover replaced
+# Tesseract text (`ocr`); the second replaces the second-hand OCR layer the
+# born-digital gate used to wave through (`ocr-layer`). Parameterized rather than
+# hard-coded because there will be a third.
+DEFAULT_BASELINE_SOURCES = frozenset({"ocr"})
+
+
+def baseline_from_records(records: list[dict],
+                          sources: frozenset[str] = DEFAULT_BASELINE_SOURCES) -> dict:
+    """Metrics AND text for every record the OLD engine transcribed, keyed by eo_id.
 
     The text rides along because the stage 2 sample diffs need the old side
     verbatim. Nothing is written to disk: this is one revision of a committed
@@ -103,7 +111,7 @@ def baseline_from_records(records: list[dict]) -> dict:
     """
     payload = {}
     for r in records:
-        if r.get("text_source") != "ocr":
+        if r.get("text_source") not in sources:
             continue
         text = record_text(r)
         payload[r["eo_id"]] = {
@@ -145,14 +153,24 @@ def _git_revisions(rel_path: str, limit: int) -> list[str]:
 
 
 def load_baseline(records_path: Path, rev: str | None = None,
-                  max_revs: int = 20) -> tuple[dict, str]:
-    """The Tesseract baseline, measured from git. Returns (baseline, label).
+                  max_revs: int = 20,
+                  sources: frozenset[str] = DEFAULT_BASELINE_SOURCES,
+                  ) -> tuple[dict, str]:
+    """The pre-rebuild baseline, measured from git. Returns (baseline, label).
 
-    Without `rev`, walk the history of the records file newest first and take
-    the first revision that predates the VLM rebuild — the first one in which no
-    record says `ocr-vlm`. The working tree is never a candidate: after a rebuild
-    it holds the NEW text, which would put the same text on both sides of every
-    sample diff and produce an empty diff for every document.
+    Without `rev`, walk the history of the records file newest first and take the
+    first revision that still holds the OLD text for the population under test —
+    the first one carrying any record tagged with one of `sources`. The working
+    tree is never a candidate: after a rebuild it holds the NEW text, which would
+    put the same text on both sides of every sample diff.
+
+    The rule used to be "the first revision in which NO record says ocr-vlm",
+    which only ever worked for the first cutover. After it, no such revision
+    holds the second cutover's population in its old form, so the search walked
+    past every useful commit to a pre-VLM one where those records were tagged
+    something else entirely — and then returned an empty baseline, silently.
+    Asking about the population under test generalizes to a third cutover with
+    no further edit, and is a better rule for the first one too.
     """
     rel_path = _rel_to_repo(records_path)
     for candidate in ([rev] if rev else _git_revisions(rel_path, max_revs)):
@@ -163,9 +181,7 @@ def load_baseline(records_path: Path, rev: str | None = None,
             records = json.loads(raw)
         except json.JSONDecodeError:
             continue
-        if rev is None and any(r.get("text_source") == "ocr-vlm" for r in records):
-            continue                      # already rebuilt at this commit; go back
-        payload = baseline_from_records(records)
+        payload = baseline_from_records(records, sources)
         if payload:
             return payload, f"{candidate[:8]}:{rel_path}"
     return {}, ""
@@ -306,11 +322,13 @@ def stage_diff(candidates, ocr_root: Path, baseline: dict, records: list[dict],
                samples: int, sample_dir: Path,
                baseline_label: str = "") -> tuple[list[str], list[str]]:
     """Old Tesseract text vs new VLM text, per document. The cutover gate."""
-    lines = ["## Stage 2 — Tesseract vs VLM", ""]
+    lines = ["## Stage 2 — old text vs VLM", ""]
     failures = []
     if not baseline:
-        lines.append("_No baseline. No revision of the records file in git predates "
-                     "the VLM rebuild. Name one with `--baseline-rev`._")
+        lines.append("**No baseline.** No revision of the records file in git holds "
+                     "the old text for this population. Name one with "
+                     "`--baseline-rev`, or widen `--baseline-sources`.")
+        failures.append("no baseline: the cutover gate compared nothing")
         return lines, failures
 
     by_id = {r["eo_id"]: r for r in records}
@@ -342,7 +360,11 @@ def stage_diff(candidates, ocr_root: Path, baseline: dict, records: list[dict],
         rows.append((c.eo_id, old, new, ratio, old_q, new_q))
 
     if not rows:
-        lines.append("_No document has both a Tesseract baseline and VLM records yet._")
+        # A gate that compares nothing must not report success. This used to
+        # return prose and no failure, so main() exited 0 on an empty comparison.
+        lines.append("**No document has both a baseline and VLM records.** The gate "
+                     "compared nothing, which is not the same as passing.")
+        failures.append("no document had both a baseline and VLM records")
         return lines, failures
 
     better = sum(1 for _, o, n, _, _, _ in rows if n["junk_ratio"] <= o["junk_ratio"]
@@ -458,7 +480,12 @@ def build_arg_parser() -> argparse.ArgumentParser:
     p.add_argument("--sample-dir", default=str(REPO_ROOT / "sample_vlm_diff"))
     p.add_argument("--baseline-rev", default=None,
                    help="Git revision holding the pre-rebuild corpus/eo.json. Default: "
-                        "the newest revision in which no record says `ocr-vlm`.")
+                        "the newest revision that still holds the old text for the "
+                        "population under test.")
+    p.add_argument("--baseline-sources", default=",".join(sorted(DEFAULT_BASELINE_SOURCES)),
+                   help="Comma-separated text_source values that mark the OLD side of "
+                        "the diff. `ocr` for the Tesseract cutover, `ocr-layer` for the "
+                        "second-hand-OCR one.")
     p.add_argument("--records", default=str(DEFAULT_RECORDS))
     p.add_argument("--ocr-root", default=str(DEFAULT_OCR_ROOT))
     p.add_argument("--report-path", default=str(DEFAULT_REPORT))
@@ -471,12 +498,16 @@ def main(argv=None) -> int:
     _quiet_mupdf()
 
     records = json.loads(Path(args.records).read_text(encoding="utf-8"))
-    baseline, baseline_label = load_baseline(Path(args.records), args.baseline_rev)
+    sources = frozenset(s.strip() for s in args.baseline_sources.split(",") if s.strip())
+    baseline, baseline_label = load_baseline(Path(args.records), args.baseline_rev,
+                                             sources=sources)
     if baseline:
-        print(f"baseline: {len(baseline)} Tesseract record(s) from {baseline_label}")
+        print(f"baseline: {len(baseline)} record(s) tagged "
+              f"{'/'.join(sorted(sources))} from {baseline_label}")
     else:
-        print("baseline: none — no revision of the records file in git predates the "
-              "VLM rebuild. Name one with --baseline-rev.", file=sys.stderr)
+        print(f"baseline: none — no revision of the records file in git holds text "
+              f"tagged {'/'.join(sorted(sources))}. Name one with --baseline-rev, or "
+              f"widen --baseline-sources.", file=sys.stderr)
     ocr_root = Path(args.ocr_root)
     candidates = select_candidates(
         records, repo_root=REPO_ROOT,
