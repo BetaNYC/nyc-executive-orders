@@ -72,7 +72,9 @@ def load_fixture(name: str) -> str:
 # --------------------------------------------------------------------------- #
 # Parse-pipeline fixtures — tiny committed PDFs (regenerate with
 # tests/fixtures/generate_fixtures.py). born_digital has a real text layer with
-# a hyphenated line-wrap; scanned is the same content rendered image-only.
+# a hyphenated line-wrap; scanned is the same content rendered image-only; the
+# remaining four are the failure modes the 2026-09 born-digital audit found in
+# the real corpus and no test covered.
 # --------------------------------------------------------------------------- #
 @pytest.fixture
 def born_digital_pdf() -> Path:
@@ -82,6 +84,30 @@ def born_digital_pdf() -> Path:
 @pytest.fixture
 def scanned_pdf() -> Path:
     return FIXTURES / "scanned_sample.pdf"
+
+
+@pytest.fixture
+def ocr_layer_pdf() -> Path:
+    """A scan carrying somebody else's OCR, stamped in render mode 3 (invisible)."""
+    return FIXTURES / "ocr_layer_sample.pdf"
+
+
+@pytest.fixture
+def mixed_pages_pdf() -> Path:
+    """Page 1 born-digital, page 2 image-only — the 2025-EO-057 shape."""
+    return FIXTURES / "mixed_pages_sample.pdf"
+
+
+@pytest.fixture
+def broken_font_pdf() -> Path:
+    """A text layer that extracts to well-formed nonsense — the 2025-EEO-853 shape."""
+    return FIXTURES / "broken_font_sample.pdf"
+
+
+@pytest.fixture
+def paragraphs_pdf() -> Path:
+    """Tight leading inside blocks, wide leading between them."""
+    return FIXTURES / "paragraphs_sample.pdf"
 
 
 class FakeFetcher:
