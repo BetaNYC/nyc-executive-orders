@@ -1,21 +1,47 @@
-"""Born-digital full-text extraction via PyMuPDF, plus text cleanup.
+"""Full-text extraction of a PDF's text layer via PyMuPDF, plus text cleanup.
 
 Extracts the text layer of a PDF and cleans it into a readable Markdown body:
 
-  * **Dehyphenation** — a word split across a line break by a soft hyphen
-    (``adminis-`` / ``tration``) is rejoined into ``administration``. The
-    heuristic only fires when the char before the hyphen is a word char and the
-    first char of the next line is *lowercase*, so genuine hyphenated compounds
-    that happen to wrap (``public-\\nprivate``) or a capitalized new token after
-    a dash are left intact. It is deliberately conservative and documented as
-    imperfect — over-joining a rare compound is preferable to gluing sentences.
+  * **Dehyphenation** — a word split across a line break (``adminis-`` /
+    ``tration``) is rejoined into ``administration``. The two halves of a wrap
+    are word FRAGMENTS, and fragments are not words: the rule joins only when
+    :func:`lexicon.recognize` rejects at least one side. So ``adminis`` +
+    ``tration`` joins, while ``public-``/``private``, ``not-``/``for`` and
+    ``to-``/``person`` keep their hyphen, because both halves are real words and
+    the hyphen is the compound's own.
+
+    The previous rule looked at capitalization instead, and it was wrong in both
+    directions: it glued ``person-to-\nperson`` into ``person-toperson`` in 32
+    corpus records, and its own docstring's example (``public-\nprivate``) came
+    out as ``publicprivate``. Measured over all 1,205 born-digital PDFs, the
+    lexicon rule keeps the hyphen at 98 of the 126 wrap sites and joins the other
+    28, and every decision is correct except two the old rule also got wrong
+    (``ex-officio``, ``197-d``).
+
+  * **Soft hyphens** — U+00AD is an invisible "break here if you must" mark. It
+    is not ``-``, so the rule above never saw it, and 135 records published it
+    verbatim, where a search for ``person-to-person`` cannot match. It is
+    removed, and a wrap on one is rejoined.
+
+  * **Paragraph breaks** — PyMuPDF returns one line per printed line and says
+    nothing about paragraphs, so a body whose source PDF puts no extra leading
+    between blocks arrives with no blank line anywhere and Markdown renders it as
+    one wall of text. :func:`_page_paragraphs` reads the line geometry and
+    inserts a break where the vertical gap jumps. See its docstring.
+
   * **Whitespace normalization** — runs of intra-line spaces/tabs collapse to a
     single space; trailing spaces are stripped; 3+ consecutive blank lines
-    collapse to a single blank line (one paragraph break). Paragraph structure
-    (blank line between blocks) is preserved.
+    collapse to a single blank line (one paragraph break).
 
-The same cleaning is reused for OCR'd output (see :mod:`ocr`) so born-digital
-and OCR bodies read consistently.
+:func:`clean_text` is reused for OCR'd output (:mod:`ocr`, :mod:`vlm_pages`) so
+every body reads consistently; :func:`_page_paragraphs` is not, because it needs
+page geometry that only this module has.
+
+NOTE: this module is NOT the born-digital path alone. A PDF classified
+:data:`textlayer.CLASS_OCR_LAYER` — a scan carrying somebody else's OCR — also
+comes through here, and its text is second-hand OCR of unknown quality rather
+than the document. The caller stamps the provenance; do not read a body from
+here as faithful without checking it.
 
 No network. Pure local PDF read.
 """
@@ -29,14 +55,29 @@ from pathlib import Path
 
 import fitz  # PyMuPDF
 
+from . import lexicon
+
 logger = logging.getLogger("nyc_executive_orders.extract")
 
 # Provenance tags stamped on the emitted record (frontmatter `text_source`).
 TEXT_SOURCE_BORN_DIGITAL = "born-digital"
 
-# A word-char, a hyphen, end-of-line, then a lowercase letter: a soft line-wrap
-# hyphen to rejoin. Capturing the two word chars lets us drop the hyphen+newline.
-_DEHYPHEN_RE = re.compile(r"(\w)-\n([a-z])")
+# A line-wrap hyphen site: the word fragment before the hyphen, the newline, and
+# the fragment after it. Whether to JOIN is decided per match by `_join_wrap` —
+# the regex only finds candidates.
+#
+# U+00AD SOFT HYPHEN counts as the hyphen. It is invisible mid-line and prints as
+# a hyphen at a break, so at a line end it means exactly what "-" means and gets
+# exactly the same treatment: "person-to\u00ad\nperson" is the compound
+# "person-to-person" and must keep its hyphen, while "admin\u00ad\nistration" is
+# one word and must not.
+_DEHYPHEN_RE = re.compile(r"(\w+)[-\u00ad]\n([a-z]\w*)")
+
+# Invisible marks left ANYWHERE else in the body. A soft hyphen that is not at a
+# line end never prints, so publishing it verbatim only breaks search: 135
+# records carried one, and a search for "person-to-person" could not match them.
+# Zero-width space and a stray byte-order mark ride along for the same reason.
+_INVISIBLE_MARKS_RE = re.compile(r"[\u00ad\u200b\ufeff]")
 
 # Runs of spaces/tabs (not newlines) to collapse to a single space.
 _INTRALINE_WS_RE = re.compile(r"[ \t]+")
@@ -60,16 +101,33 @@ class ExtractResult:
         return bool(self.text.strip())
 
 
+def _join_wrap(match: re.Match) -> str:
+    """Join a line-wrap hyphen, unless both halves are words in their own right.
+
+    ``adminis`` and ``tration`` are fragments — neither is a word — so the hyphen
+    was inserted by the typesetter and must go. ``public`` and ``private`` are
+    both words, so the hyphen belongs to the compound and must stay. This is the
+    only signal that separates the two cases; capitalization is not one, since
+    ``person-to-person`` and ``not-for-profit`` wrap in lowercase.
+    """
+    left, right = match.group(1), match.group(2)
+    if lexicon.recognize(left) and lexicon.recognize(right):
+        return f"{left}-{right}"      # a real compound: keep the hyphen, drop the wrap
+    return f"{left}{right}"
+
+
 def clean_text(raw: str) -> str:
-    """Dehyphenate line-wraps, normalize whitespace, preserve paragraph breaks."""
-    # 1) Rejoin soft-hyphenated line wraps BEFORE collapsing whitespace, while
-    #    the newline that signals the wrap is still present.
-    text = _DEHYPHEN_RE.sub(r"\1\2", raw)
-    # 2) Collapse intra-line whitespace and strip trailing spaces per line.
+    """Dehyphenate line-wraps, drop invisible marks, normalize whitespace."""
+    # 1) Rejoin wraps BEFORE collapsing whitespace, while the newline that
+    #    signals the wrap is still present.
+    text = _DEHYPHEN_RE.sub(_join_wrap, raw)
+    # 2) Any invisible mark that was not a line wrap is simply noise in the body.
+    text = _INVISIBLE_MARKS_RE.sub("", text)
+    # 3) Collapse intra-line whitespace and strip trailing spaces per line.
     text = "\n".join(_INTRALINE_WS_RE.sub(" ", line).rstrip() for line in text.split("\n"))
-    # 3) Collapse 3+ newlines to a single paragraph break.
+    # 4) Collapse 3+ newlines to a single paragraph break.
     text = _MULTI_BLANK_RE.sub("\n\n", text)
-    # 4) Trim leading/trailing blank space overall.
+    # 5) Trim leading/trailing blank space overall.
     return text.strip()
 
 
