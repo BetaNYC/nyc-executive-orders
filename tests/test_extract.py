@@ -88,3 +88,55 @@ def test_a_stray_soft_hyphen_is_removed():
 
 def test_other_invisible_marks_are_removed():
     assert clean_text("zero​width﻿ space") == "zerowidth space"
+
+
+# --------------------------------------------------------------------------- #
+# Paragraph geometry                                                            #
+# --------------------------------------------------------------------------- #
+
+def test_wide_leading_becomes_a_paragraph_break(paragraphs_pdf):
+    """PyMuPDF returns one line per printed line and nothing about paragraphs, so
+    a PDF that separates blocks with leading rather than a blank line arrived as
+    one wall of text. 664 of the born-digital bodies had no blank line anywhere."""
+    body = extract_pdf_text(paragraphs_pdf).text
+    assert body.count("\n\n") == 4
+    assert "printed lines and\nmust therefore stay" in body, "tight leading holds"
+    assert "emitted body; and\n\nWHEREAS, the second" in body, "wide leading breaks"
+
+
+def test_paragraph_breaks_add_no_content(paragraphs_pdf):
+    """The rule inserts newlines and must never alter, reorder or drop a
+    character. Verified against all 1,205 corpus PDFs with a text layer; this
+    pins the property in the suite."""
+    import re
+
+    import fitz
+
+    doc = fitz.open(paragraphs_pdf)
+    plain = "".join(page.get_text("text") for page in doc)
+    doc.close()
+    body = extract_pdf_text(paragraphs_pdf).text
+    assert re.sub(r"\s+", "", body) == re.sub(r"\s+", "", plain)
+
+
+def test_a_short_page_is_left_alone(born_digital_pdf):
+    """Too few line gaps for a median to mean anything — a title page, a
+    signature block, a one-clause order. Guessing there would be worse than
+    leaving the page as PyMuPDF returned it."""
+    import fitz
+
+    from nyc_executive_orders.extract import _page_paragraphs
+
+    doc = fitz.open(born_digital_pdf)
+    page = doc[0]
+    assert _page_paragraphs(page) == page.get_text("text")
+    doc.close()
+
+
+def test_an_image_only_page_contributes_nothing_and_does_not_crash(mixed_pages_pdf):
+    """Page 2 has an image block and no text block, so there is no geometry to
+    read. It must fall back rather than raise."""
+    result = extract_pdf_text(mixed_pages_pdf)
+    assert result.page_count == 2
+    assert result.has_text
+    assert "OVERSIGHT" in result.text
