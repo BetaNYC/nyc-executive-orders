@@ -604,6 +604,7 @@ def clean_existing_corpus(
     records: Iterable[dict],
     *,
     corpus_dir: str | Path,
+    vlm_provenance: dict | None = None,
 ) -> BuildResult:
     """Apply ONLY the clean stage to an already-parsed corpus and re-emit it.
 
@@ -616,7 +617,17 @@ def clean_existing_corpus(
     when present (a prior sweep preserved it), else from ``full_text`` (the
     verbatim pre-clean corpus). So a re-run reads the same verbatim source and
     yields identical output, and ``full_text_raw`` always holds the true original.
+
+    ``vlm_provenance`` is the parsed ``corpus/vlm_provenance.json`` sidecar,
+    keyed by ``eo_id``. It carries the page-level QA verdict that the text
+    metrics cannot see, and re-applying it here is the whole reason
+    :func:`_vlm_provenance` writes the file (see its docstring). Without it a
+    sweep silently promotes every truncated / low-ink-coverage record back to
+    ``clean``: measured at 184 records on the 2026-09 corpus. It is read rather
+    than discovered because ``corpus_dir`` may be a scratch directory (the
+    ``run_clean_sweep --dry-run`` path), which holds no sidecar.
     """
+    provenance = vlm_provenance or {}
     corpus_dir = Path(corpus_dir)
     records = list(records)
     result = BuildResult(total=len(records))
@@ -632,8 +643,9 @@ def clean_existing_corpus(
         # current full_text (still verbatim on the first sweep).
         raw_input = record.get("full_text_raw") or record.get("full_text", "")
 
+        force_review = bool(provenance.get(eo_id, {}).get("forced_review"))
         clean = _run_clean_stage(record, raw_input, text_source=text_source,
-                                 year=year)
+                                 year=year, force_review=force_review)
         frontmatter = build_frontmatter(
             record, text_source=text_source, page_count=page_count,
             title=clean["title"], date_signed=clean["date_signed"],

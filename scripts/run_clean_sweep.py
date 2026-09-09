@@ -31,6 +31,7 @@ from nyc_executive_orders.build_corpus import clean_existing_corpus  # noqa: E40
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CORPUS_DIR = REPO_ROOT / "corpus"
 EO_JSON = CORPUS_DIR / "eo.json"
+VLM_PROVENANCE = CORPUS_DIR / "vlm_provenance.json"
 
 
 def main(argv=None) -> int:
@@ -42,15 +43,30 @@ def main(argv=None) -> int:
     records = json.loads(EO_JSON.read_text(encoding="utf-8"))
     print(f"Loaded {len(records)} records from {EO_JSON}")
 
+    # The VLM page-level QA verdict. The sweep re-cleans from full_text_raw and
+    # cannot see the page records, so without this sidecar it would promote every
+    # truncated / low-ink-coverage record back to `clean`.
+    provenance = {}
+    if VLM_PROVENANCE.exists():
+        provenance = json.loads(VLM_PROVENANCE.read_text(encoding="utf-8"))
+        forced = sum(1 for v in provenance.values() if v.get("forced_review"))
+        print(f"Loaded {len(provenance)} VLM provenance entries "
+              f"({forced} forced-review) from {VLM_PROVENANCE}")
+    else:
+        print(f"WARNING: {VLM_PROVENANCE} not found — VLM forced-review verdicts "
+              f"will NOT be re-applied")
+
     if args.dry_run:
         # Re-run the stage in a temp dir so nothing under corpus/ is touched.
         import tempfile
         with tempfile.TemporaryDirectory() as td:
-            result = clean_existing_corpus(records, corpus_dir=Path(td) / "corpus")
+            result = clean_existing_corpus(records, corpus_dir=Path(td) / "corpus",
+                                           vlm_provenance=provenance)
             written = json.loads(
                 Path(result.output_paths["eo_json"]).read_text(encoding="utf-8"))
     else:
-        result = clean_existing_corpus(records, corpus_dir=CORPUS_DIR)
+        result = clean_existing_corpus(records, corpus_dir=CORPUS_DIR,
+                                       vlm_provenance=provenance)
         written = json.loads(EO_JSON.read_text(encoding="utf-8"))
     tiers = Counter(r.get("text_quality") for r in written)
     filled_titles = sum(1 for r in written if (r.get("title") or "").strip())
