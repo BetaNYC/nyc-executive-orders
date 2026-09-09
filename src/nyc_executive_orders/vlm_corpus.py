@@ -5,10 +5,20 @@ Two halves of one contract, in one module on purpose.
 **Selection** — :func:`select_candidates` decides which of the 2,291 post-1974
 PDFs the VLM should transcribe. It re-probes each file with
 :func:`textlayer.classify_pdf` rather than trusting the ``text_source`` already
-in the corpus. That costs milliseconds and buys two things: a document that was
+in the corpus. That costs milliseconds and buys three things: a document that was
 stubbed out by an earlier ``--no-ocr`` run needs no special case (it is simply a
-scanned PDF), and stage 1 and stage 2 cannot drift apart about the population,
-because :func:`build_corpus.parse_record` branches on the same probe.
+scanned PDF); stage 1 and stage 2 cannot drift apart about the population,
+because :func:`build_corpus.parse_record` branches on the same probe; and a
+mislabelled record cannot hide from the worklist behind its own tag.
+
+That last one is not hypothetical. Until 2026-09 the probe read a single number
+— characters per page — and 665 records reached the corpus tagged
+``born-digital`` while being scans with a second-hand OCR layer. They were
+excluded from this worklist for exactly that reason, and re-probing did not
+save them, because the probe itself was what was wrong. The probe now reads the
+text render mode as well and returns :data:`textlayer.CLASS_OCR_LAYER` for them,
+which is selected here: a scan is a scan whether or not somebody already ran OCR
+over it.
 
 **Loading** — :func:`load_vlm_document` reads a document's committed page records
 back and renders them through :mod:`vlm_pages` into the body a corpus record
@@ -105,15 +115,19 @@ def probe_record(record: dict, repo_root: Path) -> Candidate:
         return Candidate(eo_id, year, pdf_path, STATUS_NO_PDF, text_source=text_source)
 
     probe = textlayer.classify_pdf(pdf_path)
-    if probe.classification == textlayer.CLASS_TEXT:
-        status = STATUS_BORN_DIGITAL
-    elif probe.classification == textlayer.CLASS_SCANNED:
-        status = STATUS_SCANNED
-    else:
+    if probe.classification == textlayer.CLASS_ERROR:
         # PyMuPDF cannot open it, or it has zero pages. render_pdf_pages calls the
         # same fitz.open, so attempting OCR would fail identically. This is a
         # harvest bug (cf. the truncated 2021-EEO-250.pdf), not an OCR one.
         status = STATUS_UNREADABLE
+    elif probe.needs_ocr:
+        # THE selection rule, defined once on TextLayerResult so this module and
+        # build_corpus.parse_record cannot disagree about the population: an
+        # image-only PDF, a scan carrying somebody else's OCR, or a born-digital
+        # document that holds a scanned page.
+        status = STATUS_SCANNED
+    else:
+        status = STATUS_BORN_DIGITAL
 
     return Candidate(
         eo_id=eo_id,

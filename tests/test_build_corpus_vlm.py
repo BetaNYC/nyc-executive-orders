@@ -303,3 +303,84 @@ def test_clean_sweep_keeps_the_forced_review_verdict(record, repo, tmp_path):
     with_sidecar = json.loads(
         Path(result.output_paths["eo_json"]).read_text(encoding="utf-8"))
     assert with_sidecar[0]["text_quality"] == "needs-review"
+
+
+# --------------------------------------------------------------------------- #
+# A scan carrying somebody else's OCR                                           #
+# --------------------------------------------------------------------------- #
+
+@pytest.fixture
+def overlay_repo(tmp_path, ocr_layer_pdf):
+    """The same miniature repo, but the PDF is a scan with an OCR overlay."""
+    pdf_dir = tmp_path / "pdfs" / str(YEAR)
+    pdf_dir.mkdir(parents=True)
+    shutil.copy(ocr_layer_pdf, pdf_dir / f"{EO_ID}.pdf")
+    return tmp_path
+
+
+def test_an_ocr_overlay_gets_its_own_provenance(record, overlay_repo):
+    """It has extractable text, so it is NOT stubbed out — but that text is
+    second-hand OCR of a page image, not what `born-digital` promises."""
+    from nyc_executive_orders.build_corpus import TEXT_SOURCE_OCR_LAYER
+
+    parsed = parse(record, overlay_repo, engine=OCR_ENGINE_VLM)
+    assert parsed.frontmatter["text_source"] == TEXT_SOURCE_OCR_LAYER
+    assert "OVERSIGHT" in parsed.body
+
+
+def test_an_ocr_overlay_keeps_its_body_when_no_records_exist_yet(record, overlay_repo):
+    """THE trap this branch exists to avoid. If CLASS_OCR_LAYER fell through to
+    the scanned branch, `--ocr-engine vlm` with no page records on disk would
+    stamp ocr-skipped and leave the body as the stub — replacing 665 real bodies
+    with "_No text available_" on the next run of the documented command.
+    CorpusShrinkError counts records, not text, so nothing would catch it."""
+    from nyc_executive_orders.build_corpus import NO_TEXT_STUB
+
+    parsed = parse(record, overlay_repo, engine=OCR_ENGINE_VLM)
+    assert parsed.body != NO_TEXT_STUB
+
+
+def test_real_records_win_over_the_overlay(record, overlay_repo):
+    """Once stage 1 has read the scan properly, its output replaces the overlay
+    with no further code change."""
+    ocr_root = seed(overlay_repo, "clean")
+    parsed = parse(record, overlay_repo, ocr_root, engine=OCR_ENGINE_VLM)
+    assert parsed.frontmatter["text_source"] == TEXT_SOURCE_OCR_VLM
+    assert "NOW, THEREFORE" in parsed.body
+
+
+def test_an_overlay_is_selected_for_ocr(record, overlay_repo):
+    """vlm_corpus and build_corpus must agree about the population; both ask
+    TextLayerResult.needs_ocr."""
+    from nyc_executive_orders.vlm_corpus import probe_record
+
+    assert probe_record(record, overlay_repo).selected is True
+
+
+# --------------------------------------------------------------------------- #
+# A born-digital document that nevertheless holds a scanned page                #
+# --------------------------------------------------------------------------- #
+
+@pytest.fixture
+def mixed_repo(tmp_path, mixed_pages_pdf):
+    pdf_dir = tmp_path / "pdfs" / str(YEAR)
+    pdf_dir.mkdir(parents=True)
+    shutil.copy(mixed_pages_pdf, pdf_dir / f"{EO_ID}.pdf")
+    return tmp_path
+
+
+def test_a_lost_page_forces_review(record, mixed_repo):
+    """48 documents publish 59 pages as nothing, and the mean that let them
+    through cannot see it. 2025-EO-057 was tiered clean while missing its whole
+    first page."""
+    parsed = parse(record, mixed_repo, engine=OCR_ENGINE_VLM)
+    assert parsed.frontmatter["text_source"] == "born-digital"
+    assert parsed.frontmatter["text_quality"] == "needs-review"
+
+
+def test_a_lost_page_puts_the_document_on_the_worklist(record, mixed_repo):
+    """There is no per-page routing here and 8 documents do not justify building
+    one, so the whole document goes to the VLM."""
+    from nyc_executive_orders.vlm_corpus import probe_record
+
+    assert probe_record(record, mixed_repo).selected is True

@@ -83,6 +83,16 @@ _FORCE_REVIEW_FLAGS = (
 )
 
 # text_source values that this module adds beyond the extract/ocr ones.
+# A PDF whose text layer is an OCR overlay someone else made (textlayer's
+# CLASS_OCR_LAYER). Its body is real and usable TODAY, which is why it is
+# published rather than stubbed; it is simply not the faithful bytes that
+# `born-digital` promises, and it is queued for the VLM.
+#
+# The `ocr-` prefix is load-bearing, not cosmetic: the QA UI selects its review
+# surface with /^ocr(-|$)/ (qa-ui/server/api.js), a prefix test chosen so that
+# "a list does not go stale the next run". This name puts these records in front
+# of a human with no change to that file.
+TEXT_SOURCE_OCR_LAYER = "ocr-layer"
 TEXT_SOURCE_NONE = "none"                # no PDF on disk (the 53 gap EOs)
 TEXT_SOURCE_OCR_SKIPPED = "ocr-skipped"  # scanned, but run under --no-ocr
 TEXT_SOURCE_UNREADABLE = "unreadable"    # PDF present but could not be opened
@@ -242,16 +252,50 @@ def parse_record(
         classification = probe.classification
         page_count = probe.page_count
 
-        if classification == textlayer.CLASS_TEXT:
-            extracted = extract_pdf_text(pdf_path)
-            if extracted.has_text:
-                body = extracted.text
-                char_count = extracted.char_count
-                page_count = extracted.page_count
-                text_source = TEXT_SOURCE_BORN_DIGITAL
+        if classification in (textlayer.CLASS_TEXT, textlayer.CLASS_OCR_LAYER):
+            # An image-only page inside a document that passed the gate emits
+            # nothing, and the mean that let the document through cannot see it.
+            # 48 documents hold 59 such pages; 55 of them carry ink.
+            if probe.image_only_pages:
+                force_review = True
+                logger.warning(
+                    "%s: %d of %d pages have no extractable text (pages %s); "
+                    "the emitted body is incomplete",
+                    eo_id, len(probe.image_only_pages), probe.page_count,
+                    ",".join(str(p) for p in probe.image_only_pages),
+                )
+            # Real VLM page records win over a text layer whenever the probe
+            # says OCR would add something — the SAME `needs_ocr` rule
+            # vlm_corpus.probe_record selects on, so a document this pipeline
+            # sends to the VLM is a document this pipeline can read back.
+            # Until stage 1 produces them the existing text is published as-is
+            # under an honest tag; the alternative is stubbing out 665 real
+            # bodies to say nothing more than "we relabelled them".
+            vlm = None
+            if probe.needs_ocr and ocr_engine in (OCR_ENGINE_AUTO, OCR_ENGINE_VLM):
+                vlm = load_vlm_document(vlm_ocr_root, year, eo_id)
+
+            if vlm is not None and vlm.has_text:
+                body = vlm.text
+                char_count = len(body)
+                page_count = vlm.page_count or page_count
+                text_source = TEXT_SOURCE_OCR_VLM
+                force_review = force_review or _forced_review(vlm.flags)
+                vlm_provenance = _vlm_provenance(vlm, force_review, repo_root)
             else:
-                # Classified text but nothing extractable — flag, don't fabricate.
-                text_source = TEXT_SOURCE_UNREADABLE
+                extracted = extract_pdf_text(pdf_path)
+                if extracted.has_text:
+                    body = extracted.text
+                    char_count = extracted.char_count
+                    page_count = extracted.page_count
+                    text_source = (
+                        TEXT_SOURCE_BORN_DIGITAL
+                        if classification == textlayer.CLASS_TEXT
+                        else TEXT_SOURCE_OCR_LAYER
+                    )
+                else:
+                    # Classified text but nothing extractable — flag, don't fabricate.
+                    text_source = TEXT_SOURCE_UNREADABLE
         elif classification == textlayer.CLASS_SCANNED:
             vlm = None
             if ocr_engine in (OCR_ENGINE_AUTO, OCR_ENGINE_VLM):
@@ -374,16 +418,21 @@ def _run_clean_stage(record: dict, body: str, *, text_source: str,
     VLM's page-level QA signals, which the text metrics cannot see: a truncated
     body is perfectly clean prose right up to where it stops.
     """
-    if text_source in (TEXT_SOURCE_BORN_DIGITAL, TEXT_SOURCE_OCR, TEXT_SOURCE_OCR_VLM):
+    if text_source in (TEXT_SOURCE_BORN_DIGITAL, TEXT_SOURCE_OCR_LAYER,
+                       TEXT_SOURCE_OCR, TEXT_SOURCE_OCR_VLM):
         result = clean_record(
             body,
             year=year,
             existing_title=record.get("title"),
             existing_date_signed=record.get("date_signed"),
             text_source=text_source,
-            # Born-digital text has no OCR header noise and passes through
-            # byte-for-byte; everything else gets the full clean.
-            apply_body_edits=(text_source != TEXT_SOURCE_BORN_DIGITAL),
+            # A PDF text layer passes through byte-for-byte, whether the word
+            # processor or an OCR overlay wrote it: turning header trimming on
+            # for the overlay group would push leading_noise past its ceiling on
+            # ~72% of them and churn 479 records to minor-noise, for text that
+            # the VLM is about to replace wholesale.
+            apply_body_edits=(text_source not in (TEXT_SOURCE_BORN_DIGITAL,
+                                                  TEXT_SOURCE_OCR_LAYER)),
         )
         text_quality = result.text_quality
         if force_review and text_quality != TEXT_QUALITY_NO_TEXT:
@@ -592,6 +641,7 @@ def build_corpus(
 # text_source -> textlayer classification, for the sweep's manifest (no re-probe).
 _CLASS_FOR_SOURCE = {
     TEXT_SOURCE_BORN_DIGITAL: textlayer.CLASS_TEXT,
+    TEXT_SOURCE_OCR_LAYER: textlayer.CLASS_OCR_LAYER,
     TEXT_SOURCE_OCR: textlayer.CLASS_SCANNED,
     TEXT_SOURCE_OCR_FAILED: textlayer.CLASS_SCANNED,
     TEXT_SOURCE_OCR_SKIPPED: textlayer.CLASS_SCANNED,

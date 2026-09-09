@@ -101,8 +101,26 @@ class TextLayerResult:
 
     @property
     def needs_ocr(self) -> bool:
-        """A scan is a scan whether or not somebody already OCR'd it."""
-        return self.classification in (CLASS_SCANNED, CLASS_OCR_LAYER)
+        """Would OCR add text this document does not already have?
+
+        THE one definition of the OCR worklist. :func:`vlm_corpus.probe_record`
+        selects on it and :func:`build_corpus.parse_record` prefers OCR output
+        for it, so the two cannot disagree about the population.
+
+        Three ways to be true:
+
+        * ``CLASS_SCANNED`` — no text layer at all.
+        * ``CLASS_OCR_LAYER`` — a text layer, but it is somebody else's OCR of a
+          page image. A scan is a scan whether or not it has been read before.
+        * ``CLASS_TEXT`` with :attr:`image_only_pages` — a genuine born-digital
+          document that nevertheless holds a scanned page. 8 corpus documents
+          are this shape, holding 13 pages between them, and every one of those
+          pages carries ink. There is no per-page routing in this pipeline and
+          8 documents do not justify building one, so the whole document goes.
+        """
+        if self.classification in (CLASS_SCANNED, CLASS_OCR_LAYER):
+            return True
+        return self.classification == CLASS_TEXT and bool(self.image_only_pages)
 
     @property
     def invisible_share(self) -> float:
