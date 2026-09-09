@@ -379,6 +379,7 @@ def build_pre1974(
                 out_body, raw_body = cleaned.full_text, cleaned.full_text_raw
                 title, quality = cleaned.title, cleaned.text_quality
                 dropped_header, dropped_marks = cleaned.dropped_header, cleaned.dropped_marks
+                clean_flags = cleaned.flags
                 # clean_record only fills an EMPTY date, and never invents a day;
                 # a date we already resolved wins, so this only ever gap-fills.
                 date_signed = doc.date_on_page or cleaned.date_signed
@@ -386,6 +387,7 @@ def build_pre1974(
                 out_body = raw_body = NO_TEXT_STUB
                 title, quality = None, TEXT_QUALITY_NO_TEXT
                 dropped_header, dropped_marks = "", []
+                clean_flags = []
                 date_signed = doc.date_on_page
 
             if _forced_review(doc) and quality != TEXT_QUALITY_NO_TEXT:
@@ -401,6 +403,7 @@ def build_pre1974(
                 text_quality=quality,
                 dropped_header=dropped_header,
                 dropped_marks=dropped_marks,
+                clean_flags=clean_flags,
             )
 
             md_relpath = f"{year}/{eo_id}.md"

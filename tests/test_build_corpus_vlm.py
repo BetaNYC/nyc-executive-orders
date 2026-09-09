@@ -384,3 +384,23 @@ def test_a_lost_page_puts_the_document_on_the_worklist(record, mixed_repo):
     from nyc_executive_orders.vlm_corpus import probe_record
 
     assert probe_record(record, mixed_repo).selected is True
+
+
+# --------------------------------------------------------------------------- #
+# The clean stage's own findings reach the record                               #
+# --------------------------------------------------------------------------- #
+
+def test_clean_flags_are_published(record, repo):
+    """They were computed and thrown away: the only way to see one was to re-run
+    the cleaner in memory with scripts/run_sample_clean.py. A tier says how much
+    to trust a record; these say WHY, which is what a person needs to fix it."""
+    from nyc_executive_orders.build_corpus import FRONTMATTER_FIELDS
+
+    ocr_root = seed(repo, "clean")
+    parsed = parse(record, repo, ocr_root)
+
+    assert list(parsed.frontmatter.keys()) == list(FRONTMATTER_FIELDS)
+    assert FRONTMATTER_FIELDS[-1] == "clean_flags", "appended, so no column moved"
+    assert isinstance(parsed.frontmatter["clean_flags"], list)
+    # This fixture has no index title and no caps subject block.
+    assert any(f.startswith("title-") for f in parsed.frontmatter["clean_flags"])

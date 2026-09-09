@@ -154,6 +154,7 @@ FRONTMATTER_FIELDS = [
     "text_quality",
     "dropped_header",
     "dropped_marks",
+    "clean_flags",
 ]
 
 MANIFEST_FIELDS = [
@@ -352,7 +353,7 @@ def parse_record(
         record, text_source=text_source, page_count=page_count,
         title=clean["title"], date_signed=clean["date_signed"],
         text_quality=clean["text_quality"], dropped_header=clean["dropped_header"],
-        dropped_marks=clean["dropped_marks"],
+        dropped_marks=clean["dropped_marks"], clean_flags=clean["clean_flags"],
     )
     md_relpath = f"{year}/{eo_id}.md"
     return ParsedEO(
@@ -445,6 +446,7 @@ def _run_clean_stage(record: dict, body: str, *, text_source: str,
             "text_quality": text_quality,
             "dropped_header": result.dropped_header,
             "dropped_marks": result.dropped_marks,
+            "clean_flags": result.flags,
         }
     # No recoverable text — leave everything as-is.
     return {
@@ -455,12 +457,14 @@ def _run_clean_stage(record: dict, body: str, *, text_source: str,
         "text_quality": TEXT_QUALITY_NO_TEXT,
         "dropped_header": "",
         "dropped_marks": [],
+        "clean_flags": [],
     }
 
 
 def build_frontmatter(record: dict, *, text_source: str, page_count: int | None,
                       title, date_signed, text_quality: str,
-                      dropped_header: str, dropped_marks: list) -> dict:
+                      dropped_header: str, dropped_marks: list,
+                      clean_flags: list | None = None) -> dict:
     """Assemble the locked frontmatter dict for one order.
 
     Public (it was ``_build_frontmatter``) because Phase E's
@@ -472,6 +476,16 @@ def build_frontmatter(record: dict, *, text_source: str, page_count: int | None,
     extraction fills a previously-empty field; existing values pass through). The
     clean-stage provenance (``text_quality``/``dropped_header``/``dropped_marks``)
     is carried so consumers can see what was relocated and how much to trust it.
+
+    ``clean_flags`` is the clean stage's own list of what it noticed and could not
+    resolve — ``no-anchor-found``, ``title-uncertain``, ``date-not-extracted``,
+    ``large-header-trim-skipped``. It was computed and thrown away: the only way
+    to see one was to re-run the cleaner in memory with
+    ``scripts/run_sample_clean.py``. A tier says how much to trust a record;
+    these say WHY, which is what a person needs to fix it.
+
+    Defaulted so a missed call site emits an empty list rather than raising —
+    but every call site passes it.
     """
     derived = enrich_record(record)
     merged = {
@@ -496,6 +510,7 @@ def build_frontmatter(record: dict, *, text_source: str, page_count: int | None,
         "text_quality": text_quality,
         "dropped_header": dropped_header,
         "dropped_marks": dropped_marks,
+        "clean_flags": list(clean_flags or []),
     }
     # Emit in the locked order.
     return {k: merged[k] for k in FRONTMATTER_FIELDS}
@@ -700,7 +715,7 @@ def clean_existing_corpus(
             record, text_source=text_source, page_count=page_count,
             title=clean["title"], date_signed=clean["date_signed"],
             text_quality=clean["text_quality"], dropped_header=clean["dropped_header"],
-            dropped_marks=clean["dropped_marks"],
+            dropped_marks=clean["dropped_marks"], clean_flags=clean["clean_flags"],
         )
         parsed = ParsedEO(
             frontmatter=frontmatter, body=clean["body"],
