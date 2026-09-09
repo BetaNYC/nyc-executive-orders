@@ -123,6 +123,15 @@ REVIEW_MIN_RECOGNIZED_RATIO = 0.85  # below this => needs-review (OOV > 0.15)
 # "City") holds the whole title as `title-uncertain` for human review — the safe
 # direction, since a false hold just routes a good title to a person.
 TITLE_MIN_MEANINGFUL_TOKENS = 2
+# A "title" that only restates the enumeration. nyc.gov's articlesearch feed
+# gives every modern order a link text of "Executive Order 42" / "Emergency
+# Executive Order 301", and harvest carries that straight into the index as the
+# title. clean_record then never overwrites a non-empty title, so the caps-block
+# extractor never ran and 1,017 records of 2,291 carry a caption that says
+# nothing the eo_id does not already say. It is not a fallback the code chose —
+# it is the upstream anchor text, and the same string is load-bearing metadata
+# (enumerate.parse_number reads the number out of it), so it is NOT discarded.
+_GENERIC_TITLE_RE = re.compile(r"(?i)^(emergency\s+)?executive\s+order\s+[\d.]+$")
 # A title line/furniture line has at most this many tokens; longer caps lines that
 # happen to contain an anchor phrase (e.g. "...OF THE MAYOR'S MIDTOWN...") are real
 # titles, not letterhead, and must NOT be skipped during title extraction.
@@ -315,6 +324,26 @@ def _is_header_furniture(line: str) -> bool:
     if all(t in _EO_NUMBER_TOKENS for t in tokens):
         return True
     return len(tokens) <= FURNITURE_MAX_TOKENS and _line_anchor_label(line) is not None
+
+
+# Every word that appears in the letterhead or the EO-number line, derived from
+# the anchors themselves so the two cannot drift apart.
+_LETTERHEAD_TOKENS = frozenset(
+    t for _label, phrase in _ANCHORS for t in phrase
+) | _EO_NUMBER_TOKENS
+
+
+def _is_letterhead_only(title: str) -> bool:
+    """True if every word of `title` also appears in the letterhead.
+
+    "NEW YORK" and "CITY OF NEW YORK" are letterhead residue; "CLEAN
+    CONSTRUCTION" and "DEPUTY MAYORS AND SENIOR LEADERSHIP" are real subject
+    lines. Token COUNT cannot separate them — "CLEAN CONSTRUCTION" and "NEW
+    YORK" are both two words — but vocabulary can: a caption that introduces no
+    word the letterhead did not already use is not a caption.
+    """
+    tokens = _norm_tokens(title)
+    return bool(tokens) and all(t in _LETTERHEAD_TOKENS for t in tokens)
 
 
 def _line_is_dateish(line: str) -> bool:
@@ -722,14 +751,33 @@ def _finish(
     body_lines = cleaned.split("\n")
     title = existing_title if (existing_title or "").strip() else None
     title_extracted = False
-    if title is None and extract_title:
+    # A generic caption restates the enumeration and tells a reader nothing, so
+    # the document's own printed subject line beats it if there is one. It is
+    # kept when there is not: it is the upstream anchor text, not a guess.
+    generic = title is not None and bool(_GENERIC_TITLE_RE.match(title.strip()))
+    if (title is None or generic) and extract_title:
         accepted, candidate = _extract_title(body_lines)
+        if accepted and generic and (_is_header_furniture(accepted)
+                                     or _is_letterhead_only(accepted)):
+            # Overriding a generic caption is only worth doing for a REAL subject
+            # line. _extract_title accumulates the first caps block, and on an
+            # order that simply has no caption that block is the letterhead, so
+            # the candidate comes back as "NEW YORK" or "CITY OF NEW YORK" —
+            # measured at 27 of 106 overrides. A caption that restates the order
+            # number says little; letterhead says less and looks like a subject.
+            accepted = None
+            flags.append(f"title-furniture-rejected: {candidate!r}")
         if accepted:
             title, title_extracted = accepted, True
         elif candidate:
             # A caps subject line was found but is too OCR-mangled to trust into
             # frontmatter — surface it for a human, do NOT auto-insert it.
             flags.append(f"title-uncertain: {candidate!r}")
+        elif generic:
+            # Nothing distinguished "this order has no printed caption" from
+            # "the extractor missed it". This flag is that distinction: the
+            # extractor looked and there was no subject block to find.
+            flags.append("title-generic-fallback: caption restates the order number")
         else:
             flags.append("title-not-extracted")
 

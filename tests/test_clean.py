@@ -569,3 +569,77 @@ def test_ordinary_english_passes_the_recognized_floor():
     r = clean_record(body, year=2022, text_source="born-digital")
     assert r.metrics["recognized_word_ratio"] >= clean.CLEAN_MIN_RECOGNIZED_RATIO
     assert r.text_quality == clean.TEXT_QUALITY_CLEAN
+
+
+# --------------------------------------------------------------------------- #
+# Title state: a caption that restates the order number is not a caption        #
+# --------------------------------------------------------------------------- #
+
+def test_a_printed_subject_line_beats_the_feed_caption():
+    """nyc.gov's articlesearch link text is "Executive Order 23", and harvest
+    carries it into the index as the title. clean_record never overwrote a
+    non-empty title, so the caps-block extractor never ran and 1,017 of 2,291
+    records carried a caption saying nothing the eo_id does not. This is
+    corpus/2022/2022-EO-023.md.
+    """
+    body = (
+        "THE CITY OF NEW YORK\n"
+        "OFFICE OF THE MAYOR\n"
+        "EXECUTIVE ORDER NO. 23\n"
+        "CLEAN CONSTRUCTION\n"
+        "WHEREAS, the City has a moral and economic imperative to act; and\n"
+    )
+    r = clean_record(body, year=2022, text_source="born-digital",
+                     existing_title="Executive Order 23")
+    assert r.title == "CLEAN CONSTRUCTION"
+
+
+def test_a_real_caption_from_the_index_is_never_overwritten():
+    body = (
+        "THE CITY OF NEW YORK\n"
+        "OFFICE OF THE MAYOR\n"
+        "SOMETHING ELSE ENTIRELY\n"
+        "WHEREAS, the City has a moral and economic imperative to act; and\n"
+    )
+    r = clean_record(body, year=2022, text_source="born-digital",
+                     existing_title="A Real Title From The Index")
+    assert r.title == "A Real Title From The Index"
+
+
+def test_letterhead_never_replaces_the_caption():
+    """An order that simply has no printed caption leaves _extract_title to
+    accumulate the letterhead instead, and it comes back as "NEW YORK" or "CITY
+    OF NEW YORK" -- 27 of 106 overrides before this guard. Token COUNT cannot
+    catch it ("CLEAN CONSTRUCTION" is two words too); vocabulary can.
+    """
+    body = (
+        "THE CITY OF NEW YORK\n"
+        "OFFICE OF THE MAYOR\n"
+        "NEW YORK\n"
+        "WHEREAS, the City has a moral and economic imperative to act; and\n"
+    )
+    r = clean_record(body, year=2022, text_source="born-digital",
+                     existing_title="Emergency Executive Order 204")
+    assert r.title == "Emergency Executive Order 204"
+    assert any(f.startswith("title-furniture-rejected") for f in r.flags)
+
+
+def test_a_generic_caption_with_no_subject_block_is_flagged_and_kept():
+    """The distinction finding 7 asked for: "this order has no printed caption"
+    is not the same as "the extractor missed it", and nothing said which."""
+    body = (
+        "THE CITY OF NEW YORK\n"
+        "OFFICE OF THE MAYOR\n"
+        "WHEREAS, the City has a moral and economic imperative to act; and\n"
+    )
+    r = clean_record(body, year=2022, text_source="born-digital",
+                     existing_title="Executive Order 42")
+    assert r.title == "Executive Order 42", "the feed's anchor text is not discarded"
+    assert any(f.startswith("title-generic-fallback") for f in r.flags)
+
+
+def test_letterhead_only_vocabulary_test():
+    assert clean._is_letterhead_only("NEW YORK") is True
+    assert clean._is_letterhead_only("CITY OF NEW YORK") is True
+    assert clean._is_letterhead_only("CLEAN CONSTRUCTION") is False
+    assert clean._is_letterhead_only("DEPUTY MAYORS AND SENIOR LEADERSHIP") is False
