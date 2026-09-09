@@ -757,6 +757,7 @@ def _finish(
     generic = title is not None and bool(_GENERIC_TITLE_RE.match(title.strip()))
     if (title is None or generic) and extract_title:
         accepted, candidate = _extract_title(body_lines)
+        accepted_furniture = accepted
         if accepted and generic and (_is_header_furniture(accepted)
                                      or _is_letterhead_only(accepted)):
             # Overriding a generic caption is only worth doing for a REAL subject
@@ -766,9 +767,18 @@ def _finish(
             # measured at 27 of 106 overrides. A caption that restates the order
             # number says little; letterhead says less and looks like a subject.
             accepted = None
-            flags.append(f"title-furniture-rejected: {candidate!r}")
+            flags.append(f"title-furniture-rejected: {accepted_furniture!r}")
         if accepted:
             title, title_extracted = accepted, True
+        elif candidate and generic:
+            # Same finding as `title-uncertain` below, but it costs nothing here:
+            # the record keeps the feed's caption, which is exactly what it had
+            # before we looked. Deliberately a DIFFERENT flag name, because
+            # `title-uncertain` forces needs-review via the prefix test below
+            # and this must not — the body is no worse for our having failed to
+            # improve its caption. 48 records would otherwise be demoted for a
+            # title problem alone. Hence a name that does not share the prefix.
+            flags.append(f"title-caption-kept: {candidate!r}")
         elif candidate:
             # A caps subject line was found but is too OCR-mangled to trust into
             # frontmatter — surface it for a human, do NOT auto-insert it.
@@ -811,6 +821,11 @@ def _finish(
         "lexicon_source": lexicon.english_lexicon_source(),
     }
     # Any of these flags means a human should look before the field is trusted.
+    # NOTE the prefix match: a new flag starting "title-uncertain" joins this set
+    # whether or not that was intended. `title-caption-kept` and
+    # `title-furniture-rejected` are deliberately named outside it — they record
+    # a caption we declined to improve, which leaves the record exactly as good
+    # as it was, and a caption is not a body.
     review_flag = any(
         f.startswith(("large-header-trim-skipped", "anchor-after-body-start",
                       "title-uncertain"))
