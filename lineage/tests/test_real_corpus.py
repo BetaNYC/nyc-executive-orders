@@ -61,17 +61,30 @@ EXPECT_LETTERHEAD = 2681
 EXPECT_MAYOR_IN_BODY = 295
 MAYOR_ID = "office-of-the-mayor"
 
-# Pass three, measured 2026-09-10. 400 sentences link two bodies; 131 of them pin
-# down a registry agency on every side, and the rest name at least one body that is
-# not on the name list yet. 497 more named nothing we could attach and wait in the
-# review list.
-EXPECT_EVENTS = 400
-EXPECT_EVENTS_FULLY_RESOLVED = 131
-EXPECT_UNRESOLVED_EVENTS = 497
+# Pass three, measured 2026-09-10 after the wrapper rules were widened. 388
+# sentences link two bodies; 97 of them pin down a registry agency on every side, and
+# the rest name at least one body that is not on the name list yet. 508 more named
+# nothing we could attach and wait in the review list.
+#
+# BOTH NUMBERS FELL, AND THAT IS THE FIX WORKING. Before, 36 events said a body was
+# established or continued and named the Office of the Mayor as that body. 35 of
+# them were "established IN THE EXECUTIVE Office of the Mayor a <new office>", where
+# the one word "Executive" hid the sentence from the "in"/"within" rule. 33 are now
+# recorded the right way round — the new office takes the role and the Office of the
+# Mayor is its parent — and the new office is a pass-two name carrying no agency id,
+# so the event no longer counts as resolved on every side. The remaining 12 name a
+# new body that neither pass found, and they moved to the review list, which is
+# where a sentence with a missing body belongs. One wrong event survives, and
+# test_the_office_of_the_mayor_is_not_established_by_its_own_orders names it.
+EXPECT_EVENTS = 388
+EXPECT_EVENTS_FULLY_RESOLVED = 97
+EXPECT_UNRESOLVED_EVENTS = 508
 EXPECT_EVENTS_BY_KIND = {
-    "establishes": 296, "continues": 47, "transfers_to": 23, "renames": 20,
+    "establishes": 285, "continues": 46, "transfers_to": 23, "renames": 20,
     "abolishes": 12, "merges_into": 1, "succeeds": 1,
 }
+# How many events place a body inside another. The wrapper rules found a third more.
+EXPECT_PARENT_ROLES = 128
 
 # Pass four, measured 2026-09-10, over all 3,269 orders that carry text.
 # `supersede.py` reads only the 2,291 orders of corpus/eo.json.
@@ -655,22 +668,105 @@ def test_a_list_sentence_becomes_one_event_per_body(all_four_passes):
       Opportunity Committee are abolished" — the case the README used to cite as
       a known miss.
 
-    The fifth is a WRONG join, pinned here so it cannot grow unnoticed. The re-OCR
-    of the bound volumes brought 1996-EO-034 into range: "the Head Start Program
-    and Child Day Care Services formerly administered by the Agency for Child
-    Development of HRA shall be continued". "HRA" is the parent inside an
-    "administered by" phrase, not a second body being continued, and the gap before
-    it is short, comma-free and verb-free, so the glue test passes on it. The "in"/
-    "within" wrapper rule does not cover "administered by ... of". Recorded, not
-    hidden; fixing it means widening that wrapper rule.
+    A fifth used to sit here, recorded rather than hidden, and it is now fixed. The
+    re-OCR of the bound volumes brought 1996-EO-034 into range: "the Head Start
+    Program and Child Day Care Services formerly administered by the Agency for
+    Child Development of HRA shall be continued". "HRA" is the body that used to run
+    the programmes, named inside an "administered by" phrase, not a second body
+    being continued. Two rules let it through and both are now closed:
+
+    * the glue test accepted an "and" anywhere in 90 characters, so one 80
+      characters back in a different phrase counted; the coordinator now has to sit
+      next to the name it joins.
+    * the wrapper rule knew only "in"/"within"; `_in_wrapper_phrase` now reads
+      "administered by ... of" as well, and a name inside one can never join a list.
+
+    The sentence now yields one event, continuing the Head Start Program.
     """
     by_span: dict[tuple, list] = {}
     for e in all_four_passes["events"]:
         by_span.setdefault((e.eo_id, e.start, e.end, e.verb), []).append(e)
     listed = {k[0]: len(v) for k, v in by_span.items() if len(v) > 1}
     assert listed == {"2022-EO-003": 3, "1976-EO-063": 3,
-                      "1965-EO-181-p261": 2, "1966-EO-028-p068": 2,
-                      "1996-EO-034": 2}
+                      "1965-EO-181-p261": 2, "1966-EO-028-p068": 2}
+
+
+@needs_corpus
+@needs_registry
+def test_the_office_of_the_mayor_is_not_established_by_its_own_orders(
+        all_four_passes):
+    """The largest wrong class in this pass, and what is left of it.
+
+    "There is established in the Executive Office of the Mayor a Mayor's Office of
+    X" places a new office; it does not establish the Office of the Mayor. The
+    "in"/"within" rule used to need the name to follow "in the" immediately, so the
+    single word "Executive" hid 35 sentences from it and each one recorded the
+    Office of the Mayor as the body created. 36 events read that way; one does now.
+
+    The survivor is 1968-EO-094, "established in the Office of Administration
+    (Office of the Mayor), an Office for the Aged", where the container is restated
+    inside brackets. It is one sentence in the corpus and a bracket rule would be a
+    new mechanism, so it is pinned rather than fixed.
+    """
+    wrong = [e for e in all_four_passes["events"]
+             if e.kind in (reorg_mod.KIND_ESTABLISHES, reorg_mod.KIND_CONTINUES)
+             for r in e.roles
+             if r.role == ROLE_TO and r.agency_id == MAYOR_ID]
+    assert [e.eo_id for e in wrong] == ["1968-EO-094"]
+
+
+@needs_corpus
+@needs_registry
+def test_a_container_phrase_is_read_as_the_parent(all_four_passes):
+    """What the widened rules bought, counted rather than asserted case by case.
+
+    "in the Executive Office of the Mayor", "under the direction of the Department
+    of Small Business Services", "as a division of MOME" all name the body a new
+    office is placed inside. Reading them takes the parent count from 95 to 128.
+    """
+    parents = [r for e in all_four_passes["events"] for r in e.roles
+               if r.role == ROLE_PARENT]
+    assert len(parents) == EXPECT_PARENT_ROLES
+
+
+@needs_corpus
+@needs_registry
+def test_a_body_named_as_a_former_administrator_is_not_continued(all_four_passes):
+    """1996-EO-034, the case this rule was written for.
+
+    "The City's OCSE, the Head Start Program and Child Day Care Services formerly
+    administered by the Agency for Child Development of HRA shall be continued".
+    One programme is continued. HRA ran it, and is named for that reason alone.
+
+    The same order establishes HRA inside the Office of the Mayor a few lines later,
+    and that sentence is the one that should carry HRA's name.
+    """
+    events = [e for e in all_four_passes["events"] if e.eo_id == "1996-EO-034"]
+    continued = [e for e in events if e.kind == reorg_mod.KIND_CONTINUES]
+    assert [r.name for e in continued for r in e.roles] == ["Head Start Program"]
+
+    established = [e for e in events if e.kind == reorg_mod.KIND_ESTABLISHES]
+    assert [(r.role, r.agency_id) for e in established for r in e.roles] == [
+        (ROLE_TO, "human-resources-administration"), (ROLE_PARENT, MAYOR_ID)]
+
+
+@needs_corpus
+@needs_registry
+def test_a_transfer_still_names_the_body_it_moves_work_out_of(all_four_passes):
+    """The container rule is asked differently on either side of a transfer.
+
+    1976-EO-050: "services formerly administered by the Youth Services Agency shall
+    be transferred to the Department of Employment". The same "administered by"
+    phrase that hides a body in a "continued" sentence names the real source in a
+    transfer, so a wrapper name is dropped only for the kinds that PRODUCE a body.
+    Dropping it everywhere loses this record and two more like it.
+    """
+    moved = [e for e in all_four_passes["events"]
+             if e.eo_id == "1976-EO-050"
+             and e.kind == reorg_mod.KIND_TRANSFERS_TO]
+    assert len(moved) == 3
+    assert {r.name for e in moved for r in e.roles if r.role == ROLE_FROM} == {
+        "Youth Services Agency"}
 
 
 @needs_corpus

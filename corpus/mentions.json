@@ -267570,19 +267570,19 @@
       "count": 1
     }
   ],
-  "agency_event_count": 400,
-  "fully_resolved_event_count": 131,
+  "agency_event_count": 388,
+  "fully_resolved_event_count": 97,
   "same_agency_event_count": 4,
   "agency_events_by_kind": {
     "abolishes": 12,
-    "continues": 47,
-    "establishes": 296,
+    "continues": 46,
+    "establishes": 285,
     "merges_into": 1,
     "renames": 20,
     "succeeds": 1,
     "transfers_to": 23
   },
-  "unresolved_event_count": 497,
+  "unresolved_event_count": 508,
   "agency_events": [
     {
       "eo_id": "1954-EO-012",
@@ -268064,6 +268064,15 @@
           "end": 3901,
           "text": "The Mayor's Council on Expanded Employment Opportunity and Training",
           "found_by": "new-name"
+        },
+        {
+          "role": "parent",
+          "agency_id": null,
+          "name": "Mayor's Council",
+          "start": 4007,
+          "end": 4022,
+          "text": "Mayor's Council",
+          "found_by": "new-name"
         }
       ]
     },
@@ -268430,10 +268439,19 @@
       "start": 551,
       "end": 773,
       "text": "\n\n(a) There is hereby established within the executive office of the Mayor a Transportation Administration, the head of which shall be an Administrator who shall be appointed by and shall serve at the pleasure of the Mayor",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Transportation Administration",
+          "start": 628,
+          "end": 657,
+          "text": "Transportation Administration",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "office of the Mayor",
           "start": 606,
@@ -268539,34 +268557,23 @@
       "start": 1224,
       "end": 1431,
       "text": " There is established in the executive office of the Mayor a Health Services Administration, the head of which shall be an Administrator who shall be appointed by and shall serve at the pleasure of the Mayor",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Health Services Administration",
+          "start": 1285,
+          "end": 1315,
+          "text": "Health Services Administration",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "office of the Mayor",
           "start": 1263,
           "end": 1282,
-          "text": "office of the Mayor",
-          "found_by": "known-name"
-        }
-      ]
-    },
-    {
-      "eo_id": "1966-EO-019-p033",
-      "kind": "establishes",
-      "verb": "established",
-      "start": 822,
-      "end": 1031,
-      "text": " There is established in the executive office of the Mayor the Office of the City Renewal Commissioner of the City of New York which shall be headed by a City Renewal Commissioner who shall be appointed by and",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "office-of-the-mayor",
-          "name": "office of the Mayor",
-          "start": 861,
-          "end": 880,
           "text": "office of the Mayor",
           "found_by": "known-name"
         }
@@ -268608,10 +268615,19 @@
       "start": 151,
       "end": 343,
       "text": " There is established in the executive office of the Mayor a Finance Administration the head of which shall be an Administrator who shall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Finance Administration",
+          "start": 212,
+          "end": 234,
+          "text": "Finance Administration",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "office of the Mayor",
           "start": 190,
@@ -268668,10 +268684,19 @@
       "start": 474,
       "end": 738,
       "text": " Office of Staten Island Development—There is established in the Executive Office of the Mayor the Office of Staten Island Development which shall be headed by a Director of Staten Island Development who shall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Office of Staten Island Development",
+          "start": 475,
+          "end": 510,
+          "text": "Office of Staten Island Development",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 549,
@@ -268692,6 +268717,15 @@
       "roles": [
         {
           "role": "to",
+          "agency_id": "human-resources-administration",
+          "name": "Human Resources Administration",
+          "start": 959,
+          "end": 989,
+          "text": "Human Resources Administration",
+          "found_by": "known-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "office of the Mayor",
           "start": 937,
@@ -268797,10 +268831,19 @@
       "start": 465,
       "end": 681,
       "text": " There is established in the executive office of the Mayor a Recreation and Cultural Affairs Administration the head of which shall be an Administrator who shall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Recreation and Cultural Affairs Administration",
+          "start": 526,
+          "end": 572,
+          "text": "Recreation and Cultural Affairs Administration",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "office of the Mayor",
           "start": 504,
@@ -268817,10 +268860,19 @@
       "start": 705,
       "end": 804,
       "text": "\nThere is established in the executive office of the Mayor a Housing and Development Administration",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Housing and Development Administration",
+          "start": 766,
+          "end": 804,
+          "text": "Housing and Development Administration",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "office of the Mayor",
           "start": 744,
@@ -268890,31 +268942,20 @@
       "roles": [
         {
           "role": "to",
+          "agency_id": "office-of-labor-relations",
+          "name": "Office of Labor Relations",
+          "start": 872,
+          "end": 897,
+          "text": "Office of Labor Relations",
+          "found_by": "known-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "office of the Mayor",
           "start": 848,
           "end": 867,
           "text": "office of the Mayor",
-          "found_by": "known-name"
-        }
-      ]
-    },
-    {
-      "eo_id": "1967-EO-042-p103",
-      "kind": "establishes",
-      "verb": "established",
-      "start": 292,
-      "end": 524,
-      "text": "\nThere is established in the Executive Office of the Mayor the Office of Lower Manhattan Development which shall be headed by a Director of Lower Manhattan Development who shall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "office-of-the-mayor",
-          "name": "Office of the Mayor",
-          "start": 331,
-          "end": 350,
-          "text": "Office of the Mayor",
           "found_by": "known-name"
         }
       ]
@@ -269476,10 +269517,19 @@
       "start": 3621,
       "end": 3908,
       "text": " Office of Midtown Planning and Development\n\nThere is established in the Executive Office of the Mayor\nthe Office of Midtown Planning and Development which shall be\nheaded by a Director of Midtown Planning and Development, who\nshall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Office of Midtown Planning and Development There",
+          "start": 3622,
+          "end": 3671,
+          "text": "Office of Midtown Planning and Development\n\nThere",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 3704,
@@ -269496,10 +269546,19 @@
       "start": 3932,
       "end": 4219,
       "text": " Office of Midtown Planning and Development\n\nThere is established in the Executive Office of the Mayor\nthe Office of Midtown Planning and Development which shall be\nheaded by a Director of Midtown Planning and Development, who\nshall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Office of Midtown Planning and Development There",
+          "start": 3933,
+          "end": 3982,
+          "text": "Office of Midtown Planning and Development\n\nThere",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 4015,
@@ -269614,10 +269673,19 @@
       "start": 695,
       "end": 795,
       "text": " There shall be established within the Executive Office of the Mayor a Mayor's Committee on Pensions",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Mayor's Committee on Pensions",
+          "start": 766,
+          "end": 795,
+          "text": "Mayor's Committee on Pensions",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 744,
@@ -269873,26 +269941,6 @@
       ]
     },
     {
-      "eo_id": "1970-EO-029",
-      "kind": "establishes",
-      "verb": "established",
-      "start": 3688,
-      "end": 3895,
-      "text": " There is established in the Executive Office of the Mayor the Office of Jamaica Planning and Development which shall be headed by a Director, who shall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "office-of-the-mayor",
-          "name": "Office of the Mayor",
-          "start": 3727,
-          "end": 3746,
-          "text": "Office of the Mayor",
-          "found_by": "known-name"
-        }
-      ]
-    },
-    {
       "eo_id": "1971-EO-038",
       "kind": "establishes",
       "verb": "created",
@@ -270126,10 +270174,19 @@
       "start": 3591,
       "end": 3909,
       "text": " 11 - Office of Apparel Industry Planning and Development\n\nThere is established in the Executive Office of the Mayor the Office of Apparel Industry Planning and Development which shall be headed by a Director of Apparel Industry Planning and Development who shall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Office of Apparel Industry Planning and Development There",
+          "start": 3597,
+          "end": 3655,
+          "text": "Office of Apparel Industry Planning and Development\n\nThere",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 3688,
@@ -270226,10 +270283,19 @@
       "start": 3668,
       "end": 3917,
       "text": " There is established in the Executive Office of the Mayor the Office of Downtown Brooklyn Development which shall be headed by the Chairman of the Development Group, who shall be appointed by the Steering Committee for Downtown Brooklyn Development",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Steering Committee for Downtown Brooklyn Development",
+          "start": 3865,
+          "end": 3917,
+          "text": "Steering Committee for Downtown Brooklyn Development",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 3707,
@@ -270750,26 +270816,6 @@
       ]
     },
     {
-      "eo_id": "1974-EO-023",
-      "kind": "establishes",
-      "verb": "established",
-      "start": 2508,
-      "end": 2764,
-      "text": " There is established in the Executive Office of the Mayor the Upper Manhattan Planning and Development Office, which shall be headed by a Director of Upper Manhattan Planning and Development who shall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "office-of-the-mayor",
-          "name": "Office of the Mayor",
-          "start": 2547,
-          "end": 2566,
-          "text": "Office of the Mayor",
-          "found_by": "known-name"
-        }
-      ]
-    },
-    {
       "eo_id": "1974-EO-024",
       "kind": "establishes",
       "verb": "created",
@@ -270816,10 +270862,19 @@
       "start": 654,
       "end": 848,
       "text": " There is hereby established under the direction of the Office of the Mayor a Commission on the Status of Women, the members of which shall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Commission on the Status of Women",
+          "start": 732,
+          "end": 765,
+          "text": "Commission on the Status of Women",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 710,
@@ -271130,10 +271185,19 @@
       "start": 3148,
       "end": 3357,
       "text": " Office of Development\n\nThere is established in the Executive Office of the Mayor the Office of Development, which shall be headed by a Director who shall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Office of Development There",
+          "start": 3149,
+          "end": 3177,
+          "text": "Office of Development\n\nThere",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 3210,
@@ -271210,10 +271274,19 @@
       "start": 1601,
       "end": 1828,
       "text": " *Mayor's Midtown Action Office*\n\nThere is established in the Executive Office of the Mayor, the Mayor's Midtown Action Office which shall be headed by a Director who shall be appointed by and serve at the pleasure of the Mayor",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Mayor's Midtown Action Office",
+          "start": 1698,
+          "end": 1727,
+          "text": "Mayor's Midtown Action Office",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 1673,
@@ -271477,10 +271550,19 @@
       "start": 468,
       "end": 796,
       "text": " There is hereby established under the direction of the Office of the Mayor a Commission on the Status of Women, which shall consist of thirty-eight members appointed by the Mayor, including a Chairperson and a Vice-Chairperson who shall serve at the pleasure of the Mayor, the Chairperson of the New York City Commission on Hum",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Commission on the Status of Women",
+          "start": 546,
+          "end": 579,
+          "text": "Commission on the Status of Women",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 524,
@@ -272323,6 +272405,15 @@
       "roles": [
         {
           "role": "to",
+          "agency_id": "human-resources-administration",
+          "name": "Human Resources Administration",
+          "start": 345,
+          "end": 375,
+          "text": "Human Resources\nAdministration",
+          "found_by": "known-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 323,
@@ -272339,10 +272430,19 @@
       "start": 274,
       "end": 372,
       "text": " There is continued\nin the Executive Office of the Mayor a Department of Employment\n(\"Department\")",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Department of Employment",
+          "start": 333,
+          "end": 357,
+          "text": "Department of Employment",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 311,
@@ -273912,26 +274012,6 @@
     },
     {
       "eo_id": "1996-EO-034",
-      "kind": "continues",
-      "verb": "continued",
-      "start": 883,
-      "end": 1132,
-      "text": "\n\nThe City's OCSE, the Head Start Program and Child Day Care Services formerly administered by the Agency for Child Development of HRA shall be continued, and shall hereafter be maintained under the supervision and direction of the AFCS Commissioner",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "human-resources-administration",
-          "name": "HRA",
-          "start": 1014,
-          "end": 1017,
-          "text": "HRA",
-          "found_by": "known-name"
-        }
-      ]
-    },
-    {
-      "eo_id": "1996-EO-034",
       "kind": "establishes",
       "verb": "established",
       "start": 2158,
@@ -273941,6 +274021,15 @@
       "roles": [
         {
           "role": "to",
+          "agency_id": "human-resources-administration",
+          "name": "Human Resources Administration",
+          "start": 2226,
+          "end": 2256,
+          "text": "Human Resources Administration",
+          "found_by": "known-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 2204,
@@ -274242,10 +274331,19 @@
       "start": 613,
       "end": 825,
       "text": "1\nThere is hereby established under the direction of the Office of the\nMayor a Commission on Women's Issues (hereinafter called the \"Commission\"), which\nshall consist of a Chairperson and not less than 30 members",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Commission on Women's Issues",
+          "start": 692,
+          "end": 720,
+          "text": "Commission on Women's Issues",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 670,
@@ -274312,6 +274410,15 @@
           "end": 1502,
           "text": "Commission on Latin Media and Entertainment",
           "found_by": "new-name"
+        },
+        {
+          "role": "parent",
+          "agency_id": "office-of-the-mayor",
+          "name": "Office of the Mayor",
+          "start": 1569,
+          "end": 1588,
+          "text": "Office of the Mayor",
+          "found_by": "known-name"
         }
       ]
     },
@@ -274332,6 +274439,15 @@
           "end": 419,
           "text": "Commission on Latin Media and Entertainment",
           "found_by": "new-name"
+        },
+        {
+          "role": "parent",
+          "agency_id": "office-of-the-mayor",
+          "name": "Office of the Mayor",
+          "start": 486,
+          "end": 505,
+          "text": "Office of the Mayor",
+          "found_by": "known-name"
         }
       ]
     },
@@ -274430,26 +274546,6 @@
           "end": 3396,
           "text": "Lower Manhattan Construction Command Center",
           "found_by": "new-name"
-        }
-      ]
-    },
-    {
-      "eo_id": "2006-EO-084",
-      "kind": "establishes",
-      "verb": "established",
-      "start": 1026,
-      "end": 1138,
-      "text": " There is established in the Executive Office of the Mayor the position of\nCoordinator of Administrative Justice",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "office-of-the-mayor",
-          "name": "Office of the Mayor",
-          "start": 1065,
-          "end": 1084,
-          "text": "Office of the Mayor",
-          "found_by": "known-name"
         }
       ]
     },
@@ -275168,6 +275264,15 @@
       "roles": [
         {
           "role": "to",
+          "agency_id": "commission-on-gender-equity",
+          "name": "Commission on Gender Equity",
+          "start": 1234,
+          "end": 1261,
+          "text": "Commission on Gender Equity",
+          "found_by": "known-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 1212,
@@ -275213,10 +275318,19 @@
       "start": 1089,
       "end": 1230,
       "text": "\n\nThere is hereby established under the direction of the Office of the Mayor an interagency Mental Health Council (hereinafter the \"Council\")",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Mental Health Council",
+          "start": 1181,
+          "end": 1202,
+          "text": "Mental Health Council",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 1146,
@@ -275266,6 +275380,15 @@
       "roles": [
         {
           "role": "to",
+          "agency_id": "mayor-s-office-of-minority-and-women-owned-business-enterprises",
+          "name": "Office of Minority and Women-owned Business Enterprises",
+          "start": 1143,
+          "end": 1198,
+          "text": "Office of Minority and Women-owned Business Enterprises",
+          "found_by": "known-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 1119,
@@ -275286,6 +275409,15 @@
       "roles": [
         {
           "role": "to",
+          "agency_id": "cyber-command",
+          "name": "Cyber Command",
+          "start": 858,
+          "end": 871,
+          "text": "Cyber Command",
+          "found_by": "known-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 823,
@@ -275302,10 +275434,19 @@
       "start": 523,
       "end": 688,
       "text": " There is hereby established under the direction of the Office of the Mayor an Advisory Commission on City Art, Monuments, and Markers (hereinafter the \"Commission\")",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Advisory Commission on City Art",
+          "start": 602,
+          "end": 633,
+          "text": "Advisory Commission on City Art",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 579,
@@ -275392,26 +275533,6 @@
           "end": 1234,
           "text": "BQE Expert Panel",
           "found_by": "new-name"
-        }
-      ]
-    },
-    {
-      "eo_id": "2019-EO-050",
-      "kind": "establishes",
-      "verb": "established",
-      "start": 1461,
-      "end": 1858,
-      "text": " and\n\nWHEREAS, pursuant to Local Law 49 of 2018, in May 2018 a mayoral task force was\nestablished and convened relating to the use of automated decision systems (\"ADS\") in City\ngovernment, which is composed of members of City agencies and external organizations and\nchaired by the Mayor's Office of Operations (\"Operations\"), and which in November 2019\nissued a comprehensive set of recommendation",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "mayor-s-office-of-operations",
-          "name": "Mayor's Office of Operations",
-          "start": 1742,
-          "end": 1770,
-          "text": "Mayor's Office of Operations",
-          "found_by": "known-name"
         }
       ]
     },
@@ -275589,10 +275710,19 @@
       "start": 4181,
       "end": 4322,
       "text": "\n\nThere is hereby established under the direction of the Office of the Mayor an interagency Mental Health Council (hereinafter the \"Council\")",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Mental Health Council",
+          "start": 4273,
+          "end": 4294,
+          "text": "Mental Health Council",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 4238,
@@ -275609,10 +275739,19 @@
       "start": 723,
       "end": 842,
       "text": " There is hereby\nestablished, under the direction of the Office of the Mayor, an Office of Public Engagement\n(“Office”)",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Office of Public Engagement",
+          "start": 804,
+          "end": 831,
+          "text": "Office of Public Engagement",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 780,
@@ -275633,6 +275772,15 @@
       "roles": [
         {
           "role": "to",
+          "agency_id": "mayor-s-office-of-youth-employment",
+          "name": "Office of Youth Employment",
+          "start": 866,
+          "end": 892,
+          "text": "Office of Youth Employment",
+          "found_by": "known-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "office-of-the-mayor",
           "name": "Office of the Mayor",
           "start": 842,
@@ -275732,26 +275880,6 @@
       ]
     },
     {
-      "eo_id": "2021-EO-084",
-      "kind": "establishes",
-      "verb": "established",
-      "start": 978,
-      "end": 1105,
-      "text": " There is hereby established under the\ndirection of the Office of the Mayor a Cabinet on Pay Equity (hereinafter the \"Cabinet\")",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "office-of-the-mayor",
-          "name": "Office of the Mayor",
-          "start": 1034,
-          "end": 1053,
-          "text": "Office of the Mayor",
-          "found_by": "known-name"
-        }
-      ]
-    },
-    {
       "eo_id": "2021-EO-085",
       "kind": "establishes",
       "verb": "established",
@@ -275796,26 +275924,6 @@
           "start": 1227,
           "end": 1246,
           "text": "Office of the Mayor",
-          "found_by": "known-name"
-        }
-      ]
-    },
-    {
-      "eo_id": "2021-EO-088",
-      "kind": "establishes",
-      "verb": "established",
-      "start": 1411,
-      "end": 1548,
-      "text": " There is hereby established under the direction of the Civic Engagement Commission (\"CEC\") the DemocracyNYC program (hereinafter \"DNYC\")",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "civic-engagement-commission",
-          "name": "Civic Engagement Commission",
-          "start": 1467,
-          "end": 1494,
-          "text": "Civic Engagement Commission",
           "found_by": "known-name"
         }
       ]
@@ -276012,10 +276120,19 @@
       "start": 1002,
       "end": 1163,
       "text": " There is hereby established under the direction of the Department of Small Business Services a Small Business Advisory Commission (hereinafter the \"Commission\")",
-      "fully_resolved": true,
+      "fully_resolved": false,
       "roles": [
         {
           "role": "to",
+          "agency_id": null,
+          "name": "Small Business Advisory Commission",
+          "start": 1098,
+          "end": 1132,
+          "text": "Small Business Advisory Commission",
+          "found_by": "new-name"
+        },
+        {
+          "role": "parent",
           "agency_id": "department-of-small-business-services",
           "name": "Department of Small Business Services",
           "start": 1058,
@@ -276042,46 +276159,6 @@
           "end": 925,
           "text": "Rikers\nIsland Interagency Task Force",
           "found_by": "new-name"
-        }
-      ]
-    },
-    {
-      "eo_id": "2022-EO-017",
-      "kind": "establishes",
-      "verb": "established",
-      "start": 2824,
-      "end": 2951,
-      "text": " There is hereby established the position of Chief Investment Advisor as part of the Mayor's Office of Pensions and Investments",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "mayor-s-office-of-pensions-and-investments",
-          "name": "Mayor's Office of Pensions and Investments",
-          "start": 2909,
-          "end": 2951,
-          "text": "Mayor's Office of Pensions and Investments",
-          "found_by": "known-name"
-        }
-      ]
-    },
-    {
-      "eo_id": "2022-EO-018",
-      "kind": "establishes",
-      "verb": "established",
-      "start": 2796,
-      "end": 2926,
-      "text": " There is hereby established the position of Chief\nPension Administrator as part of the Mayor's Office of Pensions and Investments",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "mayor-s-office-of-pensions-and-investments",
-          "name": "Mayor's Office of Pensions and Investments",
-          "start": 2884,
-          "end": 2926,
-          "text": "Mayor's Office of Pensions and Investments",
-          "found_by": "known-name"
         }
       ]
     },
@@ -276121,26 +276198,6 @@
           "start": 798,
           "end": 839,
           "text": "Mayor's Office of Media and Entertainment",
-          "found_by": "known-name"
-        }
-      ]
-    },
-    {
-      "eo_id": "2022-EO-021",
-      "kind": "establishes",
-      "verb": "established",
-      "start": 5806,
-      "end": 5974,
-      "text": " An office shall be established as a division of MOME to carry out the powers and duties relating to the issuance of press credentials, in accordance with section 3-119",
-      "fully_resolved": true,
-      "roles": [
-        {
-          "role": "to",
-          "agency_id": "mayor-s-office-of-media-and-entertainment",
-          "name": "MOME",
-          "start": 5855,
-          "end": 5859,
-          "text": "MOME",
           "found_by": "known-name"
         }
       ]
@@ -277407,6 +277464,14 @@
       "why": "one-side-only"
     },
     {
+      "eo_id": "1966-EO-019-p033",
+      "verb": "established",
+      "start": 822,
+      "end": 1031,
+      "text": " There is established in the executive office of the Mayor the Office of the City Renewal Commissioner of the City of New York which shall be headed by a City Renewal Commissioner who shall be appointed by and",
+      "why": "one-side-only"
+    },
+    {
       "eo_id": "1966-EO-019-p041",
       "verb": "transferred",
       "start": 258,
@@ -277501,6 +277566,14 @@
       "end": 1012,
       "text": "tions differ from those governing the career employee,\n\nNOW, THEREFORE, BY virtue of the authority vested in me as Mayor of the City of New York, it is hereby ordered that the following Regulations on Leave and Overtime Liquidation on Retirement or Termination of Services be and the same are hereby established:\n\n## Regulations on Leave and Overtime Liquidation on Retirement or\nTermination of Services\n\n1",
       "why": "no-agency-named"
+    },
+    {
+      "eo_id": "1967-EO-042-p103",
+      "verb": "established",
+      "start": 292,
+      "end": 524,
+      "text": "\nThere is established in the Executive Office of the Mayor the Office of Lower Manhattan Development which shall be headed by a Director of Lower Manhattan Development who shall be appointed by and serve at the pleasure of the Mayor",
+      "why": "one-side-only"
     },
     {
       "eo_id": "1967-EO-042-p112",
@@ -277927,6 +278000,14 @@
       "why": "no-agency-named"
     },
     {
+      "eo_id": "1970-EO-029",
+      "verb": "established",
+      "start": 3688,
+      "end": 3895,
+      "text": " There is established in the Executive Office of the Mayor the Office of Jamaica Planning and Development which shall be headed by a Director, who shall be appointed by and serve at the pleasure of the Mayor",
+      "why": "one-side-only"
+    },
+    {
       "eo_id": "1970-EO-D0501",
       "verb": "continued",
       "start": 3822,
@@ -278276,6 +278357,14 @@
       "start": 2839,
       "end": 3153,
       "text": " The Executive Committee: (a) is hereby designated to act as the planning agency for the City under the provisions of the Omnibus Crime Control and Safe Streets Act, and (b) shall have the power to review and approve applications on behalf of the City for Federal and State crime control and criminal justice funds",
+      "why": "one-side-only"
+    },
+    {
+      "eo_id": "1974-EO-023",
+      "verb": "established",
+      "start": 2508,
+      "end": 2764,
+      "text": " There is established in the Executive Office of the Mayor the Upper Manhattan Planning and Development Office, which shall be headed by a Director of Upper Manhattan Planning and Development who shall be appointed by and serve at the pleasure of the Mayor",
       "why": "one-side-only"
     },
     {
@@ -279433,6 +279522,14 @@
     {
       "eo_id": "2006-EO-084",
       "verb": "established",
+      "start": 1026,
+      "end": 1138,
+      "text": " There is established in the Executive Office of the Mayor the position of\nCoordinator of Administrative Justice",
+      "why": "one-side-only"
+    },
+    {
+      "eo_id": "2006-EO-084",
+      "verb": "established",
       "start": 2013,
       "end": 2116,
       "text": " The content of\n\nsuch reports and any such policies for reform shall be established by the\n\nCoordinator",
@@ -280121,6 +280218,14 @@
     {
       "eo_id": "2019-EO-050",
       "verb": "established",
+      "start": 1461,
+      "end": 1858,
+      "text": " and\n\nWHEREAS, pursuant to Local Law 49 of 2018, in May 2018 a mayoral task force was\nestablished and convened relating to the use of automated decision systems (\"ADS\") in City\ngovernment, which is composed of members of City agencies and external organizations and\nchaired by the Mayor's Office of Operations (\"Operations\"), and which in November 2019\nissued a comprehensive set of recommendation",
+      "why": "one-side-only"
+    },
+    {
+      "eo_id": "2019-EO-050",
+      "verb": "established",
       "start": 3910,
       "end": 3966,
       "text": " There is established within the Office of the Mayor:\n\na",
@@ -280239,6 +280344,22 @@
       "why": "no-agency-named"
     },
     {
+      "eo_id": "2021-EO-084",
+      "verb": "established",
+      "start": 978,
+      "end": 1105,
+      "text": " There is hereby established under the\ndirection of the Office of the Mayor a Cabinet on Pay Equity (hereinafter the \"Cabinet\")",
+      "why": "one-side-only"
+    },
+    {
+      "eo_id": "2021-EO-088",
+      "verb": "established",
+      "start": 1411,
+      "end": 1548,
+      "text": " There is hereby established under the direction of the Civic Engagement Commission (\"CEC\") the DemocracyNYC program (hereinafter \"DNYC\")",
+      "why": "one-side-only"
+    },
+    {
       "eo_id": "2021-EO-089",
       "verb": "successor",
       "start": 2641,
@@ -280301,6 +280422,30 @@
       "end": 658,
       "text": "yor, one shall be designated the Deputy Mayor for Operations, one shall be designated the Deputy\nMayor for Economic and Workforce Development, one shall be designated the Deputy Mayor for\nHealth and Human Services, one shall be designated the Deputy Mayor for Strategic Initiatives, and\none shall be designated the Deputy Mayor for Public Safety",
       "why": "no-agency-named"
+    },
+    {
+      "eo_id": "2022-EO-017",
+      "verb": "established",
+      "start": 2824,
+      "end": 2951,
+      "text": " There is hereby established the position of Chief Investment Advisor as part of the Mayor's Office of Pensions and Investments",
+      "why": "one-side-only"
+    },
+    {
+      "eo_id": "2022-EO-018",
+      "verb": "established",
+      "start": 2796,
+      "end": 2926,
+      "text": " There is hereby established the position of Chief\nPension Administrator as part of the Mayor's Office of Pensions and Investments",
+      "why": "one-side-only"
+    },
+    {
+      "eo_id": "2022-EO-021",
+      "verb": "established",
+      "start": 5806,
+      "end": 5974,
+      "text": " An office shall be established as a division of MOME to carry out the powers and duties relating to the issuance of press credentials, in accordance with section 3-119",
+      "why": "one-side-only"
     },
     {
       "eo_id": "2023-EO-029",

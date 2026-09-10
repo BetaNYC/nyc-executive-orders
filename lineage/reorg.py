@@ -39,6 +39,20 @@ pass two found. Preferring pass one there would record the Office of the Mayor a
 the thing established. So the nearest span to the verb takes the role, and pass one
 only breaks a tie at the same spot.
 
+**A named body is not always a body the sentence acts on.** An order names the place
+a new office is put, and the body that used to run a programme, in the same breath as
+the thing it is doing. Two rules tell those apart, and both are about the words in
+front of the name rather than about the name itself:
+
+* ``_PARENT_LEAD_RE`` — "in"/"within"/"inside", with room for a modifier, so
+  *"established IN THE EXECUTIVE Office of the Mayor a Mayor's Office of X"* records
+  the new office and not the Office of the Mayor. That one word used to hide 23
+  sentences from the rule.
+* ``_in_wrapper_phrase`` — "administered by", "a division of", "under the direction
+  of", which can reach past an intervening name. *"the Head Start Program ... formerly
+  administered by the Agency for Child Development of HRA shall be continued"*
+  continues the programme; HRA ran it.
+
 **One event, one body.** A sentence can name several bodies at once —
 ``2022-EO-003`` § 3 moves three offices into OTI — and it becomes one event per
 body, each carrying the roles they all share. Each body is its own fact, and an
@@ -159,9 +173,73 @@ _BOUNDARY_RE = re.compile(r"[.;§]|(?<![A-Za-z])Section\s")
 # How far a sentence may reach on either side of its verb.
 WINDOW = 300
 
-# A body named straight after "in"/"within" is the PARENT, not the thing acted on.
+# A body named after "in"/"within" is the PARENT, not the thing acted on.
+#
+# Up to two words may sit between the preposition and the name. Requiring the name
+# to follow "in the" immediately is the shape this rule was first written in, and it
+# misses the commonest placement in the whole corpus: "There is established IN THE
+# EXECUTIVE Office of the Mayor a Mayor's Office of X". One word — "Executive" — hid
+# 23 sentences from the rule, and each one recorded the Office of the Mayor as the
+# body being established rather than as the place it was put. Measured over the
+# corpus, that was 35 of the 36 sentences that named the Office of the Mayor as a
+# new body.
+#
+# A word ending in "-ing" ends the reach, because a participle is a verb rather than
+# part of the noun phrase. 2013-EO-214 reads "who are substantially engaged in
+# assisting DOHMH", and the two-word reach would otherwise read that as a container.
+# It is the one case in the corpus the widening would get wrong, and the guard costs
+# nothing anywhere else.
 _PARENT_LEAD_RE = re.compile(
-    r"\b(?:in|within|inside)\s+(?:the\s+|a\s+|an\s+)?$", re.IGNORECASE)
+    r"\b(?:in|within|inside)\s+(?:the\s+|an?\s+)?(?:(?!\w+ing\b)\w+\s+){0,2}$",
+    re.IGNORECASE)
+
+# --------------------------------------------------------------------------- #
+# Wrapper phrases                                                               #
+# --------------------------------------------------------------------------- #
+#
+# "in"/"within" is not the only way an order names a body it is NOT acting on.
+# 1996-EO-034 reads:
+#
+#     The City's OCSE, the Head Start Program and Child Day Care Services formerly
+#     administered by the Agency for Child Development of HRA shall be continued
+#
+# HRA is not being continued. It is the body that used to run these programs, and it
+# is named inside a "formerly administered by" phrase. The programs are the subject.
+#
+# The difference from _PARENT_LEAD_RE is the reach. There, only an article may sit
+# between the preposition and the name. Here the phrase runs PAST an intervening
+# name — HRA sits 30 characters behind "administered by", with "the Agency for Child
+# Development of" in the way — so the rule has to look further back and then decide
+# for itself where the phrase ended. Three guards do that, and each one is
+# load-bearing:
+#
+#   * The phrase reaches at most 70 characters past its head, so it cannot swallow
+#     the rest of the sentence.
+#   * A sentence break, a comma, a coordinator or a finite verb in between means the
+#     phrase already ended.
+#   * A SECOND determiner in between means a new noun phrase started. 2021-EO-063
+#     reads "established under the direction of the Center AN Advisory Committee",
+#     and without this guard the Advisory Committee — the body actually created —
+#     reads as a container.
+#
+# The word list stays short and specific on purpose. An earlier draft allowed a bare
+# "office of" and "program of", and it broke 2022-EO-003 at once: "The OFFICE OF
+# Cyber Command" is one name, not a container plus a subject. "division", "part",
+# "subdivision" and "component" are safe; "office", "bureau", "unit" and "program"
+# are not.
+_WRAPPER_HEAD_RE = re.compile(
+    r"\b(?:administered|operated|supervised|maintained|managed|headed|chaired"
+    r"|governed)\s+(?:by|under|within)\b"
+    r"|\b(?:an?\s+)?(?:division|part|subdivision|component)\s+of\b"
+    r"|\bunder\s+the\s+(?:jurisdiction|direction|supervision|authority|control)"
+    r"\s+of\b",
+    re.IGNORECASE)
+# How far past its head one wrapper phrase may reach.
+_WRAPPER_SCOPE = 70
+_WRAPPER_BREAK_RE = re.compile(
+    r"[.;:§,]|\band\b|&|\b(?:is|are|was|were|shall|will|be)\b", re.IGNORECASE)
+_WRAPPER_ARTICLE_RE = re.compile(r"^\s*(?:the|an?|its|such)\s+", re.IGNORECASE)
+_DETERMINER_RE = re.compile(r"\b(?:a|an|the)\b", re.IGNORECASE)
 
 # --------------------------------------------------------------------------- #
 # Coordinated subject lists                                                     #
@@ -186,8 +264,12 @@ _PARENT_LEAD_RE = re.compile(
 #
 #   * It is short. A list item's modifier is a phrase, not a clause.
 #   * It holds no sentence break (`.` `;` `:` `§`). Those end the list.
-#   * It holds a coordinator — a comma, "and", or "&". Without one, the two names
-#     are simply next to each other and are not a list at all.
+#   * It holds a coordinator — a comma, "and", or "&" — AND that coordinator sits at
+#     the end of the gap, next to the name it joins. Without one at all, the two
+#     names are simply next to each other and are not a list. Without the adjacency,
+#     a coordinator anywhere in 90 characters of unrelated text counts, which is how
+#     1996-EO-034 joined HRA out of an "administered by" phrase: see
+#     _LIST_GLUE_TAIL_RE below.
 #   * It holds NO finite verb. This is the load-bearing one. Without it,
 #     "...revoking the Board of Estimate, and the Committee on the Judiciary
 #     established thereunder is hereby abolished" reads as abolishing both, because
@@ -212,6 +294,12 @@ _PARENT_LEAD_RE = re.compile(
 # evidence is. An "established a Committee ... and the Council" tail after the verb
 # is far likelier to be the body being advised than a second body being created, so
 # that side still takes one name.
+#
+# A fifth thing stops a join, and it is not about the gap at all: a name inside a
+# container phrase is never a list item, however good the glue looks. See
+# _in_wrapper_phrase. Two rules for one wrong join is deliberate. The glue test reads
+# forward from the previous name and the wrapper test reads backward from this one,
+# so each catches shapes the other cannot see.
 _LIST_GLUE_MAX = 90
 _LIST_BREAK_RE = re.compile(r"[.;:§]")
 _LIST_COORDINATOR_RE = re.compile(r",|&|\band\b", re.IGNORECASE)
@@ -222,8 +310,17 @@ _LIST_MIN_WITHOUT_AND = 3
 _LIST_FINITE_VERB_RE = re.compile(
     r"\b(?:is|are|was|were|be|been|being|shall|will|would|may|must|can|has|have"
     r"|had|does|do|did)\b", re.IGNORECASE)
+# The coordinator has to sit at the END of the gap, next to the name it joins.
+#
+# This test used to read `(?:,\s*|\s+)(?:and\s+|&\s+)?(?:the\s+|an?\s+)?$`, where
+# every part but a run of whitespace is optional — so ANY gap ending in a space
+# passed it, and the test did no work at all. 1996-EO-034 is what that cost: the gap
+# " and Child Day Care Services formerly administered by the Agency for Child
+# Development of " ends in "of ", and the "and" that makes the join look legal sits
+# 80 characters back in a different phrase. Requiring the coordinator to be adjacent
+# is what a list actually looks like — "A, B and C" puts it right before each item.
 _LIST_GLUE_TAIL_RE = re.compile(
-    r"(?:,\s*|\s+)(?:and\s+|&\s+)?(?:the\s+|an?\s+)?$", re.IGNORECASE)
+    r"(?:,|&|\band\b)\s*(?:the\s+|an?\s+)?$", re.IGNORECASE)
 
 
 def is_list_glue(gap: str) -> bool:
@@ -239,12 +336,19 @@ def is_list_glue(gap: str) -> bool:
     return bool(_LIST_GLUE_TAIL_RE.search(gap))
 
 
-def _list_before(text: str, before: list[_Span]) -> list[_Span]:
+def _list_before(text: str, before: list[_Span],
+                 wrapped: frozenset[tuple[int, int]] = frozenset()) -> list[_Span]:
     """The nearest name before the verb, plus every list item joined to it.
 
     Returns them in the order the order writes them, so the roles read the way the
     sentence does. A pair joined by nothing but a comma is an apposition, not a
     list, and falls back to the nearest name alone.
+
+    ``wrapped`` holds the spans that :func:`_in_wrapper_phrase` found inside a
+    container phrase. A name in one is never a list item, whatever the gap in front
+    of it looks like, so the chain stops there. This is the belt to the glue test's
+    braces: the two rules catch the same wrong join from opposite ends, and either
+    one alone would have let 1996-EO-034 through in some shape.
     """
     if not before:
         return []
@@ -253,6 +357,8 @@ def _list_before(text: str, before: list[_Span]) -> list[_Span]:
     for span in reversed(before[:-1]):
         gap = text[span.end:chosen[0].start]
         if not is_list_glue(gap):
+            break
+        if (span.start, span.end) in wrapped:
             break
         joined_by_and = joined_by_and or bool(_LIST_AND_RE.search(gap))
         chosen.insert(0, span)
@@ -358,6 +464,27 @@ def _is_parent(text: str, span: _Span, window_start: int) -> bool:
     return bool(_PARENT_LEAD_RE.search(text[window_start:span.start]))
 
 
+def _in_wrapper_phrase(text: str, span: _Span, window_start: int) -> bool:
+    """True when this name sits inside a phrase that names a CONTAINER.
+
+    "formerly administered by ... of HRA", "as a division of MOME", "under the
+    direction of the Center". See the block comment above :data:`_WRAPPER_HEAD_RE`
+    for why the reach has to run past an intervening name, and for the three guards
+    that stop it running past the phrase.
+    """
+    lead = text[max(window_start, span.start - _WRAPPER_SCOPE - 40):span.start]
+    for m in _WRAPPER_HEAD_RE.finditer(lead):
+        tail = lead[m.end():]
+        if len(tail) > _WRAPPER_SCOPE or _WRAPPER_BREAK_RE.search(tail):
+            continue
+        # The phrase may carry its own article. A SECOND determiner is a new noun
+        # phrase, so the wrapper ended before this name.
+        if _DETERMINER_RE.search(_WRAPPER_ARTICLE_RE.sub(" ", tail)):
+            continue
+        return True
+    return False
+
+
 # --------------------------------------------------------------------------- #
 # One sentence                                                                  #
 # --------------------------------------------------------------------------- #
@@ -379,12 +506,27 @@ def _roles_for(kind: str, text: str, spans: list[_Span],
     """
     before = [s for s in _in_window(spans, floor, verb_start)
               if not _is_parent(text, s, floor)]
+    # A name inside a container phrase, on the side where the subject stands.
+    #
+    # Dropped outright for the kinds that PRODUCE a body, because there the phrase
+    # names the place rather than the thing: "the Head Start Program ... formerly
+    # administered by ... HRA shall be continued" continues the program.
+    #
+    # KEPT for a transfer, an abolition and a rename, because there the same phrase
+    # names the real source. "services formerly administered by the Youth Services
+    # Agency shall be transferred to the Department of Employment" moves them OUT of
+    # the Youth Services Agency, and dropping the name loses that record and two more
+    # like it. Either way the name may never JOIN a list — see `wrapped` below.
+    wrapped = frozenset((s.start, s.end) for s in before
+                        if _in_wrapper_phrase(text, s, floor))
+    if kind in _TAKES_A_PARENT:
+        before = [s for s in before if (s.start, s.end) not in wrapped]
     after = _in_window(spans, verb_end, ceiling)
 
     parent: _Span | None = None
     if kind in _TAKES_A_PARENT:
         for s in after:
-            if _is_parent(text, s, verb_end):
+            if _is_parent(text, s, verb_end) or _in_wrapper_phrase(text, s, verb_end):
                 parent = s
                 break
     # A name claimed as the parent can never also be the thing established, and
@@ -405,7 +547,8 @@ def _roles_for(kind: str, text: str, spans: list[_Span],
         # Both shapes at once: the existential puts the new body after the verb,
         # the commoner shape puts it before. Prefer after, fall back to before —
         # and the before side can be a whole list of bodies sharing one verb.
-        made = ([after_body[0]] if after_body else _list_before(text, before))
+        made = ([after_body[0]] if after_body
+                else _list_before(text, before, wrapped))
         roles.extend(sp.as_role(ROLE_TO) for sp in made)
         if parent is not None:
             roles.append(parent.as_role(ROLE_PARENT))
@@ -414,7 +557,7 @@ def _roles_for(kind: str, text: str, spans: list[_Span],
     if kind == KIND_ABOLISHES:
         # "The Board of Estimate is hereby abolished" — and the existential form,
         # "there is hereby abolished the Board of X", reads the other way.
-        gone = _list_before(text, free)
+        gone = _list_before(text, free, wrapped)
         if not gone and after_body:
             gone = [after_body[0]]
         roles.extend(sp.as_role(ROLE_FROM) for sp in gone)
@@ -423,7 +566,8 @@ def _roles_for(kind: str, text: str, spans: list[_Span],
     if kind in (KIND_TRANSFERS_TO, KIND_MERGES_INTO):
         # Several bodies can be transferred or merged in one sentence; only one
         # place receives them.
-        roles.extend(sp.as_role(ROLE_FROM) for sp in _list_before(text, free))
+        roles.extend(sp.as_role(ROLE_FROM)
+                     for sp in _list_before(text, free, wrapped))
         if after_body:
             roles.append(after_body[0].as_role(ROLE_TO))
         return roles

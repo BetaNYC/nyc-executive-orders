@@ -181,6 +181,108 @@ def test_a_name_inside_an_in_phrase_is_not_the_subject():
     assert roles_of(events[0])[ROLE_FROM] == "Mayor's Reception Committee"
 
 
+def test_a_modifier_may_sit_inside_the_in_phrase():
+    """"in the EXECUTIVE Office of the Mayor". One word, 35 sentences.
+
+    The rule used to need the name to follow "in the" immediately, so this — the
+    commonest placement in the whole corpus — recorded the Office of the Mayor as
+    the body being established rather than the place it was put.
+    """
+    text = ("There is hereby established in the Executive Office of the Mayor an "
+            "Office of Neighborhood Services.")
+    events, _ = run(text,
+                    known("T-1", text, "Office of the Mayor", "office-of-the-mayor"),
+                    guessed("T-1", text, "Office of Neighborhood Services"))
+    assert roles_of(events[0]) == {ROLE_TO: "Office of Neighborhood Services",
+                                   ROLE_PARENT: "Office of the Mayor"}
+
+
+def test_a_participle_ends_the_reach_of_the_in_phrase():
+    """2013-EO-214: "who are substantially engaged in assisting DOHMH".
+
+    "assisting" is a verb, not part of the noun phrase, so this is not a container.
+    It is the one sentence in the corpus the two-word reach would get wrong.
+    """
+    text = ("The staff engaged in assisting DOHMH are hereby transferred to the "
+            "Department of Social Services.")
+    events, _ = run(text,
+                    known("T-1", text, "DOHMH", "dohmh"),
+                    guessed("T-1", text, "Department of Social Services"))
+    assert roles_of(events[0])[ROLE_FROM] == "DOHMH"
+
+
+def test_a_body_named_as_a_former_administrator_is_not_the_subject():
+    """1996-EO-034. The reach has to run PAST an intervening name.
+
+    "administered by" sits 30 characters behind HRA, with "the Agency for Child
+    Development of" in the way, so an adjacency rule cannot see it.
+    """
+    text = ("The Head Start Program formerly administered by the Agency for Child "
+            "Development of HRA shall be continued.")
+    events, _ = run(text,
+                    guessed("T-1", text, "Head Start Program"),
+                    known("T-1", text, "HRA", "hra"))
+    assert [roles_of(e) for e in events] == [{ROLE_TO: "Head Start Program"}]
+
+
+def test_a_coordinator_far_from_the_name_is_not_list_glue():
+    """The 1996-EO-034 shape in miniature, with the wrapper rule taken out of it.
+
+    The gap holds an "and", but it belongs to a phrase 60 characters back. A list
+    puts its coordinator next to the item it joins.
+    """
+    text = ("The Head Start Program and Child Day Care Services provided under the "
+            "1965 compact of Springfield Council shall be continued.")
+    events, _ = run(text,
+                    guessed("T-1", text, "Head Start Program"),
+                    guessed("T-1", text, "Springfield Council"))
+    assert [roles_of(e) for e in events] == [{ROLE_TO: "Springfield Council"}]
+
+
+def test_a_direction_phrase_names_the_parent():
+    """2021-EO-063: "established under the direction of the Center an Advisory
+    Committee". The Center is the container and the Committee is the new body.
+
+    The second determiner — "an" — is what says the container phrase ended. Without
+    that guard the reach runs on and the Advisory Committee becomes its own parent.
+    """
+    text = ("There is hereby established under the direction of the Center for "
+            "Conflict Resolution an Advisory Committee on Practice.")
+    events, _ = run(text,
+                    guessed("T-1", text, "Center for Conflict Resolution"),
+                    guessed("T-1", text, "Advisory Committee on Practice"))
+    assert roles_of(events[0]) == {ROLE_TO: "Advisory Committee on Practice",
+                                   ROLE_PARENT: "Center for Conflict Resolution"}
+
+
+def test_a_transfer_keeps_the_body_inside_the_wrapper_phrase():
+    """1976-EO-050. The same phrase that hides a body in a "continued" sentence
+    names the real source in a transfer, so the name is dropped only for the kinds
+    that PRODUCE a body."""
+    text = ("The youth services formerly administered by the Youth Services Agency "
+            "are hereby transferred to the Department of Employment.")
+    events, _ = run(text,
+                    guessed("T-1", text, "Youth Services Agency"),
+                    guessed("T-1", text, "Department of Employment"))
+    assert roles_of(events[0]) == {ROLE_FROM: "Youth Services Agency",
+                                   ROLE_TO: "Department of Employment"}
+
+
+def test_office_of_is_never_read_as_a_container():
+    """"The Office of Cyber Command" is one name, not a container plus a subject.
+
+    An early draft of the wrapper list held "office of" and "program of" beside
+    "division of", and it broke 2022-EO-003 at once.
+    """
+    text = ("The Office of Cyber Command shall be continued and established within "
+            "the Office of Technology and Innovation.")
+    events, _ = run(text,
+                    known("T-1", text, "Cyber Command", "cyber-command"),
+                    known("T-1", text, "Office of Technology and Innovation", "oti"))
+    assert roles_of(events[0]) == {ROLE_TO: "Cyber Command",
+                                   ROLE_PARENT: "Office of Technology and Innovation"}
+
+
 def test_the_letterhead_never_takes_a_role():
     """The stationery names the Office of the Mayor 2,560 times and means none."""
     text = "OFFICE OF THE MAYOR\nThere is hereby established a body."

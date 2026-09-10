@@ -157,17 +157,17 @@ aside.
 
 ## The reorganization sentences
 
-Pass three reads the sentences that link two bodies. Measured over the 3,202 orders
-that carry text: **367 events**, of which **97** pin down a registry agency on every
-side, plus **496** sentences kept for review.
+Pass three reads the sentences that link two bodies. Measured over the 3,269 orders
+that carry text: **388 events**, of which **97** pin down a registry agency on every
+side, plus **508** sentences kept for review.
 
 | what the order does | events |
 |---|---:|
-| `establishes` | 272 |
-| `continues` | 40 |
-| `renames` | 21 |
-| `transfers_to` | 21 |
-| `abolishes` | 11 |
+| `establishes` | 285 |
+| `continues` | 46 |
+| `transfers_to` | 23 |
+| `renames` | 20 |
+| `abolishes` | 12 |
 | `merges_into` | 1 |
 | `succeeds` | 1 |
 
@@ -211,9 +211,12 @@ Four rules earn their place, and each has a test:
   nearest name before the second verb is the FIRST post, so without this rule the
   roster reads as a chain of renames — **84 false edges**, the single largest wrong
   class measured.
-* **A name inside an "in"/"within" phrase is the wrapper, not the subject.** *"The
+* **A name inside a container phrase is the wrapper, not the subject.** *"The
   Mayor's Reception Committee, in the Office of the Mayor, is hereby consolidated"*
-  is about the committee.
+  is about the committee. Two rules read those phrases, and both look at the words
+  in front of the name rather than at the name. See "Telling the container from the
+  subject" below — it was the weakest part of this pass and it is where the largest
+  wrong class lived.
 * **One verb can govern a list of bodies.** `2022-EO-003` § 3 reads *"The Office of
   Cyber Command ..., the Office of Data Analytics ... and the Office of Information
   Privacy ... shall be continued and established within the Office of Technology and
@@ -231,8 +234,24 @@ wrong join:
 |---|---|
 | be short (≤ 90 characters) | a list item carries a phrase, not a clause |
 | hold no `.` `;` `:` `§` | the list ended |
-| hold a comma, `and`, or `&` | the two names are merely adjacent |
+| **end** with a comma, `and`, or `&`, next to the name it joins | the two names are merely adjacent |
 | hold **no finite verb** | *"...hereby is revoked and the Committee ... is hereby abolished"* is otherwise perfect glue, and the revoked order's body gets abolished along with the real one |
+
+**The third row used to say "hold", not "end with", and the test that was meant to
+enforce it did nothing.** Its pattern made every part optional but a run of
+whitespace, so any gap ending in a space passed. `1996-EO-034` is what that cost:
+*"the Head Start Program **and** Child Day Care Services formerly administered by
+the Agency for Child Development **of** HRA shall be continued"*. The gap is 90
+characters — the limit exactly — and it ends in "of ". The `and` that makes the join
+look legal is 80 characters back, in a different phrase. HRA joined the list and the
+order read as continuing two bodies. A list puts its coordinator next to each item,
+so the coordinator now has to sit at the end of the gap.
+
+A fifth thing stops a join, and it is not about the gap: **a name inside a container
+phrase is never a list item**, however good the glue looks. Two rules for one wrong
+join is deliberate — the glue test reads forward from the previous name and the
+container test reads backward from this one, so each catches shapes the other cannot
+see.
 
 A single bare comma is not enough on its own. Two names joined by one are as likely
 to be an apposition: `1955-EO-022` reads *"The Division of Analysis, Bureau of the
@@ -251,6 +270,75 @@ is a list a person would read the same way — `2022-EO-003` (three offices into
 `1976-EO-063` (three planning offices abolished), `1965-EO-181-p261` (*"a Housing Policy
 Board and a Housing Executive Committee"*) and `1966-EO-028-p068` (*"the Anti-Poverty
 Operations Board and the Economic Opportunity Committee are abolished"*).
+
+### Telling the container from the subject
+
+An order names the place a new office is put, and the body that used to run a
+programme, in the same breath as the thing it is doing. This pass reads no grammar —
+it knows only where the spans are and what characters sit between them — so it tells
+them apart by the words in front of the name. Two rules do it.
+
+**"in"/"within", with room for a modifier.** A body named after `in`, `within` or
+`inside` is the parent. The rule used to need the name to follow `in the`
+immediately, and that missed the commonest placement in the whole corpus:
+
+> There is established **in the Executive** Office of the Mayor a Mayor's Office of X
+
+One word — `Executive` — hid 23 sentences from the rule, and each one recorded the
+Office of the Mayor as the body being established. Up to two words may now sit in
+between. A word ending in `-ing` ends the reach, because a participle is a verb
+rather than part of the noun phrase: `2013-EO-214` reads *"who are substantially
+engaged in assisting DOHMH"*, and it is the one sentence in the corpus the widening
+would otherwise get wrong.
+
+**Wrapper phrases, which reach past an intervening name.** `administered by`,
+`a division of`, `under the direction of`. These cannot use adjacency, because the
+body they name sits behind another one:
+
+> the Head Start Program ... formerly **administered by** the Agency for Child
+> Development **of** HRA shall be continued
+
+HRA is 30 characters behind `administered by`. So the rule looks further back and
+then decides for itself where the phrase ended. Three guards do that, and each one
+is load-bearing:
+
+| The phrase | Or else |
+|---|---|
+| reaches at most 70 characters past its head | it swallows the rest of the sentence |
+| holds no `.` `;` `:` `,`, coordinator or finite verb | it already ended |
+| holds no **second** determiner | *"established under the direction of the Center **an** Advisory Committee"* makes the Advisory Committee its own container instead of the new body |
+
+The word list stays short. An early draft allowed a bare `office of` and `program
+of`, and it broke `2022-EO-003` at once: *"The **Office of** Cyber Command"* is one
+name, not a container plus a subject. `division`, `part`, `subdivision` and
+`component` are safe; `office`, `bureau`, `unit` and `program` are not.
+
+**A wrapper name is dropped only for the verbs that PRODUCE a body**, and that
+asymmetry is measured rather than tidy. In a transfer the same phrase names the real
+source: `1976-EO-050` reads *"services formerly administered by the Youth Services
+Agency shall be transferred to the Department of Employment"*, and the Youth Services
+Agency is correctly the `from` side. Dropping wrapper names everywhere loses that
+record and two more like it. Either way the name can never join a list.
+
+**What the two rules moved.** Reading the container phrases takes the parent count
+from 95 to **128**, and takes the events that say a body was established or continued
+and name the Office of the Mayor as that body from **36 to 1**. That was the largest
+wrong class in this pass.
+
+Both the event count and the resolved count **fall**, and that is the fix working.
+33 of the deleted events said *"the Office of the Mayor is hereby established"*. They
+are replaced by events naming the body the order actually created — the Mental Health
+Council, the Office of Youth Employment, the Center for Faith and Community
+Partnerships, and about 30 more. Those bodies come from pass two, so they carry no
+`agency_id`, so the event no longer counts as resolved on every side. The count fell
+because the answer stopped being wrong. The other 12 name a new body neither pass
+found, and they moved to the review list, which is where a sentence with a missing
+body belongs.
+
+One wrong event survives and is pinned rather than fixed: `1968-EO-094`, *"established
+in the Office of Administration (Office of the Mayor), an Office for the Aged"*,
+where the container is restated inside brackets. It is one sentence in the corpus and
+a bracket rule would be a new mechanism.
 
 ### One event, one body
 
@@ -341,15 +429,15 @@ Results land in `lineage/out/`:
 
 What it currently finds (measured 2026-09-10, after the VLM re-OCR filled in the
 last 67 orders): **16,906** known names and **7,705** proposed new ones across
-3,269 orders; **400** reorganization events with **497** sentences for a person to
+3,269 orders; **388** reorganization events with **508** sentences for a person to
 review; and **353** order-to-order edges.
 
 The keys `mentions.json` carries, beyond the name finds:
 
 | key | what it holds |
 |---|---|
-| `agency_events` | The 400 events. Each carries the sentence, its span, and one `roles` entry per side (`from`, `to`, `parent`) with that side's own span and `agency_id`. A role never appears twice in one event. |
-| `unresolved_events` | The 497 sentences that named nothing we could attach, each saying why. |
+| `agency_events` | The 388 events. Each carries the sentence, its span, and one `roles` entry per side (`from`, `to`, `parent`) with that side's own span and `agency_id`. A role never appears twice in one event. |
+| `unresolved_events` | The 508 sentences that named nothing we could attach, each saying why. |
 | `order_edges` | The 353 order-to-order edges: `actor`, `target`, `verb`, `source`, `partial`. |
 | `order_dangles` | The 139 citations that resolved to no order we hold, each saying why. |
 
@@ -504,8 +592,9 @@ running again on unchanged input writes an identical `mentions.json`.
 - **`english_like` rejects any run of 5 consonants**, which costs a few real words
   ("strengths"). Inherited from `clean.py` and left alone to match it.
 - **An event is only as good as the two passes under it.** A body missing from
-  `extra_agencies.json` gives an unresolved sentence, never a silent link. 265 of
-  the 361 events name at least one body that has no `agency_id` yet.
+  `extra_agencies.json` gives an unresolved sentence, never a silent link. 291 of
+  the 388 events name at least one body that has no `agency_id` yet, and the
+  container rules raised that number by naming the right body more often.
 - **A list needs its items found separately.** `1976-EO-063` records three bodies
   where the order names four, because pass two returned *"Office of Downtown
   Brooklyn Development and the Upper Manhattan Planning and Development Office"* as
@@ -515,7 +604,7 @@ running again on unchanged input writes an identical `mentions.json`.
 - **A sentence stops at a full stop**, so `Dept. of Health` cuts a window short and
   loses an edge. Short is the safe way to be wrong: a short window never invents an
   edge, it only misses one.
-- **`renames` is a review-grade list, not a finished one.** 21 events, and a hand
+- **`renames` is a review-grade list, not a finished one.** 20 events, and a hand
   check of 5 found 2 wrong (`designated as the administering agency` is a job, not
   a rename). Every one is meant to be read.
 
@@ -523,7 +612,7 @@ running again on unchanged input writes an identical `mentions.json`.
 
 The edges exist; the graph does not. What is left:
 
-1. **Work the review lists.** 496 unresolved sentences and 617 proposed names, and
+1. **Work the review lists.** 508 unresolved sentences and 617 proposed names, and
    the `one-side-only` half of the first list is the part that pays: each row names
    a body that belongs in `extra_agencies.json`. Every name moved across turns
    unresolved sentences into edges on the next run.
