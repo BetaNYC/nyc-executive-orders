@@ -43,7 +43,9 @@ from dataclasses import dataclass, field
 from . import clean
 from .vlm_pages import (  # noqa: F401 - re-exported, see "Text rendering"
     MIN_COVERED_FRACTION,
+    assemble_body,
     element_text,
+    page_blocks,
     page_flags,
     page_lines,
 )
@@ -235,7 +237,10 @@ class PageInfo:
     page: int
     role: str
     lines: list[str] = field(default_factory=list)
-    body: str = ""
+    # The page's layout elements, unflattened — what the document body is built
+    # from. ``lines`` is the same content with the block boundaries gone, and is
+    # what classification counts from the top of the page.
+    blocks: list[str] = field(default_factory=list)
     series: str | None = None        # from the instrument label, if any
     number: str | None = None
     printed_label: str | None = None  # the label VERBATIM as printed
@@ -309,6 +314,13 @@ def _number_sort_key(number: str) -> tuple[int, str]:
 # scans need too and which is not about volumes. Re-exported here (not merely
 # imported) because this module's public surface is what volume_split's own tests
 # and callers reach for, and moving a function must not move its name.
+#
+# assemble_body went the same way and took this module's last two lines of text
+# gluing with it: a page's blocks were joined with "\n" here and the pages with
+# "\n\n" in _flush, which published every page of a document as one Markdown
+# paragraph and never rejoined a word broken across a line. Both eras now share
+# one implementation. What stays here is segmentation: page roles, grouping,
+# numbering, subject/signer/date.
 
 
 # --------------------------------------------------------------------------- #
@@ -473,13 +485,13 @@ def classify_page(
         return PageInfo(page=page, role=ROLE_FAILED, flags=flags or ["empty-output"])
 
     head = lines[:HEAD_LINES]
-    body = "\n".join(lines)
+    blocks = page_blocks(record)
 
     if _INDEX_TITLE_RE.search(" ".join(head)):
-        return PageInfo(page=page, role=ROLE_INDEX, lines=lines, body=body, flags=flags)
+        return PageInfo(page=page, role=ROLE_INDEX, lines=lines, blocks=blocks, flags=flags)
     # Index continuation pages carry no title, just "PAGE 2" and another table.
     if _has_index_table(record):
-        return PageInfo(page=page, role=ROLE_INDEX, lines=lines, body=body, flags=flags)
+        return PageInfo(page=page, role=ROLE_INDEX, lines=lines, blocks=blocks, flags=flags)
 
     series, number, label, label_line = find_instrument_label(
         head, allow_bare_label=allow_bare_label
@@ -498,7 +510,7 @@ def classify_page(
     # order 84" and a body sentence saying "this Executive Order" outvoted it.
     leading_ornament = _is_continuation_marker(lines[0])
     if leading_ornament and number is None and letterhead < MIN_LETTERHEAD_ANCHORS:
-        return PageInfo(page=page, role=ROLE_CONTINUATION, lines=lines, body=body,
+        return PageInfo(page=page, role=ROLE_CONTINUATION, lines=lines, blocks=blocks,
                         flags=flags)
 
     # An instrument label is decisive on its own — UNLESS the very next line is
@@ -510,15 +522,15 @@ def classify_page(
     if series is not None:
         if (label_line is not None and label_line + 1 < len(lines)
                 and _is_continuation_marker(lines[label_line + 1])):
-            return PageInfo(page=page, role=ROLE_CONTINUATION, lines=lines, body=body,
+            return PageInfo(page=page, role=ROLE_CONTINUATION, lines=lines, blocks=blocks,
                             flags=flags)
-        return PageInfo(page=page, role=ROLE_START, lines=lines, body=body,
+        return PageInfo(page=page, role=ROLE_START, lines=lines, blocks=blocks,
                         series=series, number=number, printed_label=label,
                         flags=flags)
     if letterhead >= MIN_LETTERHEAD_ANCHORS and clean.extract_date_in_range(
         head, min_year, max_year, scan_lines=HEAD_LINES
     ):
-        return PageInfo(page=page, role=ROLE_START, lines=lines, body=body,
+        return PageInfo(page=page, role=ROLE_START, lines=lines, blocks=blocks,
                         series=None, number=None, printed_label=None, flags=flags)
 
     # A reply letter or forwarding note that names another instrument ("Re:
@@ -527,18 +539,18 @@ def classify_page(
     # document happens to be open, but it also must not mint a document under
     # the number it's merely referencing.
     if has_referential_instrument_mention(head):
-        return PageInfo(page=page, role=ROLE_START, lines=lines, body=body,
+        return PageInfo(page=page, role=ROLE_START, lines=lines, blocks=blocks,
                         series=None, number=None, printed_label=None,
                         flags=flags + ["referential-label-ignored"])
 
     # Library stamps and endpapers: furniture only, no instrument content.
     if all(_is_library_furniture(ln) or not ln.strip() for ln in lines):
-        return PageInfo(page=page, role=ROLE_FURNITURE, lines=lines, body=body,
+        return PageInfo(page=page, role=ROLE_FURNITURE, lines=lines, blocks=blocks,
                         flags=flags)
 
     # Anything else (an attached exhibit, a form, a report enclosure) continues
     # whatever came before it rather than starting something new.
-    return PageInfo(page=page, role=ROLE_CONTINUATION, lines=lines, body=body,
+    return PageInfo(page=page, role=ROLE_CONTINUATION, lines=lines, blocks=blocks,
                     flags=flags)
 
 
@@ -920,8 +932,7 @@ def split_volume(
         nonlocal current, buffered
         if current is None:
             return
-        body_parts = [i.body for i in buffered if i.body]
-        current.body = "\n\n".join(body_parts).strip()
+        current.body = assemble_body([i.blocks for i in buffered])
         all_lines = [ln for i in buffered for ln in i.lines]
         current.date_on_page = clean.extract_date_in_range(
             all_lines, min_year, max_year, scan_lines=HEAD_LINES
