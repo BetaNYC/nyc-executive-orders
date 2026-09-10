@@ -183,3 +183,108 @@ def test_a_missing_rules_file_falls_back_to_the_defaults(tmp_path):
     assert rules == {}
     assert length == nl.DEFAULT_SHORT_NAME_LENGTH
     assert max_hits == nl.DEFAULT_MAX_HITS_WITHOUT_A_RULE
+
+
+# --------------------------------------------------------------------------- #
+# The mayoral short spelling                                                    #
+# --------------------------------------------------------------------------- #
+
+
+@pytest.mark.parametrize("name,expected", [
+    ("Mayor's Office of Operations", "Office of Operations"),
+    ("Mayor’s Office of Operations", "Office of Operations"),      # curly
+    ("Mayors Office of Operations", "Office of Operations"),       # no apostrophe
+    ("Mayor's Office for Economic Opportunity",
+     "Office for Economic Opportunity"),
+    ("The Mayor's Office of Food Policy", "Office of Food Policy"),
+    ("MAYOR'S OFFICE OF OPERATIONS", "OFFICE OF OPERATIONS"),
+])
+def test_the_mayoral_prefix_is_stripped(name, expected):
+    assert nl.mayoral_short_name(name) == expected
+
+
+@pytest.mark.parametrize("name", [
+    "Office of the Mayor",                    # the office itself, not "Mayor's X"
+    "Office of Collective Bargaining",        # never had the prefix
+    "Mayor's Fund to Advance New York City",  # possessive, but not an office
+    "Mayor's Office",                         # no "of X" to keep
+    "Mayor's Office of",                      # nothing after the joining word
+    "Mayoral Office of Operations",           # not the possessive
+])
+def test_a_name_of_another_shape_yields_nothing(name):
+    assert nl.mayoral_short_name(name) is None
+
+
+def test_the_short_spelling_joins_the_list_under_the_same_agency():
+    """The point of the rule: the orders write "Office of Operations" and mean the
+    body the registry files as "Mayor's Office of Operations"."""
+    name_list = nl.build([_ent("ops", "Mayor's Office of Operations", "OPS")],
+                         [], {})
+    assert name_list.ids_for("office of operations") == ("ops",)
+    assert name_list.ids_for("mayor s office of operations") == ("ops",)
+    built = [n for n in name_list.names if n.source == nl.FROM_MAYORAL_VARIANT]
+    assert [n.name for n in built] == ["Office of Operations"]
+    assert name_list.counts()["from_mayoral_variant"] == 1
+
+
+def test_the_rule_works_one_way_only():
+    """It strips "Mayor's" and never adds it. "Office of Collective Bargaining" is
+    a registry name and not a mayoral office, and inventing a "Mayor's" spelling
+    for it would hand its text to the wrong body."""
+    name_list = nl.build([_ent("ocb", "Office of Collective Bargaining")], [], {})
+    assert name_list.counts()["from_mayoral_variant"] == 0
+    assert name_list.ids_for("mayor s office of collective bargaining") == ()
+
+
+def test_a_spelling_a_real_source_already_holds_is_left_alone():
+    """The registry files both spellings on `office-of-data-analytics` itself. The
+    rule must not add its id a second time, and must not take the source label off
+    a name the registry actually wrote."""
+    ents = [_ent("oda", "Office of Data Analytics", "ODA",
+                 [{"name": "Mayor's Office of Data Analytics"}])]
+    name_list = nl.build(ents, [], {})
+    assert name_list.ids_for("office of data analytics") == ("oda",)
+    short = next(n for n in name_list.names
+                 if n.normalized == "office of data analytics")
+    assert short.source == nl.FROM_REGISTRY
+    assert name_list.counts()["from_mayoral_variant"] == 0
+
+
+def test_the_short_spelling_never_takes_a_name_off_another_agency():
+    """A generated spelling that lands on another agency's real name would make
+    that name shared, and `scan` pins a shared name to nobody. The real name wins
+    and keeps its single id."""
+    ents = [_ent("a", "Mayor's Office of Nightlife"),
+            _ent("b", "Office of Nightlife")]
+    name_list = nl.build(ents, [], {})
+    assert name_list.ids_for("office of nightlife") == ("b",)
+    assert name_list.counts()["from_mayoral_variant"] == 0
+    assert name_list.counts()["shared_by_two_agencies"] == 0
+
+
+def test_a_shared_long_name_hands_its_shared_ness_to_the_short_one():
+    """Two agencies spelling one mayoral name is already reported rather than
+    settled by picking one. The short spelling must inherit that, not quietly
+    choose whichever agency the loop reached first."""
+    ents = [_ent("a", "Mayor's Office of Equity"),
+            _ent("b", "Some Other Body", None, ["The Mayor's Office of Equity"])]
+    name_list = nl.build(ents, [], {})
+    assert name_list.ids_for("mayor s office of equity") == ("a", "b")
+    assert name_list.ids_for("office of equity") == ("a", "b")
+    assert name_list.generated_names_by_agency() == {
+        "a": ["Office of Equity"], "b": ["Office of Equity"]}
+
+
+def test_the_built_spelling_is_matched_by_the_ordinary_rules():
+    """No exemption. `how_to_match` is asked for it like any other name."""
+    ents = [_ent("ops", "Mayor's Office of Operations")]
+    built = next(n for n in nl.build(ents, [], {}).names
+                 if n.source == nl.FROM_MAYORAL_VARIANT)
+    assert built.match == nl.MATCH_ANY_CASE
+
+
+def test_generated_names_are_filed_under_every_agency_that_owns_them():
+    ents = [_ent("ops", "Mayor's Office of Operations"),
+            _ent("ocb", "Office of Collective Bargaining")]
+    assert nl.build(ents, [], {}).generated_names_by_agency() == {
+        "ops": ["Office of Operations"]}

@@ -30,6 +30,7 @@ from lineage.mentions import (
     build_payload,
     dumps,
 )
+from lineage.normalize import normalize_name as normalize
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CORPUS = [REPO_ROOT / "corpus" / "eo.json", REPO_ROOT / "corpus" / "eo_pre1974.json"]
@@ -38,39 +39,45 @@ DESCRIPTIONS = REGISTRY.parent / "descriptions.json"
 EXTRA = REPO_ROOT / "lineage" / "data" / "extra_agencies.json"
 RULES = REPO_ROOT / "lineage" / "data" / "name_rules.json"
 
-# Measured 2026-08-26. A change here is a real change in behaviour, not a flake.
+# Measured 2026-09-10. A change here is a real change in behaviour, not a flake.
 EXPECT_ORDERS = 3269
-EXPECT_WITH_TEXT = 3202
-EXPECT_WITHOUT_TEXT = 67
+# Every order now carries text. The 67 `_No text available_` placeholders the
+# earlier measurement counted were filled in by the VLM re-OCR of the bound volumes.
+EXPECT_WITH_TEXT = 3269
+EXPECT_WITHOUT_TEXT = 0
 EXPECT_REGISTRY_NAMES = 592
-# 178 of the registry's 317 — the corpus names a little over half of what exists
-# today — plus `doitt`, which only the extra-agencies file holds.
-EXPECT_AGENCIES_FOUND = 179
-EXPECT_FROM_REGISTRY = 178
-# The mayoral stationery, and what is left once it is set aside. Of 2810 finds of
-# "Office of the Mayor", 2560 are the letterhead at the head of the page and 250
+# The 48 mayoral short spellings the name list builds on top of those 592.
+EXPECT_MAYORAL_VARIANTS = 48
+# 194 of the registry's 317 — the corpus names a little over half of what exists
+# today — plus `doitt`, which only the extra-agencies file holds. 12 of the 194 are
+# reached only by the mayoral short spelling: the orders never write their
+# "Mayor's" name at all.
+EXPECT_AGENCIES_FOUND = 195
+EXPECT_FROM_REGISTRY = 194
+# The mayoral stationery, and what is left once it is set aside. Of 2976 finds of
+# "Office of the Mayor", 2681 are the letterhead at the head of the page and 295
 # are the order actually naming the office.
-EXPECT_LETTERHEAD = 2560
-EXPECT_MAYOR_IN_BODY = 250
+EXPECT_LETTERHEAD = 2681
+EXPECT_MAYOR_IN_BODY = 295
 MAYOR_ID = "office-of-the-mayor"
 
-# Pass three, measured 2026-08-31. 361 sentences link two bodies; 96 of them pin
-# down a registry agency on every side, and the other 265 name at least one body
-# that is not on the name list yet. 496 more named nothing we could attach and wait
-# in the review list.
-EXPECT_EVENTS = 367
-EXPECT_EVENTS_FULLY_RESOLVED = 97
-EXPECT_UNRESOLVED_EVENTS = 496
+# Pass three, measured 2026-09-10. 400 sentences link two bodies; 131 of them pin
+# down a registry agency on every side, and the rest name at least one body that is
+# not on the name list yet. 497 more named nothing we could attach and wait in the
+# review list.
+EXPECT_EVENTS = 400
+EXPECT_EVENTS_FULLY_RESOLVED = 131
+EXPECT_UNRESOLVED_EVENTS = 497
 EXPECT_EVENTS_BY_KIND = {
-    "establishes": 272, "continues": 40, "renames": 21, "transfers_to": 21,
-    "abolishes": 11, "merges_into": 1, "succeeds": 1,
+    "establishes": 296, "continues": 47, "transfers_to": 23, "renames": 20,
+    "abolishes": 12, "merges_into": 1, "succeeds": 1,
 }
 
-# Pass four, measured 2026-08-31, over all 3,202 orders that carry text.
-# `supersede.py` reads only the 2,291 orders of corpus/eo.json and finds 244.
-EXPECT_ORDER_EDGES = 294
-EXPECT_ORDER_DANGLES = 150
-EXPECT_EXTENSIONS_SKIPPED = 1617
+# Pass four, measured 2026-09-10, over all 3,269 orders that carry text.
+# `supersede.py` reads only the 2,291 orders of corpus/eo.json.
+EXPECT_ORDER_EDGES = 353
+EXPECT_ORDER_DANGLES = 139
+EXPECT_EXTENSIONS_SKIPPED = 1680
 
 needs_corpus = pytest.mark.skipif(
     not all(p.exists() for p in CORPUS), reason="committed corpus not present")
@@ -148,7 +155,14 @@ def test_the_two_corpus_files_share_no_order_ids(corpus):
 
 @needs_registry
 def test_the_registry_yields_the_expected_number_of_names(registry_only):
-    assert registry_only.counts()["names_total"] == EXPECT_REGISTRY_NAMES
+    """Counted apart, because the list holds names from more than one place. The
+    592 are what the registry actually spells; the 48 are the mayoral short
+    spellings built from them, and they are the only names in the list that no
+    file contains."""
+    counts = registry_only.counts()
+    assert counts["from_registry"] == EXPECT_REGISTRY_NAMES
+    assert counts["from_mayoral_variant"] == EXPECT_MAYORAL_VARIANTS
+    assert counts["names_total"] == EXPECT_REGISTRY_NAMES + EXPECT_MAYORAL_VARIANTS
 
 
 @needs_registry
@@ -158,6 +172,10 @@ def test_the_extra_agencies_file_adds_to_what_the_registry_knows(name_list,
     extra = name_list.counts()["names_total"] - registry_only.counts()["names_total"]
     assert extra > 0
     assert name_list.counts()["from_extra_file"] == extra
+    # The extra file adds no mayoral office today, so the built spellings are the
+    # same on both sides and the subtraction above is a fair one.
+    assert (name_list.counts()["from_mayoral_variant"]
+            == registry_only.counts()["from_mayoral_variant"])
 
 
 @needs_registry
@@ -250,7 +268,7 @@ def test_the_letterhead_is_marked_and_not_deleted(corpus, name_list):
     thrown_out = {d.name: d.count for d in discarded
                   if d.why == discover_mod.WHY_ALREADY_MATCHED}
     assert thrown_out["CITY OF NEW YORK OFFICE OF THE MAYOR NEW YORK"] == 776
-    assert thrown_out["THE CITY OF NEW YORK OFFICE OF THE MAYOR NEW YORK"] == 601
+    assert thrown_out["THE CITY OF NEW YORK OFFICE OF THE MAYOR NEW YORK"] == 1540
 
 
 @needs_corpus
@@ -371,6 +389,63 @@ def test_every_agency_id_found_can_be_named(corpus, name_list):
     assert agencies_mod.ids_in(mentions) == set(by_id)
     missing_a_name = sorted(i for i, r in by_id.items() if not r.get("name"))
     assert missing_a_name == []
+
+
+@needs_corpus
+@needs_registry
+def test_the_mayoral_short_spelling_reaches_the_published_row(corpus, name_list):
+    """The rule is invisible downstream unless the row says so. `../nyc-eo-explorer`
+    builds its agency pages from this file and nothing else, so a mention reading
+    "Office of Operations" would otherwise sit on a row that never spells it.
+
+    The canonical name is untouched: "Mayor's Office of X" is what the agency is
+    called, and "Office of X" is another way of writing it."""
+    _, _, mentions, _, _ = _both_passes(corpus, name_list)
+    rows = agencies_mod.build(
+        agencies_mod.ids_in(mentions), nl.load_registry(REGISTRY),
+        agencies_mod.load_descriptions(DESCRIPTIONS),
+        nl.load_extra_agencies(EXTRA), name_list.generated_names_by_agency())
+    by_id = {r["id"]: r for r in rows}
+
+    ops = by_id["mayor-s-office-of-operations"]
+    assert ops["name"] == "Mayor's Office of Operations"
+    assert "Office of Operations" in ops["other_names"]
+    # The registry's own entries are still there, and the built one is not doubled.
+    assert "OPS" in ops["other_names"]
+    assert ops["other_names"].count("Office of Operations") == 1
+
+    # Every built spelling that belongs to a found agency reaches its row.
+    built = name_list.generated_names_by_agency()
+    for agency_id, names in built.items():
+        if agency_id not in by_id or "name" not in by_id[agency_id]:
+            continue
+        assert set(names) <= set(by_id[agency_id]["other_names"]), agency_id
+
+    # And leaving the argument out changes nothing else about the rows.
+    plain = agencies_mod.build(
+        agencies_mod.ids_in(mentions), nl.load_registry(REGISTRY),
+        agencies_mod.load_descriptions(DESCRIPTIONS), nl.load_extra_agencies(EXTRA))
+    assert [r["id"] for r in plain] == [r["id"] for r in rows]
+    assert "Office of Operations" not in next(
+        r for r in plain if r["id"] == "mayor-s-office-of-operations")["other_names"]
+
+
+@needs_corpus
+@needs_registry
+def test_the_short_spelling_is_matched_and_no_longer_proposed(corpus, name_list):
+    """What the rule is for. "Office of Management and Budget" is the largest case
+    in the corpus: the orders write it that way, the registry writes it
+    "Mayor's Office of Management and Budget", and before this rule every one of
+    those spans went to the review queue instead of to the agency."""
+    _, _, mentions, proposed, _ = _both_passes(corpus, name_list)
+    omb = [m for m in mentions
+           if m.agency_id == "mayor-s-office-of-management-and-budget"]
+    assert [m for m in omb
+            if normalize(m.text) == "office of management and budget"]
+    still_proposed = {normalize(p.name) for p in proposed}
+    for gone in ("office of management and budget", "office of operations",
+                 "office of contract services", "office for people with disabilities"):
+        assert gone not in still_proposed, gone
 
 
 @needs_corpus
@@ -579,13 +654,23 @@ def test_a_list_sentence_becomes_one_event_per_body(all_four_passes):
     * 1966-EO-028-p068 "the Anti-Poverty Operations Board and the Economic
       Opportunity Committee are abolished" — the case the README used to cite as
       a known miss.
+
+    The fifth is a WRONG join, pinned here so it cannot grow unnoticed. The re-OCR
+    of the bound volumes brought 1996-EO-034 into range: "the Head Start Program
+    and Child Day Care Services formerly administered by the Agency for Child
+    Development of HRA shall be continued". "HRA" is the parent inside an
+    "administered by" phrase, not a second body being continued, and the gap before
+    it is short, comma-free and verb-free, so the glue test passes on it. The "in"/
+    "within" wrapper rule does not cover "administered by ... of". Recorded, not
+    hidden; fixing it means widening that wrapper rule.
     """
     by_span: dict[tuple, list] = {}
     for e in all_four_passes["events"]:
         by_span.setdefault((e.eo_id, e.start, e.end, e.verb), []).append(e)
     listed = {k[0]: len(v) for k, v in by_span.items() if len(v) > 1}
     assert listed == {"2022-EO-003": 3, "1976-EO-063": 3,
-                      "1965-EO-181-p261": 2, "1966-EO-028-p068": 2}
+                      "1965-EO-181-p261": 2, "1966-EO-028-p068": 2,
+                      "1996-EO-034": 2}
 
 
 @needs_corpus

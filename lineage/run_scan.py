@@ -360,8 +360,10 @@ def main(argv: list[str] | None = None) -> int:
                                              body_only=True)
         most_hit = sorted(body_hits.items(), key=lambda t: (-t[1], t[0]))[:20]
         in_letterhead = sum(1 for m in result.mentions if m.in_letterhead)
+        generated = name_list.counts()["from_mayoral_variant"]
         print(f"Pass one: {len(result.mentions)} names found "
               f"({in_letterhead} of them letterhead); "
+              f"{generated} mayoral short spellings built; "
               f"{len(needing_a_rule)} short names need a rule; "
               f"{len(unused)} rules unused")
 
@@ -372,7 +374,8 @@ def main(argv: list[str] | None = None) -> int:
             args.registry.parent / DESCRIPTIONS_NAME)
         result.agencies = agencies_mod.build(
             agencies_mod.ids_in(result.mentions), registry_agencies, described,
-            namelist_mod.load_extra_agencies(EXTRA_AGENCIES))
+            namelist_mod.load_extra_agencies(EXTRA_AGENCIES),
+            name_list.generated_names_by_agency())
         with_words = sum(1 for a in result.agencies if a.get("description"))
         from_registry = sum(1 for a in result.agencies
                             if a["id"] in {r.get("id") for r in registry_agencies})
