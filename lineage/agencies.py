@@ -24,6 +24,12 @@ for the same reason it is read by :mod:`lineage.namelist`: the registry cannot h
 an agency that no longer exists, so an id like ``doitt`` has a row nowhere else, and
 without it the published file would carry a bare slug a reader cannot label.
 
+One name is added rather than copied: the mayoral short spelling
+:mod:`lineage.namelist` builds ("Office of Operations" for "Mayor's Office of
+Operations") joins ``other_names``, because the run matched text with it and a
+reader downstream would otherwise have no way to label that text. The canonical
+``name`` is never touched.
+
 Nothing here guesses. A field the registry left empty stays ``None`` in the
 output, and the description is dropped entirely unless its own record says the
 capture worked.
@@ -123,15 +129,27 @@ def _description_of(agency_id: str, described: dict[str, dict]) -> tuple[str | N
     return (shorten(text), record.get("source_url") or None)
 
 
-def details_for(agency: dict, described: dict[str, dict]) -> dict:
-    """One agency's row in the payload. Flat, plain values, no guesses."""
+def details_for(agency: dict, described: dict[str, dict],
+                also_known_as: list[str] | None = None) -> dict:
+    """One agency's row in the payload. Flat, plain values, no guesses.
+
+    ``also_known_as`` holds the spellings :func:`namelist.mayoral_short_name` built
+    rather than read — "Office of Operations" for "Mayor's Office of Operations".
+    They join ``other_names`` after the registry's own entries, so a reader
+    downstream can label the short spelling without knowing the rule exists.
+    ``name`` is untouched: "Mayor's Office of X" stays the canonical one.
+    """
     agency_id = agency["id"]
     description, description_source_url = _description_of(agency_id, described)
+    other_names = _other_names(agency)
+    for name in also_known_as or []:
+        if name not in other_names:
+            other_names.append(name)
     return {
         "id": agency_id,
         "name": agency.get("name"),
         "short_name": agency.get("short_name"),
-        "other_names": _other_names(agency),
+        "other_names": other_names,
         "government_level": agency.get("government_level"),
         "classification": agency.get("classification"),
         "parent_id": agency.get("parent_id"),
@@ -147,12 +165,17 @@ def details_for(agency: dict, described: dict[str, dict]) -> dict:
 
 def build(agency_ids: set[str], registry_agencies: list[dict],
           described: dict[str, dict],
-          extra_agencies: list[dict] | None = None) -> list[dict]:
+          extra_agencies: list[dict] | None = None,
+          generated_names: dict[str, list[str]] | None = None) -> list[dict]:
     """The rows for the agencies a run found, sorted by id.
 
     The registry is asked first, then the hand-written extra-agencies file. The
     order matters: an entry in the extra file is meant to add a body the registry
     cannot hold, never to overwrite one it does hold.
+
+    ``generated_names`` comes from :meth:`namelist.NameList.generated_names_by_agency`
+    and adds the mayoral short spellings to ``other_names``. Leave it out and the
+    rows carry only what the two files hold.
 
     An id neither source knows still gets a row, carrying its id and nothing else.
     That cannot happen while the name list and this call read the same two files,
@@ -162,7 +185,9 @@ def build(agency_ids: set[str], registry_agencies: list[dict],
     """
     by_id = {a["id"]: a for a in extra_agencies or [] if a.get("id")}
     by_id.update({a["id"]: a for a in registry_agencies if a.get("id")})
-    rows = [details_for(by_id[i], described) if i in by_id else {"id": i}
+    generated = generated_names or {}
+    rows = [details_for(by_id[i], described, generated.get(i)) if i in by_id
+            else {"id": i}
             for i in agency_ids]
     rows.sort(key=lambda r: r["id"])
     return rows

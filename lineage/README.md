@@ -29,7 +29,8 @@ name appears*. Here, the registry does the searching.
 
 **Pass one — names we already know** (`scan.py`). Every agency name from the
 registry, looked for in every order, as one big pattern with the longest names
-first. Rarely wrong.
+first. Rarely wrong. One name shape is built rather than read; see "The mayoral
+short spelling" below.
 
 **Pass two — names we do not know** (`discover.py`). Phrases shaped like agency
 names that pass one did not match, sent to a person to review.
@@ -46,6 +47,60 @@ and the history is made of exactly those.
 
 **Pass four — what the orders do to EACH OTHER** (`citations.py`). One order
 revoking, amending or superseding another. See "Order-to-order supersession".
+
+## The mayoral short spelling
+
+The registry files 48 bodies as `Mayor's Office of X` or `Mayor's Office for X`.
+The orders very often write the same body as `Office of X`, and the two do not
+tidy down to the same key — `mayor s office of operations` against `office of
+operations` — so pass one missed every one of them and pass two put them up for
+review instead.
+
+`namelist.mayoral_short_name()` strips the prefix, and the short spelling joins the
+list **under the same agency id**. `Mayor's Office of X` stays the canonical name;
+`Office of X` is another way of writing it. Measured over the corpus:
+
+| | before | after |
+|---|---:|---:|
+| names we search for | 594 | 642 |
+| names found | 16,196 | **16,906** |
+| proposed for review | 8,291 | **7,705** |
+| agencies found | 183 | **195** |
+| events resolved on every side | 119 | **131** |
+
+The 12 new agencies are bodies the orders never write the registry's way at all.
+The largest single case is `Office of Management and Budget` at 166 spans; then
+`Office of Contract Services` (37), `Office of Operations` (30) and `Office for
+People with Disabilities` (30).
+
+Four things make it safe, and each has a test:
+
+* **One direction only.** It strips `Mayor's`; it never adds it. `Office of
+  Collective Bargaining`, `Office of the Comptroller` and the five borough
+  presidents' offices are registry names that are **not** mayoral offices, and
+  inventing a `Mayor's` spelling for them would hand their text to the wrong body.
+  The reverse rule was measured too: it matches nothing in the corpus.
+* **Built last, never over a name a file supplied.** The first spelling of a key
+  wins the spelling and the source label, so a real name would lose its own
+  provenance to a generated one that ran first.
+* **A spelling a file already holds is left alone**, and the generated id is not
+  added to it. `office-of-data-analytics` already carries both spellings itself.
+  Adding an id to a key a real source holds turns a good name into a shared one,
+  and `scan.py` pins a shared name to nobody — the name would go from right to
+  useless without a word.
+* **Every find says where it came from.** `KnownName.source` is
+  `mayoral-variant`, and it reaches `Mention.source` in the output, so the rule can
+  be audited or backed out from the data alone. The report counts them under
+  `from mayoral variant`.
+
+The published `agencies` rows carry the built spelling in `other_names`, after the
+registry's own entries, because `../nyc-eo-explorer` reads that file and nothing
+else — a mention reading `Office of Operations` would otherwise sit on a row that
+never spells it. `name` is untouched.
+
+One piece of junk comes with it. The registry holds the typo `Mayor's Office of
+Office of Intergovernmental Affairs`, which builds `Office of Office of
+Intergovernmental Affairs`. It matches no text. The fix belongs upstream.
 
 ## The letterhead
 
@@ -284,18 +339,19 @@ Results land in `lineage/out/`:
 | `mentions.json` | The data. Same shape as `corpus/supersession.json` — a `generated_by` line, a count next to every list, and separate lists for what worked and what did not, where each failure says why. |
 | `report.md` | The summary to read, including both safety checks and both review lists. |
 
-What it currently finds: **15,331** known names and **8,262** proposed new ones
-across 3,202 orders; **367** reorganization events with **496** sentences for a
-person to review; and **294** order-to-order edges.
+What it currently finds (measured 2026-09-10, after the VLM re-OCR filled in the
+last 67 orders): **16,906** known names and **7,705** proposed new ones across
+3,269 orders; **400** reorganization events with **497** sentences for a person to
+review; and **353** order-to-order edges.
 
 The keys `mentions.json` carries, beyond the name finds:
 
 | key | what it holds |
 |---|---|
-| `agency_events` | The 367 events. Each carries the sentence, its span, and one `roles` entry per side (`from`, `to`, `parent`) with that side's own span and `agency_id`. A role never appears twice in one event. |
-| `unresolved_events` | The 496 sentences that named nothing we could attach, each saying why. |
-| `order_edges` | The 294 order-to-order edges: `actor`, `target`, `verb`, `source`, `partial`. |
-| `order_dangles` | The 150 citations that resolved to no order we hold, each saying why. |
+| `agency_events` | The 400 events. Each carries the sentence, its span, and one `roles` entry per side (`from`, `to`, `parent`) with that side's own span and `agency_id`. A role never appears twice in one event. |
+| `unresolved_events` | The 497 sentences that named nothing we could attach, each saying why. |
+| `order_edges` | The 353 order-to-order edges: `actor`, `target`, `verb`, `source`, `partial`. |
+| `order_dangles` | The 139 citations that resolved to no order we hold, each saying why. |
 
 A `role` whose `agency_id` is `null` came from pass two. That is not a failure — it
 says the body is not on the name list yet, which is what `extra_agencies.json` is
@@ -334,7 +390,7 @@ That text is **CC BY-SA 4.0**. The payload states the credit in
 uv run --no-project --with pytest python -m pytest lineage/tests -q
 ```
 
-212 tests, none of which touch the network — `conftest.py` makes any attempt raise.
+233 tests, none of which touch the network — `conftest.py` makes any attempt raise.
 `test_real_corpus.py` pins the numbers against the committed corpus and skips
 cleanly when the corpus or the registry is missing.
 
@@ -405,7 +461,7 @@ split. Keep those two names off the `oti` row.
 | `normalize.py` | Tidies a name so two spellings compare equal. Ported from `supersede._norm_entity`; keep the two in step. |
 | `textquality.py` | Decides whether a found name is readable. Ported from `clean.py`'s REVIEW cutoffs. |
 | `records.py` | Loads the orders. Leaves out the 67 `_No text available_` placeholders. |
-| `namelist.py` | Registry + extra agencies + rules → the list of names to search for, and both safety checks. |
+| `namelist.py` | Registry + extra agencies + rules → the list of names to search for, the mayoral short spellings, and both safety checks. |
 | `agencies.py` | The registry's own row for every agency a run matched, plus the hand-written ones, so the file can be read without the registry. |
 | `letterhead.py` | Tells the mayoral stationery apart from a real reference to the office. |
 | `scan.py` | Pass one. |
@@ -432,6 +488,10 @@ running again on unchanged input writes an identical `mentions.json`.
 
 ## What it does not do
 
+- **The short-spelling rule is not a general prefix rule.** It knows `Mayor's
+  Office of/for X` and nothing else. `Dept. of Health` against `Department of
+  Health`, `Comm'n` against `Commission`, and `Bureau of X` against `X Bureau` are
+  all still misses. Measure before widening it; this one was measured first.
 - **Pass one matches names exactly.** OCR damage causes quiet misses, and 285 of
   the 978 pre-1974 orders are already flagged `needs-review`. Approximate matching
   is left out on purpose; measure how much is missed before adding it.
