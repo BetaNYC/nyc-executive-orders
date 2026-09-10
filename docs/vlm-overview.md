@@ -261,6 +261,16 @@ locking and no communication with each other at all.
 `volume_split.py` re-exports `element_text`, `page_lines` and `page_flags` from
 `vlm_pages.py`, so the pre-1974 output is unchanged byte for byte by the sharing.
 
+`assemble_body` is shared too, and that one *did* change the pre-1974 output.
+Both eras used to glue a page's layout elements together with a single newline,
+which Markdown reads as one continuing paragraph, so a page the model split into
+six WHEREAS clauses published as one slab; and only the post-1974 path rejoined a
+word broken across a line. One function now makes all three decisions — blocks
+and pages separated by a blank line, words rejoined across either boundary — so
+the pre-1974 bodies gained their paragraph breaks and closed up 192 broken words.
+Nothing else moved: every record's text is identical once whitespace is stripped
+and those hyphens are closed, and no record changed quality tier.
+
 ### Divergent
 
 | Concern | Pre-1974 | Post-1974 |

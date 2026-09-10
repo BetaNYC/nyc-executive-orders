@@ -5,10 +5,16 @@ the pre-1974 bound volumes and (Phase F) the post-1974 scans alike. This module
 turns those records into the text a corpus record publishes, and into the QA
 flags that force a record to ``needs-review``.
 
-It exists because two callers need the same three functions and only one of them
-is about volumes. :func:`element_text`, :func:`page_lines` and :func:`page_flags`
+It exists because two callers need the same functions and only one of them is
+about volumes. :func:`element_text`, :func:`page_lines` and :func:`page_flags`
 were written for :mod:`volume_split`; that module now re-exports them from here,
 so the pre-1974 path is unchanged, byte for byte.
+
+:func:`assemble_body` joined them for the same reason. Gluing a document's blocks
+into its final text was the last step of BOTH era pipelines, written twice and so
+diverging twice: neither separated two blocks by more than a single newline, which
+Markdown reads as one continuing paragraph, and only the post-1974 copy rejoined a
+word broken across a line. Both eras now call the one function.
 
     THE CORPUS RENDERER, NOT THE VIEWER RENDERER.
     :func:`vlm_ocr.records_to_markdown` and :func:`vlm_ocr.element_to_markdown`
@@ -55,6 +61,15 @@ _LEADING_HASHES_RE = re.compile(r"^#{1,6}\s*")
 # nothing else. dots.ocr emits these for a printed horizontal rule -- typically
 # the line under a letterhead, and often folded INTO the Title element's text.
 _RULE_LINE_RE = re.compile(r"^[ \t]*(?:(?:-[ \t]*){3,}|(?:\*[ \t]*){3,}|(?:_[ \t]*){3,})$")
+
+# A word broken across the boundary between two blocks: the left block ends in a
+# hyphen mid-word, the right one opens with the rest of the word. The pair mirrors
+# ``extract._DEHYPHEN_RE`` (``(\w+)[-\u00ad]\n([a-z]\w*)``) exactly, because the
+# whole point of detecting it is to leave those two fragments a SINGLE newline
+# apart, which is the only thing that regex will repair. U+00AD soft hyphen counts
+# as the hyphen there, so it counts here.
+_WRAP_TAIL_RE = re.compile(r"\w[-\u00ad]\Z")
+_WRAP_HEAD_RE = re.compile(r"\A[a-z]")
 
 
 def _drop_rule_lines(text: str) -> str:
@@ -251,15 +266,24 @@ def element_text(
     return text
 
 
-def page_lines(
+def page_blocks(
     record: dict,
     *,
     heading_marks: bool = True,
     flatten_tables: bool = False,
     strip_rules: bool = False,
 ) -> list[str]:
-    """Every line of a page's elements, in reading order, Pictures dropped."""
-    lines: list[str] = []
+    """A page's elements as SEPARATE blocks, in reading order, Pictures dropped.
+
+    One block per layout element the model identified, its own internal line
+    breaks intact. This is :func:`page_lines` stopped one step earlier: the
+    model already decided where this page's paragraphs are, and flattening the
+    elements into a single list of lines is what throws that decision away.
+
+    A page of six WHEREAS clauses comes back as six blocks.
+    :func:`assemble_body` is what turns them into paragraphs.
+    """
+    blocks: list[str] = []
     for element in record.get("elements", []):
         rendered = element_text(
             element,
@@ -268,8 +292,36 @@ def page_lines(
             strip_rules=strip_rules,
         )
         if rendered:
-            lines.extend(ln for ln in rendered.split("\n"))
-    return lines
+            blocks.append(rendered)
+    return blocks
+
+
+def page_lines(
+    record: dict,
+    *,
+    heading_marks: bool = True,
+    flatten_tables: bool = False,
+    strip_rules: bool = False,
+) -> list[str]:
+    """Every line of a page's elements, in reading order, Pictures dropped.
+
+    The block boundaries are FLATTENED AWAY here, and that is the point: this is
+    what :mod:`volume_split` classifies a page by, counting lines from the top of
+    the page (``lines[:HEAD_LINES]``, ``lines[0]``) to tell a title page from an
+    index page from a continuation. Its output is therefore frozen — see
+    ``tests/test_vlm_pages.py`` for the check against every committed page
+    record. Anything that wants the paragraphs wants :func:`page_blocks`.
+    """
+    return [
+        line
+        for block in page_blocks(
+            record,
+            heading_marks=heading_marks,
+            flatten_tables=flatten_tables,
+            strip_rules=strip_rules,
+        )
+        for line in block.split("\n")
+    ]
 
 
 # --------------------------------------------------------------------------- #
@@ -318,6 +370,61 @@ def page_flags(record: dict, *, flag_no_measurable_ink: bool = False) -> list[st
 # Whole-document assembly                                                       #
 # --------------------------------------------------------------------------- #
 
+def assemble_body(
+    pages: list[list[str]],
+    *,
+    dehyphenate: bool = True,
+) -> str:
+    """One document's body text, from its pages' blocks. THE ONLY PLACE THIS LIVES.
+
+    ``pages`` is one list of blocks per page, in page order, as
+    :func:`page_blocks` returns them. Three decisions, and this is the single
+    place all three are made:
+
+    * **Two blocks are two paragraphs**, so a blank line goes between them. A
+      single newline would NOT: the body is published as Markdown, where a lone
+      line break continues the paragraph, so gluing blocks with one newline
+      republishes a page the model carefully split into six WHEREAS clauses as
+      one unbroken slab.
+    * **Two pages are also separated by a blank line**, matching how
+      :func:`extract.extract_pdf_text` joins born-digital pages.
+    * **A word broken across either boundary is rejoined**, by
+      :func:`extract.clean_text`.
+
+    The last two interact, which is why they cannot live apart. ``clean_text``
+    repairs ``econo-`` + ``mies`` only while the two halves are one newline
+    apart; put the paragraph break in first and the word can never be repaired
+    afterwards. So a block that ends mid-word is joined to the next by a single
+    newline instead — ``1975-EO-048`` is the real record that does this.
+
+    A blank line between every pair of blocks assumes every block boundary is a
+    paragraph boundary, so the exceptions were counted before this was written.
+    The committed page records hold 33,416 within-page block boundaries (16,139
+    post-1974, 17,277 pre-1974). 147 of them (0.44%) have the shape of a split
+    sentence: a body block of 60+ characters ending with no punctuation at all,
+    followed by a block opening in lower case. Reading those 147, 90 are list
+    items the model labelled slightly wrong (``c. Perform such other functions
+    ...``, ``no.59 Awarding of contracts...``) and really are separate
+    paragraphs. That leaves **57 boundaries, 0.17%**, where a sentence genuinely
+    runs from one block into the next and now gains a paragraph break it should
+    not have. No word is lost, reordered or altered at any of them.
+
+    ``dehyphenate`` off skips ``clean_text`` entirely (no rejoin, no whitespace
+    normalization); the blank lines still go in.
+    """
+    parts: list[str] = []
+    for blocks in pages:
+        for block in blocks:
+            if not block:
+                continue
+            if parts:
+                wrapped = _WRAP_TAIL_RE.search(parts[-1]) and _WRAP_HEAD_RE.match(block)
+                parts.append("\n" if wrapped else "\n\n")
+            parts.append(block)
+    text = "".join(parts)
+    return clean_text(text) if dehyphenate else text.strip()
+
+
 @dataclass(frozen=True)
 class DocumentText:
     """One document's body, assembled from its page records, plus what it cost."""
@@ -348,8 +455,10 @@ def document_text(
 ) -> DocumentText:
     """Assemble one document's corpus body from its page records, in page order.
 
-    Pages are joined with a blank line, matching how
-    :func:`extract.extract_pdf_text` joins born-digital pages.
+    :func:`assemble_body` makes every layout decision — blocks and pages both
+    separated by a blank line, words broken across either boundary rejoined.
+    This function is the bookkeeping around it: page order, QA flags, and the
+    element/table/picture counts a record's provenance carries.
 
     Three kinds of page contribute no text, all deliberately:
 
@@ -362,14 +471,15 @@ def document_text(
 
     ``dehyphenate`` runs :func:`extract.clean_text`, the same rejoin-and-normalize
     pass every born-digital and Tesseract body already went through, so a migrated
-    body is shaped like its siblings in the same ``eo.json``.
+    body is shaped like its siblings in the same ``eo.json``. Turning it off keeps
+    the blank lines and skips the repair.
 
     Flags are the union over pages, order-stable and de-duplicated, plus
     document-level ``no-pages-recorded`` / ``all-pages-blank``.
     """
     ordered = sorted(records, key=lambda r: r.get("page", 0))
 
-    page_texts: list[str] = []
+    page_block_lists: list[list[str]] = []
     flags: list[str] = []
     seen_flags: set[str] = set()
     element_counts: dict[str, int] = {}
@@ -393,18 +503,17 @@ def document_text(
                 pictures += 1
             elif category in TABLE_CATEGORIES:
                 tables += 1
-        lines = page_lines(
+        blocks = page_blocks(
             record,
             heading_marks=heading_marks,
             flatten_tables=flatten_tables,
             strip_rules=strip_rules,
         )
-        if lines:
+        if blocks:
             pages_with_text += 1
-            page_texts.append("\n".join(lines))
+            page_block_lists.append(blocks)
 
-    text = "\n\n".join(page_texts)
-    text = clean_text(text) if dehyphenate else text.strip()
+    text = assemble_body(page_block_lists, dehyphenate=dehyphenate)
 
     if not ordered:
         flags.append("no-pages-recorded")

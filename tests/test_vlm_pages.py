@@ -14,9 +14,11 @@ import pytest
 from nyc_executive_orders import vlm_pages
 from nyc_executive_orders.vlm_pages import (
     DocumentText,
+    assemble_body,
     document_text,
     element_text,
     flatten_table_html,
+    page_blocks,
     page_flags,
     page_lines,
 )
@@ -214,9 +216,9 @@ def test_document_text_defaults_are_the_post1974_shape():
             el("Table", "<table><tr><td>A</td><td>B</td></tr></table>"),
         ])
     ])
-    # Elements within one page are consecutive lines (pre-1974's behavior); the
-    # blank line separates PAGES, not elements.
-    assert doc.text == "EXECUTIVE ORDER NO. 5\nA | B"
+    # Two elements are two paragraphs: the model split them, and a lone newline
+    # would republish them as one Markdown paragraph. See assemble_body.
+    assert doc.text == "EXECUTIVE ORDER NO. 5\n\nA | B"
     assert doc.tables == 1
 
 
@@ -294,3 +296,136 @@ def test_document_text_over_a_real_fixture_page():
     assert "<" not in doc.text          # tables flattened
     assert "[Picture" not in doc.text   # placeholders dropped
     assert isinstance(doc, DocumentText)
+
+
+# --------------------------------------------------------------------------- #
+# page_blocks / assemble_body                                                   #
+# --------------------------------------------------------------------------- #
+
+def test_page_blocks_keeps_one_block_per_element():
+    """The model already decided where the paragraphs are; page_blocks keeps it."""
+    record = page([
+        el("Text", "WHEREAS, the first;"),
+        el("Text", "WHEREAS, the second;"),
+        el("Picture", ""),
+        el("Text", "NOW, THEREFORE"),
+    ])
+    assert page_blocks(record) == [
+        "WHEREAS, the first;",
+        "WHEREAS, the second;",
+        "NOW, THEREFORE",
+    ]
+
+
+def test_page_lines_is_page_blocks_flattened():
+    """The frozen contract: same content, block boundaries gone."""
+    record = page([el("Title", "ORDER"), el("Text", "a\nb")])
+    assert page_blocks(record) == ["# ORDER", "a\nb"]
+    assert page_lines(record) == ["# ORDER", "a", "b"]
+
+
+def test_two_blocks_are_separated_by_a_blank_line():
+    """A single newline is the bug: Markdown reads it as the same paragraph."""
+    assert assemble_body([["first", "second"]]) == "first\n\nsecond"
+
+
+def test_a_block_is_never_broken_up_internally():
+    """The lines INSIDE one block are the model's own; they stay adjacent."""
+    body = assemble_body([["OFFICE OF THE MAYOR\nNEW YORK 7, N.Y.", "next"]])
+    assert body == "OFFICE OF THE MAYOR\nNEW YORK 7, N.Y.\n\nnext"
+
+
+def test_pages_are_separated_by_a_blank_line():
+    assert assemble_body([["one"], ["two"]]) == "one\n\ntwo"
+
+
+def test_a_word_split_across_a_block_boundary_is_rejoined():
+    """The real 1975-EO-048: a block ends 'financial econo-', the next opens
+    'mies by developing'. A blank line there would make the repair impossible."""
+    assert assemble_body([["financial econo-", "mies by developing"]]) == (
+        "financial economies by developing"
+    )
+
+
+def test_a_word_split_across_a_page_boundary_is_rejoined():
+    """The pre-1974 books published 178 of these unrepaired, because that path
+    glued its pages together itself and never ran clean_text."""
+    assert assemble_body([["the offi-"], ["cers named"]]) == "the officers named"
+
+
+def test_a_real_compound_keeps_its_hyphen_across_a_boundary():
+    """extract._join_wrap's rule, unchanged: both halves are words, so the
+    hyphen belongs to the compound."""
+    assert assemble_body([["a public-", "private partnership"]]) == (
+        "a public-private partnership"
+    )
+
+
+def test_a_trailing_hyphen_before_a_new_sentence_still_gets_its_blank_line():
+    """Only a boundary clean_text could actually repair is held to one newline;
+    an upper-case opener is a paragraph, dash or no dash."""
+    assert assemble_body([["signed -", "SECTION 1."]]) == "signed -\n\nSECTION 1."
+
+
+def test_assemble_body_skips_empty_pages_without_leaving_a_gap():
+    assert assemble_body([["one"], [], ["two"]]) == "one\n\ntwo"
+    assert assemble_body([]) == ""
+
+
+def test_assemble_body_without_dehyphenation_still_separates_blocks():
+    body = assemble_body([["the adminis-", "tration shall"]], dehyphenate=False)
+    assert body == "the adminis-\ntration shall"
+    assert assemble_body([["one", "two"]], dehyphenate=False) == "one\n\ntwo"
+
+
+# --------------------------------------------------------------------------- #
+# page_lines is frozen                                                          #
+# --------------------------------------------------------------------------- #
+#
+# volume_split classifies a page by counting lines from its top (lines[0],
+# lines[:HEAD_LINES]) to tell a title page from an index page from a
+# continuation, and that is what decides where one bound volume gets chopped
+# into orders. Shift a line position and the books get cut in the wrong places.
+# So page_lines is pinned to its pre-consolidation definition, character for
+# character, over every committed page record.
+
+def _page_lines_reference(record, **kwargs):
+    """page_lines as it was written before page_blocks existed."""
+    lines = []
+    for element in record.get("elements", []):
+        rendered = element_text(element, **kwargs)
+        if rendered:
+            lines.extend(ln for ln in rendered.split("\n"))
+    return lines
+
+
+_RENDER_MODES = (
+    {},                                                                # pre-1974
+    {"heading_marks": False, "flatten_tables": True, "strip_rules": True},  # post-1974
+)
+
+
+def _committed_page_records():
+    roots = [
+        FIXTURES / "pre1974", FIXTURES / "pre1974_lindsay",
+        FIXTURES / "pre1974_odwyer", FIXTURES / "post1974",
+        Path(__file__).resolve().parents[1] / "sources",
+    ]
+    for root in roots:
+        if root.exists():
+            yield from sorted(root.rglob("page_*.json"))
+
+
+def test_page_lines_output_is_unchanged_over_every_committed_page_record():
+    checked = 0
+    for path in _committed_page_records():
+        try:
+            record = json.loads(path.read_text())
+        except json.JSONDecodeError:      # a fixture that is not a page record
+            continue
+        for mode in _RENDER_MODES:
+            assert page_lines(record, **mode) == _page_lines_reference(record, **mode), (
+                f"{path} ({mode})"
+            )
+        checked += 1
+    assert checked >= 10                  # the committed fixtures alone clear this

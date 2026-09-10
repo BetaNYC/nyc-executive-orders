@@ -20,16 +20,25 @@ page_count: 1
 text_quality: needs-review
 dropped_header: ''
 dropped_marks: []
+clean_flags:
+- 'no-anchor-found: header not trimmed (conservative keep)'
+- date-not-extracted
 ---
 
 May
+
 2
+
 1947
+
 The Honorable John J. Bennett
 Deputy Mayor
 City Hall
 New York 7, N.Y.
+
 Dear Sir:
+
 In answer to your Memorandum No. 20 we wish to inform your office that this Library has one employee bulletin board.
+
 Rebecca B. Rankin
 J
